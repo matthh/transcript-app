@@ -74,10 +74,15 @@ function NewEpisodeContent() {
 
     try {
       // Step 1: Upload file directly to Vercel Blob (bypasses serverless size limit)
-      const blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
-        access: 'public',
-        handleUploadUrl: '/api/audio/upload',
-      });
+      let blob;
+      try {
+        blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
+          access: 'public',
+          handleUploadUrl: '/api/audio/upload',
+        });
+      } catch (uploadErr) {
+        throw new Error(`Upload failed: ${uploadErr instanceof Error ? uploadErr.message : 'Unknown error'}`);
+      }
 
       setTranscriptionStatus('Starting transcription...');
 
@@ -93,8 +98,15 @@ function NewEpisodeContent() {
       });
 
       if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || 'Failed to start transcription');
+        // Try to parse as JSON, fall back to text
+        const contentType = response.headers.get('content-type');
+        if (contentType?.includes('application/json')) {
+          const data = await response.json();
+          throw new Error(data.error || 'Failed to start transcription');
+        } else {
+          const text = await response.text();
+          throw new Error(`Transcription failed: ${text.slice(0, 100)}`);
+        }
       }
 
       const { jobId: newJobId } = await response.json();
@@ -104,6 +116,7 @@ function NewEpisodeContent() {
       // Start polling for status
       pollTranscriptionStatus(newJobId);
     } catch (err) {
+      console.error('Transcription error:', err);
       setError(err instanceof Error ? err.message : 'Failed to start transcription');
       setStep('upload');
     }

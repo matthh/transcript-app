@@ -7,9 +7,9 @@ import { NextRequest, NextResponse } from 'next/server';
  * This bypasses the serverless function body size limit
  */
 export async function POST(request: NextRequest) {
-  const body = (await request.json()) as HandleUploadBody;
-
   try {
+    const body = (await request.json()) as HandleUploadBody;
+
     const jsonResponse = await handleUpload({
       body,
       request,
@@ -25,7 +25,6 @@ export async function POST(request: NextRequest) {
         };
       },
       onUploadCompleted: async ({ blob }) => {
-        // Could log or track uploads here
         console.log('Audio uploaded:', blob.url);
       },
     });
@@ -39,3 +38,4 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
