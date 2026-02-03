@@ -40,6 +40,7 @@ export async function saveTranscript(
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 
   return blob.url;
@@ -186,6 +187,7 @@ export async function saveTranscriptionJob(
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 
   return blob.url;
