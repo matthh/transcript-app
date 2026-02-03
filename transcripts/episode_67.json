@@ -1,0 +1,966 @@
+{
+    "episode_number": 67,
+    "episode_name": "Patrice Vermette interview",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:00",
+            "text": "Hey everybody, it's H and welcome to a very special installment of Dune pod, your one stop shop to enjoy the new dune movies. This week, I'm joined as always by my co host Jason, speaking of which,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:27",
+            "text": "what a time to be Timothee Chalamet. I mean, I guess anytime it's been a good time to be Timothee Chalamet but like, What a run and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:34",
+            "text": "we are thrilled to welcome Danny's closest collaborator, the production designer of Dune 2021 Patrice Vermette."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "0:46",
+            "text": "No pressure but no pressure. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:49",
+            "text": "go deep into the behind the scenes of making dune how great design supports the story and what it's like working with Disney. If you're enjoying this show, leave us a five star rating and review wherever you listen to your podcasts. And be sure to hit that follow or subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. And now without further ado, Jun Patrice Vermette. Holy shit, can you believe what is happening right now?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22",
+            "text": "It's pretty amazing. I mean, in our wildest dreams, we hope that the movie would be financially successful enough to get part two, which happened as we will discuss more. But spoilers, I don't think I really allowed myself to believe that we would live in a world in which both like the movie was financially successful to get part two that we would like it and that just it was like the cultural. It was like the squid game of our late October. Yeah. 2021 like it was just this moment of monoculture that everyone's really into everyone's making memes. It's like just it just feels like the whirlwind has happened. So it's great. I never believed this could happen. Truthfully. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03",
+            "text": "is amazing that I mean it is exceeds expectations. Pretty much in all in all areas. And and we've been having quite a run having a good time. In the midst of this. We've had a lot of people checking out the podcast for the first time after we got the chance to meet our good friend Danny Villeneuve. But what was shocking and what has got us here tonight, or this afternoon to record this episode, is the fact that we were contacted by our good friends over at Warner Brothers to invite us to interview which is going to happen tomorrow. Patrice Vermette, the production designer of Dune."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:45",
+            "text": "Amazing Yeah, it's really great. I mean, if there's one of one creative partner of, of Danny Villeneuve, who we could speak to has been a longtime collaborator of his and has contributed so substantively to the look and feel of this world. This is the guy so I'm pretty I'm pretty excited. Enemy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:04",
+            "text": "Prisoners Sicario arrival, Dune, like Patrice has been there step by step to get this thing done. It's absolutely amazing. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:17",
+            "text": "it's pretty wild. I think one of the things that's been cool with like the art and soul of Dune book coming out, yes, is that so much of the detail of the world has been viewable by people and has been shared online has been a point of discussion. And you see, like all these images of look at the engraving on the gold glow globes and like look at the detail on like the Golem Jabbar. And that's like, one of the things that's given this movie, such resonance is just how well considered the world is. And Patrice is obviously you know, it's is mentioned specifically in the introduction of the book as being the key collaborator that Danny turned to, to bring forth that artistic vision. So no better person in the world to talk to you about the success of the movie on that level. Absolutely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:57",
+            "text": "Amazing. So we'll be talking about this this episode. You know, we were we have Jason here for the pre show. Yeah. And then I'm going to do the interview. Because Jason is traveling to parts unknown. We had delayed spousal birthday engagements that got pushed back based on doing 2021 premiere last week. How's the temperature? Everything, everything all good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:20",
+            "text": "I'm gonna do yoga with Harvey Keitel is the reality. My shoulder has been acting up. I need to do some some downward dogs with my man Harvey, so can't make it. How"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:32",
+            "text": "flexible is he like, is he like what level yoga"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:36",
+            "text": "I'm not really comfortable sharing what goes on inside the intimate confines of the yoga studio inside the dojo. However, I will recommend any New York based New York City based dune pod listeners to check out the anger Institute in the flat iron as a lovely place to go and practice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:57",
+            "text": "Nice. Well that's coming up in the bottom of the hour. We have Patrice Vermette, I want to just take a moment because we have a lot of new listeners for dune pod. And so I want to welcome everybody, first of all, and then I just want to say, over the coming weeks and months, we're going to continue having reactions to dune. But people, people have a lot of misconceptions, Jason about this podcast. So you were this."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:19",
+            "text": "I mean, I have a lot of misconceptions about this podcast. So I think it's only fair that other people are named five. I thought I was only doing one episode of it. And yet here we are 18 months later. So that's, that's a fair point. That's that's chief among my misc as"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:33",
+            "text": "well. So we, we talk about doing every week. However, every week we tackle a different, you know, a different film that has an impact that's either directly related because it's from the cast or the crew, or that has a resonance that we think is really important. So I just want to call out if you love films, if you love sci fi, but also not always sci fi. We have a lot of great films for you to check out. So I would say in our back catalogue, if you're looking for stuff to check out, we have episodes like Interstellar, The Big Lebowski with Chris Sokka, noted, Lebowski expert, call me by your name Timothee Chalamet ace film that really put him on the map. And of course Coen Brothers and Roger Deakins, No Country for Old Men. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:21",
+            "text": "and I think our intention with a lot of these movies is to both look at the previous work of either Denny Villeneuve or his close collaborators. But then also movies that have had some influence on how we think that how we think either dune or Villanova's dune should be consumed or can be consumed. And so like even like a movie, like Donnie Darko, which deals with predestination is relevant to dune because they both traffic in those themes. And then sometimes we just have to talk about Lady Hawk, because it's one of the most important fantasy movies ever made, even though its connections to dune may be tenuous."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:59",
+            "text": "You think Zimmer was influenced by the lady hawks soundtrack?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:09",
+            "text": "Well, I will say that the tradies family animal is the hawk. So it's connected at all it's part of the plan."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:19",
+            "text": "You raise a good point. So as we look forward in the coming weeks and months, I just want to call out some of the films that we're doing. Next week. We have 12 Monkeys Terry Gilliam's classic time travel story featuring Brad Pitt, and Bruce Willis, that is really terrific. And we have Greg Martinez, one of the directors of the new HBO Game of Thrones house of the dragon and it's an incredible discussion. He also directed Children of Dune for the Sci Fi miniseries and so it's incredible to get into that history of making that he discovered James McAvoy out of acting school. This is the first project ever like it's incredible behind the scenes stories."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:57",
+            "text": "Yeah, really good, really good stories and like for him to be working now on, you know, literally the most anticipated fantasy show on television. And to speak of that as like a coming home from having started on Children of Dune 20 years ago, was just a fascinating round trip discussion with him. So and his insights on 12 monkeys are amazing. It's clearly a movie he loves and to see it through the eyes of accomplished directors. Great. So I'm looking forward to folks hearing that on Sunday. Really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:26",
+            "text": "awesome. And then we have aliens Jim Cameron's aliens, which is like the ultimate flip the script, you know, take a horror movie and turn it into an action movie. As well as the template for like every action movie, like there's a squad of guys and gals and you know, the Hicks and Vasquez and whatever. Like they all have analogs, they've become the total blueprint that's used for action movies forever. Yeah, amazing. 2001 A Space Odyssey, arguably one of the greatest films ever made contact matrix month matrix clearly heavily influenced by dude, we're gonna do all four movies right up there. So there's just a lot of great stuff that's going to be coming. And we really welcome folks to check that out."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:10",
+            "text": "There was a good tweet by the guy right, who wrote wall and Hugh Howey. You have Yeah. And he said that like Dune is like a science fiction masterpiece. In like don't Villanova's Dune is a science fiction masterpiece in the vein of Star Wars and the matrix like every 20 years, we get one of these movies that resets what, what science fiction can mean? So I think it's I think it's pretty important that we go back and look at the matrix. And we've talked a lot about before, sort of the matrix in previous episodes, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:44",
+            "text": "I just want to call out that I offered catcher, carte blanche, like any episode that he wanted, and he chose revolutions because he thought no one would want that one."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:55",
+            "text": "matrix that's matrix three. That's three sub bold choice. Yeah, that is a bold choice. Maybe Maybe it sounds different in Canadian. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:06",
+            "text": "shall see. Well, how about we get into some do news?"
+        },
+        {
+            "name": "Speaker 1",
+            "timestamp": "10:10",
+            "text": "Would you like to know more? Didn't didn't? Didn't didn't? Wow."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:16",
+            "text": "Let's start with opening weekend."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:19",
+            "text": "It went well, very made some money."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:22",
+            "text": "Yeah. And they kept like they had to keep revising the estimates up and up, it was going to be 30 30,000,030 8 million, then 40 million. And then on Monday morning, they revised it up again to $41 million 220 million worldwide, which"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:38",
+            "text": "unfortunately, does mean that all of us lose our prices right style betting on on opening weekend and that Matt's 91 million was not close. But very respectable opening weekend. And yeah, it's it's doing great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:58",
+            "text": "I might have gotten too excited. It's possible. Yeah, I got too excited to do you want to go on record for US box office with a prediction for the drop the percentage of the percent drop? I'm gonna say, I'll let you go second. I'm gonna say less than a 55%. Drop. Okay. Which if that happened, that would be insane. Absolutely insane. But I think the word of mouth on this is going to be big. And a lot of people are still like scrambling to watch it in IMAX right now. With one more week to go."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:29",
+            "text": "Yeah, I mean, that is one of the interesting wrinkles in this is the one more week to go and IMAX as of today. So I guess it's leaving IMAX on the on Thursday of next week, which definitely, like affected me. I was like, Oh, shit. Okay, I guess I gotta go see this thing. So, yeah, that that definitely made me that definitely could have an effect on how people are viewing it. I think their IMAX strategy was pretty successful. I forget what the numbers are in terms of how much of that came from IMAX. But I think that played a big part in their their opening in their in their opening weekend success success."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:06",
+            "text": "I want to say it's almost 50% Like it was staggering."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:10",
+            "text": "Yeah. Because the tickets are more because like, the more it's a good strategy. For sure. Yeah. So I'll take the I'll be optimistic. I'll take the under on your 55%. I'll say that like the drop is better than 55%."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:23",
+            "text": "Wait, what does that what does better mean? Do you think it'd be less than 55%?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:27",
+            "text": "Yeah, it'd be less than 35. I'm more optimistic the drop will not be as much as 55%. So we'll see God"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:35",
+            "text": "damn, I would be happy. If that were the case. I will say like Halloween kills dropped 71% Right, or Shang chi or whatever drops 68%. Like that's the typical. Everything's front loaded. But word"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:46",
+            "text": "of mouth is just really good on this movie. Like people love this movie. And they love talking about this movie, and they want to go back and see the movie again. Like I saw, I feel pretty good. I feel pretty good about my side of the the bet here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:57",
+            "text": "I didn't get a chance to look but like Avatar, that was why avatar made the money that because it just kept going and people were like, holy shit. Let's keep those keep watching this. So yeah, I hope that will happen. All right, well, let's talk about the largest existential crisis when we started this podcast was will this film ever be released? And then of course directly behind that was will Part Two be greenlit?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:24",
+            "text": "Yeah, and I was a strong no on both of those people. No monsters? No. No, about both my prediction record as well as my cynicism. Yeah, I both thought the movie would never come out. And that we wouldn't that it would not be successful. We would not get part two. And on Tuesday, they announced that we were getting part two, legendary Warner Brothers, Danny shall amaze and Dave, like all the principles announced that that we're getting Part Two Greg Fraser is coming back to dp part two. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:56",
+            "text": "didn't see. Is that right? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:57",
+            "text": "Yeah, that's right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:59",
+            "text": "Oh my god. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:02",
+            "text": "So it's all happening. Wow. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:05",
+            "text": "Oh, I gotta add that question to Patrice. I assume he's, I'm assuming he'll be different right. I assume"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:09",
+            "text": "he's back in for part two. Holy shit. So it's great news. There's some speculation I've been listening to other savvy movie commentators. And there's some speculation that the drama about what if there was going to be a part two was all manufactured like both like kind of ticket sales and like juice the fan base, but like the the reason why I don't think that's true, either. The reason why I think it actually was in doubt is because he has said he said in that DGA interview with Chris Nolan, that he wanted to make both parts simultaneous consecutive yeah can simultaneously and that they just wouldn't finance it because the performance of Blade Runner 2049 was so boring. And so he had to do it. So he had to just do part one on a on a hope and a dream and that in retrospect, he's really grateful that that happened. Because the stress, the shoot would have been too stressful. And anyone who's ever taught us how to do it together, it's just like kills them. So he's happy how it turned out, he'll end up getting more money because it's more expensive to do back to back. Right, and it will be less stressful in theory. I don't really think this was completely an illusion. I don't think they would have done part two of the movie bombed like there, it just doesn't make any sense. So I don't know how much how well it had to do. But like it did. It did. It did very well. And obviously they're stoked to be proceeding with the same team. So I'm, I'm happy we when we went."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:42",
+            "text": "I mean, I did feel like it was a very organic rollout like when the Instagrams just started flying around right legendary did their first piece and then Timmy did it. And then Danny weighed in. And like, that was just a magical moment. Yep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:56",
+            "text": "i It was great. I thought that was great. I liked the way that they did it. It gave the fans something to celebrate on a way online. I mean, in general, I don't know if we've really talked about this much. But in general, whoever's doing digital strategy for the dune movie is very, very good. All of the stuff that they've done with like using Tiktok influencers, like interview people on the red carpet in London, and like their Snapchat filters, and there's Twitter movie stuff, and there's IG takeovers and like they've just done Stephen Colbert, they've done all of the things like they've done literally a complete, like broad cross channel strategy. And they were doing it for months. And so I think that and they did the stuff, you know, with the fans, they did the preview screenings, they did screenings for us and like, all this stuff. I think it was super smart. And so that also sort of gives me a lot of hope for the future. Oh, yeah, they did the fortnight skins is like another as another thing. I'm reminded from off that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:54",
+            "text": "when there was a lot of fortnight Yeah, stuff going on there. I thought that was fortnight was smart."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:58",
+            "text": "And a cool thing that that brought out was another piece of important news in the past week, is that Timothee Chalamet is just a YouTube channel was exposed. Where when he was a child, he had a YouTube channel called like 14x, Xbox Moto 360 or something. Yeah, he was doing custom paint jobs on controllers and selling them for $10 and he sold three of them, but they look pretty sweet. And so that that made it out this week to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:31",
+            "text": "at least one of them looked a little Wonka asked to me. Speaking of which,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:35",
+            "text": "what a time to be Timothee Chalamet I mean, I guess anytime it's been a good time to be Timothee Chalamet but like he's What a run like I mean like in the in like Wonka is gonna come out. He's gonna make dune to like, it's really all happening for for him right now. So God bless. Good work for him. Callie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:55",
+            "text": "Incredible. Yeah. All right. So then let's move on to the next piece of due news, which was we were on the X ray. Oh, yeah. X ray vision speak on it. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:05",
+            "text": "X ray vision podcast hosted by Jason Concepcion, like look like this was essentially even more than meaning Danny. And this was a stretch goal for for dune pod. I think that I think that Jason conceptions work, like going back to binge mode. And NBA despatch when he was with the ringer is the best version of like podcasts commentary on science fiction and pop culture, and particularly in science fiction and fantasy. I think he brings a level of seriousness to the way in which he approaches these subjects and a level of insight. Like as an example, in the interview with him, he was like, how did you like how they brought back the bullfighting thing when Paul defeats Jameis at the end, and we're like, we didn't notice that. Oh, yeah, that's some that's new information to us now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:55",
+            "text": "Dude. I was Winnie the Pooh ghost. Dad gaff, like I lost it in that moment. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:01",
+            "text": "So anyway, wow. Big fan. He's very smart. He's very funny. It was great to be on his podcast and I thought it turned out great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:08",
+            "text": "It was really cool. It is like when you went live as soon as we joined zoom it's like holding on for dear life like it is moving."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:16",
+            "text": "Yeah, he's very easy fast firing machine. His he also before we come on on the on the published podcast, he does like a 30 minute recap of the movie. And I was just like, playing it on my phone and Crystal was cracking up like listening to the description of, of just him. I was like, Wait, this isn't the part with us. Like, though this part is funny,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:35",
+            "text": "but also his omnibus section where he goes into detail. Yeah, was really, really fascinating."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:40",
+            "text": "Absolutely. Like the history of science fiction, and particularly the relationship between dune and and foundation. So yeah, it's really good, folks. I don't think he needs us to point traffic his way but folks should definitely check it out. And we hope he'll come. We asked him he said he would come on our pod sometime in the future. So is now"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:57",
+            "text": "legally Rick Jason Concepcion is now legal. obligated to come out this podcast?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:01",
+            "text": "Legally? Yeah, oral contracts are binding. Congratulations. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:05",
+            "text": "All right, so So this brings us to the last piece of due news, which I just want to call out, again, 18 months ago, if you rewind, I was thinking like, Dune is going to be kind of a big deal. I'm excited about it. Jason very clearly is excited about it. We could do this podcast, and it'll just be like, eight months or whatever, until the movie comes out. Right? And there's going to be a lot of excitement. So this podcast might be something that people want to listen to 18 months later, dude, pot has entered the apple top 10 film podcasts in the United States across the entire United States, including"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:43",
+            "text": "Alaska and Hawaii, not just the continental United States, right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:47",
+            "text": "As of recording our number six, wow, on the top 10. Wow. Number six,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:53",
+            "text": "it's amazing. We were like I mean, I feel we did a really, we we really benefited from the moment that the movie is happening. And that folks are just so like, one of the things that's so interesting about the movie is that folks want to think about it after the fact and talk about it. Yeah, I saw this tweet that was like, someone texting with their dad. That was like, man, I've seen this movie and like, I just can't stop thinking about it. Like, are you the same way? Have you been thinking about this movie? And the dad replies, like I've been thinking about doing since I was 17 years old. And it's amazing. It but it's like, it is a serious adult science fiction movie. Like I think it is still pitched for teenagers. But like it is not for children, like the movie treats its audience as people who are able to think about things and pick up on things without having it beaten over the head. And so as a result, people want to go and revisit it and figure out what they they miss. And even us who are very well steeped in the world, miss things, the first five times we've seen the movie, and there's more to be revealed. And so I think that's, that's, that's exciting. And it's exciting that folks have turned our podcast to be part of that conversation."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:09",
+            "text": "I just want to say, We're coming for you. NPR pop culture, happy hour. We're coming for you NPR. We're taking their tote bags,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:18",
+            "text": "and we're putting them on the worm, the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:20",
+            "text": "Atlantic, you're next. Oh, boy. All right, well, so let's talk about, you know, what is about to happen. So we, you know, again, Jason's not going to be there for our, our interview tomorrow with Patrice, which we're very excited about. But we want to just take a minute and talk about when almost every episode of this podcast when we talk about a film, we talked about the director, we talked about the writer, we talked about the cinematographer, and we talked about the production designer, like those are the roles that are that are the most critical, in my opinion, for what happens in the film. And I think from my perspective, the production designer in particular, and we actually we had Tim, oh, Thief, you know, our good friend who came on for our Tennant episode, who works in the design side of a film worked on inception and, and a lot of other like killer Marvel movies and other things. But he helped us talk about this a little bit. And I will say the production designer is generally responsible for the look and feel of the film. It's an artistic role. But it's also like a managerial role where they have to build the teams of like, the initial design people who are just starting with sketches. And then people who are doing paintings and you have the whole like, the color, like templating that happens. That is laid out and then that goes into the set design and the prop design, like all of that stuff falls within the overall purview of the production designer. Yeah, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:04",
+            "text": "it's an from that would be a daunting task on any movie for a world in which, you know, you are relying so much on how this universe looks and feels to inform the audience about what happens in this world that they're completely unfamiliar with. It seems like an impossible task. I mean, one of the things one of the details that like I joked about online is like, you know, I can't wait for the tradies bedroom collection to because they have like amazing pillows like one of the first shot of policy wakes up he's on an amazing little like ribbed pillow. And then like later on, on Arachis you see Duke Leto wake up on like a similar pillow like there's there's like all these consistent touches and we'd spent a lot of time talking about carpet in the carpentry. We spent a lot of time talking about carpentry, like the bookshelves in this movie. Look at the bookshelf behind And liegt in the psychological testing station seen gorgeous, and, and how they like and just sort of where their slots were books and what the books I was like someone had to make all those choices. And it's completely remarkable."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:18",
+            "text": "And it's yeah, it's those environments. It's the color. It's the color palettes, and then you have all of the actual objects, right, whether it's a thopter, or whether it's the gom Jabbar, or whether it's that bowl sculpture or whatever, a spiders feed bucket. So, there is there's an incredible interview with Joe Walker that got pasted into the discord today, and I watched that earlier, he described how in order to get that scene going in his head, he needed the sound of the spider pushing the food bowl around. So he just went into his garage and recorded himself nudging around a bowl. So that he could then go back to his house and cut and paste that in and, and be able to edit that scene."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:03",
+            "text": "That's amazing. That's what I do. When I shoot is crazy. I need to get it going. I just push around a food bowl."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:09",
+            "text": "Yeah, so I'm gonna just go ahead and call out a couple of my favorite production designers. And Jason I took notes in advance, but I'm just gonna lay this out there. So folks like Dennis Gassner, who was the production designer on Blade Runner 2049 as well as 1917 Skyfall Oh, Brother, Where Art Thou and Miller's Crossing. And in particular Miller's Crossing one of my all time favorite films, but just the visual impact that he had if you think about those movies. Absolutely incredible. We talked about like the the like almost motorcycle like machine that that he looks into to check the DNA scanning stuff for the fabrics, the route fabrics like incredible Nathan Crowley Tennant first man interstellar Batman Wonka, or just Gonchar, who did No Country for Old Men, Little Women Inside Llewyn. Davis, we talked about, like the apartments in New York and how they contributed to the feel of what it was like for Llewyn. Davis. For that, you know, inspiring Oscar Isaac to give that performance. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:19",
+            "text": "And if you look at like, like, if you look at like older movies, too, like if you look at like 2001, which we'll talk about in a couple of weeks, like the production design on 2001. Whether it's like, you know, the chairs that they use on like the on the moon station, or like in the Howard Johnson. Yeah, yeah, exactly. Or like the, the, you know, the design of the discovery and like, like, you know, Kubrick hired a production designer who had worked at NASA, because he wanted to ground his film in some connection to reality. And like, you know, it's just like, you don't get an all time classic. Without that level of detail. Like, that's what you that's just what you need to do in order in order to make the order to make the movie. Seriously. Incidentally, one of the other Tony masters, one of the other production designers on 2001. He worked on he worked on 2001 in 1968. And in 1984. He was a production designer for dune David Lynch's dune. Yeah, yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:18",
+            "text": "no, which notably, not every bit of the movie worked, but the production design of that film. Very good. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:27",
+            "text": "notable, one of the things that we've we talked about a little bit, I think on a previous episode, the arrow Ultra High Definition 4k DVD release of David Lynch's dune that came out a few months ago. One of the best features on that is the feature at with the production designers, and all the things that they designed and how they started from sketches from Lynch or sketches from other people, like, you know, there's a sketch of the David Lynch rat, cat, Min tat, torturing apparatus. And, you know, like, they started with all these sketches, and this, this team, like, you know, built out that world, and I completely agree. And in 4k, you see just how well realize the lynch world was, even if the movie doesn't work from, you know, coherency standpoint, the way in which it looks and feels absolutely does. And those guys were those guys were pros,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:20",
+            "text": "the thing that I am most interested in talking to Patrice about, and I don't know whether we're going to be able to get in there because we're going to have a very quick window to have this interview. But the idea of how you balance the creative versus the practical and the budgetary constraint. So Greg taneous on our 12 Monkeys episode next week talked about how you know, Gilliam was constantly on 12 Monkeys being pulled back of like, if we do this, it'd be $7,000 If we do this, so it'll be $20,000 And how the production budget dictated what was possible from a creative standpoint. And I'm just super fascinated by the idea of how you kind of you balance that, like, we design this stuff, then it has to get built by, like people and they have to figure it out in the art and soul. They constantly talk about how we had the sound stages. And then they just took the space between the sound stages, and they created their own virtual sound stages outside where they shot all this stuff. They paved it, and they put sand on and they put giant, you know, sand colored barriers in the background. It's just a staggering achievement. One of"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:30",
+            "text": "the things they did was like they, you know, they shot all of the scenes on the desert where you see rock formations in Wadi Rum in Jordan, which has a history of being used in Lawrence of Arabia and a bunch of other famous movies have been shot in the desert there. But that desert doesn't have giant sand dunes. So they had to go to the UAE for those giant sand dunes. And so they had to bring vials of sand or containers of sand from Wadi Rum to color match with the appropriate desert in the UAE. Yeah, so they could like well, we can just use any Sandy plan, you got to find something that looks like it could, it could belong. I mean, which is which is crazy, but of course you need to do that. This also brings up"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:08",
+            "text": "something for the desert. Yeah. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:11",
+            "text": "get the you got your your SAN Schleper, Bring, bring the sand and get the Pantone reading. The other thing that's brings up is with dune two is they not only announced dune two, but they announced dune two for October 20 2020. It's fine. So it's less than two years away. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:26",
+            "text": "fine. Fine."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:27",
+            "text": "I mean, it's fine, because I don't have to work on it. But like, you know, and Danny has said that the second movie will go faster, because they have all this pre production done, and they've done all this design work up front. But to your point, like they have to build seach topper somewhere that does not exist. Yeah, and must be constructed. And you know, and then they've got to do like 2000 visual effects shots like in the next two years. So there's, there's a lot that's gonna there's a lot that's gonna have to happen for that for that movie to come out. So good luck to them. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:00",
+            "text": "can't imagine what it feels like to be Danny and this team right now. Like they like vendor gated dot move like these guys are late again. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:09",
+            "text": "No, I, I would have a guess. Maybe because I'm a little lazier. I would have been like kind of like, Damn, we don't even get like, Can we get a month off or something? Like, can I go to like, you know, like the south of France or they had some time"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:23",
+            "text": "they finished last December like they're they've been chillin. All right. Yeah. Back to work. Back. All right. Let's see anything else you want to say"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:36",
+            "text": "passing predictions for part two? Ooh, shit. Yes, please. I mean, the big role is to be we saw Barry Kagan's tweet. Yeah, Barry Kagan had a cheeky tweet. When Part Two was announced. Long a fan favorite for fade, which I think could be chill. I have a gender flipped fantasy for fade which is that they cast fade as a woman and use Anya Taylor joy, who I think would look good, bald. I mean, that's like one of the things is that the heart, Conan's obviously have to be bald, and I think she would look to bald without eyebrows. And as so that's, that's like, another person I think would look cool. Similarly, bald, is Michaela Cole. From I may destroy you. So I think I think those two would be good if they wanted to go another way."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:27",
+            "text": "I'm on record of going for Hunter Shaffer. So that's my hunter shaver"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:30",
+            "text": "would be amazing. Yeah, yeah. Hunter shaver is amazing. The other roles are the Emperor. Need a good emperor? Some fun. I saw some fan casting from a Hershel Ollie, which would be dope. I like the idea of a young emperor like someone who reads young Well, that was the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:48",
+            "text": "big thing that they did with Oscar and with Rebecca, right. Like you you have you have younger versions kind of in there bloom. And so I think that would make sense for the Emperor. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:57",
+            "text": "younger versions in their bloom. And also like the spice is a geriatric spice and so even if they're like, 80 years old, they look young like that. It's, it's actually lore consistent. And so, yeah, I don't know what else you got. Who else who else would you cast for? The emperor? Told the don't look up the Emperor now. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:17",
+            "text": "a great one. Yeah. That's a great call. Yeah, they did say emperor, right. Yeah. Okay. Yeah. All right, ma'am. She hasn't met. Yeah, exactly. No, no problem. All right. Well, I can't stand to wait any longer. Let's get into this conversation with the great Patrice Vermette. Thank you so much, Patrice. It's an honor to meet you. And so I'm the co host of Dune pod, which was a podcast that we started 18 months ago to explore the work of the film's by the cast and the crew of Dune 2021. So obviously, you were at the top of that list when we discussed enemy prisoners Sicario arrival and now dune Thank"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "34:59",
+            "text": "you Thank you so much. Thank you so much. It's a pleasure to join you. Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:03",
+            "text": "well, so in the art and soul of Dune, Danny talked about how deserts, spark joy, humility and isolation, and that he knew you were the perfect artist for the task. And he said, Your, quote, immense appetite for exploring new creative territories made him an obvious choice. I needed his wild visions and fierce passion, but also his beautiful sensibility. So I wonder if you could start by just describing your collaboration with Danny over these many years,"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "35:31",
+            "text": "I think it is, I could quote the beetle by saying about the need, the love you take is equal by the love you make. Then he is a passionate person, then he is a visionary, then he inspires is if team surrounding him to go further and to and to explore, to go into the details. And to think outside the box, which is something that I find extremely stimulating, working with Danny, because it's, you know, it's like, we we grow, we challenge each other. And it's an open, he's, he's an honest, filmmaker, you know, it's all about me, the best ideas, win. But also, what I like about him is that it's about nothing should be designed for design, it should always have, right, it should always be anchored. And in purpose, there's a reality, if there needs to be a reason for a design to exist. Any any thrives. And that's, that's great. You know, it's not just designed for free, it's like, designed, but what are the thoughts behind it? Why is it like that? And I love working with that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:54",
+            "text": "Yes. Well, that's interesting, because I wanted to talk about that GM job are seen as an element of that. And if you think about the room that they're in, which is so imposing and the formality there, but then also the subtle details that are there, whether it's the intricate tracery on the gom Jabbar needle, or the patterns on the side of the glow globes, like I just wanted to see those close up and drink those in, they were so beautiful."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "37:20",
+            "text": "Thank you, thank you. It's, what can I say? What can I say is? It's the needle. That's, that's what, that's why, you know, what it was, it's disappointing when, you know, it's made to be this movie is made to seem to be seen on the big screen, you know, was thought in a was imagined in IMAX. So you could see those details, which you don't see if you watch a movie on your iPhone, right? But no, it's, it's the detail, it's just show like fit for the needle. It's just so that the, it's the gums, it's not just, it's not just a simple needle, it, it's intricate, you see, there's a culture around it, there's a there's a there's an ancient, you know, it's just to give weight, you know, to to the object, it's like the box, you know, the boxes are simple wood bucks. Right Jade color with with these motifs on it. But it's, it's to show like the history of it, it's not the first time that it's being used the news many times that it will be used many other times afterwards. Right. But it's part of the advantages of the culture."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:32",
+            "text": "Yes, amazing, steeped in that in the, in the centuries, those"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "38:36",
+            "text": "details get give insight insight, its supporters are there to support a certain get insight of, of where, you know, the What's that culture? What's, what's the dimages aesthetics."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:50",
+            "text": "Yeah, and also you really successfully conveyed the differences between the houses via the production design. So whether it's the tradies and we have, I mean, for me, my favorite object in the film is the bullfighter sculpture. But the spa hand pipes for the Harkins or the carpets like the carpets when the you know, when the spacing guild arrives are on Arachis like it's just amazing. Thank"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "39:15",
+            "text": "you. I had fun designing those characters with with Aaron Morrison, my graphic designer because yeah, again, they're there to to convey an aesthetic that is proper to each to each house household. And yeah, so the two carpets in that scene, the transition scene. Yeah, that big. That big carpet that wrote that gets out of that is a part of the of the ship for that ceremony and, and what's quite fun to to create those two worlds meet in a carpet. Almost. It was a bit of a study there. may not make usually it blends, but it's quite they're quite different. Very"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:04",
+            "text": "Yeah. So one question that I wanted to ask you, you know, dune feels to me like it's part of a new wave of brutalist sci fi just in terms of the look and the feel of it. And to me, the most classic moment for that is the initial thopter flyover of our a keen approaching the residents and the notion that arcane itself is so monochromatic, there's almost no windows. So can you describe how you came up with that design and what you wanted to convey with that imagery?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "40:37",
+            "text": "Well, the idea the idea didn't suffer for our team is basically all the the concept and are actually in our in the book, The clues are from the book, Frank Herbert talks about a city a planet in which wind go 750 kilometers an hour, that good territorial metal, the presence of a sandworm the heat, the sun, you know, so so so when we, when we started developing the the architecture of that planet, with, with mechanism, lead concept, artist, etc. We talked about the reality of that when nobody in their right mind would ever build next structures, which are which goes straight, vertically, vertically, everything needed to be at an angle, because right, we want the wind to sweep over the buildings, and that's fight against the structure, right. That's why the city could not be the founded in the middle of the desert, because there's a presence of Hollywood be building it, that there would be attacked by sandworms all the time. So you would probably build that city in a safe in a safe environment, which would be like a mountain ball, you know, it's natural protection, you would also probably make the walls quite thick, because otherwise, that helps keep the coolness inside. You would never have like direct sunlight inside. So that's that the idea of the of the of the light wells coming from that. So it's all about reacting to the to the elements in the environment of a given planet. That's that's that's kind of the rule. Again, that's it's working with Vinnie, you know, he encourages that you're like, think about it's not designed for design, it's designed that needs to make sense. Yep. And that way things will eventually look real. And again, like, shipping, like nothing is new. And it's shipped, it's cracked. It's it's one"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:49",
+            "text": "why Yeah, and I love just the weight the heft of the residents, and then you carry that through with the doors, you know, this massive doors, that kind of shift on the middle, you know, for stills are coming in or whatnot. But yeah, I just, you know, the first of your films that I ever saw was Sicario. And when I heard that Danny was doing Dune, I just thought of Sicario the whole time. Oh, thank you. Like, to me, there's something about the color palette and, and something about just like the the the color palette and the clothing, the armor and then just a brutal military aspect of there. I just I knew it was going to come through in a way that was so serious, and would be a powerful new interpretation of the film."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "43:34",
+            "text": "It's funny because then he has a as this attraction towards the desert, one of his first movie, its first movie conduce takes place in the desert. You know, then when he did a sudsy there's the presence of the desert, not caring whether it's the desert, and it's like, it's an obviously doing desert. has a special relationship with the space and and one of his favorite movie is Lawrence of Arabia. Right. Right. So I think I think, yeah, I think the desert is a great influence for an inspiration."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:13",
+            "text": "Well, speaking of Lawrence of Arabia, which obviously Dune is compared to all the time. For me, the best comparison that I've come up with is actually the 10 commandments. Oh, that's, that's interesting, both because it conveys a huge religious journey. Yeah, but it also famously DeMille was operating at a really, really audacious scale. So I'm just kind of curious how that resonates with you. You"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "44:37",
+            "text": "know, it's I never thought about it, but it makes total sense. fellow 70s. It's the story of a messiah. totally right. Wow, right. Straight. That's what makes sense. That's a great, great analysis."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:53",
+            "text": "Yeah, well, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:54",
+            "text": "was thinking of, like the spice harvester scene or even just the arrival At our a keen where you have all the chips or the battle, like the scale and the scope of what you are showing, like I just kept thinking of like the explosions are so huge they're almost incomprehensible as you see them unfolding on screen. Well, it's"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "45:17",
+            "text": "it's kind of what the story dictates you know, it's the support the story, the journey of treaties is coming from a planet, which, even though like everything's all the things, there's lots of moisture in the wall, and it's great. It's there's something comforting. In the end, he's, he's facing the harsh reality of the world of a world that he cannot understand a world that is bigger than than him, all the weight of the world is on his shoulder and know that you see us from the architecture and the size and the scale. And I don't think it would have been any other way. If you needed that scale. It was kind of part of the first conversations that that Vinnie and I had. And then it was the challenge was then to how the hell are we going to make this you know, it's like, you can draw, you can draw sets, you can draw, like, work on models. The end of the day is Akia. We all dream for seven months. But now we need to build for real. Okay, so where are you starting out some sets, you know, they obviously they it's quite straightforward because they can sit in a soundstage. Some could barely sit in the sounds it sounds like we were built a wall to wall all the way to the the firm's which were at some point at 60 feet. So and then and some others were like, it exceeded that. So how do we go about so that's, that's where the real team playing with, with Paul and Berg, Greg Fraser and your Neser we, we all put our heads together to support the DEA and its vision."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:06",
+            "text": "Can I ask what's your favorite part is that the the dreaming at the front and doing the designs and coming up with those things or then being on set and seeing it realized and and seeing it all come together and reacting? In real time to get it done?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "47:21",
+            "text": "I think my favorite part is dreaming in the beginning. Because there's no when you dream at the beginning, besides besides the timeframe that you got to dream, then there's, there's no there's no boundaries, there's no there's no limit, right? You can dream and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:37",
+            "text": "imagination is the only limit. Yeah, no,"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "47:41",
+            "text": "exactly. It's like, the only limit is the limit you impose on yourself. Otherwise, there's no limit, right? But then the the the pre production becomes like, let's let's figure this out. So it's like how do we at the beginning you know, you were at work I work with my pupils mighty much concept. And then it transformed my team of like, how do we physically make this happen? So that's, that's also fun. But your your, your your, your your in budget meetings, and you're like in the in the amount of time that you need to build the sheer amount of Bennett need that this will necessitate to build. And then and it's it's always like pushing, pushing the envelope pushing and supporting your team and to think outside the box. How could we make this happen? You know, so. So that's, that's the fun part, but it's a bit more stressful."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:44",
+            "text": "Especially when Denise said that most of the pre production stuff, you've already got a huge head start for doing too. So that should be no problem."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "48:55",
+            "text": "pressure, no pressure. Right. Right. There's this sense that there's some facts that that do exist in the like, there's some for some drawings made of them, right but there's a lot that still needs to be figured out. And and I think it's quite exciting to start a new journey I'm sure this week when when when I got the when I woke up because right now I'm working in Melbourne until Christmas. But when I when I when my alarm rang at 10 to 10 to six in the morning and I took my phone at oh my god I can't get the ad that ad one message this morning. What the hell is going on? Oh my gosh. And then and then I there was a text message from Denise and me. Okay, that's the first one paycheck. Oh my god. Okay. This is the reason why there's a few Yes is the reason. Okay. Okay. Okay. That's incredible. Yeah, it was super happy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:04",
+            "text": "So one of our good friends on the show catcher is Canadian, and he said how much he loves your 2000 film crazy. All and the fact that it made suburban living feel very honest. And he wanted to know, Are there lessons or insights that you gained early in your career that you can still apply to something like dune? Well,"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "50:26",
+            "text": "it's yes. And it's, it's about trying to be as true to your to your set and the dunes and to push, and it's gonna sound weird, but don't give up easy on ideas. And it's like, push your limits. I'm crazy. We pushed our limits in multiple ways. I love it. There was not much Quebec films using soundtracks like that before there was no yeah, there was no one we did crazy, you know, like he's like, going through it sounds ridiculous right now but you know, like we needed to collect a Tupperware and I was like, listen this sort of the bike this bike nowadays it's common to do that. But back then in Montreal, like buying props or eBay. The producers were saying, Are you insane? You'll never receive those you don't like you're counting. You're counting on internet. It's yeah, it works it will work are approaching you know, like Lucas for Quebec movie again, like approaching Lucas Sims out there, right? Star Wars toys in the background they like why do you want to do that? Simplify yourself. Simplify your life that you see the so it's about that's what I learned. In those movies. You like pushing? It's pushing? It's pushing the limits of it. You'll you'll never know until you you ask the question. You know like this school for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:46",
+            "text": "your wife Martine Bertrand worked as a graphic designer on Dune I believe Yes, she did. Do you end up working out concepts at the dinner table? And did you work on this the human spider together?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "51:59",
+            "text": "No, no, no, no, no, no, no, no. We we did at the dinner table worked together on some stuff just makes you did on on arrival. On arrival she had done she she she created the aesthetics of the of the the language of the language she she created the aesthetics of the local brand. Really? Wow. On dune. She made the fish Euro. Yes. This mural behind the pulse behind polar treaty is dead in a residency in Arrington, she also did the carvings the designs of the carvings in the training room on Callahan. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:45",
+            "text": "yeah, beautiful."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "52:46",
+            "text": "And she made the tombstone the tombstone"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:50",
+            "text": "I love the look at the tombstones those were incredible."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "52:53",
+            "text": "Thank you, thank you to the to the tombstone for inspired by cemetery on an island off the coast of Greece. I started work they were quite interesting, those shapes. They're not the same but they're they're inspired by them. And then I asked Martine to create some reliefs"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:15",
+            "text": "Oh, yeah, the relief that that lado has his hand on right is so gorgeous on the top of the tombstone. Yeah, yeah, thank you. That was so my wife. Do you think we will ever see the dunk in space fall to dune? That was the alternate opening that that didn't make it?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "53:31",
+            "text": "If I don't know maybe maybe there's going to be a We should ask the question. I don't know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:39",
+            "text": "I know he doesn't do director's cuts. How"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "53:41",
+            "text": "can you how can you know you know, you know, you know that? The detail you were the jacket though? You are?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:47",
+            "text": "Oh no, it was it's an art of art and soul of Dune."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "53:50",
+            "text": "Ah, can't you think you can't? I haven't seen art and soul. It's an ad there are shots a cabin scene on Arden solar. It's beautiful. Yeah. Yeah, we shot it. It was it was beautiful. But anything in the editing room sometimes things change. Yes. And you know, like a Film A film isn't is an animal that needs to be seen and and it's in constant alteration until it's released. So it's a beast from there that needs to be tamed from from from the screenplay that when we shoot and that's what's fun about it as well. Making movies always in movement."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:35",
+            "text": "In the book, The Art and soul of Dune written by Tanya Lapointe, what is the most amazing thing to me is for many, many of the pages you cannot tell if it is a production design, or if it is a screenshot from the film. That translation was so faithful. It's really amazing."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "54:54",
+            "text": "Well, you know, it was great about about the collaborative effort, Greg Frasier and I had a, I always had a dream is I, whenever I work in a movie, and I see the scenic painters working with their sheep, the light lights, but multiple, multiple color temperature lights. And I'm like God, like, it's, it's must be so hard, you know getting the results make us it's not the right the right lightning so so I, Greg and I had a discussion, you know, like I'd like to give to give the best and I paint, paint work aging and picture for for you for the camera and it's possible to we do a first pass. And then you your gaffer genie comes in with a steam, they do like the pre light. And then after that, we can always have access to someone who will like the board. So the same painters can do their work with the proper lighting. Wow. So obviously, that has a cost attached to it. But that's how we that's how we, we worked on Dune. So it was meticulously lit by Greg and his team and the sets and then it gave it gave us like the other like extra time to finish the to do the paint finishes. And to give the the extra detail and depth. So sales team did an incredibly incredible work on that. And fellow devil Montrealer"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:48",
+            "text": "when I read that Greg shot the film and digitally and then printed it out to film stocks so that he could then scan it to be able to get a film texture. I was just like, That blew my mind. Greg"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "57:02",
+            "text": "is a He's a magician. I'm actually staying in his apartment in Melbourne right now. Oh, really? That's it? Yeah, I'm renting a space."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:11",
+            "text": "Plenty that that is phenomenal. Did you have a history with dune prior to prior to the movie? Yes. Yeah."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "57:20",
+            "text": "Well, yeah, I'd read it when I when I was a when I was a teenager, as opposed to they mean, I liked the book, but it was not a major influence in my life. But I reread it when the NEA approached me to do to work with him on the movie, I knew how important that book was to him, and how it influenced his teenage years. And I went Bucky so I will reread the book to make sure that I capture the the intricacies the essence and, and really catch the details and, and catch a couple of cues from from the book that are not necessarily in the screenplay. So that helps me in the design. So just just to details and because I wanted to make sure that I was I was capturing everything that that didn't he would for a lot of things that didn't that then he had seen in the book. So I went back to and then we had we obviously discussions surrounding the screenplays, but we were always going back to, to the written words. And then he encourages that as well. So like you always say, Okay, what, what would what would it be in the in the dune universe? So we're always going back to a bit like we did on arrival. Going back to the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:54",
+            "text": "to the short story. Right, right, which you can you can very much tell. I am curious, do you can you describe just a couple of your influences that you had when you were you know, younger? Or when you were first getting started films that particularly influenced you?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "59:09",
+            "text": "I would say that that the movie influenced me the most. I started with my dad when I was seven years old was Star Wars. Wow, I was so much into Star Wars. I was and I was fortunate enough same to have same for you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:30",
+            "text": "I was also seven yes in 1977. And I"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "59:33",
+            "text": "was fortunate enough to have my parents. We live in the suburb of Montreal and they had an unfinished basement. The basement was just not finished so I could do as a kid whatever I wanted in that in that basement. It could paint I could the disorder was I didn't care because it was just like raw. Wow. And so it's same with my toilet. And I started creating these worlds and I got First you take like 5%, then it becomes 10% 20%. And it just grew, you know that those worlds grew. And, and my parents whenever they had, like some friends over, they would say, lucky, we need to show you something. That's when the basement, look at the world. So I think that's where it all comes from. I guess. So. That was I was strange like that, you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:27",
+            "text": "that's amazing. So they really encouraged you. Oh, yeah, yeah, no,"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:00:31",
+            "text": "no, my, my parents. Extraordinary. They, you know, they, my dad was like, encouraging us to, to, to, to follow, to follow careers. in whatever field we we like we were passionate about. And the IS is idea was like, if you find something if you're lucky enough to find something that you like, you better do it. Because don't think about, about Oh, my God is going to be difficult. Everything is difficult in life. But if you find something that you're passionate about, you will never feel like working will always play. So you should do it. For all three kids. They were encouraging."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:15",
+            "text": "That's amazing. Yeah, that is the best advice you can you can get. Yeah, I guess. Let me ask just quickly, there's been some confusion or dispute, the Highliner the guild Highliner. Ship? Is that functioning as a gate? Are you seeing a planet on the other side and traveling through that? Or is it a ship that just has an open? You know, the the back is open?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:01:38",
+            "text": "Well, it's, it's a window to another world. It's more like it's a ship, it's more like a the way the way that it's functioning. In the book, it says it folds, it folds space, it folds the universe to allow you to travel. And we were playing with the concept of how does it travel extremely fast. And speeding with any I suggested at one point, why? Why does it can it just be like the figure inside a house and you look outside the window, you see second window to another world? On one side, if he's in the movie and one side you, you, you, you don't see the contour of the planet that you see on the other side. Should I should basically continue? Like, but But it's, it's like if you're in one space. And when you look down that tube, it's another part of the universe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:34",
+            "text": "So it sounds it sounds like it is functioning almost like a gate"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:02:37",
+            "text": "days and gate. It's it's but it's it's it's it's very conceptual. But it's it's again, it's a black hole. It's whatever you want to call it a bridge. Yeah, a bridge a bridge to another part of the universe. Can"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:56",
+            "text": "I ask what is the deal with the human spider? I mentioned it before, but like we had a theory that that was Dr. UEs wife, Juana that like the Harkins had experimented on her or tortured her like what was the creative brief for the human spider? If you if you can say, yeah, it's"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:03:13",
+            "text": "something that Denise came up with later in the game and he had a vision of a very strange bet that the Baron would have. And he said that can you think about like this grotesque latex, human spider? And he did a little sketch and so could you could you riff on that and and I worked with Greg Tozer from letter Okay, and we just like started riffing and and I don't think it's it's no I don't think it's want to know but but I may be wrong. I don't know it's something that came up straight out of the news imagination as a character"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:04",
+            "text": "well you to have a history with spiders going back to enemy"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:04:09",
+            "text": "Yeah, we have a spider"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:15",
+            "text": "can I ask I saw on your IMDB page that that you're involved with Tron three is there anything you can say about that? Or what your what your role is?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:04:24",
+            "text": "What I can say about it is that I had lots of fun during I was fortunate enough during the pandemic and the lockdown in Canada to be able to work from home. And I was working with Garth Davis through took it through the Greg Fraser connection again. My brother Greg, and he said You two should meet. We met we started developing Tron together. It lasted for for about three and a half, four months. We had a lot of fun. We we have a great we have a good one. A great visual Bible that worked on unfortunately the studio decided to, to put it aside as a project and not go forward. It maybe someday we'll come back. I don't know. I hope it does. Right. And we have lots of fun. We definitely had a lot of fun."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:20",
+            "text": "I hope so. I mean, that is a you know, whether it was Tron, which you probably saw like I did in the theaters, changing your life in terms of like, what a what a movie could look like. Just that that was a very formative film for me. Oh, yeah,"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:05:36",
+            "text": "the Tron. The first drawing is is definitely like an art show, which is like a dude with a drink drink though. The early 80s. Tron and doom came out there was like, Whoa, and it was just kind of it was massive. Visual effects for for needs, as massive star was, was, you know, for me for different for different aesthetics different was like, Whoa, no, it could be that as well. So it was, it was exciting to see."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:07",
+            "text": "Is there anything you can say you're most excited about for Dune, too? We we obviously, you know, are looking forward to the introduction of fade Rotha, we're hopeful that we could get the gladiator scene, which is one of the best scenes in the book. But is there anything that you can say without giving anything away that you're excited about?"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:06:28",
+            "text": "I would say I'm just excited as everybody on the team, from Jacqueline to Greg to Paul, Joe, to just given been given the opportunity been given the opportunity to travel to America again. That's all I can say we were were quite, quite excited to go back and finish the story. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:56",
+            "text": "I am stunned, you know, watching the reaction of this film across the world, and people who have no experience with dune that are caught up in it and trying to understand it and really just the conversations that are happening. It's it's a really wonderful thing to see. And so I thank you so much for for the part that you've had in helping to make the definitive version of Dune. It's"
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:07:20",
+            "text": "a pleasure. Thank you. Thank you for having me. And when I was told by people that they apparently, well, I've been told that the book, people are going back to the book as well, which is which is wonderful, you know, like the movie. Like instant, like the movie inspires people to do to go read the book. So that's, that's, that's great. That's great, because it's a it's a bible of science"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:51",
+            "text": "fiction. Absolutely. Well, well, Patrice, I hope you are well rested and ready for the next two years."
+        },
+        {
+            "name": "Patrice Vermette",
+            "timestamp": "1:07:59",
+            "text": "I hope to thank you. Thank you for having me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:03",
+            "text": "All right. Thank you so much. We really appreciate it. All right. Well, that was fun. What do you think how to go?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:14",
+            "text": "You really nailed it. I just want to say like in a number of contexts lately, you've really shown tremendous growth as a podcaster. I thought you were great on the X ray vision pod."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:25",
+            "text": "Thank you very much."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:26",
+            "text": "I thought you were I thought you were great with Danny. I think you're I think your IMAX question to Danny actually the and his answer to that as continue to pay dividends and give us insights into the movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:38",
+            "text": "Holy moly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:39",
+            "text": "So yeah, this is really just the next step in your evolution. Is this solo flight that you took?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:45",
+            "text": "No, no, no, no. So yeah, I mean, I continue to be crushed that you were not able to be there. And you know, I just promised Patrice and I will have times where you'll be able to hang out with us in the future. You know, when we're when we're on the set of Dune to you can"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:02",
+            "text": "just send me some facetimes from you from you and Patrice on the set together. Perfect."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:14",
+            "text": "All right. Shall we get into some letters?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:16",
+            "text": "Yep. Let's do it. Oh, my God. Wait,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:18",
+            "text": "hold on. I have we have an extra we have an extra letter that I didn't realize. Oh, wow. Here is the first voicemail. Hey"
+        },
+        {
+            "name": "Daniel voicemail",
+            "timestamp": "1:09:29",
+            "text": "guys, it's Daniel formerly from Colorado. Sorry, I wasn't able to make it last night to your guys's screening, because I got a new job and it required me to work on the day of the showing so I was unable to go to any showing last night however I finished the first showing that they had available in IMAX in the morning, today. Holy cow I have not sell some of those emotions since I first read the book. That was so good. I am super excited to listen to this episode that you guys are just about to start recording. i It sounds I that was one of the best book to film adaptations I've ever seen. Anyway, sorry, I haven't called me in a while. I've been really busy. Love the show still listening as much as I can. Have a great day."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:27",
+            "text": "Daniel, awesome. Formerly from Colorado. Thank you for joining us is doing the best, most faithful translation of a book to film. It's pretty faithful."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:38",
+            "text": "I mean, it's it's definitely it's definitely a faithful adaptation. There are some pretty clear changes, and it's only half of it. I'm trying to think of what's like more. What's like a better a better version. I don't know. I have to noodle on that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:56",
+            "text": "It's tough. It's tough to do. All right, here is our second voicemail. This one just coming in under the wire at the last moment. Here we go."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:11:10",
+            "text": "Hey, it's Cory calling in real quick last minute. I don't know if I'm gonna make it in time for this amazing special episode. Briefly, I did have a question regarding the art and like coming into dune and those hopefully you guys are talking all about this stuff. But there's an artist. His name is a British artist named Richard Clifton day. And the wild fantasy artists and I got some of his vibes from dune like the film obviously. Especially some other like rocks and stuff. I don't know, it's probably one of his more famous works was adapted to a Blue Oyster Cult album cover called cult, the source Erectus. Have you anyway, I was wondering who are some artists that maybe inspired some of the look and feel of Dune, and just getting those those all that world building and just I mean, the detail is so amazing. And obviously there's inspiration is drawn from all sorts of things and where there are some artists that really helped influence the design work anyway, so I don't know. Sorry. So quick. I hope you guys are talking about everything. costuming, and oh, man, what an exciting episode. I'm so glad you got the special guests. Thanks, you guys. Hopefully this McCollum makes it if not, I'll call you on the next one. Bye. Korea"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:25",
+            "text": "never misses, never misses. I'm looking at this fucking saurus rex situation. This Richard Clifton de monster. It's wild. It's fucking wild. And it does have kind of a it does kind of have an Eric keen vibe to it of like sort of like a crenulated rocky organic surface like, basically if like, if like something that one's living had become coral, and went to the desert to terrorize people."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:58",
+            "text": "But the concept of a creature that is that large, like where it's dwarfing mountain ranges that is pretty terrifying. Yeah, I love that. So I'm gonna go with all the way back to the dune, the illustrated edition, which I had when I was a child, and purchased again at great expense last year, John shareowners art is phenomenal, though, just the look in the field, and he did a bunch of covers, you know, in the 70s that were really, really fantastic all the way through chapterhouse I guess in 85, where he had he had the ship that's kind of shaped similar to the guild, the guild ship. So yeah, I in my mind, that's the definitive vision of of Dune. Amazing. My big frustration of Lynch's 84 was the fact that the Fremen didn't have robes, because they definitely are described the robes are very important in the books. Yeah, but you don't want like a heavy, bulky difficult robe. So I found like, Danny and Patrice his version perfectly match that to have something that had some cover, but wasn't too bulky. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:08",
+            "text": "I thought it was great. I also liked that. We repeatedly see people like sort of disrobe, like sort of just like shake off the, the their little, you know, wraparound shawl situation, when they're like ready to fight. Basically, when they're ready to throw down. They're like, Alright, I'm just gonna shrug this off because it's gonna get in the way Duncan does that Paul does that. They all do that in, in various scenes. I really like the little detail right before Paul is going to fight Jameis at the end, where he takes off the mask and pulls it over his head and like, you know, it just makes the costume feel real. Like it's like, you know, it's like, oh, yeah, like there are there are parts that you would take off of this thing. It's not just like something that they're sealed into and like it's immovable."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:55",
+            "text": "I love that shit. Incredible. I was worried when Duncan threw his gloves down. I was just like, Dude Get like you don't have your glove on. You're still suit like, what are you going to do when you get out of here? But he was,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:04",
+            "text": "he knew he knew."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:07",
+            "text": "catchers asking me via DMS. Can he ask a general question? He's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:12",
+            "text": "gonna He's gonna email. He's gonna email his question. Plenty of time to get it to you before"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:18",
+            "text": "we owe for tomorrow for tomorrow. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:20",
+            "text": "yeah. Like, you, you you in general like Matt decided we were going to record this like intro at like 1135 and just started DMing everyone was like, you're ready we're gonna immediately with your questions. Are you ready? And everyone was like, I have a job like I'm at work. I can't. What are you talking about? In the next 20 minutes? And Cory like your office PPE. Yeah, stripped off his desert shawl ran out and did it which we appreciate but no one else should be required to follow ah into the fucking void like this. Except that is."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:02",
+            "text": "That is fair. All right, our final voicemail. Here we go."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:16:09",
+            "text": "Tune pod. Jason H is catcher. Episode late. But this movie rocks, man, this movie rocks. I love this movie. It's not perfect. It's got problems. And if I'm on the show again, we can hash it out then but men. Movies like this movies are always being talked about as being made big budget movies are all that we get superhero movies franchise movies. And this is a franchise movie and that it's based on an old IP. And it's a big tentpole kind of movie. But my God, this is unlike any other tentpole movie that's been made in a long time. This was truly something different, something miraculous, something personal, and yet something otherworldly, and it had rude materials. Boy, Jenny knows what to do. Thanks to Danny, for putting his child hood imagination on screen for us and taking us there. And I'm really hopeful for part two, because I don't want to live in the timeline. That doesn't have part two. Thanks for letting me come on this journey with you guys. Keep going keep doing it. And hopefully you'll see you soon. Okay, but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:33",
+            "text": "amazing. Catcher has really been on the journey with us for a while. I'm glad he left a voicemail. I'm glad his written materials were there for them. Because I felt it. I felt the written materials. 100 I use it as soon as I saw. As soon as I saw the spa room materials. I thought I'd catch her. I knew he'd be stoked. Alright,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:50",
+            "text": "Jason, thank you for joining. I could not be more thrilled about about this movie and about this podcast. And I just really appreciate everyone who has taken the journey with us. And onward, man. This is just the beginning. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:04",
+            "text": "is just the beginning. We got two more years. Yeah, that's great. Let's do it. Let's go. Let's go."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:16",
+            "text": "And that's it for this very special episode. I want to thank Patrice for an amazing conversation. Later this week, we're joined by the director of the Syfy mini series Children of Dune and HBO Max is upcoming game of thrones house of the dragon. Greg he attained this. Greg shares behind the scenes stories of both shows and we talk Terry Gilliam's time travel paranoia and classic 12 monkeys. If you're enjoying the show, be sure to hit that follow or subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. A link is in the show notes. Dude pod is a Tech Tech podcast John is a production of H industries. Our artwork is by capture in our theme music was composed by Toby Foresman of whips on music transcripts provided by Sophie shin. The episode was edited and produced by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

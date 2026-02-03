@@ -1,0 +1,1861 @@
+{
+    "episode_number": 100,
+    "episode_name": "Black Hole",
+    "dialogues": [
+        {
+            "name": "Tapedeck",
+            "timestamp": "0:02",
+            "text": "is a tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:15",
+            "text": "Hey everybody, it's H and welcome to the 100th episode of Dune pod, your one stop shop to enjoy the new dune movies. This week I'm joined as always by my co host Jason and by the co host of the 70 millimeter podcast famous artist Danny Havas"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "0:33",
+            "text": "will the thing is there to have a ride at Disneyland where you go to hell and that's Mr. Toads. So you got to hell on that right and they can't have two rides where you go to hell we"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:41",
+            "text": "cover the science fiction, or maybe horror or thriller. I don't know. The 1979 Disney movie The Black Hole streaming now on Disney plus, if enjoying the show, we need your help. Leave us a five star rating review wherever you listen to your podcasts and be sure to hit that follow subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want a link is in the show notes and now without further ado you in episode 100 that black hole don't count down to 100"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25",
+            "text": "this is it this is it. I do you have a special sound or like a like a 10 987654321"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33",
+            "text": "I thought about doing that like I thought about doing like a hardcore you know maybe we'll put something in in post but yeah, that's that's pretty much all I have. You know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41",
+            "text": "I can't believe it's 100"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44",
+            "text": "down to 100 The countdown is over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48",
+            "text": "Oh my god. Danny"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50",
+            "text": "you guys recently hit 100 episodes on 70 millimeter How did that feel?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:54",
+            "text": "It felt I felt old it's been a long road but yeah, it's a nice that's a nice milestone. You guys did it. You made it how"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:04",
+            "text": "have things changed for you since hitting that milestone and how do you predict things will change? You think Jason will start to get an ego or?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "2:12",
+            "text": "No Jason Jason will get an ego I know that for sure. Oh yeah, it's a good day. I don't know if much changed. We found a groove that's the nice thing felt like you found a groove route 100 We're just cruising now you know Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:28",
+            "text": "Yeah, it's been I mean it's been amazing to listen to you guys were the the inspiration spinning out of the paper cake discord that we had into you know essentially tape deck and the launch of 70 millimeter which then spawned during pod baton spider last light will run for I got Patton spider, what else who must I'm gonna send it off since"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:49",
+            "text": "like, just incredible. Too many."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:51",
+            "text": "And you guys, you guys, we"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "2:53",
+            "text": "should trim the fat."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:57",
+            "text": "For the next season, we're gonna start to start to take"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:59",
+            "text": "the lowest performers get cut. It's like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:05",
+            "text": "well, you have to hit that 100 That's the first requirement."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:08",
+            "text": "You got to do it. certification purposes, right? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:11",
+            "text": "Because as soon as you get to that 100 Then don't count down to 1000 No."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "3:20",
+            "text": "1000"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:21",
+            "text": "You ready, Jason?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:22",
+            "text": "I don't know, man. I'm not gonna live that long. It took what two years to get to 100 basically do the math. Yeah, yeah. Oh my god. So I just Yeah, I already had the colonoscopy once it's not gonna. I'm not gonna make it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:38",
+            "text": "The only way you stopped us was you had a baby like that was literally the only break ever took. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:43",
+            "text": "I mean, look, if you can give me some more Demerol I'm in. That's only that's my only condition."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:51",
+            "text": "Oh my god. Well, it has been an absolutely wild ride for these last two years. And I'm just so thankful for everybody that has joined us and for the community that has grown up out of the discord. It's absolutely amazing. That's great. Just to see to see everybody here and you know, Danny, we are so stoked to have you here with us tonight. Special guests. This is your this is your opportunity to join the doon pod five timers club. Oh my gosh, five times. nasaka That's amazing. Osaka rogue Rogue One."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "4:26",
+            "text": "Tron Legacy"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:28",
+            "text": "Tron Legacy dune IMAX premiere IMAX premiere. That's"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "4:32",
+            "text": "right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:33",
+            "text": "Remember that you said this is the greatest film generation can't wait to 100"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:38",
+            "text": "It's episode one. Reopen was Hi. Hi, baby. Yeah, you are Hi. Out of that out of the Florida swamp heat radiating off of you. Right, right. Right. The"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:53",
+            "text": "good news is we have that night forever. Yeah, it's there with us forever and we're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:57",
+            "text": "gonna listen to it now. It'll never be used against me. I don't think I've ever been as high up as I was after that IMAX that night, to be honest, I was more I was more hype out of the IMAX premiere. And then I was after seeing the movie. I will I will say that, like the IMAX baby was the best experience."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:15",
+            "text": "But that was the first time you've been back in a theater in two years. Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:19",
+            "text": "It's so special for so many reasons. Yeah, combination."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:23",
+            "text": "Yeah, we start so we started the podcast in May of 2020. So now we're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:29",
+            "text": "gonna walk you through the last every hour over the past two years."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:34",
+            "text": "You know, I I meant to take notes or something, and I completely forgot. So we're not doing any of that shit. Like it was. Let's just say it was good. And Denise likes us. Can we leave it at that? Yeah. Okay."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:46",
+            "text": "That was great. All right. Very good. Very"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:47",
+            "text": "good. Well, yeah, it's been an incredible journey. And Danny, we're so thrilled to have you Tron Legacy. If you anybody listening to this, who hasn't heard the Tron Legacy episode, which was one"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:55",
+            "text": "of my favorite episodes we've ever done. Oh, man. We have our asses off. It's yeah, it's rekindled my joy of that movie to like, we actually listen to the soundtrack. Rinzler Yeah. Griffin's favorite track is Rinzler. And he asked for it by name. Maybe? Yeah, that's great. A real gift."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:15",
+            "text": "We're really stoked to Danny to have you come back for back to back season finales. Because tonight, in addition to Episode 100, is also our season five finale. And we thought, you know, you have a very special place. As a famous artist. You do a lot of artwork around Star Wars and space properties. And then you are also a Disney master. Your father worked at Disney, correct? Yeah."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "6:42",
+            "text": "My father and my uncle both were around the beginnings of Disney. So my uncle worked on building the Haunted Mansion when it was first being built. And then this is in Orlando, Disney World. Yeah. And then my dad works. Doing a lot of stuff. Your"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:58",
+            "text": "dad was there with Walt."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "7:01",
+            "text": "And then he did a lot of building at the Polynesian hotel and stuff like that. Wow. And he moved on. And he worked at Universal Studios when I was being built to love the jaws ride stuff, huh? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:13",
+            "text": "my God. So he didn't also quit Disney to go work on Waterworld. No, no, he"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "7:18",
+            "text": "got fired by Eisner the big layoffs. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:24",
+            "text": "I haven't tried to remember when I first became CEO because I lived in Daytona Beach at that point. And I think they raise the ticket prices for the park from like really $19 to $22. And it was an absolute, like sensation chaos. Yeah, I believe. Well, so they had had a it was interesting. The period that we are covering tonight in Disney was kind of like the dark days. Yeah, you know, years after Walt had had died and they're really trying to figure out what they were doing and they hadn't had a hit really since the Jungle Book. And so they were trying to branch out and so we are tackling tonight they"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:01",
+            "text": "got a real big branch with moss hanging off of it they got a real Degas Bob branch. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:12",
+            "text": "no doubt like this is this movie is is truly wild. And we're gonna get all the way into it. But we are talking about tonight. The black hole. Black Hole streaming now on Disney plus, I think it might be 4k."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "8:25",
+            "text": "No, no, no, but it had a Blu ray transfer. Okay, all right. Good enough. Definitely good enough."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:35",
+            "text": "I mean, it is beautiful. Like,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "8:37",
+            "text": "I can see Peter Ellen shows matte paintings and 4k I'd be down. Yeah, for sure. For sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:42",
+            "text": "Absolutely. Absolutely. So we're gonna get into that at the bottom of the hour. Before we do just briefly next week on Dune pod. We are taking a week off Jason. Are you ready?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:56",
+            "text": "I am I've already been. I'm on I'm on vacation right now. So I'm looking forward to not having to record on vacation. And the only issue is that whenever we do that, something terrible happens. So we got to like we need everyone to send positive vibes. And like you know, light a candle. Do whatever you need to do, but help us win. Do something for us, please."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:22",
+            "text": "Yeah, I think it's gonna be fine. Because we are releasing as soon as we hang up tonight. For episode 100. We are going to be recording a new wraparound segment for Episode One. And Danny we're releasing episode one the special edition."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:40",
+            "text": "Excuse me? Yes. Special Edition of episode one. My clunky"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:48",
+            "text": "it happened because I didn't know how to edit an E N N slim word like yelling at me to lay off the noise gate. But I basically did an unlistenable edit and that is now We're going to be fixed by our professional editors over at edit audio the best in the business. And there will be some new wraparound segments, including voicemails, and some other things that are going to kind of make it like we're really going to take off now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:13",
+            "text": "Beautiful. You know who's in episode one doing pod? Special Edition is 70 millimeter cohost. prophylaxis. Yes. Yes. Who loves a moment viciously like one of the people arrested in Idaho last week, I just the mug shots came out. I'm not saying he was there. I'm just saying I haven't heard the alibi. But he looks suspiciously like one of the people that was arrested. So we maybe will cover that in one of these wraparounds referring to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:46",
+            "text": "I don't know if it's you but for me, Danny in the 17 millimeter discord has used the rephase app so many times to put prophylaxis Yeah, anything and everything. I think all pictures I think look like proto 100 your way."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:59",
+            "text": "I just see throw in the universe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:03",
+            "text": "Amaze clouds. Yeah, exactly. In the branches and branches with moss hanging off. Yeah. So so we will be doing a special edition next week. And then one short week thereafter, in the dune pod season six premiere season six, season six, no red wire only"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:23",
+            "text": "had five seasons. Like a lot of things stopped at fives. That are considered quite good. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:31",
+            "text": "hear you. I hear you. But we must continue. There's no stop it. So we are welcoming onto the pod. I'm so excited. So we have vulture film and TV journalist. And then I really discovered her as the co host of the incredible station 11 podcast. We are welcoming on the pod Angelica Jade bass tn."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:59",
+            "text": "Yes, a great one. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:00",
+            "text": "this is gonna be amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:01",
+            "text": "Yeah, this is great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:02",
+            "text": "Yeah, I'm really excited to have her here. And so you gave her a whole slate of stuff to choose from. And she picked Bobby and owl. Robert, right. And, and our main now. Yeah, exactly. So we are doing finally heat."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:24",
+            "text": "Oh my gosh, yeah. That's a movie that premiere. Very few Gen X dads have thought about or talked about on microphones before. It's a somewhat never been done that for Kent releases come in, though. Yeah, that were the sizzle reel for that. We're gonna try to get on that 4k release."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:44",
+            "text": "I already had the 4k digital version. So like, I think I'm going to be okay, but we'd like to get that steelbook for sure. So that that is next week. And that is that's going to be awesome. So stay tuned and check that out. How about if we do some do news? Would you like to know more? You might need to get a new sound or you're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:08",
+            "text": "like I don't think 101 i Yeah, like you're gonna don't worry about it. You folk focus on yourself. I know. Dude, new sounder. Alright, very"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:18",
+            "text": "good. So first of all, I have two quick pieces of due news. The first is our dear friend Rob Schroeder, who has been on this podcast four times he did prisoners Inside Llewyn Davis Donnie Darko. He is not in the five the five club yet though 1917. He is not in the five do not get into making sure soon soon. So he is the Emmy award winning producer behind varieties actors on actors and the new season just came out and this is the first time they're back, face to face. And so they have guests such as Zendaya and Andrew Garfield, together Watch out, which is amazing. Jeanne smart from hacks who I love. And then they were supposed to have an episode of Josh Brolin and Jeremy Renner. Last minute, Renner had to drop out. And so they were kind of stuck. What you know, I guess we're gonna have to cancel and Berlin's like Alright,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:16",
+            "text": "no problem."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:17",
+            "text": "I'll do it. I'll interview myself. So he takes two roles. One role is kind of like the innocent young version of Brolin and then the other is like the hi hat. You know, stuffy actor, dude, dude,"
+        },
+        {
+            "name": "Josh Brolin sample",
+            "timestamp": "14:29",
+            "text": "I think is a great hybrid of high art and accessibility to a wider audience. Are you sleeping should I wake him up? No, I was listening. I was listening. Thanks for spending the time talking with me, man. I appreciate it. I hope we get to do the To get some time,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:01",
+            "text": "good luck. It's fucking hilarious and amazing. You see the behind the scenes him like taking the hat off and switching chairs, and then going back and forth really, really great. So we'll have a link to that in the show notes. People should check that out. Roland"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:12",
+            "text": "seems fun. He seems like he'd be a fun hang. Like, he writes like he does that weird. Like dune. He did that weird thing for the artists all of Dune Special Edition, where he's like, how about some of my poetry? And I was like, Yeah, about Yeah, sure. It's not great. But like he still he had a theory and he went with good for him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:34",
+            "text": "He's great. He's gonna have you watched out arrange Danny."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "15:38",
+            "text": "No, no, I haven't. I've been wanting to. I watched the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:41",
+            "text": "pilot. And it was really good. I'm kind of like scrambling with the amount of media that I have coming up here right now. But I definitely want to pick that back up and see where it goes. I think it's just eight episodes in this in this first season. So great. production value is basically like Yellowstone meets X Files. So right up my alley. Yeah. Yeah. Second piece of do news. Just quickly, the sisterhood show runner, Diane Idema. John was seen rocking a mug from Etsy that said Bene gesserit vocal coach."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:15",
+            "text": "Yeah. That's great. I don't do we need the show like that? Instagram was as good like, we don't even need the show. That's why I feel she won. Give her Yeah, we're good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:25",
+            "text": "Can't wait to see what's gonna happen. It certainly bodes well. Yes, it does. Seems like she gets it the vibe of the photo. If"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:32",
+            "text": "that's the show. I am 100%."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:35",
+            "text": "Let's go. Yeah. And she just looks really happy and stoked. And yeah, super chill. So yeah. Big fan of that. So stay tuned. Also, we heard today that apparently pre production is well underway on the show. And from FIDIC and warrior that will go nameless. So there are we have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:55",
+            "text": "assets deployed in Ireland right now. Actually. Who could who could go investigate this for us? Huh? I thought that was in Scotland. No, we have assets in Scotland too. We're well represented across the various Celtic nations but like, you know, I'm just saying activate activate Shamrock. If you're hearing this, you know what I mean?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:17",
+            "text": "I like sharing this code. Could it be doodled"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:19",
+            "text": "before?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:20",
+            "text": "Okay, all right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:22",
+            "text": "Don't Don't mess with the codes. Jesus. Sorry, the automated ah we can already activated it's one way it's a one way pad. We can't make this change and mystery. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:35",
+            "text": "I forgot. I forgot I forgot the training manual. Yeah. Alright, let's say hello briefly to some new discord friends. Shout out to Matthew 08 mathmatics. Bomb Bri and from the baton spider listener feedback segment. Our dear friends Mr. Koh Blasto, who we'll be hearing from later. And Tim John. I just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:57",
+            "text": "want to note that what you said from the baton spider listener feedback segment a daddy laughed. I was like, this is preposterous. That is like a place where someone is"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "18:11",
+            "text": "every time I listened to Baton spider when I get to VMs I'm just hoping there's a blast. So yeah, like I look forward to it every episode. Agreed."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:19",
+            "text": "I do too. But it's also really scary every time it's like a hostage situation. I love chuck it down like sweating bullets. So we're gonna get our turn in the hot seat in in just a few minutes. Danny, what do you have for do news?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "18:34",
+            "text": "Do news. I am looking forward to the part two. Oh, nice. All right. I'll bring you let's Okay, let's keep that energy. That's the energy of very good. I'm looking forward to it. Are you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:46",
+            "text": "are you going to see Elvis? Are you excited for Austin Butler who will be featured in dune as fade Rotha? I am"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "18:52",
+            "text": "not sure because we were a massive Elvis family growing up and it's this version of Elvis I trust as though that's the thing I trust as and I I'll I'll drag my feet on seeing this I'll probably stop going a third time before I see"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:12",
+            "text": "the kids that Mrs. Elvis and little Elvis have both said this is like the best representation of that's all Elvis that they've I'm glad. Yeah, there's some I mean, in the trailer. There's some absolutely amazing gorgeous shots. So I think Tom Hanks is also what's dragging me down. Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:28",
+            "text": "Yeah."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "19:29",
+            "text": "That's good views. You"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:31",
+            "text": "haven't even seen Cloud Atlas. So how far it can go? Yeah, that's"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "19:35",
+            "text": "true. You're right. Love Me Tender."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:41",
+            "text": "You know, I do is wild. Whatever he's doing is wild. He's gonna get an Oscar for it. is on sale. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:54",
+            "text": "Are you guys ready to get into this?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "19:57",
+            "text": "Let's do it. Let's go. Okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:59",
+            "text": "Hey, all right, here we go. The black hole is a terrifying journey to the frontier of the universe and the limits of our own sanity. The crew of the USS palominos years long mission to discover extraterrestrial life is jeopardized when they're caught in the pole of a supermassive black hole. Only the dramatic intervention by a mysterious ghost ship. The fabled USS Cygnus, that has been missing and presumed lost for 20 years can save their lives. But this respite is short lived, as they are drawn into the orbit of sicknesses captain, the infamous Hans Reinhart and his robotic crew, led by the terrifying metal monstrosity, Maximilian, having created incredible technology that can counteract the crushing forces of the black hole. Reinhardt is determined to enter it and emerge in a place where the rules of physics no longer apply, where they can live forever. This sets off a desperate scramble by the Palomino crew to escape a ship under siege. Can they resist the pole? Or will they be forced to confront firsthand what is in through and beyond the black hole?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:14",
+            "text": "Yeah, I saw what you did with the drawn into Reinhardt's orbit. I just like that one out. I just call that out as a little piece of general relativity that you physicist Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:25",
+            "text": "Huh? Danny? Yes, you you're the guest. You pick this movie? Tell me. What was your first experience with the black hole?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "21:34",
+            "text": "Oh, man, this I watched the black hole before seeing any Star Wars. This was I grew up with this movie. Disney movies were rampid in our house. So I vividly remember the tan off white Disney home video VHS version of this that we had floating around our house. And I would watch it quite often. Yeah, I actually really enjoy this film. But it's it's a bit of nostalgia fog for me watching as a kid and loving it as a kid. And so my I mean, it's been a I've watched it right when Disney plus started up again. And they had it that's the last time I'd seen until recently. So yeah, for me this was this was kind of in my growing up childhood for sure. Hmm,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:20",
+            "text": "I have I you. Yeah, totally the same. We I think we had like the official release, like the clamshell black, or whatever. And I saw it a ton. And it was one of those movies that like terrified me. And I had questions about and my younger brother David, I think was particularly terrified by Maximilian and like the whole in sequence as such that like I think we just didn't watch that part of the movie. I think we would just get to like, when they do we get to like essentially the last 10 minutes of movie and be like, and you know, we're good. But like all of the parts that are like the jumpscares in the movie, like really are seared into my memory. I remembered every single one of them. Like with laser clarity, right? Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:07",
+            "text": "Ernest Borgnine holding his leg"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:14",
+            "text": "searching has just such a cast that they got for this movie. It's really amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:18",
+            "text": "I do have one question. So Corey posted that the off white clamshells channel. Yeah. Jason How did your dad decide when it was like buy the clamshell versus do the bootleg?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:30",
+            "text": "I mean, it's possible he just took it from the store like I'm not sure. Like again like so like for those who are following the saga. My dad owned a video rental store in the early 80s. In St. Louis, Missouri, pre blockbuster it was crushed by Blockbuster and it's unclear whether even a blockbuster hadn't come along if it would have survived given the apparent rampid fever eat like my father was engaged in and he's just general like asshole ish does that isolated all business partners and clients and customers that would come to the store but it meant that we had a pretty great collection of VHS and beta growing up. Hey, that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:12",
+            "text": "counts for something. Yeah, yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:14",
+            "text": "mean not it's not you know, exactly sufficient condition for a father but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:23",
+            "text": "so same for me, I watch us I might have seen this in the theater, but definitely saw it many times. You know, on beta at the house and really, really loved this movie. I feel like I had like coloring books and other stuff. Just something about the design of Vincent and Maximilian were just those are really iconic for me. And so I absolutely love this film. So just starting out from a behind the scenes This was originally pitched as Poseidon Adventure in space, right and we're Towering Inferno space station one and the concept was you know get a huge cast of Hollywood stars and put them on a space station and have a Meteor Swarm and then see who can survive. And it languished for a long time in development like over five years, and it got reworked after Star Wars to add cute robots and make it more adventure based. But specifically we had Robert McCall who came in to design Vincent and the Cygnus and we've got artwork there which we'll we'll post up or I"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "25:28",
+            "text": "mean, not to not to talk about Disney Parks again. But Rob Lee was a massive mural artists for Epcot. And he did the the prologue and the promise mural that took him 10 months to paint that was in the horizons ride. Share App the original Yeah, the OG it's an it's an absolute gorgeous mural."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:51",
+            "text": "That craft is that craft food who was who was horizons."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "25:54",
+            "text": "Skippy was a Skippy"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:58",
+            "text": "peanut butter and progress."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "26:01",
+            "text": "But yeah, he was mad. And he also did the 2001 poster. He did a lot of concept art for 2001 Space Odyssey, the famous poster of his with a whiteboard, or that's his painting. Yeah, the Star Trek concept work did a lot of stuff for NASA causal legend, huh?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:15",
+            "text": "Well, and so the photo that I dropped in events, you can see he had the sickness as all white kind of metal. And basically, with this movie kind of languishing and they couldn't get it off the ground. They went to to Peter Allen Shaw, who was this legendary matte painter and production designer. And his first film was The Scarlet Pimpernel in 1934, right 44 years earlier. But he was the one who changed the design to make it like all glass and steel, instead of battle on the outside, which, to me the design of this film, whether it's the sickness or the robots, or whatever, that's the thing that really stands out and makes this an epic film. So just incredible, what they accomplished with the design of this."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "27:02",
+            "text": "I agree. I love the ship to sicknesses, and incredible design and that 12 foot model that they used to film the the miniatures alone. I just can't get over. I love them so much."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:14",
+            "text": "Yeah. And so Danny Lee, who was the miniatures special effects guy said they spent all of 1978 and they built two of them, because they knew they had to blow one of them. And he's like, I'm not gonna blow it up. And then have you tell me you need more shots? We're building to them for $100,000. And they were 1/16 scale models. 12 and a half feet long,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:37",
+            "text": "insane. That's great. That's the contact method of why build one was you have to twice the price."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:43",
+            "text": "Exactly."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "27:44",
+            "text": "We talked about contact. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:48",
+            "text": "Both of our podcasts I've covered. Talking about it for days. Amazing. So the script ended up developing into 20,000 Leagues Under the Sea in space. This cast was incredible, whether it's Robert Forster or Maximilian Schell or Anthony Perkins. Initially, they considered casting a young, unknown woman named Sigourney Weaver in the role of Kate McRae. But the head of casting Balt had her quote, unusual name and rejected her. Fuck"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:19",
+            "text": "her name. That was the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:20",
+            "text": "reason that was the note"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "28:22",
+            "text": "insane. That's great. And then this film releases the same year as alien. Exactly,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:26",
+            "text": "exactly. And the whole thing was produced in house. This is the last behind the scenes, but this is incredible concept. So they'd wanted to rent ILM that Dykstra system, and they couldn't get out. So they had to build their own system called aces, automated camera effects system. There are 500 VFX shots and 150 matte paintings in this film, it's just the scope. I think Star Wars is like 300 or something like it's less right. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:51",
+            "text": "well, and the other thing is, there's all these shots where it's like so many different effects being layered on top of Yeah, like there's, there's just this real compositing of a bunch of different eras of filmmaking from like, what was then cutting edge to like, you know, cutting edge, you know, Star Wars style cameras, and motion control stuff to like, you know, matte paintings like to, you know, like just traditional Disney overlay stuff that they've been doing since Snow White, like, you know, like, all these different things. They're just like, we'll do it all. It's a real storehouse of technique for this time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:25",
+            "text": "That Snow White shit is amazing. I saw that at the Walt Disney Family Museum white shit. It's a time I just thought well, they had all the layers and like each layer could move independently so they could zoom outs."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:39",
+            "text": "Yeah, well, they had some they had something back then. Genius fudge. Yeah, very"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:45",
+            "text": "impressive. All right. Well, so it started out I don't remember this on my VHS copy. But it started out at least on Disney Plus, with an overture If"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "30:09",
+            "text": "I didn't remember that was I don't know. I don't think that was I don't think I don't think it was on the VHS but I only remember it from watching it on Disney plus."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:17",
+            "text": "So it's two and a half minutes long and it's like the hero theme and it's like super jaunty and weird and like, does not to me fit very well."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:26",
+            "text": "I thought something was wrong with Disney but I guess the last thing I expected was an overture. I was like, oh shit, like the pic because Disney plus could be janky sometimes, sometimes, like the picture just goes away or you get weird errors. But I I skipped ahead was like Oh, like this is like supposed to be the credits but nothing's showing. I was like, Oh no, they're just doing like a Lourdes of Arabia right now like this is like setting"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "30:52",
+            "text": "the same thing Jason and I already watched on Disney plus, and I still forgot. I'm like, Oh crap. The videos not here. This something's happened with my picture. Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:01",
+            "text": "but Jack cables. Get Bobby I add them on the horn"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:07",
+            "text": "is the coax loose."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:09",
+            "text": "So once it cuts to the actual credits, and you have this dope ass, really creepy music by James Bond's John Barry. Yeah, which is phenomenal. And then you also have these 3d vector graphics of the black hole like Jason, how did that hit you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:28",
+            "text": "I was like, oh shit, that's 3d vector graphics. It's like it's like, you know, Tempest, the arcade game or whatever. Like, they had that and they have this wild ass, like James Bond, like, it's sort of like Philip Glass does James Bond the score? It's like this very, like repetitious, like, you know, just over and over again, as you go into, like the, the, you know, Atari Blackhall. I was I was and the music I remembered instantly and was immediately stressed."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:56",
+            "text": "It's not gonna be good, right? Well, it's stressful"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:58",
+            "text": "music. It's like, just as bad and like, it's just like, biking. Tried to drill into your head. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:07",
+            "text": "Yeah, that definitely, that definitely is successful. So we haven't right off the bat. Right off the bat. They're off course. And we have Vincent narrating"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "32:16",
+            "text": "at 130, day five or seven. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:18",
+            "text": "so the concept of, you know, a computer system that's controlling a machine that is out of control somewhat, is definitely a 2001 homage, right? Yes,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "32:29",
+            "text": "yes. And definitely the voiceover it almost is like the how, for sure."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:38",
+            "text": "There's definitely a 2001 Jr. Like elements of this whole movie, including like particularly the end that I don't think is super great. But like, like as like an homage. I don't think it's super works because it's not like so much homage is just like we're trying to do that thing. But like for Disney. I also think the name the Palomino is a busted name for a spaceship like I wouldn't get on. Yeah, don't get on the fuck. No, like that's like getting on top of called like a Clydesdale or something like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:11",
+            "text": "that. Right. That's the most advanced thing we have is a horse. That"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:14",
+            "text": "sounds stupid. Like I'm not getting on that. The Cygnus sounds cool because like there's a black hole and sickness. So that's a that's a good one. But the Palomino. That just sounds like a kei car from the 70s or something like that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:30",
+            "text": "The 1979 Palomino."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:32",
+            "text": "Now that was definitely enrolled after the Palomino probably is a car I'm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:37",
+            "text": "sure it's Yeah, go ahead. No,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "33:40",
+            "text": "I was thinking like, you know, oh, the Camino."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:44",
+            "text": "Or the El Camino is definitely yeah. I never watched that movie. Dammit. Oh, yeah. No, I'm not watching. So we have you know, we have Ernest Borgnine as Harry a journalist, for some reason, a journalist is 1/5 of the crew or whatever. Okay,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:01",
+            "text": "the 1957 GMC Palomino is okay is a bus that has hoopty for sure. Like it looks corny as hell. It's basically it's basically Mater from cars it's also Bob in this movie Oh someone's gonna I'm sure flame maybe like actually the palominos the greatest car events of the ever have ever No, I'm just looking at on the Google"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:34",
+            "text": "it's helpful Will you say look at this and you're like I can see it. Drop"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "34:38",
+            "text": "there. Thank you. Holy shit. Whoa, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:42",
+            "text": "Wow, amazing. corndog"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:44",
+            "text": "look at that they I kind of love it. Not gonna. I mean, it's kind of cool. But like if you if someone showed it though, if someone showed you this ugly ass fat head car and was like, You need to go into space in this funny way. Back"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "35:01",
+            "text": "No way, man god yeah, that's bad. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:04",
+            "text": "Good luck. Well, so they are, you know, they're kind of out of control they're falling into a black hole and they see this ship and it is all in dark and to me this is incredible as they're doing this fly by this is the best spaceship fly by since Star Trek The Motion Picture which was released the same month and I love it he's like turn on the static beam or whatever, which is basically just a flashlight that they that they point out. But they get caught and they you know, they're about to get pulled in and they managed to fight their way back although Vincent gets stuck outside and they won't save him. You know, it feels"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:44",
+            "text": "six months in that it makes me sad. It's it's it's newly relevant because of the whole story about Google's sentient robot that they that they want a lawyer or whatever that's Vincent also wants a lawyer wants OSHA protections just like Googlebot does,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:01",
+            "text": "but Hollen knew he was going to be okay right. And Harlem's Harlan said he is part of the crew I liked that piece and Vincent, he said,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:08",
+            "text": "I will sacrifice any one of us like should sure you better have a fucking magnetic parabola grasp because I am not opening the door for shit."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:21",
+            "text": "But the grapple the sound when he fires it it's the Starfleet it's a Star Trek door sound effect right?"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "36:27",
+            "text": "Yeah"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:32",
+            "text": "to me yeah, that that was that was definitely that sound effect. But as he's out there in the back this is this is hilarious to me. Holland played by Robert Forster where they can't get a hold events it tells Kate Thank"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "36:43",
+            "text": "you do we have a malfunction here there's too much interference on the outside see if you can do to visit with your ESP."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:48",
+            "text": "Now what is this?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:50",
+            "text": "What is I got through to Vincent?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:53",
+            "text": "What what is this ESP that goes from humans to robot like robots incredible stuff. I got through to Vincent. This like ESP to Fortran bridge that she's worked out like what what is this? It's you can't explain it. That's like trying to explain the end of this movie. Why is it I don't know why but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:13",
+            "text": "oh, well it is a part B and it is a part because later Vincent says that he had"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:19",
+            "text": "the reason it works is because Vincent has has harvested a human brain and he just has it inside that giant tub on his head. He just keeps he just keeps that actual human brain that he harvested from an unwitting victim and that allows him to source the the ESP signals from from this like from this word Deanna Troi"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:46",
+            "text": "this oh man this was not that far off was only seven years before before Deanna anyways I can't find it but there's a quote that Vincent says that a bunch of his brothers were part of the black hole program and the concept was that they were going to go into black holes and so on ESP back now"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:05",
+            "text": "that's a well known that's a well known principle of of cosmology is that you light cannot escape but vibes can."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:16",
+            "text": "Who was the who was the interstellar guy? Who was the interstellar scientists Thor?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:20",
+            "text": "Yeah. Kip Kip wrote I was kept guy was what he got the Nobel Prize for was like the way in which the way in which you can escape the black hole. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:29",
+            "text": "very good. So when the sickness lights up, it's just absolutely gorgeous. And they get on board they go to the bridge and we're introduced to Reinhardt and to Maximilian so just tell me tell me what you what you think when you think about those Danny"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:45",
+            "text": "says share your feelings first about Reinhardt and Maximilian Well, I will say Reinhardt is god awful."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "38:56",
+            "text": "And I don't remember hating it as much as a kid but watching it now I'm like, Man, this was he this was a choice. I don't understand what they're going for with this guy. He I mean, it felt typical bad guy but there was a moment where I was like they didn't bother messing with his hair. His hair was this beard had a beard beard was unkempt and I it just didn't make sense but somehow I it's like I it was terrible. But I still like it for some reason I still it still fits this movie that's the thing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:34",
+            "text": "I like is like weird he's got like the weird sociopath I yeah, I think which which works for him. I like that he's like so so dead in the eyes and like so like clearly narcissistic. Like someone says something like, like Alex says up they like you know, this is a tremendous of like, one of the many times he's just blowing smoke up the dude. Like, what normally what a tremendous accomplishment and he's just like, I know, like, it's just Like, yeah, you can't tell me should I know I know what I'm, I'm fucking parked a ship inside a black hole like I know I'm fucking amazing. And look, I've got this medallion around my neck like obviously I am tops,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:11",
+            "text": "you will be remembered as one of the greatest space scientists in history. Never thought it that"
+        },
+        {
+            "name": "Black Hole sample",
+            "timestamp": "40:18",
+            "text": "it's about time that people learn about their failures and my successes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:24",
+            "text": "That's what I that's what that's ultimately I feel the same about this podcast. It's time for other people to recognize their failures and our successes now that we're at episode 100 I think it's time that we come into our Reinhardt era. Just just hard air I like just tell people how it really is. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:42",
+            "text": "I do like I have I like the idea of if Reinhardt had been played not by Maximilian Schell but by Jodorowsky. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:50",
+            "text": "so it'll be perfect. It was. I'm now my headcanon is that it is just Jodorowsky its maximum."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "40:57",
+            "text": "There were some great names picked out for it, though. That didn't make the cast. It was like Max von Seido Peter Cushing. Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:07",
+            "text": "those were Can you imagine cushy? Can you? Bob target, right. Oh my god. Oh my god."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:14",
+            "text": "I think if I'd see that would have been amazing."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "41:16",
+            "text": "Yeah, he would have been crazy. I'm blanking on Duke whose name right now Christopher Lee was. It would have been amazing. Yeah, exactly. A lot of great cast. Yes. But everyone was like, No, we read the script."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:33",
+            "text": "I'm not gonna I'm not going to enter a robot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:38",
+            "text": "I'm trying to get Lord of the Rings in 20 years. Don't hold me back. Well, so what about Maximilian? Like to me this was one of the most incredible designs of a robot of my childhood. I was just so in awe of him. He feels so heavy that the way his head moves, like I don't know if he's made a ceramic or what, you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:58",
+            "text": "he was heavy. He was like, I read something about the bots and there was a bunch of different what you recall, it's Bob's, you know, the little ones. But there's, yeah, Vincent, but there was like only a couple of the maximilians they were heavy as hell. There's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:15",
+            "text": "a 300 pound one. When he hung on wires. There was a teeter totter board to simulate weightlessness and another one on roller skates. Mine Tommy McLaughlin usually was in the max costume so this is like a Mr. Noodles types of Mr. Noodle, keeping it keeping it real and then"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "42:33",
+            "text": "the blades obviously iconically the blades what a choice. Incredible. Do what's what's great about the blades as they show Alex's death in the trailer race they spoil right away. You should know what you're in for and I was it's funny because I forget that this is Disney's first PG movie but when that happens I expect to see blood like I I want to see shards of of him flying everywhere. I mean not to skip ahead but since we're talking about it like the death of Alex is pretty fucking wild for like insane Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:14",
+            "text": "he goes for it in a really good way and it's a really really fast shot but it absolutely what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:18",
+            "text": "you need. I assume you you're we're going to drop the sound of Alex's demise of it it just be"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "43:27",
+            "text": "like blender the turkey gobbler like taking a fucking spitting blood in your chest. It's exactly what not good and then the Emperor didn't fell down the hole and vaporized himself. What did he do? What did he think the book was gonna do? What did you get a paper out? Terrible to stop a robot? Scissors beats paper. I don't know if you're familiar with"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:57",
+            "text": "they forgot that in the Dark Wars."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "43:59",
+            "text": "You need a rock sir. Right right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:04",
+            "text": "Yeah, there is also the wild moment there where Reinhardt says protect me from Maximilian to Jane. Yeah. Which is surprising, right? Like he is not fully in control. And I liked that. That aspect of the story. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:17",
+            "text": "that part's cool. The Frankenstein monster part is cool. But Maximilian Love is love them Domi head, love his eyes. Great. I love that. He's got this beef immediately with Vincent and Benson's like fuck this giant red bot. I wouldn't take any"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:32",
+            "text": "no doubt love that Vincent. Vincent who meets Bob, one of the one of the the old two eights programmed in Houston."
+        },
+        {
+            "name": "Black Hole sample",
+            "timestamp": "44:41",
+            "text": "pensent vital information necessary centralized day before the 396. I see by your markings. You're from the old to wait"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:49",
+            "text": "program in Houston. It's kind of a cheat to do sense for a centralized sin. Yeah, but he's he's pretty great. And I liked the establishment that van synth is proud and you know he is connected and empathic but also pragmatic and not wanting to get blown up. They established that he believes in being kind of prudent in what you're doing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:11",
+            "text": "now I will just say Vincent is kind of an insufferable patent though like he like what his fucking quotes every like two seconds he's always got like, you know like there's whatever like the that that scene where like he's got to convey something like no we've got to do this instead of just staying straight up what it is he's like doing like Darmok and Jalad at Tanagra instead like he's like saying like fist close yeah, he's like doing a fucking a bunch of Cicero bullshit instead like it just like Just say what you mean little bot like don't You don't need to like you know a book of quips we don't need"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:45",
+            "text": "we're on the clock bro. Yeah, we"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:47",
+            "text": "don't need like Poor Richard's Almanac right now. Like we need like you know, actions are."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:55",
+            "text": "So the film then takes this kind of real slow down. And this is I think the biggest challenge right? So you have this mystery of what happened to the crew they all died and there's these robots that are in humanoid form. The costumes are super creepy with the black robes and and the faces this Costumes by Bill Thomas who did Logan's Run for us last week. But there's a whole bunch of kind of just like walking around the ship and trying to figure stuff out and the sets are incredible in my mind like I really love the production design here the bridge"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:28",
+            "text": "is I had totally forgotten it was like holy shit like How big was this fucking set? Like it's just gigantic with all these little blinking lights and everything"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:37",
+            "text": "and the big planets on one side attending to the planets oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:42",
+            "text": "my goodness that and the like warp drive section where it's just looking down on all those desks and layers and the just the yeah the geometric type pattern and buttons on those desperate incredible gorgeous sets. This is one of those ones I wish I could walk into no domes oh my god no Disney domes on this I would love to have walk on this set Yes, I think that I saw I saw some stat that like it eventually took over like all productions all production studios that they had that they had on offer they were just like we need we're building all this stuff because exactly is basically the same story as 2001 where it just grew to consume all production resources at the height of its at the height of its filming. Because the sets were so massive they weren't gonna tear them down and they just you know, they had they got set for just like that one scene of the greenhouse scene. I mean, I guess they do it twice. But like the control room where you've got like the limping guy and like he's just you know, fucking around with a few buttons in the farm. Yeah, the scale of that set is ridiculous. Like it's a very very large room and it's obviously all practical like they went and just build these giant panes of this fake greenhouse situation. It's it's it's really wild and it is true like having watched a lot of dome TV recently you're just like, oh, like they actually went and some carpenters got involved on this like this was Yeah. Break out the hammers."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:07",
+            "text": "It's powerful. It's powerful for sure. But unfortunately it's just used for you know this kind of like quasi investigation that unfolds and you have now you know, Vincent goes and he does a shoot out. Which to me I love the scene with him with the security robots and shooting the lasers the sound design on slowly so I don't like it you don't like the sound of the lasers? No, I don't like"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "48:35",
+            "text": "that you beat up to is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:37",
+            "text": "like I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:38",
+            "text": "didn't like that. I don't know about this whole thing in general actually I disagree with the whole take like I like this this random shoot out with star the the saucy robot who like stick it over? He's a corndog to like there's like little flippy maneuvers and stuff behind the back no man is like double is like the bumping maneuver. I also don't like I also don't like how much like Bob is living in this like post traumatic stress world where like he's clearly been like he says something like He did things to me I don't want to talk about it. What happened sir like what happened and like he's like shaky like falls apart. He like falls apart and shaky. That makes me sad also so now I'm against are always always I'm definitely against"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:27",
+            "text": "star like what I love about it is the fact that Vincent takes him out. And as a nine year old seeing in the theater, I was like fist pumping like yes, go Vincent kick his ass. Yeah. I thought that was I thought that was very cool. So now there is a and I'm not kidding or exaggerating. 15 minutes of the movie of them in the dinner room. Yeah. With the chandeliers and you know, the crystal glasses and all that kind of stuff. And you know this, this whole thing of, you know if the data on my probe matches my car conditions I will go where no one has gone before, into the black hole in through and beyond. And he talks about over time that you know, it's a physics don't apply there. And he can live forever. I don't know what any of that stuff's based on. Maybe that's the ESP probe data he's getting from the people that he's sending into the probe. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:22",
+            "text": "that's what that's what's based on the probe says a live forever. I like how much it's this is also like sort of a romance between Alex and Reinhardt. The scene like Alex is just so clearly in love with Ryan art. And he's just like, he's just like, well, he's just gonna sacrifice it all. He's like, I don't care about any of these people. I was on the ship with like, I have seen like this guy with his wild beard and his little medallion necklace thing. Like, I'm gonna live here and follow him into where like the black hole, whatever. I'm ready. He's just and who could blame him because he is traveling with a busted ass crew. Weirdos. Like, like, like, Charlie, Charlie socks is just like a child is like Wesley Crusher, but he's like second in command of the ship somehow. And then you've got the lady the Earth. Troy, who's completely confusing why you know how that works, or what she's doing? Foresters good, but the weirdest one is fucking Ernest Borgnine Seven of Nine or whatever. Like, he's like, he's like the he's a newspaper man. Like, what the hell is that idea is he's like, why is he on the ship? To write to file stories from the Palomino like station desk of the St. Louis Post Dispatch, like, what is his What is His purpose? I don't know work. It makes no sense. Hmm. And he's like this weird brown tweed outfit. It looks like he's wearing like a sack of like old fonts or something like that. Like he's wearing this like? Sack."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:57",
+            "text": "I don't know. It's bizarre. I mean, Ernest Borgnine and this is like, he did this and then turned around and did escape from New York like three years later, like, this was definitely the Borg naissance or whatever. It was. He was in. He was in the zone. But But yeah, I felt like his character was it was a bit of a mess. But Perkins first of all, Danny, why was every line of Perkins 80 yard? What happened? Like, it seems so weird, the delivery of everything."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "52:28",
+            "text": "I feel like everything was ADR post. Yeah, there are moments where I'm pretty sure they read it all their Dubs, but Perkins also talks about the side of his mouth, so it's very hard to sync him up. I think he does that weird. Psycho talking out the side of his mouth thing it just throws me off all the time. But I love Anthony"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:50",
+            "text": "Yeah, you just did a psycho print and you was that who was that when"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "52:55",
+            "text": "I was getting it's not released yet. But yeah, I did work on some psycho art because I'm a big Hitchcock nut."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:01",
+            "text": "Let me know I can strike that don't distract anything. I love you. Okay, okay. All right. No problem."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:06",
+            "text": "No problem delete the whole episode. Episode 100 We'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:09",
+            "text": "try again starting over Alright, let's see so yeah, so 15 minutes of this you know Harry is afraid he leaves and he's like you know fuck it leave Alex behind let's let's get the hell out of here. So I do love this moment. I just wanted to call this out when I was watching this like really this really stopped me in my tracks as as Reinhardt is getting the ship ready to go in"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "53:35",
+            "text": "React us"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:37",
+            "text": "and I like I was like reactors on wherever I heard this from what what is this going on and immediately came to me"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:53",
+            "text": "oh wow nice. Very good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:02",
+            "text": "I also note that's positive contract from Deltron 3030. And that last sample even if the record skips I still rip is Dell sampling himself from a previous album. Ah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:16",
+            "text": "like that metal layers. It's like the Tom Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:20",
+            "text": "exactly, but reactors on so I enjoy that. But now we basically have them trying to get out of there we have Maximilian killing Alex, which we already"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "54:34",
+            "text": "you're gonna have to you have to cut that for other segments. You need that soundbite for the rest. You can get rid of that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:43",
+            "text": "But, but so immediately things are a mess. Like like 20 years, Reinhardt has been getting ready to go into the black hole. Instantly. They blow up the ship it crashes."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "54:58",
+            "text": "But yo okay, my favorite Shot in the film is in this one with with the media that giant boulder Indiana Jones style Rowling's gorgeous show that has its status was so good. I couldn't get over how good that was. It's also great idea. It's such a it's such like a cool like idea of this flaming of this flaming media here all right. What's cool about that shot is it's exactly what you're talking about Jason that that like hexagon style room is a miniature that they shot down and then superimposed the bridge with them running across it. And it's just like, they were doing insane stuff on this movie. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:37",
+            "text": "Yeah, does he does he doesn't play I get it. They've always had like these amazing breakthrough techniques. And like, and like this movie, they're like in like, as Matt said, they're in like, sort of this weird period where they're like, we're gonna make a PG movie and like, traumatize some children. And like this, by all accounts, like we're getting into the third act of the movie. Now, by all accounts, like, yeah, they didn't have a plan for how this movie was going to end. It was like a classic, like, you know, we've got the concept, we've got the cast, we've got, we've got a lot of sets, like start shooting, and we'll figure out where it all ends. And like, they just didn't have any theory of like, what was going to happen in terms of like, you know, the black hole where they're going through, who lives who dies, whatever. And like it, it turns out, they didn't come up with a good idea. So that part doesn't work. But like from a technique perspective, they really were, they're really pushing some buttons."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:33",
+            "text": "Some of it were really effective. Some of the shots were really effective. Like, Danny, I agree with you like my jaw dropped open when I saw that shot at home, and it is one of my favorite shots in the film. But then you have like these very slow shoot outs where like the robots are just standing still firing and so it's like he's really boring shootouts, and this is where some of the berry score is that really boring, heroic theme, then it switches back into this more bond. Kind of dark scary and that stuff works really well. But we have you know, Reinhardt is basically incapacitated by a TV. That's not the most exciting thing we have a shoot out now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:14",
+            "text": "That was That was exciting. The Reinhardt getting incapacitated by the jumbotron was interesting to me. Because as a child, I always watch with subtitles now. I never knew that he was saying Help me, I think is what he says a million help. Yeah. And then he's and then he's talking. He's talking to the drones and he's like, Hey, me. And like, I like just because of his accent and like he's obviously in extremis. Having been brushed by a giant TV. Like as, as a kid, I think I heard this more as, like, lift me or lift me or something like that. And like, I was always like, they weren't like, like, they're gonna come like what does you know? I mean, obviously, would mean they've lifted off the thing, but like, does he I don't know, I had spawned this whole scenario as a kid where I'm like, Oh, he's able to control the drones if it gives them like a specific action to do and like enter subtitled us and cleared it up for me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:23",
+            "text": "Danny talked to me about the final showdown between Vincent and Maximilian,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "58:26",
+            "text": "Vincent and max that um, I think that's the time you see the cables on Maximilian quite a bit. It's not bad. I kind of like it. I still enjoy it. I think I enjoyed it a lot. As a kid. I liked the two robots duking it out and I remember just kind of sitting here and enjoying it again. I do find all of the laser battles clunky. Yeah, not just because of the people in the suits, but there's something not very, I mean, not very Star Wars he about it's very slow paced for dynamic, right. I think it's also coming down to how they shot it. It's just kind of boring, but the events and Maximilian I dig it, I dig it a lot when"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:10",
+            "text": "Vincent pops open, you know his drill and goes right into right yeah, yeah, yeah. And just the sound of Maximilian screaming is I love this. I also I also I had to take notes. I sampled it. I didn't think I was going to but when Bob buys it, so this is the great slim pickins from Dr. Strangelove"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "59:33",
+            "text": "uncredited, which is annoying. Yeah, yeah, absolutely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:37",
+            "text": "And Ronnie McDowell uncredited dispensing it's"
+        },
+        {
+            "name": "Black Hole sample",
+            "timestamp": "59:39",
+            "text": "no use Vincent. My useful laser finished but part of me goes with you. Don't ever be obsolete. Carry"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:52",
+            "text": "the best. We're the best. All the music swells here at They like really go for it like the gravitas of the scene is very impressive. I did not cry. I did not cry, but I did think that John Barry did an absolute amazing job. I liked"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:14",
+            "text": "the part in the battle between Vincent and Maximilian, where he got where he like goes full erect on him. Like he like like that part. That part is amazing. It was like a battle technique on them."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:28",
+            "text": "That that Vincent, I thought just he's getting electrocuted."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:31",
+            "text": "I think I thought he was like summoning great powers. Like I thought he was like, I thought he was like"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:00:39",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:40",
+            "text": "I mean, I the second time I watched it, I was uncomfortable with Maximilian like it felt like it was an assault was happening and I didn't like it wasn't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:47",
+            "text": "assault as a battle to the dead. It wasn't consensual."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:00:51",
+            "text": "Okay, fair enough."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:55",
+            "text": "All right. Well, now it's time to go into the black hole. Okay, so first of all, Vincent rescues Charlie when he's having to slow motion decompression as they're getting to the to the probe ship. So it rhymes like poetry. But this time it's Vincent saving him. So I like that they take off in the probe ship and this is where we get the 2001 style finale. And you hear Reinhardt in through beyond? Me and you know, all the kinds of effects and stuff the BS"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:30",
+            "text": "effects absolutely slapping right here. Yes, the score is great. The effects are just not very special. Unfortunate."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:38",
+            "text": "Well, it's like the anamorphic right stuff and kind of like flipping around and whatnot."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:44",
+            "text": "I don't mean we're just flipping those people like I assume there was like so I assume they're just like add them on like a little like tilt a whirl."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:54",
+            "text": "They did look like they were on mission to Mars, which I recently did at Epcot and was sick for the rest of the day. Oh, so do not recommend that right so now we have they're kind of going through flying through and we have this shot of Reinhardt now with a full beard as if time has magically passed and he is somehow not affected by the crushing forces and Maximilian them merging with him inside and three minutes with no dialogue of Maximilian and Reinhardt ruling in hell"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:02:31",
+            "text": "incredible stuff absolutely incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:37",
+            "text": "I just want to know like when they there's no answers to how there's no answers to what I don't want to know. No, I don't want to know like I don't want to know what they what it means. I do want to know I would love to be a fly on the wall in the moment where on like draft 30 Whoever it was wrote down this whole thing he you know, they meet and they merge he stands on a hill in hell and arms raised arms raised flames servants for eternity. Gates to heaven open up and like he just like wrote that down on the script and like slit slit it over to whoever and like someone back in his chair someone read that was just like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:21",
+            "text": "shipping yeah"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:03:27",
+            "text": "it is insane. But I don't know why I did it. There's something about it that I did. I liked the ambiguity of it. It does borderline try to rip off the ending of 2001 not visually, but this whole we don't have an answer for you make it up yourself. Type ending. But I think it looks great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:48",
+            "text": "But it's so much that is so iconic. Right of Maximilian on top of that, you know the stone just awesome. Why"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:56",
+            "text": "won't Disney make a ride? That's just the descent into the black hole in which you end"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:04:03",
+            "text": "either in hell or you know, through the other side of the gates I haven't the only Well the thing is they already have a ride at Disneyland where you go to hell and that's Mr. Toads. So you gotta write so yeah, they can't have to rise where you go to hell."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:20",
+            "text": "Yeah, man, I love that right. Mr. Toad is what's up. So actually, they do go to heaven to this other planet at the end, you see them coming out. There's no dialog for that either. And so just I saw one review. That said, the seven minute ending is a confusing series of surreal images, colors and sounds meant to capture the similar innovative transcendental ending of Kubrick's 2001 while also trying to comment on heaven and hell, but ends up being very muddled, unclear, unsatisfying, and scientifically inaccurate. Like much of the rest of the movie. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:54",
+            "text": "mean, I don't know if like scientifically inaccurate really like matters in like this particular They're in this particular movie like I like that's, you know, calm down Neil deGrasse Tyson like, this is not that kind of picture. Yeah, beat it. Like a man merged with a robot like that's, that's you're already off the whole theory"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:16",
+            "text": "I'm here for it I'm here for that merger. I love it. I'm here for them. And so as as the ship you know they as the the crew the Palomino minus earnest make it to have an credits"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:30",
+            "text": "yeah what happens so earnest man he doesn't even get I guess he gets blown up so he does blown up. He doesn't even get to live in how"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:37",
+            "text": "Moses. He made it almost to the Promised Land."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:05:40",
+            "text": "Oh my god. There were Disney did release comics. And one is a sequel to the movie about the crew ending up in prehistoric times. And Kirby did all the art for those books. What's Yeah, Whitman's Whitman's comics. Hmm, is this the like black the black hole acts Jurassic Park mashup that everyone? Can you imagine calling for? Oh my god. Actually, this is I very rarely asked for movies to be getting remade, but I would love Disney to take a stab at this movie. Yeah, not sure Disney plus, I need a theatrical release. Yeah. Yeah. But I think they could do it. But it probably ended up with the rock or something dumb. So Oh, God."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:28",
+            "text": "Jack Jack Black as a designer. Well,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:06:32",
+            "text": "I would go to go for that. That would be great. Yeah. And then we get our like tilde casting, I guess. Yeah. I guess we're there. Mm hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:41",
+            "text": "We are there we are there. Who would Tilda Swinton play Danny Benson?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:06:47",
+            "text": "Yes. We got to have her events that for sure. Holy shit. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:53",
+            "text": "love that. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:54",
+            "text": "great. I love that. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:55",
+            "text": "love that. Oh my god. Sorry. I'm just seeing in the events channel by the way. Cory is dropping things in his hand. He"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:03",
+            "text": "has everything is the thing if it's on paper and was published before 1990 Corey has it in a box somewhere. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:11",
+            "text": "So Vincent that's a great call. I love that call. Jason. Do you have a given I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:14",
+            "text": "had like Brian Hart for tilde. Indiana came up with his Jack Black idea. But I still I still think she would do something interesting there and I think it could be improved on I think I think we could do better than what we have on screen with Reinhardt."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:31",
+            "text": "There's no question about it. Yeah, either one of those would would work for me. That would be amazing. And"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:07:38",
+            "text": "Jack Black has right heart. I can't stop with the beat. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:41",
+            "text": "just the beard was calling out to me. Sure. Jalen. All right, well, maybe Kevin"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:47",
+            "text": "Kevin Hart as Bob"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:51",
+            "text": "I don't know about that. This is this is not sounding good all right, let's do some letters here real quick. Okay, the first letter I have I want to call out is from our dear friend catcher. catcher on a silent on a silent"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:19",
+            "text": "catcher her on the wrong Olive Garden in Toronto."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:23",
+            "text": "That's right. It gets sent out to the secret Cove so so he is helping open a restaurant with his brother in on the Sunshine Coast in British Columbia. And I'm actually not recording next week because I will be having dinner during our recording slot at the restaurant and hanging with catcher so looking for amazing. But kind of interestingly enough, when we started this podcast catcher was like the fourth host you know, proto was there for all of our book episodes. And catcher was our most and I think still is our most frequent guest maybe tied with proto and then he had to go and start sending knots and so so we love what he's what he's doing there. But we love him being as part of this pod. So he said, read this for me lol doing pod I remember all those years ago when he told me about his idea for something he called the dune podcast. I thought it was a brilliant idea for a limited series and here we are at episode 100 Sorry, Jason. Jokes aside it's been a blast getting to follow you both on this crazy journey from covering the book series with proto to meeting Disney and all the craziness of Dune part one. Thank you so much for letting me be a small part of this incredible show and I'm excited to see what happens on our journey to dune part two."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:42",
+            "text": "Lots of love catch her love you catch her PS"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:47",
+            "text": "Danny I love you so much. You've rocked my world."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:09:49",
+            "text": "Oh, thank you catch your"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:52",
+            "text": "catch her in addition to being a dear friend and you know guest host many times does the artwork on a weekly basis for us and creates these incredible images and finds the perfect things for the movie. But he's also our font monkey does a great job there. He's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:08",
+            "text": "been it. Yeah, he hasn't really done a lot of font wrangling for us since Season Season Two. We're gonna have time for a re up. Yeah, we need to we need to redo his contract, huh? All right, well, we'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:19",
+            "text": "get it. We'll get that done. Alright, so then I have one more. Oh, here we go. I have one more letter that came in. So this is from Kevin co Blasto. And I, you know, like he had just found out about the podcast and and came over and he's like, Hey, can I send a voicemail? And I was like, cap of course cut Blasto Yeah, we would love to have that. You know, I'm sure you can find something really fitting you know, for what we're doing. So subject this is shameless plug. Oh, yes. If you love listening to aches Mason, add quote special guest every week on Doom pod. Then you should check out spaghetti and Freddy a podcast dedicated to spaghetti westerns and the Nightmare on Elm Street film series, which should be airing hopefully by the time this episode is out. If you hate listening to this podcast, then definitely check it out. It's hosted by myself. Kevin cup Blasto and yo Lee and we're the complete opposite of these hosts which is to say very inexperienced See you soon pitch or Blasto apparently Freddie says the See you soon pitch portion. All right. I could blast I was going straight into to H plug JL for that this is this is done something. Yeah, exactly. I attempted to send a voicemail for the 70 millimeter month, the original 70 millimeter month and and got skewered for that cure. I have one additional you'll never guess. email from Kevin Blasto. Good. And it said I listened to an episode and someone had a birthday. Was it a host? Was it a guest? Was it me? Please play the attached musical celebration. Love cut Blasto we'll see what happens how long is this clip?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:46",
+            "text": "Ah man, I love the Ocarina of Time. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:51",
+            "text": "I do feel like this is like, like it follows or the ring or whatever. It's like one of those movies where a couple Blasto gets passed from podcast a podcast. So it's definitely our turn in the barrel. Kevin, welcome. Thank you for joining us. We are happy to have here. I have a first voicemail that I want to play just a couple of voicemails."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:13",
+            "text": "It's a special nine special night. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:15",
+            "text": "a special night. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:16",
+            "text": "you might get you might instead of 90 seconds you might get 95 seconds. 100 seconds for episode 100."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:24",
+            "text": "Oh, we dole it out. We dole it out. So we have from Nexus nine, who joins us every week spread the chocolate. And they said congratulations on 100 episodes quite the milestone I've attached a little voicemail feel free to use it on the show if you want we do want to so one thank you all for the hours of entertainment and the tireless hard work that goes on behind the scenes. You've built a great community and you should be proud of bringing like minded people together. Cheers, Chris, aka Nexus nine."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:54",
+            "text": "Thank you Nexus nine. Let's hear it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:56",
+            "text": "Here we go."
+        },
+        {
+            "name": "Nexus9 voicemail",
+            "timestamp": "1:13:59",
+            "text": "De pod Matt and Jason. Longtime first time, Chris, aka Nexus nine from the Gold Coast Australia. Just joining everyone and congratulating you on reaching 100 episodes to take the time to share a little bit history on how I stumbled across the pond. In early 2020. I had just seen the new dune trailer was of course suitably impressed. And I thought to myself before the movie comes out, I should read the books again. Being time poor obviously reading means audiobooks in the car or on a plane. So there I was searching for the June audio book on Spotify. As a side note, there is no June audio book on Spotify. So the search was a little bit fruitless or would have been if I had not had my attention grabbed by the geographic. So I clicked on that so that you just reviewed Roger, I think you're about to do Blade Runner 2049 or might have been the other way around. I can't recall. I thought to myself, I love June and I love arrival. I really love everything Blade Runner head Nexus nine. I should give you a listen. So I racked up all four episodes. From there on and I was hooked. Wow. Um, since then you guys have gone from strength to strength and you've had some great insightful guests on. You've built a nice and friendly community on Discord. And you've produced some fantastic content. And I'm sure I speak for everyone else and thanking you both for the hours and hours of entertainment and all the hard work you put in. Anyway, enough smoke up the proverbial congratulations. Once again, guys. And here's onwards to 1000 Cheers. Yeah. Oh, and every Excalibur hates you, right? It is a five star. Oh, wow. Jason, I'm afraid you're wrong. So yeah, I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:43",
+            "text": "yeah, I'm willing to reconsider because Nexus nine sounds so nice. What a friendly what a friendly voice and a great discord. Community member. That was really sweet."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:53",
+            "text": "Absolutely. Didn't you say Jason? Didn't you listen to dune walking the Outback? New"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:59",
+            "text": "Zealand? No, no walking. Like yeah, I wouldn't I wouldn't walk about I will I just like went into the bush to find myself would listen to the door. But without let's looking for outlet. Yeah. Or I took like a week long road trip in New Zealand. Okay, I did listen to do none."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:17",
+            "text": "All right, very good. Nexus nine. Amazing. Thank you so much. And we love having folks with us on this journey. I, when I originally conceived of this show, the idea that I had was that it was going to be a big deal. In October of 2020. People were really going to be talking about dune. And so it would be a perfect vehicle for a podcast that could get to a place. I just didn't realize that it would be you know, our job until the end of time. So yeah, that's fine. That's great. Congrats. All right. Next voicemail, I think. I don't know if this is his first time actually calling into the show, so I cannot wait to hear this."
+        },
+        {
+            "name": "Art voicemail",
+            "timestamp": "1:16:55",
+            "text": "Doom pod. It's our calling to say congrats. 100 apps gonna go big achievement. He know you guys are staring into the abyss right now. You know, there's no movies left in that special dune pod wheelhouse. You may think but you're wrong. I'm a fan. I want to give back. So I put some thought into it. And so here's a list. This is 100 Gen X dad movies that I haven't seen yet. So if you covered any one of these it would be great. So let's just dive in. Number 100 would be number one sorry guys, hold on just one Oh, H loves long limbs rollin 73 records like a foreman. Awesome to me loves it. I know Cory thanks. So sorry guys. I'm back. So here's 10 Gen X dad movies that you could cover Serpico your 100 Oh, Metal Jacket. Wow. Wall Street into you guys. Did you guys do Wall Street already? Fish Called Wanda. diner. broadcast news. Yes. At Midnight Cowboy. They live? Yes. That's about your good. Yes, they live and stop making sense. Oh, yeah, for sure. That's it? Yeah. I'd say hi to Danny. But you know, I know how the show's made. The letters segment was recorded, like two days ago over Sunday brunch or something. Anyway, you guys are killing it. Congrats on 100 episodes. Love you. Bye."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:50",
+            "text": "Daddy is live prove him wrong."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:53",
+            "text": "Yes. Yeah, yes. That's great art. Art. We love you. Thank you. Oh my god. All of those movies are going on the list. Has"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:59",
+            "text": "anyone ever done a concert movie? Has everyone ever has anyone ever even seen a concert movie within tape deck and why in the world"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:19:10",
+            "text": "never been done never been done just art. That's great. Love it all right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:15",
+            "text": "I've been trying to get art on the show for like two years. But but he has not made his podcast debut yet."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:21",
+            "text": "Art made an amazing graphic of age as Brian May from Queen to celebrate. That was fantastic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:29",
+            "text": "Oh man. Art thank you for being along in the journey both live and behind the scenes and for everything you do. Let me bring us to the our dear friend silly who is off on another cruise. Oh my god. off on another cruise. To hear how this. how this goes. Here we go."
+        },
+        {
+            "name": "silly voicemail",
+            "timestamp": "1:19:53",
+            "text": "Hey, guys. It's silly. Your resident chocolate projectionist. I wanted to extend you guys a huge congrats Relations on making it to 100 episodes. I can't begin to tell you how special you guys in this community has been for me over this past year, just getting to hang out with you guys all in the discord and watch movies together and the chocolate has been a real joy and a real lifeline throughout quarantine and moving to a new city. And I guess the podcast isn't too bad either. By the time you listen to this, I'm going to be somewhere over the Atlantic off heading to my European adventure. I'm going to miss you all but wanted to celebrate this incredible milestone with a special gift 10 of my favorite dune pod and community moments. That's great. Without further ado, in no particular order. Here are 10 Great moments and doing well. Number 10 on June 20 2021 The very first chuckle hut watch party takes place for the movie Alien Yes, we weren't even called the chocolate hot yet. People myself grew up with Dave Dale selves Brandon and Kev. Kevin true fashion fell asleep halfway through the movie. That's not East Coast heart. We weren't on the chocolate until number nine a few months later on the Children of Men episode ah calls us to chuckle it's citing and long standing tape duct tape deck term, and we proudly adopt the name number eight and credit so three No Country for Old Men we learn for the first time who told us Winton woods are seven during the Toronto episode Jason delivers his kink for cocaine chic at his office decor. Number six, the discord briefly discovered the joys of listening to the podcast at half speed when the alien episode is released. Which the crew sounds drunk talking about sharks and the sound of slow motion HR Gieger will haunt our dreams for five October 13 2021 doing pod interviews Denny at the Mill Valley Film Festival, in which a photo of h with an expressive with an expression on his face that suggests he has an office that Jason would love. Number 421 Nobody posts that one dude is finally released. After three delays on the dune pod hosts the community at a private IMAX screening in San Francisco. Number three Kev asks on the Cloud Atlas episode and December 2021. What stuff is unfilmable to you? The very first I'll be it unofficial Cavs question number two August 24 2020. On the do 1984 Episode Cory leaves his first of no Wow. And almost exactly a year later, in true dune fashion. He leaves a voicemail on the Malcolm and Murray episode that is so long, it has to have a part number one during a live recording of the 12 Monkeys episode guest Greg cutaneous searches his mind for who did the vocals on the gladiator soundtrack and multi time podcast guests Mikey Bates ah into saying anyway, I hope you guys will trip down memory lane with me. For the movie Black Hole. What a crazy movie. Watching it with a chuckle Hi. My thoughts is that it probably ends the same way Doom pod does with H and JSON merging into over chuckle hell or zombie. Doom potters. Keep up the great work guys. I'm going to miss you. A shout out to hex who's going to be holding down the chocolate and my absence and love you guys bye."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:55",
+            "text": "What an amazing voicemail. Wow, incredible. Silly is such a gift. He does so much. That was That was wonderful. I did not know until then that you actually edited out the Enya Bay. I didn't know that didn't make it into the final episode with Greg that's amazing. Did I edit that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:12",
+            "text": "Apparently I don't I don't remember somebody else check the tape. That's"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:24:15",
+            "text": "funny idea."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:20",
+            "text": "Who Mikey got me that day? What uh, just just memory lane that was incredible. That"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:25",
+            "text": "was it it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:26",
+            "text": "really has been phenomenal just every week the Chuckle hut you know has just been kickin and growing more and more people coming and it's just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:35",
+            "text": "really really fantastic fun time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:37",
+            "text": "Thank you guys for being part of that community and and for all of that journey. Good luck, silly. We'll be we'll be waiting your return. All right, here we go. Just to left."
+        },
+        {
+            "name": "Kev",
+            "timestamp": "1:24:51",
+            "text": "Hey, Doom pod Kev here. Just wanted to call in and say congratulations on 100 Amazing episodes. It's been quite a ride. And I've been happy to be a part of the Chuckle hut. And all that entails for just over a year now, actually, who would have guessed at the beginning of this, when Jason agreed to appear on one episode of a dune based podcast, talking about the novel only that we will be here, the show as it barrels towards Dune, part two, a Gen X and beyond and before sci fi show, it's been quite a journey. And I think I can speak for the whole chuckle hut when I say that we love you. And congratulations, this week's movie. Oh, you thought you weren't gonna get Kevin's question? Oh, think again. So it's this Disney produced sci fi deal. Very serious live action. It called forward into an episode you did just after Christmas with the great Danny Haas Tron Legacy. an underrated movie that I champion to everyone because Disney didn't quite know how to handle it. Question to you. Is this. What is going on with Disney's live action movies? Why can't they make them work? Now obviously they have Marvel and Star Wars but they bought those. I'm talking about like Tron Legacy and Tomorrowland and John Carter. Like where are we going wrong here with Disney live action is Cavs question this week? Once again, guys, happy 100 episodes. And I'm excited to have you think and I'll talk to you soon. Thanks."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:26",
+            "text": "Once again, it's Cavs questions."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:30",
+            "text": "We got to defer to Disney Disney expert Danny. Danny this question"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:35",
+            "text": "first crack Bobby Champak listens to the pod so Oh,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:26:38",
+            "text": "God. Retire please. No shit."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:43",
+            "text": "Bob never listened to the podcast. You can speak freely get"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:26:45",
+            "text": "him out of here. I don't know. It is weird. I don't none of that makes sense to me. If they're not basing stuff off IPs. I mean, Tomorrowland was still IP. I don't. Everything feels"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:01",
+            "text": "is that good. Is that movie Good?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:27:03",
+            "text": "Um, no. It's fine. Okay, nothing to write home about. But it's it's it's a tough question to answer, Kev. I feel like Disney box at pushing the envelope anymore. They default back on. I don't know. They're just too safe. They're not making the black holes anymore. They're not they're not risking anything anymore. Yeah. And it's it's really sad. Because I feel like they they could they could be pushing they have the means to you know, create things that I don't know maybe things are being worked on right now. But I don't know. It"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:48",
+            "text": "just it just no innovation formulaic. Right? Like if you look at their like Jungle Cruise, get the rock and take this property and like, like that, that's the thing that like, that's, to me, that's the problem. It's too formulaic. It feels to corporate, they need to figure out how to take some risks and be bold"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:05",
+            "text": "for for for a company that's based on imagination, and, you know, innovation, they are lacking in both of those things these days. They should get like some old IP from like the young adult canon, and like, just try something weird. Like they should like get the Phantom Tollbooth and like, you know, do like a live action Phantom Tollbooth or something. Or like, you know, get some Judy Blume books or something like that, like try to try something that's like in like the young adult classics genre. Because like, you know, they used to do weird stuff like that, like I mean, like even like stuff like Bedknobs and Broomsticks, which is you know, just like you know, in some ways a Mary Poppins retread but like in in other ways, it's just like, alright, we got this like, weird idea for some, you know, like kids and they're doing some magic stuff. And you know, maybe there's like some animated stuff in the middle, but just try to get something from like the classic, young adult and not and just bam, everything's gonna say $250 million epic totally give us some low budget low sci fi stories, something I don't know. Just chill. Like they try to go to make a billion dollar movie every time and it's that formula is not working. I mean, it is working when it comes to Marvel and Star Wars but I'd"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:25",
+            "text": "like to see them go in a couple of different directions like one would be just like all new IP doing new stuff like like the black hole and I can't believe our doom pod position is like look to the black hole. That's the key to the future."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:39",
+            "text": "Yeah, why are we more black hole but back to your roots in the black hole?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:45",
+            "text": "Like they have a lot of IP that both they should be doing totally new IP that in my opinion, that's not related to anything like they turned Artemis Fowl like it doesn't matter that Artemis Fowl is done at Disney. Like there's nothing they're not bringing anything unique to that. So I'd like to see them be doing stuff like Freaky Friday. And and whatever shaggy da or Herbie the lovebug. Those were like new properties that they were creating. And I think they could be doing more of that. I also think some of that stuff, they could go back and do kind of fun updated takes on some of those things. And those would be enjoyable. Kev, thank you so much. It's been an incredible addition. It's only been since since December that you started doing this, but that's been amazing. The honor of the very first voicemail ever was to to Jonesy loves beer way back on our arrival episode, but no one was so honor. No one has matched in sheer dependability every single episode since that dude one, and that is our guy. So let's ring it one time when we turn the volume down before I do it. Here we go."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:30:55",
+            "text": "Do bud. Hey, this is Corey from Austin, Texas. Calling for episode 100. The black hole. Now I figured you guys have the black hole under lock. And he talks about it insanely about that movie. Do I like it or not? Like who cares? I'm going to take this time to read a poem I wrote for this momentous occasion. 100 episodes of Jean Claude de for the dollar. Over 400 million made worldwide. You did for underestimating Timothy is Paul melody. Now Jason, like the dude must divide. And for the news of doom y'all bring us every week. E is for everyone and the taco hut that lift their spirits, even when the world looks bleak. P is for our pod those two unlikely heroes that bring us so much joy. Oh, for old school dude. Because y'all know, Lynch is my boy. And D is for Denny. He's no River Phoenix. But he showed all the skeptics, trolls and haters. Just what a dune movie. Could be. Congratulations, guys on the 100th episode of DuPont. I hope there's at least 100 more. I love you guys. I love everybody associated with the pod all the guests. All the people in discord. Everyone. All right. Thanks so much. You guys."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:22",
+            "text": "Cory. Oh my god, Cory"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:26",
+            "text": "beat poet extraordinaire."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:29",
+            "text": "I don't think I have anything as reliable in my life as Cory"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:37",
+            "text": "I just am so impressed by the incredible like expression that has come out of this community and the creativity that is pouring forth from folks. That has really been Yeah, we've been fantastic. We love you guys so much."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:50",
+            "text": "We did everyone. We did it. You guys are 100 Oh my god. And Thank you Danny. What a gift to have you here for all this. Oh,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:32:58",
+            "text": "yeah. Appreciate it. Proud of you guys."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:01",
+            "text": "It's absence on Countdown to 1000. Danny, we know you'll be here. You'll be here many times. What do you have to plug my dear friend I know you have Jurassic Park happening right"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:33:16",
+            "text": "now being up the gymnastic journey. We have Jurassic World Dominion this week. Recording Thursday release on Monday for 70 millimeter ending this nonsense that they've done with these movies. People love that movie. People love that dominion is what I've heard. It has. Yeah, the one stars are rolling through the letterbox speed. Yeah, I don't have much to plug right now. I'm in a great spot where my plate is free. And I get to be a little bit creative these days. And yeah, my plugs are for 70 millimeter alone at this point."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:53",
+            "text": "Didn't you like you just were at Celebration Star"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:33:57",
+            "text": "Wars Celebration? Yeah, I was a guest artists for the art show there. Which is always shirts. Yeah. designed a ton of the T shirts for the for the store. It's a great time. Like it's Can I buy those? I'd like to. I'm sorry. Long run. But yeah, I met Jon Favreau. I met Jon Favreau and incredibly kind man. You know. I don't know what I didn't know what to expect when we chatted, but he's just dude love Star Wars. And yeah, and I respect that. And he was generous with his time and just a kind guy really soft spoken to."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:36",
+            "text": "Like after party in the dome, and you're like jotter I gotta go. But it"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:34:41",
+            "text": "was. It was at the Disney Grand Californian heading over to Star Wars night at Disney Land."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:47",
+            "text": "Dang. Yeah. I love that hotel."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:34:51",
+            "text": "That's a beautiful hotel. Yeah. Well tell him"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:54",
+            "text": "about all this Obi Wan slander though. That's been traveling across your you always airwaves Did you know what you're talking about?"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:35:02",
+            "text": "A lot of Obi Wan slander out on all channels. I was afraid that you had mentioned the name prophylaxis. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:13",
+            "text": "you said the movie Insider. Yeah,"
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:35:15",
+            "text": "he thought he and so that's good. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:18",
+            "text": "right. Right. My God. Well, Danny, thank you so much for joining me being here. Jason, thank you for your service. lo these many years?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:28",
+            "text": "Yes, it has it has been akin to serving in some sort of paramilitary."
+        },
+        {
+            "name": "Danny Haas",
+            "timestamp": "1:35:38",
+            "text": "Jason Have you seen top god? Yeah. Maverick? No, I haven't been Are you serious? The only movie I've"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:44",
+            "text": "seen in the theater since the pandemic is just doing times I feel sick."
+        },
+        {
+            "name": "Speaker 6",
+            "timestamp": "1:35:49",
+            "text": "I'm sure I would love it. And I'm thinking I could be next door watching Top Gun Maverick for a third time right now. I'm sure I would love it. I love Top Gun. And I don't know anyone who's seen it. Who has not lost their fucking mind about it. Yeah, I spent way too much money on Ray Ban aviators after I left that theater."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:10",
+            "text": "I saw the pic, baby. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:13",
+            "text": "watched a lot of I watched a lot of Miles Teller. tiktoks I saw a lot of a lot of that. I don't know. I know. Right? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:22",
+            "text": "Sunday, Jason, we're gonna get you back out of the house. It's gonna happen. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:25",
+            "text": "Well, you know, we'll see. It's up to you. It's up to all of you. Fucking it up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:37",
+            "text": "And that is it for this episode and season five. I want to thank Jason and Danny for an unbelievable end to our first 100 episodes. Next week. We're taking a hard earned vacation but look for the drop of our episode one special edition with all new intro and outro wraparound segments. It's gonna be a lot of fun. Then we're back with the season six premiere with vulture film and TV journalist Angelica Jade Bastiaan. She's going to join us to discuss De Niro and Pacino together at last in the classic heat streaming now on AMC plus and available for rent and for K on all major platforms. Dude pod as a tip tech podcast John a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whipped song music transcripts provided by Sophie shin. The episode was edited by Megan Hayward of edit audio and produced by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

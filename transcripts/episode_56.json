@@ -1,0 +1,2111 @@
+{
+    "episode_number": 56,
+    "episode_name": "Blade Runner",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:15",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod, your one stop shop to get ready for the new dune movie, or just talk about great movies if you don't care about dune. This week, I'm joined as always by my co host, Jason"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:29",
+            "text": "Ridley Scott, you're a hack. You should have listened to the producers put the happy ending back in put the voiceover back end. Wow, he's not a robot. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:37",
+            "text": "let's do it. And by the co founder and CTO of slack, Cal Henderson."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "0:42",
+            "text": "I mean, it seems unlikely that they would get planning permission for that kind of level of housing in San Francisco in the next 100 years."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:48",
+            "text": "On this episode, we complete our Ridley Scott doubleheader with his 1982 masterpiece, the greatest science fiction film of all time, question mark, Blade Runner. We cover the power of production design, debate whether Deckard is a replicant again, and make the biggest announcement in show history. If you're enjoying the show, check out our Discord server where you can hang out with us whenever you want. And now, without further ado, June, Blade Runner, cow Henderson. How you doing, buddy? Welcome back. It's good to see you."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:23",
+            "text": "Hey, I'm doing good. It's good to be back. Has that movie come out yet? The dune one?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28",
+            "text": "I don't know. What's the deal with that. Jason? Have you heard anything about it?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31",
+            "text": "I just saw it think before we started recording. No Vanna that No, seriously, that is venom, which is supposed to come out the week before is probably getting pushed back. So who could say we're just gonna be I love it. It's waiting for Godot, the podcast. It's the best thing that's ever happened."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:47",
+            "text": "I'm quite excited about the new Venom movie. Carnage. Yeah, that looks pretty good. It looks pretty good. As a fan of the first one. I know not a whole lot of people were Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:57",
+            "text": "I didn't see it. But people said it was absolutely bananas. And Tom Hardy's performance was actually just really fun. And over the top."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "2:03",
+            "text": "Yeah, I'd say that was accurate. I like movies set in San Francisco as well. And it felt very San Francisco not like a planet of the apes that kind of messes with the geography a lot. But it just felt very actually in San Francisco."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:16",
+            "text": "Yeah. Yeah. The Nuclear Power Plant in Marin County. I was personally, a big fan of that was pretty cool."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "2:25",
+            "text": "You didn't know about that? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:26",
+            "text": "exactly. This"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "2:27",
+            "text": "is big local news."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:30",
+            "text": "Well, we are super stoked cow to have you and we decided with season four, I will just say what season four we decided we were going to kick it up a notch. And we were going to, you know, basically go for the big ones, the big ones. And if you think about movies, that had an impact on us on culture on science fiction, and ultimately around Dune, there is one film that is at the top of the heap. And so we started last week with Ridley Scott for this two parter. And this week, it is literally the the big one. It is Blade Runner."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:07",
+            "text": "Man. What a movie. Yeah, it really is. It really is the movie on top of the well lit ziggurat in the middle of futuristic Los Angeles. It's a very the very pinnacle of that pyramid. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:23",
+            "text": "yeah. And we're gonna get into it in the bottom of the hour. We have a little bit of business we have to take care of but I just do want to call out so folks, you know, we get we get some heat sometimes. Jason I don't know if you've seen this before, but we take some heat sometimes like, you know, is this podcast really about dune? Does it uh, you know, are you just like click baiting us when you post this in the Reddit and this is about dune. We love dune. We think about it all the time. We obsess about it, but this one is actually even more special. Because in 1976, Dino DiLaurentis got the rights to dune. He purchased them from the gibbons consortium, who had been working with Jodorowsky. And he hired Herbert to write a new screenplay in 78, which was 175 pages long. And in 79 de la Renta has hired Ridley Scott to make dune"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:15",
+            "text": "Mm hmm. What do you think about that connection doing Reddit? You think this podcast has no plan? His podcast is well planned."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:24",
+            "text": "Yeah, it's real. Yeah. How much time do you spend on Reddit? Too much?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "4:28",
+            "text": "But you know, mostly just looking at the memes. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:31",
+            "text": "What is your favorite? What's your favorite subreddit?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "4:33",
+            "text": "Right now? It's probably Minecraft builds because I'm back into playing Minecraft with my with my with my seven year old and so yeah, getting inspiration seven"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:42",
+            "text": "minecraft minecraft got wild incidentally this is a tangent but like I see these like videos on Tiktok occasionally of people who are like building you know replicators and shit and Minecraft. It's it is wild. What you can do in there nowadays."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "4:58",
+            "text": "It moves have done a lot over the last few years and those kind of they call them technical players, the the people who figured out how to do the crazy machines. That's pretty great, huh?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:08",
+            "text": "It's a different game."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:09",
+            "text": "Yeah, I just thought it was about whacking trees. I was into the wakened tree version. I wasn't into this like building super computers for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:17",
+            "text": "a long time. You've been that way that says like, you're known for that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:20",
+            "text": "I'm known for as a tweet, a tree rocker, a tree whacker? A tweet whacker."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "5:25",
+            "text": "Yeah. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:27",
+            "text": "So so back to back to Blade Runner and Ridley Scott. So he was hired to do Dune, he was in active development on it was working on scripts, I was"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "5:37",
+            "text": "attracted to dune because it was beyond what an alien, which was kind of hardcore kind of horror film. And dune would be a step very strongly, very, very strongly in the direction of Star Wars."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:52",
+            "text": "And then tragically, his brother died of cancer. And he realized that he was not going to be in a position to be able to tackle all of the development and the work that was going to be needed for dune. So he dropped out and stepped away, which then obviously cleared it for David Lynch to come in and make an amazing movie. Yep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:15",
+            "text": "It all worked out. That all worked out. Great, especially for us."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:18",
+            "text": "Yeah. So we'll be getting into Blade Runner, we'll be getting into Ridley, just around the corner. Next week. I'm pretty excited about this, I will say this film is is you know, also extremely formative for me. In the 80s as a huge Star Trek fan. There was kind of the definitive second generation of Star Trek movies featuring the original cast. And that is the film we are going to take arguably the best of the Series, Star Trek for The Voyage Home Star"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:51",
+            "text": "Trek four. Has anyone ever just started on the fourth episode of a movie series? Yeah, I mean, like, what a what a great place to just like pick up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:02",
+            "text": "Why are we why are we doing this? Why are we doing this?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:04",
+            "text": "Well, it's a San Francisco movie. Okay. It involves not to spoil it for people who haven't seen Star Trek for a voyage home. But it involves cat for capturing whales in the belly of a ship. And in doing so anticipates chapterhouse. Dune, in which they capture a worm in the belly of a ship in order to preserve the ecology of the future depot. So it's entirely planned, like everything we do, it's very well planned. That's right. But it's also it's also a favorite film of our special guests for next week."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:43",
+            "text": "Yes, please introduce our special guests for next week."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:46",
+            "text": "Our special guests for next week. The first of many exciting announcements tonight is Biz Stone, co founder of Twitter. Boom, who will be here to talk about to talk about Star Trek for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:59",
+            "text": "this is founders month, founders month on Dune pod. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:01",
+            "text": "I'll spoil for you in advance that he does a really amazing, transparent aluminum impression. And so you want to turn in you'll want to tune in for that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:12",
+            "text": "nuclear wessels"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "8:14",
+            "text": "whistles. Yeah, you'll"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:15",
+            "text": "get it all. You'll get it all computer."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:17",
+            "text": "There's a lot of good. Yeah, there's a lot of good material in there. Yeah, it's so we're very excited about that biz. Welcome, finally, coming on. I cannot wait to hear the stories of Jason as a young product. You know, lead charting the course of the internet for all humans. Like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:34",
+            "text": "more importantly, Bizen I once visited the Star Trek experience, which no longer exists. It used to be a museum in Vegas in Vegas. Yeah. And so that Bill and I went there for a bachelor party during a bachelor party. We took time out to go there. We'll be right back. And so he'll be able to tell you about that. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:54",
+            "text": "perfect. Sounds good. Well, we're super stoked for that. So next week, Star Trek for the voyage home and listen, let's just get with there's it's too big. The news that we have is too big. The biggest announcement we have ever had. So let's get into do news. Would you like to know more? I can't wait. You gotta say you gotta say do news, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:16",
+            "text": "Oh, yeah, I gotta say, Dude, I like to excite I can't even say doing this, but I'll say it. Do news. Do tu tu tu tu? Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:22",
+            "text": "very good. So let's start with the first one. We thought this was going to be the big news right here. We thought this was going to be huge. Danny villain who was quoted in an interview in il Veneti de Repubblica as saying that Chani, not Paul is the protagonist for june two."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:41",
+            "text": "That is a big piece of news. We're not entirely sure what that means. Let me read it. Okay. You go and read it. In the original Italian please."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:48",
+            "text": "Yes, this is translated by Gianni Sobczak, our man on the street who's keeping it real, right. It says I'm honored to present to such explosive talents on screen and I can't wait to Shoot the second part of Dune to have them back together. Knowing that in the next chapter is in day out will be the star of the story. Yeah. Wow."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:08",
+            "text": "The star or like the hero, it depends on the translation you look at."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:12",
+            "text": "Oh, is there controversy on that translation? Yes,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:15",
+            "text": "there's controversy in Italian doing circles go to Red it battalion LaDonna. No, but like, I think I've what our speculation is, is that this may mean that well, he's given other quotes in there about how he wanted to center more of the women characters in the story. And so that's like, one piece. Thank you. And then thing too, is, I think in part two, you can imagine that Paul maybe is in the spice trance, for some part of the story and that SHINee kind of picks up part of the Fremen, you know, becomes the Fremen point of view as they wage their girl war against the her Conan. So I that's my that's my interpretation. What's going on there?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:54",
+            "text": "Cow, what's your take?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "10:56",
+            "text": "I have no idea, honestly. Okay, good. Yeah. But the, I don't know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:04",
+            "text": "got worse, you're not on the hook for anything. That's, that's just an option if you if you want to have it. So, but people have been losing their shit, like people are saying that they're going to change the story. And it's not going to be Paul's gonna be trying to like they're going to shift the whole things like that is not happening. That is not what Danny is doing. But I think this is going to be a really great adaptation. And again, we already saw the role of Chani being expanded in the first 10 minutes. So the film, right, and so in a real smart way, we won't get into the details of it. But it's, it's an excellent, I think tuning that that is happening. So we're stoked, and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:40",
+            "text": "not to not to further delay other big news. But there was another Denny villain of controversy this week, or just just today. So he gave this quote, in which he said, first of all, the enemy of cinema is the pandemic. That's the thing, we understand that the cinema industry is under tremendous pressure right now that I get. But then he said, This is an important part to watch dune on television is the best way I can compare it is to drive a speedboat in your bathtub. For me, it's ridiculous. So he's very upset about the streaming thing still. And you know, that's just gonna be what it's gonna be, because it's gonna it's gonna stream. Just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:17",
+            "text": "any habit speedboat is my first question."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "12:21",
+            "text": "And how big is his bath? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:23",
+            "text": "exactly. Like in question."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:25",
+            "text": "If you just make if you just make the bath big enough, yeah, the movie will look great. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:30",
+            "text": "do want to go on record of saying, I think Danny is completely committed to this film, he's committed to the idea of cinema. I think it's absolutely absurd to think that people can't really enjoy films at home. Many people watch every movie they've ever seen, you know, at home, and all of the best movies they've ever seen. They watch them at home. So it's like, it's fine. People should see it in the theater, if they have an opportunity. Like if you get an opportunity to see dune in the theater, especially if you get the opportunity to see it in IMAX. You should probably do that. You should probably do that. Yep. All right. So, next piece of do news, I've hit my saturation point on new images and video, okay, like, I can't handle those,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:12",
+            "text": "generally, you're gonna blind yourself. And so no,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:15",
+            "text": "I just like I can't like absorb it and enjoy it and get excited about it in the way that I was in the same way. Like, I just feel like I'm seeing so much of it now. So I'm just calling that out. We did get this week, some behind the scenes, leaked images from the art and soul of Dune, from our aesthetic and warriors. And there was some wild stuff in there. So I was pretty into it. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:36",
+            "text": "you just said you weren't into it. You're a liar. I think you're I think you're you're you're falling apart like Hal 9002 1001 Because you're trying to be duplicitous with our audience by by by holding out and it's and it's and your hat brim is too flat. And there's just generally it's just, it's just a lot is happening for you right now. I'm conflicted. We just need to, I think we need to get to the ladies before before you start sweating milk."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:00",
+            "text": "Okay,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "14:01",
+            "text": "at what point? Is it just going to spoil your enjoyment of the movie when it does come out? No. Do you? Do you feel like there's a limit to how much you're gonna know about it before you go into it?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:11",
+            "text": "I didn't read the script. So Jason and I got the script last year. I think Jason flipped through it a little bit. I started the very first page and I immediately turned it off. And I was happy to see that ultimately, that script was not what was that opening was not what they used. So I mean, obviously I've read the book a million times. I know already most of the stuff that's in there, but I think it's gonna be it's gonna be"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "14:30",
+            "text": "fine. Fill out some of the best movies best movie going experiences. I've had this one I go in with pretty much zero, you know pre information about about what the movie is going to contain. You know, sometimes even who's going to be in it? Totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:43",
+            "text": "Yeah, totally. Those are magic moments for sure. That's just not an option for me. Yeah, for this I am legally obligated to watch all this shit. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:51",
+            "text": "yeah, yeah, we will get sued by tape deck. If we don't we if we don't stay up to date. So yeah, that's after they have a lien against our children. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:00",
+            "text": "every week we have our live recordings that we do in our Discord. We have friends that join along. The people are chatting right now and we're able to respond. Also people can hang out with us whenever they want post links and stuff. It's just a really great community of people. This week Jason, listen to this this week new discord members since last Wednesday. Okay. All right, Tim 24 frames, Michael sippy. Anthony IUP. Jarrett gets games who has been a listener since episode four a rival all the way back noble a listener since episode one. Auto golf and crash fodder. Holy moly. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:42",
+            "text": "a lot of people. Also there was a bug on our Discord this week where some people were unable to post after joining. So that's a good welcome. Join our Discord. And maybe you won't be able, maybe you won't be able to join in who knows? Did you mention one man? Did you say one man and one"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:00",
+            "text": "man? One man? Yeah. Thank you. Yeah. Okay, that was close. So welcome, everybody. Thank you for joining, especially everybody here who is here with us live tonight. We have a great time and we really enjoyed that. Jason, do we have any other news? We have one other piece of news? Oh, please go ahead."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:16",
+            "text": "No, I think you should I think you should do it. Man. I think you should do the news. Your your your your your you're the captain of this ship. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:23",
+            "text": "listen, you know, we asked for tickets to go to Tiff"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:30",
+            "text": "and I asked for days to go to TIFF. Matt just would randomly a cost people who he thought might be Canadian on the street and asked him if he could get invited to go to Toronto, the Toronto Film Festival catcher"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:45",
+            "text": "Come on, catch up, get us some goddamn tickets. So so we didn't get into TIFF. We didn't get into the Venice Film Festival. I haven't heard anything about, you know, getting to a Hollywood premiere. So we decided in typical, you know, crisis, you got to rise to it. Yeah. And so we decided Effat we are hosting our own XClusive opening night, private IMAX screening in San Francisco. We have all 430 seats booked. We have the entire theater book. This is just us, our friends. And we are going to make this happen. Yep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:23",
+            "text": "We are going to invite everyone we've ever done the show with the folks that we hang out in discord with. We are going to invite the dune pod family to come watch the June premiere with us in San Francisco in IMAX on October 21. Before most of the world can even see it. The dune pod premiere of Dune,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:43",
+            "text": "the dune dune 2021"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:45",
+            "text": "Yes of June 2021. Yeah, we're not showing we're not showing the David Lynch dune. It's not like a bait and switch."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "17:51",
+            "text": "I think people have already seen that one to be fair. Yeah, that wouldn't really be much of a premiere."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:55",
+            "text": "You're gonna fly to San Francisco and it's like a screening of like a VHS copy of the Sci Fi Channel like dude with William Hurt all thing while it's right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:04",
+            "text": "So so Brian Mosley calling out in chat that he has already booked his tickets because there might have been a leak before this before this recording. So Kyle, I'll give you the opportunity to be the first person outside of Brian to officially confirm if you would like one of those tickets. Obviously all of our all of our hosts who have joined us will be welcome."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:23",
+            "text": "Yes. Will be invited. Yes."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "18:25",
+            "text": "Yeah. Can be in I'll be there. This is gonna be incredible. This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:27",
+            "text": "is this is one of the largest IMAX screens and theaters in the United States. And it is a truly incredible venue. So we're super stoked. It's gonna be seven o'clock. We'll watch it and then we'll go home and record and watch on HBO Max and, you know, generally freak out so stay tuned for details on how it's going to work how you can join us. This is a free event. Anyone who wants to come can come for free. It's going"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:55",
+            "text": "to must be must be vaccinated. That's Yes, because the only reason we're doing this is because we don't want to catch COVID to go see the premiere of dude. Also the fact that we're doing this and have like committed to do this with AMC definitely means that the movies gonna be postponed 100% We'd like guarantee that the movies gonna be postponed now. So sorry for that in advance. Good luck. Thanks"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:21",
+            "text": "All right. Well, shall we get into Blade Runner?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:24",
+            "text": "Oh my God. Now we got to talk about player and I feel so emotional already. Okay, let's do it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:29",
+            "text": "All right, here we go. Blade Runner is a battle for freedom in a dark future. Rick Deckard is reactivated to his old Blade Runner police unit to hunt and terminate, or more euphemistically retire a group of murderous Nexus six replicants who have escaped the offworld colonies and returned to Los Angeles. These bio Mechanoids Leon, Roy Zora and Chris, endowed with incredible strength and nearly impervious to pain will stop at nothing to find a way to extend their lifespans. Deckard is drawn down a path of investigation that leads him from dark and seedy alleyways to the pinnacles of power atop the Tyrell corporations pyramids. Along the way, he will meet tyrrells Stunning nice Rachel herself a Nexus replicant, struggling to accept what she is. Will Deckard survive long enough to complete his mission and retire these machines? Or will he be forced to question his own reality and duty as a Blade Runner?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:45",
+            "text": "So again, that's great art art was hoping that the synopsis would end with or will he run the blades which I think would have been amazing. But I like what you chose instead. That's fine."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:01",
+            "text": "Thank you. I'm a purist."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:02",
+            "text": "I also notice what you put in there with the reactivated we know we know what you're doing. And you're you think you're you think you're clever, but we see what you're doing."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "21:10",
+            "text": "Do we know who came up with the title? Like because it is kind of nonsensical?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:15",
+            "text": "Yeah. It's actually based on a William S. Burroughs novel called Blade Runner. And it was I think it might have been Hampton Fancher, the original script writers are one of the producers who requested to Burroughs that they use it and he allowed them to do so."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:29",
+            "text": "Oh, so nice. That's great. What a champ."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:32",
+            "text": "It was originally titled dangerous days. And so let's just do a little bit of behind the scenes here stuff so. So Do Androids Dream of Electric Sheep, Philip K. Dick, one of his classic films. And this was a time before any of his movies had ever been made. And since you know, between minority report and Total Recall and and Blade Runner, and many others, you know, he's become one of the most translated authors out there. And a guy named Hampton Fancher basically created a script that was the essence of this film. But the entire movie took place like inside, like his apartment, like nothing happened is like this tiny little small movie. And after Ridley was hired, he basically took it, expanded it way out, and then ultimately took Fancher off and brought in David peoples to be his personal writer, so that they could rework it and get to where they wanted it to be. Hampton"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:25",
+            "text": "Fancher, is just an amazing name, by the way, like they should have called the movie that like just, just or will he Hampton? The fan?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:35",
+            "text": "Totally. So cow, what was your experience? Like? When did you first watch Blade Runner?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "22:40",
+            "text": "That's hot. It was a long time ago. You know, it's very formative movie. For me. It came on in what 8182 82? Yeah, so I didn't watch it when it came out on account of me, you know, being a toddler, but did watch it later. And almost certainly want to watch it the first time I didn't didn't get it in the way that they have watching it. Since it's a movie I've seen a lot of times and a bunch of the different versions, which I'm sure we will discuss. When you look at the the kind of visuals it is for the time at which it was made, it is still a really enduring image of the future. But it's obviously there's been a lot of things that were derivative of its sense and use that kind of view of LA in the future, but it feels still feels super modern. If you strip out Atari, you know, it feels like a possible vision of the future. And it's a you know, so so few things in it aged poorly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:30",
+            "text": "It's now an alternate history, right? Like, it's like it is 2019. So it's become this, like, what if history or if the past had developed in a different way or developed more quickly?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "23:39",
+            "text": "Yeah. And I guess, maybe it's still going to be 2019 You know, when society collapses, and we we lose track of the calendar. So maybe it's still a plausible future. Yeah. Something to look forward to."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:51",
+            "text": "Jason, how about you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:52",
+            "text": "They've got good noodles. Still? Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:54",
+            "text": "that's great."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:56",
+            "text": "I don't remember like I saw this on, like, Saturday afternoon television, and in St. Louis. Like channel 11. In St. Louis used to show afternoon movies. And this was definitely one of the TV cuts was on there. And then, you know, we had it on VHS as a kid because as mentioned before, my my dad had a VHS store, a video rental place. And so I just had seen it a bunch like as a young child. And yeah, it was just told I you know, it was just totally obsessed by it. There's there's scenes in the movie and things in the movie that I just, you know, had never encountered before. And you know, all the things that's a cow said in terms of it being visually, this language that just informed the rest of cinema I think I think the comparison to 2001 is apt because it just had that kind of like, this is what this this is what this kind of movie looks like. And everyone's like, okay, cool. I'll do that. Yeah, so has always just been a part of my life. It's so much so that when I was rewatching for this pod, like just from the opening, I have this like have low V in response of just like yes, this is coming home for me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:04",
+            "text": "For me like even from the Allen lat from the lad Corporation logo, the green tree scrolling across Yeah, like that immediately locks me in and then when the big drum you know for the for the opening scrawl happens. You know I am viscerally viscerally affected. So same thing I watched us on video many times as a kid, and then I realized now in 92, that was when I moved to San Francisco. And I think I saw it in Berkeley, the Director's Cut, yeah, and was like, Holy shit, you have completely changed the entire meaning of this film. With 24 seconds, you're like, you're a genius. And this is the greatest thing that's ever happened. And just continue to watch it so many times through my life. I love love. Love this film. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:52",
+            "text": "guess I mean, we'll talk about that with the different versions. I definitely like my overall impression. I was trying to go into this one a little bit more fresh, I guess then with some of our other movies where I do a lot of like, obsessive, like comparison of what's in the cut versus and how it's changed, because I wanted to see if I could like see it somewhat afresh. And like my overall impression, I guess is like that a lot of that different version stuff just doesn't really matter. Like the genius of the genius of the movie is like, the way it looks and the vibe of the movie and it's just so all of that is just so timeless that like some of the narrative differences are just not super like religious to me at this point."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "26:33",
+            "text": "Oh, I'll disagree that I think the garden cow get his ass there is yet to be a really good cut of this movie. Okay, why and I feel like the you know, there will be a a perfect cut in the future that somewhere between the original theatrical release and the director's cut or the you know, the one is like this, he should not be a replicant in it. It doesn't make sense so much of the rest of the movie doesn't hang together correctly. Whoa,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:03",
+            "text": "podcast. The podcast is falling apart. It was a good run. Yeah, no, I I actually I actually respect that point of view in the like, you shouldn't be a replicant point"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:12",
+            "text": "of view. Let's let's we'll have it I definitely want to have this this debate. Like we have to do it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:18",
+            "text": "We have to we have to warm up to it is what you're saying? Yeah, let's let's have to ease into it. We can't just jump in the bathtub. Jesus. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:24",
+            "text": "I didn't see a comment. I'll tell you that like and when paper CAG did Blade Runner? Many years ago, I was shocked that the hosts did not believe yo slim and Dale Jonesy, none"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:38",
+            "text": "of them Oh yeah. No deals in the discord. He's mad already."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:42",
+            "text": "None of them believed that Deckard was a replicant. It just pissed me off. So so we'll, we'll get into it. For the record. We did watch for this podcast we will be discussing primarily the final cut, which in my mind, the differences between the director's cut and the final cut are very minor, like doesn't really matter that much. But alright, well, why don't we get into this and let's get started. We've talked about this for dune many times. Like the amount of exposition you generally need is like a pain in the ass in science fiction films. And I feel like the scroll does such a great job and the music is so intense and ominous. Like it's a really fantastic job of conveying what replicants are and what it means and whatnot."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:21",
+            "text": "Yeah, I mean, I think I think like it's funny, I was watching with crystal who's who's seen the movie before. But like, you know, like, like, if you're coming into it fresh like I think the opening scrawl can can be a little like, well, this seems goofy. Like this is like kind of very, it seems very serious. Like you're like oh, this is like some be some serious shit but like it's called Blade Runner. Like that seems kind of weird. Like there's just parts of it that seem a little absurd like on its face. But But yeah, I do think it does a decent I do I, to me, it means that you don't need the voiceover right that is in the theatrical. calor you a voice over defender in addition to a Deckard as a human defender, okay, no,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "29:07",
+            "text": "no, no, no, no, the, you know, the perfect version of the movie for me would basically be the theatrical cut, but without the terrible voiceovers. Okay, right. And that's the whole was he doing it badly on purpose, which seemed like he really was, but then it's denied since but Harrison Ford is not an amazing actor, right? Like, he's been in many amazing movies. You know, he's not an amazing actor, especially playing this character. But he's not that bad. Like the voiceover just sounds so disinterested. This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:36",
+            "text": "is covered in the in the, what's it called Dangerous days. That documentary three and a half hours making a documentary, which I watched and they had many different takes on the voiceover work. Ridley was involved for a bunch of them and they were going back and forth. And it was really tough. And when they were out of time, and it was all done, and it was the last day, Harrison was in England by himself with one guy working through it. I think he was just kind of frustrated to get it done. He wasn't trying to sabotage it. But he was definitely frustrated. You could tell that and it seems like through this entire production that was sort of like a running theme. Harrison was frustrated with Shawn Harrison was frustrated with Ridley like it was it was a tough a tough production for him."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:17",
+            "text": "Well, Harrison Ford doesn't really like showing up to work very much. He doesn't really enjoy the doing the acting part of being an actor. It's like, Can I wear a t shirt?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:25",
+            "text": "Can I just like, Why do I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:27",
+            "text": "I'm showing up in this my fly my plane in do my lines? I'm gonna get out. I'm gonna look good doing it. Cut The Check."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "30:36",
+            "text": "You know, he didn't have a lot to work with for the voiceover script, either. You know, it's yeah, it's it's not it's not amazing work?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:43",
+            "text": "Yeah, no, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:46",
+            "text": "not great. All right. Well, so but we do have very quickly, you know, with when once we open up with Los Angeles, you know, they are flexing big time, you have Douglas Trumbull, who did the special effects for 2001. During the special effects here, the team that he assembled was incredible. And one of the things they called out as there are only 50 shots in this movie, there are only 50 special effects shots. There are not that many, but they compared to Star Wars or others that had hundreds, but it was so well done and so tightly integrated, and so completely believable and visceral, that it really affected everything."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:21",
+            "text": "Yeah, yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "31:22",
+            "text": "I think also longer shots or does it just feel that way? Doesn't you know, feels like we have long panning, you know, track shots of the of the miniatures at the beginning that set the stage slowly with fewer shots."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:35",
+            "text": "I think there is there's I don't know if in the beginning, but there's definitely some stuff where they in the final cut, one of the things they did was extend a little bit like a few scenes are just like there's a little bit more padding in them. And so it does feel like it has a bit more space to breathe, I think."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "31:50",
+            "text": "Yeah, not not talking about the most padded scene maybe of any movie ever, which I'm sure we'll get to Oh, man,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:56",
+            "text": "I can't wait. And Hans, I have my pattern that I that I'm worried about. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:00",
+            "text": "you mean shoulder pads? I mean, Sean Young shoulder pads that's accurate to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:07",
+            "text": "one detail I love about the landscape is the fact that a million people live and work in tyrrells pyramid. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:16",
+            "text": "that's a good one. I didn't know that."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "32:18",
+            "text": "Like just the scope. Have you done the math on that? Does that make sense? It's in"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:22",
+            "text": "the background, somebody, whatever. It's it. I've read articles about it or whatever. So like, is there going to be a Salesforce tower cow that will be, you know, basically the size of San Francisco? Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "32:31",
+            "text": "that's more people than live in San Francisco. So, I mean, it seems unlikely that they would get planning permission for that kind of level of housing in San Francisco in the next 100 years. Yeah, so. Okay, yeah, maybe in LA Airport."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:44",
+            "text": "It's a lot of upzoning. For sure. I well, I mean, it's amazing that Ridley Scott was able to get like a million extras to fill that pyramid to so I could work in the second ad for that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:55",
+            "text": "So let's talk about Leon and the Voight Komp test. Yeah, because it is a punch in the face. It's a punch in the face for the film that the way that it opens here. It's very strong. Tortoise"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "33:05",
+            "text": "lays on his back his belly baking in the hot sun beating its legs trying to turn itself over. But it can't. Not without your help. But you're not helping What do you mean, I'm not helping? I mean, you're not helping. Why is that beyond"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:19",
+            "text": "that there's there's two things I noticed about watching this this time. One is I really liked the way it's filmed. I like that it starts in this like long shot of what holding that's the other guy's name. Yeah. And, and like, it slowly pushes in on them over the course of the scene. Like as he's administering the task that gets closer and closer on Holden, and on Leon. And I really, I really liked the way that they build the tension of the scene by doing that, describing"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "33:47",
+            "text": "single words, only the good things that come into your mind, about your mother, or Mother. Tell you about my mother."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:01",
+            "text": "Also, just like everything just looks amazing. The Void comp machine just isn't immediately compelling. You know, having seen the movie a billion times, it's compelling. I think having you know, if you've not seen the movie, or just like, What the hell is going on with that machine. All the stuff that the dialogue that Holden has to give like the stuff with the tortoise. I mean, there's a reason why those samples are so iconic, is because it immediately draws you in even more than like the even more than like the vote the scroll, it establishes like this future that you're you just want to know more about you just want to know like, What the hell is what's going on here. Like even if you didn't have the scroll, you'd be drawn in by what's happening in that one scene. It"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "34:44",
+            "text": "is such a powerful scene that I think it kind of overrides the fact that it doesn't make any sense. Like from a story point of view. It's nonsensical. Like, why would you not just make machines so that you could you know, point A scanner at them and say, yep, replicant Yeah, like if this is a problem. Yeah, they've had to create a police department to deal with. You just do it more straightforwardly. But it makes for great cinema."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:07",
+            "text": "i Well, I mean, this, this speaks to the concept of, you know, the power that's being wielded by corporate America, right, like, Tyrell has been able to lobby to avoid that kind of regulation. Yeah, that's a good point, they could get away with it. So I think it's an indictment. It also goes to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:24",
+            "text": "a point that you get just to tie it back to dune to further push back on our haters. Like it goes to this point, which is like if you build synthetic beings that are meant to imitate humans, if you do your job, good enough. Not only do they fool the humans, but they end up fooling themselves. And then you really kind of have a problem faced answers, which is a theme and yeah, it's a theme in the latter June books with the face dancers who become undetectable in some way, because they truly believe that they are the people they're imitating"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "35:53",
+            "text": "this is obviously the case for Rachel, but the you know, for escape replicants very much know they're replicants. They do."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:59",
+            "text": "Yeah. But that's I think their Nexus six, and she's Nexus seven. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:03",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "36:04",
+            "text": "is the implication that, you know, the kind of offworld slaves of the next model would not know that there. They would just think they were human slaves. Is that better?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:13",
+            "text": "This is like, Yeah, and so like, this is like, what in Blade Runner 2049. They're like, Okay, well, we're never doing that, again, like the rebel guns that we build are going to explicitly know that they're replicants. Right? And like, we're just gonna have like tight controls on them, which also doesn't work. But yeah, that's the that's like sort of where the the sequel picks up the story."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:31",
+            "text": "So we cut from there from from the white comp test. And, you know, Leon, taking out hold on to Deckard sitting, waiting to get his noodles in the rain. And I think I said this when we talked about Blade Runner 2049. But for me, the notion that I was loved is the idea that some technicians like basically put Deckard in position, they'd given him his previous memories, they'd activated him that he's an old Blade Runner, and that he's coming back out of retirement, they basically set everything in motion, and they're doing this big Kabuki show. And so this is the this is the start and our introduction to him, as well as to Gaff. So go ahead, cow,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "37:10",
+            "text": "this one. I think one of the core reasons why that story doesn't make sense. You know, the premise that he's just been activated as a replicant is, you know, when you think about the Roy Batty character, or press, they are like the high end combat models right now, why on earth, wouldn't they use a combat model for decade? If he was a replicant? Why wouldn't they make his job plausible and easy? And instead, he's just like, some old dude getting beaten up by machines."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:37",
+            "text": "We go for we go for a rebuttal to age."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:39",
+            "text": "And now I mean, like, look at how everything turned out. Everything worked out. Everything worked out largely right. I mean, there were a few, a few casualties. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:47",
+            "text": "my Yeah. But"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "37:48",
+            "text": "that's not because of anything DECA did like if, of course, I think that's one of the challenges of the movie of the plot of the movie, and still a great movie is that if he wasn't in it, it would have still been the same outcome. Just nobody would have been there to hear rocker. He was like amazing lines at the end."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:05",
+            "text": "I don't know about that. I so so let's keep let's keep going. I'm gonna I'm gonna work. I'm gonna work through this. As as we"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:11",
+            "text": "work through work through work through the pain, just can't shake it off. Shake that one off."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:17",
+            "text": "All right. So how about about the you know, so they get to headquarters, and we have em Emmet Walsh as Brian. I love him is in this movie. Love CNM"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:28",
+            "text": "Emmet Walsh, he's great in he's great in Raising Arizona."
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "38:34",
+            "text": "So here's Phil walking down nine mile. Phil Parker. You understand? He's got his sandwich in one hand, and the fucking head in the other?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:46",
+            "text": "Yeah, yeah, exactly. Yeah. And he's, he's got a dope lamp on his table in the scene. Yes, like weird Western scenes on it. I noticed that I was noticing a lot of like the set design this time around because it is so very, like specific and weird. Like there's so many weird textures of like, blocks and walls and the things on lamps and the things on desks. It's all this weird blocky organic, but like also like cold shit. Really, really good stuff. Love that stuff. Also,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:18",
+            "text": "every bit of dialogue that he says is incredible. Yeah,"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "39:23",
+            "text": "I need you to. This is a battle. The worst yet? I need the old blade runner. I need your magic. Squid when I come in here, Brian. I'm twice squid now. Celebrate where you are. You know the score, pal. You're not cop. Good little people. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:45",
+            "text": "And then he begins describing the replicants ad. So Leon, he could lift 400 pound atomic loads all day long."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:52",
+            "text": "It's funny like the stuff that they throw in like of like, atomic loads and see beams glittering and you're just like wow, Oh, is any of that shit mean? Doesn't mean anything. But that's so"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "40:03",
+            "text": "good, right? Like it's supposed to mean anything. It's evocative"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:07",
+            "text": "trade. Off world kick murder squad."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:11",
+            "text": "What does it kick? What does it what is it? What is the kick modifying and murder squad? Does that mean they kill people by kicking? Is it like an honor? Yeah. What is the kicking mean? Or is it I mean, like, I don't know,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "40:24",
+            "text": "I think the kicking means something different to everyone. And that's what's beautiful about it is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:28",
+            "text": "exactly, I just, I think his performance area is great and sort of setting things up. Although I did notice in rewatching it they give the exposition twice the fact that there was they got a shuttle they killed everybody. And then they and they came in they landed. So that was kind of that that could have been tightened up just a little bit."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "40:47",
+            "text": "Yeah. It's kind of an important exposition though. Because without that, you kind of feel sorry for more sorry for them than you do like to, you know, yeah, they don't really do anything bad on screen. Yeah, right. That's true. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:00",
+            "text": "kill a lot. They kill a lot of people a lot. I guess they kill James Hong off screen. But yeah, that that they're definitely killing that definitely killing folks."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "41:08",
+            "text": "Yeah, you don't you don't see a lot of that right, though."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:10",
+            "text": "That's true. They're killing people who deserve to die. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "41:13",
+            "text": "they're killing people who are trying to kill them. Yeah, you know, what would you do in this situation?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:17",
+            "text": "Well, no, this is the this is this is the point of the film. All right. So so Deckard has told that there's a Nexus six over at Tyrell and to go put the test on or put the machine on him. And so this is the introduction of Rachel Do you like are all"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "41:41",
+            "text": "sorted official?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:44",
+            "text": "Of course it is. I can't be impartial here. Somebody else talked about Rachel. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:48",
+            "text": "I thought you were gonna play a sample or something. I was gonna I definitely got it. I don't know why I was like, expecting to see Rachel. Well, first of all, I mean, like, look, just up there with up there with Jessica from the Lynch, Dune, one of the most amazing hairstyles in the history of ad cinema. I mean, just an unbelievable hairstyle to two of the best she has to that because when she lets it down, yeah, like that, too. Yeah, very much. Also, just great wardrobe throughout, like amazing coats, amazing shoulder pads. Phenomenal makeup. She gives a tremendous performance, doing both like steely, like, she's like, quickly established as like, equal to Decker, like can fend him off. Like she's hard to catch. But then, you know, when she finds out the reality of her situation is, you know, is like shattered and vulnerable in a way that's like, compelling. And she's just great. Just absolutely phenomenal performance are really one of the great, great things about the movie."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "42:46",
+            "text": "Yeah, say that's definitely true, with the exception of the complete lack of any chemistry between her and Harrison Ford. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:53",
+            "text": "well, what are you going to do? I mean, you know, Harrison Ford didn't want to be there. So is he. So they hated each other? Right? That was a thing like that. And they didn't like each"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:03",
+            "text": "other. I don't think it wasn't that they hated each other. I think it was the fact that she was very inexperienced and extremely young. And so this is similar to casting Sigourney in Alien, a lot of the behind the scenes talked about how he really was constantly tearing into Sigourney and also having like, yofoto in the scene where he's yelling at her about your she wants to do Dallas His plan and he's like, killing like, god"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "43:30",
+            "text": "damn thing right now. Okay. Well, let's talk about killing it. We know it's using the air shafts. We listened to a POC. Shut up. Let's hear it. Let's hear it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:43",
+            "text": "that was really pushing you off it to push Sigourney. And here you can see in the behind the scenes. She is like a really fun and outgoing and energetic and very quirky human being. Yeah, and her performance is so flat. Yeah. And I love it like I love it's so restrained. It's so tight. And then she was also under a lot of pressure. So I don't know. I just think she's amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:06",
+            "text": "You know, I mean, and also it should just be said, as we talked about in the Batman episode, like Sean Young had a pretty rough like was was not treated well by Hollywood. Like during her career. So not great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:17",
+            "text": "All of the white comp test that they're doing, Jason, you talked about her kind of going toe to toe with him. The smoke. This is the other thing for me through this movie, the cigarette smoke and the lighting through the cigarette smoke. And they're back and forth through this Voight Komp test."
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "44:33",
+            "text": "You're watching television. Suddenly you realize there's a wasp crawling on your arm. I'd kill it. You're reading a magazine you come across a full page nude photo of a girl. Is this testing whether I'm a replicant or a lesbian Mr. Decker just answer the questions please."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:52",
+            "text": "Feels very like a 40s noir scene. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:55",
+            "text": "I also love the way that he shoots like the eyeballs so that you Get like the weird cat eye. Like, you know, you get the glow off the back of the retina a lot of the time. I love that. I don't know how they do that cinematically, but it looks dope as hell"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:09",
+            "text": "to establish who's a replicant and who's not a replicant? Yes. But I mean, it just looks really cool. That's right. It looks cool. When when Deckard has that in his eyes. Yeah. So in Leon's apartment, we have the photos, we have the scale. This is a bit of SoCal, your take on this as a film noir, and kind of investigating component. I"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "45:30",
+            "text": "think that each time I've watched that scene, it has somehow gotten longer, as well, because it's, it's now like three hours in the middle of the movie. Was Was is is this movie, is that scene to blame for the kind of CSI, you know, enhance, kind of trope? Is this where it came from to begin with?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:52",
+            "text": "I think so. I think this is where enhance 126 by 174 comes from Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:58",
+            "text": "yeah. Yeah. Love it. Can't get enough of it. And it's"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "46:02",
+            "text": "it's such like a police procedural, right. It grounds him as you know, it's like he's a cop. This is his job. It's the kind of thing he does. It takes a long time. Yeah. Yeah. And the technology is not is good, but not super helpful. And it makes it feel more plausible as"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:17",
+            "text": "well. It's kind of funny, this is the retro part of it right? To see the you know, the hard copies and that kind of stuff is is really funny. I do love as he's kind of sorta as he's getting stuff out of Leon's apartment, we cut to Leon outside, and he goes and meets with Roy. And then as they're walking into animal to Hannibal to about making eyes, you have the people riding their bicycles by Yeah, that scene is amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:48",
+            "text": "It also has the Rutger Hauer line. Men, police men, which I really enjoy. I rock her ours is phenomenal. And this I mean, like yeah, just so just so good. I think like, you know, part of it's just that he's, you know, Danish or whatever. And so like that reads is vaguely robotic. He just does such a great job. Like and just, and then like, you know rugger Howard's portrayal of Roy Batty becomes an archetype in science fiction like the blond haired leather clad killer like you know, cyberpunk killer"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:23",
+            "text": "he came up with that whole look, he showed up he showed up with the haircut died like the whole the whole deal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:28",
+            "text": "And what a what a fucking What a fucking legend Rutger Hauer is Man Boss rip"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "47:33",
+            "text": "this is was the inspiration for Harrison showing up in like you know T shirts sweatpants and being like, this is my character now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:44",
+            "text": "Man just showing up and athleisure"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:48",
+            "text": "we cut from there to Rachel hiding in decades in Decker's elevator. And to me I want to hit I talked about this last week the sound design the sound effects to it identification."
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "48:02",
+            "text": "Number 97. Thank you. Thank you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:13",
+            "text": "The sound of the elevator the sound of his of Decker's apartment, we'll have a link in the show notes to 12 hours of ambient Decker's apartment. It's frickin amazing. You're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:23",
+            "text": "just going to play it now. So after you hear those 12 hours, you will will come back to the pod so just sit tight for the next 12 hours and then we'll be back with the pod right after that's over. Thank you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:36",
+            "text": "Yes, so why is he so nervous? Why like why is he so scared?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:40",
+            "text": "Because she's a killer robot. Like she's, she's a deadly robot. Like he doesn't want to be he doesn't want to have to kill her and but like she's, you know, he she's what he's trained to kill because they they're part of kick murder squads and shit. He might she might start kicking at any minute."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "48:56",
+            "text": "I was under the impression she wasn't the kick murder squad model. But she was you know, she's the next generation vision isn't necessarily the murder version."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:04",
+            "text": "You don't know You don't know when she's gonna like when the kicking is gonna start cow like I mean,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "49:09",
+            "text": "like it's fair. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:11",
+            "text": "It might be a different kind of kick though. Right? It could be a mental kick. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:14",
+            "text": "Or like a heart kick. Exactly. A kick right to the heart."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:17",
+            "text": "Exactly. So so he tells her, you know, he's read her file. He knows what her secret memories are. He tells her that she starts crying and his whole delivery of like, okay, bad joke. You're not a replicant go home."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:31",
+            "text": "Yeah, no, it's like, No, I'm kidding. That that's a cow's point is where like Harrison Ford has to do a bit of acting, and it cannot be done. It can't really it doesn't really work. It's it. We've talked about this before when we talked about Blade Runner 2049 And I just sort of have an inability to see Harrison Ford as anything but a great actor. I recognize that that is not actually true. But like in this in this moment. This is where the even for me like sort of the scales fall away because he's just like Okay, Padma badger. He's got he's got to do some business. That being said, that being said, the moment where it's like the moment where when he's drinking again, as soon as he has a whiskey glass in his hand, you're bound back. You're back, Mike. That's my guy. Whatever he wants to do from here on out. Take me with you think"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "50:18",
+            "text": "that scene was like shot later and retakes, and it's a second unit. See? And she's not really there. Or like, yeah, I don't know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:27",
+            "text": "I don't I don't think so. I mean, that that set was they said they spent $150,000 Just on that one side of his apartment doesn't seem that expensive now. I mean, then it was,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:38",
+            "text": "I just want to call out, I just want to call in that in that set. The blocks of his apartment, like the walls like are these weird shapes like these weird like, tiles, tile blocks, like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:50",
+            "text": "frankly, it's based on a Frank Lloyd Wright house. I'll find my homie Nick Fisher wrote an article about it in an architectural magazine, so I'll find it and link it fascinated by those blocks. Incredible."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "51:06",
+            "text": "It looked like you know, like sound defusing blocks or something."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:10",
+            "text": "Yeah. Acoustic tiles. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:14",
+            "text": "it was said. So it was said me that designed the overall of his house. And so we should say is a futurist and specifically he's a futurist who is a product designer. And his concept is designer. His expertise is designing products that will be invented in the future. He's hired by corporations to help them to design that. And he was originally hired to design the cars, like the spinner car, which he did and trash cars and JF Sebastian's truck. But as he was doing it, he would draw the car on the street and in the city, and they started getting these drawings. And they were like, more, do more. Do house, do the apartment, do the do the buildings. And so they ended up pulling all of that stuff in which I think is fantastic."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:59",
+            "text": "Amazing. Love it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:00",
+            "text": "Can I just ask this a tiny detail but as she leaves and he's drinking, and he's the score here is amazing. Vangelis is like this sad Rachel theme that's playing and he looks at the photo of Rachel and her mother and it comes to life for a second. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:26",
+            "text": "I noticed that too. This time. I hadn't noticed that before. That must be that must be a Final Cut thing. No, I was like, alright, the photo is gonna be no, it's always been in there. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:34",
+            "text": "think it's always been there. I've always at least for a long time. I've noticed that but weird. Alright. All right. So how about press and JF? Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:44",
+            "text": "this is now we're at the Bradbury Building. So we should we should talk about that. Please. Have you been there? I haven't been there. I had a friend who was just there was shooting something there. But I want to go we should take a field trip."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:57",
+            "text": "I've been there. I went there with Blade Runner, architecture specialist, Nick Fisher, who I just referenced, took us over a couple of years ago. And it is gorgeous. Like the building is amazing. It's pristine. It's not trashed the way that it looks the whole time. But that neighborhood also that tunnel that they're driving through where he's listening to Lyon shooting hold, and that tunnel is also right there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:21",
+            "text": "Okay, interesting. Yeah. So it's like a very old building for LA like it's the 1890s or something like that, like this bill, which is just wild to think about a Los Angeles building from before the turn of the 20th century."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "53:34",
+            "text": "Lets the building in disrepair when they shot their or did they disrepair, they'll"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:38",
+            "text": "cocked it up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:40",
+            "text": "They got an every night at six o'clock. And they had from six o'clock till 6am. And they finally discovered that they could use bits of cork, they could basically turn up cork and throw it and it looked like dirt and mud and debris and trash. But then they had to clean it out every morning between five and 6am. And then get the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:56",
+            "text": "hell out. Seems stressful. Looks amazing. Looks amazing. Amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:58",
+            "text": "So how about press so she hides herself. You know, he shows up and she goes to run away. She actually that was an accident. I always was thrown off by her smashing into his truck and putting her arm through the glass. That was not planned. She got cut up. She has scars to this day."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:15",
+            "text": "Really?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:16",
+            "text": "Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:17",
+            "text": "That's wild. I didn't know that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:19",
+            "text": "She's terrifying. Every time they show the close up and like JF isn't looking at her and she's like, I'll fucking murder you."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:25",
+            "text": "Yeah, no, she's terrifying. And she gets scarier as it goes on. Because she gets she just wears crazier and crazier makeup as the as the movie goes on. And this wasn't like Darrell Hannah's first movie, but it's like, essentially her first movie like she really hadn't done anything like this big before. Just great. She's terrifying. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:44",
+            "text": "also love So JF is alone in this building. And they talked about yo no housing shortage, plenty of room for everybody. And this is an effortless exposition, and there's a little bit more that they tie back later, but basically the concept that Everybody who's healthy can leave Earth if they want to people are being seduced and pushed out away from Earth. And that's left like the dregs of humanity to kind of hold things down on on Earth. Seems"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "55:12",
+            "text": "kind of weird, though, that it's the dregs of humanity who are doing the kind of engineering for Tyrell Corporation. Like why doesn't he live in the pyramid?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:21",
+            "text": "It's a good point. Maybe he just like, you know, he doesn't want to, you know, he doesn't have enough room in the pyramid for all his little his little friends."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "55:29",
+            "text": "You know, he doesn't want to have a million neighbors. Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:33",
+            "text": "The pyramid thing holding a million people sort of reminds me of like, when they show those illustrations of like, you could fit, you know, to solve global warming, we just need to shove everyone into a cube that can fit inside Central Park or whatever, right. I don't know if that's I don't know if that's true. But it seems like a good idea. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:52",
+            "text": "was all the biomass of humanity could fit into a ball inside of soccer Park. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "55:58",
+            "text": "but you did have to blend everybody up. That's maple, which is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:02",
+            "text": "a problem, although that does solve global warming. Right. So we're on the unicorn dream. So let's just get into it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:09",
+            "text": "Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:10",
+            "text": "so cow. Clearly the concept in the theatrical version. Gaff is making origami the whole time he leaves a unicorn at the end of the film, you know, she won't live but who does? And so, Ridley"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:25",
+            "text": "thought justify herself cow justify herself, Ridley"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:29",
+            "text": "thought it was obvious that Deckard was a replicant. But when it wasn't obvious to folks, he had already shot the unicorn dream sequence and apparently, because he was doing that legend already, he like had"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:41",
+            "text": "horses a unicorn. He had a unicorn, he had"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:45",
+            "text": "a record, he's like, so let's get this shit in here."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "56:47",
+            "text": "No, that's it. I mean, that's just like offcuts from that movie that he put in in the later edit. That's like, yeah, you know, the, the the original screenplay, right? The The Hampton Fancher one doesn't have that part in it's all stuff really added after the movie was made. Yeah, right. Yeah. Not even during the original production. Yeah. So it's, it just feels shoehorned in there. Also, the fact that they didn't reshoot something specifically for that movie. It's just like, hi, unicorns."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:15",
+            "text": "I do think I do think we have to admit that the unicorn just feels a little splice, then like, you're just like, you're watching this movie. It's got a certain vibe. And then all of a sudden, there's a unicorn in the forest. You're just like, Okay, well, that's a that's literally no other frames of the movie that look like that. Like, like zero. Yeah, it's"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "57:33",
+            "text": "like shut on different film stock. It looks completely different. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:37",
+            "text": "wait, hold on, hold on. There's a unicorn origami at the end of the movie. Yeah, the reason for that is because there was the unicorn scene. So it's true that it was developed later, in order to have this thing all be coherent. But it certainly was Ridley's intention. Even at the theatrical he wanted to have that unicorn in there. So I mean, to me, it's beyond disputable that read the intention of the author did is that Deckard is a replicant, I don't think you can watch this film and say he's not a replicant. Right. You can say you don't like it."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "58:09",
+            "text": "Oh, well, I've watched it. I say he's not a replicant. If you take out the you know, if you watch the original theatrical cut, and has the you know, is is readily on on tape saying that prior to the release of the film, you know that that was his intention, because it seemed like a belief that he developed later. Oh, that's and then was like, Yeah, I'm gonna change the movie to make it true."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:29",
+            "text": "I like that. Now. I like the fact that like, it was a different author. It was to Ridley's, there's really prior and really after, no, and they a different author. The other thing though, the other thing I'll say is that like, first of all, the idea of really, as the author of this movie is a little thin, just because like, there's so many different there's so many different elements of like, what make this movie a classic, like, the production design of this movie is as much like the star of this movie as anything else. Yes, you know, Syd Mead is as much like the author of this movie, like those are the like the question of whether or not replic like Deckard is a replicant. And like, sort of the philosophical questions that that brings up, aren't the most durable parts of this movie, like, you know, like, they're, they're fun for nerds to argue about. But like, it doesn't really matter in terms of like, what makes this movie a classic. And so it kind of gets into like, the same territory of like, is it a dream, or is it not a dream? And you know, the movie doesn't the movies doesn't get suit, like it may be leans in one direction or another, but it intentionally leaves that opaque. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "59:35",
+            "text": "And I think that was the thing, right? And the original theatrical release, it was what you think it's, you think it's our peg, it was supposed to be ambiguous and not confirmed. And then after it's released, Ridley was like, hey, you know what, no, definitely a replicant that didn't make the movie better. It made it worse."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:51",
+            "text": "Yeah, I think it's I think it's okay. I think also, I mean, like, I think also the fact that we're, I mean, first of all we're arguing about on our podcast in 2021. So Again, like there's 17 different cuts of the movie, which all sort of advance more or less strong versions of this. I think it's also a more interesting movie. If the question is ambiguous than if they explicitly at the end, put up a title card that's like, you know, and Deckard coma, the Republican coma, went off with his wife who had off with Rachel comma, the rebel game comma, to have their replicant babies."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:00:25",
+            "text": "It's like the end of Brazil, right? It's like it right? It was meant to be ambiguous, it's good when it's ambiguous. And then it like, you know, it doesn't it certainly doesn't ruin the movie, but it's less of an impact. When it's like, surprise, no, he definitely was."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:40",
+            "text": "Alright, so I hear all of that. I want to say first of all, for the record, the notion that Danny, when he did, 2049, left it ambiguous, like did not explicitly say that he was I thought was a cool choice. And it was respectful to the original theatrical. Right? Right, right. And I think that's fine. At the end of the day, I love the I like, I'm so tired of the concept of like, what is, you know, you know, a real human versus a machine and, you know, what has the real values and whatever what's real life that deserves respect? The whole concept of this film is he's a replicant. baddies, a replicant, Rachel's a replicant, they're all alive, and they all have feelings, and it's all about being caught in a machine that is leaving them living in fear. And it doesn't matter whether or not you were born a human, or whether you were created as a bio Mechanoid feelings matter. And we should have more empathy for each other."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:40",
+            "text": "Do you think we should change the name of this pod to bio Meccanoid? Pod? I think we talk about bio Mechanoids more than we talk about dune on a weekly basis. And like it might open up it might open up we could talk about can we talk about the HID 90s TV sitcom Small wonder than if we expanded to bio Mechanoids I don't think I'm not familiar with small wonder No. Wow,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:04",
+            "text": "I've heard of it. But what is it? Well, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:06",
+            "text": "a charming family sitcom in which father makes a robot daughter to play with his to play with his son."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:14",
+            "text": "Dale says he's with you all the way James Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:16",
+            "text": "She's a small wonder."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:20",
+            "text": "I will take it under advisement. All right,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:23",
+            "text": "so she's a small"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:31",
+            "text": "will leave this will lead this debate, maybe circle through the final part. But we'll circle back I think we hit it. I think we hit it pretty well. So now we have a lot of detecting happening. So the scale leads to the geneticist. I love the idea of a geneticist woman in a street cart with an electron microscope, but she points them to the snake maker Abdul bin Hassan he goes there. Him walking down the street and like ostriches,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:57",
+            "text": "the Ostriches are great coming down. I would love to be just the ostrich handler in Blade Runner. I want to know who that guy is what he's if he's if that was the highlight of his career. Fantastic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:05",
+            "text": "So how about Taffy Lewis's club."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:10",
+            "text": "Tabby Lewis, I love the guy plays Taffy Lewis. I love the drink that he gets that has like worms in it. I love the PA announcer who says watch as she extracts the pleasures from the serpent. That's great. It's a great line read want to know whoever did that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:26",
+            "text": "Wait, wait, wait, wait, wait. Take demand. Oh, is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:36",
+            "text": "that the rest of the line? Yes. This is where you get the real, the real biblical shit starting to come into the movie total. Back to Harrison Ford though as a terrible actor. Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:47",
+            "text": "undercover this."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:49",
+            "text": "This doesn't. This doesn't hold up, like so he goes, he goes, he goes to talk to Joanna Cassidy. And he's got this idea that he's gonna pose as he's gonna do this voice and it lasts for all about two lines. And then he just like can't keep it together and keep doing it. Like no one wants"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:04:10",
+            "text": "to do a voice at all. If he is either an actual detective who has a long career, or he's like a super advanced robot detective who should be good at this, and instead he does a terrible voice and has no idea what he's going to say next. It's hilarious, but yeah, that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:31",
+            "text": "a little wild."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:32",
+            "text": "It's a little while it is and I think it's almost a moment of comic relief. But I do love when he says well you"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "1:04:38",
+            "text": "you'd be surprised what a guy go through to get a glimpse of a beautiful body wouldn't"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:48",
+            "text": "ya to me says a lot about her character right like she's specifically kick murder squad, but you could imagine she's also been subjected to being a pleasure model or whatever, by whoever mill. Atari people she was probably working for I thought that was really really powerful character moment. I love that. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:07",
+            "text": "it's a it's like the only like Harrison Ford's terrible acting is exposed and all the times in which he actually has to act like someone and like either acting like he's trying to assuage Rachel's concerns or acting like he is like, he just doesn't have that gear. It's clear that like, he's doesn't actually know, Ron ag runnings like jumping. Yeah, he's just, he's way better when he's just sort of moodily drinking. But I love it when he's doing that. So it all works for me still,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:35",
+            "text": "the violence that she does on him is amazing. Yeah, she"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:40",
+            "text": "almost she almost dies by his skinny little tie. I mean, like, how sad for him. Like, which again, like sort of brings to the question is like, couldn't she kill him faster than like, sort of, you know, slowly choke him to death with a skinny tie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:53",
+            "text": "He's a replicant."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:54",
+            "text": "So he's more resilient as his throat is his throat is reinforced. Yeah, maybe but like, so this is one of the things that is added in the Final Cut is Zoras death is expanded and made more bloody in this in this version, which I definitely noticed watching it this time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:11",
+            "text": "They also shot Joanna. They, they shot her head, and digitally put her head onto the body. Right? Because it was so bad. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:21",
+            "text": "was really bad in the original. And all the shots on the street and like, don't walk, cross now. Cross. Like, oh, that is amazing shit like that. That all all that stuff? is what makes this movie phenomenal. For sure. Yeah, but the scene of her running through the Play class with the mannequins is the music. Yeah, the snow. Yeah, the fake snow and the heartbeat"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:49",
+            "text": "huh, Ah, love it. One more kiss dear. So we have this classic 40s song that plays while Deckard meets with Brian."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:07:00",
+            "text": "One more."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:06",
+            "text": "Which was composed by Vangelis I love this song. It's so great. And then Brian just looks at him and says gaff, you could learn from this guy. He's a goddamn one man slaughterhouse and tells Decker that now he also has to kill Rachel. Right"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:20",
+            "text": "that she's, he's back to four. Yeah. Because there's Yeah, she went on. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:25",
+            "text": "So Leon gets him and begins beating the shit out of him. And to me, this is an important moment where he says it's painful to live in fear, isn't it? And, and time to die. So that is like, this is to me the empathy building of these replicants who even though you fear and hate them, you can't help but feel for them."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:44",
+            "text": "There's a weird cut that still exists in the final cut where he goes to pull his gun out on Leon and Leon slaps it away and then punches the car and like some steam comes out and there's like a weird like, moment where the gun gets slapped away and like, a three frames of the shot are missing. Like where it's like, it just annoys the hell out of me. But love, love the love love him getting just the shit kicked out of him by Leon before he gets saved by by Rachel."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:12",
+            "text": "He is great at getting beat up. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:14",
+            "text": "that's another thing Harrison Ford's good at he's really good at taking a punch. Like he's the guy you don't mind. See getting the shit kicked out of him. He"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:08:21",
+            "text": "always looks exactly the same way when he's be punched. He does like the rubber lips thing because yeah, that's a classic Harrison post punch move. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:31",
+            "text": "And he always looks like vaguely surprised. But like it's not quite believable because he gets punched so much like No, dude. Yeah, you're getting punched again, again. Yeah, for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:42",
+            "text": "All right. Well, we got to Slim's favorite scene in the film, which is the love scene. So, so romantic. So Rachel's like the mascara and just the dark eyes are so intense. And she asks if he would come Hunter if she went north and he said that he wouldn't but that somebody would"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:01",
+            "text": "well he doesn't say what and he says no. There's like his line reading on no is so amazing. He's like, did you fall? He's like, No, it's like a whale song almost more than it is like an answer. I love that. I also love in this scene. He's He's drinking from the shark class again, which is previously established as my favorite thing Harrison Ford does. And some eyelid ins all love that fucking Harrison Ford blood in the shot glass. Just give me that movie. Jesus"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:30",
+            "text": "her hair. Alright, so now we got the hair coming down the piano playing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:46",
+            "text": "the song is incredible, isn't it? Yes. All right, people."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:52",
+            "text": "People listening judge for yourselves. Okay,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:54",
+            "text": "we'll hear it now. Yeah, yeah, ah, she takes down her hair. So this is this is a big moment for you. I guess when she takes down her hair, it's a big deal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:04",
+            "text": "So alright, so this is obviously a very difficult scene. So, to me, it's this callback, they're doing this 40s noir, kind of homage. And this notion of the tough guy romance and the kiss me and all that stuff that was very much in vogue in the past, and does not hold up very well in 2021. Again, I also maintain that the idea that he doesn't really know how to do this stuff, he's still working on figuring out what his emotions are, because he is a replicant. So he has this idea of what he's supposed to say and what she's supposed to say. And he's trying to sort of push her to do it. That's how I read this."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:37",
+            "text": "It's not it's not there's, there's not a consent problem, because it's to robots who don't have the right protocol buffers work. That's your that's your headcanon for this scene. Okay. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:50",
+            "text": "it literally is it literally is, is that wrong? No, I"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:10:54",
+            "text": "have a I have a whole new theory is that after the theatrical release, Ridley Scott realized that Harrison's acting is real bad. And a bunch of the scenes was like, Oh, I know, he's a robot who doesn't have a motion. Like, let's just back that into it. And it explains everything. That's the whole thing. That's good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:10",
+            "text": "I like that. That's,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:12",
+            "text": "that's smart. All right. Anything else? Jason, you hit on that scene, or we got it. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:16",
+            "text": "doesn't. Like I get that. Like, he's sort of, you know, he puts hands on or whatever. I mean, I think like, I like, for me, actually, the moment that like he that sort of sells that scene, is when like, he goes in, and she like, kinda recoils. And he's like, no, no, no, no, no, he, like he, like, wants her to understand that he puts his hands up, he wants her to understand that he's trying to, like make a connection here. I actually do think that's a good little good piece of business that Harrison Ford does. So I'll give him I'll give him some props that he's doing. He's doing real acting in that moment."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:49",
+            "text": "They did shoot like, a much more graphic scene and you know, like her, her legs around him and nudity and all that kind of stuff. And in the end, they voted to keep that out, which I thought was was very smart. Did she have the shoulder pads"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:01",
+            "text": "on in that scene? Or now? No."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:12:03",
+            "text": "Okay. That's a kind of an odd choice for the error as well to not keep it in. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:08",
+            "text": "agree. Yeah. All right. So cutting back to prison, JF her airbrushing her eyes black just absolutely amazing. And Roy, come again. Gosh, you have a lot of nice toys. And when he does the googly eyes like Roy's being real goofy in this scene. Yeah. It's pretty wild. He's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:24",
+            "text": "training. He's activated his charm. His charm slot. Yeah. John module. Yeah, his charm module got kicked in. He wants to he wants to he wants to go see the guy. So he's gonna do do whatever he has to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:37",
+            "text": "do. Yes. So speaking of visiting God, Jason, have you ever played a game of chess remotely? Where you had a chess board and you were like doing moves with somebody who wasn't there?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:47",
+            "text": "No. Not a big chess guy. Cow. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:50",
+            "text": "I guess it was a thing, right? Like, there used to be like chess in the newspaper and bridge and like people used to do that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:56",
+            "text": "you play chess by mail. You can mail your move away to someone else. Yeah. It's a whole as a whole thing back before people had trust.com. And now what do we do? Yeah. All right. Use apps. lose out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:07",
+            "text": "Okay. Get your subscription to chess plus. All right, so we have the visit to Tyrell. Yeah, I love the scene. I love Tyrell. I love the fact that when he gets checkmated he's like, Oh, come up. Let's talk about this. Yeah, he's gonna get out of this move."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:23",
+            "text": "I liked it. Like he wasn't going to invite him up. Like he's the dudes in the elevator. But like he What was he going to do if he didn't like his move to send the elevator back down? Yeah, seems weird. I love the robe that Tyra was wearing to like that's like a that's like a real like, if Kanye was doing bathrobes. Like, I feel like that's what you would end up with. He's basically wearing like, a quilted mattress top as a bathrobe like he's wearing like a waterproof mattress pad, like wrapped around him with a belt and like a collar. It looks great. He looks he looks awesome."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:13:57",
+            "text": "He's living his best life."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:59",
+            "text": "I once ate breakfast. I'm gonna tell you this important story. I once ate breakfast at the St. Regis Hotel in downtown San Francisco. And like bunch of business people take a business breakfast meetings, which is why I was there as doing a business breakfast meeting as people like to do in San Francisco sometimes. And to an elderly couple comes in just in their bathrooms with flip flops to like it to eat breakfast at the at the at the restaurant, just like just old guy chest hair out, like you know, had come from a shoe fits and was just like yeah, I'm gonna come here and like have myself an omelet bar. I don't give up. God damn. It was great. It really created a great atmosphere in the St. Regis. Good news, please leave that story. And when you do that,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:44",
+            "text": "of course, two things that I want to call out one. This was Roy Batty this was this was Rutgers first day first scene was doing this a while so they got right into it. They originally built a separate prosthetic. had for him to squish. And they ended up deciding just to go with Joe terkel's head and then just pumping blood out. So that was pretty cool to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:07",
+            "text": "us. Well, they made that more they made that more bloody in the in the final cut like they like the eye gouging got digital ended in the final in the final cut. I think they just had had it and they but they like took it out for the theatrical because they're like, well, people don't want to see that. No, no, no, we're gonna put put more of that shit back in."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:26",
+            "text": "So I love all of the bargaining that he's doing and Tyrell explaining why they've tried each thing and it doesn't work and it causes mutation and the patient's dead before he got off the table. And we tried that too. And there's just nothing that can be done and Tyrell really trying to kind of pull him in. But the thing that I call out in the original script, he kills Tyrell Tyrell also a replicant. And then he discovers that there's another Tyrell in stasis down below in the pyramid. And that's where he finds out the information that Deckard is also a replicant. And that's how he's able to reference Deckard by name later on in the script. Incidentally,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:02",
+            "text": "though, if you're Tyrell and like your killer robot creation that you know is out like trying to like kill people to get into your corporation shows up in your bedroom and you're wearing your mattress quilt up robe, like your you know, and the guys just like panic button that well, like maybe you have a panic button, maybe you instead of saying there's nothing I can do for you, you're just fucked. Let's do it. You say like, let's go down to the lab. Let's let's go work on this, like, try to yeah, I'll"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:16:28",
+            "text": "just put you under and fix it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:30",
+            "text": "You know, like for for a genius chess player. Like he really is just like, oh, no, sorry, my guy. You're just fucked. I guess. You'll just go back. We'll just you'll just leave now. No problem, no hard feelings."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:46",
+            "text": "That's amazing. And"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:16:47",
+            "text": "he's a genius. But he didn't see this in any way and build in any kind of failsafe that would stop him from being murdered. Right, right. All right. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:55",
+            "text": "let's see Deckard versus press. So now we're racing to the conclusion here. Deckard in the building in the Bradbury Building, gorgeous press, his eyes rolling back in her head, and then that slow pacing him walking across, there's a shot that is like a Renaissance painting with like, all of the dolls and stuff and her and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:16",
+            "text": "there's light on her. Yeah, that looks. It looks amazing. Like the way that set is dressed looks phenomenal. And like I guess it's a fair point. I think Dale raised in chat, which is like we talked about press being terrifying. And like, she's actually not a great fighter. Like her. Her fighting move is to like, do like a floor routine for like the Olympics. Which you know, there may be more there may be more direct ways to kill a person than trying to attempt like some Simone Biles shit. But I think just the way like, the way she looks is awesome. Like she just looks like that she gets the fright wig and like, you know, which is also kind of a weird cut because her hair goes from being very normal to she attacks. And the hair all goes like big on which I don't exactly know. It's"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:18:01",
+            "text": "a it's a very humid building."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:03",
+            "text": "Exactly. Yeah. As soon as she starts fighting, the humidity kicks up. Well, she"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:07",
+            "text": "said that Harrison insisted that she actually hit him and that she actually hold his nose when she holds him by the nose that she actually did it and that like his nose was bleeding and like she was feeling terrible. In the end, it was a guy that was in an outfit that had to do 15 back handsprings in order to do it. Interesting, but I did feel like in the Final Cut the flopping was like too long. It's too much. 19 seconds. Yeah, it's 19 seconds of press flopping too much."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:38",
+            "text": "I'm not surprised that the nostril poll is actual actual nostril because she's really clearly pretty much up in his brains right there. I do feel I do feel from like, I love this movie. And I like this is you know, an all star movie for me. I did feel the third act dragged a little bit when I was watching it this time like this that like I love all this stuff with Ray at the end. But like this, everything from when he goes to confront Tyrell through tears in the rain, which is obviously a standout. Like it just felt like I know where we're going, can we just get there a little quicker. The pacing sort of bugged me a bit more, which I thought of because you said the thing about the thrashing it just seems to slow down a little bit as we get closer to the end. I don't know if anyone else felt that way. Cow. Yeah, it"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:19:25",
+            "text": "does kind of like that, that whole scene and maybe the Tyrell scene as well. But definitely the scene once they get back to the building is it it's just long. I wonder if it feels that way if you're watching it for the first time now, right? Or how much that's influenced by how good the rooftop scene is. And we're like, yeah, there's gonna be some punching and Harrison will flap his gels around and then eventually we'll get to the good bit at the end. versus maybe it is just a little bit too long. Yeah, and it just does drag it is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:54",
+            "text": "30 minutes for the final from the time he goes in to be with press to the end of the film is 30 Eat minutes. And in that respect, it's similar to alien, right that have this long last kind of chasing. Yeah, running around and all of that. So that to me, there was a big reflection of, of alien pacing in this, which was fun to discover. I'd never noticed that before until watching them back to check."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:20:17",
+            "text": "Do you feel like it keeps the tension up the whole time? Or does it feel overly long? I'm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:21",
+            "text": "good. I don't have any problem with it. I love it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:24",
+            "text": "This time, it felt long to me. I do think now that you mentioned the alien thing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:28",
+            "text": "It's two hours and two minutes. Like it's not that long. Yeah, I may just have no attention span anymore. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:33",
+            "text": "like the the the thing about alien that I liked was that in sequence of alien, like, he talks about in the commentary how they show her going all the way to the escape shuttle, and then she has to go all the way back. And then she has to go all the way back again. And they wanted to shorten that. And he's like, no, no, we got to show all the space she has to travel traverse. And similarly in his like, sort of running from Roy, they spend a lot of time just establishing the physical space that they're working through, like busting through walls, and like kind of you know, like, it's it's it really expands like the concept of what this the set is that you're that you're in. But I did feel it took a long time to get where we were going, when"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:21:11",
+            "text": "we have the rooftop seen as the implication that Roy had planned that for some amount of time, or that no, you know, like he came to that conclusion at the end of half an hour of kind of running through the building. Oh, readly Oh, it ROI."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:24",
+            "text": "I think I think Roy just comes to the decision not to let him die."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:21:27",
+            "text": "Like right at the moment."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:30",
+            "text": "I think at the moment. Oh, yeah. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:31",
+            "text": "in the end, I think it is it's very specifically it's seeing him dangling and on the verge of death, watching him in that in that space. And the fact that he fought again, if you have the idea that he's or that Roy knows that he's a replicant because he had access to the Tyrell files. And he says to him specifically, he says, he refers to him as a little man and says, aren't you the good man? Ironically, this is This is Roy kind of letting on that he knows what he is. So I think from that perspective, there's like some some kinship there as well. But it also for me works, even if he's not a replicant. It works for Roy is like, Why do I have to kill you? Like I I have lived and I burned brightly?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:22:15",
+            "text": "Yeah, to me. That's what that lines getting at. It's the you know, the he might not be real, but he's had a full life and all of these memories and had all these unique experiences. And all Harrison Ford does is bum around in LA killing people. So not necessarily an implication that he knows his replicant, but just that he's lived."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:36",
+            "text": "Obviously, what happens is that Harrison Ford's replicant beacon goes off when he's dangling from the building and that and Roy hears it, and he can't kill a fellow robot. And so he picks him up. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:49",
+            "text": "it's the look. It's the look in his eyes. It's not anything else than that. It is about human connection. And the fact that the replicants does not make them not human. That's the key point. There. They're both replicants and human. I've"
+        },
+        {
+            "name": "Bladerunner sample",
+            "timestamp": "1:23:03",
+            "text": "seen things people wouldn't believe attack ships on fire off the shoulder of Orion. I watched see beings glittering the dark needed 10 has again all those moments will be lost in time. Like tears rain time to die."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:23:56",
+            "text": "He wants Deckard to know that he had a life that he had unique memories and that you know that his life was valuable. He realizes he's about to die and he wants to impart right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:06",
+            "text": "Absolutely, absolutely. Yeah, that that empathy there."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:24:10",
+            "text": "Yeah, it's less that he decides not to kill him and more than he wants somebody to, you know, to talk to remember him and to remember him. Yeah. His legacy. Yeah. Witness"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:21",
+            "text": "me. Exactly. Yeah. So it was also his idea Rutgers idea to have the dev they shot at both with and without the dev Rutger actually jumped across the buildings because the stuntman had crashed and like gotten injured. And they the buildings were actually on wheels, so they pulled them a little bit closer, and then he jumped across in one perfect shot. And they were shooting this is the last night of production on the film, and the producers bud Yorkin and whatever the other guy's name where they were like dying to shut it down to try and save money. And as soon as the light was coming up for the day, they were excited because they couldn't shoot anymore. They literally cut the building into pieces and move the building into a covered set area in the soundstage where they could then keep shooting. And that's when right guard came up with that final Tannhauser gate and all those amazing pieces. Incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:17",
+            "text": "Yeah, good job. Rutger Hauer really, really the MVP of this whole production"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:22",
+            "text": "agree. Gaff says you've done a man's job, sir."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:26",
+            "text": "Like, you take that as being like a big towel very clearly. Okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:30",
+            "text": "All right. Anything else? I love the handheld shots of him going in and out of his apartment, finding Rachel in his apartment. Jason, do you always sleep with a deathshroud with a sheet over your face? Like yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:42",
+            "text": "I mean, that's just like how I was raised. So it's the tradition in my family is just be shrouded to sleep. Well, you know, shroud shroud at night. Sleep tight. That's what I was doing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:55",
+            "text": "Fine. Final Thoughts on Blade Runner and, and rain and rating out of five stars cow as our guest."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:26:01",
+            "text": "You know, it's an amazing, iconic movie, and who knows what the kind of world of sci fi cinema would be without it. It's just like such a seminal work. It's a shame that it's been, you know, like, so cruelly edited for all of these versions. One day, we'll get the perfect cut, which makes sense, and he's no longer clearly a replicant. But an amazing movie. And I think, you know, that that detail doesn't doesn't really matter in the end. Because we have that almost final scene with Roy Batty. Maybe the movie wouldn't be better without anything that happens after that. But the like, the the gas piece, that interaction is kind of needed to wrap it up. It's a it's an amazing movie, and it still holds up now. What like 40 years later?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:42",
+            "text": "Yeah. Four stars. Five stars out of five. Probably"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:26:47",
+            "text": "five out of five. So rare, rare movie, boom,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:51",
+            "text": "five banger, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:53",
+            "text": "Yeah, this is I mean, this is a five star movie. I actually as I was starting to watch it, I was thinking about like, why isn't this movie on my like, top four and letterbox like this is clearly like a movie that's just more important to me than almost any other movie I could name. And it just like, there's the it's just like, sort of baked in. You know, we made a lot of fun of it as we went along, like certain choices that don't make sense. But it's just baked into what I've grown to love about movies generally. Like it's like, was a an awakening for me that like, oh, like, there's this like, you could spend your whole life just studying this one movie. And it's just, you know, an eternal masterpiece for me. So I was glad to be able to watch it again for this podcast. And I like being able to see it any anytime I can. You're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:39",
+            "text": "welcome. You're welcome. Thank"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:40",
+            "text": "you. Thank you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:41",
+            "text": "five stars."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:43",
+            "text": "Thank you for giving it to me five stars. This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:45",
+            "text": "is a perfect 1010 movie. Even though some of the pacing is slow. I absolutely love it. It does everything. It does everything so well. And the marriage of cinematography and production, design and music, editing it all. It's just It's phenomenal. So couple of quick pieces of trivia before we finish off here. So first of all, this movie was DOA until Alan Ladd, laddie stepped in and raise the 14 million to get this movie made. So I love it, laddie. There's a documentary I think about him that we may have to cover at some point on this pod, but just a hero of so many of our films, other decades. So Hampton Fancher wrote this film for Robert Mitchum as Deckard, that's terrible. And he was like, Robert Mitchum was still young enough in 1981 to be able to shoot this movie like no he was not. That's terrible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:43",
+            "text": "So let's real bad."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:45",
+            "text": "So Nick Nulty. Burt Reynolds, Al Pacino."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:51",
+            "text": "Oh my god. Those are all terrible. Jason."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:54",
+            "text": "Jason, give us a read. Please, please give us any Pacino liner."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:58",
+            "text": "Okay, I mean, I just don't even know what that was. I don't even know what that would look like. Can you imagine like just Al Pacino just like blowing through. Like, they don't advertise for what I do in the newspaper. Like that. Just like absolutely just fucking just blowing the walls off this movie. What a nightmare. What about Christopher Reeves as Whoa. As as, as there's as a Deckard? What do you think about that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:27",
+            "text": "I mean, I think he's too. He is too good to be in this film. Are you kidding?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:31",
+            "text": "He's too good. You"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:32",
+            "text": "know ball Christopher Reeve. He's too noble. I thought about it today because somebody posted in the 70 millimeter discord. Somebody posted somewhere in time, which is a movie that I loved. But he was so typecast as Superman. There was no way he could do pretty much anything else. Too good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:48",
+            "text": "It'd be a good move. It'd be again, I'd like to see it. Well, the almost you know who you know who would be good. Here's another good one. Jimmy Caan could have been done. That would have been that have been Good data been a good version of Blade Runner?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:02",
+            "text": "Yeah, I agree. Well, the the closest almost cast so much so they spent months with him and he was actually even beginning to be represented as Deckard in the storyboards. Dustin Hoffman."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:14",
+            "text": "Oh my god. Come on."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:16",
+            "text": "I don't think that works. Doesn't look terrible. All right."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:30:20",
+            "text": "No, I think they ended up in a good place. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:23",
+            "text": "I agree. All right. So Cal, who would Tilda Swinton play?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:30:29",
+            "text": "Roy Batty, I guess? Oh, wow. Oh"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:32",
+            "text": "my god. Whoa."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:38",
+            "text": "Holy shit. I gotta go lie down."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:30:42",
+            "text": "You know, but if that position was taken, then I'm gonna guess his aura."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:46",
+            "text": "I'll be in my bunk."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:49",
+            "text": "Thank you, everybody. Good. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:50",
+            "text": "pretty strong. I really never thought about right, buddy. That's great. That's a great answer. I was gonna go with Terrell. Me too. Yeah. Oh, yeah. I could easily imagine her in that row."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:01",
+            "text": "But now oh my god, Roy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:03",
+            "text": "I don't know. I don't know if I can go on now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:05",
+            "text": "No, that's it. That's it all right, here we go. Let's get into some letters and some voicemail. Our first letter comes from Blake Paulson. And the subject line is music talk. Hello dune pod. I enjoy the music talk in your Batman episode and thought I should share a do NuGet you might appreciate. I remember a discussion about dune inspired music a while back and have another one for you. The second track on tools 2019 album is litany contra la poor, which Google Translate says is French for litany against fear. I learned just enough French in high school to suspect and confirm it. Also, that album makes me think of Fremen walking on sand especially after seeing a video of people trying to dance along with it at Burning Man. It wasn't just the space tool must know what they're doing but the rhythm comes across as completely random enjoying the podcast Blake."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:09",
+            "text": "That that makes just complete sense. Like if there ever was gonna be like, I'm surprised that we haven't bumped into tool sooner on this podcast because I just feel like Dune is like a bad signal for like math rock fans like that. That you're definitely send it up a vibe when you're talking about space horror movie for sure. So that makes sense. That story checks out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:37",
+            "text": "Absolutely. Do we have any tool fans and you have any tool fans in the discord tonight? Like Has anybody heard this 2019 litany against"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:43",
+            "text": "fear any lateral AI out there?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:46",
+            "text": "Give us a shout out while we listen to our man Cory here. Here's our only voicemail for the night."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:32:53",
+            "text": "Ah, Jason Doom pod what is up? I don't even know who the host is it just surprised guest posts with you guys are Blade Runner. Anyway, I love Blade Runner. That's probably the no toy. But yeah, so there's not really much for me, I guess probably to add to the Blade Runner conversation. I am maybe in the minority that I do like the voiceover a lot I did when I did my rewatch. So I rewatched the quote unquote Final Cut. And it was gorgeous. And it's great. And I've no complaints about it at all. One thing I do want to talk about I guess is cyberpunk, right like Blade Runner is an early cyberpunk film. So in that vein of you guys covering cyberpunk films I recommend Lawnmower Man. I also recommend Johnny Mnemonic, obviously Freejack you guys definitely need to get on these and Jason even said, we're turning this into a genetic podcast at this point. This has to be covered. I think they are all despise when they came out. But I honestly truly believe there was a revisit. I'm no stranger to being accused of liking terrible movies. So take that with a grain of salt. Anyway, I did recently watch Lawnmower Man and it was like a gajillion times better than I thought it was those wackadoo VR sex scenes are worlds and I think I would love to hear you guys talk about that. But anyway, I'm sure I'm going to totally loved this episode, just like I did the alien one. So keep up the great work. All right. Love you guys. Bye."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:38",
+            "text": "It's kind of amazing that the sex scenes from Lawnmower Man are still like the killer app of VR, like 40 years later. Like VR has made essentially no progress like since since that had becoming more relevant to people's lives since since a lot more man but keep keep spending money on it. I'm sure it'll work. I'm sure it'll work out eventually. That's bleak. That is bleak. Great to hear from Cory. Always appreciate him writing and I like that so many people, including our guest cow, and our voicemail or Corey had these, you know, counter narrative takes on Blade Runner like how you know, going basically all but saying that the theatrical reset right Ridley Scott, you're a hack you should have listened to the producers put the happy ending back in put the voiceover back in. Well, it's not a robot,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:35:27",
+            "text": "you know? Yeah, let's do it a decade ago, I would have said Ridley Scott's not a hack, but you know, you know, time has time has disagreed with that movie. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:37",
+            "text": "I it's not been good recently. I'll just say that I, you know, again, having just watched Prometheus and covenant and raised by wolves. It's not real good. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:35:47",
+            "text": "But uh, you know, Blade Runner has that amazing. The design, right, like the set design the outfits the world."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:56",
+            "text": "That's what, that's what I ended up having done. Like, just to provide a concluding thought on the Ridley Scott doubleheader. I think what really Scott with alien and Blade Runner really, it really shows is how much he benefited by having an amazing team around him of just like phenomenal artists and like eager and like Oban and all the folks who helped make alien and like Syd Mead, and like, you know, all the folks who helped make you know, Vangelis all the folks who helped make Blade Runner and like Ridley Scott, that that's like, why he's so high variance is like, if he doesn't have like all of those pieces, like it really, he can really end up just making a shocking movie that like is unremarkable. He needs he needs the full team to create that to create that full world."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:36:41",
+            "text": "Do you think it's also that his best movies were made at a time when people didn't believe that he could make great movies? And so we're pushing back on everything he did? Maybe you know, whereas now in the late 2010s Everyone says, do whatever you want, Ridley You're a genius. Yeah, make this alien prequel with a terrible story that makes no sense. And the characters are awful. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:01",
+            "text": "yes. Count. We're aligned. Yeah. aligned. We did it. We achieved it. In the end, we came together. Yes. It's the friends we made along the way. Alright, cow, what do you have to plug? What are you excited about? What's going on anything you're looking forward to?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:37:13",
+            "text": "Um, I'm excited about eventually going to a cinema again and seeing a movie, you know, with the on a big screen with other people. Yes. You know, breathing their filthy germs on me. And it sounds like it's going to be in the San Francisco IMAX. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:26",
+            "text": "going to be our germs. Yeah. It's gonna be our germs. Beautiful."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:37:29",
+            "text": "This is a it's been so long. And it's such a you know, you can definitely experience and enjoy cinema. Oh, yeah. Right. Like you can watch it on your laptop in bed. And it's still you know, still have an incredible impact. But there's nothing like you know, seeing it on a gigantic screen surrounded by your friends. Absolutely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:46",
+            "text": "Well, we're gonna do that. And I was just say, folks, start hitting us up. Hit us up on Twitter. Hit us up on Discord. Hit us up on Instagram. Let us know if you are fired up about coming to see this movie with us. On preview night, Thursday, October 21. During pod"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:06",
+            "text": "premiere super spreader event. Come join us."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:12",
+            "text": "It's time Yeah, it's all been leading to this. You"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:15",
+            "text": "have to be vaccine. You have to be vaccine, everyone's gonna be wearing masks."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:23",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and cow for a controversial and fun conversation. Don't forget next week, Twitter co founder Biz Stone joins us to give up Jason secrets and watch the most critically acclaimed film of the classic series Star Trek for the voyage home. If you're enjoying this podcast, JOIN OUR DISCORD SERVER where you can hang out with us whenever you want. A link is in the show notes. You can find our full movie setlist on letterboxed and if you want to support them by upgrading to pro or patron status, use promo code dude pod at checkout to save 20% During pod is a tape tech podcast John, a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whipsawing music. The episode was produced and edited by me. Ah, thanks for listening. see everybody next week."
+        }
+    ]
+}

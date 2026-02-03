@@ -1,0 +1,1591 @@
+{
+    "episode_number": 22,
+    "episode_name": "Prisoners",
+    "dialogues": [
+        {
+            "name": "Speaker 1",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H, and welcome to the latest installment of Dune pod, your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host Jason which"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "incidentally if you come on to my Thanksgiving and you bring like, deer liver that you shot like you're going home like that you're not getting any of the pumpkin pie. That's ridiculous. And by"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:29",
+            "text": "Emmy winning producer and director Rob Schroeder Yeah,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "0:33",
+            "text": "looks, the looks are not good. These days. They were never great. But on"
+        },
+        {
+            "name": "Speaker 1",
+            "timestamp": "0:39",
+            "text": "this episode, we discussed Denis Villeneuve's 2013 Dark thriller prisoners, we covered how we feel as fathers responsible for the safety of our kids, the secret details of Roger Deakins cinematography, and the sorry, state of our home improvement skills. If you're enjoying the show, we need your help. Be cool, like Daniel McGibbon and leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, prisoners. Well, let me just ask, what is harder? Being a producer or being a director?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:19",
+            "text": "Oh, good. Good question. Oh, that is a tough question. Well, a producer, it's kind of hard to put your finger on because there are many types of producers, right, most directors do the same thing more or less. But in my experience, you know, the director usually has a passion for the project, ideally, that no one else on the project has. So you kind of draft behind that. So there's more responsibility to provide that sort of spirit, you also have the advantage of being a man inspired. So that makes directing, you kind of have superpowers, I think, and some producers have that too. But I think for a director, it's easier to tap into that sort of all consuming passion and mission mission, because you know that if you put your head down, then everybody's gonna put their head down too. Nice. That's good. That's good. And there's usually more than there's usually more than one producer too. So it's kind of a team effort when it comes to producing sure someone wants once told me that there were three main hats that producers were one of them is finance, because the producer needs to be able to finance films. Another is is talent, that you can be a producer, and wear that hat and bring talent to projects. And usually those producers come from have backgrounds in agencies or, you know, relationships with talent. And then there's the producer that kind of hoist the sails, or it's like a physical handles the physical production,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:03",
+            "text": "that's a line producer,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "3:05",
+            "text": "yeah, a line producer, or there's a, you know, a person with that credit as producer. But they're still responsible for like budgets and backing up trucks and getting locations, all the physical production stuff. And the theory is that you can wear two hats, but not three. Gotcha. It's hard to find a guy who can do all three, but there might there's probably, there's probably some out there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:31",
+            "text": "It's interesting, that's actually interesting, because there's like a similar concept I feel in product management, which is the discipline that Matt and I know about, from technology, where he's basically there's three things, there's like the project management side, which is like being responsible for schedules, there's like the overall like, kind of high level product vision, like in product strategy side. And then there's like product design, which is like actually like, what the future does, and like how the product works. And like, similarly, you'd be good if you could get good at two of those three things. But no one's no one can do three,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:02",
+            "text": "right? Yeah, you only have so many points to allocate across the different the different sliders. Yeah, that's"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "4:07",
+            "text": "kind of it. But directing is, you know, is very hard to and you know, everyone kind of comes at it differently. Because you could come from really any discipline as well. You could, you know, be an actor turned director, production designer, turned director, cinematographer. You know, you can kind of come at it however you want. And, you know, everyone has their strengths, but I feel like you have the benefit of have the most passion, you should have the most passion on the set. That is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:37",
+            "text": "awesome. That's great. Well, Rob Schroeder, thank you for joining us on Dune pod. We're really excited to have you here tonight."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "4:44",
+            "text": "Thank you so much for having me. I've never been I've never been on a podcast before and Oh, wow. I'm usually on the other side of the microphone and the camera. So it's, you know, it's a new thing for me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:57",
+            "text": "That's right. So we should say Rob In addition to many, many different credits, he is the Emmy winning producer of actors on actors, which is an incredible documentary series that has been running where two different, really amazing actors interview each other. So you're sort of like an expert on interview conversation, documentation,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "5:18",
+            "text": "maybe an expert. I've seen, I've seen and heard many of them. But yeah, we have that show. It's on PBS, and also variety.com. So it's a collaboration. And it's been a lot of fun where we've done it for about six years, twice a year, there's, there's an Emmy version and an Oscar version. Amazing. And yeah, it's it's cool. It just pairs. Two really interesting actors. And then the conversation kind of goes all over the place. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:56",
+            "text": "have you had have you had Timothy or Zendaya on the show?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "6:00",
+            "text": "Yes, I checked just to make sure who the pairings what the pairings were. But Timothy has been on twice. Oh, wow. What? Yeah, Zendaya's been on once and then I've got a few more dunies and if you were doing and a few more dune buggies and a few prisoners to Oh, god, that's great. that have come in, come through the doors. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:27",
+            "text": "is awesome. That is what's awesome. Well, speaking of so for tonight's episode, bottom of the hour, we will be talking about Denis Villeneuve's 2013 Dark masterpiece prisoners."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:38",
+            "text": "Yeah, just get comfortable. It's a real it's a it's like a warm blanket. You just pull over you. That's a real, real cozy time. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:47",
+            "text": "totally. So that's guy that's coming up, and we're gonna be getting in deep. I wanted Rob to be here for this episode because of the cinematography, and just all of that this is a master class of filmmaking. And so I wanted Rob's perspective on it. Next week. Catcher is back once again, God, yeah, we're so we're so happy. So catch up. We'll be back. And we have our second pairing of Timothy and Saoirse Ronan on Greta Gerwig ladybird rate of yet. And I know for sure I like this movie. And so catcher and I won't won't have an emotional friction. It is also our first feature with Steven McKinley Henderson, Thufir Hawat, from the new movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:32",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:34",
+            "text": "It's awesome. So yeah, so we're very excited for that. That'll be next week. All righty. So how about if we jump into some new news? Would you like to know more?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:45",
+            "text": "Let's do it. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:47",
+            "text": "There is a lot of new news this week. So let's let's jump into it. First of all, it was announced today actually, Rob texted me with the breaking news that HBO has greenlit a limited series adaptation of the Norwegian novel by Jo Nesbo. The sun and it is going to be produced and starring Jake Gyllenhaal and also produced and directed by Denis."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:13",
+            "text": "Hmm. Yeah. It's interesting that you say this is late breaking news that you received today from Rob because in fact at dunepod tweeted this the morning it was announced. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:21",
+            "text": "nice. Yeah. It was within moments. Yeah, exactly. I will say so let's see, the sun is described as a tale of vengeance set amid Oslo's brutal hierarchy of corruption, also produced by Jonathan Nolan and Lisa joy. So my question is, you know, Denis, is he going to direct one episode the pilot, or is he going to direct the whole series? It's I think it's going to be like eight episodes or something? I am."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:47",
+            "text": "I'm sure he won't direct the whole series because that would be like a whole situation for him. You know, and that's pretty rare for television. But it'd be great. It'd be great if he great if he got behind the camera for at least one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:58",
+            "text": "I'm thinking a true detective, right? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:00",
+            "text": "that was like that was like so specific. That's like the exemption that proves the rule. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:05",
+            "text": "Well, my question is Can Deakins be far behind? Like what if Roger comes on to do some TV work with with Danny"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:11",
+            "text": "for living in living in dreams? Did"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "9:14",
+            "text": "a did Ridley Scott direct all of raised by wolves? Does anyone know? He"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:20",
+            "text": "directed the first two episodes and then his kid came on and directed. So I was gobsmacked because I hated raised by wolves. Like I said, I my friends were all watching it. So I hate watched all eight episodes. And I was so mad the whole time. The writer and showrunner of raised by wolves is the writer of prisoners, correct? Oh, really? Yes. It's crazy. I can't pronounce his last name. But yeah, that's him. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:49",
+            "text": "Guzikowski I'm gonna go I'm gonna say Guzikowski Yeah, interesting. Well, that's good. That's a lot of I mean, I'm excited because as we've covered in pretty much both Ex Machina and last This week on Mission Impossible. I have the deep love for Norway and would move to Norway if that were an option. And so I'm excited for anything that brings more Norway. Including Villeneuve in Norway. Oh my god. Let's just go. Let's do it. I don't even know anything more."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:16",
+            "text": "Yeah, I could see it. Second piece of news was the Timothee Chalamet. A cover story on GQ. Did you read it? I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:26",
+            "text": "saw that. I looked at the photos. The photos are great. He were I liked the pants with the no knees looked good. Yeah, he had a lot of good. He had a lot of good looks. I saw I quickly assessed there were no outfits that would work for me. Right. But I liked what I saw from Timothy he was serving looks. How about you Rob, how"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:48",
+            "text": "do you like are you perusing like variety and looking for outfits on a regular basis or"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "10:54",
+            "text": "not too much. I you know, part of quarantine is stolen that from me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:00",
+            "text": "Yeah, right. Yeah. I've worn exclusively sweatpants. Yeah, look seven months."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "11:06",
+            "text": "The looks are not good. These days. Oh, that's hilarious. They were never great, but not good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:12",
+            "text": "He really like some of those Timothy some of that Timothy GQ stuff really reminded me of this movie Thumbsucker, which I really like. And it has like sort of this like, what I always think of as like, kind of like a woolly sweater stoned ness to it. And that's like, what the Timothy vibe kind of was like autofunnel. Kind of like high on cheap weed. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:37",
+            "text": "vibe. Well, and the whole, the whole thing is about him having rented a house in Woodstock, and basically showing up there and going back and forth between Woodstock and New York. And it was about how this person had interviewed him before on GQ. Right after he finished the Oscar season for call me by your name and about that phase of his life that was so insane through that Oscar. And then like him, like basically popping out and not knowing what to do not even having a lot of money and and just being kind of shell shocked from that experience. And then going into the next two years, which was getting cast in dune and then working on that. And so now he's sort of popped out again, and is trying to figure out what what happens now and how he approaches stuff. So it was a good it was a good interview. He did say that when he met denis for dune and denis was like, Oh, I'm so great. You know, so great to finally meet you. He reminded him that he auditioned. Timothy auditioned for prisoners. And denis turned him down because he said he was like, Oh my God, that's right. I'm so sorry. And that he was great, but that he wasn't physically right for the part of the Son in"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:49",
+            "text": "the son. Yeah, cuz he's Yeah, it would be a little to the son's like kind of more macho."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:54",
+            "text": "Yeah, exactly. Exactly. All right. All"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:58",
+            "text": "right. So that's that's that one I had one other piece of new news. I don't know if do it more do news. No, don't do it. The there's leaked footage from the board game. This footage there's leaks captured from the board game this week, which gave us our first look at prisoner star dastmalchian as pytor So there's like an image of Dastmalchian as PITRE from the board game. And he looks freaky as hell. So yeah, that's cool. Similar,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:25",
+            "text": "similar to the other heart, Conan's he's like shaved head, no eyebrows alopecia. Yeah, very, very intense. Look. So yeah, that that definitely looked exciting. Cannot wait to see what dasrmalchian does in that in that role? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:41",
+            "text": "it's gonna be great. And then a piece of self serving doing pod news is I was on the postflight podcast with rich ziade and Paul Ford. Yeah. And we talked a little bit of Dune. And we talked a little bit of technology, government policy. So if you're interested in either of those things, check that podcast out. It's the post light podcast. I'll send you a link"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:02",
+            "text": "on the post light podcast. Okay, great. So that's it for the core of dune news, but we have just a couple of announcements. So the first one is I want to invite people to check out our dunepod setlist, which is on letterboxed. This is a setlist that shows every movie we've watched and it has an easy link to be able to get to every episode based on the movie. Additionally, it has all the movies that we are currently considering watching. And you can see how they're connected to dune and why we're considering about them and a few of them that are not connected to dune but our personal passion projects that we want to talk about. But so everybody take a look at that if you go to dune pod.com You will see a quick link right there that will take you to letter box and you can check that out. And we will also have a link in the show notes. Specifically, we would love to hear from you letters of dunepod.com or call us for 415 534 5211. And leave us voicemail and let us know what movies you want, like what's on the list that really gets you stoked that should be bumped up. What do you think we should get rid of? Like, we definitely want to hear from you on that. All right, Rob, do you have a history with dune? What's what's your what's your background?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "15:21",
+            "text": "I don't have I don't have a huge history with dune. Other than Lynch. I'm very familiar with that. I'm a big fan of Jodorowsky and Jodorowsky is dune. I have not read the books in a long time. So, you know, I feel like that's probably overdue."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:41",
+            "text": "I like I like how Rob's like, I don't really I don't have any history with dude. I've seen the movie. I've read the books, I connected you guys with a producer of Jodorowsky is doing so that he could come be on podcast, but other than that, like I've moved, I know nothing about dune. No,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "15:54",
+            "text": "it's no other thing because I have friends who are really, really into it. And like there's one cinematographer that I work with who loves dune and loves sci fi. So whenever the conversation comes up, I fall off fast, right? So I think that's sort of for me, you know, I just can't hang when it comes to like, where you guys can go so you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:20",
+            "text": "I Fair enough. I know we won't be pressing you hard tonight."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "16:23",
+            "text": "I know what we're gonna know what's what but you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:26",
+            "text": "yeah, there's no quiz. There's no you don't have to take the water of life. Achieve achieve common consciousness with us. That's it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:40",
+            "text": "All right. Well, shall we get into prisoners? Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:42",
+            "text": "God. All right, you guys ready? I mean, it's a really good movie. I'm just like very nervous. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:48",
+            "text": "believe me. prisoner's is a dark tale exploring the lengths you would go to protect those you love. Keller Dover is a good God fearing man who is tested with his six year old daughter Anna and her best friend joy are kidnapped on Thanksgiving Day. Detective Loki is the police detective charged with finding the girls and getting them home safely. When Loki apprehended Alex Jones, a simple young man who owns the creepy RV the girls were last scene near Keller expects swift results and justice. However, when Loki in the police department release, Alex Keller decides it's time to take the law into his own hands and kidnaps Alex himself. What unfolds is a dangerous man hunt through a maze of darkness filled with twists and turns, dead ends, and a horrifying monster waging their own war with God. As Loki pursues leads across the countryside, Keller spirals into a hell of his own making sacrificing pieces of his own humanity in a no holds barred fight to find his daughter. Will Loki locate the girls and return them safely before there's nothing left of Keller to redeem? Or will they all become trapped in this hellish reality? As prisoners?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:13",
+            "text": "It's good. Yeah. Good synopsis."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:16",
+            "text": "Whew, man, this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:18",
+            "text": "It's a tough one. It's a tough hang. Like it's a really good movie, but like, it's both. It's a long movie. And it is a existentially punishing movie, I feel. But yeah, very good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:33",
+            "text": "Yeah, I want to start just with the cast and crew. So Denis directing Roger Deakins, cinematography. Patrice Vermette on the production design and Patrice worked with Denis on enemy on this on Sicario and is working on Dune. David Dastmalchian Johan Johansson. This was the first time that Dani and Johan work together. Jake Gyllenhaal, Hugh Jackman, Maria Bello, Terrence Howard, Viola Davis, Melissa Leo, Paul Dano, like, it is insane this cast and crew of this film"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:11",
+            "text": "it really is and like it's a movie I mean, like even though we've done this podcast, and like I liked a rival and I knew he's doing dune I seen I was really excited for Blade Runner was a fan of his work. Like I don't even remember this movie coming out. Like that's like how, like, it's sort of I don't either, like I didn't I hadn't seen it. I didn't know it came out before we watched it this week. I really didn't know what it was. I don't know. I don't know what happened with the I mean, I think it's kind of a tough movie to mark it in fairness, like you know, you're you're sort of like telling people, you know, it'd be fun. Date Night, you and you and the misses out on the town. Little dinner, two and a half hours of child torture. What that says that sound does that sound show are you are you in awe, child torture, nothing Ends Well,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "19:56",
+            "text": "I don't know what it says about me or my tastes and film but I was very familiar with it? I think I think I think I may have seen it more than once in the theater."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:04",
+            "text": "Wow. Oh"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:05",
+            "text": "my God, that's incredible. Yeah, no"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:08",
+            "text": "crazy. Was it crowded?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "20:10",
+            "text": "Just being a bunch of kids No, it's, I always love this movie. And, and I did watching it again recently it holds up really well. Yeah, I think it's fantastic. And it's, I think it's very well balanced. And there's just a lot of perfection. I'm just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:33",
+            "text": "like, surprised. I like kind of going back to these, like earlier works of villainous. I hadn't seen Sicario either. And like, so the first movie I saw of his was arrival, which is explicitly because of the source material it's a very humanistic story. It's like very, like kind of life affirming. It's very life affirming. And then Blade Runner. 2049 is like an existential movie, but it like ultimately is about like, what does it mean to be human? And it is, it's got like kind of an up tilt, even though there's a lot of sadness in it. And it's a dystopia. And like, I don't know, and then like, but like Sicario was just bleakly nihilistic and, and this movie is darker, like, you know, I think is is a darker movie. And so yeah, I don't know I was I was surprised and then there's also like, you know, enemy which is just like another kind of very dark and yet facing movie. And I was I was just really surprised by how how, you know, that basically villain knows worldview from from those from these earlier movies? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:34",
+            "text": "well, let's, let's jump into it and what we'll cover, hitting all those things as we as we discuss it, but I did think it was striking the fact that it opens up with this hunting shot, right and with the Lord's Prayer, so like, right out of the gate, you're like, Well, okay, this is like intense. The ideal of an innocent animal that is being killed by somebody. And then the whole speech as you're driving home with with a shot back of him telling him like, You got to be ready, society is going to collapse and like, it's going to be every man for himself. And his reaction. That son's reaction I thought was was reasonable to that. Like when I tried to have that conversation with Sam. He just like, stares at me. He just does. No reaction. Thanksgiving was great, though."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:19",
+            "text": "Yeah. What do you think they hunt you it was it was deer but like, what did they bring to Thanksgiving? It did look like they brought liver."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:27",
+            "text": "It wasn't here. I mean, that. I mean, that was explicitly that. But I know but what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:31",
+            "text": "I think it was, I think it was I looked to me it looked like they brought like liver which incidentally, if you come on to my Thanksgiving and you bring like, deer liver that you shot like you're going home like that. You're not getting any of the pumpkin pie. That's ridiculous. Like, as just completely unacceptable."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:48",
+            "text": "Rob, have you ever been hunting? No, I haven't. Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:54",
+            "text": "No, I've never been hunting. I don't think so. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:59",
+            "text": "me neither. All right. Cool. Cool. Now coverage of the hunting of the hunting demographic on this podcast. It"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "23:04",
+            "text": "was very, it was very popular where I grew up. Oh, yeah, sure. And a little bit of trivia this film, I guess takes place in Pennsylvania. Right. But it was originally written for Massachusetts. And it was shot in Atlanta. Hmm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:19",
+            "text": "Yeah. I think it's funny, like so many things are shot in Georgia. And then like, so like, my mind just automatically reads anything shot in Georgia as like part of The Walking Dead extended universe, you know, I'm just like, okay, all right. Like, this is where the zombies for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:35",
+            "text": "I thought the locations were unbelievable in this in this film, like just the streets of that, where they were kind of in their neighborhood. And then these kind of Bleak open areas. And then some of the downtown areas. There was a one particular shot in the midst of the search where it's just like going across the river. And kind of like under like a bridge thing. Like that was just, that was super cool. So so it starts after this after this hunting piece. We have Thanksgiving. And so we have the two couples getting together with their kids. And they each have two kids that are kind of like teenagers and two kids that are younger than her friends and all the fight that family dynamics of what's going on there and singing Jingle bells, Batman smells and like the girls having fun, like I just loved all the instant chemistry and interaction between the two families. That"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:26",
+            "text": "was very economically done. I felt like the whole like establishment of the family dynamics, the two families being friends like it was very like, they like there was there was no there was no filler on that. Like they just knew exactly how to get to like them the emotional heart of those families. Mm hmm."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "24:43",
+            "text": "And that song. reback comes back real nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:47",
+            "text": "Yeah, exactly. That was a great, a great tag there. So there's two two instances, all four kids go out together to play and the two girls are immediately attracted to this strange decrepit RV. That's there. And they're like climbing on it and playing around with it and so the older the teenagers pull them off it's like get off that don't don't mess with that. And then they all go back and then they have dinner and then the girls go to the to the other house and it just like it cuts and Hugh Jackman right. calor and Grace come downstairs. Where are your sisters? And I just love that shift and that turn as the the instant dread comes in. And just the the fear and the anxiety just takes over so fast. And I've had a moment where like, Sam was missing for 15 seconds, maybe. And like, I was freaked out. So yeah, my notes from my first viewing which was earlier this year, I feel sick already."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "25:52",
+            "text": "The kids took off to look for a red whistle. Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:55",
+            "text": "Right. I missed safety whistle Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:58",
+            "text": "I missed that that I missed that the which is an important detail obviously. I also thought like Terrence Howard in particular, yeah, does a really good job of selling the turn there because he says like, Oh, I'm gonna they're gonna catch a weapon when they come home or whatever. And then like, without like, there's no cut. It goes from like him saying that, to like them realizing the kids aren't there and he gets he gets freaked out in that, like 20 seconds or whatever. And you just see him go from being like, oh, it's no big deal to wait a minute. Everyone loved the energy in the room just totally shifts. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:27",
+            "text": "specifically, specifically, the son says, Wait, Dad, I saw them playing near the RV. Right. And Terrence Howard goes, Wait, nobody said anything about an RV. Right? And that's the shift for him. Like he thought this was a safe place. Right? Never have thought anything weird. And all of a sudden there's a strange RV that he didn't know about. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:44",
+            "text": "funny you say that about missing Sam because I actually it was it was either today or yesterday we misplaced our son who was only 22 months old, briefly in the house. And like it was like, it was like the first time I mean, especially with the pandemic like he's not had a chance to not be near us. But like it was like the first time where it's like neither one of us knew where he was in the house. I was just like, oh, fuck, this is bad. And he's fine. But you know, yeah, that that like moment of not knowing is not great. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:12",
+            "text": "Rob is, you know, Henry, or Faye, any one of them kind of more kind of freewheeling? You know, they're both boring and whatnot. Yeah,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "27:21",
+            "text": "they're both pretty tough to keep a handle on and Henry was born in 2013. When this when this came out, and, you know, I immediately loved the film, and my wife has absolutely refused to not only watch it, but be in the house when I watch it. It's just, it's the scariest. Like there's that trigger for her. That is the scariest thing in the world."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:48",
+            "text": "Oh, it definitely is."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:49",
+            "text": "Thank God Matt, you like sort of flagged for because I didn't really know what this movie was about. And like Matt was like, Yeah, this isn't one to watch with, with with crystal. Oh, yeah."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "27:58",
+            "text": "One interesting thing for me. I discovered that Aaron Guzukowski, who wrote this now has two children. And he said he said that when he wrote it, he had no he had no kids. And that he wouldn't be able to write this story with kids. Right? Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:14",
+            "text": "I think that's right. I mean, I feel the same way. I feel like this is a movie like before I had kids and like our first are kid is only 22 months old. My wife's nine months pregnant now. So like, you know, like we we will soon have the double but like, I think 24 months ago or whatever, I could have watched this movie and been like, oh, that's kind of fucked up. But like, now you watch it and you're just like don't feel Yeah, chill."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:41",
+            "text": "So we go from from that moment of them running around outside and trying to see what's happening. The RV is gone. There is an interesting note of where the RV is parked, which we'll come to later but recut from there to Detective Loki sitting at the diner. It's Thanksgiving Day. He's sitting at a Chinese restaurant by himself having dinner. And just that shot Roger from behind. Just slowly pushing into him. Sitting alone at the table is so gorgeous. Yeah. And his hair, his tattoos. And the way he blinks as"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:15",
+            "text": "weird as blinking is so the Gyllenhaal Tiki blink. It's not over the top. No, it's not. It's very"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:23",
+            "text": "judiciously used and it's really effective. I"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "29:27",
+            "text": "did in my research, discover a few things about that Chinese restaurant that are interesting. They they couldn't find a Chinese restaurant in Georgia in Georgia period. Now that there was cinematic in work for that scene. So right one of the one thing Roger Deakins is great at especially on kind of smaller movies is just using locations and practical lights and incorporating kind of everything into his cinematography. So they found around restaurant that was a pancake restaurant. And that worked a lot better because it had the big windows and he could get the exterior shot. And I think he lit the whole thing with China balls, ironically. Although you don't see them that their overhead, and then wow, so it's a pancake restaurant with chopsticks. And then now it's a Chinese restaurant. So amazing. Yeah, that's a beautiful, Stark."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:27",
+            "text": "That's a good fact scene."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:28",
+            "text": "You see, Jason, this is why we have Rob on tonight. Nothing but illustrious guests, most illustrious"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:33",
+            "text": "guests. That's great, good facts."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "30:36",
+            "text": "And I love I love pancakes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:39",
+            "text": "They're good. So they cut from there to the RV at the gas station. And Loki gets the call when he gets in the car. And this great shot of him in the rain coming out and trying to get the driver who we don't know who it is yet to come out. And the driver pulls back and kind of looks like it's gonna get away and then drives forward and crashes. And he has to go on into the RV and with his gun drawn and get him and pull him out."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:06",
+            "text": "What Rob, what do you what do you think that scene was lit by?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "31:09",
+            "text": "Well? No, I do have a story for that scene too. Great. And it's an it's an I don't want to deacons up every one of these setups? No, please, please do. But I think originally they were looking for a truckstop and the truckstops were much darker. And he he, you know, again, he really loves practical lights. And it's off there. They're often supplemented and he does a lot to you know, you can't just show up, but it helps to have somewhere to you know, motivation for the lighting. So that's when they they went with a gas station because the gas station with a large parking lot. So they had lots of ambient Yeah, light to begin with. And that created that awesome silhouette. And it was"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:59",
+            "text": "the silhouette was amazing. Yeah, I mean, that's like when that's when, like for me like I was like, I was like, Oh, right. This is like a Roger Deakins movie, like it's, it's just so it's just so audacious, like, I mean, not in like a super showy way, but you just realize you're like, oh my god, like, you know, we're watching a scene in a woods like in the rain that's like backlit What the hell is this? Like, it really like stood out to me. That's that that sequence in particular"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "32:23",
+            "text": "Deacon said that shooting this film was in many ways harder than Skyfall, which he had just come off of, because Skyfall had much bigger prep. You know, any, any light you wanted, and lots of toys. And this was, you know, more constrained. Yeah. And I think one of the references they used was Fargo."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:45",
+            "text": "Mm hmm. That makes a ton of sense. Yeah, that makes a ton of sense."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "32:50",
+            "text": "But in Fargo, I think is a little, maybe more handheld and a little less traditional, but, but I know that I know that that came up a lot when they were prepping."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:00",
+            "text": "But it's a lot of those like same like kind of like medium shots of people having like a quiet crisis. Yeah. I wonder why selected this project? Do we know why Dickens was like, Yeah, this is what I want to do after I did Skyfall. Like the biggest movie in the world. He"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "33:15",
+            "text": "I know he he was drawn to the content, particularly the torture. And something that that stands out about this film. Is that at the time, definitely when it was written, but even in 2013 torture was a very hot topic in American politics. Yeah, sure. And Aaron Gaza kowski said that it wasn't a deliberate he didn't set out to make a torture film to comment on torture in America. But it, you know, is in the air, as David Lynch would say, right. And I think Roger responded to that. That's great. But, you know, I'm sure there were other reasons, too."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:59",
+            "text": "Yeah. I think I think Roger was was like mostly on board. By the time Danny got tapped. Because Danny said that he he wanted to basically meet with Roger to essentially make sure it was okay for him to direct the movie. Because because he was so wowed by by Roger, and then they met and just immediately fell in love and they're ready to go."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "34:25",
+            "text": "I did hear that. That there were Gothic elements in the script that need neither of them really wanted to embrace right and they may they may have shot some but it didn't wind up what like what he didn't say specifically and I I've read parts of the script, but I didn't I haven't read the whole thing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:44",
+            "text": "Like more about like the mystery of like, more of like more like sort of True Detective type stuff."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:51",
+            "text": "I've heard Deakins say that multiple times. Listen to the podcast. He's like, he's like it really felt like it could become this Southern Gothic tale with the wrong director. And yeah, As soon as we saw it was Denis, they knew on Sunday, they knew Polytechnique. And so they were like, This is a guy who gets it and we'll be able to tell the story. It's going"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:09",
+            "text": "to be more realist and less like sort of yellow King. Right? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:13",
+            "text": "Okay. Which I get I mean that that wouldn't have been bad either."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:17",
+            "text": "No, it wouldn't be bad either. Just would have been different. Yeah. I kind of thought it was that's actually it's interesting. You say that I didn't really think about True Detective. It's so funny. This movie is just very weird because I mean, it's very good but like it there's just these multiple moments where I was like, Oh, I'm watching this kind of movie like I you know, like it was like, you know, like, Oh, it's a Roger Deakins movie was like the first thing like on this in this scene, and then later when it gets into the torture stuff, you're like, Oh, this is there's gonna be some real gnarly shit in this and then like, you start thinking about like, you know, like what what is this like supernatural gnarly, like what it what is the bottom of this? Right? So yeah, that's interesting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:58",
+            "text": "I guess it is supernatural, because it deals with God. So Loki grabs Alex and takes him into interrogate him. So I love this scene starting with Loki has him right in the corner and is right up on him. And it is almost like that shot and Sicario that Benecio? Yeah. Ad Lib, the idea of putting his you know, his junk right in front of his face."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:21",
+            "text": "I thought it was I felt this I had the same note. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:24",
+            "text": "the thing that I love the most about this scene, and it's great, just all of his interactions as he's asking him the questions kind of again and again and coming out of different ways."
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "36:33",
+            "text": "I know for a fact those chords are playing outside your v you were driving as part was especially we've been taking the girls you're gonna before know that he hasn't come inside us and comes out of there being you take them away. Can you put those girls somewhere? Did you put those girls"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:57",
+            "text": "they cut away to the forensic guys going over the RV, and just these amazing shots and you can see like the water dripping off it. But you don't get any of the diegetic sound from that scene. It's all the voice from the interrogation. And I love that effect when you're looking at something but you're hearing something else like that was just super cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:19",
+            "text": "Yeah, I also I also noted that intercut that was going on there. Can we talk about how Paul Dano as an actor is kind of like just an amazing thing that exists in the world. It's funny when Paul Dano showed up and he was like the guy that gets arrested here. And I remember you had said on the podcast, Matt, last week that like Dastmalchian was in this movie. I was like, Oh, Matt got it wrong. Like it's not just Malkin. He meant he meant to say Paul Dano. But he's got the wrong. He said the wrong like weird looking chinless guy. It's actually Paul Dano in this movie. I didn't realize it was gonna have both dastmalchian and Paul Dano in this movie, which I don't even know how it's possible to have both of those guys in the same movie. That's just like, that's like, that's a really. It's a lot to book them both in the same movie that they're playing very similar character. Yeah, exactly, exactly. They must see each other all the time and auditioning."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:11",
+            "text": "But that resonances, that resonance is actually pretty cool. From from the story perspective and the character's perspective, it actually makes a lot of sense that they have those similar, those similar elements. Alright, so. So there is no evidence in the RV that there was a struggle or anything going on. And so we have a trip out to Holly Jones's house. So this is Alex's aunt, and Loki goes out there to talk to her. Melissa Leo is unreal in this movie. Oscar winner. Yeah, she is so intense. And she basically says her husband left five years ago, and that Alex was their nephew, who they adopted when his parents died. So I just saw her her kind of presents, ours is pretty incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:58",
+            "text": "What do we think about what do we think about Hugh Jackman's performance in this movie? How do we think how do we think Hugh Jackman does in this movie?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "39:04",
+            "text": "I'm a big fan. I mean, it's a scene that comes up a lot, I think, the liquor store scene. Yeah, I don't want to Yeah, I don't want to get I don't want to get ahead of I don't want to get ahead of us. But overall, I mean, and this is something that deacons talks about, I think all the time is that he didn't have to create suspense with the cinematography or the editing. It's it's, I mean, this film is all about the performances and these guys are all world class. I think you're kind of getting Yeah, for all of them. It's some of their best work I think. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:45",
+            "text": "I mean, I think like ape if there's something beyond a plus for me that's what that's what he gets for this for this role. Wow. Beyond a plus Yeah, I think his his performance is there's just like so many moments where moments where he goes really big and Mo Moments where he goes really small. That and just the reactions that he gives are so, so powerful. For me, I absolutely loved it."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "40:10",
+            "text": "And he, you know, he doesn't get to do that every time. I mean, this man can sing and dance. And, you know, he's a superhero. And, and, you know, with Jake, I think it's expected we know we've seen him in zodiac and Nightcrawler. And, you know, it's, it's it's wheelhouse for him. Right? But But yeah, Hugh Jackman, I think is my favorite Hugh Jackman performances this movie. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:38",
+            "text": "What do you think, Jason? What's your take?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:40",
+            "text": "You know, I think it grew on me as the movie went on. At the beginning. I wasn't like I felt he showed up just a little like, I felt like we never saw Hugh Jackman not taught in this movie or something like, you know, it just it felt like he started like a little like with the dials turned up too high. So there wasn't as much to go. Like, I felt like it was a little too big. And then it like it didn't there wasn't enough headroom above. But I do agree. I think it gets I think you find space later on. Because I do think the liquor store scene is a really is a really good one. And the hammer scene is also just like really good, which is like a big scene and like, also, just just just great. Yeah, almost my"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:17",
+            "text": "favorite scene, this scene where like, when he when he sees the clothes, the photos and the clothes like that. That was? Yeah, that's a really intense session, intense, soft moment, but through the end of the film, where he is just lying his ass off to everyone. And just keeping keeping it going. I was into it."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "41:36",
+            "text": "Yeah, you know, the reason I think you so taught to is that? It may some of it may have been edited out. I know, this film was three hours long at one point, you know, is that I think in the edit a lot of that, you know, air is taken out and he you know, the pace is pretty steady, or also would have been a much longer film. So, you know, it could be that we just always cut to him and he's already you know, yeah, up, they're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:07",
+            "text": "fired up. Yeah. So, so So Loki goes from Holly Jones house to the House to talk to, to grace and to Keller and Maria Bello is phenomenal. In this scene, and through the movie, you know, she starts off by apologizing for all this fuss. And you know, I'm sure they're going to be found and whatnot as she sort of hasn't accepted it yet. But she kind of just disappears or withdrawals through the course of the movie, which I thought was so well done. And there's one particular scene to me that was amazing, where she's just sobbing, and she says"
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "42:52",
+            "text": "made me feel so see. He told us, you could protect us from everything. I know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:05",
+            "text": "Oh, good lord. And it's such an honest moment for her. And for him. It's just like the dagger, you know, in the guts of you let your family down. It's on you. She doesn't do it. Like in a in a blaming way. She's just stating a fact. She was trusting that this would happen. And I had like, the power went out you know, PG&E had a power outage? And I'm like, I'm gonna get a generator. I can protect my family. I can make this happen. I'm like, this is a totally different level of that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:34",
+            "text": "I always think about that when I when I like I watch like movies like the road or whatever. And I'm like, right, there's an apocalypse. We're pretty fucked. Like I can like I can I've got a we've got like we've got like a loose doorstop that has been like, has been eluding my ability to fix for the last nine months and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:51",
+            "text": "you are not a Cormac McCarthy character. You do not know how to field strip a nine millimeter"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:56",
+            "text": "I don't even know really know what field stripping means. It's just not my I can eat like a field roast sausage. That's about it. Yeah, so"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "44:07",
+            "text": "I have a water heater with a tank so I'm good. Okay. All right. Oh, that's good. That's good. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:11",
+            "text": "So Keller comes down in the midst of the discussion of Loki and his wife and he just he wants to know why. You know why this guy was gonna run. He wants to have him be arrested and when you know when Loki is a little hesitant, he just freaks out and I love Jake's performance and as I'm gonna need you to calm down and just let me do my job"
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "44:46",
+            "text": "he stays in custody until my daughter's phone right. We will forward it out. Hold on it ends tomorrow unless we bring charges or charging. Charge. Mr. DOE to All girls gotta be worth whatever little rule you got to break the keep that asshole in custody. I know you can't promise me anything. I understand that. But I'm asking you to be sure be 100% Sure. Thank you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:13",
+            "text": "And it cuts straight from that to the scene of Loki talking to the captain and trying to extend the hold and the captain just say he's not he's not going to be able to hold him. That actor Wayne Duvall as the captain phenomenal. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:26",
+            "text": "What else has he been in whats the wayne duvall list of accomplishments."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:32",
+            "text": "stuff with him was just Fantastic and the two of them together was was fantastic. Yeah, he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:38",
+            "text": "good. I felt like it's I'm like, Look, it's like rural Georgia, Philadelphia, Pennsylvania or whatever. I'm like, There's no way that they can hold this guy for longer. There's they they can do whatever they want. In this in this in this in this little podunk town with this chair. They can hold him for another two days. It doesn't matter. Like there's like a kid murderer involved. You would think but yeah. Oh, he's in he's in the trial. That Chicago seven right now. Oh, cool. So just check him out on that. He's been he's he's got just he's a working man. He doesn't need he doesn't drag her out. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:14",
+            "text": "So Loki goes out to check out registered sex offenders I love those see is like three in a row of him kind of shaking down, folks. And did you catch Rob There's a shot from like outside through the steamed windows, as he's like interrogating a guy in his like Office or business or something that was just, it was just another kind of classic like, this is like just a gorgeous, yeah, shot. But he ends up at a priests house. And he thinks the father is dead on the floor. It turns out he's just drunk and passed out and Loki starts searching around. And he finds a basement that was behind a door behind the refrigerator with No Steps and no light. And he just has to jump on down there and go check it out. Like what is the probability that you're capable of making that jump and at exploring that basement?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:04",
+            "text": "I'm not jumping in any pits and I passed out priests basement that's a pass. No, not going. Not jumping a mystery pits and the clergy basement. That's a no."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "47:15",
+            "text": "Jason You don't have a pagan neck tattoo either. No,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:18",
+            "text": "I don't or like or like Zodiac tat. Zodiac? knuckle tats, there's a lot. I don't know. I don't even have a haircut. So it's like, let alone Yeah,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "47:27",
+            "text": "he has an idea. It's all those things. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:31",
+            "text": "So there is a great line that Loki says something about, I spent six years at St whatever. And he's like, he's like the guys would love to get a hold of you or something like I forget what it is. And so I assume the situation is this is a priest who is a sex offender who is living in his house. And so suffice to say there's a dead body down in this basement and it has a necklace around its neck with a maze in it. And the father says he didn't tell me his name. He came to me for confession. He said he killed 16 children and said he'd killed more. So that was just like, very intense. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:05",
+            "text": "the the thing this is my one kind of plot quibble with the movie, which is that like they introduced the dead body in the priests basement, and then they kind of just put a pin in it for like, two hours or something like, you know, it's just where I'm like, whoa, whoa, whoa, whoa, whoa, whoa, that seemed like there's nothing else that now that the necklace, the necklace, I didn't catch the necklace. I mean, I saw the necklace. But I didn't put together I didn't put it together."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:29",
+            "text": "I just like when I saw that necklace. The first time I saw it, I had no context for it whatsoever. I was just like, that's going to be important. Like that's a there's something there for sure. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:38",
+            "text": "I thought that when I saw it, but then they go away from it. And like and like, but it's also like, no one talks about it. Right? Like, and it's just like, Well, that seems like a fair, like no one else has any. Like there's an interrogation scene with the priest. But it's kind of like a routine as Yeah, like nothing really. Like I don't know, I don't even know what the movie explanation is for why the guy was in the basement,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "49:00",
+            "text": "the red whistles that way to it. It shows up a few times."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:03",
+            "text": "Right? Well, okay, so let's tackle them one at a time. So for that guy, that's the husband. Right? And so he came to the priest I guess so he had the fight with Holly Jones That's what she said we had a fight and he left and he never came back. So he must have left them and then gone to the priest done his confession and the priest put them down there you know, basically locked him down there and then let them die. Okay, right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:29",
+            "text": "But the priest the priest isn't arrested for that crime"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:32",
+            "text": "but don't know nobody knows. But he was just like I'm doing a solid for God. Okay, it seems a little weird that he that you know, it must have been a moment of weakness or something for for why he came to the priest in the first place. Yeah, I did maybe they met at like a sex offender meeting or something and hit it off and I started to it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:52",
+            "text": "a weird it's weird. I don't entirely know what's going on in that. I don't know entirely know what's going on with it. They introduce it. It's like seems like to mean it's like it like we're talking about before it injuries is like kind of big Gothic vibe. We're like, oh shit, there's like a body in the basement. What the fuck is going on there and then it's just like, don't worry about that. Now something else is gonna happen entirely like, I don't know. Just a small quibble."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:14",
+            "text": "Fair enough. All right. So Keller confronts Alex because he's being released by the cops. And he gets in his face, he gradually knocks cops out of the way and he grabs him and Alex kind of whispers to him. They didn't cry until I left them. Which is very disturbing,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:33",
+            "text": "not what you want to hear. Yeah, yeah. And for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:35",
+            "text": "Keller it's like everything that he needs to know. He tells the cops the cops say nobody else heard it. Loki goes and he interviews Alex again. And he tells Keller that he can't waste any more time on this guy because they just don't they're not convinced. Right. And so Keller just goes, watches him that night walking his dog. That's a weird scene where he like holds the dog up. So the dogs choking like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:56",
+            "text": "oh, yeah, that's weird, too. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:59",
+            "text": "it's just establishing that he's a psycho."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:01",
+            "text": "I love that. But the lighting and that's another scene that's ridiculously well lit. Like the whole scene of when he's stalking him. And he's in the car. It's gorgeous. Like, it's just so it's again, it's like so dark but like, yeah, it's good. It's really good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:15",
+            "text": "My notes say the orange dark glow on his face while he's watching. Yeah, unreal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:21",
+            "text": "That one stood out. Unreal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:23",
+            "text": "How do you rob Do you ever like like, do you like lift direct inspiration from these kinds of shots? As you're as you're doing stuff?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "51:30",
+            "text": "Yeah. I you know, especially with with Roger Deakins. What he's doing is is really amazing. And you know, there are a lot of night exteriors, which are difficult for many reasons. One, for one reason you're up all night to shoot them. But it's funny, I was in in Atlanta, a year ago working on a documentary. And, you know, every it's a small film town. So there was a guy on our team who was a sound man, and he had worked on every movie that had been in Atlanta in the last five or 10 years. Wow. Like baby driver and all kinds of cool, cool space. Yeah, he had worked on everything. But he worked on prisoners. So I was immediately I started asking a million questions about that. And he just had crazy stories. And one of them was about the, these kind of night exteriors, because deacons would have his team just, you know, anything that's in the shot is under his control. So he would use those practicals, but then supplement them. And if there was, you know, a streetlight, 10 blocks away that was in the shot, you know, it had to go or it had to be on or it needs to be brighter, or, you know, so he was just, you know, he's the master of all of that. So,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:58",
+            "text": "somebody's climbing up on a ladder, like swapping out a light bulb, and"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "53:02",
+            "text": "yeah, constantly so, you know, whenever you see something like light across a lawn, that's because he had somebody set some small lights across to, to put light across the lawns. So I know that he had lit like, every house, it's in every shot has little accents and things that they added that they added. And they were all on small dimmers. They didn't have like a big dimmer board. And, you know, it wasn't, you know, Skyfall he was doing it kind of inexpensively in the old fashioned way, gorilla, but just with incredible attention to detail to make sure that, you know, in that complete blackness, he controls everything and it's motivated by these practicals and, you know, the color and the intensity that he wants. So,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:53",
+            "text": "the caller in particular was what really jumped out at me on on a couple of the shots here, but it's just so it's so powerful. So, so, Keller, here's Alex singing Jingle bells, Batman smells, and he just kidnaps him at gunpoint. And so he quickly goes and he picks up, Franklin, and he's like, come on, you're gonna come check this out. Franklin has no idea what he's getting into. And again, Terrence Howard does a great job of selling this. And as soon as they get there, you know, Franklin is immediately freaked out when he sees him chained up to the wall."
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "54:30",
+            "text": "As much as you do a right. We heard until he taught or they're gonna die. As they No, no. We hurt him until he talks and they're gonna die. That's the choice. That's a choice. You have made my choice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:56",
+            "text": "And then it cuts to the hallway and you're just here. are muffled sounds as they start to go to work. Yeah. Intense."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:04",
+            "text": "Not great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:09",
+            "text": "So yeah, I guess to some extent, like this is in the current you're talking about torture being kind of in the in the consciousness. This is also kind of towards the end of the whole big torture porn saw movies and like all that stuff right which is this exploitive you know, concept of that kind of thing as opposed to this which is much more about the grounded and the emotional portion, right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:33",
+            "text": "Yeah, that's right. I think that's right. And a good observation, which is like a lot is there's been a lot of torture porn movies over the last 10 years. And this is not that movie. This is a movie where, you know, like, you're really confronting what? Like, yeah, what what torturing someone does that someone and like the, the sort of the nihilistic side of that. Yeah, I think this is again, like was sort of just like where you kind of get cooked by this movie like a toad in boiling water. You know, you're just like, oh, fuck, like this was, I mean, it wasn't good when little kids were being abducted. But now it's really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:12",
+            "text": "well, and this is just a startup. The father we cut to you talked about the interrogation. The father in the box says that the man was waging a war against God, and took the kids in daylight. So this is a little more filling out kind of the detail, but it's still still not a lot. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:30",
+            "text": "that's like the priests last scene, right? Yes, that's right. It's a little strange. There. I bet there was something cut to Rob's point. Like because the movie was like this three hour movie and like, yeah, now there's no there's something else going on."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:46",
+            "text": "So we go back to the interrogation and this is where I mean to me this is hugh. This is the hammer scene. And just just him say tell they just tell me why won't you you know, why won't you just tell us and he knows like, he is completely convinced and 100% righteous and ready to do whatever it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:08",
+            "text": "takes. Yeah, I was convinced that he was going to get hit with a hammer like I was 100% convinced that he was going to hit him with the hammer like was and like when he hits the sink instead of him I physically jumped in my seat because I was sure he was gonna hit his hand with a hammer I was having like, it was like the I was feeling like you know, American History X curbs stomping. This is this is definitely happening."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:31",
+            "text": "Not good. And Franklin is completely not cut out for this whatsoever, as we see when they leave and Franklin goes to the candlelight vigil. So again, this is like one of the absolute highlights for me for the cinematography, that outdoor candlelight vigil and Terrence Howard's performance where it's almost like he's gonna throw up or he's having a heart attack or something he just like collapses and everybody's kind of holding him up that was amazing. So so then you know well let's let's you know let's let's take maybe a little slight break, you know at the candlelight vigil Hey up my guy. If you could just please not found all stuffed animals at the candlelight vigil that would really be appreciated. What the fuck?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:21",
+            "text": "How do you think Rob, how do you think the candlelight vigil was? How do you how much of a pain in the ass was that to shoot? Do you think?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "58:28",
+            "text": "Um, I read a little bit about it he used I guess you can buy single wick double wick or triple wick candles. He uses double wick candles because you don't get a huge flame. But you get more light than a single wick. And then he supplemented it with like small, I don't know, Christmas light kind of globes on those dimmers. And they didn't flicker but they were on dimmer so you could kind of control them a little bit to create that kind of ground. Oh, yeah. Beyonds and then the chase that ensues you know, in kind of keeping with the tradition of the film used a lot of practicals like the streetlights and you know those houses are bright probably supplemented to make the houses look like houses and not just blackness but you know, again, it was just simple, practical. Just really good attention to detail."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:32",
+            "text": "I love the way the dog is lit in that in that chasing like I think the the like barking dog like giving away sort of like faking you out and just uh, where do you think he ran? Yeah, it's just like, it's just amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:48",
+            "text": "Before we leave the candles entirely, can I just ask what was what did Stanley use for Barry Lyndon double wick or triple?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "59:56",
+            "text": "That I don't know if you know that was those crazy lenses but Um, yeah. Yeah, it's the same NASA I think it's the same. You know, there's certainly easier ways to do it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:08",
+            "text": "I do remember actually it's funny now you say that I do think there is some detail where like they they use they got special wicked candles for the Barry Lyndon stuff because they needed they needed to like shoot it with the fucking moon lens."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:20",
+            "text": "I still have not watched Barry Lyndon yet. I will Oh, I will apologize. I really, I very much. That's great. Alright, so we cut to Loki being pissed at the captain for not keeping Alex under surveillance when he learns that he disappeared. And there's just this great moment where you get a good insight into Loki where he says I need to know where everybody is, I would have stayed up all night and kept an eye on him. I need to know where everybody is. So his desire this is almost like a wide, deep type thing. Like he wants to exert control. He wants to understand the situation and he wants to be able to have control so that he can figure out the puzzle. And it just doesn't work. Or he feels countermanded by his own boss. So Franklin tells Nancy Viola Davis about the torture house and they immediately go and get color and then go to the go to the house. And just Viola is amazing in that scene like her where she's kind of begging him. And then she she takes off the ropes. And he can he begins to escape and her just huddling in the corner just holding herself terrified. Just amazing. But she does say she says we're not going to help him kill, but we aren't going to stop him. Let him do what he needs to do. Hmm, that's it. That's intense."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:39",
+            "text": "Yeah, and they really let the camera like linger on how fucked up his face has gotten. Like they're really not they're really not hiding anything."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:46",
+            "text": "He's not doing good. Yeah, he's not doing good. So they actually come back. And so this for me this was when they go back to to with with those guys. This is where it starts to get a little over the top for me. And I felt like I was watching an episode of this old torture house. They're like, in tonight's four hour challenge. Keller's gonna build perfect torture box. A tiger cell. Yeah. That was a little intense, right? Yeah, but the concept of just gonna He's not human anymore. He's in a box. I can't see him. And I'm just gonna I'm just gonna put the hurt on him. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:20",
+            "text": "that is that's like, again, like one of these moments where to me it like escalated. I'm like, oh, like, they're, it's really like a movie about torture now. Like, it's like, they're like getting into like the mechanics of torture. Like, it's not just like, they're beating this dude in a bathroom. Like, they're like, he's got some whole theory. He's getting his table saws. Like, it's just like, Yeah, it's funny, actually, too. And reviewing my notes. This is the last note that I made. Until, until snakes show up in the movies, right relatively late. Because I think at this point, my brain like shut down, right? It's just like, I was just like, I have no more rational ability to watch this movie. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:57",
+            "text": "says, Hold on,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:58",
+            "text": "hold on to whatever sanity I have left. Whereas, like, in Mission Impossible, I was able to make copious notes. Like, engage in a different part of my brain."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:10",
+            "text": "How'd you like Mission Impossible Fallout, Rob. I"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:03:12",
+            "text": "enjoyed it. It's not really what I seek out. Most most of the time, but I thought it was good. Do you have"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:21",
+            "text": "any plans for any helicopter chases in any of your"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:03:23",
+            "text": "upcoming films? Little little tiny ones?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:27",
+            "text": "Little helicopter. Nice. Alright, so I do have a note here. I just want to just say Johan Johansson score is just absolutely beautiful through this whole thing. And there are moments where it's like really tranquil and peaceful and beautiful. And then moments where it's just like, horrendous and and horrific and very intense. So I really liked that."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:03:52",
+            "text": "It's phenomenal. I haven't sat and listened to it by itself. Yeah, but I think it would hold up really well. It's for sure. It's, it really is phenomenal. One, one little thing that I'd read. I'd read something written by a guy named Colin Stetson, who is a Icelandic composer. And I guess a close friend of of Johann and he he used this score as a as a reference for hereditary Whoa. I don't know if you're a fan of that movie, but I think it's great and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:27",
+            "text": "I haven't seen it yet."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:28",
+            "text": "Five banger for sure that movie is awesome all the time. We save five beggar you think this movie is intense? Check out hereditary. Oh my god."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:36",
+            "text": "I feel I feel this movie. I haven't seen hereditary. I feel this movie. Prisoners is more intense than midsummer was though for me, because my summer is like supernatural. Right. And so like, even though it's much more like gory, you know? Like it's it's like more of an explicit horror movie. Like this movie. This This movie like it's so like it's so ridiculous that like there's kind of a disassociated thing whereas like this race is like you can't"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:07",
+            "text": "you can't get away from can't escape it. Yeah, right. Alright, so we have Bob at this point we das Malkia is introduced, you know in the scene earlier he got away. He actually breaks into both Franklin and Nancy's house and then again he breaks into the Dover's house and he's almost caught but he's able to get out the window we don't have any understanding of why he's there or what he's doing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:29",
+            "text": "Strange strange looking fellow dastMalchian"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:32",
+            "text": "for sure. But but also like a very intense great, great presence there. And very this is a good part of the mystery in terms of how this film is is unfolding. I think this is very very well done. So Loki at this point, because Alex has been is missing Loki stars following Keller so this is the liquor store scene that you that you talked about. And whew, like his ability to lie on his feet and tell the story. This is my first drink in nine years. I'm just driving around in my truck. I don't I don't know what else to do. I don't want to drink in front of my wife. Like, it's just perfect. Kids"
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "1:06:09",
+            "text": "go for more than a week have half as good a chance of being found. And after a month, almost none are not alive. Alright, so forgive me for doing everything I can. It hasn't been a fucking week, right day hasn't been six days six. And every day. She's wondering why I'm not there. Okay. Do you understand that me? Not you? Not you but me every day, so forgive me for not going home to have a good night's rest. Why didn't you watch Oh my god."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:46",
+            "text": "Hey, we're Loki is like I'm sorry, hey, you need to be ready for when your daughter comes home. She's going to need you. Like he's fully put a check, which I thought was I thought was amazing. But he goes straight from there. Back to his house Keller, he throws the bottle. As he's walking home. He throws the bottle onto the side because he was only drinking to fake it out in the first place. But he lays down in bed. And this is where he has a dream. And we have this unbelievable orange light with the rain coming down. And the first time I watched this, I had no idea that Roger directed it, or Roger was the cinematographer. And I was like wait a minute. This is definitely Roger Deakins and I looked it up on IMDb. I was like okay, perfect. Great. And he specifically wakes to the sound of the whistle blowing. Great. Great racing. In the dice."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:07:45",
+            "text": "I think the I think his daughter says I found the whistle."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:49",
+            "text": "Yes. So this is where this is a weird part because she she said the whistle had been missing for 133 days on Thanksgiving. And then she takes joy to the house to try and find the whistle. So apparently, they find the whistle. And then they get kidnapped."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:08:05",
+            "text": "There's a funny story too. I'd heard Aaron guzukowski say that. They asked someone asked him about how'd you come up with this whistle. And it was just his wife was a lifeguard. And there was a red whistle in his house."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:22",
+            "text": "Sure. Nailed it. That's fun. And that was it."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:08:25",
+            "text": "They just, it's in the movie. What"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:28",
+            "text": "does Daisy have laying around the house that you know there's going to be the inspiration for your next turntable?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:08:33",
+            "text": "I'm sitting in front of turntables and a mixer. Definitely right. I'm gonna write that in. There'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:38",
+            "text": "be a DJ involved. Yeah. Alright, so So Keller goes back newfound drive, and he just breaks Alex. You know, he is He is torturing him in the tiger box. And Alex finally says, I'm not Alex. I waited and he never came. I just wanted to play and he never came. He never came. And Keller says to him, why are you making me do this? He's like, just fucking tell me. And why are this is the interesting part. He's like, you're making me do this. This isn't about me doing this. And he gets down on his knees and praise. But then Loki shows up because he's been tracking him and Keller completely freaks him out again, pretending that he was drunk and sleeping at the house. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:21",
+            "text": "That's a good move. That's a quick move, man. Really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:24",
+            "text": "quick. He is. He is an expert. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:27",
+            "text": "he's an expert sociopath."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:30",
+            "text": "So Loki takes off from there. He gets a tip that that somebody matching Bob's description was buying children's clothes at at a strip mall. And so he goes to the house. And I love this moment where they're just at the at the door and just waiting to see what's going to happen. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:47",
+            "text": "doors is great dastmalchians like trying to do like the chill is like, How can I help you officer?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:52",
+            "text": "Why'd you run away from me, man?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:55",
+            "text": "I've never met you before in my life. Nothing to see here. Everything's fine. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:00",
+            "text": "I can't afford to shop at Brooks Brothers. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:02",
+            "text": "I need a suit. So I've got a room full of snakes"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:07",
+            "text": "and a room full of snakes and camera boxes. So that seed was incredible once so, so lucky kicks in the door puts them in cops. He's like, if you move, I'm gonna put a fucking bullet in your brain bear. And then he goes into the room and he finds all of these cases and he starts opening them up. I do think those locks were not very good. Were those master locks like who was the who was the official lock? Press? It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:32",
+            "text": "wasn't good. I also don't know. I mean, like he probably could have found the keys. I for sure thought there were kids in the boxes. I 100% I was like okay, there's definitely kits in the boxes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:41",
+            "text": "There are snakes and there are snakes in the boxes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:44",
+            "text": "I wasn't expecting snakes and kids didn't see the snakes and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:48",
+            "text": "kids clothes Yeah, so his Jake's reaction each time he's like fuck"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:52",
+            "text": "fucking snakes are still snakes nice. I'm like yo bro close the case. No Don't let don't let the snake I mean like go on the box two. But like close like put the snake you're just stepping through snakes. My guy like this is ridiculous. Like yeah, this is not an efficient way to deal with a roomful of snakes. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:09",
+            "text": "this is one of the effective techniques from a storytelling perspective. We cut from that to Loki showing Nancy and Franklin the clothes that are there pictures of the clothes the bloody clothes to see if they can positively identify Anna enjoys clothes and you just see them walk out kind of in shambles. And then Keller goes in and so this is I referenced this before this scene is is unbelievable. His just the way he breathes when he kind of breaks down when he sees the sock that is Anna's and then he turns and he just says you wasted time following me you let this happen. That was That was amazing. Yeah. Yeah. So we cut from that to Loki losing it with Bob. And so it Loki is watching Bob dry mazes and and the captain's pushing on him and I just love it with Loki says do me a favor, Captain, go fuck yourself. And then he goes in there and he just starts wailing on Bob. As other cops come in, there's a tussle. Bob is able to grab the gun and shoots himself. And so he is dead. Alex, meanwhile, Keller is going to work for him and says I think we're done. This is like this is the end. And Alex says they're in the maze. Where's the maze? And so this is where Keller figures out that it's got to be Holly's house. Right? And so heads over there. Right? What did you think about that? Rob that scene? Just the two of them together when he comes to the door the first time to talk to her?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:12:45",
+            "text": "Oh, yeah, I think I thought that was great. I'm a big Melissa Leo fan. I I think her performance in this is sublime. Like she she really does such a good job."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:57",
+            "text": "Yeah. And so she she invites him in. And these are two master liars. And they're both like they both are pretty sure that something's going on. I just thought it was amazing. So she explains that she and her husband were devout driving around in the camper handing out pamphlets. But when their son died of cancer, quote, we started seeing things differently. Adopting Alex helped, but we never got over it. And this is where he says that he he was dreaming of being lost in a maze to try and see what her reaction is. So she she sort of is not not biting in that moment. But Loki back at the office, he just trashes his desk like I love this scene of him just destroying that. And he sees the photo with a maze pendant and then he puts it together and figures out what the hell is going on. Right? It is revealed that Bob was an impersonator, that blood on the kid's clothes was was pig's blood. But they referenced this book of a child of doctor that talked about being drugged with LSD and ketamine. So we're starting to like everything is starting to come together. We're figuring out kind of where things are going. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:06",
+            "text": "I think actually, I don't maybe I don't know what happened like so are both Paul Dano and does Malkin, former abductees? Yes. The same people."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:17",
+            "text": "Okay. Yes. So Bob Taylor was able to escape so he was he was held for n number of weeks, obviously exposed to snakes and mazes, and the horror and permanently traumatized but he did get away and lived his life as Bob Taylor. Right. Alex was actually Barry, who was kidnapped and held for 26 years and never escaped and never"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:43",
+            "text": "escaped. And he's like, yeah, and he just has the worst luck of all of everyone. Yeah, correct. Gotcha."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:48",
+            "text": "So it's at this point that joy turns up so she escapes they go to see her in the hospital. And the moment where she you get her memories Joy's memories of being a captive"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:59",
+            "text": "on Not great. I think this is why I was like blacking out at this point. I just couldn't. I couldn't take it anymore. I was just like, there's like little kids remembering like being it's just terrible"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:09",
+            "text": "defense mechanism. Yeah. From there we have, you know as we raced to the conclusion here so Loki goes to the torture house and he finds Alex. All right. I just noted that the caption as he's going into the room was screaming and thumping continue, which was kind of like the tagline for this for this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:30",
+            "text": "Starring me. They'll be good. Did you? Yeah. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:33",
+            "text": "So you have Keller and Holly, round two. So he comes back to the goes back to the house. And she's like, she's holding a cloth. And she's like, Oh, I burned myself. And there's a gun. Right? You know, you know, it's there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:47",
+            "text": "I didn't think it was a gun. I didn't think of that. I was just like, he shows up and he's got like this like, serious, like, Full Metal Jacket under eye like situation where he's just like, staring at her with clear, like, death intent. And he's like, Yeah, I'm here to fix Dinah Cabo. Like, he's just like, you know, here like, he's just like, I thought I'd fix your door. Right? Your doors broke. So I've brought my tools. Fix your door. Oh, my God. Yeah, this guy. Yeah, he's definitely the one doing tasks around the house."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:17",
+            "text": "Rob, what's your How good are you at doing handyman tasks around the house? Can you repair a door? Maybe you can field strip a 35 millimeter camera but so Keller Keller is trapped. Holly, she's got the gun on him. And, you know, she makes him you know, drink the drink the Kool Aid. And there's no score. The tension in this scene, the breathing of Jackman I think was amazing. The sound editing in this was was so good. Yeah. But she basically says you don't know me, Mr. diver, but believe me when I tell you, I won't let you go. And then as she walks him around to the back, she says,"
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "1:16:57",
+            "text": "making children disappears. The war we waged with God makes people lose their faith turns into demons like you. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:09",
+            "text": "like, their whole plan is just to like make people not believe in God. Like that's their that's their mission,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:14",
+            "text": "spread, spread suffering, they lost their son. So they're gonna they're gonna make other people suffer. And"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:17:20",
+            "text": "radical Elissa Leo is given some heavy duty exposition in this room, and shine. And she does it in a smooth way so that it doesn't feel preachy, or like, but she's just letting us know so much in a way that like, you don't feel like she's, you know, preaching to the choir. It's just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:40",
+            "text": "her delivery is like hear the content that she's delivering is like, all the way up here. But she is so steely, that it has all of the impact. I thought that was unbelievably good. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:54",
+            "text": "she really slides the knife in like just very, very slow."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:17:57",
+            "text": "It just really well written and her performance is perfect. And she wants him to know these things and hear these things. And you know, we get to watch. That's how I felt about it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:10",
+            "text": "So she does say that Alex just wanted, he didn't want to take the girls, he just wanted to take him for a ride, and that she was the one who decided that they should stay. Right. So she shoots him in the leg and dumps them in the ground. Loki, meanwhile, has finally figured out from getting Alex and getting a sense of what's happening that he's got to get out there. So he goes out the tension of him going through the house, intercut with her getting out the needle to inject Anna, and you're obviously thinking in your brain. He's got to get there before she injects the needle. Otherwise, we're screwed. And very specifically, that does not happen."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:18:49",
+            "text": "Yeah, that standoff with with Holly Jones is that that's a that's a great moment. And it's something comes up there that I think is an interesting thing throughout the film, is that in that shoot out it happens pretty fast. And she's just like gone. Hmm, there's there's not like they don't stick around for the payoff. Right. You know, you don't see or, you know, dying or right it's just like a very quick throw away. And yeah, I think throughout the film, there's a lot of these moments that are in most films are like a big fucking deal. And they just throw them away. Like, yes, right. Same thing. You know, say no country sent Yeah, or the but in that Tiger Cage thing that you're talking about? Like he goes in there. We never see him again. Right, you know, like, yeah, he"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:42",
+            "text": "never He never comes out. It's true. Yeah, it's just"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:19:45",
+            "text": "things that normally you make a big deal out of in this movie. We didn't have time sorry, we're just moving. Or they just are they shot it and didn't show it. And it's just as brilliant at it. But like, it's just these big moments are just gone like If that was the first thing to go, yep."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:01",
+            "text": "When when Brolin was on Deakins, they did cover the fact that that that Llewellyn has killed off screen. It's a great one. Yeah. And when I rewatched it twice for the pod, it's very clearly him, you can you can very clearly see him, but you have to be paying attention. And you'd have to expect that that's what you're looking for to catch it. You totally do not get it by default. And Roger said they actually went and shot a separate shot on a soundstage, built the hotel and did a close up shot of Lewellen dead. And apparently, Josh said, That doesn't look good, we shouldn't use it. And they didn't. He wasn't directly taking credit, but he said that he definitely at least said that, which I thought was pretty awesome. That's pretty awesome. Yeah, no doubt, no doubt. So you quickly scramble to him, loci grabbing Anna and getting her into the car, that whole scene of driving through the rain. And again, this is to me, I felt like there was a real recurring visual theme of water running on Windows and not being able to see where you're going. I thought that was so effectively done. I actually thought it was gonna like fade to black at one moment where it just like, really, you just couldn't see where the hell you're going. But even when he gets to the hospital, and he falls down, like trying to get out of the car water performance,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:25",
+            "text": "I was upset. I was like, he should have just called you should have just called for an ambulance or something like to the place that he was. This doesn't seem like a safe way to get anyone anywhere. Like you've been shot in the head and like it's raining like you like I was like, he really cuts across traffic to get into the hospital. He's like, Oh, now like three other people have been in an accident like those people wouldn't you know, they didn't deserve this either. Like, it's not their fault."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:49",
+            "text": "So last week has permanently changed me I'm like, but what if you want to have an impossible car chase?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:55",
+            "text": "Right, exactly. In the rain?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:58",
+            "text": "Yeah. So as he's strolling into the hospital and calling out I love"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:03",
+            "text": "that it just fades to black. Yeah, that's a good place to cut. That's a good place to cut"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:07",
+            "text": "another shot, just really economical in that moment. And so we end with you know, this final scene with Maria Bella grace"
+        },
+        {
+            "name": "Prisoners sample",
+            "timestamp": "1:22:19",
+            "text": "He does what he had to do to find him and I think God for that he's a good man"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:37",
+            "text": "and he doesn't, he doesn't like he doesn't deny her that that stance."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:22:43",
+            "text": "And I think she says, I know you're not going to believe me, but I haven't heard from him. Because she's like, you know, this the assumption is that he's on the run. Right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:53",
+            "text": "Right. Assumption he's on the run. It's interesting. They don't show Alex again like to kind of because you're you sort of like end up being able to believe her a little bit that he was a good man and that he did what he had to do like you get you get a little his side of his side of it gets a little bit more credit because you never see Alex come out of the torture box."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:23:12",
+            "text": "And then there's a weird thing to with the the little girl has the whistle. Yeah, right. That's right. And the mother said, No, that's not the original whistle. I got. I got another one. Right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:24",
+            "text": "And I think David established in the previous scene where where Keller was crawling around in the dark. I think he found the whistle there he found the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:31",
+            "text": "whistle. Yeah, yeah, they show him with the whistle."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:35",
+            "text": "So so the final scene of the film is, is Loki out there as the guys are, you know, digging around in the dirt trying to see what they could find. And they shut down for the night. And he's just kind of standing there and you're desperately waiting for for the guys to stop talking for the generator to turn off silence. And it's such a great scene with him just standing there and hearing the whistle but not really believing it and hearing the whistle. And then it just it cuts to black. Yeah. And so the alternative ending which Danny described the fact that they filmed an alternative ending and they tested both. And the studio said they they tested equally you choose whichever one you prefer. And I was always curious from listening to Deakins what it what it was, and it turned out, according to a 2013 interview with BuzzFeed, they moved the car. They see Hugh Jackman down there, you know, he's going to be taken out of the hole. I like it much better being ambiguous, even though you assume that's what's going to happen. I like that there's a small chance that he's not going to get him out there for whatever reason. I didn't even think about that. Actually, when I clipped that I didn't read the article close enough that like what if he's like, what you've done is unacceptable and are not going to find you. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:52",
+            "text": "yeah, that's cool. Jesus. Yeah, I didn't think about that."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:24:55",
+            "text": "There's been a lot of conversation about the ending. And, you know, I think it's It's some of the best storytelling in the movie. Because, you know, in that conversation at the hospital, Loki still is still wounded, he still has a head injury and he shouldn't be leaving the hospital. And right. He must believe her when she says I haven't heard from him. And that's when he his detective sense kicks in and he knows something's up, I have to go back to the house. Right? And then deakins had the challenge of how to tell the story. And what they did the it's lit with, with lights from the house and then work lights. Because the forensics team or whatever, is there extra sterile, right, yeah. And they have multiple lights on work lights, and one work light goes out. And then two work lights go out. And then he hears the whistle. And we hear the whistle, but it kind of sounds like wind whistling. And then we hear that he he starts to turn his head and there's a whistle. And then it cuts to black. And apparently Deakins had a scene that he referenced for that from a film shot by Conrad Hall, who's another? Yeah, legendary cinematographer, called fat city. And in fat city, Stacy Keach plays a boxer. Wow. And he's he's walking down the hall. And as he walks down the hall, the lights start turning off. And it's sort of, you know, symbolic of his demise. So it's interesting, though, it's a pretty incredible ending. And I looked at the script to see how it ended in the script. And you don't ever see color. But Loki goes, here's the whistles and then walks towards the car. So he's like, in the script, he's at the car. The seats have been removed from the car. So they apparently like had investigated the car. And then he, he walks away, hears the whistle and walks back to the car cut in the movies over. So it's interesting that they shot the other thing. You know, this film is loaded with symbolism whether, you know, heavy handed or not, it really works in Denis hands. But keler in German, his basement is kind of it's kind of a nice, nice thing, because there are lots of I did not know that a lot of hilarious. There are lots of basements for him. Yeah. And throughout the film, but yeah, it's a kind of a controversial end of the movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:55",
+            "text": "That's amazing. All right. Well, Rob, any final takeaways, anything we didn't cover? And what do you think we learned for dune? 2021"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:28:10",
+            "text": "Hmm. I love the puzzles in this film. I love the, you know, heavy symbolism, particularly in the hands of these masters. And it just, it makes it fun to watch. And it's it is dark, and it leaves you in a moon it sticks with you. But it's one of those kinds of perfect film experiences. In my opinion. I think it's, it's great. Amazing. For Dune, I, you know, I just anticipate it's going to be more detailed, more attention to detail. And I'm sure it'll be more similar to some of his other work. But you know, you'll see the you'll see the origins, I guess."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:52",
+            "text": "Yeah. Jason. Yeah. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:54",
+            "text": "mean, I think for Dune, it's interesting, because like I was saying before, like, the thing that this made me realize about Villeneuve is that he's got this whole part of his filmography, the earlier part of his filmography, that is, like, very nihilistic and like, dark and, and I just didn't know that. And, and so it makes me interested because he's obviously a close reader of Dune, like, unlike, unlike Lynch, he knows what he's doing with the source material. He understands the point of the source material. And so it really makes me interested to know how he's going to handle the false hero problem of Dune with Paul. Because it's possible he ends up making this movie and I think this is something that you wouldn't get in part one, it would have to be in part two, it's possibly ends up making like a real dark part two of this movie, where like, just the jihad stuff, like really kind of gets signposted in a way that dune adaptations haven't really tackled super well. So I'm interest said how he deals with the more dark parts of of Dune having seen this movie, nice"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:05",
+            "text": "for me at the end of the day, this film is really about the characters, and it is about how do you deal with pain? And how do you deal with your own need for you know, resolute strength in the face of difficult opposition. And I think you get it both from Jake and from Hue, just that the depth of the performance that you get is so strong, and the balance between so over the top for you in moments, so muted and understated. For Melissa Leo, like I just I think it's, I think it's amazing, and I think just the absolute gorgeous cinematography, composition, sound design, everything Patrice Fermat, like the sets in this film are so like, everything feels so real. And so just lived in. So I'm really, really excited about that. All right, so that brings us to our final bit of business, which is Rob, who would you recast in this film with Tilda Swinton who would Tilda Swinton play in Rob's version of this movie? Everything else stays exactly the same, but you have to step into one role. Oh, man."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:28",
+            "text": "This is a tough one. This is maybe the toughest one we've ever had for this. It is it? There's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:31",
+            "text": "a couple good options, I think. Don't overthink it. No,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:31:35",
+            "text": "I'm not overthink, I'm just not it's a tough one. I mean, I think she would excel in most of the adult roles. But sure, I I don't know I would like to see her as as Detective Loki. I guess?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:50",
+            "text": "That's great. Oh, no, that's a good. That's a great choice. I didn't even think about that. Yeah, that'd be awesome."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:55",
+            "text": "I would I would love to see her as Holly Jones. Like I think she would be unbelievable in the militia. The Melissa Leo role."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:03",
+            "text": "Yeah, that was my choice as well, which is hard to say because it's like Melissa, Leo really kills this. Like so good. Like, just the opportunity to put Tilda Swinton and some aging makeup feels like a good one. Yeah, I think I think Rob's argument for Detective loki is pretty strong that I'd love to see. I'd love to see Tilda Swinton as a detective. I don't think that I don't know if I've ever seen that. Yeah, that'd be great. I'd love to see like Sherlock Holmes told us you know,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:32:29",
+            "text": "I think she would bring her own stuff like I if I'm not mistaken. Jake brought the blinking the 10 the tattoos? Yep, kind of all the accoutrements that was all him yep"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:43",
+            "text": "amazing. All right, well, that is prisoners. We made it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:50",
+            "text": "we're still here I like I watched this movie and then went directly to bed last night. It was not restful. Like I was like I like I had my Yeah, I had to like turn my position on the couch to like have a better view of the door because I didn't like having my back to the door when I was watching it and like it was I've become like a little sensitive I guess in my older age"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:21",
+            "text": "Well, that brings us to letters All right, here we go."
+        },
+        {
+            "name": "April VM",
+            "timestamp": "1:33:27",
+            "text": "Hey, dude pod This is April longtime listener first time caller it's our last episode was great. I really enjoyed it. Just wanted to say that I'm not worried at all about the dune movie being pushed out there's plenty of dune and dune adjacent material or completely unrelated stuff whatever. It'll all be great. But I got to draw the line at an episode on Baliset songs analyzing them ranking them please for the love of God don't do an episode on baliset songs I can't take it away Thank you keep up the great"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:59",
+            "text": "that's a good that's a good that's a good note. We may have to do that. I mean like you know we won't do a whole episode about that songs but like you know I will we may perform some of the balliset songs What if we what if we like you know sing some of the gurney Halleck made numbers or whatever"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:15",
+            "text": "do you have the skills are you like are you up?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:19",
+            "text": "i You don't need you don't need much you don't need to twist my arm I'll bust into song anytime. Anytime. There's a half excuse it was my arm. I'll sing some Gurney some Gurney ballads."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:29",
+            "text": "I feel like I heard a rumor somewhere that they actually built a balliset for this film. Lovely. They're like we have $200 million and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:36",
+            "text": "we're gonna build a balliset. Delicious. That was great email. Thank you. Thank Thank you. April,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:42",
+            "text": "April. Thank you so much. I think I also from Austin, Texas. So thank you. All right, here is our second voicemail."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:34:52",
+            "text": "Ah, Jason, esteemed guest How're you guys doing? It's calling from Austin. Yeah, it's calling after the great The latest, greatest and latest episode, a Tom Cruise movie. You know, Tom kind of leaves me cold. You guys are really nailing this Mission Impossible episode or whatever the heck it is the 100 sequel of Mission Impossible. So it seems weird that there's so many of them. I remember seeing the first one in the movie theater and I was a huge department man. Yes, the cold like real cold in stainless crews. He just rubs me wrong. We sure there's a couple of movies I like him in but overall I'm, and I'm never really compelled to watch his movies. But you guys made this one some pretty interesting. I'll check it out. Maybe I won't. But I'm glad to hear that. Jason, you're kind of walking back a little bit, possibly, or California. So let's see. It'd be great if we could all get together and watch this as a as a group and see what happens. I think maybe you'll you'll see it to new eyes. And the last thing I wanted to say was, I want to commend you guys for having such amazing female guests who have come on, you guys have had some real top tier talent and they've been super entertaining and knowledgeable and just women I had never I didn't even know who they were and they're just always been very compelling and intelligent and awesome to have as guests on your pod. So good on y'all and good on them. And I look forward to more amazing co hosts and for you to really keep on at it you guys is totally hit your stride keep it up."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:33",
+            "text": "What a great what a great friend of the podcast, Corey is always leaves good voicemails. sends us good DMS really appreciate having him in our in our pod life."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:45",
+            "text": "Cory We love you. And yeah, we've been really, really blessed to have an incredible set of talent, both male and female guests. It's it's been it's been really great. And we feel very, very blessed on that front. All right. So Rob, what do you have to plug for us? Tell us about something exciting you're working on."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:37:09",
+            "text": "Ah, I'm putting the finishing touches on a feature film that I shot and finished shooting"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:17",
+            "text": "in March. Nice. Just under the wire of COVID. Just"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:37:20",
+            "text": "under the wire. So post has been a real treat. Yeah, it's called ultrasound. It's based on a graphic novel called generous bosom. That was published by breakdown press in the UK. And I hope to play at a film festival 2021. But you know, we'll see."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:49",
+            "text": "Yeah, well, so I've been fortunate enough to have been able to read the script. And I can tell you that it is weird as hell and also intricate and just really, really awesome. I'm super excited to see the trailer. And I'm glad just like Dude, you're in good company postponing to 2021 Like, that seems like a smart move. I"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:38:12",
+            "text": "don't know what else to do. It's not an easy choice. No, you know, you never plan it that way. But what else do you do?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:21",
+            "text": "You got to ride that wave man. You're on the worm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:26",
+            "text": "You're on. You're on the worm trip, lad."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:38:30",
+            "text": "I want you guys to see it. So and I want you to see it, you know, on something bigger. Yeah, proper screen with some good sounds. So we'll figure something out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:39",
+            "text": "Yeah, we'll do it. Once we get to like let's rent a Theater in San Francisco. And we'll have a dune pod exclusive screening. We'll have people come out. That'd be great. And check it out."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:38:48",
+            "text": "I've got some new plug. I got an email today from the Alamo Drafthouse. Ooh, yeah. And they are. They're offering screenings of Tenet, or Jillian air. Yeah. Private screenings starting at $150. Oh, wow. So you can you can show up with your friends and family."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:09",
+            "text": "I have you seen?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:39:11",
+            "text": "I haven't I It sounds. I'm not gonna see it in LA anytime soon, but Anaheim, maybe. But yeah, you can if you're more comfortable. You can rent the whole theater. And I would totally I don't know what the pricing is like. I guess it depends on how big the theater is that you rent. But you can also show up with your own DVD, Blu Ray, VHS collection, just play whatever you whatever you want. For you. Alright, you and your friends. Yeah. It's kind of kind of amazing and very, very tempting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:43",
+            "text": "Well, I'll only watch ultrasound and 4k. Like I need to see it in 4k. All right. But yeah, yeah, let's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:49",
+            "text": "I love I love Alamo Drafthouse. I'm very grateful. We have one here in San Francisco now and like when after we had the baby, it was like sort of our go to date night and Because I mean, you know, just like seeing a movie like you know seeing movie there feels great, but like also, we brought the baby to see the Spider Man movie. The and Arthur powers in game. Yeah, far from home game. Yeah, because they do special screenings during the day, like specific babies or new parents. For babies like we're, yeah, we're like they keep the lights up. Like they don't play the movie as loud so that your babies and like you just sort of know you're going to a screening with a bunch of babies and so that like if some baby starts crying like you can't get mad."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:40:33",
+            "text": "You can drink beer and nurse a baby"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:37",
+            "text": "that same time. It's amazing shit. It's amazing shit. It was great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:40",
+            "text": "I'm trying to push her like how does like Jason 2000 Like, look at Jason 2020 You're like, I made it to the baby screen a dude, we're really limited now. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:51",
+            "text": "don't know. Jason 2000 was like in a pretty bleak state. So I'm glad he's probably glad that we just survived. But like the Griffin was awake for some of Endgame. Yeah. And like, he was really young man. I mean, he was like, he was a small baby and like, and but like, it was like he had never seen he was just totally just like, like, you know, it was like, it was just like, complete sensory overload. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:19",
+            "text": "he was he was like, I prefer practical effects spar."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:25",
+            "text": "I'm sure that'll come out in therapy later. That's right. I don't know why I hate superheroes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:34",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and Rob for a really enlightening conversation. Next week, catcher returns to the pod for Timothy and searchers first pairing Greta Gerwig Lady Bird, which you could stream now on Netflix. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries a member of the paperkeg radio syndicate. The episode was produced and edited by me H our artwork is by catcher and our theme music was composed by Toby Foresman of whip song music. Thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

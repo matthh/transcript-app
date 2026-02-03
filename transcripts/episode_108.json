@@ -1,0 +1,1686 @@
+{
+    "episode_number": 108,
+    "episode_name": "Outland",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody, It's Haitch, and welcome to the latest installment of Dune Pod, your one-stop shop to enjoy the new Dune movies. This week I'm joined as always by my cohost, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And he's like watching the people come off, like you know, slowly and some of them are going somewhere. I'm like, are we going to follow these people the baggage claim like what are we doing?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by the host of the Recode Media Podcast, Peter Kafka."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It is wild that you're supposed to like Sean Connery."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We go back to 1981 and tackle Sean Connery's sci fi Western classic Outland. If you're joining the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts. Or just tell your friends about us because it really does help the listeners find the show. We also have a Discord server where you can hang out with us whenever you want. Link is in the show notes. And now without further ado, Outland."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Jason, it's like been so long."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It has been, like I feel like what you look like I don't remember you looked with like with all these lines in your face?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, that's a new one. Right? You know, the passage of time affects us all. Yep. Not you though. Apparently."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I'm useful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You're getting Bobo. Bobo. You're getting Botox. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. I love that. I'm tan. I got tan from Malibu. How was Florida? It"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "was incredible. Did you have a great time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We had a great time. So I hung out with my brothers a lot of doing pod talk going on and my sisters and all my nieces. It was really phenomenal. We holed up at a spot in St. Augustine, Florida. And we just went body surfing every single day. And it was wonderful. I forgot how much I love body surfing Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I just no board. No, nothing. Just like, catch the way you catch the wave. How big are these waves? Small, small. These"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "were like two foot two foot waves. Alright, not big but a lot of fun. And Sam was incredible. catch some waves. My brother Randy bought a little surf Flutie to put them on and literally for like 40 minutes on the last day Thursday. They just went over and over again catching all these waves what Sam called Bone crushers. Okay. And that's how that's how big he considered the waves. And everything was wonderful. And then after we finished we went back to the house and Sam tripped while running in his voice and he smashed his face open and had to go get stitches."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "But just one stitch right once."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "One stitch, one one stitch only one stitch. Yeah."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "That's great. And he's okay though."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's fine. And April got COVID"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and April got COVID. So the dune pod curse is pretty alive and well. We named the dune BOD vacation. Kurz is going great. How'd you do? Well, we went on vacation and the Thursday before Thursday night before we left. We left on Saturday, Griffin got the stomach bug. If you go back and listen to the episode right before saying that you had exactly your gold toes was section of the previous episode, you'll hear me talk about how I've had like low grade food poisoning for like the last week. And it turns out it was a it was a some kind of Gi bug. And the good news about it is that it's not like super serious. It doesn't make you throw up that much. But like it does keep for like a week. It takes like a week to resolve and so I basically got over it on like Thursday. And then like that night Griffin started puking and being sick. And so the whole 12 hour drive down to Malibu, he was just shitting up a storm like we we blew up a Wendy's bathroom that like somewhere near Gilroy that like I try I feel bad I there's I did as much as I could to clean it up but like that one is I wouldn't recommend going to for a while and then he basically so he basically was sick for a week like not seriously but it meant that like you know he couldn't go swimming in the pool right? Which is a bummer because it was like the main purpose or going down there. And then like sort of by the following Thursday, he was getting better and was eating again. And then like we had one day where like everyone was fine and then Juniper got it now and so then she got she started she started getting sick and basically yeah, it was Just like then she couldn't go in the pool. And so that was a that was a bummer. And like, yeah, so it was basically until the Sunday we drove back like the day we left, like the whole family finally had solid shifts, but like it was the first time in three weeks. Hey,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "go on toes. Whoa, toes. Thank you. That is rough. I was rough. It makes me ask the question, should we go anywhere anymore?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, I personally don't think is worth it. Crystal really likes going places. And it is like feels a little house crazy. For me inside with, with the two kids for three years, which is totally fair. And she loved South Southern California. And so I think we might be going back there more more frequently. I like being there. It was really nice to be somewhere like, you know, that was warm with a pool, especially, you know, because it's been kind of a cold summer in San Francisco so frequently is, but like the actually being somewhere and like just you know, and this is also true parents of young kids know, when you go on vacation with your kids, and it's just you and the kids. It's not a vacation for you like your your tour directing this vacation experience for the children. And so it's it's pretty exhausting as well. And then if your kids are sick and grumpy then it's super not fun. A lot of work. I don't think people should go anywhere. Just let's stay inside. There's plenty of good TV. I haven't seen blue season three is out. I've seen most of that. Okay, most of that. But we have new LEGO sets,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right? We've got Sam and I are working on that every morning at like, you know, 7am He comes down the steps. He's like Legos, right? Yeah, let's go."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Don't go chasing waterfalls. Stick to the LEGO sets that you're used to. Well, I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "will say we also had a killer time up at orcas. We went up and visited some friends up there. Orcas Island in the San Juan Islands. Good. Sounds fancy."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Just sounds fancy. It"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is very cool. It's just beautiful vibes. And you're like on the ferry with your car and you park it and get up and walk around and just a spectacular place the world. So I am somewhat pro going places. I'm also going to Bamp next week. So for wedding so rip, rip our future. We'll see what happens. Yeah, well, I'm very excited to be back. After this break. We've been off for almost three weeks. Since one word it sounds good. Feels good to be back. But we wanted to come back strong. And so we have coming in just a few minutes. Our dear friend, the host of the Recode media podcast, Peter Kafka."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What a legend. Great. Great to have him, huh? Yeah. And"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we're gonna really get into he just wrote an article about Warner Brothers and all of the media consolidation that's happening in the streaming wars. So we're gonna get all into that. And then we're going to talk about the 1983 sci fi Western classic Outland. Yeah. Hmm. Can't wait. Cannot wait. But quickly. Next week on Dune pod. It has all been leading to this. Hmm. Finally, Jason, you will be able to see for your very first time. Oliver Stone. John Miletus. Basil palette Doris. James Earl Jones, Arnold Schwarzenegger, the 1982 classic Conan the Barbarian"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's a wild list of people you you you you list it it's a it's a it's an unbelievable unbelievable cast of characters involved in making this movie"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is unreal. And it's an it this is a five banger. Like when you all films could be measured up against Conan the Barbarian for sure."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Crystal prefers red, Sonia."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Boy, boy. Save it for the pod for the have you've seen it then?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I have seen it. I've seen it. I think I think I've seen it. All right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Do you remember Grace Jones? Yes. I remember Grace Jones. Okay, that's destroyer. That sucks. That movie is terrible. Okay, and probably worse than Red Sonia."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm gonna have to watch it again. I guess there's a snake in this one. Right?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There is a snake. Yeah. Yeah, you'll get into it. So we're really excited about that. Rejoining us. My old dungeon master and dear friend from our Cloud Atlas and Excalibur episodes. Brian"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Mosley, Brian Mosley. This was promised to him for years base."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I am gonna hit up Ryan Condal because he has the original artwork. The original poster artwork. I'm gonna see if we can get a little story behind that. That'd be great. So we shall see. Alright, well, So Jason, there was a little bit else that happened. Yeah. Which I think I think we want to get into Yes. And this is the beginning of a new segment"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Max petty you Yes. I love it. We get it. Yeah. So Max petty is a segment that has been, you know, we sort of got into as a result of the Elan zwar of aggression segment. And then we just we realized that the pettiness really cannot be contained to just those updates. So we and sometimes there's not enough news on the aeons war of aggression. And so we're branching out, but a lot of suckers have been taken else a lot of people would take an else as we also have talked about previous weeks. And really the patron saint of this episode is The New Yorkers, Isaac showrunner, who like, is so petty that anytime there's a media parents by Sarah Esker, for example, who like worked for DHS during the Trump administration, right he will go out of his way to pull that media appearance and tweet about it and be like, I guess they couldn't find someone who wasn't dedicated to separating children from their parents they just absolutely legend shit. He's he's just relentlessly on her neck. And I hope to aspire to that level of pettiness."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, so who is on the max petty list this week? Okay, here"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "we go. Here's what we got. We will continue with our traditional source of Max petty, which is the Elan is war of aggression."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "dispatches from the war of Elon aggression."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, man, this may make the pod like 1000 years long, but honestly, it's worth it. So one key one key update from a couple of weeks ago is that Twitter is going to subpoena all of the bros in the all in crew, David Sachs, and Calacanis and those fucking morons who all said like this ridiculous shit about how like the bot problem would be solved. On Twitter 30 years Elon just brought in one self driving car engineer, he could solve it in 30 days if he brought in three, or who could he'll solve it in a weekend, those guys are getting subpoenaed for what they might have known as materially nonpublic information about the deal. So I'm excited for that. Love and Ilan sold $7 billion worth of Dallas Tesla stock after previously, having said that, he was done selling stock and saying that he's doing this in case he gets compelled to buy the company and needs the money and doesn't have to then sell the stock and in a panic, but like, it's also possible that this whole thing is this whole Twitter saga was really just an opportunity for Elon to unload Tesla stock. That seems likely so good, good work to all the Tesla Long's on holding this fucking dog. And then he also like briefly lied about by Manchester United and said it was a meme. I don't know. Whatever. I'm glad I don't care about English football. But people were people were very confused for a short period of time. It's just great. I just love that people have to take this shit seriously. And reporters have to like go out and like figure out what it all means."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, and there wasn't there a moment where they were like Apple was gonna buy Tesla and then make Elon the CEO of Apple wasn't"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that was briefly rumored to belong. Yeah. My other favorite thing is in the actual court case between Elon and Twitter. Elon had filed this this counterclaim which was private and Twitter instead of just being like we're gonna seek to make it public just quoted the entire claim and their response and made their claim public which is great. And and they just go line by line through the claim and like, just debunk the whole thing is like, full of like meaningful stuff about like the back counting stuff, but it's also full of just Max petty shit. Like at one point in the Elan claim, he says, Twitter than like, just defining terms like Twitter is a platform for containing 280 character tweets, and ad Twitter response false tweets can be up on 280 character. That's like, yes. Shit. So it's, it's great. It's all going great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I love it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What else? Other ELLs taken that we should call it the max petty segment not related to Elon zwar regression. The whole crypto collapse has just been great. tacular like the the tornado Cash Money laundering machine was declared illegal. And my favorite part of that was that people just started using tornado cash to send money to high profile web three backers like the Andreessen Horowitz guys, and like, you know, other celebrity backers of web three, like a way of implicating them because you can't even like receive cash through tornado cash because it's now been it's now been so blacklisted. Love that great move. Whoever thought that one up. And in general, like the claps is just fantastic. And then oh, yeah, and like"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "just Just quickly on some of the kind of bullshit that's going on, we work bro raise $350 million. Yeah. Andreessen Horowitz for something that's not even clearly a technology play. Yeah. And I was talking to a friend of mine about that and her take, she was like, well, we've just entered the phase of retreat where people are like, let's just give money to the rich white assholes. That's like, the only thing we know how to do left."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I love that. He's like, I've got a billion dollars of apartments and I'm gonna rent them like waterfall. We would love to invest in a that seems like a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "lot of money. Yeah, for sure."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The final update on people taking ELS is Facebook's horizon world's had like some they launched it in France or something. And so Zuckerberg like posted this thing on Facebook of like him launching like, you know, Horizon world's France. And so it's like, his like fucking, like Avatar, Nintendo me avatar in front of the Eiffel Tower. And it just looks like shit. Like they've been working on this for 10 years at a cost of $10 billion. And it absolutely looks like"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "trash. Yeah. Love it saying,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, this is the future."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Jason. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's just like, it's legitimately and like, I'm part of it is that I'm old. I'm willing to concede that but like, I still love new technology. I would love there to be new stuff. We are in the dumbest phase of consumer technology in 40 years. Like since the since the personal computer, we are in the dumbest phase of consumer technology and for years, like it is just stupid shit."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah, I agree. And we're suffering I think from a lack of innovation. You know, basically since peaking with the iPhone, you know, we haven't had the next great invention to come from that. And I think VR has was never going to be that and so I think that's a you know, destined destined to fail. I guess the only other thing for Max petty is the former president united states had his house raided by the FBI were strongly"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "favor of strongly in favor of of retrieving top secret documents from that turnip. Yeah, from that guy. So it was great we look forward to covering these updates more on max petty here on Dune pod Max petty yes"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "all right. Well, how about if we get into some do news would you like to know more?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's do it do news."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There's no new news."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, the one piece of new news is gonna talk about it"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "with Peter when we got when we got there but basically doing sisterhood is still alive and kicking."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Doing sisterhood is alive and kicking you have another one what do you have Francis pew looks absolutely stunning. And this I forget what it was I think it was a Vanity Fair or Harper's Bazaar I don't remember Harper's Bazaar Harper's Yeah, she looks unbelievable on a cover. Shoot she did for that publication. That's all I got. That's okay. Let's do news."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Shockingly, in three weeks, almost nothing happened. Except I'm sure Danny and the crew had been busting their asses like, you know, six months movies FDR. So they're making the movie making the movie. They're doing it. I love it. Alright, let's welcome some discord friends. We had ransom jar, blue mat, Neville Adan physico rusty B, Mat RA and IP Zielke"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a great crew welcome all. Discord was a wonderful bomb for me during my very poop filled vacation."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Politics and tech channels in particular were popping off the whole time which was which was a really good time. Yeah, I have one more new segment. It's not going to be all the time but I thought every once in a while it would be fun to do and it is called so I get I get an email when we get reviews every got a one star review this week, which I wanted to call out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, no, no, no, no. Why are you even give me this airtime. Welcome to the trolls."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So So what's amazing, what's amazing is like all of the all like the legitimate claims that people could have, like, you know, it's too long. It's a little self indulgent. You know, the hosts aren't as funny as they think they are like, whatever. It's never that it's always the same shit. So this one couldn't even say ex's name when talking about rango some of the funniest self imposed meaningless moral rules I've ever heard. The second hand embarrassment was too strong to take."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "My favorite thing about the situation is that there's all these people who there's all these celebrities who favored like celebratory Instagram post when the verdict came out. And then as these additional documents have been released, showing like the dirt that he was going to do. Amber Heard they've gone back and unfazed, the unfazed the post as someone noticed this and like when I called up all about comment, be like why did you on favorite? What was the thing that made you? What was it that you make when I came on favorite?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing? Yeah, amazing. Well all we can say to that person is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I hope we don't do i It's a great sounder but I don't know if we did. I don't know that I feels like that might be a sub segment of Max petty."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, we'll discuss it. We'll discuss it offline. With Megan. All right, well, so that's all I have for Dennis. Are you ready to get in it with Peter? Yes. All right. Do here's our discussion with Peter Kafka. Do Todd is recorded in front of a live studio audience? Yeah, Peter Kafka. You are back."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I'm back. Is this the first time you've had that sting for the live studio audience? Oh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "no. That's an old school. We didn't play it for you. Really?"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Alright. It's not it was being honored with a special"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, we got people listening. This is this is a real this is a real show."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "So wild hello people listening? Yes,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we are. Yeah, we're also chatting in our Discord. Peter, there's been a move from social media to to more private, quasi quasi pirate private networks. So so we have people in the"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "desert about that. I marvel that you guys can do this podcast and interact with discord at the same time? I can't."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay, yeah. Well, he is the drive the show. And so like, I'm like, you know, you get to tune in. I'm like operating the Colin line."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, that's right. Well, so Peter, we you know, really, really excited to have you back on and I wanted to have you give us a breakdown on exactly what was going on in the current state of the streaming wars. And you took that so seriously that today you released an article house of the dragon is coming to HBO. So is the Netflix Chill? Yeah. So thank you for taking the Assign article. Seriously? Yeah, please. Can you tell us first of all, is HBOs dune sisterhood going to happen?"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "No idea. So I did not ask Casey boys that I asked him other stuff. But it did not Jesus"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "missed opportunity. Sorry, I failed,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "canceled the pod. According to them, they're casting for it. So it's allegedly still going for."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "If it's a big budget show they're excited about and think there's a big audience for them. They're gonna do right. But they're not doing everything. They canceled a big expensive JJ Abrams, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Gemini, they're gonna choose it. I thought that was one of the interesting quotes you got out of Casey. And that was that he's like, look like there's been a lot written that makes it seem that we're not spending more money, but actually, we're spending more money than before."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yes. He was emphatic with the fact that their budget is going to go up, even though they just laid off. And this is going to be a week or two before people hear this. They laid off 14% of their staff, I think they're going to have much more brutal cuts across the rest of Warner Brothers discovery, and those are gonna roll out for a couple months. So the big picture is, you know, Discovery bought slash was given slash voice. Order, the thing that used to be called Time Warner, and then it's called Warner media, and they've promised Wall Street, they can find $3 billion in cuts, so they're cutting whatever they can, it's easy for them to cut stuff they hate. like CNN Plus, they didn't want to begin with, but they're gonna cut up and down across the board. And then the other big idea is that, you know, under the last, the last owners AT and T bought, they never explained they could never convincingly explain why they had bought Time Warner It made no sense for the phone company to own an entertainment company. They kept trying to come up with excuses for rationales for but in the end, it was they wanted to own a Netflix because they thought if they owned a Netflix, Wall Street value on Netflix, yeah, valuation, and Wall Street never did. And eventually they said, Fuck it. You take this and gave it to discovery. And now it's Discovery's problem to make it work. And the other problem is, the third problem is that Netflix is no longer not exactly worth half of what it was."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And you would you would say, and you've covered on recode media, as you've talked about this a lot. This happened across the whole industry, right? There's a reason why we were all wondering two years ago, why does NBC have peacock? Why is their Paramount Plus, why am I paying for all these streaming services. And it was because the street had given the impression, or at least the executives at these companies had taken the impression that if they launched the streaming service, their stock would go way up,"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "and convinced Wall Street they were going to spend a gazillion dollars, which is what Disney had been doing and which which is what Warner media under 18 T thought it might do even though it was never clear that the phone company actually was going to fund that. You know, companies like paramount and peacock have never convinced singley convinced Wall Street convincingly convinced Wall Street that they're going to be a Netflix so it's less of a big deal for them but they're all in the same boat, which is they weren't told the future is Netflix. And now Wall Street's like, be kinda like Netflix but also make a lot of money and also continue to have your old existing business which we told you to get out of a year ago. Right? So good luck."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. What do we make of the Netflix Disney's the Netflix Disney subscribers story that came out? Like what was it like a week ago that Disney plus had caught up to Netflix? Yeah, on subscribers."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "So it's really just a it's a, it's a fight for journalists who give a shit about this. I don't think anyone else really cares. But it's meant. So Disney put out a number and said we have 220 million subscribers for our streaming stuff. And they put that at the top of the release. And they very much wanted people like me to say Disney has caught up to Netflix, which they have technically. And then everyone on the sort of Netflix side of the ledger says Yeah, but you're like triple counting your subscribers. I have a bundle of I get Hulu and that means they've also given me ESPN plus even though didn't ask and I also Disney plus, so I'm counted as three"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wait, so there is not absolute truth and metrics in financial metrics."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "You can you can it is truthful. And also they will not get they will not get sued by the SEC for misleading investors. But they're also not being entirely interesting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It does seem to me at least that there's some amount of healthy pullback that is happening right when you have all of these films I saw the gray man, you know, has fallen off a cliff in terms of viewership. So like it was supposed to be this $200 million, you know, thing to spawn a whole, you know, a whole franchise and it looks like that's even though they're moving forward. That's not going to work or $200 million for all these Chris Pratt movies on prime. It's just been a little out of hand, I would say."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I mean, it's I think it's more of a problem execution. I don't know why Netflix is so not good at making movie, right? Because they've been pretty consistently good at TV shows. And there's lots and lots people make stuff that you and I you guys don't like and I don't like but it's popular, right that people and there's nothing wrong with that. They clearly wanted the one thing Netflix hadn't been able to do was figure out how to make a giant blockbuster franchise movie. We've done it with TV that it was Stranger Things, they've done it with bridgerton and they just can't get it right and but they're gonna keep going after it and no one's and you know, Amazon is going to do their billion dollar Lord of the Rings prequel next month, I don't know that they're gonna get it right either. It's hard to make movies as we keep talking about on the show, right? Like, it's hard to make good movies. I don't know why they're bad at it. But they're going to they're not, they're not going to pull back. No one thinks that streaming is going to go away, I think they're just going to be more judicious and cautious about some of the spending. And Netflix by the way, you know, their their concession is alright, we're no longer going to increase our content budget next year, but their content budget is huge dollars. So they should be able to make a couple of"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "you. The other thing that I saw that was kind of a bummer was it sounded like HBO was going to be minimizing somewhat the acquisition of outside films to put on the network in favor of focusing on the internally generated content. And that does seem like the, like the fear, right? Like that's why in the 20th century, you had studios getting broken up from owning the theaters, right? You wanted kind of more competition and more just for like a broader set of things being distributed."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "That's that's been going on. For a long time, though. There's a whole thing called fins in the gut that stopped in like 20 years ago, and all the TV networks were supposed to make their own TV shows and they tried to, but they'll still buy stuff from other people if they want to or can't or think it's important. I think the the one interesting way to look at the contraction in a positive way is if we stop making so much stuff, maybe some of the stuff we make a we better simply because all the talented actors, writers to write show runners won't be spread out. I had BJ Novak from the office on my show a couple of weeks ago. And he went on this whole rant about how comedies suck. And his assertion was, if you could get that you couldn't make the office today because all the people who were working on the office would be working on 20 other shows. Right. And I think there might be some truth to that. The flip side of that is, yeah, but you know, part of the upside of the boom was we're giving people who didn't go to Harvard and work on the Lampoon a chance to make people of color. What happens to that and you know, you can pick whatever lens you want, I think to argue pro or"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "con. I like that. That was a great BJ Novak interview I thought that was really interesting is basically that he basically said the end of season one we had like 20 people who would have just gone on to do other things. wasn't like, you know, he would have had her own show and all that stuff."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "And the Greg Daniels who made the office is making shows for Amazon. Sure. And Netflix. And I think they all saw this guy, but so and you know, I'm sure he's gotten the resources he needs to make them but they're just not good. I mean, it's just hard. It's hard to get stuff. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Fascinating. Well, that is an incredible overview. Obviously, we'll take away from that you're gonna follow up with us offline and put us in touch with Casey so that we can check in on dune system. But for for folks that want to get more of what we've just had, that is the Recode media podcasts and every week just incredible insights and really is going really great podcast. Yeah, yeah. A lot of other stuff"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "on the on Vox dot coms website. Yeah, right once a week too. You can get that for free as well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, definitely. Check that out. Well, Peter, we're stoked to have you here. And you hit us up so your lineage on Dune pod so far? Lawrence of Arabia, Michael Clayton, and to complete the trio here the Trinity Sean Connery's 1983 sci fi Western classic Outland. Five bangers"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "only only for Kafka do we do five banger movies."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I pitched this one you guys asked me. Yeah, it was very gracious to do the other two. I'm like, that's great. But you know, the thing that I love about your podcast is that early 80s Nostalgia itch that you are scratching for. And I was like, what is in that genre that you guys haven't done? Like? I remember Outland was a big deal when I was a kid. But I don't hear anyone talking about it. I wonder if it's still good. So I suggested this not having watched it in probably 20 years. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You know, you know me, I always let the guests choose without any editorializing. We were we were really happy to be here and talking about this, because this movie definitely had an impact for me as well. All right, well, what do you say? Shall we get into it?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's get into it. Let's do it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right, here we go. Outland is a standoff on the frontiers of exploration and our will to set our own fate. William O'Neal is a federal marshal, who has just started his latest shitty assignment, overseeing the safety of the 1000s of workers on remote mining facility on Jupiter's inhospitable moon Io. But one he unravels the mystery of a spate of seemingly unconnected worker suicides that points to a larger pattern of abuse by their corporate overlords. O'Neal must decide how far he is willing to go to protect his people. Abandoned by management, his own deputies and even his wife, he must face a looming showdown when the assassins dispatched to kill him in cold blood arrived. With only his determination and the help of the feisty and capable Dr. Lazarus. Can he bring justice to this corrupt world? Or will he find himself left for dead in the Outland? Yeah, yeah. What a movie. I have to take off my sweatshirt."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Jesus. Oh, did you start drinking? We can't see because we have video off but there you are. How many beers are we in at one o'clock in the afternoon on Wednesday. The school year is back. And that's that's ages cue. It's fall and time to start after lunch beers."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow. Okay. It's like nothing happens. Like we weren't even we didn't even miss a step."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Have you been here? Have you have you seen this movie before? Ah, this Outland Outland"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is a classic of my childhood. Okay, watch. I watched many times. I think we had it probably on beta. Or Wow, for sure. By VHS times. And I loved this movie. I was a big Connery fan. He you know, I watched a little bit of Connery and then you know, Roger Moore was my main through the 70s. But I appreciate it Connery and I just loved science fiction. So like anything I could get my hands on. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I love I love I love Sean Connery love Sean Connery, his bond, obviously love science fiction, had never seen this movie until two nights ago and didn't know a single thing about it. And I think it's because it was rated R in 1981. Okay, and like it was just like, and it is a little gory. And so I just think was not something we would have brought into the home. Even though like it was pretty permissive parents. But yeah, like I had never seen this movie before. It was a fresh viewing of a at sci fi classic, which is a real a real treat at my advanced age."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Oh, I'm excited for I want to hear it. Yeah, I definitely did not see it in a theater in my mind. This an alien were the same movie. Yeah, I didn't see them. Yeah, in the theater. ORS but everyone I knew and like grade school knew about the chest buster. And I felt like everyone knew about the decompressing helmet. explosions. Yeah. I think it might have been a movie that I saw like a Mad Magazine parodia before I saw it. Oh, it was pretty sure I watched it like an early cable back when like, if your friend had HBO, you arranged to have a sleepover. Yeah, totally watch Porky's ninja. And I loved it. And I think I probably revisited once in my 20s and I haven't seen it since it's I think it's also my first Sean Connery lead role that I'd ever seen some time. Wow, it was the same year. But I had never seen the I'm pretty sure I had not seen the the early Bond movies at that point because I was like you said a Roger Morgan. Or that's what that's what Bond was. So this was my introduction to Sean Connery. That's amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Interestingly enough, Connery had to sneak away one morning to go shoot a pickup scene with Gilliam for time bandits, and high and breezy Hyams let them off to go to like some estate or whatever, to film a shot. But"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "what a wild shot gallery was having in the early 80s We had just like a lunatic time in his life. It was"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "so if you if you look at this run going into this. So we have Meteor. Cuba Outland. Time Bandits Never say never again. And then five years later, Highlander Name of the Rose Presidio, Indiana Jones and the Last Crusade and The Hunt for Red October."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, we talked about this when we did time bandits. And basically there was this period of time where Sean Connery for reasons was just unemployable. And like, he just needed the checks. And so it was just doing real weird stuff. I mean, we didn't Zardoz to I guess, I mean, we've, we've really, we've really plumbed the depths of Sean Connery is needier."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "But to be clear, like, I think he's great. He is great. And it's kind of wild that he didn't get more space cowboy roles to be because he's a really good dead end space Marshal on this and he doesn't have to do an accent. Yeah. saves us a lot of work. Right. And I think he's great. It"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is wild, watching Sean Connery in this movie. Because you're just like, oh, that's a movie star. Like it's clearly I mean, it's clearly Sean carne, but you're just like, Oh, he's completely compelling. Like in this movie. It's just, it's just strange that there was some period of time in which Hollywood was like, I don't know about that fucking guy."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Gonna take a pass on us. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I was just thinking, just I don't know why this popped in my head. But I mean, last week we did deadzone. Can you imagine if it had been Christopher Walken?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that'd be great. That'd be great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Apparently, Gene Hackman, James Brolin, and Eastwood were all considered, quote unquote, considered for the role. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Easter was a little too on the nose. For sure. Let's face cowboy movie, but"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "for sure. So, so very specifically, so this is Peter Hyams, who directed this he had done Capricorn One and a number of other films before this. I love Capricorn One. And then went on to go 2010 And time cop. But he really wanted to make a Western. And he realized that Westerns were no longer in fashion, and that sci fi was the way to get it done. So Peter, what's your take? A lot of people have said this is, you know, sort of like a direct homage to high noon. Gary Cooper."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yeah, so I didn't know that until I pitched this movie. And then Google watched High Noon last night. Oh, cool is it is definitely a riff on High Noon it's not a remake of high noon there's a couple key themes right guy going up against the bad guys with no help from the frontier town. And then critically, one of the cool things about this movie is the countdown clock. Yes. When the bad guys are arriving, and high Nunes version of that is it the movie is in real time. Gary Cooper knows the bad guys are coming at noon. And so you're watching it play out while he's trying to get the town to help. I gotta say, I know high noon is supposed to be a classic. I don't think it works holds up. Right. It's an interesting artifact. I'd much rather watch out when"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and genre wise, this movie is kind of interesting, because like, obviously, there's the cop and there's like the you know, martial in a small frontier town element. The western elements are very clear. But like, there's this other aspect where it's this sci fi thriller with a lot of gore. You know, like we're, it's, it's it kind of feels more alien ish than it does. Western ish."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It's yeah, it's super alien. Yeah. Jared, same same score as your goals. Yeah, totally. Which I don't think it doesn't work here. It's also even though it's an it's a 1981 movie. It's very 70s in terms of like, it's anti capitalist. Even though it's Sean Connery. He's got I have an anti hero who's got that speech at the end about why why are you doing this? It's like, it's the system man. I just don't like the system and I'm just trying to I don't like yeah, I'm just trying to muck it up, which is a very sort of set. I'm not doing this for anyone's glory or restore justice or anything like that. I just, I don't like being ground down by the man. So that's, that's not that's not a Western. No,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it wasn't and that was like one of my notes too on just like the thematic of the movie with Sean Connery being this Marshal. Is that like yes, there is this sort of anti capitalist like the the nameless Corporation is the bad guy, you know, similar to alien, you know, once again,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "well, Jason sorry, it's con amalgamated. amalgamated. That's part of the Peter Hi, I'm cinematic universe because he used it in a couple of other movies. But"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's a great name kind of amalgam on it kind of mag but like security is robust on this mining operation. Yeah, this is like it's basically got the security of a prison like it's got like about the same ratio of like, you know, of correction officers to minors. See, as it is"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "a prison Yeah, it is. Right there. They can't go anywhere and they're all They're all coked up yeah, it turns out and so you got a bunch of a bunch of not very good prison guards with shotguns Yeah, right. Right. And I definitely like the the I guess it's kind of steampunk kind of nature of like we're gonna bring stuff not even just from the 70s and 80s into the future but like shotguns Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "guns is all weekend. That's all you need. So you can screw"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "shotguns in some kind of Sniper sniper shot you don't see the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "sniper shotgun very not often."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Not a lot of stopping power in that well, so just to just to get into this movie and we don't have to walk straight through this it's a pretty straightforward story. So we can feel free to jump around but I did want to call out I was immediately stopped just on the opening credit because it was the lad company logo."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. Rip to the god"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yes, laddie, who last this year, but I just learned that John Williams did the sting for this logo. And it's a great course he did. Yeah, great intro really, really awesome."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Why haven't we Why don't we tried to contract with John Williams to do the stinger for for doing for H industries, because you know,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Toby Forsman did it. But we should get we should just take a look at lad company. I know they did. What was the movie? They did somebody please look up for me, Albert Finney. It's like looker. Is that right? Do you remember that one? Peter. I had the name is familiar, but that's a class. Yeah. And I feel like that was that was a lad there. No"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Golan and Globus places, right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's an amazing it's an amazing list of movies. looker. Yeah, and i j one also a Nigerian one. Sure. It's a fire and body heat. And what a 1980. I mean, just like if your studio went out of business after one year, and you I mean, like, you know, what else do you need? Really? It's the right stuff. Blade Runner. Holy shit. Yeah. The police academy."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yes. All right, lad company. They're the new Golden Globes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The absolute best. The absolute best."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is pretty strong, pretty strong. Well, so I just want to ask a couple of questions. One theme that runs through this film all the way through I love the sound effect of the typing on Yeah, theaters. But there's a lot of exposition of both watching Connery typing stuff and watching things kind of like unfold one character at a time. Which I thought was hilarious,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "but it was a hell of a lot of typing in this movie. I do appreciate a movie that starts with just random astronomical facts about the Jovian satellites. I think more movies like should just begin with like, you know, like, regardless of what you're doing, like Martin Scorsese is doing another gangster movie it should be Earth 93 million miles from it just like it should always oriented like diameter touchdowns and much better than a voiceover. It is much better than a voiceover I thought the same thing I was like, this is a great idea for exposition is just like, do some facts about what you're seeing. It makes it seem like a little Wiki article. Pronunciation. Yeah, it's great. It's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Can you tell me Jason, what's your take on the state of the of the Earth where we have the League of industrialized nations? Like that seems a little bit like,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "again, this is basically like it. This is like the post capitalist critique of the late 70s, early 80s. Where it's just corporations rule corporate corporations rule. Yeah, exactly. Which is fine. You know, that's fine. It turned out not to be our biggest problem is that when"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we're going like, do we have a chance of changing this or is that like, is there a reason why this theme has been here forever and they're just literally is no stopping"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Elon is gonna save you isn't gonna save us from the corporations? I trust him?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I think it was I think it was like people just saying, I think it was like sort of a cold war theory which is like, Okay, well, like if the big bad isn't communism like what if capitalism, you know, but too much. And like, that's, that's fine. It just turns out not to it turns out to not be the major the most major problem."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It's also the movie companies themselves in the 70s are being acquired by Western ai t. At 1.0 is one of the big studios. They're all getting sucked up into the conglomerate after the easy riders."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "God, what is that 30 rock with the what is it? The microwave company and the wind come? Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and as we talked about during Blade Runner, and shout out to the friends Rosie and Jason on X ray vision pod, they did Blade Runner in 1982 Recently, and they talked about this in there too. Like, there's this big, there's this big phobia of Japan. And like sort of losing corporate like losing the corporate contest to Japan that happens in the early 80s. And like, so it goes all the way into the nine Yeah, you get for sure. Yeah, the rising sun stuff and like, you know, like, you get that whole theme of okay, like, you know, maybe there are no national boundaries anymore. And it's instead just these corporations which kind of suck everything up. Mm"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "hmm. Well, the site The second major theme for me, this movie looks fucking gorgeous. Yeah, the sets all in the costumes and like this, the whole like opening long shot of the the workers getting off the elevator and moving across and then talking and, you know, the the miner who is freaking out that he's covered in spiders. Who opens a suit. You guys recognize who that was? Yeah, that's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "clever. That's cliff. Yeah, fair guy."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Oh, that's clear. Yeah. I kept trying to because I saw his name in the cast. I could not figure out who he was. And of course, because you'll never"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "make it past the first marker. You're volatile freak before you reach the first marker. I'll see you in hell."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Then I'll see you in now."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "When I booted this movie up again, like oh, it's it's gonna look dated. It's not going to hold up but that's only the exterior totally space stuff the interior as soon as they're inside, which they're they're there that they're that way the whole time. It's basically again, like a prison industrial movie. It looks great. I mean, I think this whole movie save the score could run today as"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the interior that scene the living and like Bathroom scene, like we're it's like they've got like all of their little like cells. And they go back to that a bunch of times. There's a lot of like, Man ass in this movie in a way that I don't think is like meant to be erotic for any particular audience, right? It's just like, there's a lot of just like, sort of like, long John's like button along John's shot and"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "like guy like, it's got it's got to stick so bad. That's why I don't think they're showering on the rigs. Exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That was my thought. I was like, this is not appealing. Like, I don't think it's meant to be but like, I don't know why we keep cutting back to this. It was it but you do get the sense of the claustrophobia from the and you get the sense that they built a giant asset for this movie, like they really"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "did, right? Yeah. Yeah, there is surprisingly little behind the scenes info, and I just I couldn't find I couldn't find that shot this. Yeah, but it absolutely is pine movie away. Oh, I know. They did. I know they did it a pinewood. But I just was trying to figure out like, was there anything that they use from some giant industrial set, because those those areas were so"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I mean, the biggest part is the is the living quarters. Yeah. And they use it to have the chase at one great rest of it's all just a series of rooms, they also do a really good job of like, especially by the end, you have a pretty good idea of the layout, or why that one corridor is important at least like you're, you have a pretty good sense of the space, which I think is also super smart. And something you don't often get"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "a shout out to you Phillip Harrison, for a production design on this film, because to me, that is that is one of the major triumphs, it just looks so freakin good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They spent it's we've done this comparison before, but they spent a Star Wars amount of money on this movie. Like is the national budget of 12 ballooned to 18. So it's like, you know, they definitely they definitely had the they definitely had some cost centers to build out all that stuff."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "But they did that they, you know, they if you see the other movies that are sort of post Star Wars from this era, that look like shit. It's like, well, we'll do space lasers, too, right? And it's just someone drawing a line and they're not doing the model work. And here they just dispense with Yeah, and just say, well just make cool sets. But this looks"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "a lot better than for instance, we just did enemy mine, which we loved. But this looks so far above and beyond what they did there. From a production standpoint. Yeah, it looks really good phenomenon. Not quite so good. Uh, I love the wife as we go to the O'Neill's but Paulie like that he was something"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "he was someone's kid that was clear like Google them. I google that. What"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "is the deal? He's, he was a working actor, working kid actor. He's now retired. He's 54. And he, he's the worst thing in the movie. Yeah. And he's also a plausible explanation for why Sean Connery doesn't want to leave the job. Go back to Earth. He's like us. You're not great. Yeah. And it's it's the worst scene. There's one other big problem with the movie but but the kid is I think the worst so"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "they I thought it was just ADR, but it turns out he was dubbed for all of his lines. But yeah, that that was really tough. Tough did. I do love though all timeline read. The wife is really bummed about being here. It's week two out of a 52 week stint at the shitty station. And she's really bummed about it. She gives him a big kiss goodbye, because he doesn't know she's about to leave him. And he just says, gotta go. You smell good?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I'm surprised that didn't save the relationship. Right?"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "The kid was Nicholas Barnes. And his last acting role was something called Broken in 2008. Parentheses short film, so I don't think he was doing a ton of work, but he was working."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I love the welcome meeting and the tension that's established immediately. So Peter Boyle, Peter Boyle. Okay, as Shepard he says, Good work only comes from contented people. I work these people hard. And I let them play hard. So when it comes time for them to let off steam, you have to allow them some room. long as no harm is done. Just give him a little room. Understand what I'm saying? Marshall?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He is amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Peter Boyle is great. Surprising choice for the bad for like the big bad."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "A Peter Boyle is so good. So good. So good at it. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's in a funky. He's in like a funny part of I mean, it's just funny for him to be doing this like five years after taxi driver. You know, it's just like a funny, it's just like a funny like change of events and Peter Boyles career, and he is he's an intense looking dude, like I was I was concerned. Yeah, I"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "mean, this is Frankenstein, right from Young Frankenstein. Yeah, exactly. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's what I was thinking of Young Frankenstein was my Peterbilt. Yeah, sure."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "No, and it's good because he has to be plausibly they make him someone who's bigger and more physically intimidating. And Sean Connery, which is not a given. So that's impressive. And they give him the little Ponch and dumb a hat and the air sticking out. And you totally see him as a bully who else who just wants to like, get the job done and leave the rest."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But he is like, he is like a classic up and coming middle management scrambling to get you know, up into the top tier and willing to"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "like normally that's Paul riser. Yeah, the leader looking in here. I like that. It's him and he's golfing and drinking whiskey. Yes. And just killing time to you before he can leave because he doesn't want to be there anymore than Sean Connery wants to be there. He's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "sort of the evil it's funny because like he's sort of the evil version of Bruce Willis's character from Armageddon. Like you know, like a rough a rough neck like you know blue collar worker doesn't have time for the nice that he was alive but like one wants to look out for his guys. And like, you know, by like the time like Bruce Willis like, takes that over. He's like, the hero of the story. It's a but it's like capitalist. Yeah, exactly. Yeah, well, armor armor again. This is. Yeah, I mean, like, it's a whole the whole thing is, is a very jingoistic movie. So, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. I haven't revisited it. Since seeing it in theaters. I don't think but I have to take that under advisement."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's no salesman. That's your father."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So the other character in this movie does hinge on on the actors and the characters is Doc Lazarus, who I absolutely love. Her immediate entrance. So weird. She says, Who are you anyway? Yes, take two aspirin and call me in the morning. That's a doctor joke. Are you the new Marshal? Yes. I'd like to talk to you. I got an alibi. I got four people who swear they were playing poker with me. I've never heard that one before. That's really fun. Sorry."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But I also do love him coming back at the end of the scene where he says I would like a report of all of these incidents that have happened during the past six months. I'd like it really sure. What am I just kick your nasty house all over this room? That's a martial talk."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "You're nasty. That is like a record scratch and you pause the move. You're like I get that it was a different time but like you Fast yes I'm gonna knock all over the station"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to Polly to win Polly's like I don't want to do my braces or whatever he's like you'll be count counting your teeth or something if you're not."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Can I say that at this point in the movie after like the Peter Boyle intro which I didn't think Peter Boyles, like explanation of what he wanted to have happened was too unreasonable. He's like look like right this is a shitty situation we're fucking digging for shit on IO. And like my guys like want to just like you know, chill out or whatever like just you know be cool like don't put people in the drunk tag seems reasonable. And then Sean Connery comes in calls the nice Doctor lady a nasty as maybe Sean Connery is a little too much of a trihard in this movie, and he should just chill a bit and like this giant security force of like 10,000 Cops should just keep their shotguns in the little cage that the shotguns live in with no lock. Just come come down a bit. Just everyone chill out. Make the best of it."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It is wild that you're supposed to like Sean Connery after that line."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, and you still Yeah,"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "you still do. You're like wow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like his wife doesn't like his kid could go either way. The doctors obviously down on his side. Like maybe he's just on at this really bad job for a reason because he's just not particularly good at it. Could be"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "several times like you're you're on your you're here in this armpit of the universe for a reason. Like you're not a hotshot cop. Yeah, I don't know what you're trying to do here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Right? Yeah, totally. Well, and that's a running theme. Right? So the doctor she says the same thing when she's doing the investigation. You know, she says she's over her head. You know, as a klutz trying to figure it out a wreck like me. Such a smart piece of equipment and a wreck like me trying to run it you know, you haven't your medical all star here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "company doctors are like chips doctors. Most are one shuttle flight ahead of a malpractice suit. Which is a great line. Her performance is great. Francis stern Hagen. She played Carter's Nana on ER. But she was just really terrific."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, yeah, okay. Yeah, she's good. She's good. So"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "these guys are basically shooting up red juice. So my first note is, anytime you have to take a gun, and you shoot it, and it makes a really loud noise like that, and then it fucks you up big time. Like, that's a problem for me."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "My biggest problem with the what is it? Was your was your poly die? chloric? Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I use them all or whatever. Yeah,"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "use them all in this and it's just I think the whole movies plot breaks here is the premise is that Peter Boyle wants this stuff on board. So the workers work harder and faster than they eventually flame out and kill themselves or other people. But then you would just give that to everyone. Right? Right. Right, we'll just put it in their food or whatever you wouldn't like have an individual drug dealer going to one guy and let it Yeah, but that part doesn't make any sense. And later on, it's sort of like, it turns out that he's doing this sort of not sanctioned by the company, and he'll be in trouble if he gets found out and I don't understand the rationale that he's getting better output from the workforce but drugging them up because he's only drugging a few of them at a time. Right? That's the part of just don't get in the movie. It doesn't doesn't make me doesn't detract what I the pleasure I get out of the movie, but it does make me go what why not just make the plot better."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's like if you had if you had like Provigil, but like instead of just distribute it to like, make people to productive, like you created this, like, illicit underground drug sales ring, like, you know, we're like, it just like made it both worse district worse distribution. And like, more dangerous,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "but it's a monetization opportunity. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I don't know. They just seem like it helps them move up the corporate ladder they need to work on there."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Seems like he would just introduce it to the air or put it Yeah, in their, in their watered down drinks, or whatever it is. So they're all amped up."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And they need to give, they need to give Shawn like the the colonoscopy cocktail, they need to give him they need to give him a demo on the volume. So he just chills out allows them to just like, you know, play their IO video golf."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, exactly. Stop making waves stop making waves. So there's a whole bunch of investigation that happens is O'Neal's running around. He gets blood samples from from one of the drug dealers that he's able to take out after this big Chase."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They do the molecule analysis they do that so good, great sound effect they type for a long time and a long time there's a lot of insert shots of her hitting one key after another just like seeing like I was when they cut back like a fifth time to the keyboard. I was like I think we got it. My God. I think we understand that"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "she's tied the flashing function keys on top and then you can tell when she's discovered the new synthetic drug because the computer"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "was did you do doo doo doo. Right Great. Right? Right. I mean, this is probably just new computer stuff right and they're like people that are obsessed with computers. It's yeah thing right now totally. But it was it was definitely too much. The sample that I that I took that we'll be playing right now of Connery doing his computer investigation was like 90 seconds of no dialogue just only typing the computer going back and forth. 90 seconds. It just kept going. I couldn't believe amazing. Yeah. But I do love stuff like the strip club and the soundtrack in the strip club that reminded me of taffy Lewis's place. Yeah, this"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The soundtrack was pretty good for 1981 It was kind of a good techno track. The other thing I thought about in the in the strip book, first of all that place look that was taking up a lot of real estate in a place where guys are like apparently shitting in a bucket or whatever, they gave a lot of space to the nightclub. The second thing I thought about is how should you ever get a gig is it to become like a Go Go dancer in the nightclub on the IO mooning on the IO moon colony, like to be like, you know, to be sent out to be like a sex worker on like, the Jovian moon colony is a real is a real tough one."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It's it's, it's somewhere below like community theater. Dinner Theater, I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "think. Yeah, yes. Right."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "But you know, as Peter Boyle says, you know, my hookers are clean. And some of them are good looking. Yes. He has some standards."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, and I like the idea that it's sort of sanctioned, right, like this notion that there are these comfort elements that they're that they're trying to provide, but it all feels extremely grimy. As we've discussed before on the pod."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yeah, it's very saloon Hall. And like every good Western and I'm pretty good. Yeah, all the deadwood saloon stuff, like, yeah, these guys, if you're gonna work these people to death, you have to let them burn off steam."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There were metal swinging doors. Which I thought was awesome, though. I noticed too. Yeah, it was really funny. That was really cool. So all the stuff with, you know, as he starts to, you know, uncover what's going on. And he's trying to catch these dealers. And he realizes that they're tied up with both Shepard and montone. I really love the deputy. Played by montone. Yeah, James"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "be sticking with that from James be sticking he was the SWAT guy on Hill Street Blues. Yeah. Very big show for me at the same time. Yeah. I was basically as excited to see him as I was Sean Connery. He had that awesome jacket"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "on Hill Street Blues like that. Yeah. So jacket. He looked sick in that, huh, James? James be sick in it."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "And he's really good on in this too. Like, he's a pretty convincing, like, I'm just trying to get along. I'm just getting a little extra money, but mostly just trying to get through the day here. Yeah, fuck it up for me."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I love this as it starts to pick up pace. You know, going into that Chase, we have the running dot GIF. Connery running doc. Yep. Which is so awesome. And it was nice to see that they actually use that shot twice, which I was like, Good. Keep doing it, more of it. And so he catches the one guy and then that guy gets killed, as does monotone, which I thought was pretty brutal with the auto erotic auto erotic asphyxiation setup there. But then montone has left them the note about where to find the drugs. And he goes to find it and he gets taken out by the other guy, except he has a fake collar. So he hasn't been choked to death."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The fake Shokin collar genius."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's a bold move. That's a dangerous move. Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I mean, you know your man at that point, you know, you know, I like that. He's like, willing, he had he had the foresight to defend against the garage with the fake choking collar. Yeah. But on the other hand, just couldn't be couldn't be bothered with the concerns of shooting up a space station. Right. Just just firing it well, inside. Well, I"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "think he does a much better job than the two best guys they have for sure. Yeah. Which we'll get to later. He knows not to decompress himself. Yeah, exactly. But I will say like, you know, language and misogyny in general misanthropy aside like he seems to be actually a very good cop."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he's a great on, he's on the case. He's gonna get his man."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So this is where the movie really shines. So he tells, you know, he goes back and reports the shepherd, he's gonna take them down. Shepherd says Marshal, you're dead. And so we begin the countdown with the pros coming on the shuttle, and they'd established the shuttle takes 70 hours to get there and comes once a week. And so the countdown timer, and that clock just running and the number of times they keep cutting back to it over and over again. And how cut off he is whether it's him going into the strip club and everyone kind of being silent and looking at him. He's on Team refusing to help. It's just phenomenal."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yeah, it's great. Then that's that's right out of high noon. That is the most direct High Noon homage but he also has time for racquetball. Which is good squash"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "maybe does."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Is it squat Okay, all I know is that in the 70s and 80s, both because I was there, but also you could see in the movies, racquet balls, slash was a cutting edge sport that obviously they would have in the future. Totally. Classic Wall Street Scene later on. It's in a bunch of the fake golf. I thought it was in a lot of movies, too, but I looked for it and couldn't find it. Any other places, but it must be in other places. But yeah, in the future, obviously. We're all going to play racquet sports in an enclosed."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, that's all we'll have. That's right. That's right. That in the strip club, those will be your two outlets. Well, this does have this so this you refer to this earlier, Peter, but when the doc comes and tries to talk him into leaving, and he says, I found out I was supposed to be something I didn't like, but switch in the program. That's my rotten little pop in the rotten machine. I don't like it. So I'm going to find out if they're right."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Show I'm gonna find that was awesome. I love your accent is awesome. I hope that was dynamite. And yeah, it's right out of like Jack Nicholson Five Easy Pieces or whatever. It's all that sort of seven days. I'm gonna fuck it man. The man is trying to screw me and I'm gonna because there's no reason for him to be involved in this right case. Like he's not going to get any benefit out of it. And they say over and over like are you gonna do you think this is going to solve anything out? Right and and, and my wife and kids have already left me and as I do like that the they're like I think a day out before the before the bad guys come? Yes. You want to go get drunk? And he says sure. Yeah, cuz because that you should definitely have a hangover where you're gonna fight assassins."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. That's one way to go. I did really like that is a long shot of him delivering that entire piece of dialogue. And he's really good in it. Yeah, right. Great performance, sir. So now we get after all the buildup right, we've got more countdowns, we've got him doing some prep work. You don't quite know what he's up to his last call with Carol and Polly, which even the Polly socks I thought it was kind of touching for Connery side of that performance there. But then the shuttle arrives early. And I love that just that and it's just like a beacon in the black night. You don't even see the model until it gets up close for landing was awesome. No."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it looked cool. I did feel like sort of the maybe it was just I was tired. But I was like ready for the guys to show up. By the time like I was like, like when this the countdown started. I was like 60 hours as long like I would like it to be more like 30 They'll be here in 30 minutes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, when they when they arrive and it's like the scene. It just keeps going with the sirens and he's loading the shotguns and the landing gear and then he's loading shotgun some more. It's definitely taking its time. And"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "he's like watching the people come off, like you know, slowly and some of them are going somewhere. I'm like, are we gonna follow these fucking people? The baggage claim like what are we doing here? Like is this like, you know, like, this is a long this is a lot of detail."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yeah, I liked it. He's like, I've got to figure out which of the two assassins Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "so But you you have all of that built up. But then once they get off, it's a bit of a letdown. So you have these two pros who are incredible. But both of them miss totally free shots. They're like literally in position and they can't hit him."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Well, one has the walleye. Yes, he was like a problem. He's got the bat. But what though? It's one guy I think is okay, but the guy who shoots himself out of the greenhouse. Yeah, that should have been solved. Like he should have known that he was going to explode himself into space."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's pretty silly that that first guy or the second? The second guy I do like dropping the piece of metal to do the trick but yeah, the assassin that he traps with the help of the doctor and I just love Yes, her helping. And so this guy with a giant mustache. So Jason, did you recognize pH? Moriarty?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. Who's pH Moriarty?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's the guy with the mustache dune. 2000s gurney. Halleck"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, good. 2000 So anyhow, like I have another one for you. For you. Did you recognize the drug addict who gets shot? away? Yeah, that is Steven Berkoff who maybe most notably played Victor Maitland and Beverly Hills Cop. Okay. But for our purposes, also played still gar in Children of Dune TV miniseries,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "oh my god, wow. Okay, so the double dune"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "dune connection that's and"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "by the way, we're we're we skipped over that but that is a great great see. Yes, that drug addict. Yes. And James be seeking coming in behind him and he pulls the sort of like I had to get it on man. Yeah. Yeah, I after a blows away but that is just a really well done scene that would work in any in any setting and doesn't matter that it's in space. It's got nothing to do with space. It's just a guy in a confined room. Yeah. And it's very intense. It's really good. It is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "very intense. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was it had a real Roy Batty vibe to me. Kind of like a slightly more unhinged, but for 11 year old age just the idea of seeing like a naked woman on screen and then you know threat of weirdness going on that just definitely blew my little fundamentalist mind at the time. Wild shit. So he takes out both of those guys. We had the deputy, who also turns against him. They struggle they fight he takes out who is that guy gets tossed."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Do you recognize the W is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I did recognize the W that's Clark Peters. Who plays Mr. Freeman? Yeah, Lester Freeman from the wire. What? Yeah, very uncarpeted Holy shit. Yeah, God. Oh, my God. It's full of stars."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow, that is incredible. Yeah, I didn't recognize him. I mean, he was recognizable, but I didn't I didn't ID him. That is amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're building something here"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Yeah, it makes me wonder what Peter's life was like in between that movie and the wire because at the wire"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "was a long desert."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is that 15 years basically something like that. No,"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I mean, yeah. 20 bucks, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Something something long. Yeah. A long time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Good job Clark. So the final element here he goes into the strip club. You know, he's kind of making his way he says shepherd and he stares him down and he just says Well fuck it. punches him in the face. I love that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "oh I'm not sure what that achieves like who's the authority that's I mean, don't you think like Don't you think like the the corporation who's also sending like assassins or whatever would just be like yeah, no, can we just get rid of this shitty cop was like this trial. That's that's the thing."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "It caught me up this time. And then I went back and again listened. They're doing Shepard and his guys are doing mafia under the nose of the corporate. They're driving it on the side they're gonna get in trouble if they get found out they're doing it everywhere. And the corporation either doesn't know or is turning a blind eye but this is their he's obviously going to be in trouble one way or the other. Yeah. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. I mean, I took it as this was like the space mafia kind of worming their way in and making profits off of the corporation. And being successful in the midst of Yeah, I like it. I like it anything we missed?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I mean, just again, like the shooting of the shooting in space, like just the shooting in the space station. I think maybe like it sort of is like kind of a harbinger of the some things in here don't react well to bullet you know, like it's like"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "in orderly don't don't shoot"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the space station."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "So I googled shotguns in space, they do work."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's well yeah, I Googled shotguns in space too. I also, I love that because like, I also was like, wait does actually work in the fire again, and space. And it does because the bullets come with their own oxidizer is the rage. But"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "the explosive decompression is a myth. According to Wikipedia. Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is a long running segment. This"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is a long running segment on Dune pod. We cover this every time there's,"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "I've listened to so much Doom pod, I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "can't believe I missed I can't Oh, it's been a while since our last"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "expose. We talked about it in black and black hole I think was the last time we talked about it,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "but to just to just to revisit. The difference between being in a pressurized environment at one atmosphere and the vacuum of space is which is zero is only one atmosphere, which turns out is not that big of a pressure differential. And so if you were to open the airlock, you the air would just kind of like go out but not in this giant explosive way. And if you are exposed to the vacuum of space, you would not die instantly what you die of is is of a as Vixia because you can't hold the air in your lungs. So your your face explodes. Your face is unexpected. Yeah, you do not freeze. It doesn't feel that cold. You don't actually explode but you die within like 20 seconds to a minute because you can't breathe it yeah, definitely"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "don't do it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Don't do it. But you could survive it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Speaking of Did you see like Artemis one is getting ready to launch. Oh, really? So Moon one it's gonna go around the moon and then they're gonna do Artemis two and three and then they're supposed to like the target is to get humans back on the moon in 25. Although they did just determined that there's no one chain of command that manages The entire project including coordination between SpaceX and SLS and Boeing and whatever"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah we're gonna get there and we're gonna find out that the Chinese have already built like all city we're gonna get there it's gonna be like Hello"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "14% of New York City is not vaccinated for polio right? I am not fully convinced that we have what it takes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We do not have the right stuff we don't have the right stuff. Oh man"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Peter who would tell the switch and play"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "she's got to swap out for the kid yeah"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "right because instantly makes it a much you can be it she can be a surly teen I'm sure she can play like a sullen you know 17 year old of either gender and or whatever gender you want. And it's an instant improvement"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "but with the same topic No. Sure. Jason"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "maybe Peter Boyle. Maybe she plays the maybe she plays the boss of the town. It'd be sort of like a Snowpiercer reprise I think it would be great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I've gone with Dr. Lazarus."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's not a bad choice either. choice either. Although if Sean Connery tried to beat up to tell this one I would"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "lead an army to stop take your nasty ass kicking my tilde"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not on my watch. Peter, we did it."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "We did it. We know thanks to spectrum but we did it we did."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. What can you do? What can you do Someday? Someday we you know the corporations will rule and and the network will be good. And we'll all be happy. Peter. So people can catch you on Vox. People can catch you on recode media podcast available wherever you listen to your podcasts. Anything else you want to plug."
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "Thank you gentlemen. No, we're good. Thank you for having me on. Welcome back from vacation and I hope to see you again."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, coming soon. Peter coming back for what did we say? Out of Sight"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "really good. Decided Yeah, either or?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I love I love out of sight."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my God coming"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "back that Clooney versus versus Michael Clayton Clooney is the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I want to do an out of sight network back to back week because he because Clooney references network and trunk scene. So that's my"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I've never seen that wild. I've never we should"
+        },
+        {
+            "name": "PETER",
+            "timestamp": "",
+            "text": "do a whole run of Elmore Leonard and then you should make room for justified to"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah Wow, holy shit what a discussion so great to have Peter on man just is incredible. He's so knowledgeable loves this movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I can't wait for him to come back. That media streaming segment up top was incredible. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Very insightful. He really it's great. Because it's like, it's actually there's not that many people on Peters be who are like doing the the tech media stuff. Where it is like, you know, it's the media side of like how the business works. But it's obviously from like, an industry in a tech industry perspective. It's just great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'll also shout out for folks to check out I have done work over the last couple of years, with Nell Thomas, who is the Chief Technology Officer of the DNC, and I connected her with Peter. And they did an incredible interview was like 45 minutes long, like Peter really got into it. And it's super fascinating about misinformation and organization and why we get all the text messages that we get that are super annoying, and you know what the DNC is trying to do to make things better? Yeah. So really, really fantastic conversation. Folks should check that out. Yep. All right. Well, listen, how about if we get into some letters, letters? First of all, it occurs to me, you may not know dear listener, you can send us letters. Yeah, like we accept letters for more than just Cory and Kev. Yeah, our dearest friends of the pod. So if you want to hear your voice on the podcast, or just send us your thoughts, you can reach us at letters at Doon pod.com You can just send us a letter or you can record a voice message and send it over to us or you can just call us and leave us a voicemail at 415\u2013534\u20135211 Let us hear from you. We would love to hear what what you like and what you would like to hear more of other movies. You want to check out any anything that seems good to you. So first letter is it says Outland calves question from Kevin Hey guys, for the first time since the Escape from New York episode, Kevin's question is being sent in writing. No, I wish I could have recorded something but unfortunately after two and a half years I've been taken down by Reed with dramatic emphasis done novel Coronavirus. Yes. Don't worry. I'm doing all right. But I blamed the Dude pod vacation curse. Yeah, sorry. Seriously though Kevin's question this week concerns Outlands reputation as a sci fi retelling of high noon. If you were going to retell a classic story, what would it be? And how would you do it? Would you take a Shakespeare play and shoot it into space like Forbidden Planet? Or would you take a story from space? Maybe a famous one about the dangers of Messianic figures and put it in a new setting? On that note in your answer, feel free to use dune. Thanks camp. Anyway, hope you guys are doing fantastic. Anyway, hope you guys are doing alright. Much love to Peter as well, who is not only a fantastic journalist and podcaster but a top tier doing podcast, your friend in time, Kev. Once again, it's Cavs questions."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, we hope Kev recovers. Well, Kevin was unfortunately afflicted with the dune pod curse, but he's in he's in our Discord right now. And he praises your reading of the dramatic emphasis. So good work. Um, it may be because I've been on this religious studies bent lately. Looking at the tiktoks of theology and religion, PhD, Dan McClellan, somewhat obsessively. But it may also be because I read Hyperion not too that long ago, but a story a story that I think you could do in a sci fi setting. And Hyperion does and sci fi setting is the binding of Isaac. And like, you know, the God tells Abraham he has to sacrifice Isaac and stops him at the last minute. I think that's like a really wild story. And one and one that I think you could do in like, you could totally do in like a survivalist like you know, space mission go wrong with like, you know, with like a, you know, father and a son or whatever. So I'd like to, I'd like to see that. The Binding of Isaac, nice space version."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I guess I'll go with I guess I'll go with biblical as well. I've always liked the story of Noah. And I think it'd be really cool to take that and do that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "kind of like an epic. Oh, yeah. Like an escape from a planet"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "like a film version. type type thing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That would be really cool. Has that ever been done? Like, where? Like a planet is dying? And like instead of it like we have to go and restart the sun, right where we just have to get everyone off the planet."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes, yeah. What is like loading up everybody onto like the seat ship or the generational ship?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I think that's a good one."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Didn't like yeah, life what was that? Was not Pattinson movie. Robert Pattinson life. What's that? Okay, Wally."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah, while he's was a good example"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Highlife."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There we go. It's kind of Wally's about like the return,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "but nice. I would also like to see just since you freed me to do dune camp, I'd like to see dune in a kind of like, true Shakespearean fashion. Like, let's just see it grounded on earth. You don't need you don't need actual space stuff. And I'd like to see Patrick Stewart, you know, kind of getting in there. Maybe as the as the Emperor. Great question."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Great question. COVID. didn't COVID didn't kill his question."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, no, the brain is still working the brain still there. So that's good news. Hey, guess who we just are about to hear from you. Yes. I love the cheering. All right. Here we go. Cory DuBois. Hey, it is Cory from Austin, Texas calling in about Outland with Sean Connery from 1981 You know what the secret is about Outland it's not really Sean Connery. It's Peter fucking Boyle that you can play the greatest shit heels ever. He should teach a masterclass on being like this despicable jackass. Anyway, I love you to watch this movie. I also love Sean Connery in this movie. And what else I love about this movie, space smoking, man. I love people smoking. Yeah, I don't know what it is all about it. Obviously this movie, like exists in the same universe as alien. They share so many aesthetic. That's crazy. It looks like like they could just be a great double feature for that working class. You know, space type. Movie, whatever. Yeah, I love Outlands Tilda Swinton, who would she play? I think Dr. Lazarus would be really good for her. And then really quick, I know my voicemails are always so long and so sorry. So one of my uncle's used to be an actor and stuntman. Oh, yeah. And his most memorable role is as the shooter in the Tree who shoots guardsmen In The World According to Garp one of my favorite movies. Anyway, his name is John Cochran. I had heard he did stunts for Outland. I don't see him in the credit anywhere. So I don't know if that's true or not. I don't know how that goes. And I looked him up on IMDb. He's passed away so I can ask him. When I look at my mind, do you be there's a couple of Johns Hopkins listed and they're both don't have all the stuff and I know one of them is interviewed also in the Made for TV show movie called luggable. Mary. If you guys ever seen that he played like the Apple cop trainee guy who gets Judo kicked in the nuts. I'll put it all posted in discord. Anyway. Sorry to ramble. My uncle maybe it was in Atlanta. I don't know. All right. You guys are great. Talk to you next week. Bye."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Michael marry does not sound like a good title for"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I don't know that one. I don't know that one. I've been asking when Cory is gonna get now that we have our chief emoji officer Derek doing doing these amazing stickers every week. There's really a number of number of pieces of art that Corey could have engraved on his body. And I'm excited for one that won that fight when he finally makes the ultimate commitment to"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "us. Oh, my God, it could happen could just be days away. Yeah. Jason, we did it. Yeah, we did it. We made it. We're back. We're"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "back. We survived. So to speak. I mean, we're not 100% intact. You know, like, we're, we're okay. We're weakened. We're aging."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We're all fine. How are you? How are you?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're on the downslope of life. But we're here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We're taking winds we're collecting, what do you have to plug?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I want to plug. I was in LA. And I went and saw the first live show I've seen in three years since. Yeah. And it was just me because the baby was a poop machine so she can go. And so I went into LA and I saw Mike Birbiglia as the old man in the pool. Oh, yes. Great, which is performing? Yeah, it was performing in LA. And it's a great follow up to his last special, which is the new one, which you can watch on Netflix. The new one was about the birth of his daughter Guna. And about becoming a father and I think it's like a great, a great, like sort of, you know, view on fatherhood and what it's like to become a parent all the concerns you have about leading into it. It's just"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "great. I think it's shocking that it would resonate with guys our age, ya know,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's kind of crazy because Birbiglia is basically the same age as I am. And like, yeah, yeah, he had a kid like, you know, his daughter sevens are good kids like Sir for years for me. And like he did this, he does hold special about having kids I think is really resonated and really connected with me. And then his next one, though, man, the pool is really about mortality and death. And like, it's, it's so good because like I that's what I think about all the time now is death. Like as I was just joking about being on the downslope, like I think about dying all the time. Now. I've had kids, and it's about that, but it's funny. It's funny as hell and it just it's actually I think, probably his dances comedy special, like the jokes per minute are incredibly high. You can tell"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "like, every single line of dialogue is very scripted, right? Yeah. Sorkin like as you know, it's all been honed to a diamond."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly. Yeah. It's really been whittled. So that one's in LA. It is also traveling, though. It's in LA for another two weeks, and then it's going somewhere else. But yeah, you should check it out."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, well, all I can say is Mike, come home. He's always ready to we'll record Mike any time we will record get on the pod. He's not listening to this pod. Is anyone? Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I mean, he might eventually but I don't know. I'm not sure we could do sleep we could do his movie. Whatever we do his movie. No, no,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I let him picks up trash. We'll pick whatever you want. Mike, we don't have to talk about your stuff. Whatever you whatever you want. Mike will do it. There we go. All right now I will inappropriately begin tweeting until we succeed. And that's it for this episode. I want to thank Jason and Peter for an amazing conversation. Next week. God I am stoked. We are doing the incredible Conan the Barbarian, the movie that put a young Arnold Schwarzenegger on the path to legend. If you enjoy the show, we need your help. Take a minute to leave us a five star rating and review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a dis Discord server where you can hang out with us online whenever you want. A link is in the show notes. Dude pod is a tape deck podcast John our production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whips on music transcripts provided by Sophie shin. The episode was edited by Meghan Hayward and edited audio and produced by me Ah, thanks for listening, and we'll see everybody next week."
+        }
+    ]
+}

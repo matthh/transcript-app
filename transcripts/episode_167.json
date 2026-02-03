@@ -1,0 +1,2336 @@
+{
+    "episode_number": 167,
+    "episode_name": "The Last Jedi",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:01",
+            "text": "This is a tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:16",
+            "text": "Hey everybody, it's H and welcome to the latest installment of escape patch your portal into cinematic pocket universes. History. I'm joined as always by my co host, Jason,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:27",
+            "text": "chalky, Luke like you are you're absolutely right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:30",
+            "text": "And we welcome supervising sound editor from Skywalker Sound, Max Smith,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "0:36",
+            "text": "you have left center right, you have the left side, the right side, left back the right back and then you objects,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:42",
+            "text": "we talk about a film that exemplifies incredible sound design, Star Wars episode eight, The Last Jedi. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcast. Or just tell your friends about us because it really does help me listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. And now without further Ed you in the last Jedi. Alright, so Mac, let's start with an easy question. How does sound work in movies?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:31",
+            "text": "How much time do you have for were talkies"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33",
+            "text": "on mistake?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:38",
+            "text": "Well, there are a lot of people that probably assume in live action films that when the what you're hearing is what the camera picked up when they're shooting a live action film. And that's rarely the case. Because on set the production sound mixer and the boom operators are trying to get just the cleanest dialogue possible. And oftentimes, like imagine a restaurant scene with tables in the background. You see lots of activity and people talking and eating while they're being told on set to not make any sound right, but make it look like they're talking. And the people. The couple who are the stars of the film, having a romantic conversation are the only ones that are being heard, really on set."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:21",
+            "text": "So amazing. I listened to Roger Deakins on the team deacons podcast, and he had Stewart Wilson on who among many other films did rise of Skywalker. But he described as a fascinating episode, I recommend people listen to it, what it's like to capture and he's doing a live mix on set with like, they have like hidden microphones in their costumes, and then other microphones around. So it's like, it's crazy to me how much complexity goes into trying to capture it there. And then it gets sent over to you. So how do you guys how do you even get it? And when do you get it? Like, is it just get uploaded to Google Drive? How do you guys what do you do? Well,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:56",
+            "text": "we, you know, end up talking to the picture permits and you know, have some early meetings talking about workflow and creative process. And they're cutting sound in the Avid or Adobe Premiere or whatever they're working on. So they have, they have production audio, and then they have you know, sometimes temp music and that temp sound effects. And so they're turning over, you know, sort of their, their version of the sound, as well as all the original production sound recordings. So we get a huge delivery of like, every take every mic that that somebody has to go through and and use metadata and clever software to get it like oh, here are all the mics for this take here. All the mics for this take. And yes, we do get a mix from set. So the the production sound mixer is doing a mix of say Lavell ear mics and boom mics and plant mics to try to get sort of everything dialed in. But we oftentimes go back to the individual mics. So we have we have more control."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:02",
+            "text": "Mm hmm. That's crazy, varies a lot."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:08",
+            "text": "Like beyond my GarageBand skills."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "4:11",
+            "text": "Well and and we ended up with you know, hundreds of tracks and the you know, that we ended up delivering to the mix stage. And, and part of it is not just picking the right sounds that go with what you see you know, whether it's a door close or a laser blast, or, you know, some new piece of sound design of something that no one's ever heard before. But then we have to organize it into food groups, so it makes sense for the mixer because you don't want to have you know, a gunshot on track two and track 88 and track 173 Because when the director says turn down the gunshots you don't want the mixer just like flopping around going I don't know where those gunshots are located you know, so we we organize them in very in very specific food groups, so it's easy for the mixer to find them quickly and make creative choices quickly. That's,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:03",
+            "text": "that is wild. So then so then thinking about completely created sound effects that are that are happening. So, famously, I had a Ben Burt's daughter on my daughter's soccer team 15 years ago, 20 years. So famous, famous, everyone knows this. Yeah. So so he lives right around the corner is from from where we live. And I was with my daughter at a friend's house, and we were playing in the backyard, and we were climbing trees. We were really into it. We had a great time for an hour and I came home. And my ex's, like, Where the hell have you been? Ben Burtt was here for 30 minutes. He like was trying to get footage for this documentary he was making about the flooding in San Anselmo. And then he heard the screen door. And he ran home and got his microphone and came back and then recorded the screen door like four times and was very. That's great. So one example of capturing"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "6:01",
+            "text": "Absolutely, and that's Yeah, one thing as a as a sound designer and sound effects person is you always have an ear, in the real world, trying to listen for those unique sounds that, you know, may not be useful now. But you know, 10 years from now you're like, oh, that water, that water dripping in the alley on some thin piece of metal gave this weird, you know, metallic resonance thing. And that's going to be perfect for this thing. So not only is it like having a recorder with you, and you know, worst case scenario you record with your iPhone, but then remembering to file it away in an organized fashion. So you're, you're future proofing it for yourself?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:44",
+            "text": "And then how do you do stuff like, like a lightsaber? Right? So obviously, lightsaber has been done a bunch of times at this point. But also, the sounds really evolved. And it's changed, like, how much do you use a library versus create? When do you decide to create new things? And how much are you just building using software, other pieces,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "7:03",
+            "text": "a lot of it comes down to time, how much time we have, of course, we'd love to go out and record new stuff. But we also have a giant sound effects library that just keeps being built on all the time. So there are lots of great building blocks in there that we can twist and warp and layer in different combinations and still create new sounds out of things we've had for for quite a while. So it really depends on the case. And also the director, you know, may have something in their mind that they are trying to articulate, that they want this to be something really unique and specific to a character. So of course, we put a lot of time and effort into those moments."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:48",
+            "text": "Basically, we're obviously very focused on to me and the stuff that he's done. Jason, I remember in episode four, a rival episode four of Dune pod, you talked about how the sound designers said they had to go out and get all new sounds like out in the countryside. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:03",
+            "text": "they were they were really they had a really interesting feature at on the arrival extra features about their like, fully, like they're going out and like capturing like real sounds and like what they use and like, obviously, sound design is a huge part of that movie, with like, what the Hepta pods are doing and everything like that. And it's, it's, it's interesting, like the challenge, I think it's something like though the last Jedi is that there's so many like, sort of sounds that are just, you know, that are sort of like the sacred Jedi tax in the tree. Like you just you just can't really like the lightsabers got to sound like a lightsaber. And even the lasers have to sound like lasers and like there's just so many things that are are just Star Wars sounds at this point that I would just I would think it would be a real, real difficult thing to kind of go in and try to even modify a little bit from kind of the canonical, the canonical reference."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:55",
+            "text": "Can I ask Mac has the Falcons blasters? Have they changed? Like I feel like from Force Awakens on they sound they sound different than they did in the original trilogy."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "9:11",
+            "text": "They've probably evolved you know a lot. And I should sort of give the the misnomer that I've not worked on right any of the Star Wars feature films. I've only worked on a couple of smaller Star Wars things but I've been a big fan forever."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:27",
+            "text": "Amen. Star Wars visions is awesome. Oh, thanks."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "9:30",
+            "text": "Yeah, yeah. That was amazing to work on. But I've definitely you know, sort of kept up on things and paying attention to what the the newer sound designers who've taken Ben birds legacy sounds, and they're always building on them whether it's creating, you know, new lightsabers for Kylo Ren. But they're also they are trying to punch up some of the old sounds to make them feel you know, more high fidelity In an more, you know, full frequency. So it could be that the Millennium Falcon cannons are evolving a bit over time. But you know, it's it's a big hunk of junk. It's a hot rod that they're constantly tweaking, and modifying. So, you know, I think there's some justification for that losing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:17",
+            "text": "dishes. Is there is there like for the originals for like, the original, like trilogy? Like, I assume, like those sounds? Do those, like exist in archive, like, in some form? Did someone say yeah, we're gonna, here's like, what we used to, like, do like, you know, the, the blasters or whatever, and we're just gonna, like, keep that in some format that got archived in a durable digital fashion at some point, or is that just like, you know, there was some stuff that got mixed in, and now we have to extract it from the next? Um,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "10:47",
+            "text": "no, Ben is a very, very organized sound designer. And all that stuff was analog for years, going from Star Wars to Empire to Jedi. But at some point, when the Skywalker library was being, you know, sort of updated from analog to digital, it made sense for all that stuff to come over. And I remember years ago, working with some of the LucasArts. Guys, this is probably Yeah, 20 years ago that they, they talked about how they got a lot of the Star Wars library. And then they were doing additional cleanup and noise reduction and trying to sort of do their own version of preserving it. So there have been a lot of hands over the years trying to be caretakers of the Star Wars sound effects library."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:35",
+            "text": "I went recently to go see stop making sense in IMAX in a theater a couple of weeks ago. And it was incredible as I expected, it would be I'd never seen it. But Jerry Harrison was able to go back. And they were looking for the original sound recordings and original negatives and all this stuff. And in the end, they did find dats they were it was like the first concert film to use dat recordings. So they were able to go back to the original source material, and then completely redo it. Which is, which is pretty fascinating. That's great. What about so how do you look at creating your Atmos mix your 5.1 Mix your stereo mix, like do you have in your head as you're building everything, you know how that is going to be translated."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "12:25",
+            "text": "I mean, you you have an idea, to some degree, as far as when you're cutting sound when you're editing sound a picture of where the spike get placed in the room. But ultimately, you know, that's the mixers, they were re recording mixers job. So we can kind of give suggestions or sort of point them to what we had in our head. But they may decide to change things around or say, Oh, this thing that you had in the in the surrounds makes more sense. And left and right. Or hey, why don't we try to steer this thing into the Atmos sealing channels. So I feel like you know, I love to use a food analogy when it comes to the difference between sound editing and mixing because everybody understands food. But you know, essentially, as the sound editor or sound designer, dealing with sound effects, specifically, I have access to the pantry with like, a million ingredients, I don't just have one kind of salt, I have, you know, 35 different kinds of salt. If I don't find you know, the right Turkey, I can go out and farm it, you know, I can go record something. So I'm, I'm building the dishes in my home kitchen. And that's you know, I don't have the best appliances or the best, you know, cooktop or whatever. But I can I can mock it up. And then I organize it in a fashion. But then when when it's time for the mix, I take my dishes to the head chef in the fancy restaurant kitchen with the fancy pots and pans. And they're taking by recipe and they're building it and going. Okay, yeah, I see what you're doing here. Like why did you put kumin in this get rid of the kumin I need to I need to American stead so you know you're cutting, cutting a sound effects fix right there on the stage. And then the if the director is sitting there, there's sometimes going wait, you know, they're dipping their finger in the pot going? I don't I don't taste the salt yet. Looks like I haven't put this all the time. Just give me give me a sec, you know. Right, right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:21",
+            "text": "Yeah, Lee, so the communication and management and all that stuff is super important beyond kind of the technical skills that you have being able to kind of cue it up and then hand it off. Yeah, definitely."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "14:31",
+            "text": "And of go further. And your your initial question was, we we usually do the biggest mix first. So if it's like Atmos, and then from there when it's all signed off, everybody's happy. The director is like, it sounds exactly what it wants, then we, we sort of work our way down into the other formats, you know, five 5.1 Trying to keep the integrity of the mix. Yes, you're not gonna have things on the ceiling, but you're gonna have all the parts there. Just make sure that you Nothing is crowding the dialogue as it gets sort of like, you know, down into into fewer channels, and then the same with the stereo mix. And then then there's usually a home theater mix done to to try to make things sound better at home, but, but it's always a challenge. Because the problem at home is there are more than 1000 different ways that people are going to be listening to it, whether it's their crappy TV speakers that are on the back of their TV, pointing the opposite way from them, or they're listening on their iPhone speaker or some cheap $5 earbuds or their iPad Speaker You never know. So we just do our best and we oftentimes are trying to listen on smaller speakers to just go okay, is this is this seem like it's gonna work? And? Yeah, so it's like I said, it's a challenge, but but we do work hard to try to make sure all those formats work."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:54",
+            "text": "It's amazing. That's really amazing. And now Netflix is like dynamically altering dialogue and other stuff as as a feature for people. I can imagine that that'll be challenging. Yeah,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "16:05",
+            "text": "and I haven't played with those things very much. But I don't"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "16:10",
+            "text": "I don't have on the market around."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "16:11",
+            "text": "I don't have a lot of hope. I mean, and someone had brought up a that video games often have, you know, different stems, you can turn the dialogue off, or the music off or that or do your own mix. But I think people would be horrified of what a dialogue step by itself sounded like. Yeah, because yeah, because there is a lot of muck and schmutz and air and stuff in there that, that we're putting in sound effects and music to help us see Hi seamless, and suddenly you take all those safety nets away, and people will be like, Ah, this sounds horrible. Right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:45",
+            "text": "That's interesting. Yeah, that's sort of like that motion smoothing of like, audio"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:48",
+            "text": "out of it, like"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "16:52",
+            "text": "just vision. Trust the professionals, you know, and and the other problem, I mean, it's a multifaceted problem when people complain about the dialogue, can't hearing it, but but one of them is the style of acting has definitely changed in the last, you know, 2020 plus years used to be a lot of people who came from the stage who would project to the back row. And now there are people who just can't help themselves but mumble and swallow, swallow their words and not enunciate and we can turn it up and turn it up and turn it up and turn up and pretty soon you're just breaking it because you're getting all this junk from the set. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:26",
+            "text": "Ah, that is that's brutal. That is an incredible overview and Mac we are so thrilled to have you here joining us from Skywalker Sound supervising sound editor listen to this. Jason just a couple of I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:41",
+            "text": "looked it up and I looked it up. I was already impressed before I showed up. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:45",
+            "text": "and I'm only just like a handful. of what of what you've done. These are just ones that are some of my favorites. Ponyo up Tron Legacy. Legacy"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:56",
+            "text": "was the one I was gonna because that that is a movie that has a movie of phenomenal sound like that is really well we that's one of my favorite episodes of this podcast also. Because we just had the same talking about that movie and the sounds. And my kid loves the sound, too. So it's a real standout for this household."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "18:18",
+            "text": "Yeah, the original Tron. I was a big fan of when I was a kid. So it was a dream come true to be a small part of Tron music."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:25",
+            "text": "Just like the lightcycle scene right where you know the music kind of goes back when he jumps and grabs the thing it takes off it's just like on unbelievable John Carter of Mars coming as soon as we hit 100 patrons Avengers endgame heard of it. Aqua Teen forever plan tasm. Haven't seen it but want to and Star Wars visions as we talked about. So Mack, welcome to the pod. Thank you."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:54",
+            "text": "Welcome. It's great to have you."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "18:55",
+            "text": "It's a pleasure to be here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:56",
+            "text": "I had a couple of ideas, a couple of suggestions. Mac when we first talked I just said Listen, what is a movie that has an exceptional use of sound where it is a an absolutely critical component of the film. And you said Star Wars episode eight, The Last Jedi. And I was like, wow, so we did Rogue One on the pod but we've not done any from the trilogies yet so we're breaking new ground tonight on escape hatch."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:24",
+            "text": "Yeah, we've done this is this is really this is really a big one for us. Like we've not done any from the trilogy's we've not done anything on the TV shows like like dedicated we spend a lot of time talking about and or just whenever we can, but we've never had any focus episodes on it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:46",
+            "text": "Yeah, stay tuned."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:47",
+            "text": "We're very excited to be doing this. Awesome. Cannot wait."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:51",
+            "text": "So we're gonna get into that in just a minute. But before we do, Jason next week on escape hatch, what's going to happen? It is the triumphant return of the showrunner of Veep. And the White House plumbers, co host of the stuff dreams are made of podcast Dave Mandel."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:12",
+            "text": "Dave Mandel, we let we're so excited to have him back. We had a real spiritual bond with him. What's he coming back to cover? Matt?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:18",
+            "text": "Well, I just want to say it's gonna be crazy because we're recording on Monday and this weekend is the Greg gene heritage auction, which is like essentially the largest auction of science fiction stuff that has ever happened. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:30",
+            "text": "I gotta get in there. What I was gonna be expensive weekend."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:35",
+            "text": "What's I'll send you the PDF."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:37",
+            "text": "Send me the PDF immediately. I need to start budget exercise."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:41",
+            "text": "There's some there's next gen stuff there's he's not a big Star Wars collectors. Although there is like an incredible Stormtrooper outfit and some of the and the X Wing fighter. I think it's red, too. That folks have been dreaming upside so that we'll hear all about that next week. We are covering one of his all time favorite films. William Friedkin needs to live and die in LA."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:05",
+            "text": "Oh, I've never seen it. It's a new one for me, too. It's an amazing time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:09",
+            "text": "It's like intense 80s Like gritty post 70s. You know, like the extension of French Connection and all that kind of stuff that Friedkin was doing? So it's gonna be wild."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:21",
+            "text": "Let's go."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:22",
+            "text": "Let's go. All right, quickly hatched news. Would you like to know more news from"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "21:30",
+            "text": "beyond?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:33",
+            "text": "Jason, it was rumored today that Dune, part two, there was the runtime was listed on Rotten Tomatoes, two hours and 30 minutes. Yeah, that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:44",
+            "text": "sounds good. I think we're still speculating. Right? Well, you don't really know what this is all still like we're we're in the speculative vase. I feel of what this is."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:53",
+            "text": "I agree. But MAC MAC dune part one too long, just right. Could have been longer."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "21:58",
+            "text": "Ah, I think it was slightly too long."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:04",
+            "text": "I'm on the same boat. But I like even the stuff that's too long. I still like it. But I agree with you. All"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:10",
+            "text": "right. Well, we'll see. 30 will be great. Everyone's gonna appreciate a bris. 232 30 It"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:16",
+            "text": "would be incredible. So stay tuned for more details on that hat tip to up and Romer for bringing us that tip. That was Ben Romer. Thank you, Ben Romer. I want to welcome Jason a new discord member, Emery Emery. And we just had a new patron, Mr. Reddy, which I assume is Emery."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:36",
+            "text": "That's great. Welcome to them. Welcome. Great to have them. Yeah. And as a reminder, if you join a benefit, you don't even have to pay for this. You get a lot of great things if you join our Patreon including the unedited apps right away. Oh, yeah, so our access to our secret engineer channel on the discord but one of the advantages anyone gets just by joining the discord is you get access to the chat GBT powered dune bot, which I was reminded about today because someone used the dune, the as dune bot. It's engineer only knows that an engineer only I'm saying anyone. But like, there's someone asked someone who has like to tell the story of the Spice Girls in the style of Frank Herbert's dune and Dune by just knocked it out of the park. And so I just think it's something people should know about and people should see so come come have a conversation with a chat GBT Frank Herbert inspired robot in our Discord. That's my plug for the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:42",
+            "text": "week. Amazing. I would say if you want to, we can think about making that a discord exclusive or a Patreon exclusive to use the bot like $10 a month for $22 a month all right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:54",
+            "text": "No, it's fine. It's fine. Every I want everyone to enjoy it. I'd release it to the world. If I knew how to battle I gotta lose. It's from its shackles of discord. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:04",
+            "text": "that sounds that sounds complicated. Yeah. How about if we get into this movie? Are you all ready? Let's go. Let's do it. Okay, here we go. The Last Jedi is the challenge to reckon with your legacy and change it while you still can. Even though they scored a massive blow against Supreme Leader Snoke and the First Order Laya. Finn Poe and the other heroic forces of the resistance fleet are being hunted down and at risk of being wiped out. Meanwhile, the force wielding fighter re embarks on her own mission to find Jedi Master Luke Skywalker, and recruit him back to the fight. shocked at his refusal to engage, she Chewie and are to confront and convince Sam to train Ray as the first member of a New Jedi Order. But as she struggles to deepen her understanding and mastery of the force, she is haunted by the question of her true identity, and a mysterious new connection with the seemingly irredeemable Kylo Ren. As all hope fades, can Luke learn to forgive his own mistakes, reignite the fight of inspiration for the galaxy and pass over to Ray the mantle of The Last Jedi?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:35",
+            "text": "Wow. It's interesting. Like you had to write a synopsis for a movie that starts with crawl. Like, I mean, like the movie itself sort of gives you you could have just read that. But I appreciate I appreciate you put in the extra effort. They're always going the extra mile. Ah, that's what people appreciate that I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:52",
+            "text": "got hyped. Just reading it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:54",
+            "text": "It's a good movie. This is a good movie. I was I was rewatching it like I was rewatching. Just my favorite scenes before like, minutes before this podcast started. I just wanted to feel I just wanted to feel the energy. So yeah, it's it's really good. It's really good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:10",
+            "text": "Mac, what was your first experience? With last chat? I,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "26:14",
+            "text": "my first experience was a Lucasfilm pre screening. So probably, you know, week and a half to two weeks before it came out for the public. Was that at the stag, or would, I believe is at the Metreon? And we'd like and so I think Lucasfilm took over all of the theaters there. So you could just sort of pick your theater. So it's chock full of of Lucasfilm people and Skywalker Sound and whoever. And so I just remember sitting in this full room and with my family, and just being like, sort of at the end be like, Whoa, like, yeah, that's not at all what I expected. It just kind of like blew up the expectations, especially because Force Awakens, which I enjoyed, was very much like re gurjit ated. You know, Star Wars and homage is Yeah, yeah, definitely like, Okay, this is what the fans want was wearing, give it to them that I felt like this one was like, super, super 180 degrees. So we're gonna go a different way. And especially with the spoiler alert, Luke Skywalker is gone at the end. Yeah, like everybody was just like, Whoa, yeah, just happen. Yeah. But the more I thought about it, you know, and then seeing it again, I was like, wow, this is like, really smart filmmaking. When pushing the boundaries of Star Wars of like, let's, let's push them out and, and, and different directions and expand it. So people can tell all kinds of different stories that aren't really stuck in this little box."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:56",
+            "text": "I do want to just do a one second aside, or a 32nd aside, if you have a choice between seeing a film in IMAX or seeing it and Atmos, assuming it's a good real IMAX screen, from a sound perspective, is it worth it to go Atmos? Or is Imax sound? Very, very good. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:17",
+            "text": "a good question. This is a good question."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "28:19",
+            "text": "Yeah, I personally, I prefer Atmos. But at most, you know, it needs to be a room that, you know, sounds really good for Atmos and you need to have a really good seat in the center. Because there is sort of a small sweet spot for Atmos. But essentially, interest the way I'm most is is you have left center, right, you have the left side, the right side, left back the right back. And then you have objects so you can assign any sound or any set of sounds to an object, which is a 3d point in space. So it can it can be on a specific speaker on the wall. It could be a speaker on the ceiling or it could be something that flies around. So essentially, it's kind of like, you know, 100 channel audio, where right where IMAX is truly like left center, right. One left surround one right surround. That's not just saying one speaker but but Right. Yeah, sounds less left surround, it would only be on that wall or right surround and then there's a not a ceiling speaker but there's a top center speaker and then there's there's actually no subwoofer and IMAX, believe it or not. It's you. Wow, you have to route all of the subwoofer information to the speaker. Interesting but they're full range full range speakers. So you still are getting the bass, but it's coming out of a dedicated subwoofer channel."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:48",
+            "text": "So specifically though at Metreon, let's say break it down for us. Since we're in a San Francisco based podcast, right? So yes. Would you go to the the utmost Dolby Theater they're like that that screening room over the IMAX theater there."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "30:07",
+            "text": "Yeah, I mean, I it's a it's kind of a tough, tough call but I lean towards still it's a comfortable"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:16",
+            "text": "it's a more comfortable. Now a follow up question. What is the right seat in that theater? What is like the words like the sweet spot"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:27",
+            "text": "or just a general let's let's assume a general theater like where do you think like front middle thirds and then I"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "30:34",
+            "text": "would be center a little closer than halfway towards the front. Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:42",
+            "text": "So like, like front third of the theater. Yeah."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "30:44",
+            "text": "Okay. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:46",
+            "text": "So I used to go see a lot of films Mac, I know you've been to the cinema and Corte Madera was one of the greatest theaters of all time. And it for me, it was like the perfect seven. I usually go for seven throws center, because that's seen as far enough back but it's still close. You've got good visibility, and you're right in the midst of it. I love it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:06",
+            "text": "Yeah, but you're wrong. It turns out you're too far back. No, no, that's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:09",
+            "text": "why No, no, no, no, that's out of 30. That said about I know your"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:14",
+            "text": "entire life has been wasted all that time. You showed up early shifts for the wrong chair."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:20",
+            "text": "It's so much easier now with reserved seating. Okay, so Mac that is your experience. Jason, your experience seeing the last Jedi?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:29",
+            "text": "I saw this movie in DC, right? Because this came what's the release year for the last Jedi? 2017 17 Yeah, so it came out it came and it was like the it was like the December or it was like the Yeah, December of 2017. So I saw this movie in San Francisco. So I don't remember when I like what was the circumstances under which I saw it for the first time. However, I knew I loved it right away. Like I was like 100% convinced this was the best Star Wars movie I'd ever seen. And like, I was like, This is it. Like this is like this is gonna be this is like the best one since Empire for sure. Like sort of the same kind of Mac was making it was like yeah, I liked Force Awakens. I really, like enjoyed the going to theater, especially as like an original trilogy kid. Like it sort of redeemed, like the, like, you know, I wasn't like the prequels didn't really work as well for me. And so I was like, Okay, let's go this is it. And then it just elevated for me with episode eight because it's like, I still think it stands out as like the most subversive Star Wars that's ever been made. Even though I think and or is for me now the benchmark of how good Star Wars can be. It's not a it's not a movie. It's not a two and a half hour movie. It's a long as TV miniseries. And and it's not finished either. So we don't know what's going to happen with it. But episode eight is like a single movie, to me still stands out as the most subversive that Star Wars has ever been. Because it just it just goes and we'll talk about obviously during the course of this episode, and so the reason why it was a controversial movie with the fandom is it just goes right at like so many of the sacred cows of the Star Wars universe, fearlessly, just fearlessly, like, you know, kills Luke Skywalker says the Jedi are shit. Like, you know, it's like anyone can be a Jedi. Like it's just like a whole bunch of stuff like snow. F that guy cut him in half. Like, you know, it's just like, it's like a lot of stuff. And you don't even realize I was watching again. Like I said, I was watching it again today. And I was like picking up on new aspects of it that I think still are kind of that the Star Wars universe are is still like kind of contending with as like sort of fundamental shifts in what the series what the universe wants to be. So I'm a huge I really respect what Rian Johnson did. When he was given the wheel on this one. He really took it for a ride and decided to like do something that was like bold and individual and to his taste and like, Yeah, let's let's go. Let's do that."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "34:20",
+            "text": "Ah, ah,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "34:22",
+            "text": "how about you Ah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:23",
+            "text": "so I saw it at I saw it in Fairfax eye opening night. I had bought my tickets in advance. I think the cinema wasn't showing it or something for whatever reason. And Fairfax is not a great place to see it. It was the biggest theater there blah, blah, blah, but it was like very mediocre. And I got a call from my sister in law that there were tickets available or spaces available to go to the stag to see it out at Skywalker Sound. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:48",
+            "text": "of course I was like how many times is he going to mention this many times tonight? I think it's five so far the count as far as five we should get a bell every time"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "35:00",
+            "text": "Got there, Jason, we'll get you out here for a screening."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:02",
+            "text": "I appreciate it. Thank you. Whoa, all right. There we go. I will accept. And I will mention it many times that I, yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:09",
+            "text": "Also, I went the very next day and watched it again and was completely transfixed, and specifically, the whole dough maneuver. Both times was such a stunning moment in, in for me for in cinema. And"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "35:24",
+            "text": "did that have to do with the sound? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:25",
+            "text": "yeah, we'll get there. But I think it absolutely for everything that you just said, Jason. It was the challenge of Ryan and his willingness to really do something bold, and his guiding light to be what would be the most difficult thing for this character to learn? What would be the most difficult thing for the audience to learn? Like, how can I challenge them? That was his guy, his North Star, which to me is really brilliant. Good one. So just quick behind the scenes, I'm not going to do much. So Kathy Kennedy chose Ryan. He wrote the script. And he was you know, he came up he did brick."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:10",
+            "text": "Yeah, let's talk I like I like mentioned it people should see brick. Because it angers slim. And I don't know if he's gonna listen to this episode. Because it's just like I think everyone mentions is like, brick is a good brick is great. People should see brick. It is a really good movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:27",
+            "text": "People Joseph Gordon Levitt right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:29",
+            "text": "Joe, as I like to call them. Yeah. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:34",
+            "text": "Yeah, so great movie. He did looper. He did knives out which Jason I saw it the stag actually. Oh, is that? Yeah. Ryan was there. Were you there Mac for that? When Ryan to the q&a?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "36:47",
+            "text": "I was. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:48",
+            "text": "I did ask a question. And I cannot record what the question was, of course,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:52",
+            "text": "I have no doubt that you asked the question. Oh, my God, how are you invited anywhere? Are you invited to dinner?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:59",
+            "text": "He gave a great answer whatever it was, I can't remember. But I think most critically, she gave him you know, he wrote the script. He directed the movie. It was his DP. It was his production designer. It was his producer RAM. So this is a Rian Johnson film. And you you don't always have directors and their teams given that kind of freedom, right? It's true."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:23",
+            "text": "Yeah. No, that's true. That's true. It's because he did such a good job with brick, which people should see."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "37:30",
+            "text": "Oftentimes the studio will will only give them you know, a couple of their main creative collaborators. So yeah, yeah, this this does seem unusual."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:39",
+            "text": "This will be my first plug for the director and the Jedi the documentary that's available if you purchased the DVD or Blu ray or whatever, for last Jedi. It is an incredible documentary and the behind the scenes of Ryan and RAM and his team. And there's so it's so incredible because for all of these amazing shots like a throne room scene, there's all this behind the scenes slow motion stuff that they shot that is just like so gorgeous. minute on you put it in your eyeballs as soon as possible. i Oh, watch that. So he completed the screen that he completed the script. The Weekend The Force Awakens opened up and was huge, right huge sensation. We didn't know what was going to happen. But boom, they were off to the races. And he was very quickly working on his film. So the continued power of the long time ago."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:40",
+            "text": "galaxy far, far away slaps so works for me."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "38:44",
+            "text": "Let's see. I want to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:46",
+            "text": "I can't help myself. Excited."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "38:48",
+            "text": "I like"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "38:50",
+            "text": "it. And thank you, Johnny Williams."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:53",
+            "text": "Yes. Still got it. Incredible"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:57",
+            "text": "work. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:58",
+            "text": "that's a really great. I love it. I love it. Because like I might, you know, I, we've talked about this a lot on the pod like I've been introducing my son to Star Wars like since he was two. And he's now just getting to the point where he understands like in watch, like a whole one of the movies like we've mostly is actually his favorite Star Wars for a very long period of time was Star Wars visions. Like he liked. He loved like the duel, and he loved the elder and like, those are like we would just watch those on repeat."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:31",
+            "text": "And bite sized chunks, right? Yeah, yeah. And like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:34",
+            "text": "he didn't and like, you know, they're cartoons. So he like he, he understands that let's film vernacular, I think differently than a live action movie, which he had never really seen. And then he saw Return of the Jedi in the theater when it was rerelease for the 40th and just was like completely captivated the whole time. And it was so exciting when the crawl when like when that when the movie starts and the fanfare comes up, and he's just like, what What is this? Like? It's so much it's just like so much sensory, like for a cause that's not in there. Right? And so and it's it's different seeing it in a theater anyway, it's just such like yeah, it's such like a marker of like you are at the movies. It's fine for the movies now. I'm just so excited about put your seatbelt on every time. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:23",
+            "text": "I don't know about you back. But like I was I watched Star Wars episode for so many times that like for the rest of my childhood and in adulthood, just any film that was 20th Century Fox, start with those. I would just be like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:38",
+            "text": "I see Star Wars is coming and if it's not it's"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "40:43",
+            "text": "absolutely I'm right there with you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:47",
+            "text": "Alright, so right out of the gate we have this hawks versus pole you know, they're they're on the run and they're being targeted. And it's just really funny."
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "40:57",
+            "text": "Tell your precious Princess there'll be no terms there will be no surrender. Hi, I'm holding for general hugs. This is Huck's you and your friends are doomed we will wipe your filth from the Galaxy Okay, I'll hold Yeah, that's funny."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "41:15",
+            "text": "And isn't he saying is it nice thing hugs hugs"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:21",
+            "text": "Yeah, it's this is this is like the first kind of signal that you have this is going to be a slightly different subversive Starwars is because like there's not there's some jokes in Star Wars like it's not like there's no jokes in the original trilogy at all. But there's precious few like there's it's not a it's not a very jokey series and this is not just a joke this is a bit like this yeah, this is a whole like Laurel and Hardy bit and so it's a it's a real signal to the audience like you should you know, adjust your your your expectations for what this movie is gonna be"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:00",
+            "text": "I had a lot of hesitation going into Episode Seven, which I saw at the cinema and I was sitting there and when it started and Kylo had bow and then pose like to Tux First you tell first I thought first of all, man"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "42:16",
+            "text": "it's it's very hard to understand you want to search"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:18",
+            "text": "them afterwards? Yeah, you go first. Yeah, everybody"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:23",
+            "text": "laughed at it in that one moment like my brain exploded and I was like, Star Wars is supposed to be fun right like it's fun yeah and so this was a nice to me this was a nice continuation of that Yep."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "42:38",
+            "text": "And it definitely like shifts gears because yeah there is that bit but then you know it does get intense with the action and then serious with with the bombers and all that stuff and yeah, and I want to point out soundwise that yeah from you know, essentially the part that post starts attacking taking out all the cannons yes through the bomber the Dreadnought exploding sequence. It is a master class of sound as far as like really focused sound you're only hearing what you need to hear to like really focus your eye Yeah, bring you along for the story it's very easy and and scenes like that to go overboard and hear too many explosions and too many laser blasts and pretty soon your brain just like doesn't know what to do. But right but next time go back and really listen and study and be like wow, this is like very judicious on what you're hearing and when and it's not like there's very few sounds but it's really it's changing from moment to moment and you're really not hearing you know more than two or three things from second to second"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:46",
+            "text": "that's that's that's really well stated and observed. I was I definitely noticed because I was paying particular attention to the sound like for this rewatch and I was just noticing like how visually dense this whole bomber run pro attacking the auto cannons like sequence is because it's like it's it's there's a lot of action and then there's just a lot of particulate matter like on the screen like there's a lot of stuff that can draw your attention and I definitely noticed that the the sound kind of guides you through it but I obviously the way that you you explain what they were doing theirs makes a lot more sense"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:23",
+            "text": "it's so it's so heightened that moment where Rosa sister right that she gets knocked down Yeah, and the explosion happens and then you know, she's the music just swelling as she's kicking that ladder trying to get the thing to come down and then the cut to silence as she reaches in, grabs it and explodes it and also the fact that there's no diegetic sound for some of the shots like they show the guy on the bridge screaming, but he doesn't say anything. You don't hear that sound pose same thing. You see him reacting but there's no sound from that."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "44:58",
+            "text": "I also love what you're doing. You're looking either, you know, all the way up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:02",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "45:03",
+            "text": "we're all the way down with all of those, you know, Bob's and just him seeing them move slightly shake and hearing Yeah, just that little detailed sound of them moving. It just gives you that it just sort of heightens the danger. You're kind of hearing this rattling of them like, Oh, crap, those rattle too much. Are they all gonna just gonna go off or something?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:27",
+            "text": "Yeah, it's the fact that like, the the sound cuts off in this in so many scenes in this movie, like, in in during the bombing run and during the layup scene and like a bunch of different like, you're a bunch of different times like is is another very specific filmmaking choice that I don't think has any antecedents in Star Wars before this could be wrong but like there's not like a lot of like mostly like you hear what's on screen and Star Wars. And like for this like these dramatic kind of like, you know, slow there's a lot of like slow down and like sound drops out and there's just score it's it really is a striking departure, but somehow it makes sense in the universe."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "46:08",
+            "text": "They're they're bold choices. And in my opinion, it's it shows a strong filmmaker. Yeah. Who who has a lot of confidence."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:16",
+            "text": "Yeah. Who was the supervising sound editor on this one? Was it Matthew wood? Well,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "46:20",
+            "text": "Matthew wood and then Ren Kleiss was the sound designer and Ren for those that don't know, has done all of David ventures sound design. With the exception of alien three, okay, I started working with with David after that, okay, and Ren has also done the most recent Pixar movies sound design, like so. Oh, cool. And Ella babble and Lightyear. And yeah, and turning red. And he's just, he is a genius when it comes to sound design so smart. And again, all about story, you know, and what's going to what's going to help the story and the emotion and all those things. Ah, ah, but Matthew Matthew wood, sorry, to to God. He's been, you know, part of Star Wars sound teams for a very long time from the prequels. So he's a great sort of barometer and knows when like, oh, yeah, the sound ideas are totally going to work in this universe. Or, oh, maybe this is going a little too far. So and Matt is more dialogue focused, but but he you know, Star Wars sound effects inside and out as well."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:34",
+            "text": "Ah, ah, fantastic. Jason, we're not going to get into the physics of a bombing run in space was Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:42",
+            "text": "I had those notes. I just, I just scratched those notes through."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:46",
+            "text": "I think it's I think it's magnetic. I think there's a magnetic thing that's there. So grab"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:51",
+            "text": "force, there's some fundamental force pulling the bottom stories on. It looks great, though. It is really cool. Like, it is fun. Like, I mean, it's all cool. Like it like and also like the Y wing is like a particular favorite. Like, ship of mine, like I've always liked. I've always liked that one. So I don't know that b wing, the B wing. Sorry. Yeah, I had that. I actually have it somewhere in this room. I have like an original one from from Jedi."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:18",
+            "text": "Excuse me. Yeah. Excuse me. Why? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:24",
+            "text": "Now from the movie, like I have, like the Hasbro toy when I was a child, Ryan Condal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:30",
+            "text": "Just woke up at a cold sweat and what's going on? Okay, very good. So we cut from there to Ray and Luke. So this scene, this island, which Jason You visited is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:42",
+            "text": "Michael Schell shout out to my Michael Scalix out there. It's so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:46",
+            "text": "epic and the music, swelling her like her intensity, and then him. And then the moment when he tosses the lightsaber, I've like the entire theater gasped and when that happened?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:01",
+            "text": "They do I think that there's a couple of things to say here. One is, I think in this movie, I was watching as I said repeatedly, I was just watching it. I think they do a better job showing the lightsaber prop in this movie than almost any Star Wars like it's particularly the Anakin Luke lightsaber like you can really see a lot of detail on that lightsaber. In this in this movie that I feel is unique like you can see the little red button you can see like sort of the all the details on the grip you can see like just so much of that like iconic prop that we all know like you could just see a lot of detail about it and the fact that it's like so kind of well spotted in the scene where he throws it away. Really kind of makes it that much more poignant. The other thing just since you know we're doing flexes On this episode, like like yes, I've been to Michael Scott like we did not land on it because there's bad sea conditions that day but even better, I was flown over it in a helicopter by one of the helicopter pilots who did photography for Star Wars for excuse me for seven and eight. Yeah. And so when when so he was like he was let me do this shot. Yeah, he was like me Do you want to see what it's like to be in the Millennium Falcon? Because I was the Millennium Falcon. I was like, yeah, yes. This is what we did. Like, you know? Yeah, we went like bombing towards like Michael Skellig. Oh, which is like as stunning as it looks on the movie. Like it is a truly fantastical place on earth that"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "50:44",
+            "text": "are there the caretakers and porgs Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:48",
+            "text": "That's great. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:50",
+            "text": "Oh my god. That is wild. Mac quick aside best lightsaber in your opinion. Who's your favorite?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "50:57",
+            "text": "Hmm, that's a good question. Ah, I don't know. I mean, I having just rewatched this movie Kylo Ren is lightsabers is, is pretty cool. And how it's so growly and mean sounding. Yes, that too. Yeah. And that Yeah, and that credit goes to Dave a chord who did the sound design on Force Awakens? Wow."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:20",
+            "text": "Wow. Jason, how are you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:22",
+            "text": "I'm really partial to the Luke Anakin one. I have like a facsimile one. That like is is is is it feels great. I do want to give a special shout out even though I'm not a prequel guy. I will give a shout out to the Dooku one because I think it is oh my god very curvy handle thing and like again another another good animated Star Wars is like the the the the sash mattress the Dooku. Quagga No, the Duke wagon. Story. Yes, yes. And and yeah, so I like that. I like that little elegant, little elegant, curvy deal. Special shout out to you do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:07",
+            "text": "that. Sorry. You lost your head. Yeah. So this moment where chewy comes in Luke is kind of soaking and chewy bustin in the door. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:16",
+            "text": "And it's kind of a bummer. Like, you know, like, like, it's great. Like, I love the look of this movie and it's kind of a bummer that Mark Hamill didn't like you know, but I just think it's such an interesting thing that they that they do with the Luke character and I also think that Mark Hamill is portrayal of this like tortured broken Luke is so compelling and I think like to me this kind of goes to why I think this movie is great is because it I love the Luke arc in it with him ending up to be and we'll talk about when we get to the end of movie ending up to be the hero once again. Because you know for me like Luke is like the ultimate cinematic hero like for my generation like Luke Skywalker is the ultimate like there's no other substitute ultimate cinematic hero and I'm I'm glad that like folks are having their Anakin moments now with like Ahsoka and Hayden Christiansen being back in the universe, I'm stoked for the folks for whom that works. But like, that is what Luke is to me. And so I think to see Luke broken really works for me, because like I relate to being old and broken also. I relate to like, sort of, you know, just being like, you know, like, bearded and kind of rough shape, like just trying to get through the day. Having some, like, young people yell at you a bunch about some stuff you don't want to do. And like so it's just, it's all just very deeply believable. And then I think I think Mark really fucking kills it. Like I think he really sells being just like over it all. So I just love this performance in the movie as"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "53:54",
+            "text": "well. And while that island is really beautiful, if you were the route there truly by yourself for that long, I think you'd be a little cranky too."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:02",
+            "text": "Yeah, yes, sir. Come on. Now. Just like yeah, hauling a giant fish out of the water drain this green Mel guys. Weird seal thing. Like it's not a great time and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:13",
+            "text": "cut off or the force, right? Like him like as a powerful force user for decades to shut it off. That must have been horrible. Yeah. For him to for him to experience him."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:25",
+            "text": "Well, I will talk about it when we get to the scene with Yoda. But like, I think I think what the movie says about Luke's failures in not just this movie, and not just him, but like his whole story. The whole story of Luke Skywalker is so interesting. Yeah. And like and we find him in this beginning moment where he is just broken consumed by fit like he is he's just failure personified. And it's a very challenging thing to like, because if Luke Skywalker is your hero to be finally reunited with him, and he's just like this broken cut off with the force old dude is very challenging."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:59",
+            "text": "For me. I never understood all the fan outrage. Yeah, people who were like, Yeah, this is not Luke Skywalker. There's no way that Luke would leave and go by himself and live on a planet all alone and not go get in the battle. And I'm like, Have you ever heard of Yoda? have ever heard of Obi Wan Kenobi? Like both of them left?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:18",
+            "text": "Right or it's like have you like ever been? Have you ever been middle aged with like a bad back? Just like tired of dealing with people. I'm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:28",
+            "text": "just saying his masters showed him that sometimes you just yeah, for 30 years. You"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "55:33",
+            "text": "just gotta go by he was he was tired of giving autographs all the time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:36",
+            "text": "Exactly. Got me free kid. So So Kylo heading up to Snoke I think Snoke looks incredible in every scene in this movie. Oh, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:49",
+            "text": "definitely. Definitely. I was noticing that I was gonna say that too. And the close up throne room scenes about like how they do with his face like a couple things like make him more grotesque. Where like the eyes slightly offset. Yeah, the hollowness of the cheek and all that stuff. And like it really does draw you in and make you like, what is going on with this dude's effed up face. Like how did he I was"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "56:10",
+            "text": "imagining how bad his breath was. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:13",
+            "text": "he's thinking he's definitely not using deodorant. Not in any way. Because"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "56:18",
+            "text": "it flossed ever Yeah, never."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:24",
+            "text": "But that voice by circus so Mac you were on planet the apes. Right? You worked on dawn on the Planet of the Apes? Yes. What is it like when you like just fire up Andy Serkis going for it must be"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "56:34",
+            "text": "amazing is incredible. All of those actors so good and so dialed in. Yeah, he's he's got quite the quite the voice. And yeah, I was listening to I don't know if you guys know that blast points. Yeah, podcasts, but they were talking about what's his character and andorre Keno? Oh, yeah, and one way out. Yeah, they were they were saying you listened to the when he's doing the announcements, like over those speakers in the prison. That to take out Yeah, and then they were playing it back to back was Snoke like, oh, it's close. Like it's right in there. Because he just has that magnificent, just resonant voice. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:22",
+            "text": "He's so good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:24",
+            "text": "I think I am gonna buy his summer alien."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:26",
+            "text": "I think I am too. I really gotta get on that. I gotta get on that one. I bet that's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:32",
+            "text": "Yeah, but him him to Kylo right so he says you know when I saw you I saw what every master wants raw, untamed you know, talent or power? And he says, Now"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "57:43",
+            "text": "I fear I was mistaken. Nicholas thing Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:00",
+            "text": "his disdain for the mask. Yeah. Hi. Kyla then taking it off and then smashing into the elevator which continues his petulant teenager mode, but gets him out of the mask for the rest of the movie is a very cool thing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:14",
+            "text": "Yeah, it's cool. It's like even the idea of just calling into question immediately. Why the hell is he wearing a mask? Why is Kylo are wearing masks like you which is like, a mental thing about his character that's established in the previous movie. It's one of the two main things about his character. The other being the as a crazy red lightsaber, they keep that the mask is immediately just like, well, this is dumb. Well, why are you wearing this mask? I just love that. It's so just so it's so aggressive. And it's good for the story, too. It's not just like, Yes, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:45",
+            "text": "just like calling things into question for the purpose of doing it. It's just great. It's great fun. And from a story like from a film perspective, like the notion of taking a great actor and then hiding their face like this problem with superhero movies, right? That's why Spider Man's mask has to get ripped off Batman's Rasta mask has to get ripped off so that you can ultimately see the people you're paying $20 million to be in your movie. Yeah, true challenge. So Luke resisting the call to help Ray I love this because you both have an echo of Yoda and Empire right? But you have Luke in A New Hope he resists the initial call to take adventure. So this is again him refusing to take adventure but from the other side. Right? It's like poetry it rhymes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:33",
+            "text": "Yes, looks good. That's a good observation. I could tell that was in your notes underline"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "59:38",
+            "text": "highlighted in pink."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:41",
+            "text": "Back How about see cow milking and fishing?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "59:46",
+            "text": "I just love that they you know, he just kind of goes through his daily routine like, Okay, you're gonna be here you're gonna watch when I do the chores terrible But then I do I do love it. I think it's towards the end of that that chore sequence or maybe it's a slightly different part where they're walking up a hill, and then re hears the whispers. Yes. Okay. Really cool. Sound Design moment. And you know, she's her attention is pulled. And it's obviously through her point of view, because at one point, the Camera Cuts to Luke. And it's yeah, it's just wind. You don't hear you don't hear the whispers on the Luke shot interesting, which I thought was a nice choice that you know, she's, she's hearing it and they do feel like they're really coming out of the wind. It's not just like, something different. And she's she's led into, you know, to the tree that has the Jedi tax. And there's a really cool moment, I think it's right when you see the tree and it comes out of the fog. That almost sounds like a lonely train whistle. It's not Ah, but it's just kind of this nice little sound design moment. And then John Williams score kind of comes out of that. So just a nice kind of nice handoff between sound design and music. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:06",
+            "text": "I do want to just do a brief aside, we would be remiss if we didn't talk about the sound design in Dune. So, Mac, the voice, the Bene gesserit voice. Give me Yes. Like he starts his mouth is moving but then you just hear like this gravelly rumbling and then you get the voice. Was that not? Unbelievable? Oh,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:01:33",
+            "text": "very cool. Yeah, they did an amazing job on chat. So much and invoke vocal sound design is really tricky. Because it's, it's very easy to overdo it and make it unintelligible. And I just got done watching a Soca and the vocal sound design in Ahsoka is is really top notch. It's out of this. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:59",
+            "text": "Also, just last thing I'll fanboy on soundwise on June just a spice harvester seen the swirling like when the when this kind of wind hits him and it goes to just the swirling sounds and you can hear the bench as read voices and all of that"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:02:14",
+            "text": "just all the particles no crystal Yeah, it's good stuff."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:18",
+            "text": "Do you have a crystal folder? You have?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:02:22",
+            "text": "ear candy folder?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:23",
+            "text": "Your Katie. Okay. So we one last thing I want to say about looking re at this moment?"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:02:31",
+            "text": "Where are you from? No. No one's from no Jakhu All right, that is pretty much nowhere."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:38",
+            "text": "Yeah, it's more jokes. And it's like, it's Luke getting to do jokes, which we've never seen, like Julik Luke has like a good number of jokes in this thing. It's great. It's great. Like, you're like though I like what you do with your hair. Like that thing. Like that's Yeah, it's like another it's another they do another bit. I just love it. I Mark Hamill is really funny. Like in interviews is a great interview. And so like to be able to see him, like kind of do some of his like more natural, like funny personality is really great to see it as Luke."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:12",
+            "text": "I love it. It's great. But there's also a major This is like the first big punch in the key message that Ryan is doing. No one's from nowhere. Like that's the first message. And I love the fact that he's laying that that groundwork. Alright, so now we get to Leah and Bo. I felt like her slap was a little aggressive."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:34",
+            "text": "I didn't she laughs the shit out of him. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:38",
+            "text": "I thought that was a little wild there. But when the when Carlos fleet arrives, and they're being tracked Jason fond memories of 33. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:46",
+            "text": "I totally add that note. It's it's one of the best Battlestar episodes. And it's also so for those who haven't seen Battlestar Galactica, it's like a very early season one episode where it was episode one. Yeah, the Cylons track them through their jumps, and every 33 minutes they show up, they have to scramble the alert fighter fighters or buy enough time so they can spool up and jump away and they're just getting slowly like, you know, kind of, like, dragged out and like tired and racked and, you know, it's going really badly for them. And so this reminded me of that, but it also 33 is the best analogy for being the parent of a newborn that I've ever just like, you're just like you finally fall asleep and like every 33 minutes, some other disaster befalls you. And you have to you have to deal with it in order to to not be attacked."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:04:45",
+            "text": "There's there's truth in that. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:47",
+            "text": "Yeah, for sure. So So I am going to call out this is one of my first challenges that I have with the movie. In 33. There's constant action and they're like they're doing the jumps and they're making it happen. And hear basically for the next hour. It's just a slow chase a slow motion Chase."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:05",
+            "text": "It's not like a great sound effect on the shield's. Yes. Love those sound of the bombardment on the shields it doesn't really like we get a little bit frozen in time like where it's just like they're still running away. They're still there in the lead. They're still in the lead. They're moving. They're there"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:05:30",
+            "text": "it's not a sprint. It's a marathon. Yeah,"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:05:32",
+            "text": "it's just keep keep pace. Keep moving."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:34",
+            "text": "That's right. So let's see, you know, we're kind of kind of leaving that story behind for a minute and we have Kylo now coming in, he's a really good pilot. He's like flying through ships got that Skywalker blood, just like Anakin did his granddad. But he blows up basically the entire rumble fighter squadron."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:53",
+            "text": "Yeah, you don't want him you don't want him coming after you. He's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:56",
+            "text": "was that budgetary? They're just like, we don't want any more dogfights. We're good. We poke killed it. We're all set."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:02",
+            "text": "I mean, might I mean also just for pacing? Like it feels like we have like a whole other like, sort of like space battle scene here after we've already had one. And maybe wouldn't work. But he he's pretty good, good pilot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:15",
+            "text": "How about this idea that he can't bring himself to shoot layup and then having layup get blasted out into space? Like that was definitely a shocking moment. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:25",
+            "text": "this is this is a controversial This is a controversial sequence as well. I think this is one of the things that like people who hate the last Jedi really get hung up on is the layup going back in? And I don't know. I mean, I love to take the giant space. However, you do have some time. Like even without bringing the force. You don't die immediately when Jason's get out into space. That's the first thing science bring in Neil deGrasse Tyson, he's gonna tell you, that you the biggest problem if you exhale all your air and your lungs don't explode. Like again, you're gonna you're gonna suffer some damage but you're not going to just die immediately right? You're not going to explode. That's fake. You're not your your bloods aren't gonna boil that's not real. Like you have a couple minutes. So that's thing one thing too. It's great to see Les I use the force like we don't get we there's like two sequences of that and the entire cannon essentially, like a way of using the force. So it's great to have a little bit of layer using the force and then three, it's really good filmmaking like you get last theme like, which I find to be very emotional and works on me. And just like on an incredible score standpoint, you get another one of these like Silent reaction shots were like, Whoa, and the rest of them are like, what? Like, you know, like, I love that, like, that works for me, too. I just think it's I think it's really good. I guess. I guess people don't like the flying aspect, like, the actual physicality of her flying through space. Like that takes him out of it. But I mean, I'm like, no, no, you're just like, I mean, you know, this is a movie about space wizards, like, you're gonna have to like, I don't know what, what you think you signed up for space wizards in this house? So yeah, I don't know that at all. This really did work for me at the time. And it worked for me like today, like I like both times watching it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:29",
+            "text": "Mac, do you have any any struggles with that? Or you're all on board?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:08:32",
+            "text": "I mean, again, it was one of those moments. When I first saw it. I was like, Whoa, you know, just surprising because it was something that we had not seen before. But yeah, but on the rewatch. It's like, No, this this makes sense. Yeah. I mean, it was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:46",
+            "text": "very obviously very tender, because she had Carrie had passed away, and we didn't know what was going to happen, and then she's getting sucked out into space. So I was definitely on tenterhooks in that moment, but yeah, intense."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:01",
+            "text": "I think I think that's part of it, too, is like, you know, the reality of knowing that Carrie Fisher has died and like sort of seeing this portrayal of Leila and all the tenderness that goes into and all the care that like they put into sort of her last full portrayal in this movie. I think also sort of again, if you're an original series fan and you're invested in like, you know, the Luke and Leia of at all I just don't think this I just don't think this presents much problem for you to kind of buy into emotionally"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:35",
+            "text": "excellent, Chewy, eating roast pork, I love all the pork style of all the blank stuff. Yeah. Sound effects like that's about what like, like, how do you somebody says, Okay, we got this alien creatures like a bird. Like how do you get started trying to figure out what you're gonna do."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:09:52",
+            "text": "It's a lot of just experimenting, you know, just trying to get all kinds of different sorts of material and see what sticks to the wall. I did get to work a few years ago on a little project that I'm sure almost nobody got to experience called Project porg. That was for them for Magic Leap. Augmented Reality Mixed Reality goggles, Shara and so I I got to take all of Rennes porg sounds and then try to expand the vocabulary because in this project porque there were baby porgs And they were they were doing different things. So I got to see some of the source material that Ren used and the main sound that is so sort of iconic for the pork is actually a chicken. And I think it was just, I think it was just very, very, very long recordings of chickens. And there was just that one vocal, you know, you record a ton of stuff and you're long afternoon, listening and listening and like, Okay, this this is a no, there's like, one makes one little vocal, and you're like, oh, it's kind of like, the famous story of Jurassic Park. The T Rex, right? Yeah, that was a baby elephant that that came out and made this just crazy sound that nobody had ever heard before. It only made it once. So and even the trainers were like, we've never heard it make this sound before. So every big T Rex were has some variation of that, though. One single elephant trumpet from a baby."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:31",
+            "text": "Oh, wow. The progenitor of all the T Rex roars right."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:11:35",
+            "text": "So so Chicken Pork. So so it's yeah, like, like, chewy has them roasting like little game hens. So yeah, it makes sense. Hmm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:44",
+            "text": "I love the porks. Man, the pigs. The pigs are great. My kids love the porks. And like, and that's another Star Wars things where like, there's gonna be like a cute animal in some of these movies, right? Yeah. And like sometimes people get really pissy, people get pissed about the Ewoks like, I was a kid when the US came out. So I liked the Ewoks. But like, Yeah, I think the pork is just the porters are just a home run. Like I think they work. I think they work because they're funny for adults and either cute for kids. And they're not like, you know, a main character. Like, you know, you don't have to believe in like, sort of, you know, pug society or whatever."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:15",
+            "text": "But they're great in there. Yeah,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:12:17",
+            "text": "they're gonna end up being Comic Relief later on. Yeah. And yeah, totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:20",
+            "text": "Yeah. I love getting Luke back on the Falcon. Like, this is another moment. Like for me in The Force Awakens when Han and Chewie. Like, we're home. Like, that was a crying moment. For me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:32",
+            "text": "He looks so broken when he's sitting at like, he's sitting at the table. And like the Falgun looks after up, and he looks just broken. And like our two comes in and that's like a really tender scene. But like, there's this one, like, big shot of like him just sitting there, hunched over and he's and he just looks, he just looks like trash. And I love that shot. I think it's again, it's like so it's so challenging, because you're just like, not used to seeing the Falcon in this way. And I see seeing him in this way. It's just great. It's"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:13:04",
+            "text": "fun. I love it. When are two projects the original layout podcast? Yeah, one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:08",
+            "text": "I was crying taking my notes. When when he did that I had forgotten in that moment. And I was just like, holy shit. It's so it's so much and also, the whole problem that Luke had with or that Mark Hamill had was he wanted to be Luke again in this trilogy. And Ryan is like, No, dude, you're Obi Wan Yeah, and so going all the way to our to having Leia say help me Obi Wan you're my only hope. Like that's an extra level of just like, let's go build those tracks. Good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:38",
+            "text": "Oh, like this. Lucas. Obi Wan riff? Yes is good. I believe in it. All"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:43",
+            "text": "right, now we have Vice Admiral holdo Welcome back to the pod. Laura Dern. Good to see you again. Blue Velvet, unbelievable. And just her presence 400"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:13:53",
+            "text": "of us on three ships. Great hair, for the very last of the resistance. But we're not alone. In every corner of the galaxy, the downtrodden and oppressed know our symbol and they put their hope in it. We are the spark that will light the fire that will restore the Republic. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:18",
+            "text": "just been keeping her on the bench. Although they know they had this like retort like both a great space tactician, a master or writer, killer style. They should have had her out front pseudo uniform."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:32",
+            "text": "She's like I don't need it. Like I got the purple hair like someone"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:35",
+            "text": "who works in SoundMAX Is it frustrating when you're actors as report as Laura Dern said about herself shooting this will make the pew pew sound when they're shooting, shooting. Make your job more challenging. Does that seem to belittle your craft that they put in their own laser pistol sounds?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:14:54",
+            "text": "I don't think it's been a little like that. But if they don't do a second taker could make Good, challenging for the dialogue department."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:04",
+            "text": "There's a great demo at Sonic Skywalker Sound where you hear the original sound of the guys on Leah's ship. And from the original Star Wars. Yeah. Yeah. From the original Star Wars, and they're pulling the trigger, and it's making like, clap, or whatever. Yeah. And then hearing what it sounds"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:15:21",
+            "text": "like, and they're running on plywood floors, and yeah. Oh, wow. That's, that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:25",
+            "text": "the thing that I just really want to know is like when they were shooting when they were shooting in New Hope, and like, they just had like these dailies coming back before they'd done anything. And it's just like clackety clack, clack, clack, clack. Like it was like, did you think you had it? Were you you had the most successful franchise in the history of the world? Because I don't know. I don't know if you could have known that. Man. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:49",
+            "text": "given that his obsession was Buck Rogers and Flash Gordon serials and stuff from the 40s, I think it probably made perfect sense."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:15:55",
+            "text": "Hmm. Could be could be. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:58",
+            "text": "she puts Paul completely in his place. And now we have rose Tico. So this is the biggest piece of canon that, you know, that Ryan invented. And I think from the very beginning, she's so great, like this moment, hey, hi, your fin,"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:16:18",
+            "text": "the fin, the fin. Sorry, I worked behind pipes all day. Doing talking with resistance Heroes is not my forte."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:27",
+            "text": "She's charming."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:16:28",
+            "text": "And I have to jump in here. Because there's something that I noticed in this rewatch that I hadn't noticed originally. Is you know, yeah, she's very sad. She's crying. But when she she comes, I think, into the doorway, and she says, Wait, you're Finn. Suddenly you hear the machinery in the room, sort of like rhythmically, like, like, almost like a heart beating. So sounds like her heart is beating fast, because she's excited that the first time, but it would be. It would be weird and cheesy if you actually had a heartbeat in there at that moment. So you hear the machinery doing that, that heavy lifting. And then by the time John Williams score starts up that kind of dissipates and goes away. Wow, Callie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:15",
+            "text": "That's crazy. You got some good details, man. You really, you're picking up some subtext. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:21",
+            "text": "good. You know, some stuff."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:22",
+            "text": "You know some stuff about these movies. We're not getting it all the way. But so it's"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:17:26",
+            "text": "fun. It's fun to listen, and let's listen out for these things. Yeah. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:30",
+            "text": "So Jason Finn is a trader, like just full stop. He's like, all I care about is Ray. I'm leaving and I'm going to try and rescue Ray, the rest of you can die. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:40",
+            "text": "listen, listen, like you know, from a certain point of view, like from from another point of view, Ray is like the only thing that actually does matter for the rest of these scrubs. Because what are they doing? Like they're just out there on the slow boat across the galaxy. Getting shelled and like they actually you're gonna need like a Jedi to come get them out of his best. So eventually, yeah, so there's, you know, there's there's there's two sides, every coin."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:12",
+            "text": "Oh my god, they I love those, technobabble and the plan. This was a little more next generation than I expected in terms of like the tracking and the lead ship only am I gonna get on the ship? We gotta get the codes. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:26",
+            "text": "think I think this is like so people I think don't like I will say like the I just speak not for people. But for myself. The Finn and Rose subplot is the least compelling part of The Last Jedi to me. And it's not just like the Kanto bite of it. It's just that like, it does feel more like a next generation, like plotline than it does, like sort of the rest of this very interesting, dramatic stuff that's going on both between Kylo and Ray and then also Ray and Luke, like all the essentially the ray centered stuff. And, you know, like, yeah, they're going out to get a thing. Yes. And they gotta go, you know, they gotta be on a race, and they gotta go to a weird place with a bunch of weird people. And like, that's not like not Star Wars, but it's just like, the least compelling part of this movie, which has a lot of very other compelling bits in it. And then I think the other challenge that you have is that rose ends up becoming kind of a dead end as like a character in canon. Because she like she essentially abandoned in the third movie. And so like, you know, like, that's, that ends up becoming somewhat you end up sort of narratively feeling unsatisfied, after you kind of know the reality of, of the movies. But I think that like, you know, visually and like, you know, universe wise, it's consistent with Star Wars. It's not like it doesn't belong in Star Wars. It's just like it for me. It's it's like the part that I'm like, Alright, let's get back to what's going down with broke Getting Luke like to show me more sadly doing on an island. He fishes for on Mondays, but what is it? Yeah, what's it?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:13",
+            "text": "Good call? There's nothing on the on this on this planet, there's just nothing else there at all, you know Lucas Lucas alone and just foraging for whatever like where's the fast food options?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:23",
+            "text": "There's no There's no DoorDash to sell the last Jedi."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:30",
+            "text": "So now we have Kylo and Rey and the first time of them making connection. And my notes just say, here we go,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:39",
+            "text": "this is some good stuff, they're doing some things and this both"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:43",
+            "text": "the first time where it first goes to sound or to silence and then she shoots him. But then also the second time you're bringing Skywalker to me"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:21:01",
+            "text": "doing this, I will kill you. Right? Right. Can you see my surroundings? We're gonna pay for what you did. I can't see yours. Right? Just you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:15",
+            "text": "And the notion that when Luke shows up, he says, what's that about? The notion that looks cut off from the force, so he can't see it. He can't see what's happening. He only sees the hole in the wall from the blaster. That's very cool. Yeah,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:21:27",
+            "text": "yeah. And these first few times that it happens, the sound is kind of building and building and building so that it can drop off and have that dramatic effect. And that's often like very successful moments can be when you have those like very big sounds and extra those little sounds or vice versa. Have those big dynamic shifts. And is it the is it the second time where they have that mind meld where she's at the Falken like side, and that's the third one, the water is dripping. on his side, the sparks are falling, that are sort of they're mirroring the water falling. And then they can mix and match those sounds you're hearing some of the water on the spark side and some of the sparks on the water side. So it's kind of a fun thing that the Rian Johnson set up there to play with both visually and, and in sound design."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:25",
+            "text": "And fire and water. Yeah. Very cool, clever"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:22:28",
+            "text": "seven. And there's a lot of very clever vocal sound design with reverse reverbs and delays with their voices and things like that. Reverse reverb is when you you take like a piece of dialogue, while reverse reverb in dialogue is you take the dialogue and you turn it around, you reverse it and then run it through reverb effects and then you reverse it back again. So you hear those words sort of like coming up like, zip like building up to the first syllable of the word. It's really cool."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:05",
+            "text": "So great. So so expertly done, Poulter"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:23:07",
+            "text": "poltergeist did that a lot"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:16",
+            "text": "Oh, yeah, yeah. But so So clearly there's something big going on and I just love every moment where Kylo and Ray are interacting in this film. It occurred to me that I guess this is what Yoda was using to be able to watch Luke all this time right a long time I have watched this one and so this is like a new skill and we have the introduction of the idea with the water you talked about that things can actually be transmitted through this force connection. That's a crazy idea like literally using force teleportation that should somebody should explore like weapon there should be a story about weaponizing that and doing something there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:56",
+            "text": "All right, taking note taking note taking take that back to HQ for us, man."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:02",
+            "text": "I love Luke now starting to train Ray. It's so funny when he's like doing the read on her hand when she reaches out to the it's the forest."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:10",
+            "text": "Yeah, it's the Oh, you feel that? It's really funny. It's like a whole thing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:18",
+            "text": "Both of them, I feel. Yeah. But then when he asks her about the forest, what do you see? After she had said it's a thing that lets you control people and move rocks? The island right? Death that feeds New Life cold peace. Fire the end between it all? Balance energy Foods inside me, let's say"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:12",
+            "text": "Yeah, and like this, this like bit of filmmaking, where she's saying this, like explanation of the fours, which I think is this scene of Luke instructing Ray and what the force is, is a incredibly meaningful scene, like, you know, in terms of just Jedi of stuff and Star Wars, right? We don't get a lot of scenes of Luke teaching, we don't get a lot of scenes of explaining what the force is. And so like for this to be this very explicit, like, here's what the force is, and we're going to show it to you is, I think meaningful and almost unique in Star Wars. The other thing is, is the way in which this is done filmmaking wise, is also unique and Star Wars like this montage essentially of these cuts to yes for the poor death like a bunch of under the ground beach like stuff underground, like the warmth of flowers growing like an insert shot of flowers growing like find me another one of that in all in any one of these nine movies, like it just it just doesn't exist. It's not it's not a part of the vernacular of Star Wars. And yet it makes sense because it's so grounded in like this fundamental mystery in in the universe. So I love I loved all of this and it really does feel like it feels like Rian Johnson to like if you know his work like this, this the way in which he's doing this, like feels consistent with him. So it's this great like thing we're like, yeah, again, this is just what we want, I think as fans is we want someone who is a who's got taste and a vision for what how they want to tell a story, just be given the wheel, like just go and do the thing, like and the way that you want to do it. And don't worry so much about like, the the kind of like close hewn you know, adhesion to like these particular characters or lineage or names or tying together loose ends, like it doesn't doesn't matter, just like have like a have a point of view and be willing to take some chances to express it. And I think I think this is to me is a really good example of it working. Amen."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:27:22",
+            "text": "Ah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:24",
+            "text": "ah, keep keep going new. I think that's the key. Yeah. All right. So there is a little point here that re senses the dark side and scares the shit out of Luke. Yeah, he went, he went for"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:36",
+            "text": "the drugs or what the app is now who knows? Like, he's like, I've seen this before. This never ends well, this ever is, well. I don't need this again in my life. That's why I ended up on this island."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:48",
+            "text": "So that's a good that's a good setup there. So So I want to just like very quickly get all the Kanto bite stuff out of the way. Yeah, I love the I love the idea of the concept of showing the corruption of the military industrial complex. I think that's very good. The part that I struggle with is that Finn and Rose are so completely and maddeningly inept, like they can't park a shot all they can't change clothes, they can't like take five minutes just to put on some outfits and I saw on the behind the scenes they mentioned maybe there was a scene where they were going up the chain other saying yeah, that would have made to me a huge difference as opposed to them being so bumbling so it was hard for me to root for them when they're just doing such a piss poor job just sort of like from a storytelling perspective that kind of took me out of hex"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:33",
+            "text": "hex says a chat that they rolled poorly yeah they gotta go one on like their landing shuttle skill"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:40",
+            "text": "they don't have they don't have very much experience"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:42",
+            "text": "right yeah exactly dancer like their level one or level one scoundrels of the I think I think there's a couple things well first of all, we get our job Gordon love it. cameo as the guy who's like I told him you can park those shuttle here whatever you know, whatever. That's him. Yeah, yeah, yeah, that's Wow, Joe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:02",
+            "text": "And Justin the road just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:05",
+            "text": "to for some reason, happy for him to be in here with a shirt on for once. Yeah, slow when low is the Joe Gordon Leto. Silly points out slow and low shout out. Here's here's my save for the Kanto bite situation. Here's Mac if you're taking notes to bring back to HQ. Here's another one look. Disney Star Wars Star cruiser hotel situation didn't work out for the mouse that didn't end up being a success. We can blame that partly on COVID. Who knows what other factors went into it? It just didn't work out. But let me tell you this. If you build a Las Vegas casino that is actually a canto bite with like, Ah, I will bring my duckets to your joint for sure. Like I am all in and like you can have a whole thing for Have the kids, you have gambling for the adults, like I have not, I could live the rest of my life without going to a nightclub, like ever again. I in fact, I could live the rest of my life without being up past midnight ever again, to be perfectly honest. But if you build a nightclub like a music venue and you're Kanto by Vegas casino, and you have a Max Rebo ban playing in that nightclub i i will be there until 4am until they shut the joint down. I guarantee it. So let's make it happen. Let's turn what I think was an unrealized concept in this movie of Kanto buying into a shining success and bring canceled by to live in the desert of Las Vegas. That's my pitch."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:50",
+            "text": "Do you have match you have Bob on"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:30:55",
+            "text": "it Baba at Bob on Slack."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:00",
+            "text": "All right. So yeah, so we won't we won't spend a lot of time on that. The father Chase was great. And we'll talk about DJ later. But going back to Ray again, the lightsaber training. Yes, the music swelling as she is doing the moves. The long distance shot of her on the island doing her thing is just absolutely incredible. But now we get to the heart of Luke, lesson two. Now that they're extinct. The Jedi are romanticized, deified, but if you strip away the myth and look at their deeds, their legacy is failure hit Yeah. Chrissy Yeah, Chris. Yeah. So he is so good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:38",
+            "text": "I was like, I'm serious. I was watching this today. And I was like, talk your shit look like? You are absolutely right. He's like, at the height of their powers. They love like, they left our city's takeover. Um, like they sure did. They effed up the whole thing. They were terrible. Usually people need to know. And it was it was great. I love this whole speech. It's so eloquently done."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:32:00",
+            "text": "And I do think it was a great moment for them to tie like have Luke say Darth Sidious? Yes. Tie this. Yeah. In the prequels. So yeah, it was Yeah. All together. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:10",
+            "text": "Right, right. Yeah. Yes. Oh, yeah. That is super smart. We also get Luke's version of Kyle's attack. So the Russia mountain start is we have here of kind of laying that out. So Luke connects to the force, you know, and we get our next connection between Ray and Kylo. And this is shirtless Kylo meme. Yeah. That's so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:29",
+            "text": "good. is can you put a cowl on or something so funny? This is such a funny movie. There's so many."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:36",
+            "text": "Yes. But he says her parents threw her away and tells the true story of the night Luke almost killed him. And this is where he says the most important line in the film The pastime"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:32:50",
+            "text": "killer if you have to that's the only way to become what you're meant to be."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:59",
+            "text": "Yeah, so Mac when you hear that, like how does that resonate? You know it we're in a you're working in stories are oftentimes regurgitated or we have you know, like, gluts of types of films that are being made today like what does it feel to hear that kind of come through? No, that's"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:33:16",
+            "text": "great because then again it it's what I felt sort of you know, after seeing it that first time like he's pushing the boundaries of Star Wars like let's let's you know not not have it just be the same movie with just different character names and different planet names but the same things that happened let's let's have the past die and be able to push booked Star Wars can be hmm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:38",
+            "text": "yeah, it's it's so great. Like it's such a challenge to like the fandom it's such like it's such like a gauntlet thrown of just like, you know, of what of what you know, it means the reinvent story and like the fact that it's coming from sort of the nominal villain of the story makes it great as well. And it ends up becoming like for me I think it's one of the most quotable lines like from the movie and from the sequels generally how Yeah, it's something it's something I was like continually find myself using you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:14",
+            "text": "quote that your kids to let the past die that they're doing breakfast it's over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:18",
+            "text": "Yeah, exactly. Let the past die there are no more waffles."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:24",
+            "text": "So now Ray takes the water of life I mean, goes into the cave. Yeah, so this whole thing with infinite rays"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:32",
+            "text": "sound here is really good to max out attorney. Sound that snaps. Yeah, the snaps are great. Yeah, that must have been cool. That must have that's like a gift. That's just like we're gonna make the sound like the character in the scene."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:34:45",
+            "text": "Well, and I was listening to it carefully today. With the snaps that yes, they're you know, a lot of them are sound like the exact same snap except when they get closer to her And there's some other, like more definitive or different sounding snaps that are mixed in. So it's so it's not just the same like, Yeah, but but but but, you know, that's cool. It's very cool. And then and it's not just that it's like her, you know, turning your wrist or doing Yeah, everything's. Yeah, very delicate, very precise. And, and again, there's like nothing to hide behind. It's all very exposed sound design. Yeah, so you have to have the right sounds and and really knock it out of the park. And of course Ren and team did that. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:33",
+            "text": "like and like, like thematically like story wise, like it's this great Echo to Empire and Luke and Luke on Degas"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:42",
+            "text": "that the building the building up of the music and swelling as she's coming to the mirror, and it's being resolved, and you can see who it is. And then it's heard like, that is, I mean, that is he's telling us where he's going. But yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:54",
+            "text": "narratively, narratively, it was very fun, like seeing this in the theater. Because you're it really does draw you in, you're like, you know, that you're sort of about to see a secret. And yet, you're not given the full thing. It's, it's pretty great. It's pretty great from like, just a building of the mystery standpoint."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:16",
+            "text": "So she goes from there, and she has her reaching out to Kylo. And this is the time that they actually touch. Touch. And it's a long scene with Kyle has taken off his glove, they got the hands that are close, then they're finally touching it."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:36:31",
+            "text": "And also, if you notice in the scene, it doesn't go to silence. Right, you're you're hearing the ambiences of the of the ocean. And John Williams score is playing so so it's almost saying, Oh, it's a more natural thing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:47",
+            "text": "Ya know, I"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:36:48",
+            "text": "got together it's not taking her out of the moment and going like, oh my gosh, what is this foreign thing? Right? And what I don't want to be in this space talking to him. Now she feels comfortable. Even"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:58",
+            "text": "that even it's such a genius idea, like Kylo establishes, can you see me? Can you see my surroundings? Like you could have gone way over the top with CG to like, do that partial surroundings or the person isolated, they just don't do that it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:12",
+            "text": "was built the set twice. Just show they just show"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:15",
+            "text": "that person and then cut back and forth and with that person in their own environment. So it's so smart. Yeah, but imagine you are Luke Skywalker, and you walk in on Kylo and Ray holding hands."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:34",
+            "text": "Not a great concern. Concerning"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:37:38",
+            "text": "I told you, young lady"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:41",
+            "text": "Kylo. You just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:42",
+            "text": "got to first base with the dark side."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:46",
+            "text": "Oh, man. So his he's distraught. And now we have Luke and Yoda in the theater when Yoda materialized like people started screaming,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:58",
+            "text": "yeah, people are so high. Oh my God, when God shows up, it's great. This is and this is of all the Luke and Yoda scenes we've ever gotten or will ever have. This is one of the most interestingly written scenes, I think when we were going through with Lorelai or something, didn't you? Ah, you put this on your like list of the bows quotable lines or something like that. But anyway, this is this is this is like, I think really interesting content like the the whole message that Yoda is giving to Luke about failure and what it means to fail. Pass"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:38:41",
+            "text": "on luck. You have strength, mastery. Weakness, folly, failure, also, yes. Failure, most of all, yeah, the greatest teacher failure is. Look, we are, what they grow beyond. That is the true burden of all mastery."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:19",
+            "text": "Yeah. And so, I think we just need to sit with this for a minute, because I think it's just so profound. I think it's beautifully written. I think it's a real I think it's a really interesting, like statement about teaching. I think also, it if you, you know, we talked about this a bit with Jedi with returning the Jedi. I was really tortured as a kid by the notion that Yoda tells Luke that he has to confront Vader in order to complete his training. Because he had failed in confronting Vader in Empire and loses a hand doing as his traumatic experience like trying to save his friend and like, you know, we're told that that's going to fundamental The break his training if he goes to like, you know, Lee's Degas and he says that's like Luke's first big failure is like going to confront Vader and failing on, on on batsman. And the other big failure that Luke has, is the failure with Kylo Ren, like so his his career as a Jedi is bookended by these two huge failures of first failing with failing to confront Vader and then failing to teach Kylo. And it's only at the very end of his life. It's only in the last act of his life, that he learns to really embrace those failures as being not. But as being essential to the journey that he was on as a Jedi as being like, as integral to his story as a Jedi as the parts of where he is the most important legend in the history of the universe. And I just think it's like, such an interesting statement about this character that we get at the end that he is defined by these two, these two book ended failures, and then how he learns to reconcile with that."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:41:08",
+            "text": "Hmm, very insightful."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:10",
+            "text": "It is, I mean, the notes that I had here was like these movies, for better or worse, like, these are our sacred texts. Like, literally, we take the lessons, these are the modern myths that we use, I don't I don't use religion with my kids. You know, I don't I don't teach them about the force as being a real thing. But the idea of being humble, you know, not having too much hubris, learning from mistakes, like this stuff is all really important, and deeply meaningful. Love it, love it. We cut back to pole just being a punk again. And so I will say, This is my other main challenge with this film, postdocs. Oh, and finsa There's such magic when they're together. Yeah, this movie, and Finn and Rey are complete magic together. Yeah. But it's a bummer that they were all separated. And Poe in particular, I understand. He's on a journey of making a mistake and learning how he has to be a leader. And he does go through that journey. And ultimately, there's some satisfaction, but he basically spends a lot of time doing stuff that doesn't amount to anything. Neither he nor Finn. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:22",
+            "text": "I feel you're you're hitting on what is like sort of the challenge of the sequels generally, which is that the the idea introduced in Force Awakens is that they're putting in a new triumvirate of characters, it's, you know, it's Ray Finn and Poe, instead of Han, Luke, and Leia, and, but then we get the original people back as well. And I think like, what and you know, for a certain audience, and then like, a big thing of Star Wars is that thing different things works for different audiences, so that's fine. But for a certain audience, like the look of it all, just like so overwhelms, like the interestingness of this movie, and I think is the focus of this movie. That it ends up being difficult to kind of re calibrate on, like, what's going on with Finn and Poe. And like, an example of this I had was like, at the end, when you're in the, the, the duel between Kylo and Luke, which is amazing. Like, there's like a scene where it cuts like Finn and bow and they're in the cave, and like, he's buying us time to escape. I'm like, shut the EFF up. No one wants to hear from you. Right now. Real people are doing real shit outside. And we need to go look at that right now. He's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:37",
+            "text": "not even on this planet. He's still getting stuff."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:42",
+            "text": "So it's just it's just a narrative challenge, like in terms of in terms of trying to do a sequel that still involves like these legendary characters from"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:51",
+            "text": "legendaries Yeah, it's a it's a wild thing, man, just the idea of stories that are being told in film over generations but notion of being able to return to these actors and these characters and see them in entirely new ways. Like I dreamed of that when I was a kid when I was you know, a member of the Star Wars fan club reading Bantha tracks and you know, Lucas was announcing that he was going to do nine movies you know, I was all in waiting for me"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:44:19",
+            "text": "to absolutely yeah, I was right there. That was the same age a Bantha tracks subscriber from probably almost day one not quite day one but close. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:30",
+            "text": "think I was doing I think I was day one and I had in 1980 I got the Luke Jedi you know short jacket from from Empire and where that um, so we have now probably a top three moment in Star Wars of all time as we start to race to the finale here and this is Kylo Re and Snoke. So this set this"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:44:53",
+            "text": "set. This is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:55",
+            "text": "just the size the red wall. Yeah, the cinematography of it snuck up there when she's screaming when He's torturing her. Like, it's just insanely good. Yeah. And then the fight itself killing snow and having the fight with all these guys."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:17",
+            "text": "It's great. Not the, the fight. I think this is like a place where people also like to criticize because like the choreography of fight, right, like, well because like there's things which like there's things in which the guards like you know purposely delayed or extended the choreography if you like playing the slow motion of like, if you've ever"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:34",
+            "text": "been I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:36",
+            "text": "like what this is like the set is telling you what this is this is an opera like this is meant to be an operatic scene of like, you know, Manichaean struggle being played out before us. It's not meant to be like, you know, a martial arts accurate."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:45:55",
+            "text": "Just just the build up to you know, where you're, you're wondering if suddenly Kylo is going to light up his lightsaber and take out Ray. And yes, no, because narrating this whole thing. And then he's turning the lightsaber with the force. Yeah. And, and I I remember just feeling the whole theater, like, like leaning in and like not breathing and like, yeah, happening. Yeah, boom. And I think it you know, it goes into slow motion for a moment, and the score and it's just like, holy crap. I just remember the hairs on the back of my neck standing up going. Oh, my God, they're they're working together. And they're taking on all these guards. Like what is happening now? Like, that felt Star Wars to me. Oh, yeah. It was just incredible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:46:41",
+            "text": "And those Red Guards, right, like we've been wanting to see those guys in action since frickin Jedi. Yeah, so Yeah, finally, finally seeing those guys. And"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:46:47",
+            "text": "there's that as I listened to an amazing interview with Neela Rodas chimera, do you know who he he is? He was one of the original concept artists brought in on Empire. And then. So he, he did all kinds of amazing stuff with Joe Johnston back in the day. But he actually got promoted to be costume designer on Jedi. And when he learned that the Emperor's throne room was like all black, the Emperor's black. All this Yeah, he decided, like, oh, we should put in some color for these Red Guards. And his story goes something like, he got this idea. And I don't know if it was George or somebody else said, Well, do we have budget for that? And he's like, oh, yeah, no problem. And they didn't have budget for that. But but he just he just did it anyway. But he's like, You need this red popping against the black. So totally. So again, this is like, if you think about all the collaborations and everybody like piggybacking over the years on the Star Wars stories, you know, these praetorian guards in this last Jedi scene, they were red in this red throne room, you know, spawned off that one idea way back when with with Neil. So it's really cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48:02",
+            "text": "It's amazing. Yeah, it's great. It's really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:48:04",
+            "text": "phenomenal. But then the payoff for this is so huge when he turns to her and says Join me and her delivery of the lineup."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:48:17",
+            "text": "Please don't go this. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:48:18",
+            "text": "no, you're still holding on. Yeah, and he says about her parents"
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:48:24",
+            "text": "in a pauper's grave in the junk food desert. Right? You have no place in this story. You come from nothing. You're nothing from not to me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48:39",
+            "text": "Yeah, it's great. It's so great hills. And like it's so exciting. It's so exciting that like the at this moment in Cannon, the WHO IS WHO is Ray Ray's No, actually just no one from nowhere, like just you know, is so compelling. Like it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:00",
+            "text": "junk traders. Yeah, copper is great on shocker. Filthy junk traders."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:49:06",
+            "text": "You did a little too well."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:49:09",
+            "text": "Driver call me a filthy junk trader challenge. It's just amazing. Yeah. It just sounds great. It sounds great. So hot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:17",
+            "text": "Nexus nine does call it out as a masterclass in negging. Yeah, exactly."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:49:21",
+            "text": "Nothing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:49:22",
+            "text": "but not to me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:26",
+            "text": "So I mean, I do there is a part of me that does appreciate there's a connection as much as he's kind of fucked up. He does still have a draw to her. And he really does, though. He says please, for her to come to him. Yeah. But now we get to the moment as they're battling over Luke's lightsaber, and as holdo rolls into position, and like all three storylines come to a climax so huge Finn and Phasma are going at it are getting, they're getting executed and then the lightsaber explodes and then she drops the hammer. In the silence in the theater This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:06",
+            "text": "was great in the theater this really was like an unclear I have very few cinematic experiences I can even compare it to in terms of just like the impact that the visceral impact that it had on the audience watching us it was It was wild like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50:25",
+            "text": "this was coming back"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:50:26",
+            "text": "I had no no idea"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50:28",
+            "text": "this wasn't like talked about people were like, oh my god wait to see this thing and this movie."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:50:32",
+            "text": "Every everybody is like, you know, lips are sealed. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:36",
+            "text": "yeah. I cannot believe that the fandom gets mad about this. This thing I cannot believe people are just like on like, you know, some kind of why would they use it all the debt? Well, I shut up shut actually shut your face. Stop talking. This is amazing. Like, this is just sitting in a theater and just experienced this in your soul. It's amazing. It's so good. Yeah."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:51:03",
+            "text": "And again, it's the score and the sound and everything. Yeah. building and building and building and building and then. And then silence. Yeah. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:10",
+            "text": "then there's the little bits, right a sound there's a little bit of like particulate or background noise there after the after, like after, like a second and a half or"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:51:17",
+            "text": "something. Yeah, I can't remember how long it is. But but it feels like you know, longer than then it really is. It's just incredible. And again, just a very confident choice by a filmmaker. Yeah. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:28",
+            "text": "almost black and white. Like it is slightly blue tinge but it's like very monochrome, the shine, Monica."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:51:35",
+            "text": "That's really good. Good work. Laura Dern This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:37",
+            "text": "is an all time moment. This is definitely an all time moment in Star Wars like, or any science fiction like this is definitely a key piece. Alright, so now we have the Battle of crate all I want to call out here is this shot of layup with her the collar covering her face is incredible. The notion of going back in homage being Hoth, but doing it with the red so that it's so much more dramatic. But so I asked Todd vizuri let me see I don't think I got an answer back in the end, but when Finn activates his his mono ski or whatever, it kicks up some of the salt and red mud and it hits the camera and the camera like there's splotches like in children and men the blood scene. And so Jason to what you were saying earlier, this notion of like we hadn't seen these kinds of shots were done before in Star Wars this also felt like something Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:52:31",
+            "text": "I agree. Yeah, I feel Yeah, like seeing like stuff on the lens or seeing like the idea of like the universe being dirty or lived in in that way is is definitely is definitely new."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:52:44",
+            "text": "And those shots when when Finn is starting up that ski speeder, whatever it is. Yeah, it sounds like it's malfunctioning. And it sounds Yeah. Sounds a lot like the Millennium Falcon. Yeah, hyperdrive failed. Marino kind of It's definitely like an homage to that sound."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:53:04",
+            "text": "Which is, which is like an old propeller plane, right?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:53:07",
+            "text": "Yeah. initial inertia starter on a biplane. Were like, Hang handcrank it like so goes goes it goes. It goes that right when you let go before the propeller kicks in. It's like this room. Yeah, thing. It's really one of the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:53:24",
+            "text": "all time greatest sounds in history totally."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:53:26",
+            "text": "as well. And it's, it's funny, like, you will hear that sound or something very much like that sound. And lots of different things, not just Star Wars for just like, oh, machinery is failing. Because yeah, sort of like unconscious. Like you have a sound like that. And the audience goes, Oh, the the mechanics are failing. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:53:45",
+            "text": "the Wilhelm scream of mechanical effects. So we do have a, in my mind, a huge payoff for Rose and Finn, and this notion where she saves him and she says, I saved you dummy. That's how we're going to win not by fighting what we hate, but by saving what we love. So the kiss doesn't work for me. But the concept of that we have to hold together and that we have to you know, reach for the light as opposed to trying to engage the dark. That's like it's fully justified. Or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:54:21",
+            "text": "say what we love but not your part in the next movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:54:28",
+            "text": "Luke and Leia you know, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:54:31",
+            "text": "so good. It's so good."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:54:33",
+            "text": "I came to face and laugh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:54:37",
+            "text": "I can't save Yeah,"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:54:39",
+            "text": "I held out hope for so long."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:54:46",
+            "text": "I know my son's going oh, my son is gone."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:54:48",
+            "text": "No one's ever really gone."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:54:54",
+            "text": "No one's ever really gone hits hard because of the Carrie Fisher. Like it really Oh my Got it hits hard. And yeah, it's it's just a great scene. Because like you, you know that way a nose like that he's not really there. Like you you like, you know, like, you watch it again you know that she must know that that's not really him and that she must know on some level that this is he's like this is it like this is the end. And then you know also then that this is because Carrie Fisher's gone that this is the last scene of the two. So it's just this like incredibly poignant moment of the two of them together and it's just great and it's tender and it's funny and it's just, it's just great. I love it so much. I will say the one thing about this that like, just as a fan, I never really tracked the Hans dice thing as a meaningful artifact in the Star Wars universe. Like I was like I watched these movies a lot like that ones just never really stood out to me as being like I'm really supposed to Glock like clock these dice Mac"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:56:08",
+            "text": "was not to do this was also in solo like a plot point."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:56:11",
+            "text": "Yeah those were in solo but I think there are in those a look solo come out after last Jedi after"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:56:16",
+            "text": "Yeah, yes, it did. Which was confusing. I think I see. 18 Yeah, so like it was a big thing in the moment. I remember. But it was just kind of slightly it felt slightly confusing that it was so dramatic. Yeah, such"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:56:30",
+            "text": "a specific prop. And I'm like, I don't know. I don't know there's a lot of other things in the Millennium Falcon. I'm aware I'm not aware of the dice. But great See,"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:56:43",
+            "text": "here's here's a chess piece."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:56:47",
+            "text": "If you handed over like I would be I would bawl my eyes"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:56:52",
+            "text": "out of that guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:56:54",
+            "text": "Oh, we got the Kylo Ren more classic meme. There's a lot of memes in this movie. We have Leia passing the torch to oppo What are you looking at me for?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:57:03",
+            "text": "I love the joke where he says I'm like put me down and like hug hugs tries to say like Georgie thing is like, come on, like what are we doing here and he throws force throws him against the wall and the cap is like going down right now."
+        },
+        {
+            "name": "Speaker 1",
+            "timestamp": "1:57:17",
+            "text": "No problem. Have you down in just a minute, sir. Problem."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:57:24",
+            "text": "Like Kylo says the resistance is dead. The war is over. And when I've killed you, I will have killed the last Jedi. Amazing."
+        },
+        {
+            "name": "Last Jedi sample",
+            "timestamp": "1:57:31",
+            "text": "Every word of what you just said was wrong. The rebellion is reborn today. The war is just beginning. And I would not be the last Jedi."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:57:52",
+            "text": "The callbacks. This is this is some well written stuff like this movie like the the callbacks of everything you just said is wrong. And like that, like the fact that so much of what he's saying to Kyle is stuff that he said to Ray, like they really I mean for a movie that is it's two and a half hours long. A lot of it is not about Luke, as we talked about, it's not about Luke and Ray. But to really be able to seed so much in those scenes to have it pay off here at the end is remarkable. And they do a great job. And like the thing I want to say also is we skipped over it but when Luke walks out of the hole in the wall, and the other soldiers pop up to look at him, and the music is swelling. Yeah, it's like like I think again, like just to if Luke is your hero, like if Luke is your childhood hero, like to see him in this moment, like and then to see on screen other people looking at him like like seeing a legend just seeing he's the one who made Deathstar exactly like twice. He's just like this unbelievable. Like, unbelievable legend. Like, it's just, it's just remarkable. And it's like, it's why like, it's why in the Mandalorian, where, when Luke comes back, it's just like this. There's like the one of the most transcendent scenes in Star Wars for if you're a fan of this generation of Star Wars. And so like they really pay it off. Well, here is my view of the Luke endpoint. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:59:24",
+            "text": "mean, the death of Luke Skywalker is what my notes say. And it just to me, I felt like this was a completely heroic moment. And I felt like this This was Luke completely transcending doing something that no one had ever done before. And just like extending and connecting with the force in such a way like Mack is there any better way for Luke to go out?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "1:59:44",
+            "text": "I don't think so. And I know a lot of people were disappointed with that that they wanted, you know, Luke Skywalker to last forever, but you know, right. He's old. Can't happen. Let him rest."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:59:56",
+            "text": "Yeah, let him Let him crash in the force and They do they set up this idea that like, you know, we're when Kylo says to raise like you wouldn't you wouldn't be able to do this it would do that for it would kill you. Right? All right, Luke, like Luke is like the one person who could, like, you know, manifest this amazing display of the force and it's great. It's great. Like it's beautiful, like his death on Octo is like, is beautiful. It's gorgeous. It's like, you know, it's one of the most beautiful deadwind signs. Yeah, it's one of the most beautiful deaths in Star Wars like, you know, like as a more so than Obi one's dad most more so than than Yoda is death. I get it is this like, you know, it's this it's this flame like, you know, rejoining the spirit of the forest. It's just great. Like, it works for me completely. I don't What do you want to see? You want to see in like, just like, you know, cut down the lightsaber? You don't want that? You don't want that. He's never gonna lose"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:00:55",
+            "text": "it. Yeah, yeah, back I was like frustrated in Ahsoka, when like Anakin and Ahsoka didn't just sit down and talk for an hour like that's all I wanted. I was like, I was down and just talk yeah, like"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:01:06",
+            "text": "my Dinner With Andre you know, episode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:01:11",
+            "text": "So now we have a last look from Kylo to Ray and she shuts the door on him. And this is the moment where she's like, look, be I just been floating some big rocks. I saved all these people and we beat your ass and I'm not down with you nagging me anymore. So I love the shift for her to have that power in this scene. And that part was continued so perfectly into rise of Skywalker the beginning of that where she stands down his his fighters just is really great. But now we have Leah says they have everything they need. Even though the entire Rebellion has been reduced to the contents of the Millennium Falcon. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:01:50",
+            "text": "was gonna say like, that was one of my notes too, which is like even before they ended up in this busted stayed on on great. Like, they're like there's like 400 of us left. That's all it was of the resist. That was my note was like what I might know from anytime we watch a zombie movie, which is like surrender is always an option. Like you can always just turn yourself in to like the evil even if it means you're gonna die. Like it might be quicker like this, like, this is not working out. Well. Like you've got like, 300 people left and like, some of these people seem busted like I don't know, like, you're, you're not like 300 people and like a bunch of them are a great fighters or a Jedi or something like that. You got like nothing like it might be time to hang it up. Like I don't know what you think you're gonna know what you think you're gonna be able to pull together here. But yeah, they get away. They got like five people left there. The Spark. Spark is gonna play"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:02:38",
+            "text": "well with a kid grabs the broom with the force. So I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:02:42",
+            "text": "mean, the kid the broom kid is one of the more frustrating aspects of this situation because it's never, it's just never paid out. Like, we get like it is this."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:02:53",
+            "text": "It doesn't need to be it's just it's just a notion that anyone can be part of the force is what Luke? That's what Luke said earlier. Like, I know, I'm saying it's us."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:03:03",
+            "text": "I know. But like, yes, that idea is great. We should have we should have stuck with that idea that anyone could have be in the forest that didn't take like a special bloodline. One of G's Mac bloodlines."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03:14",
+            "text": "Mac Are you allowed to announce tonight? The upcoming broom boy prestige series? Debuting Disney plus 2020."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:03:26",
+            "text": "Boy broom boy two"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:03:27",
+            "text": "Electric Boogaloo? Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03:33",
+            "text": "Oh my god. Okay. Mack. Who would Tilda Swinton play?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:03:36",
+            "text": "Hmm. I think she'd be an amazing Snoke"
+        },
+        {
+            "name": "Speaker 4",
+            "timestamp": "2:03:40",
+            "text": "Um, oh, yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03:44",
+            "text": "That's right. In that gold outfit and stuff. Yeah. I just like God"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:03:48",
+            "text": "and lino, however, do the big the big Snoke voice the medicine snug voice I think it'd be scaring"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03:55",
+            "text": "incredible, incredible. Jason, how are you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:03:59",
+            "text": "I have the same note as Nexus nine in shadows. I was going to get rid of Laura Dern and have her ever Wow, hold on, hold on maneuver. Yeah. I think she would be great. I think she'd be great as well. I think Florida is good in the movie. But I think I think Tilda would be amazing. And like you would have a lot of confidence. You just be like, Oh, yes, like the word. I'd have a lot more confidence in these like six people that they had left in the resistance if one of them was told this one was Admiral, a vice admiral Tilda, come on. Excuse me,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:04:27",
+            "text": "excuse me when the music swells and holdo turns and says godspeed"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:04:32",
+            "text": "rebels."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:04:36",
+            "text": "Come on. That was on doesn't it's not my favorite line or anything. But I think it would be amazing. Let's go"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:04:44",
+            "text": "It's okay. It's okay. Hex already has the correct answer. Yeah, yeah. Replace DJ."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:04:50",
+            "text": "Well, it's a smart choice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:04:51",
+            "text": "Starter. Fine. All right, guys. What do you say should we do Some letters,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:05:00",
+            "text": "letters. Okay, here"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:05:03",
+            "text": "we go. Here is our first letter"
+        },
+        {
+            "name": "birria",
+            "timestamp": "2:05:12",
+            "text": "Hi y'all Barry here. Okay, who's been in the most Star Wars? It's not Andy Serkis. Only two there he played Snoke in this movie, of course and Keno one way out loi in andorre It's probably tomorrow, Morrison has played Jango Fett, Boba Fett and about a million clones. But my favorite multi-role Star Wars dude is probably worth Davis appeared at seven of the 12 Star Wars feature films to date. Starting with wicket the Ewok Of course, work even appeared in The Last Jedi in the big scene at Kanto bite but which one was his character? Here's three characters from the scene at canto bite. Only one of them was played by work David's truth saying timeless was it number one work played would have been a male certain little reptile like dudes who was gambling the night away Kanto bite with his brothers thought oven and Donovan or is it number two work played a tiny croupy Amen fam. Who was on one of the gambling tables that canceled by it Do you like Lucasfilm Story groups Pablo Hidalgo said about this character. Pham is, quote, very flatulent, but his natural gas is rather pleasant and soothing. And quote, alright, or is it number three work played CANopen show Klopp a warm old male who spent 102 years in his trade as a vaporators sales being before winning vaporators sales being of the year. It was his first vacation to canto bytes in over a century, which one of those characters was actually played by Warwick Davis in The Last Jedi?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:06:43",
+            "text": "Wow. Well, I thought it was in the character who was plugging all the coins into BBA. That's what I thought to be that might be the first one that he taught. I think it's the first one. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:06:57",
+            "text": "correct. So that's incorrect because that guy was Luke's was Mark Hamill. played played that guy, but I I I saw him he was a guy with like a big eye here and a mouth there and he was like in a sauna or something. So I'm guessing it's number three. Let's see who's right all right. Um, so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:07:16",
+            "text": "going on number one. Okay,"
+        },
+        {
+            "name": "birria",
+            "timestamp": "2:07:17",
+            "text": "where's work? Which role did work Davis play in the last Jedi it was. Number one what characters nickname along with his brothers was simply an eau de with Dodie and 30. Collectively, the three of them are known as the Lucky Three due to their uncanny ability to win big and gambling and make back anything they might lose. Just like Warwick Davis. Here ends the truth saying"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:07:41",
+            "text": "Thank you, Barry. Yeah, that was amazing. Guy. Yep,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:07:46",
+            "text": "you got the trusera question wrong and you've been sitting in the wrong movie seat your whole life. I don't know how you're gonna"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:07:52",
+            "text": "sevens row center is definitely in the third. It's like it's right at the back of the third. Alright, here we go."
+        },
+        {
+            "name": "ethan",
+            "timestamp": "2:08:02",
+            "text": "Hey, Bod Pod, hello, Bod Pod, a bod pod Bod Pod. A bug catch? You guys can't see me right now. But I'm literally jumping around my room clicking my heels with glee because I love this movie so much. I love it mostly because of Luke and Luke's arc. This film is the reason Luke is my favorite character. I adore how much they were willing to showcase failure, how strongly they were willing to showcase failure, especially with such a strong icon of the last century. Failure is important. And this film, if you show it to your kids will teach them that failure can happen to anyone at any time in their life. And if you just listen to the people around you, you can redeem yourself, which I think is just beautiful, and very important. However, on a far darker note, Has anyone noticed the correlation between the hatred for this film and the rise of anti intellectualism and populism in the US? Has anyone noticed how many parallels those two events share? How the hatred for the last Jedi serves as a microcosm for the incredible intense political discourse and misinformation used in modern US political discussions? Is that Am I insane? Am I crazy? Please, someone validate this hashtag, whatever. No hashtag for today."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:09:24",
+            "text": "See you guys kisses. That's great. I'll take this one. All right. First of all, as as some people may or may not know. Ethan is from Australia. And so I think it's remarkable big that and Ethan is also quite young. I believe he has like 14 and wombat years or something like that. And so I find it interesting that, you know, for our younger generation, the Luke Ark would pay off as well as it did, and I'm grateful to hear it. And I salute our young antipodean for wisdom. Yeah, His years and there is some truth to what he says. I think like, you know, the backlash against last Jedi also reminds me of sort of like GamerGate in some degree where it's just like this sort of like someone latches onto this cultural artifact as like a way of advancing a bunch of like bad faith attacks Schneider caught Yeah, like there's like really toxic fandom stuff that happened in this era that coincides with a lot of like extremely online weird stuff. I think that is all valid, I have a harder time specifically linking it to the political anti intellectualism, because it turns out, anti intellectualism is just an American, like, kind of like, backbone principle, we've got that one going back for 200 years, we really like that and are suspicious of the smarts. And it just routinely kind of becomes one of our one of our cultural norms. But I do think there I do think like sort of the backlash against last Jedi ends up being rooted in this very particular kind of online moment, where fandom started become more toxic, and like lots of communities ended up kind of descending into some forms of madness, because of various attacks like the like the ones we saw for this movie. So yeah, Mac,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:11:18",
+            "text": "we stand with you, the creators, do your thing. Have a good time, go for it. We're gonna watch it, we're gonna celebrate it. We'll pick apart the parts that we have challenges with, but we're not going to blame you know it for not being exactly what we want it like that. There's nothing good on that. Yes. Yeah."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:11:35",
+            "text": "I mean, the older I get, the more I appreciate filmmakers who just go for it. Yeah. And try something that's like not safe. You know, even if it doesn't completely work. It's like, you know, hey, like, kudos for, for trying something. And you know, you know, maybe you didn't quite hit it out of the park, but like, good for you to go out there and, and do something. Challenge you know, that challenges yourself and everybody else."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:12:03",
+            "text": "Ah, preach."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:12:04",
+            "text": "Thank you, Ethan so much. Here's our next voicemail. Hello,"
+        },
+        {
+            "name": "Kev",
+            "timestamp": "2:12:09",
+            "text": "escape hatch. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:12:10",
+            "text": "Kevin here."
+        },
+        {
+            "name": "Kev",
+            "timestamp": "2:12:11",
+            "text": "No big deal. We're just talking about Rian Johnson's The Last Jedi, one of the most divisive movies of the last. Well, the century so far, I guess. I do want to say that no matter what people think about any Star Wars project, they always look and sound so amazing. And I want to give a shout out to max Smith and the folks at Skywalker Ranch who are doing an incredible job on all this stuff. Thank you. Calves question. Ryan Johnson set out to subvert everyone's expectations with The Last Jedi and as the last few years of chaotic awful nerd culture discourse have proven he succeeded. So with that in mind, Kevin's question this week is what was some of your most major movie surprises, whether they are plot twists or your expectations were blown away? Or there was like a surprise in the film that you didn't know about? Any of that applies? I'll give one No spoilers. Here it is hockey's the boy in the heron. I had the great opportunity to see and hold key to enjoying that movie is to be surprised. So let me know yours. Shout out to the editing team. Megan, thank you. You did a tremendous job. Shout out to the Chuckle hut and silly Oswald, it's projectionist and I will talk to you all very soon. Peace and love. Yes."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:13:27",
+            "text": "Once again,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:13:28",
+            "text": "it's calves questions."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:13:30",
+            "text": "Question. Have I been? I do I see enough movies to be surprised. Have I seen a movie that fancied? I haven't seen 100 times before."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:13:44",
+            "text": "I'm just gonna I mean, I'm gonna take the definitive example. I'm gonna take Empire Strikes Back obviously, that left me and all of all drives"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:13:53",
+            "text": "but the question was like this year, right? Was it like in recent just biggest surprise?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:13:57",
+            "text": "Ever? Yeah. Okay, that's that's what I heard. Okay, Mac, anything you can think of the surprise you more than that?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:14:06",
+            "text": "Well, recently, I saw this amazing animated movie called No, Mona. Yeah, I never got I got to see here on the big screen. But yeah, it's on Netflix. But it's yeah, it's one of those animated movies, you know, which are often very formulaic. And there's something that happens in the in the plot, I think probably in the first six minutes, so it just kind of makes you go. Whoa, like, oh, what just happened? Like, this is not at all where I thought I was going. And it's just it's a really smart film. Really well done. And, and it's a movie that that died. Yeah, yeah. Because it was a movie that there was a blue sky movie. And blue sky the animation company that that was in Connecticut. When Disney bought Fox right, they shut down blue sky right Movie was like, not done. And another, you know, someone with deep pockets, said, Hey, let's let's figure out how to finish this movie. So they went to a different animation studio in England and and did the whole movie. And it's incredible. It's it's, it's honestly I think one of my favorite movies of the year."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:15:19",
+            "text": "Wow. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:15:21",
+            "text": "it's based on it's based on a graphic novel that people love. And it's especially for like eight to 12 year olds. So check out the book and check out the movie. Yeah, really good. Keller. Jason, do you have one top that you"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:15:33",
+            "text": "have? It's if it's anything ever, then I would never use a Fight Club, which I hadn't read before. I saw it in the theater. And I remember I was with a friend of mine, my friend Matt, who I've talked about before on this podcast, and also my friend Dave. And David Read the book. And when it gets to the reveal, like we were both just like what the app and like turned to him and he I just remember this. Clearly, like he turned back to us. It was like, Yup, it was like, wow, this is like really, really didn't see that would come in. So yeah, that definitely stands out as like experience in the cinema that like totally blew my mind. I can't think of anything more profound than that. They were the"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:16:18",
+            "text": "rules about fight club. They're really three. That's right."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:16:22",
+            "text": "Can't tell anyone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:16:26",
+            "text": "Actually, the other example is the Red Wedding, which I read was so blown away like that. That was like one of the best things when that the night that happened and they had all the reaction videos of the people who'd read it filming their partners who had never had never read it. And we're just like losing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:16:41",
+            "text": "That was good. I had another note that from when we did last Jedi that in the fight scene in the throne room that ray does like the Arya Knight King move where she drops, drops the lightsaber and picks it up in the other hand and hits the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:16:56",
+            "text": "guy. Very cautious. Really good. Paul does that too. I think Paul does. Five. It's a great move. All right, here's our final voicemail."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "2:17:11",
+            "text": "Hey, hey, Pat. This is Cory Khan from Austin, Texas about Star Wars The Last Jedi from 2017 Walt Disney production. So I was a huge fan of Star Wars growing up right born in 1972. So I was perfect age for the first trilogy. Really loved him, even though he walks liked all that stuff. And then the other ones happened the prequels and I wanted to like them, but only watch like one and a half of those. You know, he's kind of everybody knows that story. And then these came out these later Star Wars movies. And they're pretty good. I guess. I didn't watch the last one. I watch these two and then I want the what was the one we did on the pod? Like a rogue Rogue One wants that so I don't know. As you can tell. I'm not super invested in Star Wars. It just didn't carry surprise that I got older. Which is fine. I don't hate it. I'm not a Star Wars hater. I'm just not into I'm not into all the IP I'm not into all the rides or the theme parks"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:18:17",
+            "text": "or drive we get it correos new aid our dreams."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "2:18:22",
+            "text": "But I went saw this one and in the theater. I don't remember it. You might have had to go to Wikipedia to see what happened in it. And I'll think oh yeah, it's kind of like this but like I guess that's it. So sorry to say I don't have a lot to really say You know, I'm sure you guys do a lot of good things. And very excited to hear about your esteemed guests. Thoughts and all this to that downside stuff is really good. So I'm at that who doesn't play? No, of course. Oh yeah. Oh, you know what I do have to save up this one good thing that came out of all these new Star Wars is Adam Driver. I love Adam Driver. Yeah, and I really love Kylo Ren, and I especially love his undercover boss segments on Star net like those really great"
+        },
+        {
+            "name": "SNL sample",
+            "timestamp": "2:19:12",
+            "text": "What do you guys think of Kylo Ren? Do you guys believe when he says that he's gonna finish with Darth Vader started? Exactly as he started. No, I will say this for Kylo I think he gets a bad rap. He's trying to accomplish something. There's never been done in the history of the galaxy. You know? Rule everything. That's impressive. I admire the guy. Yes, exactly. Exactly."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:19:35",
+            "text": "They're good. Okay,"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "2:19:37",
+            "text": "thank you guys. Looking forward to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:19:41",
+            "text": "that is one of the all time SNL sketches What do you think about Kylo Ren?"
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:19:50",
+            "text": "Junk trainers? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:19:53",
+            "text": "it's, it's great to hear from Cory as always. We love you, Cory. I appreciate you sharing your journey with us. Hmm,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:20:01",
+            "text": "all right. Well, that is it. We did it. Mac, what do you have to plug anything you can talk about? And if there's nothing you can talk about workwise you could talk about anything you're excited about."
+        },
+        {
+            "name": "Max Smith",
+            "timestamp": "2:20:13",
+            "text": "Hmm, don't have too much to talk about workwise there third, I have stuff that's going to be announced soon. That's kind of good about come out at the end of the year, which, which I'm finishing up in these next couple of weeks. Wow. Okay. And yeah, just just, I just had a trip to Ireland, which was incredible. I got to go to the Kilkenny animated festival. And we did a Star Wars visions panel. Oh, cool. Amazing. Yeah, so just got back last week. It was it was a lot of fun. That's great."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:20:49",
+            "text": "Right. Plug Ireland."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:20:50",
+            "text": "Good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:20:51",
+            "text": "We go visit those are the beehive huts and on the Dingle Peninsula? You don't have to go out to Michael SkeleT you can go out and take a helicopter boat. Right. So nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:21:03",
+            "text": "Wait, that was a different location. I thought it was all filmed. They have the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:21:07",
+            "text": "they have the huts on the island too. But there's lots of there's same huts or heights on the mainland. Yeah."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "2:21:13",
+            "text": "Very good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:21:15",
+            "text": "Jason, what are you have to plug?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:21:17",
+            "text": "What do I have to plug? I am still rocking as Baldurs Gate three. I gotta say this is a really good game. I'm closing in on a landing on this one. I'm like, okay, 10 hours or something like that? Oh, 110 hours. Exactly. Yeah, just check. And I have only gotten 43% of the achievements I've definitely not a completion is by any chance and I probably got like another probably good 10 to 15 before I finally finish this thing, but my God, what an achievement and storytelling and gameplay. It is just pretty. Pretty strong business. So don't forget to check it out. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:22:00",
+            "text": "Quit anytime, right, anytime. And that's it for this episode of escape patch. I want to thank Jason and Mack for an unreal conversation. Next week, we're joined by the showrunner of Veep and White House plumbers, Dave Mandel, we cover one of his faves. William freakin needs to live and die in LA. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcast. Or just tell your friends about us because it really does help the listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. escape hatch is a Tech Tech podcast John our production of H industries. Our artwork is by catcher and our theme music was composed by Scott Fritz and who's the boss music. The episode was edited and produced by me Ah thanks for listening. see everybody next week"
+        },
+        {
+            "name": "SNL sample",
+            "timestamp": "2:23:11",
+            "text": "a buddy of mine saw Kylo Ren take his shirt off in the shower and and he said the Kylo Ren had an eight pack of Kylo Ren was shredded your friends a liar man Kylo Ren is a punk bitch like I looked like he was 30 pounds soaking wet underneath that little black dress Oh no, he's choking on food. I see what's in your mind. is still great? Dude Matt straight up sucks."
+        }
+    ]
+}

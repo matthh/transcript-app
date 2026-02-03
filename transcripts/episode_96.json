@@ -1,0 +1,2381 @@
+{
+    "episode_number": 96,
+    "episode_name": "Sneakers",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody. It's Haitch and welcome to the latest instalment of Dune Pod. Your one-stop shop to enjoy the new Dune movies. This week, I'm joined as always by my cohost, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, oh my God. The mathematicians who like what is going on with this, like Hollywood is just got a wild concept of what's going on in the professional math world."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by the Chief Technology Officer of the DNC, Nell Thomas."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Or what are these guys really good with? Balloons? I don't know."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We covered Jason's favorite San Francisco start-up movie, starring Sidney Poitier, River Phoenix and Robert Redford, Sneakers. If you're enjoying the show, we need your help. Leave us a five star rating and review wherever you listen to your podcasts and be sure to hit that follow or subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want a link is in the show notes or join us. And now without further a-Dune, Sneakers. [Dune Pod theme fades out]"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean, someday we should have an actual live studio audience, like in a room together, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh yeah. Onstage. Well, I don't leave the house, so I mean, they can come to me, I guess."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Do you have a space for it where we can, uh, get like 44 50 people? Yeah, for sure."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We got, we can, we can figure that out. We can just pitch a tent in the middle. We like close to golden gate park. I think you can just go to like hippie help. So we'll do it there. Okay. Yeah. Now, have"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "you had any podcast recorded at your house? I"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "haven't, but I am very supportive of a dune pod tour. You come to New York. I will be in the front row cheering. Oh my"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "gosh. You can sell them weird. We're going to, we're"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "going to sell at least one seat. We got one tickets all."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. I'd like to do it like at Brooklyn, you know, cruise through there, you know, maybe get some, a little, maybe hit DC. Some of Jason's old haunts. Absolutely. Midwest get to Minnesota. We've got a big contingent, uh, you know, Texas,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Austin is really where we need to go. Hmm. That's our, that's our keys."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, anything Jason, you want to call out on, uh, the ongoing Twitter wars happening right now? Any new appearances"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "coming up? I, this was a good one. Uh, so this morning, just to catch people up on the Twitter drama, uh, which is like my besides dune pod, my other hobby is following the Elan acquires, Twitter, bullshit saga. Uh, and this morning he was at, um, we need a sounder for this as well. Cause I feel it's going to be going on for awhile. He was at the bullshit. Yeah. He was at this tech conference in Miami, which is hosted by, uh, Jason Calacanis and shamatha and those weird. And, uh, the all-in podcast. That's what we need. My incidentally, speaking of like the live tour, their podcast, souls that sold out for $7,500 a seat. How much do you think, do you think we can charge $7,500 a seat for when your cargo's working our way"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "up? We're ready to workshop. What"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "if we just sold one ticket for $7,500? I think we can get someone to buy it anyway. Elan's renegotiating the price live on stage tweeting, poop emojis at the CEO over this bots thing, a detail I missed until, uh, old Twitter. Texted it to me was that he also said onstage, I don't understand why we have the, why there's all these unauthenticated users on the platform. Why don't they just call people to verify who they are? And I, that is my favorite detail yet in this whole thing, because I just love the idea of some support person at Twitter, like ringing up someone and being like, excuse me, this is Twitter. Uh, we're looking for Mr. Or Mrs. Big, but for 20, uh, are you, uh, are you at home? And I just love, I just love every suggestion that comes from the fucking, you know, the, this genius of our time, the Carnegie of our time. Uh, he's a brilliant man and we should all listen to him now,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "get in here. It"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "does seem like he is, he is act it's like watching someone. Grapple with the problems of trust and safety on social networks in real time. And it's, it's both like fascinating and deeply sad."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's when they like train it's like when they train like an AI tool, I walk and at first it just like, you know, doesn't know like how to, it just flails its limbs around. And like, you know, it kind of like flops over itself, uh, towards like the obstacles, but then eventually it learns, it can like prop itself up with its nose or whatever. That's Elon learning, social platform governance or, or"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "like every, um, like first product meeting in a tech company where an engineer is just like, well, why don't you just fix it this way?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What a great idea. Oh,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "no, one's ever thought of that before we"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "shouldn't have spam. Whoa."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Wow. I do think Facebook was verifying people, not by phone, but by mail for a while. Um, for, um, so, you know, Well, it's full offline methods for"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "verification."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We wrote a product requirements document in 2009, about how to verify Twitter users. It was like a product we were going to build them. It was like going to use credit cards. It wasn't gonna use phones. I mean, there's definitely ways to do it. The idea that that's like a fundamental problem that Twitter needs to tackle as opposed to literally anything else. Crazy, but, you know, he'll figure it out."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The idea of saying voluntary authorization or, or, uh, authentication and verification of users is not a bad idea. Um, and even having different levels of service based on that, but a product that is used in authoritarian countries, by disciplines who are trying to exercise, freedom of speech are not available for being authenticated. And he has a child for, for thinking that they are, fortunately,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "he's taking more money from the repressive regimes in this deal, including, uh, including Saudi Arabia. And so he's, he can just shortcut the whole repression, uh, timeline by, you know, just like working directly with the people with, from whom he is taking money. Um,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "but I love the irony that he is like, they're the champion of free speech here he is. All right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What sovereign wealth funds can I talk to you? Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "no,"
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "appreciate your coverage on Twitter though. I think that it's, it's nice to follow along someone who is, uh, kind of in, in real time dissecting this clown show that is apparently going to control our potential future of"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "social media. I'm just saying, like, I'm just saying, could we get a sting codpiece meme injected into some of these tweets. We do need"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "more dune. We do need more dune in this coverage. You're right. To point that out. I actually had a note for the Bloomberg parents to try to get in a plans within plans, joke, and it just didn't work out. Um, so I'll try harder. I'm gonna, I'm gonna work on it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "When the Timothy statue arrives, you can just have a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "good note. Good. Now let me write that down."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, we are so thrilled to have you now chief technology officer of the DNC. You have some experience with disinformation battling that and rallying people for the forces of democracy. So, you know, we're, we're just so thankful to have you, I'm thrilled"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "to be here and part of such a fun and vibrant community, it's really exciting and I'm a fan of the pod, so, oh yeah. Yeah. This is really"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "exciting for me. One of our rare guests who has listened to the,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "well, actually going back to the parenthood thing, having an 18 mumble means, I spent a lot of time listening to podcasts, to escape the TDM of, you know, playing with blocks slash walking around the neighborhood. Um, and so movie podcasts are my favorite thing to consume and. I'm a big fan of Matt. I love dune. It's just like this stars aligned. I'm I love"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the show. I have been so fortunate to work with now over the last two years, I'm supporting her and the technology team, um, in the work that they are doing to safeguard our democracy. And it really has been incredible, um, applying a real, uh, you know, west coast technology, uh, approach, um, and best of breed. Cloud-based just everything. Just really bringing out a great sensibility and continuing to grow the team, um, over the last couple of years. So it's just been very impressive to watch happening."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Thank you. It's been really, um, it's been really awesome for me to have the opportunity to lead, um, a fantastic team of technologists, um, that are so mission-driven, um, you know, I've worked in tech industry before, and I know how compelling it is to work inside kind a big tech, but, um, there's really nothing better than taking all those skills and putting them towards a mission and a cause that you care about. And certainly, you know, getting Democrats into office and fighting for progressive values is near and dear to my heart. And it's really. Really rewarding. We also just work alongside folks that feel the same way and build best-in-class tools and tech for campaigns. And yeah, I lead a fantastic group and"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "there's, there's been amazing technologists too, as well through the DNC over the last, like sort of four, four years, like some, some really great folks who've worked, um, for all kinds of world-class companies and built really interesting tack have come and worked in the DC. And so congrats to you on your leadership there and attracting"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "that actually thank you and fun. Um, movie crossover, um, our new chief security officer who runs our security and it team, um, comes from the world of movie studios. And so he must return. Yeah. Um,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not Sony, right? No, not so many, not. So"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "here's the interesting parallel is that, uh, well you would think like, what is the relevance of someone who knows the Hollywood industry security to politics? It's actually, there's a lot of parallels there. You know, the Sony hack similar to the, um, the DNC and Hillary hacks in 2016, kind of drew attention to the vulnerability of law, the systems non-technical space, lots of stakeholders. Um, and so there's a lot of like cultural work that happens in cybersecurity and security to make sure that organizations are really being breaking security, part of the culture and part of the way every employee thinks about their work. Um, but you're doing so inside a group that maybe doesn't always think that way. So, um, we are really excited to have Steve on board and also, um, I get to ask him all of my random industry, movie industry questions."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. And give us the password to the scripts. Dropbox,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "come on. I believe the last secret he was protecting was the identity of the new James Bond, which I feel like it's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a, wow. Do we know who that is? No, not yet. He's protected. I don't know. Okay, great. All right. Let's waterboard Steve as part of this podcast and see if we can get this answer. That'd be great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, it's amazing. Uh, you know, that, that kind of connection here, right? Because tonight is all about security and all a mess, uh, you know, hacking and we are talking about tonight. Jason's favorite San Francisco start-up movie with Sidney potty, a river Phoenix, uh, Dan Akroyd, Robert Redford and his hair sneakers."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. Gawker"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to movie. Yeah. And Jeremy getting into that. Yeah. It'll be getting into that just in the, in the bottom of the hour, but before we do. How about if we get into some do news, would you like to know more news big week?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, this is the big one. Get ready."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is the big one. Christopher walk-in is, oh my God. Emperor should on the fourth. All right. So I literally, I think mg tagged me in a tweet while I was on an airplane and I almost did a spit take."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Um, H almost pulled the emergency exit. I was like, we've got to land this plane,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the hell. So I was shocked and I will say I begin this position extremely skeptical of more Butler. Oh, wow. Wow. Wow. Um, somebody sharing the Christopher Walken as emperor from what is it from the ping-pong."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Balls of fire"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "also fury or whatever. So, so my concern is that he's just, so he is a cultural meme, a walking cultural meme. He's amazing on severance. Yeah, it was amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But I think severed, like not to shortcut your whole thing, but we know where this is going. You just want to shit on Christopher Walken and that's fine, but like doesn't severance belie or point like, does it, like, we love severance. We loved him in severance. He totally works in that movie. Doesn't that suggest that he can do other stuff besides more cowbell."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't blame him for this. I I'm just saying that too many people have too many tanks on him already. So I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's answer the question. Does it severance prove that Christopher walkin has gears that allow him to work in John rhe fiction in a way that defies the meme suffocation of."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Yes. His work in, in severance was definitely different and unique from anything that he's ever done before. And maybe, maybe that will work. I just have a hard time seeing him as, um, and seeing what the take is. He must have some take, let's turn it over to our"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "guests. What do you, what do you think now"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "of this? No, I'm really enjoying this. I also appreciate the piece really, really forced man into the corner and then answer."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm tired of"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "answering my questions too much of that this week."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "I, I hear, I hear math argument, you know, someone who is such a walking meme, as you say, makes it difficult for someone just to lose themselves in the story and, you know, losing yourself in like the world building of doing it so important that you don't want an actor just to like take you out of it. But I think you need to give credit to someone who's. Is he an Oscar winning? I think he must have won an Oscar at some point. No. Okay. You're saying now he's, uh, he's a, you know, clearly a talented actor, you know, we have to give the believe in the vision and I trust and believe in the vision that like he'll be able to do it."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "love Christopher walk-in just for the record. Like he is amazing. No, I totally, I love Christopher walkin. Uh, you know, somebody, I think Kev called out dead zone. Like we should definitely do dead zone. I love that movie. Um, uh, the Baton spider guys just to brainstorm, which is one of my favorite movies from the early eighties by Douglas Trumbull. Like I'm way into him, especially true romance. I'd like to do that. Although I'm very, very worried about the, like through the 20, 22 lens, but true romance, definitely a standout performance. And that interrogation scene with, uh, with Dennis,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "love it. Folks are asking, when are we going to have, like, when are we going to start covering like the, you know, the body of work."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. Okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, an Austin Butler, we have to go back to pew. We have a bunch of new people who we should, we should honor."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Can we give Christopher Walken a little, like shout out for Annie hall, which I feel like is a pretty editor is the brother"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "sometimes when"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm driving"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "on the road at night, I see two headlights"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "coming toward me"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "fast."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "have this sudden impulse to"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "turn the wheel quickly, head on into the oncoming car. I can anticipate the explosion, the sound"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "of shattering glass flame."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Rising out of the flowing"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "gasoline moment, I think about often will driving. Not that I want to do that you might be thinking of that. So it's my favorite cause for walking movement"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and walking does have an"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oscar for deer hunter and I just, what I thought, wow, that's an intense, that's an intense, all right. Well, so yes, uh, maybe we'll call up our dear friend and see if he would like to come on for mid-summer for Florence. And then we can work some more with like, let's get our first Austin Butler out of the way. I guess we'll do once upon a time in Hollywood. Yeah, that sounds good. Time will tell. All right. We shout. We shall see any other do news. You have Jason."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean that just sort of that just sort of crowded out and the other, the meetings"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "have been great. Let us just briefly welcome some new friends to the discord. In addition to now who joined us this week. Um, thank you for joining us. We also have, yeah, well stick around. There's going to be a lot of fun. Belviq. 8 96 J Pearl. What, what is this? This is some, this is like a knitting reference of some kind. Jason"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "helped me out, man. Pearl is knitting. It's also a programming language could be either or both"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "not spelled like Pearl the language though. All right. Now, is it a move? Is as pearling that's like curling is,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "yeah. It's, it's uh, it's one of the two there's knitting and there's pearling and they're both. I worked at Etsy, so I have like a, I have to know things about knitting because of that. And knitting and purling are two of the stitches. What they call them?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Hex hex says knit one, Pearl too."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "don't know what that means,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "but that's like a stick. That's a stitch thing. That's like how you make a scarf."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yep. Very good instruction. It's kind of like the code"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "of the thing, if you will. Exactly. Stitch is the pattern there's I don't know. Well, in the apocalypse, that's a good joke. All right. So we also have psych daddy and lumberjack, Nick who comes over from the paper keg, uh, discord. So great to have all you folks joining us, anybody, anybody in the chat today, demanding a shout out who didn't get you've"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "said it probably, but like, you know, come on."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right. Let's keep moving. Nell. Do you have, or what is your history with dune?"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah, so I read the book, um, probably, I don't know, five or six years ago for the first time. I'm a, I would say I'm like a pretty like casual to medium, uh, Saifai book and cinema fan, but I hadn't made to do. Relatively recently, um, and loved the book, but I only read the one book, so I kind of look love the book stop there. I had some advice that like, it kind of just gets a lot more intense. So I was just like, I'm gonna stick with that. Um, and then, I mean, the movie was insanely good. I mean, I, it's hard for me to say anything that you all haven't said before, but it just, it's, there's so many, so many ways that could've gone wrong and, um, it's really hard to nitpick at it. Like, I mean, I know Matt, you and I talked a while ago and I, I ha I have a thoughts. I'm like lady Jessica and that type of thing, but overall it is just like such a beautiful movie. And, uh, I'm, can't wait for part"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "two. Hm Hmm. We agree. We agree. I can't wait. It's it's now been, we watched it back in March. Um, Jason and I separately for the first time, like six months. It's now that a couple of months since then. So I don't know, getting, starting to get the itch again to feeling it out. Um, dune still. Good. You heard? All right. Well, shall we get into this? Let's do it. Oh my God. I'm ready. All right, here we go. Sneakers is the hidden struggle to unlock information and control the world. Martin Bishop was a young hacker who went into hiding in 19 69, 20 years later. He's assembled a crack team of security experts, conspiracy theory, enthusiast, mother , operation specialists, crease young hacker, Carl, and the blind communications savant Whistler. When the team is tricked into stealing and handing over a powerful cryptographic machine that will change the balance of power forever. They are forced to scramble to steal. With everything riding on the line, can they accomplish the impossible and prevent Pandora's box from falling into the wrong hands? If they can. They'll secure their place at the top of the Pantheon of sneakers."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, the top of the Pantheon of sneakers. Wow. It makes me think about like some giant, like, you know, stack of Nike's or something like that, but I love it. I love it's beautiful. Beautiful. What did they"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "did use the term sneakers and sneaks, um, in the, in the script. Um, so I guess that's the deal right with like, there was that like some kind of hacker slash I've"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "never heard that lingo outside of this movie, but I mean, I wasn't, I wasn't really following in 92,"
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "have read and heard that the sneakers. Was a term for hackers. It looks like in term. And I do believe I actually noticed it when I was rewatching that they do say the very end, we just executed the greatest sneak of all time and we can't tell them about it."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think that was the only mentioned that I like heard of"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right in the script. Yeah. It's like"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "one of those like, oh, terms like freaking that, like, I'm sure had some like particular Providence, but like stop making any"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "sense or whatever. I think we, uh, I will just have to call Beto and, uh, and get his take on it. Right. He was, he was in the cult of the dead cow. Oh yeah. The call to the dead cow, right back in the skateboarding"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "coming on the pod."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's your next yet? That's a great question. Now we can say we've had you now. That's"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "sorry. I'm the gateway."
+        },
+        {
+            "name": "HAITCH A",
+            "timestamp": "",
+            "text": "stepping stone. You"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "have a real job, at least now it's like."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, keeping it real, keeping it real. So, so now what is your history with sneakers? You immediately got excited. Um, when I, I put this in the list and said, choose, choose a movie. And this was one that popped out. Yeah. Yeah."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "So I don't remember the first time I saw this. It was definitely came out when I was in like middle school. And I don't think, I definitely think I saw it in theaters. It was a home movie that we believe we owned on VHS a very like distinct memory of the coverup and therefore like rewatched a bunch because we only owned, you know, 10 or 12 VHS EFAs and watch them at nauseum. Um, and it's like, and I also was an age when I was, you know, kind of in a family setting and I feel like it's actually a very family friendly movie, all things considered there's very little violence. It's like kind of, uh, has some feel good aspects of it. Um, and so, yeah, I had had a lot of like time with it. In my early years. Um, and then every visited occasionally sense because it's just like a good time. It's like funny and, uh, exciting and has all these great, like real themes of social engineering and distrust of government and secret identities and, um, activism and activism. So it's, I think it holds."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. Nice. And, uh, I, I did read that, uh, the, the director, uh, Phil Alden, Robinson, uh, who also co-wrote it, he like threw in a bunch of the cursing in the movie because he was worried it was going to be rated G uh, he did not want that to happen."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "So he was avoiding the family-friendly setting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. Exactly. So they weren't able to kind of like skirt a little bit. And Jason, obviously this one was a big resonator for you. Yeah. So"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "he's loved this movie. I don't even know if I saw it in the theater or shortly thereafter, but I've seen it like just a bunch of times. It's like one that like, anytime I'll, I'll watch it for no reason, it's kind of like a category of like rounders for me where it's like a comfort movie where I'm, I'm just like, this is like well-written. And like, I can just like, you know, I know every line in the movie, I know every beat in the. It flows really well. Um, and like, I'm happy to like, just sort of dip in and watch it anytime I can. Uh, it's a, it's a real, it's a gem of a movie"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "for sure. Nice, nice. So this was written and directed by Phil Elden Robinson. He wrote Fletch the screenplay, uh, for that film. And then he directed this and field the dreams, and also did the band of brothers pilot, um, which I'm very much looking forward to, uh, to watch, uh, rewatching that series. I just started listening to the dead eyes podcast. Have you heard about this? This is Isaac. It's a UCB comedy guy who was cast, uh, 20 years ago on band of brothers and then was fired by Tom Hanks for having quote unquote dead eyes. And it's him trying to find out 20 years later, what that meant. Why did Tom, uh, why did Tom Hanks, right, right, right, right, right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. I heard about this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, it's it."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "listened to the pilot. It was great. Uh, the second episodes, John ham, and he got a ton of people and it's supposed to be incredible. So anyways, band of brothers pilot, maybe can we do that on the show? I don't know. We can do anything. We want, this was also written by Lawrence Lasker and Walter Parks who wrote war game. Oh my God."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No wonder what a blessed those guys just absolutely just touched by the gods."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. Were there other seminal works of hacker movies or it was just this just"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "pre-internet hacking,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "working so"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's like these two. I was like, maybe like the other one, that's like, you know,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm dying to do the net to do the net. We got to"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "do the net. I wouldn't say I love sneakers. I mean, the net it's like near and dear to my heart because God Sandy, you know, it's so good. I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "feel I could do an entire podcast on the UX design of the pizza, ordering webpage from the net this"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "time you've talked about that."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think about it all the time."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think about it all the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "time."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Or how about how the whole, the whole concept was that there was just a pie sign in the corner of the webpage. That was the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "secret. That's amazing. All right, we're doing it. Oh my God is directed by Irwin Winkler. Uh, well, there you go. Jason, the family. Yeah. Uh, yeah. Well obviously we should do probably like a double feature and do the net and the next week do hackers,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "we'll say then hackers came up the same year."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think two, I mean 97, maybe. Okay. Maybe not then they're all like,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "oh, it was 95. You're right. You're right. Oh,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "my fingers was first, you know, so,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "well, we'll see. We'll uh, we'll, we'll have to keep this, this hacking thing, this hacking thing. Rolling. Um, well, w you ready? Let's just get into this. Let's get into it, please. God. So, first of all, um, Jason, come on, James Horner."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "know. How excited were you?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Did you know that? I had no idea. And so you fire it up? Yeah. It does not half of the movie or two thirds of the movie does not sound like him at all because you have Branford Marsalis Horner's horns on the Alto sax. Right? So this is him hot off stings dream of the blue turtles and bring on the night. This"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "dream of the blue turtles are real album."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Jason, please come on. What are you? The blue turtles."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm pretty sure a dream of the blue turtles is available by the eight balance at the shop down the street. I think that's a, I think you could get that."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "cannot believe what is happening. Are you gen X or like that was her solo album."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. I don't really know. I don't really know if that's at the same, like. John rhe of gen X touchstones, like, you know, the Pixies or something?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, this was in the 85 or something like this. This is like an older gen X stuff. Yeah, exactly. Elder statesman, gen X, which I guess I am, but, uh, yeah, so staying leaves the police and he decides to basically do a pop jazz album and he gets Branford Marsalis and a bunch of other amazing jazz cats to, to play. Uh, so anyways, this has a real nineties, it took me straight back to Glen Gary, Glen Ross soundtrack, right? Yes,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "absolutely. Yeah. It's a great soundtrack. Love, love. This might be my favorite Horner. I"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "feel like it's pretty minimalist. I feel like, you know, I like how subtle it is throughout the movie. And it does a great job of building suspense and having those key moments without being one of the, like in your face soundtracks or something."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Yeah, I agree. Uh, there, it, and it operates on a couple of different levels. It does have a few scenes where it's literally the exact aliens sounds of the strings, like yeah. And, uh, but then there's a lot, that's kind of like jazz a year or kind of hanging around, but so we, we start off in 1969. And do you know what the facade of this building is? Jason of the college where they're pulling off this hack? No, I don't know. What is, it's the, it's the clock tower from back to the future from hill valley? Yes. It's the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "backlot it's the backlog. Yay. Yeah, I read that in some, I read that in some article. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And so we have this establishment of Martin and his buddy cause, uh, Cosmo and we have some slight of hand, uh, magic of tossing the coin of who's going to go get the pizza in the freezing cold. And he, he loses, he goes and Cosmo gets arrested."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "How good is the young Robert Redford looking."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Perfect. Right. Very convincing, very convincing. Did he have now for you to, you have the same magnetism kind of coming through?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. You,"
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "mean, listen, no one in the movie has as much magnetism as red river Phoenix, because again, I was when I was 10, so I was going to say, I was, I was a little young for Redford."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "mean, now watching I'm like I get it. I mean, the tracking that the facial expressions are really there, the hair, um, yeah. It's, I mean, he's, he's, he's good at doing those, like the slightly dope, your version of a Redford as a young college"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "student. Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He was charming. I have to say. And we'll talk about the cast and I think, I assume a lot."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "love Robert Redford. I think the rest of this. Kind of blows him away. And like, I, I think I don't, he's not the weakest, but he's definitely not the strongest. He's not in the top three for me. Um, I've ha just based on how incredibly good this cast is, uh, and everyone's sort of playing, playing their, their specific spot. Um, young Robert Redford though. Maybe he could have carried the whole movie. That's what they used to do instead of, instead of like the Irishman, they used to just find someone who kind of looked like the guy and put a wig on him. And that was good enough. God dammit. You didn't have to like do all this stuff."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think that's fine. Like, I, I really do think that is not a bad idea to castle the house. Like that's smarter. Um, in terms of performance, I am getting absolutely torched"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "in the comments that are like, he's not believable at all. You're fooled by the mustache mustache. Yeah. All right. Brent"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "retracted. Let's get into this cast and let's talk about it. Cause we jumped 20 years forward. And so he is now Martin Bryce was his name. He's been on the run. He is now Martin Bishop. Um, that is a shout out to the film, the classic Robert Redford film, three days of the condor, um, where it had the list of the people who were killed. And the last two people on the list were Martin and Bishop. Um, so that's where that name. It's definitely one thing"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that always irks me is when people take aliases that are like basically the same name that they're trying to hide from. Right. I just don't like, like, even if it's just, first of all, he didn't even Jade, his first name, slang name starts in the same letter. Like you definitely just don't choose the same initials as the name that you're trying to run from. That's just free. At first"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "podcast. Next time I go on the run, I'll call you up and ask for more advice. It seems like it"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "will we'll workshop your fake"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "name on the, on the name piece. Um, so another Redford movie, I'm a big fan of his spy game. And that movie, Brad Pitt's character, I believe is also a Bishop. And like, I have no idea whether or not those two things are connected, but I couldn't help. But think like, is, is the, is the Bishop name in spy game or reference to the Bishop name and sneakers?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Maybe you can find out in the international yeah. Um, events channel help us. Um, you don't"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "have to listen to him events"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "channel. I don't, I don't know if I've ever actually seen that movie. I think Jason, you referred to it before, but I don't, I don't remember it."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think I've seen it, but it's not one I'm like, I can't, I don't know. I don't know."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Oh, it's I mean, I don't know. It's not like it's no gem of sneakers, but it's a fun, like espionage spy craft and it's it's pit and Robert Redford just like in beautiful locations"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "and Europe. So I like the idea of putting those two together. Like to me, that makes a lot of sense. Yeah. So nice. Well, so let's, let's get into this cast. So beyond him, we start with mother played by Akroyd."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. This is not really a performance though. This is just Dan Akroyd. This is like Dan Akroyd was just around and they're like, you know, what's like some, what's some stuff, a Gracie conspiracy there is, would say, and he's like, well, it's not crazy, but, and he just like goes right into it. None of that stuff was in the script. That's just a hundred percent accurate off the dome."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "love that they give this character, um, the conspiracy theory, like persona of the hacker of just like pure everything is a, is a conspiracy and are, can, cannot trust the government, which I feel like it was important to represent that kind of trope of hacker. Um, an Africa does it perfectly, it's like the perfect, this person is like both, uh, smart and also slightly annoying and also enduring and his annoying this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Right. Well, and, and specifically pairing him constantly with Portier as crease, you know, that kind of the businessman CIA guy who he's like the, basically like the parent, uh, keeping everything, uh, keeping everything straight. But I, I liked his performance too. I thought he had a lot of nice comedic moments and just a great person."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Those are true. So rusty, rusty surfer MC just posted pit and Redford together. Those are two, those are two handsome men. I mean, that is a handsome diptych right there,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "diet. Um, so let's queue up spot game for this weekend. Enjoy"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the beauty of the advertisement. Oh my gosh. That's nice. Um, so, all right, so Chris, any bite, any bites on"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that crease as a da? Yeah. Great love city. 48. He's great. He's phenomenal in this, like he's I think pointy gay. Who else? Uh, Strathern. Yeah. Well, he's"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the champ Phoenix. The Australian Whistler is, is the best character in."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think those"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "three are all better than Redford is my power ranking. And of, of like the, of the power ranking of sneakers of the people who sneak."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "mean, as much as I love looking at river Phoenix, I might put like accurate as mother above in that ranking. But I agree with you on, I agree with you on increase."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think accurate, it has a little bit more fun"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and he's fun, but like, honestly, it doesn't seem like he's acting, it just seems like Dan Akroyd and fi and Ray river Phoenix is so charismatic. Like I was, I really was like, I was like, oh, he would have been, he would have been one of those guys forever. Like he would have, he would just be Brad Pitt, like or Leo. Like he would just be one of those people who would always be working, always have interesting work to do, would do a ton of different stuff. Like he just was that guy,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this is pretty much what he was like."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, God, I forgot. We have to cover the Matt knows river Phoenix bullshit. Oh no."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think the dance, the dance move, the dance move with the flinging arms."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think it was different. I don't think I ever saw that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh God, we walked right into that run. Oh my God. I don't know this story, please, please."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "When I was in Gainesville, uh, back in the late eighties, I had a band called Henrietta's lovers and river Phoenix was also living in Gainesville with his family and he had a band called Alec has attic, which actually Dan Akroyd was wearing an alcoholic t-shirt in this movie at one point. So I got to know him just a little bit and was influenced by him in terms of his guitar setup and, uh, and sound like I ended up incorporating some of that sound into what I was doing. And so"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "podcast is basically, you know, Manoj to Phoenix is guitar tech"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Now I understand that the extensive notes on microphones, they receive."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But I did I'll drop in some Alec is outta here, uh, from the album. Cause I did, since the last time we talked about river, I did track down the album, uh, from 1990 or whatever, uh, that I put together called Gainesville. Can't do. Um, and it has both, it opens with rivers band. And I think I put us second behind that so we can go back."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "did you get out of your system? You get, yeah. Yeah. Yeah. I think that's"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "what a humblebrag."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There's nothing humble about it though. It's just pure. It's got its own sounder."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Haven't been in any H fluxes in"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a long time. No, it's true. It's been a, it's been a desert."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm site I'm recycling them. That's a bad, that's a bad sign. Well, and just one last piece on river here. Apparently he was still recovering from my own private Idaho, which was very emotionally taxing. And so he said that he took this one because he wanted quote, a low stress money gig, um, that he could just do."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And it's one of his last ones, right? I mean, this is pretty close to the end."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think he died in 90, either late 92 or 93. Um, so this was right, right towards."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. All right. Here's my question. But his character, if we're talking about this for livable, but he is like this sort of love Lorne, like single."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Kind of, because he's so good looking like,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "you know, like I just, I mean, I would just say it's, I dunno, it's totally plausible that he's the know,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you know, now some of us who are preternaturally charming and handsome, do you still struggle to go out and converse with the outside world, somewhat of a curse because you don't know if people are just reacting too strongly to your inherent magnetism and maybe you've, uh, you just got to stay home. Maybe that's what happened to him, the computers instead,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "he pulls off the adorable, but the adorable door can very well in this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hmm. Hmm. And then we have, uh, the last one you called them out briefly, but we didn't talk about them. So Whistler played by David. Streatham a young David Streatham, who is that's straight"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "them. We have to, we have to pause the podcast because Jason straight them is a person. Jason,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this is straight, straight, straight"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "there. There's a, there's an air and an N in it straight there's no M what that does name definitely doesn't end in and out. Is it straight? Yeah, something like that. It's actually a pretty difficult thing, but it ends, it ends in an Aaron and not an M someone did put"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "the correct pronunciation in the middle scores."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Heck chat."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "think your, your community's trying to, to,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "you know, they're trying to give you the support"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "they're trying to, they're always trying to help strengthen. It's never quite enough. Uh, yeah,"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "can't read and talk at the same time. That's hard. H is illiterate. So, uh, so we have the introduction to Whistler and he is reading Playboy in braille. He reads the articles. Yeah, well, so we can catch them halfway through. They are in the midst of pulling off this great bank heist. And so I love how they have the Tradecraft and we'll talk about it as we go through the movie, but trapping the phone lines, pre-planting a smoke bomb doing the break in to turn off the alarm. Um, like all of that, uh, even kind of like complimenting the rental cops so that he is less suspicious or whatever, just really"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "great. Yeah. And I also love it. It is all great. And then they also have, um, Redford. Do the, the fall over the, um, cat or whatever, which also kind of early on gives the nod that they're a little bit fumbling in a way that I think also kind of adds to the humor and also undercut some of the ways in which some espionage movies make it all so tidy that it's like, they're always doing everything perfectly and there's this kind of air of, um, they're, they are a ragtag group, which early on they set the tone around as well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Very effective. Just like in, in like five seconds, they introduced that little bit there. That's cool. I also like the fact that you're off balance, right? You think they're pulling a bank job and it turns out they're actually doing a penetration test. Um, so they steal the money and then report that's part of the report that they're doing out."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "don't like that. The bank woman that is. Yeah. He says, this is a living. It just says not a very, not much. Well, I love that. I love that."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love that. I would love to be at a bank and like doing some kind of transaction, like pulling some money out to go play poker or whatever. And they're just be like, oh, well, I don't know if you can afford this jackass. Like, that'd be great. Nice. I like, I love that idea."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, so Jason, you had called in that this was, you know, the SF startup, uh, movie. And so we go straight to a very accurate portrayal at a San Francisco exposed brick startup office. So talk on it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, I mean, I was amazed cause I actually haven't seen this movie in a while and this actually looks stunningly like the medium office, like the obvious office that we rented in like 2012 or something like that. Like it really like that is what, like the downtown LA. San Francisco startup offices look like for sure, with"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "loading meeting room"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "in the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "middle definitely happened. Yeah. We had one of those for sure at some place. Like I love, I love that part of it. Like the first office I ever worked at in downtown San Francisco, the blogger office in 2002 was a, like a detective office, like it's in the Chancery building, which is like on market street, uh, near Montgomery and market. And what, and it's like, uh, it's like, uh, like the office was like a two room where like, there's like a, you know, it's literally like a Sam spade office. Like there's a closet with a sink in it. And like, you know, like it was like, you know, with a fancy glass window and like, you know, it was, and all of the exposed brick stuff. And, uh, I thought it was very accurate. That's like, one of the things that like I love about this movie is that it does feel like, and like they all like the other part of it. That being a great start-up movie. They don't really know what they're doing. Like they're sort of constantly being caught, like flat-footed by like the new things that come in, like, you know, these, these guys from, you know, quote unquote, the NSA show up. And they're just like, I don't know what the hell we're supposed to do with these guys. And they're like, they just really don't have, you know, they, there's a lot of weird interpersonal dynamics and like, you know, I loved it. Loved"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it. Well, let me back up, just let me just back up for one second. So now what was your first, uh, your first startup office in, uh, you know, in, in a bay area or, or elsewhere?"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. Well, I've mostly been in the New York tech scene if I can call it that. Well, the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Etsy office is ridiculous. I mean, the, the, yeah,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "and while I was in the original Etsy office, which was, uh, less built out than it is now, and much more humble and scrappy, um, it was fantastic and like a fun, it was a great place to work. My very first startup was like a five person startup and we rented. Like a shitty little office space in, um, here, Madison square park, um, they call it the Silicon alley. It was like very bastardized version of Silicon valley. Um, and you know, that startup lasted for about 11 months. So one shy one month driver one year contract rent, but I don't think I've ever worked in an office that. Spacious as this one is for apparently five people. It doesn't really seem like what are they doing well, and obviously it's also not to jump forward, but there's a scene later in the office where it's decorated balloons. I'm like, yes, they're an office manager. Who's restocking the mini fridges or what are these guys really good with balloons?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "we definitely did not see the opposite. Good point about the office manager. Well, I mean, there's a lot of weird San Francisco real estate stuff in this that like kind of, you know, sort of trips, you like Mary McDonald. I don't know what her financial situation is, but she's like teaching piano in like a $45 million mansion. And like, her apartment is probably like $8,000 a month or something like that and contemporary prices. So not sure how all that works out, but it's going great for her."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "And I'm sorry. I'm sorry, man. I know you're trying to keep us going in Chronicle order, but is she a piano teacher or is she a math expert? I'm very confused by what her actual like expertise is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "in this movie. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "no, that seemed very confusing to me. Yeah. I didn't quite get that. She clearly as well read and, and, uh, had really smart, uh, but also teaching. In a mansion, it's going great."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "need the spinoff. I need the prequel of just whatever she was doing before she met Redford or how she met Redford."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "mean, we will, I will later go on a short rant about the underdeveloped female characters in ferry, but"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we're going to, we're going to get there. I'm"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "not yet. I know."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "know. Yeah. I just want to call out, uh, just while we're on the startup office. My first startup was at second and Folsom, um, and it was an old candy factory. So it literally had these 25. See you ceilings of all exposed brick with the conference room and then the servers like up racks up on the second floor that you could see them. And I remember this was critical path. I remember walking in and there was so many people, this is 99. It was so frantic buzzing. Like my interview was literally at the front couch when you walked in the front door because there were no conference rooms available, nothing done. And people just sort of came through and interviewed. So that kind of frantic action of early startup days, I missed that. Uh, it was a really fun, fun part of San Francisco history. And this is like a little bit before then. There's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "no offices at all anymore. So, you know, it's all, it's all just artifact. It's like, we're talking about fax machines. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Well, and so, so they get approached by the NSA. So talk to me about, uh, Timothy Busfield too"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "many buzz Feld, west wing, 30 something. Yeah, just a great, just a great one. One of our greats, a really good, a really great character actor. Super fun guys. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And he's really fun in this. Like he has got a great kind of like a spunky fun attitude. Uh it's good job."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "And I th I think the scene, they do a good job of like both the exposition needed of establishing who the characters are, where they kind of run through the rap sheets for each of them and establishing their credentials as hackers and as outsiders to the system. Um, but making it still pretty like snappy and fun, um, it doesn't feel like too heavy handed a narrative ploy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Th that's one of the things about this movie. That, again, I guess why I compared it to rounders is that the flow of the movie, like the way in which it does, like exposition and just gives you exactly what you need in each scene and the way it connects that from one scene to the next, without it being like this weird kind of like, okay, like, you know, now we're like somewhere else, like, it's just amazing, like, uh, like it's, it's such a well-crafted movie and the storytelling, uh, and like this whole introduction of like the NSA guys is like a good example of"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that. Well, so yeah, and specifically once, once, uh, you know, Bishop sees what's going on and he says, I don't work for the government. National security agency. Oh,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you're the guys I hear"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "breathing on the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "other end of my"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "phone. No, that's the FBI. We're not charter for domestic surveillance. Oh, I see you just overthrow governments set up friendly. Dictators. No, that's the CIA. We protect our government's communications. We try to break the other fellows codes. We're the good guys, Marty. Jason, anything we need to know about how, uh, you know, this stuff actually works and, uh, jurisdictions between different governmental. Well,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah, I mean, the NSA can operate domestically, like, you know, unless the exceptions, exceptions, exceptions and like the, the, I mean, the funny thing about this is, well, two things, first of all, this is almost contemporaneous with the time when we covered Goodwill hunting, when, uh, when will was interviewing with the NSA. Uh, so maybe Will's on the other side of these, on these satellites. Um, and, and two is like the, the technology stuff in the movie, like the word internet, I think doesn't appear in the movie at all. Uh, and, and yet, like the idea that like people would be trying to. Uh, breaking encryption is obviously very contemporaneously sound. Uh, and the idea that, the idea that maybe the NSA has created backdoors in core encryption algorithms, uh, in order to gain an advantage, uh, it turns out just to be a thing that actually happened. So like, you know, there's, there's a lot of professions in this movie. You know, both like a spying standpoint, but also just the technology part of it. Um, and that's pretty cool for now for how early this movie is."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. I'm curious, I'm just in this like such a fascinating perspective. How much do you feel like the black box anywhere? Almost getting too. So I feel like I'm not like how much do you feel like it is a believable, like ploy in this story versus kind of being a little bit more of a MacGuffin of a, like the cigarette box that does everything for"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "everyone. Yeah. Yeah. And th th the idea that it's a box is a little broken, right? Like, cause you know, it probably would, it, it, it, it couldn't be a little box in one chip. It couldn't be a chip like that's, uh, that's the only thing. That's the only thing that doesn't really mean. Since technically for the time period or whatever. Um, but the idea that like there's a giant box or a bunch of boxes that are trying to break encryption. Yeah. That, that, that makes sense. You know, they're, they're just not gonna, you're not going to be able to lift them"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "in your briefcase. Uh, well, and I will give a shout out to dear friend, Peter Kafka. Um, the latest, uh, episode of Recode media has run in Farrow on it. Um, and it's called, we are living in a post-privacy age and it's about an article that he wrote for the new Yorker about Pegasus, uh, the spyware, uh, piece that is basically getting people's phones, cameras, microphones, every encrypted messages, everything, uh, that's being used to target that. And, um, some of the, some of the concerns that we need to have, and I do, I definitely thought of Bob Lord, uh, listening to that and just constantly be updating, making sure you're on the latest version of the software and choose your platforms carefully. And also check that part out. I haven't listened to it yet. It's good."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. I just, I mean, no, the, the surveillance aspect of this movie, which obviously runs through the net as well. So, you know, obviously it has been only more relevant, um, in our modern age of just the amount of information being collected and the amount of surveillance happening at all times."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And it's kind of amazing that all of those, like, you know, like cosmos whole speech about information, like that's what, this is all going to be about. Like that, like all of that stuff that's like in the politics of the movie, this is 92. It's both before people had any conception of what the internet was at all. And it's certainly well before advertising online advertising as a surveillance engine existed as any concept like, you know, it's, it's incredibly well spotted, um, thematically. So I'm pretty, I'm pretty impressed by all that stuff. And certainly"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "again, not getting ahead of myself, but the end speech by cosmos really like sums that up nicely in terms of the power of information."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, it's incredible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's incredible. I have to apologize the age you go, where you want. So on this podcast,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the speech, thank you. Jason cosmos says, wore out the road from a world war and it's not about, who's got the most bullets it's about who controls the information, but see, and hear how we work, what we think it's all about the information"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "are you."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "destroyed that thing"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that notion of, uh, he wants to be a hacker. He wants access to it. This is Bishop, but then also is afraid of where it's going to go and how it would be used. Th th the end"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "point of the movie. The one thing that I don't quite get is like, uh, It's basically revealed that the NSA was doing this essentially as like a rogue operation to get the decryption black box to not spy on the Russians, but to spy on the other governmental agencies or other domestic targets. Uh, and I'm not entirely sure. Both like, technically I don't quite understand that. And then, and you know what, they're what they're saying. The Russians have different codes, like, well, like what is written in Cyrillic? Like what do you mean? That's just a plot point. Right. But yeah, but like, it's just a plot point, but I just don't know what it points to in terms of like, I think it's just a piece of like paranoia, like, oh, there's this government agency who's like running its own. It's also, I guess, I guess it's both two things. The medically it's there's this governance agency and that's running its own rogue operation. That's something that's freaky in this new world of information surveillance. And then shoo, it's a. It's a plot device to get our heroes out of trouble, because otherwise, like if the NSA was real, like, and if they did an authority to do is they could just arrest these guys and we wouldn't have a, you know, he wants you to work on peace on earth in that. The"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "other thing that weirdly does though, is it also kind of make, it takes like the cold war aspect of this movie off the table. Like, you know, there's obviously this Russian element throughout and in a weird way that Russians kind of independently like good guys in this movie, like Greg is a little bit of a hero and, um, and it's not the Russians trying to steal the technology. So I don't, I'm guessing that was an inadvertent, but, um, I actually do like that it repositions the espionage thriller as a domestic story, which so often it just becomes like some foreign government as like the evil villain. And this brings a little bit more nuance to the story"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that is true, that I like that it, it does end up becoming domestic focus and it makes sense given when the movie's set that it existed in this like Russian interregnum of like, oh, the Russians are chill right now. Like, you know, the Soviet union. And then like it's not before the current stuff happened. And so, you know, they could just be fun and we can go to a concert together now. And they're"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "very culture they"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "have. Yeah, exactly. The supply now has a business card that says cultural attache."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Yeah. I love that line yet. It was like, it's been a confusing two years for folks."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. It was a real world change. Right? Like that was a huge, that was a huge thing before we were almost at war with"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "them. Yeah. The other thing I forgot to mention in the opening scene too, just on this same vein of, um, we're talking about, I love that the opening scene really cements the movie also in political activism that like they are hacking, you know, for political purposes. And they're sort of like this idea that there's, she's like leftist college students that are out there kind of trying to like make the world better. Um, which obviously also is where we kind of come to at the end. And again, it's kind of an interesting, um, divergence from the typical story of just like government versus government. It's really more of a, like within a, a philosophical. You know, activists, political mindset within the U S government or within like the us political scene. And it obviously ends there as well. It's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "interesting too, because like on that point and like, you know, Derek assets and Chad was like, it reinforces the more left his origin story of modern computing. And like, I think that's, I think that is true. Although I think like the left is origin of modern computing is more libertarian than it is like, you know, people hacking to, to, to mess with the RNC. Uh, and so like, I think"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "prank based right. Initially. And so I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "think, I think the part that it misses in terms of like internet culture, authenticity to internet culture is the part that. More about it for the laws and like, you know, more, you know, that, that is more of that, like anti-authoritarian libertarian"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "in bend. Right. And also just like in this moment, we could maybe use a little less doing stuff for the laws and like, just like actually doing stuff."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It would be great if there was more Martin bishops, like, you know, sort of, uh, in our, in our, if that had been more of the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "early internet, Martin Bishop can buy out Twitter."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't know what he's up to, but if he's available, I mean,"
+        },
+        {
+            "name": "NELL CA",
+            "timestamp": "",
+            "text": "Cosmo is kind of an anarchist, right? It's it's I just want to overthrow all the systems and tear it all down. And, and Bishop is a little bit more of the moderate, you know, hacker that just wants like things to be better for the world. You can believe he has a moral compass that is not as extreme as the sort of it's all broken. So we're gonna, you know, fight club. It,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yeah. It was a direct fight club lift for sure. And only seven years before fight club. Right. That, that whole literal destroy the project may proof of property. Yup. Yup,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "exactly. Which I'm sure has origins before, before this story too. I mean, and in hackers, the sort of hack, you know, that same hack, the planet hack the planet. And also, like I think this movie also references like the phone company has too much money, which is why freaking is not a bad thing because you're taking money from like the evil corporations and returning it to the people. Um, and so you definitely see some of that in this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, I just to backtrack for a second, can we just talk about Donald lobe as another it continuing, uh, you know, set of rockstar, mathematicians on dune pod? Oh my God."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The mathematicians who fuck, like what is going on with this? Like Hollywood is just got a wild concept of what's going on in the professional math world. Like the fashion, the swagger, the it's just, it's just amazing what they think is going on in these math departments."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You didn't have that at, at Princeton in the, uh, in the physics department. And that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "wasn't, that wasn't my experience of the math department, but maybe I took the wrong. Yeah. I don't know."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my gosh. Yeah. I just thought that was kind of, I thought that was kind of wild and also like the whole scene of them surveilling him and with a female scientist and, you know, Carl trying to be able to watch, uh, while, while they're, while they're getting busy."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "thought it was, I thought it was really, really funny. But then I also liked the whole, like the break-in and like, you know, him tricking the guy to push the button to get up there and defeating the key lock. Um, and also the him lying and coming up with, uh, you know, what he's going to say to the woman on the fly, I thought was Redford kind of really having a lot of fun. And, uh, and that was super entertaining. Yeah. Yeah. Yeah."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "also, I mean, I love the, kind of the setup for this break-in where it's Whistler, who calls out that it must be the answer machine box when he does, when they were listening to the tape over and over again, trying to, um, identify the password via the video and he's only listening to it. So I'm going up, sets up again, like throughout the movie, you'll have Whistler kind of using his, uh, his super power to see what her hear, what others can't. And I love, I love that set up. Yeah. And the joke about the, you know, how he breaks in. I passed them. Electronic block one is a kind of a classic."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh yeah. That's a good one. It goes on for awhile. Someone pointed out when we were watching the trickle head, it's got, there's a lot of like, Uh, Indiana Jones shooting, uh, shooting the guy with the sword and it's just like, yeah, there's, there's a simpler solution. So"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "there was a, you know, when they've got the box and you're only like 35 minutes into the movie or 40 minutes into it, it's very clear that something is about to happen. Right. And there is a bit of a, like an eight or nine minute scene of them hacking the box. Um, you know, whistlers figuring out how it works and they're starting to hack different things. And at the same time you have the anagram work on Scrabble. So first of all, how good are you guys at Scrabble? Um, like, and, and how good are you at anagrams?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "took a couple extra minutes before logging on to this, to this zoom call to come up with the anagram for my name. Cause I felt it was important for the authenticity of the, of the podcast experience. So, oh, when you got that. Yeah. Oh, okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We'll"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "do"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Tel"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "logged jabs and on is,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "well, there was nothing for H and there was nothing for Matt Herero so I put in dune pod and I got pounded. Oh,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "okay, great. There you go."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's as good as I could get. Yeah, no,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I, I thought that was fun. I love, I love that scene of Whistler. I mean, the glasses alone of him, of him reacting to like what's on the screen. It's just beautiful. I mean, that's another thing we haven't talked about yet is that the cinematography is gorgeous in this movie as well. Like all of like the, all of the dark shot with the lights and like all of the, I mean, it's hard to make people at computers look good. Like that is not a particularly compelling visual image. And this is awesome. Like, I don't know exactly why Whistler needs. Like, you know, those glasses, well, those glasses, or like, you know, he's got a drum machine and a sequencer as part of how he's packing set up unclear, unclear why, like, you know, craft work is needed in order to break into, you know, banks and whatnot. Um, but I like it. I'm glad that it's in there."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. This is DP, John Lindley who also shot field of dreams. Um, really beautiful. Also"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "really great part of the scene is that before they get to the, um, the puzzle solving part, the dancing scene is know fools, which I feel like. The fact that that's, it's clearly a set up for them to look foolish as a few minutes"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "later. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you think it's a, a Harvard, do you think it's a anticipates a blockchain, a critique as well?"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Oh, wow. I wasn't going to go there, but you had to mention blockchain. Is there a blockchain noise yet? We don't"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "have blockchain. We don't have a blockchain recurring segment yet. Not"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yet. Um, so, so they, you know, so it's a code breaker. No, it's the code breaker. Um, and so they only"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "for American code as we"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "later learned, but so they go to hand it off to the NSA at Hills brothers, which I worked in that Hills brothers building, um, in 2002. So Google office. Now it's a Google office. Now. It wasn't then, uh, again, this was at critical my second time at critical path. Um, and I just noted a couple of things. We were on, I, I think like the fourth floor or something, but the floor above us was, uh, secret service. San Francisco. And I remember like having lunch, looking up into their, uh, into their room and they had an in the line of fire poster up on the wall. Yeah. So like there, they were definitely, uh, they were into it also."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "remember one of the it guys saying that the floors were sealed, like the crawl space, you literally could not get up into their crawl space, um, between our floors. So great secure attack. Also the Karmann Ghia that, uh, he pulls up in is the same one Mike Myers drove in. So I married an ax murderer, also shot in San Francisco. Oh,"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "haven't seen the"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "fastest, well, that's some of the better kind of San Francisco footage. Very well done icon. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "filming. Yeah. Then the other thing I was like, I was like, he's wearing this Letterman jacket, like, is that all he wears? And it turns out that was the same Letterman jacket from the natural really"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's Harrison Ford. Couldn't be bothered to go to wardrobe"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "facts. Exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like, I don't know. I got it."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "mean, that must've been Redford's choice. He was just like, I'm really attached to"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "this jacket and this is good. And he's like, no, no, no, no. He's like, well, we've got like, no, no, no, this is good. I'm going to wear it. You can just like, it'll take a minute now I'm getting it. Let's just shoot. Let's run one. Love that. Love that"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "for him. So they, you know, they, the guy steal it, he ends up going and trying to get help from Greg. He gets captured, he gets framed for a murder. And then he gets put together with Cosmo after being stuck in a trunk, uh, and hearing the sound as they're driving to the office. But so there's a couple of things here. So first of all, Ben Kingsley. This pony tail, this kind of small micro ponytail. The is a weird"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "choice. The ponytail is"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "very much. That was like the end of that moment. There was, um, witches of Eastwick. Uh, Jack had that same ponytail. I had it when I was kind of growing out a pony tail. Like it was definitely a look. I love that you had a ponytail phase. Oh yeah. That was never"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "an option for me. That's how my life is gone. There was never a time in my life in which a ponytail was an actual option. Like it just never, it never came in my chair."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, I don't know what to tell you. Well,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "the small ponytail and waking up next to a fish tank with a shark in it, or like the biggest signals of like villain. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "exactly."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "have to, I couldn't, there must be other movies with like villains with giant fishing. So I couldn't think of them. I was like,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "there's a James Bond. There's the, when he drops a guy in a fish tank, for sure."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Um, well also, uh, you know, you have some pretty awesome, uh, you know, development here. So first of all, he is able to identify him because he does that the close hand magic trick, uh, aspirin bottle. So, Jason, I assume you saw the credits, uh, the, the close hand specialist, there was a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "different, it was someone else's hands."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Uh, well, no, just the consultant, the close hand consultant,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the consultant, you know, as it would be, it was it Ricky, Jay it's, Ricky, Jay, uh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's amazing, Kathy. We should do a Ricky, Jay, uh, you know, starting"
+        },
+        {
+            "name": "JASON J",
+            "timestamp": "",
+            "text": "month on doing pod. Oh"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "my God. Wow. Yeah, that'd be incredible. They also, uh, you know, he describes how he brought Xcel to the. Oh, yeah, that's a,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's a big breakthrough. The mob didn't have pivot tables before Ben Kingsley or good"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "financial practices. And he all goes also back to Jason's point earlier, this is, this is another reference to freaking he made, he drops here about how he talks about how he helped them make free phone calls from jail, which I think is also not a nod to some of the, um, hacker culture that they are trying to image themselves in. But. I loved, I loved the, like, it was a mess and I used some pivot tables."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. I had like sort of a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "freaky crisis of identity when he was kind of going through that story. Cause I was like, I've always been like a very rule following person. So I don't think there's ever a time in which I would have been like arrested for hacking, but in the world in which I was, and like went down alone because my partner ran away to Canada, like a coward and changed his name to a very similar sounding name. Like I could easily see myself just being like I can project manage the mob. Like, is that a skill that like, I can, uh, I could, I could market my way out of here. Like I can, you know, we can, I can run scrum for the mob. Like, is that like something that we can, I can survive doing that? Like that, that definitely is a path that was available."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, my God. Nice, nice. I'll let this was prescribed. I think that this was"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "during the war. It would have been a waterfall waterfall. There"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we go. Yeah, exactly. Well now I, I just, I love the fact that they're sitting on a Cray, Y M P um, super grass looks great. The idea of designing computers that look like furniture and look really cool. When I was at, uh, Minnesota regional networks, when I was in Minneapolis getting my computer science degree, the Cray supercomputer center was one of our customers. And it was amazing because the whole data centers full of these kinds of computers and they had blue and red cabling going in for arteries and veins for cold water and warm water. It was amazing. We really"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "were sexy looking. I mean, like they really, someone had a theory about how to, uh, what th what they were going for. And we never really"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "got back"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "basically furnitures,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right. When they're like so hot though."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like, I mean, like, it's not like anyone's actually going to go sit on it. Like, it was just like, it was, it was sculptural more than like it was, you know, anything else, but it's just, it's just beautiful. Love, love that they had that in there sort of felt like a Tron office too. Um, I was thinking I was, I was, I was excited to see that the vibes of the Toronto office were still, they made it into the nineties."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hmm. So they go back to Liz's apartment, um, as after he is dumped and they're trying to kind of figure out what's going on. And so I like a couple of things, first of all. Yeah, they do some social engineering. They go through his trash, um, and notably, they pull out a captain crunch, um, box, which has a shout out to captain crunch. One of the original phone freakers who had the whistle that would give the free phone calls. Um, also we have the whole montage of Whistler figuring out what the sound effects are in which bridge they went over and where, where they went. So Whistler who is godlike is basically Daredevil, um, was patented after Joe in , who was a blind telephone expert, born with perfect pitch who was one of the original phone freakers. Uh, so I thought that was really cool. This"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "scene is I think one, I mean, I think it's the best scene in the movie and I think it's like, I think it's one of the best scenes just generally. Like, I it's, it's just a, it's a, it's so great. The way they put this whole thing."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "The fade from them, recreating it in the apartment to them on the bridge is like, so sort of fun payoff. Is it the Dumbarton bridge?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It is Dunbar. Okay."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Thank you. I wanted to make check with the bay area folks, make sure I knew which one it was. I think they"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "like in Fremont or something Hayward or something."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "When I worked at Facebook, I would stay at the, there was a hotel across the dimmer and I would spend a lot of time going back and forth across that bridge. Cause it was like, what was the closest, but I never, I never thought to check whether the sound actually checks up compared to the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, we're probably busy. So then the last piece they have to defeat in order to break in and steal the boxes to get the voiceprint. And so we have this whole thing with Liz getting the words from Werner, uh, played by Stephen Tobolowsky, who was Jack Barker on Silicon valley,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "uh, before this is before his Groundhog day turned to. Oh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yeah. Yeah. Interesting. Yeah. I just saw Groundhog day for the first time. Last year, two years ago, it was good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. We don't have time to cover Groundhog day. Right now. We'll have to do a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "separate pod on that. Uh, but I did find it was pretty wild. Um, you know, when he's talking to Doris and he asked her if she'd like to have breakfast with me, uh, Doris, would you like to have breakfast with me? Shall I phone you or nut you? Yeah, check please. What is that? What does that mean?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, it's like, are you going to sleep the, ah, yeah, come on,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Matt. Did you get married twice?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh my God."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "The depiction of the depiction of like, I think they call it computer dating on this. It's pretty fun and pretty great. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's that's my only other big plot hole gripe. Is that the whole, uh, like when, when she ends up at play tronics or whatever, and, and she's getting away from it, like they check his office. No, one's there. And then banking's is like, wait a minute. I computer set up you. And you know, it was like, well, come on, man. Like computers aren't, it's not like the computers, all they could do like three things right now they can start like a recipe. Like it's not even like a thing that really, you should doubt that they would set these two people up there might own, these might be the only two people dating."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "also think right now a lot of people would say that like online dating is not a perfect science. The idea that it's like computers will make like perfect matches. Narrator was not, not quite good at predicting the future around. I mean, I also just love the scene of, um, when she's at his house and she's stealing his ID card, he's discussing, um, how the, the dinner is only 400 calories and the perfect meal is what you find at the bottom of monkey's kitchen just seems like such an awful date."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "someone pointed out that he's like all obsessed with his like monkey cage calorie counting situation, but then he also meets her for like dim sum and is just shoving pork rolls in like, you know, pork buns in his face, uh, at the beginning of this date as well. So he just seems terrible wild he's he's"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the worst. Yeah. Well, so they are able to defeat it. They're able to get, get the box and get it out, but then they are captured. Um, and we'll, I will say my only note on the whole slow motion infiltration thing, like I think this was done much better in mission impossible one, uh, by Tom. Right. But much"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "later, right? I mean like a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "couple of years."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "dunno. I dunno how far, far off it was, but yes, I it's true. These, these are more for jokes"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "than it is, you know, for, for"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "serious. Fair enough. Um, well, anything else you guys want to hit on that? Getting out of there and we gotta want to go straight to James Earl Jones on the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "highest I there's a couple of things I would hit on the highest one is, uh, everyone just sleeps at this office like Ben Kingsley is there, uh, what's his face from the west wing. Is there they're private army of like 50 dudes? Is there, like they it's just like 2:00 AM on a Wednesday or whatever time this is everyone's there. Everyone's just sleeping under their desk at this toy factory. I"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "also have to say the other, another not pothole, but it seemed like a little bit of a stereotype of this type of movie was when. Uh, Cosmo leaves the room. He's like, I'm going to kill you, but I'm going to leave the room when it happens. And so of course there's the like opportunity to escape and then no one seems to catch them for quite a while, while Whistler is driving the car, which is fun list they're scene of him, him totally ban. Um, but it's like, of course, cosmos leaves him unattended long enough for him to escape and then do the whole trick of the wrong box. You know, it's, it's very tidy. It's a very"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "tidy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah. Yeah. Well, they did it. They, you know, they, they make their way out. Uh, he does not, Cosmo is not willing to shoot him after thinking he's gotten the box. Um, and he escapes and we are presented by, uh, James Earl Jones playing Abbott, uh, from the NSA. And I like, I don't know about you guys, but I know. I dunno, like core memory program. Like when I hear his voice, I just instantly stop what I'm doing and I'm locked in. Um, he was great in the Jack Ryan movies and, and here, I think, I,"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't even like really read him as Darth Vader anymore because he's, I I'm like, oh, it's like, you know, uh, it's fossa or whatever. Like, you know, it's, it, there's just so much, there's so much other stuff. Um, he's delightful in this. Uh, it's great that he shows up it's fun. Then he also in one scene goes from being like the heavy, like he's like a serious dude. Who's kind of like, you know, he's with the people with Uzis to like kind of being the comedic foil. Um, like that's a clever, that's a clever bit of writing"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to Whistler. Whistler says that, you know, they are each asking what they want a Winnebago and a, you know, first class tickets or whatever Whistler says. I want peace on earth and"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Goodwill toward men. Oh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this is ridiculous."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Are you serious? I want"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "peace on nurse and Goodwill. We are the United States government. We don't do that's what a thing just"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "going to have to try. Yeah. That's a good joke. It's a good joke. Well, and like the, and the river Phoenix hitting on the lady agent, uh, with the Uzi, like that's one of those jokes that like, I really think only works because river Phoenix is so charming. Like, you're just, you're just like, oh yeah, like it's fun because it's like river Phoenix. And like, you know, she's got a gun and like, whatever, like, you know, it's like, it's not, it's not as weird as it would be if it was like, you know, Dan Akroyd trying to do"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "Well, it's a little confusing, cause they're like these people are staying there with guns yet. Somehow the team is all still able to extract demands from the situation. The whole gun is clearly just like not an actual real plot device. And it's just to make her look kind of like a bad-ass and then, um, but this also, I mean, I will say this is, I think the third woman in the movie total, and just exists to basically be a like plot device for river Phoenix to"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "hit on"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "will be definitely feels the backfill test of"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "oh yeah. No way. Yeah. It's it's no good. I mean, that's the third woman. The other one is the one that, uh, once the hot fat"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "petition. Yeah. It's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "like the best maybe besides, uh, our forever. Uh, from Battlestar, like the, the best female character in the w in the movie is probably the, uh, bank clerk who just gives, who just gives him shit."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally, totally. I love Liz, right? Like Mary McDonalds. Amazing. She's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "good. It's like, well, we don't actually know what she's up to, to like the point that we made earlier. We're like, is she a mathematician? Is she a musician? Like, what is her whole vibe? You know, she's,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "that seems to be like flirting with men to extract words from the so,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "but I think if this movie were done today, like there would definitely be a third act twist where she's actually, you know, on somebody's payroll and doing something and blah, blah, blah. She was, I"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "think she did, like, she played the part, like really well for what the part was and made it like, she's funny and like, in on the joke and, uh, I think she makes the most of it. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "well, so the end of the film is he gives back the box, but he holds the chip and then, and says that it didn't work. And then he begins hacking he's using it now, Bishop to hack the RNC and give their money away to, uh, you know, uh, Greenpeace and amnesty international and the United Negro college fund. So like, they're not going to figure that out and come after him again."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean, you know, look, man, they clearly, they clearly don't have the best people involved right now. Like, you know, they, they, they don't have all the skills yet. It seems fine. They only caught them. It's unclear how they got caught the first time. It seems like they were just in like the wrong place at the wrong time, but you know, they're fine. It's going to be fine for them. Okay. They're going"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "to go with that. It's good. It's a very tidy movie. So like it, like one of the things that's comforting about it is that it kind of wraps everything up very nicely. And you kind of put this arc of starting with the, with the political hack and ending without turn. Yeah. Uh, hacker with a heart of gold type of, um, theme."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Good guy. I like Eric every time Redford you just talking, I'm just like, I love what you're doing. I've want to follow you. Like tell me, tell me where to go. Um, he really has that, that absolute charismatic, uh, capability. Well, that brings us to now who would Tilda Swinton play? Yes. I've been thinking"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "a lot about this, cause I know this is a recurring question."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "mean, I feel like the obvious answer here is Cosmo. Just like, as like she plays like the bad-ass character."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh shit. I didn't think about that. I love him."
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "So, I mean, I think that would be my vote nights or maybe the Russian just cause I feel like she'd also, I would like to see"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "her with Russian. Oh, Greg. Okay, nice. I am going to go ahead and take my choice, which is what. Um, I know, but she be incredible. Like imagine her like giving all of that. I don't think we've seen her play blind before. Like, that'd be impressive. Very, very good. Jason,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm going, we had this in the chocolate head at the time and, uh, I think, and it's also the, now the chat favorite as well, which is tilled up, plays the Robert Redford role. Uh, they have like, they're both redheads. Uh, so it makes sense. Um, and I, I, it just sort of like, if you picture it in your mind, like her doing some of the Redford scenes, it kind of, it, you, you you'll, you'll see why it works. And I think Redford is not above replacement in this movie. Like obviously great. But not the, not the strongest"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "part of it. Um, I could definitely see it. Yeah. That's amazing. Awesome. We did it. Love it. All right. Well, let's do some"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "letters. Let's do some letters."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right. Here's the first letter we haven't heard from this guy for awhile."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hey"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "guys, this is silly. I wanted to come out of the voicemail, retirement, uh, to chat about a favorite of mine, sneakers. I think one of the all time great heist films, um, really underrated gem."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think you've just got such an incredible cast, um, across the board. And, you know, it really feels kind of like a precursor to ocean's 11, um, which is another one of my favorite high stones. You've got kind of Redford doing that sort of Danny ocean charm. Um, this was one of my dad's favorite films. This is probably my third or fourth watch, um, with the chocolate high. And, uh, I thought that it just holds up really well and kind of, uh, surprisingly prescient in terms of. Kind of what role data would play, uh, in our lives, but I had so much fun. Um, and, uh, really the scene that, that stuck with me back then, and it was so fun to watch, uh, this time around is kind of when Whistler, um, goes through the whole recreation of, you know, figuring out, um, where, uh, Robert Redford's character was kidnapped by doing the sound and the gap between the bumps in the road and all of that, such a cool, uh, smartly written scene. Um, it's really emblematic of the whole movie. So anyways, looking forward to hearing the conversation, uh, keep up the great work guys, and I'll see you in the chocolate."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Always good to hear from dune pod projectionist, silly Oswald, hardest working man and doing pad after I like that,"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "he called it a heist movie. It's like one of the things I think a lot about is like, what is the genre of this movie? Like, is it, is it a hacker movie? Is it a heist movie? Is it a comedy? Like I don't, I think it kind of hits on a lot of it. Very. Ably switches between genres in a way that's also kind of makes it fun and"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "rewarding."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And so it's like a paranoia movie. Like it is a throwback to like the, the days of the condor movie. Like it is this land, like, you know, like shit's going to go wrong and everyone's out to get you moving. I love it. That's great. Great, John rhe."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "really want to watch that one again. Three days of the condor is a really great one. All right, let's see what we have next. Here we go. The Cory phone is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "ringing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey, it is Corey from Austin, Texas calling about 1990 twos, movie sneakers. Okay. I have to admit, I didn't watch sneakers. I didn't get too busy watching space. Truckers. You remember face records, copper, Debbie, baby. Um, never seen it possible visual inspiration to the fifth element, even though I'm sure Luc Besson and, uh, John Paul got here and, uh, Mobius would disagree, but you know, I'm just saying, uh, and the other movie I was watching was the, um, cocaine base, slapstick comedy, very loosely based on Robert Louis Stevenson, uh, short story Jekyll and Hyde together, again, ever heard of it, 1982 classic. Um, but yeah, so I didn't watch the good movie. I was watching other movies, but anyway, I do know that, uh, sneakers has like a really stacked impact cast. I looked at up and thought it was like a ton of people in it. So that made me think like, well, quick come up with something. So I came up with a question kind of like a low rent version of Kevin question. Um, Corey's question, I guess, what are your top three Dan Akroyd movies. And then I kept like doing, just to throw you the curve ball. You cannot use. Ghostbusters cannot use blues brothers. All right. I'll start. Mine would be places, right. Neighbors. I know that's controversial. I know, but he's really good in that. And then of course, Dr. Detroit, which I'm trying to fill eight, John, I really think he enjoy Dr. Detroit. I think he should check it out. Jason, maybe you also would enjoy Dr. Detroit. There is a star Trek, two wrath of Khan joke at the very end. Anyway, that's different than you guys. Sorry. I dropped the ball, but uh, I'll do better next week. Alright. Later I love giving"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "skis comment about this voicemail. I was like, this is another podcast, please. Welcome to host his podcasts on our podcast anytime. Uh he's uh, he's always welcome. I like, I liked that he both asked the question and answered it too. That's good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, yeah. And then also like taking off, uh, all of the movies that I like, what am I supposed to choose next for 41? Like, I guess I was not that big into it. I know"
+        },
+        {
+            "name": "NELL",
+            "timestamp": "",
+            "text": "me either. It's just,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "oh yeah. Me miss Daisy. I think he was nominated, but yeah. Yeah. First"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "of all, uh, there's Ghostbusters too. That's not off, that's not off the table. So I'm going to put Ghostbusters two on the list. Fantastic. Fantastic. Don Dan Akroyd, uh, performance. Um,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's the spies like us. Like I spies like us. I definitely watched a million as a kid. What about the great outdoors? I don't remember"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that one. Oh, John candy. And that one, that, that one's amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No Indiana Jones and the temple of doom as Weber."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What is that? I don't know about that one. I dunno. Now we're just reading the data. We're trying to answer the questions. Stories like reading the den agro"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "filmography. Thanks a lot. Thanks a lot, Corey. All right. We have one last voicemail here. Corey, we're going to workshop your questions. All right, here we go. Hey, dune pod. Uh, it's Kev here. Um, Kevin's question this week is about my visceral"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "experience watching the movie sneakers."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, I enjoyed it. I think it's a well-made movie, but you know, the chuckle hut, 1130 on a Tuesday night. I was like, it makes sense. I fell asleep in the middle of this movie. Right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "then a couple days later I was working from home and I tried to put it on. And even in the background, I was like starting to fade a little bit."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "was like, what is going on then last night? Okay. I finally finished. But not before passing out and then just kind of soldiering through the last, like 45 minutes of it this morning. So, um, Ralph Kevin's question is, has there ever been a movie where"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "regardless of how good it is or how entertaining it is or how engaging the cast"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is? Uh, is there a movie that on like a core brain frequency level, forgive me, neurologists in the audience, um, that just knocks you out, just puts"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you right to sleep. Yeah, I think it's a really bizarre"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "thing. Honestly. I'm"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "kind of disturbed by it. I was wondering if you guys, uh, how did I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "insight to that? Looking forward to the rest of the road to 100, which has been absolutely great. You know, guys, um, I feel like I say it at least twice a month, but the show is getting better and better with each passing week. And I'm looking forward to this one too. So take care guys, and I'll"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "talk to you soon. That's great. Once again,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it's calves questions."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, I want to go, I want to go"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "back to court. Yeah. Sorry. Cam once again, it's Corey's questions. Well, well, first of all,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "we forgot. We've forgotten nothing but trouble. Uh, which I think is pretty key. All right. So nothing but trouble, Ghostbusters two and spies like us, the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "answers, somebody made an answer. So I'm going to say for, for sleeping, I'm going to take 2001. Given the number of times sleep, uh, watching 2001 as a young child. Um, as a man, uh, I can watch it any time I want as a man, but I stay awake as a child. I fell asleep to that movie more times than anything else. Now,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "do you have a movie that's put you to sleep?"
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "think I couldn't make it through Blair witch project, which is like, not because it was so scary, but just don't know what's wrong with me, but I think I'd like, didn't find the, like, I don't know. I couldn't, I just, I just couldn't hold it. Hold my attention. I mean, it was my very first."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, amazing. My"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "answer is the godfather part two. Wow. Which I, I legitimately recognize as a good movie. I've, I've engaged in a lot of godfathers slander on this podcast and just in life general, but I mean, I, it's obviously a great movie. Uh, it's just so long. And like, there's a lot of, there's a lot going on. It's like two movies mashed together. So I feel like anytime it switches back between the veto story and the Michael story, I feel like it's just like a cue for me to like take us news. Cause I'm like, oh my God, we're going now again with this other thing. Um, so yeah, that's mine has got another part to"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "do rot in the chat, says quest for fire. What a class. Yeah. That's"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "bet that one's right up your alley quest for fire."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Yeah, that was good. Not as good as a, I think, um, uh, Corey call-out caveman, starring, uh, Ringo Starr recently, he watched that, well, that brings us to next week on dune pod. It is time, Jason, this is the return"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "of the big ones. Oh my God. What a title? What a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "concept, as we said last week, you know, we didn't know what we were going to watch. We didn't know who our guest was. Uh, but we are going to go still on the nineties with one of the biggest Saifai classics of all time. At least partially inspired by generosity and Mobius is the ink. Cal. We are doing fifth element"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "element. Oh my God. I've seen this in a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "while. How are you now with this movie? I'm into it."
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "mean, it's so I haven't seen it in a long time, so I, I don't have any like, recent takes on it, but like phenomenal when it out. I'm excited. I can't"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "wait to, I'm very, very excited for this one. So fifth element is currently streaming on paramount plus, uh, in high Def it is available for rental and purchase in 4k, um, on apple and other platforms as you would expect. So give that one, a rewatch. We have joining us the digital branding genius, uh, behind Nike Adidas, IDEO, and more Katie ."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's amazing. I'm really glad. She's a great, she's a great one. She's a great person. Um, really smart, uh, fun. It'll be"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "great to have her on. Can't wait, can't wait to see it. So, uh, so check that out. No, uh, what do you have to plug coming up for democracy next? What's next"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "for democracy now?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my,"
+        },
+        {
+            "name": "NELL I",
+            "timestamp": "",
+            "text": "don't know. I mean, just, you know, for those of you who care about democracy and politics go smarts and midterm races, we got a big election coming up and, uh, have you follow me on Twitter? For as long as that is still a thing, um, at no-win N E L L w Y."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Awesome. We will have links to that in the show notes. And again, thank you so much, especially in the run-up over the next six months, you know, there's, we have seen more than ever. There's more to fight for. And, uh, you know, the other side is just becoming, uh, you know, they're going for it, uh, in, in unbelievable ways. So I'm looking forward to us taking up that fight, uh, between now and November"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "next week, we will also have the digital director of the RNC, which is ACE."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And that's it for this episode, I would like Jason and nail for an insightful conversation. Next week, we're thrilled to welcome the digital branding genius to Nike Adidas, IDEO, and more Katie . We cover one of the biggest Saifai classics of all time. That was at least partially inspired by Joda Roski. And Moebius his comic, the encounter we are of course, talking about the fifth element. Streaming now on paramount plus you've enjoyed the show. Leave us a five star rating and review wherever you listen to your podcasts and be sure to hit that follow or subscribe button. So you never miss an episode. We also have a discord server where you can hang out with us whenever you want. A link is in the show notes. Dune pod is a tape deck podcast. John, a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whip song music transcripts provided by Sophie shin. The episode was edited by Megan Hayward of edit audio and produced by me, Haitch. Thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

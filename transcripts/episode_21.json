@@ -1,0 +1,2141 @@
+{
+    "episode_number": 21,
+    "episode_name": "Mission Impossible Fallout",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:00",
+            "text": "neHey everybody, it's H. Welcome to the latest installment of Dune pod, your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "I was like, okay, okay. Okay. I don't think it's. That's it. That's the deepness. Cool."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:30",
+            "text": "And by Industrial Light Magic Visual Effects Editor Lorelai. David."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "0:34",
+            "text": "Is he the Leslie Nielsen a virgin? Well, I mean, I guess Leslie Nielsen was Leslie Nielsen of our generation. On"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:40",
+            "text": "this episode, we discuss the lady Jessica herself. Rebecca Ferguson in 2018. Mission Impossible fallout. We cover how much we miss traveling, dissect special effects techniques, and try to figure out just what the hell Tom Cruise is up to. Anyway. If you're enjoying the show, we need your help. Be cool like the Eastern heretic and leave us a five star rating and review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, Fallout."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:14",
+            "text": "It's I'm amazed I've been at ILM. It's been I've been here for 22 years in January. So I'm like I'm a gray beard over there now. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24",
+            "text": "For real do people tend to have like long tenures like that they're"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:29",
+            "text": "not so much anymore. I mean, it used to be a lot more. But it's still a thing. I mean, we there's a ceremony that we do every year. And I wish I could show you but it's in the other room. I'll show you afterwards. But we get a when you've done 20 years, there's a whole ceremony and then they give us a little statue and it looks like 3PO standing like the Oscar. Oh my god, I got my name engraved on it. And it's yeah, it's just nice, but it's nice. I mean, it's like it's a family there, because we've all been there for so long. And mine is literally my family because Michael works in me too. Oh, wow. And then Jules went to the Lucasfilm daycare. So he went to preschool at ILM."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:06",
+            "text": "Oh, my God. So were you at carner? Yeah, that's amazing."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "2:11",
+            "text": "It's been crazy. Because, you know, I was at Corona. And it was like, there were maybe a few 100 people. And now we're a global company. And it's insane to me, because it used to be when you train somebody, you would be able to like, talk to them and like sit down with them. And now you have to like write all this documentation and make sure that it's understood by people in Singapore, right? It's been crazy watching this evolve over the years. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:34",
+            "text": "I don't think I know what Kirner is. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:36",
+            "text": "Sorry. That's the old location in San Rafael where ILM started I guess for Empire."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "2:42",
+            "text": "Original, the original New Hope was back down there. It was in Van Nuys, and then yeah, I think for Empire and moved up to San Rafael,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:51",
+            "text": "right. That's a very nondescript set of buildings that are in San rafeal, I drove by it yesterday. And I was like, up there."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "2:56",
+            "text": "I missed that place. I mean, I like where we are now. And when you guys when we're allowed to have people back, I'd love to give you guys a tour. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:05",
+            "text": "Oh my gosh, that'd be incredible have been amazing."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "3:08",
+            "text": "It's a great place. It's a great place. But it's, you know, it was like so janky and full of history when we were back at Kerner, right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:14",
+            "text": "Did you ever get the did you ever get the Pixar tour? Yeah, like were they? That's a good tool."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "3:19",
+            "text": "Well, I mean, I get it. My friend showed me around. So I don't know if there's like, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:24",
+            "text": "it's like where they show you like the secret rooms and stuff because they like secret rooms built in their"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "3:28",
+            "text": "little Tiki rooms. Yeah. Oh, yeah. Yeah. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:32",
+            "text": "the Tieger and stuff like that. That's a good. That's an all time office tour. But you ILM would beat it for me. I just that'd be the pinnacle. For sure."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "3:40",
+            "text": "It's just kind of cool. Because we have like all these props, right. Like we have. Et we have a Yoda. Yeah. My"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:47",
+            "text": "sister in law was at Skywalker Sound. And so got to go see a bunch of movies over the last couple of years at the ranch. And it's just a base ad. I've been there before. It's just such a cool space."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "3:58",
+            "text": "That's a great place to sit. I mean, oh my god, that theater is amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:02",
+            "text": "Yeah, that's like a reference. See in the ultimate reference theater for sure. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:06",
+            "text": "The stag I saw I saw episode eight there. I can't remember if we saw episode nine there. But like all the Avengers, recent Avengers movies, all that stuff all played there is great."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "4:17",
+            "text": "Nice. Nice. That's a great theater. I just wish it wasn't so far up there. Like I love. You know, I used to be able to go up there during lunch when we were in San Rafael. But now we're so far away that I've been around forever."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:28",
+            "text": "Where do you wait, where's the office? Now? I missed that."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "4:31",
+            "text": "It's in the Presidio. Oh, yeah. Okay,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:33",
+            "text": "cool. Yeah, the Letterman campus. Yeah, I've seen the I've seen the Yoda statue there. I had a friend who had a startup and one of those in one of those office buildings there. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "4:43",
+            "text": "yeah. There's a bunch of tech stuff and the other buildings. I'm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:46",
+            "text": "in San Anselmo. So that's where I live. And so we're very George heavy. He's like, you know, right, right around the corner. And then we got the Yoda statue and the Indiana Jones statues in our public park. So pretty good. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "4:58",
+            "text": "I mean, I'm grateful that Rage brought everything up to northern California because otherwise we would all still be Hollywood Van Nuys. Yeah, that's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:07",
+            "text": "right. Well, let me just ask, what does a visual effects editor do? Exactly,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "5:14",
+            "text": "exactly. Roughly like to say, to put it in the most nerdiest terms possible that I'm protocol droid, between visual effects and editorial, okay, because I can, I can speak visual effects, and I can speak editorial. And they need to somehow be able to communicate with each other when you're, when you're on a movie. It's a lot of like project management. But it's also a lot of technical skills are needed. Because there's a lot of technical things that you have to know on both sides. It is definitely one of the more technical aspects of editorial because when you think of editors, you think of, you know, oh, we're cutting the movie, but there's a lot of backup support. There's a whole army of people that are making sure that everything runs smoothly. So I'm part of, I'm part of the army."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:59",
+            "text": "That's amazing. Amazing."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "6:01",
+            "text": "And it's, it's great if you know, if you want to work in movies, and your OCD is perfect."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:07",
+            "text": "You know, we're doing this because we're really excited about the new dune movie. And Denis has clearly established a track record, whether it's Sicario, arrival Blade Runner 2049, the guy is good at doing effects movies, but also keeping them super grounded. So I'm kind of curious, your take on that approach."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "6:27",
+            "text": "I think I'm I'm really excited, actually. So you guys got me all hyped about Dune because I wasn't really thinking about it. Yeah. And that's what we do. That's awesome. I think more people need to be hyped about that. But the funny thing is before, before I talked to you guys, my friend that we're in, we're in quarantine pod with another family. And my friend Chad, who's in the other family. He had started reading dune pretty recently. And he was like, Oh my gosh, I forgot how awesome Dune is you got to read it again. So I started reading it again. Oh, wow. And I love it. I forgot how much I loved it killer. Oh, great. That's awesome to hear. And Rebecca Ferguson. I think it's gonna be an amazing lady. Jessica. I think she's so perfect for it. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:10",
+            "text": "Yeah, she is really perfect for it. So had you read dune before? Is this your first time you read it before"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "7:15",
+            "text": "I write in high school? Yeah, I don't remember much. But in college, in our dorm there were these two guys, Gabe and Dave. And anytime you walk into the room, no matter what time of day, it was it was either Street Fighter or Dune was. Yeah. Oh my god. So yeah, I watched a lot that year. Oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:37",
+            "text": "my god. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:39",
+            "text": "is awesome. Well, well. Lorelai. David, thank you for joining us. And welcome to dune pod."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "7:43",
+            "text": "Thank you. I'm so excited. Yeah, we're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:45",
+            "text": "really happy to have you here. And tonight we are talking about Mission Impossible fallout. A just an unbelievable action movie and just a really a really fun ride and starring Rebecca Ferguson. So she's she's pulling us to this film and it's just great to see her performance in this and others. So we'll get to that in just a minute. Oh, man, hold on. I think I've gone crazy. I've got like some extra audio feedback or something."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:10",
+            "text": "Don't go crazy. We don't need that last week. Matt really lost his shit last week. He really like he really kind of came unglued. He like both he chanted in Old Irish and he also confessed that he listened to the full Mueller report while running or something like he's just all of his vibes came out last week."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "8:27",
+            "text": "I heard that I heard that and I liked your I like Jason I liked your Dr. Octagon reference"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:33",
+            "text": "was pretty oh thank you made me laugh Yeah Matt Matt's kicking himself for not dropping in the I sent him the link to the audio what like what lyric I was talking about? But it didn't it didn't make the final cut Oh, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:44",
+            "text": "making the cut right now. Right now ah"
+        },
+        {
+            "name": "Dr octagon",
+            "timestamp": "8:49",
+            "text": "antic oxygen and lumen lumen. More wakes up low blood cells in your face react before funds and six five missiles on with several rounds of space due to pistols you may not believe living on the earth planet my skin is green and silver forehead looking mean astronauts get played tough like the ukulele as I move the rockets"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:09",
+            "text": "has been put into the super the Super Cat. That's right. No, it's gonna be right here. Okay. Oh, good. Perfect."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:15",
+            "text": "We're good to hear. I love Dr. Octagon. So killer. Well, so so just around the corner we'll talk about Mission Impossible fallout. Next week on Dune pod. Very excited. We have any winning director and producer Rob Schroeder, who is going to join us to tackle Denis Villeneuve's 2013 masterpiece prisoners. This is an unbelievable movie is very intense. But it's Hugh Jackman and Terrence Howard. And I must say Terrence Malick it's definitely not Terrence Malick, but Terrence Howard and Jake Gyllenhaal, David dastmalchian and and Roger deakins as the cinematographer, so just an absolutely beautifully filmed and really great movie. So that that's next week."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "10:07",
+            "text": "So exciting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:09",
+            "text": "Yeah. All right. So how about we just get down to a little bit of due news? Would you like to know more? So we have a couple of items here. The first one announced yesterday, there is a new Dune RPG coming in 2021."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:26",
+            "text": "I missed that. I missed that news. A board game. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:29",
+            "text": "Well, there have been board games and other things that have been released but but it was announced yesterday. Modiphius who are the makers of the fallout RPG, as well as the Star Trek RPG aren't have gotten a license that are making a new set they have a beta that people can sign up for one thing that was interesting is they noted that included in the team was a writer named Khaldoon kellele, an Arab American of Palestinian descent with a background working in the oil industry counterintelligence and political consulting. Who has been working on Vampire the Masquerade for like 12 years. So gaming, but with also like, relevant in the field kind of experience. So that is pretty exciting. Wow. Exciting. I guess I would ask what would each of your character choice be if you were going to if you're going to choose a character in the dune universe to RPG knowing nothing so far?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:19",
+            "text": "Or class I guess or class? I'm gonna think, Ah, sure, I'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:25",
+            "text": "go for for all go for like a ducal air of some kind. Hmm. Like getting getting involved in the struggle and playing politics and the Lancer at and figuring out how to move from there"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "11:38",
+            "text": "getting all jazzed about the nature spirit. So I'd have to like, I don't know, be with some politician that I like, I guess I don't know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:47",
+            "text": "Yeah, but being a better gesture, and initiator something would be super cool, like a low level version of the voice and being able to get out and do stuff. That would be awesome."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:55",
+            "text": "I think that would be a guild navigator and just voting space tank. Like just like, you know, use my warm, flat, direct ships, just be a basically a stone bus driver."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "12:07",
+            "text": "I've taken the space"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:09",
+            "text": "to space, man, where do you want to go?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:11",
+            "text": "Jason, that was a great roll on that on that folding of space. So you can just go in the other room for about the next four hours. And then we'll call you when we're ready to go to the fold. And so excited to see that. We'll have a link to that in the show notes. So folks can check that out. The other piece of news that I had was that Hans Zimmer released a 96 second version of the Pink Floyd Eclipse track that he recorded for the dune trailer. And that's available online. It's really beautiful. Like, you almost never have the actual crew of a movie be involved in the making of a trailer, whether it's the director or whether it's the the composer. And it was a real sort of like amazing thing that they cared that much that they wanted to put that into it. So very cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:01",
+            "text": "That was very cool. That's a good sign tunes. It made me It reminds me I wanted to re listen to Pink Floyd. I never got to that this week. So still on my to do list. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "13:09",
+            "text": "I was surprised that it says such a nice mood for the trailer. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:12",
+            "text": "I've come"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:13",
+            "text": "around on it quite a bit. But we had discussed we generally don't like the idea of using slow pop songs for trailers because it's so overused. Yeah, but this one was specifically a call back to Jodorowsky is dune that he attempted to make in the 70s where he had wanted to use Pink Floyd to do the music of the tradies so it was like a beautiful continuity. And tie that back so really nice. Yeah. Jason, do you have any other any other new news you're tracking?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:38",
+            "text": "I don't I got a note that my ceramic a tradies pin was no longer shipping next month, so I believe they are holding some of the merch that was going to come out. So yeah, I'm not getting any dope, a tradie ceramic pins to wear around the house, but that's alright, I guess. That's That's my personal dude is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:03",
+            "text": "very good. All right, well, shall we get down to business? Oh, yeah. light the fuse. Mission Impossible Fallout is the toll of living a life in danger, and refusing to accept defeat against hopeless odds. Ethan Hunt was prepared to give up everything when he joined the impossible mission force. But his decision to walk away from his beloved wife Julia, for her own safety haunts him to this day. Having defeated the Rogue Nation threat of the Syndicate, and its leader Solomon lane, he's unwittingly unleashed a proverbial Hydra of new threats in the apostles and their unknown leader John Lark. Now, Ethan is forced to chase lark and a cache of stolen nuclear material through the skies of Paris. The rooftops of London. And the mountaintops of Kashmir. Ethan will be forced to question what moral lines he is willing to cross in order to complete his mission. Caught in the crosshairs of his former partner Ilsa Faust, Ethan must push himself to his limits and beyond, to protect his family and his team, and keep them from becoming caught in the Fallout."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:24",
+            "text": "I want to watch it again. Obviously,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:26",
+            "text": "this is Mission Impossible fallout. This is the sixth film in the franchise, famously started out in the 90s, with Brian dipalma, directing the original mission impossible, which is a really, really great film, The Crazy John Woo mess. And then we had JJ do a great job and three, Ghost Protocol was very good Brad Bird in the family. And then with five and six, this was Rogue Nation and Fallout. Christopher McQuarrie coming in and writing and directing both of these films. You'd seen these before? Lorelai?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "16:01",
+            "text": "Yes, I feel like they should. They missed an opportunity to somehow fit mi six into the title. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:08",
+            "text": "Good call."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:09",
+            "text": "I don't think that would have tested well in London, though, right? Like that would have been that I"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "16:12",
+            "text": "know. I know. But somehow it just seemed like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:16",
+            "text": "yeah, totally. And then Jason, you had not seen you had not seen this before."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:21",
+            "text": "I had not seen this movie. And I hadn't seen any mission impossibles since three, and like, Yeah, I think I saw three in the theater. So like, I haven't seen Mission Impossible movies in quite some time. Yeah. And I didn't have time to watch five or four. So I went into six, sort of like, just like, and I was kind of excited about it just to be like, Alright, what's it like to like jump into a franchise where I have basically no idea what's going on? And like, will it work? I'm gonna be like one of those people that goes like in game and like, just as like, Wait a minute."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:54",
+            "text": "You're like, I thought it would take longer for them to fight that. Oh, so it was kind of quick. Yeah. At the beginning. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:58",
+            "text": "turns out it was fine. It was not, it turns out it was fine. In terms of like feeling caught up?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:06",
+            "text": "Well, in some ways, that's kind of amazing, because three ends with Ethan back together with Julia. And then Fallout opens with this dream of them getting married by the villain Solomon lane, from Rogue Nation. And immediately you have the idea that this is an action movie, but it also has this really strong emotional core that that is the heart of that. And to me, that was super haunting that nuclear blast. And even Ethan after the moment that he wakes up just being really kind of off kilter. And trying to figure out his bearings. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:41",
+            "text": "strong opening. Anytime you can open a movie with like a wedding. That concludes with flesh being blown off the face of the main character. You're really kind of opening with an exclamation point. Good start. I like didn't remember I really didn't remember who the actress was. I knew Tom Cruise was in this movie for sure. Okay. And like so I didn't I didn't remember that. That was a lady and like, I also for a little bit in the movie. Didn't realize that that was a different lady. Rebecca Ferguson, Rebecca Ferguson. Okay. So it all made sense eventually. But like, yeah, I was just I was really going into it was just just nothing. And I started like, as it started, I like kind of pulled up the Wikipedia for like Mission Impossible five. I was like, Wait a minute. Seems like something we'll have to write. But it was it was just pushed and pushed ahead."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:32",
+            "text": "Yes. Too Much has happened. Yeah. Well, I thought that was I that was a great a great opening there. And then we cut from that to basically exposition scene, there's like a two minute scene of like all the knowledge dump. And so this was for you. To explain what you heard was helpful. Yeah. But it is kind of like dune in terms of like massive high bandwidth exposition all in one shot. You got the syndicate which he stopped and then you've got the apostles and they're gonna get learn John, lark, and there's a nuclear scientist. And it's interesting, both five and six feature nuclear scientists who have written manifestos who are trying to blow up the world. So what's going on with nuclear scientists? Lorelai, what's your what's your thought? I"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "19:17",
+            "text": "don't know. I think we have to keep them from running manifestos, I think,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:21",
+            "text": "how do we do that? Like, what? Like, do they need to be watching more movies? Hopefully."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "19:27",
+            "text": "You know, the one thing I really like about these Mission Impossible movies is that like, you know, they're always trying to take you on all these different terms. So they're so good at exposition, and I feel like that they're able to do it without making it feel like to hammy and that's really a testament for like, the actors and the, and the script writing. Right? Yeah. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:45",
+            "text": "you always have I mean, the hallmark of Mission Impossible is this really cool opening mission assignments and the device in this case, it was a book that was Homer's Odyssey. That was indicative of the journey that he was that he was about to take. And so that was like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:59",
+            "text": "that's for Be funny, by the way, so I got I want to say like I got really deep into this movie like despite not despite not having like seeing anything about mission but having no attachment to the franchise. Okay. But I've watched all of the extras and I just concluded the DVD like the director, Tom Cruise commentary."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:18",
+            "text": "Oh my god, really? Wow. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:21",
+            "text": "got really into it. I have a lot of theories about mission impossible that are going to come out during"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:25",
+            "text": "this commentary. I cannot wait. I cannot wait to hear them. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:28",
+            "text": "one of the general themes and watching the making of stuff is like, a lot of it is just about like, praising Tom Cruise. Like it's just like how great Tom Cruise is. And like the part about Homer's Odyssey is amazing, because Tom Cruise has this line and one of the features I forget watch, where he's just like, Homer's Odyssey. That was an important detail because it stood in for the movie as a whole because it is an Odyssey and is epic. Okay. Okay. Okay. I don't think it's as that's it, that's the deepness. Cool."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:09",
+            "text": "I think so i It is interesting. You have folks, I think Tom Cruise is a very special human being relative when you have somebody who takes stuff so seriously. Yeah. And in a world where typically people are posers. pretenders assholes, not talented, whatever. I put him in the same category as like a Jack White. Somebody who is so seemingly pretentious, but is I believe 100% authentic like, you are going to get everything that is all coming from a real place and they're going for it. So I think that's a I think that's a really cool item. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "21:50",
+            "text": "I feel like he really believes in his work. Like, from what I understand like on set, he's just such the perfectionist thing like, always hits his marks. And that's why he's so good at doing stunts. And loves his crews, which is crews loves his crews."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:04",
+            "text": "He loves his crews that comes through and a lot of the featurettes they love him particularly all of like the technical guys like all the stunt guys all the camera guys he works with they're just in awe of him. Yeah, I do want to like wishes so like not to not to like sort of tip my hand. But my theory about this movie about Mission Impossible. Here we go. And it's a theory they say they say it explicitly. They say it explicitly in the future as repeatedly. The people who made this movie believe they are the impossible mission force, like they believe that the making of the movie is the impossible mission that that is the mission that they were given if they choose to accept it. Yeah. And and then they make that joke a lot. Like when they're talking about I was like, that's just what we do is Mission Impossible. Like it seems impossible, but we find a way and there's lots of stuff that like happens during the making of the movie where it's like, they they like have some ridiculous technical challenge and they solve it in some absolutely preposterous way. And we'll I'll cover some we'll cover some of those as as the movie unfolds. Yeah. But like Tom Cruise believes, basically, it's one of two things. It's either Tom Cruise believes that he's Ethan Hunt. Like he's like the superhero that like is saving the world, which is explicitly something that Tom Cruise has said. Or it's, or it's that this movie is only sort of nominally about Ethan Hunt. And what we're really watching is a Tom Cruise movie. It's a movie about Yeah, it's like the fact that he's playing a character and and Ethan Hunt is sort of academic. It's really about Tom Cruise, doing all of this ridiculous shit. Like as practically as possible."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "23:42",
+            "text": "Well, I love the thing I love about these Mission Impossible movies. I really feel like he does these. At the beginning. He's like, Alright, where do I want to hang out? Alright, I want to hang out in London. I want to hang out with Paris. Here's the new skill I want to learn. I want to learn how to fly a helicopter. Right, right. Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:58",
+            "text": "Exactly. Exactly. I will learn how to fly a helicopter. Like they say a thing about the parents thing is they say like, they were shooting something for one of the previous movies. And they're like, Oh, that's a cool street in Paris. Let's go back to that one. And they wrote like the movie around, like being able to get back to that street. Like it's it's really, it's so it's just crazy hearing them talk about this movie when they're talking about the making of the movie, because they're talking about like, we got to stay on story and whatever I'm like, but you're not. That's not really what's going on. Like, what's really going on is you want to hit these big set pieces and you're building like you're building stuff around that in order to solve this impossible for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:37",
+            "text": "sure. So McQuarrie was explicit about that in the Rogue Nation behind the scenes, he said we started this movie 100% Just with a set pieces were like, what are the action sequences that we're gonna want to have? And then they're like, Okay, how do we back into those different things and they're like, we completely transformed character, concept, story, whatever all that is To get to all of those places. And I would say, to, in my opinion, I'll forecast a little bit, I think a rogue nation, it was even more powerful than then in fallout from a story perspective. But this was still an unbelievable ride. So let's, let's dig into this a little bit more so so right, right off the bat on the mission, like, first of all, congratulations, they tracked down the plutonium in like five minutes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:28",
+            "text": "No problem. No problem "
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "25:30",
+            "text": "cut to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:32",
+            "text": "they had that. Well, they had the plutonium tracking app on there. That's like, once you have that, once you have the beryllium plutonium probe, iOS app, yeah. You're halfway home. Like you really only you really only need to make sure that you've got the latest updates, you know, to that, what's the subscription for that? It's a monthly but you can buy the annual and it's like equivalent to like 10 months"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "25:54",
+            "text": "find my plutonium."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:57",
+            "text": "Yeah. That's awesome. So it goes wrong. They the the apostles get the jump on them. Luther is almost killed, and Ethan has to make the choice whether to save Luther, or save the plutonium and he chooses Luther. So I will say I want to not get all the way into dp work this early but this scene was really lens flurry to me. I got a little nervous as I was as I was rewatching it just because I was like, there was something that felt kind of kind of odd about that. Anybody else noticed that? Or is that just me?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:31",
+            "text": "You're just feeling the Bad Robot logo from that was in the beginning? Yeah, exactly what you were concerned. I don't know. I liked in this, I didn't notice a lens players, I didn't notice that everyone wear suits, which I thought was a level of professionalism. That was really good. It's like what I would expect, I don't know don't show up in athleisure wear like, you know, put on a tie. This is a plutonium meeting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:57",
+            "text": "So having lost those, those plutonium, we get to the nightmare scenario. And we have nuclear attacks that had been carried out around the world, one in the Vatican, one in Jerusalem and one in Mecca. And so this is like a total nightmare scenario, Tom, as you know, like distraught and you know, we have Wolf Blitzer delivering the news. And the scientist, you know, wakes up and he's in the hospital and he's kind of very excited that his his nightmare scenario has been pulled off. And they basically interrogate him and threaten him until he agrees to give them what they want. This is of course Lorelai as you called out, this is the first of the of the fakes or the twists. But I thought this one was really fun and just super enjoyed it."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "27:44",
+            "text": "Yeah, I really, I really liked the whole thing. We're like, the walls just fall away. Like that's so dramatic. And it's absolutely something that they don't need to do. They got"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:58",
+            "text": "you already got his information. Now you're just like, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:02",
+            "text": "just the fuck with them. Guess what? Not only were we fucking with your buggy with the walls that fall away."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:08",
+            "text": "Yeah. And his reaction was great. He was like he he was completely rattled. Like, he did not understand what was happening. I wouldn't"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "28:14",
+            "text": "either the walls falling away."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:18",
+            "text": "I was having a breakdown. I was like, wait a minute, I didn't know the Pope. That's another strong movie. If you can, if you can both melt the face off of Tom Cruise and also nuke the Pope before the credits show in your movie. Yeah, I mean, you're really doing something. I mean, I get like, this is from the director's commentary to which is like they basically wanted to like delay the start of the movie and see how much they could get away with. Like before the credits of like, you know, kind of tricking people into thinking like, Oh, we're down this path and then they like do the classic Mission Impossible Head fake writing like now you're in the movie you know what it is? That's credit. Which I thought was great and like that's like sort of what excuses the the ridiculousness of having a hospital walls Yeah, I also do want to know how many spots how many credits what's Wolf Blitzer's IMDb look like I feel like this happens a lot like you got to get Blitzer to do a little fake news of fake news."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "29:20",
+            "text": "It's got an agent probably."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:21",
+            "text": "Oh yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:22",
+            "text": "He just bangs out like seven of them on like a on a weekday in the in the CNN set"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "29:27",
+            "text": "and then goes back to like actual the world being destroyed. stuff going"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:32",
+            "text": "on. Yeah, he's like this is easier to deal with actually. Yeah, so so that was a great a great twist there. The credits were awesome. The music here is is very good. Through this entire through the entire film by coming out of the credits. You've got our first reintroduction to Alec Baldwin as Hunley who is the kind of like the the one giving all the grief to the mission impossible for us impossible mission force in the last move. He is now in charge of the Impossible Mission force. And I just thought he was great. He looks great. He was very spelt. And like us his presence was was really fun and energy and I"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "30:11",
+            "text": "love him so much. i Is he the Leslie Nielsen of urgent? Well, I mean, I guess Leslie Nielsen was Leslie Nielsen. Yeah. But I feel like he can do both those roles. super serious. And then jack down a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:24",
+            "text": "Yeah, that's a really good call. That's a great call."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:28",
+            "text": "I did have a flash of Jack Donaghy. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:31",
+            "text": "Tell us about the divisions of GE. He's also only four years older than Tom Cruise. No, it's worth it. Yeah. Yeah. He's like he Tom Cruise was 56 and Alec Baldwin. Wow. Tom Cruise is 56 I guess is"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "30:48",
+            "text": "when this I mean he's 58. But what is the Wilford Brimley like welfare?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:52",
+            "text": "Bramley? It's Oh, it's like 38. Like he's the wizard. I mean, like the like, yeah, like Yeah, it's it's he's, he's blown past."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:02",
+            "text": "It was unreal. It was unreal. I mean, I think Tom looks great. Through this through this whole thing, and obviously his physicality is, is impressive. I do love the quote from Huntley."
+        },
+        {
+            "name": "Mission Impossible sample",
+            "timestamp": "31:12",
+            "text": "Some flaw deep in your core being simply won't allow you to choose between one life and millions. Or you see that as a sign of weakness to me. That's your greatest strength. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:23",
+            "text": "just thought that was that was really cool. That that emotional core is not like super deep. It's not the most emotionally resonant thing in the film, but but it was just a nice tight moment between the two of them. And then we have our introduction to Angela Bassett. Oh yes. Erica clean."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:38",
+            "text": "Yeah. Yeah. So great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:41",
+            "text": "What was the Katherine Bigelow movie from 99?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "31:45",
+            "text": "Strange Days? Strange Days."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:47",
+            "text": "Yeah. Oh, wow. Oh,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "31:49",
+            "text": "so here's a funny so every New Year's Eve. I, for the past? I don't know if six years I've been watching a New Year's Eve movie. So like the first time the first time I did it was Harry Met Sally. And then it was trading places and for this year, because I was feeling so dark. I watched Strange Days."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:07",
+            "text": "Oh my god, what a great movie. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:10",
+            "text": "How was it how to hold up?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "32:11",
+            "text": "It's it's really good. It's I mean, it's so funny, because it's like, this is what cyber is gonna look like in the future. And it's like, no, right. Right. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:20",
+            "text": "my God. That's a that's just a real gem of a movie right there. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:24",
+            "text": "she's great. I have not revisited from from that time. I just went when she was in that film. That was at the time. I think Cameron had the rights to X Men or was developing a treatment for X Men or something. And everybody was like, this is storm. Like, let's go. Oh, wow. Yeah. Interesting. In like, 2000, you know, or whatever is earlier. Right? Well, your"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:42",
+            "text": "Strange Days is 95. I didn't realize that James Cameron. I didn't realize James Cameron wrote."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "32:47",
+            "text": "Oh, yeah. Yeah, because he was married to Bigelow. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:51",
+            "text": "that part. I didn't know that. That's amazing. And Ralph Fiennes just really taken a wild turn. In his career right there. I mean, I guess he played Voldemort. We might have to put that on the list. I would love to any excuse who are Strange Days. Okay. Lorelai. Back to cover it. Awesome. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:09",
+            "text": "there we go. totally do that. Yeah. So. So Erica basically shows up, Erica Sloane shows up to say, hey, the CIA plane, you got to work with us. And you have to take John Walker, who is her? Her like lead badass CIA guy. And that's Henry Cavill. Star of Zack Snyder's Justice League. So they go onto the plane to go do their mission, basically to go find John Clark, the head of the apostles. So that shot of the C 130 in front of the moon. Do you remember that shot?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:44",
+            "text": "Yeah, it's that's the was one of the few CG shots in the movie. Oh, really? Yeah. Yeah. I mean, like that one of the few CG shots, but that's a totally CG shot like that a plane is not"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "33:56",
+            "text": "that whole movie there is there is some form of visual effects in every shot at this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:01",
+            "text": "Yeah, yeah, I Yeah. And I actually I want to talk about that with respect to the HALO jump in particular, because like, that's like, that's like one of the conceits which we're now at so like, let me say two things. First of all, the idea that they have like John Locke's RFID code, but they don't know anything else about it. It just seems like completely wild. Like they know like, like, they have like this one very identifiable thing. Like he registered for this party. They know exactly who it is they got the code they don't know literally anything else like what it looks like. Right. Your words. Okay, I guess."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:33",
+            "text": "I mean, unless unless Walker planted it. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:35",
+            "text": "I mean, sure. Like at this point, it's like getting into like a schizophrenic theory of like reality like, okay, point two is point two is that they they have to get to this party in Paris. And the, the, the way they choose to get there is by jumping for 25,000. Let me tell you something. That party takes place at the Grand Palais. I've been to the grand Palais. You can just walk in the door, don't need to HALO jump onto it. Like Paris is a you know, a city you can just go to like it doesn't require, like if you're no matter who you are, you don't you can there's many ways in you can take a train and take a cab, you could bike in. But you don't need to like jump from 25,000 feet onto the building, you're going to"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "35:22",
+            "text": "like onto a glass roof. Like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:25",
+            "text": "that's doing a lot unless, unless you want to do a live action HALO jump."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:29",
+            "text": "So let's just talk about what sorry, let's talk about this. Yeah, well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:33",
+            "text": "let me just say I want to say one thing. I did note that there was a one long shot of Tom, like he stands, there's a shot of him standing. He walks on the plane and he's kind of standing there. And then they cut to hit like right next to him. As he walks all the way back up talks to Walker tells them they need to cancel that Walker, like get out of the way I'm going and does does this thing. And then he goes back, he jumps out of the plane and Tom goes and he jumps out of the plane and that's the shot where you are below him and you see him going. That is all real humans"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:05",
+            "text": "jumped out of planes to make that Yeah, yeah. Yeah, for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:08",
+            "text": "That is incredible. Like that is it is that's just an amazing concept. There's a"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "36:12",
+            "text": "behind the scenes thing that I saw on the internet somewhere that I think made the rent. I think Todd Vaziri my friend Todd Vaziri, who we should talk about because he knows we will all things we effects. Yeah, but it it shows like them doing that shot. And the the skydiver cameraman That is insane. He jumps out backwards. Yeah. I mean, I guess"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:33",
+            "text": "jumps off backwards. And there's like the basically he has to walk backwards. As Tom walks towards them. A woman taps him on the shoulder, which says, which tells him he has two steps left before he goes out the cargo plane. Oh my god, he he falls out. Tom jumps after him. Tom like Tom Cruise. Tom Cruise jumps after him. And then Tom Cruise has to get within three feet of the camera, right? In order to get that whale"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "36:59",
+            "text": "falling. Right? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:01",
+            "text": "well, that Well, fine. Yeah. It's pretty amazing. Okay, so let's talk let's just let's spend some time on the HALO jump because it's obviously a signature thing. So one thing you know, I just want to take a step back. This movie cost $170 million to make before marketing and distribution that seems really cheap to me. Right. And it made me very excited for what Denny Villeneuve could do with $200 million because with $170 million Do you know what the first thing they did to make this halo shot? They built a new wind tunnel so that they could go and practice this jump like in a controlled circumstance. So they built giant turbines like this giant 40 storey structure of like a huge wind tunnel apparatus why they had to build one from scratch they could not find a wind tunnel out on the world is literally not explained they just not"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:53",
+            "text": "big enough they just had to go do on Tom Tom. We got one over here. not big enough."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:57",
+            "text": "This had to go do it. Okay, that's the one thing too is they had to go. They had to get the cargo plane. They got the cargo plane from the United Arab Emirates military, which is where this whole shot was takes place is in the it takes place in Abu Dhabi, they are not falling over Paris. Right. Which is to say that anything to Laura's point, which I appreciate her bringing up that there's not a shot in this movie that doesn't have VFX the entire point is that they did this practically like Tom Cruise actually jumped out of a plane they built the oxygen helmet is all custom he jumps out of plane 25,000 feet so like you know some stunt man says that he got the bends because they had to test that the helmet to failure in a hyperbaric chamber like lunatics shit they did like lunatics shit. Like they also "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:45",
+            "text": "what is that credit in the credits? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:47",
+            "text": "dude who got bent. they also only had they also only had a three minute window every day to shoot this shot because they had to get it like when the light when the light was when the sun was like three minutes is all they had to get the shot. However, the shot is not over. Like they're in Abu Dhabi. Like they then composite it in the entire sure sure background of Paris in the storm and everyone else so so the whole thing looks like an effect shot because it is an effect shot. Like the fact that they're falling like is completely there's no reason they had to do all this right? I don't understand why they had to go through all that. And the guy had to get bent. They had to build a custom helmet and the wind tunnel. Right"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:34",
+            "text": "Lorelai you start by explaining artistically, why jump out of the plane."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "39:40",
+            "text": "I think he wanted to. that's all it was. Well, thank you, right. That's all that that's it. You can totally do it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:48",
+            "text": "But that it was so to me and I was going to talk about this later. But that is literally the whole movie. This is just about watching Tom do insane things. And I love it. The fact that he's willing to do it his commitment to do it his ability is just, it blows me away."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:04",
+            "text": "Amen to that, too. I'm just saying this isn't different. This is a different kind of art form. Like if the point of this is we're watching Tom Cruise, loosely portray someone that doesn't really matter big but what we're really watching is like him do these impossibly contrived stunts, because that's thrilling to see a super famous movie star do these like impossibly contrived stunts? Like, yeah, that's a weird that's like some sort of like circus act like that's like, not like, strictly speaking on narrative art form. It's some other thing. The other thing that could it could be, which I thought I had, is that they had $170 million, some of which came from Alibaba pictures to make this movie, and they also had this deal with the UAE military to get this plan. This could also just be a money laundering operation, like disguised as a major motion picture, like I mean, like legitimately, like, there's, I want to see, I want to see which contractors were brought in to build this fucking custom wind tunnel in like Abu Dhabi, or whatever it was. And like all of our ask, like, which, who where was this money going to come from? Because I don't think it's on the up and up."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "41:15",
+            "text": "And then what happened to them when you don't think that they like, they built it, and then oh, we're not going to use it. So let's just tear it down again, like some something happened to that winter. Right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:25",
+            "text": "Incidentally, they in the director's commentary, McQuarrie brings up the fact that people have question why they would do all this, if they're just going to like, visual effects in Paris as the background. And he's like, Yeah, you know, you can ask that question, but the thing you know, it just wouldn't look right. Like the horizon, man. And that's like all he says, and I am not I am not a visual effects artist. I am not a director. I don't know anything about I'm just a movie watcher. But the horizon man is not as efficient the answer to that question. It is ridiculous."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:57",
+            "text": "Yes. I will stipulate that. It is ridiculous. I will definitely stipulate but"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "42:03",
+            "text": "I'm happy to watch it. I'm happy to watch it all its ridiculousness. I'm happy"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:07",
+            "text": "to watch it to hell. Yeah. Hell yeah. So So as they're falling, you know, he's kind of fight kind of wrestling with Walker and trying to get stuff. So I love when the lightning goes off. What's the matter of I'm afraid of it."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "42:38",
+            "text": "That was nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:40",
+            "text": "What is that technique called when, like, the film medium reacts to the thing that is happening on screen? Is there a name Lorelai for that, that film time?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "42:50",
+            "text": "Well, in sound like there's diegetic sound, right? Where you have the sound and the sound is reflecting what's actually like, one thing that I can think of is in rear window right in your window. All the music you hear is the music that's playing on the radio. So that's I don't know if there's an actual term Other than that,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:09",
+            "text": "this this. So this one I'm thinking specifically of the movie is like, narratively, we have this dramatic thing that is happening. And we have a score that is artificial to the scene. But when the lightning happens, it strips that away. So it is like a breaking of the fourth wall to say like, something different and exciting just happened. I mean, it is fucking badass."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:31",
+            "text": "You got hit you the view you the viewer got hit by lightning too. Yeah, I love"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:34",
+            "text": "that. I love that. Alright, so they make their way down is very excited. They land on top, and we go into what I have titled in my notes as the Euro trash DJ scene."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:45",
+            "text": "Can I wait before we get to that, like, Henry Cavill like, he's like, Oh, it looks like you've lost your oxygen can like he has like some kind of quip like. Like that's like the only acknowledgment he makes of the fact that he almost died, which I thought was like a real dick move. Yeah. Wasn't he unconscious? Like, as again? It's like you're being real Cavalier for a guy who was like, unconscious and I'm like, What do you think happened in the last two minutes? My guy like you, you you woke up alive? You"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:10",
+            "text": "should be grateful. Yeah, I"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "44:12",
+            "text": "should be calling you follow? Yeah. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:15",
+            "text": "he is. I mean, I had a note on that like capitals just a dick. Oh, yeah. This this character of Walker through the through this whole film is is an asshole. Although that mustache, I will say is pretty glorious, really"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:29",
+            "text": "luxurious beard. Yeah, beard. And like the longer mustache really? Facial Hair sadly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:35",
+            "text": "Much too. Again. I guess it was gIasses chagrin at that point. Dealing with a mustache on on the reshoots of of Justice League. But I will say now I am ready to talk about Cinematography by Rob Hardy. I thought the interior of this location, the giant sun that was kind of like floating there and then just all of the lights even though again, this is a little lens flurry. I just thought it looks completely magical and really, really good. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "45:06",
+            "text": "it looked at especially down that hallway that they go down. Like everything just looked so nice on that. And I like I like how the different locations just look so different from each other. I thought that you'd like you definitely knew. Okay, this is a totally separate place than I was last time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:21",
+            "text": "I liked it I liked it a lot too. This is like another thing about I think Lorelei you made this point earlier which was that like some some of the movies driven by two things the ridiculous stunts they wanted to do and the places they wanted to hang out and I really appreciated during COVID Like when you know I haven't left like my neighborhood let alone the country and you know, two years or whatever feels like a lifetime I appreciated this movie as like a travelogue of like cool places that I've I've been that like hopefully I'll be able to go back to one day of just like Rick Steve's Europe but like you know, with like, a lot higher production value. And like yeah, I liked I liked all of that part of this movie"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "46:06",
+            "text": "missed being around that many people I normally don't like being in that. I'm not that tall. So I always get drowned out by people but then I was I would be happy to be drowned out in this crowd right now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:18",
+            "text": "Totally. But that DJ like the look of that DJ when like I think he might have had a suit on as well or he was just like dressed up but the the bad mustache and the hair and everything. I was like what is Who is this guy? DJ"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:39",
+            "text": "Harvey they say which I don't know if they do say that. But I guess they said like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:45",
+            "text": "okay, well shout out to DJ Harvey,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:46",
+            "text": "I guess I assume is I assume he's famous. Yeah, DJ Harvey is a DJ born in Cambridge, England. He was an early exponent of the US disco garage house in the UK. Okay, I guess Should"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:59",
+            "text": "I take it back? So then we have the bathroom scene which is just"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "47:03",
+            "text": "awesome. The cleanest bathroom in the world. Oh, yeah, totally"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:07",
+            "text": "so stark so white. You do have a nice little moment of the John Lark the target in the room does give Walker a look just before the fight breaks out when Tom is looking off to the side. So that was an you know, a little bit of the breadcrumb that that Walker is the bad guy spoilers. So I thought that was really cool. And then just the fight scene was really great. My favorite part and one of my favorite parts of all of this from Fallout is the scene "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:36",
+            "text": "double fist pump "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:37",
+            "text": "with Walker comes in "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:39",
+            "text": "double fist pump."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:42",
+            "text": "He's like reloading his guns. I was like, holy shit. That's awesome."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:47",
+            "text": "It's amazing that it's I mean, and like the thing are, it's hard to go back to the before time before COVID Before the pandemic but 2018 like that was a real moment on the internet, the capital double fist bomb. Be like because it was a huge game. And in the GIF. You you see that? It's partly a reshoot. Yes. Because when he cocks his fists, his beard grows and his shirt develops a pocket square like a pocket. Yeah, if you if you look at the gift, I don't know if they fix it since then. But in the gift like it they he's the shirt that he's wearing at the start of the shot doesn't have a pocket. And when He cocked his fist gets bigger. His pocket pocket shows up on his shirt. And this created like, I mean, this is a real moment on the internet so much so that he got asked about it during the press for the movie or you know, during like a lot they got like everyone they were asking Simon Pegg about it like what's going on with this? What's going on with the fists guy? And and what cavils answer was, is that he cocks his fist so hard that it forces his beard to grow like it's just as like so it's so seriously just like and his beard, his beard just pops right out"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:07",
+            "text": "it's like a Totoro making the plants grow"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:12",
+            "text": "exactly our booth is pumped up"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:25",
+            "text": "so I love all of that that scene in the bathroom I love like I do want to just question do drunk guys hanging out in bathrooms in Paris actually sing LA Vie En Rose or is that I was that seemed like I'm not quite sure"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "49:52",
+            "text": "what I was thinking. They're just trying to establish their French right? I mean, even after they speak. Okay, now we're gonna have them sing some Edith Piaf. You It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:00",
+            "text": "a little bit on the nose, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:01",
+            "text": "think. But my question was is like this club is packed, no one else is coming in the bathroom,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "50:06",
+            "text": "right? And it's that clean. Like, I just can't believe it's that clean. Like it really is very high"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:11",
+            "text": "class party was definitely a very nice part. Alright, so So in the midst of the battle, Elsa shows up and she shoots the guy in the face, takes him out. And so this is the introduction in this film of Rebecca and it's just great to see her here. Immediately. She's like kicking ass. And also she has her own independent story that is unrelated to Tom's. And so to me, that is a cool part. She is doing her own journey. She has her own mission. She doesn't have to tell him what it is. And she's gonna go for it. It's obviously intermingled. But I liked that"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "50:47",
+            "text": "aspect. And that she shows up to a party in a suit. Seems it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:52",
+            "text": "is weird. So I noticed in the next we're going to talk about the scene with the white widow. I noticed when she started to fight she's wearing flats in this, which is very different from you know, in in rogue nations. She has these very fancy shoes, which she takes off to fight but so I don't know if she's just changed her style now, but I thought that was a missed opportunity to have something about her her footwear. Be a callback. So we have Vanessa Kirby playing White Widow. She's so good. She's great. She's fantastic. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:25",
+            "text": "this is the only thing I've seen her in besides the crown. So I was excited to see her in this. She's fantastic. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:31",
+            "text": "is she in fast and furious stuff? Or am I mixing her up with somebody else?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:37",
+            "text": "Let's pull up the old Kirby Kirby IMDB. she's in Hobbs and Shaw"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:42",
+            "text": "Yeah, that's that's what I thought. She's she's kind of like the third the third star of that movie so she's clearly having a moment. So her character is actually the daughter of the character Max from the first Mission Impossible movie. So that's why she's giving this whole long monologue about Max and how she's trying to make the world better and blah blah blah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:02",
+            "text": "She's already cast in a Mission Impossible seven and Mission Impossible eight which IMDb notes both as filming."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:11",
+            "text": "Yeah, no,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:12",
+            "text": "I don't know. I don't know how movies work."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "52:13",
+            "text": "What was it? No, wasn't there a thing where Tom Cruise was like renting a yacht or something for everyone's Yes, he tells them"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:20",
+            "text": "not not. He rented a like a giant ship"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:24",
+            "text": "a ferry he Yeah, he rented is it's the in Norway. The Hurtigruten is the yeah, there Hurtigruten is the big very and he rented one of those to keep his people safe. Well shooting of this, Tom,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:43",
+            "text": "I'm sorry. There is a there's a giant national international pandemic. It's impossible for you to film right now. No"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:50",
+            "text": "problem. I gotta Hurtigruten. Can't stop I can't stop it. I mean, another fact about this movie besides it being a money laundering operation for the UAE and the Chinese government. I don't know who else is that? It's it had 12 months of principal photography. They were shooting this they were shooting this movie for insane. Wow a year. Like I don't I don't know. I don't know what's going on. I mean, they talk about it. Like when they talked about the movie. Like major plot points were being figured out you know on the day like is this we're gonna kill Alec Baldwin? All right. Yeah, I guess this is a time I guess the time like when he dies, it's wild, it's wild. That's one way to go. How"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "53:31",
+            "text": "long though? Because there was a break and shooting right? Yeah, there was a breaking shooting. So how long was that? I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:36",
+            "text": "only have the 12 months that I know that they had like the break because and then they had to go back and do reshoots, when like various people like both Tom Cruise broke his foot and Alec Baldwin had a double hip replacement. So there's a lot of parts falling off the old wagon."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "53:51",
+            "text": "Oh and and Rebecca Ferguson was pregnant with Ferguson was"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:55",
+            "text": "seven months pregnant Well I came back for Yeah, she's in the in the fight scenes and she's seven Yeah, she's pregnant. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:03",
+            "text": "what oh my god I did not notice that that is which"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "54:07",
+            "text": "is another reason that makes her the perfect lady Jessica. Yeah, yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:11",
+            "text": "Exactly. Yeah, she had the the unborn inside her you know they have a knife fight. I love the you know Tom gets tough with the white widow in there and and you know, says he's gonna save her get her out of there and there's an awesome knife fight. And then they go back to her place where she"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:30",
+            "text": "won one note plays he says he says assassins have been sent to kill you. And they look around assassins some Bros and then the assassins growing into action but yeah I've been said to kill you apparently means some dude is just gonna lunge from 30 foot away with like a leather man utility knife. I have like, Guess what, that's it or or against Vanessa Kirby?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "55:04",
+            "text": "butterfly knife? Yeah. Yeah, yeah. Yeah, she was tough. By the way I love I was just gonna say I love the setting of the scene like it looks so 1940s Glamour, like, this is another one looks like it's maybe from a totally different movie I love this I love this party that they were at"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:22",
+            "text": "her dress is incredible like, just like when she's giving the speech, there's just like a shot at distance like of her back. And I was like, this is like a sculpture. It's just the presence that she has there was really incredible. She's great. She's great. Yeah, so they go back to they go back to her place where she has all of her gang kind of getting ready. And they they lay out the plan. The apostles have the plutonium, but they won't give the plutonium for cash, they will only give the plutonium for da Solomon lane. So this is yeah, this is the mortal enemy of, of Tom that he gave everything in order to capture in Rogue Nation. And so they do something here that is really, really cool. And this is again, this is back on that kind of that technique that we were talking about a minute ago, maybe this, there's got to be a word for this for this one. They they have the scene of Ethan going through breaking out Solomon lane. And you have the soundtrack you have the score, I think the track is is called. We are never free. And it's super intense. You have no sound effects. It's just the isolated score, right? Yeah. And it's just awesome to see Ethan struggling without having to turn around and shoot a cop, come back and shoot a cop in the face. And to really wrestle with what it would be like if he snapped if he had to do these horrible things. That to me was very powerful."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "57:06",
+            "text": "That was a really lovely scene like it was so it was so dreamlike. And you didn't know why until they brought you back into her place. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:14",
+            "text": "And they took their time with it. Like it wasn't like a quick thing. It was maybe two minutes or something that was like they really put you into it and made you think like is this actually happening? I love that scene."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:25",
+            "text": "There's a detail. There's a detail about that in again from the director's commentary in which one of the reasons why it looks dreamlike is they strung up 300 yards of silk along like the arches of the road. And so it's got this like diffuse light like where it looks like ghost the in like in dream line. But the reason they did that was to screen to screen the other bank of the sun so that the paparazzi who was hanging out over there couldn't shoot into the into the setting of the of the scene of the scene, right. Tom Cruise has this amazing fucking line and the director's commentary in which like, again, the whole reason they did that is because the paparazzi are following Tom Cruise and they wanted to screen the movie set and Tom Cruise from the paparazzi. That's the reason why Tom Cruise though, says that the reason why they set up the 150 yards of silk to screen the paparazzi off is because they had such a respect for Paris, the city and the people of Paris, that they didn't want to show the people of Paris, this alternate version of even harm of having being violent. And that wasn't that wouldn't be respectful to France, and that wouldn't be respectful to Paris. So that's why they ended up doing that has nothing to do with the fact I'm Tom Cruise didn't want to fuk with paparazzi and they didn't want it as it was about protecting the people of France. That's amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:53",
+            "text": "That commitment is just impressive. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:57",
+            "text": "They talked about they talked about they talked about this a lot because like there's a whole nother scene in the valley, they shot a bunch of the movie in New Zealand the Kashmir stuff is in New Zealand. Yeah. And they do a whole like welcoming ceremony with the Maori in the place where they're filming. And like they talked about in the commentary, like when we go to these places, we want to celebrate the town we want to celebrate the country of where we are and like it's like a whole like it is like a travelogue. It's like they're just like visiting dope places and doing dope shit and they want to like that's like a big part of the franchise. Like I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:27",
+            "text": "don't know why there isn't a full series of how it's being made and what they're doing like that would be like a whole set of documentary stuff. Yeah, if you look at Mandalorian is eight episodes. And then there's an eight episode behind the scenes making of series on those eight episodes. So you can imagine something like that, that playing. We do have the walker Revelation where he is meeting with Erica Sloane and he gives her a fake phone that he says came from John lark and that is our confirmation that He is actually in fact, Lark himself. And so to me, that was an interesting choice to reveal that at that point in the story, there's still quite a bit of ways to go. So I thought that was kind of a cool, kind of a cool touch. So now we finally get to the motorcycle chase. This was so rad. So first of all, knocking the truck into the water. And Sean Harris, who plays Solomon Kane, just the scene where he's under, you know, he's at the water and the thing is rolling. And he's going under, like, that was so rad. That's"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:00:34",
+            "text": "such a big risk, right? We're just going to we're gonna try to drown this guy, but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:38",
+            "text": "then not drinking him. Don't worry. Simon Pegg."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:00:42",
+            "text": "Simon Pegg is there? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:44",
+            "text": "it was a little vibes to you know, Harrison Ford spending the last like 12 minutes of Blade Runner 2049 You know, trying not to drown in a car. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:53",
+            "text": "I did get that vibe. Also shout out to Sean Harris, who played Ian Curtis and 24 Hour Party People."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:01:00",
+            "text": "One of my favorite I haven't seen in a long time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:03",
+            "text": "I have never seen that. Like, that's really good. That's really good. So now we get to just this that Chase and particularly the motorcycle chase both for Tom and, and also for Rebecca. So there's a shot where it says driving through the gallery de Valois, and she's driving really, really fast. And like the sound effects, as it's whipping on both sides amazing. And then the inner helmet and her faceplate of the helmet. You can see like the reflection of everything that's going on. Like do you think any of that was real? Or I'm guessing that was probably all I'm"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:01:48",
+            "text": "gonna guess it was digital. Usually helmets are are added later, because all that reflection you're gonna get the camera crew,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:54",
+            "text": "I would think so. But speaking of helmets, they let Tom Cruise ride that motorcycle around Paris on these like fucking cobblestones with no helmet on at all. Just like going flat out like just driving himself around on a crazy motorcycle doing good for him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:09",
+            "text": "It did give me vibes. Have either of you seen the video? The rendezvous know which it's a it's a video, I'll include links to it. And I'll probably drop in some audio right now is amazing. It's from 1976. And it is a guy in a Ferrari. And he's a Formula One driver. And they had a camera mounted to the front of the Ferrari. And it's five"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:02:45",
+            "text": "o'clock. So yeah, I know what you're talking about. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:49",
+            "text": "And he's just driving like 80 miles an hour through the streets of Paris. And it's there's no sound other than the sound of the car driving. And it's all around a many of these streets. Many of these locations that we saw are literally in that video. I watched it today. So that is it's just awesome. To see that and to see them driving so fast and crashes and everything was great. So then we have the scene with the female cop, they even managed to get away the teams ready. They're all set, they're loading up into the car to go and the garage opens and there's this female cop there. It was almost absurdist for a moment of like, everybody's like, frozen, looking at each other. Right. But to me that was super powerful. I really like"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:03:31",
+            "text": "yeah, like, it's funny, you think that they would get caught in the act more often than just this one time. Right? And they're so like to stung. Like nobody knows what to do."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:39",
+            "text": "They really took their time with the scene and so she gets shot. And he has to decide whether he's gonna let her get killed or not. And he decides to break cover. Like basically throw everything to the wind because he is not willing to let this this one cop be killed. So I thought that was that was a good touch. Then we get the second Chase, which is even better than the first Chase. They are driving a 1986 e 28. BMW five series. I was getting some definite Ronin vibes through this chase. Oh, yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:12",
+            "text": "Good call. I agree with that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:14",
+            "text": "I we got to watch that, man. I'm telling you. We got to watch that on the show. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:18",
+            "text": "ambushed you with the fucking coffee cup. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:22",
+            "text": "I noticed there's no score through this entire Chase, or at least through a significant portion of this chase. And again, the shots were like Tom's driving and they're like zooming in on them while they're while they're driving. I'm assuming that some amount of digital something."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:04:36",
+            "text": "You know, I was thinking about that. You know, they might have added a few cars here and there. One thing that you tend to do during chase sequences or fight sequences, is that like, you speed it up a little. And like, I think that they may have done that, but I don't know. I'm just I'm totally just calculating."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:55",
+            "text": "Yeah, yeah. It looks great. So that I love through this entire Chase, Shawn Harris is sitting in the front seat, and he's just like not reacting at all. He's just kind of like hanging out there. And then they're ambushed by Ilsa. And Ethan pauses and then drives right over her sending her flying into the air. Right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:17",
+            "text": "And he's like, that was his."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:05:22",
+            "text": "I love that was like the first thing he says, right? Yeah. Like, whoa,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:27",
+            "text": "I know that lady. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:29",
+            "text": "then times like, shut up. Yeah, that was killer. So we go from there. Now we can come back to Todd. On the discussion. So we have great Tom excited about Yeah, we have Tom and Elsa meeting. Where's this location? Jason Jordan do? Yes. What is that? I have not been there. So tell me about it. I also"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:50",
+            "text": "like the the Palais Royale Palace. It's not far from like, it's not far from the Louvre. And yeah, it has this garden with these like, very, you know, very cement, like French garden layout of trees. Incredible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:07",
+            "text": "So pretty. Yeah. Yeah. So I think so Todd's posts that he was originally talking about was about the transition from light to dark. And then and then light again. And I think was he saying that was being done digitally. As part of as part of filming,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:06:22",
+            "text": "typically, what happens is when you're going from a lighter, lighter setting, to a darker setting, someone has to like manually be adjusting the, the aperture on that. And that just requires a lot of coordination. So he was saying in that thread that he had that, you know, what they were doing is that they were able to do it in the DI, to find di digital intermediary, it's and color grading. So what they're trying to do is what you're trying to, all the shots are shot at totally different times of the day, right. And so you have to like have someone sort of like bring it all together and make sure that everything sort of matches. And while you're doing that, you can also affect the lighting within the shot as well. So looking at that shot, you know, was exposed for the light. And then they use the trees as sort of a mask so that when you pass the tree, then they switch the exposure to dark. And it's a really cool trick. I hadn't noticed it until he pointed it out. But Todd's super observant about that kind of stuff. Totally not myself, whenever I watch a movie I don't, I don't like to be taken out of it and say, Oh, that's the effects because then it takes me out of the story. So it's I it's a testament to Todd that he can like take a look at that and say like, oh, that's a really interesting technique. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:36",
+            "text": "and it's a great, I mean, it's it's a great discussion. I really like this, you know, she unfolds. But you know, her mission was to capture Lark in Paris. And that was supposed to lead her to L, who she asked to kill in order to avoid embarrassment for the UK. But she killed Lark in order to save Tom. So you know, she cares more about him than her own mission. That's not what I'm asking you. Why did they sent you?"
+        },
+        {
+            "name": "Mission Impossible sample",
+            "timestamp": "1:08:05",
+            "text": "This is how I prove my loyalty. This is how I come out. You're free. You're never free."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:16",
+            "text": "There's just killer. And to me, like the fact that that track that is playing is called we are never free. Like I love the resonance of that. And the fact that they really focused on that. It's very cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:28",
+            "text": "They said in the director's commentary that they wanted Ingrid Bergman vibes from her. She's"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:08:36",
+            "text": "so steely eyed. You know? She's really yeah, she's definitely gonna not let him get in the way. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:42",
+            "text": "right. That's right. And we're not used to somebody, you know, not deferring, right. Everyone defers to Ethan all the time. Or in general in action movies, the hero is always the hero. And so it's cool to have somebody to be like, well, now I have my own thing and my own agency. So we go from there to the second dream sequence. And again, Rob Hardy just killing it."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:09:04",
+            "text": "This totally looks like a ROB Hardy shot, right? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:07",
+            "text": "I was like they are at DEVS HQ. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:13",
+            "text": "Loved it. Yeah. The story there was that they they only had that it was like a thrown together thing. And they just used a bunch of the lighting rigs from a party that Yeah, go. Yeah. And they like threw it together really fast. Or like, we got an idea. Let's go. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:28",
+            "text": "Well, I did hear McQuarrie say that no director had ever repeated on Mission Impossible. And so when Tom asked him to come back and do this one, he's like, I'll do it but it has to look totally different from from Rogue Nation. And so that's why he went and chose Rob hardy to come in and do the cinematography. Yeah, McCory"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:09:48",
+            "text": "is like the de facto dude of the franchise now. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:52",
+            "text": "seems. Yeah. He's done nine films with Tom Cruise too. So it's like they're like very much because they did like Valkyrie together. Unlike a whole bunch of other stuff, so"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:10:02",
+            "text": "McQuarrie, I went back to his Twitter account cuz I was like, Oh, he does. He's really awesome Twitter Q and A's, where people can just like throw questions at him and he always has the best most concise answers, but I just went to his account and it turns out he deletes all of his tweets after he does. Really? Which is a bummer smart,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:19",
+            "text": "though. Yeah, that's a bummer. But yeah, nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:23",
+            "text": "Well, they bring back you know, they they, after Tom has met with Elsa, they go back and Huntley is there. And he is there to get Tom. So this was the part where I kind of side a little bit forgetting what what happened and I was like, oh, man, like, do we have to have Ethan as being hunted again, it's another double cross against Ethan. They did set up nicely in Rogue Nation and this that Ethan actually is going to this really weird place where he's like, if Lane wants to do something, it's going to happen and you can't stop it. I'm going to keep trying anticipating and trying to move him into positions but like literally no one can stop it from happening, which is a weird place for a giant action hero to be I think, Yep,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:10",
+            "text": "I agree. He's just kind of like has to go kind of surf the wave. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:14",
+            "text": "So from the midst of this, it is then revealed that this was all a double cross and that they essentially trick Walker by switching lane. They get his full confession. And then all hell breaks loose because Lark is able to activate half of the CIA team who are his shadow guys. So we have a big shoot out, and we have Huntley dying. I was bummed when, when Alec Baldwin died. That shot that shot is great. That was beautiful the lighting on his face and"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:11:45",
+            "text": "like half his face, and it's like, oh, yeah, that was it was such a lovely, yeah, like we've had two friends die."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:51",
+            "text": "You also kind of knew that when Alec Baldwin decided to square up with frog and Henry Cavill that it wasn't going to work out well for him. Like you know, we'd already seen Henry Cavill do the double fist bump and then the scene, like in the Paris ambush where he like cracks his neck before he like this is a serious fucking guy like Alec Baldwin, his double hip replacement. I don't know what kind of moves he's got. But he's got no double physical moves at this point. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:17",
+            "text": "you do at least get the grade level. We put the gun on him and Cavill grabs the gun. And he's like, Oh, no bullets."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:24",
+            "text": "He's like, Yeah, this one's loaded. Ah, got you. The rope a dope gun. Yeah, that that was really good. The apparently it's funny because a lot of people when they do these movies, according to the commentaries, they want to be killed off like Alec Baldwin. I'll do this movie, but you don't kill me and like and they're like, Okay, yeah, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:43",
+            "text": "that's crazy. That's crazy. Like, why would you want to be killed often in any of these movies?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:47",
+            "text": "I don't know. I don't know. There's mysteries."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:12:49",
+            "text": "I wonder if it's because like, it ties you up. Right? Like, then that leaves you from being open to being able to do projects in the future? I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:57",
+            "text": "think so. Yeah. Then Sean Harris, like was like in in the previous movie and five was like a you have to kill me at the end of this movie. And they and they just like couldn't figure like, yeah, you ended up captured but you know, don't worry, we'll never and will never, you know, whatever. And then they're like, or maybe we will and I and then like, god dammit."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:13:18",
+            "text": "Yeah. So you had to come back. You're the plot of the next movie, but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:22",
+            "text": "he's still alive. He's still alive."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:25",
+            "text": "Well, no. So the natural evolution if they are playing within the sort of the new traditional storytelling arc is that in Mission Impossible eight, you know, he'll come back and you know, he's had a change of heart or he has to be redeemed or whatever. And so it'll be him and Lane together against the world or whatever, right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:48",
+            "text": "As IMDb does not list Mission Impossible. So there's that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:53",
+            "text": "as good. So now we have the chase scene, and the running and the running and the chase scene. So I was so in love with us, having him be in St. Paul's, which we April and I went to a couple of years ago and checked out it was just so awesome. Both the awkwardness of him walking around the floor"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:13",
+            "text": "really did the whole thing where it's they reveal that he walked into a funeral. Really good gag is great. Yeah, I love it. Again. It's sort of just like it's this fun. Like I was like, oh, London Yeah, let's let's see the sights the Tate Modern St. Paul's Cathedral. They can go to like you know the tower and see the crown jewels, but like, whatever. It's cool. Like, you know, I can't fit it all in one day. No one tire yourself"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:14:36",
+            "text": "out. And hopefully we don't destroy these places during filming. Yeah, exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:40",
+            "text": "Exactly. So you have the long shot of him running and then taking a turn and then jumping from one building to the next building. Which famously he broke his ankle when he landed. And they have a couple of different shots that they have on it but importantly, they At the end of it is a switch back to the shot of him climbing up and over and hobbling past the camera. Because Tom was sure that he was going to get past that goddamn camera before he was going to stop and request any kind of medical attention. That is the top of what you can do. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:19",
+            "text": "mean, it's the that is dedicated occasion except for the fact that it fucked up the rest of the shoot, right? I mean, like because there's like, you know, there's all these others like the one of the scenes that you know, the movies obviously not shot in order. And so one of the things that they had to shoot later was the whole plutonium scene, where they get the plutonium from the guys and the deal goes wrong. And so like in that scene, like all the blocking is Tom Cruise can't walk. So not put one foot in front of the other. So we're just gonna move the camera around. You don't notice that Tom Cruise cannot move or put pressure on his foot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:56",
+            "text": "Oh my God, that's hilarious."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:15:59",
+            "text": "But they pulled it off, man. Like I didn't think about the fact he was."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:02",
+            "text": "I didn't either. I didn't know about the whole broken foot thing until until after I was watching it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:08",
+            "text": "Yeah, well, and so the climax of this chase as he finally catches up to Lark as he takes off and is Tom is left standing on top of the tape. It is beautiful, long distance shot and all the shots of him running. kind of pulled back. were spectacular. But I just want to say that the stunt of standing on top of a building like that is not a stunt I would be capable of doing just because of fear of heights. Yeah. So just put it in context like that. That's where I am on the scale on the Tom Cruise scale. There's a lot"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:43",
+            "text": "of things that Tom Cruise can do that I'm not I'm not willing to do that's for sure. I'll give him that fly a helicopter learned to fly a helicopter fly a helicopter. Do any of the helicopter stunts? Not down? Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:16:54",
+            "text": "that roof is not big."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:57",
+            "text": "No, no,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:57",
+            "text": "it was very narrow. Yeah, no. Yeah, that was a bet is absolutely beautiful. Beautiful shot there. So we cut from there to Luther and Ilsa having a talk, where he's explaining that background with Julia and the fact that she cares about him. What was your guys take on that scene? We don't spend a lot of time on it. But I just thought it was kind of interesting to have ving have some emotional work to do in this film. I"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:17:21",
+            "text": "liked it. I liked that. He got to get his moments in this. I mean, he's been through all of these with him. Right. I think he's been in all the mission. impossibles like he's his oldest pal?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:32",
+            "text": "I think he skipped one or two. Yeah. Okay. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:17:34",
+            "text": "I like I like that. They give him a moment."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:36",
+            "text": "They basically said in the commentaries like we owed thing Ving a moment. And so he didn't have much to do in the last one. We made it more about Simon. So we felt bad get this. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:48",
+            "text": "that makes sense. So now we had to Kashmir and we have Julia the revelation that that Julia Tom's ex wife who he sacrifices marriage to in order to keep her safe after the events of Mission Impossible three, it was so great to see Michelle Monaghan. I love her in everything that she's in bad her performance and bad Santa her performance in True Detective Season One, just forget about it. And then West Bentley, I was like, weren't you just like a teenage boy. And now you're a middle aged man. like, Wait,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:26",
+            "text": "who's that? Guy?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:28",
+            "text": "That's her husband."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:29",
+            "text": "What was he in?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:31",
+            "text": "He was an American Beauty. Obviously, his first film. He's the kid in America. He was like he was probably 25 At that point or whatever. Oh, and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:39",
+            "text": "he's an interstellar. Oh, yeah. Oh, and he's in always in The Hunger Games is Seneca Crane. Oh, yeah. This guy? Yeah, I just got a whole thing I just wrote down eyebrows. My note my note was my note. My note in my document is ex wife has a guy with crazy eyebrows"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:03",
+            "text": "so I love the fact that, you know Tom is doing his thing where he is kind of like as he's talking and he's making up a story and whatever. He or she says he's on vacation. And he's like, No, I'm I'm actually working at to send her the signal. She knows instantly that things are in danger. Yeah, yeah, it's not good. And then they give a hug. And he says, I'm so sorry. And then like, it's very tender. And then point two seconds later he is sprinting."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:34",
+            "text": "They all wouldn't raise questions. Yeah, they all just go it would raise questions. I think people might look at like for people who just showing up and just started running around like maniacs. Some not."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:19:46",
+            "text": "Because they're in the middle of nowhere, literally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:48",
+            "text": "Yeah. So they do they find the bomb immediately. So I did have a note like Elaine doesn't have anybody left to guard the bombs. Like they just they're just sitting there. Me I guess he's guarding one in the house but I was just surprised that there was nobody left to to handle that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:03",
+            "text": "You're gonna if we're gonna ask questions about like this part of the movie, like, Okay, well let's, let's just throw out the fact that the theory is that they have two bombs, the bombs cannot be diffused separately, because they've got this microwave transmitter, they have to be cut within a 10th of a second, or delays go off. But also, they have a detonator. And once that name is activated, the countdown cannot be stopped."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:20:28",
+            "text": "Oh, right, there's that whole thing. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:30",
+            "text": "but you have to remove the few remove the key after it started,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:34",
+            "text": "right, and then do the cut the two things. Now, let me point out that if you have a countdown that can't be stopped, and a guy who's willing to die, wants to die at the place where the bomb is going to be set off. You don't really need a countdown, you just need a guy to push a button and set off the box. You can avoid this whole situation of like, you know, like have a crazy countdown with it and just have ln, push the button and blow up the bomb. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:05",
+            "text": "But what if you want to have a helicopter Chase? Well, then"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:09",
+            "text": "you gotta you gotta come up, then you have you have an impossible problem and possible solutions. And like literally, this is how they talk about in the commentaries. It's just like, and I just tell people this Tom Cruise like I just tell people, we're going to figure it out as we go. Some things won't make sense. But we just keep going. All right, you go, you figure it out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:34",
+            "text": "I actually liked that I that is an element of the character Ethan, aka Tom, that idea of saying I'm just gonna figure it out. Actually, there's a great moment where Walker's saying something to him about, you know, what are they going to do? Because Oh, Solomon is going to identify him when they break when they break him and out him to the White Widow. This is when he's undercover. And Tom's responses will burn that bridge when we can get to it. And that's like, yeah, that is like the philosophy of making money. Not cross not cross. Yeah. Burn that burn the bridge. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:05",
+            "text": "And so like, there is like this element of improv that the filmmakers talk about where they're like, yeah, they get themselves into these problems. And then they have to, like, figure out some story solution to like the corner they painted themselves into, which is not unique to this movie, The Mission Impossible. That's also how Kubrick, right? No, we wouldn't No, no, no, no, Kubrick was an obsessive planner who like planned out like every I was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:29",
+            "text": "thinking of him Kubrick pushing his actors to the point of breaking them down to the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:33",
+            "text": "character. But like, from a story standpoint, he was like, you know, like, you know, Napoleon, like the Napoleon movies never filmed, but there's like, 80,000 Oh, yeah, total cue cards, I will show you exactly what was supposed to happen. No, but this is this is like, how my understanding is like part like, partly like, episode nine was this way as they're just like, I don't know, like, what's going on? We're gonna have this like, we're gonna need like the story solution. Like, y'all, let's find out what happens along the way."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:22:57",
+            "text": "You know, a lot of movies are made that way. A lot"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:00",
+            "text": "of movies are made that way. That's crazy to me. Like, it doesn't that doesn't seem great. Like, I mean, like, you know, obviously, it works. Like this movie was a commercial, like, all the movies are commercial successes. But like, I mean, like, you know, just like, can't you just get some cards and write down what you think's gonna happen in the third act? Too much. Like I have before you before you spend $170 million on a wind turbine. Like just like,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:23:26",
+            "text": "I mean, the crazy. The crazy thing is like these things get greenlit right and then like, the second thing get greenlit, then they set the release date, right? And then then sort of back time, everything from there. So then everyone's scrambling, and they're like, oh, we gotta figure this shit out. And so that's how a lot of these movies are made is like, they get announced. And then they figured, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:44",
+            "text": "well, typically you think about filmmaking by committee or something. But I, I definitely echo that, that Jason, for me, it was it's kind of shocking the fact that there wasn't more regimented process on for instance, Episode 789. To say, like, this is the story. And we're gonna bring in people to execute each part. It was"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:03",
+            "text": "more like, as a more like, we're just gonna have this creative team and like, we're trusting them to like figure stuff out and like, here's, yeah, go for it. The project manager and me kind of, I just don't get I don't get that. But I don't I don't make I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:16",
+            "text": "won't, we won't put you on the spot, or on the record for commenting on Star Wars related"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:23",
+            "text": "techniques. So it is crazy that, like so many movies are made that way."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:24:26",
+            "text": "Yeah, I mean, pretty much every movie I've worked on in the past, I don't know, at least a decade has been like that, where it's just been a mad dash to try to figure out how to like, make it all together, make it get it all together and make it all work and yeah, thankfully, there's people that figure that out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:41",
+            "text": "Yeah, I mean, I think what you said completely resonates I remember hearing Fabbro talk about after the success of Ironman the fact that he was told here's the date for Iron Man to Eddie was like, You're fucking kidding me. And then we gotta go figure out how to make it happen. So yeah, definitely a challenge."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:24:57",
+            "text": "Iron Man by the way, just weird sidebar. That was my favorite movie I've ever worked on. Oh, that's great. That's like favreau's Great. We didn't know Downey Jr. was going to be so just be so much fun, like, love that movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:11",
+            "text": "That's great to hear. It's a delightful movie. I'm excited for how much more of the Marvel Universe Favreau is hopefully being given a run. I think that would be a good turn of events for everyone."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:25:22",
+            "text": "He's got his fingers on a lot of pies right now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:24",
+            "text": "Yeah, yeah, I would like to see him continue getting into the Star Wars world ideally. Yeah. All right, so so from here we have two last pieces that kind of drive us to many different climaxes good lord actually there's a lot"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:38",
+            "text": "in this movie. I'm like tired I'm tired just like remembering what was there's just a lot it's we're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:44",
+            "text": "gonna hit what we'll close this we'll close this out. But so you have the baby."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:49",
+            "text": "Kansas you didn't espresso. Oh my god."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:52",
+            "text": "So we have the Benji  Ilsa Lane fight, which to me is a really really great fight. It's super funny and has all these really great intricacies like the moment where she kicks the box over when he's choking. Yeah, it's like a Jackie Chan fight. Really? Exactly. Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:26:08",
+            "text": "she does. She does her like anti flashdance."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:11",
+            "text": "Funny. That's fine. Reverse Flashdance. That's really funny. First flashed Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:18",
+            "text": "this was no zardozz you know, chicken fight."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:22",
+            "text": "This was a real fight. Yeah, yeah. So I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:25",
+            "text": "love that. How that how that all went out. Oh, and I did note, she had the rope at one point. And she lashed out like she had a hidden secret sleeve. It was very"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:35",
+            "text": "I'm telling you it was like very Crouching Tiger. It was like there was a very like, you know, like, kind of like, kung fu movie element to this to that fight scene. Which I really liked. Alright, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:45",
+            "text": "while that fight scene is unfolding, we get to Tom Cruise loves helicopters. Tom Cruise those"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:50",
+            "text": "helicopters. That was that was the working title for Mission Impossible six. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:55",
+            "text": "him running up and grabbing the rope and then the helicopter takes off. Now I'm smart enough to know Yeah, he's on wires. The wires are caught our you know, bolted onto the helicopter. And there is literally no way that he could fall and be significantly damaged. But the concept of running up and grabbing a rope and hanging from the bottom of the helicopter and then climbing up the helicopter in a subsequent shot. And falling all the way down. Bouncing off that thing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:23",
+            "text": "Yeah, they really dropped that dude. They dropped him for real they dropped him five times onto that onto that. That's insane. They that is a they really bounce Tom Cruise off of a giant giant rock hanging from a helicopter."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:36",
+            "text": "I don't know what that was. I don't know. It was like laundry or something. What was it? Yeah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:27:41",
+            "text": "I didn't know what it was either. Awesome. When like, it seemed important for some reason. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:45",
+            "text": "wild, though. Like five times are like yeah, we're gonna drop Tom Cruise onto this giant rock out of a helicopter. Like at like at like real speed. And like he's like, yeah, he's like a really hurt like every time I like knock the wind out of you. And they're like people watched it like there's Rebecca Ferguson's like was what are they doing over there and they saw her and she saw him fall and she just screams Jesus amazing stuff. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:13",
+            "text": "I do love when he finally gets up into the helicopter there is again this great moment where the guy looks at him like good get Where the hell do you come from?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:20",
+            "text": "Yeah. Where the student helicopter come from? You'd be surprised if you run out like after the dude like just suddenly popped up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:29",
+            "text": "Yeah, so you have this chase and crashing and all that kind of stuff. But I do want to say the colors for all of this and in general the scenery so we have shots from Queenstown, New Zealand we have Lake Quill, overflowing into the Sutherland falls like down 2000 feet. And then eventually they crash and we have the crash"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:50",
+            "text": "in in Norway. Preikestolen. Preikestolen. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:53",
+            "text": "have you been there? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:55",
+            "text": "The preacher. I have been there. The preachers pulpit. It's beautiful. Before they crash oh, there's a great scene where they're flying. So I mean, the whole thing about Tom Cruise flying the helicopters. He learned how to fly helicopters. Then he learned how to do the acrobatic stunts and then he does this crazy like he does like the crazy quarks. This is another thing like the HALO jump like he does this corkscrew dive, which is very dangerous. And like, you know, like is a Tom Cruise could have crashed his helicopter into a fjord and you know, would have been a very tragic ending. And like it's not clear like why like for what shot like of Tom Cruise being in that, like the exterior shot? Anyone could have been flying the helicopter like it doesn't the fact that Tom Cruise is flying, it doesn't really matter. It does matter. I mean, for like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:41",
+            "text": "it doesn't it doesn't matter because you know, he's flying it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:44",
+            "text": "Yeah, this is like some sort of like, you know, meta gourmand theory of film where it's like, you need to know like, where the, you know, the cow came from, like, in order to appreciate its flavor. It's like, I don't know, maybe, but there's a great scene. where Tom is flying the helicopter and the helicopter battle. And he looks at he looks at Henry Cavill and Henry Cavill rises him and he just goes, That's right. Like Tom Cruise I guess."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:12",
+            "text": "Not the line because I wrote this line. The line is"
+        },
+        {
+            "name": "Mission Impossible sample",
+            "timestamp": "1:30:16",
+            "text": "a train. wreck."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:21",
+            "text": "That's right prick. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:22",
+            "text": "great. Okay. That's even better. Loved it. That's"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:30:27",
+            "text": "right. I feel this whole helicopter thing is I mean, helicopters were like a big thing like an 80s. You know, Wolf and blue Thunder Thunder. And I feel like I feel like that they went out of vote. Yeah, people didn't have epic helicopter battles for time. So it's nice that you"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:44",
+            "text": "literally just said like, they're like they say in the commentary, like we've long wanted to do a helicopter fight like we want to, just like after right so we're gonna fucking do it. $170 million. Tom wanted to learn how to fly helicopters. We were we that was the one postcard on the cork board was helicopter fight. We just worked around from that now that wow, Chip. But yes, going back to precast on the preacher pulpit in Norway overlooks the Lysefjord just a really beautiful fucking beautiful part of the world. And like you, I mean, it's that is what you see what you see what it is. It's pretty dope."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:24",
+            "text": "Yeah, well, that shutdown, the shutdown was good. At that point. I was like, really exhausted. Kind of getting getting through it. But you know, that final resolution there and it comes down to Tom climbing again, which is a call back to Mission Impossible to Yeah. But it's like in that moment. It's like, oh, yeah, this is my thing. I know how to do this rock climbing. That's, that's my that's my happy place. So that's the that's the clothes, they you know, he pulls the pin, they're able to cut the thing. There's a beautiful shot of him hanging on the edge as the sun you know, the light of the sun faking you out about whether nuke just went off? That was really cool. And then you have this final wrap up with him in the hospital bed and and talking to Julia. And to me, this was intense this notion that, you know, she has this cross to bear, but she accepts it. She says, Look at me, look at my life. I love what I do and would not have found it if I hadn't met you. I'm a survivor. Nothing happened because you were here. I sleep soundly at night knowing you always will be. I just thought that was a no who? Mary."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:32:27",
+            "text": "What did I also whisper to her? This is like the Lost in Translation. Yeah. You're like, what? What's what's going on? Now? We're not gonna tell you Sorry. Could you? Beat it?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:41",
+            "text": "I murder people. Yeah. All right. Lorelai."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:45",
+            "text": "Last, any closing thoughts on Mission Impossible fallout? Anything we missed or anything you want to you want to add? Well,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:32:53",
+            "text": "you know, I was just thinking about that that last scene where it's Julia, and then in comes Ilsa . It's like, we're going to replace you with the younger one. I know. I felt like it. kind of bummed me out. That that's that's how that was going to end. But I mean, aside from that one thing, but this is the kind of movie that I want to see in the theater. And I miss going to theaters and being able to like see these huge blockbusters watching this again, just made me it made me miss that experience. When"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:21",
+            "text": "I saw I know you've had a running Twitter thread about the 1918 pandemic. When will we be back in theaters?"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:33:28",
+            "text": "I don't know. I'm really I'm really bummed about that. I just finished the Twitter thread. pretty recently. And there's too many things out in play. Right? I think what what you might need is like, definitely some government support, because that's what happened in 1918 was a lot of the independent theaters is that they, you know, they asked for government rebates so that they could account for the time that they were closed. So, you know, that kind of needs to happen. We just say"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:55",
+            "text": "briefly, AMC announced today that they may run out of cash by the end of the year."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:33:59",
+            "text": "I saw that I saw that. But on the other hand, I'm like, yeah, there's just too many screens, right? Like these cineplexes are just outrageous, and they're empty for so much time. Like during the day, they're practically empty, right? They're mostly there for weekends. So in 1918, the theaters were independently owned, like they were most they weren't chains yet. It would be nice. If they could go back to just sort of like smaller houses. I think that they'd be cared for a little bit more, you know, but I don't know. I can't predict the future. Especially these days. I feel like everything is absolutely bonkers. Yeah. And I just want to be able to be in a movie theater again. But I also do want to get COVID Well, we"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:42",
+            "text": "will I am confident that we will in the fullness of time. And I'm hoping that sometime around next summer. Yeah. Sometimes to see dune. Yeah, exactly. Jason, your final thoughts and what did we learn about dune 2020 either from the spectacle of this film or from Rebecca Ferguson's performance."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:02",
+            "text": "I mean, like I was really is this is like the first i This is like the first like big action movie I've watched in a minute I guess. And I love the genre I just hadn't seen one in a minute not and like I said it wasn't familiar with this franchise. And so like digging into like, sort of like the metal layer of this movie, I was pretty excited about what you can do with $200 million. Like, like you could do a lot. Like it turns out like you could do a lot like you can build a giant wind turbine. You can like drop people out of planes repeatedly to get a three minute shot over Abu Dhabi. You can like, you know, do this crazy helicopter chase of New Zealand. They got the Arctic tree on for two hours, they shut down the entirety. It was the first time that anyone's ever been given the Arc de Triomphe to like, shut down, like all the entirety of the 12 like to give them the ability to do that. That shot in Paris."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:54",
+            "text": "That's because Tom was the facts, the people of Paris, they, yeah, they hadn't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:59",
+            "text": "done that screening that then like put up that silk, like the the love and the respect for the people of Arizona, they wouldn't get that shot. So they got all of the stuff that like you just don't I mean, all these incredible locations. And obviously, June doesn't need most of that it's going to spend it in all these other ways. And I don't know, man, it feels like it's just a lot of money. You can do a lot you can there's a there's a lot you can do. And so I'm really excited to see it applied. Also. The other thing I'll say is, we talked a bit about how this movie and many other movies are made with, you know, we don't know where the story is going. We'll find it along the way. Like that's like a dominant theory in blockbuster filmmaking. We know that's not true for Dune, we know for sure that's not true for Dune. I know where they're going. Like they have a very clear blueprint, like Denis is very faithful to the book is talked about being wanting to be faithful to the book. So there's no like discovering the plot points along the way. And so I'm interested to see this level of production applied to something where we know where the story is going totally, with incredible actors such as Rebecca Ferguson. Yeah, yeah. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:05",
+            "text": "very excited about it. I am specifically excited about, you know, Denis said, relative to Rebecca Ferguson, he didn't want lady Jessica to be a quote, space nun, which is what he thought she was in Lynch's Dune, and that he wanted her to be more of like a warrior priestess. And I think you have both the strength and the power, as well as some of the emotional core demonstrated here. And I'm certainly interested in in seeing her. And just like, just the shots of her in the trailer, have looked really incredible. And I'm just I'm very, very excited to see to see what she does. So I watched for five and six over the last four days. So I got deep, deep into it. Wow. I will say, Jason, you 100% should go watch Rogue Nation,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:55",
+            "text": "which Yeah, I'm going to for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:57",
+            "text": "It's a better it's a better film, in terms of the story and kind of making sense and things that are happening. It still has plenty of its moments that are that are way over the top, but but it is, I think some of this stuff they did the opera in particular is like the highlight of all Mission Impossible movies for me ever. Just really, really great. So so check that out and see what you think. Great. All right. So we have one last piece of business before we get to letters, which is who would Tilda Swinton play Lorelai ah,"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:38:31",
+            "text": "I was thinking about this. I was thinking about this or you know, I was thinking Mills, the scientist with the manifesto. Hmm. Oh, yeah, sure. Sure. Because I could see her like, going off on that. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:46",
+            "text": "unhinged and and kind of giddy in that performance. Yeah. Nice. Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:52",
+            "text": "Well, that leads to the trickshot, which would be that she plays Wolf Blitzer in this movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:00",
+            "text": "And now Wolf Blitzer. But it's just her no makeup. Just yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:03",
+            "text": "No, but the non trickshot version is I think I would like to see her in the Sean Harris role. Yes. As Lane. Yeah. As late. Yeah. I think that'd be really Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:13",
+            "text": "I thought she'd be a great Benji as well. Yeah."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:39:16",
+            "text": "I was thinking Benji too. But I love Simon Pegg so much, and I'm sure"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:20",
+            "text": "for sure. Simon Pegg is like, do not kill my character. Ever."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:24",
+            "text": "He seems stoked about being here. Simon Pegg seems like a fun time. He like seems stoked to be doing this. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:30",
+            "text": "he also looks like he's getting a little ripped. Yeah, he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:32",
+            "text": "in good shape, man. He's in good shape."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:39:33",
+            "text": "Oh, he's probably training with Tom Cruise. Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:36",
+            "text": "Yeah, that was an agent"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:45",
+            "text": "Okay, that brings us to letters. Let's see I have one letter and one voicemail. And again, I don't read these in advance, try and get try and get a live reaction for"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:56",
+            "text": "purity sake."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:57",
+            "text": "This first one is Hello friend. My name is Reem Hashemi, the Emirates Minister of State and Managing Director of the United Arab Emirates Dubai. World Expo 2020 Committee, which has been postponed October 21. To march 22. Because of COVID. I'm writing to manage the funds I received as a financial application. I'm not sure"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:26",
+            "text": "it's so good. That's a great guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:27",
+            "text": "Thank you. Thank you, Kareem Hashimi, follow up. That's great. All right. All right. Here is our listener voicemail."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:40:39",
+            "text": "Hey, Jason, and esteemed guest. Man, a great episode with Zardoz. Help. Remember, it's been a long time since I've watched it. I didn't remember it. Being so wacky. I have to definitely revisit it as you guys talked about it. And do remember thinking during your whole episodes, like man, I can't wait to call these guys about this was such a good episode. Until Jason betrayed the entire pod and called Excalibur Oh, and I quote, trash."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:13",
+            "text": "Yes, it was"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:41:16",
+            "text": "a little correction. But Jason's really standing by that not liking excaliber and I don't know dude. Like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:25",
+            "text": "Lorelei, I just had to pause Lorelai Do you have a take on John Borman's 1981 masterpiece Excalibur."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:41:32",
+            "text": "I do not I can't even remember if I've seen that. Okay, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:37",
+            "text": "I won't ask you to repeat the charm of making nor will I vocalize the charm and making again two weeks in a row. But if you do it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:45",
+            "text": "twice, then Oh, okay. Put"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:47",
+            "text": "it on put on the list. Unless and check it out. Alright, continuing with Cory. I"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:41:53",
+            "text": "thought we had something I always look forward to all your insights and Yeah, funny. quips and jokes and I don't know anymore. Anyway, maybe you can redeem yourself. We should all rewatch Excalibur together and then really have come up. I was gonna say like, it's come to Jesus moment. But that doesn't seem appropriate for any of us. For example. I guess in the words of hate, hate, hate slash Dunkin to Jason is min tat. Salsa myself."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:33",
+            "text": "Damn. That was a good voicemail. Shut up, Cory. I do want to apologize. I was listening to the podcast and I got really feisty in the last like 20 minutes of of Zardoz and was just like, just just really is really trying to rip some hearts out and I don't I don't think I actually have that strong opinion about Excalibur. I was just Yeah, I don't know. I did the podcast or he's right. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:04",
+            "text": "no, no, no. And like everybody has the has the right to love what they love. We respect your opinion, although I will say I'm very tempted to cover Excalibur in season three."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:17",
+            "text": "I think we should I think that'd be right. I agree to that as penance."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:20",
+            "text": "Okay, nice."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:23",
+            "text": "I have I've just like one or two small notes in the letter section. One is Keith Frazier to tackle Keith asked us if we're going to cover incendies depending on it was maybe yes and we will cover it at some point we're doing preserves next week incendies I believe will be in season three. Yes. Yeah, but whatever I got anything Bono's done. We will cover and then one other point about Zardoz. Oh yeah. Nico Nico Neil in response to our posting about Zardoz our episode about Zaradoz said, this is definitely the weirdest James Bond film and which I thought was a really good ganzar dyes and kind of blew my mind because Zardoz is of course a movie of a race of eternal beings who achieve immortality through gemstones. And so honestly, diamonds are forever would have been a better title for Zardoz than Zardoz, which is I mean."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:25",
+            "text": "Yeah, the problem is they couldn't get it. They couldn't get it to fit in the logo and the metal, the metal style Lorelai as we wrap it up, what? You know, what are you excited about? What do you have going on? What can you talk about that that is your next thing that is making you happy? Well, I'm"
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:44:43",
+            "text": "currently working on Space Jam. And I actually don't know anything about sportsball. But it turns out this LeBron guy is really cool, dude. Like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:44:52",
+            "text": "he's good. He's good at basketball, too."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:44:54",
+            "text": "I like him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:56",
+            "text": "He had a good week."
+        },
+        {
+            "name": "Lorelei David",
+            "timestamp": "1:44:57",
+            "text": "He had a good Yeah, yeah, it turns out he had he was also had a really good week and I just he just seems like a really good guy. So it makes me it makes me feel happy that I'm working on this because I feel like I want to support good people, you know, at"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:09",
+            "text": "King James on Twitter, like one of the one of the all time that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:12",
+            "text": "good, I think I think LeBron James needs our plug, where he is able to find LeBron James very little known, but once he gets that dune pad shot out, people are gonna start finding"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:24",
+            "text": "that the Dune Pod bump is gonna get that works every time. Yeah, it works every time. Yeah. And that's it for this episode of Dune pod. I want to thank Jason and Lorelai for a really fun conversation. Next week, we tackled Denis Villeneuve's first American feature film 2013 psychological thriller prisoners. It's dark, but it's amazing. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of each industry's a member of the paper keg radio syndicate. The episode was produced and edited by me Ah, our artwork is by capture and our theme music was composed by Toby Foresman of whipsaw music. Thanks for listening. see everybody next week."
+        }
+    ]
+}

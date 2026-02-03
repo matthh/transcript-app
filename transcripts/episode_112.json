@@ -1,0 +1,1811 @@
+{
+    "episode_number": 112,
+    "episode_name": "The Terminator",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:02",
+            "text": "This is a tape tech podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:15",
+            "text": "Hey everybody, it's H and welcome to the latest installment of doom pod, your one stop shop to enjoy the new dude movies. This week I'm joined as always by my co host Jason, that kid"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:26",
+            "text": "is a piece of Lego. Like if you go to a run, I mean look like dining out with young kids is not great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:31",
+            "text": "And by the showrunner of HBOs house of the dragon, Ryan Condal."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "0:37",
+            "text": "Guys, prepare yourselves. Proud to go deep and nerdy on this Ryan's back"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:41",
+            "text": "for part three of our Michael Biehn journey with the greatest time travel action movie of all time, Arnold and James Cameron's that Terminator streaming now on Prime Video. If you're enjoying the show, we need your help. Take a minute and leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. A link is in the show notes. And now without further ado, the Terminator. It happened. We're back."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21",
+            "text": "Yeah, we went away. And we returned."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24",
+            "text": "Yes, it feels good. We had to like double record because you were traveling. Oh, yeah. You were at the White House."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30",
+            "text": "I was at the White House. Yeah, it was it. It was great. Yeah, it was there for the Obama's portrait unveiling. And it was a great ceremony. It was cool to see like a bunch of old colleagues. And then like, and like the speeches were great. Mrs. Obama speech in particular was really, really good. encourage folks to check that out. I think the portraits are phenomenal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:54",
+            "text": "Yeah, he just did a photo for his for his portrait. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:57",
+            "text": "know it looks so it looks so good. It's in person. It's really amazing. Like, because it just sort of floats off this white background. And it's very effective. And looks like none of the other portraits of the official dawning. Absolutely. sounds really great. And they go and they just put it right up on the wall. Like they're in a waste of no time. There's like it goes right out. We unveil it, but it right on the wall. So yeah, it was really great. Got to talk to the old boss for a minute. That was nice. And then I went in the next day back to the White House and visited the new digital team. At the I mean, not new now. But like the Biden digital team. And yeah, swap some more stories with them. What's amazing"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:37",
+            "text": "is clearly the White House Communications team seems to be in a forward leaning much more aggressive mode. Would you agree? Yeah. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:46",
+            "text": "mean, like, as I was saying to them, I was like, when you have wins, when you have things that are going well, you're able to do more stuff. And like you have like and you have like wins, like now. And so, like they have things they can actually they get it creates a permission structure to try more stuff. So yeah, it was great. And went well, I was and then I came back."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:05",
+            "text": "Awesome. Man went to the White House and talk to the President and I went to Austin and ate really good barbecue."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:13",
+            "text": "I saw photos of the chicken and waffles. That was good. Oh, it's really good. Yeah, it's very good. And as of this recording, you're still in Austin. And still alive. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:23",
+            "text": "So in order to accommodate the scheduling with travel, and our guests joining us today, I have to stay a couple of hours later than my wife who left this morning and then I will be flying back in just a few hours. Well, so let's just briefly say like, I'm freaking out because our guest tonight, coming for the third time on time. The showrunner of HBO Max is super hit house of the dragon and just one of the loveliest guys we've met doing this pod. Ryan Condal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:53",
+            "text": "Yeah, like, I mean, I just, uh, just amazing that he would do the show in the midst of such a busy time for him and doing our show. But like, clearly just like a big fan of the types of movies that we cover, and, and a very steeped in the lore of those movies. So an ideal guest to talk about Terminator and check out his previous episodes. You'll see that he's a person who knows what they are talking about. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:23",
+            "text": "he did aliens with us and a tombstone. And so this is part three of the Kondal X dune pod, Michael bean and Bill Paxton journey, you know, as we do the greatest time travel action movie of all time, that Terminator. Yeah. This is one of the big ones Jason hanging out there like yes, one. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:43",
+            "text": "yeah, this and Gattaca really are the two that we hadn't covered so far. The phones"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:48",
+            "text": "the dune pod phone line has been ringing off the hook people are demanding Gattaca. Yeah. Gattaca? Yeah. terminators available right now. on Prime Video and Showtime, so if you want to stream that for free, check that out. But it's a great. It's a great film obviously, spoiler alert terminators good. Mm hmm. Next week on Dune pod, President Obama Yeah, he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:17",
+            "text": "so to come and talk about Gatica."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:20",
+            "text": "President Obama's chief speechwriter, I meant to say and the author of grace, President Obama and 10 days in the battle for America, as well as a DC Comics super fanboy. Cody Keenan."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:33",
+            "text": "Yes, Cody, saw him in DC. He's very excited to come on the pod. This book, which I've been lucky to read an advanced copy of is I will just say my favorite of the Obama administration memoirs, very personal. Wow, very intimate. A fairly unprecedented view of what it's like to work with. President Obama that very few people experience Cody and his other head speech writers being sold among them I would say. And so I'm really excited to talk to him about the book. meet you, man. That then we get to talk about Superman three, which is just a true die a true joy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:19",
+            "text": "Yeah, I don't know, man. Yeah, we'll get into it. Believe me. Next week. We will we will get into Superman three. It's a journey. It's a journey. It's a journey. We're gonna learn a lot. All right. Well, how about if we get into some do news? Would you like to know more? But first of all, there's actually a decent amount of good news for us to talk about. But let's start with our dear friends over at do news net, who reported that due to the movies massive scale, filming of Dune Part Two has allegedly expanded to other hungry locations in addition to or rego studios, with up to four units working in parallel, but production is still expected to wrap by early October."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:07",
+            "text": "All right. I'm a little nervous about that. I didn't I didn't know about that one. I'm just like nervous that like the they're gonna blow the budget. And then it's there's just no way Warner Brothers discovery is gonna be stoked to make part three. I just don't I just don't see how it's fine. And maybe it'll be fine. Maybe let's get to everyone needs to go see this movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:26",
+            "text": "We're going to start starting now. I'm excited because after this, I think they've got five weeks in that was in the UAE right? Oh, yeah. Deep desert. And then I assume there'll be some wonky stuff coming so stay tuned. But it's amazing to think that the core of that photography is gonna be done in just a couple of weeks. Good lord. Godspeed any. And now it is time we're a little bit late. So we're gonna hit this pretty quickly. But let's wrap up Venice. Doing pod fashion report."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:03",
+            "text": "Yes, yeah. Oh, yeah. Great. Would"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:07",
+            "text": "you agree to deal with this outfit"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:09",
+            "text": "man is wearing out a halter top. And he didn't spit on anyone. To her now that didn't want to be spit on and look great. I was strongly Pro. This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:23",
+            "text": "amazing. His Ray Bans are on sale. They are $200 He's a man of the people I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:30",
+            "text": "appreciate anytime I see a man of Jewish extraction who's able to wear a backless dress out there because like I mean for a variety of reasons but I the amount of waxing that I would need in order to pull that look off just so painful. But he doesn't effortless and that's why he's that's why he's the goat but there was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:55",
+            "text": "in the in the dune leaks discord there was a lot of discussion about how much bigger he was or was not and there was some speculation that Timmy is putting a little swole"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:08",
+            "text": "he was a little I thought he looked a little bigger particularly I thought like Yeah, I thought he looked a little bit bigger in the in the in the in the back."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:18",
+            "text": "So yeah, maybe that was the area of focus. Focus, Timmy Timmy looking good as did miss flow. Yeah, she"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:26",
+            "text": "looked amazing. Oh my god for like the 14 seconds that she didn't show up to this fucking shit show. With an Aperol Spritz. Yeah, fuck this whole day, but she showed up look great, didn't get spit on. Didn't get fined and then bounced back to the studios good for her best thing coming out of that whole nonsense."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:46",
+            "text": "We're gonna cover the film. Don't worry, darling. That sort of dominated film Twitter for a week all around Venice. We'll cover that on the pod for sure. Whenever you deign to watch it from your underground bunker Yeah. out with an H vac suit on Yeah, so we will definitely get there but we strongly stay on flow in all things. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:07",
+            "text": "she looked great love flow. We are Team flow. Amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:11",
+            "text": "Doing pod fashion report. All right, that brings us to our next piece of do news. It's Hans Zimmer's Birthday."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:25",
+            "text": "Happy Birthday Hans Zimmer. Yeah. The Academy Twitter account ran a tweet asking what you thought the best Hans Zimmer score was up have his many nominated of his main nominated scores."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:40",
+            "text": "And you picked Interstellar,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:44",
+            "text": "I picked Interstellar. What do you think?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:46",
+            "text": "I'm kind of I would say about the same between interstellar and dune. I, I think Interstellar is maybe more realist audible. Like if you were driving. Yeah, put it on. But I think the power of what he's doing in dune and the impact that it has on the film as a as a major component, I think is maybe even stronger. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:06",
+            "text": "think Interstellar is just so iconic. That the score like sort of competes so favorably with even the I think the score maybe is what people remember about that movie even more than the movie itself at this point."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:18",
+            "text": "Yeah. Although in fairness, yes. That kind of like changed sentiment did in terms of score, I guess Batman to fuck, man, that was really good as well. Hans Zimmer,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:30",
+            "text": "it turns out is very good at scoring movies. Is Yeah, good. Good. Shit."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:35",
+            "text": "Well, happy birthday. Happy"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:36",
+            "text": "birthday odds. 27 years young."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:39",
+            "text": "Last piece of news I have is the official announcement of the dune pod Austin meetup on October 13. In Austin, Texas. Be there or be Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:51",
+            "text": "Yeah, I won't be there. But I liked that Austin is doing pods. Second home. Maybe personally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:59",
+            "text": "We'll see. So jump into the Doom pod discord and look for the details on that meetup. There will be drinks and socializing and good times. So check that out. Are"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:11",
+            "text": "you moving to Austin feels like you're spending a lot of time there."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:13",
+            "text": "We're definitely spending time in Austin. We're not moving here. But we will be here a number of times. I'll be here for a week in the beginning of October. And so and the Texas Longhorns beat the spread by 20 points yesterday, so we'd lost the game by one point. But we did an incredible job on Saturday, so I'm looking out for it. Mm hmm. hokum horns. All right. Let's welcome some new discord friends am Boyle Brian Joe Smith, creator Justin and Steph X all joined this week. Wow."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:50",
+            "text": "It's been a good time in discord. As always, the chocolate viewings have been delightful. The next one that you can attend will be maybe Big Trouble in Little China on Tuesday the 20th we'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:04",
+            "text": "see stay tuned. Stay tuned. Stay tuned, drop in the discord because things are in flux. But there will be depth there will be a screening of some kind on Wednesday, every Wednesday every Wednesday 8pm Eastern Time and sometimes"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:19",
+            "text": "bonus ones. You should just join the discord. It's great. Do it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:23",
+            "text": "it is a good time. All right. Well, Jason, are you ready to get into this discussion with Ryan Condal"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:29",
+            "text": "let's do it. Real Ryan Condal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:38",
+            "text": "Dude, POTUS recorded in front of a live studio audience."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "13:45",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:45",
+            "text": "hell yeah. Ryan Condal. You are back dude. What? What's going on? Like how you feeling?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "13:52",
+            "text": "I am back. That's a fancy new intro. You guys have? Yeah, it's like being live in the studio. This is this."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:00",
+            "text": "You're not You're not the only one for him. Big things have happened. Ryan like yeah, we got we got new sounders over here."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "14:06",
+            "text": "That's awesome. Guys. You guys are so moving up. I love it. No, it's great to be back. I love chatting with you guys and talking about any any movie or show other than house of the dragon. But not not for lack of love of my show. It's just, it's been a lot. Yeah, we're just I'm tired. I'm tired as the answer. It's it's the middle of September and we are so much on with Season One. still delivering episodes at the tail end. But you know, everything is very, you know, wow, comes right, right up to the end and not by design, but by you know, just the circumstances of making a show during COVID. And, yes, it's been it's been It's been stressful. We're working on season two, as everybody knows, so that those Yeah, going on at one It's and yeah and my what the last remaining embers of my once great empire of hair are slowly it's fine like the fall of Valeria."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:12",
+            "text": "It's fine you don't need it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:15",
+            "text": "You look good in the behind the scenes with a black leather jacket though on like I was"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:18",
+            "text": "gonna ask about the black leather jacket shoe that was on my notes. I thought it was a very, very stylish choice."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "15:24",
+            "text": "It's my, my just I said I said very quickly to to my family. How do I exude douche for for 10 episodes? I'm like your take this take this leather jacket. Yes, thank you. We recorded the reason I'm wearing the same costume and all of those things. It's because we recorded those in a like blitz block in one day. So right to talk about every episode, sort of, you know, one by one. So you see them you bid out but I do I do have more clothes than just a black leather jacket. Although once you have black leather jacket. Really? What else do you need? relevant to our topic? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:58",
+            "text": "definitely relevant. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:01",
+            "text": "That's amazing. Well, it you know, it's funny, I just was listening to the aliens episode, which was almost a year ago, and you were sort of mid production. And it was just so exciting to think about it. And like our reaction just genuinely to be soaking in that world again, and to see the trappings and the locations and the the heraldry. And then the performances that are coming through are just staggering. So it's just congratulations, man. It's a really great thing. Oh,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "16:32",
+            "text": "thank you. Thank you. It's very nice to have it out there long last because I think it always it feels like you're making a television show or a movie or whatever, in a bit of a vacuum. Because it's just you and the people making the show. And then at some point you give it you give it over the world, I think we felt more like that in this situation just because of COVID. And because it was so bubbled and you know, my family didn't even come to see set because they weren't allowed to. And, and so and it took longer to make it so felt like we were in a bubble for a bigger, bigger or smaller bubble, I guess for longer. So now that it's out there, and it seems to be, you know, resonating and landing with people, it's really, it's it's very nice, I would say Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:12",
+            "text": "Has there any has there been anything like surprising in like, the first four weeks of reception that you're like, you know, oh, we I didn't know people would be picking up on this from the show or that like, you know, folks would have this type of reaction."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "17:25",
+            "text": "I mean, for me, I mean, just on a kind of the general and then the specific on a broad level. I've been doing this job for 15 years, and I have never had anything like this happen. Right? Where, right. I mean, the morning after I was in I was in the US. Like my last day in the US this summer was the day that the pilot aired the first episode. And I went to bed and whenever, you know, people seem to, you know, family, whatever, enjoyed it. I went to bed I woke up to I mean, I don't know, 50 text messages. And yeah, visual people, it wasn't like one threat, you know, it was, and people that I hadn't heard from in years and whatever, and it was just, and then and then all through that week and into the night. And it was just, I mean, really my you know, everybody, and it was just really it was nice. It was nice, you know, people people reaching out and saying, you know, congratulations, and that they had really enjoyed it. And it's just I've never, you know, I've had two movies made. This is my second TV series, I they tend to come and go, whatever it is, they tend to come and go and to have something that is feels like it's sticking. It's just a completely new experience to me. And it's so wild, because I've really never been around anything like that. So yeah, so that part is nice. And then on this specific level, I'm just I'm really touched that the fans are so smart. And you you know, the the meme the meme, army is out on on Twitter, even like the memes are like, stupid but but smart at the same time. Yeah. And they're reading into it. And they're watching, you know, a lot of them are book fans, but a lot of them are just deep Show fans that are realizing the things that are going on. It's like oh, well, if you actually read that chapter in fire and blood, you might even enjoy that a little bit more, but they're picking up the you don't, that's the thing with this show is you you can brush with some subtlety, you don't have to because people aren't paying their their focus, they're paying attention. They're not watching it on the subway with what you know, when I on their, you know, their daily Wordle they're actually sitting in and watching it so that you know that part you're getting that sort of broad engagement, but broad, very focused engagement is really was surprising, I would say but really cool, too."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:33",
+            "text": "I think one of the things that you guys did smart in the press for the show, which I know you've been doing a lot of is how much they've put you out there in particular as like a spokesperson for the show on the pod and like on like these interviews because I mean, the like the big takeaway that folks have have talked about a lot is like, Oh, this is someone who's clearly like loves, loves the work and knows the work and is steeped in like cuz he's one of us. And you kind of hear that said a lot. And it's like, oh, this is a great caretaker for this, this property that we care so much about. And it seems like that's really translated, which is actually fairly hard to do, just from just from a PR standpoint to kind of be able to tell a meta story about how it's being made on something that's so Titanic and has such a large footprint as just the work itself. So I think that's really kind of redounded to you to the show's benefit. As its as it's come out, yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "20:31",
+            "text": "Well, I mean, thank you, thank you for saying that. Yeah, it's, it's, it's nice. And I have felt that, you know, as well, and I've done some, you know, very specific outreach to the kind of fan communities, the, you know, the broader the places that have a lot of listenership in the podcast universe, and the the old message boards, you know, westeros.org, which I've never been a fan of, for 20 years since I was a fan. So, you know, I think that stuff is really important, because I am, you said the word caretaker, and I really do see myself as that this is something that is a big responsibility. And I take it, you know, I take it very seriously, like, I'm one of I am one of those fans that really deeply cares. And I want I want it see it looked after. And so it's but again, that sort of specific, that very focused engagement, you're seeing that at that level, too. And the fact that people care about the things that I care about without getting to sort of lost in the, you can't make it all about the details, it still has to be a great story with great characters, but you, there's a way I think of brushing in those details in a way that makes it feel layered and interesting. Without it being about the details. I guess. One"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:41",
+            "text": "of the things thematically like, I think that it's your great caretaker, and it's about the details, but you're bringing like a new, like you're bringing like a fresh perspective to this property. And one of the things I've been excited about in the first four episodes is this, what I sort of interpreted and other people have said, as well as like this, trying to have some of the characters struggle with notions of modernity, like, you know, like the way in which the way in which the saris is, like, you know, is in some ways would have been a better leader, if not in this feudal environment. And the way, you know, the way in which Renea is like struggling, you know, is struggling with the concept of what it means to be a woman in this environment in which, you know, being a woman is inherently second class. And yet, like the show, it's not just the character, the show itself is calling into question why that is in a way that I think is interesting. So I find that I mean, I think that's like, that's feels like something that I think was brought fresh to this property. Compared to previous I don't know if that was, you know, how that came about? Or how have you thought about that? Yeah, I"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "22:42",
+            "text": "mean, certainly, some of it was intentional, I think what I've learned is, when you have something that is working, which this seems to be with an audience, people read in things that you read into it, because the parts are, you know, the gears aren't grinding, they're sort of all running together. So people will take stuff from it, that wasn't necessarily intentional, but also some of those, you created one parallel, and then it actually has three parallels that you didn't realize that it created because the parallel was written well, or, you know, well crafted. So, but definitely, you know, viscera says a modern, you know, modern man in a in a, in a period, society was definitely the way we, you know, we approached it, this idea of, you know, I think is very well said that the idea that viscera would probably be a pretty good politician in a democracy, right listener, he really does take census builder, consensus builder, he's progressive, he doesn't, you know, he doesn't react, he doesn't dive in running,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:39",
+            "text": "fly off the seat, they hit the seat of his pants going, right, he rules without"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "23:43",
+            "text": "ego, you know, he, that sort of thing, but in most of his problems are, are sort of problems of the archaic, you know, succession. And right, and not having a son instead of having a daughter, you know, it's interesting to, like, put those two things in juxtaposition against one another. And then you know, Renea that, you know, certainly certainly is struggling with the idea of gender and sexuality and, and those identities in this world, and you have to be very careful in in you walking the line, because you don't want it to feel like you're soapboxing or that it's speaking, it's a modern character in a period piece speaking to a modern audience. So because there's a lot of things that she deals and struggles with that there are no words for in this world, there is no word for femininity, or, you know, there is no word for I mean, they don't the word patriarchy doesn't exist in this world. They you know, right. You know, she says that, you know, the men of the realm would rather put the realm to the torch and see women on the throne. That is the you know, they that's patriarchy, but they have to spell the whole thing out they have to do. There's no yeah, there's no short Latin rooted word for it. So, yeah, certainly that that's a part of it. And I think, you know, that's how stories like this become relevant to a modern audience when they When you feel like you're in conversation with things that we think about and struggle with in our in our own world, but I think it's staying away from being and you don't you want it to still be a story and not be an essay, or position paper. And that's where you go to kind of didactic and boring and all the things that I don't like to do so, but I'm glad that stuff is you're reading into it. And that's very smart. And I think I think that I think that's great. And it's also, you know, hugely due to the performances being put on by these tremendous actors, you know, Paddy, Paddy Considine and unreal ticular. Like he"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:29",
+            "text": "that is,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "25:29",
+            "text": "oh my god, that, that element to it. And one thing"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:34",
+            "text": "that's been really impressive to me is the balance of you can feel the epic nature of it, based on the time that you take to tell the smaller stories and create the spaces. When we had Greg giddiness on the pod six months ago, he talked about how when he looked at the episodes, descriptions, he's like, I want episode two and three, because those are the parts of the story I really want to be able to tell and that you know, I'll take the finale as well. But smart but all of that stuff with the white heart and you know, the the all of the relationships with, you know, the saris and how aware he is of what's going on. It's just really beautiful, those small moments really add up to something very special. Oh, great."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "26:14",
+            "text": "Well, thank you. Now, that's, that's, that's really wonderful. I mean, that's, you know, that's what, that's what a writer wants to hear, you know, that people, people are watching and engaging and reading into it, the things that you tried to brush in,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:28",
+            "text": "is working on season two gonna feel different for you now that like you're you've the train is in motion, like, is it a totally different operation. And before the thing launched,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "26:40",
+            "text": "for sure, you know, I've This is my second season, too. It tends to always be a little bit of a easier experience, simply because we already have sets built, that are still standing, we have most of the cast cast, and we are going to add certainly people because the you know, as with thrones always did, you know, he's introduced a host of new people in the second season. But most of the people that you're going to be following on a week to week basis are already in the show. So when you're writing, you're writing for those people and you can hear their voice in your head, you've seen them perform and you know how you know how that scene is, you generally know how that scene is going to is going to work. There, there's so there's a lot of efficiencies and kind of fun things for an artist that come you know, that come with that, you know, you know, writing to an actor that's already been cast is is amazing, because the first season was very much written kind of like a novel, right? You don't know You certainly, we actually funny, we did write Damon with Matt Smith in mind, because it was always, Damon was always a Matt Smith type. And never think you can actually get him. But that was a sort of a weird kind of happenstance. But you that's what you end up doing a lot in a in a first season, especially before there's a pilot you write for these kind of disembodied actors. So that does make it easier. I mean, certainly, the size and scope of season two is of course going to be bigger. So it makes right taller mountain to climb more challenging. Now there's expectation. Yeah. There's all sorts of those things that come into conflict with the things that make it easier. So you know, it's, look, em, we're not making the show during a Yeah, pandemic without a vaccine. I mean, vaccine. Yeah, still be around. We'll see how that affects the show. But it's definitely going to be a different world as far as that goes, which is a huge, huge relief to us. So yeah, I mean, you know, the hardest thing now is honestly doing two things at once because we've been in post since season one for seven months and really hadn't been quietly working on season two for seven months knowing that right, this was probably coming so that we're ready to go when we're ready to go and folding those two things over on top of each other has been extraordinary challenge and yeah, has not has not left me with a lot of sleep or free time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:51",
+            "text": "We're appreciate we're so appreciative of you. I was gonna say like, like, we're really appreciative of you using your your scamp moments of free time to not only answer more, you know, House of the Dragon questions for us, which I'm sure you're excited about. But then also to talk about one of the best movies ever made the Terminator"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "29:08",
+            "text": "fantastic. Yeah, my wife is actually downstairs right now during this podcast watching episode four of House of the dragon because I've seen it 30 times. On CNN, it could well comes out on it comes out mid, you know, midnight to 2am on Sunday nights here, so we're not staying up to watch it. So she's watching it while we're podcasting. So it was a nice easy, easy sell tonight. She"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:29",
+            "text": "doesn't know anyone who could give her a screen or anything like that she"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "29:34",
+            "text": "she did make a crude Westerosi comment about her relationship with the show runner. She's saying episode for tonight. And so maybe I might have to look into that. If"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:45",
+            "text": "I was born a man I would have been given this episode is my birth right? Sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:52",
+            "text": "Fair enough. But HBO security, you know, we keep it tight. Like yeah,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "29:56",
+            "text": "that's true. I mean, I'm a good company, man. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:59",
+            "text": "That's good go. Whichever company it is this week."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "30:04",
+            "text": "The other the other challenge of season Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:07",
+            "text": "yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:09",
+            "text": "Uh huh. Well, thank you so much, Ryan. That's an incredible just sort of insight into what's going on and definitely you're a part of something really special. This is your third appearance on Aliens and we did tombstone which are both Michael being films and we kind of realized that midway. And so that drove us to bring you back for the greatest time travel action film of all time. The Terminator."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:37",
+            "text": "Oh my gosh."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:38",
+            "text": "So we are ready to get into this. Are you ready?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:42",
+            "text": "The being try archy No, this"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "30:44",
+            "text": "is wait. This is the Michael being Bill Paxton trilogy. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:48",
+            "text": "yeah, it really is true. Wow."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "30:52",
+            "text": "That's the you know, there's plenty of Michael being movies the Michael Paxson combination peanut butter and jelly. Yeah, science fiction. And yesterday."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:06",
+            "text": "Yeah, exactly. All right. Well, you guys ready to get into this?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:13",
+            "text": "Let's do it. I'm more excited than ever."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:15",
+            "text": "All right, here we go. The Terminator is a desperate fight to save a war torn future from an even darker fate. Sarah Connor is an ordinary young waitress struggling to make her way in Los Angeles in present day 1984. But her life is up ended when she finds herself caught in a brutal battle between two men that results in the killing of her friends, family and the police force who are helpless to protect her. Are these two men deranged lunatics sheathed in body armor and hopped up on drugs? Or are they impossibly from the future, the year 2029. One, an unstoppable cybernetic killing machine, and the other Rees, a soldier willing to do anything to save her life. In the fight for her survival, Sara will discover a core of strength and determination and share an all too brief flame of passion with Reese that may light the fuse of humanity's resistance. But only if she can find a way to stop the Terminator."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:28",
+            "text": "Yeah, just so amazing. Yeah, you gotta be careful lighting fuses with that hair though, because you never know something might something might spark off. And you gotta you gotta keep it. You make sure you have fire control on static"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:42",
+            "text": "electricity. Yeah. Ryan, what is your background? What was the first time you saw Terminator?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "32:48",
+            "text": "I have this very distinct memory of seeing the VHS box at a cousin's house. And sort of being intrigued and kind of terrified by it. Like I knew it was. I knew it was adult. But I also knew it was science fiction. I desperately wanted to see it. But I feel like and this might be somewhat an act of heresy. I feel like my first exposure to Terminator was actually T two. And then I had to go back and watch the original after that on VHS, because, wow, my this is sort of seared into my memory. But my first R rated theater theatrical experience was Terminator two, my dad took me when I was 11, summer of 91, just before I turned 12 And it was a bit of a scandal Macondo house but my dad took me anyway. And you just blew my pants off? I mean, I just could not believe how Yeah, how cool that was and loud and violent and like, you know, all the things that you know, break your brain when you're when you're that you know, when you're that age, and I think coming off of that, I think it was very quickly like just eating up all the other our own stuff, you know, predator Terminator, Conan, I think that all came sort of after that, because in that period, I was very much into, you know, Batman and Robin Hood, Prince of Thieves and Star Wars and you know Spaceballs and all that stuff. I hadn't gotten into the kind of harder edge stuff. But and so but it was definitely it was definitely in that period. But I feel like I went back and watched T one for a second because I remember, it's an odd experience seeing that movie with T shirts as you're sort of contextual reference. It's almost your time traveler in a way. And yeah, and knowing Oh, Reese, that's the that's John's dad and figuring all that stuff out kind of in reverse. So but yeah, I freaking love that movie. And, and it's funny because as a kid, I think is this normal experience? Definitely T two is like, oh, it's all about T two. But then as I matured over time, it was like no, no t one is actually a much superior film."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:49",
+            "text": "Well, when we get to the end of the episode, we'll do a final sort of balancing of of Terminator and T two. We're so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:57",
+            "text": "focused on this point, years like relentless, like beating down anyone who's like actually, really?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:02",
+            "text": "No, it's great. I love T two. It's like aliens and alien. Like they're both phenomenal films. So, but I Yeah, so how about you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:11",
+            "text": "I'm the same as Ryan i think i It's funny you saying that what was the first art rated R movie you're going to because I'm a little older. And so I saw tt was like I was 15 or 16 and or 14 or 15. And I just remember it was sort of an agreed upon, like thing among, like, my cohort like we're all going to see this movie like we don't like we don't care that Terminator two is rated are like all of our work going like no matter what. And I definitely saw that in the theater. And it definitely was the best thing I've ever seen. It was like a huge, like cultural moment, and then went back and saw Terminator and was like, Oh, this is great. And so on on VHS much later. And shout out to like all the cousins out there in the world who had the VHS tapes that you weren't allowed to watch but they brought over brought you Yeah, sleepover. Yeah, I talked about before how for me that first like violent aro movie was Commando? Oh, yeah. Because it was like a family friend was like, and it was literally like someone who's like offering you drugs for the first time was like, I'm going to show you some shit that's going to open a portal to a world you didn't even know about. And it was not wrong. And so yeah, I went back and saw Terminator after and really, obviously loved it. It's great movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:19",
+            "text": "So my first memory of Terminator was seeing the trailer in the theater. And specifically the shot of the Terminator where you can see the eyes glowing with a smart gun. And just that image of that seared in my brain and I wanted to see it so I was 14 and saw it probably on video. Within a year after that and just watched it over and over again, huge fan was a huge Arnold fan from Conan and sort of staying with him all the way through to which I also loved for the record. So definitely just an incredible film. But I think for me that I want to just talk about the script as we as we get into this. So first of all, just some quick behind the scenes. So this project started out because Jim Cameron had a fever dream, he got sick in Italy. And he had a fever dream about a cyborg coming out of the flames of an explosion with knives. And so he sold the rights to his Roger Corman, you know, former partner gala and heard for $1. But with the promise that he would get to direct it. And his only credit at that point was getting fired from Parana to that's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "37:31",
+            "text": "amazing Parana to Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:36",
+            "text": "that's amazing. More people should get sick in Italy. I guess that's, that's gonna be one of the best. That's got to be one of the best travel sickness stories of all time. Quite good. Creativity, creative output."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:48",
+            "text": "Yeah, just in terms of casting for a second here. So originally, Cameron wanted Lance Henriksen as the Terminator. And the thought was that he would be able to blend in. And Henriksen wanted to be kind of like praying mantis. Like and there's a story about how they went to pitch the film and Henriksen his involvement in it and Henriksen came in, in character with foil on his teeth, and a leather jacket and kicked in the door and nobody knew what was happening. And Cameron wasn't there yet. So they almost called the cops at all almost had the whole thing blow up. But they they ultimately considered in addition to Henriksen Stallone, Mel Gibson who both turned it down, they considered OJ but Cameron said people wouldn't buy OJ as a killer. So that that was out. But Jim really wanted Arnold to play Reese. Oh, God from the beginning. All right. And Arnold was like, No way. And they had lunch and Arnold convinced him at lunch and they locked the deal that afternoon."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:54",
+            "text": "Correct choice Jim Cameron. Good job."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "38:56",
+            "text": "Yes. Although, I mean, there is something interesting to be said from a storytelling perspective of like, Arnold would have. I mean, he was very intimidating as the Terminator. But if you were building a time traveling assassin Oh, yeah. You'd probably want it to look more like Lance Henriksen yeah George and air knowing that in that you because Lance Henriksen would be a cyborg he would you don't need to have be huge human muscles to be really strong he would you would be really strong anyway. But that said I mean I can't imagine it being any other way and the juxtaposition of you know the ultimate you know the ultimate killing machine in the body of Arnold Schwarzenegger versus like little Michael being you know, the the being the underdog. I mean, just what a great you know, what a great visual that was. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:43",
+            "text": "kind of amazing for Arnold that like he obviously is one of the most successful action career movies of all time, in addition to being the governor of California and yet, like it's still the Terminator that defines him like you know, as governor is called the governor, which I guess is a good pun, but like It also is just like this became the most iconic, this became the most iconic character, despite it being early and like, despite it having relatively few lines, it's just such like, it's just it's just became like that thing where it's like bigger than the movie itself. Like the Arnold Terminator just becomes like a cyberpunk archetype that you just find in 1000 places for all time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:22",
+            "text": "And change action for all time. Like that was the this was the introduction of one liners, which really moved the entire the entire space. Quickly other Reese candidates sting that would make us all and Christopher Reeve Hmm. That sounds very weird to me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:42",
+            "text": "Because he was great. I mean, it's just we know him as Superman. So it's hard to see him as other things. But he was amazing. Yeah, and definitely could have definitely could have done definitely could have done that kind of part where he was like, shattered and vulnerable. Staying would have been fun. For sure what I mean, what a what a run for staying, because this would have been like an ad for. Right. Yeah, I mean, the same year I was facing what a what a great year. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:06",
+            "text": "Amazing. Well, $6.4 million budget, it made 78 million, you know, as"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:12",
+            "text": "no money they made of $6.4 million. That's it's insane. I mean, I don't even know how it's possible. Having seen it now how they made it for that, like, it feels like they should have blown that just on the puppets."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "41:27",
+            "text": "Like, yeah, I mean, you have to wonder how much of that was, you can stand when some is still trying to establish himself, you have to wonder how much of that was sort of him throwing in and kind of, you know, using this as a big, you know, credit card for? And it worked. I mean, you know, that it founded his his business, but yeah, that, I mean, it's 19 $84. But that does seem low for how scopey That film was, but I mean, it's really, I mean, this is what I love about it as as a screenwriter, God damn, is that a smart, you know, really contained? Big Idea small, you know, kind of small canvas manageable. It's really rely on on a clever script. And the script really works. I mean, it's just, that's the kind of spec that, you know, if you're, if you're a budding screenwriter you should be writing because it's the kind of thing that like today, I mean, if Terminator never existed, if you wrote that spec script today, that movie would get made, that movie would get bought and would get made, because it's just, it's all there. It's right one package, you don't have to spend a billion dollars on it to make it. Yeah, it's just it's so great. And that's what I love about it, too, in terms of like, you know, the quote unquote, perfect script. You know, there's a couple of these in you know, in that period Back to the Future, certainly one of them. Yeah, Princess Bride, you know, I can I consider the Terminator, a kind of perfect script. And I, you know, I watched that movie. And I always pay attention to when I first look up to see you know, how far in you are, and it's always like, 45 minutes, 50 minutes, it is relentless. It just comes out of the gate does not stop punching. And I love it. It goes, I mean, it rips right to the beginning to the end, and you look at it. And you just say I don't, I don't know if there's anything that you can cut out of this. It's so lean and efficient. And it just keeps moving its feet, and everything is driving the story or the character forward. It's just amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:17",
+            "text": "You know, another thing I was going to ask you about from a screenwriting perspective, because I watched this pretty close to when I saw Top Gun Maverick for the first time. And both of those movies I think, sit like leave the audience as positive as they do. Because the third act is so relentlessly good. Like, it's just like, it's basically like a huge set. The third act is a huge SAPIS and it just delivers, like the entire like it, there's nothing, there's nothing on it that like leaves off. So even if you're kind of picking up the concept at the beginning, which I'm like, sort of cynical enough for both of these movies to be like, alright, what does that really make sense or whatever, you can't don't no matter how cynical you are, you really can't do that in the third act of these movies. Because you're just like, you're gonna be pulled in for the ride. And I don't know why. So many movies and particularly in the in the sci fi and fantasy genre have third act problems where they just don't know how to like, you know, they don't know how to end the movie. And like, why, why that's such a common defect in in, in movies that"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "44:19",
+            "text": "get made. I mean, it's the hardest thing to write honestly, it's the hardest thing to write because the you know, the old screenwriting teacher adages, if you don't have a third act problem, you have a first act problem. And really, it's that it's that the reason that third act particularly works so well is it's a great third act. But it's all the work that's been done for the hour and a half to get you there. And the fact that you fully care about Sarah and Rhys and their plight, and you've built you but you've bought the concept and you're terrified of the Terminator, and you want to see these people get out of there and survive. And those are the elements that are the hardest to generate. You know, anybody with anybody with a decent budget can go in and craft to an action set piece third act the problem is laying all the groundwork so you care about that stuff. And that's honestly there, you know, there's probably they're probably movies that have, you know, more tech better technically executed third acts or more, there's more spectacle or even more cleverness and invention just in terms of the gags, but they don't have that hard first act work. Wait, right. That's, that's the hard stuff. And that that's not just writing that's casting too. I mean, it's getting those parts right. You know, it's Linda, Linda Hamilton, and Michael BNN. To a degree you know, Arnold Schwarzenegger just because you're so terrified. Right? You don't want to see these people get you know, murdered by Well, it's not him anymore. At that point. It says Sure."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:39",
+            "text": "shirts. Yeah, like even to sell that as like the end of the movie is like, yeah, by the way, like a robot skeleton is gonna be puppeted around and it's gonna be fucking amazing. Yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "45:49",
+            "text": "scare the pants off of you. Yeah, well, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:53",
+            "text": "And yeah, and the decision to do like, do it with puppetry as opposed to stop motion and have it looks so goddamn good with that full size that folds for"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:01",
+            "text": "$6 million. We talk a lot about the Star Wars comparison on this pod. Because like, it's like, you know, we do a lot of 80s genre science fiction, and it's just like to do this on a non on non inflation."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:14",
+            "text": "Red Dawn was 19 million. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:16",
+            "text": "exactly. Like it's same year. Where did that money go?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:20",
+            "text": "Alexander Haig went to Alexandria. Alright, let's, let's get into this. Let's get into this movie. So it opens up in 2029. And it's so killer. I just love everything in the future because it doesn't show you too much. It puts you in these kind of like small views with all kinds of explosions. The models like the skulls getting driven over it's just force perspective to kind of trick you as is only like two inch skulls or whatever. But it looks fucking fantastic. This is Jean Warren of fantasy to who did the special effects for this Return of the Living Dead. nightflyers Captain America 1990. T to True Lies Johnny Mnemonic Strange Days and Moonrise Kingdom is a hell of a career. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:05",
+            "text": "Yeah, that's great. I love that Moonrise Kingdom is the invoking"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:11",
+            "text": "Of course. What's your what's your take on those just seeing those those scenes up in the future and how well they captured that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:18",
+            "text": "Now I'm seeing them in light of Moonrise Kingdom and it's sort of like sort of Isaiah like I kind of now just what is the like the Wes Anderson version of like the Terminator, the Terminator dystopia? Like why isn't was Anderson made? Like did it go? Yeah, what I mean can we get who could we call? Let's get it Max fly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:40",
+            "text": "Yeah, exactly. And that idea of setting it up in the future and then saying but the battle will be fought here in our present tonight and then going to Arnold's arrival. Like just amazing. Yeah, yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "47:52",
+            "text": "And that I mean, all credit to the production design team for that because you know, 6.4 million is not kind of budget that you want to go in and create a dystopia but they did it the right way they made they use the all the you know, all the square footage that they had in that frame to make its to sell you this idea of this and you don't really see much at all, but you're getting this idea of this much bigger thing that's out there you get just a window into it then you're and then you're off and and I think that's it's super super effective because if that doesn't work, the film doesn't work. So it's you know, it's a bold, bold way to open that film knowing that it's a low budget venture but what well done"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:33",
+            "text": "Mm hmm I really smart that just that little snippet and then it will keep coming back and flashbacks to unfold that future story. So let's hit Paxton. It's a brief cameo. But I love him here"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:46",
+            "text": "guys a couple kids short of a six pack your clothes. Give them to me now. Fuck you asshole. So good. Awesome. I was I had this is one of my notes was like punks on film in the early 80s has a bit of a mixed bag. Like it was like a common it was like a common go to because it was like oh, this thing's happening. We can like use this as like, there's this weird thing happening and yet like it's so like I guess it's a kid in the early 80s really only new punks from like this movie. And then for Star Trek for the bus the guy boss. But what's a Buddha Buddha dread one of our Discord members said that Paxson was friends with the lead singer for suicidal tendencies in the 80s Oh really went and like went and was like, how do we like what do I do? Like what's like, you know, what should I do on film? And this is I guess. Yeah, yeah. So there was a he did his research"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "49:54",
+            "text": "and then one of those other guys is actually the alien bounty hunter from The X Files. Yes. So it If you look there"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:00",
+            "text": "and he has this really poetic delivered wash day tomorrow, nothing clean"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "50:04",
+            "text": "right? Yeah, can we do a franchise crossover? Can we in our head cannon pretend that he is the alien bounty hunter from The X Files and he's working earth the alien bounty hunter yeah who time traveling robot Yeah, ready for an alien for everything else time traveling cyborg. Yeah"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:29",
+            "text": "that's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:30",
+            "text": "That's really funny. So I do love the juxtaposition of you know the the Terminator Rise naked and then you have Reese's arrival and being immediately he just conveys the pain and, and what it's like to be there but then how quickly he gets into action. And he has so far evolved beyond the cops chasing him that he can steal clothes. You know, a full outfit, including those Nikes which is those nice Nike vandal it was originally released as a basketball sneaker in the early 80s. similar design to the Air Force One complete with removable ankle strap on the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:10",
+            "text": "end, we know where those shoes are now. Can we get those tickets? Can we get those shoes? No,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "51:15",
+            "text": "I've never seen I've never seen the I've actually never seen any Reese wardrobe, which is really, really interesting. No, I haven't seen the bug. stampers from from aliens around. Yeah, I've seen Yeah, I've seen a real pair of those, which is amazing. Yeah, but no, no, no Nike vandals. Although I can ask the question. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:35",
+            "text": "Ask the questions."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:36",
+            "text": "Well, you know, it's like the Back to the Future. Nikes or like, what like, what are the last time those sold was like what, like 80k or something like that. And they're like, falling apart?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "51:44",
+            "text": "Yeah, those those sadlier are forget might be foam latex, but it's a it's a bad news material. And it's sort of yeah, they're all blue are all kinds of Yeah, I think there's a couple of good pairs that just came out of a better batch. But a lot of them are just kind of crumbling. But yeah, people people freaking love those and good luck to you because I don't want that kind of responsibility in my display. Right"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:07",
+            "text": "now. Rando. He also steals a shotgun so like, hey, cops, maybe like have a little bit better. You know, like lock the shotguns up instead of just leaving them unattended in the car. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:17",
+            "text": "it was the 80s the pants could also I mean, like you could release those pants as like on a designer label with like the paint swatches and stuff like oh, yeah, dollars for sure. No problem problem."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:27",
+            "text": "How about our introduction of Sarah riding the motor scooter in the sunshine? She's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:32",
+            "text": "so happy. Well, that motor scooter looks like a fucking robot by the way. Like it looks like it is so clunky. It is just a giant headed beast."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "52:40",
+            "text": "It looks like she's driving around a vest but in a VESA case. Case off."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:48",
+            "text": "Driving of Best Buy to vest by OtterBox."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "52:52",
+            "text": "That's right. It's indestructible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:53",
+            "text": "I forget what those things were called. But they were these Honda these little Honda scooters. And I had the smaller version when I was in college and drove that ad all around Gainesville. Back in the day."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "53:04",
+            "text": "Part of your says did you have that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:08",
+            "text": "Believe me, we're almost there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:11",
+            "text": "But you may have you may have business because the episode was just released. But in last week's episode, he confessed to being part of something called the Black Baray club when he was in his nunchucks phase earlier. Yes. Oh, there's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "53:23",
+            "text": "Oh, this is Anthro Terminator aside and talk more about"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:31",
+            "text": "Jason like would you ever have your kids put ice cream into a waitresses? That kid is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:36",
+            "text": "a piece of shit like like if you go to a run I mean look like dining out with young kids is not great, but like if your kid if your kid is gonna dump ice cream or the waitresses pocket you got to both tip big and leave like that's there's no other move at that point."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:52",
+            "text": "Yeah, you gotta you gotta run. Okay, all right. Well, now you guys know what time it is. Shotgun tie"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "54:06",
+            "text": "it's on the show is really major"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:11",
+            "text": "$66.3 million per episode. It's a full it's a terminator per episode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:20",
+            "text": "All right, so Terminator goes shopping this safe 12 gauge auto loader pump the 45 long slide with laser siding. It's a brand new we just got them in. That's a good good and then you can't load that here wrong wound."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:42",
+            "text": "What we're good stores like in the 80s Question mark."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "54:46",
+            "text": "I mean, I just imagine they're all like that. Basically, that's how you bought your guns."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:52",
+            "text": "It's a weird one doing this right after Red Dawn because like a Red Dawn essentially like seven kids like standoff the Russian army with Like, you know, hunting rifles for five months, and this movie, Otto walks into, you know, the place next to the bingo parlor and with like, is really made assault weapons. It's just like no problem. It's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "55:15",
+            "text": "so good. I was actually wondering when the assault weapons ban came in and whether this movie was gonna take time. So you can't just walk into a gun shop and bought an Uzi? Yes, that's great. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:26",
+            "text": "mean, did we not have any laws?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "55:30",
+            "text": "Possession still exists? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:33",
+            "text": "So So Ryan, that was the spot 12 Right, that we saw in Aliens. So that is an automatic shotgun that you have and then apparently the 45 was was constructed just for the film? Or maybe the site the lasers just site?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "55:46",
+            "text": "Yeah, so the guys prepare yourselves. Now. We're ready. Right? You do it early on this video. Yeah, the 45. Alongside was an existing cult, then they approached the early version of surefire, the famous you know, now, you know, laser sighting and tack tack light, you know, the kind of the premier company that works with US military. And they were, I think they found you know, Cameron had seen them or found found them or put call out or whatever, but they were kind of shopping around their version of the laser site in, you know, the prototype in a briefcase. So they had a early working model of this thing, but it didn't really work. So basically, there were two versions of this site there was one that worked with a big cord and a battery that ran up Arnold's sleeve and inside his coat, it wasn't all self contained. And then there was the dummy version that you just see when you know when the the site's not on so so they were still kind of figuring it out but it's funny if you there's an article everybody can Google it on the internet if you do wired and Terminator, you know, surefire laser sight you'll find it they somebody tracked it this guy down at the convention who's now like a high ranking executive and he's like oh yeah, I actually still I have the you know I have those things we low Wow film and I read this and I just went I was like okay come on LinkedIn. You know I tried every way any angle could not could not get to him I found his email address surefire never got a response so somewhere but that's very cool. And then the the 45 one there I think there were 245 long slides that were used in the film and one of them went through auction a couple years ago but just you know bear you know raw without the without the site on which I mean it's still cool but definitely for sure kind of that whole thing together"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:30",
+            "text": "for sure that's the piece to have all right Sure. Fire guy listening to this episode. See a dragon in real life with my guy and your thing. Yeah,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "57:41",
+            "text": "trade valerian steel called long slide with lasers."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:46",
+            "text": "Interesting trades are being accepted calling next episode."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "57:52",
+            "text": "I also have a van interesting trades."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:56",
+            "text": "So then also we have we cut from from the T 802. Hicks, and again with the ethika 37 shotgun. It's the same shotgun that that Hicks used. I said Hicks's Reese cut to Reese, but it's the same shotgun that Reese uses in Aliens. Yes. Which is rising. Yeah Hickson recently but it doesn't have a pistol grip. So he has to he has to cut it off to make a pistol grip. Yeah. All right. That has been shot gun tie."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "58:28",
+            "text": "Not not the reshot gun but the hick shot gun is coming up yeah can you guys oh wow on Yes. It is like it's coming soon."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:38",
+            "text": "Oh my"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:39",
+            "text": "god. That's incredible. And my son was poking around my office the other day and like went into the the the precious objects drawer and just like pulled out my throat is pulled out like my dude Chris knife. It was just like dad I Can I play with this? Like no, no, please put that back. I will throw you out the window."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "58:59",
+            "text": "Have you tamed a sandworm then no."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:03",
+            "text": "Exactly. But you have to draw a little blood before you shave it. Yeah. So So we now have 1800 kills the first Sarah Connor I love the choice here that we've not revealed that he's a terminator yet. We don't have the Terminator vision the dogs barking at him which is a nice touch. But he's absolutely terrifying. You know, Santa Cana and she says yes and then he just kicks the door in and just shoot your shot. Yes, it's it's really brutal. But then you know, again, we have you know, Reese hot wearing our car the music playing in this car while he is hanging out and there's the heavy machinery that transitions to you know the future it's so great. It's so I want to call out the part of the reason this film looks so freakin good production designer. Maria caso are Kaizo from canine Deadwood and colony"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:56",
+            "text": "That's amazing. Yeah. Wow. What a career Wow, yeah,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:00:00",
+            "text": "she was I believe she was an art director on on Conan on, on on terminator on the first time. Yeah. Because she has she come up on her camera and of course, she walked in my office and was was doing a lot of kind of this sort of thing, you know, kind of real world dystopian sci fi, you know, on, you know, on a budget that was sort of her specialty and just, she was great, just great. And really, you know, we had no money and drag into that world just perfectly filled exactly the right amount of you know, bespoke stuff and off the shelf stuff to make, you know, to make it look just radio, like there's just this layer sitting on top of the existing world. It was really well done. I loved working with"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:42",
+            "text": "The Cameron, like, lineage touches so many people like it's just, I mean, obviously, he's been in the industry for so long, but like, it really is like an amazing number of people who kind of pass through camera in the world. The coaching tree. Yes, yeah. The coaching tree. Exactly. Yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:00:58",
+            "text": "I will also say I am both proud of this. Not proud of this. I went to college with a lovely woman girl at the time now a woman named Sarah Connor and she lived in our dorm and freshman year and she got lots of knocks on her door at all times of the day. It was constantly her name said are gone. And I feel like I feel like I was Sarah an apology as the entire third floor of good counsel Hall at Villanova University. But let's face it, I mean, it was worth it was worth the comedy. Wherever Yeah, classrooms. She was just constantly oh my god, she was Sarah Connor. That has changed"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:42",
+            "text": "her name to like Martha Lange. Fuck all you guys. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:48",
+            "text": "my God. All right, well, so now we have detective Traxler and view KOVITCH Paul Winfield, you know hot off his turn in Wrath of Khan as Chekhov's captain and then Lance Hendrickson there's this really wild long shot of them in the police station the first time that you see them and Jason it made me think of the long shots from the hidden"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:10",
+            "text": "I was thinking the same thing okay, because I was like this is this like Yeah, but like this is a real police station the hidden look like the hidden looked like a like, you know, high school home at class where they put up a sign that said evidence and like, tried to sell it as a police station. I was like, Oh, this is a real police station. Love Paul winfields fit in this in this movie. The half glasses, though. Like Willie tweed,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:34",
+            "text": "sock tie situation calm and drinking coffee at the same time. Oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:38",
+            "text": "my god, this guy just exudes something I don't know. Like cop 80s Cop."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:02:43",
+            "text": "But I think there's like a real good amount of realism there with the two of them where you don't feel like you're you're not suddenly Oh, this is the actual movie where these are the two badass detectives like those feel? Yeah, those are real detectives you know him and even Lance Henriksen I think that it lends them an element of needed reality to this world and make you believe all the other crazy shit that's going on?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:05",
+            "text": "Totally. And you know, like the two of them they're reacting to the second Sarah Connor getting killed and I love it. Lance says the press is"
+        },
+        {
+            "name": "Terminator sample",
+            "timestamp": "1:03:13",
+            "text": "going to be short stroking it all over the place. Short stroking it. God. What alive?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:19",
+            "text": "Did Cameron High Five himself when he wrote that? Do you like how does that? I mean, like if you come up with something that good? That's just a throwaway. Is that just like, gonna go take an early lunch? This is great. This is so good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:30",
+            "text": "So so how about the T 800. Coming for ginger and Matt and kind of everything like Matt makes a hell of a meal out of his performance. He only has a couple of scenes. Dirty dialing and just I don't know he's great."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:03:44",
+            "text": "Hollywood, right? Yeah, exactly. Top Top Gun. Yeah, that's a handsome man. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:51",
+            "text": "yeah, absolutely. And shout out to like the noise canceling on this on these 80s 80s era Walkman headphones. Like, didn't hear a goddamn thing. The other note I had about this whole scene is like the terminators termination skills are a little questionable at like this part of the movie because he like he really I mean, like, just kill them. I mean, you're there to kill people. Like that's your job. You don't need to like ominously like sort of stand above them. And then"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:18",
+            "text": "Hello, Michael Myers style. We just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:21",
+            "text": "saw you buy all the weapons in the world. And the way you're gonna kill this guy is the bunch of them. Like, you know, like, let's just let's just get where we're going here. But it makes for a good scene."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:04:32",
+            "text": "He has a learning computer. He's still figuring out his way. Yeah, the algorithms"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:35",
+            "text": "are"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:36",
+            "text": "adapting, cutting back and forth between them fighting and then her in the in the kitchen, making a lot of food she's got like a lot of big spread for big spread. But I just love the timing of that and the rhythm it really is phenomenal. Alright, so from there we go now to Sarah. She's you know, she's spotted Reese and so she's nervous and she goes into tech noir dark love tech more."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:04",
+            "text": "Oh my god. Tech. Can we go back? Can we go visit tech Noir? Like how can we how can we go? Yeah. Oh my god,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:13",
+            "text": "you like it because it's a $4.50 cover charge."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:16",
+            "text": "I like that it's cheap. I like the way people are dancing I can do those moves for"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:05:20",
+            "text": "sure. Cheap in 1984 That's that's a hefty that's like a $20"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:24",
+            "text": "cover. Yeah. Oh my god, I look great."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:05:29",
+            "text": "Like how has there never been a tech noir pop up for some like Terminator anniversary. You know it calm Yeah, something where everybody has to get into their best 80s gear and go into a kind of, you know, disco, electro punk club. Feel like I feel like they're missing out they're. Gale Anne Hurd"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:47",
+            "text": "said that after they rapped the next night, people came to try and get into tech noir because they thought it was a real club. Should have been which they could have paid for the movie. Yeah, absolutely. So obviously, we have the iconic, you know, Terminator stalking her. And just like all of the buildup of that and then Reese go into town with a shotgun. And of course, the iconic lion Come with me if you want to live so great. Right, Reese is flying. Like, I don't know who it was Michael or his stock guy. Like as the machine gun is Uzis flying around, like he is really soaring. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:23",
+            "text": "he's got a jump for it."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:06:25",
+            "text": "I love the sequence. I mean, this is the sequence that to me really sells the movie and I feel like not knowing how that schedule was built but you can just feel like you can feel them watching this that they spent their time in there and they got that thing right. And I feel like this is probably one of those places where Cameron kind of maybe shaved on some other you know days and moments and you know the the great action sequences in ginger and Matt's apartment you can feel that maybe that was done a little bit more kind of basic performance review basic coverage but this they got all their shots, he got his hero shot, you know that the time shot where you're moving through the slow motion and the Terminator appears it's just gorgeous. And again sells the movie and sells really sells Cameron is a gifted filmmaker. You know, this isn't just a writer who's trying to direct his own film. You know, he's he's, he's got it at whatever, you know, 28 or whatever fucking infuriating. He writes. And he made this thing and yeah, I mean, that's, that's this is the sequence. This is the thing that you're all in to me while watching the movie. Because now all the the premise is built up. And it's like, okay, I'm really interested in what's going on. And then it's like, oh, and this is also going to be a master level action. Movie. Cool. I'm all in."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:37",
+            "text": "I saw some like interview that was like on the 30th anniversary where it was James Cameron and Galen Hurd being interviewed about the movie. It's one of the extras on like the on the iTunes purchase, and like the quote, the quote, and one of the first questions was like, how do you when did you know this was gonna work? Like this was gonna be a hit? And they're like, not until the first screening. Because up until then, the studio was telling them that this was like an exploitation movie. And that's like, how that's like how they viewed it, which like, I kind of understand superficially until you get to like a sequence like this, which like, as you say, it's like, okay, but this is he's doing something else here. Right. Like, we can all see that he's doing something that's not just like, you know, the cheapest way to shoot this movie just for the for the gags Yeah, that's the"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:08:25",
+            "text": "trappings of a Corman film, but it's being done by a master and you write that in the sequence are you really kind of sussed suss that out?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:33",
+            "text": "Well, I think it's I think the score amps it up, right as they're running now. And Sarah is trying to figure out what the hell's going on. She sees him set up after being shot a bunch of times, but the score is so amazing. And then you flip on Terminator vision, and so you're really sucked into the fantasy of this. And it looks so goddamn good. But the whole thing of like, Reese shooting the tanker or the car to explode and Arnold's eyebrows are singed off him punching through the windshield, which was not his arm. That's like some sort of metal contraption."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:09:06",
+            "text": "They made a rig. Yeah. Yeah, they raised I think it was a I think it was a Stan Winston rig. Or he helped the special effects team but basically they wanted it to go through like a metal robot arm and they knew that even Arnold as strong as he was they they couldn't make it look right and without endangering his hand. So they basically he you know, his arm is pinned under and they have this thing and he's wearing a jacket with the with the thing going through because one of those jackets one of the punk jackets was specially made, I think to house the rig because it was sort of like extra large or was a stitch together versus saying I own one of those punk jackets. I'm very proud. Oh it's one of my favorite pieces. It's just it's awesome. There were there were like four of them in private hands and they're all shot up because I think they like nor like in Terminator two those leather jackets. They're, they're staged out so you can have one that has like, no bullet holes and then one rifle and then they go this all the ones of this punk jacket that are known all have the full damage until he takes it off because I think they didn't stage them. I think they just must have shot the movie in order or whatever. And just to use them all in the sequence because this is the last time he wears it and gets rid of it. But it's awesome. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:18",
+            "text": "is wild. That is wild. So they they managed to get away. And so we have now this great segment here where Reese and Sarah are, it's car chases in LA at night. And so there's a great interview with Michael Biehn, and he says the brilliance"
+        },
+        {
+            "name": "Terminator sample",
+            "timestamp": "1:10:36",
+            "text": "I think of of the Terminator is that that story was told that move it was always told in while car chases were going on while we were running while we were hiding while we were being shot at. I was telling the story. You know, the Terminator is this he's that you know, and we're screeching around corners. So he mixed the action in the exposition That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:59",
+            "text": "is incredible how like because there is a lot of very dense, but yeah, not wasteful. But there's a lot of exposition that happens here. Yeah, and"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:11:09",
+            "text": "it's beautifully done. It's necessary to because Sarah doesn't know what the hell is going on. She has no way of knowing this isn't him telling her something that she should already know or that we know or that we're ahead of? We need to know it too. So it really works and that the way Cameron did it by combining as you know as as he said in the action sequences brilliant because you're just you're all your senses are fully engaged and you want to know you want you want to eat up all of those morsels of information. You know, Reese's giving you because you want to know what you know what the deal is and what's going on. Because to this up to this point, you might have thought that he was the bad guy because you were right. The other brilliant thing in the casting is Arnold's coming off of Conan. And you see him as a future movie star so maybe he is the good guy and maybe recently you know maybe the little squirrely guy is the one that's stealing and sawing off shotguns is the one that that is a bad guy of course Arnold awesome murdered the gun shop guys. That's not I think I think my feeling is the on the first go round before anybody had seen this movie. There probably was more here's a time into that movie where you're doing the who you know, who's the evil time traveler, you know."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:16",
+            "text": "This is also this exposition is also like this exposition on the run also reminded me of 12 Monkeys where, you know, sort of like, you know, Bruce Willis is telling Madeline Kahn, right, like, who like what, what what's going on in the future on the run while they're being pursued Malin Stowe, sorry. And like, you're kind of you're kind of you're kind of thinking Madeline Kahn would be an amazing casting. Go back and redo it. As well, like, you know, future one. Yeah, exactly. There's there's a multiverse version of of monkeys. Well, like you kind of you're you're also questioning still at this moment. Like, is this guy crazy? Like maybe he's just crazy and not like actually from the future because what he's saying is legit crazy. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:59",
+            "text": "and his performance here. So you know, this is our Michael bean journey, like in this moment where he says, Listen,"
+        },
+        {
+            "name": "Terminator sample",
+            "timestamp": "1:13:04",
+            "text": "and understand. That Terminator is out there."
+        },
+        {
+            "name": "Kev",
+            "timestamp": "1:13:10",
+            "text": "It can't be bargained with, it can't be reasoned with. It doesn't feel pity, or remorse or fear. And an absolutely will not stop ever until you are dead."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:25",
+            "text": "Such a great performance both by her and him in this moment in the car. Yeah. Well, and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:31",
+            "text": "and it's like, also the speech that he gives to the security camera. It's like the same like the once they get arrested the same speech he gives to the security camera in the police station where you're just like, I don't know, he seems a little unhinged. Like I'm not sure this guy seems great. I'm gonna go wander off with him into the night. Mm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:50",
+            "text": "hmm. So how about the Terminator repair scene? Once they get they get away he crashes the car they get they get taken to the police station. But even though it's still like it's obviously a mask or whatever, it's still so great to me the eye the sound of the eye popping and hitting the ground or the sound of the of his arm as he's kind of pulling it back and forth just beautiful."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:14:13",
+            "text": "Yeah, it's a that's a it's a it's again one of those just iconic sequences where you're just you nobody can get that image out of their head of him. Exacto blade in his own eye open and and peeling it's like it's great it's it's it's what makes us you this one more than T two because T to kind of clean some of that stuff up but that's what makes this more of the this lives in that kind of science fiction horror film. Yeah, you know and it really kind of goes for it I love that like really the fleabag motel that he's found to yeah all this and we're nobody will bother him. I think actually my jacket I think matches to this scene when the scene when he's sitting there I need I need to I actually need this film really to come out and Fourcade very desperately so that I can Yeah, As when he's sitting there at the table there's enough like blood stuff going on in the jacket that I think it's the one screen match sequence which would be amazing right"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:09",
+            "text": "sequence incredible so then then we slip things slow down just a little bit here as they're in the police station and it is nice to get like a little breath of air in that moment but I one thing that jumped out at me immediately tracks all Paul Winfield that detective says that Sarah's mom is coming in from Big Bear. So was that a an homage from colony that Carl Weathers place was at that big bear? Am I remembering that all references"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:33",
+            "text": "the Big Bear are in references to Sarah. Now there's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:15:36",
+            "text": "a time travel movie. So I think actually Cameron was referencing colonies been back and forth. So there's another, there's another there's another there's an all sort of colony where Paul Winfield is is playing Carlos character. That makes sense. Sort of grizzled old detective character. No big bear was just no. Okay, someplace in the mountains. All right. Well, I was just reading your runoff too, but I do like that. I like that. I should. I should have just said yes. I should. Absolutely yes. No much."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:09",
+            "text": "Yeah, perfect. Dr. Silberman a big douche bag. And he's kind of like a just like a dick in this and then yes, a lot more of an evil person in the second one, right."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:16:19",
+            "text": "He was voted. Like failed on the chain. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:26",
+            "text": "I love that. He goes back for tea, too. I love that they get like the least ethical psychiatrist to come back for T two and he's sucks even more."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:16:34",
+            "text": "And he's running a whole institution now. And he's like, oh, yeah, I lobotomize these time travel. You know, these victims. Time Traveling robots all the time. We've got a whole hospital filled with these people."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:46",
+            "text": "send them our way."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:49",
+            "text": "Special Special way for lavato buys time travelers. It's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:16:52",
+            "text": "no problem. Yeah, it's okay. The guards take really good care of them."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:56",
+            "text": "Yeah, exactly. So. So now we've arrived at the iconic line that changed everything. And to me, it's the combination, it's not just the delivery of the line. It's the fact that he is sizing up the whole place. He's checking out the defense's, and then says, I'll be back and then goes outside and drives his car through the front door. And in my mind, Hollywood got so caught up in the idea of one liners, that it just sort of just became a joke, right? And it was like it wasn't ironic here. It was like played completely straight. And I think that's what's missing. That's why awesome Lavista baby doesn't work for me. It felt like it was too much of an extension of of something that got done a million times after that."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:17:39",
+            "text": "Trying trying too hard."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:42",
+            "text": "Yeah, yeah, I mean, there had been just a kind of fact check there like the Bond movies had done a lot of one liners prior to this, you know not like this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:52",
+            "text": "this was this was like, right this was this was but there's"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:17:56",
+            "text": "also there's also you know click you know Dirty Harry million all that was go ahead make my day and like it it definitely bled in I don't think it was a staple. I think this probably made it a staple but I'll be back was not meant it was that's the funny thing. You Cameron if you ask him about it, like he laughs about it. He was like it was just a line. He right. Yeah, be back. It's the way and this is the thing. I mean, this is yeah, this is the thing with one liners is sometimes look there's a great line in the script. But there's so much more than just the the clever line that you've written down that you've carefully crafted. It requires performance and timing and the either way, it's the way it's cut and you can't you can never know that a thing is going to be a a aniconic line like that. It takes so much lightning in the bottle to make that work. And this is a great example. It's like it was just it's actually a little line of exposition. Yeah, exactly. And Arnold Arnold made a timeless"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:50",
+            "text": "the challenge is to just give no lines of dialogue like Matt Smith. At the end of killing the craft beer just you will have no lines we'll do the whole scene. No, right? No, the no liner is the real the one line"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:19:07",
+            "text": "we said can we do a whole sequence where he says nothing and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:12",
+            "text": "it worked. I so Arnold's cruising around the HQ with a machine gun and shotguns and stuff. To me I got a real hard boiled vibe. And I was curious I couldn't find if if this had been influential for John Woo, but it certainly had a very similar to like the hospital shoot at the at the end of hardboiled. But I love this when they finally escape. The music is so killer through this whole segment. But I love the fact that they escape in an AMC Gremlin."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:40",
+            "text": "Love the Gremlin. That's a great car. People are fanatical about those."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:46",
+            "text": "So I don't know who was somebody during the chocolate viewing of this was saying they were not crazy about the score here which really surprised me. So this is this is Brad Vidal. Who did this he did T two he did Johnny Mnemonic which we just did, and time cop, what's your take on the score? Ryan?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:20:05",
+            "text": "I mean, I think it's very, I don't think it's the kind of thing you pop into your car and kind of, you know, re experience the film, but I think it's a very effective, it's like a, it's a really effective soundscape score where it, it definitely me, you can hear that, you know, done on done today, you know, yeah, you can hear that in your, in your head. So it's definitely it's done that job. But actually, I don't. I mean, I guess there's that, that sort of that synth kind of well, in the sense that that sort of stuff, which, I mean, yeah, it's all I mean, it's, you know, look, it's, it's, it's what, who has a problem with the Terminator score? I don't know. It's just, I don't you know, it's not Vangelis it's, you know, it's not, it's not, it's not this, it's not a Jerry Goldsmith thing. But I think it's incredibly memorable and really functional in it. It makes you feel it enhances the emotional feeling of the thing you're experiencing, which is the key to a key to an effective an effective score."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:03",
+            "text": "Yeah, I think it really puts you off like there's there's a lot of stuff that's like weird guitar sound settling, that feel very Yeah, unsettling and eerie. And then the sense stuff for the action sequences is just incredible to me. Alright, so So I do like, again, the film slows down at this point after this big thing. And you have basically Sarah and John in a tunnel. I mean, this is where they're saving those millions, I guess. But this idea that she's not good at doing first aid. She doesn't you know, I didn't ask for this honor. I don't want it. But when he, you know, gives her the message, you know, and tells her. Let's see, what does he he's just started describing the future. And I love this the other Terminator that I referenced earlier. Do you guys know who that is?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:47",
+            "text": "The one from in the future? Yeah. Who is it? Franco"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:51",
+            "text": "Colombo from pumping iron. Oh, and he was also the Pictish he's the Pictish scout in Conan at the beginning. Mm hmm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:00",
+            "text": "He's a good size. To Ryan's point earlier. Like it could have been someone like a little like less, obviously a terminator. Like, you know, you could have someone who's just maybe a plumber or something like"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:22:12",
+            "text": "I should have been Schwarzenegger and Danny DeVito in a precursor to storming in"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:20",
+            "text": "That's hilarious. Well, so they ended up making it to a hotel or motel"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:27",
+            "text": "beautiful, beautiful hotel. Romain nice I came across time for you sir. I love you always have"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:38",
+            "text": "and then says that he shouldn't have said that and they make love this is a really tender and well yeah, shot scene. And the first time through I still didn't get what was happening, you know, until they until the end of the film. And so it just works on a lot of brilliance."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:54",
+            "text": "Brilliant Ryan was was the was the daemon on runners hand on the wall shot in episode for an homage to refund Sarah and on top of each other in the bed"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:23:06",
+            "text": "to ask the director i i I beg off on off on intimate scene days because I find it really really deeply unsettling and I leave that so I try to actually leave that to our fabulous women producers because I feel like everybody just feels more comfortable around so I could I we can we can maybe get clear on"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:34",
+            "text": "follow up we can follow up later"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:23:36",
+            "text": "there. How much how much Terminator influence I'll text. I'll find out. Yeah. Clear."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:45",
+            "text": "Dear Claire. I've guessed for reason that All right, so how about how about Arnold's motorcycle, this Honda? CB 750 4k. Two. That bike looks so badass. It's not like a trinity, Ducati. But it's something that just to me is iconic. The sound of it is amazing. And that entire that chasing is so phenomenal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:13",
+            "text": "Once you see him on a motorcycle, you're just like, obviously he should be on a motorcycle, like, you know, like, like this is this is a person who should be on a motorcycle. And it makes it makes all the sense in the world. Yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:24:25",
+            "text": "Matt, did you also go through a motorcycle phase was this was this I didn't know the ninja the shotguns so,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:36",
+            "text": "so after my shotgun phase, when I first moved to California, my ex wife had a Honda, a small Honda motorcycle and after driving it back and forth across the Golden Gate Bridge and the Bay Bridge. Every time I did I was convinced that I was going to die at any moment because the wind would be whipping and like the rear tire would like go back out wrong. And I was just like, This is not for me for time. tires. So it was a very short phase."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:25:02",
+            "text": "Yeah, that's it. That's it. Going back to the safety of nunchucks"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:07",
+            "text": "Yeah, that's origin story is that he got shamed in gymnastics camp, and then pursued all of these other more violent arts for a period of time until finding his true calling is a mercenary podcast, executive producer."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:22",
+            "text": "That's right, exactly getting my vengeance out. At last. I do want to call out just the editing. I meant Ryan to send you this post. I didn't get a chance to send it. But there's a shot where Sarah is driving the car, and Arnold is behind her. And you have like a shot of her a shot of him a shot of her in the mirror. And then he shoots the mirror, and then it cuts to a shot of her. And then she she does it. And it's all like perfectly timed. But it's so incredibly taught just the filmmaking and the editing here is top notch. Yeah, I"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:25:55",
+            "text": "love it. Yeah, it's great. And all you no more credit to the filmmakers because that was all being done on like a movie Ola with you know, hand splicing film and right because they didn't have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:07",
+            "text": "digital. I"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:26:08",
+            "text": "mean, maybe it was very, I'm guessing. No, no, that's right. And you know, hand cut this thing. So you know, even more even more credit. Kilner has texted me back, guys. Oh, great. So price. Hi, Claire. I'm on a pack podcast. And they would like to know if Matt and Millie's hand thing. And 104 was inspired by the love scene in Terminator. And Claire wrote back now that would be telling tears. crying tears face. So to mean that Claire is actually a huge Terminator fan. Yes, sort of."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:40",
+            "text": "Wow. We read into it. Thank you for thank you for us. That's great. Tyler was amazing. Yeah, we"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:49",
+            "text": "liked it. And she's got more coming up. Right. She's got a couple more. Yes,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:26:53",
+            "text": "she redirected episode five. So this Sunday and episode nine, which are both very consequential episodes. So Claire's fantastic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:03",
+            "text": "Amazing. Thank you, Claire. That was incredible. Tell her she's welcome to come on doing pod anytime."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:08",
+            "text": "We're talking about hands."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:27:12",
+            "text": "The hands of the 80s Yeah, that's right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:15",
+            "text": "Hands the movie of the genre Jedi surround robot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:21",
+            "text": "So Reese blows up the truck. We have the Terminator. Now as the full blown puppet Arnold is now outside of the film. And we have you know, Reese finally is able to blow up the Terminator. But this is so great. We talked about it in Conan, and we talked about it in Red Dawn, they both feature these really long death scenes Valeria and Jennifer Gray's character's Reese's just dead in there's nothing to say it's not drawn out. It's just moving relentlessly. And so effective. Yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:27:53",
+            "text": "And really heartbreaking too. And it's like, again, just this, this and the love scene which pays off it feels like and that's all I love. I love how Cameron did it because it does feel like exploitation, it feels like this is the point in the 80s R rated movie where the two characters get together and and do it. And there's you know, there's there's a little nudity and whatever. And that's how you that's how you sell tickets as you sell your art rating. And then that and then you kill Reese, which is such a bold move to Miami you kill off, you know, you know, the hero essentially is the cause Sarah is the stakes character and then become sort of becomes the protagonist as a result of his death. And it's such a bold storytelling and filmmaking and it's like, God damn, it's just so it's so great. And then the payoff that, you know, that comes at the end, and you know, he knew and they were meant to get out so good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:48",
+            "text": "This is also where like, I started, this is a recurring kind of bit on doing pod two, which is like, when would I just give up? And like, I feel if you blow up the Terminator with pipe bombs, and he's still coming. It's like, well, you know, Well played sir. GG. Like, I don't know what to do. I don't know what to do at this point. Future is fucked."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:07",
+            "text": "You're not crawling under that press with the thing that was made me very claustrophobic. Yeah. But what align ravier Just all time? Yeah, yeah. Yeah. All Time. So those final the final bits, we have the epilogue at the gas station. She's in Mexico. She's on the run. She's got the dog with her the beautiful German shepherd that you know, will help to protect her. And she's trying to decide whether she'll tell John about Reese and she says, I suppose I will tell you I owe him that. Maybe it'll help to know that in those few hours. We loved a lifetime's worth. And then the photo goes off. It's so great. Beautiful. Yes. On"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:29:49",
+            "text": "our way to meet Enrique. In the in the desert. Yeah, so his basement of mini guns. We"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:56",
+            "text": "um, it's it. It felt Like I was like, I was like I wondered if kill the Kill Bill Mexico stuff felt like felt like sort of an homage at this point to her kind of, you know, being in a open top Jeep or whatever in the in the desert. Well, interesting to me I usually"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:30:14",
+            "text": "older things in that, but that's, that's, uh, yeah, one I love that that iconic photo too I think that that was floating around for a while because I think there were a bunch of seriously, I think there are a couple of people that have have those. I don't know if anybody has the one from from that, but that they would have, you know, made a bunch of those. But yeah, just I mean, again, not only a great third act, but but a great epilogue and, and, you know, post Coda where you, you know, if you're not paying attention, you haven't quite figured out that John Connor, the you know, the suppose the savior of the future was, you know, a time travel impregnation. It's just, again, just sticking"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:52",
+            "text": "my head exploded my head, like when I was 14 Watching it the first time to see it. And he had even said, I've always wondered what you were thinking in that moment. And it's her thinking about him like it's just gorgeous. So poetic. Yeah. Amazing. There's a storm coming. I know, credits, boom. We are out anything we"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:14",
+            "text": "missed. What is the what Ryan? What's the full total of things of props that you you have from this movie?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:21",
+            "text": "We submitted on it."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:31:25",
+            "text": "Yeah, no, I just have the jacket. There actually is not much from the original Terminator. The gargoyle glasses were around the ones he puts on after the surgery. They're buying those those jackets, the punk jacket, which is nice because it's a it's an off the rack field military field jacket that's been custom made. So they're all the all the the studs and the leather. And all these are custom done in there. There's actually shoulder pads and inside of it. These beanbag lassoed into making it look even bigger than his bigger cheeses. Because Arnold Arnold has this very kind of this shape show. He has brought his broad shoulder but his shoulders sort of dip. And they wanted him to feel really, you know, kind of filled out. So even Arnold has, you know, a shoulder pads on them. And they're, yeah, there's a couple."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:11",
+            "text": "I think it's because his delts are so I just watched, I just watched pumping iron, his delts are so huge that it does make balls off triangle."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:32:18",
+            "text": "The rest of them. Yeah, yeah. Yeah, it's, there's not there's really not much from from that film, kind of, you know, scanning my brain, there's more of the endo parts that are out there from from Terminator two, it was just it was, you know, there, they didn't make a lot. It was such a small film. But then things did tend to get scattered to the wind because it wasn't an independent film. So there wasn't like a studio archive or anything. So there definitely is stuff out there in and around."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:48",
+            "text": "My other note on the sort of Prop wasn't really proper on the production design front was all like when you finally get the view from the Terminator. I like what he like those codes. This is like a recurring bit on doing pod as well, where we source like sort of what the digital artifacts are that are put into these movies like we did on on WarGames, all of the source code that is shown are strands of COBOL, mostly. And the source. The source code itself was originally printed in nibble magazine, a popular magazine for Apple users who would be able to type in various source codes from the public publication or to run their own programs that code there were all of them were from August and September 1984 issues of nibble, and one of the codes high res X was responsible for swapping up to five images on a screen at once. As that is all that app the apple twos memory could handle."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:33:43",
+            "text": "That's so great. Yeah, incredible. COBOL which is like yeah, you know, for bank like basically, the terminators programmed and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:52",
+            "text": "Yeah, exactly. That's all. Yeah. 10 Hunt Sarah Connor 20. Go to 10"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:33:59",
+            "text": "That might explain his performance in the in the in the bedroom in the apartment. You know?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:04",
+            "text": "Yeah, right. Right. You needed you needed an OS update."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:34:07",
+            "text": "If he was on c plus, plus, maybe he would have been a little bit more efficient. That's killing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:11",
+            "text": "Flash the terminators firmware. Give him some better skills."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:16",
+            "text": "All right, well, Ryan, who would Tilda Swinton play?"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:34:20",
+            "text": "Oh, that's easy. Sarah Connors, iguana. Her pedigree."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:27",
+            "text": "I love a guest that's prepared. That's great. Amazing, man. That's amazing answer"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:32",
+            "text": "that's Jason's answer would have been I mean I'm not"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:35",
+            "text": "even that creative. I didn't even think about that. I was thinking I was like the bishop character like the other cop. Yeah the Frederick's character because I like seeing I want to see I'd really just was he told us went in and like a police procedural? Oh, yeah. And see what that see what that would be like."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:50",
+            "text": "I was thinking about her in the other cop role, so maybe she could be twins playing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:54",
+            "text": "she can be both of them. Yeah, perfect. Like a David Lynch. Cop procedural. She'd"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:34:58",
+            "text": "be a great Blade Runner."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:00",
+            "text": "Yeah, absolutely. Oh my god"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:05",
+            "text": "whenever there's like a TV show or something or a trial or something beat there's there's some stuff that's that's flooding run. Well Ryan we did it I know it's very late there in the UK. Obviously, you know, you don't need to plug Game of Thrones everyone's seen that show. Give us the latest update on your podcast stuff dreams are made of. Yeah,"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:35:26",
+            "text": "thank you. Please download subscribe and listen, we are we are we are coming back. We are we are editor has been away. He's returning I'm throttling down on Season One. We're coming back. We're gonna record episodes in September, I think with the hope rating on shortly thereafter. And then we're going to do another run of, you know, 1010 1215 of them into the end of the year, I think we there's much options coming up. So you know, we're we're raring and ready to go. So please go catch up. Listen to old episodes, we're going to open the season with a with a artisan from the world of House of the dragon. So somebody that worked on the shots awesome and made some very near and dear to my heart. You know, I didn't have a shotgun phase. But as you guys know, I did have a sword phase."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:11",
+            "text": "So yeah, so"
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:36:11",
+            "text": "stay tuned, because we have such a great coming on, I think for the for the premiere episode that we're going to talk to about what they built, how they built it, why they built it, and and all that. But yes, there's more more to come. So thank you. And hopefully we'll have an exciting season for coming up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:28",
+            "text": "Oh, yeah, absolutely. Awesome. And then we'll figure out what your next what your next assignment is. Doing that podcast, whether it's tea tea, you know, whether it's T two or come back for the abyss and, you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:41",
+            "text": "yes, the Abyss would either most appropriate one, I think, yeah, yeah."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:36:46",
+            "text": "My being a bad guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:47",
+            "text": "Yeah, yeah. Which definitely flipped my brain. Well, Ryan, thank you so much. And we will, we will look forward to seeing you to seeing you soon."
+        },
+        {
+            "name": "Ryan Condal",
+            "timestamp": "1:36:57",
+            "text": "Thanks so much, guys. It's a great fun,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:58",
+            "text": "awesome HOLY SHIT Ryan Condal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:05",
+            "text": "So great to be joined by Ryan Condal. He's such a great guest. So knowledgeable about this movie. Very generous with his time and also answering our questions about House of the dragon."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:16",
+            "text": "I didn't expect him to be back in the black leather jacket again. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:19",
+            "text": "didn't expect him to be dressed as the Terminator. That was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:24",
+            "text": "the gargoyle that isn't saying that he has the jacket. It's great."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:27",
+            "text": "Yeah, I knew he had so I knew he was gonna have something like guys. The guy is a machine. Just wait, just wait. It's gonna whatever. This next prop auction better watch out the one that he's talking about. That's coming out. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:38",
+            "text": "I would definitely be. I'll tell you. I would definitely wear that if I own that. I would wear that around the house."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:44",
+            "text": "Yeah, for sure. 100% Today good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:47",
+            "text": "Yeah, exactly. I want to make sure that wasn't just me. That was thinking that all right, very good. Well, how about if we get into some letters, letters. First of all, I just want to encourage you know, Kev, did a beautiful impassioned shout out on his last voicemail. Join us join the fun, send us your thoughts at letters and dune pod.com. Or you can call us and leave us a voicemail. 415-534-5211 be like Cory, we want to hear from you hear what you're up to. So we have two letters that I want to read really quick before we get to voicemails. The first one is from Cameron Koch. And he sent us two letters. And the second one superseded the previous one. But he wanted to talk about doing the awakening MMO he says assuming we'll be able to choose between the different factions in dune awakening, which faction would you most want to be a member of the array is the reality that 90% of people are just going to be Fremen. Can't imagine a lot of people want to be Harkonnen. But I could be wrong. Keep up the great work looking forward to guys having Ryan Condal back on the pod, Cameron?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:04",
+            "text": "All right, well, now we need to pause so that we can look and see what are the factions that aren't the friends? I mean, if I could, if I could be any like, like, I would definitely play as the Fremen first because I think it's the most interesting, if I could pick any faction from the, you know, legendarium let's just do it. I would I would be very interested in the axions just because of all the toys that they have. I would I would be very curious to see what sort of abilities and things they can do."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:39",
+            "text": "I think I probably take the Emperor to start. You know, you can imagine them trying to give some good resources and whatnot. Right. And I guess one question is, well, how did the Bene gesserit fit in? Like, did they go across factions? Yeah, either their own power structure."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:54",
+            "text": "It seems like it'd be a cheat code for them to be their own. So I kind of think it would be like, you know? Yeah, I kind of think it would be probably that they're just part of another another thing. It's a great question. I'm so excited for this game."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:10",
+            "text": "Well stay tuned camera and as we get closer to the release, and we see what's what's going on, all right, our second e our second letter here is from Ethan steel and it says Terminator and then parentheses to dot dot dot. Hey fellas Ethan again. I understand the opinion of a young soul such as myself as often invalid in the discussion of old Arnie James Cameron action flicks, but I'll provide my nonetheless. Sorry for the offense regarding my verdict on Hamilton. It's fine on taken on taken what is there to say about Terminator What is there to say what is there or Terminator two, on the other hand blew my mind. In my early teens currently in the latest of late teens, and built upon an appreciation for action films that seamlessly blend in camera and computer generated effects something that was fostered by to a life altering experience watching Mad Max Fury Road with my dad and the cinema. When I was wait for it 12 Wow, that love for real tangible effects and killer stories definitely extended into my dune and Disney obsession having watched in part one at least six times since release. One can only hope James Cameron continues his brilliant sequel trend with a new avatar I say brilliant sequel, not better sequel because it would be a disservice to a wider society to say aliens is better than alien. Sorry, fellas. Fun question which classic horror action film would you want to see a slick inexplicably high quality James Cameron sequel for for me it would be the thing. things if you will things. Let's get as I'm currently watching House of the Dragon as well as other suspiciously timed fantasy competitors Sandman, Lord of the Rings, I'd like to say that it definitely ranks the highest for me in the current fantasy folk battles for streaming wars. I yearn for the next episode every week. I've never read or watched Game of Thrones, but I'm a fan of the work of Joe Abercrombie Hell yeah. Namely the first law series very, very good. Book people should read that the show hits the right spot may send a voice memo and one day when I compare the thought of less sultry tones of doom pod guys interrupted by my own voice, loving the show. Let me know if I need to cut down my embarrassing long emails. Ethan,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:18",
+            "text": "we love hearing from you. You don't have to cut down a and this is great. You're doing great. I would like to see a James Cameron. high budget sequel to the Tom Selleck. 1984. Science fiction dystopian movie? Runaway? Yes, in which just the logline is in the near future a police officer specializes in malfunctioning robots. When the robot turns out to have been programmed to kill. He begins to undercover a homicidal plot to create killer robots. And his son becomes a target. Which I mean come on. Like you've seen the movie right? I've seen the movie. I've seen the movie a bunch of times. I think Gene Simmons yeah, there's I mean, Gene Simmons, Tom Selleck. G Tim It's kind of amazing as a bad guy that to be on a Christie Ali's Yeah, it's a it's a fantastic cast. I mean, it's kind of schlock the movie itself, but that's why it needs an update, especially now that we actually have like killer robots. Mm hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:21",
+            "text": "Amazing. Yeah. And that's that's a great call runaways. Let's go. I was gonna say I was gonna say lookers, because we talked about looker. Albert Finney recently, but God we got to do runaway that's definitely going on the list. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:35",
+            "text": "Last Starfighter? We haven't had an update to that will be another one. That would be great. What's going on with the you know the Armada? How are they faring out there? Got"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:46",
+            "text": "a lot of options. Jimmy you know when once you finish avatar four and five you know get get to work on something. I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:54",
+            "text": "saving my avatar comm commentary because I believe I'll have another another opportunity soon."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:00",
+            "text": "Fair enough. You definitely will. Alright, let's get into the voicemails. Thank you so much, Ethan for, for reaching out. We really, really appreciate it. We'd love hearing from you and feel free to send us a voicemail. That would be that'd be amazing. All right, here we go. 12312312312121231231231212 That was the wrong one. That was amazing. That was the analysis of the Terminator data. Dun dun dun dun dun dun dun. Okay, it turns out the time signature of the Terminator theme is 1316 although a lot of people thought it was 708 which is not correct. And I like that. I meant to drop that in but I didn't get to do it in the episode so All right, here we go."
+        },
+        {
+            "name": "Kev",
+            "timestamp": "1:44:48",
+            "text": "Hey, dude, pot Kev here, calling in about the best sci fi slasher movie until Jason x and then pretty much still a blowout. James Cameron's turn. Dominator. First, I want to give a shout out to your guest, Ryan Condal, who's doing a really awesome job. You know, like I like I said, when he came on last time, I'm not a huge thrones head. I didn't watch it originally, I've only seen a few episodes. But House of the Dragon has been phenomenal. And really a great addition to the rotation of great genre television. And a standout. Really, Kevin's question this week is about the director of Terminator, Mr. James Cameron. You know, I saw Jaws an IMAX over the weekend. And they ran the trailer for the rerelease of Avatar, which is happening this weekend as you're listening to this. My question is here at the other end of James Cameron's career, having just seen this very early film, what is your current take on Avatar the way of water? Do you think it's going to be any good? Do you think it's going to be a with could James Cameron deliver? What do you think? I'm giving gold toe? A soapbox? Yes. And yeah, you know, I don't know. That's what happens when you have to send in a voicemail and the show records get forgotten we I could make this my job. Anyway, talk to you guys soon. Again. Much love to Ryan. Congratulations and peace and love. Peace, Love."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:46:16",
+            "text": "Once again, it's calves questions."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:46:19",
+            "text": "Yeah. First of all, how what a mentioned cab to just deliver the voicemail even though he had short notice. He was doing other things we love Kev, absolutely great to remember we. And second of all, what a gift to be able to talk about avatar, a movie that I think you would be foolish to doubt at this point. Like, people you liked the first one. I saw the first one in the theater, maybe five times, like at least four. It was the minimum. And I think people because it doesn't, it hasn't had the cultural staying power of you know, Titanic or some of the other you know, aliens or other science fiction IP, that people forget that people liked this movie. Like this was a huge success. And people liked this movie. They liked going to see it. There's the whole thing about like the blue flu like after you saw it, like people were sad to return to reality. After having seen it was a huge success. That's the thing. One thing too is why would you bet against James Cameron, like, what's the margin? What's the margin and that and betting against James Cameron delivering a great movie, like that seems just terrible into the bat. So I am fully willing to stake the reputation of Dune pod. At this point on the premise that avatar, the wave water is going to be fucking amazing. Everyone's gonna like it. We're gonna be talking about on the pod, we're going to be excited for the next one. There's going to be a bunch of like, why didn't we think this was gonna be good? It's James Cameron, it was it's a sequel to one of the highest grossing movies ever made, it's going to fucking deliver, you might as well just get on the bus now and be for what's going to happen, because it's happening. And it's going to be amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:48:14",
+            "text": "I'll get on the bus. If you'll commit right now to see it in the theater so that we can do it on the opening weekend. We can cut a quick turn around and we can do it on the pod. Okay, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48:24",
+            "text": "can't commit anything."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:48:25",
+            "text": "We can do a pot pot official."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48:28",
+            "text": "I don't accept ultimatums. You should see it for yourself. You should see it for yourself because it's the right thing to do for you. I might see."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:48:36",
+            "text": "I thought the first Avatar was really really beautiful. I thought it was spectacular visually. But I felt like the story was was just not that compelling. And so that that's my that's it. That's my beef. And then I am very sauce of anyone who is like, trying to make more than one movie at the same time, I think is generally not a great idea. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:48:57",
+            "text": "it lets you change for Cameron, unless you're James Cameron. And like the movies you make become the highest grossing movies of all time. And like there's no risk because there's not like, there's not like, you know, you're gonna get parts as many as you want. Like, it's just there's, it's guaranteed. I agree with your criticism about the story that it is like a fairly standard white savior, you know, amongst the native story like I don't think it's I don't think it's really breaking a lot of new ground on that. I do think that it does that particular story. And just like, I think it's it's difficult to remember how amazing it felt to see that in the theater. And like as Kevin's pointing out in discord. This IMAX screen that's going around is going to sell out. It's going to be a big event, and people are going to come out of it being like holy shit. Have you heard about this avatar movie? Because it is a phenomenal spectacle. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:50",
+            "text": "I think it's the same weekend as the lake house. So I don't think I'm going to be able to see it in theaters, but I will commit to within the next month watching it again. On my 77 inch 4k at home and giving it a new assessment, how about that?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:04",
+            "text": "Yeah, I mean, I watch Top Gun Maverick on the back of an airline seat. So you know, that's fine. You can do whatever. There are no rules."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50:11",
+            "text": "Oh my god, you also watch everything everywhere all at once, which is everything"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:14",
+            "text": "everywhere all at once is maybe the best movie I've seen in I don't know, five years or something like that. Like it's it's a it's a phenomenal achievement."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50:22",
+            "text": "Hell yeah, we've got to do that on the pond. That's a really good one. All right, here we go. Our last voicemail call"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:50:41",
+            "text": "I love the paws. Tune bot Hey, this is Corey from Austin, Texas. calling about the Terminator. Man. You guys know I love the Terminator. You know, but do I love James Cameron? I don't think so. When I'm looking at Cameras tomography. It's like what for directing. And I know he's been a lot of behind the scenes stuff. But anyway, directing let's see. Tirana to good solid right. Follow that up with the Terminator. Now we're rocking and rolling. terminators great aliens. totally badass. The a bit. I remember liking the Abyss on the theater. I don't think I've revisited that much. I do remember Ed Harris flap and what's her face rounding column or bits to get her to come back to life? I don't know if that really works in real life. I don't think so. I've taken some soup. You know, medical CPR classes and stuff since I'm a dental hygienist and I think we've never covered that part. But it can be different if you're drowning underwater with like that special space. Underwater oxygen water stuff. Anyway, I'm gonna take that. We get into Terminator two solid. And then we get to True Lies. And I thought that movie looks silly and I never watched it. Never seen True Lies. never bought into the hype. And never True Lies. Things go to total crap. And we're going to Titanic which I've never seen. We go to Avatar, which I've never seen ever seen used to watch the Titanic. I refuse to watch avatar. That shit is not for me. I don't care what anybody's gonna say. I don't care how many people get tell me you just got to see it. You just can't. I'm so fucking sick of hearing that about avatar is 20.2 Fuck avatar. Fuck, I can't long the Terminator who would tell the foot and play. Play the cop? They're not one. Yeah, but the other one? Yes. Yeah. That'd be good to put in character. Generator rocks. I love it. I can't wait to hear the episode, I guess. Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:52:36",
+            "text": "That was great. I it all checks out. I mean, none of that's really that unexpected coming from record to be perfectly honest. As James Cameron's filmography became more mainstream, except to add, like successful, Corey rejects it more and more. But I love I love the passion that he brought to it. I mean, Titanic I also saw in the theaters like four times and cried every single time. That's great. It's really good. It turns out, but that was great. Yeah, totally fine. If it's not for you. No problem. I think I think these avatar movies are gonna fucking work. I think it would be foolish to expect them not to work for a massive audience and like just a general like a science fiction audience. And I think it will also be like one of these things like it will work. And it will be like, counter programming to the Marvel Star Wars Dragon World of of like, you know, IP prestige, property stuff going on. I'll be like, Oh, shit. Do you remember James Cameron. He had this whole like, you know, these blue people. It's it's totally weird thing. And I will just feel like something. Something different. So I'm excited for it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:53:46",
+            "text": "We are going to find out. Now that soon I may see it in the theater."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:53:50",
+            "text": "I might. I could see it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:53:51",
+            "text": "Jason, before tomorrow's recording of Superman three. What do you have to plug I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:53:58",
+            "text": "have to plug before tomorrow. Oh, I pre check. We were talking about this in the pre show. But pre check plus, clear. Now flying now is pretty legit. Where you give your eyeballs to a private company, what could go wrong, just give you a retina as a way to bypass lines. And you get to bypass the lines just for the price of your eyeballs. It works great. I'm happy for my eyeballs. I have the luxury that all of my personal information is already owned by the government and therefore owned by foreign spies. And so it doesn't really matter if like, you know, the retinas are out there too. So yeah, I'll happily take my my, my shortcut in line for that. We're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:54:44",
+            "text": "doing Pothos we don't like we don't like to be and we don't like waiting in lines."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:54:48",
+            "text": "That's right. That's right. We're just only because it's only because it's only because of Tucker Carlson. But we clear up the price of clear is covered by a lot of credit cards. Okay, check your benefits"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:55:11",
+            "text": "and that's it for this episode. I want to thank Jason and Ryan for an incredible conversation. Next week we're joined by President Obama's chief speechwriter, the author of grace, President Obama and 10 days in the battle for America, Cody Keenan, we discussed the beginning of the end for the first phase of modern superhero movies. Superman three. If you're enjoying the show, we need your help. Take a minute and leave us a five star rating and review wherever you listen to your podcasts or just tell your friends about us because it really does help me listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. A link is in the show notes. Dude pod is a tip deck podcast John, a production of H industries or artwork is by catcher and our theme music was composed by Toby Foresman of whip song music transcripts provided by Sophie shin. The episode was edited by Megan Hayward of edit audio and produced by me h x listening. We'll see everybody next week."
+        }
+    ]
+}

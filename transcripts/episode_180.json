@@ -1,0 +1,1841 @@
+{
+    "episode_number": 180,
+    "episode_name": "Event Horizon",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:02",
+            "text": "This is the tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:18",
+            "text": "everybody, it's H and welcome to the latest installment of escape hatch your portal into cinematic pocket University's history. I'm joined as always by my co host Jason, listen,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:28",
+            "text": "if the first transmission from space is like someone warning me in Latin,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:32",
+            "text": "I'm out and it's the return of the producer of Jodorowsky is dude Steven scar lotta"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "0:38",
+            "text": "I got into Skyrim so hardcore, like I was driving down the street and I saw like, certain plants and I was like, if I pull over, I could pick those and I can make a potion like it really affects my life."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:49",
+            "text": "We tackle our first real true horror film, the Sci Fi thriller event horizon. Finn, join the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. And now without further ado, own event horizon. So Jason after getting COVID After having an entire week off, and trying to get like ready to record like knowing that today was coming. I still spent three and a half hours respecting my characters for bottlers gate three, thanks to the incredible advice from Defour was like amazing, and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41",
+            "text": "he's really good. He's a great YouTuber who covers Baldurs Gate belts, and honestly, I think that's the CDC recommends about 18 hours of bothers get a day as part of any convalescence period. So you're doing you're doing what Dr. Fauci would want. That's what"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:55",
+            "text": "I was trying to do. Yeah, I would like to see Fauci you know, what did he choose to do with? With shadow heart? Which way? Which way did he go? Steven, what's the last video game you've played? We,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "2:05",
+            "text": "my wife and I have to x boxes now. So we've been playing Oh, tiny teeners Wonderland and we're almost done with it. We're on the DLC right now. That's like we love Borderlands. So that was natural for us. And so that's what we've been on. And then once a while we jump on horde mode and gears four. And gears three. We haven't you know, too much. Five."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:31",
+            "text": "Got gears three. The dream. What a game. Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "2:35",
+            "text": "we mostly like Horde, because it's just so much action. But that's the dream. You and the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:41",
+            "text": "wife like playing the games together. Jason did you ever do you ever get there? We"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:45",
+            "text": "don't we don't do that. I mean, that's not part of our that's not part of our marital vows as playing video games together."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:51",
+            "text": "It hasn't happened for it hasn't happened for me yet. I downloaded portal. And I tried to get April to do it just as a puzzle game and in what like four seconds. She's like, I'm out. This is I'm not doing"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "3:04",
+            "text": "it gets hard. Fast again. It does."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:06",
+            "text": "Yeah, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:08",
+            "text": "true. Exactly. Well, Jason,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:09",
+            "text": "how are you doing? You? Okay, it's been it's been two weeks. I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:12",
+            "text": "good. Yeah, I've been on antibiotics as well. I have I got the Oh, the persistent the persistent cough that like everyone has nowadays and Juniper is home from school today. And so I don't know if that's the current round of illness or the start of a new one. So we'll see. It's just part of life with toddlers. But the wife and I had a nice weekend away. Some friends watched our kids for two nights, which was great. It will go off to Napa. Shout out to Sonoma shout out to single thread. And Healdsburg great meal. A great time. Fantastic. Never been there before."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:52",
+            "text": "That was wonderful. Nice. And you got some Elden ring in? Yeah, well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:56",
+            "text": "I didn't play any Elden ring while I was up there, but I've been deep back into Elden ring. been watching a lot of lore videos on Elden ring preparing my body for the DLC to drop. So yeah, I'm ready. I'm ready."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:09",
+            "text": "Nice. Nice. And Steven. How about you get through the holidays and into the new year?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "4:14",
+            "text": "Yeah. Doing all right. So it's been I can't believe we're almost done with the month but yeah, it's been weird since the holiday. Yeah, just been all over the place. But yeah, it's moving"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:25",
+            "text": "and you just dropped you just dropped season two of your podcast? Yes. In the shadow of the neon maniacs Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "4:31",
+            "text": "I'm about to drop that. It's supposed to be this week. I think I'm doing it next week. Now. My episode 10 became a bitch to edit. And because I'm mostly talking throughout it, and I hate that it is more of an oral history or like to drop people in so first episode and last episode were a lot of me talking and I don't by myself, which is difficult, you know, to do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:58",
+            "text": "just quickly so folks know I I had never seen this film before neon maniacs which came out I believe in 8586 86"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "5:05",
+            "text": "was released. Yeah 86"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:07",
+            "text": "And it is a completely insane relatively low budget but with with some budget horror movie that I had been covered previously by our sister podcasts baton spider. Oh, but you have dedicated an entire podcast series to this. So what is it that drew you to this to this film? Because it is wild, I would have watched it. I don't know that I would have dedicated a full series that for me."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "5:34",
+            "text": "I'm I'm so sorry that you watch. You know, when I was a kid, I was a Fangoria kid. And one day I got the issue of Fangoria. And, you know, as a kid growing up in the 80s into horror, it's like the dream movie of a movie with more than one killer. Hmm. You know, it's so there was the poster and that the TV commercial said 12, but there's really 14 of them. And I was so excited for this movie, but it was like it never came out. And then it came out a couple of years later, and I taped it on HBO. And I was so hyped for it. I didn't understand. It was like What dude, you know, I watched it twice, or I kept watching it too. I like really liked it. And I I just became fascinated with it throughout the years. It's a movie I just kept returning back to. And strangely enough, I think it's a type of movie that ages well as we go on. It's because it's not your typical slasher movie. It doesn't follow a slasher structure. And throughout the years, people have written articles about it. It has this weird cult following of people trying to figure it out. What does it mean? And so during the pandemic, I wasn't able to shoot, I was working on my shark dock and I had to put it on hold because I couldn't shoot anything. So I decided to do like, I wanted to get into doing like an audio documentary, I wanted to do a couple of them. So I was like, You know what, I'm gonna do this as my example of it. And boy, did I pick a topic that no one knows. And so I just started going through the white pages, and I just decided I'm gonna try to find anyone that because no one that worked on this movie really wants to talk about it. So I went through the Yellow Pages or white pages, calling up all the Maniacs and people who played the maniacs. I'm like, yo, are you the samurai and the maniacs people would be like, cursing me out and hanging up on me. But I did manage to find like, six of them. And then I just started reaching out to anyone I could find in the credits. Yeah, like, like, because I've worked on films in the 90s as electrician, and you know, and I know if you're there, you saw stuffs. And so eventually, I just I interviewed like over 25 people, and then I put together this oral history in 10 episodes. So I released the first five episodes last year, and now I'm about to release the final five episodes and amazing, that's great. Yeah, and so yeah, I mean, so like the five people out there that like the movie can enjoy this podcast and everyone else like what is that? Why? Because people hate the movie. Also, don't get me wrong. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:07",
+            "text": "I mean, it is definitely interesting seeing it, it was completely bananas. And I certainly understand the idea from listening to the first episode of the pod, this notion of there was a huge vision of what could be attained and they didn't quite get there. But the idea of these different killers all of different genres, kind of all coming together and doing something so so folks should check that out the movies"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "8:29",
+            "text": "on Tubi Oh, there we go. Yeah. maniacs you can watch on to be like every other insane or defined or movie. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:37",
+            "text": "that sounds like the right place to be. That's right. That's where I that's where I watched it. Actually, that's where I is the only place I could watch it. Yeah, pretty much."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "8:45",
+            "text": "Well, Steven, this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:46",
+            "text": "is your third time back on escape hatch. Previously, you did Jodorowsky is doing your film, which was incredible. And then you came back for alien, which was the film that grew out of Jodorowsky is dune. Yes. And we are very excited to have you back. I don't Jason have we really done horror. I guess we did. Poltergeist. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:08",
+            "text": "that's the closest we've got and we talked about it a bit with Meredith last time she was on she was asking about what we would do for her and I think poltergeist is our only only entry it's not really our specialty. And yeah, this is the perfect the science fiction horror Venn diagram is not particularly well populated. So we got the right man for the job for today for today's episode for sure. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:31",
+            "text": "this is gonna be wild. So we did our last episode, we did a Jurassic Park. So we we had Sam Neill, you know really ascendant in that. And we have Sam Neill, back Sam"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:41",
+            "text": "Neil. Minh. Yeah, we have Sam Neill descendant that did not make his career."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:49",
+            "text": "That's so we are of course talking about event horizon, which we are going to get to in just a few minutes. This is 1997. So right at that hackers are is out as well. Yeah, quick trigger warning for folks. There's self harm in this. There's Ultra violence, there are torture orgies and various other things. So just, this is a real degenerate sci fi horror film questionable"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:13",
+            "text": "astrophysics, if that's a trigger for you. Because my ology may not be exactly right. That's fine. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:21",
+            "text": "they did have like an Agra style. You know, they have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:25",
+            "text": "like an auger style spinning thing. Yeah. So that makes it legit. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:29",
+            "text": "makes it work. So we're gonna get to that in just a few minutes before we do. Next week on escape hatch. I am very, very excited about this. We have returning to the pod, New York Times Best Selling journalist Dave"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:45",
+            "text": "it's golf. Oh my gosh, I can't believe it's it's golf season again. Amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:49",
+            "text": "I know. I'm so stoked. So he is coming on. Last time he was here we did Popeye. But as first time here we did network, which was his favorite and one that he had written a book about for Paddy Chayefsky, who created that and we are doing the next film that Paddy Chayefsky did after network which is the deeply weird William Hurt initial star vehicle. Altered States. Altered States. Yep. Also sci fi ish kind of horror ish."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:22",
+            "text": "So sci fi horror. We're in a vein right now Sam Neil might be in there somewhere hiding."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:28",
+            "text": "How are you with altered state Steven?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "11:29",
+            "text": "i Yeah, I like it. I saw it way too young. And thought oh, because it was I thought it was a horror movie. I don't think I really understood it. And then later on in life, I rewatched it as an adult years ago, I can't and that's when it kind of affected me. That watch and I think I was also that was during the time when I was smoking. Yeah, so yeah. So it was a very"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:55",
+            "text": "interesting that's the way you have to watch that movie for sure."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "11:59",
+            "text": "Yeah, so I mean, something to revisit I guess in the future again, cuz I don't have much memory of it. So killer"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:05",
+            "text": "killer. So next week, altered state. Looking"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:08",
+            "text": "forward to it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:08",
+            "text": "Jason, quickly. Can we do some hatch news?"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "12:11",
+            "text": "Would you like to know more?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:13",
+            "text": "had news from beyond? I don't know if you've been following it. Steven. The dune promotion machine is Franken"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:25",
+            "text": "Rankin. I've sensed the theme about what they're going for. Yeah, they're going for there's a bunch of stars in this movie. I don't know if you know, but there's a bunch of stars. That's what they're going. That's their promotion strategy. Like there's like one that's like Josh Brolin and Javier Bardem. There's one that's just like, I don't know if you know this, but like Zen de and Timmy are good friends. And they're in this movie. And there's just like a lot of like, actors you like are in this movie and they like each other and they liked being in this movie. Don't worry about what the movies about. Yeah, don't worry about it. You should go and see it because the like these actors that seems reasonable, man, it's credible thing. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:02",
+            "text": "we thought right, that's what we expected. Yeah. So yeah, I support it. Good job. Yeah, we're definitely for it. So let's let's get that going. But speaking of Dune, part two, I got my tickets I am going on Wednesday. This will have dropped by the time this has dropped it will have been the previous Wednesday. I am going to see dune part one in IMAX with 10 minutes of preview sneak for dune part two."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:31",
+            "text": "You're going to report back on what you see possible"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:33",
+            "text": "possible emergency episode might have been dropped by now. So we'll see I'll be on vacation with the paper keg crew in North Carolina. So a bunch of us are gonna go see it on Wednesday night. So maybe we'll record something if we get a chance. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:50",
+            "text": "good chance for you to like jump on with some of the paper keg crew you could have them you can have some guest appearances even if they haven't seen it just like see you also sent you offices around just like pass the mic. Open mic night episode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:02",
+            "text": "We'll see there's a lot of podcasters at this weekend retreat so Yeah, everybody's gonna everybody's gonna be bringing in their mics. So then last piece is just for our new discord members joining us this last week we have Jordo dark lose me Jack Reed Shar DJ Tips and techno wolf techno Wolf."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:27",
+            "text": "Yeah, sounds great. Look, I'm glad all these folks are here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:31",
+            "text": "I'm a little conflicted on shore now after getting to the end of Act Two so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:34",
+            "text": "and so a lot of feelings we'll get ready to cry and act three"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "14:40",
+            "text": "very good. Are you guys hyped for the RE releasing David Lynch's do"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:44",
+            "text": "yes here"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "14:45",
+            "text": "on February 18 and 19th You guys gonna go check that out? Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:50",
+            "text": "I'm gonna be out of town. But I did I did just rewatch the 4k last week."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "14:55",
+            "text": "Oh nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:55",
+            "text": "We have your friend Max every coming on. For eraser had Oh nice."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "15:01",
+            "text": "He's awesome."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:02",
+            "text": "I knew we were going to be getting into that. So"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "15:03",
+            "text": "he's great. Yeah, killer book."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:06",
+            "text": "Jesus really killer book. Yeah. Very, very deep, very deep details. All right, well, are you guys ready to get into this movie?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:17",
+            "text": "Let's go. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:20",
+            "text": "here we go. Event Horizon is a journey into the depths of space and our deepest fears. In the mid 21st century, when humanity has outgrown our solar system, Dr. Billy, we're a brilliant physicist design an engine that will allow humans to travel anywhere in the universe. But the main test voyage failed when the ship and crew mysteriously disappeared. Seven years later, it reappeared off the shores of Neptune, broadcasting an enigmatic transmission. Now, we're leaves a seasoned space recovery crew on a top secret mission to board the ship and figure out what went wrong. Immediately confronted with horrific visions, and deadly attacks, the crew will learn the ship has been infested by a malevolent entity that won't stop until they're all dead, or leave our universe forever. As we're makes his choice, will the rest of the crew be able to escape? Or will they be inexorably dragged across the event horizon?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:29",
+            "text": "The event who rise in black"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:32",
+            "text": "hole physics reference? Yeah, yeah. All right. So Steven, what is your history with event horizon?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "16:42",
+            "text": "I saw it in the theaters when it came out. I was pretty excited for it. I remember at the time, I don't remember if I saw it, opening weekend, I definitely saw it. During this first two weeks of release. And I loved it. I was, again, not to bring up smoking. I definitely smoked before. And it actually gave me the creeps in the theater. It's like and that was a rare occurrence for me, because I was like in film school at the time. And as an adult movies don't normally freak me out. But I gotta say, I was kind of freaked out watching it, which was rare. And I really dug it. And I think what it is, is that sci fi movie space movies when they're done correctly, I am one of the rare fans of Prometheus. Like, it's like, when you're in space, and there's nowhere to go. And I like sunshine also. It's like, yeah, and there's four elements, and you're stuck. It really freaks me out. Like, and this one did it to me. And I also just, maybe something we'll get into later. I was just shocked that I love alien rip offs a lot. And I was kind of impressed. How this really wasn't an alien rip off. Like it did something like it's its own thing I can. I think it's its own thing. I mean, there's similarities but yeah, yeah, I loved it. Yeah, we'll"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:58",
+            "text": "debate. There's a couple things I want to touch on. There's some light Oh, Matias to a number of films."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "18:03",
+            "text": "Oh, yeah, there's, there's a there's a many of homage but one more thing. It was like it was what I kind of was it before after Hellraiser for? Because I almost feel like it was what I wanted from Hellraiser in space. Miss Hellraiser for because I saw that in the theaters, and I was a little 96 was Hellraiser for. Okay, so this is just after? Yeah. So but anyway, yeah. So I don't know. That was the media vibes I got from it. Like this was Hellraiser in space. And it creeped you out. I dug it a lot. And I still dig it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:38",
+            "text": "Nice, nice. And Jason. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:41",
+            "text": "saw this movie in the theater opening week. Whoa, in New Jersey. Nice. I remember it precisely because I was living on campus for the summer. With one time guest Steve, who was here, and two other friends. Two other debate friends. And we were living in a horrible apartment with no air conditioning. And so we'd go to the movies a lot just to like, cool off. And we went to go see event horizon, which I was like, stoked because he was like, oh, it looks like a science fiction movie. Let's go. That's all I knew about it. The I remember going to see it because there was a ridiculous storm like series of storms, thunderstorms in Jersey that that August. In fact, if you like look up like August 1997, thunderstorms jersey, you'll see like there's like all these like reports of like Pete like they lost they lost power to like 100,000 people. There was like 13 inches of rain and 24 hours and that was like a crazy, crazy storm that came through over the course of a week. And when we were in the theater, this crazy storm rolled through. So like there's all this thunder happening in real life outside while at the scene. Same time, like the movie has all these like thunder and lightning effects from you know, I don't know, Neptune, I guess. And so it was like this. Yeah, it was like it was this real like 40x experience nice. The other thing is my friend John who went to go see it was like willing to go see a science fiction movie but doesn't like horror movies. And we didn't know this is when the horror movie turn happens. I remember like looking over to him at some point. It's just like white as a sheet. Like just terrified. He's like, I don't like this and it was just absolutely terrified within an inch of his life, like it was a real visceral. So all in all between the thunderstorm and my friend nearly like wetting himself. It was like a real visceral movie going experience."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:48",
+            "text": "Nice. Nice. I had never seen this film. And I don't know why. You know, I like science fiction, obviously. A lot. I think at 97 I was probably you know, more caught up in Starship Troopers. Right. Great Year there for that. What? Jesus"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "21:08",
+            "text": "Alien Resurrection. Yeah, that was not my favorite. I know but it was the same time period."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:14",
+            "text": "I have never reversed I have never revisited that one. Yeah, but so and I'm a huge City of Lost Children guy that like I was I was obsessed with that movie but so yeah, so I just didn't see it. I don't know why and then I kind of just sort of like just put it on the shelf and I knew I would get there eventually and especially once we started the pot, I knew we would get there but the time is now and we'll get into my reactions. So this film is directed by Paul WS Anderson dot Paul Thomas Anderson, you know relationships to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:47",
+            "text": "use many initials, the desert Bua himself from Paul Thomas Anders that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:51",
+            "text": "he would love to be Paul Thomas Anderson. So, so his films, Mortal Kombat soldier, Resident Evil Alien vs. Predator, and currently Jason did you know he's doing a George RR Martin? John right now and what does he do in the lost lands? Which I've never heard of? It's like apparently, a little known George RR Martin. Let's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:13",
+            "text": "go. George RR Martin, who wrote some of the lore for Odin ring also."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:17",
+            "text": "Right shot here's me. I didn't Yeah, true fact. So after Mortal Kombat, which was a huge hit. Is that is that Christopher lamb bear?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:27",
+            "text": "Yeah, Mortal Kombat? Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:30",
+            "text": "And Vaughn DOM."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "22:31",
+            "text": "Oh, Van Damme Street Fighter."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:33",
+            "text": "Okay. Yeah. All right. Like I don't watch either those crews."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "22:38",
+            "text": "Bridget Wilson from her more. I forgot who I actually I actually saw that twice in the theaters Jesus. But I liked it. I was a fan. I liked martial arts and there wasn't a lot of unless you were I was seeing the Hong Kong martial art movies, which were all the weird theaters. I was the I was there twice that I liked Paul. I actually liked it director. So I'm one of his apologists, except for I'm not a fan of his three musketeers. But I like I like his work."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:09",
+            "text": "Everything else? Yeah, well, yeah. And he is definitely kind of like a he is a mainstream kind of like action sci fi guy, right? Like he definitely knows what he's what he's doing in that in that vein. But after Mortal Kombat, his first big movie, it was a huge hit. And he was offered everything Jason including X, bloods go"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:28",
+            "text": "x yeah, go do it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:31",
+            "text": "He took a shot. He really wanted to do an R rated movie. And he found the script or was given the script by Philip Eisner. And basically he thought it was quote too similar to alien. And he wanted to instead do a classic haunted house movie in space. And he was also very inspired by Solaris. Which I've never seen the original."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:57",
+            "text": "The Tarkowski it's it's quite like that one Jerry quite slow. It's good. I mean, it's, it's you know, you gotta you gotta buckle and if you thought like, you know, it kind of makes Barry Lyndon look like a Fast and the Furious movie, but it's it's, it's good. I mean, it is. It is good. You just got to be ready for some contemplative aha moment, meditations on Russian existentialism."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "24:25",
+            "text": "That's one of those I'm saving for like the theater. And I've never seen it. Same thing with Barry Lyndon, I'd never it's the one Kubrick I'd never seen and I'm waiting to watch that one on the theater. Yeah. I always managed to miss it. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:38",
+            "text": "I actually was a big fan of the Solaris remake with Clooney interesting I liked I thought it was really good I saw it so beautiful is really well shot beautiful. Yeah, there's some good data on no dominion. Some good some good poetry looks good. pletely"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "24:52",
+            "text": "forgot that movie. I remember seeing the billboards and I completely forgot existed. Maybe I'll watch it after I watched the remake, I guess. Yeah. Watch the original I watched. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:02",
+            "text": "Makes sense. Makes sense. So So screenwriter Philip Eisner and Jason I didn't know this connection going into this, he acknowledged that Warhammer 40k influenced the story. That's great. That makes sense. You're a huge 40k guy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:15",
+            "text": "I'm not a 40k guy, but I have started reading some of the lore because the lore seems amazing. And I guess I can kind of see that yeah, like there is like the like the just the total metal gruesomeness of of it, I could see being a spillover"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:34",
+            "text": "and and the concept that the spaceships traveled through the galaxy by passing through the warp a parallel dimension where faster than light travel is possible. And but it's inhabited by demonic spirits that can infiltrate the ship and like take over bodies and basically more fun and totally distort them and turn them evil. So that was, that was quite a cool connection there. This film was shot at Pinewood. And apparently there was a lot of time in harnesses for zero G. And you know, a lot of Laurence Fishburne kind of like hanging on di wires and stuff. And the actress who played Stark described the experience as cursed. Good,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:13",
+            "text": "that's what you want to hear about your set."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:18",
+            "text": "Up makes sense. So the shooting took too long, and there was some other project going on. So Anderson only had four weeks to do his edit. His initial cut was two hours and 10 minutes with lots of gore and test on answers. And Paramount execs freaked out when they saw that gore. And so they cut out the hatchet and cut it down to 95 minutes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:44",
+            "text": "I that is I will say I you know we've we stand a 90 minute movie on this podcast. And when I fired it up, and I saw that it was 90 minutes. I was like, correct. Like this is a movie that in 90 minutes, there's no reason this movie needs to be two hours and 15 minutes long, so I could why."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "27:03",
+            "text": "I agree. I mean, all first cuts are extra long, and it's about whittling it down. But I think what happened, I would love I'm bummed that we'll never see like all the gore because it's lost. But I think the thing that happened was paramount was about to put out Titanic that summer. And they pushed it to winter. So that's what gave him the four week editing process because it was originally supposed to come out during Halloween. And then because which makes sense, you know, feels like a fall movie to go see versus a summer movie. I mean, I guess it works as a summer movie too. But I think the audience's didn't care for it as a summer film. But anyway, not to jump ahead. But yeah, that was the thing. He was kind of forced to rush it from his original date because it's been tannic, being pushed, because now all of a sudden, they needed something to put in that window. And it was like, put this expensive sci fi horror movie there. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:01",
+            "text": "well, that is wild. So it ultimately it didn't do well at the box office. We'll get there in just a second. But it was a huge hit on DVD and spawned, you know, multiple releases. They did find one deleted scene but most of the excise footage was just completely gone. Budget $60 million,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:21",
+            "text": "so much. It's so much money that they put into this movie. That was a what someone had a notion they're like, they should have no, like, you can't put $60 million into a double genre movie. Like maybe you can make put $60 million in a science fiction movie. Maybe you could put $60 million in a horror movie. You can't put 60 million into a horror science fiction movie. That's just that's just not gonna work. Not"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:44",
+            "text": "when your leads are Sam Neill and Laurence Fishburne like, there wasn't really enough Star Power"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "28:50",
+            "text": "matrix. wehrens"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:50",
+            "text": "firstborn. Yeah, it's just it. None of it. None of it makes sense. It was a and there's like no female lead of any name. It's Yes, it's a tough one. It's a tough one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:02",
+            "text": "What do you think, Steven? Do you agree with that assessment?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "29:04",
+            "text": "Yeah, it was. Yeah, it's really I'm shocked at the budget for that time period, too. It's like that's a lot of money for this type of like gruesome movie. Yeah. I mean, I'm happy they did, because look, we got we got some pretty cool. Yeah, exactly. It is shocking."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:24",
+            "text": "Yes. Pretty, pretty wild. But it will talk about it. Like you can see the dollars that were spent like that, that money in the production design. And the model work was really really incredible. Oh, they're fabulous. 100"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:38",
+            "text": "bucks 1500 and $15 million movie today? Yeah, dude was 165. So like, assume that Yeah, it's like 115 like plus like, whatever, you know, double it for marketing or whatever. If they're spending like $250 million on event horizon. That's, I don't know. I don't know. That's, that's a that's like I'm going back."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "30:00",
+            "text": "Yeah, I mean, it's there. And unfortunately, we only see some of it for split seconds, but some like the effects that are in those sequences when you pause them like, Oh my God, how much effort and time they put into that slide. It is a shame we don't see more of it. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:17",
+            "text": "really, really good. Really good. The box office in 1997 Air Force One, spawn, Men in Black contact. I mean, one of the most perfect science fiction films of all time, Face Off Mimic, which I've never seen. plus del Toro and the fifth element and Batman and Robin speaking with George Clooney summer Wow,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:47",
+            "text": "that was a crazy year. Pretty big, right? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:51",
+            "text": "Yeah, but I feel like just to hit this for one second like you've got a lot of stuff here that is really the kind of wink wink nod nod genre stuff right Batman and Robin face off men and black spawn it's not the kind of like the like earnest straightforward stuff that I that I'm quite as drawn to agree with that versus like 1982 or something that summer 82 which I think has has more of that Yep."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "31:19",
+            "text": "Well opening Have you have you looked at opening weekend it came in fourth place which is not good. Cop Land was number one Cop Land Air Force One on it thinks third week is number two conspiracy theory on its second week is number three. Verizon, you're getting beat"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:40",
+            "text": "by a holdover of conspiracy theory. It's a problem to air. It's that's Yeah. That's pretty tolerant. Yeah."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "31:48",
+            "text": "Even rough is that steel with Shaquille O'Neal debuted last weekend too. And it's in 16th place like that's bad. I mean, I don't want to talk shit. But that's yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:03",
+            "text": "Yeah, we got a couple execs were having a bad weekend. That was not so good. Yeah. Well, let's get into this movie. So first of all, we start with this techno score opening. Jason, what was your reaction when you saw that? It was Michael came in and orbital."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:22",
+            "text": "I was very high. I was hyped by the I was hyped by the soundtrack and I was hyped hyped by the font falling into the whole, like, the credits. The credits is going to win to the end of the was like Yes. A very literal interpretation of the movie. Let the credits involved."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:43",
+            "text": "For me, this like hit me as so 90s and it feels like it's sandwiched right between kind of hackers and the matrix. Yeah, at 99 and I'm gonna keep thinking of the matrix as a comparison for this definitely."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:56",
+            "text": "I mean, the matrix is a really good comparison because it's got like essentially the bizarro matrix cast I mean, he's got Laurence Fishburne like so it's got you know an actual matrix you know cast member but then I actually thought it was I thought it was Carrie Anne Moss was the was one of the female leads at first because they should have like in silhouette was given a little Karianne and then I thought what's his face baby bear? I thought Baby Bear was the little the little boy the kid who like you know? Who like who programs the red Yeah, who programs the Red Woman? So I was like having bizarro matrix flashes all over this we have it? Ah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:36",
+            "text": "yes. Yeah, it's it's wild that that like this specific timeframe. We thought we had everything figured out in the 90s I think right like we were like, This is the best the 80s kind of socked and now it's like really great and we're coming into our power Yeah, but we didn't it turns out like I watched the all of the Larry Sanders Show on you know, on HBO a couple of years ago and the size of the collars that we were wearing. Yeah, and some of the textures that we were using the shoulder pads like we did not we did not have it figured out"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "34:05",
+            "text": "right here that actor we are seeing Baby Bear was killing it. He was just in barbed wire and oh, yeah, movie and breakdown with Kurt Russell which rules and then coming idle hands Damn, he was killed on Iran IDs. Yeah, I love barbed wire actually, I don't know why but yeah, but yeah, man, what a decade for him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:27",
+            "text": "He looks really familiar to me, but I couldn't I looked scan his IMDb and I didn't I didn't hit anything directly. But so we do start with a crawl. Jason You are well known for loving typed out computer scroll, not just show it on screen, like type it out of character to get it. But we get the establishment, you know 2015 Moon colonization 2014 We have the event horizon is it disappears and seven years later we're back. And this is where we see the ship floating with zero G so the first thing that struck me was how to have these CG effects scribing Steven?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "35:03",
+            "text": "Oh, in that opening sequence when we pull away and we see the host, I mean, at the time, it was pretty amazing. You know, even Well now it seems like now it seems really weird. They spent such a big shot for that one scene. And then I went back and I looked at the script and I guess there was a whole setup with him and going to see the military on that base and in the office and finding out all about it. Almost like this go anyway, for later on in Aliens, right? Yeah. Now, so I guess there was way more taken place on that space station. And maybe that was some of this stuff excised? I don't know, because I was like, Why did they show off? Like it's a pretty big effect shot. I like it, though. I mean, like, it just gives depth to the world. What we're gonna see, you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:47",
+            "text": "is that him screaming floating on the ship before just before he wakes up? So I couldn't tell if that was him. Or if that was if that was something else. But it's interesting to me this idea of starting there and starting with him being awake. I did notice not the first time but the second time through when he's shaving with a straight razor or Jason. There's hesitation there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:08",
+            "text": "Oh, like Oh, okay. All right. Yeah. Which is I love that you had to watch this movie twice. Yeah, congratulations. You had to go study this film?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:18",
+            "text": "Yeah, but so once he's done shaving Yeah, we have the introduction that he's on the space station did as Did anybody else get kind of sick as the camera was spinning round and round to reveal the space station"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "36:28",
+            "text": "not me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:29",
+            "text": "I was a little I was little I felt unsettled. I was like, I hope this doesn't continue for the rest of the movie. Yeah. I get I get I get motion sick from from that kind of. That's why I can't use the VR."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "36:42",
+            "text": "Oh, really?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:44",
+            "text": "Did you order did you order your vision? Vision?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:47",
+            "text": "Because you know what? Now I need first of all corrections from last week or from two weeks ago, when we recorded. You admonished me for not pre ordering the apple vision pro but it wasn't it wasn't available for now. That was a lot correct. So readers listeners should take note of that. It is available for pre order now. But I need the prescription lenses and my prescription is out of date. So I first have to go to the optometrist in order to get a new computer. So keep keep keep stay tabs. Yeah, keep tabs on this journey. Okay. And I think my vision has gotten I think my vision has gotten worse in the last two years too. I can tell that the Michigan's falling apart. So Oh, no, David lenses."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:26",
+            "text": "Yeah, best of luck."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:27",
+            "text": "I mean, I've always been, I've always been, you know, nearsighted. But now I think the the reading vision is going to so it's a it's a wrap,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:35",
+            "text": "or you read at the time. Yeah, yeah. Yeah. Yeah. Yep. So Stephen talking about alien. We have the Lewis and Clark, this is a salvage ship. And we get the introduction of Miller and kind of all of his crew, you always have to create characters, you always have to introduce them. To me, it's alien, was the first one that really did it in this distinct way from from when I was alive, that I'm sure there was other stuff that did well in the 60s or 70s, maybe the original Ocean's 11. But then aliens, obviously, is the template for every action movie where you have your Vazquez and your hex and your headset and all that kind of stuff. What's your take on this crew and how they're sort of characterized and introduced? I"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "38:15",
+            "text": "mean, I guess they had a separate from Alien by introducing them somewhat and then going into hypersleep and then coming back out a hype is interesting, but yeah, you get its total alien vibes in this opening sequence. And I like yeah, you have men and women Sharon quarters. Yeah, like you said, aliens and also an alien and I like to cry loot me called cryo sleep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:39",
+            "text": "The grabbed couches, grabbed couches. Yeah."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "38:42",
+            "text": "I kind of liked the idea of going under and and my guess for Sam Neill, he has a nightmare. So it's not like coming out. So like, you know, so fast like you're under MD Nisha anesthesia or something. But I do like this thing. I do like the crew and I also like, you know, following the George Lucas template of put British people in space and it just kind of makes it feel a little bit more real Nieto I don't know. What he created with Star Wars and now with this movie is like, I like to cry like Jason Isaacs. I like Jason Statham dude as the kind of medicine. Yeah. And then then we have you know, like, I guess the three Americans, Laurence Fishburne and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:25",
+            "text": "yeah. Sam Neill acting American. Oh,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "39:28",
+            "text": "Sam Neil. Just freakin chewing the scenery with selling Yeah. Like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:34",
+            "text": "Yeah. Again like and and like Jason Kelce not afraid to take his shirt off so he's just like, you know, yeah, put me in the graph couch I'm fine. Incidentally. If there if you cannot find at your local dispensary, a strain called graft couch. You need to shop at a better place because that's a real I don't know what to say it should be real."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:58",
+            "text": "That's a great idea. to quit"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "40:00",
+            "text": "smoking so like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:04",
+            "text": "that's really tempting you back in with the graph kind"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "40:06",
+            "text": "of shits changed so much so yeah, yeah, I went yeah, I went back into one I was so much stuff. I'm like we I don't even get this anymore anyway"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:20",
+            "text": "Oh yeah, it's wild now that it's free, you know, freely available it's less appealing in some in some way. Yeah. So he he does weird does wake up, he goes out he does not dry off or put on a towel and he's you know, sees Claire naked on the bridge and she says waiting so we definitely get that sort of creepy aspects that he freaks out but we get this mission debrief. And so throughout this whole thing, Laurence Fishburne in my mind is by far the best you know part of this movie even you know from the very beginning when we're says you know first of all you know, I'm really happy to be here and he says like, we're"
+        },
+        {
+            "name": "Event Horizon sample",
+            "timestamp": "41:00",
+            "text": "sure that you appreciate being here doctor but you must understand we don't. We were taken off a well deserved leave and sent into Neptune space. We are now 3 billion clicks from the nearest outpost the last time you sack attempted to rescue this far past the outer reach. What we lost both ships. So if you please."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:18",
+            "text": "So you definitely get that sense that these guys are against their will and they're doing what they have to do. But they're they're all about business. I think he's he's quite solid here. Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "41:27",
+            "text": "still more alien. Blue Collar,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:31",
+            "text": "you know, space trucker"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "41:32",
+            "text": "gigs stuff. Yeah, job stuff."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:35",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:36",
+            "text": "Yeah, blue collar in space is great. It's just great. Like guys just like I'm here to like, you know, work on oil rig a space rig. It totally it totally works. What they should now there's a great opportunity for someone to do blue collar and space thing as like sort of Magga commentary like all the blue collar workers in space, are like xenophobic, but against like the actual elite. The actual Xenos Uh huh. There you go. Hit me up Hollywood. I'm ready. I got a bunch of ideas. People"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "42:10",
+            "text": "grabbing their pens, pads and pens. Right? Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:13",
+            "text": "They're all booked. These are your Yeah, this is potentially one of your subplots for your Star Trek Admiralty."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:19",
+            "text": "They got a quarantine earth not let any more aliens in build a space wall."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:25",
+            "text": "The rent is too damn high on Earth. Yeah, so let's see here. We have we're explaining how the gravity drive works Jason by folding over a piece of paper so Nolan strikes again. Just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:39",
+            "text": "yeah, Christopher Nolan have an original idea once you have oh my god just totally lifted this for interstellar. Unreal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:48",
+            "text": "I think Interstellar is probably a better film but I mean It's neck and neck. So now we get the transmission we get the transmission from Event Horizon fucking when I hear this transmission, I'm out like I like guys. I quit. I'm leaving but just like put me in a put me back in the graph couch. Can't do it. Yes. No, no, I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:19",
+            "text": "not. If listen, if the first transmission from space is like someone warning me in Latin. I'm out. Like I'm not going to investigate more. That's it the screaming Liberata Hey man. Like that's that's that's a wrap."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:35",
+            "text": "Tough one. That is a tough life."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:38",
+            "text": "I'm not going I'm not asking any more questions Why is he speak Latin? Why in the moment of extreme duress would you speak a dead language? No probably not but all the more reason I don't need to go figure it out. I'm not going to look yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:51",
+            "text": "yeah for sure. Like you know what we didn't find the ship and wasn't there I don't you know, you go look"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:57",
+            "text": "nothing bad would have happened if they hadn't gone to look it would have been a no op like just whatever there would have been some hell ship like I by Neptune is Let it be. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:05",
+            "text": "I can go back like Go Go do its thing. Yeah. So so it is in the kind of it first of all, is there an ionosphere of Neptune?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:13",
+            "text": "I don't know about Neptune's atmosphere. But I know it's not loud. I know. It's not like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:19",
+            "text": "lightning. Yeah. But once they once they almost crash into the ship and they begin to fly around it. Yeah, this gave me huge black hole vibes. Yes, definitely flying by the side of the ship and like looking inside although on black hole it was like four and a half minutes or whatever. Like Star Trek, but I love that. Yeah, yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "44:42",
+            "text": "there's some black coal vibes and not a lot but you know as an that's kind of a horror movie I would say to hold for as you said a very slow, slow burn."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:58",
+            "text": "That's That's another that's another distress call if I get that in spades not investigating further"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:09",
+            "text": "get to it. Oh, that's interesting. That is also like a show up and if an investigator ship and see what happened"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:15",
+            "text": "yeah, he's not going great never show up at events. Leave it alone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:21",
+            "text": "So the event horizon was modeled after the notre DOM cathedral. Interesting. You can see that in the design. I didn't really get that vibe. I didn't either don't understand"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "45:31",
+            "text": "that. I guess the room with the cross where the guys floating in I think that's in the sense"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:37",
+            "text": "that it's Gothic, I guess like Yeah, cuz like in the in the black hole room, like there's all this like unnecessary ornamentation, which I definitely noticed as like a stylistic choice. And there's another room. There's another room like a crew room where there's these weird fluted columns, that flair at the top. And it was like very strange for a ship to like to have that kind of like, you know, just ornate column support doesn't seem necessary. But yeah, I don't know about the rest. That is really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:11",
+            "text": "cool though that description of the let's just go ahead and talk about the gravity drive the core, which is so frickin awesome. Yeah, it does have like a gothic or almost kind of like ritual. Look, that star thing that kind of opens up and pulls back. Yeah, and I love the idea that part of getting part of this drive is tapping into an arcane component as much as Yes, tapping into a science a scientific component. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:40",
+            "text": "maybe if you didn't want to end up with your ship being infested by demons you shouldn't have built its central mechanical component to look like a heavy metal asshole. Like I mean, maybe that should have been one of the things you designed against but it's like built literally like you know the anus to hell as like your as like your your primary your primary drive. But it looks awesome the room looks awesome like they really they not did I was stoked for the production designers like someone was able to just do their their most on this on this set. They killed it. Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "47:18",
+            "text": "it's fun. It's a phenomenal set. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:21",
+            "text": "so it's the production designer is Joseph Bennett who among other things Jade hardware."
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "47:27",
+            "text": "Oh, wow. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:29",
+            "text": "Which is a wild kind of very slow indie. Is it Australian sci fi movie? But from that from the late 80s Then he did Steven deep blue sea."
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "47:40",
+            "text": "Oh shit with deepest blue in my heart."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:47",
+            "text": "Which I still have never seen. Yeah, I've never seen it rageous"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "47:50",
+            "text": "that's crazy. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:52",
+            "text": "really it's the best shark movie that's not the original Jaws"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "47:55",
+            "text": "it's probably the second best i think i think"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:59",
+            "text": "i think it is. I think it is their jaws one deep was deep Lucy like I mean like tell me tell me what else you would put it What else has a shot and number two?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "48:10",
+            "text": "No, it's not that's the second that's it in my opinion."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:15",
+            "text": "It's the I Agree and you're a scholar."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:17",
+            "text": "Yeah, what's the what's the one the bloody JAWS or whatever? What was the what"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "48:21",
+            "text": "was cruel to yes cruel Jaws anybody before cruel Jaws it's great white that's the ultimate Jaws rip Okay, which I it's just an amazing movie because they are trying so hard to beat jaws and so there's there's something really nice too is something lovely to it when you when you see that one anyway. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:43",
+            "text": "well so what yeah, we'll get to Deep Blue Sea and time and then Jason Joseph went straight for doing deep blue sea apparently to Rome."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:50",
+            "text": "Oh well good for him"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:52",
+            "text": "good stuff he came up yeah good good good stuff Great. Well that is that just brown the brown water this kind of floating around like that seemed like that was going to be a thing. They didn't Yeah, they there's something alluded to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:04",
+            "text": "it. This was a plot point I didn't fully track there's something about the coolant they reference later and I just didn't know I feel this is in the deleted footage some there's some plot point about what the colon is and what it means and what it's doing that I don't know that didn't it didn't really matter didn't seem to matter for my enjoyment of the movie. But we did we talked about the fact that at some point when before the gravity goes back on there's like a shot of stuff floating slowly and there's they show a speed Master Pro the watch that they show is watchdog Yeah, they put a speed Master Pro floating through. Wow Shep I'm pretty sure I didn't like actually Google but look and see if it was but it it was at least meant to evoke a speedy Pro, which would make sense because it's a space movie,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:47",
+            "text": "watch talk. So we do have as they're sort of like they get on board. The Event Horizon they're looking around paging checkups exploding bolts in the hallway. That's Yes, that's very Yeah. And then we get our sort of creepy stuff. You know, we've got some blood here. That's not something you ever want to have. Have somebody call out and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:12",
+            "text": "got dots in here?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "50:13",
+            "text": "Well, that's the weird thing about it is that if you look close at the like, there is like blood and skulls and bones, like splattered against the walls, and they show it's like their skulls embedded in the blood. And there's like rib cages. And so I'm shocked that none of them were staring at it and completely bugging out on it. This is the crew. They are decorated in this room like well on the wall. Yeah, they are. It's like the show close ups of it. split seconds, like it's there in front of them. And it's like, I'm shocked. They're not bugging out on that. Like, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:51",
+            "text": "they don't really talk about that. Yeah. It's like right in front of them over their shoulders the whole time. So my first note on kind of checking out the gravity drive, I would assume it is not an industry best practice to stick your arm into the experimental interdimensional engine as"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:12",
+            "text": "I was wondering that too, I was like, Look, man, like if this thing opens up, and you're just like, oh, like if this is, you know, some kind of mysterious, even if, even if you don't think there's anything mystical at work. Like, it's like the engine to power, you know, transdimensional travel or whatever. I just don't think you go poking things in there. I don't think I don't think you probably think"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:36",
+            "text": "apparently there was a cutscene that explained why Justin did that. And I think you definitely don't like you don't get it by not having that in there."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "51:46",
+            "text": "Like Prometheus. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:48",
+            "text": "yeah. Watson. Yeah. Right."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "51:50",
+            "text": "It's stuff that made sense that the took out of the movie, like, Oh, really? Okay, nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:55",
+            "text": "So let's see. So we have a huge explosion, as part of that. Coupe comes in and catches Baby Bear. But they have to abandon the Lewis and Clark for the event horizon. And that's, that's just tough, right? Like, when you when you have to get on the shitty ship. Yeah, that's great. So now is where this is where sort of kind of classic horror, haunted house type stuff. We have Peters seeing her kid with maggots on his legs. That's like a that's a super cheap mode. In terms of horror, when you just like take a little kid and coverman maggots, right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:30",
+            "text": "Mm hmm. Yeah, not great. Not great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:34",
+            "text": "I started out yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "52:35",
+            "text": "forgot to reason I forgot the reason of that. I think one thing I read a while back, I think it was supposed to be something like cancer or something. I forgot what it was supposed to be. Hmm, something. I don't know. I wish I remembered exactly what that meant. But I remember reading that in some history. A while back. Interesting was supposed to mean some. So we had this big"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:58",
+            "text": "power drain that is happening coming out of the Corps. And so we have we're having to go into the tunnels. So this green circuit board tunnel is really cool looking."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:09",
+            "text": "It's very cool. The tunnel looks great. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:12",
+            "text": "it is an extreme 2001 rip off like to the point of like, it's, it's like focus just on his breathing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:19",
+            "text": "But it's green, not red."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:20",
+            "text": "It's green. Not red. Yeah, exactly. It's fun. But we do have Claire, you know, saying be with me forever. So that that seems that seems not good, huh. It just sort of like things just keep going downhill from there. And I think you know, the next big thing for me is like this banging on the door of the bridge, which is sealed. And this is where you have we're saying? Yeah, so my favorite thing about this movie is we're as this kind of like vehicle for evil in the film. So what is your take on how that how that worked? Because I was kind of wishing that there had been more of that. Ultimately, you know, obviously, he's gonna go all the way there. Yeah. But I would like at this point, he seems like he's just like discombobulated I don't know. I don't know. You know, could be this could be that and he's kind of like making up excuses, but it's not clear why he's doing that. And I would have liked to have seen him more as an evil revealed earlier as more evil in the midst of"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:22",
+            "text": "this or that like the secrets that he's hiding is like torturing him and like that's like, you know, sort of what's what's what's what's like eating away at him in some degree. Yes. You know, like 2010 kind of does this well, were like all the characters not glyphed Gal, I guess. But like Roy Scheider and Bala ban, they have like a guilt that they're carrying with them on this mission. And it's like they don't become the villain of the movie but like whether or not bow band is gonna go through with like the, you know, asking how to hack sacrifice himself or making a sacrifice himself is like a big plot turn. So So good. It's so good dude. How's it done underrated? And, and like, you know, so and so like they do that they do that better, they do that better. And it would have been nice to kind of because like, we really just kind of think we're as like a chiller up until the point where he's very clearly not so would have been nice to see a little bit more of that he'll turn coming. Now you're right,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "55:19",
+            "text": "because he's I think that's probably why they just keep bringing his dead wife into the, into the fray over and over again. You know, but it's weird in the original script. There's a scene where it's almost like there's a shining element and they brought it there's aliens in the original script you see very briefly and there's like a scene of like, we're just like, staring off and then we see a shot of Claire smiling at him and then and then she disappears. And then we see the original crew of the event horizon. They sit along the long table, and then it cuts to we're staring staring wildly it's almost like this Jack Nicholson thing. Yeah, then, and then we see an alien Sun read bloated and dying. And then we see an alien terrain. It says here a sluggish oily black sea. Wow. And then we see creatures scale without cemetry without eyes occupied, occupied pods, and they devour each other. And then that's where you kind of he's almost being influenced by these weird aliens that we only see for split seconds and like this weird montage of him like I said, like in a weird Jack Nicholson shining montage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:36",
+            "text": "That scene sounds amazing. Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "56:38",
+            "text": "that's in the original script before Yeah, Anderson came in was like, get rid of all the aliens because, you know, it's, you know, we want to do more haunted house, because it's gonna be two that you said earlier. In your description. It was too similar, you know, too alien,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:53",
+            "text": "huh? I want to try and figure out just briefly like, how did this actually work? Right. So like from the beginning of the movie, we're back on the space station. He's dreaming of Claire. Yeah. And he's, and he's dreaming of the ship being back. Yeah. So is the concept that because he built the ship, and he must have spent so much time on the ship, that he left some kind of psychic residue of his persona, and the aliens upon coming back. Seven years later, were able to sort of like trace his psychic residue and begin to influence him. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:25",
+            "text": "think this is right. Yeah, I think hex says it in chat, too, was I feel the entity on the ship actually reached out to him before they got there. I think that's right. I think like, the whole movie is the ship. Like the ship is now imbued, the ship is now alive and less like a conscious entity in some sort. And is looking to like kind of inflict more damage on the people associated with it. And so finds him as the creator of the gravity drive. I think that's right. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:58",
+            "text": "I think that's right. Yeah. And to me, that's super interesting. I think I wish it had been a little bit more, yeah, that will or the desire the ship was not to, like, get another crew on and then take them also, to the horror space. Like, if it had been, they're going to open the portal. That's the goal is to be able to open the portal so that everything can get in from the cast dimension. Yep, that would that would raise the stakes, in my mind, but"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "58:24",
+            "text": "it makes it Yeah, absolutely."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:26",
+            "text": "I love the idea of one of the big concepts in the show that in this movie that I like, is the idea of like a ship being imbued with a spirit I think that's cool. Like a living ship is a great sci fi concept. And then like the further twist of like a living ship that sucks who's like you know, like gone to hell dimension and as evil that's great, like that really could have been something and like if there's just like a little bit more, but then again now we're getting to the part where we're asking the movie to be longer than 90 minutes so yeah"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "58:59",
+            "text": "yeah, what was the other thing I saw? Yeah, cuz it was almost like they were almost alluding to that it was like there was like a virus on the ship a computer virus and a computer virus is alive. Do a kind of writing to in the first draft as well."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:13",
+            "text": "Now that that's not good. We don't need to bring computers into this like I think it's great to just say it's something Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:19",
+            "text": "we don't need computers. Yeah, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:21",
+            "text": "a malevolent entity."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "59:22",
+            "text": "Well more of like an alien computer virus when they're dealing with an alien kind of concept in a first draft anyway"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:29",
+            "text": "Sure. We just don't need boot up and operating system you know, terminology and stuff to get in the mix of this. It just It fucked them on Independence"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "59:37",
+            "text": "Day ending shooting."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:38",
+            "text": "Terrible, terrible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:41",
+            "text": "That's the problem. So I do love this scene. I mean, I Yeah, so malevolent ship that is imbued with the Spirit. This is lit this film is literally a 2001 rip off as much as aliens, including in the airlock scene. So Jason, I love it when In Miller, Laurence Fishburne is like jumping through space to get to the piece and he's giving the instructions to baby bear to like blow out his lungs, so that he will decompress his lungs, which is correct. And that's very good. That is correct. But you can't give directions to someone when their eyes are exploding and they're bleeding out of their face."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:19",
+            "text": "Yeah, I mean, like, they obviously you know, as explosion decompression pod. This is this one really puts the explosive decompression in like front and center. It's a little confusing what's going on? Because it's like, it seems like they're suggesting the chamber is like emptying of air before it even blows the door. And that's why he's experiencing these things."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:40",
+            "text": "No, no, that's the it's the demonic. His eyes are blowing up from the demonic stuff. Not from decompression. That's before it opens. Yeah. Oh, is that?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:48",
+            "text": "Is that what you that's what we're meant to believe?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:50",
+            "text": "Oh, yeah. He's either ripping them out or he or they're exploding out horrifically in some way. But I think that was like the same thing that happened would have happened to Claire's eyes and would have happened to the other crew members. Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:03",
+            "text": "Interesting. I don't know. It seems like there should be it's hex disagrees with you. Hex says the access the room decompresses. And that's what that's why is veins start looking weird and stuff. The room does decompress. That's but this isn't what this was. This isn't what would have happened. And it's I it's also unclear why there's no why he can't just hit the button to be like, what's the point of having a 32nd countdown if you can't abort the 32nd countdown? Right. This is a UX problem. In addition to everything else,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:34",
+            "text": "the designers were not consulted. Yeah, so just for the record, so everybody knows I'm saying his his veins were popping up and his eyes were bleeding before the decompression happen. Then the decompression happened and we have the literal Dave jumping into the airlock to capture from two from 2001 Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:53",
+            "text": "And just just so we have just we set the record straight chat and I believe myself disagree with you. Oh, and say that the bleeding from the eyes and the veins bulging out are because of atmospheric effects and not demonic effects. Okay, that's what I thought and that like and that like that something is happening in the chamber. That's like before the door opens. Like they're, they're draining the air from like, you know what you can imagine? Like, it's like, okay, the way the cycles is they they create a vacuum in the airlock before they open the door. And then once the doors open, yeah, and so it's it's him being subjected to a vacuum that makes his eyes bleed and his veins bulging out, not the demon. All right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:39",
+            "text": "in the in the uncut episode, we will play the scene and we will review it and we will make a determination. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:45",
+            "text": "so so please sign up for our Patreon. Where where's your where you will be able to hear well, people can go back to the archives, I assume. And they will and you will be able to hear this horrible scene for the low low price of $4."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:04",
+            "text": "Alright, so let's see. So I love cap story about the zero G fire and like fire moving like water. I don't know if that's true. But that sounded very cool. The updated translation is not saved me it save yourself from hell, that's also bad. But this is where we get the shot of the video at the video version here. So Jason, they hired porn stars and real amputees in order to make the torture or G more realistic."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:42",
+            "text": "Or shout out to the assistant director given that got that casting job willing. I mean, that's a good job. I guess. I don't know. That's a wild one. So that seems like seems like a job for Cory. Cory could have with this ever."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:01",
+            "text": "By the way, you know Fishburne has the right take on it. Fuck this ship. Yeah, that actually would have been a great tagline for the film. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:10",
+            "text": "yes Event Horizon going Fuck this shit"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:16",
+            "text": "it's creepy as hell when we're says I am home and steps into the shadows but that maybe would have been a good time to say he's potentially a threat here. I don't like the way he said that. Instead of just allowing him to run free. But we do we do get Peters you know? Her going and grabbing the scrubbers Steven that is a direct lift of Lambert from Alien like literally getting tubes that you need to load to run out."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:43",
+            "text": "Oh yeah, absolutely. It's like exact get the scrubbers. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:48",
+            "text": "we also get you know, the Kubrick lifts continue we have the shining Bathroom scene. Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:55",
+            "text": "Yeah, we get the we get we get the we get some Some bad times in a bathtub."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:03",
+            "text": "A classic. But the naked lady, you know him, you know, up against the naked lady and then her transforming and stuff like, it's just a lot of a lot of that even"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:05:12",
+            "text": "get like the elevator sequence coming up later. Yeah, exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:16",
+            "text": "But But my favorite thing of all this is when the ship blows, and it sends coop tumbling off into space. We haven't talked about coop enough. But he basically takes over the third act of this film."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:32",
+            "text": "Yeah, Coop becomes like the, the unexpected protagonist of the film."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:36",
+            "text": "So him as he's tumbling in space. What the fuck am I going to happen to me? And then he blows his tank to try and send him stuff back to the ship using oxygen."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:53",
+            "text": "Exactly. It's so great. He's great. He's calm. He's cool. He's not going to die out there in the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:00",
+            "text": "void. He's pissed. But when He returns, he says he's flying back to the ship. Awesome. And then we have our big explosive decompression. Miller saving stark as his redemption arc for leaving behind his Ensign. And then we have coop arrives in the forward airlock. And it's gonna help them get out of the Get out of the way. And this is, as you call it out the blood tank. That was not good. Not good. No, sir. Just quickly, Jason, I skipped by it. But the chaos dimension? Like is it any good to live in a chaos dimension? Like how do you get coffee? Like what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:51",
+            "text": "I think the services are very poor and the cast I mentioned, I don't think Amazon Prime works well. I think I really I question whether or not you can get anything delivered on time, or for any price. The cast I mentioned. It's, I mean, the guests imagined is probably not entirely unlike living with two toddlers. So it's, you know, it's adjacent. It's adjacent to early parenthood. But you know, nothing works. So yeah, I'm not for it. I'm looking I'm, I'm looking forward to leaving the cast dimension."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:27",
+            "text": "Yeah. Yeah. Same. So So Steve, when we look at the, you know, where's buy a jump, passive aware of vivisected DJ, and you reference Hellraiser for so I just want to pause for a second and ask you about the notion of horror movies where you have this idea of torture, but specifically this pleasure and pain, and in Hellraiser, it's about they're kind of entangled, and people are kind of like getting off on the pain. But there's no kind of pleasure here for anybody except maybe for the demons, right? No,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:08:01",
+            "text": "yeah. I mean, they're living examples of pain to Cenobites. And that's what Sam Neill pretty much turns into is a sense of bite. And right. But the JSON, the Jason Isaac scene was was gutted. And this Jason Isaacs, and that scene was gutted, alive, and that scene was removed. Because, you know, I think you might have mentioned I think they were hurt this movie was when they played it for audience preview audiences, and they were grossed out by all the gore. So all the Gore was coming out, which is shocking. They were even, I think what it was they were working on this movie at Pinewood. And they were bringing footage back sending footage back to Los Angeles now think the studio was keeping mind on all the footage that was coming that actually all the second unit Gore stuff that we see. So Bri right like, like that, that scene, the video footage scene, there is this amazing effect shot that you have to like go through, like, like frame by frame of the captain, a spike goes through the back of his head, and it pops his tooth out. You see it for two seconds. But the effects artists that put the work into that are it's just amazing. And so and so a lot of this stuff was removed like so Jason has characters gutted and it's like, and then you look at Sam Neill, he removes his eyes kind of like there's so much eye motif in this movie so much so many people are. His wife is missing the eyes. Some of the dead bodies are missing eyes. Yeah, the guy in the video shows his eyes so there's lots of eye motif in this movie. Oh, yeah. So it's almost like the Sam Neill is pretty much turning into a Cenobite and inflicting all this terror onto people."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:40",
+            "text": "It's interesting so all the final so we end up having a big fist fight that happens inside the courtroom and we have all the shots of that are like really close up of Sam Neil's eyes right in his face all all scarred up and stuff. But yeah, one thing that I thought was wild in the midst of that battle, like there's at least one shot where Lawrence Fishburne is on fire. Like his arm is on fire. Right? Like there's other scenes where it's definitely a stunt man, but there's at least one shot where he is on fire. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:09",
+            "text": "no they let they let lords. They let Laurence Fishburne on fire. Yeah, listen, sometimes that's what that's what's required. It basically Sam Neill becomes like the Xena morph in the third act of this movie, he becomes just like, the killer alien that's just terrifying and like is murderous and only wants to kill. It's great, great use for my guy, Sam."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:10:31",
+            "text": "It's shocking to because it wasn't something I expected when I went in to see this movie. No expensing, who was going to survive and this"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:39",
+            "text": "is what my friend John started to be it was like I don't like this second half Johnny, we got to make it through it's too stormy outside speaking"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:50",
+            "text": "of the eye motif you know we're says yes, I see boom, explosion explosion explosion they really went for it on the explosions here"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:08",
+            "text": "a lot of stuff a"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:10",
+            "text": "lot. Like it keeps going and going. So definitely good job with the model work to get that but now we cut to the front of the ship managers just sail away no problem. And we go to 72 days later and we have coming out of the tank we have Stark you know, the XO who survived and then she's, you know, she's realizes that the guy is actually we're he's still there. But now she's awake again. And coupe says that they're safe with me. We're safe. And credits. Prodigy. Prodigy,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:51",
+            "text": "remember? Yes. Very surprising."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:53",
+            "text": "Beastie Boys remix. Funky shit."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:59",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:11:59",
+            "text": "But I will say one thing about that ending is that I didn't notice into this viewing for this podcast is that there's still baby bears still alive. In one of the capsules, and I was just thinking, That dude is ruined for the rest of his life. Seeing the other side, no eyes, and he's just pretty much trapped in that. Like, he's messed up like, oh, no, there is no good. Well, he also he saw the other side when he went into the coolant and came back. Yeah, he was never so he's the rest of his life has no eyes and is never the same. He's pretty much there. I don't know. That's my take of it. And it's bear. It's not it's not spoken. It's just like, I was like, Damn, he's really, really dark. For me when I was thinking about that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:52",
+            "text": "Well in indeed, we're probably all in Prague. And we're probably all in trouble. Right. So Jason, this is like a dark forest situation. Like we have now alerted the inhabitants of this chaos dimension."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:02",
+            "text": "Yeah, except it's not clear. Like, I mean, I think like the only means by which they could get to us was through that thing. And we just blew it up. So as long as we don't build it again, like they obviously didn't have the means to do it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:12",
+            "text": "themselves. They can't build shit because they're into chaos. Yeah, they're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:15",
+            "text": "always ripping the rocks out. Yeah. Why"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:18",
+            "text": "is this project so overdue and over budget?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:22",
+            "text": "We can't add any of our KPIs because people keep ripping their eyes out."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:13:28",
+            "text": "Oh, my God see pulling their stomachs out of their mouths. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:33",
+            "text": "All right, Steven, who would Tilda Swinton play?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:13:37",
+            "text": "That's a good question. When she plays Sam, Sam, Sam Elliot, Sam Neill. I'm thinking right? Yeah, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:46",
+            "text": "should be incredible as well. I would definitely I could definitely see her as Billy Weir. That's like that seems that seems tailor made. Yeah. Jason, what do you think"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:55",
+            "text": "was chat and hex and chat suggests Baby Bear which was awesome. I personally, which I don't know if it's a great role for her but I do like the idea of tilde being called Baby Bear. So I'm gonna go with that I would like to see tilde just be like come on baby bear. Whatever they got going on is a weird situation and they didn't really explore enough about the kind of the psychosexual relationship going on between the various bears but something something funky is going on with that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:21",
+            "text": "group at least three of them right you got yeah come and baby bear and Peter's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:26",
+            "text": "something curious is going on there. Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:29",
+            "text": "All right. I love that. I was gonna say Peters kid, but you know, could justice easel I think that Jason Isaac role actually would be in all seriousness would be really good for her. Or maybe Smitty, seeing her lose her shit. would be fun All right, we did it. You guys. Good one. Can we do some letters real quick? Yeah, let's go. Oh, really quick. One"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:14:52",
+            "text": "interesting fact I did find was that this movie had an uncredited screen Polish by Andrew Kevin. Walker have seven whoa wow yeah because they liked seven on how it took your imagination you didn't really see much at times but yeah so he did an uncredited polish on event horizon Hmm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:13",
+            "text": "Now we are ready to go here is our first voicemail"
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:15:26",
+            "text": "okay Event Horizon this movie didn't really work for me but I can watch Laurence Fishburne in anything and find some level of enjoyment. Here's three stories about Lawrence only one of these is true it's time for the truth Sayer number one, Lawrence was famously only 14 years old when he was cast in Francis Ford Coppola's Apocalypse Now, reportedly Lord saved Martin Sheen son Emilio Estefan is from being sucked under by quicksand while they were relaxing off the set in the Philippines. Or is it number two? When Lawrence was playing cowboy Curtis on Pee Wee's Playhouse he became friends with production assistant Abel Ferreira, who went on to cast Lawrence in the king of New York with Christopher Walken. Or is it number three? When Lawrence signed on to play Morpheus in the matrix? He had to do far less martial arts training then Keanu Reeves because he already had near master level proficiency in jujitsu, taekwondo, drunken boxing, Kenpo Karate and Kung Fu. All right, which one of those stories about Laurence Fishburne is true? Oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:27",
+            "text": "my gosh, I love that. Wow, that I'm gonna I'm gonna number three just because I want it to be true that he's like a martial arts expert. And I think I think that the I know he was in the Apocalypse Now. But I think throwing in the quicksand is just a head fake for you know, our long standing obsession with quicksand bog by all right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:49",
+            "text": "Steven, what do you think bug bug?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:16:51",
+            "text": "I can't I don't think Abel Ferrara was a production assistant on Pee Wee's Playhouse because he's been making movies since the 70s. I'm not looking it up. I always thought he was 15 when he did Apocalypse Now. So maybe it's the fourth is the 14th. Hmm, just slightly off. Quicksand real?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:14",
+            "text": "Let's find out that the long standing debate"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:17:17",
+            "text": "there's only something on Gilligan's Island. Exactly,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:19",
+            "text": "yeah. And then, yeah, Lawrence of Arabia and a few other things. And I'm a minor"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:17:24",
+            "text": "in the mind,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:25",
+            "text": "so I know that it's not number two, because on cowboy when he was playing cowboy Curtis that's when he got to know production assistant, John Singleton, who cast him Boys in the Hood. So I am also going to go with number one. Let's see who is correct. Okay, which"
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:17:44",
+            "text": "one of those stories about Laurence Fishburne is true? It wasn't number three, Lawrence had some stage fighting experience before the matrix but not anywhere near master level in any of those martial arts. It wasn't number two, it was actually John Singleton, who was the production assistant on Pee Wee's Playhouse, who went on to cast Lawrence and Boys in the Hood. The truth was Story number one Lawrence reportedly saved Emilio esta vez from quicksand and the Philippines oh my god set of Apocalypse Now. What are the major other scenes was reportedly fine all on his own? Here ends the truth sack of course. Wow."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:17",
+            "text": "Charlie seen off screen. You know, offset drinking tiger blood. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:22",
+            "text": "That's amazing. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:24",
+            "text": "where it started. Thank you, Barry. Yeah, that was fantastic. quicksands Israel. Here is our next voicemail."
+        },
+        {
+            "name": "ethan",
+            "timestamp": "1:18:30",
+            "text": "bug. A bug pod. peatbog pod Hello bug pod. Pod pod. BHAG BHAG BHAG. Allow me to transport you to a hypothetical in which you must swap a Paul Thomas Anderson movie and the Paul WS Anderson movie. Oh boy, as in you must make it so the whole done us. Anderson directed one of Paul Thomas Anderson's movie. Definitely. And that Paul Thomas Anderson directed one of Paul WS Anderson, his movies make the choice. I think personally that it'd be very interesting to see how Paul Thomas Anderson would handle, you know, Event Horizon this movie be great point. And I would love to see Paul ws Anderson's version of Magnolia. That would certainly be a film. Yeah, that's all. So yeah. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:16",
+            "text": "I love that. All right, Steven, you have you have an idea. Well,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:19:20",
+            "text": "Thomas Anderson. That's interesting. I am more it's sad to say I'm more of Paul who is the author Paul. I have nothing against Yeah, I have nothing. That's it. That's a tough that's an interesting one. I would like to see. Paul Thomas Anderson. Direct Mortal Kombat."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:43",
+            "text": "Yes. Nice. Nice."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:19:46",
+            "text": "And the other way around, is punch drunk love."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:50",
+            "text": "Oh, that's good. Wow. Good idea. Yeah, Magnolia was my choice for the event or rise in Paul, Paul Anderson to do because I just think like, the Tom Cruise character could become like a Sam Neill horror, like, you know, could just be like you could have blood coming out of that as easily. I think I think I think Paul Thomas Anderson could really take a crack at a Resident Evil movie for sure. So give him Resident Evil One. See what he does with that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:23",
+            "text": "I was thinking so I've never seen the film, but I was thinking soldier, with Kurt Russell. And, and Jason Isaacs and Jason Scott Lee. Just the idea he could make a you know, like a good movie about a soldier would obviously be a lot more a lot more thoughtful. Makes sense? Yeah, I guess I'll go with Paul WS Anderson. Boogie Nights, you know, probably bring Milla Jovovich over for that. And, you know, that could be that could be something that could be something. All right. Thank you so much, Ethan."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:55",
+            "text": "Thank you, Ethan."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:57",
+            "text": "Here's our next voicemail. Hello,"
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "1:20:59",
+            "text": "escape hatch. It's Kev here. Talking about Paul ws Anderson's event horizon. What a wild career Paul WS Anderson has. Has any. I mean, the most dedicated wife guy in cinema, also the director of mortal Alien VS Predator, who could forget the Three Musketeers in 3d Resident Evil movies. Why watch those over the lockdown, and boy, they speak for themselves? Look, I'll be completely honest with you guys. Things have been kind of crazy over in Kev land. Maybe you could tell because half of my questions have been screaming into the voicemail. So I went to copilot which is Microsoft's new AI through Bing and GPT. And they have given me this week's calves question. If you were to be stranded on a spaceship with only one other person, who would you want it to be and why. So blame the robot that everybody loves? If you don't like that question, and I will talk to you guys soon Peace and Love all who've earned and deserve it. And until next time, Kev out"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:09",
+            "text": "once again, it's Cavs question"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:14",
+            "text": "we hope everything's going well with Kevin first of all, wish him the best. Hope for a calm a calm beginning to 2024"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:20",
+            "text": "Yeah, as we'll see him and just like five or six weeks, right? We're gonna see him so soon. Yeah, yeah, for four and a half weeks. Yeah. Steven, what do you think? Who would be your companion on a spaceship? Be mike"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:22:34",
+            "text": "so like passengers such at night not bringing my wife but bringing someone else I'm sick. I'm guessing"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:41",
+            "text": "it could be your wife. It doesn't have to be I'm gonna go with living or dead. So say your widen your choices."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:49",
+            "text": "I'll go I'll go first. I would invite I would invite New York Times columnist and podcast hosts as recline to be my shift companion because I just really want to hang out with as recline and I don't see it happening in real life. And like, you know, it probably be weird. But if we're confined to a ship, I feel like we could talk about you know, all kinds of things for a long time. It'd be great then. Maybe it doesn't just close our eyes out. No problem."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:20",
+            "text": "Well, Jason, I have to pick you because we got to do episode God. Don't put me on the ship. Congratulations."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:28",
+            "text": "I don't want to go over immediately. airlock myself."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:35",
+            "text": "I'll show you explosive decompression. Exactly."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:23:39",
+            "text": "Steven, yeah, maybe. Maybe Paul Anderson, so I can. Yeah, go deep inside all I want to learn about what his unmade Castlevania was gonna be like, yeah. You have a script for that. I don't think I had the script for that castle. I gotta look at Oh, it's good. I got so many unmade scripts. It's nice and funny."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:02",
+            "text": "Here is our final voicemail speaking of David Lynch's dune"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:24:13",
+            "text": "Hey guys, hey, this is Corey, I'm calling from Austin, Texas, about Nike 97 Pretty cool space for a movie event horizon. No, I really dig this movie. I remember enjoying it on video. I didn't see it in the theater. And I don't know why. Because I remember there was a lot of build up to it. Maybe in like Fangoria or something. I do remember we've kind of had my finger on the pulse of this is supposed to have a lot of really cool special effects. So it's gonna be really serious and with some really top notch actors in it like Warren Fishburne, and Sam Neill, and so I was really stoked about it. But on the lighting get to zero to see it. I do remember that that like She reviews, I think so. I probably waited till video and then I was really pleasantly surprised. Like, I think a lot of people complain that the movie just doesn't know what type of movie it wants to be. And I actually think that's it strange that it's a whole bunch of different types of movies and it's mashed up really like cool. Like it's like that blue collar space thing going on that has like some kind of realistic tech. And then but it still has the weird mind bending like astrophysics. And then it's like a haunted house story kind of like the meets the black hole. And then you know, we also have this kind of Lovecraftian thing going on, mixed with like, Clive Barker's kind of feel this Hellraiser II shit. And then it and it has like, like all the trappings of like, the Alien movies, like the first couple of alien aliens. But like, if like John Carpenter did it, right. Like it certainly seems a little more fun. punti but then other times, it's really serious. And Laurence Fishburne is like, really getting into being like a very serious actor and some of his lines but then in other scenes, it's straight action, and he's just kind of popcorn movie moving it up. I don't know. I love it. I think it's a lot of fun. Here's a question and maybe you guys know this. I didn't do any research. But was it supposed to be in 3d? What are some scenes it looked like it was 3d. Do you guys like a lot of the special effects of it. I think they're really fun. Samuels awesome. Learns difference. Awesome. Although supporting players are great. Everyone is really fun. It just really makes me think of you guys remember session nine with Caruso and it was about like a haunted mental institution. I haven't seen this in forever not really want to watch it? No, I'm thinking about it. And like they were I want to say they were like a working crew as well as another one of those sounds like blue collar crew is in a haunted place. Anyway. Check it out if you haven't seen it, cuz I'm gonna revisit it myself. Okay, who would total couldn't play? I'd like to see her kind of a cameo thing as as Samuel wasn't a weird wife within all those flashbacks and stuff, but they'd be kind of cool. All right. I'm really excited about this episode. It feels really fitting that you guys are covering this one. And it's got a little bit of edge to it. Alright, looking forward to it. As I knew"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:13",
+            "text": "this, I knew this was going to be in the quarry zone just like I shoot with amputees and porn star would be I knew this was going to be in the quarry zone and I'm glad to hear him happy because he's been a little grumpy for the last couple of weeks with our selection. So I'm glad to hear him back in the saddle. Right now for this one. I seen the section nine movie that he's talking about if you do you guys know this one was this the Yeah,"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:27:35",
+            "text": "it's from it was I haven't seen it since it came out. It has like tapes in it but I believe dual audio tapes David Caruso? I remember it being good. It was like an indie small little indie horror film. I remember liking and I haven't seen it since it came out to be honest. It as a as a cult following of people that really dig it. Awesome. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:57",
+            "text": "like that Corey, welcome"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:58",
+            "text": "back."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:59",
+            "text": "Welcome back. Cory"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:28:00",
+            "text": "Liberata Hey, Cory,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:03",
+            "text": "we need you. We need you forever, baby bear our own baby bear"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:28:07",
+            "text": "but wasn't wasn't going to be in 3d."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:10",
+            "text": "No. I guess it's not gonna be a 3d but that opening credit sequence where the titles fall into the black hole. You can see that in 3d It'd be I love that"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:28:18",
+            "text": "opening credit sequence. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:19",
+            "text": "so good. Yeah, but there were a bunch of shots of like, Baby Bear hits the hits the bubble of like, liquid and that comes right by the camera and the bottle is floating by the camera. So a bunch of the 3d stuff def or a bunch of the zero G stuff had 3d effects."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:28:35",
+            "text": "I see it would be a good post conversion movie. Get that opening Sam Neill show."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:40",
+            "text": "Yeah."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:28:41",
+            "text": "spacestation That'd be dope. There"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:43",
+            "text": "you go. Nice. All right. Well, we did it. You guys. Steven, you got stuff to plug. So let's start with your documentary sharks flotation available now on shutter? Yes."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:28:55",
+            "text": "On shutter right now. It's winter right now. I don't think people are really watching it. But I guess hopefully during the summer, people are going to revisit it again."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:04",
+            "text": "Get ready for the escape hatch bump. It's about to happen. Yeah, if"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:29:08",
+            "text": "you like shark movies, if you like, if you wanna learn about the history of Jaws, from the history of sharks, from Jaws to Sharknado, and how Hollywood portrayed sharks and cinema, I got interviews with marine biologists and filmmakers. And it's one of those documentaries. It's a deep dive into a lot of shark movies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:31",
+            "text": "So I will say this just I am not a shark movie guy. And I wanted to see it because you were coming on the pod and it is a really fascinating look at how Hollywood operates and the notion of how it started with imitation and then went to kind of like, you know, complete ridiculousness, and they came back around a big budget so kind of like watching Hollywood move through cycles as a meta component and using the shark films for that I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:56",
+            "text": "thought was super interesting. Who doesn't like sharks. I was showing my I was on my way to school today I was showing my, my kid Griffin. I was showing him a video of that deep blue, that great white shark that was recently photographed off Hawaii. That's like 20 feet long and eight feet tall. It's like, it's like the biggest shark they've ever captured on. Oh my God, look"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:30:18",
+            "text": "this up deep blue."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:20",
+            "text": "It's really good. It's a sexy looking fish. It's a good looking one. Yeah, amazing. And he was like, Is this real? Is it because it says it's like, it's as big as a bus and there's like a bus in front of us. Like how could the shark be that big? I was like, exactly. Oh, like Now could it be?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:30:36",
+            "text": "Oh yeah. He's huge."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:37",
+            "text": "He's huge. He's a giant mother."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:40",
+            "text": "That is crazy. Love sharks. So then Steven, your other your other podcasts that you have the best movies never made?"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:30:47",
+            "text": "Yes. We are back. We were on hiatus so we could finish sharks plantation. And then we debuted back over the summer with her, which was three people zero. And we've been we've been back ever since. Yeah, we've been. Yeah, we're back now. Yeah, we just we just interviewed Alex winter. Wow. Go through some. Yeah, some of his unmade movies, we pretty much went through everything he was going to make. We interviewed the guy that did because my co host is Josh Miller, who wrote Sonic the Hedgehog one, two and three. And so we got the guy who wrote the original Sonic the Hedgehog from the 90s, which we try to turn that into a movie that came out last month. Wow. Cool. If you're like unmade movies. Yeah. And speaking of sharks, we did a whole mag retrospective of all the unmade mega movies like a three parter, which was nuts."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:42",
+            "text": "Amazing. Yeah, you guys get deep and it's amazing to hear the stories of almost happened. And you know, the George Miller Justice League and other stuff is really it's really fascinating. So thank you, so folks should check that out. All right, well, Jason, what do you have to plug? What"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:57",
+            "text": "do I have to plug? Let's see, I already plugged single thread restaurant in Healdsburg, which I thought was quite excellent D for videos. The four videos are really good. Oh, you know who you know is good on Elden ring, and it's someone that like is a Fave of the discord anyways, vati Vidya makes really good, really good lore videos and as this whole series called prepare to cry, where it covers like some of the deep lore in Elden ring and at the end of it he's he has like custom animation that he's like commissioned for like the opening like to tell the story the opening and all of this like in game video work that he does is like so cinematic, and like he must have gone and like fought these bosses like a billion times just to get like the perfect shot of like, the boss being like, you know, killed or whatever. It's great. It looks really great. So via video, I will play Did you cry? I didn't cry. But you know, I got a little choked up a little tricky."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:59",
+            "text": "Because you get sometimes I can't touch"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:33:01",
+            "text": "that game. I'm too. I will never get anything. I get too obsessed. When I play the RFP. I wanted to play Starcraft as I would. It's called that new one that came out. Starfield I want to play it so bad, but I'm terrified. Because like, I got into Skyrim so hardcore, like I was driving by Yeah, and I saw like, certain plants and I was like, if I pull over I could pick those and I can make a potion that really affects my life. My brain to the point of I see it everywhere, and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:33",
+            "text": "I made that potion."
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:33:35",
+            "text": "I would have died. Yeah, no, I'm not so good in that game as an alchemist. I can tell you but anyway, yeah. I'm too scared to play. Yeah, I'm terrified to play Elden ring. I know it's gonna it's gonna take over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:50",
+            "text": "It's definitely it's obsession making for sure. Yeah, it's definitely"
+        },
+        {
+            "name": "stephen Scarlotta",
+            "timestamp": "1:33:54",
+            "text": "I want to play it looks beautiful. It is beautiful. Love"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:57",
+            "text": "it. People love it. Look, guys, I would love to keep talking. But I've got to go play ball this game. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:04",
+            "text": "ya know, we've taken a lot of your time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:09",
+            "text": "And that's it for this episode of escape patch. I want to thank Jason and Steven for an amazing conversation. Next week. We welcome back New York Times best selling author Dave Itzkoff. We cover Paddy Chayefsky his follow up to network that delightfully weird altered states. If you enjoy the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help me listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. escape hatch is a tape deck podcast John up production of H industries. Our artwork is by catcher and our theme music was composed by Scott Fritz and who's the boss music. He episode was edited and produced by me Ah, thanks for listening. We'll see everybody next week can we take three? Can we take three minutes? Just a quick stop so I can rip this I can rip this voicemail? Sure. I'm so sorry."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:17",
+            "text": "We can't finish the pod without quarry. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:18",
+            "text": "I know I know. I was my mistake. Alright, hold on. Let me let me see here. How do I google?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:26",
+            "text": "How do I produce podcast"
+        }
+    ]
+}

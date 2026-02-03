@@ -1,0 +1,1341 @@
+{
+    "episode_number": 104,
+    "episode_name": "Rango",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody, It's Haitch, and welcome to the latest installment of Dune Pod, your one-stop shop to enjoy the new Dune movies. This week I'm joined as always by my cohost, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm not going I'm not going on the record with any more literary allusions I'm getting I've suffered too much in recent weeks I I'm illiterate. I can't I can't read it all."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by UK wrestling announcer legend and noted Tapedeck voice actor Neil Bradbury."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yeah, I don't think I have the skills for it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We cover Roger Deakins second foray into animated features. 2000 elevens. ilm, animation debut rango. You're enjoying the show, we need your help. Leave us a five star rating and review wherever you listen to your podcasts. It really helps new listeners find the show. We also have a Discord server where you can hang out with us whenever you want. The link is in the show notes. And now without further ado, rango. Deal Hello. What's happening my friend? Lou?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "No, not much just just trying not to dehydrate trying not to actually melt while I'm on the recording. So yeah. So when we just did want to do the moment when we"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "said that, you know, we wanted you to come on during pod, we did not expect that you would require that UK would turn into a raucous"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. What's going on over there? My guy?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I do not know. It's weird. We are not built for this weather in England, we are built to wear big coats and be in the rain and grumble and there's any sun, the country basically shuts down. So it's not it's not going well for us over here."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So can you have tea when it's 100 degrees out? Is that even? Is that even an option at these temperatures?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Well, usually what happens around this time is that people will make you a cup of tea and someone will say, Oh, do you know hot drinks are actually better when you're warm? That's a bit of kind of like self hatred. Like when people say, Yeah, I think it's it's it's one of those facts that everyone kind of knows. It's like when people say oh, do you know the guy in ZZ Top, whose surname was beard was the only one without a beard. You know? I didn't know that everyone kind of knows it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's in fact, that's I've already learned that the drummer"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yes, I think so. I think it's one of those things where it's kind of like, yeah, a lot. It's a bit of information. A lot of people tell you as if they're telling you it for the first time, which I which I enjoy so."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well. It's good. You've got the warm ales as well. The warm ales also are cooling I'm sure."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yes, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "A nice head on top of that war mail. Yeah,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "exactly. Yeah, I think it's it's it's I mean, we British drink drink quite a lot at the best of times. And I think when it's hot people like well, let's have a let's drink beer because it's a fluid. That's obviously going to hydrate was and then and then we end up in this situation where? Yeah, we ended up lots of drunk people on the streets, which is which is which? Today, but the weekend was was interesting. It"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "seems tough. I mean, the hardest day in English history. airports, the runways are melting their bridges are being wrapped with tin foil. It just seems like it's questionable. So we wish you good luck, sir."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Thank you know, it's like it's like because because the movie we're going to talk about rango is very much about like, heat and dry. Trying to view it as like, like method. You know, I'm like, Daniel Day Lewis over here, the Daniel Day Lewis. Okay. But I that's quite a that's how I'm trying to put a good spin on it. Because I'm not necessarily doing"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "we admire your commitment to the bit."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. Well, we were so thrilled to have you Neil joining us. And you mentioned our film tonight is rango which we chose because you have stand this movie so hard for so long, across all possible discords. And we were just talking about it last week in the 70 millimeter discord. And we had a last minute opportunity to get you on. And so yeah, we are going for it. So we are covering tonight, Roger Deakins. Second ever foray into animated features with 20 elevens rango streaming Now Jason on HBO. Max X. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I got to watch it for free. I mean, yeah, right. free with purchase."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And Neil so just so folks know, I mean, obviously they're hearing your your beautiful voice. So I met you years ago via the paper keg podcast and The pay per kg crew. Yeah, yeah. And so just let the folks know who you are. You are obviously the famous voice of Cinna knots. The intro credits they're"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "on a mission to explore the far reaches of cinemas three daring adventures dive deep into the criteria and these are the tales adventures such as this. This is synonyms. Yes,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yeah. How did you get that gig?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Um, well, um, yeah, I think a lot of people feel sinner notes peaks in the introduction and then it's all just downhill from Yeah, no, it's it's an interesting I think because as you say, I knew Ian and capture from the paper cake discord. And I think obviously me and and and my friend Dirk of the movie mixtape podcast, the to the British. In in pay per keg. And I think if you have a British accent, it sounds it sounds like you know, I guess a little sort of like, I don't know, I don't want to say classy, but it sounds like you're more clever, actually. So I for criterion. Yeah. So I think Ian capture where we're, we're just like, yeah, should we get Neil to do it? And they asked me and I was Yeah, I was very, I was, yeah, jumped at the chance. So I was very excited to do that. You also"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "have a background as a wrestling announcer so yes,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "yeah, that's that's the sort of the side hustle. Yeah, it's that's a fun thing. Yeah. So I've been doing that for a little while, I started doing that for a company called Grand pro wrestling, which was about well, I can't remove some I had a long ago, it was because of the pandemic's effect on time. You know, like, yeah, I feel like the last two, if they go into that time, for the first time, it could have been two weeks ago, it could have been 10 years ago. I have no track of it anymore. But I've been Yeah, I've been doing that for a little while. And that's, that's that's where I met Dirk who put me onto paper Coke, which is the journey it's also the culminated in me being here today. So you know,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "amazing. Well, maybe by the end of the episode, you can give us a an announcement of Paw deep, that quiz on Saturday. And Pena emperor of the galaxy."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Oh, yeah. I'll see if I could. Yeah. Yeah. I think if I was if he was at a wrestling thing, they might ask him to, like, shorten that name a little, because that's like a lot for people to remember. It's a lot to fit on, like a T shirt. But like, okay, yeah. But yeah, I think I think you can do that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, so the strength of the pillar. Amazing, amazing. Well, we are really America's Yes, yes, yes, yes. Excited."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right, well, we're gonna do it. We're thrilled to have you here. And before we get into the main event of this, we have quite a bit of business to do. So I would like for us to go ahead and just get straight into it. Starting with Jason has a correction to make. Oh, Jesus,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I knew you're gonna lead with this. So last week, we watched Southland Tales, which just in and of itself was a shambles, all praise to great guests. kav love cab movie was a wreck. And in Southland Tales. Justin Timberlake says this inverted quote of bizarre the way this is the way the world ends, not with a whimper but a bang. And he was like, oh, like, what's that from? And I gave him a hard time like, oh, it's the wasteland again. Ah, because we previously talked about TSL in the wasteland, and he not knowing it. But it turns out of course, that is not the wasteland that is the Hollow Man by TS Eliot. By Miss identifying it. Just a another example of TS Eliot's anti semitism."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I don't know why Warner Christian Academy's, you know, criteria of what should be covered between second grade and ninth grade did not include TS Eliot. But it didn't happen."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So you never read GSL What about after ninth grade? It's more of like a 10th 11th 12th grade or did you not go to those grades?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, the first time or the last time most recently,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah, exactly. One of your one of your reincarnations. That's"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right. I was with in school with TS Eliot the first time all right. So so I accept your apology. Jason. Thank you for that. Now that the record is straight. And speaking of continuing to set the record straight dispatches from the war of Elan aggression. Fire All right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Fire had spread along the front. There was calamity and Cass man was crying for his mother. It's an eventful time in the war VLANs aggression. It's really exciting. So the trial has started. Did they were in court in the Delaware Court of Chancery? Today on the topic of When Will the trial happen, and it is Twitter seeking to do an expedited trial. They were looking to do a four day trial in September. Ilan said these issues are so complex, we must call many, many witnesses. And we will not do it until next year, and it must last 14 days. And the judge heard these arguments and largely sided with Twitter and the trial now will be happening for a five day trial in October in Delaware, buy your tickets to Wilmington, now. It's going to happen. It's very exciting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And Jason, I believe you are reporting, you know, starting your court reporting and you had a transcript of the ruling of the judge to Ilan lawyer. I'll go home and get your fucking shine box. Oh, man, they got hosted. Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They got toasted? Yeah, it's it's so it's an interesting situation. Because by and large, everyone believes that this is gonna settle including myself. Because even though the case seems very one sided, and the hearing today suggests the case is very one sided, like the judge largely agreed with Twitter, like the judge's ruling for having the trial, when it is is largely based on Twitter's arguments and didn't really give credence to any of Elan's arguments presented. And they weren't having an argument on the merits of the case. But just like the general tone already seems to be like, this is a bunch of bullshit, you signed a contract? Let's go, it's gonna cause irreparable harm to delay this, we're gonna figure this out quickly. I trust you guys. We'll figure this out. And let's just fucking go. Everyone believes this is gonna settle though, because it's, it's just too much to risk. But what if it doesn't settle? Like, what if they go to trial and Twitter actually successfully sued Elon to buy for $44 billion, this company that not only that he doesn't want that none of his brilliant friends who talked him into doing it? No, none of them think it's a good idea anymore. The employees don't think it's a good idea. No one thinks it's a good idea. But he may have to go and sell a bunch of Tesla stocks and take a bunch of loans from banks that don't want to give him these loans anymore. Because he signed this definitive agreement. Back in April. It's just an amazing turn of events. And like, if you think about it in terms of just expected value, like what's the percentage, what's the percentage likelihood, like the reason why Twitter would settle is because their board is a bunch of wimps. And they folded to this acquisition offer in the first place shot without without real without any real process. And we're just like, Fuck it, we're getting out. So maybe, maybe that's what they'll do. Maybe that's what they'll do here as well. But on just an expected value basis, if there's a 10% chance, let's say there's a 10% chance they get $0 out of going to trial, and there's a 90% chance that they get the $44 billion purchase price that Yan has to buy it for. That means the expected value of that outcome is still $40 billion. So them getting like $2 billion in settlement doesn't really equal that as long as they're willing to play chicken with the craziest richest person in the world, which they're probably not willing to do."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ah, damn. Well, I for the first time was feeling really hopeful. You've sobered me somewhat in a moment, but I'm still dreaming that Elon will be punched in the face and be ordered to pay like a like a $5 billion you know damages and then be done."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, this is what what we want to have happen in this point is that for to ruin this fucking turnip. We want him to have to go sell a bunch of his Tesla stock and buy for $44 billion with a bunch of loans the loans are also underwater the banks will lose money on writing in the loans which is amazing because interest rates have gone up since the financing commitments we want everyone involved in this to be fighting back on it just get wrecked. And is that a good outcome for Twitter the company no it's horrible but So fucking what we are in it for the petty outcome at this boy Max petty"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I was gonna say can even still get punched in the face if that happens. I mean that's I feel that's still available. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I do. I do think Jason You are now you've arrived at full Paula trade he's doing part two mode"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "for 60 billion people must die in order for there to be justice in this case"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to set it right. Well we'll stay tuned. You know we love you know the light that legal team over at Twitter, great people we love all of the staff we will continue to all those people are"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "going to leave Regardless though. Like we love all those people. All those people are going to get a need to go get new, better jobs. Anyway, because like this this whole situation isn't going to work out even if Ilan walks away it's going to this and this is going to be like a wounded animal in the woods after this is done so all of our friends are they're going to have to get new jobs anyway. The only positive outcome is max punishment for this fucking turkey."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, turn up Turkey, whatever it takes. Alright, I do love the fact that Mikey P is like ratting out Neil tweeting in the events channel this"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is this is that's fine. No one needs to listen to this part."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But like kind of brotherhood. What was it? How about if we get into some do news? Would you like to know more? We got some real ass do news going on right now. I already forgot. I didn't even put it in the notes. So I'll just say it now. Neil, I know you are a miniatures gaming person. And it was announced there's no like battle for Doom or war for Doom or whatever it's called. But there's a miniature skirmish game coming."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Oh, okay. So like you'd like a war three type thing? Or? Like a"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yes. Yes. Yeah. So you put your frame in against my sidecar and the in Hearthstone ends and whatever. So that's come on games. It's coming soon. I'll try and find some details and we'll we'll tweet that out. And people can check that out."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "That's pretty exciting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes, maybe maybe we'll play that in person next year. Second piece of do news, Jason. We talked about filming starting last week, but we got the official declaration of filming starting this week."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, we saw a sleet we got a slate. And we also got a official synopsis of Dune Part Two was published. I don't know why that was necessary from them. Yeah, there's like an official dune to synopsis. Oh, wait, we can edit this part out."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I thought somebody just made that up. I didn't realize no no official Xanatos that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "was like put out there as like, as like a real thing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So well, that's a big deal if that's the real if that is the real synopsis."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Here we go. From the press release. This follow up film will explore the mythic journey of Paul A tradings as he unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe. He endeavors to prevent a terrible future. Only he can proceed. Can he? Or will he do part two?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You're a natural buddy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's fun. I get why you like doing these Synopsys it really makes you feel powerful."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "You know how like Star Wars has the crawl at the start of the movies? Can June part two, just have you reading that out? Like a little sort of like, yes, it could just cut to you, Danny Massey, reading that, because I think that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you have my email, get in touch. I've got this microphone. I'm ready to record whatever you need at any location throughout Northern California."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But that's actually a really big deal, like the extent to which they have placed Chani at the heart of part two is huge."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, there was I was I was offline a lot this this morning, but I believe there is an extended discussion and debate about how accurate our reading of the second book or what is the difference between what that says and what we hope to be. Yeah, exactly. So so this is the kind of analysis you could get if you were in our Discord, which you should join if you're listening to this podcast."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes, but the point is, when dune came out, during part one came out, and we watched it, we universally hailed essentially every decision Denny made to change or adjust the book to the film. And this to me sounds like more of the same"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "way. 100% Trust Him except for this Austin Butler thing, but it's going to be great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right, very good. I'm not nervous about Austin Butler. Okay, second piece of do news. We had our first official unofficial set pics. So there were shots of Florence on set. And what was amazing to me is within like three hours of those pictures being taken, someone had already created 3d renders of the image of Florence and of course all of that has been removed presumably at Studio request. Weird. Okay, I still have it on my I still have it Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "of course so weird. Everything about that dude news update was weird. speak of it further."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, you mean like if we have it in the discord somebody is going to come make us"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "guide I know I mean, like we shall not discuss further the like Florence pew pillow that you made at home and like, out of out of psalms that do didn't take a leaked footage."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, thank you. All right, so next piece of do news we are chock a block here. Oh my god. So did you hear that Jason doing part two? So la Yaqoob"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. I heard that joins decane Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, so she was in Gaspar noise climax, Nia."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "No, I haven't. I'm very undereducated in Spinnery. I've not really seen any of their work. That's um, I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I have very specifically avoided everything that that that Gaspar has done, because I've heard it's very disturbing."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Right here. It's yeah, cinema is endurance test is what I understand. It's not necessary. It's not a fun age. Yeah, God, because it's like when you get my prom with things like Espinar it's like, because when you get home from work, and you've had a bit of a rubbish day, and you want to just flip on the sofa, it's a bit like, should I watch rango again, or should I just pop on? gasp Bonacci showing me that horrible degradation. Yeah, exactly. It's a bit like the funny lizard me. I think I'm gonna you know, kind of watch Star Wars again. I think so. Yeah. I think you need to be in the right frame of mind for stuff like that. And it's a frame of mind I'm I'm I'm rarely in. You need to be in a good mood that you're willing to ruin I think is the mood for for gasp unui. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's the pullquote for the 4k release. I did pull up the trailer for it. And my wife walked in Midway and she was just like, looked at me. We're like, What are you watching? What's happening?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ah, will now be in a hotel next weekend."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right. And so I but I do. I'm gonna go ahead and pre announce we just booked our climax episode coming in August about one month from right now. And we are reteaming with the crew from dune pods face off episode. Do they know this? They do know this ear Devorah and Sophie? It's gonna be crazy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Does Ian know that"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we're doing climax II and already agreed he thought it was weird that you and I are recovering climax. Okay,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "so does everyone think it's does someone think it's a good idea that we're covering climax? Anybody? Is this another Southland tail situation?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Is there more overlap between face off and climax? I mean, it's just like, I don't get quite the same team is being employed. Is it"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "asked the questions. Question. A lot the madness here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Listen to booking the booking algorithms very complicated. I was talking to somebody about it. I offered her I offered her like 20 movies to pick and a lot of Austin Butler Florence Pugh Christopher Walken and then I threw climax at the end. And she immediately selected it. However, even four years ago when climax came out II and this was like the first a 24 super reppin movie for en de Bourgh Ah, so I did not want to do it without him. And so I invited him to join us and they had together done i don't know i don't remember why they did face off together but but it was"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it was it was another fucking weird thing that you did where you booked one of them and then you're just like, Oh, someone else's like someone else showed up as a surprise. Like, it's always it's always the reason why it happens is always you."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "It's also because that time Ian and Sophie swapped faces and lift each other as each other for Uber Yeah. I've that that first person experience"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "was Who? Who? All right, we only have two more pieces of do news to get to first of all, Jason the super seven store Lynch's dune reaction figures were released this week."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I had resisted those when I first saw them and they already said they were cool. And so then I bought them."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, good. Did you get them all? Yes. Okay, I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "don't know where they're gonna go. But you know, whatever. It's fun."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Just send me a picture that's fine. They excited last piece of due news Jason Matt Griffin released his full artwork from the deluxe edition."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh my god."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I've done Messiah and children dune These are"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "gorgeous man. These books are like the these books are really pretty. The the artwork on these books is just great. They're in the they're in the books channel on Discord."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I just pasted it in there. It's like insane their artwork is absolutely incredible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, there's something very there's something very evocative about like the the one of like Paul on the throne. In this like turquoisey color, it's just like, it's so great. Like it really it really is one of those things where you you see it and you're like, oh, yeah, that's like the feeling of reading the book when like Paul is like alone when like Paul is like isolation is this pression emperor. It's great. So yeah, I would I would encourage folks to check out that art or even potentially purchase the books if you are so inclined."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I instantly preorder it I have not bought a copy of Dune for a real A long time since getting into this so like, this is my first one since the pod so I pre ordered that boxset All right, well let us welcome a few new discord friends starting with Jay sure Zilla what's Gucci? What's Gucci Mozilla? She won li"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Megan Megan cut out a joke."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Leave it in, double it. Tim Oh thief, Timo thief back in the pod back from our tenant episode. Yeah, Timo thief is back. Jason Jason still recovering?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I've gone somewhere else in my head."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Finally the the, the boldly named Paul a trade Deez Nuts. We're really having a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "moment right now."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I did not see that one coming. Great. Neil, your hatred of Dune is well known. So, so bring us up to speed."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "On my hatred of June. Oh, yeah. I mean, it's, I mean, I don't I worry that your history, your history, my history. And I mean, it's it is something. I mean, I will say on this part, I will admit that it is something I play off a little because I think it's funny to annoy people. But, but it's Yeah, I mean, I am a sci fi fan. And I'm a geeky person overall. And I think June, it kind of almost ended up I think, occupying the same space to me, unfortunately, that stuff like the Wheel of Time did when I tried to read that, which is that I feel like there's certain books that you can feel if you're a fan of the genre you have to read. And I think that can unfortunately sometimes mean that when you read in them, they can feel a little bit almost like homework. Do you know what I mean? Like it's like, you're reading it because Oh, yeah, I'm a sci fi fan. So obviously I have to read after read June and I think just record I think the books fine. I liked the movie. I think it's it's a little I struggle a little with sci fi that's very a Diaz driven. And maybe I'm selling Jun short, a little bit there. But I feel like like Paul is not the most relatable protagonist. And I think I should because because I'm a simple man, I really struggle to I like to have like a relatable person in the lead. I think I think I struggle a little bit with when it's something like Paul, it was so alien. And it's kind of like a fascinating read. But it's a little bit of a chilly read for steroids that promote servitude. Yeah, yeah, I think Yeah. And it's I think steroids maybe selling a bit short. I think maybe I'm being unfair there. But that's kind of that's kind of the issue that I think I had with June. But I kind of feel like it's something that because I've read it a few times, I think trying to get it to click, but I've never ventured into the books after it. So I think that might be what I need to try and do. I think if I sort of read that June Messiah and the other ones, I think that might be where he started to get into the stuff that I'll enjoy. No, you're shaking your head. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I don't think so. I think if you if you didn't if you weren't vibing with Paul, you know, I don't think you will vibe with him more in dune Messiah. Jason, am I right? Yeah, I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "don't I don't, he doesn't become more. You know, he's relatable. And yeah. And in the later books, it is I think it is cool. For sure. It's definitely not like a It's definitely not a story in which the protagonist is. You know, it's funny, because that like synopsis that they put out of like, oh, it's like he's like trying to get revenge and navigating these things. Like it makes it seem more emotional than a lot of than the way Paul comes across on the page, which is maybe good that they're kind of amping that up for the movie, but so yeah, I don't I don't I don't blame your read on that. No, I do all the time. But time is homework, though. Because it's like literally, like, you know, a billion pages long. So like that's, that is like, you know, an actual assignment."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "It's so long. I mean, one of my favorite authors is Brandon Sanderson and he wrote three Iraqi finished off the wheel of time. And just it's just, I'm just, there's three Brandon Sanderson books I'm never going to read because there's like, 14 Wheel of Time books separating me from them. And right, yeah, and there's just a thing under the Wheel of Time and it was like these four youths from a little remote village, setting off to on a mystic voyage with a magic user and a strange you know, wonder who's the hare to some secret kingdom and there's like a ominous spooky volcano. And I'm like, Where does Where do you get your crazy ideas from Robert Jordan, where have you got fantasy concepts? So it was Yeah, and obviously all fantasy is a little bit in thrall to old Yeah, but it's I felt that that particularly so so I struggle a little bit with that. But"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that is not not unlike my own experience. I made it through four books but, but I definitely had had some of that feeling. All right, very good. Well, we accept all kinds here, Neil, you do not have to be a slavish June pod or a slit you have to be a slave student pod fan, but you don't have to be a slave student fan."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "if that makes sense. All right, here we go. Rango is the quest to understand who you are, and who you can become. Our story begins when a lonely lizard with an overactive imagination and a natural predilection for inhabiting to dramatic roles who dreams up, finds himself unceremoniously freed from his terrarium, and left to survive in the cool high desert. wandering into dirt, Nevada, a desperate western frontier town on the brink of collapse. The lizard seizes on the opportunity to assume the mantle of a tough talking, efficient shooting hero with the people. Now deputized by the mayor, he will be forced to lead the downcast people in their struggle to survive as their water supplies are ruthlessly shut off by the evil man. Only if the lizard faces down a rabbit as Hawk Balthazar is flying bat moles, the deadly enforcer Jake, the snake, and toughest of all his own shortcomings. Can he become the legend? He was meant to be? Rango rango"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great. Well done."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Not as hard as Southland Tales."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, this one has a pretty clear three act structure and a story."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Neil, what is your history with rango? Why are you obsessed with this movie?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I just love it. To be honest with you. It's it's one of those movies where I I don't quite remember how I first came across it. I know. I didn't see it in the cinema. I think I just picked up the DVD on on a whim because I love westerns. And it was kind of held up as this weird alternative Western and I just the first time I saw it, I just loved it. It's one of those movies where you watch it. And then a few days later, you're like, I think I'm just gonna watch rango again, and I think I watched it a few times in that first chunk of time. And since then, yeah, it's just been a movie I come back to if ever a particularly if I'm going through any like big life changes, or I'm having like a bit of an odd sort of time of it. I like to put rango on because I think it's got a lot of little kind of messages in it's it's it's a movie that I it's very much a comfort movie for me. I think it's a movie that I revisit quite a lot."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hmm, awesome. And Jason, this was another blind spot for you. Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I it's not as blind as Southland Tales, where I thank God really blind myself. The the this movie was one where I definitely remember the marketing campaign for it, and saw the trailer for it quite a lot when it came out, and then just didn't go see it in the theater and like didn't know anyone who had seen it. And so it didn't have like a particularly positive opinion. I was like, Oh, it must have been a dud. But then it turns out one there are a lot of just secret diehard rango fans or maybe not so secret, like people who love this movie and want to, you know, keep up for it. And to it wasn't a flop at all, like the movie did well and won awards and like was was quite successful. So it was just like, yeah, just one that sort of I skipped it skipped me somehow. Yeah, I was excited to see it for the pod this week."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I had a very ear for me. I was very aware of it. It looked really cool. I did not know the deacons was involved originally. And I knew that they were going for a different vibe than most animated films were going for and I thought it was really gorgeous. But I just never I never got to it. So this was just quickly cast and crew so Written and directed. Gore Verbinski, the director of the ring, the pirates and the Lone Ranger. And you know obviously like as big of a Hollywood director as you can get in the early 2000s And then the story by John Logan who did gladiator Star Trek Nemesis Last Samurai Skyfall and Alien Covenant. Hmm Yeah, half half of which are good."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "If that list I was gonna say that's a lot of ups and downs. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Like I mean, because Verbinski in particular, because he just, you know, self immolated after the Lone Ranger and was like, you know, was never allowed to go see a movie again, let alone direct one. He you know, I think this movie also suffered from From from that, hmm. In retrospect, in cultural and cultural wait."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I think that's I think that's true. So, so this is quite interesting. So he really wanted to do an animated film, he thought it would be easier to do that. And so it's kind of amazing. He teamed, you fool. He teamed up with John Logan. And they spent 16 months at a house in the Hollywood Hills where they basically had like a small crew was like eight or 10 people. And they basically did the entire story reel for the movie. And then we're using it to get greenlit as an independent feature, teaming up with ILM, who had never done a feature length animated film, but they had done so many special effects driven movies that are essentially animated films that they were they were on board to do it. He ran out of money. And so they went and got Brad Gray from Paramount, who bought it for Nickelodeon studios, they completed it, and they were able to get up and running. It's really cool. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the success of Ringo led to Paramount actually making its own animation division. I guess. I've which, like the SpongeBob movies are the most successful opponent. But yeah, they're like, Okay, this is great. We love this. It's it's a, it's a really weird one. Like, I mean, it's a it's a PG, you know, it's a PG rated animated film. That's very much not for kids. Like, it's not like, it's you know, I'd heard it wasn't for kids. We said that on the pod last week. And I wouldn't be necessarily opposed to showing it to my kids. I think some of the snakes stuff is a little scary, maybe. But like, it's just like, there's a lot of jokes in it. And a lot of just like, the overall tone is clearly just pitched to an adult audience. Like I defy you to name another animated kid's movie, or a kid's movie of any sort. In which one of the characters says, Look into my eyes, I want to see you die. Like that's just not normal. To see up here, in a movie for children,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "it's not in the SpongeBob movies it did they didn't make that a through line through the rest of the Yeah, animation. No, I was I knew"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it wasn't there. Like I'll be back callback line, if it is kept."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "One other thing that I just want to call out for the behind the scenes, they shot, instead of having them record in the booth for the audio, they actually shot the movie over 20 days, they went into a studio. And they had them putting on hats and little costumes and stuff. And then basically just running around doing it, which I think they did for some of the Avengers stuff with Thanos as well. But this is what they describe, instead of motion capture. It's emotion capture."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Because this, this is this is a sentence, it's going to date me a little bit. But if you watch the special features on the DVD, that's all on there, the footage of them shooting it, and it's it looks like just like a little it's like they're doing a stage production of rango or something. It's really cool to see it's it's yeah, it's really interesting how they how they do it. Yeah, I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "actually thought it was awesome. And there was a description of how like normally an actor walks in, they do a line and then they go to the trailer. And basically, they were just like acting again, they were like it was like they were back in a stage play. So I think that's pretty groovy. So obviously, the reason why we were interested in this was that Roger Deakins was involved and basically Roger, you know, looked at the story work that they had looked at all of the environments that they wanted to have, you know, the high desert inside a saloon, you know, you know, in the middle of town or whatever, nighttime and then he did consulting on them working with how it should be lit, how it should be shot, and it's pretty amazing. Some of the details and we'll get into it a little bit more but like one example, deacons on the team deacons podcast, I remember go ringing up one day because he was like a bit distraught because the scene in the bar, and he said it just not working. It's just not working. And we've done some references for it. And then But then I watched it on the on a dedicated server, right? And yeah, it's a bit confused. So basically, I took some steel frames from the scene, put them in Photoshop and kind of re lit them in a very rough way and talk to Tim in ilm, and you know, we worked out remotely."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So just a concept of for you to be able to like call up Roger Deakins and say Hey, dude, check this out on the server and have Roger like whip up some photoshop with some light work and get back to you it's just incredible. I love it. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's an interesting and he never did an animated one again, right? Like this is a one and done. Oh, he"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "has so so I didn't realize so he started out it's pretty fascinating. He started out with Wally. That was the first one he ever did Andrew Stanton. Did he do? Yeah. And this I had no idea. Well, he, he consulted on it. So he listed on it. Yeah. And he's not the he's not the DP on this. He's not the DP on Wally. But basically, he was talking about how this really fascinating he said, they'd recorded this the opening, he wanted to be really stark, right, he's establishing that the Earth is a trash heap. And that it's a total disaster in Wally. But he said, Deacon said they recorded the kind of the way the camera moves on a dolly on a little crane or something, they recorded that kind of the dynamic of that. So instead of creating that on a computer, they were taking the mechanical way the camera was moving and imposing it on those shots that they were creating in Wiley. So that's why it felt like the camera was moving like a live action camera, and not just floating around like a computer camera,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "which is just fascinating to think about how they are, you know, laying these things out. And even him talking about working with different artists from scene to scene to ensure that they're doing the same types of camera moves, they're using the same kind of like a lens so that you have consistency over the course of the picture. But he later did the three how to train your dragons, and they've done a couple others as well. Okay. All over the place. Go deacons. Alright, well, let's get into this. So this film starts with his great mariachi intro."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love these guys."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really good. And the music, the music is great. And the kind of key things for me the big takeaways, one, the smoke effects in this and the lighting are amazing with a giant rango logo in in stone in the background or whatever. But also just the assertion that he's going to die. We are gathered here today to immortalize in song The Life and untimely death of a great legend. So sit back, relax, and enjoy your low calorie popcorn and assorted confections while we tell you this strange and bewildering tale of a hero who has yet to enter his own store. Yeah, that's"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "kind of sets things on edge"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "very quickly. Yeah, absolutely. It's sort of it's it's sort of that Greek chorus approach where they're sort of telling you the kind of movie that you're that you're going to see. And not just how what they're saying, but how they're saying it, you know, they're singing, it's like this ballad, it's this inch. It really sets I think, both a tone and it sets this over sort of arching thing of doom, because it's just in the back of your head the whole time that you've been told that right? Well, certainly over remember the first time which you've been told that rango is going to die, and they keep coming back to that, that this guy doesn't make it the end of the movie? And? And yeah, it's an interesting effect, I think, because it completely changes the way you view so many of these scenes early on."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Totally. I think for me, this was like, this movie was like, sort of the anti crow effect that we talked about with films where, like, you know, I did not start off this movie being like, Oh, this is gonna be the best movie ever made. I was kind of like, Wait, what is this weird as shit that is happening with the seeing owls. And like, the overall thing that's going on, I was not for the movie. In the first like, 1015 minutes, 20 minutes of the movie. It's the rare movie that I think it's all stronger as it goes along. Like, I think I think it pretty much for me my enjoyment of the movie ramped up continuously through through the climax of the film. And that's pretty that's pretty hard to do. So yeah, they it's but like, it definitely, like totally sets you off with like, this is just going to be very strange. Like this is going to be a deeply weird movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Huh? Yeah. Agree. Agree. So So Neil, your first, your first impact on on seeing, you know, rango him on screen and his performance."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "It's cool, because like, obviously, the first time we see rango is sort of like the hero who's yet to enter his own story. And it cuts to rango in the, in the glass, and there's so much of that, that kind of, I guess, foreshadows if not the plot events of the movie, but definitely the emotional journey that rango goes on over the movie that he wants to be a hero, but he's kind of surrounded by. He's not surrounded by real people. He's surrounded by a dead bug, clockwork fish, headless mannequin. And I think that's it. That was something else by current members. So it's not like it's not like palm tree, a palm tree. That's it. Yeah. So he's got these. He's got these things around him. And it's about like, I think he's, he's kind of just posturing and he's sort of trained to be this hero, but he's just in no place to do it. And I think it how we kind of get to that point is kind of the point of the movie and how, what he thinks of as being a hero is not quite what being a hero Oh actually is and I think that's all there from the word go. And that's one thing I've really enjoyed. I think that's why I do like watching it so often is there's so much stuff there that is it's really layered movie. So I do really like opening scenes really good for that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They're doing 12 Night Jason set, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Who's doing 12 night? Oh, in the, the the play that he's doing?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, he talks about Malvolio. Which, which, which I saw his character in 12th night, but I wasn't sure. Yeah, it was."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I think that's right. Yeah, I'm not gonna I'm not going on the record with anymore. I've suffered too much in recent weeks. I am illiterate. I can't I can't read"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "JSON makes one mistake and it's all over. So"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I'm gonna It's actually an adaptation of a TS Eliot poem, right? Is that what it is?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Goddamnit."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So, so yeah, so he he has this realization with him being kind of fake about this and not being clear on what his role is other than being quote unquote, the hero. And he says, That's it conflict. Victor, you are right, I have been undefined. People. I've had an epiphany, the hero cannot exist in a vacuum. What our story needs is an ironic, unexpected event that will propel the hero into conflict."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then we have the car crash, the revelation that is imaginary. And falling out the back of the car, as Ave Maria plays out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You have this is all just very like conceptual, like as an opening to a movie like this is all very like postmodern, which is again, just a wild way to open"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "job, kids movie. Yeah,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I was gonna say, and that kind of continues throughout, I think throughout, there's all there's constantly these little postmodern comments where a character will say something that reflects on the action, like there's that scene that you're talking about there where he says, he needs a shocking event. But there's also the moment later on when in the in the bar where he's kind of creating the rango character. And he turns to the screen and says, he's telling the story of how he apparently killed the Jenkins brothers one bullet and he turns the camera and says, This is where it gets complicated. And it cuts to the start of like, the conspiracy story in the bank. So he's literally telling you, this is where the movie is about to get complicated. And there's just so many details like that, that I throughout the movie, where it comments on what's going on on the postmodern level as well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. I like it right? I definitely that that car crash definitely hit me with the introduction of the armadillo roadkill played by Alfred Molina, who, who I think is great, great, really good. I love love him and just the whole thing like trying to get across the road and like bouncing around the cars, the cameo from Hunter S Thompson, with Johnny Depp playing Hunter S Thompson in the company. As your lawyer, I advise you to get a convertible love that and then heading into the desert. And this introduction with the Falcon attack. I'm watching this when he gets inside the coke bottle. And you see both as he's as he's running the wall of the coke bottle, the visual effect of that. And then even as it splits open, the animation is stunning in this film."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. Yeah, there's a lot that's really good that the animation is really good. And all the character design is really good. Like there's a lot of like really like thoughtful, like stuff that they put into just the way like which feathers look on people and like the overall like kind of way in which they've cartooned the animals in this that is it is like, unique and special for this movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That was production design by Mark crash McCreary who did Galaxy Quest did Hulk and then did the pirates movies. Oh, he did all the character designs, which were really, really amazing. Makes sense. That makes sense."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "There's definitely a bit of overlap. I think if you look at like, Davy Jones crew in the second pirates, yeah, I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "was gonna say Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "totally. Totally. Yeah. John know, from ilm, who you know, did the matrix and bunch of other stuff as well. But did the pirates movies and then was the lead on this as well. So it's just a huge amount of overlap for that for that crew."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "And I just love how ugly everyone is. And I mean that in like a good way I think the fact that all the animals in it, they're not like they're not like Zootopia type animals as you travel this type and right, which I think is what's called America. It's, it's, it's they're all kind of like, oh, like the rabbits only got one year and there's the turkey that's got the arrow coming out of his eye. They're all kind of like, weird and kind of gross looking. And it's I think it's really it's really cool. It reminds me of like in a Sergio Leone movies where apparently he would just hire extras on the basis of if he was filming somewhere and you saw someone that had an interesting face. You go Oh, yeah, you can be in the movie, because he just wanted that kind of weird sort of visuals vibes. And I think it's that is the animation equivalent of that. Well, he's just created these ugly little creatures that still so cool and interesting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he arrives in dirt and this is like the Small Westchester clap classic western frontier town, I think they, they missed an opportunity with like a population, it would have been cool to show a population count like 68 or something. And then like, cross it off and like show the numbers decreasing or something. So maybe in the special edition, but, you know,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "in the special edition,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "he walks through the town, we have a whole Ministry of Silly Walks moment with him kind of impersonating everybody. That was really fun. We have a split diopter shot in the saloon."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that was cool."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This is also like, it is very, they're doing a lot of classic Western tropes. But it also reminded me this is when I started thinking of Mad Max a lot. And this is why I was like, you know, the stranger comes to town. And like, you know, it's the town without water where the water is being hoarded or whatever. And like, everyone's like, a little bit tweaked. Like everyone not everyone's like a little bit wrong in some way. And so it started reminding me of like, fear. It's, I was getting like Fury Road vibes. Not that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, definitely witness me. So So Jason, as he's walking through the saloon, one of the poker players hands is revealed as aces and aces"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and eights. Yeah, Dead Man's Hand. That's the Dead Man's Hand. Yeah. And"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "so is it a good hand or bad hand?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, two pairs of fine hand, just generally, but I mean, the reason it's called the Dead Man's Hand is it's allegedly the hand. Yeah, according to rumor, it's the the hand that that Wild Bill was holding when he was shot in Deadwood. But there's no, that's like a river that was invented after his death."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Got it. But if you have pocket ace and eight, is that a good? You coming in on that one? Or"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "if you have an ace in and well, I mean, so they're playing like they're playing five card draw. Right, as opposed to Texas Hold'em. But if you have a you have an ace and an EIGHT. Yeah, that's a that's a playable hand for sure. And if you flop an ace and an eight, you're stoked, you're gonna get the money in."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right, I like it. Now you're playing the poker, what's going on?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I have not really ever played poker. I think it's one of those things where I played it. I've played it once or twice, but I think I don't understand the rules well enough to be able to bluff because I don't understand whether I have a good handle on. So like, it's like, I could be I could be I'm like, Okay, I'm gonna, I don't know whether to pretend I've got a good handle or not, because this could be a bad hand. So yeah, I don't think I have the skills for it. But I would like to try it. It's I'd like to learn it properly. At some point, it seems like it's just a cool thing to be able to do, isn't it to play poker, so I feel like it's like you should progress fun,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "learn super fun. And if you don't know your hand is good, then you can just bluff you know, anyway, you can just stop thinking it's good. Oftentimes, people who don't have well as familiarity with playing or are more prone to bluffing because they don't know the strength of their hands. So just whatever do whatever"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "okay, what is bond play bond, back rat or something back here backwards?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just gambling on coin flips. That's not a real that's not even a real thing. Okay. All right. That's it. That's one of the corniest things about James Bond is that like he's like, Oh, the sophisticated backdrop player is literally gambling on the flip of a coin like there's not it's not a real it's not a real game of skill by any definition but sure, he looks"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "he looks good. I believe as well as martini shaken not stirred is a bad there's also two people. Yeah, James Bond is just a poser is what they're saying. I think that gets me country for saying that. But I think James Bond,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "James Bond."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I remember. I remember when Casino Royale came out and they then they switched it to hold them and I was like, Alright, I get what you're doing. Like I understand why you're, you're doing Yeah, it didn't seem like it made sense. But it also like it translated for a modern audience."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. I like the one in I like in Goldfinger where they play gin. I like the idea of gin being like a sophisticated. I still do gamble. People do gamble a lot on gin. But yeah, I like that. That seems like old timey and weird."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So. So rango has the opportunity here and he seizes upon it to invent himself, you know when he is questioned. So I just love this. Yeah, where do you say you're from me? I'm from the West, out there beyond the horizon, past the sunset, the far west. So no, my hair should live a Rutan friend. I am not from around nice parties. You might see I'm from everywhere. There's troubled ruin and Hill waiting to be raised. You might see on what Hills already raised up. Name's rango. And then"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "he enthralls everyone with the story of shooting seven brothers with one bullet until Bill play by Ray Winstone and his posse show up. And I just I love this scene of him swallowing the cigar I didn't see it coming the way he taps his finger as he's choking on the cigar and then belches the cactus water and it was face just awesome seeing"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I liked the cactus waterpark for myself as well. That was a good one. One of"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "my favorite bits is I love the bit where he kind of It takes the cigar out of Ray Winston's mouth. And there's just this pause where he's like, I haven't thought what to do next. And he just, and it's because he has no idea what you should do, because I think I think we've all kind of been in that moment in life where we do something, we think, Oh, I hadn't really thought that through what's the what happens after this? So it's, it was a very, right, right. I really like that moment. And then just him trying to put out the fire after he sets fire through Winston's face. And he's hitting him with the thing and it just gets worse. It's yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Whereas like, slip smacking with a"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "rag. That Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really funny. So they have a big showdown. And we have the hawk attack So Jason, tell me about, you know, just this whole sparks. Yeah, the hawks and the Raising Arizona theme comes back again with"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's cool. There's a lot of musical references in the, in this, there's like, there's the Raising Arizona reference, there's the flight of the Valkyries reference. There's a lot of there's a lot that they're doing with the musical cues in this movie, and again, it is like meant to be like the movie is like this very elusive, referential movie, which I guess a lot of kids are but like the movies that it's referencing are like so heavy in some way. That I find I found that pretty fun."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, but that scene is just fucking awesome, right with a hawk ride around town. And you know, like, I don't know, just the animation there, like being trapped in the vending machine and stuff. Like, just really clever and fun."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's great. I love it."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I think God is so good at like set pieces. Like if you watch the pirates, movies, there's all these all kinds of these amazing set pieces, even like the Lone Ranger, which is not a very good film. The beginning and ending set pieces in that movie are incredible. And I think it's really cool to see his imagination for that put to like animation where there isn't really the same budgetary restrictions or kind of practical restrictions and the stuff he does with that, I think just throughout this movie are really really cool."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally, totally. So he goes in he meets with the mayor I love Ned Beatty. So as a kid, you know, obviously Ned Beatty as Otis in Superman 1978 Life Changing performance. But he is really menacing in this and I think his wheelchairs so cool with like the grippy things."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he looks great. And his face looks great. I like is I was spending a lot of time looking at people's like face scales in this movie, like trying to figure out like sort of, is it skin? Is it scale? Like where is it? Is it folded? He would be a good like sort of God Emperor model to he had kind of that wormy cowl face. Hmm, that's my dude tie in for Lego."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I like it. I like it. So so just to accelerate here. So there's obviously the mayor's is basically controlling the water, we have this Goddamnit we have this awesome scene with a water ceremony with a clock tower. That's really creepy. Sounds like Stranger Things. And then there's this bizarre dance that they're doing. But essentially, water thieves played by Harry Dean Stanton steal the water from the town. And so what do we do now? Sure. Now, we rock."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And they are off on their Road Runners. And they're riding it, you know, and like having a great time. And then they're like, where are we going?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Where are we going?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are they pull the bottom out from under them. So I love this the environments and the western influences. So deacons said it was a great blend of old film Western classic sequences, The Searchers, High Plains drifters, and it really blends in his children's story about this little animal. I thought it was great. I love that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I liked it, too. I liked all the visuals going in the canyon. I love the part where the folks rise out of the ground."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Like zombie,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the zombie, the zombie moles, like rise out of the ground, and they have that chant that's like, you know, whatever kick of Nazism punch him in the eye or something like wild shit. going for it?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yeah. And then I think I think there's the bit where they come out of the ground. And I think rango says something like, I think the chromosome pool around here is getting a little dry or something. And yeah, it's not a joke. You want to explain to children I would imagine, you know, there's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a lot of jokes like that. There's well before they even get there. There's the joke about like, do you need your prostate examined? Like there's like a, like a prostate exam joke in this man. Like there's a lot of strange jokes in this movie,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "huh? Yeah, well, I mean, you're gonna get that when you're when you're doing this, this kind of, you know, genre mashup. And I guess to this, it's worth noting that Gore Verbinski, in addition to the shakiest gun in the West Fistful of Dollars, Good, the Bad and the Ugly Once Upon a Time in the West cap. aloo Gore also cited el Topo as a major influence for this film. Oh, okay. It makes sense. So we still haven't watched it for the BOD but any anytime Jodorowsky is is in the yeah"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is Yoda Roski definitely needed to make kids and anime kids maybe that's what he was. That's where he was done. He hasn't. genre to tackle."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "The next documentary is going to be called Jodorowsky. Shrek and it's going to Yeah, get into like,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh my God, I'll be amazing yono plays Shrek himself"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my god. So so they go on a complex mission. They steal the water and they're getting the water back. This is where we have this amazing flight of the Valkyries on banjo. Big pod race vibes in this scene, right? Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "they're through Beggar's Canyon. Yeah."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I love this scene. This is such an incredible scene, I think. Yeah. Like, I think this is you were saying Jason this is really kind of felt Fury Road ish for me when I was walking down this viewing this felt very Fury Road is when you see the bats flying down into it. It feels a bit like another strange scene. It feels like the trench runs. So many little allusions and references. Yeah. And I love the the toad hanging off the side of the wagon, and he's spinning his shotgun round like the Terminator in Terminator two. Fire at the same time. Yeah. When I saw that when I was like 12 or 13 I thought it was the coolest thing I've ever seen. And yeah, I'm 34 I'm still pretty cool. I think even when it's an animated Toad doing it. I think it's still a corset."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's really funny. I haven't rewatched teach you in a long time. It's got to come up for us eventually. Well, no, I'm reaching out to to a dear friend of the pod and Arnold Schwarzenegger, a composite artist on rango Todd Vaziri. So we'll see. Oh, yeah. Todd worked on rango. Yeah, I think it'd be great to get him for tea to an important CG milestone for cinema. So they end up getting back. The mayor shows him the development that he's working on. And there are some serious Chinatown illusions that are going on here. But ultimately, Jake, played by Bill Nighy. Jake the Snake shows up and exposes rango as a fraud, leading him to walk into the desert. The score you're in the nighttime as rango is walking into the desert and crossing the road is frickin awesome. You know, Hans just doing great work both with like, moody vibe, as well as the guitar work. The electric guitar work that he does just super good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, you're really good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's how this came up. I think originally, for the pod. We put it on the list for that. So yeah, I think so. So he crosses the road. And he meets the Spirit of the West, played by Timothy Oliphant as Clint Eastwood"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, kind of a wild homage there."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But with a metal detector. What's happening"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is, you know, he's looking for coins. Like he's like looking for treasures out in the desert."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I wouldn't if that was like, maybe because I like Clint, but I don't know everything about him. So I wonder if that's maybe like a reference to is that something Clint likes to do? Because he has the little like kind of golf cart type thing that will direct his cart so maybe he likes metal detecting I don't know."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I don't know about cleanse metal detecting hobbies. I just assumed it was sort of like a fun way of being like, oh, like, it's like this, man. And this is like a very old man thing to do is like go out into the desert, like, you know, metal detectors like ESEC on beaches or other places. A cool thing about metal detectors. I think this was discussed in Discord is like there's like leagues of these bros who go out and do metal detecting and like if you lose like a ring or something. And you're like, oh shit, I was like out in the swamp and I lost my ring. These guys will come out and like find your ring for you. Like oh, no problem. Like I'm on the case. This is like this is like their dream is like be of service to go find lost objects. And they'll just like come I don't know what kind of signal you have to send up like magnetometer bat signal you have to you illumine in order to call them to your aid. But it's something that happens. So I don't know. Shout out to you metal detectors."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I never saw the appeal but I guess some people like it. If this just has this nice catharsis where rango says but I can't go back. Don't know that you got a choice on no man can walk out on his own story."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I live in that line. That's my favorite line in the film. That is great. Got your own story. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yeah, really great. So that's awesome. And then you know, we have now the pilgrimage of the cacti. And I love this. This was like really magical and evocative. I'm kind of moving across the desert. I thought was awesome. But so we see Vegas is revealed. So my question, what was the mayor building? If this is Vegas? Like, what what? What's the mayor up to? What's his plan?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Island? Reptile Vegas?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yeah, animal Vegas, I think. Yeah. He's okay. Holding some sort of city I think is the idea. Yeah, I think for the city of Durham,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "the idea that he's like, the, the, the reptile Steve Wynn, and he's like, just sort of got a vision for like, a, like a strip of casinos that he's gonna build for hedgehogs and shit out there. I like he's like the he's the fuckin reptile mo green. And, you know, I made this city. It was a desert when I got here. I love that. I love that. I've watched that movie in a heartbeat. I hope I they should make a sequel where it's just like the prequel where it's like, yeah, the mayor coming to dirt and like how he made this town and put it on the map and like, what sort of attractions he's gonna make in the desert. I love all of those ideas. They should immediately please"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "rango cinematic universe."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right. Yeah, that RCU apparently, he was specifically doing kind of a John Hughes tribute from Chinatown, which I haven't watched in a really long time. Great movie. You heard it here first Chinatown's a good movie. So it sounds pretty good. We have the final showdown. Rango, reroutes the water and explodes all the water into dirt basically destroys dirt with water. But I guess people are happy. I love him. His final maneuver is doing the Heimlich because he kissed his girlfriend beans. And so she coughs up the bullet which then breaks the glass and we have our Mission Impossible moment. This is pretty awesome. You know, a nice finale there. Rango doesn't die. And the chorus is forced to admit that you know, maybe he'll die in a household accident completes his journey. From humble beginnings to the legend we sing up today. And although he is certain to die, perhaps from a household accident, which account for 65% of all our natural deaths, the people of the village will always remember the name of the one who saved them."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then we have credits."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's amazing. It's a great movie. I really love the whole third act in particular. I think the snake design is phenomenal. Yeah, I think it's a great, a great villain who they sort of and it's hard to do because they've built up the snake as like a big, you know, a big bad in the movie. And you know, he shows up and he fucking milks his own Fang for venom and like he's got a you know, some sort of machine gun for a tail like he's awesome. And Scotland little showdown."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Mustache. Vankleek little lever. Yeah, mustache. Yeah. And the love that. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Loves the sort of everything that happens in the last 30 minutes of the movie. Good stuff. Well, So Neil, that brings us to the key question. Who would Tilda Swinton play? Oh,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "well, I was thinking about this. So So one answer without wanting to get into this in too much detail is she could play rango himself. i Yeah. Yeah. Because firstly, she would be very good. And secondly, without one to open any Pandora's boxes. We wouldn't have to deal with pivotal in the door. It's 22 Yeah, But setting that aside, I think I'd like to see her as rattlesnake Jake. I think Bill Nighy is phenomenal as rattlesnake Jake I think he he I think he read it. I read something where he's trying to do jack plants from like all those old kinda like 70s Westerns like how we share, you know? A no Hawk how he like has that weird enunciation of Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and that's good. Oh, you did that. Well, we're chilling."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Oh, thank you. I might just talk about that or tomorrow now which is Yeah, everyone picks up on it, but I think she'd be a great I think about serious that's my pick I think rattlesnake Jake is tilde or tilde rattlesnake Jake I think would be would be my pick. lovin"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "love it Jason"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "ah, I guess I would maybe have tilde as the armadillo the Alpha Murphy. Yeah, roadkill this the roadkill? Yeah, I thought that was a good character and she would it would just be like the right size for her. I think the dip in she should do voice acting like movies like this in general, though, so totally get on it. Do some more cartoons. I like it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I think I would do her as the mayor. I think that's a nice meaty role that she could really she could really go for but I definitely do. I love your idea of replacing the actor who played rango seems like a great idea. Yeah. All righty. So, also, Niall, I think it's a good idea for you to get on top of that, start using that accent tomorrow and start recording water because the UK is, you know, like, probably going to need to watch out for that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's a really, it's a really timely film."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yes, yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "One that one thing I'll note about this movie. Just one final note about it is on the topic of how well loved this movie is. I was out to dinner with some friends last night. And they were asking what I was up to. And I said, why have this podcast about doing always always be closing? And they're like, oh, like, what do you do is like, Oh, we cover movies. And like, you know, the tomorrow we're recording about rango. And the summer Lea at the restaurant said was passing by and he stopped. He's like, Excuse me. I don't mean to interrupt. But did you just say rango. And I was like, in fact, in fact, I did is like, I love Ringo. Movie. And I tried to tell people all the time to watch it, because I don't think enough people have seen it. And he's like, it's just so it's so it's funny. And it's a beautiful movie. And I love that it's a Western and all this stuff. And like he's like, I didn't mean to interrupt, but I just felt compelled to let you know how much I love rango I was like, well, you should listen to dune pod. We're gonna cover it. So shout out to you, somebody. Yeah. appreciate you letting us know your love for rango and all the other Ringo lovers out there. We see you and support you."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Yeah, I think that's it because I think that you're saying I think because it does seem like a movie that still but he's like, like the smelliest said it's Phil's under watched. So I think that's one reason why I think people who like rango such as myself like to talk about it is because it's like, people haven't seen this and I feel more people should because I think it's so"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "people should see it. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "well get ready for the dune pod bump. Rango"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Gen pod bump is coming for you."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Here it comes. All right. Well, what do you say? How about if we get into some letters? Let's do it. Hey, do pod Hey, Neil. Wow, season six continues to deliver some of the weirdest movies you guys have ever covered. Case in point, or ever been skis? Rango. Well, homeboy, Kevin's question this week comes from a blink and you'll miss it thing that I know you guys are picking up on, because he put it up in the Chuckle hut just now. Early in the movie rango almost gets run over by roll Dukes convertible from Fear and Loathing in Las Vegas. That's weird and cool and interesting. So my question Who are your favorite cameos? Here's one of my favorite cameos of all time in the Naked Gun. When Drebin is on the tarmac, and he's giving the press conference thinking that the crowd in front of the plane is there for him. And then the guy taps him on the shoulder and goes, no, no Weird Al Yankovic was on the plane. And they swarm him like he's Elvis. Anyway, rango you know, I've loved this really deeply weird movie since opening weekend where I sat in a crowded theater of confused children and and well rested adults. And my friends totally rejected it and fuck them. Either liked it fuck up, or just really, like, baffled by it. We'll see how it goes. Thanks. Love you guys to hear. Once again, it's calves questions?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Huh? That's good. All right. Let's think best cameos. You know, a really good one. A one that was when I saw it at the time. I thought it was amazing. And I was at the right stage of life to appreciate this movie was Neil Patrick Harris and Harold and Kumar Go to White Castle. Yeah, he shows up as himself. Yeah. And it's just like deranged. And this was sort of before the Neil Patrick Harris. Renaissance. And so it was like it was like, just perfectly delightful that he popped up in that movie, and was like, was hopelessly arranged and great. I love I love that one. Jack Palance in the Wayne's World movies. is another one. Yeah, he shows up in which I forget is the first one. Kevin will know for sure. He shows up in whatever to do like a line reading. I love that one. Yeah, so those are good. Like those"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "terrific that that like Neil Patrick Harris. One like kind of changed the trajectory of his career. I feel like"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I think so. Yeah, it showed that he was like in on the joke and it opened up a whole other way for him to be received. Yeah, congrats, Neil,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "congrats to you. Um, I think along similar lines that I don't know if you've got a cameo, but I suppose it's like Neil Patrick Harris. Have you seen there's a key MP at the Key and Peele movie Keanu. I don't know if you've seen that. Yeah, they haven't seen it. I know about it, but I haven't seen it there's a bit worse because of some plot, they end up having to deliver drugs for this gang and they deliver it to this house. And they open the door. And and it's this character played by Anna Faris. And she's kind of playing this big, sort of crazy character who's like kind of being abusive, like kind of just snorting drugs and just being like crazy. And after she has been doing this character for like, 10 minutes or so, Jordan peels character just leaves and says, Oh, by the way, I loved you in scary movie. And it just revealed that whole time that she's been playing herself, which was not, actually but you're just assuming that it's someone else but then it Yeah, I think that's one of my That's great. Yeah, really laughed at that because you just, you just comes out of nowhere that Oh, no, that's just supposed to be Anna Faris, which I thought was thought was really funny."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love a correction, a correction to myself already is that it's Charlton Heston and not Jack Palance in Wayne's World."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, no. Okay. I am gonna go. I'm gonna go with Tom Cruise. Tropic Thunder. Oh, yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's a good one like that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And it was another, but similar to the Neil Patrick Harrison. This completely changed his trajectory, because he was sort of stuck in that Oprah couch moment. And then this was the beginning of like, Oh, Tom can be funny and laugh at himself and do his own thing. And he gives a great performance. So yeah, he's great. Nice. All right. Thank you, Kev. We miss you, buddy. We missed you. Last week was incredible. You know what time it is. Hey, this is Corey from Austin, Texas. I was gonna call in for Outlands. But then a little bird named Kim told me that mistaken it's not Outland it's rango. Well, I've never seen rainbow. I don't really know much about it. I do know, is the voice of a chameleon. And that's about all I know about it. But I did go see the new Gore documentary. Yeah, very cool. But before the documentary, there were some really good trailers that I saw. So I'm looking forward to one is called the menu. That one looks really good. Yeah. And then another movie that's coming out. Maybe you've heard of it. It's called 3000 years of longing. It's the new tilde film was directed by Gordon Miller. Yeah, Elba also in it. It was super dope. And I hear they're only going to show it in theaters. Does that mean no streaming for that movie? I don't know. Anyway, way off base. I promise next week I'm going to actually talk about the movie that you guys were watching on Doom pot Ben did run when he can show girls and I kind of fell off a little bit sorry guys. I'll be back on point next week. Okay. Killed by"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "amazing"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Cory how are you? Oh stuffing you're always you whatever you do is sufficient."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Have you even finished wild palms yet? Like that man is happening"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I do need to watch out while Paul I need to get on I need to join Cory I need to move to Austin and basically just live with Cory"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "maybe we can get compound Yeah, that could that could work. All right, Neil. What do you have to plug buddy? Ah,"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I don't know if you're in the UK come see future shark wrestling. If you're wrestling inclined, or Yeah, fine future shark streaming and future shark infinite which is is got loads of good stuff on there. If you want to see me do some ringing outs and you can also take you can find a lot of it on YouTube as well. Beyond that, I don't I don't really know if you're in need of hearing aids in the Chester area, the Chester UK area then, you know, come along to come along to us to see me keep yourself cool and"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "keep that beard growing out. We want that beard back. We saw those thirst traps we were posting out on the trail. And you know, it's like even more even more beer than then Jason was giving. Jason What do you have? What do you have to plug my friend I will plug"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a book that I just finished which I enjoyed quite a bit was the Pulitzer Prize winner for last year I believe the Netanyahu is by Joshua Cohen which is about a fictional history professor at a fictional College in upstate New York who hosts BenZion Netanyahu, Benjamin Netanyahu, his dad in the 60s and 1960. And it's really fun. It's just a one it's just amazingly written. Like it's just unbelievable incandescent prose. Like he the guy just writes the shit out of this book. And then it's also just like, a deeply Jewy book, like it's a lot of like observed stuff about like cultural, cultural Jews that like felt very real and true to me. Um, a little bit of Israeli history thrown in for fun, and it's just great. It's like a real romp. It's also really quick. It's a fast, fast read slash listen."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So if I want to know you better that would be that'd be Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "exactly. Yeah. Join, like, learn more about learn more about me by reading that. Yeah. I don't really know if that's true, but it's a great book."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right. All right. Neil, thank you so much for joining us."
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "Thank you so much for having me. It's been a pleasure. What"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "a pleasure. What a pleasure. Did you work out the Paula tradies. Ring an ounce?"
+        },
+        {
+            "name": "NEIL",
+            "timestamp": "",
+            "text": "I can. Sure I can. Yeah, I can. Sure I can manage that. So yeah. Please walk into the ring from Erica's Paul. Because like I say, if your villain you start, I was saying before we start I don't know it's yeah, good, easy, Abadi. It's hard to. So let's say you make the call. You make our trading days. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And that's it for this episode. I want to thank Jason and Neil for a great conversation. Next week, the prodigal son returns as we welcome home the OG spiritual advisor, and movie insider, Corona Lexus. We traveled to 1995 once again and tackle what a 25 year old ah thought was going to be the greatest movie ever. William Gibson's Johnny Mnemonic. If you're enjoying the show, we need your help. Leave us a five star rating and review wherever you listen to your podcast because it really does help new listeners find the show more than anything. We also have a Discord server where you can hang out with us online when ever you want. A link is in the show notes. Dune pod is a tape deck podcast jawn up production of H industries. artwork is by capture and our theme music was composed by Toby Foresman of works on music transcripts provided by Sophie shin. The episode was edited by Meghan Hayward edit audio and produced by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

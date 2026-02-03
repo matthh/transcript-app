@@ -1,0 +1,236 @@
+'use client';
+
+import { useEffect, useState, useCallback } from 'react';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
+import { Transcript } from '@/types/transcript';
+import { useAudioSync } from '@/hooks/useAudioSync';
+import AudioPlayer from '@/components/AudioPlayer';
+import TranscriptEditor from '@/components/TranscriptEditor';
+
+export default function EditorPage() {
+  const { episode } = useParams<{ episode: string }>();
+  const [transcript, setTranscript] = useState<Transcript | null>(null);
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [publishing, setPublishing] = useState(false);
+  const [publishStatus, setPublishStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [error, setError] = useState<string | null>(null);
+  const [hasAudio, setHasAudio] = useState(false);
+  const [rebuildConfigured, setRebuildConfigured] = useState(false);
+
+  const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(
+    transcript?.dialogues || []
+  );
+
+  useEffect(() => {
+    async function fetchTranscript() {
+      try {
+        const response = await fetch(`/api/transcripts/${episode}`);
+        if (!response.ok) throw new Error('Failed to fetch transcript');
+        const data = await response.json();
+        setTranscript(data);
+
+        // Check if audio exists
+        const audioResponse = await fetch(`/api/audio/${episode}`, {
+          method: 'HEAD',
+        });
+        setHasAudio(audioResponse.ok);
+
+        // Check if rebuild is configured
+        const rebuildResponse = await fetch('/api/rebuild');
+        if (rebuildResponse.ok) {
+          const rebuildData = await rebuildResponse.json();
+          setRebuildConfigured(rebuildData.configured);
+        }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Unknown error');
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchTranscript();
+  }, [episode]);
+
+  const handleSpeakerChange = useCallback((index: number, speaker: string) => {
+    setTranscript((prev) => {
+      if (!prev) return prev;
+      const newDialogues = [...prev.dialogues];
+      newDialogues[index] = { ...newDialogues[index], name: speaker };
+      return { ...prev, dialogues: newDialogues };
+    });
+    setHasUnsavedChanges(true);
+  }, []);
+
+  const handleTextChange = useCallback((index: number, text: string) => {
+    setTranscript((prev) => {
+      if (!prev) return prev;
+      const newDialogues = [...prev.dialogues];
+      newDialogues[index] = { ...newDialogues[index], text };
+      return { ...prev, dialogues: newDialogues };
+    });
+    setHasUnsavedChanges(true);
+  }, []);
+
+  const handleSave = async () => {
+    if (!transcript) return;
+    setSaving(true);
+    try {
+      const response = await fetch(`/api/transcripts/${episode}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(transcript),
+      });
+      if (!response.ok) throw new Error('Failed to save');
+      setHasUnsavedChanges(false);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to save');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handlePublish = async () => {
+    if (hasUnsavedChanges) {
+      setError('Please save your changes before publishing');
+      return;
+    }
+    setPublishing(true);
+    setPublishStatus('idle');
+    try {
+      const response = await fetch('/api/rebuild', {
+        method: 'POST',
+      });
+      if (!response.ok) throw new Error('Failed to trigger rebuild');
+      setPublishStatus('success');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to publish');
+      setPublishStatus('error');
+    } finally {
+      setPublishing(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        if (hasUnsavedChanges && !saving) {
+          handleSave();
+        }
+      }
+      if (e.key === ' ' && e.target === document.body) {
+        e.preventDefault();
+        audioControls.toggle();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [hasUnsavedChanges, saving, audioControls]);
+
+  if (loading) {
+    return (
+      <main className="min-h-screen p-8 flex justify-center items-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+      </main>
+    );
+  }
+
+  if (error || !transcript) {
+    return (
+      <main className="min-h-screen p-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+            {error || 'Transcript not found'}
+          </div>
+          <Link href="/review" className="mt-4 inline-block text-blue-600 hover:underline">
+            Back to Review List
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className="min-h-screen pb-24">
+      <div className="max-w-4xl mx-auto p-8">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <Link href="/review" className="text-blue-600 hover:underline text-sm">
+              Back to Review List
+            </Link>
+            <h1 className="text-2xl font-bold mt-1">{transcript.episode_name}</h1>
+            <p className="text-sm text-gray-500">Episode {transcript.episode_number}</p>
+          </div>
+        </div>
+
+        {hasAudio && (
+          <div className="mb-6">
+            <AudioPlayer
+              audioSrc={`/api/audio/${episode}`}
+              state={audioState}
+              controls={audioControls}
+              setAudioRef={setAudioRef}
+            />
+          </div>
+        )}
+
+        {!hasAudio && (
+          <div className="mb-6 p-4 bg-yellow-50 border border-yellow-200 text-yellow-800 rounded">
+            No audio file available for this episode.
+          </div>
+        )}
+
+        <TranscriptEditor
+          dialogues={transcript.dialogues}
+          activeSegmentIndex={audioState.activeSegmentIndex}
+          onTimestampClick={audioControls.seekToTimestamp}
+          onSpeakerChange={handleSpeakerChange}
+          onTextChange={handleTextChange}
+        />
+      </div>
+
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg">
+        <div className="max-w-4xl mx-auto flex items-center justify-between">
+          <span className="text-sm text-gray-600">
+            {hasUnsavedChanges ? (
+              <span className="text-orange-600 font-medium">Unsaved changes</span>
+            ) : publishStatus === 'success' ? (
+              <span className="text-green-600 font-medium">Rebuild triggered! Changes will be searchable after deploy.</span>
+            ) : (
+              'All changes saved'
+            )}
+          </span>
+          <div className="flex items-center gap-3">
+            {rebuildConfigured && (
+              <button
+                onClick={handlePublish}
+                disabled={hasUnsavedChanges || publishing}
+                className={`px-4 py-2 rounded font-medium transition-colors ${
+                  !hasUnsavedChanges && !publishing
+                    ? 'bg-green-600 text-white hover:bg-green-700'
+                    : 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                }`}
+              >
+                {publishing ? 'Publishing...' : 'Publish to Search'}
+              </button>
+            )}
+            <button
+              onClick={handleSave}
+              disabled={!hasUnsavedChanges || saving}
+              className={`px-6 py-2 rounded font-medium transition-colors ${
+                hasUnsavedChanges && !saving
+                  ? 'bg-blue-600 text-white hover:bg-blue-700'
+                  : 'bg-gray-200 text-gray-500 cursor-not-allowed'
+              }`}
+            >
+              {saving ? 'Saving...' : 'Save (Ctrl+S)'}
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}

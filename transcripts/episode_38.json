@@ -1,0 +1,3121 @@
+{
+    "episode_number": 38,
+    "episode_name": "True Grit",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie. This week I'm joined as always by my co-host Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. We're not gonna - that's not gonna - Joe Manchin is not gonna break the filibuster for that. I'll tell you that much."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by product manager and investor mercy, Merci Grace."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "One, you have no idea how annoying you are to other people, like no self awareness!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We discuss Dune 2021's Gurney Halleck himself, Josh Brolin, in the Coen brothers' and Roger Deakins' 2010, Western masterpiece, True Grit. We cover complicated Civil War era dynamics, the power of being able to admit you're wrong, and the dangers of frontier era dentistry. If you're enjoying the show, we need your help. Seriously. Take two minutes and leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now, without further a-Dune, True Grit. [Dune Pod theme plays alone, fades out]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, so tell us about Wysiwyg."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh yeah!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What's the story? Yeah. What's the deal there Merci?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, I have a 10 and a half week old Australian Shepherd puppy named Wysiwyg. As in -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Great name."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "What you see is what you get. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Which I love for a dog. Our previous dog was named Pixel, and so this carries on the theme of being nerds."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. When you have three product managers on a podcast, you know, there's gonna be some nerdy ass shit going on. For sure."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. For sure."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Exactly. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. And is this dog that gets bigger or stay small? What's the story?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, it gets big. I think between 35 and 45 pounds is the range. So."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, nice."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. Yeah. Good hiking, buddy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Awesome. That is amazing. I love that. Well. Well, I want to say Merci, thank you for joining Dune Pod. We are so happy to have you here tonight."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Woop woop!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Woop woop! [Merci laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Thanks for coming on."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Hyped!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So we've been talking for a while and looking forward to get you on the pod. And I was super excited because you picked out of the list out of everything that we had. And this was back last year. You picked True Grit, which as we know, produced by the Coens, Roger Deakins and Jeff Bridges. This is the unofficial Big Lebowski prequel. So very good for us to be able to pick this up after last week."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's good timing. It's back to back Jeff Bridges, Coen Brothers, we're basically a Coen Brothers podcast now that the Dune movie has been delayed."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And I'm expecting that similar to Sacca last week that you will be quoting every line of the movie as we walk through, so feel free to just interrupt and as we make our way through. This film does have an unbelievable script, by the way."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Really strong. Really strong."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh my gosh, so good. \"I will tell you and you will see that I am right.\" Like I wrote that, I took notes on and I'm like, I'm gonna say this to someone. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "I'm sure I told people that when I was 14."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. So we will be talking about True Grit in the bottom hour of the pod. We're speaking of it, very specifically because we have Gurney Halleck himself, Josh Brolin, in quite a performance in this film. Josh making his third appearance on Dune Pod. So that's, that's pretty exciting."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's also a Josh Brolin podcast. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So, next week on Dune Pod, we have Zendaya and from Tenet, John David Washington, them teaming up for Sam Levinson's Malcolm and Marie."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Mmm. So great, so great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Jason, have you watched it yet?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I've not yet. I've still gotta, I've got to watch that. It's on the list. I only watch, the only things I watch are like for this podcast. So, I watch it when required and then otherwise -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Not a moment sooner?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not a moment before, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well this is by, so this is written and directed by Sam Levinson, who is the creator, writer, director, producer of Euphoria on HBO, which we watched with Sara Chipps. And so fell in love with that, and so very excited to talk about this next week. Joining us from Cinenauts, the hit podcast, exploring the Criterion Collection. We have Boom, making her first Dune Pod appearance."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah! That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really excited. Boom, we can't wait to talk to you. Next week. Alright! Shall we get into some Dune News? [sound bite plays] Would you like to know more?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's talk about Dune News!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There is big news Dune News. Jason, Godzilla vs. Kong, how many times did you watch it in the theater and then on HBO Max?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Infinite times. I've seen it, I've seen it a Godzilla sized number of times. Yeah, no, it did, it did well, though. People liked it. People went to go see that and streamed it. And they're happy with how it did."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "$49 million in the United States. $285 million worldwide so far and HBO Max had the highest number of signups in their history."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I'm very surprised about the strength of the Godzilla universe. Like it seems, I don't know, people get hyped for it. Did you watch it? Is this a movie you watched?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "didn't have time."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I've seen, I've seen zero Godzilla movies. Zero!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Skull Island was good. I watched that. And the first one was not very good. Did you watch any of these Merci?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, I have. I will see kind of anything in the theaters and just give it a shot for fun. I have also, I walk out of 85% of the movies that I go see."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What?!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wow."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are you serious?!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Woah!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, easy come, easy go."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What's the earliest, what's the earliest you've walked out?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Um, I think the earliest that I've walked out was the comedy - oh and you guys are gonna hate me for this because everyone loves this movie. But the comedy with Will Ferrell where he's a newscaster in San Diego."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, Anchorman?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Anchorman?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Anchorman. So people loved that. He started playing the jazz flute in the first act."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And you're like, I'm out. Wow!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "I'm like, I'm not. I can't with the jazz flute. I'm sorry. [Haitch laughs] This isn't for me."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Are you, are you by yourself when you walk out? Or do you have like a negotiation with a partner or like someone you're with?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. So one of the unexpected areas of compatibility of myself and my husband, is that like we're both the only people we know, yeah, for whom it's totally okay. [Merci laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And so how does it work? Does one of you say to the other like 'this is it'. Or is it like you guys psychically know, when the other one has reached the saturation point?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "It starts with the sidelong glance."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, wow."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "The raised eyebrows. Ugh. The tilt. A little bit of the growl. And then eventually the elbow nudge."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And then where do you go after? Like now it's an evening out. And you can do like anything!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Sneak into another movie. Just go next door. See if anyone's there. [Merci & Haitch laugh]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "was thinking the bar or just go to sleep. Or, you know, who knows?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. Well, we usually have a great time discussing how terrible the 20 minutes of whatever movie we watched were and that gets us for about 45 minutes. So."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's awesome."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is amazing. I have never walked out of a film."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Never?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So yeah, you know, I'm always gonna take that ride. And I guess I've not finished stuff that I was watching at the house maybe, that's an easier fall off. But."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you give up on books? Do you quit books in the middle?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, I read an enormous amount. And I often am reading two books at the same time. And if it's not, if it's not good, why bother?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "remember - just a quick digression here for one second. My daughter is 23 now, just got her first job in tech in the Bay Area. Very excited about that this week. When she was 13, she was very, she transitioned from Harry Potter into Twilight. She started reading the Twilight series like over and over again. And she got to a point where she was reading the fourth one. I can't remember New Dawn or whatever it was. And I was like, how many times have you read that? And she said, which time? And I said what do you mean? And she showed me the book. She had two different bookmarks at two different parts of the book. And she was doing two simultaneous rereads at the same time."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Woah!"
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "parallelised read?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Wow!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's some Gen Z digital native shit."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They're multi-threading books?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I had never heard of that since. But that was a pretty wild thing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's wild."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Wow, that's interesting."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know if it means [Haitch laughs]"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't know. I'm ready to be replaced. I'm ready to be sent to the farm and retire if that's what we got to do."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Raise your hogs? [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Beatin' by hogs or whatever."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. Well, so to finish off Godzilla vs. Kong, it was a huge success."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Huge success."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And specifically, there was some discussion about what this means for Dune. So Deadline says, \"it hasn't been decided yet if Legendary's other Warner Brothers title Dune will go out day and date theatrical and on HBO Max. This is despite the fact that the latter streaming service keeps promoting it as part of their 2021 suite. The success of GvK this weekend makes a clear argument in Legendary's negotiations with Warner's to keep that all star sci fi movie strictly in theaters.\" I will call out that one redditor on the dune Reddit said that there was at the end of the trailer for Dune, before the movie, it said only in theaters."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, that's interesting. That's interesting. I think they should renegotiate to keep it only in theaters. Like I think the analysis I've read about the box offers performance is that it's like, it's like a hit for the COVID era. But like it's not like an unmitigated hit. And by October, people are going to be willing to go back to the theater. It's gonna be fine. Like, just, you know, let's just get, let's just go back to where we're going to get all the money for a Dune so they can make the sequel."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And that scarcity really drives the the ticket sales you think?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I mean, I think it's the only way, I think they still haven't shown any way to make the money for a huge blockbuster like this. Like that they need to in order to like, you know, in order to guarantee a successful franchise."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Interestingly, in an interview on CNBC, that Dune Info linked to, the Legendary CEO, Joshua Grode, said he was very positive. And he basically described Warner Brothers as, quote, 'a great partner'. So that's a big change from getting ready to sue the hell out of them. And yeah, our Dune 2 announcement is maybe just days away."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. They're gonna need the movie to open, it's gotta open, it's gotta open strong."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Come on. Stay with me Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm feeling more optimistic. I feel like you know, we're gonna, obviously the biggest upside of the life saving vaccines being deployed so efficiently across the United States is that the box office success of Dune is more and more certain every day. So."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "like our chances."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "God bless the scientists."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "like our chances. Alright. Merci. Tell us about your history with Dune. If any?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, I'm a big fan of the book when I first read it, you know, at 12 or 13. And then reread it again, maybe 18 months ago."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Could I just ask who introduced you to the book at 12 or 13? How did it come on your radar?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Ah, big library person. That's also how I found The Hobbit from my school librarian in the fourth grade. Got very into that. I mean, that's a book I've read read many times."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Great book."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There's really those librarian, the librarians you have when you're like in the fourth grade, the third and the fourth grade, I feel are the most life changing people."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Truly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You can have. Like my librarian at that age introduced me to Narnia which is like my first ever, my first true love. And yeah, it's just like sort of forever, like shapes your world."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "My older sister is an NPR producer for Oregon Public Broadcasting. So you know, great, great radio voice. And she recorded herself reading on tape, the entire Narnia series for myself and younger siblings."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Woah!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "She's sixteen years older than me."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So that was our introduction to Narnia, which is just fantastic."
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "bespoke audio version."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's awesome."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Do you think like librarians now are turning four year olds or fourth graders on to like, Game of Thrones? Or like what's happening?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not Game of Thrones."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Name of the Wind?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There's a lot of sex in the second one of that one too. Why are you trying to perv out the fourth grade librarian and so much?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know! I just wondering if like, is everything changing?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think it's like Harry Harry Potter and like the -"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And Harry Potter has not been canceled."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ugh."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Due to the transphobia."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Harry Potter still lives, it's just divorced from its creator."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Okay, that's acceptable."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Sam is three and I think probably five years from now, we'll be wanting to start looking at that book. So, regardless, tough, tough choice. Not like Herbert where everything is totally about -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, no problems whatsoever. [Merci laughs] [interim soundbite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, well, shall we get into True Grit?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's do it."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yep."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. Here we go. True Grit is a young woman's quest for justice and an equal place in an unfair world. Mattie Ross's idyllic childhood in Arkansas is shattered when her father is robbed and brutally murdered by the craven outlaw Tom Chaney. Mattie, at just 14 years of age travels to Fort Smith to reclaim her father's body, set his affairs aright and hire someone to track down and capture Chaney. She settles on Reuben \"Rooster\" Cogburn, a drunk trigger happy Marshal and convinces him to take her case. Heading into Choctaw country, they encounter a stream of scoundrels, thieves, miscreants, and the arrogant Texas Ranger LaBoeuf. Will they succeed in tracking down Chaney and the crew he's thrown in with and deliver justice? And will they prove that they do in fact, have True Grit?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Mmm. Mmm. Good. That's a classic. That's a real age classic right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We did it. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, this is an awesome movie. Did you see this in the theaters?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yes. And I did not walk out. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are you a Coen brothers fan? Yeah?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, I love the Coen brothers. They're really fantastic."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What's your fave Coen brothers?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Well, I mean, Big Lebowski, I think, you know, for my generation is just one of those iconic films that I think everyone has somewhat memorized, you know, you know all the characters. And I think it's very, it's a very American film. My husband is French. And he lived in Texas for a while, but he just does not get it and he thinks it's one of the worst movies he's ever seen."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow. Wow. Wow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Lebowski. Really?"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "know, right? Yeah, I know. I'm just like, I still, it's hard to fathom that. And then O Brother, Where Art Thou? I mean, they have so many great ones."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Love it."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And just continuing the career Frances McDormand in general."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mmmm. Yeah, she's incredible. And she, this is one of the few ones that she's not in, right."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yep."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, she's not in this one."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "She would have made a great adult Mattie, I think."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, she would have been good, yeah, that would have been a good role for her."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So this film, you know, again, you know, we've raved about it. It's kind of a spiritual successor to No Country for Old Men as well. Right, which is also on the plains and a pursuit for someone and a hunt for justice. I don't know it's just a really a really gorgeous outdoor and our first true Western that we've done, we've done on the show. Just the opening line, \"the wicked flee where none pursueth\" Proverbs 28:1. I love that. It sets an immediate tone. And that opening shot where it's just black, and then you see kind of gold as it slowly comes into focus."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's beautiful. Yeah. Beautiful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Holy cow!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. It's great. It's a beautiful first shot. It's really great. Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And then the shot of Tom riding sideways across and then riding into the night was spectacular as well. It's just really, Deakins is on fire right out of the gate."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And the language is great, right out of the gate. Like the the the voiceover is amazing. Like right out of the gate. Like that \"Chaney fled\" is like, is just a great line, you just, you know that this is going to be a much more kind of poetic movie than some other. You know, all their work is great. But this is gonna have a definite style to it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So the presence of Hailee Stanfield in this voiceover and then just immediately in the first scene on the train, and getting off and trying to get oriented, was just beautiful. And the town of Fort Smith is so gorgeous!"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "love it's where the railroad ends, and it shows it pulling up and there's the timbers that are on there, you know, waiting to be added and like, oh! It's just such a beautiful touch."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, so she's, her first job is to get there and reclaim her father's body. And we learn as we did last week that burials are expensive."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And she's getting, she's getting, it's another like undertaker trying to screw the little guy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"If you want to kiss him, it would be alright\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It would be alright, yeah. [Haitch & Merci laugh]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, his recycled line."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. But I do love like, just her presence and she's starting to figure it out, like the whole, you know, the the hanging scene and trying to figure out with the sheriff, you know whether she's gonna get any justice. You know, which is very powerful."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think that the hanging scene is interesting, because it kind of gives you like the oh yeah, hangings were a spectacle. And like, people are kind of, you know, it's sort of played for laughs I do think the treatment of the Indian is a little weird. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was brutal!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like, 'cause he's like, he's about to speak. And then they like cut them off. And that's just purely played for a joke. Which seems a little strange, but I don't know."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You think the Coens are playing that for a joke?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I think it was meant to be a joke. Like the the fact that he gets cut off is like, meant to - I think it's more meant to be a joke than is like, oh, we feel bad for that character that we don't really care about."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, more of a self aware nod toward, of course, the incredible racism of the era. But yeah, I mean, in 2021 on a rewatch, that moment, also did not sit great with me."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No! And, well, it both makes you laugh, whether you want to or not. It does have a humorous element in it. But it conveys in an instant, that racism and the lack of caring. So from an effective kind of storytelling perspective. Yeah, I thought that was super powerful."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "did think it was weird that he was fat. And that that really threw me off that he and he was like, he was quite overweight. You know, like a big beer belly kind of overweight. And it's like, okay, you're on the frontier and you're native, you know, and you're literally where the railroad stops, like, there's just nowhere for you to get the calories that it takes to get to that size. [Haitch & Jason laugh] Like that really threw me off. It's like, cast someone scronier next time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's really funny. Yeah, I had not thought about that. So she talks to this Sheriff who points her at Rooster Cogburn and basically describes him as kind of like the toughest and meanest of the possible folks. And she talks to him in the john. You know, he's in the outhouse and he just totally dismisses her. I just thought that was hilarious."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's funny because he gives her a choice of three. And she like, you know, he says the best is this other guy, but she chooses the one that's the meanest, like, that's like, specifically what appeals to her."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And more likely to kill the people. Right? More murderous."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. More murderous. Yeah, exactly. Which is like what she finds out from the trial. She's like, okay, great. This guy's killed 23 people and like, seems fairly, you know, fairly ambivalent about. So, I'm for it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So, let's talk about the trial. So I mean, the shot where Roosters testifying - [clip of True Grit plays]"
+        },
+        {
+            "name": "ROOSTER COGBURN",
+            "timestamp": "",
+            "text": "Wharton pulled down on Potter with one barrel and then turned to do the same for me and I shot him. When the old man raised the axe, I shot him. Odus lit out and I shot him. [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Right, right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Just amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And his drawl! Like, what is that? What is the vocal technique that he's using?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It looks like half of his face is paralyzed. Like he's doing like a weird, like, sort of like, either he's got like chaw, or like, he's doing something where it's like, you know, yeah, like, it's great. It's great. He's doing, it's fun seeing him in this role having seen him in Lebowski last week, because, like, it is really, you know, showing some range even though like in both cases, he's slightly intoxicated or very intoxicated."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mmm. So Mattie approaches him after the trial and says, you know, they tell me you're a man with true grit. And she wants to hire him for $50 and he doesn't believe she has it and the line as she rolls a cigarette for him because he can't roll it. And he declined saying [clip of True Grit plays]"
+        },
+        {
+            "name": "ROOSTER COGBURN I",
+            "timestamp": "",
+            "text": "don't believe fairy tales or sermons or stories about money, baby sister. But thanks for the cigarette. [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Baby sister."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think they do a great job just sort of establishing what this guy is out the bat. He's, he's like, kind of, he's kind of a shambles, but he's also clearly a lethal killer. And like, he's doing it like for money. Like he's not really there just for noble purpose. It's, it's great. It's the full full package, just right off the jump."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And she did get a sense from him immediately, though, that she could trust him. You know, being out on this, you know, kind of wild goose chase looking for a criminal with him. Whereas you know, when, I'm sure we'll talk about, but when she beats like LeBoeuf, she immediately dislikes him and he seems untrustworthy. She has a good radar, it seems like."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So that's the next scene. She goes back to the to the house, the boarding house where she's staying and and LeBoeuf, played by Matt Damon. [Haitch laughs] He comes up while in the morning she wakes up and he's sitting there. And he says \"I came from Yell County.\" And she says \"We have no rodeo clowns it Yell County.\" [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So great."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "She just rips into him from the get go. It's amazing. [clip of True Grit plays]"
+        },
+        {
+            "name": "LEBOEUF",
+            "timestamp": "",
+            "text": "You give out very little sugar with your pronouncements. While I sat there watching you, I gave some thought to stealing a kiss, though you are very young and sick and unattractive to boot, but now I have a mind to give you five or six good licks with my belt."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "One would be as unpleasant as the other. [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And she's sick in this scene. She's like sick in bed and like she's just like, whatever this fucking joker is, like I don't have any time for this, is great. Great. I was so happy to see Matt Damon in this part in this movie. It's just really a delight."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "He should really only play bad guys."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes! Agree."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Interstellar. Yeah."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, that's what I was thinking of too!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Spoilers! [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You get out very little sugar with your pronouncements."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, just great. He's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's amazing. Well, so so Mattie disses him and says that man is going to find is going to find Chaney sooner and LeBoeuf is there. He's Texas Marshall, who was also trying to catch Chaney for another reason."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Texas Ranger."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thank you! Texas Ranger. [Merci laughs] Do not want to get that wrong."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, especially not in front of him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, exactly. So Mattie, she goes to hire Rooster. She needs money. So she goes and cuts a deal with the colonel to settle her father's affairs. [clip of True Grit plays]"
+        },
+        {
+            "name": "STONEHILL I",
+            "timestamp": "",
+            "text": "owe you money."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "You have not traded poorly."
+        },
+        {
+            "name": "STONEHILL",
+            "timestamp": "",
+            "text": "Oh! Certainly not! I'm paying you for a horse I do not possess and have bought back a string of useless ponies. Which I cannot sell again."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "You're forgetting the gray horse."
+        },
+        {
+            "name": "STONEHILL",
+            "timestamp": "",
+            "text": "Crowbait."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "You were looking at the thing in the wrong light. [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Merci, I'm picturing you like negotiating a term sheet. And you know like the founders like, wait, are we negotiating again? [Haitch laughs]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, oh my gosh, the abject look of fear in the following scene and he's like - [clip of True Grit plays]"
+        },
+        {
+            "name": "STONEHILL",
+            "timestamp": "",
+            "text": "Wait a minute. Are we trading again? [clip of True Grit ends]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Ah, he just got done over by her. It's fantastic."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, she's relentless. That's a great, that's like one of the three best scenes of the movie. She's just relentless. She's like, \"and now the business about the saddle\" like, just absolutely on him. [Haitch laughs] Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And just the establishment of her. And everything about her is just really, really impressive. It's so severe with the braids. And the hair. It's just like, very, very intense. So going back and talking to him, you know, talking to a Rooster, you know, he says \"Coon huntin'?! This ain't no coon hunt!\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "[impersonating Rooster] Coon hunt! [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And so he's gonna, he's gonna leave her. He attempts to leave her behind, and she ultimately catches up to them and sees him going across the river. So she literally rides her horse, little Blackie, across the river. That was wild. You know, some horse stunt work going on."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it seemed like that was a tough day shooting for everyone. The horse, the girl, anyone responsible for the horse or the girl. Seemed like that was gonna be tough to pull off. They really just push them through some water for sure."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What do you think about the spanking scene where LaBeouf is trying to get rid of Mattie?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think the highlight is where Cogburn says [impersonates Rooster] \"I don't believe I will\" like you know, and commences to pose gun on LeBoeuf."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And it was a weird like creeper bookend to to his original when she's, you know, sick in bed, 14 years old, though, obviously, you know, is a different era. But still, he's like, Yeah, he had started off saying, you know, \"I thought I might steal a kiss, you know, and I see\" you know, and then just like immediately spanking her. It's like, well, obviously, this is what you're into. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Now we all know that. And it's awkward."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think there's also a moment where Cogburn like, decides to intervene. It's, it seems kind of clear that he almost wasn't going to like, he's like, agh, I didn't want this girl to come and now I'm gonna have to intervene and like, you know, kind of go all the way to protect her and like, it feels like that's like a pretty key moment in their relationship."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, definitely."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Because he recognizes in her that she's like, super, she like, also has true grit."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. Have you guys seen the the meme on Reddit where it's like, you know, here's my dad who said he didn't want a cat. And then you know, here's him and he's like, built a castle for the cat. You know, like, 6 months later or whatever. This character evolution reminds me of that. At the beginning, he's like, ugh, this girl and then he's like, I will die for you."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah. Amazing. Amazing. Send me a link on that so I can include it in the show notes."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Will do. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So there's a lot of tension between Rooster and LaBeouf and actually really like how the summer's and unfolds over a couple of arguments, just sort of generally, Marshall versus Texas Ranger and kind of dissing there, and Mattie having to step in and break the tension to make that happen. But the next scene when they decide to part ways, there's this great discussion of the Civil War. They were both Confederates but in very different units. [clip of True Grit plays]"
+        },
+        {
+            "name": "LEBOEUF",
+            "timestamp": "",
+            "text": "The force of law! This man is a notorious thumper! He rode by the light of the moon with Quantrill and Bloody Bill Anderson!"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Them men was patriots, Texas trash!"
+        },
+        {
+            "name": "LEBOEUF",
+            "timestamp": "",
+            "text": "They murdered women and children in Lawrence, Kansas."
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "That's a god damned lie! What army was you in, mister?"
+        },
+        {
+            "name": "LABOEUF I",
+            "timestamp": "",
+            "text": "was at Shreveport, first with Kirby-Smith -"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Yeah, what side was you on?!"
+        },
+        {
+            "name": "LABOEUF I",
+            "timestamp": "",
+            "text": "was in army in Northern Virginia, Cogburn, and I don't have to hang my head when I say it."
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "If you had served with Captain Quantrill -"
+        },
+        {
+            "name": "LABOEUF",
+            "timestamp": "",
+            "text": "Captain? Captain Quantrill indeed!"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "You had best let this go, LeBoeuf!"
+        },
+        {
+            "name": "LEBOEUF",
+            "timestamp": "",
+            "text": "Captain of what? [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I mean, like, I had to look it up to like, you know, get the the scoop on the Quantrill Raiders that Cogburn rode with. And the Quantrill Raiders were like a bad bunch of hombres. I mean, they were basically like a guerrilla unit that just like went out and fought and the Bleeding Kansas battles. And so and we're doing like, you know, like, like, you know, Renegade slave stuff, and like, there are some bad, there's some bad dudes. And so definitely, it's like, you know, a thing. You know, it's a point to like, it's a point., you know, Cogburn is just like, he's not like a honorable Sheriff type. Like he's like a guy, and it comes out later, that's like, you know, run scams and like, you know, had bars and like, you know, whatever, you know, he's had a checkered past to say the least."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, well, and actually that's the next scene is they're walking, Rooster begins telling his tale. And I noticed this even more on my second watch through today, he really is unfolding his story for like 25 minutes of the movie, from his first wife, to his second wife, and just says, you know, my drinking picked up. You want to assume, it's similar to Paul, you want to assume that your hero is inherently good. And then you find out that your hero has problems."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah and you see Mattie start to realize that, like, she has that kind of moment of doubt. And she's, I mean, she's so fantastic in this role. And you really see the doubt just like flicker across her face when LeBoeuf really leaves and she's like, maybe this isn't good. And you can see from her point of view this like older a hunched over a guy on the horse talking about his, you know, second wife and you know, his abandoned child and she's like, hmmm. [Haitch laughs] Maybe this... this is not the knight that I thought that he might be."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah. This seems like a problem. [Haitch laughs] What about the dentist in the bear suit?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, that's I mean, that's the highlight of the movie, clearly, is running into Forster. I mean, that's absolutely magic. And everything that guy says is amazing. [clip of True Grit plays]"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "You are not LeBoeuf."
+        },
+        {
+            "name": "FORSTER",
+            "timestamp": "",
+            "text": "My name is... Forster. I practice dentistry in the Nation. Also, veterinary arts. And medicine, on those humans that will sit still for it. [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It is bizarre, right? Like..."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I mean, they just kind of dial the Coens up to 11 in that scene. But my favorite part is the, where he says the Original Greaser Bob's. [clip of True Grit plays]"
+        },
+        {
+            "name": "FORSTER",
+            "timestamp": "",
+            "text": "You might want to head to the Original Greaser Bob's. He notched a dugout into a hollow along the Carrillon River. If you ride the river you won't fail to see it. Greaser Bob - the Original Greaser Bob - is hunting north of the picket wire and would not begrudge its use. [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like he clarifies The Original Greaser Bob's. [Haitch laughs] Just the champion. That guy's the best."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That guy, yeah, amazing."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Fantastic."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And just so surreal. That's like a David Lynch, almost, aspect to it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, but more fun. It's got, it's more lighter. I love this part of, I think it does a good job to establish that like, there really is, at this time in American history. There's a very wild part of the country. That's just, you know, there's no law, there's no civilization. It's just like, you know, if you're a dude, who wants to wear a bear coat and like practice dentistry, slash like, you know, veterinarian -"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, for the humans who can hold still. [Jason & Haitch laugh]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Right. If that's your thing, like this is the place for you, because it's just however you, it's, it's just purely wild times."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "wondered if his age too, wasn't him, like, because that was kind of the previous generation of the Wild West, the pre Civil War Wild West, right. That was like, pure expansion, trappers in bear suits, you know, practicing dentistry, and he's, you know, supposed to be probably in his 70s I would guess. And so that kind of felt like, oh, he was the previous version of someone like a Rooster."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hmm. When it was like, unlimited resources, unlimited, like, there were no sort of checks on the system at that point."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, exactly. Just you and the bears."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And now you're coming up short. And you know, when things are getting tight."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And was he, what did he have that body for? I wasn't clear on that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, he took the teeth to make denture. And then he was willing to, he was willing to trade the rest of it, but I think as like a frontier veterinary doctor, he's probably also looking to get some practice in like, just like, kind of poke around see what's in there."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, just as a cadaver."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"I traded two gentle mirrors and a bottle of expectorant.\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. That guy's a champion. I love him. I'd love to see a spin off of just his story."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There you go. So he heads off to he has he sends them to the Original Greaser Bob's, which I do love the detail that Original Greaser Bob built a place into a hollow out something whatever, but he's hunting, Greaser Bob is hunting somewhere up north and he won't mind if someone comes and stays with him."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's okay. Anyone can like stay at his shack while he's like going to do whatever."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's like proto Airbnb basically."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Hey, couchsurfing. [Haitch & Merci laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, exactly. So they show up and they flush out Moon and Quincy who are staying in there and you have a shootout and Moon is quickly hit. So I was not expecting to see Domhnall Gleeson here."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Domhnall Gleeson! Our Ex Machina guy. He's back."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And Star Wars."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And Harry Potter. He's really, he's all things and Black Mirror."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Ohhh good guy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's a good guy if you can throw him - and he's great in this, too. Love Domhnall Gleeson."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He is really great. And Quincy kills him, or stabs him. You know, Rooster shoots Quincy. So it's like very violent very quickly. And you see the reaction for Mattie. But as Moon is dying, it's just a beautiful moment. He's like, I'm dying. And Bruce was like, I can't do nothing for ya. [clip of True Grit plays]"
+        },
+        {
+            "name": "MOON I",
+            "timestamp": "",
+            "text": "am gone. Send the news to my brother, George Garrett. He is a Methodist circuit rider in South Texas."
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Should I tell him you was outlawed up?"
+        },
+        {
+            "name": "MOON",
+            "timestamp": "",
+            "text": "It don't matter, he knows I am on the scout. I will meet him later walking the streets of Glory! [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Beautiful."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Rooster sets up a turkey shoot because we know that the Ned Pepper gang is coming and we think that's who Chaney is rolling with. So they set up on high ground and they're going to get him when they come in. And unfortunately that that all gets busted because LeBeouf shows up."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Fucking LeBeouf. [Haitch & Merci laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And we have a crazy shootout. Where it's a mess."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it goes badly. LeBeouf comes out. He tries to take on four guys on horseback by himself. They surround him and lasso him. And then Cogburn opens fire and hits will LeBeouf. In addition to most of the other dudes. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He says \"that did not pan out.\" [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That did not pan out, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The scheme did not develop as planned. And then LeBeouf almost bit his tongue off. So he's gonna yank his tongue off. [Haitch laughs] That scene is amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It'll knit! It'll knit! Yeah, it's great."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "also love when Mattie says - [clip of True Grit plays]"
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "Well we promised to bury the poor soul inside."
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Ground is too hard. If these men wanted a decent burial they should have got themselves kilt in summer. [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's a good one. I wrote that line down too. I mean, it's really, there's so many, it's a beautifully written movie. There's so many great lines of dialogue and the style of it. Just is so much fun. I love, I want more Coen Brothers movie, I'm so glad we're in this Coen Brothers like kind of rut right now, where we've done like now, this is what like our fourth one. They're just, it's just a joy."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Love it. You also have this the whole Latin discussion with malum in shay as a Latin term and Mattie being on top of it and Rooster having no idea. I mean, is it a little too strong? Is Mattie too smart?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "She's precocious. She's I mean, I think like, you know, like, she's precocious. But you know, the thing I like about Maddie is like, she's very booksmart. And like, she's still kid like in a number of ways? Like, I love the scene where right before they break up. And they're like, you know, \"You want me to tell you the story of the Midnight Caller? One of you need to be the Caller!\" You know, like she just wants to do ghost stories. Because like, that's what they did on their coon hunt or whatever. And she's not, there's like part of her, that's like, not really, that's clearly not an adult. That's clearly kid. So it's pretty fun. She's fun."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What was it like being precocious as a 14 year old, Merci? [Jason & Merci laugh]"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "mean, I obviously relate to this character. One you You have no idea how annoying you are to other people. [Haitch laughs] Like no self awareness."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Still that way, but go ahead. [Merci laughs]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And it is funny to see glimmers of the adult and then you know, at the at the end when it comes back to her, I remember thinking, God I would love a movie about adult Mattie. Did she become a, you know, I assumed she became a lawyer. Though I don't probably women weren't allowed to practice law at that time in the United States, you know, and has she stayed single? And I was just like, Oh my gosh, like there's this glimmer is where you're a 14 year old in the middle of nowhere. And you're clearly have gotten like your father's lawyers books or something like that. And you've memorized a bunch of this stuff. And you love, you love to show off in front of a grown up."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, beautiful. I just, I really loved her performance. So Rooster does convey at some point, you know, two stories, one going up one versus Seven with rains in his teeth. And he confesses that they were pursuing him because he robbed a high interest bank justifies it and says \"you can't rob a thief.\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he wrote he robbed like a, you know, like a payday lender. [Merci laughs]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's fine."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are we gonna regulate those this this congressional session or not?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. We're not gonna - that's not gonna - Joe Manchin is not gonna break the filibuster for that. I'll tell you that much."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Boo hiss. [Jason laughs] Alright, so because the Original Greaser Bob's place was flush with whiskey and... somfy - what was that?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Sofky. It's like a hominy stew."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Rooster suddenly has confiscated a lot of booze. And so he proceeds to just get ripper and drunk over the course of the next like 10 minutes of the movie. And there's a shot where he's already drunk as they're pulling away from Original Bob's and Mattie looks back over her shoulder and there's just a shot of that cabin going away. And it's a really powerful like, you can tell she's worried about where she's going now."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And a stack of dead bodies outside."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, yeah. I didn't even notice that. That's a good point."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, yeah. She's like, she's really she's like, pushing off from the shore now until like, dark water."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, no doubt. So now we have the cornbread shoot out. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The cornbread shoot out."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Such an amazing scene."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Set it up for us."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh, yeah. So the Ranger and the Marshal get into a pissing match about who's the better shot?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh because he got shot, right? Because -"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Right, yeah, cuz the Ranger is complaining to the Marshal about having shot him and he said, you know, if I wanted to shoot you, you'd be dead or something like that. I don't, I don't miss my shot. And so they start to sort of challenge each other in you know, as a as a young woman. I've seen this at many parties. And I feel like it doesn't happen without the presence of a young woman like, that was like they had an audience for this argument that they wouldn't have necessarily had just the two of them. And they start getting into it and start trying to like talk about different things that they would shoot and then end up throwing the martial ends up throwing cornbread into the air to see like, who's the better skeet hunter basically. [clip of True Grit plays] [gunfire]"
+        },
+        {
+            "name": "LABOEUF",
+            "timestamp": "",
+            "text": "There."
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "There?! My bullet."
+        },
+        {
+            "name": "LABOEUF",
+            "timestamp": "",
+            "text": "Your bullet?! If you hit what you aim at explain my shoulder."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "Gentlemen, shooting cornbread out here on the prairie is getting us no closer to the Ned Pepper gang!"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "One more! This will prove it. Please hold fire! [yells] [gunfire] [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And the amounts of groans and just the sound effects that he's making and the way he moves is wild."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And the way he like throws his arm. None of it looks good. None of it gives you the belief that he is capable of doing anything."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But then he hits some!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well he almost hits LeBoeuf. I mean, like it, doesn't, none of it looks good."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Well LeBoeuf was behind him shooting some of the cornbread out. And I think it was a it was a question at that point. It's like, was it LeBoeuf shooting? But then I think is backed up in later scenes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah, yeah. So they continue on. Their cornbread stores somewhat diminished. But I just have a note of again, the Vistas outdoors there was another shot that was just like a straight back to No Country. So gorgeous. And then now we have the kind of the heart of the you know that the the move into the third act and this is where Rooster is just drunk and he decides that he wants to bow out. [clip of True Grit plays]"
+        },
+        {
+            "name": "ROOSTER I",
+            "timestamp": "",
+            "text": "am a foolish old man who has been drawn into a wild goose chase by a harpy in trousers - and a nincompoop! You, sister, may go where you like. Our engagement is terminated. I bow out. [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "[impersonating Rooster] I bow out. [Merci laughs] A nincompoop! Yeah, it's great. God, it's great. He's just, man. Jeff Bridges. Who knew? Who knew how good he could be?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "[impersonating Rooster] I bow out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "[impersonating Rooster] I bow out. Yeah, I love it. It's really, it feels very, like I mean, it's like a classic, you know, sort of act two break where it's just like, oh, everything's really falling apart and it feels like really broken at that point. You're like, oh, this is like they're just fucked now. Like, you know, like she's out here in the middle of nowhere with like, you know, these two assholes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And they're both leaving, neither of them want her."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is where Merci, that you called out earlier, her face in this scene where she's looking at Rooster who she'd been kind of idolizing and then just like oh, this is not good. And I don't want to be left here."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And she owns up to it to LeBoeuf too. [clip of True Grit plays]"
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "How can you give up now after the many months you dedicated to finding Chaney? You have shown great determination. I misjudged you. I picked the wrong man. [clip of True Grit ends]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And I think it just really shows, you know, that to me, shows her maturity in a way that actually nothing else does. Because it's one thing to be you know, not afraid of the dark, it's another thing to admit when you are wrong. And people go through their whole lives without being able to do that. But 14, nailed it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. And the fact that it goes both ways, right? Yeah. [clip of True Grit plays]"
+        },
+        {
+            "name": "MATTIE I",
+            "timestamp": "",
+            "text": "will not go back, not without Chaney dead or alive."
+        },
+        {
+            "name": "LEBOEUF I",
+            "timestamp": "",
+            "text": "misjudged you as well. I extend my hand."
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "Mr. LeBoeuf, please! [clip of True Grit ends]"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "extend my hand."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "God damn that, like respect given and received. That was beautiful!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Really beautiful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Golly. Love it."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Love they were really too similar to each other to get along right away. LeBoeuf and Mattie? Very similar characters."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, LeBoeuf, clearly, you know, has a lot of, has a lot of drive for what he's doing"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And a lot of conviction in his own rightness, which I think he shares with many. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right. That's right. So she's kind of not sure what to do with Le Boeuf's departure. She goes ahead and sleeps. She wakes up the next morning and she goes down to the riverbed. And this is where we finally get our introduction of Chaney. And we get our first look at Josh Brolin."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Barbra Streisand's step-son! [Haitch & Merci laugh]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "That's right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What?!"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "was you know, taking some notes, but I was watching it through again this time and all I wrote was \"Josh Brolin. Lol. Amazing.\" [Haitch laughs] You know, first you're like, oh, like a couple of horses. Oh, a guy, you know. And then just the look on her face and the look on his face. And you remember she was like, Oh, you know, he was an idiot. Like, I didn't think that he was that bright. And you really Josh Brolin, I don't know how smart he is in real life, but he plays morons just so well."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he really was great."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So, so well, and he just has a dumb look on his face and had dumb look in his eyes. And he really slowly pieces together who she is and what she might be doing there."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"What are you doing here in the mountains?\""
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And he like puts his gun away. Ah, amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, it's amazing that that dude is Thanos also, it's just like kind of like wow, like these are like his two credits, like include like, like the ultimate bad guy and then this moron."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's also a serious film producer and he's a poet."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Really?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean he's a really, he's a really smart guy. And very well read. So I loved that. I will say, so for me. I found this performance to be somewhat weird. It definitely was was off putting. [clip of True Grit plays]"
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "If you refuse to go I will have to shoot you."
+        },
+        {
+            "name": "CHAITCHNEY",
+            "timestamp": "",
+            "text": "Oh? Then you had better cock your piece! All the way back till it locks."
+        },
+        {
+            "name": "MATTIE I",
+            "timestamp": "",
+            "text": "know how to do it! You will not go with me?"
+        },
+        {
+            "name": "CHAITCHNEY",
+            "timestamp": "",
+            "text": "No, it's just the other way around, you're going with me. [gunfire] I did not think you would do it!"
+        },
+        {
+            "name": "MATTIE",
+            "timestamp": "",
+            "text": "What do you think now? [clip of True Grit ends]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "\"All the way back\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "\"I did not think you would shoot\" [Haitch & Merci laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he captures her because her gun jams and is able to spirit her away where we finally meet Ned Pepper!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ned Pepper!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Played by Barry Pepper"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Confusingly. Great role!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is that an ancestor? Is this like a Woody Harrelson, No Country situation?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, no that he does great though. Barry Pepper. Really a great role for him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Fantastic teeth."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Really great teeth."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Teeth and spiddal like the budget for that was very high."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He needs to see the bear guy to get the teeth worked out. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But him shouting \"do you advise I kill the girl?\" and Rooster saying \"she's nothing to me!\" [Haitch laughs] But he's not going to risk it. Right? I mean, that Rooster is no hesitation whatsoever on on wanting to save her life."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he heads out. Oh, yeah. Barry Pepper played Roger Maris in the movie 61. That's weird."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What is that?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's about, it's about like the chase for 61 home runs."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Wow."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think Billy Crystal, yeah. Funny story. This is a total diversion."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Dune Pod?! [Merci laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Directed by Billy Crystal about Roger Maris and Mickey Mantle's race to break Babe Ruth's single season homerun record. I was an extra in this movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What?!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Uncredited extra. They shot this movie in Tiger Stadium in Detroit. And I was in Detroit at the time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is that where the team was based"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "NO, the team in the movie is the New York Yankees. In the movie."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't follow baseball Jason, FYI."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's okay. It's okay. You don't know who Mickey Mantle played for, it's fine. Um, he played for the New York Yankees. And this was set, but they subbed Tiger Stadium for Yankee Stadium. And I was in Detroit and I went to, they said they needed extras, I went down. I sat in the stands to be like -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "How was it?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It was boring as hell, like, I mean, sitting around, they're not doing much of anything. It wasn't great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's my story. Put that in, put that in, keep that whole thing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's definitely not going to be cut. It is not two minutes of self contained story that could be cut very easily. [Merci laughs] So now we sort of rushed to, you know, a multistage, you know, conclusion of this film. We have Ned leaves, leaves Mattie with Cheney, but insists that he doesn't treat her poorly, or else he won't get paid."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Terrible idea."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Do you think he was honest about that or you think he didn't care?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think it's a win win for him either. Like, you know, like, doesn't have to take the girl, doesn't have to take this asshole. And like so either he does what he says and he shows up, you know, he shows up later and that's fine. Or he kills them and he doesn't have to give him his money. Like it's a win. It's a good move for him."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And maybe looking for a way to get rid of Chaney as well."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's a dumbass."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, he is a dumbass."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, looking to get rid of Chaney, looking to get rid of the girl. Like he just wants to be done with the whole thing."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah, Chaney drew all this heat onto him as well in the first place."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, the star meter going through the roof. But also like the rest of Ned's gang is not necessarily, like you got the guy Harold who's doing all the like the cow sounds and the -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it's a weird ass gang. The Ned Pepper gang is an odd bunch. And the doctor!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The doctor, there's always a doctor, right? Like, why?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, you gotta have a doc."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "mean, you need a you need a healer at any raiding party, Matt, you know that. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my God. Good point. Do we have, is Tombstone on the list?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Tombstone's good. I'll be your Huckleberry."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "That's Josh Brolin, isn't it?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, Val Kilmer."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Ohhh okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Val Kilmer, Bill Paxton, Michael Biehn and Kurt Russell! Oh my God. What a movie."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Great film."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So we have Chaney sitting there talking to Mattie. \"Everything's against me. I must think over my position and how to improve it.\" But so it's tough, he's gonna kill her. He's got the knife out her throat and LeBoeuf comes in for the for the save and knocks him unconscious."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yay LeBoeuf! A hero after all, not just a weird child kisser, beater, person. [Haitch & Merci laugh] So that we have finally Rooster v four, and so this is the big showdown going across the field. You know rains in teeth and shooting both. [clip of True Grit plays]"
+        },
+        {
+            "name": "NED PEPPER",
+            "timestamp": "",
+            "text": "What is your intention, Rooster? Do you think one on four is a dogfall?"
+        },
+        {
+            "name": "ROOSTER I",
+            "timestamp": "",
+            "text": "mean to kill you in one minute, Ned. Or see you hanged at Fort Smith at Judge Parker's convenience. Which will you have?"
+        },
+        {
+            "name": "NED PEPPER I",
+            "timestamp": "",
+            "text": "call that bold talk for a one-eyed fat man! [makes rooster noise]"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Fill your hand, you son of a bitch! [clip of True Grit ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Have either of you ever watched The Duke? Have you ever watched John Wayne's True Grit?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. I have not seen the original."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "No. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So it's interesting. So I watched the scene again. And then I switched over and I played John Wayne's version. [clip of True Grit (1969) plays]"
+        },
+        {
+            "name": "NED",
+            "timestamp": "",
+            "text": "What's your intention? You think one on four's a dogfall?"
+        },
+        {
+            "name": "ROOSTER I",
+            "timestamp": "",
+            "text": "mean to kill you in one minute, Ned. Or see you hanged at Fort Smith at Judge Parker's convenience. Which will it be?"
+        },
+        {
+            "name": "NED I",
+            "timestamp": "",
+            "text": "call that bold talk for a one-eyed fat man!"
+        },
+        {
+            "name": "ROOSTER",
+            "timestamp": "",
+            "text": "Fill your hand, you son of a bitch! [clip of True Grit (1969) ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's identical. That scene like literally almost identical. And dialogue for dialogue. Almost exact."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think. I mean, we've raised the dialogue a lot. And a lot of it comes from the book. Yeah. And I think like, I think like they, I mean, I think one of the things that's interesting about this movie and the Coen Brothers body of work is like that it's you know, typically, they make genre blending movies, like they make like a, you know, a film noir movie, like, like with a stoner or they make a film noir set in Minnesota or whatever, like, you know, there's some other, there's some twists, this is just straight. This is pure, straight Western. Which was very strange for them. And I think like part of it was just to see how faithful they could be to the style of the piece. And like, so yeah. It's I think there's a lot of that kind of, you know, gets directly kind of reinterpreted."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And because it was based off of a book, I was actually wondering this the other day, is something necessarily, is this being the second film based off this book, is this a remake of True Grit with John Wayne? Or is this another film based on the book?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So Joel Cohen, I listened to him on the Roger Deakins podcast, Team Deakins. And he described that he was reading the book True Grit to his son, Pedro. And they were just, they loved it. They said it was really really funny. And just a great book. So he actually didn't watch the movie."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I think they've said, they've not seen the original like and purposely didn't want to see the the Wayne version."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So they just set up that scene. That's just it turns out the perfect way to shoot that scene."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wait till you hear it. Wait to hear the dialogue. Like it's pretty amazing how close they are."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Or they're lying. The Coen brothers are not reliable narrators of their own process. [Haitch laughs] Like they're very, they're very squirrelly. Like they both give like kind of evasive answers and just lies as answers. So who knows what they really, but they've said they've not seen the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, so Rooster is able to take out everybody except for Ned who comes around and it's gonna shoot him and LeBoeuf has to make the shot from 400 yards with the sharps carbine, which he does. Everyone cheers."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "And which Rooster previously said, there's no way that you can make that that shot from that distance."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"You could be on the Rock of Gibraltar.\" [Merci laughs]"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "That's right. So good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. But then Chaney comes up and hits LeBoeuf in the head with a rock."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Bummer."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And, and then it is Mattie's moment where she has to decide what to do and she does not hesitate. And she blasts him in the chest with the carbine and sends him off the cliff. That was very satisfying."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It was satisfying but it directly leads to her falling in a pit with snakes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Right. \"Hella snakes\" that's what my notes say. Just hella snakes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, they're hibernating. It's the you know, it's the snake, they set up previously, it was snake sleepy times. And so they went down into their hole. They have a nice snooze and then a little lady fell on them. And that's gonna that's gonna piss off your snakes. That's a good way to piss off your snakes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This was a little over the top for me."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The snakes?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The snakes took me out of it a little bit. I'm like, that is like, like, you know, if you roll d6 snakes and you know, and you get six, that's a lot of snakes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, you know, that's how snakes do."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. And snakes are not really social creatures, right. I don't think that they den together."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Snake party."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's a good point. I don't know if they only kind of ball up for the child rearing. I don't know, I don't know if they would do that. That's a good point. I don't know what the herpetology report on this movie is."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "This moment, it definitely it felt too big. Like the recoil from the gun felt too big. There were too many snakes. I mean, the hole was too deep. She fell too far into it, was just like, it seemed like this weird, almost like a punishment."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hollywood."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "She has to be taken down. You know? It's like that trope from comedies. Right? Where you have the female lead, who's like hilarious and beautiful, but she wears glasses, you know? And then you know, she needs to like get beat up or whatever. And there's a lot of physical comedy often involved, it felt like this was that."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think it's directly biblical punishment for having killed someone."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah. Smite by smite."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, in the in the opening narration of the movie, she says herself, \"you must pay for everything in this world, one way or another. There's nothing free but for the grace of God.\" And I think like the fact that she decides to actually go through with the vengeance as opposed to you know, apprehending him and allowing him to be hanged in a court of law or whatever. Like puts her in a more morally compromised world and like the punishment for it is immediately swift, which is like a theme the Coen Brothers enjoy."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Mmm. And that's why she lost her arm as well."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's why she lost her arm, that's why Blackie has to die. Like all of the denouement of the film is like the punishment for having chosen eye for an eye justice. And like you know, in that not like kind of fast forward to the very end but like, you know, like she ends up becoming like, you know, not you know, it's fine. She chose not to marry or whatever but like, you know, she seems to have like kind of been made cold or something like you know, something, there's not a lot of warmth in latter day, Mattie's life and you know, she in the movies in sort of with just like -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Her walking off, yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Her walking off a graveyard. I mean, like, it's a downer."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "She does have a lot of, even though she has a lot of seriousness, early in the film, she has a lot of joy as well and and can be really spirited. And you're right. It definitely is blunted."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And I think I think that was this journey into this, you know, hellacious, like this kind of demi-world where there is no law, like the grace of God is hard to find. And, you know, she chose this adventure, thinking it was an adventure thing. She was gonna read ghost stories by the campfire and it quickly, you know, she gets splattered by blood and a guy gets stabbed in the chest like in a cabin and like, you know, all these horrible things happen. And I think that probably, you know, affected her for the rest of her life."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well she told Rooster in the courthouse, when he asked her about the gun, she said, \"I'm gonna kill him if no one else.\" I guess I just sort of looked at it as being self defense."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, but she was on a hunt. She was out there. She was out there to go get them. Yeah. I think it's like sort of like all you know, I think there's an interesting, one of the interesting changes in the movie is from the book, or from the first movie, that I read was LeBoeuf's fate, in the movie, in the John Wayne movie, he dies. And it's kind of pretty, it's not hard to imagine that he dies out there waiting for help to come, because he's been concussed and like, you know, half his tongue off and all this other stuff. And so there is just in general, I mean, you know, Cogburn himself has paid a price over and over again for the, you know, amoral life he's chosen to live. And so I think that's just sort of thematically what fate has in store for the folks who choose to exist in this this demi world beyond God's grace."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So it was a choice then that the Coen Brothers made specifically to spare LeBoeuf. [Haitch laughs] Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah or to like not to, to make it ambiguous. Like we don't we don't see him die so we can assume he lives. And she doesn't know what happens. You know, she says she doesn't know what happens to him."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mmm. Dang!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "So interesting. It does, it does really remind me of No Country. Yeah. Like, you know, No Country for Old Men, God, which is just when I think honestly, one of the greatest films of all time, and that the last shot of that film, when he comes out and he wipes his feet, and just like this tiny moments that reveal, ugh, so much. They're just such masters."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a tough one. Yeah, it's it's a great movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Anybody who hasn't listened to an episode on No Country for Old Men of Dune Pod. I'll provide another link to it. One of our best episodes and absolutely phenomenal movie."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's a great movie. The better the movie, the better the episode of Dune Pod. [Haitch laughs] Or the worse. It needs to be a really bad movie or a really good movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There you do. Alright, any anything else that we want to call out? I think we basically hit the ending really well."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think you, Matt, you said you thought this movie is more uneven. I feel like your, I think your participation in this podcast suggests that you like this movie. Why are you a liar to me in DMs?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, I definitely I enjoyed it. But I would say this is probably for me, this is like a three and a half star or a four star movie. Versus like Lebowski or No Country are like, unambiguous, five bangers, like amazing movies. So for me, part of Joel's performance, this was the first performance of his that I saw that I was like, ehh, that was a little, was just weird. And it didn't quite work for me. And then this finale, exactly, as you said, Merci, it's just like, too intense, a little too intense all the way down in hell looking at the light up above, you know, it's just a little it was a little too heightened. But now that you've laid it out Jason in the way that you did, and tied it back to the literal intro lines of dialogue it makes a lot more sense for me now, so maybe I land at four stars."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "You can see why they did it. I also agree, it's not I don't think a top five Coen Brothers movie. I doubt that would be the case for anyone. I mean, the Coen Brothers themselves, I feel like are, they're just, you know, better than many other filmmakers. But it's not the best. I would say it is uneven. I remember watching it and one of, actually one of the things that causes me to walk out of the movie is narration."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh yeah."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "If there is a narrator at the start of the movie. It's usually a really bad sign, like a really good sign. Because it's just a classic, I mean, you can even just do it in post."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Lazy trope."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh, this didn't work. Like let's stitch it together. And so I did like that it was really just a bookend of her voice as young woman and then her voice as an adult and pairing those together. But I just, you know, I feel like there was so much more about that character that could have been fleshed out. She remained kind of this Western trope."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I should not add my own voiceover narration to the beginning of this Dune Pod episode?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Well, now you have to, so. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, Merci, who would Tilda Swinton play if you were recasting one role in True Grit? Who would Tilda Swinton play?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Many good options for this one."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "God, so many. My initial instinct is just Rooster, because I mean, Tilda with an eyepatch with a drinking problem. Like I would watch a movie about that character! [Haitch laughs] How incredible."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Strong. I like it. Jason?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "would go Ned Pepper. I'd like to see her as Ned Pepper. Although Barry Pepper was great. I would just I think, you know, I think she could do something fun as a gang leader."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Then I'll go with a small role and put her in as the Colonel during the negotiating. Doing the horse and pony trading. That would be awesome."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "She can do anything."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "She can do anything. A lot of choices in this one. She could play the kid."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "know. I was thinking that would be the other funny thing, is like Mattie Ross with like no acknowledgement of the age difference whatsoever. [Merci laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah, exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The kid, she's the voice of the kid is the voice of Gwen Stacy in Inside the Spider-verse movie. That's one of her other credits."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hailee Steinfeld?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hailee Stanfield."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, she was also in Bumblebee, which I didn't see that was the Transformers movie that was supposed to be good."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't believe, I don't believe that."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "also quite enjoy her pop music career."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, she's got, she does songs."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, really?"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "gotta say, she has some bangers. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh wow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm not familiar with her music."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "She's also the young Hawkeye in the Hawkeye TV show, which is coming out and that is based on one of the greatest comic book runs of the 21st century. Matt Fraction's Hawkeye, Matt Fraction and David Aja. Which is highly recommended. There'll be a link in the show notes to check that out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, great. I have not read that. [interim soundbite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, let us get into letters."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Letters!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I've a couple of letters, and then just a couple of voicemails. So the first one I missed this last week from Pat Lusk. So here we have a Tenet focused one. We have \"Sreetadop Podateers\" That's a palindrom. \"Thanks for another terrific episode with excellent insights from the industry. I hope Tim will be able to join again to offer his insider perspective. I quite enjoyed Tenant and as usual found myself agreeing with nearly all your takes.\" Did you walk out of Tenant?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "No, absolutely not. Also, I would have had to leave my house to do so. But I did watch it with subtitles on. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Walked into the kitchen."
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "love Christopher Nolan."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You gotta have subtiltles on. Yeah. Okay. Very good. We have MG coming on in two weeks for Interstellar. So finally, it'll be Interstellar crying dot GIF."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm excited. I haven't watched that, I've only watched that one once. I'm excited to see it again."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Same."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oooh. It's very good on rewatch."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Come on Tars! [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"Probably the biggest area of divergence for me was John David Washington's performance. It reminded me of Keanu as Neo for the first matrix film were the heroes but much of the movie in a state of near befuddlement. But Reeves was able to pull that off a lot more successfully than Washington.\" I've never heard anyone refer to Keanu as Reeves before. I've exclusively only heard Keanu. But yeah, \"With that nitpick out of the way. I thought the rest of the cast was truly outstanding, starting with a career best performance from R Patts. I thought he was nicely weathered in this film.\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes! That was my take! I'm glad to have support."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was. It's incorrect."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't agree with the Washington take, but I do appreciate the support on this point."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Did you see Good Time?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, I still haven't seen it."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "No, I haven't seen it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Good Time is excellent. And I forget what the other one was that we -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The Lighthouse. [Haitch laughs] The weird black and white movie."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Oh, yeah. I haven't worked myself up to The Lighthouse yet either."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't even know what that's about."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Great date movie. Not. That's an amazing movie. Absolutely incredible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Does someone get turned into a walrus and that one too?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, I mean, a lot of weird shit happens. But it's really, really well done and really famous. Or really funny."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "[laughs] Really famous."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"I could go on much longer on my thoughts, but I'll confine myself to a few comments.\" These are more comments. Alright. I'm going to put a 90 second limit on emails, please. We love hearing your thoughts. I just I can't read it all. They immediately turn to the fact that protagonist was fighting himself in the free port. That's right. They would cast Tilda Swinton as Dr. Expository. Good idea. Priya was well conceived, and they are glad that gave her a bigger role. The airplane crash in Oslo reminded me of nothing but the slow motion plane crash in the comedy classic Airplane. Did anybody else get those vibes?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Absolutely. Yeah. That's what I thought of as well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is awesome. Excited to hear Blue Velvet, which is coming, and was less excited about Lebowski. I'm sorry, Pat that you didn't like Lebowski. \"PS, Michael will throw me out of the club if I don't mention this. It's ASA Podcasting for A Skyrim addict podcasting.\" That was the podcasting crew that these guys ran in."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Pat, thank you for your email. We appreciate it so much. Thank you for your thoughts."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a great email."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Next up we have Sofia Jones writing back in. Sofia says \"Hey, guys, it's Sofia. Guess what? I'm behind on the pod again. I've been busy but I just got a chance to listen to your Lost Highway episode. I really enjoyed it. I'm steadily becoming more of a David Lynch fan over time and I'm currently taking his Masterclass.\" Merci. Are you taking any Masterclasses or have you?"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "have, yeah. And I'm friends with the Founder of Masterclass, incredible company."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, cool! What was your favorite Masterclass that you've taken?"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "am a lifelong fan of Chris Voss."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mmm. The artist?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "The difference negotiation."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "The former head of hostage negotiation for the FBI."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Interesting."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "He's incredible."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think April read that book."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "It's so good. The Shonda Rhimes one too, all of the writing ones are fantastic. Especially you know, in our day jobs as PMs, if you're a great writer, you can really change minds, move mountains, convince engineers to do pretty much anything. It's fantastic."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice nice. Excellent. \"So far, the only movie I've seen of Lynch's is Dune, which meant it was really nice to hear about one of his other films. Like you guys were saying about the opening scene of Lost Highway it seems like Lynch loves to base scenes on random things that have happened to him. I believe there's one in Blue Velvet to hearing about the way he creates his art is wild. Anyway, just wanted to write again and let you guys know, I was still listening and keep up with the pod. Thanks, Sofia\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's awesome. It's great to hear again from Sofia!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, love it. Sofia, keep writing. \"PS. I went the whole episode not knowing you had the author of I Am Not Okay With This on with you. And I am a huge fan of the Netflix show. I was really sad it didn't get a second season, but I'm still periodically rewatching the first one, it was an awesome surprise to know I've been listening to the author the entire episode.\" That is of course referring to Charles Forman, aka Chuck from BAT & SPIDER who was on the pod with us. He did both I Am Not Okay With This, as well as The End of the Fucking World on Netflix, which are both incredible shows that people should definitely check out. Nice. Thank you, Sofia."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's great. It's nice to hear from her again."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Last letter is from Bryce Kelly!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, that's great!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "From Singapore."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Lion city."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"So this story was initially told to me by a roommate from 2001, whose dad was in Hollywood. He directed a lot of movies, but most notably, he directed the Cheech and Chong movie, no one ever saw called Yellow Beard, which I saw with my mom, and features bare breasts. Nick stated way back when that Walter was based off his neighbor in LA Westwood, who was friends with the Coen brothers. After the movie became a cult classic. Walter was identified to be inspired by a few different folks the Coen Brothers knew. But this one's name is John Milius. Oh, he was also the basis of Big John in American Graffiti and John Milius himself was a big Hollywood dude.\" Yeah, yeah. John Milius."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Of course."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, yeah. Well, he directed Conan the Barbarian."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He wrote he wrote Apocalypse Now."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. \"John Milus was either director or writer somehow involved with notable Hollywood movies like Dirty Harry, Conan the Barbarian and Red Dawn, love it. Basically all movies you'd imagine Walter making. Notably, he was a total gun nut and not a Vietnam vet. He volunteered but had asthma. Anyway, that kind of sets up that maybe the connection between The Dude and Walter's actually the Coen Brothers in terms of people, they enjoy being around.\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Awww. Hi Wysiwyg."
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Here's Wysiwyg."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hi puppy!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Bryce Kelly. That was amazing. Thank you for the information. I will say there is a documentary I believe it is called Milius. And I will provide links to that in the show notes. I have not watched it yet, but it's supposed to be very good. Alright, here we go voicemails very briefly. [voicemail plays]"
+        },
+        {
+            "name": "VOICEMAIL",
+            "timestamp": "",
+            "text": "Dune Pod, this is Cory. I'm so late at calling in, I apologize. Everything just got away from me. Probably even too late to get on the episode. But I'll leave a little message anyway, calling about True Grit, which is an amazing Coen Brothers movie. I really even like it better than the original. Probably because I'm more of a punk kid who subscribes to the Repo Man philosophy behind John Wayne. But that's a whole other story. But anyway, yeah, this is a great film. And, gosh, I'm just out of sorts. I can't wait to hear you guys talk about it. I had a whole thing about westerns and blah, blah, blah. And I just thought it dropped the ball. Oh, well. I'll do better next time. [voicemail ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Don't beat yourself up, Cory! You're the best thing on this podcast every week even when it's not your best effort. You're a star."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "just want to say like, be like Cory, send multiple voicemails. Keep like making improved versions of your voicemail and we'll just put the final one on there and no one will know. Cory that was beautiful."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Take 17. There's another 13 dakes of this we're gonna play right now."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We love you. We love you, Cory. That is it for our listener feedback. Thank you. You can reach us anytime letters@dunepod.com and you can just attach a voice memo on there and hear your own voice on the air. Merci, what do you have to plug in? What are you excited about? What's going on?"
+        },
+        {
+            "name": "MERCI I",
+            "timestamp": "",
+            "text": "don't have anything to plug. Get vaccines. Be nice to one another."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great. Those are good things to plug."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "How about your appearance on the #ANGELS Podcast produced by Haitch Industries?"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "That's right! [Merci laughs] That's right. I will be appearing on #ANGELS later."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Excellent."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "thought you said her parents were gonna be on the #ANGELS Podcast and I was confused. But now I get it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That would make less sense. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's great. I mean, I don't know. I don't know her parents are. They might they might also be guests on the #ANGELS Podcast. They can come on this podcast! [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, thank you so much, Merci. That was really fun!"
+        },
+        {
+            "name": "MERCI",
+            "timestamp": "",
+            "text": "Aw, thank you guys, this was great."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Thank you so much, Merci. [Dune Pod theme fades in]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We will be getting back together with Merci for a live stream of the Dune Imperium RPG from Modiphius. So stay tuned for that coming soon. And that's it for this episode of Dune Pod. I want to thank Jason and Merci for a really great conversation. Next week, Boom, the most popular host of the hit new podcasts, Cinenauts, joins us to talk Zendaya in Malcolm and Marie streaming on Netflix now. If you're enjoying this podcast, follow us @DunePod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune Pod is a production of Haitch Industries. Our artwork is by ctcher and our theme music was composed by Toby Forsman of Whipsong song music. The episode was produced and edited by me, Haitch. Thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

@@ -1,0 +1,2581 @@
+{
+    "episode_number": 99,
+    "episode_name": "Highlander",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:02",
+            "text": "This is a tape tech podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:15",
+            "text": "Hey everybody, it's H and welcome to the 99th episode of Dune pod, your one stop shop to enjoy the new dune movies. This week I'm joined as always by my co host Jason, the Gulf yourself was implied. And by the co host of the paper keg and interview with a podcast vampire podcasts. Jonesy loves beer."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "0:37",
+            "text": "Ah, I just don't understand why you hate something that wants to love you so much."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:44",
+            "text": "We cover the beloved classic starring Clancy Brown Christopher lamb bear and Sean Connery. Highlander. Streaming now on peacock and HBO Max. You're enjoying the show. We need your help. Leave us a five star rating and review wherever you listen to your podcasts. And be sure to hit that follow subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. A link is in the show notes. And now without further ado, Eun Hye land Highlander. Jason there's nothing like taking a nice relaxing vacation."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27",
+            "text": "Yeah, just like time away from everything."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30",
+            "text": "How's it going? Where"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30",
+            "text": "are you an undisclosed location in Northern California. It's going great. Yeah, it's going good. Kids have a pool. They're excited about that. They have a long hallway. They can run up and down. They love that. long hallway is underrated. Yeah, as an entertainment. It's great. They love it. Yeah, the dog runs one of them runs the other one shows the other one. It can go on forever. hilarity ensues. Yeah, Juniper J not so wild about sleeping at this undisclosed location. So that's a bit of a that's a bit of a bummer. It's a bit of a shame. Kids don't sleep. She's 18 months old."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:07",
+            "text": "Yeah. Okay. So sitting down and explaining to her that, you know, good idea to crash out"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:12",
+            "text": "is not gonna work. Yeah, it's not gonna work. Yeah, she's she's just gonna scream. For what? Yeah, yeah. So we'll see. We'll see how that goes. Phoebe also a little freaked out. She's not like used to being sort of outside of her routine either. I feel like I'm like Phoebe and juniper. I also don't like being outside of my routine. You've barely left your house in the last two years. And it's been great. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:37",
+            "text": "I don't see any problems. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:39",
+            "text": "that's been great. The one time I've left my house, I got COVID. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:45",
+            "text": "yeah. Oh, my God. And are you reading anything like you sitting out by the by the pool? Do you have something to read? Are you like doing some projects? Like what's what do you I wouldn't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:53",
+            "text": "say that this is an environment conducive to achieving goals. Like this is like largely just, you know, chasing the small children around swimming. Okay, you know, feeding the small children, washing the chlorine off trying to keep them from drowning themselves or drinking chlorine. Yeah. But at the basics. Yeah, the basics, survival, survival vacation style."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:16",
+            "text": "We are heading up next week to Seattle. And we're going to have a little bit of time there. And then we are striking off we're going to be driving and taking ferries for five and a half hours to go up to the Sunshine Coast. Familiar with us up in British Columbia. Never heard of that. So it's up. It's an area it's a west of Vancouver, but our dear friend of the pod catcher has moved there for the summer to help his brother open a restaurant. I didn't know any of this. Yeah, lol. portata is the name of the restaurant and I don't know exactly what catcher's roll. I know he's doing graphic design in the menus and that kind of stuff. And he's the head portada. Exactly. But so I'm taking a trip and I am going to go see our dear friend, because that's what we do here on Dune pod."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:08",
+            "text": "Are you wait, is this a solo trip? Do I miss that? Oh, all right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:11",
+            "text": "So I'm April and I are gonna drive Okay."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:13",
+            "text": "Okay. Insulin is the British Columbia and sunshine cloak Coast sort of like a naming thing like the Greenland Iceland thing. Like where they call it Greenland even though it was full of ice. Right? So I think coasts just shrouded in fog perpetually. Honestly,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:28",
+            "text": "I have no clue. I've never kind of sought out being there. I do love Vancouver, right. Like that's a great, that's a great city. And I've always wanted to get out into the countryside to do some hiking but I have never done so. And then I just floated it to April it's just like a wild idea to go on up there. And she said yes. So boom, we're doing it. Awesome."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:46",
+            "text": "Love it. Love it for you love it for the family. God bless and Godspeed. We'll see"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:51",
+            "text": "how it goes Sam at four and a half in a car for five hours. Yeah, should be should be just fine. Let me just ask our Where are where do we stand with altos Wos Let's kick it off."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:02",
+            "text": "I got updates. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:03",
+            "text": "here we go. Hey, go toes Whoa, toes. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:08",
+            "text": "yeah. And then eight minutes, shorter than eight minutes. So like last week. As we started recording, I, it was in doubt of whether I had COVID again. And good news is I didn't have COVID The bad news is I had a cold that was like worse than COVID. Oh, no, that lasted for the week. I'm still a little not. I'm not I'm not exactly 100%. The vocal. The vocal neighs allottee. May might affect some some of our ratings this week. But yeah, that sucked. I hate having a cold. He's like study. It's not a germ factories. But it was okay. I was recovered in time to go teach an avocado unit at Griffin's preschool. So it all worked out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:49",
+            "text": "Oh, good. And what was the crux of the avocado segment?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:53",
+            "text": "Avocados are grown from seeds. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:56",
+            "text": "that makes sense. Big ones. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:58",
+            "text": "I showed him the seeds. I showed him an avocado plant. And then I gave him a stuffed avocado take home."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:04",
+            "text": "Nice one each. Are they sharing it? They're gonna like, no, they battle Battle Royale. Each"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:10",
+            "text": "got their own stuff. Stuffy. They each got their own one to take home. It was very generous. They love that. They were very attentive for three. Like it was great. That was a it was really I felt very positive about it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:21",
+            "text": "And were you doing the speech in Italian? No, no,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:25",
+            "text": "I was not. That was not in the cards for me. I was doing the speech in English only."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:30",
+            "text": "Okay, very good. Well, I'm glad you're doing better. You sound good. Vocals are good. So that is working. Nice. Okay, well, then let's get to our other segment. Yeah. dispatches from the war of Elon aggression."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:49",
+            "text": "That's it. That's that. I mean, maybe second only to Kevin's questions that sounder so a momentous day for Elon war of aggression because his lawyers filed letter today with the SEC, saying that the basically the new salvo in their attempts to get out of the deal out of him getting out of the deal to buy Twitter. And so previously, he had been saying it's the bots, these bots are PSAs I don't want to pay for these bots, which was a bullshit reason and not a valid reason for breaking the merger agreement. Sure. And the the new reason the highly loyal third reason is not the bots per se, but it's that Twitter is not being forthcoming with the information necessary to fact check their their claim that the bots are only 5% of accounts, which is itself pretty thin, still, based on legal opinion, but is is at least like now something that contractually they can dispute and so either be the grounds by which they renegotiate the deal, or break or or blow or blow up the deal completely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:00",
+            "text": "Right. Right. And I guess your point would be, ultimately that they still want the deal to go through because it's at such a premium and so if they had to take a discount that would still"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:10",
+            "text": "still do it. Yeah, it's they'll still do it and that the company has like declared itself the at least the board has declared itself bankrupt. have any other ideas. And Jack has said that Elon is the only solution he can trust and like, you know, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:24",
+            "text": "come on. That's, that's Jack. I mean, well, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:26",
+            "text": "mean, Jack's off the board now. So he's actually no longer involved in the company. But like, it's sort of like the it's sort of like the it's sort of like where else are they gonna go now? So yeah, we'll see how it goes for them."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:37",
+            "text": "I can't wait. I'm still like I'm holding on to this idea that you know, Twitter legal can sue him into oblivion. Yeah, or at least a billion dollars and that somehow miraculously they will emerge with a new verb and, and go take on the world. So so we'll see. I'm more optimistic than you are."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:54",
+            "text": "We're rooting for you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:57",
+            "text": "We love you Twitter. You hang in there. Alright. Well, from Twitter and all of that. You know, and the trials and tribulations. What about us? Countdown to 101 thing. It's 99. Jason"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:12",
+            "text": "tonight, Episode 99. This is as far as we go. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:16",
+            "text": "mean, it could happen right? This could this could be the end. So we're doing tonight, we have our dear friend Christopher Jones, aka Jonesy loves beer. He was the star of our Skyfall episode our crawl episode and is the co host of both paper keg and interview with a podcast vampire. Which came out of retirement 14 months since their last episode Mission Impossible three covering the career of Tom Cruise to do Top Gun Maverick."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:48",
+            "text": "Yes, a momentous a momentous time for the interview with the podcast vampire crew. Great"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:56",
+            "text": "episode. They are definitely feeling a great episode. Did you see Holy shit, man that That movie was down 29% week over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:04",
+            "text": "I saw it as like 32 or something like that. But yeah, like it's the movies killing it. It's gonna be that it's going to be the avatar of playing movies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:12",
+            "text": "Yeah, I'm stoked. I'm sorry, except maybe they're getting sued for not owning the rights. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:16",
+            "text": "I'm sure that'll be worked out. I'm sure that'll be worked out. But that is a funny details that story came out today that they do not actually own the copyright to the Top Gun story. And someone was like, I've been sitting on this for 40 years and now it's my time and generally when someone emerges after 40 years it's not the most credible"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:34",
+            "text": "right right Undertaker sitting up dot GIF. Well, we're really excited to have Josie here and we are talking tonight. Jason, the beloved classic fantasy film starring Clancy Brown, Christopher lamb bear and Sean Connery. Highlander. Literally"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:52",
+            "text": "only a monster would hate this movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:56",
+            "text": "Stay tuned. This film is currently streaming on peacock and HBO max. So if you by chance, have not seen it. Check it out. We and we will get it going. And now are you ready to reveal next week on Dune pod?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:13",
+            "text": "Episode 100 100. It"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:18",
+            "text": "has all been leading to this episode 100 The season five finale. So this was a this was a tough tough one to figure out. But I have one I decided to go back with one of our favorite guests who is cementing his spot in the five timer club as well as the guest for our season four finale who blew Tron Legacy out of the water with his incredible insights. We are of course talking about co host of 70 millimeter famous artist Danny has."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:57",
+            "text": "Ooo, personal friend, personal friend of Star Wars boss John fabro."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:04",
+            "text": "Oh yeah. Cozy photo that we saw come across this week. So so we love Danny he was with us. You know going all the way back to Rogue One. He did nasaka with us he did the dune IMAX premiere with us which was amazing. From Florida late at night, and and then obviously Tron Legacy. So we are we are very excited to have Danny and we are picking off one of the big ones Jason Disney's classic 1980 sci fi film the black hole."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:38",
+            "text": "Oh my god. When will Maximilian when will Disney return to children's sci fi horror? When will when will Disney? Yeah, make another Danny Boyle sunshine for kids?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:56",
+            "text": "Soon, soon, we can only hope. Yeah, so we're really, really stoked to have Danny joining us episode 100 It's just another episode. I will say if anybody wants to send some voicemails favorite moments on the pod. We'll be happy to look back and and play those and just enjoy. It's been a hell of a wild ride. So we're pretty stoked to get here. All right. All right. Well, so shall we get into some do news?"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "13:21",
+            "text": "Would you like to know more?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:26",
+            "text": "Episode 99. I thought we were in the nadir. Like within the last couple of weeks. There's literally nothing going on right now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:33",
+            "text": "Now we don't have any news right now. It's okay. It's a quiet time where the fields or the fields have been planted and we we see what what crops will emerge. Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:43",
+            "text": "well, I will send a link that came to us from Nexus nine of the clan MacLeod who sent the dune metal medley by gameplay metal which was an awesome video of these metal heads taking Hans's 2021 score and absolutely shredding it up. It's a hell of a lot of fun so check that out a link is in the show notes. Let's welcome just quickly a couple of new discord friends starting with Marcus LV IC was trying to figure out if that was a Roman numerals LV IC it turns out is not a valid Roman numeral No. Nope. Unfortunately, we had your Elliot we had Cody Keenan. Yeah. What's the story with Cody? Cody"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:45",
+            "text": "Keenan, former chief speechwriter for President Obama has a book coming out in October."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:52",
+            "text": "Yeah, a nerd at DC Comics nerd"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:54",
+            "text": "and a DC Comics aren't Superman or maybe this ties in to some future podcast appearance who can Hey, oh"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:00",
+            "text": "my god well Cody Welcome. Glad to have you in the discord and last but not least from the paper keg discord our dear friend Juki penguin. Yeah on fam. Yeah, so we're really we're really happy. It's been a great week and it's so awesome to see everybody and we really appreciate everybody dialed in live tonight in our events channel so what do you say? Should we get into this you want to bring?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:25",
+            "text": "Let's bring in Jonesy, who I'm just finding out his name is Christopher I don't like that. I wish I wouldn't have known that. I like him better as Jonesy loves beer."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:39",
+            "text": "So first of all, I just want to say that this podcast recording is holy ground. Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:47",
+            "text": "He is trying to he is trying to inoculate himself against the the roasting that he's going to take for this."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:54",
+            "text": "Everyone is saying here. Everyone is safe here. Unbelievable."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:58",
+            "text": "Unbelievable the things that are about to happen. It's horrible. I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "16:04",
+            "text": "just want to know what Gregory Wyden and Russ Mulcahy did to you? Yeah, what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:12",
+            "text": "did they do? Were they at that gymnastics camp where you got bullied? No, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:16",
+            "text": "this was only two short years after that. That is a good point. I hadn't thought about that. I was in a delicate state rebuild. You're traumatized."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:21",
+            "text": "Yeah. Re you're rebuilding your personality."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:24",
+            "text": "Oh my god. Well, we are gonna get into it. You know, those guys will answer for their crimes at the appropriate time. But first of all, Josie you're here, my friend. How are you?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "16:37",
+            "text": "Welcome back. I'm trying to challenge anyone for the prize, which is the most guest appearances on Doom pod."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:45",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "16:46",
+            "text": "now is the time of the gathering."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:49",
+            "text": "This is number three, so you're shy. You're shy if you produce"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "16:52",
+            "text": "like, what? 1617 I gotta, I gotta get double digits."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:56",
+            "text": "I think protos like seven or eight. Yeah, sure is also high up there. So you do have your work cut out for you. But, you know, we we are, you know, casting for a third living, you know, semi contiguous hosts. So you know, I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "17:12",
+            "text": "mean, semi regular could be the name of my sex tape. So, you know, I'm, I'm ready."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:17",
+            "text": "And I know some of those proto appearances don't really count numerically either because he was like, astral projecting. Like"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "17:26",
+            "text": "he used to say proto exes isn't in the room with us right now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:30",
+            "text": "He's like vibrating. He's in the corner. He's like, levitating. Right? Vibrating. He's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "17:34",
+            "text": "on a different frequency. He is the quickening"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:39",
+            "text": "he's the stag. I feel in"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:44",
+            "text": "the glued on antlers. Oh, no. Oh, my God. Well, Josie, we you know, this is episode 99. And so we thought you know, the time is ripe for you to make your return and for you to pick one of your favorite films of all time, Highlander. Yes,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "18:02",
+            "text": "this is one of my favorite films of all time. If you were to look me up and letterboxed Jonesy loves beer. You will see this is one of my top four. I love lists Mohicans. Those are Indiana Jones that always crusade probably my four favorite"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:17",
+            "text": "films of all those are great. Why Connery's to Connery. Wow,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "18:21",
+            "text": "I don't venture much out of the 80s and 90s. If you can tell. Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:25",
+            "text": "why why would you if unless you were forced to. That's great."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "18:28",
+            "text": "Yeah, so the fugitive is like my, it is like my comfort food. Like every time there's a bad spell in my life, like get under a blanket. And I just put it on the fugitive. When I think about you know Tommy Lee Jones Red Scarf. Just love it. I don't care. I don't Yeah, I am trying to solve a puzzle. I just found a big piece."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:56",
+            "text": "So well, let me just say I saw the fugitive in 1993 on my honeymoon with my ex wife. That's what Sorry. Sorry. We were in we were Oh my god. Yeah, we were at Kings Beach in Tahoe. And so a saw the fugitive in the theater. B went to a comic shop and bought Dark Knight nightfall, Batman nightfall on your honeymoon. Also on the honeymoon. And then the other thing was my my reading while I was relaxing on my honey room. A honeymoon was the Windows NT 3.1 administrators god."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "19:36",
+            "text": "Oh my as I know when I'm trying to get a girl. Ready. I bring up my Windows manual."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:42",
+            "text": "No wonder this marriage was great. Where was this honeymoon at?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:45",
+            "text": "This was Kings Beach Tahoe Kings Beach. i Okay. All right. Yeah. So it was chill. It was show the fugitive good movie."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "19:52",
+            "text": "That was a great, great movie. Yeah, good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:55",
+            "text": "Good movie. Well, I'm glad you're you're knocking these off. You know you did. Highlander on favs you did Indiana Jones and the Last Crusade on 70 millimeter last year during Indiana June's why we"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "20:07",
+            "text": "didn't do the fugitive for 99 Is that anyone's guess? Stay tuned to me and I'm maybe one and this is how I hope audiences will come back in from so 103"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:18",
+            "text": "we're booked out to like 115 right now"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:21",
+            "text": "where we always don't play hard to get oh is ever in for Jonesy. Okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:25",
+            "text": "All right. We can shoehorn you in. Well, Jonesy. So we were alluding before you joined us. The fact that you have come out of podcasting. Yes. To record Top Gun Maverick on the interview with a podcast vampire, the top retrospective podcast that you host with slim and Dale underscore a a bet"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "20:44",
+            "text": "no one saw coming. I will come out of retirement to come back to a podcast that was actually on. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:50",
+            "text": "you're doing a lot right now. You're Yeah, how does it feel to be back in the saddle?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "20:55",
+            "text": "You know, I have enjoyed semi retirement for quite a long time. And being Irish, I can't give or receive compliments, right. So I'll just say this, you know, recording with slim and Dale, you know, as big a large chunk of my adult life. And a lot of it feels like coming home whenever we get to do one of those shows. So, you know, you keep listening. We'll keep making them. You know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:26",
+            "text": "I listen to that episode. And it was a delight. And I think you guys covered Top Gun, the first one in 2015 or something like that. I think it was like seven years. Easy. Easy, Jason. All right. I mean, it was almost as long as almost as much time in between the release of Top Gun and Top Gun Maverick. Yes. Like it was essentially the same scale of time. Listen,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "21:50",
+            "text": "we we don't go by the Doom pod standard of releasing every 90 minutes. We liked more."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:57",
+            "text": "I loved it. I loved it. Hold on, hold on."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "22:00",
+            "text": "I'm never good for my mental health. That movie. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:03",
+            "text": "It's a great movie really, really enjoyed it saw it on IMAX in San Francisco. So Jason, you should know like over 300 episodes of paper keg, these guys used to record in person, they have a drive to one person's house and record two episodes back to back and then drive home at like two o'clock in the morning or whatever. Back to Philly or New York or whatever."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "22:27",
+            "text": "Let me set the record straight for the wiki. When you say these guys used to drive there was never a single person other than me that did the driving. Okay, so not another person was ever behind the wheel commuting to the depths of New Jersey. And Dale Dale would come up by about Dale also did some driving but you know the other two hosts slept in the car. Yeah, slept my kid Toria snapper."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:52",
+            "text": "Speaking of the other hosts on this podcast. Let me just pick a knit for a second on this this gun Maverick episode which I did enjoy quite a bit. I think it was I looked at the timestamp approximately four minutes and 37 seconds into this episode. Before the Denis Villeneuve slander began Oh, yeah. From not from you from one of them. One of the other from one of the other co hosts, just for some reason, feeling that we had to compare Top Gun Maverick to, you know, Blade Runner 2014. Which I don't really think is an apples to apples comparison. But somehow the apples had to be brought out. I just don't I don't I don't know. It just seemed it seemed to, you know, kind of impugn the integrity of of the interview with the bank as vampire."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "23:42",
+            "text": "Well, you know, as as a a contracted employee of H Intersil. Industries, you know, not on the payroll. But I've certainly you know, filled out a voucher. I felt the need to step in. And yeah, Denny view news. Yes, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:00",
+            "text": "a free for the record noted it Yeah."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "24:02",
+            "text": "What the record blade for 2049? I could watch two more hours now. Ryan Gosling, just you know, going after bad. How about how about in the future? Their patrol cars are still somehow flying Dodge Chargers? As if dodge has a license in perpetuity. Yeah, to make sedans."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:30",
+            "text": "Yes. Solid. They got locked up. Yeah, they've gotten really tight with by by domestic police unions. Yeah, exactly. The fix is in. Alright, well, we are so thrilled to have you back. And and we are thrilled that you are back in the saddle podcasting, and with us tonight. And so I think are you guys ready to get into I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "24:54",
+            "text": "mean, I've been getting in a Highlander since 1986. So I'm always at the ready. There may be"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:59",
+            "text": "only The fun"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "25:04",
+            "text": "All right, there can be only a ton to talk about. That's right. All right. I'm sorry. I'm"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:08",
+            "text": "done. Here we go. Highlander is an epic battle fought across millennia. Connor MacLeod is a valiant warrior born in a Scottish highlands of 1518. He suffers a mortal wound at the hands of the terrifying Black Knight, the Kurgan but he doesn't die. Cast out of his clan in fear of witchcraft. He meets the charismatic Ramirez a 2500 year old immortal, who teaches him what he needs to know to survive until the final contest the gathering. But when the Kurgan kills Ramirez McLeod spent the next 200 years on the run, ending up in New York City. Now the gathering is here and pursued by a relentless forensics expert Brenda and the Kurgan, MacLeod will have to conquer his fears and embrace his destiny to return to who he was born to be. The Highlander."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "26:14",
+            "text": "How can you say I hate this movie? That was a wonderful oh, what synopsis? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:17",
+            "text": "yeah, that was great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:19",
+            "text": "This has got a great the story is is great. But yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "26:23",
+            "text": "we're we're all friends. Would you agree? Ah, we've known each other for some time adjacent. I like to feel like, even though we've only known for a short time, our affection for each other as grown quite a bit."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:36",
+            "text": "They are spirits to each other in previous lives. Yeah, well, 100% When"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "26:40",
+            "text": "we were, you know, a mortals in ancient Egypt, we knew each other back then in previous life. But ah, I just don't understand why you hate something that wants to love you so much. Yes. Now, this isn't an intervention, per se. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:56",
+            "text": "Well, though, I don't want to start by you know, just sort of like making a broad statement about this film like we can we can just get into it and talk about what works and what doesn't work. For me. The"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "27:05",
+            "text": "backpedaling has begun. Okay. All right. Good. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:07",
+            "text": "like it. I like to keep them on the backfoot. Just from the beginning. Don't give them any purchase. No, no,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:13",
+            "text": "but why don't you start by telling us, you know, what was the history that you had? How did you first see Highlander? And give us that context? Sure."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "27:21",
+            "text": "I have been thinking about why I love this movie ever since I found out that you hated it. Like what are my deep root causes of my love for this movie? So and I've said this on faves, and so I don't want to tread old ground. But there used to be a local cable network called PRISM. And I don't know if you guys ever had it. But my father like we never like, you know, poor from the south never had a lot of money. He would. He paid for prism, and he would record movies. And we had this wonderful pirated bootleg, basically library of movies on for prism. And one was Highlander and I saw it. I saw it at an age where like, I had not been yet introduced to the flawed protagonist. You know, like I was still coming from stories where like comic books were like the heroes were right, and good. And they had no flaws. And they were always beating these bad flawed villains in Highlander blew my mind back then. Yeah, it was a protagonist that had you know, was not 100% Good. Or 100% Bad, who was deeply flawed, and kind of tragically tortured to walk the earth until the time of the gathering. And for my young extent, expanding mine that was like mind blowing for me. And, you know, I love Sean Connery ever since the Bond movies so like ours, and the Queen soundtrack, like I had that on vinyl like that did a lot of heavy lifting. For my love of who knew that sword fighting to incredible rock music would get me at such a young age like catnip like, I mean, I can't forget enough Flash Gordon"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:02",
+            "text": "from 1982 featuring Sam Jones and a queen soundtrack and like, Yeah, I mean, you can't go my favorite one of my favorites of all time, I do just want to call out because I listened to the faves episode with you and slim. You were describing that your dad would record the flyers, games or whatever, on prism, but the tape would keep recording. And so after the game sometimes would be like, effectively Skinemax Yeah, these are what I said."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "29:29",
+            "text": "I think one time and this is the this is a new exploit. I didn't say I remember distinctly because I've been racking my brain all week trying to think all these memories and there's a lot of good memories of me and my old man is preparing for this show. But I remember watching the show in our old house of Willow Grove. We had a big sectional sofa and I have Highlander on. And I mean, I didn't sleep then it's like 2am And I've got I mean and it's like here we are. So I you know I was Did it the you know, Mac kills the Kurgan we're off to Scotland and then it cuts to like Elvira Queen of the dark and like you know I'm like all of a sudden it must have distracted woken up my father because I must have jacked the volume way down low. Right? Like it went from being allowed to and of course that sets up the signal. So parents something evil was happening. And I just remember my father's voice from behind me the senator cows were you looking at I like jumped out of my skin. And I think I threw the remote across the room and ran into my bedroom. You know, nothing bad was going on but you know, give it 10 more minutes and it could have been Yeah, so that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:40",
+            "text": "was needless to say there were a lot of you were you know, kind of there were a lot of hormones floating around and sure,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:46",
+            "text": "yeah, everything yourself."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "30:48",
+            "text": "It was like 5050 After flyers game it could have been Elvira mistress of the dark or you know could have been Denver the last dinosaur you never knew what was going on."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:58",
+            "text": "It's amazing program against the flyers like I didn't really know I mean explains a lot about Philadelphia, really"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "31:05",
+            "text": "Zalman kings Red Shoe Diaries, you never do? What was gonna come on?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:10",
+            "text": "That's right. Jason, how about you? What was your? Well, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:12",
+            "text": "actually pretty similar. Like, I mean, I've talked about before how my dad had a video rental store. And like, we had a, we had a bunch of dumb stuff, a bunch of like, you know, stuff that had been taped over. But we also just have like a bunch of stuff that have been recorded off a TV, prism, you know, it was obviously Philadelphia area thing, but we had our own, like, local, you know, local TV station that played movies on on Saturday afternoons, and this was just one of them. I got tape recorded in that, like we just had, and I saw a billion times as a result. And yeah, and had that sort of same thing of like, there's something very weird going on in this one. And like, you know, what, what is it all you know, what does it mean? And like, why is he screaming and like, you know, in the Kurgan was just, like, deeply terrifying at some level. And so yeah, it was like another it was it was like Jonesy, like something that felt like a discovery that had sort of been left behind accidentally in the house. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:05",
+            "text": "And I think for me, I didn't I don't think I saw it in the theaters because in 86, I was 16. So I wouldn't have been it was rated art. Right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:13",
+            "text": "I don't think so. I don't think so. There's nothing. There's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:17",
+            "text": "boobs and a lot of decapitation."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:19",
+            "text": "Yeah. Yeah. Probably G was like, right. It was like on the same deal with Bambi."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:24",
+            "text": "All right. Well, I either saw it. Maybe I saw it in the theater. I don't have a distinct memory of that. I think I probably saw it on video. And I thought it was fine. Like I didn't have like a huge connection in the way that it was right. It was right at our inference. Yeah. All right. So I think I think I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "32:42",
+            "text": "googled the Toyota Highlander keynote, the first point seven on safety scale."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:47",
+            "text": "It was white seven. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:51",
+            "text": "amazing. So yeah, so it just didn't it didn't hit in quite the same way for me. But let's let's just talk first of all, just quickly, some behind the scenes in this. So one piece, so Gregory Wyden, who you referred to earlier, he wrote the story while he was visiting Scotland on vacation, and he basically saw a museum in Edinburgh, saw suit of armor and wondered what it would be like if the man who wore that armor was still alive today. That's kind of amazing. This concept of being struck, writing it as an assignment at I think, USC and then selling it at the behest of his professor for 200 grand before he's even graduated. That's That's pretty impressive."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:30",
+            "text": "Yeah, for sure. Yeah. It's a very useful vacation. It turns out like a high leverage vacation."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:36",
+            "text": "That's right. But the and the concept of it is, you know, the overall concept of the story, obviously, is a really brilliant one. So in terms of near misses, they originally cast Kurt Russell"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:50",
+            "text": "as oh my god, that is, that is kind of heartbreaking, because that really would have that really would have solved all the movies, few issues. I feel."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "34:00",
+            "text": "Sorry, you broke up sounds like you said the movie had issues but I understand what you said. Lambert."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:05",
+            "text": "Lambert is the one thing I can't I can't worry,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:08",
+            "text": "we'll get we'll get into it. But"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:11",
+            "text": "with Kurt Russell, it could have really been a different a different animal. It really could"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:15",
+            "text": "have song but so he pulled out to do Big Trouble in Little China."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:20",
+            "text": "We should have given that to Lambert. In retrospect, let's see what Lambert Lambert could have done with big trouble both featuring"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "34:29",
+            "text": "men trench coats surprisingly. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:31",
+            "text": "story. They did say so they listed some other folks. Michael Douglas, Sam Shepard, David Keith. Although I like the idea of Keith David, but I think that's all like just like theoretical stuff. But Mark singer, hot off Beastmaster was also considered Wow. And so you can see the difference of whether they're making a mainstream movie or whether they're making like a big movie fantasy knockoff type thing right? Definitely count"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:59",
+            "text": "or McLeod would have been Magga. And like in like if he had made it until and to current times, so the mark singer, like Beastmaster casting makes a lot of sense. Yes. My fantasy casting with if I could bend the rules of space and time would have been Keanu Reeves as Connor MacLeod. Like, I feel like I feel like something like that would have would have really changed the whole like, I think it would have become like the most important movie of of its time"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "35:32",
+            "text": "of our time. Yeah, with all the young canneries like you're talking like a matrix can bill in his head era like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:41",
+            "text": "matrix candidates? Not quite all right. Yeah, I mean, like you obviously it doesn't work like you take a child cannery. What is it? Like AJ"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:54",
+            "text": "apparently Arnold Arnold turned down the role of the Kerrigan not surprising, really,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:03",
+            "text": "for the best."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "36:04",
+            "text": "I mean, Clancy Brown can't be improved kills it. I mean, casting gear kills. Yeah, you know, everybody,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:11",
+            "text": "everybody he hasn't made. Clancy Brown has definitely a standout performance for most of it. There's I have some problems later in the film, but also Virginia. Madsen was considered for Brenda. But then came back in Highlander to the quickening as the new love interest. So yeah, anyways, those are some you pick the wrong ones? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:37",
+            "text": "Oh, Highlander. To you say?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:39",
+            "text": "I don't know if she picked it. She was yeah, just up and coming at that point. All right. So this film begins with an opening crawl. From the dawn of time we came moving"
+        },
+        {
+            "name": "Highlander sample",
+            "timestamp": "36:49",
+            "text": "silently, down through the centuries, living many secret lives, struggling to reach the time of the gathering. When the few who remain, or back to the last. No one has ever known we were among you."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "37:09",
+            "text": "Don't know? And then when that song hits, are you kidding me? I'm up out of my seat."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:19",
+            "text": "I did actually forgotten the queenless of, really, of this whole thing. I sort of I'd sort of forgotten until I was rewatching it and then you're just like, wait a minute, how many songs did they write for this move an entire album,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:33",
+            "text": "album Jersey town the story about how it happened."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "37:37",
+            "text": "So they had been? You know, I guess somebody on their management team was friends with Bill Panzer. And so they got to ask him to do the soundtrack. So they get a private screening of Highlander and they were so inspired by this movie. They came and they couldn't stop writing songs for this. Brian May wrote that he wants to live forever. In the castle. On the way housing Yeah, amazing. On the way home"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:06",
+            "text": "from the screening. Yeah, that is fucking unbelievable."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "38:10",
+            "text": "But that bit so I don't know how you hate this movie. And I love like you and Ryan. Me aren't that far apart in my mind."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:18",
+            "text": "Brian Mays a turf so maybe? Yeah. But he did. He was he did perform at the Queen's Platinum Jubilee. So he's got that going for him I guess. And if and if physics like PhD astrophysics degree. Yeah. Okay. All right. Thanks. Bye. But it turns so we shine you Brian May."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "38:34",
+            "text": "One vision. It's a kind of magic painting. So close. One year of"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:40",
+            "text": "love. But wasn't one vision in iron Eagle? Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "38:43",
+            "text": "well, they if you if you get the there's a remastered version of the album that has like a lot of demos. And you can see how what like one vision and it's kind of magic word the same song. Okay, and then they slowly grew apart into two separate songs. But I mean, it was it's all Highlander inspired."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:02",
+            "text": "Well, I will say I will say if you look at it kind of bookending you have Flash Gordon in 82 with the queen soundtrack. Then you have dune in 84 with the toto soundtrack. Yeah. And then you have Highlander in 86 with the queen soundtrack again, and sort of has come out of favor, right. Like you don't have a lot of those kinds of like, big, big things. But this was the wheelhouse for those for those. Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "39:27",
+            "text": "this was the era of a band basically. And Maestro Michael came in doing the score. I mean, the score of the training montage my mean just takes you to another place it takes like you are Highlander whatever that music plays. Like you are battling on on a more in Yeah, yeah. On the shores of Loch shiel."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:50",
+            "text": "Yeah, when"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "39:51",
+            "text": "you're hearing that. That song. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:53",
+            "text": "I was born on the shores of last year. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:57",
+            "text": "do want to just say one more thing about Connor He's opening monologue there. It has the echo effect, because he recorded it in the bathroom of his Spanish villa, where he had been working with a voice coach in order to quote perfect the Spanish accent. Amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:16",
+            "text": "How much did that guy get paid? I want to see that. Nothing. I want to see that I want to see the invoices and the statements of how many hours the Spanish dialect coach spent. John got."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:31",
+            "text": "Great job, buddy. So then I had completely forgotten because I haven't watched this movie in 20 years, I had completely gotten forgotten that it switches to wrestling at Madison Square Garden."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "40:43",
+            "text": "That's amazing. Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:45",
+            "text": "A and then B. What the fuck with this flying long shot going around Madison Square Garden with helicopter sounds."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "40:56",
+            "text": "Yeah, so I'll explain it to you, please. So as the resident Highlander genealogist. So perhaps, you know, the, the lyric of the, of this bell that rings inside my mind from it's kind of magic from the album. So, immortals have like a proximity recognition system, right, which is explored to much more extent in the T Washo. Paying, right, why pay one ping to roll them all in one ping to bind them? But that is them trying to tell you when? Fazio and is Toledo cellmark abroad, so we're worth about a million bucks, enters the garden like that's his proximity alarm going off and he kind of has a sense of everything. He's kind of trying to dial in on where he's at, which I guess is how we used to go to the car garage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:49",
+            "text": "But the shot was a computerized system with four wires. The system was invented by the inventor of the steady cam system Garrett Brown. And he because he wanted it to be more like a helicopter. Russell Mulcahy had them put in helicopter sound effects which I don't know why a helicopter would be flying inside Madison Square Garden seems weird. But it's a great shot."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "42:14",
+            "text": "It is a wonderful shot. I think this film is wonderfully shot by Russell Mulcahy. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:19",
+            "text": "is another thing that I had forgotten as well along with the queen which is like how wild the cinematography isn't a sucker like it like there's some real crazy filmmaking and it's like really wild like wide angle stuff. A lot of weird camera movement like it's a very inventive movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:35",
+            "text": "The spinning shot in his when he is showing Brenda all of his stuff and like literally from the ceiling is spinning around the entire room as she walks around. It's amazing. So this is Jerry Fisher, who also shot the Island of Dr. Moreau starring our man from Logan's Run Michael York victory starring Pele which was a big movie for me and running on empty with River Phoenix."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:00",
+            "text": "Wow, man. Okay, I don't know how does he hate this movie? This movie was made for you."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "43:04",
+            "text": "It's it's got all his pedigree, which is you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:07",
+            "text": "it's crazy. Oh my God. Now,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "43:11",
+            "text": "I will say this before we move on, because I feel like this needs to be said in defense of Russell Mulcahy. Had he not done Highlander to write I feel like his career takes a much higher trajectory. Sure. Like I think he would be maybe not a household name, but definitely a name known by film lovers. If he hadn't been made Highlander to have basically been blackballed from the business."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:39",
+            "text": "As though you were a communist."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:40",
+            "text": "Yeah, I've been in Canada anymore making Toyota commercials. Yeah, yeah. So So Connor is not enjoying the match because his ping is going off. He goes down to the basement and we have the introduction of Fazal who only says McLeod that's literally the only word he says. And then as you wait, they their sword duel so it's Cutlass versus Katana and this is my first complaint the sound design of this film in general"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "44:07",
+            "text": "but we're writing so hi. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:09",
+            "text": "it was a great it was a great like 20 minutes the sword noises are seemed like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:14",
+            "text": "they completely take me out of it like"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "44:16",
+            "text": "it's like two sheets of aluminum getting hit by a baseball I'm 100% with you. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:21",
+            "text": "apparently they had a car battery they had a line attached to a car battery so that running under their coat up their arms so that when they hit it you would get the sparks that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:32",
+            "text": "safe. That's Oh yeah. I'm like then like release the water just on top of this like,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "44:38",
+            "text": "I don't understand like, like they had Bob Anderson on this movie a world renown sort of nomadic fencer. I mean, Darth Vader. I mean The Princess Bride. How why they took the direction of this fight. I mean, I do think they cleaned it up by the Final Fight is definitely the superior the two McLeod sore battles. Yeah, but I mean, why do we need the static electricity? Charge? I don't understand it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:06",
+            "text": "That's a fair point. Also, like, why is is this kind of a client? Why is kind of MacLeod at a wrestling match anyway? Is that really his thing? Like, it just doesn't seem like that? I think he's drawn"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:15",
+            "text": "there, right? Yeah. So"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "45:17",
+            "text": "obviously the gathering is the few that remain that will be drawn to each other nicely. So it's like he can't quite help himself, but to kind of meet up."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:26",
+            "text": "That would be a bummer. Like, you're just like sitting around you just want to have like a quiet night at home but you feel compelled to like go to like some event or a wrestling match. Oh, yeah. Exactly."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "45:36",
+            "text": "What if you had bad Thai food? And you're like, Fuck, I gotta get out. Gotta go to an opera work feels so heavy. I had to carry it in my coat. So I can't really bend down."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:46",
+            "text": "There could be only runs."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "45:50",
+            "text": "That'll be that. That'll be his pullquote."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:52",
+            "text": "Yeah, the decapitation is kind of sudden and kind of surprising, but just quickening from the beginning. And this is the least of the quick innings. This is like very over the top. Yeah, it goes on for a long time with explosion. I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "46:07",
+            "text": "hate it. I hate it when fantasy movies are at the top. I really love grounded non flashy fantasy movies where people live forever fighting with swords. You're absolutely right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:17",
+            "text": "Shall we check calls out on the fight? This is the fight where there's all the back flipping right? Yes, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:23",
+            "text": "Yeah. Why?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:28",
+            "text": "The back flipping is an amazing move. Like as like just sort of as a as a defensive maneuver to just infinite backflip. I'm not really sure."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "46:38",
+            "text": "That's the main way."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "46:39",
+            "text": "There is a lot that I feel like this movie likes to throw at the wall. And say we know how he know he's immortal. Because he's so good at gymnastics like what? That doesn't track. Just because you've been around forever. He spent a decade learning to do handsprings."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:59",
+            "text": "I mean, he's effective. These guys have some superpowers there. They're pretty good. I do sorry. I do want to say I absolutely love the transition from the end of this battle to the Scottish Highlands. The music the setting the location car, there's having fun Heather's there's She's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "47:19",
+            "text": "amazing. They got her back for Highlander for the actual actress. They got her back for the she wasn't been SQL. I'm not sure she she did a lot after this. I don't know. I mean her I mean his whole life before Ramirez shows up as great yeah him learning to be a blacksmith and kind of getting over the fact that he's been you know, drawn denounced from Atlanta. And not only that, to discover that he's going to debt he ultimately lives forever while she grows old. Like that whole segment where she keeps coming over the hill. And she's over each time. Oh my god. Amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:55",
+            "text": "My Bonnie last night."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:01",
+            "text": "I want you to light a candle on my birthday. Like that was sweet. Of course"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "48:05",
+            "text": "my love."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "48:09",
+            "text": "Okay, I gotta leave after that one that's going to creep me out"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:11",
+            "text": "for a Lambert. Lambert is Lambert's vibe is a bit off. Like he really does have kind of like the sociopathic Kubrick eyes. Like he's essentially giving like Private Pyle from Full Metal Jacket, but like as a romantic lead it it just is a bit of a mismatch. Like it's a bit he's got a bit of the dead eye."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:34",
+            "text": "He also has a creepy laugh so I just want to say that the director Russell learned just after signing Lambert that he lamb bear sorry that he did not speak English."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:53",
+            "text": "Yes. Oops. What was that interview? Like? What did he like? What was the what did they do? How did he cast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:59",
+            "text": "like we like Tarzan. We like Greystoke that was good job. All right. So that is a problem banish peacock haggis. What does hi yes. So that's where do you think that Josie that's weird to have your actor not speak the language? Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "49:20",
+            "text": "I don't know why that was a a indictment of me. But it is what is weird."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:27",
+            "text": "Why did you do the due diligence?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "49:29",
+            "text": "You know, when I was four years old, I should have flown out to Ross's house a bit like Rosewood please. I don't think I can do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:38",
+            "text": "stairs. I couldn't do a voice. I wasn't blaming you. I wasn't blaming you."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:43",
+            "text": "And then he has to not speak English and do a Scottish accent ish."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:46",
+            "text": "Very ish. Yeah."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "49:49",
+            "text": "It's it's more like what if a Scotsman had his mouth full with food? Yeah. Is the headset or was like constantly clearing his throat"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:59",
+            "text": "This is my this is my number one. This is my number one problem with the film"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "50:04",
+            "text": "wasn't the other one your number one problem now how many problems do you have?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:08",
+            "text": "That's got a lot of problems in you like the movie. I already had gymnastics in it, which should have won you over. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:14",
+            "text": "know straight. Well, no, no, I was rejecting gymnastics at that point. So I see this is really wide. This is really why you have a problem with this movie. I do just want to call out We glanced over it but so we had the introduction of Clancy as the Kurgan who looks amazing in the armor. Contouring hat standing in the middle of battle trying to fight and then just getting stabbed as no one"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:35",
+            "text": "would fight me know"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:37",
+            "text": "why. Anguish when he gets saved by the on the lynching by Dougal who kicks him out. James Cosmo. Do you recognize him? No. Who's james? No, the old bear ger Marmont?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:53",
+            "text": "Oh yeah, I felt I knew I thought that at the time and I pinged him again. No, yeah, I think yeah, my my ping went off."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "51:02",
+            "text": "Connor, Macau was my kinsmen. I don't know who you are."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:07",
+            "text": "But how epic just for one second diversion, how epic is gr Marmont and John Snow, their relationship him handing over long and then the revelation that Jorah more mod is like this is the relationship with his father that he didn't have because he was too much of an idiot."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:27",
+            "text": "The father or the father. We all all wanted"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:31",
+            "text": "George Martin come home. Yeah."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "51:33",
+            "text": "Never gonna get that book. We want more"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:37",
+            "text": "we want he's off with his wolves let him Let him live with his wolves. All right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:41",
+            "text": "back in the back in the present day. He he has his Porsche 356 a beautiful car another"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:47",
+            "text": "Porsche movie. Gorgeous."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:49",
+            "text": "And we have he's interviewed by the cops. We have John Pulido, Johnny Caspar from saying"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:55",
+            "text": "yeah, I'm sick of getting the hi hat. Yeah, this is an early one for"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "52:00",
+            "text": "him. A lot of awesome bit actors in this movie, that kind of pop up everywhere. Mm hmm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:06",
+            "text": "Give me Give me the hi hat."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:08",
+            "text": "We can stop the interrogation and all that stuff like Brenda shows up. She's in forensics. She's starting to do some"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "52:14",
+            "text": "isn't it convenient that Brenda also is like a sword historian and a movie do we need that really beat over our heads she was gonna go after many way. This Brenda,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:26",
+            "text": "Brenda says that Brenda is very much"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:29",
+            "text": "in the mold of of what's her face from sneakers where she's like a musician mathematician like spies, or whatever, just just whatever you need in this you know, she's like an antiquarian book selling like Ninja it's fine. Like whatever, whatever you want she can do in this movie."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "52:48",
+            "text": "You know when the police departments used to hire sword experts as far as Yeah, I remember that time in the 80s when Josie Josie this was not the problem with this film like Brenda is I was just trying to grasp at straws to get your back because I can't find much else to be upset about."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:05",
+            "text": "Brenda. Brenda was fine. That was not a problem. I do love the Kurgan checking in. You know the guy says if there's if you need anything you need bras below just as zero. But But Kurgan just wants to do a little swordplay. Hi, I'm Candy. Hi. I'm Candy Of course you but of course Yeah. Yeah. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:32",
+            "text": "the split diopter shot maybe disputed on Twitter."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:36",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:36",
+            "text": "you h tried to flex by spotting a flick. Split diopter shot to to Todd Vaziri and Todd zero he wasn't having the flex. Take your bullshit"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:46",
+            "text": "get on well you just said it was it was is out of focus. So like I don't know maybe"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:51",
+            "text": "the Go fuck yourself was implied."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "53:56",
+            "text": "Classic text tone on that one. Yeah, they have a lot of problems with Kurgan sword because they had they really wanted that assembly scene. What is it like that was really important from the get but they would try to fight with it and it would like fall apart. So they had to get two swords one that was hand forged in one single piece and just had metal pieces riveted on it looked like it got like it was a takedown sword. But I guess they didn't realize that, you know, metal shouldn't be assembled and then swatted at another metal. Right. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:30",
+            "text": "the erector sets or it's not going to work out but"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "54:33",
+            "text": "it does look cool. I mean, the shot is neat. Yeah. Well, and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:37",
+            "text": "he does the move like he's so it's basically he's do it. Is there an Conan the Barbarian? Then he rolls it down his arms that move?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:44",
+            "text": "That move is great, then yeah, great. Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "54:47",
+            "text": "I've tried to replicate that move by myself many times and it just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:50",
+            "text": "I just end up with a sword crossbar through the I'm not"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "54:54",
+            "text": "built like a brick shithouse like can't see Clancy Brown so nothing rolls down my arm. I was like that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:00",
+            "text": "if you told me that Clancy Brown was eight feet tall, I would believe you like, like, as far as I know, he is like an actual giant and he's immortal. Because I think he's like, I mean, he's still just doing it. Yeah, he's like, he's like, he's like 120 years old. Like he looks at Eric. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:19",
+            "text": "And he wanted to do a more complicated. Kurgan. He got shot down. He wanted to do like he wanted him to wear a bowler hat and a suit. And to have him be a more conflicted person who had lost everything. And all he had to hold on to was was the gathering. Oh, man, and they basically do t 800. Like, that's it. Arnold. Did it just be the Terminator?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "55:43",
+            "text": "I mean, we could have lost all the cast of your stuff. And I would have taken that story any day of the week. Yeah, for sure. Imagine a film with two different flashback threads. They finally meet up in New York."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:54",
+            "text": "Amazing. Yeah, way better"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:55",
+            "text": "job. Just improving, improving on perfection."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "55:59",
+            "text": "How's it even done?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:00",
+            "text": "How's it done?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:02",
+            "text": "Yeah. So Brenda follows him. He follows her they end up at a bar they have some drinks. And then"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "56:11",
+            "text": "one year of love by Queen playing in the background. Great. So what is she"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:15",
+            "text": "drinking in this? She ordered something she ordered? Like? Like the usual which looks like poison like It looks like she ordered like a Jager shot or something like what was it like?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:27",
+            "text": "Stop she just keeps pouring the guy keeps pouring and pouring. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:31",
+            "text": "usual is like absent. She"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "56:34",
+            "text": "takes a look at champ though. Yeah. Brandi can drink harder and I can't I can't do that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:38",
+            "text": "Yeah, No way, man. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:40",
+            "text": "But when the Kurgan attacks outside oh, by the way, this is Peter McManus on Seventh Avenue, which I just had drinks at with Brian who's coming back for Conan the Barbarian and a few weeks wild was just at Peter McManus, which is like a UCB hangout where people go to chill after they do performances. So he attacks them outside there but suddenly they're in like an industrial park like what's going on? Like where is this industrial fight happening?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "57:10",
+            "text": "Are you wait are you asking me?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:13",
+            "text": "I'm asking I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:14",
+            "text": "thought that was rhetorical. I mean it's the Emmys in Manhattan"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "57:18",
+            "text": "it was there not some establishing shot where MacLeod walks through the bar like past a fenced in demolished building or my Am I just like apologizing for this movie with my subconscious I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:31",
+            "text": "don't know we can we can strike all this for the record"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "57:36",
+            "text": "but where does that helicopter come from eventually to like they're not anywhere or helicopter could be there at a street level bar and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:44",
+            "text": "they're suddenly there right like i There's no reason why the copter is there other than to break up the fight?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "57:49",
+            "text": "Yeah, to keep us on track not doing this age I mean"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:53",
+            "text": "yeah, why? Why ruin Why ruin this wonderful part of our history? Well, Jason"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:59",
+            "text": "talked to get back Connor Soho office loft at Sullivan Greene street."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:03",
+            "text": "Oh my god, what a what a joy. This is the really the great part of being eternal is you get all the good real estate you just hold on to it for he's had it since like, yeah, he bought it"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "58:12",
+            "text": "for for 80 bucks."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:15",
+            "text": "I said 7096 Yeah, he"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:17",
+            "text": "bought it from the Dutch, essentially. Yeah, it's just it's delightful. It looks great. He's got like some you know, secret rooms in there. He's got like his I don't know what this relationship is with the secretary. Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:30",
+            "text": "We can cover it now. Or we can cover it at the end. Let's cover"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "58:32",
+            "text": "should cover now. Because Rachel, did you watch the the the extra minutes?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:38",
+            "text": "I did not it was not there. So tell us. So"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "58:41",
+            "text": "this is a grill. I don't know why they left this on the cutting room for for the theatrical version. But during World War Two, Connor goes to war against Nazis."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:52",
+            "text": "Just to set up really quick, so O'Connor has an assistant. Connor has an assistant working for him who is an older woman, Rachel obviously have some kind of affection together. But it's not like a relationship. But there's something there. That's meaningful now."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "59:06",
+            "text": "So they, after they establish who Rachel is, the flashback is that Rachel was fleeing for the Nazis. She goes into, you know, a barn. Connor comes in to kill them both, but they shoot him. And he comes back to life and she's scared. And he says don't worry. It's a kind of magic, which is the source of was a line that he repeats later that is not sourced. Because when he closes the Katana and says, you know my beloved Rachel, it's a kind of magic. He's calling back on the moment they met but without that scene, it means nothing. Right? So he's basically you know, raised her as his daughter since he discovered her in the forecast. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:46",
+            "text": "okay. Okay. And also the idea of this is like this was like in the 90s when Marvel started doing Logan comics where he was in World War Two fight right with cat Ben, you know, Nick Fury and stuff and it was like that was that concept is badass, right? The whole like fighting across time that story it could have been could have been really good. Somehow I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:11",
+            "text": "had thought that he was like had a romantic relationship with her and so I like that it's the end that like he had, but he had aged out of it. And like and like so she was like, okay with him now being with Brenda or whatever, which seems super weird to me. This version where he's kind of her daughter also super weird, but like, as long as it was never romantic, maybe less weird."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:00:33",
+            "text": "Which is again, why they would should have kept that 31 second scene. Yeah, theatrical release."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:40",
+            "text": "Big time. I mean, he touches her face in a gentle way, but it was not sexual. So I think I think he's 100% and 100%. innocent, but it's weird. It's weird. Alright, so now we have the flashback from here to Connor and Heather. You alluded to this. So we see her basically them in the prime of having a life together and yeah, and being in love. And when they have their romantic time, they make love to each other, to the swelling strings of who wants to live forever. orchestral version by Michael came in. It's absolutely incredible. And then it's all shattered by Ramirez Sean Connery jumping over their bodies on a horse, James."
+        },
+        {
+            "name": "Highlander sample",
+            "timestamp": "1:01:28",
+            "text": "I am Juan Sanchez villa-lobos Romulus. You've met a lot. Just the King Charles fifth of Spain. And I'm at your service."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:37",
+            "text": "Okay, listen. There's Sean Connery can never ruin anything. There's nothing that can not be made better just by adding Sean Connery. That's the first thing so you can't say he ruined. You can't say ruined Sean Connery ruined is not grammatically possible. Okay, fair. Good. JNU great. And so he's good. He's good. What's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:01:58",
+            "text": "what doesn't need to continue to see the clock? Sean Connery? We do. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:06",
+            "text": "But he Why is the Scottish guy playing an Egyptian Spanish guy?"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:02:10",
+            "text": "Just for no TV crazy. The"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:12",
+            "text": "Scottish Highland movie."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:02:14",
+            "text": "These two became best friends upon filming this movie. And they're like still best friends."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:22",
+            "text": "I love that they"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:02:23",
+            "text": "still call each other by their character names."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:27",
+            "text": "I mean, Sean Connery is dead."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:02:32",
+            "text": "Maybe he's maybe he says, you know, he's a former mayor as I miss you. Jason that was you know, we're supposed to be one where our wildfires"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:42",
+            "text": "you never know like, it's possible that McLeod might have just said Ramirez and"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:02:47",
+            "text": "brought him back. The second one. Oh, God, sacrilegious. Sorry."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:53",
+            "text": "He begins training him we have the montage. I love that he puts him in the water to prove that he can't drown him. You know, Connor laughing underwater is really great. He basically"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:03:08",
+            "text": "the kuna was sorry."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:12",
+            "text": "He basically says that he has got to leave Heather that in 20 457 years. He's had three wives there is this really weird Josie please explain this to me. He describes the fact that in 600 BC, he has Japanese wife who was his last wife to pick up on that her her father made the sword in 600 BC. But it's established by Brenda later that nobody made swords like that 600 BC and it's also a fact of history that no one made swords like that in order to keep goes dad's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:47",
+            "text": "dead. No"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:03:48",
+            "text": "Masamune a who they obviously nobody didn't the fact checking so that they are alleging that maybe there was another guy named masa Mooney, who, before the Japanese discovered folded his blade in the forging process, but obviously, that is not true and historically inaccurate. Nor was there ever achieved metallurgist to the king of Spain. But you know, nobody's dumped on that history book. Anybody when talking about this movie, but okay."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:21",
+            "text": "There's a lot of forgotten history. We don't know what we don't know. But I do remember who's to"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:04:27",
+            "text": "say, who's an alien Masamune. A was not a mortal himself. Exactly. Well, he"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:33",
+            "text": "has a daughter. So who's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:04:35",
+            "text": "to say she was she was adopted age, like the Rachel scenario. This"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:39",
+            "text": "is like Q anon you guys have an answer for every"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:04:44",
+            "text": "set of Q we're haitch."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:48",
+            "text": "The fact that like this three, the folded 300 times or whatever, as a young child that really stood stood out to me as a fact that I needed to know more about I was like, what is that? What does folding swords mean? And like you You know, I do now because I saw this movie and I was like I need to know about I need to know about the folding swords and now I watch and to this day watch like domestic steel tic tock videos but like, you know, it's like it was it was definitely made an impression. Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:05:14",
+            "text": "this movie definitely set people on the wrong path of katanas were the most important thing in history. I mean, the reason they were folded so many times is because their steel was inferior to their enemies, so they had to come up with a better metallurgic process to make their steel stronger. Yeah, the Japanese Jeopardy. I mean, katanas were doing the Shatter pretty often on the battlefield. That's why they had to. Interesting that's essentially why they were two swords. I mean, it became more ceremonial ceremonial over time, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:46",
+            "text": "not the catch all part, right, just like cut it into four pieces. And,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:05:49",
+            "text": "I mean, I don't want to I don't want to break anybody's heart who's listening and as a Highlander fan and loves katanas they're cool swords. The design was perfect. The steel was inferior. I mean, it's that that is a historical fact. I mean, I have a Highlander Katana myself, I feel like I'm backpedaling. Like, ah, right now, but the times are cool. They're just you know, there's just some Katana misinformation in the world. Mm hmm."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:16",
+            "text": "That's good, right. I like it. I like I like Katana pod that's what episode 100 is gonna be it's just a knife show."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:23",
+            "text": "Oh my god. I mean, I had a knife"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:06:26",
+            "text": "as well going to do pod 191 to where I'm talking about the forging, you know, CPM crucible three V steel into a katana Allah that wouldn't work and go straight out of my butt,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:38",
+            "text": "throwing stars. So the Kurgan attacks Connors mysteriously not home. And the Kurgan attacks and fights Ramirez. So, can we talk to the architect about the structural integrity of this tough,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:52",
+            "text": "tough walls? The stairs held up? Let's say they they really reinforced the stairs. Well, everything else fell apart. Pretty, pretty harsh. This is maybe it's a good time to talk about Dunvegan castle on the Isle of Skye the ancestral home of Clan MacLeod, please. their ancestral home of Clan MacLeod is Dunvegan castle on the Isle of Skye. I've been there. And one of the it's still intact. So it had a great architect. But one of the interesting things that you will find at Dunvegan Castle, on the Isle of Skye and the ancestral home of the clan MacLeod is the fairy flag. The Fairy flag is a mythical item that grants wishes that comes to the clan MacLeod because it was held aloft by the losing side of the Battle of Hastings intense 66 and then went on the crusades, and it can grant three wishes and it's already granted to so there's one wish left in it. And I don't know what it's going to be used for. But it's great. You can see it if you go there and you"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:07:56",
+            "text": "just took me to another place in my heart right now. I felt like I slipped through a wormhole for a second. Like I was in Professor Jason's classroom I was rat enraptured by that story."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:09",
+            "text": "It's great. I Oh, this guy is great. And if you if you have the chance to go there, you should and one of our Discord members is going there next week and is going there soon. From there. Yeah. You should be calling in live during the letter segment. When"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:08:22",
+            "text": "next time I want to travel abroad. I'm going to bring Jason as my guide."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:26",
+            "text": "Yeah, you should. I am. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:29",
+            "text": "I mean, he's got two kids and a dog so yeah, please wrangle them but it's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:08:34",
+            "text": "okay. They cancel each other out in this equation."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:37",
+            "text": "Let's fight."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:39",
+            "text": "So Ramirez dies Kurgan grabs Heather that's very menacing. And we cut back to the present and we have dinner at Brenda's so I just want to say two things one, it's a red flag if a guy shows up at your house for dinner wearing a London Fog trench coat and he refuses to give it up to you"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:58",
+            "text": "belt belt it is where it really like first of all wait a minute I wore a trench coat all throughout high school I know and but it wasn't it wasn't a high belted one it was it was loosen open so you can see that I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:10",
+            "text": "posed no threat I like later when he has like a like a members only jacket and the jeans and the hours like I like that look better than this but so so he drinks Hennessy cognac. The Yeah. And so so before we get into this like why is this like the most expensive drink you can drink? Why like is cognac any good? Is Hennessy any good? I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:09:36",
+            "text": "just want to shut off the tape recorder you're gonna shoot me with the 45 Sorry, I love this movie. And I you can't help but let me quote it. Yeah, as I see fit,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:49",
+            "text": "of course. isn't a question either view isn't any good. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:55",
+            "text": "it's distilled from old wine. So it's like it's old on old so it's like you know you like have like You know, like that like you have this like really old these really, really really old cognacs that like people get all fetishistic about and that's why it's expensive because it's it's rare on rare"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:10",
+            "text": "All right, I would just like any streets if I drink scotch or whiskey or any of those things I just taste it and I just go like yep that's liquor that's that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:20",
+            "text": "pretty much to work on refining your palette age don't live in ignorance like that. I don't know if I'm gonna throw"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:10:25",
+            "text": "out a recommendation right now for just to bring people back from that Hennessy talk. If you're in for a really great bourbon for a really great price. I would recommend Jim beam's devils cut."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:10:36",
+            "text": "Oh,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:10:37",
+            "text": "I have a bottle of wine on hand. It's a very smooth I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:39",
+            "text": "like that. I like on the Jim be bottle where they have like the lineage of everyone that's never run the distillery. And like it's mostly people named beam except there's like one period of time where it's like Stewie Buttercup or something like that. Like"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:10:52",
+            "text": "that was like, like the daughter's husband, the daughters in the family. 100 Exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:57",
+            "text": "It was like, All right, whatever. Stewie. It's your shot at the house was probably everyone was pissed at him for years."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:11:03",
+            "text": "Father just stealing that he couldn't produce an air. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:09",
+            "text": "That's amazing. Well, I do love this. So he raises the cognac. He smells it and he says 1783 was a very good year."
+        },
+        {
+            "name": "Highlander sample",
+            "timestamp": "1:11:19",
+            "text": "Mozart wrote his great bass. Among golf, your brothers went up in there first. England recognized independence of the United States. Is that right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:38",
+            "text": "Yes, I love this idea of a reflection to the past. And this is what I wanted more of more world building more of that stuff, as opposed to more of these like protracted fights that, you know, work in my mind. Now"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:53",
+            "text": "Kubrick was sick that Barry Lyndon didn't look as good as this flashback to this duel like this. This duel is just absolutely the perfect, the perfect duel of the century."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:06",
+            "text": "Yeah, but played for laughs and it's hard when you've got lamb bear delivering, you know, because his"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:12:14",
+            "text": "I love the fact that he can't get his wig on. I know that it's played for a fool. But this is one of the better comedic moments of the film for me. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:24",
+            "text": "so we have cast gear arriving. glossing by Heather, we talked about it briefly. She dies she ages out to forever. We have a nice piece. We have a nice moment. It's tender with the two of them together. But But So back in the present day we have cast if you're arriving. What is his outfit cast gears wearing What's"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:12:46",
+            "text": "so weird what? Originally, I mean, he's dressed in a kimono he was supposed to fight with two. I think it was Walker's Aashi the smaller Katana. He was supposed to fight to sportstyle but they didn't have either the swords on hand or there wasn't enough time to choreograph that kind of fight with Bob. So he ends up I think with like a sitar or some sort of that doesn't match his outfit. But for the continuity of the character. They left the kimono on between scenes but he's supposed to fight jams also. Now he's also"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:18",
+            "text": "not Japanese. Certainly not a Japanese person."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:13:22",
+            "text": "I mean, I think they were supposed to imply that mortals can be plug and play. They kind of traveled the world and had I don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:28",
+            "text": "see race."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:13:30",
+            "text": "Yeah, no color. So but yeah, I mean, that was that's in the back matter. It's one of the things we're like just cut for time. Just given this sort of we found in the closet. It's fine. kurgans gonna kill him anyway. Well, that's the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:45",
+            "text": "thing. So now Kurgan, is fighting Casta gear in a you know, in an alleyway and we suddenly have the introduction of a vigilante character. Like why is this guy in the movie he's wearing a Hey Moscow Up yours t shirt. So I guess there's some some amount of kind of like Cold War commentary happening here. But it just felt completely out of left field, the introduction to this character. It kind of"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:14:11",
+            "text": "felt like they they interjected that character just so he could speak to the police. And add like a a sense of like, set the pot to boil. Okay, it's out of the bag. People know, you know, people are now looking for Connor and Kurgan and like there's some sort of fuse to make the final battle feel like it's under a time crunch. It doesn't work though. I guess right after this. Remember this the most? The best thing in the film which is Connor and Kurgan in the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:42",
+            "text": "church? Yeah. Yes. Yeah. Well, that scene is amazing. And it's it starts with you know, Connor is lighting a candle for Heather and the Kurgan comes in there and sits down next to her."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:14:55",
+            "text": "Happy Halloween ladies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:57",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:58",
+            "text": "So great. Oh, happy Halloween ladies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:04",
+            "text": "Oh, my gods have no sense of humor like it's out of nowhere"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:15:13",
+            "text": "their sense of humor."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:15:14",
+            "text": "I was so into the writing. So this scene be cut, like for watching it young because it's like these two characters are having this conversation that nobody else understands. But there's like a sense of dread. You know, especially when the kurgans like, he cares about these mortals. He's looking at the cross and the priests is like, yeah, that's, you know, that's why we're here. And he's like, and that shall be his undoing. Like, there's so many cool lines. When he's like castigate his dad over you. And I remain like there's just something about the delivery these lines that makes it feel supernatural and, like real, I could watch that scene over and over again."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:58",
+            "text": "But they're on hollow ground, right, so they can't even Kurgan will respect that, which I think is really cool. Remember what Ramirez"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:16:06",
+            "text": "taught you? So good, huh?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:13",
+            "text": "So separate from that Brenda cat cracks the case she uses with the guy from the library, the signature computer?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:20",
+            "text": "Oh, yeah, that's a good look. That that program looks"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:16:24",
+            "text": "good back in the 80s. When computer with no one knew what computers can do. Oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:28",
+            "text": "my God looks amazing. You know, the sound"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:32",
+            "text": "effects were great as it's kind of putting it together. But it's sort of matching all the signatures of the previous deed holders of the Soho loft. That's how they figured it out. And it matches Russell Nash's current signature. But the guy is like he immediately accepts it. He's like so you got here you got a guy who's been creeping around."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:52",
+            "text": "I love creeping around creeping rounds. Great. You've"
+        },
+        {
+            "name": "Highlander sample",
+            "timestamp": "1:16:55",
+            "text": "got him Brenda is a guy who's been creeping around since at least 1700. Pretending to croak every once in a while eating all these goods to kids who have been corpses for years and assuming their identities."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:09",
+            "text": "But this guy just accepts that it's been 250 years this guy's been"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:12",
+            "text": "around what other the book the computer obviously proved it like those, like those letters didn't like just line up like that by accident."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:17:20",
+            "text": "You know, it's crazy. He reprises almost the same role as a medical examiner in the prophecy, also written by Gregory Wyden also about two people fighting to the end of time as Chris Walken, right? Yeah, walk in his Gabriel. That's a great so let me get my glasses up. So one always"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:41",
+            "text": "probably will book you in for that. We have to wait we actually we have to do a walk in movie for Cartoon catchers. We have to do a bunch."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:17:52",
+            "text": "Coming Okay. All right. Fuck myself. Thanks Just kidding. That guy's a prince. And as I how I feel about"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:01",
+            "text": "him. He's amazing. So we do have Brenda you know comes to confront him. He makes her stab him and then they make love as He wants to live forever"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:18:12",
+            "text": "play as one does. When I see somebody live from a stab wound I'm immediately dialed up to 11 but I also can't keep my quote on"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:20",
+            "text": "Queen put on Queen and let's go"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:22",
+            "text": "but after this touching movie, like it just cuts to black like a TV commercial. Like it's a really really poor edit. That that really snapped me out of the movie in a bad way I'm on I mean, I'm serious. It really is the cut is I just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:38",
+            "text": "like imagining age like seeing this tender moment and cinematic history. And then there's like this edit which I don't even remember and he just furiously typing like, horrible fade. took me out of it completely. Yes. period to space limitation. Next line is all handwritten."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:18:58",
+            "text": "I have it in my notes that double underline on your legal pad. Exactly. Make sure I tell him it took me out of it. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:05",
+            "text": "my straight edge out so I can underline this passage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:09",
+            "text": "April. Take Take a note."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:19:13",
+            "text": "So like T square,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:16",
+            "text": "three lines."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:20",
+            "text": "The Kurgan kidnaps Brenda."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:19:24",
+            "text": "They're sick. They're sick. We're like against"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:27",
+            "text": "sickos this edits. So the Kurgan kidnaps Brenda and we have a very long segment of chicken in the car. It actually reminded me of the hidden Yeah, they drove over there. The first person they they drove over on the sidewalk was Russell Mulcahy."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:19:48",
+            "text": "Oh, nice. You know, this version of New York, New York by Freddie Mercury I think might still be the case. It's not available for mass consumption. They never released this track. They"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:58",
+            "text": "only got it for the movie and They couldn't afford it. Yeah, that makes sense. There's there's things like that that happen like the, but like I love this idea too that like you can drive so stressfully that the person passes out?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:09",
+            "text": "Yes. But he is a little over the top like so to me in this moment. He is getting to a little bit cartoony and it's hard for me to appreciate and take him seriously."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:21",
+            "text": "This is where he is just I just furious that this boy"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:25",
+            "text": "lancy it this point. Clancy took me out of it a little bit."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:20:29",
+            "text": "It's really gonna bake your noodle and so we're supposed to be a cartoon at the end of this movie. What was going to be about? So they all say the same. Okay, all right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:39",
+            "text": "Bring it back. Bring it back. Bring it back."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:20:41",
+            "text": "He rains me in like a like, Oh, my God horse broke me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:45",
+            "text": "The pattern is full. All right, so the showdown at silver cup studios. Apparently this is a real studio where like, Sex in the City of The Sopranos shot. Okay, okay. That's what but apparently it was a bakery. silver cup was a bakery. I don't I don't know what to make silver cup sign."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:21:04",
+            "text": "I don't think it's there anymore. Like it was taken down eons ago."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:07",
+            "text": "Yeah, I don't think that's I don't think that's the thing. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:09",
+            "text": "all right, but so it looks cool. But it's a ridiculous. Josie. You said in your faves episode. Brenda's kind of reduced to just being like a helpless. Yeah, well distressed. I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:21:19",
+            "text": "was super disappointed because Brenda, I mean, at this point, like, like I said, I come from these kinds of male dominated driven superhero stories and Brendo could hold her own. Yeah. And to see her kind of her legs cut off at the end. I mean, to just like, like you said, being the damsel was super disappointing. Yeah. But you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:43",
+            "text": "I agree. Well, so they they end up falling through the floor. And you have this final duel. Which I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:21:49",
+            "text": "will say hair slicked back from the water. Yeah. Hello, guys."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:56",
+            "text": "We did Skyfall we saw the you know, the silhouette shots like that deacons was influenced by this. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:03",
+            "text": "I know how many. This is the original. This is the this is what figured out that silhouette, sword fighting silhouette fighting in general. Is good is the best. This was a good fight. Yeah,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:22:16",
+            "text": "I also loved that. In kind of jumping the shark a little bit in all these movies from the 80s. There has to be like the heroes against the ropes. And he kind of wins by accident. But once Connor gets back on his own two feet, he's just a superior swordsman. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:35",
+            "text": "He's just gonna cook this guy."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:22:37",
+            "text": "I enjoyed that a lot because it didn't follow the trope of you know, yeah, he's outclassed. But because he was like, clever in this moment, he was able to win now he's just a better swordsman."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:48",
+            "text": "This is this is like a Jack Reacher move, right? Like Jack Reacher, being a badass unable to just whip it out."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:22:53",
+            "text": "He's like, let me show you what 400 years of sort of fighting looks like but in get"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:57",
+            "text": "lab. I like that. I like that. There's a moment in the fight where the Kurgan knows that he's dead. That like He's like, he's definitely up against the guy who's gonna kill him and he doesn't have it. But like he, he sort of still has this wry sense of humor about it all. I was like, all right, but still. Like, you know, like, I like that. I think that's great. I'm just such a big fan of the Kurgan he's he's a he's a delight. And surprise, this movie is rated art should be shown to children. This is an important this is an important character building stuff."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:23:30",
+            "text": "I definitely saw it too young. But I I'm grateful I did because this is influenced. You know, a lot of my love for many movies that come later."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:40",
+            "text": "I don't even remember being I saw young and of the movies that traumatize me this is very low on the list."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:23:46",
+            "text": "Now. This one set my imagination on fire. You know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:50",
+            "text": "I don't even know what the scariest part of this movie is compared to like poltergeist or something like that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:56",
+            "text": "Well, for me, maybe the scariest part is after he kills him. And we have the real full blown quickening. And we have these like animated demons that are like swirling around. They're like have wings and stuff with no explanation, no concept of what is happening here with the prize. That's just that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:14",
+            "text": "what happens. That's what happens to a young man when Elvira mistress of the dark comes on after"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:24:19",
+            "text": "my demons were about to come out of my head. Sorry, that was that was already we should probably cut."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:29",
+            "text": "But there was a very real plot. Paul Maud'dib vibes going here. Right. So you know, she says, Can they go back to the highlands? And she says, can you tell me about the price? It's like a whirlwind. I know what people all over the world are thinking when I'm thinking or what am I thinking? You're thinking? Can you love me? You can I"
+        },
+        {
+            "name": "Highlander sample",
+            "timestamp": "1:24:48",
+            "text": "can love and have children live and grow. You never prepare me for that you Spanish peacock. Your Spanish Becak patients Highlander. You have done well, but it will take time. You are generations being born and dying you're at one with all living saints. Each man's thoughts and dreams are used to know you have power beyond imagination. Use it well my friend don't lose your hand"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:24",
+            "text": "credits it's a kind of magic"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:25:33",
+            "text": "great movie"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:36",
+            "text": "it is a little creepy that he essentially becomes like a god at the end like he's like, Oh, I'm I have access to everyone's thoughts was like, Okay, it's a bit of a"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:45",
+            "text": "Viking help people understand each other president. So I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:25:49",
+            "text": "will say this about the price. The show described the prize the best as the undescribable thing, which is they said, you know, the last immortal will just have all the power the mortals that ever lived enough power to rule the planet if they want to. So if there's a bad guy, it'll be a time of darkness. There's a good immortal will be a time of peace. And that's much you can grasp onto that more than you can. Oh, you know, I can be I'm, I'm a Google Translate. I could do whatever you need, you know, but I will say the show got that, right, more than the movie did as describing what it would be like."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:29",
+            "text": "I'm gonna build a space shield. It's a little weird. It's a little weird. Let me just ask Jonesy. Would Tilda Swinton play God if she"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:26:41",
+            "text": "doesn't play the Kurgan? Why did you even invite me to come on"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:44",
+            "text": "the show? That's good. Wow."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:26:47",
+            "text": "Wow. Do imagine her in in the church. And he's like, nice to see you Kurgan, who does your hair until there's like a mean disguise like that her weird tilde voice? I mean, that would slap"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:06",
+            "text": "I have a hard time getting rid of Clancy but it would be it would be hard. I do want to see her. Yeah, I do want to see her with the safety pins in her neck though. That would be pretty sick."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:27:15",
+            "text": "We're total head scratcher shot cash. I'm gonna go with Ramirez Ramirez all rise works."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:20",
+            "text": "Good cast. You're out of here. But I want to see her as cast here. Right. She's on the she's on set for a week pay or million dollars. Just let her do Yeah, the chat agrees there. Ramirez works. I think"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:31",
+            "text": "that was gonna be my choice, too. I want to see her in that hat."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:27:35",
+            "text": "Oh, yeah. Younger percent. And that red double it. Yeah. And the pink pants. telco"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:41",
+            "text": "a lot of my, a lot of my choices are wardrobe related, I guess. But I think she would do it. She would do great."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:27:47",
+            "text": "It's got to make sense to you visually before. Yeah. Before we"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:51",
+            "text": "get into like the Yeah, so Josie, I will just say, for me at the end of the day, I look at this film in 1986. It has a lot of really, really great concepts and things that I that I like a lot. But I have to measure it against the Terminator, which came out in 84. And I think if you look at that film, it's not cheesy, and it's not silly, but it is absolutely fucking amazing. And it has incredible plot and dialogue and characters and acting across the full board, whether it's Linda Hamilton, or Michael Biehn, or Arnold. And so I think it's in that reflection that I'm like, I wanted this movie to really elevate its game and rise to that kind of level. This ends up being just kind of like a somewhat silly reflection in the execution. So that's my, that's where I take it harder."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:28:43",
+            "text": "I see I look at this as like a crystallized version of like my coming of age. So as much as I can, I can settle on things like I respect, like, Highlander two, three, and four. I mean, are not. And five are not good films. I mean, as much as I love Donnie Yen and Highlander for that was my introduction to Donnie and, and he's deep in my heart. But highlighter one just captures this time. In my youth. Were like, I'm listening to Queen. I'm watching Highlander. All my friends are watching like Buffy or Dawson's Creek, and I just don't get it. But I get this you know what I mean? Like I understand this and I really was part of the the electric jumpstart to just liking movies and loving movies and searching for things that weren't what was just presented to me not to say that I couldn't love the fugitive or Indiana Jones or the mainstream hits. But this was like, oh, man, not not everything has to be you know, Act One, act two, act three, netted, everything has to be good guy, bad guy. And this really was like step one. For me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:53",
+            "text": "That's a really good unlock that idea of a more complex and more complex character. And I'm glad you had that expert ants watching this watching this film for"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:03",
+            "text": "sure we heal each other Jason healed each other. When we came, I'm gonna cry like I listened like I do when I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:30:09",
+            "text": "listen. Are we all in Connor McLeod's head right now? Exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:13",
+            "text": "It's all a simulation or is he in ours?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:16",
+            "text": "It's a kind of magic. Josie. So plug for us, please. When will you be returning for podcast interview with the podcast vampire Lions for Lambs is next on diet."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:30:31",
+            "text": "I will say and I don't like to because there was a time where I said something was gonna happen and haitch and our friend Lindy has been grilling me for it for like 12 years. But I will say that coming soon to a pod service near you. You will hear jlb more regularly. And I say however when breaking"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:55",
+            "text": "news on the news, klaxon. I mean, I"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:30:59",
+            "text": "won't throw any lambs for your lines just yet, but I would say don't unsubscribe to any of the PRS syndicate shows that you subscribe subscribe to alright"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:15",
+            "text": "Yugi you heard it here first. We could be just we could just be days away you sandbag"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:31:19",
+            "text": "and son of a bitch. I knew you're gonna say."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:25",
+            "text": "Amazing, amazing. Well, I will say relative to I can't wait to just hear what you come up with. And obviously we'll be we'll be there to support you. I will say when you get around to it on podcast vampire, I do think you guys should cover Tropic Thunder. You've you've kind of talked about brushing right past it. But I do think that performance is important for Tom Cruise and his career. I really do think it was the pivot point where he came back from the Oprah thing and people were suddenly like, whoa, this guy's kind of funny. What's happening? Yeah, you're"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:31:56",
+            "text": "gonna have to I mean, barking up the wrong tree. It's obvious I don't executive produce anything for the paper kick radio syndicate. But good point. I mean, I wouldn't be opposed to it, but the council has to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:07",
+            "text": "meet. Okay. Josie with his B class shares non voting rights."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:32:12",
+            "text": "I said, I have no voting shares. I cannot direct the ship at any way. You"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:18",
+            "text": "need to unionize against this oppressive management."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:32:22",
+            "text": "My business agent has told me that I'm not authorized to speak on any of those matters."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:28",
+            "text": "Oh my god, Jonesy, we love you. Thank you so much for coming back for episode nine. Listen,"
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:32:33",
+            "text": "whenever you you know, throw out the bad signal or whenever you want to ping me through the quickening. You know, I'll be drawn to like the gathering."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:44",
+            "text": "We're choosing a date tomorrow. We want you back. We want you back in October, so should be great. October just days away. Just days away. We love you my friend. Take good care."
+        },
+        {
+            "name": "Jonesy",
+            "timestamp": "1:32:56",
+            "text": "I love you. Always have always will."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:05",
+            "text": "Wow, Jason Jonesy,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:07",
+            "text": "always a delight."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:09",
+            "text": "Are there still flames coming off of me?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:12",
+            "text": "Oh my god. You can't you can't we just shameful. You're just you're just you're you're you're I predict that you're going to regret the things you said."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:21",
+            "text": "It's yeah, that seems very obvious. All right. Well, how about if we get into some letters? Let's do it. All right, here we go. Our first letter is from our dear friend."
+        },
+        {
+            "name": "Kev",
+            "timestamp": "1:33:31",
+            "text": "Hey, dude pod Kev here about a movie I saw for the first time because of your show. And that, of course, is the classic Highlander. Kevin's question this week revolves around the nature of Highlander, like Trevor's another franchise from kind of around the same time. It's got tons of sequels and TV series and spin offs or whatever. So right before Episode 100, a good old fashioned cab's questions. What is your favorite television series that is based on a movie? Like what is your favorite television spin offs? Thank you very much. Really excited for episode 100 psyched for episode 103 where the wheels will really fall off. And I'll talk to you guys real soon. Thanks. Once"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:18",
+            "text": "again, it's calves questions. Love Wow. All right, what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:25",
+            "text": "a blessing to have calves questions are alive. I mean, is there's a very there's a very, like sort of factually easiest best answer to this question, please. Which is Buffy the Vampire Slayer because it's like a mediocre movie, but I mean, it's like TV. Wow. So it's like it's like not it's not it's not super? It's not super difficult. However, I would give like special. I would give like just the question about the question about like, tying into Highlander and sort of all the weird, like TV show and then back to a movie and way that route took it's not exactly the equivalent, but I would call special attention to V. The TV, the TV show v, which was initially I think it was at first a movie technically, it was like a mini series. Yeah, like a mini series movie, basically. Yeah. Yeah. And then it became a television show. And then it became, there's probably some other stuff in between, but then it was rebooted as a TV show. Yeah, TV show was pretty good. So I would I if you haven't seen any of the V, cinematic universe, all of that's pretty stunning. Shit. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:42",
+            "text": "So those are my two answers. That's awesome. Yeah. And I know you were heavily affected by V with the reveal. Oh, yeah. Of the alien lizard face."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:51",
+            "text": "I was heavily like, I mean, look, I don't know if we can. We don't have enough tape for me to talk about all the ways in which V molded me into the young man that I am today. I would say, Diana, the chief V. Lady has I think had a pretty strong effect of on all set of persuasion. Yeah. And then I think I think also but like the cut of the baby of the birth delivery of giving birth to that lizard thing. Like, honestly was like it was I did I think about it during the birth of my two children. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:33",
+            "text": "Both times. Yeah. Oh, god. Yeah, I remember that. That was horrific. That was that was horrific. So Kev has both asked and answered his own question in the, in the events channel. So I was gonna say BSG Battlestar Galactica and actually, the original Battlestar Galactica, because series, Glen Larson did that they actually released a pilot movie in theaters, as well as put it on TV for the show. And then the reboot was both a mini series, kind of movie type thing. And then the incredible show, so I'm gonna definitely cheat and grab that one. That's good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:11",
+            "text": "That's good call."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:12",
+            "text": "Good post Westworld. Also, you know, had some had some moments that were good. Yeah. Alien Nation never watched the movie never watched the show. Just trying to see anything else that jumps out really good. I think you're right, buddy, I think Yeah. I think that was the that was the one, Buffy Oh, my God. All right, Kev, thank you so much for that. Oh, my God. It's time for the 99th time."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:37:39",
+            "text": "Himba Hey, Cory from Austin, Texas, Colin in about 1986. Hi, lander. Oh, here we are. And episode 99. You guys. And you chose Highlander. What was 100 V? Who knows what we're going to watch for 100. But anyway, let's get back to Highlander. Highlander was not necessarily one of my favorites. I wasn't totally into it as a kid. I thought here and there on cable, whatever. So I put it on just to refresh my memory. And I had it on while I was doing other stuff. So I didn't give it my full attention, which is probably the best way to watch Highlander. Because it was great. It was very entertaining. Move fast. So I had to look up some stuff about I forgot about all the music in there, tween and all that kind of stuff. And then I noticed that the director had to look this up. There was a whole bunch of music videos, like directed you guys probably gonna talk about this, but he directed the Buggles video Video Killed the Radio Star is one of my favorite videos of all time. I think I'm turning Japanese by vapers great song. He did those early Duran Duran videos 100 Like the wolf Rio,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:42",
+            "text": "lot of Duran Duran in"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:38:44",
+            "text": "music video. Anyway, the opening sequence in Madison Square Garden was fantastic. And I don't know if you guys are familiar with the wrestlers that were being shown. And let's all keep in mind. It was a different time and those rebel flag cakes are terrible. But what is the excitement of 80s wrestling is real. And I was taking like right back to my youth and watching wrestling in the 80s. But this leads me to who would Tilda Swinton play and she would have to play Michael P S. Haze. The P S stands for a purely and I know you know which rest of that is with his gorgeous locks and his rugged beard, man. And that until then that role. Anyway, Highlander, super entertaining. Clint brown he rolls. Ah, Lambert, ILA my favorite kind of behind the eyes look. Yeah, whatever. Anyway, I'm sure it's gonna be a great episode. And I am looking forward to the next one. I think it's going to be a big deal. We'll see. Fingers crossed. Thank you. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:54",
+            "text": "hell yeah, Cory."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:55",
+            "text": "That's great. Love you crazy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:57",
+            "text": "Jason. What was your history with wrestling I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:59",
+            "text": "do not have a rest Feeling history. That's like that's one of my blind spots for sure. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:04",
+            "text": "I'm from Florida so I used to watch a lot of wrestling Dusty Rhodes Ric Flair like that that kind of like late 70s. Early 80s was definitely yeah. In in the wheelhouse and enjoying that. Oh my god. Well, Jason, we did it. We did it. High. 99 episodes down. Don't count down to 100"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:29",
+            "text": "I mean, the podcast is here, and it's been a great, it's been a great run. It's a shame we didn't make it to 100"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:36",
+            "text": "I want to thank everybody for coming out. Yeah, it was. I'm proud. I'm proud of what we did. I feel like we accomplished our goals."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:42",
+            "text": "We tried. You tried very hard. The rest of us the rest of us tried middling ly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:50",
+            "text": "This is goodbye. Yeah. Oh my god. Maybe we'll see you next week. You guys."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:40:55",
+            "text": "Yeah, peace."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:01",
+            "text": "And that's it for this episode. I want to thank Jason and Josie for kicking the crap out of me. Next week. It's all been leading to this episode 100 The season five finale. And joining us to submit his spot in the five timers club. Guests of the season four finale, famous artist Danny has. We tackle the classic Disney sci fi film of the black hole streaming now on Disney plus. You've enjoyed the show leave us a five star rating and review wherever you listen to your podcast and be sure to hit that follow subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. A link is in the show notes. Doing pod as a tip tech podcast John up production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whipsaw music. Transcript provided by Sophie shin. The episode was edited by Megan Hayward of edit audio and produced by me. Ah, thanks for listening. We'll see everybody next week for episode 100"
+        }
+    ]
+}

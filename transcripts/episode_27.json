@@ -1,0 +1,1566 @@
+{
+    "episode_number": 27,
+    "episode_name": "The Greatest Showman",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune paw, your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host Jason. I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "saying like I wrote an original musical about Dune, and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:25",
+            "text": "by founder and engineer Sarah chipps."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "0:30",
+            "text": "As a socialist"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:32",
+            "text": "On this episode, we covered the data and Rebecca Ferguson's 2017 musical powerhouse movie, the greatest showmen. We discussed the struggle for equality, humane treatment of humans and elephants and have a quick sidebar on Sunday as incredible HBO series euphoria. If you're enjoying the show, we need your help. Be a chiller like listener eaten car and leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, June the greatest showmen what is going on? How is new your hair video? How you guys holding up out there? No one knows. New York. Oh, what happened? Did you have to flee?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "1:23",
+            "text": "Yeah, no, we're just in Florida to worry about the winter at the COVID winter and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27",
+            "text": "then going back because Miami is the new hot place for tech people. Yeah,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "1:31",
+            "text": "we're not there though. Okay, for Yeah, yeah, we're on the coasts."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36",
+            "text": "Are you officially? snowbirds done?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "1:38",
+            "text": "Yeah, we're the I'm trying to make us the world's youngest birds. Nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43",
+            "text": "Yeah. I was born in Gainesville. I went to college in Gainesville, okay, at least the beginning of my college in Gainesville. Yeah, yeah. But I spent most of my time in the spring break capital of the world. Undisputed Daytona Beach, Florida. Yeah, okay."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "1:56",
+            "text": "Yep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:57",
+            "text": "Yeah. What's the craziest thing you ever saw Daytona Beach, Florida, it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:01",
+            "text": "was probably going to Campus Crusade for Christ would run these slow motion football games, where they would like act out as if they were running plays forwards and backwards is really funny. And then as soon as it was over, like, all these hot young college Christians would like pair up with people who'd walked up and try and convert them."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "2:21",
+            "text": "That's so nice. Pretty much. That's the team is Daytona story over. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:30",
+            "text": "Yeah. That's pretty. Well, welcome"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:31",
+            "text": "back to the show, sir. Chips."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:33",
+            "text": "Thank you for having us here. Chips returning guests. Returning guests."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "2:36",
+            "text": "You have returning guests before?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:38",
+            "text": "We have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:39",
+            "text": "we have but but few is illustrious, as Oh, great."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "2:42",
+            "text": "Okay, great. Well, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:44",
+            "text": "knew after we had you on the show last year to talk about euphoria. Yes. So incredible. And this time I learned the day after I was editing the podcast that she pronounces it zendaya so we'll be using zendaya  tonight. Oh, yeah. Yeah, I tried to I tried to punch him in and you know, I was gonna horrifying. Yeah. Yeah. So we have that fix. Kamala. That's right. So we're talking we're talking about the other the other Queen tonight. This is Zendaya and Rebecca Ferguson. Also from dune playing lady Jessica, are going to show us what strong female is look like."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "3:26",
+            "text": "I didn't know there was another member of the dune cast."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:29",
+            "text": "Yeah, it's a double tire. Yeah, so this is in the dune. The dune movie features all of these songs as well."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:36",
+            "text": "Controversial choice. So this is the greatest showmen that we are doing tonight. And we're really excited to to have Sarah back on to talk about that. Next week. We have Timothy shallow May and Robert Pattinson. Both of them together on finally, as it was meant to be."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "3:56",
+            "text": "What a sexy pod you guys. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:00",
+            "text": "I mean, it's really already it's at a high level. But yeah, yeah, that's great. Kick it up. So So those guys are coming on. We're gonna talk about the king, which was 28. T. I'm excited"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:13",
+            "text": "to watch that. I'm excited to watch that. I haven't seen that yet. That's great. possibly"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:17",
+            "text": "the worst haircut I've ever seen on on Timothy or any other human but, but very excited to check that out. Yeah, yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "4:25",
+            "text": "Did you catch his SNL? I want to eat Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:29",
+            "text": "Was it good?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:30",
+            "text": "Oh, no, it was. It was terrible. What did you think? Okay,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "4:35",
+            "text": "I like there's a few skits I really like I like the BT one. Timothee Chalamet a and Pete Davidson as a like, tick tock rap group."
+        },
+        {
+            "name": "SNL sample",
+            "timestamp": "4:46",
+            "text": "Absolutely. From black parties of the 80s in the boogie down Bronx to the protest movement. Today. Hip hop is about the lyrical tradition of American. Nah, see, like for me? For me, it's about that heat, you know, The yield"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:04",
+            "text": "I'm sorry. Yeah. That sounds great. Yeah, that sounds good. Yeah. And see that? Yeah, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:09",
+            "text": "thought. So I thought Timothy did a fine job. It was very weird. This was obviously booked under the anticipation of Dune opening that weekend. Oh, yeah. Let's"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "5:18",
+            "text": "think about that. Yeah, I was like he's on because he's famous. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:22",
+            "text": "Well, so they literally truly No, so there was no reason for him to be not at all and there was no reference to it. They didn't. They didn't talk about it. Sad. The only thing was at the end, when they did the cast, the cast call out. He was wearing a legendary shirt, in solidarity against Warner Brothers and AT and T so Yeah, fuck"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:40",
+            "text": "Warner Brothers. No, no, no, no. They're the enemy. Give us our movie. We're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:46",
+            "text": "trying to get your money out. We love Warner Brothers. Okay. Warner Brothers, his"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:50",
+            "text": "children. Were with the corporate overlords. We love the cell phone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:55",
+            "text": "I have my AT and T Mo. Yeah. Well, so can we just speaking of HBO Max. Since we have Sarah on to follow it from euphoria? Can we just talk about euphoria, season two, episode one spoiler free. But can we just talk about that? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:13",
+            "text": "yeah. Let's talk about it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:15",
+            "text": "Sarah, I start."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "6:16",
+            "text": "I really enjoyed it wasn't what I was expecting. It was not your typical euphoria show. No, it was very, it's a very different format of more of a long, you know, one set two actors. And an hour."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:31",
+            "text": "It was like a little play. Yeah, it was like a little a little like one act play. Yeah, about addiction. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:37",
+            "text": "The story behind it was they actually, the Friday before they were starting production on season two. So they done all the prep, they were all ready to go. They got shut down for COVID. This was back in March of 2020. So then they were on lockdown. And they were trying to figure out what to do. And they ended up deciding this format because they could film with just a couple of actors in a couple of locations. So that's why they did this. Sam Levenson, the writer, director, producer of the show, also filmed a secret movie with John David Washington and Zendaya which comes out next month, right, Maria and Malcolm. So that's going to be really awesome. And we're going to watch that. Next month. We have boom from Xenonauts coming on to talk about that movie."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "7:22",
+            "text": "Very cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:22",
+            "text": "Oh, that's great. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:24",
+            "text": "I love brother Ali. So I'm just gonna play really quick a segment you talked about the acting that was in there. In Season One, I loved every moment with Brother Ali. He is a older firefighter crackhead who is in recovery. And he becomes Roos sponsor. And so this whole thing, their relationship has always been about him trying to inspire her but also challenged her. And I just thought this one section here was incredible. So let me play this."
+        },
+        {
+            "name": "Euphoria sample",
+            "timestamp": "7:52",
+            "text": "Yeah, no, I know. But you did. And your punishment. The sentence you given yourself was that you rule Bennett are beyond forgiveness. That punishment is way too harsh and is also way too easy. That allows you to keep doing exactly what you're doing without changing because you deserve it. There's no hope you're beyond forgiveness. See me as just fuck the fuck off forever. Go Damn, I gotta because that's what this girl this piece of shit deserves. This is why the world keeps getting worse. People are doing shit that we deem unforgivable. And in return, they decide there's no reason to change. So now you got a whole bunch of people run around who don't give a fuck about redemption. That's scary. Oh, yeah. What have you done? A lot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:36",
+            "text": "That just in the context of January 6, just completely pulled me up short when I was watching that the other day."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:42",
+            "text": "Yeah, he's great. I love him. He's got a great voice. Colman Domingo, unbelievable. Unbelievable. Great actor."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:51",
+            "text": "And she was just phenomenal. Like there were scenes where she was kind of, you know, smiling in moments and then just her just really feeling all that pain and and emoting just phenomenal performance. Loved it."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "9:03",
+            "text": "Yeah, I think chemistry too is really good as a sponsor and sponsee Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:10",
+            "text": "I am totally fearing that they are definitely going to have him relapse and I am not looking for that happening. So Oh, that's my sad predictions. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:20",
+            "text": "Zendaya does sad so well. She's just really like a good sad really."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "9:25",
+            "text": "I Yeah. In this show. She especially doesn't "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:29",
+            "text": "Really good. So check out euphoria Season Two on HBO max. Now. I think they're gonna do a couple other interlude episodes. I think they're doing a jewels episode. There's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:37",
+            "text": "a season two already. Yeah, yeah. And episode two. I mean, Oh, was"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "9:40",
+            "text": "it out? Episode Two came out."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:42",
+            "text": "I thought I saw it on HBO. But maybe it was just a preview,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "9:44",
+            "text": "I think should come out on the fourth,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:46",
+            "text": "which is not that I'm tracking closely, but maybe. I don't know. It could be. That's great. Well check it out what we'll provide links to to, to your foreheads, a great, great, great show. So check it out. All right. Well, I Let's get down into some do news. Would you like to know more? Do news? Yeah, so I just have one that came in literally 10 minutes ago in the dune discord. And that is the announcement that the new James Bond movie no time to die has now been pushed to open on October 8. And so there's some speculation about whether or not this will affect dunes October 1 Target, especially as they tried to negotiate for a theatrical only or some combination, or whatnot."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:34",
+            "text": "That's a good one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:35",
+            "text": "Will dune beat James Bond in a second week. No, but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:42",
+            "text": "I mean, no. It's hard to be. It's hard to be James Bond. I mean, that's a pretty good franchise. Yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "10:47",
+            "text": "Is it still what's his face? Got? Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:49",
+            "text": "what's his face?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:50",
+            "text": "Daniel Craig's got to be pretty old now. Right. I was watching. I watched a we actually watched on a New Year's Eve or something like that. We watched the first one. He did the Casino Royale. It's great. And he's a he wasn't that youthful even. That was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:05",
+            "text": "2005. Yeah, yeah. So he's been doing it for a while he has. So we are doing Skyfall in a couple of weeks. Oh girl that has Javier Bardem. And it was also shot by Roger Deakins and Sam Mendes. So it's a it's a very cool movie. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:22",
+            "text": "he's 52. I guess that's it. That's all. Yeah. I mean, you know, that's not that."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "11:28",
+            "text": "That's 20 in Hollywood. Sure."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:30",
+            "text": "He's fine. He's fine. Alright, my piece of news is that National Geographic announced that they have just discovered new proof that in the prehistoric times, there was a six foot predatory worm hidden in the seafloor sand. The lead paragraph says hidden beneath the seafloor around coral reefs, giant worms wait until an unlucky fish lands close enough for them to nab with their jagged, agile jaws and pull back into their Sandy burrows. These rapid deadly attacks have earned the worms the name sand strikers, or Shai elude"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:09",
+            "text": "Nice."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:10",
+            "text": "Somebody's getting sued 20 million years ago. Amazing. Yeah. So that was my piece of news. Check those out. They're now known as pentakus. For musei pentakus for mostly,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:20",
+            "text": "they could have thrown Herbert Herbert s."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:23",
+            "text": "They could have thrown them a bonus. Bonus. Yeah. All right. Very good. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:27",
+            "text": "don't get a lot of geological news on Dune pod."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:29",
+            "text": "So no, this is a special treat. Well"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:32",
+            "text": "done. All right. Any other news? Sara, do you have any new news that you'd like to report? Um,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "12:37",
+            "text": "no, I don't have any new news didn't mine do news is I've made it through the next chapter. But it's got stuck again."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:45",
+            "text": "Chapter Yeah. How's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:46",
+            "text": "it going? It's not your favorite book. It's"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "12:49",
+            "text": "just it's been go it's been slow going in the beginning. Does it get better?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:53",
+            "text": "You don't you don't love you don't love Paul, I think is this Yeah, I just He seems really"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "12:57",
+            "text": "whiny and like, Nah, I mean, I'm guessing that they want you to think he's whiny. Maybe. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:04",
+            "text": "it's just this is interesting, because we just talked about last week we had Sarah beykpour from Twitter on and we were talking about the Sci Fi miniseries. And Paul was very whiny in that miniseries and my recollection from the book is that he is not whiny is that he is always kind of centered. He's trying to figure out what's going on and understand and he's nervous about the move. But not that he's like Luke Skywalker. You know, trying to go to Tashi station. Yeah, yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "13:31",
+            "text": "No, I kind of more saw it like not like that kind of whiny but more like, more like, like it comes off as like rich kid whiny. Know where he's like very judgmental. All these people. He's like, coming in contact with what's my vibe."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:47",
+            "text": "You know, that is that is kind of the vibe that you get in the Sci Fi miniseries, which like, we were like, I don't know if that's true, but I guess that matches your read. So that's good. That's good feedback."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "13:58",
+            "text": "Yeah, I don't know that. Well, I just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:59",
+            "text": "Try to read another chapter. See if you can get to a warm saving."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "14:04",
+            "text": "Challenge. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:05",
+            "text": "Do you do you run? Yes. Like get the audiobook and put it on one five. Yeah, you can just one five or 175 just choke it down. It's great. Ya know,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "14:15",
+            "text": "I got a job. I only Jack Damson run. That's Oh, really not the same. Yeah. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:20",
+            "text": "you got to promise land is promised land is the shit when you really get Obama and your earholes while you're running. It's great. But"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "14:27",
+            "text": "wait, is it like hype music?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:29",
+            "text": "Now it's just know there's a lot of talking just Obama talking to you."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "14:33",
+            "text": "Literal jock jams I listened to literally jock jams."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:37",
+            "text": "Well, I would just try to read that whatever way you're consuming it. I would try to read until the worm shows. It's like the end of the first third. It's not that it's not that far. And if it's not working for you, then you know then you can then bail for sure. Okay. All right. Great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:50",
+            "text": "All right. Very good. Report back the next time next time you're here alright, Are you guys ready to get into this?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:05",
+            "text": "Yeah, let's do it, man. Let's talk about some fun circus. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:11",
+            "text": "The greatest showmen is the quest for respect and acceptance, and the dangers of being caught up in the pursuit. Phineas was born into poverty on the streets of New York. But as a young boy, he meets charity Hallett and commits himself to providing her a life of luxury. Driven by ambition and filled with natural charisma, Barnum strikes out on his own path creating a Museum of Curiosities, featuring a cast of people society considers freaks, creating a stage for them, he achieved success beyond his wildest dreams, but risks losing it all when he forgets why he wanted it in the first place. Will he find the balance and realize what truly matters in time to lift his circus family up and cement his status as PT Barnum? The greatest showmen, question"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:01",
+            "text": "mark question mark."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:02",
+            "text": "Ah All right. So there's a lot in this in this movie, there's quite a bit going on. What's your like? What was your impression when this came out? Sir? I know you hadn't seen it until until literally today. Did you see it when it came by in any kind of like visual impression or?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "16:25",
+            "text": "Well the opening do you mean like before before I saw it like when it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:29",
+            "text": "yeah, when it first came out? Did you have any like in the cultural zeitgeist anything? Yeah,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "16:33",
+            "text": "it was very like Hugh Jackman. Musical. Beautiful, like the all the art that I saw was really beautiful. It definitely looks like an appealing movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:42",
+            "text": "I assumed it was like Moulin Rouge style. Yeah. Yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "16:45",
+            "text": "That seems fair."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:46",
+            "text": "That seems like a fair assumption about you, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:48",
+            "text": "I had no I had no awareness of this movie. I mean, I knew that there was a Hugh Jackman circus movie. That was a musical. And like, I didn't, I didn't that that to me. Did not suggest I needed to learn anything more about it. I felt that was a so I was like, Okay, understood. Not targeted. I probably I probably would have lived the rest of my life with that. With that read. If not for dune pod. Yeah. Which continues to enlighten You're welcome. And so yeah, I it was it's an interesting movie. Like I think maybe it's a place to one thing to mention I found in reading about it is that it's this it's one of these weird box offices successes, where it came out basically the same weekend as the Star Wars movie. And so just got crushed. In the box office gate was, you know, the first three weeks or something first four weeks were terrible. And they were like, Oh, this is a bomb. And then it had this really long tail of fandom. And like people started going and had a huge like longtail success of like people queuing up to see it. And like the movie made something like $400 million eventually. And like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:02",
+            "text": "the soundtrack did 7 million copies. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:05",
+            "text": "think soundtrack people love this. Yeah,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "18:08",
+            "text": "there's loved it. There's like it's a popular tick tock. Like part. Oh, yeah, there's like a ton of Tktoks with them first, like, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:16",
+            "text": "yeah, I didn't know that. Nice. A million miles away"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "18:19",
+            "text": "or the one that know the one that's like, ah"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:25",
+            "text": "gotcha, gotcha. Gotcha. All right. There was like they brought it back into theaters for like sing alongs like I have like a sing along like theatrical release for it. And like Hugh Jackman did a bunch of like social media stuff for like, there was various challenges and stuff. I it's kind of interesting. Like culturally how unaware you can be Oh, yeah, or I can be a break something that's just like a huge fucking success. Like, I'm so out of touch and like, as a whole movement. And there it is, beneath the surface, people are like, fucking circus musical. That's my, that's my whole idea."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:56",
+            "text": "It's actually cool. The idea of like, a sing along like that, to me strikes me as the love of singing that's kind of like an idea about the future of the kind of things that will be really successful in the future, right? Like, this is something different and unique and special about media in a public environment. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:12",
+            "text": "that's true. And it kind of goes to the point of like, Oh, is that the death of movie theaters because of the pandemic and like so but like, you know, there will be this like market for communal artistic experiences that involve movies that are just different, like I love I love and I sing I've been like, you know, The Sound of Music sing along Yeah. You know, like a bunch of Disney's sing along as they do with the Castro Theatre and like, people, you know, Castro theater, and here in San Francisco, Alamo theater, as we talked about before you make it into like an experience people will go for sure. Totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:41",
+            "text": "Well, so we have Zendaya we have Rebecca Ferguson, Hugh Jackman, Zac Efron. And then a whole Michelle Williams and a whole bunch of other folks was directed by Michael Gracey. Who directed Ned Kelly, which is Heath Ledger, right from way back. And then he's also a producer on Rocket Man. One thing that struck me this movie is really beautiful. All of the production design was phenomenal. And it turns out it's Nathan Crawley who has done all of Nolan's movies. Oh, so not surprising that that would be great. Oh, that's interesting. Yeah. But right out of the gate, like, there's a lot going on that that opening song is like, very intense. And it's like, like lions jumping through stuff and elephants and things like all going around. I saw I was so sort of like trying to take it all in. And then when they do the zoetrope effect, and then transition back, I thought that was really beautiful. But it was just very cool looking visually. Yeah,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "20:38",
+            "text": "it was a it was definitely a good way to kick off a movie. Like, especially if you're there for a musical like having great music, lots of colors, lots of movement. It was great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:48",
+            "text": "So then we're cutting to him. You know, PT Barnum as a little poor kid. And meeting charity. So the first question I had is do little kids fall in love? Do like eight year old kids like Oh,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "20:59",
+            "text": "think was very weird for me also, like, the trope of like, hole in a shoe means I'm poor. Yeah. I mean, like, yeah, I guess that's right. But there's a lot of other things really bothering you before like the whole machine was really the big one. Yeah. But that's how you communicate into movies. That someone is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:20",
+            "text": "his dad died in like four bars. Like, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:23",
+            "text": "I appreciated this about the movie was like, one thing we've talked about before, is like, I appreciate a movie that is like, we started about this with Drive. A movie that like is like, you know, got a fucking like, we're getting there. We're not We're not messing around with superfluous bullshit. And the first act of this movie, like really, he's like, poor. His dad dies, he meets the girl. He gets the shit slapped out. He's like hunting for bread. Like, whatever. Like it's just like, Yeah. Shit, how much? Was it? Like, she"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "21:55",
+            "text": "was like, I see this girl. I make her laugh, get slapped in the face. I like go work on the trains. And then I come back and stop by her house. And I'm like, Let's go like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:05",
+            "text": "Well, no, they were writing. Yeah, we're writing, writing. While they were singing on the beach in meta. Yeah. Yeah. He met her like only twice, but it seems"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "22:14",
+            "text": "like a, like a risk that he was willing to take."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:19",
+            "text": "It's totally Well, I thought it was. Well, they skip that. Right? They skipped that bit of data, just the courtship"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:26",
+            "text": "all of it. He just showed up and was like, Yo, Pops, I'm here for the girl."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:31",
+            "text": "But that de aged Hugh, I was like, Whoa, this is this is weird. Like he was he da in that one shot. I think he was like, meant to be 25 maybe or something like that. So I thought that was a little tough to look at. But after that, I thought it was fine."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:46",
+            "text": "Yeah, I kept waiting for him to like, pop out the claws. Like when you get threatened by the dad. And that's I'm taking her seat. Yeah. Well, "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:56",
+            "text": "that dad was a real dick."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "22:57",
+            "text": "Seemed like a bummer. Yeah, dad wasn't great. Like a good guy to be around."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:01",
+            "text": "The one thing that's weird about this movie is like, where is it even set? Like? I mean, what"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:04",
+            "text": "like, is this to New York and outside New York?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:07",
+            "text": "I mean, is it though? Like it it is. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:09",
+            "text": "read about it today. That's what Barnum is from. He's in Connecticut. And like, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:13",
+            "text": "know, he's from Connecticut, and shout out to Connecticut pizza, but like he is he like, Is it like the movie had no vibe of New York that like I mean, 19th century New York, but like, even still, like I couldn't really? I mean, like it just it felt like it wasn't from anywhere. No, it didn't. Where's the beach? Were they in the Hamptons?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:31",
+            "text": "Yeah, cuz they took a train, take a train to get to the to her family's place, which"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:37",
+            "text": "is like the hammer. I had the beach of those famous Connecticut beach."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:43",
+            "text": "Why are you asking me this question?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:44",
+            "text": "I don't know. I'm just saying I have questions about where the movie is based. And like also, at one point, they get called to ghosts meet the Queen at Buckingham Palace, and they just pop right over which as far as I know. And like 1850 is, like just a casual thing. It takes a minute to get the fucking bug"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:59",
+            "text": "that was economical, how they just sort of they skipped that journey and got him right there. Yeah, Zac Efron hasn't won. Anyway. So skipped. So So Barnum loses his job, right? And he's going to try and figure out how to how to make it so there is a scene where he comes home and he tells his wife that he's lost his job. And he's there with the kids. And to me this the crux of this movie is about ambition and, and trying to drive for material wealth, but this scene where he has to create a present for his daughter."
+        },
+        {
+            "name": "Greatest Showman sample",
+            "timestamp": "24:32",
+            "text": "I do have a present, but not just any present. Oh no. The most amazing birthday present ever. This extraordinary machine was originally created by Leonardo da Vinci 400 years ago, but the blueprints had been lost for centuries until just last week on a stormy night when a sunken pirate ship washed up on the shores of Nantucket. They found skeletons and treasures and the blueprints were recovered by none other than Jay W A mercantile the blueprints crossed my desk very briefly, but I managed to commit them to memory. And if I remember correctly maybe birthday Caroline."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:21",
+            "text": "That was amazing and Hugh's performance in that scene was fantastic. And then when he spends the penumbra and you have the lighting effects like to me, I thought the cinematography there and and a bunch of the scenes was really gorgeous."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:38",
+            "text": "No, yeah. No, it's smoke. Yeah, it was cool. Yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "25:43",
+            "text": "I think because like now that you're saying it, I'm thinking back and him playing young and hungry is not trying to introduce ageism, but it's like he's a little too season to be young and hungry. You don't I mean, so amusing and be young and hungry and then compassionate to his daughter. I think once you lose that, Hugh Jackman being young and hungry, I think, I think it's a nice movie and a nice story, but it took me a minute."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:10",
+            "text": "It also blows past that pretty quick. Like it goes from like he's working as a number cruncher for a failed shipping company to his daughter's can't eat, or for ballet lessons to wait a minute. I've got it all like we're doing great. And I've got a giant house. I mean, that really all happens in the course of like, 30 minutes or something like that, like,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "26:27",
+            "text": "yeah, I was like, I was like, what's gonna happen in this? Yeah, it seems"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:31",
+            "text": "like it's over. He did it. He was like, he was poor. And now he's got this great circus. No problem was"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:35",
+            "text": "pretty quick. And definitely I liked the idea that they they reflected that just having his ideas and, you know, sort of static world was it wasn't enough he had to be able to figure out how to get you know, the the outsider angle and the McCobb angle in order to make it work by harnessing these freaks, which they, they had kind of done the call back to that after he got slapped in. His dad died. He had somebody that gave him the apple that was some kind of outcast, so they were sort of broadcasting that he's whatever drunk drunk outsiders Yeah, so then we have the introduction of of Zack as Carlyle. And as he arrives Zac Efron has this really rich guy checking it out. He's introduced to us and data so we finally get her on screen. And both like the slow motion where she sees him and then flies away and when she turns to him and WD and I want to introduce my newest hire, Philip Carlisle it's pleasure to meet you. What is your alchemistic cola? Everyone's gotten I loved her presence. In that moment. And throughout the whole movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:49",
+            "text": "I liked all of the scenes of Zendaya on the trapeze, like doing like happies Yeah, because I've said before she's like, really, like, it's we see a lot of sad Zendaya and like seeing like happy like, you know, she's doing some, some moves, some dancing moves, or some trapeze moves or falling in love moves. I liked all that. I like seeing that for her."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "28:06",
+            "text": "I was really torn when he was like recruiting all the like, quote, Sideshow acts, where he's like, peep, I had a real like, moment of sitting there and trying to decide the like, morality of the like, everyone's gonna laugh at you anyway, why not make money for it?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:24",
+            "text": "There's a moment where he leans into Letty, the bearded lady and says, they're gonna love you, they don't know it that that, to me is actually really powerful. And for her particular her gender journey, I think it was really important that,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:36",
+            "text": "that that whole thing just doesn't work for me. And that's maybe the somatic level of this movie just doesn't work for me, like the idea that like he approaches them as like, your circus freaks, but like, I'm doing it to, like, empower the humanity within but like, I'm actually just trying to, like make a buck hustle. Yeah, you know, I'm just trying to make a buck. But then like, I get caught up in it. And now I need to realize you're human. I was like, Okay, what whatever man like not really though. Like PT Barnum was a terrible person. Like there's none of this is true. Trying"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "29:04",
+            "text": "to figure out is like, does history say that he was actually like this great chiller. I was wondering,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:09",
+            "text": "no PT Barnum bought a slave and pass her off as George Washington's, like Mammy or somewhere. I mean, like, like, it was like it was the bottom. The bottom was bottom. Like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:22",
+            "text": "that sounds problematic. I mean, he Yeah, whatever. People should go read the wiki and make up their minds for themselves. I think he has less blood on his hands then Paula Atreidies. I'll just leave it at that. Yeah, but he was real. Okay, that's fair."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "29:36",
+            "text": "You know what this is a little known fact. It's just like a wall. We're talking circuses. I don't want to hijack but do you know that? Do you know about the incubators? Like, why we have incubators for babies? No like for like preemie babies. So the reason those they were invented by circuses, actually because people when preemie babies were born, they didn't know what to do. And people would come look at them like they were coming to look like circus freaks and vented Circus is a way to keep them alive. And then they were doctors."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:08",
+            "text": "Wow. Where did you Where did you learn that? That is a crazy "
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "30:11",
+            "text": "radiolab or like one of the podcasts. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:16",
+            "text": "That's great. What do we think about the music on this musical?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "30:21",
+            "text": "That there's like really catchy songs that get me going?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:24",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:24",
+            "text": "we got about a third of the way through the movie. And my wife April was watching along. I was like, hey, it's a romantic movie, you know, you'll probably like it. And she, somewhere in there, she was like, Wait, they're gonna keep singing like a lot. And that was when she got up and walked out. The songs were all done by Justin Paul and Ben passuk, who at the time they were originally tapped by the director had never done a film before had never had any mainstream success. They were basically just a couple of nobodies working on this. And in the midst of doing this, they wrote a small play called Dear Evan Hanson, which won the Tony they wrote many of the best songs for a little movie called lala land. So they kind of blew it out of the water. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:14",
+            "text": "So they're like really successful musical people. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:16",
+            "text": "Yes, they are now Yep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:19",
+            "text": "Okay. All right on get for them."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:21",
+            "text": "So let's talk about our next musical component who is Rebecca Ferguson."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:26",
+            "text": "Rebecca Ferguson love Rebecca Ferguson in this video. She loved her intro."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:29",
+            "text": "So she comes in she is Jenny Lind. They are in Buckingham Palace meeting the queen as you do. Yeah. And she walks in the dress that she's wearing. Like my first thought was this is like a dress aerelon could could wear. Like, she looks incredible. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:44",
+            "text": "that was great. "
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "31:45",
+            "text": "That collar it was very high. And you almost couldn't see your head"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:49",
+            "text": "broidery and stuff all over. So her poll, like her poise. And her presence was just amazing. And I loved every moment that she was in this film. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:01",
+            "text": "I thought she was great. Yeah, really good. I liked her song a lot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:31",
+            "text": "But two things, the song is called never enough. And it's all about the I mean, it is just directly thematically tied into into what is being there for PT. And it was sung by Lauren alread who did an incredible job with it. And that song was kind of that the anchor for that "
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "32:46",
+            "text": "so it wasn't the same actress that sang it "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:48",
+            "text": "Rebecca Ferguson did not sing that she just gave she gave the performance of doing it, but I thought I thought she was great in that onstage and in those performances. Yeah, so there's two main things happening is there's sort of like, is he gonna make it PT and then there's Zack and Zendaya and you know, this notion of OSI on the Carlyle family mixed up with a circus performer and he really blows it when he you know, you know what lets her walk away when her his parents see her and and all that goes but the song that they did rewrite the stars"
+        },
+        {
+            "name": "Greatest Showman sample",
+            "timestamp": "33:40",
+            "text": "you know, I want you it's not a secret I try to hide but I can't have you were bound to break in my hands are tied. Yeah, like that one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:57",
+            "text": "And our performance with like all the trapeze stuff that was great."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "34:03",
+            "text": "I will say this is probably the least compelling love story I've ever seen. Yes, but right the trapeze based on nothing amazing. And the performance is great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:14",
+            "text": "Can I just get to Jason How many times did you cry during this movie?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:19",
+            "text": "I did not cry during this movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:21",
+            "text": "I did not cry checking. Me neither. But this"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:24",
+            "text": "this one did not bring me to the emotional heights of say a X Men movie on a on a trans continental flight. which for some reason, always just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:40",
+            "text": "we're talking apocalypse. Talking Oscar I've ever I don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:44",
+            "text": "know. It's amazing what I've cried on on planes, whatever they got."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:47",
+            "text": "What is that? What does that effect that that causes you to cry? Why is it I don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:51",
+            "text": "I've never read that. I've never read the scientific reason for why you cry. In a in a in a plane. I've heard various like kind of bullshit theories which was like oh, you're I can this like, vulnerable place or something? I don't know if I can know but I will cry it almost anything I like I will cry it like reruns of the West Wing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:08",
+            "text": "I mean, I'll cry reruns of the West Wing. Come on. No problem. So we have Barnum losing the thread of the plot here, where he's having this huge success in New York. He's getting accepted into society a little bit more. And then he shuts out his own circus fam when they try and come to the after party,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "35:25",
+            "text": "which is like, yeah, that was a rough one. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:28",
+            "text": "a real dick. And made them let the bearded lady into that."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "35:34",
+            "text": "That's like, where do you put them? Rough?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:36",
+            "text": "He's like, look, it's crowded in here. Sorry. You can't come in. Yeah, like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:40",
+            "text": "my dude. Do you own up to it? Yeah. This drives Letty to lead the song this is the icons. So she like her performance there for this is me is really amazing. This is me."
+        },
+        {
+            "name": "Greatest Showman sample",
+            "timestamp": "36:05",
+            "text": "To be seen, make apology. This is me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:13",
+            "text": "I mean, at the heart of this movie, it's really about representation. It's this it was very heavily embraced by the LGBTQ plus community. And it really had a huge impact and moment in that so I just I appreciate it on that on that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:31",
+            "text": "finally, the LGBTQ community has a musical"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:35",
+            "text": "At last, so as we start to move to the close here again, very efficient this this movie Barnum takes. Rebecca Ferguson, Jenny on the road. So in the parent handbook, you're not supposed to jump in a carriage and drive away with the hot singer while your kids are running down the driveway shouting Daddy, Daddy, Daddy, that's like, that's"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "36:58",
+            "text": "like number one like parent tough one. Yeah, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:02",
+            "text": "you do have this moment where Rebecca Ferguson goes, Jenny goes for the kiss with him and in private and he says he basically mirrors and has to go and the way she cuts him off and just the intensity in that moment to me was very Jessica I was like, yes, strength power, spurned. All right. Like I got a lot of Jessica flavors in that. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:27",
+            "text": "good. I didn't I didn't think of that but I like I like I like seeing I like seeing instead of it being like the Swedish night and gal it just being Jessica Atreides singing through this movie as a fun twist and you're like maybe he's like a Duncan Idaho character. You could just like imagine this is a dune musical."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:45",
+            "text": "Peachy coming back again and again. different goals."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:48",
+            "text": "Incidentally, I I didn't write a dune musical. But I did. I did write down all of the because I can't write music. But I did write down all of the songs that I thought should be in a dune musical. I did like Right. Yeah, I wrote I wrote all the I wrote all of the songs down. We can put it in in show notes. Oh, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:10",
+            "text": "no, you will be creating a playlist and we will be putting the playlist I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:14",
+            "text": "don't know. No, I don't. I don't have a playlist. It's just I'm saying I'm saying like I wrote an original musical about dune as it's"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "38:24",
+            "text": "only coming up now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:25",
+            "text": "I know."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:27",
+            "text": "Well, it's just the titles of the songs not as amazing as you think well it's like you know, act one first song after the overture is a beginning as a very delicate time as sung by the Emperor Reverend Mother Gaius Helen and company and then like act one closes with the sleeper must awaken reprise of with Paul Jessica stilgar and company and like the other songs and like I wonder like concubines and wives fear is the mind killer arrival at Arakeen the spice must flow and then act to first of Act Two is sietch tabr and then you know there's like Shai'hulud and then fear is the mind killer reprise is the Paul fade battle in the last number is concubines and wives the spice must flow the super has awakened which is kind of like a lame is one day more type, you know situation. Anyway, that's the big finale."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:24",
+            "text": "Two questions. Two questions. What is your age? You wrote that?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:29",
+            "text": "Oh, this was like a year ago."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:32",
+            "text": "Very good. And that recently, too. I'm just gonna say Cory. I'm so sorry. You're gonna have to stop the presses on the scree dune issue because clearly this is added."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:44",
+            "text": "I couldn't get in that. Yeah, I didn't think I would. This would have been good. This would have been a good one for crazy"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "39:49",
+            "text": "and we should find you a songwriter. Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:51",
+            "text": "my brother, my brother's a musician. I sent it to him. Oh, this is great. Yeah. And he was just like, he immediately had notes. He's like, No, you can't this song would actually have to involve, you know, that you need, like, you know, he had like he had a bunch of points that he wanted. So yeah, so maybe we just need you know, I don't know, we should just do it. We could we just need like, you know, some some singers. Yeah. Some musicians some just you know some seed funding post post post apocalypse. All right, I can't wait. I mean, we don't own the IP. So that's a problem but you know, whatever, worker"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:28",
+            "text": "I think it's considered fair use if we it's a parody, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:32",
+            "text": "think tell me of your Homeworld Usul, the love duet and it will be top 10 big hit"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:39",
+            "text": "Zendaya is going to be belting that out. Yeah. Incredible. All right. Well, so the film ends with Wait, wait, wait."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "40:47",
+            "text": "I have one question. Wait, I have one question. For you, too. As dads. Yes. Yeah. Is like so you're standing there next to your kids. And they're like, they've got like another a bunch of kids around them. And like, one of the other kids is like, I don't want to hang out with you. You smell like computers? Or like silicon. And like, you know, pushes them away."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:10",
+            "text": "Smell like computers?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "41:12",
+            "text": "I was trying to think of Yeah, what how do you do like, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:16",
+            "text": "they're like, try to do like a classist thing or whatever? Yeah. What?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "41:19",
+            "text": "How would you react to that? Like, would you like, change your career? Or would you would you have a conversation with the kids? Parents are like, what are your kid? Like? How would you approach that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:29",
+            "text": "So Sam, you know, is in Montessori School? He is He just turned three. So we're not getting a lot of occupational pushback from the pier set at this point. So it may just be a matter of time. Before that fully develops? Yeah. Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:46",
+            "text": "I have no experience because Griffin's only two and doesn't know any other children because of the pandemic. He's far as he knows he's all the child in the world. Yeah. No, it's It's gonna be a big surprise when he has to share with other kids. Yeah, so I don't know. I mean, like, it's also hard to imagine like no one's gonna say like, you you smell of the tech industry in San Francisco. I mean, people are people are gonna say that in Austin, maybe? Yeah, they're not gonna they're not gonna. They're not gonna mean it in their heart. So yeah, I don't know. I think you'd have to I would prompt sort of conflict avoidant, I would probably just leave. We're never talking or going away. I mean, what do you what I mean, what am I going to do? I'm, I'm not gonna fight."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:32",
+            "text": "You say you've changed. You've changed the topic. You talk about Star Wars."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:37",
+            "text": "Like, I guess the I guess the quote, like the equivalent is like, like a version of this I've thought about is like, if we moved to a place that was less lefty than San Francisco, and someone was like, Ooh, like, they're like, you know, they're like liberals or something. You know, like,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "42:50",
+            "text": "your dad's a socialist."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:52",
+            "text": "Right? Exactly. Your dad's a socialist. Your dad does yoga was like, we're not talking. Like we don't go to we don't go to houses with guns. I don't know."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "43:03",
+            "text": "Great strategy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:04",
+            "text": "I'm a big I just cut cut people off. It's fine. You don't need to engage. Yeah, it's a lot easier that way. No, I don't need to like there's enough shit in the world. You're like, God, what am I gonna do? Like, am I gonna go convince them guys?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:16",
+            "text": "We're uniting right now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:17",
+            "text": "No, I'm not. I like I like, I'm not at all. I'm not uniting. No, all right. Absolutely not. Fair"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:26",
+            "text": "enough. So Maga burns down the circus."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "43:28",
+            "text": "I got did for another"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:29",
+            "text": "circus bag over down the circus. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:32",
+            "text": "So So Barnum, you know, rescues the guy. He goes back, he works it out with his wife. You know, she was kind of she was kind of pissed at him. But they meet on the beach again in hatters. I don't know, Amelia Island, but kinetics, Connecticut beach, and then they get back up and running. They figure out New York real estate's too expensive. So they start with circuses, and tents and whatnot, and everybody's happy."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "43:55",
+            "text": "That was a really small transition of like, Yeah, we don't need a building. And then like no research, like our tensor thing, or do people use it for other things?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:05",
+            "text": "Do you know how much well I mean, it's like 18 I mean, it's 1850. Not like 1850 BC, like tent technology had existed at that time, right. I mean, like, like they had like, they had like lean tos. at that point there was an amazing claim by Hugh Jackman is like, man, you know, New York real estate's a terrible rip off. I'm like, Well, I would buy as much as I could in 1850 By the way, yeah, whatever. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:29",
+            "text": "what was weird, though. So he leaves the circus at the end in the midst of the music to go to his daughter's recital. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:34",
+            "text": "he he he rides an elephant. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:36",
+            "text": "Do they have ballet for elephants at the?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "44:40",
+            "text": "Yeah, if they don't like the smell of peanuts, they're not gonna like this."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:46",
+            "text": "That's what I would do. That's what I would do. I guess. That's my move. If I get made fun of for being a crazy lefty, instead of slinking away. I'm going to ride a copy of Obama's memoir."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:59",
+            "text": "Full Bernie Yeah into the town square."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:02",
+            "text": "I'm gonna ride Obama's memoir into the into the town square."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:07",
+            "text": "All right, final thoughts on this film and what did we learn about dune 2021"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:15",
+            "text": "Sarah, your final thoughts?"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "45:17",
+            "text": "I think that was a lot of fun singing and dancing. the end"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:25",
+            "text": "Zendaya was..."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "45:27",
+            "text": "magical. As always, she's magical"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:30",
+            "text": "as always,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:30",
+            "text": "yeah her her presence is always good. Her character wasn't very dimensional. There was very little for her to work with but it was 2017 and what she did with just a look was just phenomenal so I absolutely love that and I love the intensity of Rebecca Ferguson so very excited to see both of them and every every shot that I've seen of of, especially Rebecca Ferguson from the trailers and stuff like she's just gonna be an incredible Jessica"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:58",
+            "text": "I think that's right I was excited. I Rebecca Ferguson I think seemed great. Isn't as him great, so I feel good about Dune 2020 This movie like the greatest showmen? She's not really my cup of tea for whatever reason I like musicals. I don't really like circuses is huge. Hugh Jackman is an interesting character, man. Like it seems like he really just wants to do song and dance movies and like occasionally agrees to be Wolverine in order to like kind of finance the song and dance movies or something. I don't know. God bless. I'm glad he's chasing his dreams. There's not my dreams."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:29",
+            "text": "I have tickets to see him on Broadway. In my all time favorite musical. The Music Man was supposed to be last December that's currently been punted to July of 22 or something. But I'm very excited to see him as Professor Harold Hill, one of the great all time performances on in theater really great. Yeah. So I talked to somebody who their parents had gone to see him multiple times in concert two years ago. So he did a whole tour, where he did greatest showmen and various other musical bits. And apparently it was phenomenal. So I'm not surprised. Yeah. Crazy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:15",
+            "text": "Great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:15",
+            "text": "All right, Sarah, who would Tilda Swinton play if you were going to cast her in one role? In the greatest showmen? Oh,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "47:24",
+            "text": "my goodness. What an amazing question. I didn't think about this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:28",
+            "text": "ashtray. She would play ashtray. Yes."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "47:32",
+            "text": "The daughter, the ballet daughter, the ballet daughter. Yeah. Yeah. Like one of the daughters stays like little blonde girl the other way till this one. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:39",
+            "text": "great. Not explained."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:40",
+            "text": "Perfect. Can you imagine now that's it. That's a movie I need to see. Nice. Jason. That's great. Strong. I think I'm gonna go conventional as opposed to the bank shot choice. I'm gonna I'm gonna say as in the Rebecca Ferguson role. I'd like to see her as the Swedish Nightengale and get nice. I think that'd be dope. Yeah, I'd like to see told this one saying"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:58",
+            "text": "perfect. I am gonna go with Tilda Swinton as the miniature elephant that Tom Thumb rides."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:03",
+            "text": "Oh yeah, that's good. That's good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:12",
+            "text": "All right, let us get two letters. So I have one letter and then I have two voicemails so we will wow, knock these out God."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:23",
+            "text": "Great, great fans. We have what great good friends"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:25",
+            "text": "in the show. So the first letter is from Jim cold. As usual. I haven't read or listened to these. So let's see what happens. Jim says, Hey, dune pod. I was late to the party but got through your whole catalogue in December in January. I've been doing some house renovations and it's great to have some company during those long days. Yeah. Awesome. That's great. I just finished Children of Dune in the fall and I'm super excited for the rest of the series. And of course, dune 2021. For the new movie. Do you think there's a way to make the Baron less cartoony evil? I'd like to see him think he's a hero from his point of view. I doubt he can be relatable, like Black Panthers kill monger, but I hope he's a bit more understandable like Dark Knights Joker. I think Frank got better at writing villains as the series progresses. Although given our current situation, gestures to everything going on, maybe the Baron would fit perfectly into our world. I'm watching the Sci Fi series now my bad boy navigator was an interesting choice. I much prefer Lynch's squid faced testicle turd. Anyways, here's my Chris knife I made after getting mega hyped for the trailer. Of course now it will need to be bloodied. And there's a cool picture of a kris knife that he has designed. Wow. You're dedicating from Philly, Jim crazy. Yes, I thought your name was H for the longest time. PPS I always expect you to say without further a-dune. Sorry for the dad Joke"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:55",
+            "text": "yeah, that's great. That's great. Without further a-dune."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:58",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:58",
+            "text": "we're gonna say that from now on. Yeah, that's a good letter. Jim."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:02",
+            "text": "Thank you very much."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:04",
+            "text": "That was a good letter. That was a great letter on the Baron Harkonnen question. I do think it's a weakness of Dune is how cartoony I think like I you know, he's just a purely space operatic villain like with like, you know, he preys on humans and like, even later, in later books he's referred to as a world eater, like he's just like, very cartoony over the top, like, kind of, you know, Orson Welles in the Transformers movie. Oh, yeah, I think it's hard. Yeah. Ah, the"
+        },
+        {
+            "name": "Orson Welles sample",
+            "timestamp": "50:33",
+            "text": "French champagne has always been celebrated for its excellence. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:39",
+            "text": "think it's hard. I think it's hard to do. Although like, I mean, I'm hoping with Stellan Skarsgard doing it and Villeneuve you'll get something a little more restrained, although we know it's still going to be like, physically, you know, kind of over the top, his performance and they're doing some additional weird stuff of him emerging from a slime pit. So, you know, anytime you got a slime pit, it's a little you're kind of struggling. There's a lot of good people emerging from slime pits."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:07",
+            "text": "Generally, I loved killmonger I loved yeah, great villain. Yeah. Yeah, really good. Really good. Excellent. Well, thank you, Jim, so much for your for your, your letter. Anyone can send us a letter at letters at dune pod.com and we will read it on the air. We have just a quick voicemail here. Here we go."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "51:32",
+            "text": "Dune pod it's Cory in Austin. I've been really lacs and keeping up with my doing assignments, haven't watched anything or watching a lot of news, to be honest, and listen to a lot of news podcasts. But I did think of something that I didn't want to call about. Even though I don't have anything to contribute to the greatest showmen. I'm sure I would have lots of opinions about that if I did watch it, but I didn't. Anyway, I've had to come to different contributors to my upcoming June zine mentioned to me and send me links to have you heard of or do you remember early 90s Techno musician called eon he who controls the spice controls the universe anyway, eon had a record called void dweller, he was like 91 or two and there are two dune inspired songs on there that actually sampled Lynch's movie one is called spice and the other song is called fear the mind killer they're both great examples of early 90s techno and they're they're pretty good there's lots of clips all over YouTube and stuff so if you want to give it a listen, I highly recommend them. All right, you guys take care Keep up the good work and I promise I'm going to get to one of these movies. Once I stopped watching the news. Later guys."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:03",
+            "text": "Amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:04",
+            "text": "I do know that fear the mind killers You do remember that? I haven't. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:08",
+            "text": "I haven't for a long time. That's awesome. Our listeners will be listening to it right now as we're talking"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:13",
+            "text": "that's great. Drop the beat. Yeah, I can't wait to I can't wait to check it out. Always good to hear from Korea."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:19",
+            "text": "We have one final voicemail Cory thank you so much."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "53:24",
+            "text": "Oh, one more thing. Another thing I was thinking about last week when Jason said ixian crystals. That would be a hot ending. Ixian crystals. All right. That's it like a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:36",
+            "text": "true facts. ixian crystals it's up for grabs. There should be way more music inspired by dune just people doing more stuff like Grimes did the whole album did a whole album called Geidi Prime. Be like Grimes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:47",
+            "text": "I mean that's just a general is that a good piece of advice in general. Be more like Grimes "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:52",
+            "text": "Of course. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:54",
+            "text": "Sara you look skeptical."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:56",
+            "text": "The marrying the marrying elon. Well, she didn't really marry Elon."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:59",
+            "text": "so So last time we had you on Sarah you were given a shout out for fall in New York. You're worried about I think Cuomo thirst traps or something. So tell us tell us what's exciting in spring in Florida."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "54:16",
+            "text": "There is nothing actually"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:22",
+            "text": "vaccinations. vaccinations."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "54:24",
+            "text": "Florida is not locked down at all the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:27",
+            "text": "orders are real. Just do whatever you feel Yeah, we"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "54:31",
+            "text": "just drive past full restaurants and bars constantly. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:35",
+            "text": "but they're doing a great job on the vaccine. Florida's Florida's a much better job that yeah, Florida has like gotten the vaccine out way better than California."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "54:44",
+            "text": "We do it at Publix?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:46",
+            "text": "Yeah, it's the food store. Whatever. Yeah. Yeah, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:49",
+            "text": "that's incredible. Yeah, it's like it's so Florida is basically living in the futures what you're telling me? Yeah,"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "54:56",
+            "text": "I mean, something like that. They got"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:58",
+            "text": "the vaccine. That's all I know. I want the vaccine. Instead, we got like updates from let me read you a tweet from the San Francisco Department of Emergency Services that came out today. On January 22, San Francisco in partnership with UCSF will begin operation of a vaccination site at City College on frida kahlo way. due to lack of vaccines. I'm sorry, due to lack of vaccine supply. This site is by appointment only. And there are no available appointments. Do not go to the site. Good luck. Everybody"
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "55:38",
+            "text": "is incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:42",
+            "text": "I tweeted about this. I tweet about this. I was like, I would like to announce that I too. Have a vaccine. I am operating. But due to a lack of vaccines. There are no appointments available. And the San Francisco Department of Emergency Services like added and was like Don't do that. Yeah. Well, they like they were like, they were like, they like they were like nacho bro. Look we? Yeah. We were just trying to clarify that like don't show up to the site. I was like, Yeah, but what was this announcement then, like you announced, you have a site that's like, Well, some people were confused. I'm like, Yeah, because you are not. Anyway, God bless. We're all trying. We're gonna make like, you know, we're all trying to do our best gonna make a tough one. We're in a pandemic. God bless the emergency services people. The social media people, everyone else. We're all gonna make you're gonna make it. We're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:35",
+            "text": "all gonna make it. Yeah. All right, you guys. Thank you so much for for joining. That was That was fantastic. Super fun. I love it. Yeah."
+        },
+        {
+            "name": "sara chipps",
+            "timestamp": "56:42",
+            "text": "But when I went to some point, we can talk about Zendaya as Paul, I think that would be Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:49",
+            "text": "that'd be great. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:53",
+            "text": "as chani as chani."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:55",
+            "text": "Yeah, that'd be great. I love that. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:58",
+            "text": "she's so fantastic. She's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:00",
+            "text": "really talented."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:05",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and Sarah for a really fun conversation. Next week, it's Timothy shallow may versus our paths in Netflix's 2019 movie, the king. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whipsaw music. The episode was produced and edited by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}
