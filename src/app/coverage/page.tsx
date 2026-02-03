@@ -12,6 +12,7 @@ interface CoverageEpisode {
   guest: string | null;
   hasTranscript: boolean;
   transcriptSource?: 'filesystem' | 'blob';
+  transcriptFile?: string;
 }
 
 interface CoverageData {
@@ -237,10 +238,10 @@ export default function CoveragePage() {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {filteredEpisodes.map(episode => (
-                <tr key={episode.episode} className="hover:bg-gray-50">
+              {filteredEpisodes.map((episode, idx) => (
+                <tr key={`${episode.season}-${episode.episode}-${idx}`} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-sm font-medium text-gray-900">
-                    {episode.episode}
+                    {episode.episode || 'Bonus'}
                   </td>
                   <td className="px-4 py-3 text-sm text-gray-900">
                     {episode.film}
@@ -269,9 +270,9 @@ export default function CoveragePage() {
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm">
-                    {episode.hasTranscript ? (
+                    {episode.hasTranscript && episode.transcriptFile ? (
                       <Link
-                        href={`/review/episode_${episode.episode}`}
+                        href={`/review/${episode.transcriptFile}`}
                         className="text-blue-600 hover:underline"
                       >
                         Review

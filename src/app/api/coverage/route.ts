@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
-import { listBlobTranscripts } from '@/lib/blob-storage';
+import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
 import type { EpisodeMetadata } from '@/types/episode-metadata';
 
 export interface CoverageEpisode {
@@ -14,6 +14,7 @@ export interface CoverageEpisode {
   guest: string | null;
   hasTranscript: boolean;
   transcriptSource?: 'filesystem' | 'blob';
+  transcriptFile?: string;
 }
 
 export interface CoverageResponse {
@@ -25,6 +26,58 @@ export interface CoverageResponse {
   bySeason: Record<number, { total: number; transcribed: number }>;
 }
 
+interface TranscriptInfo {
+  filename: string;
+  episodeNumber: number | string;
+  episodeName: string;
+  source: 'filesystem' | 'blob';
+}
+
+/**
+ * Normalize a film/episode name for fuzzy matching
+ */
+function normalizeName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, '') // Remove special chars
+    .replace(/\s+/g, ' ')
+    .replace(/\b(the|a|an)\b/g, '') // Remove articles
+    .replace(/\(\d{4}\)/g, '') // Remove year in parens
+    .replace(/bonus\s*/gi, '')
+    .replace(/on deck\s*-?\s*/gi, '')
+    .replace(/episode\s*\d+\s*:?\s*/gi, '')
+    .replace(/special edition/gi, '')
+    .trim();
+}
+
+/**
+ * Check if two names match (fuzzy)
+ */
+function namesMatch(metadataFilm: string, transcriptName: string): boolean {
+  const normalizedMeta = normalizeName(metadataFilm);
+  const normalizedTranscript = normalizeName(transcriptName);
+
+  // Exact match after normalization
+  if (normalizedMeta === normalizedTranscript) return true;
+
+  // One contains the other
+  if (normalizedMeta.includes(normalizedTranscript) || normalizedTranscript.includes(normalizedMeta)) return true;
+
+  // Check if significant words match
+  const metaWords = normalizedMeta.split(' ').filter(w => w.length > 2);
+  const transWords = normalizedTranscript.split(' ').filter(w => w.length > 2);
+
+  if (metaWords.length > 0 && transWords.length > 0) {
+    const matchingWords = metaWords.filter(w => transWords.includes(w));
+    // If most words match, consider it a match
+    if (matchingWords.length >= Math.min(metaWords.length, transWords.length) * 0.6) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 /**
  * GET /api/coverage
  * Returns transcript coverage information comparing metadata to available transcripts
@@ -32,10 +85,11 @@ export interface CoverageResponse {
 export async function GET() {
   const metadata = loadEpisodeMetadata();
 
-  // Get episode numbers with filesystem transcripts
+  // Load all transcripts with their info
+  const transcripts: TranscriptInfo[] = [];
   const transcriptsDir = path.join(process.cwd(), 'transcripts');
-  const filesystemEpisodes = new Map<number, true>();
 
+  // Load filesystem transcripts
   try {
     if (fs.existsSync(transcriptsDir)) {
       const files = fs.readdirSync(transcriptsDir).filter(f => f.endsWith('.json'));
@@ -43,9 +97,12 @@ export async function GET() {
         try {
           const filePath = path.join(transcriptsDir, filename);
           const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-          if (content.episode_number) {
-            filesystemEpisodes.set(content.episode_number, true);
-          }
+          transcripts.push({
+            filename: filename.replace('.json', ''),
+            episodeNumber: content.episode_number,
+            episodeName: content.episode_name || '',
+            source: 'filesystem',
+          });
         } catch {
           // Skip unparseable files
         }
@@ -55,22 +112,63 @@ export async function GET() {
     // Directory doesn't exist
   }
 
-  // Get episode numbers with Blob transcripts
-  const blobEpisodes = new Map<number, true>();
+  // Load blob transcripts
   try {
-    const blobTranscripts = await listBlobTranscripts();
-    for (const blob of blobTranscripts) {
-      blobEpisodes.set(blob.episodeNumber, true);
+    const blobList = await listBlobTranscripts();
+    for (const blob of blobList) {
+      try {
+        const transcript = await loadBlobTranscript(blob.episodeNumber);
+        if (transcript) {
+          transcripts.push({
+            filename: `episode_${blob.episodeNumber}`,
+            episodeNumber: transcript.episode_number,
+            episodeName: transcript.episode_name || '',
+            source: 'blob',
+          });
+        }
+      } catch {
+        // Skip
+      }
     }
   } catch {
     // Blob storage not available
   }
 
+  // Build lookup maps
+  const transcriptsByNumber = new Map<number, TranscriptInfo>();
+  const transcriptsByName: TranscriptInfo[] = [];
+
+  for (const t of transcripts) {
+    if (typeof t.episodeNumber === 'number' && t.episodeNumber > 0) {
+      transcriptsByNumber.set(t.episodeNumber, t);
+    }
+    transcriptsByName.push(t);
+  }
+
   // Build coverage data
   const episodes: CoverageEpisode[] = metadata.map((ep: EpisodeMetadata) => {
-    const hasFilesystem = filesystemEpisodes.has(ep.episode);
-    const hasBlob = blobEpisodes.has(ep.episode);
-    const hasTranscript = hasFilesystem || hasBlob;
+    let hasTranscript = false;
+    let transcriptSource: 'filesystem' | 'blob' | undefined;
+    let transcriptFile: string | undefined;
+
+    // Try to match by episode number first (for regular episodes)
+    if (ep.episode > 0 && transcriptsByNumber.has(ep.episode)) {
+      const match = transcriptsByNumber.get(ep.episode)!;
+      hasTranscript = true;
+      transcriptSource = match.source;
+      transcriptFile = match.filename;
+    }
+    // For bonus episodes (episode=0) or if no match, try to match by name
+    else {
+      for (const t of transcriptsByName) {
+        if (namesMatch(ep.film, t.episodeName)) {
+          hasTranscript = true;
+          transcriptSource = t.source;
+          transcriptFile = t.filename;
+          break;
+        }
+      }
+    }
 
     return {
       episode: ep.episode,
@@ -80,12 +178,16 @@ export async function GET() {
       reviewer: ep.reviewer,
       guest: ep.guest,
       hasTranscript,
-      transcriptSource: hasFilesystem ? 'filesystem' : hasBlob ? 'blob' : undefined,
+      transcriptSource,
+      transcriptFile,
     };
   });
 
-  // Sort by episode number
-  episodes.sort((a, b) => a.episode - b.episode);
+  // Sort by season then episode
+  episodes.sort((a, b) => {
+    if (a.season !== b.season) return a.season - b.season;
+    return a.episode - b.episode;
+  });
 
   // Calculate stats
   const withTranscripts = episodes.filter(e => e.hasTranscript).length;
