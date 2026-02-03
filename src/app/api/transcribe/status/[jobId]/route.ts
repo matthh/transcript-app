@@ -93,10 +93,12 @@ export async function GET(
       });
     }
 
-    // Still processing
+    // Still processing - return additional info for progress display
     return NextResponse.json({
       status: 'processing',
       assemblyAiStatus: transcriptResult.status,
+      audioDuration: transcriptResult.audio_duration || null,
+      wordCount: transcriptResult.words?.length || null,
     });
   } catch (error) {
     console.error('Status check error:', error);

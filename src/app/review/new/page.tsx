@@ -18,6 +18,22 @@ function NewEpisodeContent() {
   const [episodeNumber, setEpisodeNumber] = useState('');
   const [episodeName, setEpisodeName] = useState('');
 
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+
+  // Workflow state
+  const [step, setStep] = useState<WorkflowStep>('upload');
+  const [error, setError] = useState<string | null>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
+  const [transcriptionStatus, setTranscriptionStatus] = useState<string>('');
+  const [rawTranscript, setRawTranscript] = useState<Transcript | null>(null);
+  const [finalTranscript, setFinalTranscript] = useState<Transcript | null>(null);
+
+  // Progress tracking
+  const [startTime, setStartTime] = useState<number | null>(null);
+  const [elapsedTime, setElapsedTime] = useState<number>(0);
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
+  const [audioDuration, setAudioDuration] = useState<number | null>(null);
+
   // Initialize from URL params on mount
   useEffect(() => {
     const epParam = searchParams.get('episode');
@@ -30,15 +46,15 @@ function NewEpisodeContent() {
     }
   }, [searchParams]);
 
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-
-  // Workflow state
-  const [step, setStep] = useState<WorkflowStep>('upload');
-  const [error, setError] = useState<string | null>(null);
-  const [jobId, setJobId] = useState<string | null>(null);
-  const [transcriptionStatus, setTranscriptionStatus] = useState<string>('');
-  const [rawTranscript, setRawTranscript] = useState<Transcript | null>(null);
-  const [finalTranscript, setFinalTranscript] = useState<Transcript | null>(null);
+  // Track elapsed time during transcription
+  useEffect(() => {
+    if (step === 'transcribing' && startTime) {
+      const interval = setInterval(() => {
+        setElapsedTime(Math.floor((Date.now() - startTime) / 1000));
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [step, startTime]);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -70,6 +86,10 @@ function NewEpisodeContent() {
 
     setStep('transcribing');
     setError(null);
+    setStartTime(Date.now());
+    setElapsedTime(0);
+    setUploadProgress(0);
+    setAudioDuration(null);
     setTranscriptionStatus('Uploading audio to storage...');
 
     try {
@@ -79,7 +99,13 @@ function NewEpisodeContent() {
         blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
           access: 'public',
           handleUploadUrl: '/api/blob-upload',
+          onUploadProgress: (progress) => {
+            const pct = Math.round((progress.loaded / progress.total) * 100);
+            setUploadProgress(pct);
+            setTranscriptionStatus(`Uploading audio... ${pct}%`);
+          },
         });
+        setUploadProgress(100);
       } catch (uploadErr) {
         throw new Error(`Upload failed: ${uploadErr instanceof Error ? uploadErr.message : 'Unknown error'}`);
       }
@@ -140,14 +166,18 @@ function NewEpisodeContent() {
           return;
         }
 
-        // Still processing
-        setTranscriptionStatus(
-          data.assemblyAiStatus === 'queued'
-            ? 'Waiting in queue...'
-            : data.assemblyAiStatus === 'processing'
-            ? 'Processing audio...'
-            : 'Transcribing...'
-        );
+        // Still processing - update status with more detail
+        if (data.audioDuration) {
+          setAudioDuration(data.audioDuration);
+        }
+
+        let statusMessage = 'Transcribing...';
+        if (data.assemblyAiStatus === 'queued') {
+          statusMessage = 'Waiting in queue...';
+        } else if (data.assemblyAiStatus === 'processing') {
+          statusMessage = 'Processing audio...';
+        }
+        setTranscriptionStatus(statusMessage);
 
         // Poll again in 5 seconds
         setTimeout(poll, 5000);
@@ -301,15 +331,79 @@ function NewEpisodeContent() {
 
       {/* Step 2: Transcribing */}
       {step === 'transcribing' && (
-        <div className="bg-white rounded-lg shadow p-8 text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <h2 className="text-xl font-semibold text-gray-900">Transcribing Audio</h2>
-          <p className="text-gray-600 mt-2">{transcriptionStatus}</p>
-          <p className="text-sm text-gray-500 mt-4">
-            This may take several minutes depending on the audio length.
-          </p>
+        <div className="bg-white rounded-lg shadow p-8">
+          {/* Progress Steps */}
+          <div className="flex items-center justify-center mb-8">
+            <div className="flex items-center">
+              <div className={`flex items-center justify-center w-8 h-8 rounded-full ${
+                uploadProgress >= 100 ? 'bg-green-500' : 'bg-blue-600'
+              } text-white text-sm font-medium`}>
+                {uploadProgress >= 100 ? '✓' : '1'}
+              </div>
+              <span className="ml-2 text-sm font-medium text-gray-900">Upload</span>
+            </div>
+            <div className={`w-12 h-0.5 mx-2 ${uploadProgress >= 100 ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+            <div className="flex items-center">
+              <div className={`flex items-center justify-center w-8 h-8 rounded-full ${
+                uploadProgress >= 100
+                  ? transcriptionStatus.includes('Processing') || transcriptionStatus.includes('Transcribing')
+                    ? 'bg-blue-600'
+                    : 'bg-gray-300'
+                  : 'bg-gray-300'
+              } text-white text-sm font-medium`}>
+                2
+              </div>
+              <span className="ml-2 text-sm font-medium text-gray-600">Transcribe</span>
+            </div>
+            <div className="w-12 h-0.5 mx-2 bg-gray-300"></div>
+            <div className="flex items-center">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white text-sm font-medium">
+                3
+              </div>
+              <span className="ml-2 text-sm font-medium text-gray-600">Map Speakers</span>
+            </div>
+          </div>
+
+          {/* Spinner and Status */}
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <h2 className="text-xl font-semibold text-gray-900">
+              {transcriptionStatus.includes('Uploading') ? 'Uploading Audio' : 'Transcribing Audio'}
+            </h2>
+            <p className="text-gray-600 mt-2">{transcriptionStatus}</p>
+          </div>
+
+          {/* Progress Info Cards */}
+          <div className="grid grid-cols-2 gap-4 mt-6">
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="text-xs text-gray-500 uppercase tracking-wide">Elapsed Time</p>
+              <p className="text-2xl font-semibold text-gray-900 mt-1">
+                {Math.floor(elapsedTime / 60)}:{(elapsedTime % 60).toString().padStart(2, '0')}
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="text-xs text-gray-500 uppercase tracking-wide">Audio Duration</p>
+              <p className="text-2xl font-semibold text-gray-900 mt-1">
+                {audioDuration
+                  ? `${Math.floor(audioDuration / 60)}:${Math.floor(audioDuration % 60).toString().padStart(2, '0')}`
+                  : '—'}
+              </p>
+            </div>
+          </div>
+
+          {/* File Info */}
+          {selectedFile && (
+            <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-blue-800 font-medium">{selectedFile.name}</span>
+                <span className="text-blue-600">{(selectedFile.size / (1024 * 1024)).toFixed(1)} MB</span>
+              </div>
+            </div>
+          )}
+
+          {/* Job ID */}
           {jobId && (
-            <p className="text-xs text-gray-400 mt-2">Job ID: {jobId}</p>
+            <p className="text-xs text-gray-400 mt-4 text-center">Job ID: {jobId}</p>
           )}
         </div>
       )}
