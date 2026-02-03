@@ -3,6 +3,7 @@
 import { Suspense, useState, useRef, useCallback, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { upload } from '@vercel/blob/client';
 import SpeakerMapper from '@/components/SpeakerMapper';
 import type { Transcript, DialogueEntry } from '@/types/transcript';
 
@@ -69,17 +70,26 @@ function NewEpisodeContent() {
 
     setStep('transcribing');
     setError(null);
-    setTranscriptionStatus('Uploading audio...');
+    setTranscriptionStatus('Uploading audio to storage...');
 
     try {
-      const formData = new FormData();
-      formData.append('file', selectedFile);
-      formData.append('episodeNumber', episodeNumber);
-      formData.append('episodeName', episodeName);
+      // Step 1: Upload file directly to Vercel Blob (bypasses serverless size limit)
+      const blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
+        access: 'public',
+        handleUploadUrl: '/api/audio/upload',
+      });
 
+      setTranscriptionStatus('Starting transcription...');
+
+      // Step 2: Start transcription with the blob URL
       const response = await fetch('/api/transcribe', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          audioUrl: blob.url,
+          episodeNumber,
+          episodeName,
+        }),
       });
 
       if (!response.ok) {

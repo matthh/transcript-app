@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { AssemblyAI } from 'assemblyai';
-import { uploadAudio, saveTranscriptionJob } from '@/lib/blob-storage';
+import { saveTranscriptionJob } from '@/lib/blob-storage';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
@@ -8,10 +8,10 @@ const client = new AssemblyAI({
 
 /**
  * POST /api/transcribe
- * Start a transcription job for an uploaded MP3
+ * Start a transcription job for an audio file already uploaded to Blob
  *
- * Body (FormData):
- * - file: MP3 file
+ * Body (JSON):
+ * - audioUrl: URL of the audio file in Vercel Blob
  * - episodeNumber: number
  * - episodeName: string
  */
@@ -24,19 +24,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const formData = await request.formData();
-    const file = formData.get('file') as File | null;
-    const episodeNumber = parseInt(formData.get('episodeNumber') as string, 10);
-    const episodeName = formData.get('episodeName') as string;
+    const body = await request.json();
+    const { audioUrl, episodeNumber, episodeName } = body;
 
-    if (!file) {
+    if (!audioUrl) {
       return NextResponse.json(
-        { error: 'No file provided' },
+        { error: 'Audio URL is required' },
         { status: 400 }
       );
     }
 
-    if (!episodeNumber || isNaN(episodeNumber)) {
+    if (!episodeNumber || isNaN(Number(episodeNumber))) {
       return NextResponse.json(
         { error: 'Episode number is required' },
         { status: 400 }
@@ -49,10 +47,6 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-
-    // Upload MP3 to Vercel Blob
-    const arrayBuffer = await file.arrayBuffer();
-    const audioUrl = await uploadAudio(Buffer.from(arrayBuffer), episodeNumber);
 
     // Construct webhook URL
     const baseUrl = process.env.VERCEL_URL
@@ -71,7 +65,7 @@ export async function POST(request: NextRequest) {
 
     // Save job metadata to Blob storage
     await saveTranscriptionJob(jobId, {
-      episodeNumber,
+      episodeNumber: Number(episodeNumber),
       episodeName,
       status: 'processing',
       audioUrl,
