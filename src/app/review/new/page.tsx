@@ -78,7 +78,7 @@ function NewEpisodeContent() {
       try {
         blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
           access: 'public',
-          handleUploadUrl: '/api/audio/upload',
+          handleUploadUrl: '/api/blob-upload',
         });
       } catch (uploadErr) {
         throw new Error(`Upload failed: ${uploadErr instanceof Error ? uploadErr.message : 'Unknown error'}`);

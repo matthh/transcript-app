@@ -2,7 +2,7 @@ import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
- * POST /api/audio/upload
+ * POST /api/blob-upload
  * Handle client-side uploads to Vercel Blob
  * This bypasses the serverless function body size limit
  */
@@ -38,4 +38,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-
