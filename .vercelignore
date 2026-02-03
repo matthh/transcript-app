@@ -6,6 +6,3 @@ audio/
 
 # Ignore scripts (not needed at runtime)
 scripts/
-
-# Ignore transcripts source files (already in vector store)
-transcripts/
