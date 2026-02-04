@@ -166,9 +166,18 @@ export default function EditorPage() {
           <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
             {error || 'Transcript not found'}
           </div>
-          <Link href="/review" className="mt-4 inline-block text-blue-600 hover:underline">
-            Back to Review List
-          </Link>
+          <div className="mt-4 flex items-center gap-4">
+            <Link href="/review" className="text-blue-600 hover:underline">
+              Back to Review List
+            </Link>
+            <button
+              onClick={handleReset}
+              disabled={resetting}
+              className="px-3 py-1.5 text-sm text-red-600 hover:text-red-700 hover:bg-red-50 border border-red-200 rounded transition-colors disabled:opacity-50"
+            >
+              {resetting ? 'Resetting...' : 'Reset Episode'}
+            </button>
+          </div>
         </div>
       </main>
     );
