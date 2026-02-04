@@ -230,6 +230,21 @@ function NewEpisodeContent() {
         throw new Error('Failed to save transcript');
       }
 
+      // Verify the save worked by fetching it back (handles blob storage eventual consistency)
+      let verified = false;
+      for (let attempt = 0; attempt < 5; attempt++) {
+        await new Promise(resolve => setTimeout(resolve, 500)); // Wait 500ms between attempts
+        const verifyResponse = await fetch(`/api/transcripts/episode_${finalTranscript.episode_number}`);
+        if (verifyResponse.ok) {
+          verified = true;
+          break;
+        }
+      }
+
+      if (!verified) {
+        console.warn('Could not verify transcript save, redirecting anyway');
+      }
+
       // Redirect to the review page for this episode
       router.push(`/review/episode_${finalTranscript.episode_number}`);
     } catch (err) {

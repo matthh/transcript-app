@@ -211,6 +211,23 @@ export default function SpeakerMapper({
     });
   }, []);
 
+  // Select all segments matching active label
+  const selectAllMatching = useCallback(() => {
+    setExcludedIndices(new Set());
+  }, []);
+
+  // Deselect all segments (exclude all matching)
+  const deselectAllMatching = useCallback(() => {
+    if (!activeMappingLabel) return;
+    const allMatchingIndices = new Set<number>();
+    dialogues.forEach((d, i) => {
+      if (d.name === activeMappingLabel) {
+        allMatchingIndices.add(i);
+      }
+    });
+    setExcludedIndices(allMatchingIndices);
+  }, [activeMappingLabel, dialogues]);
+
   // Apply mapping to selected segments
   const applyMapping = useCallback((newSpeakerName: string) => {
     if (!newSpeakerName.trim() || segmentsInScope.size === 0) return;
@@ -464,13 +481,33 @@ export default function SpeakerMapper({
       {activeMappingLabel && (
         <div className="p-4 border-b bg-blue-50 border-l-4 border-blue-500">
           <div className="flex items-center justify-between mb-3">
-            <div>
-              <span className="font-medium text-blue-900">
-                Mapping: {activeMappingLabel}
-              </span>
-              <span className="ml-2 text-sm text-blue-700">
-                {segmentsInScope.size} of {totalMatchingSegments} segments selected
-              </span>
+            <div className="flex items-center gap-4">
+              <div>
+                <span className="font-medium text-blue-900">
+                  Mapping: {activeMappingLabel}
+                </span>
+                <span className="ml-2 text-sm text-blue-700">
+                  {segmentsInScope.size} of {totalMatchingSegments} segments selected
+                </span>
+              </div>
+              {/* Select All / None buttons */}
+              <div className="flex items-center gap-1 text-sm">
+                <button
+                  type="button"
+                  onClick={selectAllMatching}
+                  className="px-2 py-0.5 text-blue-700 hover:bg-blue-100 rounded"
+                >
+                  All
+                </button>
+                <span className="text-blue-400">|</span>
+                <button
+                  type="button"
+                  onClick={deselectAllMatching}
+                  className="px-2 py-0.5 text-blue-700 hover:bg-blue-100 rounded"
+                >
+                  None
+                </button>
+              </div>
             </div>
             <button
               type="button"
