@@ -134,8 +134,9 @@ export async function POST(request: NextRequest) {
               hasMore: false,
               warning: 'The database does not have information to filter by director, actor, genre, or studio. It can only filter by: film title, decade, season, guest name, or reviewer.',
             });
-            // Fall back to transcript search instead
-            shouldSearchTranscripts = true;
+            // DON'T fall back to transcript search for this case - it will just return
+            // irrelevant passages and confuse the user. Let the "no data" message show.
+            shouldSearchTranscripts = false;
           } else {
             metadataEpisodes = result.episodes;
             metadataTotalCount = result.totalCount;
