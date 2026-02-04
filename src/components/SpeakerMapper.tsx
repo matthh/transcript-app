@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { DialogueEntry } from '@/types/transcript';
 import { useAudioSync } from '@/hooks/useAudioSync';
 import AudioPlayer from '@/components/AudioPlayer';
@@ -15,6 +15,11 @@ interface SpeakerMapperProps {
 interface KnownSpeaker {
   name: string;
   count: number;
+}
+
+interface HistoryEntry {
+  dialogues: DialogueEntry[];
+  description: string;
 }
 
 const PAGE_SIZE = 50;
@@ -36,6 +41,16 @@ export default function SpeakerMapper({
   const [excludedIndices, setExcludedIndices] = useState<Set<number>>(new Set());
   const [customSpeaker, setCustomSpeaker] = useState('');
 
+  // Filter state
+  const [speakerFilter, setSpeakerFilter] = useState<string>('all');
+
+  // Undo/redo history
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
+
+  // Refs
+  const customInputRef = useRef<HTMLInputElement>(null);
+
   // Audio sync
   const { state: audioState, controls, setAudioRef } = useAudioSync(dialogues);
 
@@ -43,7 +58,27 @@ export default function SpeakerMapper({
   const totalPages = Math.ceil(dialogues.length / PAGE_SIZE);
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const endIndex = Math.min(startIndex + PAGE_SIZE, dialogues.length);
-  const pageDialogues = dialogues.slice(startIndex, endIndex);
+
+  // Filter dialogues by speaker if filter is active
+  const filteredDialogues = useMemo(() => {
+    if (speakerFilter === 'all') return dialogues;
+    return dialogues.filter(d => d.name === speakerFilter);
+  }, [dialogues, speakerFilter]);
+
+  const pageDialogues = useMemo(() => {
+    if (speakerFilter === 'all') {
+      return dialogues.slice(startIndex, endIndex);
+    }
+    // When filtering, paginate the filtered list
+    const filteredStart = (currentPage - 1) * PAGE_SIZE;
+    const filteredEnd = Math.min(filteredStart + PAGE_SIZE, filteredDialogues.length);
+    return filteredDialogues.slice(filteredStart, filteredEnd);
+  }, [dialogues, filteredDialogues, speakerFilter, currentPage, startIndex, endIndex]);
+
+  const effectiveTotalPages = useMemo(() => {
+    if (speakerFilter === 'all') return Math.ceil(dialogues.length / PAGE_SIZE);
+    return Math.ceil(filteredDialogues.length / PAGE_SIZE);
+  }, [dialogues.length, filteredDialogues.length, speakerFilter]);
 
   // Count unique speakers detected
   const detectedSpeakers = useMemo(() => {
@@ -54,7 +89,7 @@ export default function SpeakerMapper({
     return speakers.size;
   }, [dialogues]);
 
-  // Get unique speaker labels for quick buttons
+  // Get unique speaker labels for quick buttons and filter
   const uniqueSpeakerLabels = useMemo(() => {
     const labelCounts = new Map<string, number>();
     for (const d of dialogues) {
@@ -64,6 +99,16 @@ export default function SpeakerMapper({
       .sort((a, b) => b[1] - a[1])
       .map(([name, count]) => ({ name, count }));
   }, [dialogues]);
+
+  // Check if a speaker label looks like a placeholder (e.g., "Speaker A")
+  const isPlaceholderLabel = useCallback((name: string) => {
+    return /^(Speaker\s*)?[A-Z]$/i.test(name);
+  }, []);
+
+  // Count unassigned segments (placeholder speakers)
+  const unassignedCount = useMemo(() => {
+    return dialogues.filter(d => isPlaceholderLabel(d.name)).length;
+  }, [dialogues, isPlaceholderLabel]);
 
   // Segments in scope for mapping (matching label, not excluded)
   const segmentsInScope = useMemo(() => {
@@ -101,10 +146,48 @@ export default function SpeakerMapper({
     fetchSpeakers();
   }, []);
 
+  // Save to history before making changes
+  const saveToHistory = useCallback((description: string) => {
+    setHistory(prev => {
+      // Remove any future history if we're not at the end
+      const newHistory = prev.slice(0, historyIndex + 1);
+      // Add current state
+      newHistory.push({ dialogues: [...dialogues], description });
+      // Limit history size
+      if (newHistory.length > 20) {
+        newHistory.shift();
+        return newHistory;
+      }
+      return newHistory;
+    });
+    setHistoryIndex(prev => Math.min(prev + 1, 19));
+  }, [dialogues, historyIndex]);
+
+  // Undo
+  const undo = useCallback(() => {
+    if (historyIndex >= 0) {
+      const entry = history[historyIndex];
+      setDialogues(entry.dialogues);
+      setHistoryIndex(prev => prev - 1);
+    }
+  }, [history, historyIndex]);
+
+  // Redo
+  const redo = useCallback(() => {
+    if (historyIndex < history.length - 1) {
+      const entry = history[historyIndex + 1];
+      setDialogues(entry.dialogues);
+      setHistoryIndex(prev => prev + 1);
+    }
+  }, [history, historyIndex]);
+
+  const canUndo = historyIndex >= 0;
+  const canRedo = historyIndex < history.length - 1;
+
   // Enter mapping mode for a label
   const enterMappingMode = useCallback((label: string) => {
     setActiveMappingLabel(label);
-    setExcludedIndices(new Set()); // Start with all included
+    setExcludedIndices(new Set());
     setCustomSpeaker('');
   }, []);
 
@@ -132,11 +215,13 @@ export default function SpeakerMapper({
   const applyMapping = useCallback((newSpeakerName: string) => {
     if (!newSpeakerName.trim() || segmentsInScope.size === 0) return;
 
+    saveToHistory(`Map "${activeMappingLabel}" → "${newSpeakerName.trim()}"`);
+
     setDialogues(prev => prev.map((d, i) =>
       segmentsInScope.has(i) ? { ...d, name: newSpeakerName.trim() } : d
     ));
     exitMappingMode();
-  }, [segmentsInScope, exitMappingMode]);
+  }, [segmentsInScope, activeMappingLabel, exitMappingMode, saveToHistory]);
 
   // Audio seek on timestamp click
   const handleTimestampClick = useCallback(async (timestamp: string, e: React.MouseEvent) => {
@@ -163,18 +248,107 @@ export default function SpeakerMapper({
 
   // Page navigation
   const goToPage = useCallback((page: number) => {
-    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
-  }, [totalPages]);
+    setCurrentPage(Math.max(1, Math.min(page, effectiveTotalPages)));
+  }, [effectiveTotalPages]);
+
+  // Find next unassigned segment and navigate to it
+  const goToNextUnassigned = useCallback(() => {
+    const currentGlobalIndex = startIndex;
+
+    // Find next unassigned after current position
+    for (let i = currentGlobalIndex; i < dialogues.length; i++) {
+      if (isPlaceholderLabel(dialogues[i].name)) {
+        const targetPage = Math.floor(i / PAGE_SIZE) + 1;
+        setCurrentPage(targetPage);
+        // Enter mapping mode for this speaker
+        enterMappingMode(dialogues[i].name);
+        return;
+      }
+    }
+
+    // Wrap around to beginning
+    for (let i = 0; i < currentGlobalIndex; i++) {
+      if (isPlaceholderLabel(dialogues[i].name)) {
+        const targetPage = Math.floor(i / PAGE_SIZE) + 1;
+        setCurrentPage(targetPage);
+        enterMappingMode(dialogues[i].name);
+        return;
+      }
+    }
+  }, [dialogues, startIndex, isPlaceholderLabel, enterMappingMode]);
 
   // Submit handler
   const handleSubmit = useCallback(() => {
     onMappingComplete(dialogues);
   }, [dialogues, onMappingComplete]);
 
-  // Check if a speaker label looks like a placeholder (e.g., "Speaker A")
-  const isPlaceholderLabel = (name: string) => {
-    return /^(Speaker\s*)?[A-Z]$/i.test(name);
-  };
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't handle shortcuts if typing in an input
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      // Escape to exit mapping mode
+      if (e.key === 'Escape' && activeMappingLabel) {
+        exitMappingMode();
+        return;
+      }
+
+      // Undo: Ctrl+Z
+      if ((e.ctrlKey || e.metaKey) && e.key === 'z' && !e.shiftKey) {
+        e.preventDefault();
+        undo();
+        return;
+      }
+
+      // Redo: Ctrl+Shift+Z or Ctrl+Y
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.key === 'z' && e.shiftKey))) {
+        e.preventDefault();
+        redo();
+        return;
+      }
+
+      // Number keys 1-6 for quick assign when in mapping mode
+      if (activeMappingLabel && e.key >= '1' && e.key <= '6') {
+        const index = parseInt(e.key) - 1;
+        if (index < knownSpeakers.length) {
+          applyMapping(knownSpeakers[index].name);
+        }
+        return;
+      }
+
+      // 'n' for next unassigned
+      if (e.key === 'n' && !activeMappingLabel) {
+        goToNextUnassigned();
+        return;
+      }
+
+      // Arrow keys for pagination
+      if (e.key === 'ArrowLeft' && !activeMappingLabel) {
+        goToPage(currentPage - 1);
+        return;
+      }
+      if (e.key === 'ArrowRight' && !activeMappingLabel) {
+        goToPage(currentPage + 1);
+        return;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeMappingLabel, knownSpeakers, applyMapping, exitMappingMode, undo, redo, goToNextUnassigned, goToPage, currentPage]);
+
+  // Get the global index for a dialogue in the filtered/paginated view
+  const getGlobalIndex = useCallback((pageIndex: number) => {
+    if (speakerFilter === 'all') {
+      return startIndex + pageIndex;
+    }
+    // When filtering, find the actual index in the full dialogues array
+    const filteredItem = pageDialogues[pageIndex];
+    return dialogues.findIndex(d => d === filteredItem);
+  }, [speakerFilter, startIndex, pageDialogues, dialogues]);
 
   if (loading) {
     return (
@@ -194,13 +368,84 @@ export default function SpeakerMapper({
     <div className="bg-white rounded-lg shadow">
       {/* Header */}
       <div className="p-6 border-b">
-        <h2 className="text-xl font-semibold text-gray-900">Map Speakers</h2>
-        <p className="mt-1 text-sm text-gray-600">
-          Detected {detectedSpeakers} speaker(s) · {dialogues.length} segments · Page {currentPage} of {totalPages}
-        </p>
-        <p className="mt-2 text-xs text-gray-500">
-          Click a speaker label to map all segments with that name
-        </p>
+        <div className="flex items-start justify-between">
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900">Map Speakers</h2>
+            <p className="mt-1 text-sm text-gray-600">
+              Detected {detectedSpeakers} speaker(s) · {dialogues.length} segments
+              {unassignedCount > 0 && (
+                <span className="text-orange-600 ml-1">· {unassignedCount} unassigned</span>
+              )}
+            </p>
+          </div>
+
+          {/* Undo/Redo buttons */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={undo}
+              disabled={!canUndo}
+              className={`p-2 rounded text-sm ${
+                canUndo
+                  ? 'text-gray-600 hover:bg-gray-100'
+                  : 'text-gray-300 cursor-not-allowed'
+              }`}
+              title="Undo (Ctrl+Z)"
+            >
+              ↶ Undo
+            </button>
+            <button
+              type="button"
+              onClick={redo}
+              disabled={!canRedo}
+              className={`p-2 rounded text-sm ${
+                canRedo
+                  ? 'text-gray-600 hover:bg-gray-100'
+                  : 'text-gray-300 cursor-not-allowed'
+              }`}
+              title="Redo (Ctrl+Y)"
+            >
+              ↷ Redo
+            </button>
+          </div>
+        </div>
+
+        {/* Filter and shortcuts hint */}
+        <div className="mt-3 flex items-center gap-4 flex-wrap">
+          <div className="flex items-center gap-2">
+            <label htmlFor="speaker-filter" className="text-sm text-gray-600">Filter:</label>
+            <select
+              id="speaker-filter"
+              value={speakerFilter}
+              onChange={(e) => {
+                setSpeakerFilter(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="text-sm border rounded px-2 py-1"
+            >
+              <option value="all">All speakers</option>
+              {uniqueSpeakerLabels.map(({ name, count }) => (
+                <option key={name} value={name}>
+                  {name} ({count})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {unassignedCount > 0 && (
+            <button
+              type="button"
+              onClick={goToNextUnassigned}
+              className="text-sm text-blue-600 hover:text-blue-800"
+            >
+              Next unassigned (n)
+            </button>
+          )}
+
+          <span className="text-xs text-gray-400">
+            Keys: 1-6 assign · Esc cancel · ←→ pages
+          </span>
+        </div>
       </div>
 
       {/* Audio Player */}
@@ -232,13 +477,13 @@ export default function SpeakerMapper({
               onClick={exitMappingMode}
               className="text-blue-700 hover:text-blue-900 text-sm"
             >
-              Cancel
+              Cancel (Esc)
             </button>
           </div>
 
           <div className="flex items-center gap-3 flex-wrap">
-            {/* Quick assign buttons from known speakers */}
-            {knownSpeakers.slice(0, 6).map(({ name }) => (
+            {/* Quick assign buttons from known speakers with number hints */}
+            {knownSpeakers.slice(0, 6).map(({ name }, index) => (
               <button
                 key={name}
                 type="button"
@@ -250,6 +495,7 @@ export default function SpeakerMapper({
                     : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
               >
+                <span className="opacity-60 mr-1">{index + 1}</span>
                 {name}
               </button>
             ))}
@@ -257,12 +503,16 @@ export default function SpeakerMapper({
             {/* Custom speaker input */}
             <div className="flex items-center gap-1">
               <input
+                ref={customInputRef}
                 type="text"
                 value={customSpeaker}
                 onChange={(e) => setCustomSpeaker(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
                     applyMapping(customSpeaker);
+                  }
+                  if (e.key === 'Escape') {
+                    exitMappingMode();
                   }
                 }}
                 placeholder="Custom name..."
@@ -285,7 +535,7 @@ export default function SpeakerMapper({
                     : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
               >
-                Apply Mapping
+                Apply
               </button>
             </div>
           </div>
@@ -295,7 +545,7 @@ export default function SpeakerMapper({
       {/* Dialogue List */}
       <div className="divide-y max-h-[50vh] overflow-y-auto">
         {pageDialogues.map((dialogue, pageIndex) => {
-          const globalIndex = startIndex + pageIndex;
+          const globalIndex = getGlobalIndex(pageIndex);
           const isActiveSegment = audioState.activeSegmentIndex === globalIndex;
           const matchesActiveLabel = activeMappingLabel === dialogue.name;
           const isExcluded = excludedIndices.has(globalIndex);
@@ -304,7 +554,7 @@ export default function SpeakerMapper({
 
           return (
             <div
-              key={globalIndex}
+              key={`${globalIndex}-${dialogue.timestamp}`}
               className={`flex items-start gap-3 p-3 transition-colors ${
                 isInScope
                   ? 'bg-blue-50 border-l-4 border-blue-500'
@@ -383,24 +633,29 @@ export default function SpeakerMapper({
               : 'bg-white border text-gray-700 hover:bg-gray-50'
           }`}
         >
-          Prev
+          ← Prev
         </button>
 
         <span className="text-sm text-gray-600">
-          Page {currentPage} of {totalPages}
+          Page {currentPage} of {effectiveTotalPages}
+          {speakerFilter !== 'all' && (
+            <span className="text-gray-400 ml-1">
+              ({filteredDialogues.length} filtered)
+            </span>
+          )}
         </span>
 
         <button
           type="button"
           onClick={() => goToPage(currentPage + 1)}
-          disabled={currentPage === totalPages}
+          disabled={currentPage === effectiveTotalPages}
           className={`px-4 py-2 text-sm rounded-md transition-colors ${
-            currentPage === totalPages
+            currentPage === effectiveTotalPages
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
               : 'bg-white border text-gray-700 hover:bg-gray-50'
           }`}
         >
-          Next
+          Next →
         </button>
       </div>
 
