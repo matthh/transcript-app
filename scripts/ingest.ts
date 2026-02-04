@@ -3,6 +3,7 @@ import * as path from 'path';
 import OpenAI from 'openai';
 import * as dotenv from 'dotenv';
 import { list } from '@vercel/blob';
+import { buildBM25Index, BM25Document, BM25Index } from '../src/lib/bm25';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
@@ -46,6 +47,7 @@ interface StoredChunk {
 
 const TRANSCRIPTS_DIR = './transcripts';
 const STORE_PATH = './vector-store.json';
+const BM25_STORE_PATH = './bm25-index.json';
 const TARGET_CHUNK_SIZE = 500;
 const OVERLAP_SIZE = 50;
 
@@ -246,9 +248,24 @@ async function main() {
 
   fs.writeFileSync(STORE_PATH, JSON.stringify({ chunks: storedChunks }));
 
+  // Build BM25 index for lexical search
+  console.log('\nBuilding BM25 lexical index...');
+  const bm25Documents: BM25Document[] = storedChunks.map((chunk) => ({
+    id: chunk.id,
+    text: chunk.text,
+    metadata: chunk.metadata,
+  }));
+
+  const bm25Index = buildBM25Index(bm25Documents);
+  fs.writeFileSync(BM25_STORE_PATH, JSON.stringify(bm25Index));
+
+  console.log(`  BM25 index: ${Object.keys(bm25Index.invertedIndex).length} unique terms`);
+  console.log(`  BM25 index saved to ${BM25_STORE_PATH}`);
+
   console.log('\n✓ Ingestion complete!');
-  console.log(`  Indexed ${allChunks.length} chunks from ${files.length} transcript(s).`);
+  console.log(`  Indexed ${allChunks.length} chunks from ${seenEpisodes.size} transcript(s).`);
   console.log(`  Vector store saved to ${STORE_PATH}`);
+  console.log(`  BM25 index saved to ${BM25_STORE_PATH}`);
 }
 
 main().catch(console.error);

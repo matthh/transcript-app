@@ -1,9 +1,8 @@
 import { NextRequest } from 'next/server';
-import { generateEmbedding } from '@/lib/embeddings';
-import { loadVectorStore, searchSimilar } from '@/lib/vectorstore';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswerStreaming, MetadataContext } from '@/lib/claude';
+import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
@@ -164,13 +163,22 @@ export async function POST(request: NextRequest) {
         if (shouldSearchTranscripts) {
           send('progress', { stage: 'transcripts', message: 'Searching transcripts...' });
 
-          const vectorChunks = loadVectorStore();
-          if (vectorChunks.length > 0) {
-            send('progress', { stage: 'embedding', message: 'Generating embedding...' });
-            const queryEmbedding = await generateEmbedding(query);
+          const { finalK } = getAdaptiveK(classification);
+          const hasBM25 = isBM25Available();
 
-            send('progress', { stage: 'searching', message: 'Finding relevant passages...' });
-            const results = searchSimilar(queryEmbedding, vectorChunks, 10);
+          send('progress', {
+            stage: 'embedding',
+            message: hasBM25 ? 'Running hybrid search (embedding + lexical)...' : 'Generating embedding...',
+          });
+
+          // Use hybrid retrieval (embedding + BM25) with adaptive K
+          const results = await hybridRetrieval(query, classification);
+
+          if (results.length > 0) {
+            send('progress', {
+              stage: 'searching',
+              message: `Found ${results.length} passages (K=${finalK}, BM25=${hasBM25 ? 'on' : 'off'})`,
+            });
 
             transcriptChunks = results.map((r) => ({
               id: r.chunk.id,

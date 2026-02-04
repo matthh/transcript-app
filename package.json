@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run ingest && next build",
+    "build": "npm run ingest && npm run bundle && next build",
     "start": "next start",
     "lint": "next lint",
     "ingest": "npx tsx scripts/ingest.ts",
+    "bundle": "npx tsx scripts/bundle-data.ts",
     "transcribe": "npx tsx scripts/transcribe.ts"
   },
   "dependencies": {
