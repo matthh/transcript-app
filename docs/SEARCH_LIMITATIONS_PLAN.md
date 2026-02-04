@@ -23,16 +23,16 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 - Capture LLM parsing errors and return diagnostic metadata in debug mode.
 
 ### 3) Transcript retrieval is pure embedding top‑K (no lexical match or rerank)
-**Observed:** Rare/precise terms can be missed.  
-**Proposed approach:**  
-- Add a lexical search path (simple BM25) alongside embeddings.
-- Merge results and apply a lightweight reranker (cross‑encoder or LLM scoring).
+**Observed:** Rare/precise terms can be missed.
+**Proposed approach:**
+- Add a lexical search path (simple BM25) alongside embeddings. ✅ DONE
+- Merge results and apply a lightweight reranker (cross‑encoder or LLM scoring). ✅ DONE (RRF)
 - Evaluate recall on a small test set of known queries.
 
 ### 4) Fixed top‑K (10) transcript chunks can miss relevant context
-**Observed:** Single batch of 10 chunks limits recall.  
-**Proposed approach:**  
-- Make K adaptive (based on query type and confidence).
+**Observed:** Single batch of 10 chunks limits recall.
+**Proposed approach:**
+- Make K adaptive (based on query type and confidence). ✅ DONE
 - Add a second‑pass retrieval if answer confidence is low.
 - Optionally include neighboring chunks to preserve local context.
 
@@ -106,7 +106,7 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 ### Phase 1: Reliability and Coverage
 - Add metadata pagination and sorting. ✅ DONE
 - Improve query classification with LLM fallback + logging. ✅ DONE
-- Expand retrieval to include lexical search and adaptive K.
+- Expand retrieval to include lexical search and adaptive K. ✅ DONE
 - Add AssemblyAI vocab boosting fields + curated lexicon support. ✅ DONE
 - Integrate TMDB for crew/cast metadata enrichment.
 
