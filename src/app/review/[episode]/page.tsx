@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Transcript } from '@/types/transcript';
 import { useAudioSync } from '@/hooks/useAudioSync';
@@ -10,6 +10,7 @@ import TranscriptEditor from '@/components/TranscriptEditor';
 
 export default function EditorPage() {
   const { episode } = useParams<{ episode: string }>();
+  const router = useRouter();
   const [transcript, setTranscript] = useState<Transcript | null>(null);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ export default function EditorPage() {
   const [error, setError] = useState<string | null>(null);
   const [hasAudio, setHasAudio] = useState(false);
   const [rebuildConfigured, setRebuildConfigured] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
   const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(
     transcript?.dialogues || []
@@ -112,6 +114,25 @@ export default function EditorPage() {
     }
   };
 
+  const handleReset = async () => {
+    const confirmed = window.confirm(
+      `Reset Episode ${transcript?.episode_number}?\n\nThis will delete the transcript and return you to the review list. You'll need to re-transcribe this episode.`
+    );
+    if (!confirmed) return;
+
+    setResetting(true);
+    try {
+      const response = await fetch(`/api/transcripts/${episode}`, {
+        method: 'DELETE',
+      });
+      if (!response.ok) throw new Error('Failed to reset episode');
+      router.push('/review');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to reset');
+      setResetting(false);
+    }
+  };
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 's') {
@@ -164,6 +185,14 @@ export default function EditorPage() {
             <h1 className="text-2xl font-bold mt-1">{transcript.episode_name}</h1>
             <p className="text-sm text-gray-500">Episode {transcript.episode_number}</p>
           </div>
+          <button
+            onClick={handleReset}
+            disabled={resetting}
+            className="px-3 py-1.5 text-sm text-red-600 hover:text-red-700 hover:bg-red-50 border border-red-200 rounded transition-colors disabled:opacity-50"
+            title="Delete transcript and return to review list"
+          >
+            {resetting ? 'Resetting...' : 'Reset Episode'}
+          </button>
         </div>
 
         {hasAudio && (

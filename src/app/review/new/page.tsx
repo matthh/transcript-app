@@ -27,6 +27,7 @@ function NewEpisodeContent() {
   const [transcriptionStatus, setTranscriptionStatus] = useState<string>('');
   const [rawTranscript, setRawTranscript] = useState<Transcript | null>(null);
   const [finalTranscript, setFinalTranscript] = useState<Transcript | null>(null);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   // Progress tracking
   const [startTime, setStartTime] = useState<number | null>(null);
@@ -96,7 +97,8 @@ function NewEpisodeContent() {
       // Step 1: Upload file directly to Vercel Blob (bypasses serverless size limit)
       let blob;
       try {
-        blob = await upload(`audio/episode_${episodeNumber}.mp3`, selectedFile, {
+        const timestamp = Date.now();
+        blob = await upload(`audio/episode_${episodeNumber}_${timestamp}.mp3`, selectedFile, {
           access: 'public',
           handleUploadUrl: '/api/blob-upload',
           onUploadProgress: (progress) => {
@@ -106,6 +108,7 @@ function NewEpisodeContent() {
           },
         });
         setUploadProgress(100);
+        setAudioUrl(blob.url); // Store audio URL for speaker mapping
       } catch (uploadErr) {
         throw new Error(`Upload failed: ${uploadErr instanceof Error ? uploadErr.message : 'Unknown error'}`);
       }
@@ -190,14 +193,8 @@ function NewEpisodeContent() {
     poll();
   }, []);
 
-  const handleMappingComplete = (mapping: Map<string, string>) => {
+  const handleMappingComplete = (mappedDialogues: DialogueEntry[]) => {
     if (!rawTranscript) return;
-
-    // Apply speaker mapping to transcript
-    const mappedDialogues: DialogueEntry[] = rawTranscript.dialogues.map((d) => ({
-      ...d,
-      name: mapping.get(d.name) || d.name,
-    }));
 
     const mapped: Transcript = {
       ...rawTranscript,
@@ -209,9 +206,11 @@ function NewEpisodeContent() {
   };
 
   const handleMappingCancel = () => {
-    // Use raw transcript without mapping
-    setFinalTranscript(rawTranscript);
-    setStep('preview');
+    // Use raw transcript without mapping (skip button)
+    if (rawTranscript) {
+      setFinalTranscript(rawTranscript);
+      setStep('preview');
+    }
   };
 
   const saveTranscript = async () => {
@@ -412,6 +411,7 @@ function NewEpisodeContent() {
       {step === 'mapping' && rawTranscript && (
         <SpeakerMapper
           dialogues={rawTranscript.dialogues}
+          audioUrl={audioUrl}
           onMappingComplete={handleMappingComplete}
           onCancel={handleMappingCancel}
         />

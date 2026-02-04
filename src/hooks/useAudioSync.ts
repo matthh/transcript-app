@@ -12,7 +12,7 @@ export interface AudioSyncState {
 }
 
 export interface AudioSyncControls {
-  play: () => void;
+  play: () => Promise<void>;
   pause: () => void;
   toggle: () => void;
   seekTo: (time: number) => void;
@@ -103,7 +103,7 @@ export function useAudioSync(dialogues: DialogueEntry[]) {
   }, [handleTimeUpdate, handleLoadedMetadata, handlePlay, handlePause]);
 
   const controls: AudioSyncControls = {
-    play: () => audioRef.current?.play(),
+    play: () => audioRef.current?.play() ?? Promise.resolve(),
     pause: () => audioRef.current?.pause(),
     toggle: () => {
       if (audioRef.current?.paused) {

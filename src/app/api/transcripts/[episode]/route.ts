@@ -2,7 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { Transcript } from '@/types/transcript';
-import { loadTranscript as loadBlobTranscript, saveTranscript as saveBlobTranscript } from '@/lib/blob-storage';
+import {
+  loadTranscript as loadBlobTranscript,
+  saveTranscript as saveBlobTranscript,
+  deleteTranscript as deleteBlobTranscript,
+} from '@/lib/blob-storage';
 
 function parseEpisodeNumber(episode: string): number {
   // Handle formats like "episode_123" or just "123"
@@ -67,4 +71,54 @@ export async function PUT(
       { status: 500 }
     );
   }
+}
+
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ episode: string }> }
+) {
+  const { episode } = await params;
+  const episodeNumber = parseEpisodeNumber(episode);
+
+  if (episodeNumber === 0) {
+    return NextResponse.json({ error: 'Invalid episode number' }, { status: 400 });
+  }
+
+  const deleted: string[] = [];
+  const errors: string[] = [];
+
+  // Try to delete from filesystem
+  const filePath = path.join(process.cwd(), 'transcripts', `episode_${episodeNumber}.json`);
+  if (fs.existsSync(filePath)) {
+    try {
+      fs.unlinkSync(filePath);
+      deleted.push('filesystem');
+    } catch (err) {
+      errors.push(`filesystem: ${err instanceof Error ? err.message : 'unknown error'}`);
+    }
+  }
+
+  // Try to delete from Blob storage
+  try {
+    const success = await deleteBlobTranscript(episodeNumber);
+    if (success) {
+      deleted.push('blob');
+    }
+  } catch (err) {
+    errors.push(`blob: ${err instanceof Error ? err.message : 'unknown error'}`);
+  }
+
+  if (deleted.length === 0 && errors.length === 0) {
+    return NextResponse.json(
+      { message: 'No transcript found to delete', episode: episodeNumber },
+      { status: 404 }
+    );
+  }
+
+  return NextResponse.json({
+    success: true,
+    episode: episodeNumber,
+    deleted,
+    errors: errors.length > 0 ? errors : undefined,
+  });
 }
