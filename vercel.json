@@ -1,8 +1,7 @@
 {
   "functions": {
     "src/app/api/**/*.ts": {
-      "maxDuration": 60,
-      "includeFiles": "vector-store.json,data/**"
+      "maxDuration": 60
     }
   }
 }
