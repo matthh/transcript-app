@@ -3,10 +3,81 @@ import * as path from 'path';
 import OpenAI from 'openai';
 import * as dotenv from 'dotenv';
 import { list } from '@vercel/blob';
-import { buildBM25Index, BM25Document, BM25Index } from '../src/lib/bm25';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
+
+// ============================================
+// BM25 Implementation (inlined to avoid import issues)
+// ============================================
+
+interface BM25Document {
+  id: string;
+  text: string;
+  metadata: {
+    episodeTitle: string;
+    speakers: string;
+    startTimestamp: string;
+    endTimestamp: string;
+  };
+}
+
+interface BM25Index {
+  df: Record<string, number>;
+  invertedIndex: Record<string, [number, number][]>;
+  docLengths: number[];
+  avgDocLength: number;
+  numDocs: number;
+  docIds: string[];
+}
+
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s'-]/g, ' ')
+    .split(/\s+/)
+    .filter((token) => token.length > 1);
+}
+
+function buildBM25Index(documents: BM25Document[]): BM25Index {
+  const df: Record<string, number> = {};
+  const invertedIndex: Record<string, [number, number][]> = {};
+  const docLengths: number[] = [];
+  const docIds: string[] = [];
+  let totalLength = 0;
+
+  documents.forEach((doc, docIndex) => {
+    const tokens = tokenize(doc.text);
+    docLengths.push(tokens.length);
+    docIds.push(doc.id);
+    totalLength += tokens.length;
+
+    const termFreqs: Record<string, number> = {};
+    for (const token of tokens) {
+      termFreqs[token] = (termFreqs[token] || 0) + 1;
+    }
+
+    for (const [term, freq] of Object.entries(termFreqs)) {
+      if (!invertedIndex[term]) {
+        invertedIndex[term] = [];
+        df[term] = 0;
+      }
+      invertedIndex[term].push([docIndex, freq]);
+      df[term]++;
+    }
+  });
+
+  return {
+    df,
+    invertedIndex,
+    docLengths,
+    avgDocLength: documents.length > 0 ? totalLength / documents.length : 0,
+    numDocs: documents.length,
+    docIds,
+  };
+}
+
+// ============================================
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
