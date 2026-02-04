@@ -4,5 +4,4 @@
 # Ignore audio files if any
 audio/
 
-# Ignore scripts (not needed at runtime)
-scripts/
+# Scripts are needed for build-time ingest
