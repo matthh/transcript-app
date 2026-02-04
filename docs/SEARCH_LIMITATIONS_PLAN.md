@@ -72,25 +72,48 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 - Generate a lexicon from existing transcripts + metadata, then review and curate.
 
 ### 10) Transcript review UX is slow for speaker assignment
-**Observed:** Hard to isolate segments, no quick undo, and batch operations are limited.  
-**Proposed approach:**  
-- Add undo/redo for bulk edits (last action).  
-- Add “solo/lock speaker” modes and multi‑select with keyboard shortcuts.  
-- Provide filters (speaker, confidence, duration) and “next unassigned” navigation.  
+**Observed:** Hard to isolate segments, no quick undo, and batch operations are limited.
+**Proposed approach:**
+- Add undo/redo for bulk edits (last action).
+- Add "solo/lock speaker" modes and multi‑select with keyboard shortcuts.
+- Provide filters (speaker, confidence, duration) and "next unassigned" navigation.
 - Add bulk apply on contiguous segments and quick assign via number keys.
+
+### 11) No crew/cast metadata for director, cinematographer, actor queries
+**Observed:** Queries like "Tim Burton movies" or "Roger Deakins cinematography" fail because metadata only has film title, not crew info. System either returns 0 results or hallucinates.
+**Proposed approach:**
+- Integrate TMDB (The Movie Database) API to augment episode metadata with crew/cast data.
+- Build a one-time enrichment script that:
+  - Matches each episode's film title to TMDB
+  - Fetches director, cinematographer, key cast, genre, and other relevant fields
+  - Stores enriched data in `episode-metadata.json` or a separate lookup table
+- Add new query filters: `director`, `cinematographer`, `actor`, `genre`
+- Update query classifier to recognize crew-related queries and extract appropriate filters
+- Handle TMDB API rate limits and caching for build-time enrichment
+- Consider periodic refresh to catch metadata corrections
+
+**TMDB fields to capture:**
+- Director(s)
+- Cinematographer (Director of Photography)
+- Key cast (top 5-10 actors)
+- Genre(s)
+- Runtime
+- TMDB ID (for future lookups)
+- Poster URL (optional, for UI enhancement)
 
 ## Implementation Plan (Phased)
 
 ### Phase 1: Reliability and Coverage
-- Add metadata pagination and sorting.
-- Improve query classification with LLM fallback + logging.
+- Add metadata pagination and sorting. ✅ DONE
+- Improve query classification with LLM fallback + logging. ✅ DONE
 - Expand retrieval to include lexical search and adaptive K.
-- Add AssemblyAI vocab boosting fields + curated lexicon support.
+- Add AssemblyAI vocab boosting fields + curated lexicon support. ✅ DONE
+- Integrate TMDB for crew/cast metadata enrichment.
 
 ### Phase 2: Answer Quality
-- Add reranking and source‑grounded response requirements.
+- Add reranking and source‑grounded response requirements. ✅ DONE (grounding rules added)
 - Implement long‑answer mode and batch summarization.
-- Improve transcript review UX (undo/redo, filters, fast assignment).
+- Improve transcript review UX (undo/redo, filters, fast assignment). ✅ DONE
 
 ### Phase 3: Operational Robustness
 - Formalize ingest/rebuild workflow and automation.
