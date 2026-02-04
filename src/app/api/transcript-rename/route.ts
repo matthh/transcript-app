@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { renameTranscript } from '@/lib/blob-storage';
 
 /**
- * POST /api/transcripts/rename
+ * POST /api/transcript-rename
  * Rename a transcript by changing its episode number
  *
  * Body (JSON):
