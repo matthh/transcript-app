@@ -277,6 +277,13 @@ function buildSystemPrompt(
 
 Always refer to "Matt Haitch" or "Haitch Matt" as just "Haitch".
 
+CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
+1. ONLY reference information that explicitly appears in the provided data below
+2. NEVER invent, guess, or hallucinate episodes, films, guests, or quotes
+3. If the provided data does not contain relevant information, clearly state "I don't have information about [topic] in the provided data"
+4. If asked about something not in the data, do NOT make up plausible-sounding answers
+5. When listing episodes, ONLY list ones that appear in the EPISODE METADATA section below
+
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
 - Use **bold** for emphasis and film titles
@@ -292,7 +299,8 @@ This is a FACTUAL query about episode metadata. Provide:
 - Reference specific episodes by name, season, and episode number
 - If counting, show your work by listing the items counted
 - Format lists clearly with bullet points or numbered items
-- Use ## headings to organize by year or category if listing many items`;
+- Use ## headings to organize by year or category if listing many items
+- If no episodes match the criteria, clearly state that (e.g., "No Tim Burton films appear in the episode data")`;
 
     case 'interpretive':
       return `${basePrompt}
@@ -302,7 +310,8 @@ This is an INTERPRETIVE query about opinions and discussions. Provide:
 - Include direct quotes with episode names and timestamps
 - Capture nuance and different perspectives between hosts
 - Don't just list quotes - weave them into a coherent narrative
-- Use ## headings to organize themes or topics in your analysis`;
+- Use ## headings to organize themes or topics in your analysis
+- If the transcripts don't discuss the topic, clearly state that`;
 
     case 'hybrid':
       return `${basePrompt}
@@ -312,6 +321,7 @@ This is a HYBRID query that requires both metadata filtering AND content analysi
 - Then, analyze what was said in those specific episodes
 - Combine factual information (which episodes, who, when) with interpretive analysis (what they thought, how they felt)
 - Reference both episode metadata and specific quotes where helpful
-- Use ## headings to organize your response`;
+- Use ## headings to organize your response
+- If no relevant data is found, clearly state that`;
   }
 }
