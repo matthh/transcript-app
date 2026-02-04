@@ -82,23 +82,21 @@ async function searchTranscripts(
 function searchMetadata(classification: ClassificationResult): {
   episodes: EpisodeMetadata[];
   sources: MetadataSource[];
+  totalCount: number;
+  hasMore: boolean;
 } {
-  const episodes = loadEpisodeMetadata();
-
-  if (Object.keys(classification.filters).length === 0 && episodes.length > 0) {
-    // No specific filters, return all episodes but limit for display
-    const limited = episodes.slice(0, 20);
-    return {
-      episodes: limited,
-      sources: limited.map(episodeToMetadataSource),
-    };
-  }
-
-  const result = queryEpisodes(classification.filters);
+  // Always use queryEpisodes for consistent pagination and sorting
+  const result = queryEpisodes(classification.filters, {
+    limit: 50,
+    sortBy: 'episode',
+    sortOrder: 'desc',
+  });
 
   return {
     episodes: result.episodes,
     sources: result.episodes.map(episodeToMetadataSource),
+    totalCount: result.totalCount,
+    hasMore: result.hasMore,
   };
 }
 

@@ -33,9 +33,18 @@ export interface QueryFilters {
   yearRange?: { min: number; max: number };
 }
 
+export interface PaginationOptions {
+  limit?: number;   // Max results to return (default: 50)
+  offset?: number;  // Skip first N results (default: 0)
+  sortBy?: 'episode' | 'releaseDate' | 'filmYear';  // Sort field (default: 'episode')
+  sortOrder?: 'asc' | 'desc';  // Sort direction (default: 'desc' for most recent first)
+}
+
 export interface MetadataQueryResult {
   episodes: EpisodeMetadata[];
-  totalCount: number;
+  totalCount: number;        // Total matching episodes (before pagination)
+  returnedCount: number;     // Number returned in this response
+  hasMore: boolean;          // Whether there are more results
   matchedFilters: string[];
 }
 

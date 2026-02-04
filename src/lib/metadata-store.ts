@@ -2,19 +2,31 @@ import {
   EpisodeMetadata,
   QueryFilters,
   MetadataQueryResult,
+  PaginationOptions,
 } from '@/types/episode-metadata';
 import { episodeMetadata } from './metadata-data';
+
+const DEFAULT_LIMIT = 50;
+const MAX_LIMIT = 200;
 
 export function loadEpisodeMetadata(): EpisodeMetadata[] {
   return episodeMetadata;
 }
 
-export function queryEpisodes(filters: QueryFilters): MetadataQueryResult {
+/**
+ * Query episodes with filtering, sorting, and pagination.
+ * Always returns deterministic results sorted by the specified field.
+ */
+export function queryEpisodes(
+  filters: QueryFilters,
+  pagination: PaginationOptions = {}
+): MetadataQueryResult {
   const episodes = loadEpisodeMetadata();
   const matchedFilters: string[] = [];
 
   let filtered = episodes;
 
+  // Apply filters
   if (filters.decade !== undefined) {
     const decadeStart = filters.decade;
     const decadeEnd = decadeStart + 9;
@@ -65,9 +77,40 @@ export function queryEpisodes(filters: QueryFilters): MetadataQueryResult {
     matchedFilters.push(`reviewer:${filters.reviewer}`);
   }
 
+  // Sort deterministically
+  const sortBy = pagination.sortBy || 'episode';
+  const sortOrder = pagination.sortOrder || 'desc';
+  const sortMultiplier = sortOrder === 'asc' ? 1 : -1;
+
+  filtered.sort((a, b) => {
+    let comparison = 0;
+    switch (sortBy) {
+      case 'episode':
+        // Sort by season then episode number
+        comparison = (a.season * 1000 + a.episode) - (b.season * 1000 + b.episode);
+        break;
+      case 'releaseDate':
+        comparison = new Date(a.releaseDate).getTime() - new Date(b.releaseDate).getTime();
+        break;
+      case 'filmYear':
+        comparison = (a.filmYear || 0) - (b.filmYear || 0);
+        break;
+    }
+    return comparison * sortMultiplier;
+  });
+
+  // Apply pagination
+  const totalCount = filtered.length;
+  const limit = Math.min(pagination.limit || DEFAULT_LIMIT, MAX_LIMIT);
+  const offset = pagination.offset || 0;
+
+  const paginated = filtered.slice(offset, offset + limit);
+
   return {
-    episodes: filtered,
-    totalCount: filtered.length,
+    episodes: paginated,
+    totalCount,
+    returnedCount: paginated.length,
+    hasMore: offset + paginated.length < totalCount,
     matchedFilters,
   };
 }

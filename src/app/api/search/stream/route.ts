@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import { generateEmbedding } from '@/lib/embeddings';
 import { loadVectorStore, searchSimilar } from '@/lib/vectorstore';
-import { queryEpisodes, loadEpisodeMetadata } from '@/lib/metadata-store';
+import { queryEpisodes } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswerStreaming } from '@/lib/claude';
 import { TranscriptChunk } from '@/types/transcript';
@@ -84,25 +84,37 @@ export async function POST(request: NextRequest) {
         // Step 2: Search based on classification
         let shouldSearchTranscripts = classification.type === 'interpretive' || classification.type === 'hybrid';
 
+        let metadataTotalCount = 0;
+        let metadataHasMore = false;
+
         if (classification.type === 'factual' || classification.type === 'hybrid') {
           send('progress', { stage: 'metadata', message: 'Searching episode data...' });
 
-          const episodes = loadEpisodeMetadata();
-          console.log('Total episodes in store:', episodes.length);
           console.log('Filters:', JSON.stringify(classification.filters));
-          if (Object.keys(classification.filters).length === 0 && episodes.length > 0) {
-            metadataEpisodes = episodes.slice(0, 20);
-            console.log('No filters, returning first 20 episodes');
-          } else {
-            const result = queryEpisodes(classification.filters);
-            metadataEpisodes = result.episodes;
-            console.log('Query result:', result.episodes.length, 'episodes, matched filters:', result.matchedFilters);
-          }
+
+          // Always use queryEpisodes for consistent pagination and sorting
+          const result = queryEpisodes(classification.filters, {
+            limit: 50,
+            sortBy: 'episode',
+            sortOrder: 'desc',
+          });
+
+          metadataEpisodes = result.episodes;
+          metadataTotalCount = result.totalCount;
+          metadataHasMore = result.hasMore;
+
+          console.log('Query result:', result.returnedCount, 'of', result.totalCount, 'episodes, matched filters:', result.matchedFilters);
+
           metadataSources = metadataEpisodes.map(episodeToMetadataSource);
 
+          const countMessage = metadataHasMore
+            ? `Found ${result.returnedCount} of ${result.totalCount} episodes`
+            : `Found ${result.totalCount} episodes`;
           send('progress', {
             stage: 'metadata_done',
-            message: `Found ${metadataEpisodes.length} episodes`,
+            message: countMessage,
+            totalCount: metadataTotalCount,
+            hasMore: metadataHasMore,
           });
 
           // If factual query found no metadata results, fall back to transcript search
@@ -183,6 +195,11 @@ export async function POST(request: NextRequest) {
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
             metadata: metadataSources.length > 0 ? metadataSources : undefined,
+          },
+          metadata: {
+            totalCount: metadataTotalCount,
+            returnedCount: metadataEpisodes.length,
+            hasMore: metadataHasMore,
           },
         });
 
