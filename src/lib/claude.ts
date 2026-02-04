@@ -177,11 +177,18 @@ Provide a thoughtful answer based on the information above.`,
   return textBlock ? textBlock.text : 'Unable to generate a response.';
 }
 
+export interface MetadataContext {
+  totalCount: number;
+  returnedCount: number;
+  hasMore: boolean;
+}
+
 export async function* synthesizeHybridAnswerStreaming(
   question: string,
   classification: ClassificationResult,
   transcriptChunks: TranscriptChunk[],
-  metadataEpisodes: EpisodeMetadata[]
+  metadataEpisodes: EpisodeMetadata[],
+  metadataContext?: MetadataContext
 ): AsyncGenerator<{ type: 'chunk' | 'done'; text: string }> {
   const hasTranscripts = transcriptChunks.length > 0;
   const hasMetadata = metadataEpisodes.length > 0;
@@ -193,11 +200,20 @@ export async function* synthesizeHybridAnswerStreaming(
 
   let contextSection = '';
   let sourceDescription = '';
+  let truncationNote = '';
+
+  // Add truncation note if results were limited
+  if (metadataContext?.hasMore) {
+    truncationNote = `\n\nNOTE: Showing ${metadataContext.returnedCount} of ${metadataContext.totalCount} total matching episodes. The response includes the most recent episodes.`;
+  }
 
   if (classification.type === 'factual' && hasMetadata) {
     sourceDescription = 'episode metadata (structured data about episodes)';
-    contextSection = `EPISODE METADATA:
-${formatMetadataContext(metadataEpisodes)}`;
+    const countInfo = metadataContext
+      ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
+      : '';
+    contextSection = `EPISODE METADATA${countInfo}:
+${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
   } else if (classification.type === 'interpretive' && hasTranscripts) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
@@ -207,8 +223,11 @@ ${formatTranscriptContext(transcriptChunks)}`;
     const parts: string[] = [];
 
     if (hasMetadata) {
-      parts.push(`EPISODE METADATA (${metadataEpisodes.length} episodes):
-${formatMetadataContext(metadataEpisodes)}`);
+      const countInfo = metadataContext
+        ? `${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''}`
+        : String(metadataEpisodes.length);
+      parts.push(`EPISODE METADATA (${countInfo} episodes):
+${formatMetadataContext(metadataEpisodes)}${truncationNote}`);
     }
 
     if (hasTranscripts) {
@@ -223,7 +242,7 @@ ${formatTranscriptContext(transcriptChunks)}`);
 
   const stream = getAnthropic().messages.stream({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 1024,
+    max_tokens: 2048,  // Increased for longer lists
     messages: [
       {
         role: 'user',

@@ -85,9 +85,9 @@ function searchMetadata(classification: ClassificationResult): {
   totalCount: number;
   hasMore: boolean;
 } {
-  // Always use queryEpisodes for consistent pagination and sorting
+  // Return all matching episodes (up to 500) for complete list queries
   const result = queryEpisodes(classification.filters, {
-    limit: 50,
+    limit: 500,
     sortBy: 'episode',
     sortOrder: 'desc',
   });

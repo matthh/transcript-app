@@ -3,7 +3,7 @@ import { generateEmbedding } from '@/lib/embeddings';
 import { loadVectorStore, searchSimilar } from '@/lib/vectorstore';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
-import { synthesizeHybridAnswerStreaming } from '@/lib/claude';
+import { synthesizeHybridAnswerStreaming, MetadataContext } from '@/lib/claude';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
@@ -92,9 +92,10 @@ export async function POST(request: NextRequest) {
 
           console.log('Filters:', JSON.stringify(classification.filters));
 
-          // Always use queryEpisodes for consistent pagination and sorting
+          // For factual queries, return all matching episodes (up to 500)
+          // This allows "list all X" queries to return complete results
           const result = queryEpisodes(classification.filters, {
-            limit: 50,
+            limit: 500,
             sortBy: 'episode',
             sortOrder: 'desc',
           });
@@ -163,6 +164,15 @@ export async function POST(request: NextRequest) {
         // Step 3: Generate answer with streaming
         send('progress', { stage: 'synthesizing', message: 'Generating answer...' });
 
+        // Build metadata context for synthesis
+        const metadataCtx: MetadataContext | undefined = metadataTotalCount > 0
+          ? {
+              totalCount: metadataTotalCount,
+              returnedCount: metadataEpisodes.length,
+              hasMore: metadataHasMore,
+            }
+          : undefined;
+
         let answer = '';
         let chunkCount = 0;
 
@@ -170,7 +180,8 @@ export async function POST(request: NextRequest) {
           query,
           classification,
           transcriptChunks,
-          metadataEpisodes
+          metadataEpisodes,
+          metadataCtx
         )) {
           if (chunk.type === 'chunk') {
             chunkCount++;
