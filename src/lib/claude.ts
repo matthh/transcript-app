@@ -194,7 +194,7 @@ export async function* synthesizeHybridAnswerStreaming(
   const hasMetadata = metadataEpisodes.length > 0;
 
   if (!hasTranscripts && !hasMetadata) {
-    yield { type: 'done', text: 'No relevant information found. Please try a different query.' };
+    yield { type: 'done', text: 'No matching episodes found in the database.\n\n**Note:** The episode database can only filter by: film title, decade (e.g., "80s movies"), season number, guest name, or reviewer. It does not contain information about directors, actors, genres, or studios. For questions about specific directors or actors, try searching for their films by title instead.' };
     return;
   }
 

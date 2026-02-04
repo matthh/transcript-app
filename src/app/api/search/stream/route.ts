@@ -87,6 +87,9 @@ export async function POST(request: NextRequest) {
         let metadataTotalCount = 0;
         let metadataHasMore = false;
 
+        // Track if we have an unfiltered result (no meaningful filter applied)
+        let isUnfilteredResult = false;
+
         if (classification.type === 'factual' || classification.type === 'hybrid') {
           send('progress', { stage: 'metadata', message: 'Searching episode data...' });
 
@@ -100,26 +103,58 @@ export async function POST(request: NextRequest) {
             sortOrder: 'desc',
           });
 
-          metadataEpisodes = result.episodes;
-          metadataTotalCount = result.totalCount;
-          metadataHasMore = result.hasMore;
-
           console.log('Query result:', result.returnedCount, 'of', result.totalCount, 'episodes, matched filters:', result.matchedFilters);
 
-          metadataSources = metadataEpisodes.map(episodeToMetadataSource);
+          // Check if any meaningful filter was actually applied
+          // If no filters matched and we got almost all episodes, the filter didn't work
+          const filtersRequested = Object.keys(classification.filters).length;
+          const filtersMatched = result.matchedFilters.length;
 
-          const countMessage = metadataHasMore
-            ? `Found ${result.returnedCount} of ${result.totalCount} episodes`
-            : `Found ${result.totalCount} episodes`;
-          send('progress', {
-            stage: 'metadata_done',
-            message: countMessage,
-            totalCount: metadataTotalCount,
-            hasMore: metadataHasMore,
-          });
+          // Detect unfiltered results: filters were expected but none matched
+          // OR query mentions specific criteria but we returned nearly all episodes
+          if (filtersRequested > 0 && filtersMatched === 0) {
+            // User's query had filters extracted but none matched our schema
+            isUnfilteredResult = true;
+            console.log('Warning: Filters were extracted but none matched available criteria');
+          } else if (filtersMatched === 0 && result.totalCount > 50) {
+            // No filters and returning all episodes - might be asking about unsupported criteria
+            isUnfilteredResult = true;
+            console.log('Warning: No filters applied, returning all episodes');
+          }
+
+          // If unfiltered for a factual query, don't pass all episodes (prevents hallucination)
+          if (isUnfilteredResult && classification.type === 'factual') {
+            metadataEpisodes = [];
+            metadataTotalCount = 0;
+            metadataHasMore = false;
+            send('progress', {
+              stage: 'metadata_done',
+              message: 'No episodes match the specified criteria',
+              totalCount: 0,
+              hasMore: false,
+              warning: 'The database does not have information to filter by director, actor, genre, or studio. It can only filter by: film title, decade, season, guest name, or reviewer.',
+            });
+            // Fall back to transcript search instead
+            shouldSearchTranscripts = true;
+          } else {
+            metadataEpisodes = result.episodes;
+            metadataTotalCount = result.totalCount;
+            metadataHasMore = result.hasMore;
+            metadataSources = metadataEpisodes.map(episodeToMetadataSource);
+
+            const countMessage = metadataHasMore
+              ? `Found ${result.returnedCount} of ${result.totalCount} episodes`
+              : `Found ${result.totalCount} episodes`;
+            send('progress', {
+              stage: 'metadata_done',
+              message: countMessage,
+              totalCount: metadataTotalCount,
+              hasMore: metadataHasMore,
+            });
+          }
 
           // If factual query found no metadata results, fall back to transcript search
-          if (classification.type === 'factual' && metadataEpisodes.length === 0) {
+          if (classification.type === 'factual' && metadataEpisodes.length === 0 && !isUnfilteredResult) {
             send('progress', { stage: 'fallback', message: 'No metadata found, searching transcripts...' });
             shouldSearchTranscripts = true;
           }
