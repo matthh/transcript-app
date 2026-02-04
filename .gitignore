@@ -43,3 +43,6 @@ next-env.d.ts
 test-*.ts
 test-*.js
 *_response.json
+
+# Backup files
+*.backup.json

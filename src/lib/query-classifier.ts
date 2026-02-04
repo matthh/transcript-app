@@ -106,14 +106,19 @@ Extract filters if present (leave out if not mentioned):
 - reviewer: Specific host name if mentioned
 - decade: Base year for decade references (1980 for "80s")
 - season: Season number
+- director: Film director name (e.g., "Tim Burton", "Denis Villeneuve", "Spielberg")
+- cinematographer: Director of Photography (e.g., "Roger Deakins", "Janusz Kamiński")
+- actor: Actor/actress name (e.g., "Tom Hanks", "Sigourney Weaver")
+- genre: Film genre (e.g., "horror", "sci-fi", "comedy", "action")
 
 IMPORTANT:
 - Short queries like "Proto episodes" or "Dune" are typically factual (looking for episode list)
 - Questions about "what they said/thought/felt" are interpretive
+- Queries about directors, actors, or cinematographers are typically factual (e.g., "Tim Burton movies" → director filter)
 - Don't extract question words (who, what, which) as entity values
 
 Respond with ONLY valid JSON:
-{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "decade?": number}}`,
+{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string"}}`,
       },
     ],
   });
@@ -155,6 +160,19 @@ Respond with ONLY valid JSON:
     }
     if (parsed.filters.season && typeof parsed.filters.season === 'number') {
       filters.season = parsed.filters.season;
+    }
+    // TMDB-enriched filters
+    if (parsed.filters.director && typeof parsed.filters.director === 'string') {
+      filters.director = parsed.filters.director;
+    }
+    if (parsed.filters.cinematographer && typeof parsed.filters.cinematographer === 'string') {
+      filters.cinematographer = parsed.filters.cinematographer;
+    }
+    if (parsed.filters.actor && typeof parsed.filters.actor === 'string') {
+      filters.actor = parsed.filters.actor;
+    }
+    if (parsed.filters.genre && typeof parsed.filters.genre === 'string') {
+      filters.genre = parsed.filters.genre;
     }
   }
 

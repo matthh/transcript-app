@@ -22,6 +22,13 @@ export interface EpisodeMetadata {
   artworkLink: string;
   letterboxdLink: string;
   imdbLink: string;
+  // TMDB enrichment fields (optional - populated by enrichment script)
+  tmdbId?: number;
+  directors?: string[];
+  cinematographers?: string[];
+  cast?: string[];        // Top billed actors
+  genres?: string[];
+  tmdbPosterPath?: string;
 }
 
 export interface QueryFilters {
@@ -31,6 +38,11 @@ export interface QueryFilters {
   film?: string;
   reviewer?: string;
   yearRange?: { min: number; max: number };
+  // TMDB-enriched filters
+  director?: string;
+  cinematographer?: string;
+  actor?: string;
+  genre?: string;
 }
 
 export interface PaginationOptions {

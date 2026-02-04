@@ -11,7 +11,8 @@
     "ingest": "node --import tsx ./scripts/ingest.ts",
     "upload-search-data": "node --import tsx ./scripts/upload-search-data.ts",
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
-    "transcribe": "node --import tsx ./scripts/transcribe.ts"
+    "transcribe": "node --import tsx ./scripts/transcribe.ts",
+    "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

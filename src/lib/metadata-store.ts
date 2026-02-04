@@ -77,6 +77,39 @@ export function queryEpisodes(
     matchedFilters.push(`reviewer:${filters.reviewer}`);
   }
 
+  // TMDB-enriched filters
+  if (filters.director !== undefined) {
+    const directorLower = filters.director.toLowerCase();
+    filtered = filtered.filter(
+      (e) => e.directors?.some((d) => d.toLowerCase().includes(directorLower))
+    );
+    matchedFilters.push(`director:${filters.director}`);
+  }
+
+  if (filters.cinematographer !== undefined) {
+    const dpLower = filters.cinematographer.toLowerCase();
+    filtered = filtered.filter(
+      (e) => e.cinematographers?.some((c) => c.toLowerCase().includes(dpLower))
+    );
+    matchedFilters.push(`cinematographer:${filters.cinematographer}`);
+  }
+
+  if (filters.actor !== undefined) {
+    const actorLower = filters.actor.toLowerCase();
+    filtered = filtered.filter(
+      (e) => e.cast?.some((a) => a.toLowerCase().includes(actorLower))
+    );
+    matchedFilters.push(`actor:${filters.actor}`);
+  }
+
+  if (filters.genre !== undefined) {
+    const genreLower = filters.genre.toLowerCase();
+    filtered = filtered.filter(
+      (e) => e.genres?.some((g) => g.toLowerCase().includes(genreLower))
+    );
+    matchedFilters.push(`genre:${filters.genre}`);
+  }
+
   // Sort deterministically
   const sortBy = pagination.sortBy || 'episode';
   const sortOrder = pagination.sortOrder || 'desc';
