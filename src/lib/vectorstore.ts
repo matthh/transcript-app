@@ -1,4 +1,4 @@
-import { vectorStore } from './vector-data';
+import { list } from '@vercel/blob';
 
 export interface StoredChunk {
   id: string;
@@ -12,13 +12,89 @@ export interface StoredChunk {
   };
 }
 
-export function saveVectorStore(): void {
-  // No-op in production - data is bundled at build time
-  console.warn('saveVectorStore is not available in production');
+interface VectorStoreData {
+  chunks: StoredChunk[];
 }
 
+// In-memory cache for the vector store (persists across requests in the same Lambda instance)
+let cachedVectorStore: StoredChunk[] | null = null;
+let loadPromise: Promise<StoredChunk[]> | null = null;
+
+const SEARCH_DATA_PREFIX = 'search-data/';
+
+/**
+ * Load vector store from Vercel Blob storage.
+ * Uses in-memory caching to avoid repeated fetches.
+ */
+export async function loadVectorStoreAsync(): Promise<StoredChunk[]> {
+  // Return cached data if available
+  if (cachedVectorStore !== null) {
+    return cachedVectorStore;
+  }
+
+  // If already loading, wait for the existing promise
+  if (loadPromise !== null) {
+    return loadPromise;
+  }
+
+  // Start loading
+  loadPromise = (async () => {
+    try {
+      console.log('Loading vector store from Blob storage...');
+      const startTime = Date.now();
+
+      // Find the vector store blob
+      const blobs = await list({ prefix: `${SEARCH_DATA_PREFIX}vector-store.json` });
+      const match = blobs.blobs.find((b) => b.pathname === `${SEARCH_DATA_PREFIX}vector-store.json`);
+
+      if (!match) {
+        console.warn('Vector store not found in Blob storage');
+        cachedVectorStore = [];
+        return cachedVectorStore;
+      }
+
+      // Fetch the data
+      const response = await fetch(match.url);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch vector store: ${response.status}`);
+      }
+
+      const data: VectorStoreData = await response.json();
+      cachedVectorStore = data.chunks || [];
+
+      const elapsed = Date.now() - startTime;
+      console.log(`Loaded ${cachedVectorStore.length} chunks from Blob in ${elapsed}ms`);
+
+      return cachedVectorStore;
+    } catch (error) {
+      console.error('Error loading vector store:', error);
+      cachedVectorStore = [];
+      return cachedVectorStore;
+    } finally {
+      loadPromise = null;
+    }
+  })();
+
+  return loadPromise;
+}
+
+/**
+ * Synchronous version that returns cached data or empty array.
+ * Use loadVectorStoreAsync() for guaranteed data loading.
+ * @deprecated Use loadVectorStoreAsync instead
+ */
 export function loadVectorStore(): StoredChunk[] {
-  return vectorStore.chunks;
+  if (cachedVectorStore !== null) {
+    return cachedVectorStore;
+  }
+  // Trigger async load for next request
+  loadVectorStoreAsync().catch(console.error);
+  return [];
+}
+
+export function saveVectorStore(): void {
+  // No-op in production - data is managed via Blob storage
+  console.warn('saveVectorStore is not available in production');
 }
 
 function cosineSimilarity(a: number[], b: number[]): number {

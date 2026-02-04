@@ -1,12 +1,15 @@
 /**
  * Hybrid retrieval combining embedding search with BM25 lexical search.
  * Also implements adaptive K based on query type.
+ *
+ * Data is loaded from Vercel Blob storage at runtime to stay under
+ * the 250MB serverless function size limit.
  */
 
 import { generateEmbedding } from './embeddings';
-import { loadVectorStore, searchSimilar, StoredChunk } from './vectorstore';
-import { searchBM25, BM25Index } from './bm25';
-import { bm25Index } from './bm25-data';
+import { loadVectorStoreAsync, searchSimilar, StoredChunk } from './vectorstore';
+import { searchBM25 } from './bm25';
+import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
 import { ClassificationResult } from '@/types/episode-metadata';
 
 export interface RetrievalResult {
@@ -125,14 +128,20 @@ function reciprocalRankFusion(
 
 /**
  * Perform hybrid retrieval combining embedding and BM25 search.
+ * Loads data from Blob storage on first request.
  */
 export async function hybridRetrieval(
   query: string,
   classification: ClassificationResult
 ): Promise<RetrievalResult[]> {
-  const chunks = loadVectorStore();
+  // Load vector store and BM25 index in parallel
+  const [chunks, bm25Index] = await Promise.all([
+    loadVectorStoreAsync(),
+    loadBM25IndexAsync(),
+  ]);
 
   if (chunks.length === 0) {
+    console.warn('No chunks loaded from vector store');
     return [];
   }
 
@@ -162,7 +171,7 @@ export async function embeddingOnlyRetrieval(
   query: string,
   classification: ClassificationResult
 ): Promise<RetrievalResult[]> {
-  const chunks = loadVectorStore();
+  const chunks = await loadVectorStoreAsync();
 
   if (chunks.length === 0) {
     return [];
@@ -184,5 +193,15 @@ export async function embeddingOnlyRetrieval(
  * Check if BM25 index is available.
  */
 export function isBM25Available(): boolean {
-  return bm25Index && bm25Index.numDocs > 0;
+  return isBM25Loaded();
+}
+
+/**
+ * Pre-load search data (call on app startup or first request).
+ */
+export async function preloadSearchData(): Promise<void> {
+  await Promise.all([
+    loadVectorStoreAsync(),
+    loadBM25IndexAsync(),
+  ]);
 }

@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run ingest && npm run bundle && next build",
+    "build": "npm run ingest && npm run upload-search-data && npm run bundle && next build",
+    "build:local": "npm run bundle && next build",
     "start": "next start",
     "lint": "next lint",
     "ingest": "node --import tsx ./scripts/ingest.ts",
+    "upload-search-data": "node --import tsx ./scripts/upload-search-data.ts",
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
     "transcribe": "node --import tsx ./scripts/transcribe.ts"
   },

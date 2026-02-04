@@ -1,0 +1,61 @@
+/**
+ * Upload vector store and BM25 index to Vercel Blob storage.
+ * This allows us to stay under the 250MB serverless function limit
+ * by loading data at runtime instead of bundling it.
+ */
+
+import * as fs from 'fs';
+import * as path from 'path';
+import { put } from '@vercel/blob';
+
+const SEARCH_DATA_PREFIX = 'search-data/';
+
+async function uploadSearchData() {
+  console.log('Uploading search data to Vercel Blob...\n');
+
+  const vectorStorePath = path.join(process.cwd(), 'vector-store.json');
+  const bm25IndexPath = path.join(process.cwd(), 'bm25-index.json');
+
+  // Upload vector store
+  if (fs.existsSync(vectorStorePath)) {
+    const vectorStoreData = fs.readFileSync(vectorStorePath, 'utf-8');
+    const sizeInMB = (Buffer.byteLength(vectorStoreData, 'utf-8') / (1024 * 1024)).toFixed(2);
+    console.log(`Uploading vector-store.json (${sizeInMB} MB)...`);
+
+    const blob = await put(`${SEARCH_DATA_PREFIX}vector-store.json`, vectorStoreData, {
+      access: 'public',
+      contentType: 'application/json',
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    });
+
+    console.log(`  ✓ Uploaded to: ${blob.url}`);
+  } else {
+    console.log('Warning: vector-store.json not found, skipping upload');
+  }
+
+  // Upload BM25 index
+  if (fs.existsSync(bm25IndexPath)) {
+    const bm25Data = fs.readFileSync(bm25IndexPath, 'utf-8');
+    const sizeInMB = (Buffer.byteLength(bm25Data, 'utf-8') / (1024 * 1024)).toFixed(2);
+    console.log(`Uploading bm25-index.json (${sizeInMB} MB)...`);
+
+    const blob = await put(`${SEARCH_DATA_PREFIX}bm25-index.json`, bm25Data, {
+      access: 'public',
+      contentType: 'application/json',
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    });
+
+    console.log(`  ✓ Uploaded to: ${blob.url}`);
+  } else {
+    console.log('Warning: bm25-index.json not found, skipping upload');
+  }
+
+  console.log('\n✓ Search data upload complete!');
+}
+
+uploadSearchData().catch((error) => {
+  console.error('Failed to upload search data:', error);
+  process.exit(1);
+});
