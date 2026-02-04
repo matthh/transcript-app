@@ -63,10 +63,19 @@ function NewEpisodeContent() {
       setSelectedFile(file);
       setError(null);
 
-      // Try to extract episode info from filename
-      const match = file.name.match(/(\d+)/);
-      if (match && !episodeNumber) {
-        setEpisodeNumber(match[1]);
+      // Try to extract episode number from filename
+      // Look for patterns like "episode_123", "ep123", "ep 123", or standalone numbers
+      // but NOT 4-digit years (1900-2099) which are likely film years
+      const episodeMatch = file.name.match(/(?:episode[_\s-]*|ep[_\s-]?)(\d{1,3})(?!\d)/i);
+      const standaloneMatch = file.name.match(/^(\d{1,3})(?!\d)/); // Number at start of filename
+
+      if (!episodeNumber) {
+        if (episodeMatch) {
+          setEpisodeNumber(episodeMatch[1]);
+        } else if (standaloneMatch) {
+          setEpisodeNumber(standaloneMatch[1]);
+        }
+        // Don't extract 4-digit numbers (likely years like 1985, 2001, etc.)
       }
       if (!episodeName) {
         const nameFromFile = file.name
