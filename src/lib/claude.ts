@@ -214,6 +214,13 @@ export async function* synthesizeHybridAnswerStreaming(
       : '';
     contextSection = `EPISODE METADATA${countInfo}:
 ${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
+  } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
+    // Factual query fell back to transcripts (no metadata matched)
+    sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
+    contextSection = `PODCAST TRANSCRIPTS (${transcriptChunks.length} excerpts):
+${formatTranscriptContext(transcriptChunks)}
+
+NOTE: No structured episode metadata matched this query. The database can filter by film title, decade, season, guest, or reviewer - but not by director, actor, genre, or studio. The transcripts above may contain relevant discussion.`;
   } else if (classification.type === 'interpretive' && hasTranscripts) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
@@ -282,7 +289,8 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 2. NEVER invent, guess, or hallucinate episodes, films, guests, or quotes
 3. If the provided data does not contain relevant information, clearly state "I don't have information about [topic] in the provided data"
 4. If asked about something not in the data, do NOT make up plausible-sounding answers
-5. When listing episodes, ONLY list ones that appear in the EPISODE METADATA section below
+5. When listing episodes from METADATA, only list ones that appear in the EPISODE METADATA section
+6. When using TRANSCRIPTS, you CAN extract factual information mentioned in the conversation (e.g., if hosts discuss covering a Tim Burton film, you can report that)
 
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
@@ -290,8 +298,20 @@ IMPORTANT: Format your response using proper Markdown:
 - Use bullet points for lists
 - Use > for direct quotes`;
 
+  // Check if we're using transcripts as a fallback for factual queries
+  const isTranscriptFallback = sourceDescription.includes('transcript') && queryType === 'factual';
+
   switch (queryType) {
     case 'factual':
+      if (isTranscriptFallback) {
+        return `${basePrompt}
+
+This is a FACTUAL query, but no structured metadata matched. Using transcript search instead.
+- Extract factual information from the transcript excerpts (e.g., which films were discussed, who was mentioned)
+- If the hosts mention covering specific films or directors, report those findings
+- Be clear that the information comes from transcript discussion, not structured episode data
+- If the transcripts don't contain relevant information, clearly state that`;
+      }
       return `${basePrompt}
 
 This is a FACTUAL query about episode metadata. Provide:
