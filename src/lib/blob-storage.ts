@@ -167,6 +167,51 @@ export async function deleteAudio(episodeNumber: number): Promise<boolean> {
 }
 
 /**
+ * Rename a transcript by changing its episode number
+ * This loads the transcript, updates the episode_number, saves with new name, and deletes the old one
+ */
+export async function renameTranscript(
+  fromEpisodeNumber: number,
+  toEpisodeNumber: number
+): Promise<{ success: boolean; error?: string }> {
+  try {
+    // Load the existing transcript
+    const transcript = await loadTranscript(fromEpisodeNumber);
+    if (!transcript) {
+      return { success: false, error: `Transcript episode_${fromEpisodeNumber} not found` };
+    }
+
+    // Check if target already exists
+    const targetExists = await transcriptExists(toEpisodeNumber);
+    if (targetExists) {
+      return { success: false, error: `Transcript episode_${toEpisodeNumber} already exists` };
+    }
+
+    // Update the episode number in the transcript
+    transcript.episode_number = toEpisodeNumber;
+
+    // Save with new episode number
+    await saveTranscript(transcript);
+
+    // Verify the new transcript exists before deleting old one
+    const newExists = await transcriptExists(toEpisodeNumber);
+    if (!newExists) {
+      return { success: false, error: 'Failed to save transcript with new episode number' };
+    }
+
+    // Delete the old transcript
+    await deleteTranscript(fromEpisodeNumber);
+
+    return { success: true };
+  } catch (error) {
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error during rename'
+    };
+  }
+}
+
+/**
  * Store transcription job metadata in Blob storage
  * Used for tracking async transcription jobs
  */
