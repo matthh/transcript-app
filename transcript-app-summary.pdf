@@ -1,0 +1,56 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2171 >>
+stream
+BT /F1 18 Tf 72 740 Td (Transcript App - One-Page Summary) Tj ET
+BT /F1 13 Tf 72 712 Td (What it is) Tj ET
+BT /F1 11 Tf 72 696 Td (Next.js app for searching Escape Hatch podcast transcripts and episode metadata.) Tj ET
+BT /F1 11 Tf 72 682 Td (It answers questions with sourced passages and episode details.) Tj ET
+BT /F1 13 Tf 72 660 Td (Who it's for) Tj ET
+BT /F1 11 Tf 72 644 Td (Podcast hosts, producers, or reviewers who need quick recall of past episodes.) Tj ET
+BT /F1 13 Tf 72 622 Td (What it does) Tj ET
+BT /F1 11 Tf 72 606 Td (- Streams answers and progress updates during search.) Tj ET
+BT /F1 11 Tf 72 592 Td (- Classifies queries \(factual/interpretive/hybrid\) to pick data sources.) Tj ET
+BT /F1 11 Tf 72 578 Td (- Searches transcript chunks with OpenAI embeddings and vector similarity.) Tj ET
+BT /F1 11 Tf 72 564 Td (- Filters episode metadata \(season, episode, release date, guest, reviewer, notable fields\).) Tj ET
+BT /F1 11 Tf 72 550 Td (- Shows transcript sources with speakers, timestamps, and relevance scores.) Tj ET
+BT /F1 11 Tf 72 536 Td (- Supports audio uploads and AssemblyAI transcription via API routes.) Tj ET
+BT /F1 13 Tf 72 514 Td (How it works) Tj ET
+BT /F1 11 Tf 72 498 Td (- UI \(src/app/page.tsx\) sends query to /api/search/stream \(SSE\).) Tj ET
+BT /F1 11 Tf 72 484 Td (- Server classifies query with Anthropic and loads metadata \(data/episode-metadata.json\).) Tj ET
+BT /F1 11 Tf 72 470 Td (- Transcript search loads vector-store.json, generates OpenAI embedding, ranks chunks.) Tj ET
+BT /F1 11 Tf 72 456 Td (- Answer is synthesized with Anthropic Claude and streamed to the client.) Tj ET
+BT /F1 11 Tf 72 442 Td (- Ingestion script \(scripts/ingest.ts\) chunks transcripts and builds vector-store.json.) Tj ET
+BT /F1 11 Tf 72 428 Td (- Transcription pipeline uses Vercel Blob + AssemblyAI webhook routes.) Tj ET
+BT /F1 13 Tf 72 406 Td (How to run) Tj ET
+BT /F1 11 Tf 72 390 Td (1\) npm install) Tj ET
+BT /F1 11 Tf 72 376 Td (2\) npm run dev) Tj ET
+BT /F1 11 Tf 72 362 Td (3\) Set required API keys in .env.local \(OpenAI/Anthropic/AssemblyAI, etc.\).) Tj ET
+BT /F1 11 Tf 72 348 Td (   Env file/example Not found in repo.) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2534
+%%EOF
