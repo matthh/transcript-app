@@ -6,12 +6,20 @@ import * as dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
 
+// Import lexicon functions for word boosting
+import { getWordBoostList } from '../src/lib/lexicon';
+
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
 });
 
 const MP3_DIR = './mp3s';
 const OUTPUT_DIR = './transcripts';
+
+// CLI flags
+const args = process.argv.slice(2);
+const noBoost = args.includes('--no-boost');
+const maxBoostTerms = parseInt(args.find(a => a.startsWith('--max-boost='))?.split('=')[1] || '500', 10);
 
 interface DialogueEntry {
   name: string;
@@ -67,16 +75,27 @@ async function promptForSpeakerMapping(
 
 async function transcribeFile(
   filePath: string,
-  speakerMapping?: Map<string, string>
+  speakerMapping?: Map<string, string>,
+  wordBoostList?: string[]
 ): Promise<{ transcript: TranscriptOutput; detectedSpeakers: string[] }> {
   const filename = path.basename(filePath);
   console.log(`\nTranscribing: ${filename}`);
   console.log('  Uploading and processing (this may take a few minutes)...');
 
-  const transcript = await client.transcripts.transcribe({
+  // Build transcription config
+  const transcriptConfig: Parameters<typeof client.transcripts.transcribe>[0] = {
     audio: filePath,
     speaker_labels: true,
-  });
+  };
+
+  // Add word boosting if enabled
+  if (wordBoostList && wordBoostList.length > 0) {
+    transcriptConfig.word_boost = wordBoostList;
+    transcriptConfig.boost_param = 'high';
+    console.log(`  Word boost: ${wordBoostList.length} terms (boost=high)`);
+  }
+
+  const transcript = await client.transcripts.transcribe(transcriptConfig);
 
   if (transcript.status === 'error') {
     throw new Error(`Transcription failed: ${transcript.error}`);
@@ -117,6 +136,21 @@ async function main() {
     console.error('Error: ASSEMBLYAI_API_KEY not found in .env.local');
     console.error('Get your API key at: https://www.assemblyai.com/dashboard/signup');
     process.exit(1);
+  }
+
+  // Load word boost list (unless disabled)
+  let wordBoostList: string[] | undefined;
+  if (!noBoost) {
+    try {
+      wordBoostList = getWordBoostList(maxBoostTerms);
+      console.log(`Loaded ${wordBoostList.length} terms for word boosting.`);
+      console.log(`  (Use --no-boost to disable, --max-boost=N to limit terms)\n`);
+    } catch (err) {
+      console.warn('Warning: Could not load lexicon for word boosting:', err);
+      console.warn('Continuing without word boost.\n');
+    }
+  } else {
+    console.log('Word boosting disabled (--no-boost flag).\n');
   }
 
   // Check for MP3 directory
@@ -162,7 +196,7 @@ async function main() {
     console.log('\nFirst, I\'ll transcribe one file to detect speakers...');
 
     const firstFile = path.join(MP3_DIR, mp3Files[0]);
-    const { transcript, detectedSpeakers } = await transcribeFile(firstFile);
+    const { transcript, detectedSpeakers } = await transcribeFile(firstFile, undefined, wordBoostList);
 
     globalSpeakerMapping = await promptForSpeakerMapping(detectedSpeakers, rl);
 
@@ -195,7 +229,7 @@ async function main() {
     const filePath = path.join(MP3_DIR, file);
 
     try {
-      const { transcript } = await transcribeFile(filePath, globalSpeakerMapping);
+      const { transcript } = await transcribeFile(filePath, globalSpeakerMapping, wordBoostList);
 
       const outputPath = path.join(OUTPUT_DIR, `${path.basename(file, '.mp3')}.json`);
       fs.writeFileSync(outputPath, JSON.stringify(transcript, null, 2));
