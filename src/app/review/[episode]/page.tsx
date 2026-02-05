@@ -3,15 +3,25 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Transcript } from '@/types/transcript';
+import { Transcript, DialogueEntry } from '@/types/transcript';
 import { useAudioSync } from '@/hooks/useAudioSync';
+import { useUndoRedo } from '@/hooks/useUndoRedo';
 import AudioPlayer from '@/components/AudioPlayer';
 import TranscriptEditor from '@/components/TranscriptEditor';
 
 export default function EditorPage() {
   const { episode } = useParams<{ episode: string }>();
   const router = useRouter();
-  const [transcript, setTranscript] = useState<Transcript | null>(null);
+  const [transcriptMeta, setTranscriptMeta] = useState<Omit<Transcript, 'dialogues'> | null>(null);
+  const {
+    state: dialogues,
+    set: setDialogues,
+    undo,
+    redo,
+    reset: resetDialogues,
+    canUndo,
+    canRedo,
+  } = useUndoRedo<DialogueEntry[]>([]);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -22,17 +32,17 @@ export default function EditorPage() {
   const [rebuildConfigured, setRebuildConfigured] = useState(false);
   const [resetting, setResetting] = useState(false);
 
-  const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(
-    transcript?.dialogues || []
-  );
+  const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(dialogues);
 
   useEffect(() => {
     async function fetchTranscript() {
       try {
         const response = await fetch(`/api/transcripts/${episode}`);
         if (!response.ok) throw new Error('Failed to fetch transcript');
-        const data = await response.json();
-        setTranscript(data);
+        const data: Transcript = await response.json();
+        const { dialogues: loadedDialogues, ...meta } = data;
+        setTranscriptMeta(meta);
+        resetDialogues(loadedDialogues);
 
         // Check if audio exists
         const audioResponse = await fetch(`/api/audio/${episode}`, {
@@ -56,29 +66,49 @@ export default function EditorPage() {
   }, [episode]);
 
   const handleSpeakerChange = useCallback((index: number, speaker: string) => {
-    setTranscript((prev) => {
-      if (!prev) return prev;
-      const newDialogues = [...prev.dialogues];
+    setDialogues((prev) => {
+      const newDialogues = [...prev];
       newDialogues[index] = { ...newDialogues[index], name: speaker };
-      return { ...prev, dialogues: newDialogues };
+      return newDialogues;
     });
     setHasUnsavedChanges(true);
-  }, []);
+  }, [setDialogues]);
 
   const handleTextChange = useCallback((index: number, text: string) => {
-    setTranscript((prev) => {
-      if (!prev) return prev;
-      const newDialogues = [...prev.dialogues];
+    setDialogues((prev) => {
+      const newDialogues = [...prev];
       newDialogues[index] = { ...newDialogues[index], text };
-      return { ...prev, dialogues: newDialogues };
+      return newDialogues;
     });
     setHasUnsavedChanges(true);
-  }, []);
+  }, [setDialogues]);
+
+  const handleBulkSpeakerChange = useCallback((indices: number[], speaker: string) => {
+    setDialogues((prev) => {
+      const newDialogues = [...prev];
+      indices.forEach(index => {
+        newDialogues[index] = { ...newDialogues[index], name: speaker };
+      });
+      return newDialogues;
+    });
+    setHasUnsavedChanges(true);
+  }, [setDialogues]);
+
+  const handleUndo = useCallback(() => {
+    undo();
+    setHasUnsavedChanges(true);
+  }, [undo]);
+
+  const handleRedo = useCallback(() => {
+    redo();
+    setHasUnsavedChanges(true);
+  }, [redo]);
 
   const handleSave = async () => {
-    if (!transcript) return;
+    if (!transcriptMeta) return;
     setSaving(true);
     try {
+      const transcript: Transcript = { ...transcriptMeta, dialogues };
       const response = await fetch(`/api/transcripts/${episode}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -116,7 +146,7 @@ export default function EditorPage() {
 
   const handleReset = async () => {
     const confirmed = window.confirm(
-      `Reset Episode ${transcript?.episode_number}?\n\nThis will delete the transcript and return you to the review list. You'll need to re-transcribe this episode.`
+      `Reset Episode ${transcriptMeta?.episode_number}?\n\nThis will delete the transcript and return you to the review list. You'll need to re-transcribe this episode.`
     );
     if (!confirmed) return;
 
@@ -159,7 +189,7 @@ export default function EditorPage() {
     );
   }
 
-  if (error || !transcript) {
+  if (error || !transcriptMeta) {
     return (
       <main className="min-h-screen p-8">
         <div className="max-w-4xl mx-auto">
@@ -191,8 +221,8 @@ export default function EditorPage() {
             <Link href="/review" className="text-blue-600 hover:underline text-sm">
               Back to Review List
             </Link>
-            <h1 className="text-2xl font-bold mt-1">{transcript.episode_name}</h1>
-            <p className="text-sm text-gray-500">Episode {transcript.episode_number}</p>
+            <h1 className="text-2xl font-bold mt-1">{transcriptMeta.episode_name}</h1>
+            <p className="text-sm text-gray-500">Episode {transcriptMeta.episode_number}</p>
           </div>
           <button
             onClick={handleReset}
@@ -222,11 +252,16 @@ export default function EditorPage() {
         )}
 
         <TranscriptEditor
-          dialogues={transcript.dialogues}
+          dialogues={dialogues}
           activeSegmentIndex={audioState.activeSegmentIndex}
           onTimestampClick={audioControls.seekToTimestamp}
           onSpeakerChange={handleSpeakerChange}
           onTextChange={handleTextChange}
+          onBulkSpeakerChange={handleBulkSpeakerChange}
+          onUndo={handleUndo}
+          onRedo={handleRedo}
+          canUndo={canUndo}
+          canRedo={canRedo}
         />
       </div>
 
