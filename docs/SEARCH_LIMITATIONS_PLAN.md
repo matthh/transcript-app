@@ -171,7 +171,7 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 ## Gap Fix Sequencing
 - Phase 1: A, B, C (search parity + correctness) ✅ DONE
 - Phase 2: D, E (quality + transcription) ✅ DONE
-- Phase 3: F, G (editor productivity + data sync)
+- Phase 3: F, G (editor productivity + data sync) ✅ DONE
 
 ## Concrete Checklist (By Gap)
 
