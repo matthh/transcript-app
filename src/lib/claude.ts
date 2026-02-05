@@ -318,9 +318,10 @@ This is a FACTUAL query, but no structured metadata matched. Using transcript se
 This is a FACTUAL query about episode metadata. Provide:
 - Direct, concise answers with specific counts or lists
 - Reference specific episodes by name, season, and episode number
-- If counting, show your work by listing the items counted
+- IMPORTANT: List ALL matching episodes - do not skip any or summarize. If 10 episodes match, list all 10.
 - Format lists clearly with bullet points or numbered items
 - Use ## headings to organize by year or category if listing many items
+- Verify your count matches the number of items you listed
 - If no episodes match the criteria, clearly state that (e.g., "No Tim Burton films appear in the episode data")`;
 
     case 'interpretive':
