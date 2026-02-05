@@ -131,7 +131,7 @@ export async function POST(request: NextRequest) {
               message: 'No episodes match the specified criteria',
               totalCount: 0,
               hasMore: false,
-              warning: 'The database does not have information to filter by director, actor, genre, or studio. It can only filter by: film title, decade, season, guest name, or reviewer.',
+              warning: 'No episodes matched the filter criteria. The database can filter by: film title, decade, season, guest, reviewer, director, cinematographer, actor, or genre.',
             });
             // DON'T fall back to transcript search for this case - it will just return
             // irrelevant passages and confuse the user. Let the "no data" message show.

@@ -214,7 +214,7 @@ export async function* synthesizeHybridAnswerStreaming(
   const hasMetadata = metadataEpisodes.length > 0;
 
   if (!hasTranscripts && !hasMetadata) {
-    yield { type: 'done', text: 'No matching episodes found in the database.\n\n**Note:** The episode database can only filter by: film title, decade (e.g., "80s movies"), season number, guest name, or reviewer. It does not contain information about directors, actors, genres, or studios. For questions about specific directors or actors, try searching for their films by title instead.' };
+    yield { type: 'done', text: 'No matching episodes found in the database.\n\n**Note:** The episode database can filter by: film title, decade (e.g., "80s movies"), season number, guest name, reviewer, director, cinematographer, actor, or genre.' };
     return;
   }
 
@@ -240,7 +240,7 @@ ${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
     contextSection = `PODCAST TRANSCRIPTS (${transcriptChunks.length} excerpts):
 ${formatTranscriptContext(transcriptChunks)}
 
-NOTE: No structured episode metadata matched this query. The database can filter by film title, decade, season, guest, or reviewer - but not by director, actor, genre, or studio. The transcripts above may contain relevant discussion.`;
+NOTE: No structured episode metadata matched this query. The transcripts above may contain relevant discussion.`;
   } else if (classification.type === 'interpretive' && hasTranscripts) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
