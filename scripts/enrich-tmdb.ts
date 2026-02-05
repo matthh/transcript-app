@@ -9,7 +9,11 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import 'dotenv/config';
+import dotenv from 'dotenv';
+
+// Load .env.local first, then .env as fallback
+dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
