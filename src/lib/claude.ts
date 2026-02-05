@@ -296,7 +296,8 @@ IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
 - Use **bold** for emphasis and film titles
 - Use bullet points for lists
-- Use > for direct quotes`;
+- Use "quotation marks" for inline quotes, NOT > characters
+- Only use > for standalone block quotes on their own line`;
 
   // Check if we're using transcripts as a fallback for factual queries
   const isTranscriptFallback = sourceDescription.includes('transcript') && queryType === 'factual';
