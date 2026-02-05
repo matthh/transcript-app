@@ -182,9 +182,34 @@ function convertRow(row: RawCSVRow): EpisodeMetadata {
 // ---------- Google Sheets Fetching ----------
 
 async function fetchSheetAsCSV(): Promise<string> {
+  const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+
+  // Check if API key looks like a real key (starts with AIza) vs a URL
+  const hasRealApiKey = apiKey && apiKey.startsWith('AIza');
+
+  if (hasRealApiKey) {
+    // Use Google Sheets API with key
+    const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/A:Z?key=${apiKey}`;
+    console.log('Fetching via Google Sheets API...');
+
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      const error = await response.text();
+      throw new Error(`Google Sheets API error: ${response.status} - ${error}`);
+    }
+
+    const data = await response.json();
+    // Convert API response to CSV format
+    const rows = data.values || [];
+    return rows.map((row: string[]) =>
+      row.map(cell => `"${(cell || '').replace(/"/g, '""')}"`).join(',')
+    ).join('\n');
+  }
+
+  // Fall back to public CSV export
   const exportUrl = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
 
-  console.log('Fetching from Google Sheets...');
+  console.log('Fetching from Google Sheets (public export)...');
   if (verbose) console.log(`  URL: ${exportUrl}`);
 
   const response = await fetch(exportUrl);
@@ -192,10 +217,10 @@ async function fetchSheetAsCSV(): Promise<string> {
   if (!response.ok) {
     if (response.status === 401 || response.status === 403) {
       throw new Error(
-        'Sheet is not publicly accessible. Please:\n' +
-        '  1. Open the Google Sheet\n' +
-        '  2. Click Share → "Anyone with the link" → Viewer\n' +
-        '  Or set GOOGLE_SHEETS_API_KEY in .env.local'
+        'Sheet is not publicly accessible. Either:\n' +
+        '  1. Make the sheet public: Share → "Anyone with the link" → Viewer\n' +
+        '  2. Or add a Google API key to .env.local:\n' +
+        '     GOOGLE_SHEETS_API_KEY=AIza...(from Google Cloud Console)'
       );
     }
     throw new Error(`Failed to fetch sheet: ${response.status} ${response.statusText}`);
