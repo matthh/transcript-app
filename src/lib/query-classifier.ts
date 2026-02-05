@@ -115,6 +115,10 @@ IMPORTANT:
 - Short queries like "Proto episodes" or "Dune" are typically factual (looking for episode list)
 - Questions about "what they said/thought/felt" are interpretive
 - Queries about directors, actors, or cinematographers are typically factual (e.g., "Tim Burton movies" → director filter)
+- Genre words like "horror", "sci-fi", "comedy", "action", "thriller", "drama" followed by "movies/films/episodes" should extract a GENRE filter, NOT a film filter
+  - "horror movies" → genre: "Horror" (NOT film: "horror")
+  - "sci-fi films" → genre: "Science Fiction"
+  - "comedy episodes" → genre: "Comedy"
 - Don't extract question words (who, what, which) as entity values
 
 Respond with ONLY valid JSON:
