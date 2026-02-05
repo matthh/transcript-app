@@ -154,15 +154,24 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 - Add a CLI flag to cap max terms and disable boosts if desired.
 
 ### Gap F) Review editor lacks bulk/undo tools
-**Observed:** The new mapping UI has advanced tools, but the editor view doesn’t.  
-**Proposed approach:**  
+**Observed:** The new mapping UI has advanced tools, but the editor view doesn't.
+**Proposed approach:**
 - Add bulk speaker reassignment and undo/redo in `TranscriptEditor`.
 - Add multi‑select + keyboard shortcuts for quick assignment.
 
+### Gap G) Metadata sync from canonical Google Sheet
+**Observed:** Episode metadata lives in a Google Sheet but `metadata-data.ts` is manually maintained, leading to drift.
+**Proposed approach:**
+- Create a script to pull episode metadata from the canonical Google Sheet.
+- Parse and transform to match `EpisodeMetadata` interface.
+- Re-run TMDB enrichment on new/changed episodes.
+- Output updated `metadata-data.ts` (or JSON file loaded at runtime).
+- Document the sync workflow and consider automating on a schedule.
+
 ## Gap Fix Sequencing
-- Phase 1: A, B, C (search parity + correctness)
-- Phase 2: D, E (quality + transcription)
-- Phase 3: F (editor productivity)
+- Phase 1: A, B, C (search parity + correctness) ✅ DONE
+- Phase 2: D, E (quality + transcription) ✅ DONE
+- Phase 3: F, G (editor productivity + data sync)
 
 ## Concrete Checklist (By Gap)
 
@@ -200,7 +209,15 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 - [ ] Add bulk speaker reassignment in `TranscriptEditor`.
 - [ ] Add undo/redo history for speaker edits.
 - [ ] Add multi‑select for segments + keyboard shortcuts for assign.
-- [ ] Add “next unassigned” navigation in editor view.
+- [ ] Add "next unassigned" navigation in editor view.
+
+### Gap G) Metadata sync from Google Sheet
+- [ ] Create `scripts/sync-metadata.ts` to fetch from Google Sheets API.
+- [ ] Map sheet columns to `EpisodeMetadata` interface fields.
+- [ ] Detect new/changed episodes and re-run TMDB enrichment for those.
+- [ ] Output to `src/lib/metadata-data.ts` or a JSON file.
+- [ ] Add CLI flags for dry-run, force-refresh TMDB, etc.
+- [ ] Document the sync workflow in README or a separate doc.
 
 ### UX Notes (Speaker Review on `/review/new`)
 - [ ] Double‑click a dialogue segment to isolate it and apply speaker assignment only to that segment.
