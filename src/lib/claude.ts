@@ -34,7 +34,7 @@ ${chunk.text}
 
   const message = await getAnthropic().messages.create({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 1024,
+    max_tokens: 2048,  // Increased from 1024 for longer interpretive answers
     messages: [
       {
         role: 'user',
@@ -175,10 +175,11 @@ ${formatTranscriptContext(transcriptChunks)}`);
   }
 
   const systemPrompt = buildSystemPrompt(classification.type, sourceDescription);
+  const maxTokens = getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
 
   const message = await getAnthropic().messages.create({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 2048,  // Increased for longer lists
+    max_tokens: maxTokens,
     messages: [
       {
         role: 'user',
@@ -201,6 +202,42 @@ export interface MetadataContext {
   totalCount: number;
   returnedCount: number;
   hasMore: boolean;
+}
+
+/**
+ * Calculate adaptive max_tokens based on query type and result count.
+ * - Factual queries need more tokens to list episodes
+ * - More results = more tokens needed
+ * - Hybrid queries need room for both metadata and analysis
+ */
+function getAdaptiveMaxTokens(
+  queryType: 'factual' | 'interpretive' | 'hybrid',
+  metadataCount: number
+): number {
+  // Base tokens for interpretive analysis
+  let tokens = 1024;
+
+  // Factual queries need room for episode lists
+  if (queryType === 'factual') {
+    tokens += 1024;
+    // Large result sets need even more
+    if (metadataCount > 20) {
+      tokens += 1024;
+    } else if (metadataCount > 10) {
+      tokens += 512;
+    }
+  }
+
+  // Hybrid queries need both metadata summary and analysis
+  if (queryType === 'hybrid') {
+    tokens += 512;
+    if (metadataCount > 10) {
+      tokens += 512;
+    }
+  }
+
+  // Cap at 4096 to avoid excessive costs
+  return Math.min(tokens, 4096);
 }
 
 export async function* synthesizeHybridAnswerStreaming(
@@ -266,10 +303,11 @@ ${formatTranscriptContext(transcriptChunks)}`);
   }
 
   const systemPrompt = buildSystemPrompt(classification.type, sourceDescription);
+  const maxTokens = getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
 
   const stream = getAnthropic().messages.stream({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 2048,  // Increased for longer lists
+    max_tokens: maxTokens,
     messages: [
       {
         role: 'user',
