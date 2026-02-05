@@ -12,7 +12,8 @@
     "upload-search-data": "node --import tsx ./scripts/upload-search-data.ts",
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
     "transcribe": "node --import tsx ./scripts/transcribe.ts",
-    "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts"
+    "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts",
+    "sync-metadata": "node --import tsx ./scripts/sync-metadata.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
