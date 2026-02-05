@@ -9,8 +9,26 @@ import { episodeMetadata } from './metadata-data';
 const DEFAULT_LIMIT = 50;
 const MAX_LIMIT = 200;
 
+// Cache for normalized metadata
+let normalizedMetadata: EpisodeMetadata[] | null = null;
+
 export function loadEpisodeMetadata(): EpisodeMetadata[] {
-  return episodeMetadata;
+  if (normalizedMetadata) {
+    return normalizedMetadata;
+  }
+
+  // Find the latest season (excluding season 0)
+  const latestSeason = Math.max(...episodeMetadata.filter(e => e.season > 0).map(e => e.season));
+
+  // Normalize: replace season 0 with latest season
+  normalizedMetadata = episodeMetadata.map(e => {
+    if (e.season === 0) {
+      return { ...e, season: latestSeason };
+    }
+    return e;
+  });
+
+  return normalizedMetadata;
 }
 
 /**
@@ -247,5 +265,5 @@ export function getEpisodesByDecade(decade: number): EpisodeMetadata[] {
 }
 
 export function clearCache(): void {
-  // No-op - data is bundled at build time
+  normalizedMetadata = null;
 }

@@ -43,9 +43,13 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   };
 }
 
+const MAX_LIMIT = 500;
+const DEFAULT_LIMIT = 100;
+
 export async function POST(request: NextRequest) {
   try {
-    const { query } = await request.json();
+    const body = await request.json();
+    const { query, limit: rawLimit, offset: rawOffset } = body;
 
     if (!query || typeof query !== 'string') {
       return NextResponse.json(
@@ -53,6 +57,13 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    // Parse and validate pagination params
+    const limit = Math.min(
+      MAX_LIMIT,
+      Math.max(1, typeof rawLimit === 'number' ? rawLimit : DEFAULT_LIMIT)
+    );
+    const offset = Math.max(0, typeof rawOffset === 'number' ? rawOffset : 0);
 
     // Step 1: Classify query
     const classification = await classifyQuery(query);
@@ -75,9 +86,10 @@ export async function POST(request: NextRequest) {
     if (classification.type === 'factual' || classification.type === 'hybrid') {
       console.log('Filters:', JSON.stringify(classification.filters));
 
-      // For factual queries, return all matching episodes (up to 500)
+      // For factual queries, use client-provided pagination (capped at MAX_LIMIT)
       const result = queryEpisodes(classification.filters, {
-        limit: 500,
+        limit,
+        offset,
         sortBy: 'episode',
         sortOrder: 'desc',
       });

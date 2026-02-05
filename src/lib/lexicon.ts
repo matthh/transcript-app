@@ -27,6 +27,7 @@ const CORE_VOCABULARY = [
   'Tilda Swinton Award',
   'H Flex',
   'J Flex',
+  'birria',
 
   // Common mispronunciations
   'Villeneuve',
