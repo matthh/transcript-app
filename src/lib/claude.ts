@@ -117,22 +117,39 @@ export async function synthesizeHybridAnswer(
   question: string,
   classification: ClassificationResult,
   transcriptChunks: TranscriptChunk[],
-  metadataEpisodes: EpisodeMetadata[]
+  metadataEpisodes: EpisodeMetadata[],
+  metadataContext?: MetadataContext
 ): Promise<string> {
   const hasTranscripts = transcriptChunks.length > 0;
   const hasMetadata = metadataEpisodes.length > 0;
 
   if (!hasTranscripts && !hasMetadata) {
-    return 'No relevant information found. Please try a different query.';
+    return 'No matching episodes found in the database.\n\n**Note:** The episode database can filter by: film title, decade (e.g., "80s movies"), season number, guest name, reviewer, director, cinematographer, actor, or genre.';
   }
 
   let contextSection = '';
   let sourceDescription = '';
+  let truncationNote = '';
+
+  // Add truncation note if results were limited
+  if (metadataContext?.hasMore) {
+    truncationNote = `\n\nNOTE: Showing ${metadataContext.returnedCount} of ${metadataContext.totalCount} total matching episodes. The response includes the most recent episodes.`;
+  }
 
   if (classification.type === 'factual' && hasMetadata) {
     sourceDescription = 'episode metadata (structured data about episodes)';
-    contextSection = `EPISODE METADATA:
-${formatMetadataContext(metadataEpisodes)}`;
+    const countInfo = metadataContext
+      ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
+      : '';
+    contextSection = `EPISODE METADATA${countInfo}:
+${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
+  } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
+    // Factual query fell back to transcripts (no metadata matched)
+    sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
+    contextSection = `PODCAST TRANSCRIPTS (${transcriptChunks.length} excerpts):
+${formatTranscriptContext(transcriptChunks)}
+
+NOTE: No structured episode metadata matched this query. The transcripts above may contain relevant discussion.`;
   } else if (classification.type === 'interpretive' && hasTranscripts) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
@@ -142,8 +159,11 @@ ${formatTranscriptContext(transcriptChunks)}`;
     const parts: string[] = [];
 
     if (hasMetadata) {
-      parts.push(`EPISODE METADATA (${metadataEpisodes.length} episodes):
-${formatMetadataContext(metadataEpisodes)}`);
+      const countInfo = metadataContext
+        ? `${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''}`
+        : String(metadataEpisodes.length);
+      parts.push(`EPISODE METADATA (${countInfo} episodes):
+${formatMetadataContext(metadataEpisodes)}${truncationNote}`);
     }
 
     if (hasTranscripts) {
@@ -158,7 +178,7 @@ ${formatTranscriptContext(transcriptChunks)}`);
 
   const message = await getAnthropic().messages.create({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 1024,
+    max_tokens: 2048,  // Increased for longer lists
     messages: [
       {
         role: 'user',
