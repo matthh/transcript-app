@@ -46,3 +46,6 @@ test-*.js
 
 # Backup files
 *.backup.json
+
+# Secrets
+secrets/

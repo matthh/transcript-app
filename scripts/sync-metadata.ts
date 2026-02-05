@@ -6,14 +6,16 @@
  *   npm run sync-metadata -- --dry-run # Preview changes without writing
  *   npm run sync-metadata -- --force-tmdb # Re-enrich all episodes with TMDB
  *
- * Prerequisites:
- *   - Google Sheet must be publicly viewable (Anyone with link → Viewer)
- *   - Or set GOOGLE_SHEETS_API_KEY in .env.local
+ * Authentication (in order of preference):
+ *   1. Service Account: Set GOOGLE_SERVICE_ACCOUNT_KEY_FILE in .env.local
+ *   2. API Key (public sheets only): Set GOOGLE_SHEETS_API_KEY in .env.local
+ *   3. Public CSV export (no auth needed if sheet is public)
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
+import { google } from 'googleapis';
 
 dotenv.config({ path: '.env.local' });
 dotenv.config({ path: '.env' });
@@ -146,67 +148,95 @@ function parseNumber(value: string): number {
   return isNaN(num) ? 0 : num;
 }
 
-function parseOptionalString(value: string): string | null {
+function parseOptionalString(value: string | undefined): string | null {
+  if (!value) return null;
   const trimmed = value.trim();
   return trimmed === '' || trimmed.toLowerCase() === 'n/a' || trimmed.toLowerCase() === 'none' ? null : trimmed;
 }
 
 function convertRow(row: RawCSVRow): EpisodeMetadata {
+  // Helper to safely get string value
+  const str = (key: string): string => row[key] || '';
+
   return {
-    pod: row.Pod || 'EH',
-    season: parseNumber(row.Season),
-    episode: parseNumber(row.Ep),
-    film: row.Film,
-    filmYear: parseFilmYear(row.Film),
-    releaseDate: row.Release_Date,
-    length: row.Length,
-    reviewer: row.Reviewer,
-    guest: parseOptionalString(row.Guest),
-    mmmCount: parseNumber(row.MMM_Count),
-    thatsGreatCount: parseNumber(row.Thats_Great_Count),
-    notableMoments: row.Notable_Moments || '',
-    hFlex: row.H_Flex || 'N/A',
-    jFlex: row.J_Flex || 'N/A',
-    kevsQuestion: row.Kevs_Question || 'N/A',
-    tildaH: row.TildaH || 'N/A',
-    tildaJason: row.TildaJason || 'N/A',
-    tildaGuest: parseOptionalString(row.TildaGuest),
-    tildaCorey: parseOptionalString(row.TildaCorey),
-    showLink: row.Show_Link || '',
-    artworkLink: row.Artwork_Link || '',
-    letterboxdLink: row.Letterboxd_Link || '',
-    imdbLink: row.IMDB_Link || '',
+    pod: str('Pod') || 'EH',
+    season: parseNumber(str('Season')),
+    episode: parseNumber(str('Ep') || str('Episode')),
+    film: str('Film'),
+    filmYear: parseFilmYear(str('Film')),
+    releaseDate: str('Release_Date') || str('Release Date') || str('Timestamp') || '',
+    length: str('Length') || '',
+    reviewer: str('Reviewer'),
+    guest: parseOptionalString(str('Guest')),
+    mmmCount: parseNumber(str('MMM_Count') || str('MMM Count')),
+    thatsGreatCount: parseNumber(str('Thats_Great_Count') || str("That's Great Count")),
+    notableMoments: str('Notable_Moments') || str('Notable Moments') || '',
+    hFlex: str('H_Flex') || str('H Flex') || 'N/A',
+    jFlex: str('J_Flex') || str('J Flex') || 'N/A',
+    kevsQuestion: str('Kevs_Question') || str("Kev's Question") || 'N/A',
+    tildaH: str('TildaH') || str('Tilda H') || str('H Tilda') || 'N/A',
+    tildaJason: str('TildaJason') || str('Tilda Jason') || str('J Tilda') || 'N/A',
+    tildaGuest: parseOptionalString(str('TildaGuest') || str('Tilda Guest') || str('Guest Tilda')),
+    tildaCorey: parseOptionalString(str('TildaCorey') || str('Tilda Corey') || str('Corey Tilda')),
+    showLink: str('Show_Link') || str('Show Link') || '',
+    artworkLink: str('Artwork_Link') || str('Artwork Link') || '',
+    letterboxdLink: str('Letterboxd_Link') || str('Letterboxd Link') || '',
+    imdbLink: str('IMDB_Link') || str('IMDB Link') || '',
   };
 }
 
 // ---------- Google Sheets Fetching ----------
 
-async function fetchSheetAsCSV(): Promise<string> {
-  const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+async function fetchWithServiceAccount(): Promise<string[][] | null> {
+  const keyFile = process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE;
 
-  // Check if API key looks like a real key (starts with AIza) vs a URL
-  const hasRealApiKey = apiKey && apiKey.startsWith('AIza');
+  if (!keyFile) return null;
 
-  if (hasRealApiKey) {
-    // Use Google Sheets API with key
-    const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/A:Z?key=${apiKey}`;
-    console.log('Fetching via Google Sheets API...');
-
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      const error = await response.text();
-      throw new Error(`Google Sheets API error: ${response.status} - ${error}`);
-    }
-
-    const data = await response.json();
-    // Convert API response to CSV format
-    const rows = data.values || [];
-    return rows.map((row: string[]) =>
-      row.map(cell => `"${(cell || '').replace(/"/g, '""')}"`).join(',')
-    ).join('\n');
+  const keyPath = path.resolve(process.cwd(), keyFile);
+  if (!fs.existsSync(keyPath)) {
+    console.warn(`Service account key file not found: ${keyPath}`);
+    return null;
   }
 
-  // Fall back to public CSV export
+  console.log('Authenticating with service account...');
+
+  const auth = new google.auth.GoogleAuth({
+    keyFile: keyPath,
+    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+  });
+
+  const sheets = google.sheets({ version: 'v4', auth });
+
+  const response = await sheets.spreadsheets.values.get({
+    spreadsheetId: SHEET_ID,
+    range: 'A:Z',
+  });
+
+  return response.data.values || [];
+}
+
+async function fetchWithApiKey(): Promise<string[][] | null> {
+  const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+
+  // Check if API key looks like a real key (not a URL)
+  if (!apiKey || apiKey.startsWith('http')) return null;
+
+  console.log('Fetching via Google Sheets API key...');
+
+  const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/A:Z?key=${apiKey}`;
+  const response = await fetch(apiUrl);
+
+  if (!response.ok) {
+    const error = await response.text();
+    console.warn(`API key auth failed: ${response.status} - ${error}`);
+    return null;
+  }
+
+  const data = await response.json();
+  return data.values || [];
+}
+
+async function fetchPublicCSV(): Promise<string[][] | null> {
   const exportUrl = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
 
   console.log('Fetching from Google Sheets (public export)...');
@@ -215,18 +245,43 @@ async function fetchSheetAsCSV(): Promise<string> {
   const response = await fetch(exportUrl);
 
   if (!response.ok) {
-    if (response.status === 401 || response.status === 403) {
-      throw new Error(
-        'Sheet is not publicly accessible. Either:\n' +
-        '  1. Make the sheet public: Share → "Anyone with the link" → Viewer\n' +
-        '  2. Or add a Google API key to .env.local:\n' +
-        '     GOOGLE_SHEETS_API_KEY=AIza...(from Google Cloud Console)'
-      );
-    }
-    throw new Error(`Failed to fetch sheet: ${response.status} ${response.statusText}`);
+    return null;
   }
 
-  return response.text();
+  const csvContent = await response.text();
+  return parseCSV(csvContent);
+}
+
+async function fetchSheetData(): Promise<string[][]> {
+  // Try service account first
+  let data = await fetchWithServiceAccount();
+  if (data && data.length > 0) {
+    console.log('  Successfully authenticated with service account.');
+    return data;
+  }
+
+  // Try API key
+  data = await fetchWithApiKey();
+  if (data && data.length > 0) {
+    console.log('  Successfully fetched with API key.');
+    return data;
+  }
+
+  // Try public export
+  data = await fetchPublicCSV();
+  if (data && data.length > 0) {
+    console.log('  Successfully fetched public sheet.');
+    return data;
+  }
+
+  throw new Error(
+    'Could not access the Google Sheet. Options:\n' +
+    '  1. Service Account: Set GOOGLE_SERVICE_ACCOUNT_KEY_FILE in .env.local\n' +
+    '     - Create service account in Google Cloud Console\n' +
+    '     - Download JSON key file\n' +
+    '     - Share sheet with service account email as Viewer\n' +
+    '  2. Make sheet public: Share → "Anyone with the link" → Viewer'
+  );
 }
 
 // ---------- TMDB Data Preservation ----------
@@ -266,51 +321,86 @@ function loadExistingMetadata(): Map<string, EpisodeMetadata> {
   }
 }
 
+function normalizeFilmTitle(title: string): string {
+  // Normalize for matching: lowercase, remove year suffix, trim
+  return title.toLowerCase().replace(/\s*\(\d{4}\)\s*$/, '').trim();
+}
+
 function mergeWithExisting(
-  newEpisodes: EpisodeMetadata[],
+  sheetEpisodes: EpisodeMetadata[],
   existing: Map<string, EpisodeMetadata>
 ): { merged: EpisodeMetadata[]; newCount: number; updatedCount: number } {
-  let newCount = 0;
   let updatedCount = 0;
 
-  const merged = newEpisodes.map(ep => {
-    const key = `${ep.pod}-${ep.season}-${ep.episode}`;
-    const existingEp = existing.get(key);
+  // Build a map of sheet data by normalized film title
+  const sheetByFilm = new Map<string, EpisodeMetadata>();
+  for (const ep of sheetEpisodes) {
+    const key = normalizeFilmTitle(ep.film);
+    sheetByFilm.set(key, ep);
+  }
 
-    if (!existingEp) {
-      newCount++;
-      if (verbose) console.log(`  NEW: S${ep.season}E${ep.episode} - ${ep.film}`);
-      return ep;
-    }
+  // Update existing episodes with sheet data (don't add new ones from sheet)
+  const merged: EpisodeMetadata[] = [];
 
-    // Check if core data changed
-    const coreChanged =
-      existingEp.film !== ep.film ||
-      existingEp.reviewer !== ep.reviewer ||
-      existingEp.guest !== ep.guest;
+  for (const [, existingEp] of existing) {
+    const key = normalizeFilmTitle(existingEp.film);
+    const sheetEp = sheetByFilm.get(key);
 
-    if (coreChanged) {
-      updatedCount++;
-      if (verbose) console.log(`  UPDATED: S${ep.season}E${ep.episode} - ${ep.film}`);
-    }
-
-    // Preserve TMDB data from existing (unless --force-tmdb)
-    if (!forceTmdb && existingEp.tmdbId) {
-      return {
-        ...ep,
-        tmdbId: existingEp.tmdbId,
-        directors: existingEp.directors,
-        cinematographers: existingEp.cinematographers,
-        cast: existingEp.cast,
-        genres: existingEp.genres,
-        tmdbPosterPath: existingEp.tmdbPosterPath,
+    if (sheetEp) {
+      // Merge: keep existing core data, update supplementary fields from sheet
+      const updated: EpisodeMetadata = {
+        ...existingEp,
+        // Update these fields if sheet has non-default values
+        mmmCount: sheetEp.mmmCount || existingEp.mmmCount,
+        thatsGreatCount: sheetEp.thatsGreatCount || existingEp.thatsGreatCount,
+        notableMoments: sheetEp.notableMoments || existingEp.notableMoments,
+        hFlex: sheetEp.hFlex !== 'N/A' ? sheetEp.hFlex : existingEp.hFlex,
+        jFlex: sheetEp.jFlex !== 'N/A' ? sheetEp.jFlex : existingEp.jFlex,
+        kevsQuestion: sheetEp.kevsQuestion !== 'N/A' ? sheetEp.kevsQuestion : existingEp.kevsQuestion,
+        tildaH: sheetEp.tildaH !== 'N/A' ? sheetEp.tildaH : existingEp.tildaH,
+        tildaJason: sheetEp.tildaJason !== 'N/A' ? sheetEp.tildaJason : existingEp.tildaJason,
+        tildaGuest: sheetEp.tildaGuest || existingEp.tildaGuest,
+        tildaCorey: sheetEp.tildaCorey || existingEp.tildaCorey,
+        // Update reviewer if sheet has it
+        reviewer: sheetEp.reviewer || existingEp.reviewer,
       };
-    }
 
-    return ep;
+      // Check if anything actually changed
+      const changed =
+        updated.mmmCount !== existingEp.mmmCount ||
+        updated.thatsGreatCount !== existingEp.thatsGreatCount ||
+        updated.notableMoments !== existingEp.notableMoments ||
+        updated.hFlex !== existingEp.hFlex ||
+        updated.jFlex !== existingEp.jFlex ||
+        updated.tildaH !== existingEp.tildaH ||
+        updated.tildaJason !== existingEp.tildaJason ||
+        updated.reviewer !== existingEp.reviewer;
+
+      if (changed) {
+        updatedCount++;
+        if (verbose) console.log(`  UPDATED: ${existingEp.film}`);
+      }
+
+      merged.push(updated);
+    } else {
+      // No sheet data for this episode, keep as-is
+      merged.push(existingEp);
+    }
+  }
+
+  // Count episodes in sheet but not in existing (for info only)
+  const newInSheet = sheetEpisodes.filter(ep => {
+    const key = normalizeFilmTitle(ep.film);
+    return ![...existing.values()].some(e => normalizeFilmTitle(e.film) === key);
   });
 
-  return { merged, newCount, updatedCount };
+  if (newInSheet.length > 0 && verbose) {
+    console.log(`\n  Sheet has ${newInSheet.length} films not in existing data:`);
+    newInSheet.slice(0, 5).forEach(ep => console.log(`    - ${ep.film}`));
+    if (newInSheet.length > 5) console.log(`    ... and ${newInSheet.length - 5} more`);
+  }
+
+  return { merged, newCount: 0, updatedCount };
 }
 
 // ---------- Output Generation ----------
@@ -335,16 +425,14 @@ async function main() {
   }
 
   // Fetch from Google Sheets
-  let csvContent: string;
+  let rows: string[][];
   try {
-    csvContent = await fetchSheetAsCSV();
+    rows = await fetchSheetData();
   } catch (error) {
     console.error('Error fetching sheet:', error);
     process.exit(1);
   }
 
-  // Parse CSV
-  const rows = parseCSV(csvContent);
   if (rows.length < 2) {
     console.error('Sheet must have a header row and at least one data row');
     process.exit(1);
@@ -352,6 +440,7 @@ async function main() {
 
   const headers = rows[0];
   console.log(`Found ${headers.length} columns, ${rows.length - 1} data rows`);
+  console.log(`Columns: ${headers.join(', ')}`);
 
   // Convert to episodes
   const episodes: EpisodeMetadata[] = [];
@@ -364,7 +453,8 @@ async function main() {
     });
 
     // Skip rows without a film title
-    if (!row.Film || row.Film.trim() === '') {
+    const film = row.Film || '';
+    if (!film || film.trim() === '') {
       continue;
     }
 
@@ -386,9 +476,9 @@ async function main() {
   const withoutTmdb = merged.filter(e => !e.tmdbId && e.filmYear).length;
 
   console.log(`\nSync Summary:`);
-  console.log(`  Total episodes: ${merged.length}`);
-  console.log(`  New episodes: ${newCount}`);
-  console.log(`  Updated episodes: ${updatedCount}`);
+  console.log(`  Episodes in sheet: ${episodes.length}`);
+  console.log(`  Episodes in existing data: ${existing.size}`);
+  console.log(`  Episodes updated from sheet: ${updatedCount}`);
   console.log(`  With TMDB data: ${withTmdb}`);
   console.log(`  Need TMDB enrichment: ${withoutTmdb}`);
 
