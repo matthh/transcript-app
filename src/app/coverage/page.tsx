@@ -11,6 +11,7 @@ interface CoverageEpisode {
   reviewer: string;
   guest: string | null;
   hasTranscript: boolean;
+  needsReview: boolean;
   transcriptSource?: 'filesystem' | 'blob';
   transcriptFile?: string;
 }
@@ -19,12 +20,13 @@ interface CoverageData {
   total: number;
   withTranscripts: number;
   withoutTranscripts: number;
+  needsReview: number;
   coveragePercent: number;
   episodes: CoverageEpisode[];
   bySeason: Record<number, { total: number; transcribed: number }>;
 }
 
-type FilterMode = 'all' | 'missing' | 'complete';
+type FilterMode = 'all' | 'missing' | 'complete' | 'review';
 
 export default function CoveragePage() {
   const [data, setData] = useState<CoverageData | null>(null);
@@ -74,7 +76,9 @@ export default function CoveragePage() {
   if (filter === 'missing') {
     filteredEpisodes = filteredEpisodes.filter(e => !e.hasTranscript);
   } else if (filter === 'complete') {
-    filteredEpisodes = filteredEpisodes.filter(e => e.hasTranscript);
+    filteredEpisodes = filteredEpisodes.filter(e => e.hasTranscript && !e.needsReview);
+  } else if (filter === 'review') {
+    filteredEpisodes = filteredEpisodes.filter(e => e.needsReview);
   }
   if (selectedSeason !== 'all') {
     filteredEpisodes = filteredEpisodes.filter(e => e.season === selectedSeason);
@@ -108,18 +112,22 @@ export default function CoveragePage() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-3xl font-bold text-gray-900">{data.total}</div>
             <div className="text-sm text-gray-600">Total Episodes</div>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
-            <div className="text-3xl font-bold text-green-600">{data.withTranscripts}</div>
-            <div className="text-sm text-gray-600">With Transcripts</div>
+            <div className="text-3xl font-bold text-green-600">{data.withTranscripts - data.needsReview}</div>
+            <div className="text-sm text-gray-600">Complete</div>
+          </div>
+          <div className="bg-white rounded-lg shadow p-6">
+            <div className="text-3xl font-bold text-yellow-600">{data.needsReview}</div>
+            <div className="text-sm text-gray-600">Review Needed</div>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-3xl font-bold text-orange-600">{data.withoutTranscripts}</div>
-            <div className="text-sm text-gray-600">Missing Transcripts</div>
+            <div className="text-sm text-gray-600">Missing</div>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-3xl font-bold text-blue-600">{data.coveragePercent}%</div>
@@ -182,7 +190,7 @@ export default function CoveragePage() {
         <div className="flex items-center gap-4 mb-4">
           <span className="text-sm font-medium text-gray-700">Show:</span>
           <div className="flex gap-2">
-            {(['missing', 'complete', 'all'] as FilterMode[]).map(mode => (
+            {(['missing', 'review', 'complete', 'all'] as FilterMode[]).map(mode => (
               <button
                 key={mode}
                 onClick={() => setFilter(mode)}
@@ -192,7 +200,7 @@ export default function CoveragePage() {
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                {mode === 'missing' ? 'Missing Only' : mode === 'complete' ? 'Complete Only' : 'All Episodes'}
+                {mode === 'missing' ? 'Missing' : mode === 'review' ? 'Review Needed' : mode === 'complete' ? 'Complete' : 'All'}
               </button>
             ))}
           </div>
@@ -256,12 +264,13 @@ export default function CoveragePage() {
                     {episode.guest || '-'}
                   </td>
                   <td className="px-4 py-3">
-                    {episode.hasTranscript ? (
+                    {episode.needsReview ? (
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                        Review Needed
+                      </span>
+                    ) : episode.hasTranscript ? (
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                         Complete
-                        {episode.transcriptSource === 'blob' && (
-                          <span className="ml-1 text-green-600">(new)</span>
-                        )}
                       </span>
                     ) : (
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
@@ -296,7 +305,9 @@ export default function CoveragePage() {
               {filter === 'missing'
                 ? 'All episodes have transcripts!'
                 : filter === 'complete'
-                ? 'No transcripts found yet.'
+                ? 'No complete transcripts found yet.'
+                : filter === 'review'
+                ? 'No transcripts need review - all speakers are mapped!'
                 : 'No episodes found.'}
             </div>
           )}

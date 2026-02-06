@@ -1,0 +1,502 @@
+/**
+ * Batch Transcription Script
+ *
+ * Processes MP3 files from ./mp3s/ directory for episodes that are missing transcripts.
+ * Uploads to Vercel Blob, transcribes via AssemblyAI, and saves transcripts to Blob storage.
+ *
+ * Usage:
+ *   npm run batch-transcribe              # Process all missing episodes
+ *   npm run batch-transcribe -- --dry-run # Preview what would be processed
+ *   npm run batch-transcribe -- --status  # Show current progress
+ *   npm run batch-transcribe -- --limit=5 # Process only first 5 episodes
+ */
+
+import * as fs from 'fs';
+import * as path from 'path';
+import { AssemblyAI } from 'assemblyai';
+import { put, head } from '@vercel/blob';
+import * as dotenv from 'dotenv';
+
+dotenv.config({ path: '.env.local' });
+
+// Import lexicon for word boosting
+import { getWordBoostList } from '../src/lib/lexicon';
+
+const MP3_DIR = './mp3s';
+const PROGRESS_FILE = './batch-transcribe-progress.json';
+const AUDIO_PREFIX = 'audio/';
+const TRANSCRIPT_PREFIX = 'transcripts/';
+const MAX_CONCURRENT_JOBS = 3;
+const POLL_INTERVAL_MS = 10000; // 10 seconds
+
+// CLI args
+const args = process.argv.slice(2);
+const isDryRun = args.includes('--dry-run');
+const showStatus = args.includes('--status');
+const limitArg = args.find(a => a.startsWith('--limit='));
+const limit = limitArg ? parseInt(limitArg.split('=')[1], 10) : undefined;
+
+interface ProgressEntry {
+  episodeNumber: number;
+  status: 'pending' | 'uploading' | 'transcribing' | 'completed' | 'failed';
+  jobId?: string;
+  audioUrl?: string;
+  error?: string;
+  startedAt?: string;
+  completedAt?: string;
+}
+
+interface ProgressFile {
+  startedAt: string;
+  lastUpdated: string;
+  entries: Record<number, ProgressEntry>;
+}
+
+interface CoverageEpisode {
+  episode: number;
+  film: string;
+  hasTranscript: boolean;
+  needsReview: boolean;
+}
+
+interface CoverageResponse {
+  episodes: CoverageEpisode[];
+}
+
+interface DialogueEntry {
+  name: string;
+  timestamp: string;
+  text: string;
+}
+
+interface Transcript {
+  episode_number: number;
+  episode_name: string;
+  dialogues: DialogueEntry[];
+}
+
+const client = new AssemblyAI({
+  apiKey: process.env.ASSEMBLYAI_API_KEY || '',
+});
+
+function loadProgress(): ProgressFile {
+  if (fs.existsSync(PROGRESS_FILE)) {
+    return JSON.parse(fs.readFileSync(PROGRESS_FILE, 'utf-8'));
+  }
+  return {
+    startedAt: new Date().toISOString(),
+    lastUpdated: new Date().toISOString(),
+    entries: {},
+  };
+}
+
+function saveProgress(progress: ProgressFile): void {
+  progress.lastUpdated = new Date().toISOString();
+  fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2));
+}
+
+function formatTimestamp(ms: number): string {
+  const totalSeconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+async function fetchCoverage(): Promise<CoverageResponse> {
+  // Read coverage data by directly calling the file-based data
+  // We can't easily call our own API from a script, so we'll use metadata + blob listing
+  const { loadEpisodeMetadata } = await import('../src/lib/metadata-store');
+
+  const metadata = loadEpisodeMetadata();
+
+  // Check filesystem transcripts
+  const transcriptsDir = path.join(process.cwd(), 'transcripts');
+  const fsTranscriptNumbers = new Set<number>();
+
+  if (fs.existsSync(transcriptsDir)) {
+    const files = fs.readdirSync(transcriptsDir).filter(f => f.endsWith('.json'));
+    for (const filename of files) {
+      try {
+        const content = JSON.parse(fs.readFileSync(path.join(transcriptsDir, filename), 'utf-8'));
+        if (typeof content.episode_number === 'number') {
+          fsTranscriptNumbers.add(content.episode_number);
+        }
+      } catch {
+        // Skip
+      }
+    }
+  }
+
+  // Try to fetch blob transcripts (may fail in dry-run without API token)
+  const blobNumbers = new Set<number>();
+  try {
+    if (process.env.BLOB_READ_WRITE_TOKEN) {
+      const { listBlobTranscripts } = await import('../src/lib/blob-storage');
+      const blobTranscripts = await listBlobTranscripts();
+      for (const b of blobTranscripts) {
+        blobNumbers.add(b.episodeNumber);
+      }
+    }
+  } catch (err) {
+    if (!isDryRun) {
+      throw err; // Re-throw if not in dry-run mode
+    }
+    console.log('  (Skipping blob transcript check - no BLOB_READ_WRITE_TOKEN)');
+  }
+
+  const episodes: CoverageEpisode[] = metadata.map((ep: { episode: number; film: string }) => ({
+    episode: ep.episode,
+    film: ep.film,
+    hasTranscript: fsTranscriptNumbers.has(ep.episode) || blobNumbers.has(ep.episode),
+    needsReview: false, // We don't need this for batch processing
+  }));
+
+  return { episodes };
+}
+
+function findAvailableMp3s(): Map<number, string> {
+  const mp3Map = new Map<number, string>();
+
+  if (!fs.existsSync(MP3_DIR)) {
+    return mp3Map;
+  }
+
+  const files = fs.readdirSync(MP3_DIR).filter(f => f.toLowerCase().endsWith('.mp3'));
+
+  for (const filename of files) {
+    // Extract episode number from filename (e.g., "234.mp3" or "episode-234.mp3")
+    const match = filename.match(/(\d+)/);
+    if (match) {
+      const episodeNumber = parseInt(match[1], 10);
+      if (episodeNumber > 0) {
+        mp3Map.set(episodeNumber, path.join(MP3_DIR, filename));
+      }
+    }
+  }
+
+  return mp3Map;
+}
+
+async function uploadAudioToBlob(filePath: string, episodeNumber: number): Promise<string> {
+  const pathname = `${AUDIO_PREFIX}episode_${episodeNumber}.mp3`;
+
+  // Check if already uploaded
+  try {
+    const existing = await head(pathname);
+    if (existing) {
+      console.log(`    Audio already uploaded, using existing: ${existing.url}`);
+      return existing.url;
+    }
+  } catch {
+    // Doesn't exist, proceed to upload
+  }
+
+  const fileBuffer = fs.readFileSync(filePath);
+
+  console.log(`    Uploading ${path.basename(filePath)} to Blob storage...`);
+  const blob = await put(pathname, fileBuffer, {
+    access: 'public',
+    addRandomSuffix: false,
+  });
+
+  return blob.url;
+}
+
+async function startTranscription(audioUrl: string, episodeNumber: number, episodeName: string): Promise<string> {
+  const wordBoostList = getWordBoostList(500);
+
+  const transcriptResponse = await client.transcripts.submit({
+    audio_url: audioUrl,
+    speaker_labels: true,
+    word_boost: wordBoostList,
+    boost_param: 'high',
+  });
+
+  return transcriptResponse.id;
+}
+
+async function pollTranscription(jobId: string): Promise<{ status: string; transcript?: Transcript; error?: string }> {
+  const result = await client.transcripts.get(jobId);
+
+  if (result.status === 'error') {
+    return { status: 'failed', error: result.error || 'Transcription failed' };
+  }
+
+  if (result.status === 'completed') {
+    const utterances = result.utterances || [];
+
+    const dialogues: DialogueEntry[] = utterances.map((utterance) => ({
+      name: utterance.speaker,
+      timestamp: formatTimestamp(utterance.start),
+      text: utterance.text,
+    }));
+
+    return {
+      status: 'completed',
+      transcript: {
+        episode_number: 0, // Will be set by caller
+        episode_name: '',
+        dialogues,
+      },
+    };
+  }
+
+  return { status: 'processing' };
+}
+
+async function saveTranscriptToBlob(transcript: Transcript): Promise<void> {
+  const { saveTranscript } = await import('../src/lib/blob-storage');
+  await saveTranscript(transcript);
+}
+
+async function processEpisode(
+  episodeNumber: number,
+  mp3Path: string,
+  episodeName: string,
+  progress: ProgressFile
+): Promise<void> {
+  const entry = progress.entries[episodeNumber] || {
+    episodeNumber,
+    status: 'pending' as const,
+    startedAt: new Date().toISOString(),
+  };
+
+  progress.entries[episodeNumber] = entry;
+
+  try {
+    // Step 1: Upload audio if needed
+    if (entry.status === 'pending' || !entry.audioUrl) {
+      console.log(`  [${episodeNumber}] Uploading audio...`);
+      entry.status = 'uploading';
+      saveProgress(progress);
+
+      entry.audioUrl = await uploadAudioToBlob(mp3Path, episodeNumber);
+      saveProgress(progress);
+    }
+
+    // Step 2: Start transcription if needed
+    if ((entry.status === 'pending' || entry.status === 'uploading') && !entry.jobId) {
+      console.log(`  [${episodeNumber}] Starting transcription...`);
+      entry.status = 'transcribing';
+      saveProgress(progress);
+
+      entry.jobId = await startTranscription(entry.audioUrl!, episodeNumber, episodeName);
+      saveProgress(progress);
+    }
+
+    // Step 3: Poll for completion
+    if (entry.status === 'transcribing' && entry.jobId) {
+      let pollCount = 0;
+      const maxPolls = 360; // 60 minutes max at 10s intervals
+
+      while (pollCount < maxPolls) {
+        const result = await pollTranscription(entry.jobId);
+
+        if (result.status === 'completed' && result.transcript) {
+          result.transcript.episode_number = episodeNumber;
+          result.transcript.episode_name = episodeName;
+
+          console.log(`  [${episodeNumber}] Saving transcript...`);
+          await saveTranscriptToBlob(result.transcript);
+
+          entry.status = 'completed';
+          entry.completedAt = new Date().toISOString();
+          saveProgress(progress);
+
+          console.log(`  [${episodeNumber}] Done!`);
+          return;
+        }
+
+        if (result.status === 'failed') {
+          entry.status = 'failed';
+          entry.error = result.error;
+          saveProgress(progress);
+          console.log(`  [${episodeNumber}] Failed: ${result.error}`);
+          return;
+        }
+
+        pollCount++;
+        if (pollCount % 6 === 0) {
+          console.log(`  [${episodeNumber}] Still processing... (${Math.round(pollCount * POLL_INTERVAL_MS / 60000)}m)`);
+        }
+        await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL_MS));
+      }
+
+      // Timed out
+      entry.status = 'failed';
+      entry.error = 'Transcription timed out after 60 minutes';
+      saveProgress(progress);
+    }
+  } catch (error) {
+    entry.status = 'failed';
+    entry.error = error instanceof Error ? error.message : 'Unknown error';
+    saveProgress(progress);
+    console.error(`  [${episodeNumber}] Error: ${entry.error}`);
+  }
+}
+
+async function showCurrentStatus(): Promise<void> {
+  const progress = loadProgress();
+
+  console.log('=== Batch Transcription Status ===\n');
+  console.log(`Started: ${progress.startedAt}`);
+  console.log(`Last updated: ${progress.lastUpdated}\n`);
+
+  const entries = Object.values(progress.entries).sort((a, b) => a.episodeNumber - b.episodeNumber);
+
+  const completed = entries.filter(e => e.status === 'completed');
+  const failed = entries.filter(e => e.status === 'failed');
+  const inProgress = entries.filter(e => e.status === 'transcribing' || e.status === 'uploading');
+  const pending = entries.filter(e => e.status === 'pending');
+
+  console.log(`Completed: ${completed.length}`);
+  console.log(`Failed: ${failed.length}`);
+  console.log(`In Progress: ${inProgress.length}`);
+  console.log(`Pending: ${pending.length}`);
+  console.log(`Total: ${entries.length}\n`);
+
+  if (failed.length > 0) {
+    console.log('Failed episodes:');
+    for (const e of failed) {
+      console.log(`  - Episode ${e.episodeNumber}: ${e.error}`);
+    }
+    console.log('');
+  }
+
+  if (inProgress.length > 0) {
+    console.log('In progress:');
+    for (const e of inProgress) {
+      console.log(`  - Episode ${e.episodeNumber} (${e.status})`);
+    }
+    console.log('');
+  }
+}
+
+async function main(): Promise<void> {
+  console.log('=== Batch Transcription Tool ===\n');
+
+  // Show status mode
+  if (showStatus) {
+    await showCurrentStatus();
+    return;
+  }
+
+  // Find available MP3s (do this before API key check so dry-run works without keys)
+  const mp3Map = findAvailableMp3s();
+  if (mp3Map.size === 0) {
+    console.log(`No MP3 files found in ${MP3_DIR}/`);
+    console.log('Expected format: {episodeNumber}.mp3 (e.g., 234.mp3)');
+    process.exit(0);
+  }
+
+  console.log(`Found ${mp3Map.size} MP3 file(s) in ${MP3_DIR}/\n`);
+
+  // Fetch coverage to find episodes needing transcription
+  console.log('Fetching coverage data...');
+  const coverage = await fetchCoverage();
+
+  // Find episodes that need transcription and have MP3s available
+  const episodesToProcess: Array<{ episodeNumber: number; mp3Path: string; film: string }> = [];
+
+  for (const ep of coverage.episodes) {
+    if (!ep.hasTranscript && mp3Map.has(ep.episode)) {
+      episodesToProcess.push({
+        episodeNumber: ep.episode,
+        mp3Path: mp3Map.get(ep.episode)!,
+        film: ep.film,
+      });
+    }
+  }
+
+  // Sort by episode number
+  episodesToProcess.sort((a, b) => a.episodeNumber - b.episodeNumber);
+
+  // Apply limit if specified
+  const toProcess = limit ? episodesToProcess.slice(0, limit) : episodesToProcess;
+
+  if (toProcess.length === 0) {
+    console.log('\nNo episodes to process. Either:');
+    console.log('  - All episodes with MP3s already have transcripts');
+    console.log('  - No MP3s match episodes in the metadata');
+    return;
+  }
+
+  console.log(`\n${toProcess.length} episode(s) to process${limit ? ` (limited to ${limit})` : ''}:\n`);
+
+  for (const ep of toProcess) {
+    console.log(`  - Episode ${ep.episodeNumber}: ${ep.film}`);
+  }
+
+  if (isDryRun) {
+    console.log('\n[DRY RUN] No transcriptions started.');
+    return;
+  }
+
+  // Check API keys only when actually processing (not for dry-run)
+  if (!process.env.ASSEMBLYAI_API_KEY) {
+    console.error('Error: ASSEMBLYAI_API_KEY not found in .env.local');
+    process.exit(1);
+  }
+
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    console.error('Error: BLOB_READ_WRITE_TOKEN not found in .env.local');
+    process.exit(1);
+  }
+
+  console.log('\n--- Starting Batch Processing ---\n');
+
+  // Load or initialize progress
+  const progress = loadProgress();
+
+  // Process in batches with concurrency limit
+  const processQueue = [...toProcess];
+  const activeJobs: Promise<void>[] = [];
+
+  while (processQueue.length > 0 || activeJobs.length > 0) {
+    // Start new jobs up to concurrency limit
+    while (activeJobs.length < MAX_CONCURRENT_JOBS && processQueue.length > 0) {
+      const ep = processQueue.shift()!;
+
+      // Skip if already completed
+      if (progress.entries[ep.episodeNumber]?.status === 'completed') {
+        console.log(`[${ep.episodeNumber}] Already completed, skipping.`);
+        continue;
+      }
+
+      console.log(`[${ep.episodeNumber}] Starting: ${ep.film}`);
+      const job = processEpisode(ep.episodeNumber, ep.mp3Path, ep.film, progress)
+        .finally(() => {
+          const idx = activeJobs.indexOf(job);
+          if (idx >= 0) activeJobs.splice(idx, 1);
+        });
+      activeJobs.push(job);
+    }
+
+    // Wait for at least one job to complete
+    if (activeJobs.length > 0) {
+      await Promise.race(activeJobs);
+    }
+  }
+
+  console.log('\n=== Batch Processing Complete ===\n');
+
+  // Print summary
+  const entries = Object.values(progress.entries);
+  const completed = entries.filter(e => e.status === 'completed').length;
+  const failed = entries.filter(e => e.status === 'failed').length;
+
+  console.log(`Completed: ${completed}`);
+  console.log(`Failed: ${failed}`);
+
+  if (failed > 0) {
+    console.log('\nFailed episodes:');
+    for (const e of entries.filter(e => e.status === 'failed')) {
+      console.log(`  - Episode ${e.episodeNumber}: ${e.error}`);
+    }
+  }
+
+  console.log('\nTranscripts saved to Blob storage.');
+  console.log('Visit /coverage to see "Review needed" episodes for speaker mapping.');
+}
+
+main().catch(console.error);

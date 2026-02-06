@@ -49,3 +49,9 @@ test-*.js
 
 # Secrets
 secrets/
+
+# Batch transcription progress
+batch-transcribe-progress.json
+
+# MP3 audio files (too large for git)
+mp3s/

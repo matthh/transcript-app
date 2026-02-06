@@ -4,6 +4,7 @@ import path from 'path';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
 import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
 import type { EpisodeMetadata } from '@/types/episode-metadata';
+import type { Transcript } from '@/types/transcript';
 
 export interface CoverageEpisode {
   episode: number;
@@ -13,6 +14,7 @@ export interface CoverageEpisode {
   reviewer: string;
   guest: string | null;
   hasTranscript: boolean;
+  needsReview: boolean;
   transcriptSource?: 'filesystem' | 'blob';
   transcriptFile?: string;
 }
@@ -21,9 +23,22 @@ export interface CoverageResponse {
   total: number;
   withTranscripts: number;
   withoutTranscripts: number;
+  needsReview: number;
   coveragePercent: number;
   episodes: CoverageEpisode[];
   bySeason: Record<number, { total: number; transcribed: number }>;
+}
+
+/**
+ * Pattern for detecting unmapped AssemblyAI speakers (e.g., "A", "B", "Speaker A")
+ */
+const UNMAPPED_SPEAKER_PATTERN = /^(Speaker\s*)?[A-Z]$/i;
+
+/**
+ * Check if a transcript has unmapped speaker names
+ */
+function hasUnmappedSpeakers(transcript: Transcript): boolean {
+  return transcript.dialogues.some(d => UNMAPPED_SPEAKER_PATTERN.test(d.name.trim()));
 }
 
 interface TranscriptInfo {
@@ -31,6 +46,7 @@ interface TranscriptInfo {
   episodeNumber: number | string;
   episodeName: string;
   source: 'filesystem' | 'blob';
+  needsReview: boolean;
 }
 
 /**
@@ -96,12 +112,13 @@ export async function GET() {
       for (const filename of files) {
         try {
           const filePath = path.join(transcriptsDir, filename);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+          const content = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Transcript;
           transcripts.push({
             filename: filename.replace('.json', ''),
             episodeNumber: content.episode_number,
             episodeName: content.episode_name || '',
             source: 'filesystem',
+            needsReview: hasUnmappedSpeakers(content),
           });
         } catch {
           // Skip unparseable files
@@ -124,6 +141,7 @@ export async function GET() {
             episodeNumber: transcript.episode_number,
             episodeName: transcript.episode_name || '',
             source: 'blob',
+            needsReview: hasUnmappedSpeakers(transcript),
           });
         }
       } catch {
@@ -148,6 +166,7 @@ export async function GET() {
   // Build coverage data
   const episodes: CoverageEpisode[] = metadata.map((ep: EpisodeMetadata) => {
     let hasTranscript = false;
+    let needsReview = false;
     let transcriptSource: 'filesystem' | 'blob' | undefined;
     let transcriptFile: string | undefined;
 
@@ -155,6 +174,7 @@ export async function GET() {
     if (ep.episode > 0 && transcriptsByNumber.has(ep.episode)) {
       const match = transcriptsByNumber.get(ep.episode)!;
       hasTranscript = true;
+      needsReview = match.needsReview;
       transcriptSource = match.source;
       transcriptFile = match.filename;
     }
@@ -163,6 +183,7 @@ export async function GET() {
       for (const t of transcriptsByName) {
         if (namesMatch(ep.film, t.episodeName)) {
           hasTranscript = true;
+          needsReview = t.needsReview;
           transcriptSource = t.source;
           transcriptFile = t.filename;
           break;
@@ -178,6 +199,7 @@ export async function GET() {
       reviewer: ep.reviewer,
       guest: ep.guest,
       hasTranscript,
+      needsReview,
       transcriptSource,
       transcriptFile,
     };
@@ -205,10 +227,13 @@ export async function GET() {
     }
   }
 
+  const needsReviewCount = episodes.filter(e => e.needsReview).length;
+
   const response: CoverageResponse = {
     total: episodes.length,
     withTranscripts,
     withoutTranscripts,
+    needsReview: needsReviewCount,
     coveragePercent: episodes.length > 0 ? Math.round((withTranscripts / episodes.length) * 100) : 0,
     episodes,
     bySeason,
