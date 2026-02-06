@@ -41,6 +41,10 @@ export default function SpeakerMapper({
   const [excludedIndices, setExcludedIndices] = useState<Set<number>>(new Set());
   const [customSpeaker, setCustomSpeaker] = useState('');
 
+  // Individual selection state
+  const [selectedIndices, setSelectedIndices] = useState<Set<number>>(new Set());
+  const [lastSelectedIndex, setLastSelectedIndex] = useState<number | null>(null);
+
   // Filter state
   const [speakerFilter, setSpeakerFilter] = useState<string>('all');
 
@@ -198,6 +202,75 @@ export default function SpeakerMapper({
     setCustomSpeaker('');
   }, []);
 
+  // Clear individual selection
+  const clearSelection = useCallback(() => {
+    setSelectedIndices(new Set());
+    setLastSelectedIndex(null);
+  }, []);
+
+  // Handle segment click for individual selection
+  const handleSegmentClick = useCallback((globalIndex: number, e: React.MouseEvent) => {
+    // Don't handle if clicking on interactive elements
+    if (
+      e.target instanceof HTMLButtonElement ||
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLSelectElement
+    ) {
+      return;
+    }
+
+    // If in mapping mode, toggle exclusion instead
+    if (activeMappingLabel && dialogues[globalIndex]?.name === activeMappingLabel) {
+      toggleSegmentExclusion(globalIndex);
+      return;
+    }
+
+    // Exit mapping mode if active
+    if (activeMappingLabel) {
+      exitMappingMode();
+    }
+
+    setSelectedIndices(prev => {
+      const next = new Set(prev);
+
+      if (e.shiftKey && lastSelectedIndex !== null) {
+        // Range selection
+        const start = Math.min(lastSelectedIndex, globalIndex);
+        const end = Math.max(lastSelectedIndex, globalIndex);
+        for (let i = start; i <= end; i++) {
+          next.add(i);
+        }
+      } else if (e.ctrlKey || e.metaKey) {
+        // Toggle selection
+        if (next.has(globalIndex)) {
+          next.delete(globalIndex);
+        } else {
+          next.add(globalIndex);
+        }
+      } else {
+        // Single selection - clear others
+        next.clear();
+        next.add(globalIndex);
+      }
+
+      return next;
+    });
+
+    setLastSelectedIndex(globalIndex);
+  }, [activeMappingLabel, dialogues, lastSelectedIndex, toggleSegmentExclusion, exitMappingMode]);
+
+  // Apply speaker to selected segments
+  const applyToSelected = useCallback((newSpeakerName: string) => {
+    if (!newSpeakerName.trim() || selectedIndices.size === 0) return;
+
+    saveToHistory(`Assign "${newSpeakerName.trim()}" to ${selectedIndices.size} segment(s)`);
+
+    setDialogues(prev => prev.map((d, i) =>
+      selectedIndices.has(i) ? { ...d, name: newSpeakerName.trim() } : d
+    ));
+    clearSelection();
+  }, [selectedIndices, saveToHistory, clearSelection]);
+
   // Toggle segment exclusion
   const toggleSegmentExclusion = useCallback((globalIndex: number) => {
     setExcludedIndices(prev => {
@@ -307,9 +380,13 @@ export default function SpeakerMapper({
         return;
       }
 
-      // Escape to exit mapping mode
-      if (e.key === 'Escape' && activeMappingLabel) {
-        exitMappingMode();
+      // Escape to exit mapping mode or clear selection
+      if (e.key === 'Escape') {
+        if (activeMappingLabel) {
+          exitMappingMode();
+        } else if (selectedIndices.size > 0) {
+          clearSelection();
+        }
         return;
       }
 
@@ -327,11 +404,15 @@ export default function SpeakerMapper({
         return;
       }
 
-      // Number keys 1-6 for quick assign when in mapping mode
-      if (activeMappingLabel && e.key >= '1' && e.key <= '6') {
+      // Number keys 1-6 for quick assign when in mapping mode or selection mode
+      if ((activeMappingLabel || selectedIndices.size > 0) && e.key >= '1' && e.key <= '6') {
         const index = parseInt(e.key) - 1;
         if (index < knownSpeakers.length) {
-          applyMapping(knownSpeakers[index].name);
+          if (activeMappingLabel) {
+            applyMapping(knownSpeakers[index].name);
+          } else {
+            applyToSelected(knownSpeakers[index].name);
+          }
         }
         return;
       }
@@ -355,7 +436,7 @@ export default function SpeakerMapper({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeMappingLabel, knownSpeakers, applyMapping, exitMappingMode, undo, redo, goToNextUnassigned, goToPage, currentPage]);
+  }, [activeMappingLabel, knownSpeakers, applyMapping, exitMappingMode, undo, redo, goToNextUnassigned, goToPage, currentPage, selectedIndices, applyToSelected, clearSelection]);
 
   // Get the global index for a dialogue in the filtered/paginated view
   const getGlobalIndex = useCallback((pageIndex: number) => {
@@ -460,7 +541,7 @@ export default function SpeakerMapper({
           )}
 
           <span className="text-xs text-gray-400">
-            Keys: 1-6 assign · Esc cancel · ←→ pages
+            Click segment to select · Shift+click range · 1-6 assign · Esc cancel
           </span>
         </div>
       </div>
@@ -474,6 +555,81 @@ export default function SpeakerMapper({
             controls={controls}
             setAudioRef={setAudioRef}
           />
+        </div>
+      )}
+
+      {/* Individual Selection Panel */}
+      {selectedIndices.size > 0 && !activeMappingLabel && (
+        <div className="p-4 border-b bg-green-50 border-l-4 border-green-500">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <span className="font-medium text-green-900">
+                {selectedIndices.size} segment{selectedIndices.size > 1 ? 's' : ''} selected
+              </span>
+              <span className="ml-2 text-sm text-green-700">
+                Click to select, Shift+click for range, Ctrl+click to toggle
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={clearSelection}
+              className="text-green-700 hover:text-green-900 text-sm"
+            >
+              Clear (Esc)
+            </button>
+          </div>
+
+          <div className="flex items-center gap-3 flex-wrap">
+            {/* Quick assign buttons */}
+            {knownSpeakers.slice(0, 6).map(({ name }, index) => (
+              <button
+                key={name}
+                type="button"
+                onClick={() => applyToSelected(name)}
+                className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors"
+              >
+                <span className="opacity-60 mr-1">{index + 1}</span>
+                {name}
+              </button>
+            ))}
+
+            {/* Custom speaker input */}
+            <div className="flex items-center gap-1">
+              <input
+                type="text"
+                value={customSpeaker}
+                onChange={(e) => setCustomSpeaker(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && customSpeaker.trim()) {
+                    applyToSelected(customSpeaker);
+                  }
+                  if (e.key === 'Escape') {
+                    clearSelection();
+                  }
+                }}
+                placeholder="Custom name..."
+                className="px-2 py-1.5 text-sm border rounded-md w-40 focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                list="known-speakers-selection"
+              />
+              <datalist id="known-speakers-selection">
+                {knownSpeakers.map(({ name }) => (
+                  <option key={name} value={name} />
+                ))}
+              </datalist>
+              <button
+                type="button"
+                onClick={() => applyToSelected(customSpeaker)}
+                disabled={!customSpeaker.trim()}
+                className={`px-4 py-1.5 text-sm rounded-md transition-colors ${
+                  !customSpeaker.trim()
+                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    : 'bg-green-600 text-white hover:bg-green-700'
+                }`}
+              >
+                Apply
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
@@ -588,30 +744,51 @@ export default function SpeakerMapper({
           const isExcluded = excludedIndices.has(globalIndex);
           const isInScope = matchesActiveLabel && !isExcluded;
           const isDimmed = activeMappingLabel && !matchesActiveLabel;
+          const isSelected = selectedIndices.has(globalIndex);
 
           return (
             <div
               key={`${globalIndex}-${dialogue.timestamp}`}
-              className={`flex items-start gap-3 p-3 transition-colors ${
-                isInScope
-                  ? 'bg-blue-50 border-l-4 border-blue-500'
-                  : isExcluded && matchesActiveLabel
-                    ? 'bg-gray-100 border-l-4 border-gray-300'
-                    : isActiveSegment
-                      ? 'bg-yellow-50'
-                      : isDimmed
-                        ? 'bg-gray-50 opacity-50'
-                        : 'hover:bg-gray-50'
+              onClick={(e) => handleSegmentClick(globalIndex, e)}
+              className={`flex items-start gap-3 p-3 transition-colors cursor-pointer ${
+                isSelected
+                  ? 'bg-green-100 border-l-4 border-green-500'
+                  : isInScope
+                    ? 'bg-blue-50 border-l-4 border-blue-500'
+                    : isExcluded && matchesActiveLabel
+                      ? 'bg-gray-100 border-l-4 border-gray-300'
+                      : isActiveSegment
+                        ? 'bg-yellow-50'
+                        : isDimmed
+                          ? 'bg-gray-50 opacity-50'
+                          : 'hover:bg-gray-50'
               }`}
             >
-              {/* Checkbox - only for segments matching active label */}
+              {/* Checkbox - for selected segments or segments matching active label */}
               <div className="pt-0.5 w-5">
-                {matchesActiveLabel && (
+                {(matchesActiveLabel || isSelected) && (
                   <input
                     type="checkbox"
-                    checked={!isExcluded}
-                    onChange={() => toggleSegmentExclusion(globalIndex)}
-                    className="h-4 w-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500 cursor-pointer"
+                    checked={matchesActiveLabel ? !isExcluded : isSelected}
+                    onChange={() => {
+                      if (matchesActiveLabel) {
+                        toggleSegmentExclusion(globalIndex);
+                      } else {
+                        setSelectedIndices(prev => {
+                          const next = new Set(prev);
+                          if (next.has(globalIndex)) {
+                            next.delete(globalIndex);
+                          } else {
+                            next.add(globalIndex);
+                          }
+                          return next;
+                        });
+                      }
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                    className={`h-4 w-4 rounded border-gray-300 cursor-pointer ${
+                      matchesActiveLabel ? 'text-blue-600 focus:ring-blue-500' : 'text-green-600 focus:ring-green-500'
+                    }`}
                   />
                 )}
               </div>
