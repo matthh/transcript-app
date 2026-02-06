@@ -62,7 +62,8 @@ export async function loadTranscript(
       return null;
     }
 
-    const response = await fetch(match.url);
+    // Use no-store to bypass CDN cache and get fresh data
+    const response = await fetch(match.url, { cache: 'no-store' });
     if (!response.ok) {
       return null;
     }
@@ -259,7 +260,8 @@ export async function loadTranscriptionJob(jobId: string): Promise<{
       return null;
     }
 
-    const response = await fetch(match.url);
+    // Use no-store to bypass CDN cache
+    const response = await fetch(match.url, { cache: 'no-store' });
     if (!response.ok) {
       return null;
     }

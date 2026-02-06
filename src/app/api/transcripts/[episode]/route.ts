@@ -26,7 +26,11 @@ export async function GET(
   if (fs.existsSync(filePath)) {
     const content = fs.readFileSync(filePath, 'utf-8');
     const transcript: Transcript = JSON.parse(content);
-    return NextResponse.json(transcript);
+    return NextResponse.json(transcript, {
+      headers: {
+        'Cache-Control': 'no-store, must-revalidate',
+      },
+    });
   }
 
   // Then try Blob storage (for newly uploaded transcripts)
@@ -34,7 +38,11 @@ export async function GET(
     try {
       const blobTranscript = await loadBlobTranscript(episodeNumber);
       if (blobTranscript) {
-        return NextResponse.json(blobTranscript);
+        return NextResponse.json(blobTranscript, {
+          headers: {
+            'Cache-Control': 'no-store, must-revalidate',
+          },
+        });
       }
     } catch {
       // Blob storage not available or transcript not found
