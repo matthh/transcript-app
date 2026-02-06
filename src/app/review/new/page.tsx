@@ -278,7 +278,8 @@ function NewEpisodeContent() {
     setError(null);
 
     try {
-      const response = await fetch(`/api/transcripts/${finalTranscript.episode_number}`, {
+      // Use episode_ prefix for consistent path with GET and blob storage
+      const response = await fetch(`/api/transcripts/episode_${finalTranscript.episode_number}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(finalTranscript),
