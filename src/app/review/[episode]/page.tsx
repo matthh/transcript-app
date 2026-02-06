@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Transcript, DialogueEntry } from '@/types/transcript';
@@ -8,6 +8,7 @@ import { useAudioSync } from '@/hooks/useAudioSync';
 import { useUndoRedo } from '@/hooks/useUndoRedo';
 import AudioPlayer from '@/components/AudioPlayer';
 import TranscriptEditor from '@/components/TranscriptEditor';
+import SpeakerMapper from '@/components/SpeakerMapper';
 
 export default function EditorPage() {
   const { episode } = useParams<{ episode: string }>();
@@ -29,10 +30,32 @@ export default function EditorPage() {
   const [publishStatus, setPublishStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
   const [hasAudio, setHasAudio] = useState(false);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [rebuildConfigured, setRebuildConfigured] = useState(false);
   const [resetting, setResetting] = useState(false);
+  const [mappingMode, setMappingMode] = useState(false);
 
   const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(dialogues);
+
+  // Check if there are unmapped speakers (placeholder labels like "Speaker A", "Speaker B", etc.)
+  const unmappedSpeakerCount = useMemo(() => {
+    const placeholderPattern = /^(Speaker\s*)?[A-Z]$/i;
+    return dialogues.filter(d => placeholderPattern.test(d.name)).length;
+  }, [dialogues]);
+
+  const hasUnmappedSpeakers = unmappedSpeakerCount > 0;
+
+  // Handle mapping complete - update dialogues and exit mapping mode
+  const handleMappingComplete = useCallback((mappedDialogues: DialogueEntry[]) => {
+    setDialogues(() => mappedDialogues);
+    setHasUnsavedChanges(true);
+    setMappingMode(false);
+  }, [setDialogues]);
+
+  // Handle mapping cancel - just exit mapping mode
+  const handleMappingCancel = useCallback(() => {
+    setMappingMode(false);
+  }, []);
 
   useEffect(() => {
     async function fetchTranscript() {
@@ -48,7 +71,10 @@ export default function EditorPage() {
         const audioResponse = await fetch(`/api/audio/${episode}`, {
           method: 'HEAD',
         });
-        setHasAudio(audioResponse.ok);
+        if (audioResponse.ok) {
+          setHasAudio(true);
+          setAudioUrl(`/api/audio/${episode}`);
+        }
 
         // Check if rebuild is configured
         const rebuildResponse = await fetch('/api/rebuild');
@@ -234,7 +260,7 @@ export default function EditorPage() {
           </button>
         </div>
 
-        {hasAudio && (
+        {hasAudio && !mappingMode && (
           <div className="mb-6">
             <AudioPlayer
               audioSrc={`/api/audio/${episode}`}
@@ -251,59 +277,91 @@ export default function EditorPage() {
           </div>
         )}
 
-        <TranscriptEditor
-          dialogues={dialogues}
-          activeSegmentIndex={audioState.activeSegmentIndex}
-          onTimestampClick={audioControls.seekToTimestamp}
-          onSpeakerChange={handleSpeakerChange}
-          onTextChange={handleTextChange}
-          onBulkSpeakerChange={handleBulkSpeakerChange}
-          onUndo={handleUndo}
-          onRedo={handleRedo}
-          canUndo={canUndo}
-          canRedo={canRedo}
-        />
+        {/* Show Re-map Speakers button when there are unmapped speakers and not in mapping mode */}
+        {hasUnmappedSpeakers && !mappingMode && (
+          <div className="mb-6 p-4 bg-orange-50 border border-orange-200 rounded flex items-center justify-between">
+            <div>
+              <span className="text-orange-800 font-medium">
+                {unmappedSpeakerCount} segment{unmappedSpeakerCount > 1 ? 's' : ''} with unmapped speakers
+              </span>
+              <p className="text-sm text-orange-600 mt-1">
+                Use the Speaker Mapper for easier bulk assignment
+              </p>
+            </div>
+            <button
+              onClick={() => setMappingMode(true)}
+              className="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition-colors"
+            >
+              Re-map Speakers
+            </button>
+          </div>
+        )}
+
+        {/* Show SpeakerMapper when in mapping mode, otherwise show TranscriptEditor */}
+        {mappingMode ? (
+          <SpeakerMapper
+            dialogues={dialogues}
+            audioUrl={audioUrl}
+            onMappingComplete={handleMappingComplete}
+            onCancel={handleMappingCancel}
+          />
+        ) : (
+          <TranscriptEditor
+            dialogues={dialogues}
+            activeSegmentIndex={audioState.activeSegmentIndex}
+            onTimestampClick={audioControls.seekToTimestamp}
+            onSpeakerChange={handleSpeakerChange}
+            onTextChange={handleTextChange}
+            onBulkSpeakerChange={handleBulkSpeakerChange}
+            onUndo={handleUndo}
+            onRedo={handleRedo}
+            canUndo={canUndo}
+            canRedo={canRedo}
+          />
+        )}
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <span className="text-sm text-gray-600">
-            {hasUnsavedChanges ? (
-              <span className="text-orange-600 font-medium">Unsaved changes</span>
-            ) : publishStatus === 'success' ? (
-              <span className="text-green-600 font-medium">Rebuild triggered! Changes will be searchable after deploy.</span>
-            ) : (
-              'All changes saved'
-            )}
-          </span>
-          <div className="flex items-center gap-3">
-            {rebuildConfigured && (
+      {!mappingMode && (
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg">
+          <div className="max-w-4xl mx-auto flex items-center justify-between">
+            <span className="text-sm text-gray-600">
+              {hasUnsavedChanges ? (
+                <span className="text-orange-600 font-medium">Unsaved changes</span>
+              ) : publishStatus === 'success' ? (
+                <span className="text-green-600 font-medium">Rebuild triggered! Changes will be searchable after deploy.</span>
+              ) : (
+                'All changes saved'
+              )}
+            </span>
+            <div className="flex items-center gap-3">
+              {rebuildConfigured && (
+                <button
+                  onClick={handlePublish}
+                  disabled={hasUnsavedChanges || publishing}
+                  className={`px-4 py-2 rounded font-medium transition-colors ${
+                    !hasUnsavedChanges && !publishing
+                      ? 'bg-green-600 text-white hover:bg-green-700'
+                      : 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                  }`}
+                >
+                  {publishing ? 'Publishing...' : 'Publish to Search'}
+                </button>
+              )}
               <button
-                onClick={handlePublish}
-                disabled={hasUnsavedChanges || publishing}
-                className={`px-4 py-2 rounded font-medium transition-colors ${
-                  !hasUnsavedChanges && !publishing
-                    ? 'bg-green-600 text-white hover:bg-green-700'
+                onClick={handleSave}
+                disabled={!hasUnsavedChanges || saving}
+                className={`px-6 py-2 rounded font-medium transition-colors ${
+                  hasUnsavedChanges && !saving
+                    ? 'bg-blue-600 text-white hover:bg-blue-700'
                     : 'bg-gray-200 text-gray-500 cursor-not-allowed'
                 }`}
               >
-                {publishing ? 'Publishing...' : 'Publish to Search'}
+                {saving ? 'Saving...' : 'Save (Ctrl+S)'}
               </button>
-            )}
-            <button
-              onClick={handleSave}
-              disabled={!hasUnsavedChanges || saving}
-              className={`px-6 py-2 rounded font-medium transition-colors ${
-                hasUnsavedChanges && !saving
-                  ? 'bg-blue-600 text-white hover:bg-blue-700'
-                  : 'bg-gray-200 text-gray-500 cursor-not-allowed'
-              }`}
-            >
-              {saving ? 'Saving...' : 'Save (Ctrl+S)'}
-            </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </main>
   );
 }

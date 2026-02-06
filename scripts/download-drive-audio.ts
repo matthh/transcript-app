@@ -1,0 +1,401 @@
+/**
+ * Download MP3 files from Google Drive for episodes missing transcripts.
+ *
+ * Usage:
+ *   npm run download-audio              # Scan and download
+ *   npm run download-audio -- --dry-run # Just show matches, don't download
+ *   npm run download-audio -- --list    # List all folders in Drive
+ *
+ * Prerequisites:
+ *   - Service account key file configured in .env.local
+ *   - "Audio Files" folder shared with service account email
+ *   - Google Drive API enabled in Google Cloud Console
+ */
+
+import * as fs from 'fs';
+import * as path from 'path';
+import * as dotenv from 'dotenv';
+import { google, drive_v3 } from 'googleapis';
+import { loadEpisodeMetadata } from '../src/lib/metadata-store';
+
+dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
+
+const args = process.argv.slice(2);
+const dryRun = args.includes('--dry-run');
+const listOnly = args.includes('--list');
+const verbose = args.includes('--verbose');
+
+const MP3_DIR = './mp3s';
+const TRANSCRIPTS_DIR = './transcripts';
+
+interface DriveFolder {
+  id: string;
+  name: string;
+}
+
+interface DriveFile {
+  id: string;
+  name: string;
+  mimeType: string;
+  size?: string;
+}
+
+interface EpisodeMissing {
+  episode: number;
+  film: string;
+  season: number;
+}
+
+// ---------- Google Drive Auth ----------
+
+async function getDriveClient(): Promise<drive_v3.Drive> {
+  const keyFile = process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE;
+
+  if (!keyFile) {
+    throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY_FILE not set in .env.local');
+  }
+
+  const keyPath = path.resolve(process.cwd(), keyFile);
+  if (!fs.existsSync(keyPath)) {
+    throw new Error(`Service account key file not found: ${keyPath}`);
+  }
+
+  const auth = new google.auth.GoogleAuth({
+    keyFile: keyPath,
+    scopes: ['https://www.googleapis.com/auth/drive.readonly'],
+  });
+
+  return google.drive({ version: 'v3', auth });
+}
+
+// ---------- Drive Operations ----------
+
+async function findAudioFilesFolder(drive: drive_v3.Drive): Promise<string | null> {
+  console.log('Searching for "Audio Files" folder...');
+
+  const response = await drive.files.list({
+    q: "name = 'Audio Files' and mimeType = 'application/vnd.google-apps.folder'",
+    fields: 'files(id, name)',
+    spaces: 'drive',
+  });
+
+  const folders = response.data.files || [];
+
+  if (folders.length === 0) {
+    return null;
+  }
+
+  if (folders.length > 1) {
+    console.log(`Found ${folders.length} folders named "Audio Files":`);
+    folders.forEach(f => console.log(`  - ${f.id}: ${f.name}`));
+    console.log('Using the first one.');
+  }
+
+  return folders[0].id!;
+}
+
+async function listSubfolders(drive: drive_v3.Drive, parentId: string): Promise<DriveFolder[]> {
+  const folders: DriveFolder[] = [];
+  let pageToken: string | undefined;
+
+  do {
+    const response = await drive.files.list({
+      q: `'${parentId}' in parents and mimeType = 'application/vnd.google-apps.folder'`,
+      fields: 'nextPageToken, files(id, name)',
+      pageSize: 100,
+      pageToken,
+    });
+
+    const files = response.data.files || [];
+    for (const file of files) {
+      if (file.id && file.name) {
+        folders.push({ id: file.id, name: file.name });
+      }
+    }
+
+    pageToken = response.data.nextPageToken || undefined;
+  } while (pageToken);
+
+  return folders.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+async function listFilesInFolder(drive: drive_v3.Drive, folderId: string): Promise<DriveFile[]> {
+  const response = await drive.files.list({
+    q: `'${folderId}' in parents`,
+    fields: 'files(id, name, mimeType, size)',
+  });
+
+  return (response.data.files || []).map(f => ({
+    id: f.id!,
+    name: f.name!,
+    mimeType: f.mimeType!,
+    size: f.size || undefined,
+  }));
+}
+
+async function downloadFile(drive: drive_v3.Drive, fileId: string, destPath: string): Promise<void> {
+  const dest = fs.createWriteStream(destPath);
+
+  const response = await drive.files.get(
+    { fileId, alt: 'media' },
+    { responseType: 'stream' }
+  );
+
+  return new Promise((resolve, reject) => {
+    (response.data as NodeJS.ReadableStream)
+      .on('end', () => {
+        dest.close();
+        resolve();
+      })
+      .on('error', (err: Error) => {
+        dest.close();
+        fs.unlinkSync(destPath);
+        reject(err);
+      })
+      .pipe(dest);
+  });
+}
+
+// ---------- Episode Matching ----------
+
+function getEpisodesMissingTranscripts(): EpisodeMissing[] {
+  const metadata = loadEpisodeMetadata();
+
+  // Get list of existing transcripts
+  const existingTranscripts = new Set<number>();
+
+  if (fs.existsSync(TRANSCRIPTS_DIR)) {
+    const files = fs.readdirSync(TRANSCRIPTS_DIR).filter(f => f.endsWith('.json'));
+    for (const file of files) {
+      try {
+        const content = JSON.parse(fs.readFileSync(path.join(TRANSCRIPTS_DIR, file), 'utf-8'));
+        if (content.episode_number) {
+          existingTranscripts.add(content.episode_number);
+        }
+      } catch {
+        // Skip
+      }
+    }
+  }
+
+  // Filter to episodes without transcripts
+  return metadata
+    .filter(ep => !existingTranscripts.has(ep.episode))
+    .map(ep => ({
+      episode: ep.episode,
+      film: ep.film,
+      season: ep.season,
+    }));
+}
+
+function normalizeName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\b(the|a|an)\b/g, '')
+    .replace(/\(\d{4}\)/g, '')  // Remove year in parens
+    .replace(/\d{4}$/g, '')      // Remove year at end
+    .replace(/bonus\s*/gi, '')
+    .replace(/episode\s*\d+\s*:?\s*/gi, '')
+    .replace(/best\s*of\s*/gi, '')
+    .trim();
+}
+
+function extractYear(name: string): number | null {
+  const match = name.match(/\((\d{4})\)|\b(19\d{2}|20\d{2})\b/);
+  return match ? parseInt(match[1] || match[2]) : null;
+}
+
+function matchFolderToEpisode(folderName: string, episodes: EpisodeMissing[]): EpisodeMissing | null {
+  const normalizedFolder = normalizeName(folderName);
+  const folderYear = extractYear(folderName);
+
+  // Score each episode and find best match
+  let bestMatch: EpisodeMissing | null = null;
+  let bestScore = 0;
+
+  for (const ep of episodes) {
+    const normalizedFilm = normalizeName(ep.film);
+    const filmYear = extractYear(ep.film);
+    let score = 0;
+
+    // Exact match after normalization (best case)
+    if (normalizedFolder === normalizedFilm) {
+      score = 100;
+    }
+    // One fully contains the other (must be significant portion)
+    else if (normalizedFolder.length >= 4 && normalizedFilm.length >= 4) {
+      if (normalizedFolder.includes(normalizedFilm) && normalizedFilm.length >= normalizedFolder.length * 0.5) {
+        score = 80;
+      } else if (normalizedFilm.includes(normalizedFolder) && normalizedFolder.length >= normalizedFilm.length * 0.5) {
+        score = 80;
+      }
+    }
+
+    // Word-based matching - require substantial overlap
+    if (score === 0) {
+      const folderWords = normalizedFolder.split(' ').filter(w => w.length > 2);
+      const filmWords = normalizedFilm.split(' ').filter(w => w.length > 2);
+
+      if (folderWords.length > 0 && filmWords.length > 0) {
+        // Only count substring matches if the shorter word is at least 5 chars
+        // This prevents "her" matching "godfather" due to substring
+        const matchingWords = folderWords.filter(w => filmWords.some(fw => {
+          if (fw === w) return true;  // Exact match always counts
+          // Substring match only if shorter word is substantial (5+ chars)
+          const shorter = w.length < fw.length ? w : fw;
+          if (shorter.length < 5) return false;
+          return fw.includes(w) || w.includes(fw);
+        }));
+        const matchRatio = matchingWords.length / Math.max(folderWords.length, filmWords.length);
+
+        // Require at least 60% word match AND at least 2 matching words (or all words if fewer)
+        const minMatchingWords = Math.min(2, Math.min(folderWords.length, filmWords.length));
+        if (matchRatio >= 0.6 && matchingWords.length >= minMatchingWords) {
+          score = 50 + (matchRatio * 30);  // Score 50-80 based on match quality
+        }
+      }
+    }
+
+    // Year must match if both have years (penalize mismatches heavily)
+    if (score > 0 && folderYear && filmYear) {
+      if (folderYear === filmYear) {
+        score += 10;  // Bonus for matching year
+      } else {
+        score = 0;  // Wrong year = no match
+      }
+    }
+
+    // Update best match
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = ep;
+    }
+  }
+
+  // Require minimum score of 50 to accept a match
+  return bestScore >= 50 ? bestMatch : null;
+}
+
+// ---------- Main ----------
+
+async function main() {
+  console.log('=== Download Audio from Google Drive ===\n');
+
+  if (dryRun) {
+    console.log('DRY RUN - no files will be downloaded\n');
+  }
+
+  // Ensure mp3s directory exists
+  if (!fs.existsSync(MP3_DIR)) {
+    fs.mkdirSync(MP3_DIR, { recursive: true });
+  }
+
+  // Get Drive client
+  const drive = await getDriveClient();
+  console.log('Authenticated with Google Drive.\n');
+
+  // Find Audio Files folder
+  const audioFolderId = await findAudioFilesFolder(drive);
+  if (!audioFolderId) {
+    console.error('Could not find "Audio Files" folder. Make sure it\'s shared with the service account.');
+    process.exit(1);
+  }
+  console.log(`Found "Audio Files" folder: ${audioFolderId}\n`);
+
+  // List subfolders
+  console.log('Listing episode folders...');
+  const folders = await listSubfolders(drive, audioFolderId);
+  console.log(`Found ${folders.length} folders.\n`);
+
+  if (listOnly) {
+    console.log('Folders in "Audio Files":');
+    folders.forEach(f => console.log(`  - ${f.name}`));
+    return;
+  }
+
+  // Get episodes missing transcripts
+  const missingEpisodes = getEpisodesMissingTranscripts();
+  console.log(`${missingEpisodes.length} episodes missing transcripts.\n`);
+
+  if (verbose) {
+    console.log('Missing episodes:');
+    missingEpisodes.slice(0, 20).forEach(ep => console.log(`  - E${ep.episode}: ${ep.film}`));
+    if (missingEpisodes.length > 20) console.log(`  ... and ${missingEpisodes.length - 20} more\n`);
+  }
+
+  // Match folders to episodes
+  const matches: Array<{ folder: DriveFolder; episode: EpisodeMissing }> = [];
+  const unmatched: DriveFolder[] = [];
+
+  for (const folder of folders) {
+    const match = matchFolderToEpisode(folder.name, missingEpisodes);
+    if (match) {
+      matches.push({ folder, episode: match });
+    } else {
+      unmatched.push(folder);
+    }
+  }
+
+  console.log(`Matched ${matches.length} folders to missing episodes.`);
+  if (unmatched.length > 0 && verbose) {
+    console.log(`\nUnmatched folders (${unmatched.length}):`);
+    unmatched.slice(0, 10).forEach(f => console.log(`  - ${f.name}`));
+    if (unmatched.length > 10) console.log(`  ... and ${unmatched.length - 10} more`);
+  }
+
+  console.log('\nMatches:');
+  matches.forEach(m => console.log(`  ${m.folder.name} → E${m.episode.episode}: ${m.episode.film}`));
+
+  if (dryRun) {
+    console.log('\nDry run complete. Use without --dry-run to download.');
+    return;
+  }
+
+  // Download MP3s
+  console.log('\nDownloading MP3 files...\n');
+
+  let downloaded = 0;
+  let skipped = 0;
+  let errors = 0;
+
+  for (const { folder, episode } of matches) {
+    const destPath = path.join(MP3_DIR, `${episode.episode}.mp3`);
+
+    // Check if already exists
+    if (fs.existsSync(destPath)) {
+      console.log(`  SKIP: E${episode.episode} - already exists`);
+      skipped++;
+      continue;
+    }
+
+    // Find MP3 in folder
+    const files = await listFilesInFolder(drive, folder.id);
+    const mp3 = files.find(f => f.name.toLowerCase().endsWith('.mp3'));
+
+    if (!mp3) {
+      console.log(`  WARN: E${episode.episode} - no MP3 found in folder "${folder.name}"`);
+      errors++;
+      continue;
+    }
+
+    try {
+      console.log(`  Downloading E${episode.episode}: ${mp3.name}...`);
+      await downloadFile(drive, mp3.id, destPath);
+      console.log(`    → Saved to ${destPath}`);
+      downloaded++;
+    } catch (err) {
+      console.error(`  ERROR: E${episode.episode} - ${err}`);
+      errors++;
+    }
+  }
+
+  console.log(`\nComplete: ${downloaded} downloaded, ${skipped} skipped, ${errors} errors.`);
+}
+
+main().catch(err => {
+  console.error('Error:', err);
+  process.exit(1);
+});

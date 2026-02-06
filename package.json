@@ -13,7 +13,8 @@
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
     "transcribe": "node --import tsx ./scripts/transcribe.ts",
     "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts",
-    "sync-metadata": "node --import tsx ./scripts/sync-metadata.ts"
+    "sync-metadata": "node --import tsx ./scripts/sync-metadata.ts",
+    "download-audio": "node --import tsx ./scripts/download-drive-audio.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
