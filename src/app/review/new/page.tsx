@@ -39,6 +39,9 @@ function NewEpisodeContent() {
   const [isRemapping, setIsRemapping] = useState(false);
   const [loadingExisting, setLoadingExisting] = useState(false);
 
+  // Guest name for speaker shortcuts
+  const [guestName, setGuestName] = useState<string | null>(null);
+
   // Initialize from URL params on mount
   useEffect(() => {
     const epParam = searchParams.get('episode');
@@ -60,9 +63,28 @@ function NewEpisodeContent() {
     }
   }, [searchParams]);
 
+  // Fetch guest name for an episode from coverage API
+  const fetchGuestName = async (episodeNum: string) => {
+    try {
+      const response = await fetch('/api/coverage');
+      if (response.ok) {
+        const data = await response.json();
+        const episode = data.episodes?.find((ep: { episode: number }) => ep.episode === parseInt(episodeNum, 10));
+        if (episode?.guest) {
+          setGuestName(episode.guest);
+        }
+      }
+    } catch {
+      // Failed to fetch guest, continue without it
+    }
+  };
+
   // Load an existing transcript for re-mapping speakers
   const loadExistingTranscript = async (episodeNum: string) => {
     try {
+      // Fetch guest name for shortcuts
+      fetchGuestName(episodeNum);
+
       // Fetch transcript
       const response = await fetch(`/api/transcripts/episode_${episodeNum}`);
       if (!response.ok) {
@@ -140,6 +162,9 @@ function NewEpisodeContent() {
       setError('Please fill in all fields and select a file');
       return;
     }
+
+    // Fetch guest name for speaker shortcuts
+    fetchGuestName(episodeNumber);
 
     setStep('transcribing');
     setError(null);
@@ -500,6 +525,7 @@ function NewEpisodeContent() {
           audioUrl={audioUrl}
           onMappingComplete={handleMappingComplete}
           onCancel={handleMappingCancel}
+          guestName={guestName}
         />
       )}
 

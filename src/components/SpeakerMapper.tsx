@@ -10,6 +10,7 @@ interface SpeakerMapperProps {
   audioUrl: string | null;
   onMappingComplete: (mappedDialogues: DialogueEntry[]) => void;
   onCancel: () => void;
+  guestName?: string | null;
 }
 
 interface KnownSpeaker {
@@ -24,11 +25,21 @@ interface HistoryEntry {
 
 const PAGE_SIZE = 50;
 
+// Fixed speaker shortcuts (always in this order)
+const CORE_SPEAKERS = [
+  'Matt Haitch',
+  'Jason Goldman',
+  'Corey',
+  'kev voicemail',
+  'birria',
+];
+
 export default function SpeakerMapper({
   dialogues: initialDialogues,
   audioUrl,
   onMappingComplete,
   onCancel,
+  guestName,
 }: SpeakerMapperProps) {
   // State
   const [dialogues, setDialogues] = useState<DialogueEntry[]>(initialDialogues);
@@ -132,23 +143,18 @@ export default function SpeakerMapper({
     return dialogues.filter(d => d.name === activeMappingLabel).length;
   }, [dialogues, activeMappingLabel]);
 
-  // Fetch known speakers
+  // Build fixed speaker shortcuts list
   useEffect(() => {
-    async function fetchSpeakers() {
-      try {
-        const response = await fetch('/api/speakers');
-        if (response.ok) {
-          const data = await response.json();
-          setKnownSpeakers(data.speakers || []);
-        }
-      } catch {
-        // Failed to fetch speakers, continue without suggestions
-      } finally {
-        setLoading(false);
-      }
+    const speakers: KnownSpeaker[] = CORE_SPEAKERS.map(name => ({ name, count: 0 }));
+
+    // Add guest as the 6th shortcut if provided
+    if (guestName && guestName.trim()) {
+      speakers.push({ name: guestName.trim(), count: 0 });
     }
-    fetchSpeakers();
-  }, []);
+
+    setKnownSpeakers(speakers);
+    setLoading(false);
+  }, [guestName]);
 
   // Save to history before making changes
   const saveToHistory = useCallback((description: string) => {

@@ -34,6 +34,7 @@ export default function EditorPage() {
   const [rebuildConfigured, setRebuildConfigured] = useState(false);
   const [resetting, setResetting] = useState(false);
   const [mappingMode, setMappingMode] = useState(false);
+  const [guestName, setGuestName] = useState<string | null>(null);
 
   const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(dialogues);
 
@@ -81,6 +82,21 @@ export default function EditorPage() {
         if (rebuildResponse.ok) {
           const rebuildData = await rebuildResponse.json();
           setRebuildConfigured(rebuildData.configured);
+        }
+
+        // Fetch guest name for speaker shortcuts
+        try {
+          const coverageResponse = await fetch('/api/coverage');
+          if (coverageResponse.ok) {
+            const coverageData = await coverageResponse.json();
+            const episodeNum = data.episode_number;
+            const epInfo = coverageData.episodes?.find((ep: { episode: number }) => ep.episode === episodeNum);
+            if (epInfo?.guest) {
+              setGuestName(epInfo.guest);
+            }
+          }
+        } catch {
+          // Failed to fetch guest, continue without it
         }
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
@@ -304,6 +320,7 @@ export default function EditorPage() {
             audioUrl={audioUrl}
             onMappingComplete={handleMappingComplete}
             onCancel={handleMappingCancel}
+            guestName={guestName}
           />
         ) : (
           <TranscriptEditor
