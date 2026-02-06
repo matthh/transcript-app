@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 297 episodes - updated 2026-02-05
+// Auto-generated - do not edit
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -74,7 +74,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6OXEYvmndqNMqLGxIiHOPo?si=GFx5XRlZRviLSdMd-oAZQg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1592402690107-51d3dc89493dc.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1856101/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1856101/?ref_=ext_shr_lnk",
+    "tmdbId": 335984,
+    "tmdbPosterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "Harrison Ford",
+      "Ana de Armas",
+      "Dave Bautista",
+      "Robin Wright",
+      "Sylvia Hoeks",
+      "Mackenzie Davis",
+      "Jared Leto"
+    ]
   },
   {
     "pod": "DP",
@@ -99,7 +121,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4XzTGN8TGVe3tHGKiy7oq2?si=n2TZd7b3QWeULlKREKJQUw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1592849328874-8d82a33897667.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2543164/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2543164/?ref_=ext_shr_lnk",
+    "tmdbId": 329865,
+    "tmdbPosterPath": "/6WzElgkLjIWuWn3Nwu66s5J26tx.jpg",
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Bradford Young"
+    ],
+    "cast": [
+      "Amy Adams",
+      "Jeremy Renner",
+      "Forest Whitaker",
+      "Michael Stuhlbarg",
+      "Mark O'Brien",
+      "Tzi Ma",
+      "Abigail Pniowsky",
+      "Julia Scarlett Dan"
+    ]
   },
   {
     "pod": "DP",
@@ -124,7 +169,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3YrfIAv9EA1uJJ0bUDh5I3?si=VjAB-WNNRmK_L6FTFgM-vQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1593494306102-f1bcc768dd2ef.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt5726616/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt5726616/?ref_=ext_shr_lnk",
+    "tmdbId": 398818,
+    "tmdbPosterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "directors": [
+      "Luca Guadagnino"
+    ],
+    "cinematographers": [
+      "Sayombhu Mukdeeprom"
+    ],
+    "cast": [
+      "Armie Hammer",
+      "Timothée Chalamet",
+      "Michael Stuhlbarg",
+      "Amira Casar",
+      "Esther Garrel",
+      "Victoire du Bois",
+      "Vanda Capriolo",
+      "Antonio Rimoldi"
+    ]
   },
   {
     "pod": "DP",
@@ -149,7 +216,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0Y4xk4jNjoqQKvmVfDd3kf?si=e-Acv3mMSDiVsVjbm6-bNw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1594093984692-df52fe6b650c7.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0477348/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0477348/?ref_=ext_shr_lnk",
+    "tmdbId": 6977,
+    "tmdbPosterPath": "/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Western"
+    ],
+    "directors": [
+      "Joel Coen",
+      "Ethan Coen"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Javier Bardem",
+      "Tommy Lee Jones",
+      "Josh Brolin",
+      "Woody Harrelson",
+      "Kelly Macdonald",
+      "Garret Dillahunt",
+      "Tess Harper",
+      "Barry Corbin"
+    ]
   },
   {
     "pod": "DP",
@@ -174,7 +265,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0Y4xk4jNjoqQKvmVfDd3kf?si=e-Acv3mMSDiVsVjbm6-bNw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1594688542416-e3102b88b97d7.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0470752/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0470752/?ref_=ext_shr_lnk",
+    "tmdbId": 264660,
+    "tmdbPosterPath": "/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+    "genres": [
+      "Drama",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Alex Garland"
+    ],
+    "cinematographers": [
+      "Rob Hardy"
+    ],
+    "cast": [
+      "Domhnall Gleeson",
+      "Alicia Vikander",
+      "Oscar Isaac",
+      "Sonoya Mizuno",
+      "Corey Johnson",
+      "Claire Selby",
+      "Symara A. Templeman",
+      "Gana Bayarsaikhan"
+    ]
   },
   {
     "pod": "DP",
@@ -249,7 +362,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1sRRzimRf7Wx4OrbGXCMWh?si=FPErObsRQoau0LGVH9lizw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1596413606741-6266f277ae844.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt3397884/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt3397884/?ref_=ext_shr_lnk",
+    "tmdbId": 273481,
+    "tmdbPosterPath": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Emily Blunt",
+      "Benicio del Toro",
+      "Josh Brolin",
+      "Victor Garber",
+      "Jon Bernthal",
+      "Daniel Kaluuya",
+      "Jeffrey Donovan",
+      "Raoul Max Trujillo"
+    ]
   },
   {
     "pod": "DP",
@@ -274,7 +410,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7eUy5S55LyGgjnlu7gUIvm?si=W548wAuWQtqToH4xplB-dw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1596926299717-84428075c3ca6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1935156/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1935156/?ref_=ext_shr_lnk",
+    "tmdbId": 191720,
+    "tmdbPosterPath": "/mv1zSd6P59D43iYQXs7qx01nSiX.jpg",
+    "genres": [
+      "Documentary"
+    ],
+    "directors": [
+      "Frank Pavich"
+    ],
+    "cinematographers": [
+      "David Cavallo"
+    ],
+    "cast": [
+      "Alejandro Jodorowsky",
+      "Michel Seydoux",
+      "Chris Foss",
+      "H. R. Giger",
+      "Jean-Paul Gibon",
+      "Brontis Jodorowsky",
+      "Amanda Lear",
+      "Christian Wander"
+    ]
   },
   {
     "pod": "DP",
@@ -299,7 +456,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/08DI7f5NuCsAlz4pvLr0W7?si=HF3Q0sBhT4WILS7Y3YY8zQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1598326887150-90f2bbbc3dcbc.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0087182/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0087182/?ref_=ext_shr_lnk",
+    "tmdbId": 841,
+    "tmdbPosterPath": "/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "David Lynch"
+    ],
+    "cinematographers": [
+      "Freddie Francis"
+    ],
+    "cast": [
+      "Kyle MacLachlan",
+      "Francesca Annis",
+      "Patrick Stewart",
+      "Linda Hunt",
+      "José Ferrer",
+      "Freddie Jones",
+      "Brad Dourif",
+      "Richard Jordan"
+    ]
   },
   {
     "pod": "DP",
@@ -324,7 +504,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/09T79uZrZipGylYecPFvmC?si=vLKez8KQSMi6l4nE7OCJXg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1598742236012-081907c73d51d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt3281548/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt3281548/?ref_=ext_shr_lnk",
+    "tmdbId": 331482,
+    "tmdbPosterPath": "/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "directors": [
+      "Greta Gerwig"
+    ],
+    "cinematographers": [
+      "Yorick Le Saux"
+    ],
+    "cast": [
+      "Saoirse Ronan",
+      "Emma Watson",
+      "Florence Pugh",
+      "Eliza Scanlen",
+      "Laura Dern",
+      "Timothée Chalamet",
+      "Tracy Letts",
+      "Bob Odenkirk"
+    ]
   },
   {
     "pod": "DP",
@@ -349,7 +552,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4ztxWVgRKBc0dFalsr8jZa?si=IMzxeDQXR62nZwELWDw1oA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1599427295506-3b420681c85c7.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt8772296/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt8772296/?ref_=ext_shr_lnk",
+    "tmdbId": 407440,
+    "tmdbPosterPath": "/Anw3eLdNVRXafpYktwRzAGd6sPW.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Lisa Langseth"
+    ],
+    "cinematographers": [
+      "Rob Hardy"
+    ],
+    "cast": [
+      "Alicia Vikander",
+      "Eva Green",
+      "Charlotte Rampling",
+      "Charles Dance",
+      "Adrian Lester",
+      "Andreas Dubois",
+      "Mark Stanley",
+      "August Zirner"
+    ]
   },
   {
     "pod": "DP",
@@ -399,7 +623,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2Y3bomVDRNwj9FpcQiKv0J?si=vCDA3BTPRxyMBZuWVWvrKA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1599858253500-1441ed2b5fbbb.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2316411/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2316411/?ref_=ext_shr_lnk",
+    "tmdbId": 181886,
+    "tmdbPosterPath": "/vf40tyDRKZsBmaLsYeopzfFLzLx.jpg",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Nicolas Bolduc"
+    ],
+    "cast": [
+      "Jake Gyllenhaal",
+      "Mélanie Laurent",
+      "Sarah Gadon",
+      "Isabella Rossellini",
+      "Joshua Peace",
+      "Tim Post",
+      "Kedar Brown",
+      "Darryl Dinn"
+    ]
   },
   {
     "pod": "DP",
@@ -424,7 +670,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1IIIQJdfBEXpcJ9qpiYNKs?si=-a-E52TGQKeZ75nPI6hyxg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1600462676237-7d1ef2205e268.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt3748528/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt3748528/?ref_=ext_shr_lnk",
+    "tmdbId": 330459,
+    "tmdbPosterPath": "/i0yw1mFbB7sNGHCs7EXZPzFkdA1.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Gareth Edwards"
+    ],
+    "cinematographers": [
+      "Greig Fraser"
+    ],
+    "cast": [
+      "Felicity Jones",
+      "Diego Luna",
+      "Alan Tudyk",
+      "Donnie Yen",
+      "Jiang Wen",
+      "Ben Mendelsohn",
+      "Guy Henry",
+      "Forest Whitaker"
+    ]
   },
   {
     "pod": "DP",
@@ -499,7 +768,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4UymdjRwnyUZYXdNKeVKwt?si=QuwYHcxHRrO92eFcXOQqwg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1602280770504-584fb3321ab81.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0070948/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0070948/?ref_=ext_shr_lnk",
+    "tmdbId": 4923,
+    "tmdbPosterPath": "/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "John Boorman"
+    ],
+    "cinematographers": [
+      "Geoffrey Unsworth"
+    ],
+    "cast": [
+      "Sean Connery",
+      "Charlotte Rampling",
+      "Sara Kestelman",
+      "John Alderton",
+      "Sally Anne Newton",
+      "Niall Buggy",
+      "Bosco Hogan",
+      "Jessica Swift"
+    ]
   },
   {
     "pod": "DP",
@@ -524,7 +817,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3nALKLPzi8hokRFWNzmLGh?si=t_5YcUGRQEegCoFNNl4Qmg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1603649593591-8b0d3cc243c78.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt4912910/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt4912910/?ref_=ext_shr_lnk",
+    "tmdbId": 353081,
+    "tmdbPosterPath": "/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Christopher McQuarrie"
+    ],
+    "cinematographers": [
+      "Rob Hardy",
+      "Hugues Espinasse"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Henry Cavill",
+      "Ving Rhames",
+      "Simon Pegg",
+      "Rebecca Ferguson",
+      "Sean Harris",
+      "Angela Bassett",
+      "Vanessa Kirby"
+    ]
   },
   {
     "pod": "DP",
@@ -549,7 +865,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/28YJMd2NiSVzNTAGwhDrCl?si=dTtRljiwSe6Vv0yr4-c3dw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1603649358107-37a698b1c835e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1392214/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1392214/?ref_=ext_shr_lnk",
+    "tmdbId": 146233,
+    "tmdbPosterPath": "/jsS3a3ep2KyBVmmiwaz3LvK49b1.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Jake Gyllenhaal",
+      "Viola Davis",
+      "Maria Bello",
+      "Terrence Howard",
+      "Melissa Leo",
+      "Paul Dano",
+      "Dylan Minnette"
+    ]
   },
   {
     "pod": "DP",
@@ -574,7 +913,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2GytL6yntP3JP9StdDhLJj?si=4zdRgEDhQ82vpv-BUSd0KQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1604367042871-748a4cdbf79c2.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt4925292/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt4925292/?ref_=ext_shr_lnk",
+    "tmdbId": 391713,
+    "tmdbPosterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "directors": [
+      "Greta Gerwig"
+    ],
+    "cinematographers": [
+      "Sam Levy"
+    ],
+    "cast": [
+      "Saoirse Ronan",
+      "Laurie Metcalf",
+      "Tracy Letts",
+      "Lucas Hedges",
+      "Timothée Chalamet",
+      "Beanie Feldstein",
+      "Lois Smith",
+      "Stephen McKinley Henderson"
+    ]
   },
   {
     "pod": "DP",
@@ -599,7 +960,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4uMKF7wutfVcWXhXSMQjJV?si=QNAv6aImQMusPG4d9sllog",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1604860196017-ea63891fff697.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0780504/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0780504/?ref_=ext_shr_lnk",
+    "tmdbId": 64690,
+    "tmdbPosterPath": "/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Nicolas Winding Refn"
+    ],
+    "cinematographers": [
+      "Newton Thomas Sigel"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "Carey Mulligan",
+      "Bryan Cranston",
+      "Albert Brooks",
+      "Oscar Isaac",
+      "Christina Hendricks",
+      "Ron Perlman",
+      "Kaden Leos"
+    ]
   },
   {
     "pod": "DP",
@@ -649,7 +1033,12 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0s6WCqqV1uzQReClPgBc5h?si=LNRXEqHPR0KsVevMFaVUXw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1610913654649-e5e6dc663e919.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0142032/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0142032/?ref_=ext_shr_lnk",
+    "tmdbId": 645530,
+    "genres": [],
+    "directors": [],
+    "cinematographers": [],
+    "cast": []
   },
   {
     "pod": "DP",
@@ -674,7 +1063,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2DTIeLMyW4LOVBtaBFL8zN?si=iw9IIGVpR-CztMxOcyNZ4Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1611611762755-d7c06b135f311.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1485796/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1485796/?ref_=ext_shr_lnk",
+    "tmdbId": 316029,
+    "tmdbPosterPath": "/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Michael Gracey"
+    ],
+    "cinematographers": [
+      "Seamus McGarvey"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Zac Efron",
+      "Michelle Williams",
+      "Rebecca Ferguson",
+      "Zendaya",
+      "Keala Settle",
+      "Yahya Abdul-Mateen II",
+      "Natasha Liu Bordizzo"
+    ]
   },
   {
     "pod": "DP",
@@ -699,7 +1109,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2eacjePsltrP7IYtTl5V9W?si=F3W_mRp-QgWChS-K-1-R4g",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1611961808049-129aa370f2d63.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt7984766/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt7984766/?ref_=ext_shr_lnk",
+    "tmdbId": 504949,
+    "tmdbPosterPath": "/8u0QBGUbZcBW59VEAdmeFl9g98N.jpg",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "directors": [
+      "David Michôd"
+    ],
+    "cinematographers": [
+      "Adam Arkapaw"
+    ],
+    "cast": [
+      "Timothée Chalamet",
+      "Joel Edgerton",
+      "Sean Harris",
+      "Tom Glynn-Carney",
+      "Lily-Rose Depp",
+      "Thomasin McKenzie",
+      "Robert Pattinson",
+      "Ben Mendelsohn"
+    ]
   },
   {
     "pod": "DP",
@@ -724,7 +1157,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2Pqacy25hFsnwR1dt2lgC3?si=kI7rP2_7Q9-5a2xblJNZCQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1612721724120-3d119626c6266.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1194238/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1194238/?ref_=ext_shr_lnk",
+    "tmdbId": 22302,
+    "tmdbPosterPath": "/k0xmtct9cSseksuFKMSXxM8hfni.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Pierre Gill"
+    ],
+    "cast": [
+      "Maxim Gaudette",
+      "Sébastien Huberdeau",
+      "Karine Vanasse",
+      "Evelyne Brochu",
+      "Martin Watier",
+      "Johanne-Marie Tremblay",
+      "Natalie Hamel-Roy",
+      "Pierre-Yves Cardinal"
+    ]
   },
   {
     "pod": "DP",
@@ -774,7 +1230,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6BDe1jNG8upytePBy9ddDd?si=pU6ZUN-4Q0m9sSfbqyl6uw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1614065544967-85e14c3c32232.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2042568/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2042568/?ref_=ext_shr_lnk",
+    "tmdbId": 86829,
+    "tmdbPosterPath": "/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "directors": [
+      "Joel Coen",
+      "Ethan Coen"
+    ],
+    "cinematographers": [
+      "Bruno Delbonnel"
+    ],
+    "cast": [
+      "Oscar Isaac",
+      "Carey Mulligan",
+      "Justin Timberlake",
+      "Ethan Phillips",
+      "Robin Bartlett",
+      "Max Casella",
+      "Jerry Grayson",
+      "Jeanine Serralles"
+    ]
   },
   {
     "pod": "DP",
@@ -799,7 +1278,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5G6zti0IeDPzZvVRK9calJ?si=DisG86jXTIShOWhaqurTgg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1614581275684-4b897c699e8a6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0089457/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089457/?ref_=ext_shr_lnk",
+    "tmdbId": 526,
+    "tmdbPosterPath": "/vJA2Fhw2uBMiVFdBde2kH7kZ2gw.jpg",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "directors": [
+      "Richard Donner"
+    ],
+    "cinematographers": [
+      "Vittorio Storaro"
+    ],
+    "cast": [
+      "Matthew Broderick",
+      "Rutger Hauer",
+      "Michelle Pfeiffer",
+      "Alfred Molina",
+      "John Wood",
+      "Leo McKern",
+      "Ken Hutchison",
+      "Giancarlo Prete"
+    ]
   },
   {
     "pod": "DP",
@@ -824,7 +1326,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/04KzeLmMjZ9peHApUIs7vo?si=pYa1ZgV8RZSmFqgqg0h-2w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1615187438352-fa2b987dd1c27.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0122690/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0122690/?ref_=ext_shr_lnk",
+    "tmdbId": 8195,
+    "tmdbPosterPath": "/AirrhRJjHwytOV0pdLu7YZ4DEyr.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "John Frankenheimer"
+    ],
+    "cinematographers": [
+      "Robert Fraisse"
+    ],
+    "cast": [
+      "Robert De Niro",
+      "Jean Reno",
+      "Natascha McElhone",
+      "Stellan Skarsgård",
+      "Skipp Sudduth",
+      "Jonathan Pryce",
+      "Sean Bean",
+      "Michael Lonsdale"
+    ]
   },
   {
     "pod": "DP",
@@ -874,7 +1399,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3BIK3ZP7Bpfx5BatIjK1OB?si=tGJMIvAeS0y8MpUtIv1b8w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1616360105885-e7020b09a7e74.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1074638/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1074638/?ref_=ext_shr_lnk",
+    "tmdbId": 37724,
+    "tmdbPosterPath": "/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "directors": [
+      "Sam Mendes"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Daniel Craig",
+      "Judi Dench",
+      "Javier Bardem",
+      "Ralph Fiennes",
+      "Naomie Harris",
+      "Bérénice Marlohe",
+      "Albert Finney",
+      "Ben Whishaw"
+    ]
   },
   {
     "pod": "DP",
@@ -899,7 +1447,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6GnTSYORxubCJZRRXlpewV?si=NV8EHDzwTW2Oj3QYkCNJ1w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1616955202773-f45e82f236cb5.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt6723592/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt6723592/?ref_=ext_shr_lnk",
+    "tmdbId": 577922,
+    "tmdbPosterPath": "/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cinematographers": [
+      "Hoyte van Hoytema"
+    ],
+    "cast": [
+      "John David Washington",
+      "Robert Pattinson",
+      "Elizabeth Debicki",
+      "Kenneth Branagh",
+      "Dimple Kapadia",
+      "Michael Caine",
+      "Martin Donovan",
+      "Fiona Dourif"
+    ]
   },
   {
     "pod": "DP",
@@ -924,7 +1495,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6KIaxreHdSTefzhOekbrjy?si=HJiIBPd8T_SV_RQApJnNKA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1617570894580-346f25deabe86.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0118715/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0118715/?ref_=ext_shr_lnk",
+    "tmdbId": 115,
+    "tmdbPosterPath": "/9mprbw31MGdd66LR0AQKoDMoFRv.jpg",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "directors": [
+      "Joel Coen"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Jeff Bridges",
+      "John Goodman",
+      "Julianne Moore",
+      "Steve Buscemi",
+      "David Huddleston",
+      "Philip Seymour Hoffman",
+      "Tara Reid",
+      "Philip Moon"
+    ]
   },
   {
     "pod": "DP",
@@ -949,7 +1542,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0CztNVOabQCr2aPIhEOZDV?si=CKJYMPzbQdO6Bgn0y756cQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1617990770635-02b839199a6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1403865/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1403865/?ref_=ext_shr_lnk",
+    "tmdbId": 44264,
+    "tmdbPosterPath": "/tCrB8pcjadZjsDk7rleGJaIv78k.jpg",
+    "genres": [
+      "Drama",
+      "Adventure",
+      "Western"
+    ],
+    "directors": [
+      "Joel Coen",
+      "Ethan Coen"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Jeff Bridges",
+      "Hailee Steinfeld",
+      "Matt Damon",
+      "Josh Brolin",
+      "Barry Pepper",
+      "Dakin Matthews",
+      "Jarlath Conroy",
+      "Paul Rae"
+    ]
   },
   {
     "pod": "DP",
@@ -974,7 +1591,23 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6ROSEUb19EqMt4dfMVhway?si=VxQPc88SSdm_wTfqzW_LwQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1618596655731-d7364bbb84bc8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt12676326/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt12676326/?ref_=ext_shr_lnk",
+    "tmdbId": 722913,
+    "tmdbPosterPath": "/bdidDnAZwchN5vTenoNuhGPJTri.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "directors": [
+      "Sam Levinson"
+    ],
+    "cinematographers": [
+      "Marcell Rév"
+    ],
+    "cast": [
+      "John David Washington",
+      "Zendaya"
+    ]
   },
   {
     "pod": "DP",
@@ -999,7 +1632,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2vddlexTvnHYeFpkq8M79y?si=6Z-IGkAkRbG9DNxu7nX5Iw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1619376258426-ffb3a63eef52f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0816692/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0816692/?ref_=ext_shr_lnk",
+    "tmdbId": 157336,
+    "tmdbPosterPath": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cinematographers": [
+      "Hoyte van Hoytema"
+    ],
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Michael Caine",
+      "Jessica Chastain",
+      "Casey Affleck",
+      "Wes Bentley",
+      "Topher Grace",
+      "Mackenzie Foy"
+    ]
   },
   {
     "pod": "DP",
@@ -1024,7 +1680,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0NXiyoVRwaYl9Z0bXpQc30?si=D4KRfe8LSLGMrl8jAE25TA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1619820153222-f52f8f380dcf5.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0082348/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082348/?ref_=ext_shr_lnk",
+    "tmdbId": 11527,
+    "tmdbPosterPath": "/cTWF6zkr5mUOnheowKODIijWYcN.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "directors": [
+      "John Boorman"
+    ],
+    "cinematographers": [
+      "Alex Thomson"
+    ],
+    "cast": [
+      "Nigel Terry",
+      "Nicol Williamson",
+      "Helen Mirren",
+      "Nicholas Clay",
+      "Paul Geoffrey",
+      "Cherie Lunghi",
+      "Robert Addie",
+      "Gabriel Byrne"
+    ]
   },
   {
     "pod": "DP",
@@ -1049,7 +1727,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5adnH8NJbM9BkGGTNyKoqr?si=JRDHKJpbS0SairmsUoQrAQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1620418401455-7dea6cbc7866f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0090756/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0090756/?ref_=ext_shr_lnk",
+    "tmdbId": 793,
+    "tmdbPosterPath": "/tzXuURjPzCqtA6eL0Cswq9wzFx0.jpg",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "David Lynch"
+    ],
+    "cinematographers": [
+      "Frederick Elmes"
+    ],
+    "cast": [
+      "Isabella Rossellini",
+      "Kyle MacLachlan",
+      "Dennis Hopper",
+      "Laura Dern",
+      "Hope Lange",
+      "Dean Stockwell",
+      "George Dickerson",
+      "Priscilla Pointer"
+    ]
   },
   {
     "pod": "DP",
@@ -1074,7 +1775,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5adnH8NJbM9BkGGTNyKoqr?si=JRDHKJpbS0SairmsUoQrAQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1621134311279-7186e7c3d1059.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1631867/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1631867/?ref_=ext_shr_lnk",
+    "tmdbId": 137113,
+    "tmdbPosterPath": "/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Doug Liman"
+    ],
+    "cinematographers": [
+      "Dion Beebe"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Emily Blunt",
+      "Brendan Gleeson",
+      "Bill Paxton",
+      "Jonas Armstrong",
+      "Tony Way",
+      "Kick Gurry",
+      "Franz Drameh"
+    ]
   },
   {
     "pod": "DP",
@@ -1099,7 +1822,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2Fwxi5H99xcoB3f7Xlgqbq?si=_2aMaFOBSz6lGaNb9ZewPA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1621827258447-facf8c73de5c.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0092106/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0092106/?ref_=ext_shr_lnk",
+    "tmdbId": 1857,
+    "tmdbPosterPath": "/xJ5W0mOAWCVaXmU0pBZh4NjSRv2.jpg",
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Action",
+      "Adventure",
+      "Family"
+    ],
+    "directors": [
+      "Nelson Shin"
+    ],
+    "cinematographers": [
+      "Masatoshi Fukui"
+    ],
+    "cast": [
+      "Judd Nelson",
+      "Peter Cullen",
+      "Frank Welker",
+      "Leonard Nimoy",
+      "Orson Welles",
+      "Casey Kasem",
+      "Dan Gilvezan",
+      "Scatman Crothers"
+    ]
   },
   {
     "pod": "DP",
@@ -1124,7 +1872,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6d4RsMgGqu5meSHuf4iZFu?si=SOFt8YB2SN-bUF3zJFwDNA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1622403109497-917a064a5d091.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0099819/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0099819/?ref_=ext_shr_lnk",
+    "tmdbId": 3101,
+    "tmdbPosterPath": "/8LdWJLUfEa5JeUJ7SljJQMIJikZ.jpg",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Romance"
+    ],
+    "directors": [
+      "Lawrence Kasdan"
+    ],
+    "cinematographers": [
+      "Owen Roizman"
+    ],
+    "cast": [
+      "Kevin Kline",
+      "Tracey Ullman",
+      "Joan Plowright",
+      "River Phoenix",
+      "William Hurt",
+      "Keanu Reeves",
+      "James Gammon",
+      "Jack Kehler"
+    ]
   },
   {
     "pod": "DP",
@@ -1174,7 +1945,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7LnrO2bsRYoWRra5cxqp40?si=1gnC1vH4R-q8km38rgyC4A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1623386624200-80d734487d01e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1791528/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1791528/?ref_=ext_shr_lnk",
+    "tmdbId": 171274,
+    "tmdbPosterPath": "/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Comedy"
+    ],
+    "directors": [
+      "Paul Thomas Anderson"
+    ],
+    "cinematographers": [
+      "Robert Elswit"
+    ],
+    "cast": [
+      "Joaquin Phoenix",
+      "Josh Brolin",
+      "Owen Wilson",
+      "Katherine Waterston",
+      "Reese Witherspoon",
+      "Benicio del Toro",
+      "Jena Malone",
+      "Joanna Newsom"
+    ]
   },
   {
     "pod": "DP",
@@ -1224,7 +2018,78 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6j7Xsw3EIuNus941PMk0Dm?si=uhSwr3-jReaaFJ7qnHBBjQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1624543934022-097448ce6eaea.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1255953/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1255953/?ref_=ext_shr_lnk",
+    "tmdbId": 46738,
+    "tmdbPosterPath": "/yH6DAQVgbyj72S66gN4WWVoTjuf.jpg",
+    "genres": [
+      "Drama",
+      "War",
+      "Mystery"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "André Turpin"
+    ],
+    "cast": [
+      "Lubna Azabal",
+      "Mélissa Désormeaux-Poulin",
+      "Maxim Gaudette",
+      "Rémy Girard",
+      "Allen Altman",
+      "Abdelghafour Elaaziz",
+      "Dominique Briand",
+      "Frédéric Paquet"
+    ]
+  },
+  {
+    "pod": "DP",
+    "season": 3,
+    "episode": 0,
+    "film": "WarGames (1983)",
+    "filmYear": 1983,
+    "releaseDate": "7/4/2021",
+    "length": "1:14:09",
+    "reviewer": "birria",
+    "guest": "Meredith Borders",
+    "mmmCount": 47,
+    "thatsGreatCount": 3,
+    "notableMoments": "- This movie holds up\n- Proposed DunePod group tour of NORAD\n- This movie totally pre-sages Jurassic Park. \n- Jason - \"This is the best movie ever made. They should have stopped making movies after this.\" \n- Jason expresses a negative opinion of the film's first director, Martin Brest, but does not call him a hack. (Brest directed Meet Joe Black, which both hosts saw to catch the Star Wars Episode I trailer.)",
+    "hFlex": "H got beat up Gymnastics Camp, but he could break dance so things worked out",
+    "jFlex": "Jason's Niece works at a nuclear facility. Jason had a Tempest arcade cabinet at home as a kid.",
+    "kevsQuestion": "N/A",
+    "tildaH": "Falken",
+    "tildaJason": "Berringer",
+    "tildaGuest": "Joshua",
+    "tildaCorey": null,
+    "showLink": "https://open.spotify.com/episode/79mCbNJecHohGNu5FRQGDy?si=EA31P3aiQUej3XsMDW848w",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1624898715728-af854f2233de.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt0086567/?ref_=ext_shr_lnk",
+    "tmdbId": 860,
+    "tmdbPosterPath": "/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
+    "genres": [
+      "Thriller",
+      "Science Fiction",
+      "Drama"
+    ],
+    "directors": [
+      "John Badham"
+    ],
+    "cinematographers": [
+      "William A. Fraker"
+    ],
+    "cast": [
+      "Matthew Broderick",
+      "Dabney Coleman",
+      "John Wood",
+      "Ally Sheedy",
+      "Barry Corbin",
+      "Juanin Clay",
+      "Kent Williams",
+      "Dennis Lipscomb"
+    ]
   },
   {
     "pod": "DP",
@@ -1249,7 +2114,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6T5sODXXmXqsYmsN2wcGGS?si=dGiE9jVuQ1-e0_OUrl3r6Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1624921707828-52c7b4140f1c1.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0119217/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0119217/?ref_=ext_shr_lnk",
+    "tmdbId": 489,
+    "tmdbPosterPath": "/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Gus Van Sant"
+    ],
+    "cinematographers": [
+      "Jean-Yves Escoffier"
+    ],
+    "cast": [
+      "Matt Damon",
+      "Robin Williams",
+      "Ben Affleck",
+      "Stellan Skarsgård",
+      "Minnie Driver",
+      "Casey Affleck",
+      "Cole Hauser",
+      "Vik Sahay"
+    ]
   },
   {
     "pod": "DP",
@@ -1274,7 +2160,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6n5kiCFD0mMRZPPLINP6rt?si=nHcMrnXoQIijQT52SrA_Dg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1626628503478-624d15b072ed8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0081633/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0081633/?ref_=ext_shr_lnk",
+    "tmdbId": 36819,
+    "tmdbPosterPath": "/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Science Fiction",
+      "Adventure",
+      "Comedy"
+    ],
+    "directors": [
+      "Terry Gilliam"
+    ],
+    "cinematographers": [
+      "Peter Biziou"
+    ],
+    "cast": [
+      "Craig Warnock",
+      "David Rappaport",
+      "Kenny Baker",
+      "Mike Edmonds",
+      "Malcolm Dixon",
+      "Tiny Ross",
+      "Jack Purvis",
+      "Ian Holm"
+    ]
   },
   {
     "pod": "DP",
@@ -1324,7 +2235,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/30EyqUMtiS1vDOWq7bzqVV?si=XAIQYtMVRbKT_Dr49_f1VQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1627248166537-3e45fae33f197.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0091369/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0091369/?ref_=ext_shr_lnk",
+    "tmdbId": 13597,
+    "tmdbPosterPath": "/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "directors": [
+      "Jim Henson"
+    ],
+    "cinematographers": [
+      "Alex Thomson"
+    ],
+    "cast": [
+      "David Bowie",
+      "Jennifer Connelly",
+      "Toby Froud",
+      "Shelley Thompson",
+      "Christopher Malcolm",
+      "Brian Henson",
+      "David Shaughnessy",
+      "Ron Mueck"
+    ]
   },
   {
     "pod": "DP",
@@ -1349,7 +2283,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/18a6toYY77YzALKzZgSXJA?si=YzdxfTNTQ3O2URLGsEkvFw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1627769007531-6b2aa20b0369.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0945513/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0945513/?ref_=ext_shr_lnk",
+    "tmdbId": 45612,
+    "tmdbPosterPath": "/nTr0lvAzeQmUjgSgDEHTJpnrxTz.jpg",
+    "genres": [
+      "Thriller",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "directors": [
+      "Duncan Jones"
+    ],
+    "cinematographers": [
+      "Don Burgess"
+    ],
+    "cast": [
+      "Jake Gyllenhaal",
+      "Michelle Monaghan",
+      "Vera Farmiga",
+      "Jeffrey Wright",
+      "Michael Arden",
+      "Cas Anvar",
+      "Russell Peters",
+      "Brent Skagford"
+    ]
   },
   {
     "pod": "DP",
@@ -1374,7 +2331,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/19VJdiRMrP48NNc9J6baNi?si=gdgK9NZvRlqN-uqt90oqJg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1628292352248-b481ddc4b14da.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0096895/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0096895/?ref_=ext_shr_lnk",
+    "tmdbId": 268,
+    "tmdbPosterPath": "/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Crime"
+    ],
+    "directors": [
+      "Tim Burton"
+    ],
+    "cinematographers": [
+      "Roger Pratt"
+    ],
+    "cast": [
+      "Michael Keaton",
+      "Jack Nicholson",
+      "Kim Basinger",
+      "Robert Wuhl",
+      "Pat Hingle",
+      "Billy Dee Williams",
+      "Michael Gough",
+      "Jack Palance"
+    ]
   },
   {
     "pod": "DP",
@@ -1399,7 +2379,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2IdPw4GPxuKwkYcTOWaPPr?si=gaMH7cyAS3i6Y48fRdl-RQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1629036280451-71bafba5a1882.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0078748/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0078748/?ref_=ext_shr_lnk",
+    "tmdbId": 348,
+    "tmdbPosterPath": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cinematographers": [
+      "Derek Vanlint"
+    ],
+    "cast": [
+      "Tom Skerritt",
+      "Sigourney Weaver",
+      "Veronica Cartwright",
+      "Harry Dean Stanton",
+      "John Hurt",
+      "Ian Holm",
+      "Yaphet Kotto",
+      "Bolaji Badejo"
+    ]
   },
   {
     "pod": "DP",
@@ -1424,7 +2426,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2vhEKpDxODcKAgcxf2YD0J?si=mLFwFLvSQNuOtJHGmitJyQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1629518454511-5dbb419edbe37.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0083658/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0083658/?ref_=ext_shr_lnk",
+    "tmdbId": 78,
+    "tmdbPosterPath": "/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+    "genres": [
+      "Science Fiction",
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cinematographers": [
+      "Jordan Cronenweth"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Rutger Hauer",
+      "Sean Young",
+      "Edward James Olmos",
+      "M. Emmet Walsh",
+      "Daryl Hannah",
+      "William Sanderson",
+      "Brion James"
+    ]
   },
   {
     "pod": "DP",
@@ -1449,7 +2474,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4gZsG3ISq9VNtVn5wqSUlk?si=ahH4O2EKThuZ128eN6QZ4Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1630259903276-487b47168409d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0092007/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0092007/?ref_=ext_shr_lnk",
+    "tmdbId": 168,
+    "tmdbPosterPath": "/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Leonard Nimoy"
+    ],
+    "cinematographers": [
+      "Donald Peterman"
+    ],
+    "cast": [
+      "William Shatner",
+      "Leonard Nimoy",
+      "DeForest Kelley",
+      "James Doohan",
+      "George Takei",
+      "Walter Koenig",
+      "Nichelle Nichols",
+      "Mark Lenard"
+    ]
   },
   {
     "pod": "DP",
@@ -1474,7 +2521,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1A7NsysDvljo7Y5iWdIGIT?si=XP0lu0AXR-Os24Wlu2cX3Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1630794274143-2b1890f4666d5.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0166924/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0166924/?ref_=ext_shr_lnk",
+    "tmdbId": 1018,
+    "tmdbPosterPath": "/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Mystery"
+    ],
+    "directors": [
+      "David Lynch"
+    ],
+    "cinematographers": [
+      "Peter Deming"
+    ],
+    "cast": [
+      "Naomi Watts",
+      "Laura Harring",
+      "Justin Theroux",
+      "Ann Miller",
+      "Mark Pellegrino",
+      "Robert Forster",
+      "Dan Hedaya",
+      "Angelo Badalamenti"
+    ]
   },
   {
     "pod": "DP",
@@ -1524,7 +2594,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4ohORifTNaefgFTn7Ktttg?si=vUflI5ytT_SXg1KvCJH4BA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1632094892996-4543addec2b54.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0119094/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0119094/?ref_=ext_shr_lnk",
+    "tmdbId": 754,
+    "tmdbPosterPath": "/69Xzn8UdPbVnmqSChKz2RTpoNfB.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Science Fiction"
+    ],
+    "directors": [
+      "John Woo"
+    ],
+    "cinematographers": [
+      "Oliver Wood"
+    ],
+    "cast": [
+      "John Travolta",
+      "Nicolas Cage",
+      "Joan Allen",
+      "Alessandro Nivola",
+      "Gina Gershon",
+      "Dominique Swain",
+      "Nick Cassavetes",
+      "Harve Presnell"
+    ]
   },
   {
     "pod": "DP",
@@ -1549,7 +2642,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3P0RtmIluSDBRLeiCmQ46p?si=LVkVeoMWTFGYF8-khK7hvg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1632447982639-8858fd9901585.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0093777/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093777/?ref_=ext_shr_lnk",
+    "tmdbId": 8852,
+    "tmdbPosterPath": "/jjcAOhtGuX4p8XvlVn1WXUT1jWi.jpg",
+    "genres": [
+      "Horror"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Gary B. Kibbe"
+    ],
+    "cast": [
+      "Donald Pleasence",
+      "Lisa Blount",
+      "Victor Wong Chi-Keung",
+      "Jameson Parker",
+      "Dennis Dun",
+      "Susan Blanchard",
+      "Anne Marie Howard",
+      "Ann Yen"
+    ]
   },
   {
     "pod": "DP",
@@ -1574,7 +2688,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0Ot4SMTTkK88YdaeY5q4yi?si=hB00kzflQ-S5anQVG7DGHw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1633353955748-2d7f7d1431006.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0082340/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082340/?ref_=ext_shr_lnk",
+    "tmdbId": 1103,
+    "tmdbPosterPath": "/vH9llaphjAssRGi0k7e75tD40Ce.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Kurt Russell",
+      "Lee Van Cleef",
+      "Ernest Borgnine",
+      "Donald Pleasence",
+      "Isaac Hayes",
+      "Season Hubley",
+      "Harry Dean Stanton",
+      "Adrienne Barbeau"
+    ]
   },
   {
     "pod": "DP",
@@ -1599,7 +2735,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/79F3WaFO80bFIzpRIPzFb6?si=zRtP9xW4QCOBqTu19_xFpg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1633637326230-519c0f4259e59.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0084787/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0084787/?ref_=ext_shr_lnk",
+    "tmdbId": 1091,
+    "tmdbPosterPath": "/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Kurt Russell",
+      "Keith David",
+      "Wilford Brimley",
+      "T.K. Carter",
+      "David Clennon",
+      "Richard Dysart",
+      "Charles Hallahan",
+      "Peter Maloney"
+    ]
   },
   {
     "pod": "DP",
@@ -1649,7 +2808,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5uwnsZo1NsltK2uiGMxvfq?si=i2juxHbuSWu0N9huxr4ZKg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1634326252283-b42ff794c809.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0246578/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0246578/?ref_=ext_shr_lnk",
+    "tmdbId": 141,
+    "tmdbPosterPath": "/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Mystery"
+    ],
+    "directors": [
+      "Richard Kelly"
+    ],
+    "cinematographers": [
+      "Steven Poster"
+    ],
+    "cast": [
+      "Jake Gyllenhaal",
+      "Jena Malone",
+      "James Duval",
+      "Drew Barrymore",
+      "Beth Grant",
+      "Maggie Gyllenhaal",
+      "Mary McDonnell",
+      "Holmes Osborne"
+    ]
   },
   {
     "pod": "DP",
@@ -1674,7 +2856,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4ePbmt2AMzQR30ADS0OIjc?si=P26DUBnVQjWN4BmOPVt_Ng",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1635051341697-27e3849e3d13e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1160419/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1160419/?ref_=ext_shr_lnk",
+    "tmdbId": 438631,
+    "tmdbPosterPath": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Greig Fraser"
+    ],
+    "cast": [
+      "Timothée Chalamet",
+      "Rebecca Ferguson",
+      "Oscar Isaac",
+      "Jason Momoa",
+      "Stellan Skarsgård",
+      "Stephen McKinley Henderson",
+      "Josh Brolin",
+      "Javier Bardem"
+    ]
   },
   {
     "pod": "DP",
@@ -1724,7 +2928,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0ezv2KS8tuefoTg7TzjQWE?si=oM1xM6QlSWaIe-7FHC9Vpg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1635532705868-71dd9024c420e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0114746/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0114746/?ref_=ext_shr_lnk",
+    "tmdbId": 63,
+    "tmdbPosterPath": "/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller",
+      "Mystery"
+    ],
+    "directors": [
+      "Terry Gilliam"
+    ],
+    "cinematographers": [
+      "Roger Pratt"
+    ],
+    "cast": [
+      "Bruce Willis",
+      "Madeleine Stowe",
+      "Brad Pitt",
+      "Christopher Plummer",
+      "David Morse",
+      "Jon Seda",
+      "Christopher Meloni",
+      "Joey Perillo"
+    ]
   },
   {
     "pod": "DP",
@@ -1749,7 +2976,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6ug0hp3ea0WcHLWKNR9BBa?si=blUscHvxTVa55YaSnMRT_A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1636320168523-e67086338a48.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0090605/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0090605/?ref_=ext_shr_lnk",
+    "tmdbId": 679,
+    "tmdbPosterPath": "/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "James Cameron"
+    ],
+    "cinematographers": [
+      "Adrian Biddle"
+    ],
+    "cast": [
+      "Sigourney Weaver",
+      "Carrie Henn",
+      "Michael Biehn",
+      "Paul Reiser",
+      "Lance Henriksen",
+      "Bill Paxton",
+      "William Hope",
+      "Jenette Goldstein"
+    ]
   },
   {
     "pod": "DP",
@@ -1774,7 +3024,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7AnHrrZY7hpVOV688jK3fW?si=qJRlqyHPRVS8hF0qKvMPgw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1636740437525-44a41c643e24a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0062622/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0062622/?ref_=ext_shr_lnk",
+    "tmdbId": 62,
+    "tmdbPosterPath": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+    "genres": [
+      "Science Fiction",
+      "Mystery",
+      "Adventure"
+    ],
+    "directors": [
+      "Stanley Kubrick"
+    ],
+    "cinematographers": [
+      "Geoffrey Unsworth"
+    ],
+    "cast": [
+      "Keir Dullea",
+      "Gary Lockwood",
+      "William Sylvester",
+      "Douglas Rain",
+      "Daniel Richter",
+      "Leonard Rossiter",
+      "Margaret Tyzack",
+      "Robert Beatty"
+    ]
   },
   {
     "pod": "DP",
@@ -1799,7 +3072,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4WGXDs1csCbQW1lylm6dgq?si=nrT2tMxNTYi1Kx_2LvSX7g",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1637588302762-5aa10091dd39d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0206634/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0206634/?ref_=ext_shr_lnk",
+    "tmdbId": 9693,
+    "tmdbPosterPath": "/lQcXgb0fFzffnLV5WY0Q0X2WW7E.jpg",
+    "genres": [
+      "Drama",
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Alfonso Cuarón"
+    ],
+    "cinematographers": [
+      "Emmanuel Lubezki"
+    ],
+    "cast": [
+      "Clive Owen",
+      "Clare-Hope Ashitey",
+      "Chiwetel Ejiofor",
+      "Julianne Moore",
+      "Michael Caine",
+      "Pam Ferris",
+      "Charlie Hunnam",
+      "Danny Huston"
+    ]
   },
   {
     "pod": "DP",
@@ -1824,7 +3121,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1Yoa8EntTnVQNXQtCRlIK0?si=v70L1sRJQ1y4quQ1NRMdyw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1637964973966-74bb112ab2fbc.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0118884/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0118884/?ref_=ext_shr_lnk",
+    "tmdbId": 686,
+    "tmdbPosterPath": "/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+    "genres": [
+      "Drama",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "directors": [
+      "Robert Zemeckis"
+    ],
+    "cinematographers": [
+      "Don Burgess"
+    ],
+    "cast": [
+      "Jodie Foster",
+      "Matthew McConaughey",
+      "James Woods",
+      "John Hurt",
+      "Tom Skerritt",
+      "William Fichtner",
+      "David Morse",
+      "Angela Bassett"
+    ]
   },
   {
     "pod": "DP",
@@ -1849,7 +3169,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3yEYR49nrnHX63ioLOOPAT?si=Ik6KMuXVRhWcZ_AjYpsVQQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1638543786828-7bfd406bf265e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0056172/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0056172/?ref_=ext_shr_lnk",
+    "tmdbId": 947,
+    "tmdbPosterPath": "/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
+    "genres": [
+      "Adventure",
+      "History",
+      "War"
+    ],
+    "directors": [
+      "David Lean"
+    ],
+    "cinematographers": [
+      "Freddie Young"
+    ],
+    "cast": [
+      "Peter O'Toole",
+      "Alec Guinness",
+      "Omar Sharif",
+      "Anthony Quinn",
+      "Jack Hawkins",
+      "José Ferrer",
+      "Anthony Quayle",
+      "Claude Rains"
+    ]
   },
   {
     "pod": "DP",
@@ -1874,7 +3217,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1zGH8zt4UhDcJsofXLcAfY?si=dxWBjGb5Sm-e62mlDhb2GA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1639156052382-4d09970c4a741.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1371111/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1371111/?ref_=ext_shr_lnk",
+    "tmdbId": 83542,
+    "tmdbPosterPath": "/8naVv2Xu3rWI5JKHz0vCujx6GaJ.jpg",
+    "genres": [
+      "Drama",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Lilly Wachowski",
+      "Lana Wachowski",
+      "Tom Tykwer"
+    ],
+    "cinematographers": [
+      "Frank Griebe",
+      "John Toll"
+    ],
+    "cast": [
+      "Tom Hanks",
+      "Halle Berry",
+      "Jim Broadbent",
+      "Hugo Weaving",
+      "Jim Sturgess",
+      "Bae Doona",
+      "Ben Whishaw",
+      "James D'Arcy"
+    ]
   },
   {
     "pod": "DP",
@@ -1899,7 +3267,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3yGdCEN9AcCev0gyvl9q2b?si=KbvithncSYabeTHeXfboCA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1639753609964-57b4ceb44ac23.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0095016/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0095016/?ref_=ext_shr_lnk",
+    "tmdbId": 562,
+    "tmdbPosterPath": "/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "John McTiernan"
+    ],
+    "cinematographers": [
+      "Jan de Bont"
+    ],
+    "cast": [
+      "Bruce Willis",
+      "Alan Rickman",
+      "Alexander Godunov",
+      "Bonnie Bedelia",
+      "Reginald VelJohnson",
+      "Paul Gleason",
+      "De'voreaux White",
+      "William Atherton"
+    ]
   },
   {
     "pod": "DP",
@@ -1924,7 +3314,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3S1bJRYQx6qOvMgr9bGGre?si=RhMleuHRRjKKeyqEwFoczg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1639754993993-f95bd411b34fa.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0084827/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0084827/?ref_=ext_shr_lnk",
+    "tmdbId": 97,
+    "tmdbPosterPath": "/jigY9B6TKz4qlfikZcd18qtzTK4.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Steven Lisberger"
+    ],
+    "cinematographers": [
+      "Bruce Logan"
+    ],
+    "cast": [
+      "Jeff Bridges",
+      "Bruce Boxleitner",
+      "David Warner",
+      "Cindy Morgan",
+      "Barnard Hughes",
+      "Dan Shor",
+      "Peter Jurasik",
+      "Tony Stephano"
+    ]
   },
   {
     "pod": "DP",
@@ -1949,7 +3362,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6kae9rDZidKizh9xoAhgYF?si=WDqHPMtxTJed5r-z-f12HQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1639767026976-c9cade2ecd46d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1104001/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1104001/?ref_=ext_shr_lnk",
+    "tmdbId": 20526,
+    "tmdbPosterPath": "/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Joseph Kosinski"
+    ],
+    "cinematographers": [
+      "Claudio Miranda"
+    ],
+    "cast": [
+      "Garrett Hedlund",
+      "Olivia Wilde",
+      "Jeff Bridges",
+      "Bruce Boxleitner",
+      "James Frain",
+      "Beau Garrett",
+      "Michael Sheen",
+      "Anis Cheurfa"
+    ]
   },
   {
     "pod": "DP",
@@ -1974,7 +3410,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/65tyJ8kd8hYue7o6rtZn1s?si=ELt43hh6T0qJezlQWcY7dQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1641776395018-d954658e1e8b2.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt8847712/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt8847712/?ref_=ext_shr_lnk",
+    "tmdbId": 542178,
+    "tmdbPosterPath": "/6JXR3KJH5roiBCjWFt09xfgxHZc.jpg",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cinematographers": [
+      "Robert D. Yeoman"
+    ],
+    "cast": [
+      "Benicio del Toro",
+      "Adrien Brody",
+      "Tilda Swinton",
+      "Léa Seydoux",
+      "Frances McDormand",
+      "Timothée Chalamet",
+      "Lyna Khoudri",
+      "Jeffrey Wright"
+    ]
   },
   {
     "pod": "DP",
@@ -1999,32 +3457,54 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7tKbDbZsjCs9lLJuxX77LX?si=dQaaA8qITBqd_hQB8mkjIw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1642444628977-92de0508a366d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0087332/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0087332/?ref_=ext_shr_lnk",
+    "tmdbId": 620,
+    "tmdbPosterPath": "/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ],
+    "directors": [
+      "Ivan Reitman"
+    ],
+    "cinematographers": [
+      "László Kovács"
+    ],
+    "cast": [
+      "Bill Murray",
+      "Dan Aykroyd",
+      "Sigourney Weaver",
+      "Harold Ramis",
+      "Rick Moranis",
+      "Annie Potts",
+      "William Atherton",
+      "Ernie Hudson"
+    ]
   },
   {
     "pod": "DP",
     "season": 5,
     "episode": 0,
-    "film": "Dune (1965) EPISODE 1: SPECIAL EDITION",
-    "filmYear": null,
-    "releaseDate": "6/26/2022",
-    "length": "1:31:48",
-    "reviewer": "Space Monkey",
-    "guest": "Proto",
-    "mmmCount": 15,
-    "thatsGreatCount": 3,
-    "notableMoments": "N/A",
+    "film": "ON DECK - STATION ELEVEN (2021)",
+    "filmYear": 2021,
+    "releaseDate": "1/20/2022",
+    "length": "1:11:23",
+    "reviewer": "birria",
+    "guest": "ctcher / Sophie Shin",
+    "mmmCount": 9,
+    "thatsGreatCount": 1,
+    "notableMoments": "- Not Dune Pod - On Deck podcast with Tapedeck family members H, Jason, ctcher and Sophie. \n- H is the Patrick Sommerville of Dune Pod.",
     "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "What are you most afraid of losing in Dune Part Two?/If you could make another podcast, what would it be about?",
+    "kevsQuestion": "N/A",
     "tildaH": "N/A",
     "tildaJason": "N/A",
     "tildaGuest": null,
     "tildaCorey": null,
-    "showLink": "https://open.spotify.com/episode/2jFiojA15bUwI8hAVN63ZK?si=Kn5aP_xPR7elQGuSrVUeCA",
-    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1656293781962-ff79474cccb53.jpg",
+    "showLink": "https://open.spotify.com/episode/5ccWKlVvdFF1FBSu4rQqtN?si=NxdfZZ8eR_y7oLZYetS8iA",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1642720894357-a5b21e32c4278.jpg",
     "letterboxdLink": "",
-    "imdbLink": ""
+    "imdbLink": "https://www.imdb.com/title/tt10574236/?ref_=ext_shr_lnk"
   },
   {
     "pod": "DP",
@@ -2049,7 +3529,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/46us1rsAXRpevBADC5chRv?si=M2CnqkOQQfGNBHkp0y2aAA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1642781525674-d2ca3cb7c4bcc.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0120201/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120201/?ref_=ext_shr_lnk",
+    "tmdbId": 563,
+    "tmdbPosterPath": "/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Paul Verhoeven"
+    ],
+    "cinematographers": [
+      "Jost Vacano"
+    ],
+    "cast": [
+      "Casper Van Dien",
+      "Dina Meyer",
+      "Denise Richards",
+      "Jake Busey",
+      "Neil Patrick Harris",
+      "Clancy Brown",
+      "Michael Ironside",
+      "Patrick Muldoon"
+    ]
   },
   {
     "pod": "DP",
@@ -2074,7 +3578,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2V20Jd5GLHZyRwxi0YYFnh?si=cR8l8FvoTpi8FwEV5Wh-nw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1643468278910-612a10f9d315b.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0120863/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120863/?ref_=ext_shr_lnk",
+    "tmdbId": 8741,
+    "tmdbPosterPath": "/seMydAaoxQP6F0xbE1jOcTmn5Jr.jpg",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "directors": [
+      "Terrence Malick"
+    ],
+    "cinematographers": [
+      "John Toll"
+    ],
+    "cast": [
+      "Jim Caviezel",
+      "Nick Nolte",
+      "Sean Penn",
+      "Ben Chaplin",
+      "Elias Koteas",
+      "John Cusack",
+      "Dash Mihok",
+      "John C. Reilly"
+    ]
   },
   {
     "pod": "DP",
@@ -2099,7 +3626,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2nob9V0bXgYhZIaMGWcINA?si=tGdk5YRRQ1mnudm0BNflEA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1644083312196-7b8da0ed3ae59.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0115736/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0115736/?ref_=ext_shr_lnk",
+    "tmdbId": 9303,
+    "tmdbPosterPath": "/9qAy6UWVw44dGrsyKrdEMt5qIUM.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "cinematographers": [
+      "Bill Pope"
+    ],
+    "cast": [
+      "Gina Gershon",
+      "Jennifer Tilly",
+      "Joe Pantoliano",
+      "John P. Ryan",
+      "Christopher Meloni",
+      "Richard C. Sarafian",
+      "Barry Kivel",
+      "Mary Mara"
+    ]
   },
   {
     "pod": "DP",
@@ -2124,7 +3675,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6zWu8yupQNPajx38Ri6iBa?si=UStsBqCLQ8q4Nuj0FZIpfQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1644612565739-d6d2c66e31b3c.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0266697/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0266697/?ref_=ext_shr_lnk",
+    "tmdbId": 24,
+    "tmdbPosterPath": "/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "directors": [
+      "Quentin Tarantino"
+    ],
+    "cinematographers": [
+      "Robert Richardson"
+    ],
+    "cast": [
+      "Uma Thurman",
+      "Lucy Liu",
+      "Vivica A. Fox",
+      "Daryl Hannah",
+      "David Carradine",
+      "Michael Madsen",
+      "Julie Dreyfus",
+      "Chiaki Kuriyama"
+    ]
   },
   {
     "pod": "DP",
@@ -2149,7 +3722,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5G7Luw5gKXjOU3qz56XXri?si=_buXdETrS3iT5W8Ik1NTcA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1645212971000-7a5c8a47c210a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0378194/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0378194/?ref_=ext_shr_lnk",
+    "tmdbId": 393,
+    "tmdbPosterPath": "/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "Quentin Tarantino"
+    ],
+    "cinematographers": [
+      "Robert Richardson"
+    ],
+    "cast": [
+      "Uma Thurman",
+      "David Carradine",
+      "Daryl Hannah",
+      "Michael Madsen",
+      "Gordon Liu Chia-Hui",
+      "Michael Parks",
+      "Perla Haney-Jardine",
+      "Vivica A. Fox"
+    ]
   },
   {
     "pod": "DP",
@@ -2174,7 +3770,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2bu3jajZ7fuPd5cjx7J294?si=v3I9ZNNGSYWITTd1lPin9Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1646409711940-3a7702e982be2.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0465538/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0465538/?ref_=ext_shr_lnk",
+    "tmdbId": 4566,
+    "tmdbPosterPath": "/hhkW4yVIGo8Bee3UITKvqOvhNMG.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Tony Gilroy"
+    ],
+    "cinematographers": [
+      "Robert Elswit"
+    ],
+    "cast": [
+      "George Clooney",
+      "Tom Wilkinson",
+      "Tilda Swinton",
+      "Michael O'Keefe",
+      "Sydney Pollack",
+      "Danielle Skraastad",
+      "Wai Chan",
+      "Alberto Vazquez"
+    ]
   },
   {
     "pod": "DP",
@@ -2199,7 +3818,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1MmWpklu14OzklmBsSmRnW?si=9Y6iEfhcSgSiamaSZiCPvA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1647031953223-9376fccb96d55.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0086856/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0086856/?ref_=ext_shr_lnk",
+    "tmdbId": 11379,
+    "tmdbPosterPath": "/jWZh2ChereoxKgTl3AmSAKNpnmO.jpg",
+    "genres": [
+      "Science Fiction",
+      "Comedy",
+      "Adventure",
+      "Romance"
+    ],
+    "directors": [
+      "W.D. Richter"
+    ],
+    "cinematographers": [
+      "Fred J. Koenekamp"
+    ],
+    "cast": [
+      "Peter Weller",
+      "John Lithgow",
+      "Ellen Barkin",
+      "Jeff Goldblum",
+      "Christopher Lloyd",
+      "Lewis Smith",
+      "Rosalind Cash",
+      "Robert Ito"
+    ]
   },
   {
     "pod": "DP",
@@ -2224,7 +3867,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0EvcoYyOwQMZpXCT365mKt?si=_x5yhIOISrW2nhcPHzA8ag",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1647883506787-25a621021a144.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0104348/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0104348/?ref_=ext_shr_lnk",
+    "tmdbId": 9504,
+    "tmdbPosterPath": "/nGZCeCfNseq1ee3cJLBp0rH0djT.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "directors": [
+      "James Foley"
+    ],
+    "cinematographers": [
+      "Juan Ruiz Anchía"
+    ],
+    "cast": [
+      "Al Pacino",
+      "Jack Lemmon",
+      "Alec Baldwin",
+      "Alan Arkin",
+      "Ed Harris",
+      "Kevin Spacey",
+      "Jonathan Pryce",
+      "Bruce Altman"
+    ]
   },
   {
     "pod": "DP",
@@ -2249,7 +3915,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3tW6l9A3v2gE3pk7o4ZbYm?si=UriNRMhaTCyHi0BPTl-VXA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1648129377477-947b2f33aa5fb.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0085811/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0085811/?ref_=ext_shr_lnk",
+    "tmdbId": 849,
+    "tmdbPosterPath": "/izDbySIrTmID0Nh6UqcWrUvOMjU.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Peter Yates"
+    ],
+    "cinematographers": [
+      "Peter Suschitzky"
+    ],
+    "cast": [
+      "Ken Marshall",
+      "Lysette Anthony",
+      "Freddie Jones",
+      "Francesca Annis",
+      "Alun Armstrong",
+      "David Battley",
+      "Bernard Bresslaw",
+      "Liam Neeson"
+    ]
   },
   {
     "pod": "DP",
@@ -2274,7 +3964,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2GwpxJqmWxV7nqz0zIWM4H?si=kLSz5DDBRUywhF3HUzP22Q",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1648769981139-e8d14aba5caf9.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0118929/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0118929/?ref_=ext_shr_lnk",
+    "tmdbId": 2666,
+    "tmdbPosterPath": "/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+    "genres": [
+      "Mystery",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Alex Proyas"
+    ],
+    "cinematographers": [
+      "Dariusz Wolski"
+    ],
+    "cast": [
+      "Rufus Sewell",
+      "William Hurt",
+      "Kiefer Sutherland",
+      "Jennifer Connelly",
+      "Richard O'Brien",
+      "Ian Richardson",
+      "Bruce Spence",
+      "Colin Friels"
+    ]
   },
   {
     "pod": "DP",
@@ -2299,7 +4011,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2pB32WqaKMajDgpSvho4Xx?si=SP1TC1pBSt-JuU3jMqlIAg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1649342602104-955634a11d804.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt8579674/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt8579674/?ref_=ext_shr_lnk",
+    "tmdbId": 530915,
+    "tmdbPosterPath": "/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+    "genres": [
+      "War",
+      "History",
+      "Drama",
+      "Action"
+    ],
+    "directors": [
+      "Sam Mendes"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "George MacKay",
+      "Dean-Charles Chapman",
+      "Mark Strong",
+      "Andrew Scott",
+      "Richard Madden",
+      "Claire Duburcq",
+      "Colin Firth",
+      "Benedict Cumberbatch"
+    ]
   },
   {
     "pod": "DP",
@@ -2349,7 +4085,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5KrsGTEtmRdcSVgHaj8Nbo?si=b4SqLUUbSaSgPFJswURs3w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1650641721483-a0af12765a239.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0108358/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0108358/?ref_=ext_shr_lnk",
+    "tmdbId": 11969,
+    "tmdbPosterPath": "/wGFCvylul8iEQhJOKfwZGGvXMzA.jpg",
+    "genres": [
+      "Western",
+      "Action"
+    ],
+    "directors": [
+      "George P. Cosmatos"
+    ],
+    "cinematographers": [
+      "William A. Fraker"
+    ],
+    "cast": [
+      "Kurt Russell",
+      "Val Kilmer",
+      "Michael Biehn",
+      "Powers Boothe",
+      "Robert John Burke",
+      "Dana Delany",
+      "Sam Elliott",
+      "Stephen Lang"
+    ]
   },
   {
     "pod": "DP",
@@ -2374,7 +4132,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/58HtkueEiq30yvAndoHsoH?si=nLub1A2dRdKhZO2PTgoITg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1651239244176-d7bcac668f551.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0084516/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0084516/?ref_=ext_shr_lnk",
+    "tmdbId": 609,
+    "tmdbPosterPath": "/m5AKo8iZAYulI87Uzxkn87vRY07.jpg",
+    "genres": [
+      "Horror"
+    ],
+    "directors": [
+      "Tobe Hooper"
+    ],
+    "cinematographers": [
+      "Matthew F. Leonetti"
+    ],
+    "cast": [
+      "JoBeth Williams",
+      "Craig T. Nelson",
+      "Beatrice Straight",
+      "Dominique Dunne",
+      "Heather O'Rourke",
+      "Oliver Robins",
+      "Zelda Rubinstein",
+      "Richard Lawson"
+    ]
   },
   {
     "pod": "DP",
@@ -2399,7 +4178,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/58HtkueEiq30yvAndoHsoH?si=nLub1A2dRdKhZO2PTgoITg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1651844799088-c1e725cda3308.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0093822/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093822/?ref_=ext_shr_lnk",
+    "tmdbId": 378,
+    "tmdbPosterPath": "/niKyjOqiB4XVl0BqgKTHIlHOCeF.jpg",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "directors": [
+      "Joel Coen"
+    ],
+    "cinematographers": [
+      "Barry Sonnenfeld"
+    ],
+    "cast": [
+      "Nicolas Cage",
+      "Holly Hunter",
+      "Trey Wilson",
+      "John Goodman",
+      "William Forsythe",
+      "Sam McMurray",
+      "Frances McDormand",
+      "Randall \"Tex\" Cobb"
+    ]
   },
   {
     "pod": "DP",
@@ -2424,7 +4225,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4n3cf6XjHOPaTdUJMNmoeA?si=xxpwvqLLQwCiZFME4wgrtA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1652631347892-de0a1496f6863.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0093185/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093185/?ref_=ext_shr_lnk",
+    "tmdbId": 12476,
+    "tmdbPosterPath": "/tImKQZsw5rx5jyr70Uc3Pxym0LJ.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Horror"
+    ],
+    "directors": [
+      "Jack Sholder"
+    ],
+    "cinematographers": [
+      "Jacques Haitkin"
+    ],
+    "cast": [
+      "Kyle MacLachlan",
+      "Michael Nouri",
+      "Claudia Christian",
+      "Clarence Felder",
+      "Clu Gulager",
+      "Ed O'Ross",
+      "William Boyett",
+      "Richard Brooks"
+    ]
   },
   {
     "pod": "DP",
@@ -2449,7 +4273,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0pQKFsuAG0dSAl3JgDoxay?si=AHxwU19iT1mHeaTyvD5EsA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1653062932000-f4ca71bc86524.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0105435/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0105435/?ref_=ext_shr_lnk",
+    "tmdbId": 2322,
+    "tmdbPosterPath": "/l2pIGwCvpZEpBuMb55YBl6A04Jv.jpg",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "directors": [
+      "Phil Alden Robinson"
+    ],
+    "cinematographers": [
+      "John Lindley"
+    ],
+    "cast": [
+      "Robert Redford",
+      "Sidney Poitier",
+      "David Strathairn",
+      "Dan Aykroyd",
+      "River Phoenix",
+      "Ben Kingsley",
+      "Denise Dowse",
+      "Timothy Busfield"
+    ]
   },
   {
     "pod": "DP",
@@ -2474,7 +4321,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2UBcwkQRTRodhorzvmFxxt?si=dllL64UvQqygvA_PyN-smA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1653672341188-03ec1cf7796a7.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0119116/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0119116/?ref_=ext_shr_lnk",
+    "tmdbId": 18,
+    "tmdbPosterPath": "/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Luc Besson"
+    ],
+    "cinematographers": [
+      "Thierry Arbogast",
+      "Nick Tebbet"
+    ],
+    "cast": [
+      "Bruce Willis",
+      "Milla Jovovich",
+      "Gary Oldman",
+      "Ian Holm",
+      "Chris Tucker",
+      "Luke Perry",
+      "Brion James",
+      "Tommy Lister Jr."
+    ]
   },
   {
     "pod": "DP",
@@ -2499,7 +4370,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4RMKQnmwT5ShybNsxlGnLj?si=ya0jtDr5R-uN08L3g3tUIw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1654183328483-3f0d21ec8aacb.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0074812/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0074812/?ref_=ext_shr_lnk",
+    "tmdbId": 10803,
+    "tmdbPosterPath": "/v3ILN8ROPcrNRJ8S7GH24JyihH8.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Michael Anderson"
+    ],
+    "cinematographers": [
+      "Ernest Laszlo"
+    ],
+    "cast": [
+      "Michael York",
+      "Richard Jordan",
+      "Jenny Agutter",
+      "Roscoe Lee Browne",
+      "Farrah Fawcett-Majors",
+      "Michael Anderson Jr.",
+      "Peter Ustinov",
+      "Randolph Roberts"
+    ]
   },
   {
     "pod": "DP",
@@ -2524,7 +4417,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1G0xsKMx4T4eVDKfJv4zBp?si=TAOrapjpTYmTi6hMPGzPqQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1655050791326-8e8358099671a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0091203/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0091203/?ref_=ext_shr_lnk",
+    "tmdbId": 8009,
+    "tmdbPosterPath": "/8Z8dptJEypuLoOQro1WugD855YE.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Fantasy"
+    ],
+    "directors": [
+      "Russell Mulcahy"
+    ],
+    "cinematographers": [
+      "Gerry Fisher"
+    ],
+    "cast": [
+      "Christopher Lambert",
+      "Roxanne Hart",
+      "Clancy Brown",
+      "Sean Connery",
+      "Beatie Edney",
+      "Alan North",
+      "Jon Polito",
+      "Sheila Gish"
+    ]
   },
   {
     "pod": "DP",
@@ -2549,7 +4465,55 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6MBSEJ6VBGRdsL7cdlLon4?si=2R-KwaqbQguKmY6T1tM64A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1655388089114-75eec8c93d531.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0078869/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0078869/?ref_=ext_shr_lnk",
+    "tmdbId": 9570,
+    "tmdbPosterPath": "/gCqOJWvOK5UPospyrLANKfwRBlG.jpg",
+    "genres": [
+      "Adventure",
+      "Science Fiction",
+      "Action"
+    ],
+    "directors": [
+      "Gary Nelson"
+    ],
+    "cinematographers": [
+      "Frank V. Phillips"
+    ],
+    "cast": [
+      "Maximilian Schell",
+      "Anthony Perkins",
+      "Robert Forster",
+      "Joseph Bottoms",
+      "Yvette Mimieux",
+      "Ernest Borgnine",
+      "Tom McLoughlin",
+      "Roddy McDowall"
+    ]
+  },
+  {
+    "pod": "DP",
+    "season": 5,
+    "episode": 0,
+    "film": "Dune (1965) EPISODE 1: SPECIAL EDITION",
+    "filmYear": null,
+    "releaseDate": "6/26/2022",
+    "length": "1:31:48",
+    "reviewer": "Space Monkey",
+    "guest": "Proto",
+    "mmmCount": 15,
+    "thatsGreatCount": 3,
+    "notableMoments": "N/A",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "What are you most afraid of losing in Dune Part Two?/If you could make another podcast, what would it be about?",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://open.spotify.com/episode/2jFiojA15bUwI8hAVN63ZK?si=Kn5aP_xPR7elQGuSrVUeCA",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1656293781962-ff79474cccb53.jpg",
+    "letterboxdLink": "",
+    "imdbLink": ""
   },
   {
     "pod": "DP",
@@ -2574,7 +4538,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2jFiojA15bUwI8hAVN63ZK?si=Kn5aP_xPR7elQGuSrVUeCA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1656684168374-8214b37eb9f9b.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0113277/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113277/?ref_=ext_shr_lnk",
+    "tmdbId": 949,
+    "tmdbPosterPath": "/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Action"
+    ],
+    "directors": [
+      "Michael Mann"
+    ],
+    "cinematographers": [
+      "Dante Spinotti"
+    ],
+    "cast": [
+      "Al Pacino",
+      "Robert De Niro",
+      "Val Kilmer",
+      "Jon Voight",
+      "Tom Sizemore",
+      "Diane Venora",
+      "Amy Brenneman",
+      "Ashley Judd"
+    ]
   },
   {
     "pod": "DP",
@@ -2599,7 +4586,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0bF4GYDBHtDciSFmHpJHIs?si=cHmX-8dpRPODwRncmEHZgw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1657287847096-a4d26960b8b3c.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0114436/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0114436/?ref_=ext_shr_lnk",
+    "tmdbId": 10802,
+    "tmdbPosterPath": "/o4HT3Ap5c99W4FYpdXUtTvxGgPc.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Paul Verhoeven"
+    ],
+    "cinematographers": [
+      "Jost Vacano"
+    ],
+    "cast": [
+      "Elizabeth Berkley",
+      "Kyle MacLachlan",
+      "Gina Gershon",
+      "Glenn Plummer",
+      "Robert Davi",
+      "Alan Rachins",
+      "Gina Ravera",
+      "Lin Tucci"
+    ]
   },
   {
     "pod": "DP",
@@ -2624,20 +4632,43 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6zIdlk3lSEQRV2xSqSMQEW?si=Pys0MmrLSt6nurmEn3sOZg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1657910404161-8b498a6603ed6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0405336/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0405336/?ref_=ext_shr_lnk",
+    "tmdbId": 4723,
+    "tmdbPosterPath": "/7dbIDQ80z4bxiDlAvxRwc5TI44C.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller",
+      "Comedy"
+    ],
+    "directors": [
+      "Richard Kelly"
+    ],
+    "cinematographers": [
+      "Steven Poster"
+    ],
+    "cast": [
+      "Dwayne Johnson",
+      "Seann William Scott",
+      "Sarah Michelle Gellar",
+      "Mandy Moore",
+      "Justin Timberlake",
+      "Miranda Richardson",
+      "Wallace Shawn",
+      "Bai Ling"
+    ]
   },
   {
     "pod": "DP",
     "season": 6,
     "episode": 0,
-    "film": "BONUS: Silo Hugh Howey Interview & Episode 3 (2023)",
-    "filmYear": 2023,
-    "releaseDate": "5/16/2023",
-    "length": "0:59:23",
+    "film": "1 Year Anniversary of the Dune IMAX Sneak Preview Event",
+    "filmYear": null,
+    "releaseDate": "7/21/2022",
+    "length": "0:59:10",
     "reviewer": "Space Monkey",
-    "guest": "Hugh Howey",
-    "mmmCount": 40,
-    "thatsGreatCount": 1,
+    "guest": "Danny Haas",
+    "mmmCount": 39,
+    "thatsGreatCount": 2,
     "notableMoments": "N/A",
     "hFlex": "N/A",
     "jFlex": "N/A",
@@ -2646,10 +4677,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "tildaJason": "N/A",
     "tildaGuest": null,
     "tildaCorey": null,
-    "showLink": "https://open.spotify.com/episode/3OzOsy53WlgVB6tvPGcH4l?si=pHgt-pKiRI6uEjVTT2ydlg",
-    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1684215203068-b0ee4f3972392.jpg",
+    "showLink": "https://open.spotify.com/episode/6QVrMlEazpom1NLEZy1qbN?si=ITo-BNRrQbKU4M7DOriLsw",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1658424426910-96abf6ec26a05.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt14688458/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1160419/?ref_=ext_shr_lnk"
   },
   {
     "pod": "DP",
@@ -2674,7 +4705,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6QVrMlEazpom1NLEZy1qbN?si=ITo-BNRrQbKU4M7DOriLsw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1658412142453-de00892d7449a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1192628/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1192628/?ref_=ext_shr_lnk",
+    "tmdbId": 44896,
+    "tmdbPosterPath": "/A5MP1guV8pbruieG0tnpPIbaJtt.jpg",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Western",
+      "Adventure"
+    ],
+    "directors": [
+      "Gore Verbinski"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Johnny Depp",
+      "Isla Fisher",
+      "Ned Beatty",
+      "Bill Nighy",
+      "Abigail Breslin",
+      "Alfred Molina",
+      "Stephen Root",
+      "Harry Dean Stanton"
+    ]
   },
   {
     "pod": "DP",
@@ -2699,7 +4755,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7esvXbS4FjLa4ZnbPW0Uk4?si=l2ft58X_QLGfjs3ET4ttvg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1659103171906-b41705b41335b.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0113481/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113481/?ref_=ext_shr_lnk",
+    "tmdbId": 9886,
+    "tmdbPosterPath": "/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Robert Longo"
+    ],
+    "cinematographers": [
+      "François Protat"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Dina Meyer",
+      "Takeshi Kitano",
+      "Ice-T",
+      "Dolph Lundgren",
+      "Denis Akiyama",
+      "Henry Rollins",
+      "Barbara Sukowa"
+    ]
   },
   {
     "pod": "DP",
@@ -2724,7 +4803,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/00sN5qfKDXFP4eamYtTCoL?si=FrC75vBwRnKVYjTQdyfAaQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1658951665787-f2d579a9f44da.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0089092/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089092/?ref_=ext_shr_lnk",
+    "tmdbId": 11864,
+    "tmdbPosterPath": "/a3dr9L8VIjhEvivzQ2M12VQDere.jpg",
+    "genres": [
+      "Drama",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Wolfgang Petersen"
+    ],
+    "cinematographers": [
+      "Tony Imi"
+    ],
+    "cast": [
+      "Dennis Quaid",
+      "Louis Gossett Jr.",
+      "Brion James",
+      "Richard Marcus",
+      "Carolyn McCormick",
+      "Lance Kerwin",
+      "Bumper Robinson",
+      "Jim Mapp"
+    ]
   },
   {
     "pod": "DP",
@@ -2749,7 +4850,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5gh9OPWI8hv9QkGjYbTSxq?si=qunNhPVYT3quckDUevPikQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1660219770062-db6897e1f5f58.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0085407/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0085407/?ref_=ext_shr_lnk",
+    "tmdbId": 11336,
+    "tmdbPosterPath": "/9yTVaeS8eIkOpbwIycVFm7EQrgF.jpg",
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Science Fiction"
+    ],
+    "directors": [
+      "David Cronenberg"
+    ],
+    "cinematographers": [
+      "Mark Irwin"
+    ],
+    "cast": [
+      "Christopher Walken",
+      "Brooke Adams",
+      "Tom Skerritt",
+      "Herbert Lom",
+      "Anthony Zerbe",
+      "Colleen Dewhurst",
+      "Martin Sheen",
+      "Nicholas Campbell"
+    ]
   },
   {
     "pod": "DP",
@@ -2774,7 +4898,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5gh9OPWI8hv9QkGjYbTSxq?si=qunNhPVYT3quckDUevPikQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1660920011438-5e9317d81b64c.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0082869/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082869/?ref_=ext_shr_lnk",
+    "tmdbId": 10540,
+    "tmdbPosterPath": "/qmjlDkV8CfCboa8WV06ytZaThqx.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Peter Hyams"
+    ],
+    "cinematographers": [
+      "Stephen Goldblatt"
+    ],
+    "cast": [
+      "Sean Connery",
+      "Peter Boyle",
+      "Frances Sternhagen",
+      "James B. Sikking",
+      "Kika Markham",
+      "Clarke Peters",
+      "Steven Berkoff",
+      "John Ratzenberger"
+    ]
   },
   {
     "pod": "DP",
@@ -2799,7 +4947,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5z7qbYBwVCkhNRi764qXYu?si=EUUxoN2TQOW1e7DrY_xQHQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1661534430271-1052cba680fa6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0082198/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082198/?ref_=ext_shr_lnk",
+    "tmdbId": 9387,
+    "tmdbPosterPath": "/qw2A587Ee61IwcSOLNFRhuOACZZ.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "directors": [
+      "John Milius"
+    ],
+    "cinematographers": [
+      "Duke Callaghan"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "James Earl Jones",
+      "Max von Sydow",
+      "Sandahl Bergman",
+      "Ben Davidson",
+      "Cassandra Gava",
+      "Gerry Lopez",
+      "Mako"
+    ]
   },
   {
     "pod": "DP",
@@ -2824,7 +4995,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/15BRZeF0ikpyZdL5vB9rXo?si=i8qRgTamSUONKJnAIJaFYA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1662153817886-c8ecebd7b4dbf.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt8359848/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt8359848/?ref_=ext_shr_lnk",
+    "tmdbId": 507076,
+    "tmdbPosterPath": "/47IXH2iEWwX0F7vIyGXaKQ0psBG.jpg",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "directors": [
+      "Gaspar Noé"
+    ],
+    "cinematographers": [
+      "Benoît Debie"
+    ],
+    "cast": [
+      "Sofia Boutella",
+      "Romain Guillermic",
+      "Souheila Yacoub",
+      "Kiddy Smile",
+      "Claude-Emmanuelle Gajan-Maull",
+      "Giselle Palmer",
+      "Taylor Kastle",
+      "Thea Carla Schøtt"
+    ]
   },
   {
     "pod": "DP",
@@ -2849,7 +5042,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7qnQkhFPZKEeqC3dPC7RGf?si=97DCct43Qe6E1j1QQzgVoQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1662643581479-9112e36f379b5.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0087985/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0087985/?ref_=ext_shr_lnk",
+    "tmdbId": 60747,
+    "tmdbPosterPath": "/aHdxKDX36NOEYE2NyAyP7ThuAcm.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "Dan Bradley"
+    ],
+    "cinematographers": [
+      "Mitchell Amundsen"
+    ],
+    "cast": [
+      "Chris Hemsworth",
+      "Josh Peck",
+      "Josh Hutcherson",
+      "Isabel Lucas",
+      "Adrianne Palicki",
+      "Connor Cruise",
+      "Edwin Hodge",
+      "Jeffrey Dean Morgan"
+    ]
   },
   {
     "pod": "DP",
@@ -2874,7 +5089,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7f9xMERZWVvHGbXAKdZej0?si=XvUogIqpQ5GT53lV273Amw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1663260577415-884c271791f65.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0088247/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0088247/?ref_=ext_shr_lnk",
+    "tmdbId": 218,
+    "tmdbPosterPath": "/qvktm0BHcnmDpul4Hz01GIazWPr.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "James Cameron"
+    ],
+    "cinematographers": [
+      "Adam Greenberg"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Michael Biehn",
+      "Linda Hamilton",
+      "Paul Winfield",
+      "Lance Henriksen",
+      "Rick Rossovich",
+      "Bess Motta",
+      "Earl Boen"
+    ]
   },
   {
     "pod": "DP",
@@ -2899,7 +5137,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0EMG4lq6cmOl9IBjX0ZszC?si=npA-hQ0aQjGbuHBFgOx-FA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1663680985076-c66321207e3a6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0086393/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0086393/?ref_=ext_shr_lnk",
+    "tmdbId": 9531,
+    "tmdbPosterPath": "/icE00hFNg86z3OrWyyRop7khwii.jpg",
+    "genres": [
+      "Comedy",
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Richard Lester"
+    ],
+    "cinematographers": [
+      "Robert Paynter"
+    ],
+    "cast": [
+      "Christopher Reeve",
+      "Richard Pryor",
+      "Jackie Cooper",
+      "Marc McClure",
+      "Annette O'Toole",
+      "Annie Ross",
+      "Pamela Stephenson",
+      "Robert Vaughn"
+    ]
   },
   {
     "pod": "DP",
@@ -2924,7 +5186,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/18NiqczxdfJeJH7mcEovUV?si=3khymsFKRrC-w2pdH_JYHw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1664569024371-fb7414fdde9c9.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0074958/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0074958/?ref_=ext_shr_lnk",
+    "tmdbId": 10774,
+    "tmdbPosterPath": "/qZomlHsaALUtkFeMDwdYmwS2Pbo.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Sidney Lumet"
+    ],
+    "cinematographers": [
+      "Owen Roizman"
+    ],
+    "cast": [
+      "Faye Dunaway",
+      "William Holden",
+      "Peter Finch",
+      "Robert Duvall",
+      "Ned Beatty",
+      "Beatrice Straight",
+      "Wesley Addy",
+      "Arthur Burghardt"
+    ]
   },
   {
     "pod": "DP",
@@ -2949,7 +5232,15 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5GNAzWWOxVRb2mltMzdtEO?si=7M1cK-2bSkiNTswOX2_L-A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1665064886008-e17ae4df77924.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0287839/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0287839/?ref_=ext_shr_lnk",
+    "tmdbId": 1589362,
+    "tmdbPosterPath": "/fgFMlandKdOCNkaOoiGMUxUQxZW.jpg",
+    "genres": [
+      "Science Fiction"
+    ],
+    "directors": [],
+    "cinematographers": [],
+    "cast": []
   },
   {
     "pod": "DP",
@@ -2974,7 +5265,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5IhJl6XTh4plbWKkwM5qTr?si=uKoiPVoeQiaErUBV0lqa2g",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1665751381791-12b2b6124e6fc.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0089469/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089469/?ref_=ext_shr_lnk",
+    "tmdbId": 11976,
+    "tmdbPosterPath": "/6n3PQSYpZRK5YPk2w8JEwED7AZk.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cinematographers": [
+      "Alex Thomson"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Mia Sara",
+      "Tim Curry",
+      "David Bennent",
+      "Alice Playten",
+      "Billy Barty",
+      "Cork Hubbert",
+      "Peter O'Farrell"
+    ]
   },
   {
     "pod": "DP",
@@ -2999,7 +5312,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2HlhTz1bBYoTTUgCta3gi7?si=70ieovbrT9OonpmOifLhpg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1666284089629-703334c9ccf6a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0209144/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0209144/?ref_=ext_shr_lnk",
+    "tmdbId": 77,
+    "tmdbPosterPath": "/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cinematographers": [
+      "Wally Pfister"
+    ],
+    "cast": [
+      "Guy Pearce",
+      "Carrie-Anne Moss",
+      "Joe Pantoliano",
+      "Mark Boone Junior",
+      "Russ Fega",
+      "Jorja Fox",
+      "Stephen Tobolowsky",
+      "Harriet Sansom Harris"
+    ]
   },
   {
     "pod": "DP",
@@ -3024,7 +5359,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6lWvXD8MZ4GCd9SbQ09frc?si=2Oapv4MqS9m8ssUdN11VIA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1666223554131-7c0f1fefe4ad6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0090728/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0090728/?ref_=ext_shr_lnk",
+    "tmdbId": 6978,
+    "tmdbPosterPath": "/gI2Qs1yTTj3NcESJyttCkbmJ4k9.jpg",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Fantasy",
+      "Adventure"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Kurt Russell",
+      "Kim Cattrall",
+      "Dennis Dun",
+      "James Hong",
+      "Victor Wong Chi-Keung",
+      "Kate Burton",
+      "Donald Li",
+      "Carter Huang Chia-Ta"
+    ]
   },
   {
     "pod": "DP",
@@ -3049,7 +5408,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4K9eIOfBZrAUxXtnnvkSIh?si=p6hArqZPTq2BQBanJ-8YMQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1667577661582-62392bf3c54a8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0177789/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0177789/?ref_=ext_shr_lnk",
+    "tmdbId": 926,
+    "tmdbPosterPath": "/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+    "genres": [
+      "Comedy",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Dean Parisot"
+    ],
+    "cinematographers": [
+      "Jerzy Zieliński"
+    ],
+    "cast": [
+      "Tim Allen",
+      "Sigourney Weaver",
+      "Alan Rickman",
+      "Tony Shalhoub",
+      "Sam Rockwell",
+      "Daryl Mitchell",
+      "Enrico Colantoni",
+      "Robin Sachs"
+    ]
   },
   {
     "pod": "DP",
@@ -3074,7 +5456,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2BDWYqLQbRxdDXpGJX130i?si=dJ1N2sW1RluajXeA5htceA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1668174297792-e2f74f8dbd703.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt3704428/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt3704428/?ref_=ext_shr_lnk",
+    "tmdbId": 614934,
+    "tmdbPosterPath": "/rva3UhKaMeiB0Vej5A2pm1leX7K.jpg",
+    "genres": [
+      "Drama",
+      "Music",
+      "History"
+    ],
+    "directors": [
+      "Baz Luhrmann"
+    ],
+    "cinematographers": [
+      "Mandy Walker"
+    ],
+    "cast": [
+      "Austin Butler",
+      "Tom Hanks",
+      "Olivia DeJonge",
+      "Helen Thomson",
+      "Richard Roxburgh",
+      "Kelvin Harrison, Jr.",
+      "David Wenham",
+      "Kodi Smit-McPhee"
+    ]
   },
   {
     "pod": "DP",
@@ -3099,7 +5504,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/54Zn1uFnG0XRmEPxg2tHUT?si=7g7G3WoeRbW6JrJcrKtuWw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1668881614963-6336afbedfb85.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0120780/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120780/?ref_=ext_shr_lnk",
+    "tmdbId": 1389,
+    "tmdbPosterPath": "/v49q7AMR3pB4M762woWB1NYMCLF.jpg",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Crime"
+    ],
+    "directors": [
+      "Steven Soderbergh"
+    ],
+    "cinematographers": [
+      "Elliot Davis"
+    ],
+    "cast": [
+      "George Clooney",
+      "Jennifer Lopez",
+      "Ving Rhames",
+      "Don Cheadle",
+      "Steve Zahn",
+      "Dennis Farina",
+      "Catherine Keener",
+      "Isaiah Washington"
+    ]
   },
   {
     "pod": "DP",
@@ -3149,7 +5577,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5HIyBXRxI5RvCMeyfARO0d?si=VsWjIJpvRMaT1Sdnv73WPA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1669902829335-dc46f5e9caa22.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt10168670/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt10168670/?ref_=ext_shr_lnk",
+    "tmdbId": 791177,
+    "tmdbPosterPath": "/dBQuk2LkHjrDsSjueirPQg96GCc.jpg",
+    "genres": [
+      "Horror",
+      "Romance",
+      "Drama"
+    ],
+    "directors": [
+      "Luca Guadagnino"
+    ],
+    "cinematographers": [
+      "Arseni Khachaturan"
+    ],
+    "cast": [
+      "Taylor Russell",
+      "Timothée Chalamet",
+      "Mark Rylance",
+      "Anna Cobb",
+      "André Holland",
+      "David Gordon Green",
+      "Michael Stuhlbarg",
+      "Jessica Harper"
+    ]
   },
   {
     "pod": "DP",
@@ -3174,7 +5625,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0XzNlGqHcKrkDV2g7pOXWg?si=4RBcZHFsQeOS1rtzEiF9Bw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1670610171054-80a30da527f7d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0128442/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0128442/?ref_=ext_shr_lnk",
+    "tmdbId": 10220,
+    "tmdbPosterPath": "/mqbMwYGwIChnaCO55h7v8DG8Wwy.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "directors": [
+      "John Dahl"
+    ],
+    "cinematographers": [
+      "Jean-Yves Escoffier"
+    ],
+    "cast": [
+      "Matt Damon",
+      "Edward Norton",
+      "John Turturro",
+      "Gretchen Mol",
+      "John Malkovich",
+      "Famke Janssen",
+      "Martin Landau",
+      "Michael Rispoli"
+    ]
   },
   {
     "pod": "DP",
@@ -3199,7 +5672,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/3VoePiPhXYL4f9NyNmBVpA?si=FIvfoS6URu2-VlHJcF6HYg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1671286681916-87325b85cb2fd.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0073802/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0073802/?ref_=ext_shr_lnk",
+    "tmdbId": 11963,
+    "tmdbPosterPath": "/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "directors": [
+      "Sydney Pollack"
+    ],
+    "cinematographers": [
+      "Owen Roizman"
+    ],
+    "cast": [
+      "Robert Redford",
+      "Faye Dunaway",
+      "Cliff Robertson",
+      "Max von Sydow",
+      "John Houseman",
+      "Addison Powell",
+      "Walter McGinn",
+      "Tina Chen"
+    ]
   },
   {
     "pod": "DP",
@@ -3224,7 +5719,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0FSmt54eeVfkiXTndduvmK?si=lEDEL7UKT5WsZocCk1oMmw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1671721247987-82be82be93c18.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0103064/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0103064/?ref_=ext_shr_lnk",
+    "tmdbId": 280,
+    "tmdbPosterPath": "/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "James Cameron"
+    ],
+    "cinematographers": [
+      "Adam Greenberg"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Linda Hamilton",
+      "Edward Furlong",
+      "Robert Patrick",
+      "Earl Boen",
+      "Joe Morton",
+      "S. Epatha Merkerson",
+      "Castulo Guerra"
+    ]
   },
   {
     "pod": "DP",
@@ -3249,7 +5767,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5wQU4eFQ14DGUNqx2IOFFn?si=4lWUcIs9SYeOARK5A9HO-g",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1671300182946-d9c746fbdf21d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0089886/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089886/?ref_=ext_shr_lnk",
+    "tmdbId": 14370,
+    "tmdbPosterPath": "/8az0Tr8hEGDmrUH9WlFz1QIKsMy.jpg",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Martha Coolidge"
+    ],
+    "cinematographers": [
+      "Vilmos Zsigmond"
+    ],
+    "cast": [
+      "Val Kilmer",
+      "Gabriel Jarret",
+      "Michelle Meyrink",
+      "William Atherton",
+      "Robert Prescott",
+      "Louis Giambalvo",
+      "Jon Gries",
+      "Ed Lauter"
+    ]
   },
   {
     "pod": "DP",
@@ -3274,7 +5815,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6aRKXoBsFt9di6ZiCLuA9e?si=6_x4jgVxRJORkblgrjvJhQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1670631455114-8d2d22c6b10fe.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0104694/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0104694/?ref_=ext_shr_lnk",
+    "tmdbId": 11287,
+    "tmdbPosterPath": "/7xpFXAOjgzFPE3vyVerFGfrXhFK.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "directors": [
+      "Penny Marshall"
+    ],
+    "cinematographers": [
+      "Miroslav Ondříček"
+    ],
+    "cast": [
+      "Tom Hanks",
+      "Geena Davis",
+      "Lori Petty",
+      "Madonna",
+      "Rosie O'Donnell",
+      "Megan Cavanagh",
+      "Tracy Reiner",
+      "Bitty Schram"
+    ]
   },
   {
     "pod": "DP",
@@ -3324,7 +5887,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6xGCiKE7RtsZem42Bw4noT?si=y4EeBrmLTeOiIlS9BuB6NQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1674147756760-bad9b7b273325.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2379713/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2379713/?ref_=ext_shr_lnk",
+    "tmdbId": 206647,
+    "tmdbPosterPath": "/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "directors": [
+      "Sam Mendes"
+    ],
+    "cinematographers": [
+      "Hoyte van Hoytema"
+    ],
+    "cast": [
+      "Daniel Craig",
+      "Christoph Waltz",
+      "Léa Seydoux",
+      "Ralph Fiennes",
+      "Monica Bellucci",
+      "Ben Whishaw",
+      "Naomie Harris",
+      "Dave Bautista"
+    ]
   },
   {
     "pod": "DP",
@@ -3349,7 +5935,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6nLswjH7hFEZ8VeJFIJ2tX?si=C4RQ3lEcSjyRHcVTJCBhjg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1674745115738-182306bd468af.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0190332/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0190332/?ref_=ext_shr_lnk",
+    "tmdbId": 146,
+    "tmdbPosterPath": "/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Action",
+      "Romance"
+    ],
+    "directors": [
+      "Ang Lee"
+    ],
+    "cinematographers": [
+      "Peter Pau Tak-Hai"
+    ],
+    "cast": [
+      "Chow Yun-Fat",
+      "Michelle Yeoh",
+      "Zhang Ziyi",
+      "Chang Chen",
+      "Lung Sihung",
+      "Cheng Pei-Pei",
+      "Li Fazeng",
+      "Gao Xian"
+    ]
   },
   {
     "pod": "DP",
@@ -3374,7 +5984,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6bLCFdroiQHi39PsjpZ6N6?si=rsf9XK5ZS02ZnN6JNgchDg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1675450503973-e0435d17109c3.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0113243/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113243/?ref_=ext_shr_lnk",
+    "tmdbId": 10428,
+    "tmdbPosterPath": "/w8H2KpRtpzwlxz5KrvINCVihok1.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "Iain Softley"
+    ],
+    "cinematographers": [
+      "Andrzej Sekula"
+    ],
+    "cast": [
+      "Jonny Lee Miller",
+      "Angelina Jolie",
+      "Matthew Lillard",
+      "Jesse Bradford",
+      "Renoly Santiago",
+      "Laurence Mason",
+      "Fisher Stevens",
+      "Lorraine Bracco"
+    ]
   },
   {
     "pod": "DP",
@@ -3399,7 +6033,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1ioKCn2ls0eplaqbiRR1tw?si=wGMET9enQBurufI76d1N4A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1676038945539-af092b34c65d5.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0126886/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0126886/?ref_=ext_shr_lnk",
+    "tmdbId": 9451,
+    "tmdbPosterPath": "/5gPOFU6IPvDrx50XaPCK4twNw79.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "directors": [
+      "Alexander Payne"
+    ],
+    "cinematographers": [
+      "James Glennon"
+    ],
+    "cast": [
+      "Matthew Broderick",
+      "Reese Witherspoon",
+      "Chris Klein",
+      "Jessica Campbell",
+      "Mark Harelik",
+      "Phil Reeves",
+      "Molly Hagan",
+      "Delaney Driscoll"
+    ]
   },
   {
     "pod": "DP",
@@ -3424,7 +6080,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5sZGp2KLiMzHEsVU5dCakw?si=vt3OS4FuTKOdQqglNSYm_w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1676560163780-73cbd86647192.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0119177/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0119177/?ref_=ext_shr_lnk",
+    "tmdbId": 782,
+    "tmdbPosterPath": "/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+    "genres": [
+      "Thriller",
+      "Science Fiction",
+      "Mystery",
+      "Romance"
+    ],
+    "directors": [
+      "Andrew Niccol"
+    ],
+    "cinematographers": [
+      "Slawomir Idziak"
+    ],
+    "cast": [
+      "Ethan Hawke",
+      "Uma Thurman",
+      "Jude Law",
+      "Alan Arkin",
+      "Loren Dean",
+      "Gore Vidal",
+      "Tony Shalhoub",
+      "Ernest Borgnine"
+    ]
   },
   {
     "pod": "DP",
@@ -3449,7 +6129,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5sZGp2KLiMzHEsVU5dCakw?si=vt3OS4FuTKOdQqglNSYm_w",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1676062429082-83919e460a569.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0116908/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0116908/?ref_=ext_shr_lnk",
+    "tmdbId": 11412,
+    "tmdbPosterPath": "/yREdXX5lMFUKhTvb0ofI7mzUHlR.jpg",
+    "genres": [
+      "Crime",
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "directors": [
+      "Renny Harlin"
+    ],
+    "cinematographers": [
+      "Guillermo Navarro"
+    ],
+    "cast": [
+      "Geena Davis",
+      "Samuel L. Jackson",
+      "Yvonne Zima",
+      "Craig Bierko",
+      "Tom Amandes",
+      "Brian Cox",
+      "Patrick Malahide",
+      "David Morse"
+    ]
   },
   {
     "pod": "DP",
@@ -3474,7 +6178,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4Hc9O1TgVEg3NIyBJuXLUO?si=x88L9d7DQd6I5Z6TtYFCYQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1677776053348-bfabd8ad7dd1d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0093894/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093894/?ref_=ext_shr_lnk",
+    "tmdbId": 865,
+    "tmdbPosterPath": "/GTAUOhO4BN0peJVvxGEQydJvUO.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Paul Michael Glaser"
+    ],
+    "cinematographers": [
+      "Thomas Del Ruth"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Richard Dawson",
+      "María Conchita Alonso",
+      "Yaphet Kotto",
+      "Jim Brown",
+      "Jesse Ventura",
+      "Erland van Lidth",
+      "Marvin J. McIntyre"
+    ]
   },
   {
     "pod": "DP",
@@ -3499,7 +6226,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0zLYGNIw2mluYhrDKRzP0O?si=iAcEfxDURnSHwStCa6zn7A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1678369584977-b078028ffa4b2.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1477834/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1477834/?ref_=ext_shr_lnk",
+    "tmdbId": 297802,
+    "tmdbPosterPath": "/ufl63EFcc5XpByEV2Ecdw6WJZAI.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "directors": [
+      "James Wan"
+    ],
+    "cinematographers": [
+      "Don Burgess"
+    ],
+    "cast": [
+      "Jason Momoa",
+      "Amber Heard",
+      "Willem Dafoe",
+      "Patrick Wilson",
+      "Nicole Kidman",
+      "Dolph Lundgren",
+      "Yahya Abdul-Mateen II",
+      "Temuera Morrison"
+    ]
   },
   {
     "pod": "DP",
@@ -3549,7 +6299,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/2FOiyeEPtcpSEtAmXBHhVC?si=KjnjJZ8AQHG7ABrFYwLHJg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1679098645660-21518c622ed5a.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt5700672/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt5700672/?ref_=ext_shr_lnk",
+    "tmdbId": 396535,
+    "tmdbPosterPath": "/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Yeon Sang-ho"
+    ],
+    "cinematographers": [
+      "Lee Hyung-deok"
+    ],
+    "cast": [
+      "Gong Yoo",
+      "Kim Su-an",
+      "Jung Yu-mi",
+      "Don Lee",
+      "Choi Woo-shik",
+      "An So-hee",
+      "Kim Eui-sung",
+      "Ye Su-jeong"
+    ]
   },
   {
     "pod": "DP",
@@ -3574,7 +6348,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/48C35WJkdTAtQWDr4qeaMl?si=ErhACYt0T2uRs22gDSilXA",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1679618951536-23cb6bc09789f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0075860/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0075860/?ref_=ext_shr_lnk",
+    "tmdbId": 840,
+    "tmdbPosterPath": "/gCWPB8cF82tqzrS9tvzcO6q6nyz.jpg",
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cinematographers": [
+      "Vilmos Zsigmond"
+    ],
+    "cast": [
+      "Richard Dreyfuss",
+      "François Truffaut",
+      "Teri Garr",
+      "Melinda Dillon",
+      "Bob Balaban",
+      "J. Patrick McNamara",
+      "Warren J. Kemmerling",
+      "Roberts Blossom"
+    ]
   },
   {
     "pod": "DP",
@@ -3599,7 +6395,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4m66qoyqatxvu1OjKGuiXu?si=_XS7NcEOQfe_6ahFv1owlg",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1680201556638-d80d541c9e732.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0133093/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0133093/?ref_=ext_shr_lnk",
+    "tmdbId": 603,
+    "tmdbPosterPath": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "cinematographers": [
+      "Bill Pope"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss",
+      "Hugo Weaving",
+      "Gloria Foster",
+      "Joe Pantoliano",
+      "Marcus Chong",
+      "Julian Arahanga"
+    ]
   },
   {
     "pod": "DP",
@@ -3624,7 +6443,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/6MMc2p3grMhdn4CldEAo9n?si=DmAJlgW9QTGwjpoxrZo0CQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1680710176293-0c1494fd9f7a8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0073631/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0073631/?ref_=ext_shr_lnk",
+    "tmdbId": 11484,
+    "tmdbPosterPath": "/cmcipEfexlhVLYQXqeSWp1YcsPY.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action"
+    ],
+    "directors": [
+      "Norman Jewison"
+    ],
+    "cinematographers": [
+      "Douglas Slocombe"
+    ],
+    "cast": [
+      "James Caan",
+      "John Houseman",
+      "Maud Adams",
+      "John Beck",
+      "Moses Gunn",
+      "Pamela Hensley",
+      "Barbara Trentham",
+      "Shane Rimmer"
+    ]
   },
   {
     "pod": "DP",
@@ -3649,7 +6490,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/0cFz3luItSFw7wZcAzlL97?si=Xumx36fRSgqwBKnPuoeykw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1680790228123-b89cc282652c6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0106697/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0106697/?ref_=ext_shr_lnk",
+    "tmdbId": 9739,
+    "tmdbPosterPath": "/dq6AmlVFo92PRuoLCcIyFdoRuxf.jpg",
+    "genres": [
+      "Crime",
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Marco Brambilla"
+    ],
+    "cinematographers": [
+      "Alex Thomson"
+    ],
+    "cast": [
+      "Sylvester Stallone",
+      "Wesley Snipes",
+      "Sandra Bullock",
+      "Nigel Hawthorne",
+      "Benjamin Bratt",
+      "Rob Schneider",
+      "Bob Gunton",
+      "Glenn Shadix"
+    ]
   },
   {
     "pod": "DP",
@@ -3674,7 +6538,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/1fG1dGiIBXM6bA7ZooDe2S?si=_3EbFLc1R_u4w2uRIGzo6A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1682008160887-e0bf57d644eb9.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2704998/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2704998/?ref_=ext_shr_lnk",
+    "tmdbId": 445571,
+    "tmdbPosterPath": "/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
+    "genres": [
+      "Mystery",
+      "Comedy",
+      "Crime"
+    ],
+    "directors": [
+      "John Francis Daley",
+      "Jonathan Goldstein"
+    ],
+    "cinematographers": [
+      "Barry Peterson"
+    ],
+    "cast": [
+      "Jason Bateman",
+      "Rachel McAdams",
+      "Kyle Chandler",
+      "Sharon Horgan",
+      "Billy Magnussen",
+      "Lamorne Morris",
+      "Kylie Bunbury",
+      "Jesse Plemons"
+    ]
   },
   {
     "pod": "DP",
@@ -3699,7 +6587,54 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4eGVNiwU99dQGaP1TriVzJ?si=Bh_gI8K9Tn-wXk25CotM1A",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1682614552479-b1fd26515af3.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0077745/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0077745/?ref_=ext_shr_lnk",
+    "tmdbId": 11850,
+    "tmdbPosterPath": "/skS02wdeH2C0nrbCQP3qKwJdZtZ.jpg",
+    "genres": [
+      "Science Fiction",
+      "Horror"
+    ],
+    "directors": [
+      "Philip Kaufman"
+    ],
+    "cinematographers": [
+      "Michael Chapman"
+    ],
+    "cast": [
+      "Donald Sutherland",
+      "Brooke Adams",
+      "Leonard Nimoy",
+      "Jeff Goldblum",
+      "Veronica Cartwright",
+      "Art Hindle",
+      "Lelia Goldoni",
+      "Kevin McCarthy"
+    ]
+  },
+  {
+    "pod": "DP",
+    "season": 6,
+    "episode": 0,
+    "film": "BONUS: Emergency Dune Part Two Trailer Reactions (2023)",
+    "filmYear": 2023,
+    "releaseDate": "5/3/2023",
+    "length": "0:23:54",
+    "reviewer": "Space Monkey",
+    "guest": "None",
+    "mmmCount": 8,
+    "thatsGreatCount": 0,
+    "notableMoments": "N/A",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "n/a",
+    "tildaH": "n/a",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://open.spotify.com/episode/157n8A4A1FLdx7wlqGlbl1?si=b54_YgHxQUSZS9ikbFsSuA",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1683174170729-dc68d4066a901.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt15239678/?ref_=ext_shr_lnk"
   },
   {
     "pod": "DP",
@@ -3724,7 +6659,57 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/76OqRgmLALRw9t4kEqhwiJ?si=dr7JWi47Sbqhke3ttTHn5g",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1683201602962-a72868a8a16d6.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0070155/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0070155/?ref_=ext_shr_lnk",
+    "tmdbId": 7514,
+    "tmdbPosterPath": "/nXcWgfds0E8T2pQLvgWLCiUmlV6.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Music"
+    ],
+    "directors": [
+      "Perry Henzell"
+    ],
+    "cinematographers": [
+      "David McDonald",
+      "Peter Jessop",
+      "Franklyn St Juste"
+    ],
+    "cast": [
+      "Jimmy Cliff",
+      "Janet Bartley",
+      "Carl Bradshaw",
+      "Ras Daniel Hartman",
+      "Basil Keane",
+      "Bob Charlton",
+      "Winston Stona",
+      "Lucia White"
+    ]
+  },
+  {
+    "pod": "DP",
+    "season": 6,
+    "episode": 0,
+    "film": "BONUS: Silo Episodes 1 & 2 (2023)",
+    "filmYear": 2023,
+    "releaseDate": "5/9/2023",
+    "length": "0:46:26",
+    "reviewer": "Space Monkey",
+    "guest": "None",
+    "mmmCount": 17,
+    "thatsGreatCount": 3,
+    "notableMoments": "Jason Sings - \"Silo when I was young...I used to call your name...\" \"Shilo,\" Neil Diamond.",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "n/a",
+    "tildaH": "Bernard",
+    "tildaJason": "Doctor",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://open.spotify.com/episode/3XKbiVx7BC3KBFm4b2HGnA?si=ip-KXaBSRjC-d3Z1alqbFQ",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1683658493431-7c17ccfef2b6e.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt14688458/?ref_=ext_shr_lnk"
   },
   {
     "pod": "DP",
@@ -3749,7 +6734,56 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4t2Q1D2419J0LLUnaS30zc?si=lsUwhUe6TCeqrAKPO1tGHw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1683853402619-cd46f064d8716.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0081353/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0081353/?ref_=ext_shr_lnk",
+    "tmdbId": 11335,
+    "tmdbPosterPath": "/hCCp4pESgYY6uTFARYf4UYV1BdU.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Family"
+    ],
+    "directors": [
+      "Robert Altman"
+    ],
+    "cinematographers": [
+      "Giuseppe Rotunno"
+    ],
+    "cast": [
+      "Robin Williams",
+      "Shelley Duvall",
+      "Ray Walston",
+      "Paul Dooley",
+      "Paul L. Smith",
+      "Richard Libertini",
+      "Donald Moffat",
+      "MacIntyre Dixon"
+    ]
+  },
+  {
+    "pod": "DP",
+    "season": 6,
+    "episode": 0,
+    "film": "BONUS: Silo Hugh Howey Interview & Episode 3 (2023)",
+    "filmYear": 2023,
+    "releaseDate": "5/16/2023",
+    "length": "0:59:23",
+    "reviewer": "Space Monkey",
+    "guest": "Hugh Howey",
+    "mmmCount": 40,
+    "thatsGreatCount": 1,
+    "notableMoments": "N/A",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "N/A",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://open.spotify.com/episode/3OzOsy53WlgVB6tvPGcH4l?si=pHgt-pKiRI6uEjVTT2ydlg",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1684215203068-b0ee4f3972392.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt14688458/?ref_=ext_shr_lnk"
   },
   {
     "pod": "DP",
@@ -3774,7 +6808,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/5qe91n8j5c2rQKk7lK4AFV?si=FnbJh7lISVWiAIZjGi76BQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1684427467528-c6cd286454008.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0110074/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0110074/?ref_=ext_shr_lnk",
+    "tmdbId": 11934,
+    "tmdbPosterPath": "/bp5Kg9iT9oSXsECgDkNJVqvIrxX.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "directors": [
+      "Joel Coen"
+    ],
+    "cinematographers": [
+      "Roger Deakins"
+    ],
+    "cast": [
+      "Tim Robbins",
+      "Jennifer Jason Leigh",
+      "Charles Durning",
+      "Paul Newman",
+      "Jim True-Frost",
+      "John Mahoney",
+      "Bill Cobbs",
+      "Bruce Campbell"
+    ]
   },
   {
     "pod": "DP",
@@ -3799,7 +6856,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/4MMIzCym89PngEtSU7ov5D?si=5RAzbNtjRCam5X_G06R7Zw",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1684877791015-a3263a5a3a8ab.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0101507/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0101507/?ref_=ext_shr_lnk",
+    "tmdbId": 650,
+    "tmdbPosterPath": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "directors": [
+      "John Singleton"
+    ],
+    "cinematographers": [
+      "Charles Mills"
+    ],
+    "cast": [
+      "Cuba Gooding Jr.",
+      "Laurence Fishburne",
+      "Ice Cube",
+      "Morris Chestnut",
+      "Angela Bassett",
+      "Nia Long",
+      "Tyra Ferrell",
+      "Regina King"
+    ]
   },
   {
     "pod": "DP",
@@ -3824,7 +6903,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://open.spotify.com/episode/7gnPHGWA66fDBuYy8031qY?si=OpdrZPSBT764M3JjA7ebvQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1685557904989-d23b039209825.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0088846/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0088846/?ref_=ext_shr_lnk",
+    "tmdbId": 68,
+    "tmdbPosterPath": "/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+    "genres": [
+      "Comedy",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Terry Gilliam"
+    ],
+    "cinematographers": [
+      "Roger Pratt"
+    ],
+    "cast": [
+      "Jonathan Pryce",
+      "Robert De Niro",
+      "Katherine Helmond",
+      "Ian Holm",
+      "Bob Hoskins",
+      "Michael Palin",
+      "Ian Richardson",
+      "Peter Vaughan"
+    ]
   },
   {
     "pod": "EH",
@@ -3849,7 +6950,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/back-to-future-84990598?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1687530849838-b8a1f02806c4.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0088763/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0088763/?ref_=ext_shr_lnk",
+    "tmdbId": 105,
+    "tmdbPosterPath": "/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Robert Zemeckis"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Michael J. Fox",
+      "Christopher Lloyd",
+      "Crispin Glover",
+      "Lea Thompson",
+      "Claudia Wells",
+      "Thomas F. Wilson",
+      "Marc McClure",
+      "Wendie Jo Sperber"
+    ]
   },
   {
     "pod": "EH",
@@ -3874,7 +6998,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/fugitive-1993-85313781?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1687983705312-27a7caf86a859.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0106977/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0106977/?ref_=ext_shr_lnk",
+    "tmdbId": 5503,
+    "tmdbPosterPath": "/b3rEtLKyOnF89mcK75GXDXdmOEf.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "Andrew Davis"
+    ],
+    "cinematographers": [
+      "Michael Chapman"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Tommy Lee Jones",
+      "Joe Pantoliano",
+      "Jeroen Krabbé",
+      "Daniel Roebuck",
+      "L. Scott Caldwell",
+      "Tom Wood",
+      "Ron Dean"
+    ]
   },
   {
     "pod": "EH",
@@ -3899,7 +7046,39 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/heavy-metal-1981-85624605?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1688565019060-21aa0ec93b428.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0082509/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082509/?ref_=ext_shr_lnk",
+    "tmdbId": 11827,
+    "tmdbPosterPath": "/atUtWrDlLzT1yeVK2EoYtvbS963.jpg",
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Adventure",
+      "Fantasy",
+      "Music"
+    ],
+    "directors": [
+      "Gerald Potterton",
+      "John Bruno",
+      "John Halas",
+      "Julian Harris",
+      "Jimmy T. Murakami",
+      "Barrie Nelson",
+      "Paul Sabella",
+      "Jack Stokes",
+      "Pino Van Lamsweerde",
+      "Harold Whitaker"
+    ],
+    "cinematographers": [],
+    "cast": [
+      "Rodger Bumpass",
+      "John Candy",
+      "Jackie Burroughs",
+      "Joe Flaherty",
+      "Don Francks",
+      "Marilyn Lightstone",
+      "Eugene Levy",
+      "Harold Ramis"
+    ]
   },
   {
     "pod": "EH",
@@ -3924,7 +7103,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/star-trek-ii-of-85993575?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1689182922874-45e0c2e4ede7b.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0084726/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0084726/?ref_=ext_shr_lnk",
+    "tmdbId": 154,
+    "tmdbPosterPath": "/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "directors": [
+      "Nicholas Meyer"
+    ],
+    "cinematographers": [
+      "Gayne Rescher"
+    ],
+    "cast": [
+      "William Shatner",
+      "Leonard Nimoy",
+      "Ricardo Montalban",
+      "DeForest Kelley",
+      "James Doohan",
+      "Walter Koenig",
+      "George Takei",
+      "Nichelle Nichols"
+    ]
   },
   {
     "pod": "EH",
@@ -3949,7 +7152,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/princess-bride-86404372?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1689881338975-ed6553eee027f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0093779/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093779/?ref_=ext_shr_lnk",
+    "tmdbId": 2493,
+    "tmdbPosterPath": "/2FC9L9MrjBoGHYjYZjdWQdopVYb.jpg",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Comedy",
+      "Romance"
+    ],
+    "directors": [
+      "Rob Reiner"
+    ],
+    "cinematographers": [
+      "Adrian Biddle"
+    ],
+    "cast": [
+      "Cary Elwes",
+      "Robin Wright",
+      "Mandy Patinkin",
+      "Chris Sarandon",
+      "Christopher Guest",
+      "Wallace Shawn",
+      "André Roussimoff",
+      "Fred Savage"
+    ]
   },
   {
     "pod": "EH",
@@ -3974,7 +7202,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/flight-of-1986-86747139?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1690470455414-1f6ee6141d95b.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0091059/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0091059/?ref_=ext_shr_lnk",
+    "tmdbId": 10122,
+    "tmdbPosterPath": "/tdRgQWMximj0tL6OWu9kRTtePmI.jpg",
+    "genres": [
+      "Family",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Randal Kleiser"
+    ],
+    "cinematographers": [
+      "James Glennon"
+    ],
+    "cast": [
+      "Joey Cramer",
+      "Paul Reubens",
+      "Veronica Cartwright",
+      "Cliff DeYoung",
+      "Sarah Jessica Parker",
+      "Matt Adler",
+      "Howard Hesseman",
+      "Robert Small"
+    ]
   },
   {
     "pod": "EH",
@@ -3999,7 +7250,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/bourne-identity-87203131?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1691181384936-6d74f169fb064.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0258463/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0258463/?ref_=ext_shr_lnk",
+    "tmdbId": 2501,
+    "tmdbPosterPath": "/aP8swke3gmowbkfZ6lmNidu0y9p.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "directors": [
+      "Doug Liman"
+    ],
+    "cinematographers": [
+      "Oliver Wood"
+    ],
+    "cast": [
+      "Matt Damon",
+      "Franka Potente",
+      "Chris Cooper",
+      "Clive Owen",
+      "Brian Cox",
+      "Adewale Akinnuoye-Agbaje",
+      "Gabriel Mann",
+      "Julia Stiles"
+    ]
   },
   {
     "pod": "EH",
@@ -4024,7 +7299,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/neverending-1984-87447025?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1691606183448-011f1568db90c.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0088323/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0088323/?ref_=ext_shr_lnk",
+    "tmdbId": 34584,
+    "tmdbPosterPath": "/lWJC8om086h01f0CMGR9ombdpnI.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Family",
+      "Drama"
+    ],
+    "directors": [
+      "Wolfgang Petersen"
+    ],
+    "cinematographers": [
+      "Jost Vacano"
+    ],
+    "cast": [
+      "Noah Hathaway",
+      "Barret Oliver",
+      "Tami Stronach",
+      "Alan Oppenheimer",
+      "Sydney Bromley",
+      "Patricia Hayes",
+      "Moses Gunn",
+      "Frank Lenart"
+    ]
   },
   {
     "pod": "EH",
@@ -4049,7 +7348,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/her-2013-87793219?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1692203846888-93721aadec552.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1798709/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1798709/?ref_=ext_shr_lnk",
+    "tmdbId": 152601,
+    "tmdbPosterPath": "/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
+    "genres": [
+      "Romance",
+      "Science Fiction",
+      "Drama"
+    ],
+    "directors": [
+      "Spike Jonze"
+    ],
+    "cinematographers": [
+      "Hoyte van Hoytema"
+    ],
+    "cast": [
+      "Joaquin Phoenix",
+      "Scarlett Johansson",
+      "Lynn Adrianna",
+      "Lisa Renee Pitts",
+      "Gabe Gomez",
+      "Chris Pratt",
+      "Artt Butler",
+      "May Lindstrom"
+    ]
   },
   {
     "pod": "EH",
@@ -4074,21 +7396,43 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/her-2013-87793219?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1692638029976-7ab681e719a4.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0115759/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0115759/?ref_=ext_shr_lnk",
+    "tmdbId": 9208,
+    "tmdbPosterPath": "/iBPMwYYJFvdCBkXrwV75peo5Lz2.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "John Woo"
+    ],
+    "cinematographers": [
+      "Peter Levy"
+    ],
+    "cast": [
+      "John Travolta",
+      "Christian Slater",
+      "Samantha Mathis",
+      "Delroy Lindo",
+      "Frank Whaley",
+      "Bob Gunton",
+      "Howie Long",
+      "Jack Thompson"
+    ]
   },
   {
     "pod": "EH",
     "season": 7,
     "episode": 0,
-    "film": "BONUS: Civil War (2024)",
-    "filmYear": 2024,
-    "releaseDate": "4/17/2024",
-    "length": "0:40:58",
+    "film": "WGA - SAG-AFTRA Discussion with Patrick Somerville & Hoon Lee (2023)",
+    "filmYear": 2023,
+    "releaseDate": "9/1/2023",
+    "length": "1:54:13",
     "reviewer": "Space Monkey",
-    "guest": "Peter Kafka",
-    "mmmCount": 5,
-    "thatsGreatCount": 2,
-    "notableMoments": "N/A",
+    "guest": "Patrick Sommerville / Hoon Lee",
+    "mmmCount": 63,
+    "thatsGreatCount": 0,
+    "notableMoments": "No Jason",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "N/A",
@@ -4096,10 +7440,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "tildaJason": "N/A",
     "tildaGuest": null,
     "tildaCorey": null,
-    "showLink": "https://www.patreon.com/posts/civil-war-2024-102534092",
-    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1713370772859-a26d7b0b6e0bf.jpg",
+    "showLink": "https://www.patreon.com/posts/wga-sag-aftra-88585977?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1693547916032-6872b74c616e4.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt17279496/?ref_=ext_shr_lnk"
+    "imdbLink": ""
   },
   {
     "pod": "EH",
@@ -4124,7 +7468,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/pulp-fiction-88508256?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1693433606651-f83d9d6fa19d8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0110912/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0110912/?ref_=ext_shr_lnk",
+    "tmdbId": 680,
+    "tmdbPosterPath": "/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Comedy"
+    ],
+    "directors": [
+      "Quentin Tarantino"
+    ],
+    "cinematographers": [
+      "Andrzej Sekula"
+    ],
+    "cast": [
+      "John Travolta",
+      "Samuel L. Jackson",
+      "Uma Thurman",
+      "Bruce Willis",
+      "Ving Rhames",
+      "Harvey Keitel",
+      "Eric Stoltz",
+      "Tim Roth"
+    ]
   },
   {
     "pod": "EH",
@@ -4149,7 +7516,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/last-of-mohicans-88916740?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1694100748154-ce373a31ee1a8.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0104691/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0104691/?ref_=ext_shr_lnk",
+    "tmdbId": 9361,
+    "tmdbPosterPath": "/qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg",
+    "genres": [
+      "Action",
+      "History",
+      "Romance",
+      "War"
+    ],
+    "directors": [
+      "Michael Mann"
+    ],
+    "cinematographers": [
+      "Dante Spinotti"
+    ],
+    "cast": [
+      "Daniel Day-Lewis",
+      "Madeleine Stowe",
+      "Jodhi May",
+      "Russell Means",
+      "Wes Studi",
+      "Eric Schweig",
+      "Steven Waddington",
+      "Maurice Roëves"
+    ]
   },
   {
     "pod": "EH",
@@ -4174,7 +7565,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/rocketeer-1991-89229257?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1694636507439-6cd8bdb68993d.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0102803/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0102803/?ref_=ext_shr_lnk",
+    "tmdbId": 10249,
+    "tmdbPosterPath": "/2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction",
+      "Family"
+    ],
+    "directors": [
+      "Joe Johnston"
+    ],
+    "cinematographers": [
+      "Hiro Narita"
+    ],
+    "cast": [
+      "Billy Campbell",
+      "Jennifer Connelly",
+      "Alan Arkin",
+      "Timothy Dalton",
+      "Paul Sorvino",
+      "Terry O'Quinn",
+      "Ed Lauter",
+      "Jon Polito"
+    ]
   },
   {
     "pod": "EH",
@@ -4199,7 +7614,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/devils-advocate-89613576?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1695302789150-351b445edbb22.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0118971/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0118971/?ref_=ext_shr_lnk",
+    "tmdbId": 1813,
+    "tmdbPosterPath": "/5ZzBGpxy55OQzHxKVY11IpY6a0o.jpg",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Horror"
+    ],
+    "directors": [
+      "Taylor Hackford"
+    ],
+    "cinematographers": [
+      "Andrzej Bartkowiak"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Al Pacino",
+      "Charlize Theron",
+      "Jeffrey Jones",
+      "Judith Ivey",
+      "Connie Nielsen",
+      "Craig T. Nelson",
+      "Tamara Tunie"
+    ]
   },
   {
     "pod": "EH",
@@ -4224,7 +7662,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/solarbabies-1986-89926404?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1695829732918-d6a82d0afa9ac.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0091981/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0091981/?ref_=ext_shr_lnk",
+    "tmdbId": 36677,
+    "tmdbPosterPath": "/vKNdxHrWTmG80WXdmLWM6YddZvP.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure",
+      "Romance"
+    ],
+    "directors": [
+      "Alan Johnson"
+    ],
+    "cinematographers": [
+      "Peter MacDonald"
+    ],
+    "cast": [
+      "Richard Jordan",
+      "Jami Gertz",
+      "Jason Patric",
+      "Lukas Haas",
+      "James LeGros",
+      "Claude Brooks",
+      "Peter DeLuise",
+      "Peter Kowanko"
+    ]
   },
   {
     "pod": "EH",
@@ -4249,7 +7711,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/speed-1994-90392640?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1696522384499-29825b4cac43.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0111257/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0111257/?ref_=ext_shr_lnk",
+    "tmdbId": 1637,
+    "tmdbPosterPath": "/82PkCE4R95KhHICUDF7G4Ly2z3l.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "Jan de Bont"
+    ],
+    "cinematographers": [
+      "Andrzej Bartkowiak"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Dennis Hopper",
+      "Sandra Bullock",
+      "Joe Morton",
+      "Jeff Daniels",
+      "Alan Ruck",
+      "Glenn Plummer",
+      "Richard Lineback"
+    ]
   },
   {
     "pod": "EH",
@@ -4274,7 +7758,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/star-wars-viii-90780664?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1697036859414-ff3d0cb9265cd.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt2527336/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2527336/?ref_=ext_shr_lnk",
+    "tmdbId": 181808,
+    "tmdbPosterPath": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Rian Johnson"
+    ],
+    "cinematographers": [
+      "Steve Yedlin"
+    ],
+    "cast": [
+      "Mark Hamill",
+      "Carrie Fisher",
+      "Adam Driver",
+      "Daisy Ridley",
+      "John Boyega",
+      "Oscar Isaac",
+      "Andy Serkis",
+      "Lupita Nyong'o"
+    ]
   },
   {
     "pod": "EH",
@@ -4299,7 +7806,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/to-live-and-die-91296209?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1697741748200-4e3b87b3d6b1e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0090180/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0090180/?ref_=ext_shr_lnk",
+    "tmdbId": 9846,
+    "tmdbPosterPath": "/2iW3pSihBIhXjnBQmUJ0mAiZbB5.jpg",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Action"
+    ],
+    "directors": [
+      "William Friedkin"
+    ],
+    "cinematographers": [
+      "Robby Müller"
+    ],
+    "cast": [
+      "William Petersen",
+      "Willem Dafoe",
+      "John Pankow",
+      "Debra Feuer",
+      "John Turturro",
+      "Dean Stockwell",
+      "Darlanne Fluegel",
+      "Michael Greene"
+    ]
   },
   {
     "pod": "EH",
@@ -4324,7 +7854,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/mad-max-fury-91787888?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1698437517075-5307a264207d2.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1392190/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1392190/?ref_=ext_shr_lnk",
+    "tmdbId": 76341,
+    "tmdbPosterPath": "/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "directors": [
+      "George Miller"
+    ],
+    "cinematographers": [
+      "John Seale"
+    ],
+    "cast": [
+      "Tom Hardy",
+      "Charlize Theron",
+      "Nicholas Hoult",
+      "Hugh Keays-Byrne",
+      "Josh Helman",
+      "Nathan Jones",
+      "Zoë Kravitz",
+      "Rosie Huntington-Whiteley"
+    ]
   },
   {
     "pod": "EH",
@@ -4349,7 +7902,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/inside-man-2006-92110644?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1698870138738-d335f83e56ef1.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0454848/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0454848/?ref_=ext_shr_lnk",
+    "tmdbId": 388,
+    "tmdbPosterPath": "/ffMUgkDZICNiyaws1Jkv8qG8uFW.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "Spike Lee"
+    ],
+    "cinematographers": [
+      "Matthew Libatique"
+    ],
+    "cast": [
+      "Denzel Washington",
+      "Clive Owen",
+      "Jodie Foster",
+      "Christopher Plummer",
+      "Willem Dafoe",
+      "Chiwetel Ejiofor",
+      "Carlos Andrés Gómez",
+      "Kim Director"
+    ]
   },
   {
     "pod": "EH",
@@ -4399,7 +7975,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/flash-gordon-93072934?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1700252506339-49da225c87903.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0080745/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0080745/?ref_=ext_shr_lnk",
+    "tmdbId": 3604,
+    "tmdbPosterPath": "/eTdEaRjtVnFbd5KVhxLRfbYW46e.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Action"
+    ],
+    "directors": [
+      "Mike Hodges"
+    ],
+    "cinematographers": [
+      "Gilbert Taylor"
+    ],
+    "cast": [
+      "Sam J. Jones",
+      "Melody Anderson",
+      "Max von Sydow",
+      "Chaim Topol",
+      "Ornella Muti",
+      "Timothy Dalton",
+      "Brian Blessed",
+      "Peter Wyngarde"
+    ]
   },
   {
     "pod": "EH",
@@ -4424,7 +8023,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/andromeda-strain-93403101?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1700753101912-4efc2e4a9baeb.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0066769/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0066769/?ref_=ext_shr_lnk",
+    "tmdbId": 10514,
+    "tmdbPosterPath": "/4FBSFz8wLpxd4o6hnvKOJJ8WSIz.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "directors": [
+      "Robert Wise"
+    ],
+    "cinematographers": [
+      "Richard H. Kline"
+    ],
+    "cast": [
+      "Arthur Hill",
+      "David Wayne",
+      "James Olson",
+      "Kate Reid",
+      "Paula Kelly",
+      "George Mitchell",
+      "Ramon Bieri",
+      "Peter Hobbs"
+    ]
   },
   {
     "pod": "EH",
@@ -4449,7 +8070,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/x-ray-vision-for-93789255?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1701315888134-df41a03536a3f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0120903/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120903/?ref_=ext_shr_lnk",
+    "tmdbId": 36657,
+    "tmdbPosterPath": "/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Bryan Singer"
+    ],
+    "cinematographers": [
+      "Newton Thomas Sigel"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Patrick Stewart",
+      "Ian McKellen",
+      "Famke Janssen",
+      "James Marsden",
+      "Halle Berry",
+      "Anna Paquin",
+      "Tyler Mane"
+    ]
   },
   {
     "pod": "EH",
@@ -4474,7 +8118,54 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/last-boyscout-94311531?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1702045661661-963534b9086db.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0102266/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0102266/?ref_=ext_shr_lnk",
+    "tmdbId": 9319,
+    "tmdbPosterPath": "/fNkLz6ITQqTDZHBXqiCrm4kaJKJ.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "Tony Scott"
+    ],
+    "cinematographers": [
+      "Ward Russell"
+    ],
+    "cast": [
+      "Bruce Willis",
+      "Damon Wayans",
+      "Chelsea Field",
+      "Noble Willingham",
+      "Taylor Negron",
+      "Danielle Harris",
+      "Halle Berry",
+      "Bruce McGill"
+    ]
+  },
+  {
+    "pod": "EH",
+    "season": 7,
+    "episode": 0,
+    "film": "BONUS: Emergency Dune Part Two Trailer 3 Reactions (2024)",
+    "filmYear": 2024,
+    "releaseDate": "12/13/2023",
+    "length": "0:36:35",
+    "reviewer": "birria",
+    "guest": "ctcher",
+    "mmmCount": 9,
+    "thatsGreatCount": 0,
+    "notableMoments": "- No Jason on this episode (Grandparents Day at school)\n- hype builds for the D2 Meetup in SF",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "N/A",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://www.patreon.com/posts/bonus-emergency-94580710?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1702448453407-e32d7dc95fbd6.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt15239678/?ref_=ext_shr_lnk"
   },
   {
     "pod": "EH",
@@ -4499,7 +8190,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/ghost-in-shell-94729370?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1702664434205-c2bdf907f5396.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0113568/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113568/?ref_=ext_shr_lnk",
+    "tmdbId": 9323,
+    "tmdbPosterPath": "/9gC88zYUBARRSThcG93MvW14sqx.jpg",
+    "genres": [
+      "Action",
+      "Animation",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Mamoru Oshii"
+    ],
+    "cinematographers": [
+      "Hisao Shirai"
+    ],
+    "cast": [
+      "Atsuko Tanaka",
+      "Akio Otsuka",
+      "Iemasa Kayumi",
+      "Koichi Yamadera",
+      "Yutaka Nakano",
+      "Tamio Ohki",
+      "Tessyo Genda",
+      "Masakazu Namaki"
+    ]
   },
   {
     "pod": "EH",
@@ -4524,7 +8238,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/trading-places-95094314?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1703218202373-29e61878b9d1e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0086465/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0086465/?ref_=ext_shr_lnk",
+    "tmdbId": 1621,
+    "tmdbPosterPath": "/8mBuLCOcpWnmYtZc4aqtvDXslv6.jpg",
+    "genres": [
+      "Comedy"
+    ],
+    "directors": [
+      "John Landis"
+    ],
+    "cinematographers": [
+      "Robert Paynter"
+    ],
+    "cast": [
+      "Dan Aykroyd",
+      "Eddie Murphy",
+      "Ralph Bellamy",
+      "Don Ameche",
+      "Denholm Elliott",
+      "Jamie Lee Curtis",
+      "Paul Gleason",
+      "Frank Oz"
+    ]
   },
   {
     "pod": "EH",
@@ -4549,7 +8284,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/dark-crystal-95428908?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1703777989436-0b0a7ad7eb3bf.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0083791/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0083791/?ref_=ext_shr_lnk",
+    "tmdbId": 11639,
+    "tmdbPosterPath": "/fZPxRaa6gvCyGCh9Xk5kyPqz7fp.jpg",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "directors": [
+      "Jim Henson",
+      "Frank Oz"
+    ],
+    "cinematographers": [
+      "Oswald Morris"
+    ],
+    "cast": [
+      "Jim Henson",
+      "Kathryn Mullen",
+      "Frank Oz",
+      "Dave Goelz",
+      "Steve Whitmire",
+      "Louise Gold",
+      "Brian Meehl",
+      "Stephen Garlick"
+    ]
   },
   {
     "pod": "EH",
@@ -4574,7 +8333,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/warriors-1979-119820685",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1736655562235-bafa3b1edbf45.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-warriors/",
-    "imdbLink": "https://www.imdb.com/title/tt0080120/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0080120/?ref_=ext_shr_lnk",
+    "tmdbId": 11474,
+    "tmdbPosterPath": "/sjN9IZHmRHZmpxvQYYYFNQ22Pch.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "Walter Hill"
+    ],
+    "cinematographers": [
+      "Andrew Laszlo"
+    ],
+    "cast": [
+      "Michael Beck",
+      "James Remar",
+      "David Patrick Kelly",
+      "Dorsey Wright",
+      "David Harris",
+      "Deborah Van Valkenburgh",
+      "Brian Tyler",
+      "Tom McKitterick"
+    ]
   },
   {
     "pod": "EH",
@@ -4599,7 +8380,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/jurassic-park-96383361?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1705095894840-d6b8c35333149.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0107290/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0107290/?ref_=ext_shr_lnk",
+    "tmdbId": 329,
+    "tmdbPosterPath": "/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg",
+    "genres": [
+      "Adventure",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Sam Neill",
+      "Laura Dern",
+      "Jeff Goldblum",
+      "Richard Attenborough",
+      "Bob Peck",
+      "Martin Ferrero",
+      "BD Wong",
+      "Joseph Mazzello"
+    ]
   },
   {
     "pod": "EH",
@@ -4624,7 +8427,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/burn-after-120211197",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1737141605385-1dd7fa972f2af.jpg",
     "letterboxdLink": "https://letterboxd.com/film/burn-after-reading/",
-    "imdbLink": "https://www.imdb.com/title/tt0887883/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0887883/?ref_=ext_shr_lnk",
+    "tmdbId": 4944,
+    "tmdbPosterPath": "/jdwSkQu3XirmX18MNj8CqFWsCk.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "directors": [
+      "Ethan Coen",
+      "Joel Coen"
+    ],
+    "cinematographers": [
+      "Emmanuel Lubezki"
+    ],
+    "cast": [
+      "George Clooney",
+      "Frances McDormand",
+      "Brad Pitt",
+      "John Malkovich",
+      "Tilda Swinton",
+      "Richard Jenkins",
+      "Elizabeth Marvel",
+      "David Rasche"
+    ]
   },
   {
     "pod": "EH",
@@ -4649,7 +8475,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/event-horizon-97248021?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1706289049094-4b0648675920e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0119081/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0119081/?ref_=ext_shr_lnk",
+    "tmdbId": 8413,
+    "tmdbPosterPath": "/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg",
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "directors": [
+      "Paul W. S. Anderson"
+    ],
+    "cinematographers": [
+      "Adrian Biddle"
+    ],
+    "cast": [
+      "Laurence Fishburne",
+      "Sam Neill",
+      "Kathleen Quinlan",
+      "Joely Richardson",
+      "Richard T. Jones",
+      "Jack Noseworthy",
+      "Jason Isaacs",
+      "Sean Pertwee"
+    ]
   },
   {
     "pod": "EH",
@@ -4674,7 +8523,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/altered-states-97582649?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1706729917282-8300c0ec6528e.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0080360/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0080360/?ref_=ext_shr_lnk",
+    "tmdbId": 11542,
+    "tmdbPosterPath": "/fsoaPN5SWYgZ4B7GG9nRNj33so.jpg",
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "directors": [
+      "Ken Russell"
+    ],
+    "cinematographers": [
+      "Jordan Cronenweth"
+    ],
+    "cast": [
+      "William Hurt",
+      "Blair Brown",
+      "Bob Balaban",
+      "Charles Haid",
+      "Thaao Penghlis",
+      "Miguel Godreau",
+      "Dori Brenner",
+      "Peter Brandon"
+    ]
   },
   {
     "pod": "EH",
@@ -4699,7 +8571,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/eraserhead-1977-98063748?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1707351455852-d53050c7e560f.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0074486/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0074486/?ref_=ext_shr_lnk",
+    "tmdbId": 985,
+    "tmdbPosterPath": "/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "directors": [
+      "David Lynch"
+    ],
+    "cinematographers": [
+      "Frederick Elmes",
+      "Herbert Cardwell"
+    ],
+    "cast": [
+      "Jack Nance",
+      "Charlotte Stewart",
+      "Allen Joseph",
+      "Jeanne Bates",
+      "Judith Roberts",
+      "Laurel Near",
+      "Jack Fisk",
+      "Jean Lange"
+    ]
   },
   {
     "pod": "EH",
@@ -4749,7 +8644,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/sunshine-2007-99136403?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1708802601092-82028d1a96606.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0448134/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0448134/?ref_=ext_shr_lnk",
+    "tmdbId": 1272,
+    "tmdbPosterPath": "/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "directors": [
+      "Danny Boyle"
+    ],
+    "cinematographers": [
+      "Alwin H. Küchler"
+    ],
+    "cast": [
+      "Cillian Murphy",
+      "Rose Byrne",
+      "Chris Evans",
+      "Michelle Yeoh",
+      "Cliff Curtis",
+      "Hiroyuki Sanada",
+      "Troy Garity",
+      "Benedict Wong"
+    ]
   },
   {
     "pod": "EH",
@@ -4774,7 +8691,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/dune-part-two-99619479?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1709418353922-7c4374bb764ad.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt15239678/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt15239678/?ref_=ext_shr_lnk",
+    "tmdbId": 693134,
+    "tmdbPosterPath": "/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cinematographers": [
+      "Greig Fraser"
+    ],
+    "cast": [
+      "Timothée Chalamet",
+      "Zendaya",
+      "Rebecca Ferguson",
+      "Javier Bardem",
+      "Josh Brolin",
+      "Austin Butler",
+      "Florence Pugh",
+      "Dave Bautista"
+    ]
   },
   {
     "pod": "EH",
@@ -4824,7 +8763,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/inception-2010-100055453?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1710008117567-55da5209e0673.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt1375666/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1375666/?ref_=ext_shr_lnk",
+    "tmdbId": 27205,
+    "tmdbPosterPath": "/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cinematographers": [
+      "Wally Pfister"
+    ],
+    "cast": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ken Watanabe",
+      "Tom Hardy",
+      "Elliot Page",
+      "Dileep Rao",
+      "Cillian Murphy",
+      "Tom Berenger"
+    ]
   },
   {
     "pod": "EH",
@@ -4899,7 +8861,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/millers-crossing-101298603?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1711722360419-807609087a5ca.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0100150/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0100150/?ref_=ext_shr_lnk",
+    "tmdbId": 379,
+    "tmdbPosterPath": "/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Joel Coen"
+    ],
+    "cinematographers": [
+      "Barry Sonnenfeld"
+    ],
+    "cast": [
+      "Gabriel Byrne",
+      "Marcia Gay Harden",
+      "John Turturro",
+      "Jon Polito",
+      "J.E. Freeman",
+      "Albert Finney",
+      "Mike Starr",
+      "Al Mancini"
+    ]
   },
   {
     "pod": "EH",
@@ -4924,7 +8909,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/alita-battle-101731008",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1712274060555-b0f3dec6a5391.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0437086/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0437086/?ref_=ext_shr_lnk",
+    "tmdbId": 399579,
+    "tmdbPosterPath": "/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Robert Rodriguez"
+    ],
+    "cinematographers": [
+      "Bill Pope"
+    ],
+    "cast": [
+      "Rosa Salazar",
+      "Christoph Waltz",
+      "Jennifer Connelly",
+      "Mahershala Ali",
+      "Ed Skrein",
+      "Jackie Earle Haley",
+      "Keean Johnson",
+      "Lana Condor"
+    ]
   },
   {
     "pod": "EH",
@@ -4949,7 +8957,56 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/crimson-tide-102031593",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1712693656768-b934e32b388eb.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0112740/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0112740/?ref_=ext_shr_lnk",
+    "tmdbId": 8963,
+    "tmdbPosterPath": "/21nqRJ6ofEgVvEl68J4O9V26Xzy.jpg",
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "War"
+    ],
+    "directors": [
+      "Tony Scott"
+    ],
+    "cinematographers": [
+      "Dariusz Wolski"
+    ],
+    "cast": [
+      "Denzel Washington",
+      "Gene Hackman",
+      "Matt Craven",
+      "George Dzundza",
+      "Viggo Mortensen",
+      "James Gandolfini",
+      "Rocky Carroll",
+      "Jaime Gomez"
+    ]
+  },
+  {
+    "pod": "EH",
+    "season": 7,
+    "episode": 0,
+    "film": "BONUS: Civil War (2024)",
+    "filmYear": 2024,
+    "releaseDate": "4/17/2024",
+    "length": "0:40:58",
+    "reviewer": "Space Monkey",
+    "guest": "Peter Kafka",
+    "mmmCount": 5,
+    "thatsGreatCount": 2,
+    "notableMoments": "N/A",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "N/A",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://www.patreon.com/posts/civil-war-2024-102534092",
+    "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1713370772859-a26d7b0b6e0bf.jpg",
+    "letterboxdLink": "",
+    "imdbLink": "https://www.imdb.com/title/tt17279496/?ref_=ext_shr_lnk"
   },
   {
     "pod": "EH",
@@ -4974,7 +9031,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/hunt-for-red-102672588",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1713555502823-eb52151fbfbe4.jpg",
     "letterboxdLink": "",
-    "imdbLink": "https://www.imdb.com/title/tt0099810/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0099810/?ref_=ext_shr_lnk",
+    "tmdbId": 1669,
+    "tmdbPosterPath": "/yVl7zidse4KiWtGMqHFtZCx4X3N.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "John McTiernan"
+    ],
+    "cinematographers": [
+      "Jan de Bont"
+    ],
+    "cast": [
+      "Sean Connery",
+      "Alec Baldwin",
+      "Scott Glenn",
+      "Sam Neill",
+      "James Earl Jones",
+      "Joss Ackland",
+      "Richard Jordan",
+      "Peter Firth"
+    ]
   },
   {
     "pod": "EH",
@@ -4999,7 +9078,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/speed-racer-2008-102969906",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1713975246916-1505e212e9335.jpg",
     "letterboxdLink": "https://letterboxd.com/film/speed-racer/",
-    "imdbLink": "https://www.imdb.com/title/tt0811080/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0811080/?ref_=ext_shr_lnk",
+    "tmdbId": 7459,
+    "tmdbPosterPath": "/fxRIpx9Op9h71q3tvuabx4GryyP.jpg",
+    "genres": [
+      "Family",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "directors": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "cinematographers": [
+      "David Tattersall"
+    ],
+    "cast": [
+      "Emile Hirsch",
+      "Christina Ricci",
+      "John Goodman",
+      "Susan Sarandon",
+      "Matthew Fox",
+      "Benno Fürmann",
+      "Hiroyuki Sanada",
+      "Rain"
+    ]
   },
   {
     "pod": "EH",
@@ -5024,7 +9128,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/matrix-reloaded-103575733",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1714763154773-e4cf6f3fe792c.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-matrix-reloaded/",
-    "imdbLink": "https://www.imdb.com/title/tt0234215/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0234215/?ref_=ext_shr_lnk",
+    "tmdbId": 604,
+    "tmdbPosterPath": "/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "cinematographers": [
+      "Bill Pope"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss",
+      "Hugo Weaving",
+      "Jada Pinkett Smith",
+      "Gloria Foster",
+      "Harold Perrineau",
+      "Monica Bellucci"
+    ]
   },
   {
     "pod": "EH",
@@ -5049,7 +9178,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/seven-samurai-103886563",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1715195716111-ac3069e150293.jpg",
     "letterboxdLink": "https://letterboxd.com/film/seven-samurai/",
-    "imdbLink": "https://www.imdb.com/title/tt0047478/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0047478/?ref_=ext_shr_lnk",
+    "tmdbId": 346,
+    "tmdbPosterPath": "/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "directors": [
+      "Akira Kurosawa"
+    ],
+    "cinematographers": [
+      "Asakazu Nakai"
+    ],
+    "cast": [
+      "Toshirō Mifune",
+      "Takashi Shimura",
+      "Yoshio Inaba",
+      "Seiji Miyaguchi",
+      "Minoru Chiaki",
+      "Daisuke Katō",
+      "Isao Kimura",
+      "Keiko Tsushima"
+    ]
   },
   {
     "pod": "EH",
@@ -5063,18 +9214,41 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "ctcher / Silly Oswald",
     "mmmCount": 27,
     "thatsGreatCount": 0,
-    "notableMoments": "H announces Pod Data Central!!!",
-    "hFlex": "None",
+    "notableMoments": "- No Jason (Kidney Surgery)\n- H announces Pod Data Central!!!",
+    "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "Does historical accuracy matter to you in movies like these? ",
+    "kevsQuestion": "Does historical accuracy matter to you in movies like these?",
     "tildaH": "Hagen",
     "tildaJason": "N/A",
-    "tildaGuest": "ctcher: Commodus Silly: Commodus/Proximo",
+    "tildaGuest": "ctcher: Commodus \nSilly: Commodus/Proximo",
     "tildaCorey": "A Tiger",
     "showLink": "https://www.patreon.com/posts/gladiator-2000-104456375",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1715991256186-dbfdb8b043887.jpg",
     "letterboxdLink": "https://letterboxd.com/film/gladiator-2000/",
-    "imdbLink": "https://www.imdb.com/title/tt0172495/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0172495/?ref_=ext_shr_lnk",
+    "tmdbId": 98,
+    "tmdbPosterPath": "/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "Adventure"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cinematographers": [
+      "John Mathieson"
+    ],
+    "cast": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen",
+      "Oliver Reed",
+      "Richard Harris",
+      "Derek Jacobi",
+      "Djimon Hounsou",
+      "David Schofield"
+    ]
   },
   {
     "pod": "EH",
@@ -5099,7 +9273,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/noah-2014-104800902",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1716485847428-e09b805694597.jpg",
     "letterboxdLink": "https://letterboxd.com/film/noah/",
-    "imdbLink": "https://www.imdb.com/title/tt1959490/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1959490/?ref_=ext_shr_lnk",
+    "tmdbId": 86834,
+    "tmdbPosterPath": "/vVLkHabnF5lVpCpqyhZBI5iCYMA.jpg",
+    "genres": [
+      "Drama",
+      "Adventure"
+    ],
+    "directors": [
+      "Darren Aronofsky"
+    ],
+    "cinematographers": [
+      "Matthew Libatique"
+    ],
+    "cast": [
+      "Russell Crowe",
+      "Jennifer Connelly",
+      "Ray Winstone",
+      "Anthony Hopkins",
+      "Emma Watson",
+      "Logan Lerman",
+      "Douglas Booth",
+      "Nick Nolte"
+    ]
   },
   {
     "pod": "EH",
@@ -5124,7 +9320,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/spider-man-2-105468377",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1717386636384-98e3495064c86.jpg",
     "letterboxdLink": "https://letterboxd.com/film/spider-man-2/",
-    "imdbLink": "https://www.imdb.com/title/tt0316654/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0316654/?ref_=ext_shr_lnk",
+    "tmdbId": 558,
+    "tmdbPosterPath": "/eg8XHjA7jkM3ulBLnfGTczR9ytI.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Sam Raimi"
+    ],
+    "cinematographers": [
+      "Bill Pope"
+    ],
+    "cast": [
+      "Tobey Maguire",
+      "Kirsten Dunst",
+      "James Franco",
+      "Alfred Molina",
+      "Rosemary Harris",
+      "J.K. Simmons",
+      "Donna Murphy",
+      "Daniel Gillies"
+    ]
   },
   {
     "pod": "EH",
@@ -5149,7 +9368,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/raiders-of-lost-105779047",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1717816887494-d4d1243903d8f.jpg",
     "letterboxdLink": "https://letterboxd.com/escapehatchpod/film/raiders-of-the-lost-ark/",
-    "imdbLink": "https://www.imdb.com/title/tt0082971/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082971/?ref_=ext_shr_lnk",
+    "tmdbId": 85,
+    "tmdbPosterPath": "/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+    "genres": [
+      "Adventure",
+      "Action"
+    ],
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cinematographers": [
+      "Douglas Slocombe"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Karen Allen",
+      "Paul Freeman",
+      "John Rhys-Davies",
+      "Ronald Lacey",
+      "Wolf Kahler",
+      "Anthony Higgins",
+      "Denholm Elliott"
+    ]
   },
   {
     "pod": "EH",
@@ -5174,7 +9415,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/tremors-1990-106200900",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1718380545129-6844042d58129.jpg",
     "letterboxdLink": "https://letterboxd.com/film/tremors/",
-    "imdbLink": "https://www.imdb.com/title/tt0100814/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0100814/?ref_=ext_shr_lnk",
+    "tmdbId": 9362,
+    "tmdbPosterPath": "/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg",
+    "genres": [
+      "Horror",
+      "Action",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "directors": [
+      "Ron Underwood"
+    ],
+    "cinematographers": [
+      "Alexander Gruszynski"
+    ],
+    "cast": [
+      "Kevin Bacon",
+      "Fred Ward",
+      "Finn Carter",
+      "Michael Gross",
+      "Reba McEntire",
+      "Victor Wong Chi-Keung",
+      "Robert Jayne",
+      "Ariana Richards"
+    ]
   },
   {
     "pod": "EH",
@@ -5199,7 +9464,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/they-live-1988-106707773",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1719108264043-6281103f04c74.jpg",
     "letterboxdLink": "https://letterboxd.com/film/they-live/",
-    "imdbLink": "https://www.imdb.com/title/tt0096256/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0096256/?ref_=ext_shr_lnk",
+    "tmdbId": 8337,
+    "tmdbPosterPath": "/ngnybFTuopfbfmmEeX9jjBQQmF6.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Gary B. Kibbe"
+    ],
+    "cast": [
+      "Roddy Piper",
+      "Keith David",
+      "Meg Foster",
+      "George Buck Flower",
+      "Peter Jason",
+      "Raymond St. Jacques",
+      "Jason Robards III",
+      "John Lawrence"
+    ]
   },
   {
     "pod": "EH",
@@ -5224,7 +9512,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/taking-of-pelham-106961495",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1719449897171-4d1f0ed9de2c1.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-taking-of-pelham-one-two-three/",
-    "imdbLink": "https://www.imdb.com/title/tt0072251/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0072251/?ref_=ext_shr_lnk",
+    "tmdbId": 8333,
+    "tmdbPosterPath": "/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Action"
+    ],
+    "directors": [
+      "Joseph Sargent"
+    ],
+    "cinematographers": [
+      "Owen Roizman"
+    ],
+    "cast": [
+      "Walter Matthau",
+      "Robert Shaw",
+      "Martin Balsam",
+      "Héctor Elizondo",
+      "Earl Hindman",
+      "James Broderick",
+      "Dick O'Neill",
+      "Lee Wallace"
+    ]
   },
   {
     "pod": "EH",
@@ -5241,7 +9552,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "notableMoments": "Jason stalked Anticon artists in a record store back in the day",
     "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "If you had a floor between floors, what would you put in it? ",
+    "kevsQuestion": "If you had a floor between floors, what would you put in it?",
     "tildaH": "\"Being Tilda\"",
     "tildaJason": "\"Being Tilda\"",
     "tildaGuest": "Ben: Dr. Lester Rob: \"Being Tilda\"",
@@ -5249,7 +9560,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/being-john-1999-108077123",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1720898500131-1d0077336a305.jpg",
     "letterboxdLink": "https://letterboxd.com/film/being-john-malkovich/",
-    "imdbLink": "https://www.imdb.com/title/tt0120601/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120601/?ref_=ext_shr_lnk",
+    "tmdbId": 492,
+    "tmdbPosterPath": "/xVSvIwRNzwXSs0CLefiiG6A96m4.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "directors": [
+      "Spike Jonze"
+    ],
+    "cinematographers": [
+      "Lance Acord"
+    ],
+    "cast": [
+      "John Cusack",
+      "Cameron Diaz",
+      "John Malkovich",
+      "Catherine Keener",
+      "Orson Bean",
+      "Mary Kay Place",
+      "W. Earl Brown",
+      "Carlos Jacott"
+    ]
   },
   {
     "pod": "EH",
@@ -5274,7 +9608,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/master-and-far-108332674",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1721253361951-c7ff81beeb24.jpg",
     "letterboxdLink": "https://letterboxd.com/film/master-and-commander-the-far-side-of-the-world/",
-    "imdbLink": "https://www.imdb.com/title/tt0311113/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0311113/?ref_=ext_shr_lnk",
+    "tmdbId": 8619,
+    "tmdbPosterPath": "/s1cVTQEZYn4nSjZLnFbzLP0j8y2.jpg",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "directors": [
+      "Peter Weir"
+    ],
+    "cinematographers": [
+      "Russell Boyd"
+    ],
+    "cast": [
+      "Russell Crowe",
+      "Paul Bettany",
+      "James D'Arcy",
+      "Robert Pugh",
+      "David Threlfall",
+      "Lee Ingleby",
+      "Max Pirkis",
+      "Max Benitz"
+    ]
   },
   {
     "pod": "EH",
@@ -5299,7 +9656,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/goonies-1985-108935001",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1722107174413-721a11a1b9dcc.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-goonies/",
-    "imdbLink": "https://www.imdb.com/title/tt0089218/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089218/?ref_=ext_shr_lnk",
+    "tmdbId": 9340,
+    "tmdbPosterPath": "/eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family"
+    ],
+    "directors": [
+      "Richard Donner"
+    ],
+    "cinematographers": [
+      "Nick McLean"
+    ],
+    "cast": [
+      "Sean Astin",
+      "Josh Brolin",
+      "Jeff Cohen",
+      "Corey Feldman",
+      "Kerri Green",
+      "Martha Plimpton",
+      "Ke Huy Quan",
+      "John Matuszak"
+    ]
   },
   {
     "pod": "EH",
@@ -5313,7 +9693,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Corey",
     "mmmCount": 37,
     "thatsGreatCount": 5,
-    "notableMoments": "JELL-/Ō/TINOUS CUBE, MoodyBlue MyWinnipegExperience and angephalange join the Discord! Haitch's nickname in college was RDJ",
+    "notableMoments": "JELL-/Ō/TINOUS CUBE joins discord, MoodyBlue MyWinnipegExperience and angephalange join the Discord! \n- Corey's wife calls in for his voicemail segment, she has her own sounder!",
     "hFlex": "Haitch's nickname in college was RDJ",
     "jFlex": "N/A",
     "kevsQuestion": "What's something that you live that's stood the test of time?",
@@ -5324,7 +9704,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/natural-born-109370517",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1722658936393-1bea16257f9b.jpg",
     "letterboxdLink": "https://letterboxd.com/film/natural-born-killers/",
-    "imdbLink": "https://www.imdb.com/title/tt0110632/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0110632/?ref_=ext_shr_lnk",
+    "tmdbId": 241,
+    "tmdbPosterPath": "/fEKZwT91gxvkAoyPgpNXo8W5fu0.jpg",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "Oliver Stone"
+    ],
+    "cinematographers": [
+      "Robert Richardson"
+    ],
+    "cast": [
+      "Woody Harrelson",
+      "Juliette Lewis",
+      "Robert Downey Jr.",
+      "Tommy Lee Jones",
+      "Tom Sizemore",
+      "Rodney Dangerfield",
+      "Edie McClurg",
+      "Jared Harris"
+    ]
   },
   {
     "pod": "EH",
@@ -5349,7 +9752,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/king-of-comedy-109645983",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1723212071776-ab2251889ac8f.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-king-of-comedy/",
-    "imdbLink": "https://www.imdb.com/title/tt0085794/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0085794/?ref_=ext_shr_lnk",
+    "tmdbId": 262,
+    "tmdbPosterPath": "/3sGuQv0UxfjDODCC9IQG5S1jXK8.jpg",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "directors": [
+      "Martin Scorsese"
+    ],
+    "cinematographers": [
+      "Fred Schuler"
+    ],
+    "cast": [
+      "Robert De Niro",
+      "Jerry Lewis",
+      "Diahnne Abbott",
+      "Sandra Bernhard",
+      "Shelley Hack",
+      "Frederick de Cordova",
+      "Ed Herlihy",
+      "Lou Brown"
+    ]
   },
   {
     "pod": "EH",
@@ -5374,7 +9799,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/annihilation-110368871",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1724045482752-1dc9cbb95ab7a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/annihilation/",
-    "imdbLink": "https://www.imdb.com/title/tt2798920/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2798920/?ref_=ext_shr_lnk",
+    "tmdbId": 300668,
+    "tmdbPosterPath": "/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg",
+    "genres": [
+      "Science Fiction",
+      "Horror"
+    ],
+    "directors": [
+      "Alex Garland"
+    ],
+    "cinematographers": [
+      "Rob Hardy"
+    ],
+    "cast": [
+      "Natalie Portman",
+      "Jennifer Jason Leigh",
+      "Gina Rodriguez",
+      "Tessa Thompson",
+      "Tuva Novotny",
+      "Oscar Isaac",
+      "Benedict Wong",
+      "Sonoya Mizuno"
+    ]
   },
   {
     "pod": "EH",
@@ -5399,7 +9846,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/social-network-110651138",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1724427630513-96515fbb75392.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-social-network/",
-    "imdbLink": "https://www.imdb.com/title/tt1285016/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1285016/?ref_=ext_shr_lnk",
+    "tmdbId": 37799,
+    "tmdbPosterPath": "/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "David Fincher"
+    ],
+    "cinematographers": [
+      "Jeff Cronenweth"
+    ],
+    "cast": [
+      "Jesse Eisenberg",
+      "Andrew Garfield",
+      "Armie Hammer",
+      "Josh Pence",
+      "Justin Timberlake",
+      "Max Minghella",
+      "Brenda Song",
+      "Rashida Jones"
+    ]
   },
   {
     "pod": "EH",
@@ -5414,17 +9882,38 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "mmmCount": 8,
     "thatsGreatCount": 4,
     "notableMoments": "THE SONGBOOK (H's 220 page bound sing along song books he made and takes with him on camping trips to bring joy to other people)",
-    "hFlex": "NA",
-    "jFlex": "NA",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
     "kevsQuestion": "Kevin Smith made Clerks while working a different full time job. What were your Clerks/passion side jobs?",
     "tildaH": "Jay",
-    "tildaJason": "Old man that dies masturbating on the toilet ",
+    "tildaJason": "Old man that dies masturbating on the toilet",
     "tildaGuest": "NA",
     "tildaCorey": "Olaf",
     "showLink": "https://www.patreon.com/posts/clerks-1994-110974717",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1724880243551-8f2538aa6e192.jpg",
     "letterboxdLink": "https://letterboxd.com/film/clerks/",
-    "imdbLink": "https://www.imdb.com/title/tt0109445/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0109445/?ref_=ext_shr_lnk",
+    "tmdbId": 2292,
+    "tmdbPosterPath": "/9IiSgiq4h4siTIS9H3o4nZ3h5L9.jpg",
+    "genres": [
+      "Comedy"
+    ],
+    "directors": [
+      "Kevin Smith"
+    ],
+    "cinematographers": [
+      "David Klein"
+    ],
+    "cast": [
+      "Brian O'Halloran",
+      "Jeff Anderson",
+      "Marilyn Ghigliotti",
+      "Lisa Spoonauer",
+      "Jason Mewes",
+      "Kevin Smith",
+      "Scott Mosier",
+      "Scott Schiaffo"
+    ]
   },
   {
     "pod": "EH",
@@ -5449,7 +9938,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/jaws-1975-111718331",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1725886334165-cd95e62ed295d.jpg",
     "letterboxdLink": "https://letterboxd.com/film/jaws/",
-    "imdbLink": "https://www.imdb.com/title/tt0073195/"
+    "imdbLink": "https://www.imdb.com/title/tt0073195/",
+    "tmdbId": 578,
+    "tmdbPosterPath": "/tjbLSFwi0I3phZwh8zoHWNfbsEp.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Adventure"
+    ],
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cinematographers": [
+      "Bill Butler"
+    ],
+    "cast": [
+      "Roy Scheider",
+      "Robert Shaw",
+      "Richard Dreyfuss",
+      "Lorraine Gary",
+      "Murray Hamilton",
+      "Carl Gottlieb",
+      "Jeffrey Kramer",
+      "Susan Backlinie"
+    ]
   },
   {
     "pod": "EH",
@@ -5474,7 +9986,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/marathon-man-111948504",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1726176552751-f4edefb702edb.jpg",
     "letterboxdLink": "https://letterboxd.com/film/marathon-man/",
-    "imdbLink": "https://www.imdb.com/title/tt0074860/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0074860/?ref_=ext_shr_lnk",
+    "tmdbId": 10518,
+    "tmdbPosterPath": "/uPNgubSiri2yvBQRPtP77ViYjN.jpg",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "directors": [
+      "John Schlesinger"
+    ],
+    "cinematographers": [
+      "Conrad Hall"
+    ],
+    "cast": [
+      "Dustin Hoffman",
+      "Laurence Olivier",
+      "Roy Scheider",
+      "William Devane",
+      "Marthe Keller",
+      "Fritz Weaver",
+      "Richard Bright",
+      "Marc Lawrence"
+    ]
   },
   {
     "pod": "EH",
@@ -5488,18 +10023,40 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Rosie Knight",
     "mmmCount": 26,
     "thatsGreatCount": 2,
-    "notableMoments": "Jason's former colleague Dustin becomes a Patron! ",
+    "notableMoments": "Jason's former colleague Dustin becomes a Patron!",
     "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "What's the strangest place Dune has appeared in your life? ",
+    "kevsQuestion": "What's the strangest place Dune has appeared in your life?",
     "tildaH": "Toombs",
     "tildaJason": "Lord Marshal",
     "tildaGuest": "Thandie role",
-    "tildaCorey": "Dame Judy Dench role",
+    "tildaCorey": "Dame Judi Dench role",
     "showLink": "https://www.patreon.com/posts/chronicles-of-112335496",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1726707177634-42d4ffd6c901c.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-chronicles-of-riddick/",
-    "imdbLink": "https://www.imdb.com/title/tt0296572/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0296572/?ref_=ext_shr_lnk",
+    "tmdbId": 2789,
+    "tmdbPosterPath": "/bVO1r90diKfFLzvZ5D3qK6Z558O.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "directors": [
+      "David Twohy"
+    ],
+    "cinematographers": [
+      "Hugh Johnson"
+    ],
+    "cast": [
+      "Vin Diesel",
+      "Colm Feore",
+      "Thandiwe Newton",
+      "Judi Dench",
+      "Karl Urban",
+      "Alexa Davalos",
+      "Linus Roache",
+      "Yorick van Wageningen"
+    ]
   },
   {
     "pod": "EH",
@@ -5524,7 +10081,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/manhunter-1986-112902593",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1727467273815-bd9334d29e082.jpg",
     "letterboxdLink": "https://letterboxd.com/film/manhunter/",
-    "imdbLink": "https://www.imdb.com/title/tt0091474/"
+    "imdbLink": "https://www.imdb.com/title/tt0091474/",
+    "tmdbId": 11454,
+    "tmdbPosterPath": "/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
+    ],
+    "directors": [
+      "Michael Mann"
+    ],
+    "cinematographers": [
+      "Dante Spinotti"
+    ],
+    "cast": [
+      "William Petersen",
+      "Tom Noonan",
+      "Dennis Farina",
+      "Brian Cox",
+      "Kim Greist",
+      "Joan Allen",
+      "Stephen Lang",
+      "David Seaman"
+    ]
   },
   {
     "pod": "EH",
@@ -5549,7 +10129,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/spider-man-into-113545093",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1728315069009-b2e573129265a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/spider-man-into-the-spider-verse/",
-    "imdbLink": "https://www.imdb.com/title/tt4633694/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt4633694/?ref_=ext_shr_lnk",
+    "tmdbId": 324857,
+    "tmdbPosterPath": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Bob Persichetti",
+      "Peter Ramsey",
+      "Rodney Rothman"
+    ],
+    "cinematographers": [],
+    "cast": [
+      "Shameik Moore",
+      "Jake Johnson",
+      "Hailee Steinfeld",
+      "Mahershala Ali",
+      "Brian Tyree Henry",
+      "Lily Tomlin",
+      "Luna Lauren Vélez",
+      "Zoë Kravitz"
+    ]
   },
   {
     "pod": "EH",
@@ -5559,22 +10163,45 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "filmYear": 1968,
     "releaseDate": "10/13/2024",
     "length": "1:36:12",
-    "reviewer": "Hex",
+    "reviewer": "birria",
     "guest": "Jonesy Loves Beer",
     "mmmCount": 19,
     "thatsGreatCount": 9,
-    "notableMoments": "H sourced a VM from his neighbor to play during the episode ",
-    "hFlex": "Previously stated United Colors of Beneton phase",
+    "notableMoments": "If Haitch was running for office, Jonesy would vote for the other guy\n- \"Edging\" is really having a moment\n- Jason wants to join Twin Vipers as the 4th Viper\n- Jonesy has modeled his life after Bullitt\n- Jonesy's Corner - comprehensive car talk section\n- Notable Quotable - \" I do not choose to have people accuse me of false promises for the sake of cheap sensationalism, or to be compromised by your lieutenant. Castrate him.\" \"Your world is so far from the one I know. What will happen to us in time? - Time starts now.\"\n- 6 Degrees of Dune - Emil Richards and Joe Corcaro were in the music department for the Lynch Dune\n- Duleck's Division - the shake down of the Hotel Clerk. \"Am I helping you sir? - I never had it so good.\"\n- H sourced a VM from his neighbor to play during the episode",
+    "hFlex": "Previously stated United Colors of Benetton phase",
     "jFlex": "N/A",
     "kevsQuestion": "Did you have a turtleneck phase?",
-    "tildaH": "Old white haired assassin ",
+    "tildaH": "Old white haired assassin",
     "tildaJason": "Jazz flautist in the coffee shop",
     "tildaGuest": "Chalmers' body man",
     "tildaCorey": "Eddy the informant",
     "showLink": "https://www.patreon.com/posts/bullitt-1968-113836170",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1728687937313-6433ad4d7fc82.jpg",
     "letterboxdLink": "https://letterboxd.com/film/bullitt/",
-    "imdbLink": "https://www.imdb.com/title/tt0062765/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0062765/?ref_=ext_shr_lnk",
+    "tmdbId": 916,
+    "tmdbPosterPath": "/2ffzF1WmeXtH420fSUoCrecFvDA.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "Peter Yates"
+    ],
+    "cinematographers": [
+      "William A. Fraker"
+    ],
+    "cast": [
+      "Steve McQueen",
+      "Robert Vaughn",
+      "Jacqueline Bisset",
+      "Don Gordon",
+      "Robert Duvall",
+      "Simon Oakland",
+      "Norman Fell",
+      "Georg Stanford Brown"
+    ]
   },
   {
     "pod": "EH",
@@ -5599,7 +10226,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/halloween-1978-114211528",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1729209239803-176a2d0006a36.jpg",
     "letterboxdLink": "https://letterboxd.com/film/halloween-1978/",
-    "imdbLink": "https://www.imdb.com/title/tt0077651/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0077651/?ref_=ext_shr_lnk",
+    "tmdbId": 948,
+    "tmdbPosterPath": "/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Dean Cundey"
+    ],
+    "cast": [
+      "Donald Pleasence",
+      "Jamie Lee Curtis",
+      "Nancy Kyes",
+      "P. J. Soles",
+      "Charles Cyphers",
+      "Kyle Richards",
+      "Brian Andrews",
+      "John Michael Graham"
+    ]
   },
   {
     "pod": "EH",
@@ -5624,7 +10273,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/predator-1987-114520125",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1729803178072-6a21856447c38.jpg",
     "letterboxdLink": "https://letterboxd.com/film/predator/",
-    "imdbLink": "https://www.imdb.com/title/tt0093773/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093773/?ref_=ext_shr_lnk",
+    "tmdbId": 106,
+    "tmdbPosterPath": "/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "directors": [
+      "John McTiernan"
+    ],
+    "cinematographers": [
+      "Donald McAlpine"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Carl Weathers",
+      "Kevin Peter Hall",
+      "Elpidia Carrillo",
+      "Bill Duke",
+      "Jesse Ventura",
+      "Sonny Landham",
+      "Richard Chaves"
+    ]
   },
   {
     "pod": "EH",
@@ -5649,7 +10322,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/twilight-2008-115220197",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1730555102788-adaf9d5199814.jpg",
     "letterboxdLink": "https://letterboxd.com/film/twilight-2008/",
-    "imdbLink": "https://www.imdb.com/title/tt1099212/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1099212/?ref_=ext_shr_lnk",
+    "tmdbId": 8966,
+    "tmdbPosterPath": "/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Romance"
+    ],
+    "directors": [
+      "Catherine Hardwicke"
+    ],
+    "cinematographers": [
+      "Elliot Davis"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Billy Burke",
+      "Peter Facinelli",
+      "Ashley Greene",
+      "Jackson Rathbone",
+      "Nikki Reed",
+      "Kellan Lutz"
+    ]
   },
   {
     "pod": "EH",
@@ -5663,7 +10359,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "dale_a",
     "mmmCount": 31,
     "thatsGreatCount": 6,
-    "notableMoments": "Jason talks about his documentary idea for story about the college debate process for the second time",
+    "notableMoments": "Day before election day 2024\n- Jason talks about his documentary idea for story about the college debate process for the second time\n- Good Discord update from Pat\n- Second documentary the Pod has covered (Jodorowsky's Dune was the first)\n- Haitch says he is the Mark of this podcast. He recognizes himself in Mark\n- Mike Shank is incredible in this film\n- Corey has a signed copy of Coven movie on VHS",
     "hFlex": "N/A",
     "jFlex": "Warcraft update - Druid at Item Level 616, and when the great vault opens tomorrow he will increase another level",
     "kevsQuestion": "Is there something in your world that needs a documentary? If so, what is it?",
@@ -5674,7 +10370,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/american-movie-115549249",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1730996537460-2e6eb9a703de6.jpg",
     "letterboxdLink": "https://letterboxd.com/film/american-movie/",
-    "imdbLink": "https://www.imdb.com/title/tt0181288/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0181288/?ref_=ext_shr_lnk",
+    "tmdbId": 14242,
+    "tmdbPosterPath": "/y8dJgWr1HeW0RRxwANDWvgIXdsF.jpg",
+    "genres": [
+      "Documentary",
+      "Comedy"
+    ],
+    "directors": [
+      "Chris Smith"
+    ],
+    "cinematographers": [
+      "Chris Smith"
+    ],
+    "cast": [
+      "Mark Borchardt",
+      "Mike Schank",
+      "Tom Schimmels",
+      "Monica Borchardt",
+      "Alex Borchardt",
+      "Chris Borchardt",
+      "Ken Keen",
+      "Matt Weisman"
+    ]
   },
   {
     "pod": "EH",
@@ -5712,19 +10430,42 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "reviewer": "Space Monkey",
     "guest": "Mark Altman",
     "mmmCount": 31,
-    "thatsGreatCount": 4,
-    "notableMoments": "Waldo084 joins the Discord, Jason was not happy to watch the movie. ",
+    "thatsGreatCount": 6,
+    "notableMoments": "Thanksgiving Talk\n- Waldo084 joins the Discord\n- Jason was not happy to watch the movie. \n- Great discussion with Mark on his documentary 1982: Greatest Geek Year Ever!\n- Excellent Trek discussion - Mark is a phenomenal guest\n- Pod-First - new Lizzen sounder! And an excellent Lizzen voicemail",
     "hFlex": "Haitch is starting up the Turkey Bowl again (Flag football game)",
     "jFlex": "Jason is not allowed to play Flag Football any more",
-    "kevsQuestion": "If you could with an artist on a bizarre post-modern record, who would it be and why? ",
-    "tildaH": "Bones/Spock",
-    "tildaJason": "Ilia",
-    "tildaGuest": "Alien Boy/Epsilon Nine",
+    "kevsQuestion": "If you could work with any artist on a bizarre postmodern record, who would it be, and why?",
+    "tildaH": "Bones or Spock",
+    "tildaJason": "Alia",
+    "tildaGuest": "Alien Boy (the Albino Guy), or one of the crew members on Epsilon Nine",
     "tildaCorey": "Decker",
     "showLink": "https://www.patreon.com/posts/star-trek-motion-116486151",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1732252279693-e1917aed67077.jpg",
     "letterboxdLink": "https://letterboxd.com/film/star-trek-the-motion-picture/",
-    "imdbLink": "https://www.imdb.com/title/tt0057012/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0057012/?ref_=ext_shr_lnk",
+    "tmdbId": 152,
+    "tmdbPosterPath": "/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Mystery"
+    ],
+    "directors": [
+      "Robert Wise"
+    ],
+    "cinematographers": [
+      "Richard H. Kline"
+    ],
+    "cast": [
+      "William Shatner",
+      "Leonard Nimoy",
+      "DeForest Kelley",
+      "James Doohan",
+      "George Takei",
+      "Walter Koenig",
+      "Nichelle Nichols",
+      "Stephen Collins"
+    ]
   },
   {
     "pod": "EH",
@@ -5749,7 +10490,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/colossus-forbin-117394665",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1733437266524-8afc2a658c816.jpg",
     "letterboxdLink": "https://letterboxd.com/film/colossus-the-forbin-project/",
-    "imdbLink": "https://www.imdb.com/title/tt0064177/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0064177/?ref_=ext_shr_lnk",
+    "tmdbId": 14801,
+    "tmdbPosterPath": "/kmVDlTzERxSvBrqtQurjKf1zEy1.jpg",
+    "genres": [
+      "Science Fiction"
+    ],
+    "directors": [
+      "Joseph Sargent"
+    ],
+    "cinematographers": [
+      "Gene Polito"
+    ],
+    "cast": [
+      "Eric Braeden",
+      "Susan Clark",
+      "Gordon Pinsent",
+      "William Schallert",
+      "Georg Stanford Brown",
+      "Willard Sage",
+      "Alex Rodine",
+      "Martin E. Brooks"
+    ]
   },
   {
     "pod": "EH",
@@ -5774,7 +10536,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/lord-of-rings-of-117992909",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1734228682624-b07ec89e033ee.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-lord-of-the-rings-the-fellowship-of-the-ring/",
-    "imdbLink": "https://www.imdb.com/title/tt0120737/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0120737/?ref_=ext_shr_lnk",
+    "tmdbId": 120,
+    "tmdbPosterPath": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cinematographers": [
+      "Andrew Lesnie"
+    ],
+    "cast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen",
+      "Sean Astin",
+      "Ian Holm",
+      "Liv Tyler",
+      "Christopher Lee",
+      "Sean Bean"
+    ]
   },
   {
     "pod": "EH",
@@ -5788,10 +10573,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Dave Mandel",
     "mmmCount": 17,
     "thatsGreatCount": 0,
-    "notableMoments": "Haitch's brother Reed becomes a Patron. Yirmummah joins the Discord! ",
+    "notableMoments": "Haitch's brother Reed becomes a Patron. Yirmummah joins the Discord!",
     "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "Which celebrity needs to make an album? ",
+    "kevsQuestion": "Which celebrity needs to make an album?",
     "tildaH": "Agrees with guest",
     "tildaJason": "N/A",
     "tildaGuest": "Harlan Dexter (Corbin Bernsen role)",
@@ -5799,7 +10584,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/kiss-kiss-bang-118257878",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1734572228532-77843b2e971d9.jpg",
     "letterboxdLink": "https://letterboxd.com/film/kiss-kiss-bang-bang-2005/",
-    "imdbLink": "https://www.imdb.com/title/tt0373469/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0373469/?ref_=ext_shr_lnk",
+    "tmdbId": 5236,
+    "tmdbPosterPath": "/aWfjIkpENFX6Uw82pET7EQ6jnrd.jpg",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "directors": [
+      "Shane Black"
+    ],
+    "cinematographers": [
+      "Michael Barrett"
+    ],
+    "cast": [
+      "Robert Downey Jr.",
+      "Val Kilmer",
+      "Michelle Monaghan",
+      "Corbin Bernsen",
+      "Dash Mihok",
+      "Larry Miller",
+      "Rockmond Dunbar",
+      "Shannyn Sossamon"
+    ]
   },
   {
     "pod": "EH",
@@ -5874,7 +10683,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/constantine-2005-120770283",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1737832595569-c327843811d44.jpg",
     "letterboxdLink": "https://letterboxd.com/film/constantine/",
-    "imdbLink": "https://www.imdb.com/title/tt0360486/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0360486/?ref_=ext_shr_lnk",
+    "tmdbId": 561,
+    "tmdbPosterPath": "/vPYgvd2MwHlxTamAOjwVQp4qs1W.jpg",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Horror"
+    ],
+    "directors": [
+      "Francis Lawrence"
+    ],
+    "cinematographers": [
+      "Philippe Rousselot"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Rachel Weisz",
+      "Shia LaBeouf",
+      "Djimon Hounsou",
+      "Max Baker",
+      "Pruitt Taylor Vince",
+      "Gavin Rossdale",
+      "Tilda Swinton"
+    ]
   },
   {
     "pod": "EH",
@@ -5899,7 +10731,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/tinker-tailor-121144531",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1738275815914-9b9f78382caff.jpg",
     "letterboxdLink": "https://letterboxd.com/film/tinker-tailor-soldier-spy/",
-    "imdbLink": "https://www.imdb.com/title/tt1340800/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1340800/?ref_=ext_shr_lnk",
+    "tmdbId": 49517,
+    "tmdbPosterPath": "/e0dZ7TapGY9HtJ9xk1TUHPEOccl.jpg",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Mystery"
+    ],
+    "directors": [
+      "Tomas Alfredson"
+    ],
+    "cinematographers": [
+      "Hoyte van Hoytema"
+    ],
+    "cast": [
+      "Gary Oldman",
+      "Colin Firth",
+      "Tom Hardy",
+      "John Hurt",
+      "Toby Jones",
+      "Mark Strong",
+      "Benedict Cumberbatch",
+      "Ciarán Hinds"
+    ]
   },
   {
     "pod": "EH",
@@ -5924,7 +10779,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/godfather-1972-121760183",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1738973886922-8a418a33ab20f.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-godfather/",
-    "imdbLink": "https://www.imdb.com/title/tt0068646/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0068646/?ref_=ext_shr_lnk",
+    "tmdbId": 238,
+    "tmdbPosterPath": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cinematographers": [
+      "Gordon Willis"
+    ],
+    "cast": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan",
+      "Robert Duvall",
+      "Richard S. Castellano",
+      "Diane Keaton",
+      "Talia Shire",
+      "Gianni Russo"
+    ]
   },
   {
     "pod": "EH",
@@ -5936,20 +10813,43 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "length": "1:44:12",
     "reviewer": "Hex",
     "guest": "Astead Herndon",
-    "mmmCount": 12,
-    "thatsGreatCount": 1,
-    "notableMoments": "J did not know that Eva Mendez is married to Ryan Gosling ",
+    "mmmCount": 21,
+    "thatsGreatCount": 7,
+    "notableMoments": "J did not know that Eva Mendes is married to Ryan Gosling \n- Good stories about Astead's podcast The Runup about the runup to the elections\n- Ashtead with great stories about how he and his friends bonded over this movie\n- This is Tyreese's movie\n- Ashtead tells some stories about Tyrese and his political involvement\n- Letters - Lizzen (Dune 3, Messiah Drift), Animal Mother, Truthsayer, BogPod, Kev, Corey",
     "hFlex": "N/A",
     "jFlex": "He's is producing musicals at home for an audience of one: Juni",
     "kevsQuestion": "Could you pitch a Dune sequel with a major character removed that would still fit in with the story as a whole.",
     "tildaH": "The rat",
     "tildaJason": "Verone",
-    "tildaGuest": "O'Connor, Bilikin, or Agent Markham",
+    "tildaGuest": "O'Connor, Billiken, or Agent Markham",
     "tildaCorey": "Ludacris' role",
     "showLink": "https://www.patreon.com/posts/2-fast-2-furious-122159816",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1739410262402-a3525e4293c11.jpg",
     "letterboxdLink": "https://letterboxd.com/film/2-fast-2-furious/",
-    "imdbLink": "https://www.imdb.com/title/tt0322259/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0322259/?ref_=ext_shr_lnk",
+    "tmdbId": 584,
+    "tmdbPosterPath": "/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "John Singleton"
+    ],
+    "cinematographers": [
+      "Matthew F. Leonetti"
+    ],
+    "cast": [
+      "Paul Walker",
+      "Tyrese Gibson",
+      "Eva Mendes",
+      "Cole Hauser",
+      "Ludacris",
+      "James Remar",
+      "Thom Barry",
+      "Michael Ealy"
+    ]
   },
   {
     "pod": "EH",
@@ -5999,7 +10899,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/king-of-new-york-123283920",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1740721878928-cc36834b2153.jpg",
     "letterboxdLink": "https://letterboxd.com/film/king-of-new-york/",
-    "imdbLink": "https://www.imdb.com/title/tt0099939/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0099939/?ref_=ext_shr_lnk",
+    "tmdbId": 9558,
+    "tmdbPosterPath": "/1MyH4MJAJZJbb6wDVeOc2bTECtK.jpg",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "Abel Ferrara"
+    ],
+    "cinematographers": [
+      "Bojan Bazelli"
+    ],
+    "cast": [
+      "Christopher Walken",
+      "David Caruso",
+      "Laurence Fishburne",
+      "Victor Argo",
+      "Wesley Snipes",
+      "Janet Julian",
+      "Joey Chin",
+      "Giancarlo Esposito"
+    ]
   },
   {
     "pod": "EH",
@@ -6012,7 +10934,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "reviewer": "Hex",
     "guest": "Jonesy Loves Beer",
     "mmmCount": 19,
-    "thatsGreatCount": 1,
+    "thatsGreatCount": 3,
     "notableMoments": "JLB Called in off the bench when Lucasfilm's Nicolas Anastassiou had to back out\n- Haitch got smoked in his Tennis league again. Maybe it's an Haitch problem, not a league problem. Jonesy suggests Haitch try amphetamines\n- Talk about Daredevil season 2, and Severance season 2\n- Haitch - this was one of the most important movies of my childhood\n- How did a PG Disney movie have both Bewbs and Beans-n-Franks?\n- The dragon in this film is among the best that's ever been on screen - go-motion was developed for these Dragon shots\n- George RR Martin steals a ton from this movie (You HACK)\n- Peter MacNicol is not great in this film\n- Letters - BogPod, Mr Java, Animal Mother, Truthsayer, Kev, Corey",
     "hFlex": "Haitch mentions that he was free to go get steaks last night with Jason",
     "jFlex": "Jason had the best steak of his life last night",
@@ -6024,7 +10946,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/dragonslayer-123735728",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1741220421556-aa51a2d0c8817.jpg",
     "letterboxdLink": "http://letterboxd.com/film/dragonslayer/",
-    "imdbLink": "https://www.imdb.com/title/tt0082288/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0082288/?ref_=ext_shr_lnk",
+    "tmdbId": 848,
+    "tmdbPosterPath": "/92VXAEwbjebYqTeUa7uX5bBtDuD.jpg",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "directors": [
+      "Matthew Robbins"
+    ],
+    "cinematographers": [
+      "Derek Vanlint"
+    ],
+    "cast": [
+      "Peter MacNicol",
+      "Caitlin Clarke",
+      "Ralph Richardson",
+      "John Hallam",
+      "Peter Eyre",
+      "Albert Salmi",
+      "Sydney Bromley",
+      "Chloe Salaman"
+    ]
   },
   {
     "pod": "EH",
@@ -6049,7 +10993,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/french-1971-124312452",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1741905428601-39817dfc00599.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-french-connection/",
-    "imdbLink": "https://www.imdb.com/title/tt0067116/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0067116/?ref_=ext_shr_lnk",
+    "tmdbId": 1051,
+    "tmdbPosterPath": "/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "William Friedkin"
+    ],
+    "cinematographers": [
+      "Owen Roizman"
+    ],
+    "cast": [
+      "Gene Hackman",
+      "Roy Scheider",
+      "Fernando Rey",
+      "Tony Lo Bianco",
+      "Marcel Bozzuffi",
+      "Frédéric de Pasquale",
+      "Bill Hickman",
+      "Ann Rebbot"
+    ]
   },
   {
     "pod": "EH",
@@ -6099,7 +11066,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "http://patreon.com/posts/repo-man-1984-124812984",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1742505976415-b01ff305dd35b.jpg",
     "letterboxdLink": "https://letterboxd.com/film/repo-man/",
-    "imdbLink": "https://www.imdb.com/title/tt0087995/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0087995/?ref_=ext_shr_lnk",
+    "tmdbId": 13820,
+    "tmdbPosterPath": "/bjuu5UceuVUNUjnOC2fBzL3hZKC.jpg",
+    "genres": [
+      "Comedy",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Alex Cox"
+    ],
+    "cinematographers": [
+      "Robby Müller"
+    ],
+    "cast": [
+      "Emilio Estevez",
+      "Harry Dean Stanton",
+      "Tracey Walter",
+      "Olivia Barash",
+      "Sy Richardson",
+      "Susan Barnes",
+      "Fox Harris",
+      "Tom Finnegan"
+    ]
   },
   {
     "pod": "EH",
@@ -6149,7 +11138,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/gravity-2013-125331747",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1743118375133-07d7475b1f278.jpg",
     "letterboxdLink": "https://letterboxd.com/film/gravity-2013/",
-    "imdbLink": "https://www.imdb.com/title/tt1454468/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1454468/?ref_=ext_shr_lnk",
+    "tmdbId": 49047,
+    "tmdbPosterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "Alfonso Cuarón"
+    ],
+    "cinematographers": [
+      "Emmanuel Lubezki"
+    ],
+    "cast": [
+      "Sandra Bullock",
+      "George Clooney",
+      "Ed Harris",
+      "Orto Ignatiussen",
+      "Phaldut Sharma",
+      "Amy Warren",
+      "Basher Savage"
+    ]
   },
   {
     "pod": "EH",
@@ -6199,7 +11210,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/district-9-2009-125815174",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1743655547715-1bc2b75225d25.jpg",
     "letterboxdLink": "https://letterboxd.com/film/district-9/",
-    "imdbLink": "https://www.imdb.com/title/tt1136608/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1136608/?ref_=ext_shr_lnk",
+    "tmdbId": 17654,
+    "tmdbPosterPath": "/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
+    "genres": [
+      "Science Fiction"
+    ],
+    "directors": [
+      "Neill Blomkamp"
+    ],
+    "cinematographers": [
+      "Trent Opaloch"
+    ],
+    "cast": [
+      "Sharlto Copley",
+      "Jason Cope",
+      "Nathalie Boltt",
+      "Sylvaine Strike",
+      "Elizabeth Mkandawie",
+      "John Sumner",
+      "William Allen Young",
+      "Nick Blake"
+    ]
   },
   {
     "pod": "EH",
@@ -6249,7 +11281,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/three-musketeers-126824699",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1744845721506-2a49ee9189265.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-three-musketeers-1973/",
-    "imdbLink": "https://www.imdb.com/title/tt0072281/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0072281/?ref_=ext_shr_lnk",
+    "tmdbId": 2926,
+    "tmdbPosterPath": "/6qjW1e31k2XhcWpzGz6lgHcRt5W.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Romance"
+    ],
+    "directors": [
+      "Richard Lester"
+    ],
+    "cinematographers": [
+      "David Watkin"
+    ],
+    "cast": [
+      "Michael York",
+      "Oliver Reed",
+      "Richard Chamberlain",
+      "Frank Finlay",
+      "Faye Dunaway",
+      "Raquel Welch",
+      "Christopher Lee",
+      "Geraldine Chaplin"
+    ]
   },
   {
     "pod": "EH",
@@ -6299,7 +11354,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/last-unicorn-127397016",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1745536971639-9ecf9e4944d5.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-last-unicorn/",
-    "imdbLink": "https://www.imdb.com/title/tt0084237/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0084237/?ref_=ext_shr_lnk",
+    "tmdbId": 10150,
+    "tmdbPosterPath": "/MRHFtXTjxC74MGCzHACcuqvHiw.jpg",
+    "genres": [
+      "Fantasy",
+      "Animation",
+      "Family",
+      "Adventure"
+    ],
+    "directors": [
+      "Jules Bass",
+      "Arthur Rankin, Jr."
+    ],
+    "cinematographers": [],
+    "cast": [
+      "Mia Farrow",
+      "Alan Arkin",
+      "Tammy Grimes",
+      "Jeff Bridges",
+      "Christopher Lee",
+      "Angela Lansbury",
+      "Robert Klein",
+      "Keenan Wynn"
+    ]
   },
   {
     "pod": "EH",
@@ -6399,7 +11477,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/rear-window-1954-128611061",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1746884018328-2e7d18d4d63a2.jpg",
     "letterboxdLink": "https://letterboxd.com/film/rear-window/",
-    "imdbLink": "https://www.imdb.com/title/tt0047396/"
+    "imdbLink": "https://www.imdb.com/title/tt0047396/",
+    "tmdbId": 567,
+    "tmdbPosterPath": "/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "directors": [
+      "Alfred Hitchcock"
+    ],
+    "cinematographers": [
+      "Robert Burks"
+    ],
+    "cast": [
+      "James Stewart",
+      "Grace Kelly",
+      "Wendell Corey",
+      "Thelma Ritter",
+      "Raymond Burr",
+      "Judith Evelyn",
+      "Ross Bagdasarian",
+      "Georgine Darcy"
+    ]
   },
   {
     "pod": "EH",
@@ -6474,7 +11574,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/high-and-low-129857145",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1748201015845-a072c23a677f5.jpg",
     "letterboxdLink": "https://letterboxd.com/film/high-and-low/",
-    "imdbLink": "https://www.imdb.com/title/tt0057565/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0057565/?ref_=ext_shr_lnk",
+    "tmdbId": 12493,
+    "tmdbPosterPath": "/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "directors": [
+      "Akira Kurosawa"
+    ],
+    "cinematographers": [
+      "Asakazu Nakai",
+      "Takao Saitō"
+    ],
+    "cast": [
+      "Toshirō Mifune",
+      "Tatsuya Nakadai",
+      "Kyōko Kagawa",
+      "Tatsuya Mihashi",
+      "Isao Kimura",
+      "Kenjirō Ishiyama",
+      "Takeshi Katō",
+      "Takashi Shimura"
+    ]
   },
   {
     "pod": "EH",
@@ -6499,7 +11622,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/all-that-jazz-130238403",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1748581953730-61d3ee58bcf76.jpg",
     "letterboxdLink": "https://letterboxd.com/film/all-that-jazz/",
-    "imdbLink": "https://www.imdb.com/title/tt0078754/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0078754/?ref_=ext_shr_lnk",
+    "tmdbId": 16858,
+    "tmdbPosterPath": "/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Bob Fosse"
+    ],
+    "cinematographers": [
+      "Giuseppe Rotunno"
+    ],
+    "cast": [
+      "Roy Scheider",
+      "Jessica Lange",
+      "Ann Reinking",
+      "Leland Palmer",
+      "Cliff Gorman",
+      "Ben Vereen",
+      "Erzsebet Foldi",
+      "Michael Tolan"
+    ]
   },
   {
     "pod": "EH",
@@ -6524,7 +11668,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/superman-1978-130818748",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1749170503070-0761f7083989d.jpg",
     "letterboxdLink": "https://letterboxd.com/film/superman/",
-    "imdbLink": "https://www.imdb.com/title/tt0078346/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0078346/?ref_=ext_shr_lnk",
+    "tmdbId": 1924,
+    "tmdbPosterPath": "/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Richard Donner"
+    ],
+    "cinematographers": [
+      "Geoffrey Unsworth"
+    ],
+    "cast": [
+      "Christopher Reeve",
+      "Margot Kidder",
+      "Gene Hackman",
+      "Marlon Brando",
+      "Ned Beatty",
+      "Jackie Cooper",
+      "Glenn Ford",
+      "Trevor Howard"
+    ]
   },
   {
     "pod": "EH",
@@ -6549,7 +11716,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/videodrome-1983-131393343",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1749832155101-d5ce073008ebf.jpg",
     "letterboxdLink": "https://letterboxd.com/film/videodrome/",
-    "imdbLink": "https://www.imdb.com/title/tt0086541/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0086541/?ref_=ext_shr_lnk",
+    "tmdbId": 837,
+    "tmdbPosterPath": "/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "directors": [
+      "David Cronenberg"
+    ],
+    "cinematographers": [
+      "Mark Irwin"
+    ],
+    "cast": [
+      "James Woods",
+      "Debbie Harry",
+      "Sonja Smits",
+      "Peter Dvorsky",
+      "Leslie Carlson",
+      "Jack Creley",
+      "Lynne Gorman",
+      "Julie Khaner"
+    ]
   },
   {
     "pod": "EH",
@@ -6574,7 +11764,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/harakiri-1962-131861928",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1750377917428-7c9a7632fcd3a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/harakiri/",
-    "imdbLink": "https://www.imdb.com/title/tt0056058/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0056058/?ref_=ext_shr_lnk",
+    "tmdbId": 14537,
+    "tmdbPosterPath": "/3nPwMd3KviJWaHzG9fZCqlwWMas.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "directors": [
+      "Masaki Kobayashi"
+    ],
+    "cinematographers": [
+      "Yoshio Miyajima"
+    ],
+    "cast": [
+      "Tatsuya Nakadai",
+      "Akira Ishihama",
+      "Shima Iwashita",
+      "Tetsuro Tamba",
+      "Masao Mishima",
+      "Ichirō Nakatani",
+      "Kei Satō",
+      "Yoshio Inaba"
+    ]
   },
   {
     "pod": "EH",
@@ -6599,7 +11812,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/godfather-part-132384803",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1751045192525-66ce25101ccb2.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-godfather-part-ii/",
-    "imdbLink": "https://www.imdb.com/title/tt0071562/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0071562/?ref_=ext_shr_lnk",
+    "tmdbId": 240,
+    "tmdbPosterPath": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cinematographers": [
+      "Gordon Willis"
+    ],
+    "cast": [
+      "Al Pacino",
+      "Robert Duvall",
+      "Diane Keaton",
+      "Robert De Niro",
+      "John Cazale",
+      "Talia Shire",
+      "Lee Strasberg",
+      "Michael V. Gazzo"
+    ]
   },
   {
     "pod": "EH",
@@ -6624,7 +11859,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/grease-1978-133367149",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1751652834765-d856e842a93a2.jpg",
     "letterboxdLink": "https://letterboxd.com/film/grease/",
-    "imdbLink": "https://www.imdb.com/title/tt0077631/"
+    "imdbLink": "https://www.imdb.com/title/tt0077631/",
+    "tmdbId": 621,
+    "tmdbPosterPath": "/2rM7fQKpb7cs1Iq7IBqub9LFDzJ.jpg",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "directors": [
+      "Randal Kleiser"
+    ],
+    "cinematographers": [
+      "Bill Butler"
+    ],
+    "cast": [
+      "Olivia Newton-John",
+      "John Travolta",
+      "Stockard Channing",
+      "Jeff Conaway",
+      "Barry Pearl",
+      "Michael Tucci",
+      "Kelly Ward",
+      "Didi Conn"
+    ]
   },
   {
     "pod": "EH",
@@ -6699,7 +11956,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/do-right-thing-134944957",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1753462996863-ae05b6cd96d5f.jpg",
     "letterboxdLink": "https://letterboxd.com/film/do-the-right-thing/",
-    "imdbLink": "https://www.imdb.com/title/tt0097216/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0097216/?ref_=ext_shr_lnk",
+    "tmdbId": 925,
+    "tmdbPosterPath": "/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Spike Lee"
+    ],
+    "cinematographers": [
+      "Ernest R. Dickerson"
+    ],
+    "cast": [
+      "Danny Aiello",
+      "Ossie Davis",
+      "Ruby Dee",
+      "Richard Edson",
+      "Giancarlo Esposito",
+      "Spike Lee",
+      "Bill Nunn",
+      "John Turturro"
+    ]
   },
   {
     "pod": "EH",
@@ -6724,7 +12002,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/goldeneye-1995-135504820",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1754080791862-9a50e50c1bc82.jpg",
     "letterboxdLink": "https://letterboxd.com/film/goldeneye/",
-    "imdbLink": "https://www.imdb.com/title/tt0113189/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113189/?ref_=ext_shr_lnk",
+    "tmdbId": 710,
+    "tmdbPosterPath": "/z0ljRnNxIO7CRBhLEO0DvLgAFPR.jpg",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Thriller"
+    ],
+    "directors": [
+      "Martin Campbell"
+    ],
+    "cinematographers": [
+      "Phil Meheux"
+    ],
+    "cast": [
+      "Pierce Brosnan",
+      "Sean Bean",
+      "Izabella Scorupco",
+      "Famke Janssen",
+      "Joe Don Baker",
+      "Judi Dench",
+      "Robbie Coltrane",
+      "Tchéky Karyo"
+    ]
   },
   {
     "pod": "EH",
@@ -6749,7 +12050,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/bourne-supremacy-136028687",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1754668373316-5bef03485fed9.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-bourne-supremacy/",
-    "imdbLink": "https://www.imdb.com/title/tt0372183/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0372183/?ref_=ext_shr_lnk",
+    "tmdbId": 2502,
+    "tmdbPosterPath": "/7IYGiDrquvX3q7e9PV6Pejs6b2g.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "Paul Greengrass"
+    ],
+    "cinematographers": [
+      "Oliver Wood"
+    ],
+    "cast": [
+      "Matt Damon",
+      "Franka Potente",
+      "Brian Cox",
+      "Julia Stiles",
+      "Karl Urban",
+      "Gabriel Mann",
+      "Joan Allen",
+      "Marton Csokas"
+    ]
   },
   {
     "pod": "EH",
@@ -6774,7 +12098,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/gone-girl-2014-136495223",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1755197944846-326bab92fa1f1.jpg",
     "letterboxdLink": "https://letterboxd.com/film/gone-girl/",
-    "imdbLink": "https://www.imdb.com/title/tt2267998/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt2267998/?ref_=ext_shr_lnk",
+    "tmdbId": 210577,
+    "tmdbPosterPath": "/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "David Fincher"
+    ],
+    "cinematographers": [
+      "Jeff Cronenweth"
+    ],
+    "cast": [
+      "Ben Affleck",
+      "Rosamund Pike",
+      "Neil Patrick Harris",
+      "Tyler Perry",
+      "Carrie Coon",
+      "Kim Dickens",
+      "Patrick Fugit",
+      "David Clennon"
+    ]
   },
   {
     "pod": "EH",
@@ -6799,7 +12146,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/jesus-christ-137027419",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1755796449234-802038e619e1b.jpg",
     "letterboxdLink": "https://letterboxd.com/film/jesus-christ-superstar/",
-    "imdbLink": "https://www.imdb.com/title/tt0070239/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0070239/?ref_=ext_shr_lnk",
+    "tmdbId": 12545,
+    "tmdbPosterPath": "/2NQgIjHxYyMJZWeUFH5cuKhN4nh.jpg",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "directors": [
+      "Norman Jewison"
+    ],
+    "cinematographers": [
+      "Douglas Slocombe"
+    ],
+    "cast": [
+      "Ted Neeley",
+      "Carl Anderson",
+      "Yvonne Elliman",
+      "Barry Dennen",
+      "Bob Bingham",
+      "Larry Marshall",
+      "Josh Mostel",
+      "Kurt Yaghjian"
+    ]
   },
   {
     "pod": "EH",
@@ -6824,7 +12193,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/sorcerer-1977-137576358",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1756409265538-10d2757c1bc77.jpg",
     "letterboxdLink": "https://letterboxd.com/film/sorcerer/",
-    "imdbLink": "https://www.imdb.com/title/tt0076740/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0076740/?ref_=ext_shr_lnk",
+    "tmdbId": 38985,
+    "tmdbPosterPath": "/2b7oexm173SF1FSEq0DdgxZZNRH.jpg",
+    "genres": [
+      "Thriller",
+      "Adventure",
+      "Drama"
+    ],
+    "directors": [
+      "William Friedkin"
+    ],
+    "cinematographers": [
+      "John M. Stephens",
+      "Dick Bush"
+    ],
+    "cast": [
+      "Roy Scheider",
+      "Bruno Cremer",
+      "Francisco Rabal",
+      "Amidou",
+      "Ramon Bieri",
+      "Peter Capell",
+      "Karl John",
+      "Friedrich von Ledebur"
+    ]
   },
   {
     "pod": "EH",
@@ -6849,7 +12242,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/creator-2023-138209868",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1757086498791-f5bb373b6220c.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-creator-2023/",
-    "imdbLink": "https://www.imdb.com/title/tt11858890/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt11858890/?ref_=ext_shr_lnk",
+    "tmdbId": 670292,
+    "tmdbPosterPath": "/3dSivDtOuyxLDxPH4v2tcNG1fP7.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "directors": [
+      "Gareth Edwards"
+    ],
+    "cinematographers": [
+      "Oren Soffer",
+      "Greig Fraser"
+    ],
+    "cast": [
+      "John David Washington",
+      "Madeleine Yuna Voyles",
+      "Gemma Chan",
+      "Allison Janney",
+      "Ken Watanabe",
+      "Sturgill Simpson",
+      "Amar Chadha-Patel",
+      "Marc Menchaca"
+    ]
   },
   {
     "pod": "EH",
@@ -6874,7 +12291,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/mortal-kombat-138699862",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1757633447525-2798cf287a628.jpg",
     "letterboxdLink": "https://letterboxd.com/film/mortal-kombat/",
-    "imdbLink": "https://www.imdb.com/title/tt0113855/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0113855/?ref_=ext_shr_lnk",
+    "tmdbId": 9312,
+    "tmdbPosterPath": "/fcK7tzSSXMYiMN8E9KlZJL1BYyp.jpg",
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "directors": [
+      "Paul W. S. Anderson"
+    ],
+    "cinematographers": [
+      "John R. Leonetti"
+    ],
+    "cast": [
+      "Robin Shou",
+      "Linden Ashby",
+      "Bridgette Wilson-Sampras",
+      "Christopher Lambert",
+      "Cary-Hiroyuki Tagawa",
+      "Talisa Soto",
+      "Trevor Goddard",
+      "Chris Casamassa"
+    ]
   },
   {
     "pod": "EH",
@@ -6899,7 +12338,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/casablanca-1942-139225246",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1758242039314-75ca117484961.jpg",
     "letterboxdLink": "https://letterboxd.com/film/casablanca/",
-    "imdbLink": "https://www.imdb.com/title/tt0034583/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0034583/?ref_=ext_shr_lnk",
+    "tmdbId": 289,
+    "tmdbPosterPath": "/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "directors": [
+      "Michael Curtiz"
+    ],
+    "cinematographers": [
+      "Arthur Edeson"
+    ],
+    "cast": [
+      "Humphrey Bogart",
+      "Ingrid Bergman",
+      "Paul Henreid",
+      "Claude Rains",
+      "Conrad Veidt",
+      "Sydney Greenstreet",
+      "Peter Lorre",
+      "S.Z. Sakall"
+    ]
   },
   {
     "pod": "EH",
@@ -6924,7 +12385,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/sunset-boulevard-139936825",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1759074398526-964a7b7d3b345.jpg",
     "letterboxdLink": "https://letterboxd.com/film/sunset-boulevard/",
-    "imdbLink": "https://www.imdb.com/title/tt0043014/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0043014/?ref_=ext_shr_lnk",
+    "tmdbId": 599,
+    "tmdbPosterPath": "/zt8aQ6ksqK6p1AopC5zVTDS9pKT.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "directors": [
+      "Billy Wilder"
+    ],
+    "cinematographers": [
+      "John F. Seitz"
+    ],
+    "cast": [
+      "William Holden",
+      "Gloria Swanson",
+      "Erich von Stroheim",
+      "Nancy Olson",
+      "Fred Clark",
+      "Lloyd Gough",
+      "Jack Webb",
+      "Franklyn Farnum"
+    ]
   },
   {
     "pod": "EH",
@@ -6974,7 +12456,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/robocop-1987-140393938",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1759532140922-7d4bb52f22efa.jpg",
     "letterboxdLink": "https://letterboxd.com/film/robocop/",
-    "imdbLink": "https://www.imdb.com/title/tt0093870/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093870/?ref_=ext_shr_lnk",
+    "tmdbId": 5548,
+    "tmdbPosterPath": "/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "directors": [
+      "Paul Verhoeven"
+    ],
+    "cinematographers": [
+      "Jost Vacano"
+    ],
+    "cast": [
+      "Peter Weller",
+      "Nancy Allen",
+      "Dan O'Herlihy",
+      "Ronny Cox",
+      "Kurtwood Smith",
+      "Miguel Ferrer",
+      "Robert DoQui",
+      "Ray Wise"
+    ]
   },
   {
     "pod": "EH",
@@ -7024,7 +12529,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/birdcage-1996-140940155",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1760135259685-5f4b1e7ca301.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-birdcage/",
-    "imdbLink": "https://www.imdb.com/title/tt0115685/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0115685/?ref_=ext_shr_lnk",
+    "tmdbId": 11000,
+    "tmdbPosterPath": "/hU2XeckncHS61TWZKDtw1BrKmOO.jpg",
+    "genres": [
+      "Comedy"
+    ],
+    "directors": [
+      "Mike Nichols"
+    ],
+    "cinematographers": [
+      "Emmanuel Lubezki"
+    ],
+    "cast": [
+      "Robin Williams",
+      "Gene Hackman",
+      "Nathan Lane",
+      "Dianne Wiest",
+      "Dan Futterman",
+      "Calista Flockhart",
+      "Hank Azaria",
+      "Christine Baranski"
+    ]
   },
   {
     "pod": "EH",
@@ -7049,7 +12575,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/twilight-saga-141454518",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1760723047073-b7b8ef58b7655.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-twilight-saga-new-moon/",
-    "imdbLink": "https://www.imdb.com/title/tt1259571/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1259571/?ref_=ext_shr_lnk",
+    "tmdbId": 18239,
+    "tmdbPosterPath": "/k2qTooPlHffgNABNWxeJdGMglPK.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Drama",
+      "Romance"
+    ],
+    "directors": [
+      "Chris Weitz"
+    ],
+    "cinematographers": [
+      "Javier Aguirresarobe"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Taylor Lautner",
+      "Dakota Fanning",
+      "Michael Sheen",
+      "Ashley Greene",
+      "Rachelle Lefevre",
+      "Billy Burke"
+    ]
   },
   {
     "pod": "EH",
@@ -7074,7 +12624,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/margin-call-2011-141980050",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1761331518057-3498d8396f2d5.jpg",
     "letterboxdLink": "https://letterboxd.com/film/margin-call/",
-    "imdbLink": "https://www.imdb.com/title/tt1615147/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1615147/?ref_=ext_shr_lnk",
+    "tmdbId": 50839,
+    "tmdbPosterPath": "/qtO57obCJuUBS0en3HLgFgZ19Xk.jpg",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "J.C. Chandor"
+    ],
+    "cinematographers": [
+      "Frankie DeMarco"
+    ],
+    "cast": [
+      "Kevin Spacey",
+      "Zachary Quinto",
+      "Paul Bettany",
+      "Jeremy Irons",
+      "Simon Baker",
+      "Penn Badgley",
+      "Demi Moore",
+      "Stanley Tucci"
+    ]
   },
   {
     "pod": "EH",
@@ -7099,7 +12671,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/maltese-falcon-142534581",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1761942112750-0b96786bedf25.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-maltese-falcon-1941/",
-    "imdbLink": "https://www.imdb.com/title/tt0033870/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0033870/?ref_=ext_shr_lnk",
+    "tmdbId": 963,
+    "tmdbPosterPath": "/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "John Huston"
+    ],
+    "cinematographers": [
+      "Arthur Edeson"
+    ],
+    "cast": [
+      "Humphrey Bogart",
+      "Mary Astor",
+      "Gladys George",
+      "Peter Lorre",
+      "Barton MacLane",
+      "Lee Patrick",
+      "Sydney Greenstreet",
+      "Ward Bond"
+    ]
   },
   {
     "pod": "EH",
@@ -7124,7 +12719,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/rushmore-1998-143000606",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1762462704609-c5804c473077a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/rushmore/",
-    "imdbLink": "https://www.imdb.com/title/tt0128445/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0128445/?ref_=ext_shr_lnk",
+    "tmdbId": 11545,
+    "tmdbPosterPath": "/hSJ6swahAuZ8wM96lHDTwQPXUvZ.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cinematographers": [
+      "Robert D. Yeoman"
+    ],
+    "cast": [
+      "Jason Schwartzman",
+      "Bill Murray",
+      "Olivia Williams",
+      "Seymour Cassel",
+      "Brian Cox",
+      "Mason Gamble",
+      "Sara Tanaka",
+      "Stephen McCole"
+    ]
   },
   {
     "pod": "EH",
@@ -7149,7 +12766,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/hellraiser-1987-143514743",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1763061112320-c43dc1cc7ba49.jpg",
     "letterboxdLink": "https://letterboxd.com/film/hellraiser/",
-    "imdbLink": "https://www.imdb.com/title/tt0093177/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0093177/?ref_=ext_shr_lnk",
+    "tmdbId": 9003,
+    "tmdbPosterPath": "/3Z0oPHyLnk3Vx6ZMC1MiVwIrKhO.jpg",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "directors": [
+      "Clive Barker"
+    ],
+    "cinematographers": [
+      "Robin Vidgeon"
+    ],
+    "cast": [
+      "Andrew Robinson",
+      "Clare Higgins",
+      "Sean Chapman",
+      "Robert Hines",
+      "Ashley Laurence",
+      "Oliver Smith",
+      "Anthony Allen",
+      "Leon Davis"
+    ]
   },
   {
     "pod": "EH",
@@ -7224,7 +12863,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/lord-of-rings-145217661",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1765033105655-bb55a2683268c.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-lord-of-the-rings-the-two-towers/",
-    "imdbLink": "https://www.imdb.com/title/tt0167261/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0167261/?ref_=ext_shr_lnk",
+    "tmdbId": 121,
+    "tmdbPosterPath": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cinematographers": [
+      "Andrew Lesnie"
+    ],
+    "cast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen",
+      "Sean Astin",
+      "Andy Serkis",
+      "John Rhys-Davies",
+      "Orlando Bloom",
+      "Bernard Hill"
+    ]
   },
   {
     "pod": "EH",
@@ -7249,7 +12911,31 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/rambo-first-part-145708544",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1765567440223-317e4438f0d0a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/rambo-first-blood-part-ii/",
-    "imdbLink": "https://www.imdb.com/title/tt0089880/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0089880/?ref_=ext_shr_lnk",
+    "tmdbId": 1369,
+    "tmdbPosterPath": "/lIyUiHted0eWUceCx2ZHLnQGmgy.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller",
+      "War"
+    ],
+    "directors": [
+      "George P. Cosmatos"
+    ],
+    "cinematographers": [
+      "Jack Cardiff"
+    ],
+    "cast": [
+      "Sylvester Stallone",
+      "Richard Crenna",
+      "Charles Napier",
+      "Steven Berkoff",
+      "Julia Nickson",
+      "Martin Kove",
+      "George Cheung",
+      "Andy Wood"
+    ]
   },
   {
     "pod": "EH",
@@ -7274,7 +12960,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/nice-guys-2016-146244338",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1766172781530-8484a8a40e23e.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-nice-guys/",
-    "imdbLink": "https://www.imdb.com/title/tt3799694/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt3799694/?ref_=ext_shr_lnk",
+    "tmdbId": 290250,
+    "tmdbPosterPath": "/clq4So9spa9cXk3MZy2iMdqkxP2.jpg",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Action"
+    ],
+    "directors": [
+      "Shane Black"
+    ],
+    "cinematographers": [
+      "Philippe Rousselot"
+    ],
+    "cast": [
+      "Russell Crowe",
+      "Ryan Gosling",
+      "Angourie Rice",
+      "Matt Bomer",
+      "Margaret Qualley",
+      "Yaya DaCosta",
+      "Keith David",
+      "Beau Knapp"
+    ]
   },
   {
     "pod": "EH",
@@ -7309,18 +13018,18 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "filmYear": 2025,
     "releaseDate": "1/4/2026",
     "length": "1:09:39",
-    "reviewer": "Hex",
+    "reviewer": "birria",
     "guest": "None",
-    "mmmCount": 8,
+    "mmmCount": 18,
     "thatsGreatCount": 12,
-    "notableMoments": "Rustysurfer's personal letter; the We love Kev song; After the Beep",
-    "hFlex": "NA",
-    "jFlex": "NA",
-    "kevsQuestion": "What are your New Year's resolutions",
-    "tildaH": "NA",
-    "tildaJason": "(as H in the future of the podcast)",
-    "tildaGuest": "NA",
-    "tildaCorey": "NA",
+    "notableMoments": "Talk about Christmas plans - Jason in Bend, Haitch in Hawaii \n- Talk about what a shitty year 2025 was (outside of the Podcast) \n- Talk about a strategy for a better 2026 \n- Jason to Haitch: \"You think rich liberals don't have enough of a say in the Democratic Party?\" \n- Letters - Lizzen (Pick an underbaked Female character that deserves their own prestige story), Hex, Bog Pod (If you started a Film Production Company...), Dustin, Animal Mother, Mikey P, Truthsayer (Birria does the 2025 Escape Hatch Pod Data Central Wrapup Spectacular), Mr Java (We didn't start the fire parody with video! https://www.patreon.com/posts/mailbag-2025-mr-146452519 ), Kev, Corey",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "Can I use you guys as a reference?",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
     "showLink": "https://www.patreon.com/posts/mailbag-2025-146452168",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1766442302352-14141f71cef73.jpg",
     "letterboxdLink": "",
@@ -7349,7 +13058,32 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/prophecy-1995-147844261",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1767998049024-97c03084f0768.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-prophecy/",
-    "imdbLink": "https://www.imdb.com/title/tt0114194/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0114194/?ref_=ext_shr_lnk",
+    "tmdbId": 11980,
+    "tmdbPosterPath": "/4ZWFhQipzBHJze2llzCzhrSIZsn.jpg",
+    "genres": [
+      "Action",
+      "Mystery",
+      "Fantasy",
+      "Thriller"
+    ],
+    "directors": [
+      "Gregory Widen"
+    ],
+    "cinematographers": [
+      "Richard Clabaugh",
+      "Bruce Douglas Johnson"
+    ],
+    "cast": [
+      "Christopher Walken",
+      "Elias Koteas",
+      "Virginia Madsen",
+      "Eric Stoltz",
+      "Viggo Mortensen",
+      "Amanda Plummer",
+      "Moriah 'Shining Dove' Snyder",
+      "Adam Goldberg"
+    ]
   },
   {
     "pod": "EH",
@@ -7374,7 +13108,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/adaptation-2002-148467241",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1768675814266-7753569aeb33a.jpg",
     "letterboxdLink": "https://letterboxd.com/film/adaptation/",
-    "imdbLink": "https://www.imdb.com/title/tt0268126/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0268126/?ref_=ext_shr_lnk",
+    "tmdbId": 2757,
+    "tmdbPosterPath": "/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "directors": [
+      "Spike Jonze"
+    ],
+    "cinematographers": [
+      "Lance Acord"
+    ],
+    "cast": [
+      "Nicolas Cage",
+      "Meryl Streep",
+      "Chris Cooper",
+      "Tilda Swinton",
+      "Jay Tavare",
+      "Litefoot",
+      "Roger Willie",
+      "Jim Beaver"
+    ]
   },
   {
     "pod": "EH",
@@ -7399,7 +13156,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/starman-1984-148969914",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1769210719303-96dd009079a33.jpg",
     "letterboxdLink": "https://letterboxd.com/film/starman/",
-    "imdbLink": "https://www.imdb.com/title/tt0088172/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0088172/?ref_=ext_shr_lnk",
+    "tmdbId": 9663,
+    "tmdbPosterPath": "/cgDeFWkYi6e9FT5RiQPCbQ9HlXZ.jpg",
+    "genres": [
+      "Science Fiction",
+      "Romance",
+      "Drama"
+    ],
+    "directors": [
+      "John Carpenter"
+    ],
+    "cinematographers": [
+      "Donald M. Morgan"
+    ],
+    "cast": [
+      "Jeff Bridges",
+      "Karen Allen",
+      "Charles Martin Smith",
+      "Richard Jaeckel",
+      "Robert Phalen",
+      "Tony Edwards",
+      "John Walter Davis",
+      "Ted White"
+    ]
   },
   {
     "pod": "EH",
@@ -7424,6 +13204,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/panic-room-2002-149394082",
     "artworkLink": "",
     "letterboxdLink": "https://letterboxd.com/film/panic-room/",
-    "imdbLink": "https://www.imdb.com/title/tt0258000/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0258000/?ref_=ext_shr_lnk",
+    "tmdbId": 4547,
+    "tmdbPosterPath": "/hANYbvfwxmkC9E4yY6YyJxYxlSJ.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "David Fincher"
+    ],
+    "cinematographers": [
+      "Conrad W. Hall",
+      "Darius Khondji"
+    ],
+    "cast": [
+      "Jodie Foster",
+      "Kristen Stewart",
+      "Forest Whitaker",
+      "Dwight Yoakam",
+      "Jared Leto",
+      "Patrick Bauchau",
+      "Ann Magnuson",
+      "Ian Buchanan"
+    ]
   }
 ];
