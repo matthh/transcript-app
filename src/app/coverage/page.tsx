@@ -279,7 +279,14 @@ export default function CoveragePage() {
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm">
-                    {episode.hasTranscript && episode.transcriptFile ? (
+                    {episode.needsReview ? (
+                      <Link
+                        href={`/review/new?load=${episode.episode}`}
+                        className="text-blue-600 hover:underline"
+                      >
+                        Map Speakers
+                      </Link>
+                    ) : episode.hasTranscript && episode.transcriptFile ? (
                       <Link
                         href={`/review/${episode.transcriptFile}`}
                         className="text-blue-600 hover:underline"

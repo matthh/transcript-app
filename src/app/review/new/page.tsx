@@ -35,17 +35,66 @@ function NewEpisodeContent() {
   const [uploadProgress, setUploadProgress] = useState<number>(0);
   const [audioDuration, setAudioDuration] = useState<number | null>(null);
 
+  // Track if we're loading an existing transcript for re-mapping
+  const [isRemapping, setIsRemapping] = useState(false);
+  const [loadingExisting, setLoadingExisting] = useState(false);
+
   // Initialize from URL params on mount
   useEffect(() => {
     const epParam = searchParams.get('episode');
     const filmParam = searchParams.get('film');
+    const loadParam = searchParams.get('load');
+
     if (epParam) {
       setEpisodeNumber(epParam);
     }
     if (filmParam) {
       setEpisodeName(filmParam);
     }
+
+    // If load param is present, fetch existing transcript and skip to mapping
+    if (loadParam) {
+      setIsRemapping(true);
+      setLoadingExisting(true);
+      loadExistingTranscript(loadParam);
+    }
   }, [searchParams]);
+
+  // Load an existing transcript for re-mapping speakers
+  const loadExistingTranscript = async (episodeNum: string) => {
+    try {
+      // Fetch transcript
+      const response = await fetch(`/api/transcripts/episode_${episodeNum}`);
+      if (!response.ok) {
+        throw new Error('Failed to load transcript');
+      }
+      const transcript = await response.json();
+
+      setEpisodeNumber(String(transcript.episode_number));
+      setEpisodeName(transcript.episode_name);
+      setRawTranscript(transcript);
+
+      // Try to fetch audio URL
+      try {
+        const audioResponse = await fetch(`/api/audio/${episodeNum}`);
+        if (audioResponse.ok) {
+          const audioData = await audioResponse.json();
+          if (audioData.url) {
+            setAudioUrl(audioData.url);
+          }
+        }
+      } catch {
+        // Audio not available, that's fine
+      }
+
+      setLoadingExisting(false);
+      setStep('mapping');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load transcript');
+      setLoadingExisting(false);
+      setIsRemapping(false);
+    }
+  };
 
   // Track elapsed time during transcription
   useEffect(() => {
@@ -265,10 +314,15 @@ function NewEpisodeContent() {
   return (
     <>
       <div className="mb-6">
-        <Link href="/review" className="text-blue-600 hover:underline text-sm">
-          Back to Review List
+        <Link href={isRemapping ? "/coverage" : "/review"} className="text-blue-600 hover:underline text-sm">
+          {isRemapping ? "Back to Coverage" : "Back to Review List"}
         </Link>
-        <h1 className="text-2xl font-bold mt-1">Add New Episode</h1>
+        <h1 className="text-2xl font-bold mt-1">
+          {isRemapping ? "Re-map Speakers" : "Add New Episode"}
+        </h1>
+        {isRemapping && episodeName && (
+          <p className="text-gray-600 mt-1">Episode {episodeNumber}: {episodeName}</p>
+        )}
       </div>
 
       {error && (
@@ -277,8 +331,17 @@ function NewEpisodeContent() {
         </div>
       )}
 
-      {/* Step 1: Upload */}
-      {step === 'upload' && (
+      {/* Loading existing transcript */}
+      {loadingExisting && (
+        <div className="bg-white rounded-lg shadow p-8 text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <h2 className="text-xl font-semibold text-gray-900">Loading Transcript</h2>
+          <p className="text-gray-600 mt-2">Preparing for speaker mapping...</p>
+        </div>
+      )}
+
+      {/* Step 1: Upload (not shown when loading existing transcript) */}
+      {step === 'upload' && !loadingExisting && (
         <div className="bg-white rounded-lg shadow p-6 space-y-6">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
