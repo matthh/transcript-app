@@ -31,8 +31,9 @@ export interface CoverageResponse {
 
 /**
  * Pattern for detecting unmapped AssemblyAI speakers (e.g., "A", "B", "Speaker A")
+ * Excludes "I" and "M" which appear as parsing artifacts in some older transcripts
  */
-const UNMAPPED_SPEAKER_PATTERN = /^(Speaker\s*)?[A-Z]$/i;
+const UNMAPPED_SPEAKER_PATTERN = /^(Speaker\s*)?[A-HJ-LN-Z]$/i;
 
 /**
  * Check if a transcript has unmapped speaker names
