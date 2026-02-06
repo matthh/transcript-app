@@ -1,2426 +1,2426 @@
 {
-    "episode_number": 46,
-    "episode_name": "Nausicaa Valley of the Wind",
-    "dialogues": [
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie or just talk about great movies if you don't care about Dune. This week, I'm joined as always by my co-host, Jason."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Makes me realize that I like missed a chance to name my daughter after Haitch."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And by co-host to the 70mm podcast slash famous artist, Danny Haas."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "[Danny laughs] Get some of that mayonnaise sack."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "On this episode, we discussed the other seminal ecological sci-fi masterpiece Nausicaa of the Valley of the Wind. We covered the power of art, the interconnectedness of nature, and how the more things change the more they stay the same. If you're enjoying the show, check out our Discord server where you can hang out with us whenever you want. A link is in the show notes. And now without further a-Dune, Nausicaa. [Dune Pod theme song fades out]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So Danny, can you just tell me about your history with Ferris Bueller? [clip of Oh Yeah by Yello from Ferris Bueller's Day Off soundtrack plays]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh my gosh, Ferris, what? I was not ready for this."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And the context. You can provide the context. [Danny laughs]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, this weekend, there's an art show held by a gallery out in California called Hero Complex Gallery. Dear friends of mine, and they're doing a John Hughes tribute art show."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, so cool."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And I chose to do Ferris, which is my favorite John Hughes flick. And I don't really have a deep history of it. I didn't watch Ferris until I was older in life. Obviously, I don't think my parents would have showed it to me when I was younger. [Haitch laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "He wasn't good Christian values?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, right. My Baptist Christian parents were not showing me Ferris Bueller. I mean, Matthew in it is his killer. He's top of his game obviously. I just love that movie so much. It's silly. It's fun. Ruck is so funny. His comedic timing in that movie is I mean him sitting in the car deciding to not go and or to go see Ferris and pick them up is one of my favourite scenes. I laugh so much."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "How about you J? That one big for you?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, Ferris is a big, big movie for me. It's like up there with the other sort of like yeah, I don't remember a time when I hadn't seen it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "We just did Wargames, Danny, and so like there's a just a straight vibe from 83 Wargames to Ferris is just a couple of years later."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "When I read Ready Player One and Ernest Cline's kind of connection with all these movies. So I did like a Ferris, Wargames, Ladyhawke kind of trilogy, Broderick trilogy that I watched at one point recently. Yeah, I love Wargames, too. It's so much fun."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, I'm excited for people to hear our wargames bonus episode and that comes out because I think it was a, I think it was a true banger. [Danny laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Oh, yeah. Yeah. Coming soon. Coming soon. Well, listen, Danny Haas. Welcome back to Dune Pod."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Thank you. Happy to be back."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "We're really happy to have you here. This is tonight. The kickoff of 70mm Month Strikes Back. Danny starts us off strong. We are here with one of his favorite films by Hayao Miyazaki, Nausicaa of the Valley of the Wind."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Easily my favorite Miyazaki."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Really?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Wow! Interesting."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "I'm ready for this."
-        },
-        {
-            "name": "HAITCH I",
-            "timestamp": "",
-            "text": "knew it was up there, but I wasn't sure if it was -"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "So it all went downhill after the first one? [Danny & Jason & Haitch laugh] Most legendary animator of a generation. Yeah, it's number one and done for me."
-        },
-        {
-            "name": "HAITCH A",
-            "timestamp": "",
-            "text": "good start. We'll get into that in the bottom of the hour here. So very excited for that. But next week, 70mm Month Strikes Back, rolls on."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Rolls on."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And we have the Podfather himself, the original tech consultant, Slim, making his third appearance on Dune Pod."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The original tech consultant is just a great title. [Danny laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "He's our technical advisor. Sorry, correct the record, technical advice from Slim."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Alright. Alright."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "His three peat."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yes. This is third appearance, and he's coming for Paul Thomas Anderson's Inherent Vice."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's a good choice."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Have you seen it?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Mhm!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "How about you Danny, have you seen this movie?"
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "have not seen it. No, I'm actually, I'm not very well versed in PTA's work. I think I've only seen -"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "You love There Will Be Blood. This is well known."
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "am not, I actually was, yeah, I don't really enjoy There Will Be Blood. I did see that and I have I've seen what's the one where he's a seamstress?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Oh, Phantom thread? Yeah."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yes. Phantom Thread. [Jason laughs]"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "don't know if he's really a seamstress. But."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, I couldn't think real quick but thread was in the title. I did love Phantom Thread though."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "What's the one he works at Triangle Shirtwaist Factory? [Haitch & Danny laughs] He's in the schmatta business. I don't know, he does something."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Ian's gonna murder me."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Oh my gosh. That's gonna be very exciting. I have not seen Inherent Vice. Looking forward to seeing it. It's not one that he wrote. And it definitely gets some mixed reviews. But in addition to Joaquin, our boy, it has Gurney Halleck from Dune 2021, Josh Brolin. And then the week after that, Proto is back for his fifth appearance or sixth appearance on Dune Pod for Heretics of Dune!"
-        },
-        {
-            "name": "DANNYNNY",
-            "timestamp": "",
-            "text": "Wow."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Which I am very close to finishing. Um, I'm really in the exciting part of the book right now. I'm really excited to talk about this one because I've forgotten how smutty it was. And it is just filthy. Yeah, it's just terrible. It's really made me question my whole life."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "What we're doing? [Haitch laughs]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, what we're doing, why we're doing it. It's just really provoked a dark knight of the Dune soul for me."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That's right."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "What number book is that?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's number five."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Fiiive."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "So if you read the five, you're really in it because you have to get past four, which is definitely the worst."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Well I'm not reading through one, so."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "And then your reward for number five is sexomancy. Just like hundreds of pages of sexomancy."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Shit is crazy. It is real crazy. So anyways, that is coming up in two weeks."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's coming up! Something to look forward to."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "If you are reading, you know, catch up. Make sure you you read this excellent book. Alright. Well, how about we get into some Dune News? [sound bite plays] Would you like to know more?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Let's do it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Boom. So Edgar Wright has maybe seen Dune."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. Edgar Wright has seen a movie he thought was excellent."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's gotta be Dune."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Where we believe it might be Dune."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So Edgar tweeted today. \"I'm not allowed to say I saw it but I just finished watching one of the most anticipated films of the year. And indeed, last year, it was everything I wanted and more. Yes, that one.\""
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's gonna be it."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "And then he deleted a bunch of shit."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Right so very quickly, somebody replied and said \"I know you probably mean Dune but I'm looking forward to James Bond and Top Gun 2\" And Edgar replied and said \"It's not the first, it's not the second but I've seen the third one twice, and it's to be enjoyed in IMAX as big as you can see it\" That's Top Gun 2. So this is him seemingly saying he hasn't seen Dune but then he deleted that."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "think he's being coy. I think he realized he had said too much and then he deleted, because they need to deleted another tweet in which he referred to a bunch of movies by initials and we spent some time in the Discord trying to decipher this fucking manuscript."
-        },
-        {
-            "name": "HAITCH JB DV GB",
-            "timestamp": "",
-            "text": "or FD TSS BW THAITCH and F9, which was -"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's Fast and Furious Nine."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That's right. There's a user Avett who came up with James Bond, Ghostbusters, French Dispatch, the Suicide Squad, Black Widow, Halloween Kills, F9. We assume TE is The Eternals. But the question is, what is DV? Is that Denis Villeneuve?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "just think, look, all of that fuckin alphabet soup notwithstanding, his original tweet was he'd seen a movie that was like anticipated of this year. And also last year, like that is clearly in reference to Dune. And I don't think that fucking you know, any, like, the French Dispatch or whatever really falls into that category. Like yes, I'm excited to see that movie. But there's not like, there's not like people, you know, it's just not the same thing."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "You don't have to see it on IMAX."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, exactly."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "French Dispatch can be on any screen. [Haitch & Danny laugh]"
-        },
-        {
-            "name": "J",
-            "timestamp": "",
-            "text": "Exactly. Yeah. Like your smart refrigerator can show you that. Like so, it's gonna be, I think it's Dune. I think he's seen it. I think it's gonna be exciting. It also makes sense that he would be excited about seeing Dune given sort of his body of work. And yeah, let's go. He's seen it. Everyone who's seen it thinks it's great. Let's fucking get this movie out, make some money."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's possible this is a mirror of a reflection of our own need for something to happen about Dune and getting caught up in this."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's deep. I like that. [Danny & Haitch laugh] I appreciate that."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So the only other piece of news that I have is that on Friday, Arrow video launched David Lynch's 4K Dune Super Deluxe editions, which I immediately pre ordered."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, wait, can you preorder them?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, I already ordered."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "On like the Amazons?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "You can have a couple of different in the links, which I'll send out there's UK versions and US versions and whatever. So make sure you get the right one."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, Jesus.I don't want to have to do research."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "They have different versions for the 4K?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "The 4K is region free, but like all the special features and stuff, blu-rays, I think they said combo pack, so maybe you'll be fine, but I'm just like, play it safe and get the US version."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's a good looking set."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. Beautiful. Alright, that's all I have for Dune News. Jason, do you have anything?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "No, now I gotta go buy these DVDs though. Find the right ones and stuff. [Danny & Haitch laugh]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's just like Dale buying DVDs on the air. Okay."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, like, wait, it might be wait, my other piece of Dune News is that Crystal started listening to Dune."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Whaaat?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah. Yeah."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Wow."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Awesome. What speed is it on?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "don't know what speed she's listening. I think she's a 1.0. Yeah. 1.3 she clarifies from the kitchen."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Okay. Not bad."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's, that's pretty good. I'm listening to Heretics at 1.5 to make it go faster. [Jason laughs]"
-        },
-        {
-            "name": "HAITCH I",
-            "timestamp": "",
-            "text": "bumped it to 1.7 today. I was like, I got to choke this thing down. Yeah. Rough. [interim sound bite plays]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Alright. Well, why don't we get into this? [music from Nausicaa of the Valley and the Win plays] Like, I'm super stoked to talk about Nausicaa. Are you guys ready?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Let's do it."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "am ready. I'm excited."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Alright. Here we go. Nausicaa is the struggle to find harmony between nature and humanity. 1000 years after the Seven Days of Fire when humanity was thrown down by giant warriors we ourselves created, the remaining survivors huddle in small kingdoms, eking out a meager existence in the shadow of the growing toxic jungle. Nausicaa, daughter of King Jihl is a brave adventurer, exploring the dangerous wastelands. When her valley is invaded by the evil Tomekians and her father is killed, she must inspire her people and lead them in the fight. caught between an unstoppable swarm of giant insect creatures, and the warriors of these warring kingdoms, can Nausicaa find a path that will bring peace? Can she save the wounds of the world and seize her destiny as Nausicaa of the Valley of the Wind? [music from Nausicaa of the Valley and the Win ramps up, plays alone, fades out]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, that's good. That's good. I love it. I love how you brought it home. Every time. That's great."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "This is quite a film. It's definitely it took me a while to see this. But I saw it maybe when I guess when the DVDs came out when Disney took over and started doing the distribution."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "2005?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. And so definitely struck by by that edition and was consuming all of them. Like I'd started with Totoro. Then Kiki then Castle in the Sky. Although strangely, I think I saw Lupin III: The Castle of Cagliostro, I think I saw that in the theater. When I was like, nine or 10."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Interesting. My history with the Ghiblis is a little bit more abbreviated. I've seen, I saw Mononoke in the theater and I saw Spirited Away in the theater. And I've seen Howls and Ponyo, and we watch Totoro like every day at my house. But there's a bunch, there's a bunch I haven't seen. But now it's kind of fun because we're getting to watch like the ones that are good for little kids like with our son who like loves them. Like the first thing, like we've watched Kiki's Delivery Service a bunch."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So good. So good."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Like the first thing he said to me this morning when he woke up was like, \"We need to go find Kiki! Where's Kiki?\" And he wanted me to just like carry him around the house and like open every cupboard because he was convinced that like Kiki was hiding in them somewhere and that's going on for quite some time."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That city by the sea in Kiki where she where she does her which studies. Like just, absolutely amazing."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, very beautiful."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Danny, you should talk to us as we get through here about just like the animation and the architecture and some of that stuff, because it's such a running sort of theme of excellence for Miyazaki."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, for sure."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Talk to us about art. [Danny laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Tell us art."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And I know I said earlier that this is my favorite. This was one of the ones that I watched probably last and later in life. Definitely watched the younger ones like the Totoros and the Kikis multiple times."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Interesting."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And Mononoke a and Spirited kind of fell. I think I only I really connected with those later, as well. And I really loved those. But when I watched Nausicaa, it had to have been like maybe maybe four or five years ago now for the first time and it kind of was it kind of changed me watching it because it really blew me away. And then when I found out that it was his first and it's not even a, it wasn't even a, Studio Ghibli didn't even exist then yet. And he had already done this as a manga which still blows my mind. So yeah, this movie, it's just, when I was to the point in figuring out what I wanted to do for art and want to do, I really wanted to do animation. Digging into his work, it just, it almost felt like why bother? Because it's just, it's just kind of mind blowing."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, that's amazing. Well, it was it was. So when I saw this was such a wild time because I had gotten into Totoro and Kiki's in like, 99', 2000, with the Fox voiceover dubs, which were like bad, but we still we love them and worship them in the household. And then I saw, I guess it was before that, but I saw Mononoke in the theater, which was, which was wild. And I was just very, very into that. I was like, Gillian Anderson is in it. Like, come on. We got see this. [Danny laughs] Alright, so it starts out I love this opening that is so atmospheric with just like the wind blowing and the toxic jungle consuming yet another village and the introduction of Lord Yuba, as played by Patrick Stewart. Just very, very cool."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, that's when we lost our son and realized this wasn't gonna work for him. Because he was scared of like the toxic jungle, and I go, alright, I'll watch this one later. Well, like it's kind of unclear what he finds scary at this point, because like Spirited Away, I thought he would have found scary at when the parents get transformed into pigs. But he just thinks that's hilarious. [Haitch laughs] That one's fine. And like the stink spirit is fine stuff like that. But the toxic jungle and just so I think it's more than music for him that I sort of sets him off. And like it seems, I think it was too scary. So we we bailed, but it is very atmospheric. And the soundtrack is amazing on this, on this one."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Absolutely incredible."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh all of them."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's amazing. And also, it also kind of feels all over the place. There are moments when you feel like it's these amazing, like orchestral like sounds and then all of a sudden, it's like techno kind of electronic bumping music. [music from Nausicaa of the Valley of the Wind plays] It's really rad."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Totally, there's sitar, there's like the sitar sections when they're seeing the Ohmus and stuff. It's a diverse sounding soundtrack for sure. This is Joe Hisaishi, who's been with him for almost all of these films. And just so, so good there. And they and it is striking, right that credit music that is playing out there, which people will have just heard during the synopsis is fantastic. And then you have the tapestry, the paintings. And then you have like the video of like the the giant warriors destroying the cities, which to me, I instantly got Evangelion vibes on that."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, it's funny how much like this. This one, it's kind of hard for me to know, as not a super student of manga. Like, where, like how much this is just like the big influencer? Versus like, these are just common themes, because I'm like, Oh, so it's like very much like, Attack on Titan. Also, I mean, it's like, you know, still the same kind of idea of, there's like a failed society. And one of the reasons it failed was there these giants that came and fucked it all up. And like, you know, and then but like stuff that is directly influenced. When the Ohmus show up. I was like, oh, this is like, just speaking the soundtrack. This is like the Final Fantasy and counter music. [Haitch laughs] It's like the, you know, it's like a music you have like a random you know, and, and it very much it very much reminded me of that. And this movie also introduced chocobos,which like actually like that actually has a direct influence on later stuff. So it's a pretty, it was wild like watching it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "What are the chocobos?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The chocobos are are like the riding chickens like the armor chickens. That's like that's like a recurring motif."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That one that's licking her face. [Danny laughs] She's like, right there. And it's like tongue is the size of her head."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "don't think that's in Final Fantasy but."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So you have you know, you have this kind of like intense imagery of the credits. And then you have Nausicaa, just fly, the shots at distance of her flying over the jungle and through the air, which is just gorgeous shots. And then you have her recovering this piece of a giant Ohmu's shell which the ohmus are the giant insect creatures that turn red when their their eyes turn red when they're angry, and then they turn blue when they're peaceful. But just I love that and then the spore fall, when the spores are released, and it's like snowfall, but it's deadly and moody and atmospheric."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Deadly snow."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah. The great thing about the intro, I feel like in the first 15 minutes of this film, you know exactly who Nausicaa is as a person, as as a leader as well for her if you want to call it a tribe or her whatever her people."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Crew?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah her crew and you just realize that She is a peaceful person and she's doing everything she can to figure out the mess they're in. And it's just beautiful. The spore scene I wrote down as one of my favorite scenes, especially when she, when she finally gets the ohmu eyeshell off and she lays there as the toxic spores fall on her. It's just like, I would totally do that too. It's just as beautiful."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "What's that thing that Miyazaki talks about where you just have the space?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's called a Ma. M A. It's really prevalent in his work too. There's just the Ma is like the just the quiet where nothing is happening and, but everything is still kind of going on that you can just have moments of quiet and he does it in his films, where it's just long shots of scenery, or someone walking through the forest. It's just these little quiet peaceful moments. And this is called Ma."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Just beautiful."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, there's a there's a Twitter account you can follow that just tweets those like little moments from Ghibli movies of just like, one of the ones I love from Totoro is like there's a scene where, like a snail is like crawling."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yes! That's exactly it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Of course, of course."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah. Tweets like stuff like that. You're like, ah, that's nice."
-        },
-        {
-            "name": "HAITCH I",
-            "timestamp": "",
-            "text": "want that. Like, I want cells of that like at my house. Like that's one of my favorite images of the movie."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "For sure. It is rad because they're scenes, they're scenes that you knew take weeks to develop. But it's not necessarily pushing the story along. It's just taking a breath. And between these moments in the film, and it's just, it's just brilliant."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Beautiful."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Is it thundering behind you?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah. Matt, you got a storm going through?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. Dude the storm is very -"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "was wondering what I was hearing. I was like, at first I thought it was I was that you had in the background. I was like, this is some fucking next level Haitch producer shit right here. [Haitch & Danny laugh] He's like, putting in like wind sounds from Nausicaa Valley of the Wind just for like the atmospheric vibes."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "We'll go with that."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "But then I saw the lightning go off behind you. I was like, oh, wait a minute."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "You know that scene? You know that scene where the ship was forced into the storm for a minute? The pilots worst nightmare. That's what it's like at my house right now."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "You're in the cloud? [Danny laughs] You're in the toxic cloud? Bummer."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So she hears an attack and she launches into the sky on her glider and she's going to go rescue Lord Yupa."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "like the name Lord Yupa though. I think that should be a thing. [Danny laughs]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Just make that Twitter account."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So can we talk about the Moebius vibes in the outfit and the glider?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, I'm not an expert on Moebius."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Let me give it out to you. The glider is called the Mehve."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The Mehve! [Jason laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "but it's actually a very clear connection to - [thunder sounds]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Damn!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "That was a lightning strike!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Haitch, that was, it's getting closer! The storms closing in on Haitch."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Hopefully this mic will work well. So Moebius hat there's gonna be a storm chaser podcast. Moebius has had a series called Arzach. And that features the lead hero writing a stone pterodactyl that looks exactly like the glider in terms of the style. Also, her hat kind of had a very Moebius design element to it as well. This was no coincidence, Miyazaki himself, revealed in an interview that he quote, \"directed Nausicaa under Moebius' influence\""
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, interesting."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "In 2004, both artists drew artwork honoring the other."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh nice."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Miyazaki did a soft image of Arzach and Moebius a haunting fey illustration of the Valley of the Winds princess. Moebius went so far as to name his daughter Nausicaa. [fact bell rings]"
-        },
-        {
-            "name": "DANNYNNY",
-            "timestamp": "",
-            "text": "Oh my."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Wow."
-        },
-        {
-            "name": "HAITCH A",
-            "timestamp": "",
-            "text": "tribute to their friendship and mutual influence."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Good lord."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "That's impressive."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That is intense."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It really makes me realize that I like missed a chance to name my daughter after Haitch. [Danny laughs] And tribute to this podcast."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That's coming. I know."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Some other influences on this podcast while Matt comforts his scared family who's going to get sucked up into a tornado. [Danny laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's gonna be okay."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Miyazaki also talked about somewhere that this was influenced by, the ohmus were influenced by Dune which is because they're like giant, they're giant creatures in you know, in the wastelands who rise up and try to kill."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's such a cool design too, those ohmus like amazing."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yes, I love the ohmus."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "How they animate when she's flying over them for the first time and it kind of does like the caterpillar movement of the shell. Such a brilliant use of animation for that because there they look like they're going 100 miles an hour, but it also has that slow Caterpillar feel to it as well, which is pretty rad."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, one thing I wonder about on like some of that animation of like the ohmus is like, I wonder how much of that was there's a lot of stuff that particularly like the battle scenes or like the way the lasers look and stuff like that. Yeah, that I wonder how much was like, new in this? Yeah, how much of it was influenced by how much of it was like sort of trendsetting and how much of it was influenced by prior stuff because like, there's things in it that like sound and look like other animated battles that I've seen, but I don't know sort of the full history of that style. But I like it. I like laser beams."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So she rescues Yord Yupa. As Jason likes. She rescues him by stunning the ohmu, and leading it back into the jungle. Then he gives her Tato, the fox squirrel who has a mix of a cat and a Kitsune which is like an Eevee in Pokemon."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Very much an Eevee in Pokemon. Yeah, it's like that's another one where you're like, oh, did this movie just like really influence a ton of people? Now that that is like also like a piece of Japanese folklore. So that they're all kind of dipping from the same well there. But yeah, definitely felt like something."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "How about when it bites your finger and she just doesn't, she doesn't flinch at all?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "She just like takes it. She's like, yes. Bite little friend."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "You ever get that with Juniper Jane? Or, you know, Danny have your kids just like bite the hell out of your finger?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Junip doesn't have any teeth yet."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, but I don't react like Nausicaa did. [Haitch laughs] My reaction is to... I don't know. [Danny laughs] Baby teeth hurt! They're sharp."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Oh my gosh. Alright, so. So she tells you that King Jihl is sick and that she's going to meet him back there. So now we have our first introduction to the Valley of the Wind. And this is just gorgeous. The nature, the windmills, the patches of land that are being farmed, the forest, the water in the distance, just absolutely gorgeous."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "This also looks like a Final Fantasy town to me. Oh, there is a there is a quote I found was Final Fantasy creator Hironobu Sakaguchi has cited the manga and the film as an influence on his series. So like the horse claws in the film, were using the inspiration for the chocobos and like I think like this sort of pastoral look like really you see a lot of and a bunch of different Final Fantasy games."
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "want to live in that town. [Haitch laughs]"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "mean, you don't want to have to fend off the toxic forest. That part's not great."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "That's true."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Be blinded like the old woman."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's also interesting. So you know, Nausicaa there's a big welcome for Lord Yupa as he shows up there, and Nausicaa says \"we had a baby born in the valley this year\" so that tells you how intense it is. If you have all these people and you have one baby being born, that's a rough stitch."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, real rough."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So how about Edward James Olmos as Mito? [clip from Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "MITO",
-            "timestamp": "",
-            "text": "It's good to hope for a daughter who's strong like the princess, but not for one who likes to play the toxic jungle."
-        },
-        {
-            "name": "NAUSICAA",
-            "timestamp": "",
-            "text": "That Mito, the jungle is where I found the ohmu shell!"
-        },
-        {
-            "name": "MITO",
-            "timestamp": "",
-            "text": "All I do is worry when she's running around out there. I treat 1000 ohmy shells for a good night's sleep. [clip from Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, surprising."
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "love him."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "So I guess this dub came from 2004. Like this is like the Disney dub."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Is this Battlestar times?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "guess 2004? Yeah, I guess so."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "When did Battlestar start like 2003? 2004?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "don't know, Matt. I don't have factual answers right now."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Alright."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Don't remember."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "2004. So yeah, it's right. It's right at the almost renaissance. So that's something!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Did you watch Battlestar Danny?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh, I looove Battlestar."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh my gosh."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, I lived and breathed it. And it's funny because this is one of the very few sci fi things Casey and I kind of have a bond with and I'll catch her sometimes just watching the finale, because she loved how it ended."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Really?!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, wild. That's a minority report."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, she's a biiiig fan of ending. I know. It's, it's, I mean, I don't mind it. But she just loved - spoilers for anyone who hasn't seen it - she just loved the idea of and maybe this is -"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The time warp?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah and just like the new earth kind of vibe, and resetting all of you know, humanity or whatever. So I just love it. I mean, I love that she loves it so much. But we would have nights where we just watch Battlestar and it's pretty great. Biiig Edward James Olmos fan."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "For me. That was a big deal in terms of podcasts. Because I would watch every Friday night I would watch Battlestar and then every Monday morning driving into work at 303 Second Street. I would listen to Ronald D. Moore's podcasts. You guys listen to that?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "didn't know he has a podcast."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "He used to sit and drink scotch and record the episode."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Legend."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Basically director's commentary all the way through and he did it for almost every episode. It was really incredible."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Love it."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Check it out, etc. Alright, so we also have the introduction of Obaba who is kind of the the wise woman. This is played by Tress MacNeille who played Osano in Kiki, the pregnant shop owner. She played Miss Hora in Totoro and she also played Dolph Starbeam on The Simpsons."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, okay. I don't remember Dolph Starbeam from the Simpsons."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Dolph is one of the three, he's Nelson and Dolph abd whoever the other guy is."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Okay. Okay. Right on. I like I like the look of her as she's like also another Baba character like you Baba character. Like Yubaba in Spirited Away. Which means old."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So she tells the prophecy. [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "OBABA",
-            "timestamp": "",
-            "text": "After 1000 years of darkness, he will come clad in blue when surrounded by fields of gold, to restore mankind's connection with the earth that was destroyed."
-        },
-        {
-            "name": "NAUSICAA",
-            "timestamp": "",
-            "text": "And he will guide the people of this planet at last to a land of purity. [clip of Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Stay tuned. [Haitch laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "We'll see. So then we have this great scene of the Tokimeki and airship crashing."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's like impossible to say that word without it sounding ridiculous. [Haitch & Jason laugh] Tokimekien!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's tricky. So they try to make an emergency landing. But their cockpit is totally covered with insects. And they just crash and the ship just completely blows up."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, it doesn't go well for them."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So Nausicaa gets the princess out of there. And then just a shot where Nausicaa looks under her shirt and sees that she's ruined inside. And that she's definitely going to die. Like that's a tough hang right there."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "And she like buttons up her blouse. Like sort of just be like, well, nothing to do here. [Danny laughs] Might as well straighten this button back. Get this back into place."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's not I mean, man, not on my watch."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Tough, tough one for you."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, she does say before she dies. She says to destroy the cargo. She's on the ship. And it's a little confusing, because then a giant insect comes out of the ship. So at first you think that's the cargo she's talking about?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "But it's not!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Right."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's not and Nausicaa leaves that one away. That's not too much of a problem. But Yupa and Mito see that there is a giant warrior from the seven days of fire in a embryonic kind of like Alien sack, you know, mayonnaise sack type situation. So this is the beginning of kind of a dangerous situation that's coming to the valley."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "One of the things I like leading into that kind of scene is Nausicaa in the town with the with the village people, but also the older men in the village and how much they respect her and how much they love her. And they would like, follow her to the ends of the earth. And there's a great there's just, she just commands such she's like, not like, like a very rash leader, but when she like tells them to launch her glider up. And they kind of like question that for a second. But then they realize that, you know, she's just a badass, and she's just needed to get into action. And she goes flying after this crashing ship that's covered in these insects. And it's just great how she just commands and gets so much respect from the older men in this village."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "All the men are old, too."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Right? They are old!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "There's no young dude, the spores are really agent people up quick in the Valley of the Wind."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And how much she loves his hands and how they're getting old."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, they're all fucked up. They need to moisturize more in the Valley of the Wind. [Danny laughs] That's the problem."
-        },
-        {
-            "name": "DANNYNNY",
-            "timestamp": "",
-            "text": "Get some of that mayonnaise sack."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "They need some shea butter."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Those three old men in particular throughout the whole movie are really great. With her. I love them."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, I love them."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So also the spores from the ship have spread into the field. So they're in the midst of trying to figure out can I stamp those out by burning those out in controlled amounts. And so the tension is there like you really feel like you are in danger of losing everything."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Those spores traveled quick too."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "No doubt."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "They got right up on them."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So now we have the Tokimekien invasion!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Tokimekiens!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So how about just the design? Can we talk about the airships?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Airships is another Final Fantasy trope shows up here. [Danny laughs] I feel obliged to say."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Great design."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "They look dope. [Haitch laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Jason that's your art exhibit. They look dope."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "They look dope. Print it. Someone described the style of this movie and the technology and like the particularly the machines and stuff as like diesel punk."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Mmm!"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "think that works for me, I get it. That's the vibe."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's a good description for sure. It's really cool because they don't feel they're not expected and they just feel kind of out of place but somehow they work and dieselpunk is interesting when describe it. I guess I would go along with that as well, it's pretty good."
-        },
-        {
-            "name": "HAITCH I",
-            "timestamp": "",
-            "text": "like it. Well so they these airships come in they just smash up the valley they're knocking down you know windmills and crashing stuff out and I will say there is a musical cue when the guys are pouring out of the ship and getting ready to go attack that is a straight up repurpose of Panda! Go Panda! Have you guys seen that one?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "No."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "No."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So this was one of Miyazaki's first things, I think he did the designs but it basically follows a little girl who is living by herself and has a giant panda and a baby panda that come live with her and it's two 30 minute videos and it was put out I forget who did the DVD but I've got it."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Sounds amazing."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "It's incredible and it definitely has proto Totoro thing. This was like 78 or something but definitely worth checking out. Sound work is very good as well. So they straight up murder King Jihl, they just walk in, they shoot him like six times. And then Nausicaa comes in and just takes out the entire -"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Wrecks house. [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Good swordfights."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "One of the best animated sequences out of Miyazaki for sure."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Her backflip?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh my gosh, it's so smooth. Like incredibly smooth. The sound, how the scores kind of cut out as well so you can just kind of hear the breathing and the fighting and the sound of the swords hitting each other just sound incredible. I love it. And then enter Lord Yupa. [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "LORD YUPA",
-            "timestamp": "",
-            "text": "This whole shell knife can slice right through that draconian ceramic armor of yours. [clip of Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Just straight up swordsman badass."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So he just takes a sword. And he takes a sword right to his arm!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Right to his arm! But it almost mirrors the exact the exact same thing when the fox squirrels introduced to Nausicaa and how wild and crazy it is until it bites her. I think it's the same kind of thing with Nausicaa. She's lost control. [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "LORD YUPA",
-            "timestamp": "",
-            "text": "Nausicaa, be calm. If you fight now the people with the Valley will be massacred. We must stay alive and wait for the right opportunity. [clip of Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And she is only seeing red and anger until there's this pause like she's bit him in the arm."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "She sees the blood dripping down his sword."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Exactly. Yeah, so there's a good mirror lesson that she learns again that she also showed that fox squirrel."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And does he als, I'm trying to remember, he also like has his knife on the guards neck?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Under the helmet, yeah!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So like, that guy's screwed."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's just so rad."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, fantastic."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Great sequence."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "And then they try to like say that they're there in peace when they've just destroyed, they just shot them up like no, that's not how that works. [Danny laughs]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "What kind of bullshit is this?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "\"We are not savages! We've come to talk!\""
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "\"We just murdered your King.\" [Danny laughs]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "\"We have come to your land in the name of peace.\" What?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "No."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Exactly. Although it will develop here with with Kushana over time, she's a little more complex and kind of classic Miyazaki villain mode, then just pure. So she wants to use the warrior to burn the toxic jungle. That's her goal. And she actually says that she wants to not send the warrior back to Tomeki as she was supposed to, but use it herself. So can we talk about Kurotowa? Her right hand man played by Chris Sarandon, Prince Humperdinck from the Princess Bride. [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "KUROTOWA",
-            "timestamp": "",
-            "text": "Ah yes, I do see your point. But I'm just a soldier of Tomiko, I'm not in a position to make that decision."
-        },
-        {
-            "name": "KUSHAITCHNA",
-            "timestamp": "",
-            "text": "Weasel. [clip of Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "No."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "He's so annoying. [Danny laughs]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "His voice is terrible. He should not do anything."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "That voice matched with that smirk that he has the whole time."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "What a dweeb!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Such a dweeb. That's, that's a good one."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "He's terrible. I hate that guy. [Haitch & Danny laugh] I really wish, I almost wanted to, I wanted to switch over like the Japanese like subtitle version or whatever, just to get rid of him. He was tough. But Uma Thurman as what's her face? Very strong. Yeah. Big arm. Cool hair."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Such a cool design too."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Really cool design."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Complicated character, sort of sucks, doesn't really suck. She's like in a meta state of, you know, does she suck or not? I think that's good. I like that. She's a very unusual antagonist, basically."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "What's the name of the antagonist in Mononoke? 'Cause I think to me, that's like the fully realized version where she's running the village that's like destroying the forest. But she's also taking care of the lepers who can't take care of themselves."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah that's a good point like it's."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Lady Eboshi or something?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh nice. Good pull. This is basically Miyazaki's forever theme."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Wheel house."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, like his, his theme is just always like, you know the exploitation of nature and what happens when mankind does not live in harmony with nature because of technology and, you know, materialism or whatever. And the answer is, it's always bad, and that mankind should return to live in balance with nature, or nature will destroy you. That's another one where I don't know enough about Japanese, like manga or anime to like know how much of this is influenced by how much of like, because this show theme shows up a lot in anime. And I always assume that some of this was influenced by the atomic bombing."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Of course."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "But according to Dani Cavallaro, his book anime\u0301 art of Hayao Miyazaki quote \"the Minamata Bay fish disaster are unquestionably the realized correlative for the immensely and ingeniously adaptable fictitious plants portrayed in Miyazaki film\" because there's this big mercury plant disaster that happened in Minamata Bay in which like, a couple 100 people I think died of mercury poisoning, but then all the life in the bay found this way to like adapt to like the poisoning. And you know, all these different like kind of mutations or whatever came out of it. So this one, not the bombings instead mercury poisoning."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Interesting."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, there is that the nature of the ecological thing, but then the other is just the destructive and kind of warlike nature, right. So I guess this is the I'm gonna offer this as the counter argument, at least in my take. So when she is in her secret room, where she's been growing the toxic jungle plants, with clean soil and water and they're not toxic, that's sort of combating that the environmental side and trying to figure out that harmony. But she they covered this multiple times in the film, she's just really distraught about violence and killing, she wants it to end both for herself and for and for others. So to me, that's kind of the other critical message in this film."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, I love like her spore room, incidentally. That reminded me of the greenhouse from Dune. Like the secret greenhouse like in this like world of like, you know, ecological disaster. There's this like, one beautiful place that sort of stands out as a different thing. So I really, and I love the way it looks in the movie. It looks dope."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh, it's gorgeous."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "More stuff that looks dope. Jason's art commentary. [Haitch & Danny laugh]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "But then she, but then she just says she's like, \"Oh, well, I gotta go. So I just turned it off, turn off the water. It'll all be dead.\""
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, fuck all these plants. [Danny laughs]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "My whole research. Let's just shut it down."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, whatever. Bullshit anyway."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Back to formula."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Her dad's dead right? So like that's why she had started it. So she's taken prisoner on their ship. And so now we have the Pejite gunship attack!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The Pejites!"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "So this is Asbel, as played by Shia Lebeouf in this film."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The beef."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "This is a pre -"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Pre everything basically."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah. 2004."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Post-Holes."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Right after Holes proably."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. I love Holes. What a great movie."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "haven't seen Holes."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "The first thing that struck me is that his ship looks like Spike Spiegel's ship. From Cowboy Bebop."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Ohh okay okay."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "The swordfish too."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, okay."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "You guys watch that show?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Okay. Danny, can I get a rating?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Big Bebop fan."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "There was an NES game, Cowboy Bebop that was impossible to play. It was like one of these games that just like didn't work. And my cousin had it. And like I was like, obsessed with it because it was just like, it didn't make any sense, it was impossible to play. That's all I know about the Cowboy Bebop, is that it was impossible play on NES game."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "This this all came to kind of fruition for me like in 99, 2000, right as the .com thing was was crashing. We went to Gen Con."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh my."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "The annual D&D gaming convention. It was in Milwaukee still at that point. And we were partying in the presidential suite at the Pfister, very late at night, and listening to the Cowboy Bebop soundtrack and that was where the first time I'd heard that. And then watched Cowboy Bebop, watched Evangelion and this was all in the midst of Miyazaki stuff as well. So that's kind of like all in my head. So Asbel just like tears apart the Tomekians, takes out all the ships, she does say she stands on top of the ship and says - [clip of Nausicaa of the Valley of the Wind plays]"
-        },
-        {
-            "name": "NAUSICAA",
-            "timestamp": "",
-            "text": "Stop it! All this killing must stop! [clip of Nausicaa of the Valley of the Wind ends]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And that hesitation where he kind of sees a flash of her. And his like hand is on the trigger. Danny, did you get like Kylo vibes from last Jedi?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh, yeah. Super rad."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Right?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, for sure."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That was like a direct."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, it's just, it's great. It gave him great pause."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "But what was happening there? Was he seeing her as his sister? Was he having like a vision of her as Lastelle or whatever her name was, the princess?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, I think that's kind of why he did it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Jason, you didn't you have no memory of this moment?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "have no memory of this part. I might have blacked out at this point."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, it's just a flash. So it's just a flash for a second, but she's like in a night gown instead of the outfit that she's wearing standing there. But anyways, Asbel gets shot down and the ship is going down, she rescues Kushana she saves the barge, she tells them to drop their cargo and they're not listening. And so she takes her mask off. Like what was going on there?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "don't know what's going on there. That seemed very reckless. I thought we were gonna discover that she had superpowers. But then she's just like, \"Oh, I inhaled some of the poison.\""
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, I'm just gonna breathe it in."
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "was like, alright. Doesn't seem good. I love the way their masks look like like they've got little yams hanging from their face. [Danny laughs]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's a rad design."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's a rad design. It was like, what's her name? The artist Kusama, is that a person? It looks like her art. Yeah. Yayoi Kusama."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Drop it in. Drop it in the channel."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "She does a lot of like yam work. I'll drop some yams on the Discord."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Please drop your yams."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Jason bringing the yams."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Standby discord for yams."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Incoming yams."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Danny, how about that? How about the thumbs up? Like, is that the most iconic shot or what?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's just, it's great. I mean, it's just like the hero shot of Nausicaa. [Haitch laughs] It's just, she's rad. She's showing the men that she's in charge still."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Listen to me. I'm willing to sacrifice my lungs right now. Drop them. Drop your cargo and follow me. Yeah, take up your cross."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "There is that cool moment where they're like, the guys are really bummed out about throwing the cargo like, oh, this is such a waste. And so you do have that sense of ingrained how precious -"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Everything is. Yeah."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "They crash land into the ohmu nest. And this is where it's just like water and the trees and whatnot. So to me this really reminded me of the stags forest in Mononoke."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Mhmm."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Like I had definitely that that vibe there and I loved it. It was gorgeous."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Mhm, super rad. And then the ohmus come up and we got gold tentacles."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "The gold tentacles."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Walk us through it."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's another Mononoke situation. Yeah, like like tentacles of life."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Well, let's get to let's get to our letters segment here. We have two letters, two voicemails the first one stinging from last week's gross violation of the 90 second time limit. A recalcitrant Corey. Corey, we love you. We will always take your voicemails of any length. But so here we go. [voicemail plays]"
-        },
-        {
-            "name": "VOICEMAIL",
-            "timestamp": "",
-            "text": "Dune Pod. It's Corey from Austin. I'll keep it brief this time since last episode, I went way over my allotted time limit. What the fuck is a jawn? Alright, that's all I got, bye.\" [voicemail ends]"
-        },
-        {
-            "name": "JASON A",
-            "timestamp": "",
-            "text": "jawn. Yeah."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh no."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's a good question, though."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "It's for those Philly boys. Dan."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Danny, you can answer this."
-        },
-        {
-            "name": "DANNY A",
-            "timestamp": "",
-            "text": "jawn? It's you just, I don't know. I'm not from Philly. I just learned about it with these idiots upstate. You just kind of replace it with something like, yeah, I'm going to that jawn over there or something. I don't know!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "My understanding, and I'm also not from Philly. But my understanding is that jawn can be used for any part of speech in any sentence at any time."
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "feel like I've accidentally used it too."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's just like, just throw it in wherever you feel it needs to go. I'm sure there's actually some grammatical rules."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Alright well, fortunately, fortunately, we have the Podfather coming on next week, Philly boy, Slim."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, we'll let him."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Proto."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yeah, have him talk about it. He'd love to talk about it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Dale says, Jason, you're correct. Exactly correct. So, congratulations."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh, great. There you go."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Congratulations. Alright, here we go. Here we go. Next voicemail. This is a new one. So I'm excited for this. [voicemail plays]"
-        },
-        {
-            "name": "VOICEMAIL",
-            "timestamp": "",
-            "text": "Hi, guys. My name is Danny Abasi in London. And thanks so much for the podcast, I just listened to the Blade Runner 2049 episode, I really enjoyed that. I wasn't a fan of the movie when I saw it in the cinema, I think it was bringing too much baggage from being a big fan of the original Ridley Scott Blade Runner film. But I rewatched the Blade Runner 2049 recently and just fell in love with it. So it was great to hear other people appreciate it and pick up on all these great things about it, which I'd missed the first time. So yeah, I think this podcast is great. I love the way you guys talk about the different things and this approach to kind of, you know, everything that's going to feed into the release of the movie and what's gone into making the movie and helping people to sort of appreciate it from all these different perspectives and the other work that the actors have done and everything else. One thing that I'm not sure that you guys have done yet is for me, the first touch point for the Dune universe was the Dune 2 video game. Which was the first real time strategy video game as we know it. And I think it'd be interesting to get someone on to talk about now if you have any sort of like games expert. One thing about that game is it's got fantastic music by Frank Klepacki, who went on to do the music for Command and Conquer another of the key gains in the development every realtime strategy, and also has awesome music. And yeah, the game is is really great. It's really worth a look if you've never played it before. Anyway, looking forward to future episodes. Thanks again, guys. And, yeah, keep it up. [voicemail plays]"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, that's great. That's a good note. We've talked about Dune 2 a couple times in reference, just in passing reference and like you said, it is the first realtime strategy game and we've also talked about Dune 1, the game that came before it, which is a fucking hot mess. And the development story of that's really interesting. So I think we should, we should we should get like some sort of game-spert to like talk about it."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Jason."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "You got it covered?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "No. You've got it covered. I'm throwing down the gauntlet. I'm looking for an update by next week."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Oh my god. Matt's giving me homework in this fucking podcast."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "By next week, come back. Like let's figure out who was involved in this game. Let's get a developer or producer, let's get somebody who has eyes on it. We can do Dune 1 first or we Dune 2, whichever you want. But let's get a name and let's get a plan and get that person on this pod. That'd be amazing."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "What was Dune 2 on? Was it computer?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "PC."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "PC. Only PC."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Is was only PC. What year was this?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Like 92? Yeah. 92."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh, wow."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "But it was called Dune 2000?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "No, called Dune 2."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Okay. Got it."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, and then there was a game before just Dune. Yeah, we need some folks from Westwood Studios."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Exactly."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "If you worked at Westwood Studios."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "They're in the UK right?"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Nope. They're American."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Okay. Hey, Danny."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yes?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "No, no. Danny from the UK. Thank you so much for that voicemail. That was incredible."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Yes. Thank you, Danny."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, very solid group voicemail, lots of facts and praise. [Haitch laughs] Facts and praise is my love language."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Nice. [Danny laughs]"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Mine's gifts, so. I'll give you my address later."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Alright, Danny. What do you have to plug?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh man plugging. Let's see. We are about to kickoff Indiana Junes on 70mm pod. We're going to go through all four Indiana Jones movies."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Cannot wait."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "The next four weeks of June, celebrating the 40th of Raiders and the big 4K release of all four films right now."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Wow."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Wow."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Which I'm very excited about."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Any artwork?"
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "will be doing the episode artwork on the show but I won't be selling the episode art. But I have worked on some stuff with Lucasfilm for the 40th that is still in approval process."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Stay tuned!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "But yeah, I did. I did work on some Raiders stuff for them. And that really is it. Very excited about this month on 70."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "That's great. Sounds awesome."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "I've never seen Crystal Skull so I'm looking forward to watching that."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Wait you've never seen Crystal Skull? I'm interested in what you think about it. Are you gonna watch leading up to Crystal or are you just gonna jump straight into Crystal?"
-        },
-        {
-            "name": "HAITCH I",
-            "timestamp": "",
-            "text": "haven't decided like I've seen Raiders, you know, 50 times. I haven't revisited two or three for 30 years."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Oh, it's time. This is the month to do it."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Definitely the month to do it. Yeah."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Last year, I watched all four in a row. And I had my opinions on Crystal like everyone else does. But when I ended up watching all four in a row, we'll get into it on the podcast, but -"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Changed your feelings?"
-        },
-        {
-            "name": "DANNY I",
-            "timestamp": "",
-            "text": "did have different feelings for watching it after kind of back to back to back with all of them. I've grown up, you know?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Let's definitely take a look. This is you know, 70mm, if you aren't already listening to that our TAPEDECK Podcasts jawn partners. So definitely folks should absolutely take a listen to that. Your aliens episode this week was a phenomenal."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "So much fun."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah. And Contact last week, one of my all time - I tried to get Slim, I hit him up like, two a month and a half ago. I was like, dude! Contact, get on here. And he's like, sorry beb, can't do it. Jason, you got anything to plug? Are you are you good to go?"
-        },
-        {
-            "name": "JASON I",
-            "timestamp": "",
-            "text": "want to plug the video game Subnautica Below Zero. I don't know if we talked about it on here before. I don't think so. It's a survival game based in the ocean. It's very fun. This Subzero is the sequel. And in this game one of the things that happens is there's a very clear Dune reference where there are some worms that will try to chase you and that you have to plant a thumper to like distract them. So that was cool to see. It's a fun game. I recommend people check it out."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Is it like the old TV show seaQuest?"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "DSV?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "One of my all time favorites. I love that show! Roy Scheider."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "It's kind of like Minecraft but like underwater."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Ohhh okay!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "With more story."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Nice. Nice. Should we do a seaQuest in a pod?"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Can you - seaQuest pod. We would be, we would have to have cornered that market. There's no way."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "That's right. Oh my god. I bet there's a seaQuest, there's got to be a seaQuest pod!"
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "There's definitely a seaQuest pod. I'm sure there's a seaQuest Convention. [Danny laughs] Listen, like I don't know how much shade we can be throwing on it. This is a pod about a book that came out 50 years ago. So let's like, you know, let's not throw too many."
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "I'm doing some seaQuest art."
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "Yeah, but it's Edgar Wright's most anticipated movie!"
-        },
-        {
-            "name": "DANNY",
-            "timestamp": "",
-            "text": "Mmmm."
-        },
-        {
-            "name": "JASON",
-            "timestamp": "",
-            "text": "Yeah, maybe, he deleted that tweet now too. He's deleted all the tweets. It's hard to say what's going on. [Dune Pod theme song ramps up]"
-        },
-        {
-            "name": "MATT HAITCH",
-            "timestamp": "",
-            "text": "And that's it for this episode of Dune Pod. I want to thank Jason and Danny for a fantastic conversation. Next week, 70mm Month Strikes Back rolls on as we're joined by the Podfather, Slim, to discuss Paul Thomas Anderson's Inherent Vice streaming now for free on Tubi. If you're enjoying this podcast, join our Discord server where you can hang out with us whenever you want. A link is in the show notes. You can find our full movie setlist on Letterboxd and if you want to support them by upgrading to Pro or Patron status, use promo code Dunepod at checkout to save 20%. Dune Pod is a TAPEDECK podcast jawn, a production of Haitch Industries. Our artwork is by ctcher and our theme music was composed by Toby Forsman of Whipsong music. The episode was produced and edited by me, Haitch. Thanks for listening. We'll see everybody next week. [Dune Pod theme plays alone, ends]"
-        }
-    ]
+  "episode_number": 46,
+  "episode_name": "Nausicaa Valley of the Wind",
+  "dialogues": [
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie or just talk about great movies if you don't care about Dune. This week, I'm joined as always by my co-host, Jason."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Makes me realize that I like missed a chance to name my daughter after Haitch."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And by co-host to the 70mm podcast slash famous artist, Danny Haas."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "[Danny laughs] Get some of that mayonnaise sack."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "On this episode, we discussed the other seminal ecological sci-fi masterpiece Nausicaa of the Valley of the Wind. We covered the power of art, the interconnectedness of nature, and how the more things change the more they stay the same. If you're enjoying the show, check out our Discord server where you can hang out with us whenever you want. A link is in the show notes. And now without further a-Dune, Nausicaa. [Dune Pod theme song fades out]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So Danny, can you just tell me about your history with Ferris Bueller? [clip of Oh Yeah by Yello from Ferris Bueller's Day Off soundtrack plays]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh my gosh, Ferris, what? I was not ready for this."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And the context. You can provide the context. [Danny laughs]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, this weekend, there's an art show held by a gallery out in California called Hero Complex Gallery. Dear friends of mine, and they're doing a John Hughes tribute art show."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, so cool."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And I chose to do Ferris, which is my favorite John Hughes flick. And I don't really have a deep history of it. I didn't watch Ferris until I was older in life. Obviously, I don't think my parents would have showed it to me when I was younger. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "He wasn't good Christian values?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, right. My Baptist Christian parents were not showing me Ferris Bueller. I mean, Matthew in it is his killer. He's top of his game obviously. I just love that movie so much. It's silly. It's fun. Ruck is so funny. His comedic timing in that movie is I mean him sitting in the car deciding to not go and or to go see Ferris and pick them up is one of my favourite scenes. I laugh so much."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "How about you J? That one big for you?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, Ferris is a big, big movie for me. It's like up there with the other sort of like yeah, I don't remember a time when I hadn't seen it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "We just did Wargames, Danny, and so like there's a just a straight vibe from 83 Wargames to Ferris is just a couple of years later."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "When I read Ready Player One and Ernest Cline's kind of connection with all these movies. So I did like a Ferris, Wargames, Ladyhawke kind of trilogy, Broderick trilogy that I watched at one point recently. Yeah, I love Wargames, too. It's so much fun."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, I'm excited for people to hear our wargames bonus episode and that comes out because I think it was a, I think it was a true banger. [Danny laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh, yeah. Yeah. Coming soon. Coming soon. Well, listen, Danny Haas. Welcome back to Dune Pod."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Thank you. Happy to be back."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "We're really happy to have you here. This is tonight. The kickoff of 70mm Month Strikes Back. Danny starts us off strong. We are here with one of his favorite films by Hayao Miyazaki, Nausicaa of the Valley of the Wind."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Easily my favorite Miyazaki."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Really?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wow! Interesting."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "I'm ready for this."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "knew it was up there, but I wasn't sure if it was -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "So it all went downhill after the first one? [Danny & Jason & Haitch laugh] Most legendary animator of a generation. Yeah, it's number one and done for me."
+    },
+    {
+      "name": "HAITCH A",
+      "timestamp": "",
+      "text": "good start. We'll get into that in the bottom of the hour here. So very excited for that. But next week, 70mm Month Strikes Back, rolls on."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Rolls on."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And we have the Podfather himself, the original tech consultant, Slim, making his third appearance on Dune Pod."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The original tech consultant is just a great title. [Danny laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "He's our technical advisor. Sorry, correct the record, technical advice from Slim."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Alright. Alright."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "His three peat."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yes. This is third appearance, and he's coming for Paul Thomas Anderson's Inherent Vice."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's a good choice."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Have you seen it?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Mhm!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "How about you Danny, have you seen this movie?"
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "have not seen it. No, I'm actually, I'm not very well versed in PTA's work. I think I've only seen -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You love There Will Be Blood. This is well known."
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "am not, I actually was, yeah, I don't really enjoy There Will Be Blood. I did see that and I have I've seen what's the one where he's a seamstress?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh, Phantom thread? Yeah."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yes. Phantom Thread. [Jason laughs]"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know if he's really a seamstress. But."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, I couldn't think real quick but thread was in the title. I did love Phantom Thread though."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "What's the one he works at Triangle Shirtwaist Factory? [Haitch & Danny laughs] He's in the schmatta business. I don't know, he does something."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Ian's gonna murder me."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh my gosh. That's gonna be very exciting. I have not seen Inherent Vice. Looking forward to seeing it. It's not one that he wrote. And it definitely gets some mixed reviews. But in addition to Joaquin, our boy, it has Gurney Halleck from Dune 2021, Josh Brolin. And then the week after that, Proto is back for his fifth appearance or sixth appearance on Dune Pod for Heretics of Dune!"
+    },
+    {
+      "name": "DANNYNNY",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Which I am very close to finishing. Um, I'm really in the exciting part of the book right now. I'm really excited to talk about this one because I've forgotten how smutty it was. And it is just filthy. Yeah, it's just terrible. It's really made me question my whole life."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What we're doing? [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, what we're doing, why we're doing it. It's just really provoked a dark knight of the Dune soul for me."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's right."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "What number book is that?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's number five."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Fiiive."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "So if you read the five, you're really in it because you have to get past four, which is definitely the worst."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Well I'm not reading through one, so."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And then your reward for number five is sexomancy. Just like hundreds of pages of sexomancy."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Shit is crazy. It is real crazy. So anyways, that is coming up in two weeks."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's coming up! Something to look forward to."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "If you are reading, you know, catch up. Make sure you you read this excellent book. Alright. Well, how about we get into some Dune News? [sound bite plays] Would you like to know more?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Let's do it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Boom. So Edgar Wright has maybe seen Dune."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. Edgar Wright has seen a movie he thought was excellent."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's gotta be Dune."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Where we believe it might be Dune."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So Edgar tweeted today. \"I'm not allowed to say I saw it but I just finished watching one of the most anticipated films of the year. And indeed, last year, it was everything I wanted and more. Yes, that one.\""
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's gonna be it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And then he deleted a bunch of shit."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Right so very quickly, somebody replied and said \"I know you probably mean Dune but I'm looking forward to James Bond and Top Gun 2\" And Edgar replied and said \"It's not the first, it's not the second but I've seen the third one twice, and it's to be enjoyed in IMAX as big as you can see it\" That's Top Gun 2. So this is him seemingly saying he hasn't seen Dune but then he deleted that."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "think he's being coy. I think he realized he had said too much and then he deleted, because they need to deleted another tweet in which he referred to a bunch of movies by initials and we spent some time in the Discord trying to decipher this fucking manuscript."
+    },
+    {
+      "name": "HAITCH JB DV GB",
+      "timestamp": "",
+      "text": "or FD TSS BW THAITCH and F9, which was -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's Fast and Furious Nine."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's right. There's a user Avett who came up with James Bond, Ghostbusters, French Dispatch, the Suicide Squad, Black Widow, Halloween Kills, F9. We assume TE is The Eternals. But the question is, what is DV? Is that Denis Villeneuve?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "just think, look, all of that fuckin alphabet soup notwithstanding, his original tweet was he'd seen a movie that was like anticipated of this year. And also last year, like that is clearly in reference to Dune. And I don't think that fucking you know, any, like, the French Dispatch or whatever really falls into that category. Like yes, I'm excited to see that movie. But there's not like, there's not like people, you know, it's just not the same thing."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "You don't have to see it on IMAX."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "French Dispatch can be on any screen. [Haitch & Danny laugh]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Exactly. Yeah. Like your smart refrigerator can show you that. Like so, it's gonna be, I think it's Dune. I think he's seen it. I think it's gonna be exciting. It also makes sense that he would be excited about seeing Dune given sort of his body of work. And yeah, let's go. He's seen it. Everyone who's seen it thinks it's great. Let's fucking get this movie out, make some money."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's possible this is a mirror of a reflection of our own need for something to happen about Dune and getting caught up in this."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's deep. I like that. [Danny & Haitch laugh] I appreciate that."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So the only other piece of news that I have is that on Friday, Arrow video launched David Lynch's 4K Dune Super Deluxe editions, which I immediately pre ordered."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, wait, can you preorder them?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, I already ordered."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "On like the Amazons?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You can have a couple of different in the links, which I'll send out there's UK versions and US versions and whatever. So make sure you get the right one."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, Jesus.I don't want to have to do research."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "They have different versions for the 4K?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The 4K is region free, but like all the special features and stuff, blu-rays, I think they said combo pack, so maybe you'll be fine, but I'm just like, play it safe and get the US version."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's a good looking set."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. Beautiful. Alright, that's all I have for Dune News. Jason, do you have anything?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No, now I gotta go buy these DVDs though. Find the right ones and stuff. [Danny & Haitch laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's just like Dale buying DVDs on the air. Okay."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, like, wait, it might be wait, my other piece of Dune News is that Crystal started listening to Dune."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Whaaat?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Awesome. What speed is it on?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know what speed she's listening. I think she's a 1.0. Yeah. 1.3 she clarifies from the kitchen."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay. Not bad."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's, that's pretty good. I'm listening to Heretics at 1.5 to make it go faster. [Jason laughs]"
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "bumped it to 1.7 today. I was like, I got to choke this thing down. Yeah. Rough. [interim sound bite plays]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright. Well, why don't we get into this? [music from Nausicaa of the Valley and the Win plays] Like, I'm super stoked to talk about Nausicaa. Are you guys ready?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Let's do it."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "am ready. I'm excited."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright. Here we go. Nausicaa is the struggle to find harmony between nature and humanity. 1000 years after the Seven Days of Fire when humanity was thrown down by giant warriors we ourselves created, the remaining survivors huddle in small kingdoms, eking out a meager existence in the shadow of the growing toxic jungle. Nausicaa, daughter of King Jihl is a brave adventurer, exploring the dangerous wastelands. When her valley is invaded by the evil Tomekians and her father is killed, she must inspire her people and lead them in the fight. caught between an unstoppable swarm of giant insect creatures, and the warriors of these warring kingdoms, can Nausicaa find a path that will bring peace? Can she save the wounds of the world and seize her destiny as Nausicaa of the Valley of the Wind? [music from Nausicaa of the Valley and the Win ramps up, plays alone, fades out]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, that's good. That's good. I love it. I love how you brought it home. Every time. That's great."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "This is quite a film. It's definitely it took me a while to see this. But I saw it maybe when I guess when the DVDs came out when Disney took over and started doing the distribution."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "2005?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. And so definitely struck by by that edition and was consuming all of them. Like I'd started with Totoro. Then Kiki then Castle in the Sky. Although strangely, I think I saw Lupin III: The Castle of Cagliostro, I think I saw that in the theater. When I was like, nine or 10."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Interesting. My history with the Ghiblis is a little bit more abbreviated. I've seen, I saw Mononoke in the theater and I saw Spirited Away in the theater. And I've seen Howls and Ponyo, and we watch Totoro like every day at my house. But there's a bunch, there's a bunch I haven't seen. But now it's kind of fun because we're getting to watch like the ones that are good for little kids like with our son who like loves them. Like the first thing, like we've watched Kiki's Delivery Service a bunch."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So good. So good."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Like the first thing he said to me this morning when he woke up was like, \"We need to go find Kiki! Where's Kiki?\" And he wanted me to just like carry him around the house and like open every cupboard because he was convinced that like Kiki was hiding in them somewhere and that's going on for quite some time."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That city by the sea in Kiki where she where she does her which studies. Like just, absolutely amazing."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, very beautiful."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Danny, you should talk to us as we get through here about just like the animation and the architecture and some of that stuff, because it's such a running sort of theme of excellence for Miyazaki."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, for sure."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Talk to us about art. [Danny laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Tell us art."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And I know I said earlier that this is my favorite. This was one of the ones that I watched probably last and later in life. Definitely watched the younger ones like the Totoros and the Kikis multiple times."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Interesting."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And Mononoke a and Spirited kind of fell. I think I only I really connected with those later, as well. And I really loved those. But when I watched Nausicaa, it had to have been like maybe maybe four or five years ago now for the first time and it kind of was it kind of changed me watching it because it really blew me away. And then when I found out that it was his first and it's not even a, it wasn't even a, Studio Ghibli didn't even exist then yet. And he had already done this as a manga which still blows my mind. So yeah, this movie, it's just, when I was to the point in figuring out what I wanted to do for art and want to do, I really wanted to do animation. Digging into his work, it just, it almost felt like why bother? Because it's just, it's just kind of mind blowing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, that's amazing. Well, it was it was. So when I saw this was such a wild time because I had gotten into Totoro and Kiki's in like, 99', 2000, with the Fox voiceover dubs, which were like bad, but we still we love them and worship them in the household. And then I saw, I guess it was before that, but I saw Mononoke in the theater, which was, which was wild. And I was just very, very into that. I was like, Gillian Anderson is in it. Like, come on. We got see this. [Danny laughs] Alright, so it starts out I love this opening that is so atmospheric with just like the wind blowing and the toxic jungle consuming yet another village and the introduction of Lord Yuba, as played by Patrick Stewart. Just very, very cool."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's when we lost our son and realized this wasn't gonna work for him. Because he was scared of like the toxic jungle, and I go, alright, I'll watch this one later. Well, like it's kind of unclear what he finds scary at this point, because like Spirited Away, I thought he would have found scary at when the parents get transformed into pigs. But he just thinks that's hilarious. [Haitch laughs] That one's fine. And like the stink spirit is fine stuff like that. But the toxic jungle and just so I think it's more than music for him that I sort of sets him off. And like it seems, I think it was too scary. So we we bailed, but it is very atmospheric. And the soundtrack is amazing on this, on this one."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Absolutely incredible."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh all of them."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's amazing. And also, it also kind of feels all over the place. There are moments when you feel like it's these amazing, like orchestral like sounds and then all of a sudden, it's like techno kind of electronic bumping music. [music from Nausicaa of the Valley of the Wind plays] It's really rad."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Totally, there's sitar, there's like the sitar sections when they're seeing the Ohmus and stuff. It's a diverse sounding soundtrack for sure. This is Joe Hisaishi, who's been with him for almost all of these films. And just so, so good there. And they and it is striking, right that credit music that is playing out there, which people will have just heard during the synopsis is fantastic. And then you have the tapestry, the paintings. And then you have like the video of like the the giant warriors destroying the cities, which to me, I instantly got Evangelion vibes on that."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, it's funny how much like this. This one, it's kind of hard for me to know, as not a super student of manga. Like, where, like how much this is just like the big influencer? Versus like, these are just common themes, because I'm like, Oh, so it's like very much like, Attack on Titan. Also, I mean, it's like, you know, still the same kind of idea of, there's like a failed society. And one of the reasons it failed was there these giants that came and fucked it all up. And like, you know, and then but like stuff that is directly influenced. When the Ohmus show up. I was like, oh, this is like, just speaking the soundtrack. This is like the Final Fantasy and counter music. [Haitch laughs] It's like the, you know, it's like a music you have like a random you know, and, and it very much it very much reminded me of that. And this movie also introduced chocobos,which like actually like that actually has a direct influence on later stuff. So it's a pretty, it was wild like watching it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What are the chocobos?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The chocobos are are like the riding chickens like the armor chickens. That's like that's like a recurring motif."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That one that's licking her face. [Danny laughs] She's like, right there. And it's like tongue is the size of her head."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't think that's in Final Fantasy but."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So you have you know, you have this kind of like intense imagery of the credits. And then you have Nausicaa, just fly, the shots at distance of her flying over the jungle and through the air, which is just gorgeous shots. And then you have her recovering this piece of a giant Ohmu's shell which the ohmus are the giant insect creatures that turn red when their their eyes turn red when they're angry, and then they turn blue when they're peaceful. But just I love that and then the spore fall, when the spores are released, and it's like snowfall, but it's deadly and moody and atmospheric."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Deadly snow."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah. The great thing about the intro, I feel like in the first 15 minutes of this film, you know exactly who Nausicaa is as a person, as as a leader as well for her if you want to call it a tribe or her whatever her people."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Crew?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah her crew and you just realize that She is a peaceful person and she's doing everything she can to figure out the mess they're in. And it's just beautiful. The spore scene I wrote down as one of my favorite scenes, especially when she, when she finally gets the ohmu eyeshell off and she lays there as the toxic spores fall on her. It's just like, I would totally do that too. It's just as beautiful."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What's that thing that Miyazaki talks about where you just have the space?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's called a Ma. M A. It's really prevalent in his work too. There's just the Ma is like the just the quiet where nothing is happening and, but everything is still kind of going on that you can just have moments of quiet and he does it in his films, where it's just long shots of scenery, or someone walking through the forest. It's just these little quiet peaceful moments. And this is called Ma."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Just beautiful."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, there's a there's a Twitter account you can follow that just tweets those like little moments from Ghibli movies of just like, one of the ones I love from Totoro is like there's a scene where, like a snail is like crawling."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yes! That's exactly it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Of course, of course."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. Tweets like stuff like that. You're like, ah, that's nice."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "want that. Like, I want cells of that like at my house. Like that's one of my favorite images of the movie."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "For sure. It is rad because they're scenes, they're scenes that you knew take weeks to develop. But it's not necessarily pushing the story along. It's just taking a breath. And between these moments in the film, and it's just, it's just brilliant."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Beautiful."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Is it thundering behind you?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah. Matt, you got a storm going through?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. Dude the storm is very -"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "was wondering what I was hearing. I was like, at first I thought it was I was that you had in the background. I was like, this is some fucking next level Haitch producer shit right here. [Haitch & Danny laugh] He's like, putting in like wind sounds from Nausicaa Valley of the Wind just for like the atmospheric vibes."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "We'll go with that."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "But then I saw the lightning go off behind you. I was like, oh, wait a minute."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You know that scene? You know that scene where the ship was forced into the storm for a minute? The pilots worst nightmare. That's what it's like at my house right now."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "You're in the cloud? [Danny laughs] You're in the toxic cloud? Bummer."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So she hears an attack and she launches into the sky on her glider and she's going to go rescue Lord Yupa."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "like the name Lord Yupa though. I think that should be a thing. [Danny laughs]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Just make that Twitter account."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So can we talk about the Moebius vibes in the outfit and the glider?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, I'm not an expert on Moebius."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Let me give it out to you. The glider is called the Mehve."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The Mehve! [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "but it's actually a very clear connection to - [thunder sounds]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Damn!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "That was a lightning strike!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Haitch, that was, it's getting closer! The storms closing in on Haitch."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hopefully this mic will work well. So Moebius hat there's gonna be a storm chaser podcast. Moebius has had a series called Arzach. And that features the lead hero writing a stone pterodactyl that looks exactly like the glider in terms of the style. Also, her hat kind of had a very Moebius design element to it as well. This was no coincidence, Miyazaki himself, revealed in an interview that he quote, \"directed Nausicaa under Moebius' influence\""
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, interesting."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "In 2004, both artists drew artwork honoring the other."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh nice."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Miyazaki did a soft image of Arzach and Moebius a haunting fey illustration of the Valley of the Winds princess. Moebius went so far as to name his daughter Nausicaa. [fact bell rings]"
+    },
+    {
+      "name": "DANNYNNY",
+      "timestamp": "",
+      "text": "Oh my."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "HAITCH A",
+      "timestamp": "",
+      "text": "tribute to their friendship and mutual influence."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Good lord."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "That's impressive."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That is intense."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It really makes me realize that I like missed a chance to name my daughter after Haitch. [Danny laughs] And tribute to this podcast."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's coming. I know."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Some other influences on this podcast while Matt comforts his scared family who's going to get sucked up into a tornado. [Danny laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's gonna be okay."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Miyazaki also talked about somewhere that this was influenced by, the ohmus were influenced by Dune which is because they're like giant, they're giant creatures in you know, in the wastelands who rise up and try to kill."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's such a cool design too, those ohmus like amazing."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yes, I love the ohmus."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "How they animate when she's flying over them for the first time and it kind of does like the caterpillar movement of the shell. Such a brilliant use of animation for that because there they look like they're going 100 miles an hour, but it also has that slow Caterpillar feel to it as well, which is pretty rad."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, one thing I wonder about on like some of that animation of like the ohmus is like, I wonder how much of that was there's a lot of stuff that particularly like the battle scenes or like the way the lasers look and stuff like that. Yeah, that I wonder how much was like, new in this? Yeah, how much of it was influenced by how much of it was like sort of trendsetting and how much of it was influenced by prior stuff because like, there's things in it that like sound and look like other animated battles that I've seen, but I don't know sort of the full history of that style. But I like it. I like laser beams."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So she rescues Yord Yupa. As Jason likes. She rescues him by stunning the ohmu, and leading it back into the jungle. Then he gives her Tato, the fox squirrel who has a mix of a cat and a Kitsune which is like an Eevee in Pokemon."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Very much an Eevee in Pokemon. Yeah, it's like that's another one where you're like, oh, did this movie just like really influence a ton of people? Now that that is like also like a piece of Japanese folklore. So that they're all kind of dipping from the same well there. But yeah, definitely felt like something."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "How about when it bites your finger and she just doesn't, she doesn't flinch at all?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "She just like takes it. She's like, yes. Bite little friend."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You ever get that with Juniper Jane? Or, you know, Danny have your kids just like bite the hell out of your finger?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Junip doesn't have any teeth yet."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, but I don't react like Nausicaa did. [Haitch laughs] My reaction is to... I don't know. [Danny laughs] Baby teeth hurt! They're sharp."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh my gosh. Alright, so. So she tells you that King Jihl is sick and that she's going to meet him back there. So now we have our first introduction to the Valley of the Wind. And this is just gorgeous. The nature, the windmills, the patches of land that are being farmed, the forest, the water in the distance, just absolutely gorgeous."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "This also looks like a Final Fantasy town to me. Oh, there is a there is a quote I found was Final Fantasy creator Hironobu Sakaguchi has cited the manga and the film as an influence on his series. So like the horse claws in the film, were using the inspiration for the chocobos and like I think like this sort of pastoral look like really you see a lot of and a bunch of different Final Fantasy games."
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "want to live in that town. [Haitch laughs]"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "mean, you don't want to have to fend off the toxic forest. That part's not great."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "That's true."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Be blinded like the old woman."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's also interesting. So you know, Nausicaa there's a big welcome for Lord Yupa as he shows up there, and Nausicaa says \"we had a baby born in the valley this year\" so that tells you how intense it is. If you have all these people and you have one baby being born, that's a rough stitch."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, real rough."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So how about Edward James Olmos as Mito? [clip from Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "MITO",
+      "timestamp": "",
+      "text": "It's good to hope for a daughter who's strong like the princess, but not for one who likes to play the toxic jungle."
+    },
+    {
+      "name": "NAUSICAA",
+      "timestamp": "",
+      "text": "That Mito, the jungle is where I found the ohmu shell!"
+    },
+    {
+      "name": "MITO",
+      "timestamp": "",
+      "text": "All I do is worry when she's running around out there. I treat 1000 ohmy shells for a good night's sleep. [clip from Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, surprising."
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "love him."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "So I guess this dub came from 2004. Like this is like the Disney dub."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Is this Battlestar times?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "guess 2004? Yeah, I guess so."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "When did Battlestar start like 2003? 2004?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know, Matt. I don't have factual answers right now."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Don't remember."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "2004. So yeah, it's right. It's right at the almost renaissance. So that's something!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Did you watch Battlestar Danny?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh, I looove Battlestar."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh my gosh."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, I lived and breathed it. And it's funny because this is one of the very few sci fi things Casey and I kind of have a bond with and I'll catch her sometimes just watching the finale, because she loved how it ended."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Really?!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, wild. That's a minority report."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, she's a biiiig fan of ending. I know. It's, it's, I mean, I don't mind it. But she just loved - spoilers for anyone who hasn't seen it - she just loved the idea of and maybe this is -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The time warp?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah and just like the new earth kind of vibe, and resetting all of you know, humanity or whatever. So I just love it. I mean, I love that she loves it so much. But we would have nights where we just watch Battlestar and it's pretty great. Biiig Edward James Olmos fan."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "For me. That was a big deal in terms of podcasts. Because I would watch every Friday night I would watch Battlestar and then every Monday morning driving into work at 303 Second Street. I would listen to Ronald D. Moore's podcasts. You guys listen to that?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "didn't know he has a podcast."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "He used to sit and drink scotch and record the episode."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Legend."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Basically director's commentary all the way through and he did it for almost every episode. It was really incredible."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Love it."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Check it out, etc. Alright, so we also have the introduction of Obaba who is kind of the the wise woman. This is played by Tress MacNeille who played Osano in Kiki, the pregnant shop owner. She played Miss Hora in Totoro and she also played Dolph Starbeam on The Simpsons."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, okay. I don't remember Dolph Starbeam from the Simpsons."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Dolph is one of the three, he's Nelson and Dolph abd whoever the other guy is."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Okay. Okay. Right on. I like I like the look of her as she's like also another Baba character like you Baba character. Like Yubaba in Spirited Away. Which means old."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So she tells the prophecy. [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "OBABA",
+      "timestamp": "",
+      "text": "After 1000 years of darkness, he will come clad in blue when surrounded by fields of gold, to restore mankind's connection with the earth that was destroyed."
+    },
+    {
+      "name": "NAUSICAA",
+      "timestamp": "",
+      "text": "And he will guide the people of this planet at last to a land of purity. [clip of Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Stay tuned. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "We'll see. So then we have this great scene of the Tokimeki and airship crashing."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's like impossible to say that word without it sounding ridiculous. [Haitch & Jason laugh] Tokimekien!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's tricky. So they try to make an emergency landing. But their cockpit is totally covered with insects. And they just crash and the ship just completely blows up."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, it doesn't go well for them."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So Nausicaa gets the princess out of there. And then just a shot where Nausicaa looks under her shirt and sees that she's ruined inside. And that she's definitely going to die. Like that's a tough hang right there."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And she like buttons up her blouse. Like sort of just be like, well, nothing to do here. [Danny laughs] Might as well straighten this button back. Get this back into place."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's not I mean, man, not on my watch."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Tough, tough one for you."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, she does say before she dies. She says to destroy the cargo. She's on the ship. And it's a little confusing, because then a giant insect comes out of the ship. So at first you think that's the cargo she's talking about?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "But it's not!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Right."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's not and Nausicaa leaves that one away. That's not too much of a problem. But Yupa and Mito see that there is a giant warrior from the seven days of fire in a embryonic kind of like Alien sack, you know, mayonnaise sack type situation. So this is the beginning of kind of a dangerous situation that's coming to the valley."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "One of the things I like leading into that kind of scene is Nausicaa in the town with the with the village people, but also the older men in the village and how much they respect her and how much they love her. And they would like, follow her to the ends of the earth. And there's a great there's just, she just commands such she's like, not like, like a very rash leader, but when she like tells them to launch her glider up. And they kind of like question that for a second. But then they realize that, you know, she's just a badass, and she's just needed to get into action. And she goes flying after this crashing ship that's covered in these insects. And it's just great how she just commands and gets so much respect from the older men in this village."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "All the men are old, too."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Right? They are old!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "There's no young dude, the spores are really agent people up quick in the Valley of the Wind."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And how much she loves his hands and how they're getting old."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, they're all fucked up. They need to moisturize more in the Valley of the Wind. [Danny laughs] That's the problem."
+    },
+    {
+      "name": "DANNYNNY",
+      "timestamp": "",
+      "text": "Get some of that mayonnaise sack."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They need some shea butter."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Those three old men in particular throughout the whole movie are really great. With her. I love them."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, I love them."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So also the spores from the ship have spread into the field. So they're in the midst of trying to figure out can I stamp those out by burning those out in controlled amounts. And so the tension is there like you really feel like you are in danger of losing everything."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Those spores traveled quick too."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No doubt."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They got right up on them."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So now we have the Tokimekien invasion!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Tokimekiens!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So how about just the design? Can we talk about the airships?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Airships is another Final Fantasy trope shows up here. [Danny laughs] I feel obliged to say."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Great design."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They look dope. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason that's your art exhibit. They look dope."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They look dope. Print it. Someone described the style of this movie and the technology and like the particularly the machines and stuff as like diesel punk."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Mmm!"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "think that works for me, I get it. That's the vibe."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's a good description for sure. It's really cool because they don't feel they're not expected and they just feel kind of out of place but somehow they work and dieselpunk is interesting when describe it. I guess I would go along with that as well, it's pretty good."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "like it. Well so they these airships come in they just smash up the valley they're knocking down you know windmills and crashing stuff out and I will say there is a musical cue when the guys are pouring out of the ship and getting ready to go attack that is a straight up repurpose of Panda! Go Panda! Have you guys seen that one?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So this was one of Miyazaki's first things, I think he did the designs but it basically follows a little girl who is living by herself and has a giant panda and a baby panda that come live with her and it's two 30 minute videos and it was put out I forget who did the DVD but I've got it."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Sounds amazing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's incredible and it definitely has proto Totoro thing. This was like 78 or something but definitely worth checking out. Sound work is very good as well. So they straight up murder King Jihl, they just walk in, they shoot him like six times. And then Nausicaa comes in and just takes out the entire -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wrecks house. [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Good swordfights."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "One of the best animated sequences out of Miyazaki for sure."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Her backflip?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh my gosh, it's so smooth. Like incredibly smooth. The sound, how the scores kind of cut out as well so you can just kind of hear the breathing and the fighting and the sound of the swords hitting each other just sound incredible. I love it. And then enter Lord Yupa. [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "LORD YUPA",
+      "timestamp": "",
+      "text": "This whole shell knife can slice right through that draconian ceramic armor of yours. [clip of Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Just straight up swordsman badass."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So he just takes a sword. And he takes a sword right to his arm!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Right to his arm! But it almost mirrors the exact the exact same thing when the fox squirrels introduced to Nausicaa and how wild and crazy it is until it bites her. I think it's the same kind of thing with Nausicaa. She's lost control. [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "LORD YUPA",
+      "timestamp": "",
+      "text": "Nausicaa, be calm. If you fight now the people with the Valley will be massacred. We must stay alive and wait for the right opportunity. [clip of Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And she is only seeing red and anger until there's this pause like she's bit him in the arm."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "She sees the blood dripping down his sword."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Exactly. Yeah, so there's a good mirror lesson that she learns again that she also showed that fox squirrel."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And does he als, I'm trying to remember, he also like has his knife on the guards neck?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Under the helmet, yeah!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So like, that guy's screwed."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's just so rad."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, fantastic."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Great sequence."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "And then they try to like say that they're there in peace when they've just destroyed, they just shot them up like no, that's not how that works. [Danny laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "What kind of bullshit is this?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"We are not savages! We've come to talk!\""
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "\"We just murdered your King.\" [Danny laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"We have come to your land in the name of peace.\" What?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Exactly. Although it will develop here with with Kushana over time, she's a little more complex and kind of classic Miyazaki villain mode, then just pure. So she wants to use the warrior to burn the toxic jungle. That's her goal. And she actually says that she wants to not send the warrior back to Tomeki as she was supposed to, but use it herself. So can we talk about Kurotowa? Her right hand man played by Chris Sarandon, Prince Humperdinck from the Princess Bride. [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "KUROTOWA",
+      "timestamp": "",
+      "text": "Ah yes, I do see your point. But I'm just a soldier of Tomiko, I'm not in a position to make that decision."
+    },
+    {
+      "name": "KUSHAITCHNA",
+      "timestamp": "",
+      "text": "Weasel. [clip of Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "He's so annoying. [Danny laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "His voice is terrible. He should not do anything."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "That voice matched with that smirk that he has the whole time."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What a dweeb!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Such a dweeb. That's, that's a good one."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "He's terrible. I hate that guy. [Haitch & Danny laugh] I really wish, I almost wanted to, I wanted to switch over like the Japanese like subtitle version or whatever, just to get rid of him. He was tough. But Uma Thurman as what's her face? Very strong. Yeah. Big arm. Cool hair."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Such a cool design too."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Really cool design."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Complicated character, sort of sucks, doesn't really suck. She's like in a meta state of, you know, does she suck or not? I think that's good. I like that. She's a very unusual antagonist, basically."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What's the name of the antagonist in Mononoke? 'Cause I think to me, that's like the fully realized version where she's running the village that's like destroying the forest. But she's also taking care of the lepers who can't take care of themselves."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah that's a good point like it's."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Lady Eboshi or something?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh nice. Good pull. This is basically Miyazaki's forever theme."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wheel house."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, like his, his theme is just always like, you know the exploitation of nature and what happens when mankind does not live in harmony with nature because of technology and, you know, materialism or whatever. And the answer is, it's always bad, and that mankind should return to live in balance with nature, or nature will destroy you. That's another one where I don't know enough about Japanese, like manga or anime to like know how much of this is influenced by how much of like, because this show theme shows up a lot in anime. And I always assume that some of this was influenced by the atomic bombing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Of course."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "But according to Dani Cavallaro, his book animé art of Hayao Miyazaki quote \"the Minamata Bay fish disaster are unquestionably the realized correlative for the immensely and ingeniously adaptable fictitious plants portrayed in Miyazaki film\" because there's this big mercury plant disaster that happened in Minamata Bay in which like, a couple 100 people I think died of mercury poisoning, but then all the life in the bay found this way to like adapt to like the poisoning. And you know, all these different like kind of mutations or whatever came out of it. So this one, not the bombings instead mercury poisoning."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Interesting."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, there is that the nature of the ecological thing, but then the other is just the destructive and kind of warlike nature, right. So I guess this is the I'm gonna offer this as the counter argument, at least in my take. So when she is in her secret room, where she's been growing the toxic jungle plants, with clean soil and water and they're not toxic, that's sort of combating that the environmental side and trying to figure out that harmony. But she they covered this multiple times in the film, she's just really distraught about violence and killing, she wants it to end both for herself and for and for others. So to me, that's kind of the other critical message in this film."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, I love like her spore room, incidentally. That reminded me of the greenhouse from Dune. Like the secret greenhouse like in this like world of like, you know, ecological disaster. There's this like, one beautiful place that sort of stands out as a different thing. So I really, and I love the way it looks in the movie. It looks dope."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh, it's gorgeous."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "More stuff that looks dope. Jason's art commentary. [Haitch & Danny laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "But then she, but then she just says she's like, \"Oh, well, I gotta go. So I just turned it off, turn off the water. It'll all be dead.\""
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, fuck all these plants. [Danny laughs]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "My whole research. Let's just shut it down."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, whatever. Bullshit anyway."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Back to formula."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Her dad's dead right? So like that's why she had started it. So she's taken prisoner on their ship. And so now we have the Pejite gunship attack!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The Pejites!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So this is Asbel, as played by Shia Lebeouf in this film."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The beef."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "This is a pre -"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Pre everything basically."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. 2004."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Post-Holes."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Right after Holes proably."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. I love Holes. What a great movie."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "haven't seen Holes."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The first thing that struck me is that his ship looks like Spike Spiegel's ship. From Cowboy Bebop."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Ohh okay okay."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The swordfish too."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, okay."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You guys watch that show?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay. Danny, can I get a rating?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Big Bebop fan."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "There was an NES game, Cowboy Bebop that was impossible to play. It was like one of these games that just like didn't work. And my cousin had it. And like I was like, obsessed with it because it was just like, it didn't make any sense, it was impossible to play. That's all I know about the Cowboy Bebop, is that it was impossible play on NES game."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "This this all came to kind of fruition for me like in 99, 2000, right as the .com thing was was crashing. We went to Gen Con."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh my."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "The annual D&D gaming convention. It was in Milwaukee still at that point. And we were partying in the presidential suite at the Pfister, very late at night, and listening to the Cowboy Bebop soundtrack and that was where the first time I'd heard that. And then watched Cowboy Bebop, watched Evangelion and this was all in the midst of Miyazaki stuff as well. So that's kind of like all in my head. So Asbel just like tears apart the Tomekians, takes out all the ships, she does say she stands on top of the ship and says - [clip of Nausicaa of the Valley of the Wind plays]"
+    },
+    {
+      "name": "NAUSICAA",
+      "timestamp": "",
+      "text": "Stop it! All this killing must stop! [clip of Nausicaa of the Valley of the Wind ends]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And that hesitation where he kind of sees a flash of her. And his like hand is on the trigger. Danny, did you get like Kylo vibes from last Jedi?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh, yeah. Super rad."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Right?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, for sure."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That was like a direct."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, it's just, it's great. It gave him great pause."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "But what was happening there? Was he seeing her as his sister? Was he having like a vision of her as Lastelle or whatever her name was, the princess?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, I think that's kind of why he did it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason, you didn't you have no memory of this moment?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "have no memory of this part. I might have blacked out at this point."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, it's just a flash. So it's just a flash for a second, but she's like in a night gown instead of the outfit that she's wearing standing there. But anyways, Asbel gets shot down and the ship is going down, she rescues Kushana she saves the barge, she tells them to drop their cargo and they're not listening. And so she takes her mask off. Like what was going on there?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know what's going on there. That seemed very reckless. I thought we were gonna discover that she had superpowers. But then she's just like, \"Oh, I inhaled some of the poison.\""
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, I'm just gonna breathe it in."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "was like, alright. Doesn't seem good. I love the way their masks look like like they've got little yams hanging from their face. [Danny laughs]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's a rad design."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's a rad design. It was like, what's her name? The artist Kusama, is that a person? It looks like her art. Yeah. Yayoi Kusama."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Drop it in. Drop it in the channel."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "She does a lot of like yam work. I'll drop some yams on the Discord."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Please drop your yams."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason bringing the yams."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Standby discord for yams."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Incoming yams."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Danny, how about that? How about the thumbs up? Like, is that the most iconic shot or what?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's just, it's great. I mean, it's just like the hero shot of Nausicaa. [Haitch laughs] It's just, she's rad. She's showing the men that she's in charge still."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Listen to me. I'm willing to sacrifice my lungs right now. Drop them. Drop your cargo and follow me. Yeah, take up your cross."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "There is that cool moment where they're like, the guys are really bummed out about throwing the cargo like, oh, this is such a waste. And so you do have that sense of ingrained how precious -"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Everything is. Yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "They crash land into the ohmu nest. And this is where it's just like water and the trees and whatnot. So to me this really reminded me of the stags forest in Mononoke."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Mhmm."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Like I had definitely that that vibe there and I loved it. It was gorgeous."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Mhm, super rad. And then the ohmus come up and we got gold tentacles."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The gold tentacles."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Walk us through it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's another Mononoke situation. Yeah, like like tentacles of life."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Well, let's get to let's get to our letters segment here. We have two letters, two voicemails the first one stinging from last week's gross violation of the 90 second time limit. A recalcitrant Corey. Corey, we love you. We will always take your voicemails of any length. But so here we go. [voicemail plays]"
+    },
+    {
+      "name": "VOICEMAIL",
+      "timestamp": "",
+      "text": "Dune Pod. It's Corey from Austin. I'll keep it brief this time since last episode, I went way over my allotted time limit. What the fuck is a jawn? Alright, that's all I got, bye.\" [voicemail ends]"
+    },
+    {
+      "name": "JASON A",
+      "timestamp": "",
+      "text": "jawn. Yeah."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh no."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's a good question, though."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "It's for those Philly boys. Dan."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Danny, you can answer this."
+    },
+    {
+      "name": "DANNY A",
+      "timestamp": "",
+      "text": "jawn? It's you just, I don't know. I'm not from Philly. I just learned about it with these idiots upstate. You just kind of replace it with something like, yeah, I'm going to that jawn over there or something. I don't know!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "My understanding, and I'm also not from Philly. But my understanding is that jawn can be used for any part of speech in any sentence at any time."
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "feel like I've accidentally used it too."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's just like, just throw it in wherever you feel it needs to go. I'm sure there's actually some grammatical rules."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright well, fortunately, fortunately, we have the Podfather coming on next week, Philly boy, Slim."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, we'll let him."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Proto."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yeah, have him talk about it. He'd love to talk about it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Dale says, Jason, you're correct. Exactly correct. So, congratulations."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, great. There you go."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Congratulations. Alright, here we go. Here we go. Next voicemail. This is a new one. So I'm excited for this. [voicemail plays]"
+    },
+    {
+      "name": "VOICEMAIL",
+      "timestamp": "",
+      "text": "Hi, guys. My name is Danny Abasi in London. And thanks so much for the podcast, I just listened to the Blade Runner 2049 episode, I really enjoyed that. I wasn't a fan of the movie when I saw it in the cinema, I think it was bringing too much baggage from being a big fan of the original Ridley Scott Blade Runner film. But I rewatched the Blade Runner 2049 recently and just fell in love with it. So it was great to hear other people appreciate it and pick up on all these great things about it, which I'd missed the first time. So yeah, I think this podcast is great. I love the way you guys talk about the different things and this approach to kind of, you know, everything that's going to feed into the release of the movie and what's gone into making the movie and helping people to sort of appreciate it from all these different perspectives and the other work that the actors have done and everything else. One thing that I'm not sure that you guys have done yet is for me, the first touch point for the Dune universe was the Dune 2 video game. Which was the first real time strategy video game as we know it. And I think it'd be interesting to get someone on to talk about now if you have any sort of like games expert. One thing about that game is it's got fantastic music by Frank Klepacki, who went on to do the music for Command and Conquer another of the key gains in the development every realtime strategy, and also has awesome music. And yeah, the game is is really great. It's really worth a look if you've never played it before. Anyway, looking forward to future episodes. Thanks again, guys. And, yeah, keep it up. [voicemail plays]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's great. That's a good note. We've talked about Dune 2 a couple times in reference, just in passing reference and like you said, it is the first realtime strategy game and we've also talked about Dune 1, the game that came before it, which is a fucking hot mess. And the development story of that's really interesting. So I think we should, we should we should get like some sort of game-spert to like talk about it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "You got it covered?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No. You've got it covered. I'm throwing down the gauntlet. I'm looking for an update by next week."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh my god. Matt's giving me homework in this fucking podcast."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "By next week, come back. Like let's figure out who was involved in this game. Let's get a developer or producer, let's get somebody who has eyes on it. We can do Dune 1 first or we Dune 2, whichever you want. But let's get a name and let's get a plan and get that person on this pod. That'd be amazing."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "What was Dune 2 on? Was it computer?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "PC."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "PC. Only PC."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Is was only PC. What year was this?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Like 92? Yeah. 92."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh, wow."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "But it was called Dune 2000?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No, called Dune 2."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay. Got it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, and then there was a game before just Dune. Yeah, we need some folks from Westwood Studios."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Exactly."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "If you worked at Westwood Studios."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "They're in the UK right?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Nope. They're American."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay. Hey, Danny."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yes?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No, no. Danny from the UK. Thank you so much for that voicemail. That was incredible."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Yes. Thank you, Danny."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, very solid group voicemail, lots of facts and praise. [Haitch laughs] Facts and praise is my love language."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Nice. [Danny laughs]"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Mine's gifts, so. I'll give you my address later."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, Danny. What do you have to plug?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh man plugging. Let's see. We are about to kickoff Indiana Junes on 70mm pod. We're going to go through all four Indiana Jones movies."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Cannot wait."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "The next four weeks of June, celebrating the 40th of Raiders and the big 4K release of all four films right now."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Which I'm very excited about."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Any artwork?"
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "will be doing the episode artwork on the show but I won't be selling the episode art. But I have worked on some stuff with Lucasfilm for the 40th that is still in approval process."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Stay tuned!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "But yeah, I did. I did work on some Raiders stuff for them. And that really is it. Very excited about this month on 70."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's great. Sounds awesome."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "I've never seen Crystal Skull so I'm looking forward to watching that."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Wait you've never seen Crystal Skull? I'm interested in what you think about it. Are you gonna watch leading up to Crystal or are you just gonna jump straight into Crystal?"
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "haven't decided like I've seen Raiders, you know, 50 times. I haven't revisited two or three for 30 years."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Oh, it's time. This is the month to do it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Definitely the month to do it. Yeah."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Last year, I watched all four in a row. And I had my opinions on Crystal like everyone else does. But when I ended up watching all four in a row, we'll get into it on the podcast, but -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Changed your feelings?"
+    },
+    {
+      "name": "DANNY I",
+      "timestamp": "",
+      "text": "did have different feelings for watching it after kind of back to back to back with all of them. I've grown up, you know?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Let's definitely take a look. This is you know, 70mm, if you aren't already listening to that our TAPEDECK Podcasts jawn partners. So definitely folks should absolutely take a listen to that. Your aliens episode this week was a phenomenal."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "So much fun."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. And Contact last week, one of my all time - I tried to get Slim, I hit him up like, two a month and a half ago. I was like, dude! Contact, get on here. And he's like, sorry beb, can't do it. Jason, you got anything to plug? Are you are you good to go?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "want to plug the video game Subnautica Below Zero. I don't know if we talked about it on here before. I don't think so. It's a survival game based in the ocean. It's very fun. This Subzero is the sequel. And in this game one of the things that happens is there's a very clear Dune reference where there are some worms that will try to chase you and that you have to plant a thumper to like distract them. So that was cool to see. It's a fun game. I recommend people check it out."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Is it like the old TV show seaQuest?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "DSV?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "One of my all time favorites. I love that show! Roy Scheider."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's kind of like Minecraft but like underwater."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Ohhh okay!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "With more story."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Nice. Nice. Should we do a seaQuest in a pod?"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Can you - seaQuest pod. We would be, we would have to have cornered that market. There's no way."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's right. Oh my god. I bet there's a seaQuest, there's got to be a seaQuest pod!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "There's definitely a seaQuest pod. I'm sure there's a seaQuest Convention. [Danny laughs] Listen, like I don't know how much shade we can be throwing on it. This is a pod about a book that came out 50 years ago. So let's like, you know, let's not throw too many."
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "I'm doing some seaQuest art."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, but it's Edgar Wright's most anticipated movie!"
+    },
+    {
+      "name": "DANNY",
+      "timestamp": "",
+      "text": "Mmmm."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, maybe, he deleted that tweet now too. He's deleted all the tweets. It's hard to say what's going on. [Dune Pod theme song ramps up]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And that's it for this episode of Dune Pod. I want to thank Jason and Danny for a fantastic conversation. Next week, 70mm Month Strikes Back rolls on as we're joined by the Podfather, Slim, to discuss Paul Thomas Anderson's Inherent Vice streaming now for free on Tubi. If you're enjoying this podcast, join our Discord server where you can hang out with us whenever you want. A link is in the show notes. You can find our full movie setlist on Letterboxd and if you want to support them by upgrading to Pro or Patron status, use promo code Dunepod at checkout to save 20%. Dune Pod is a TAPEDECK podcast jawn, a production of Haitch Industries. Our artwork is by ctcher and our theme music was composed by Toby Forsman of Whipsong music. The episode was produced and edited by me, Haitch. Thanks for listening. We'll see everybody next week. [Dune Pod theme plays alone, ends]"
+    }
+  ]
 }
