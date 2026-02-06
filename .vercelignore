@@ -1,7 +1,3 @@
-# Ignore backup files
-*.backup
-
-# Ignore audio files if any
-audio/
-
-# Scripts are needed for build-time ingest
+mp3s/
+*.mp3
+batch-transcribe-progress.json
