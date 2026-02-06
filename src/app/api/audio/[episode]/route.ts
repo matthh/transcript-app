@@ -46,7 +46,10 @@ async function serveLocalFile(request: NextRequest, filePath: string) {
   if (range) {
     const parts = range.replace(/bytes=/, '').split('-');
     const start = parseInt(parts[0], 10);
-    const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
+    // Limit chunk size to 1MB to avoid memory issues
+    const maxChunk = 1024 * 1024;
+    const requestedEnd = parts[1] ? parseInt(parts[1], 10) : start + maxChunk - 1;
+    const end = Math.min(requestedEnd, fileSize - 1);
     const chunkSize = end - start + 1;
 
     const fileStream = fs.createReadStream(filePath, { start, end });
@@ -69,11 +72,24 @@ async function serveLocalFile(request: NextRequest, filePath: string) {
     });
   }
 
-  const fileBuffer = fs.readFileSync(filePath);
+  // For non-range requests, return just the first 1MB with range support header
+  // This prompts the browser to use range requests for the rest
+  const initialChunk = 1024 * 1024;
+  const end = Math.min(initialChunk - 1, fileSize - 1);
+  const fileStream = fs.createReadStream(filePath, { start: 0, end });
+  const chunks: Uint8Array[] = [];
 
-  return new NextResponse(fileBuffer, {
+  for await (const chunk of fileStream) {
+    chunks.push(chunk);
+  }
+
+  const buffer = Buffer.concat(chunks);
+
+  return new NextResponse(buffer, {
+    status: 206,
     headers: {
-      'Content-Length': fileSize.toString(),
+      'Content-Range': `bytes 0-${end}/${fileSize}`,
+      'Content-Length': (end + 1).toString(),
       'Content-Type': 'audio/mpeg',
       'Accept-Ranges': 'bytes',
     },
