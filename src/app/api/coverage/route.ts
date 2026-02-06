@@ -159,7 +159,10 @@ export async function GET() {
 
   for (const t of transcripts) {
     if (typeof t.episodeNumber === 'number' && t.episodeNumber > 0) {
-      transcriptsByNumber.set(t.episodeNumber, t);
+      // Only add if not already present (prefer filesystem over blob)
+      if (!transcriptsByNumber.has(t.episodeNumber)) {
+        transcriptsByNumber.set(t.episodeNumber, t);
+      }
     }
     transcriptsByName.push(t);
   }

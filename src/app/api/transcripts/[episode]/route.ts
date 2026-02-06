@@ -51,26 +51,34 @@ export async function PUT(
   const { episode } = await params;
   const transcript: Transcript = await request.json();
 
-  // Try to save to filesystem first (for local development)
+  const storage: string[] = [];
+
+  // Try to save to filesystem (for local development)
   const filePath = path.join(process.cwd(), 'transcripts', `${episode}.json`);
   try {
     fs.writeFileSync(filePath, JSON.stringify(transcript, null, 2), 'utf-8');
-    return NextResponse.json({ success: true, storage: 'filesystem' });
+    storage.push('filesystem');
   } catch {
-    // Filesystem is read-only (production), save to Blob storage
+    // Filesystem is read-only (production), that's fine
   }
 
-  // Save to Blob storage
+  // Always save to Blob storage to keep it in sync
   try {
     await saveBlobTranscript(transcript);
-    return NextResponse.json({ success: true, storage: 'blob' });
+    storage.push('blob');
   } catch (error) {
-    console.error('Failed to save transcript:', error);
+    console.error('Failed to save transcript to blob:', error);
+    // If filesystem save succeeded, still return success
+    if (storage.length > 0) {
+      return NextResponse.json({ success: true, storage: storage.join('+'), blobError: true });
+    }
     return NextResponse.json(
       { error: 'Failed to save transcript' },
       { status: 500 }
     );
   }
+
+  return NextResponse.json({ success: true, storage: storage.join('+') });
 }
 
 export async function DELETE(
