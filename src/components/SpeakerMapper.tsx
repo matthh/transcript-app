@@ -208,6 +208,19 @@ export default function SpeakerMapper({
     setLastSelectedIndex(null);
   }, []);
 
+  // Toggle segment exclusion (moved before handleSegmentClick to avoid reference error)
+  const toggleSegmentExclusion = useCallback((globalIndex: number) => {
+    setExcludedIndices(prev => {
+      const next = new Set(prev);
+      if (next.has(globalIndex)) {
+        next.delete(globalIndex);
+      } else {
+        next.add(globalIndex);
+      }
+      return next;
+    });
+  }, []);
+
   // Handle segment click for individual selection
   const handleSegmentClick = useCallback((globalIndex: number, e: React.MouseEvent) => {
     // Don't handle if clicking on interactive elements
@@ -270,19 +283,6 @@ export default function SpeakerMapper({
     ));
     clearSelection();
   }, [selectedIndices, saveToHistory, clearSelection]);
-
-  // Toggle segment exclusion
-  const toggleSegmentExclusion = useCallback((globalIndex: number) => {
-    setExcludedIndices(prev => {
-      const next = new Set(prev);
-      if (next.has(globalIndex)) {
-        next.delete(globalIndex);
-      } else {
-        next.add(globalIndex);
-      }
-      return next;
-    });
-  }, []);
 
   // Select all segments matching active label
   const selectAllMatching = useCallback(() => {
