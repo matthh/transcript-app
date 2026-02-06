@@ -74,14 +74,12 @@ function NewEpisodeContent() {
       setEpisodeName(transcript.episode_name);
       setRawTranscript(transcript);
 
-      // Try to fetch audio URL
+      // Check if audio exists and set the URL
+      // The /api/audio endpoint serves the file directly or redirects to blob
       try {
-        const audioResponse = await fetch(`/api/audio/${episodeNum}`);
+        const audioResponse = await fetch(`/api/audio/${episodeNum}`, { method: 'HEAD' });
         if (audioResponse.ok) {
-          const audioData = await audioResponse.json();
-          if (audioData.url) {
-            setAudioUrl(audioData.url);
-          }
+          setAudioUrl(`/api/audio/${episodeNum}`);
         }
       } catch {
         // Audio not available, that's fine
