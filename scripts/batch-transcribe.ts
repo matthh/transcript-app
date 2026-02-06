@@ -26,7 +26,7 @@ const MP3_DIR = './mp3s';
 const PROGRESS_FILE = './batch-transcribe-progress.json';
 const AUDIO_PREFIX = 'audio/';
 const TRANSCRIPT_PREFIX = 'transcripts/';
-const MAX_CONCURRENT_JOBS = 3;
+const MAX_CONCURRENT_JOBS = 1; // Reduced from 3 to avoid memory issues with large MP3s
 const POLL_INTERVAL_MS = 10000; // 10 seconds
 
 // CLI args
@@ -197,6 +197,7 @@ async function uploadAudioToBlob(filePath: string, episodeNumber: number): Promi
   const blob = await put(pathname, fileBuffer, {
     access: 'public',
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 
   return blob.url;

@@ -200,14 +200,20 @@ export async function POST(request: NextRequest) {
               endTimestamp: r.chunk.metadata.endTimestamp,
             }));
 
-            transcriptSources = results.map((r) => ({
-              episodeTitle: r.chunk.metadata.episodeTitle,
-              speakers: r.chunk.metadata.speakers,
-              startTimestamp: r.chunk.metadata.startTimestamp,
-              endTimestamp: r.chunk.metadata.endTimestamp,
-              text: r.chunk.text,
-              score: r.score,
-            }));
+            transcriptSources = results.map((r) => {
+              // Extract episode number from chunk ID (e.g., "episode_182_chunk_5" -> 182)
+              const epMatch = r.chunk.id.match(/episode_(\d+)/i);
+              const episodeNumber = epMatch ? parseInt(epMatch[1], 10) : undefined;
+              return {
+                episodeTitle: r.chunk.metadata.episodeTitle,
+                episodeNumber,
+                speakers: r.chunk.metadata.speakers,
+                startTimestamp: r.chunk.metadata.startTimestamp,
+                endTimestamp: r.chunk.metadata.endTimestamp,
+                text: r.chunk.text,
+                score: r.score,
+              };
+            });
           }
 
           send('progress', {

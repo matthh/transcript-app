@@ -55,3 +55,4 @@ batch-transcribe-progress.json
 
 # MP3 audio files (too large for git)
 mp3s/
+.env*.local

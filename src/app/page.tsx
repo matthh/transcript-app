@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 
 interface TranscriptSource {
   episodeTitle: string;
+  episodeNumber?: number;
   speakers: string;
   startTimestamp: string;
   endTimestamp: string;
@@ -161,17 +162,7 @@ export default function Home() {
 
         {result && (
           <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
-                <QueryTypeBadge type={result.queryType} />
-              </div>
-              <article className="prose prose-slate prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900 prose-blockquote:border-blue-300 max-w-none">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {result.answer}
-                </ReactMarkdown>
-              </article>
-            </div>
+            <AnswerCard result={result} />
 
             {result.sources.metadata && result.sources.metadata.length > 0 && (
               <div>
@@ -249,6 +240,64 @@ function QueryTypeBadge({ type }: { type: QueryType }) {
   );
 }
 
+function AnswerCard({ result }: { result: SearchResponse }) {
+  const [showErrorModal, setShowErrorModal] = useState(false);
+  const [selectedText, setSelectedText] = useState('');
+
+  const handleReportError = () => {
+    const selection = window.getSelection();
+    const selected = selection?.toString().trim() || '';
+    setSelectedText(selected);
+    setShowErrorModal(true);
+  };
+
+  // Build a combined source for the error modal from all transcript sources
+  const combinedSource: TranscriptSource | null = result.sources.transcripts && result.sources.transcripts.length > 0
+    ? {
+        episodeTitle: result.sources.transcripts.map(t => t.episodeTitle).join(', '),
+        speakers: [...new Set(result.sources.transcripts.flatMap(t => t.speakers.split(', ')))].join(', '),
+        startTimestamp: result.sources.transcripts[0].startTimestamp,
+        endTimestamp: result.sources.transcripts[result.sources.transcripts.length - 1].endTimestamp,
+        text: result.answer,
+        score: 1,
+      }
+    : null;
+
+  return (
+    <>
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
+          <QueryTypeBadge type={result.queryType} />
+        </div>
+        <article className="prose prose-slate prose-headings:text-gray-900 max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {result.answer}
+          </ReactMarkdown>
+        </article>
+        {combinedSource && (
+          <div className="mt-4 pt-4 border-t border-gray-100">
+            <button
+              onClick={handleReportError}
+              className="text-xs text-gray-400 hover:text-red-500 transition-colors"
+            >
+              Bad transcription?
+            </button>
+          </div>
+        )}
+      </div>
+
+      {showErrorModal && combinedSource && (
+        <AnswerErrorModal
+          result={result}
+          initialSelectedText={selectedText}
+          onClose={() => setShowErrorModal(false)}
+        />
+      )}
+    </>
+  );
+}
+
 function MetadataCard({ source }: { source: MetadataSource }) {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
@@ -286,25 +335,451 @@ function MetadataCard({ source }: { source: MetadataSource }) {
 }
 
 function TranscriptCard({ source }: { source: TranscriptSource }) {
+  const [showErrorModal, setShowErrorModal] = useState(false);
+  const [selectedText, setSelectedText] = useState('');
+
+  const handleReportError = () => {
+    // Get any text the user has selected
+    const selection = window.getSelection();
+    const selected = selection?.toString().trim() || '';
+    setSelectedText(selected);
+    setShowErrorModal(true);
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-      <div className="flex items-start justify-between mb-2">
-        <div>
-          <h3 className="font-medium text-gray-900">{source.episodeTitle}</h3>
-          <p className="text-sm text-gray-500">
-            {source.speakers} &bull; {source.startTimestamp} -{' '}
-            {source.endTimestamp}
-          </p>
+    <>
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+        <div className="flex items-start justify-between mb-2">
+          <div>
+            <h3 className="font-medium text-gray-900">{source.episodeTitle}</h3>
+            <p className="text-sm text-gray-500">
+              {source.speakers} &bull; {source.startTimestamp} -{' '}
+              {source.endTimestamp}
+            </p>
+          </div>
+          <span className="text-xs text-gray-400">
+            {(source.score * 100).toFixed(0)}% match
+          </span>
         </div>
-        <span className="text-xs text-gray-400">
-          {(source.score * 100).toFixed(0)}% match
-        </span>
+        <p className="text-gray-600 text-sm whitespace-pre-wrap select-text">
+          {source.text.length > 500
+            ? source.text.slice(0, 500) + '...'
+            : source.text}
+        </p>
+        <div className="mt-2 pt-2 border-t border-gray-100">
+          <button
+            onClick={handleReportError}
+            className="text-xs text-gray-400 hover:text-red-500 transition-colors"
+          >
+            Bad transcription?
+          </button>
+        </div>
       </div>
-      <p className="text-gray-600 text-sm whitespace-pre-wrap">
-        {source.text.length > 500
-          ? source.text.slice(0, 500) + '...'
-          : source.text}
-      </p>
+
+      {showErrorModal && (
+        <TranscriptionErrorModal
+          source={source}
+          initialSelectedText={selectedText}
+          onClose={() => setShowErrorModal(false)}
+        />
+      )}
+    </>
+  );
+}
+
+function TranscriptionErrorModal({
+  source,
+  initialSelectedText,
+  onClose,
+}: {
+  source: TranscriptSource;
+  initialSelectedText: string;
+  onClose: () => void;
+}) {
+  const [selectedText, setSelectedText] = useState(initialSelectedText);
+  const [correctedText, setCorrectedText] = useState(initialSelectedText);
+  const [reporterName, setReporterName] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedText.trim() || !correctedText.trim()) return;
+
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/transcription-error', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          episodeTitle: source.episodeTitle,
+          episodeNumber: source.episodeNumber,
+          startTimestamp: source.startTimestamp,
+          endTimestamp: source.endTimestamp,
+          speakers: source.speakers,
+          originalText: source.text,
+          selectedText: selectedText.trim(),
+          correctedText: correctedText.trim(),
+          reporterName: reporterName.trim() || undefined,
+        }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to submit report');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to submit report');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  // Close on escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [onClose]);
+
+  if (submitted) {
+    return (
+      <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
+        <div className="bg-white rounded-lg shadow-xl max-w-lg w-full p-6" onClick={(e) => e.stopPropagation()}>
+          <div className="text-center">
+            <div className="text-4xl mb-4">✅</div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Thank you!</h3>
+            <p className="text-gray-600 mb-4">
+              Your transcription correction has been submitted and will be reviewed.
+            </p>
+            <button
+              onClick={onClose}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
+      <div
+        className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="p-6 border-b border-gray-200">
+          <div className="flex items-start justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">Report Transcription Error</h3>
+              <p className="text-sm text-gray-500 mt-1">{source.episodeTitle}</p>
+            </div>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-600 text-xl leading-none"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+          <div className="bg-gray-50 rounded-lg p-3 text-sm text-gray-600">
+            <p className="font-medium text-gray-700 mb-1">Tip:</p>
+            <p>
+              Before clicking &ldquo;Bad transcription?&rdquo;, highlight the incorrect text in the
+              transcript to auto-fill the field below.
+            </p>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Incorrect Text <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              value={selectedText}
+              onChange={(e) => setSelectedText(e.target.value)}
+              placeholder="Paste or type the incorrectly transcribed text here"
+              rows={3}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 resize-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Corrected Text <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              value={correctedText}
+              onChange={(e) => setCorrectedText(e.target.value)}
+              placeholder="Enter the correct transcription"
+              rows={3}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 resize-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Your Name (optional)
+            </label>
+            <input
+              type="text"
+              value={reporterName}
+              onChange={(e) => setReporterName(e.target.value)}
+              placeholder="Enter your name"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+            />
+          </div>
+
+          <div className="bg-blue-50 rounded-lg p-3 text-sm">
+            <p className="text-blue-800">
+              <span className="font-medium">Context info that will be included:</span>
+            </p>
+            <ul className="mt-1 text-blue-700 text-xs space-y-0.5">
+              <li>• Episode: {source.episodeTitle}</li>
+              <li>• Timestamp: {source.startTimestamp} - {source.endTimestamp}</li>
+              <li>• Speakers: {source.speakers}</li>
+            </ul>
+          </div>
+
+          {error && (
+            <div className="text-red-600 text-sm bg-red-50 p-3 rounded-lg">{error}</div>
+          )}
+
+          <div className="flex gap-3 pt-2">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex-1 py-2 px-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              disabled={!selectedText.trim() || !correctedText.trim() || submitting}
+              className="flex-1 py-2 px-4 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {submitting ? 'Submitting...' : 'Submit Correction'}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+function AnswerErrorModal({
+  result,
+  initialSelectedText,
+  onClose,
+}: {
+  result: SearchResponse;
+  initialSelectedText: string;
+  onClose: () => void;
+}) {
+  const [selectedText, setSelectedText] = useState(initialSelectedText);
+  const [correctedText, setCorrectedText] = useState(initialSelectedText);
+  const [reporterName, setReporterName] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // Get episode info from transcript sources
+  const transcripts = result.sources.transcripts || [];
+  const episodeTitle = transcripts.length > 0
+    ? transcripts.map(t => t.episodeTitle).filter((v, i, a) => a.indexOf(v) === i).join(', ')
+    : 'Multiple episodes';
+  const episodeNumbers = transcripts
+    .map(t => t.episodeNumber)
+    .filter((n): n is number => n !== undefined);
+  const episodeNumber = episodeNumbers.length > 0 ? episodeNumbers[0] : undefined;
+  const speakers = transcripts.length > 0
+    ? [...new Set(transcripts.flatMap(t => t.speakers.split(', ')))].join(', ')
+    : 'Unknown';
+  const startTimestamp = transcripts.length > 0 ? transcripts[0].startTimestamp : 'unknown';
+  const endTimestamp = transcripts.length > 0 ? transcripts[transcripts.length - 1].endTimestamp : 'unknown';
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedText.trim() || !correctedText.trim()) return;
+
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/transcription-error', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          episodeTitle,
+          episodeNumber,
+          startTimestamp,
+          endTimestamp,
+          speakers,
+          originalText: result.answer,
+          selectedText: selectedText.trim(),
+          correctedText: correctedText.trim(),
+          reporterName: reporterName.trim() || undefined,
+        }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to submit report');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to submit report');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [onClose]);
+
+  if (submitted) {
+    return (
+      <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
+        <div className="bg-white rounded-lg shadow-xl max-w-lg w-full p-6" onClick={(e) => e.stopPropagation()}>
+          <div className="text-center">
+            <div className="text-4xl mb-4">✅</div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Thank you!</h3>
+            <p className="text-gray-600 mb-4">
+              Your transcription correction has been submitted and will be reviewed.
+            </p>
+            <button
+              onClick={onClose}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
+      <div
+        className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="p-6 border-b border-gray-200">
+          <div className="flex items-start justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">Report Transcription Error</h3>
+              <p className="text-sm text-gray-500 mt-1">{episodeTitle}</p>
+            </div>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-600 text-xl leading-none"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+          <div className="bg-gray-50 rounded-lg p-3 text-sm text-gray-600">
+            <p className="font-medium text-gray-700 mb-1">Tip:</p>
+            <p>
+              Before clicking &ldquo;Bad transcription?&rdquo;, highlight the incorrect text in the
+              answer to auto-fill the field below.
+            </p>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Incorrect Text <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              value={selectedText}
+              onChange={(e) => setSelectedText(e.target.value)}
+              placeholder="Paste or type the incorrectly transcribed text here"
+              rows={3}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 resize-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Corrected Text <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              value={correctedText}
+              onChange={(e) => setCorrectedText(e.target.value)}
+              placeholder="Enter the correct transcription"
+              rows={3}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 resize-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Your Name (optional)
+            </label>
+            <input
+              type="text"
+              value={reporterName}
+              onChange={(e) => setReporterName(e.target.value)}
+              placeholder="Enter your name"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+            />
+          </div>
+
+          <div className="bg-blue-50 rounded-lg p-3 text-sm">
+            <p className="text-blue-800">
+              <span className="font-medium">Context info that will be included:</span>
+            </p>
+            <ul className="mt-1 text-blue-700 text-xs space-y-0.5">
+              <li>• Episode(s): {episodeTitle}</li>
+              <li>• Speakers: {speakers}</li>
+            </ul>
+          </div>
+
+          {error && (
+            <div className="text-red-600 text-sm bg-red-50 p-3 rounded-lg">{error}</div>
+          )}
+
+          <div className="flex gap-3 pt-2">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex-1 py-2 px-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              disabled={!selectedText.trim() || !correctedText.trim() || submitting}
+              className="flex-1 py-2 px-4 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {submitting ? 'Submitting...' : 'Submit Correction'}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

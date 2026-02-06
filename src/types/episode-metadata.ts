@@ -72,6 +72,7 @@ export interface MetadataSource {
 
 export interface TranscriptSource {
   episodeTitle: string;
+  episodeNumber?: number;
   speakers: string;
   startTimestamp: string;
   endTimestamp: string;
