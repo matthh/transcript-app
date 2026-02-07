@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadShare, ShareableResult } from '@/lib/share-storage';
 import Link from 'next/link';
+import { MarkdownContent } from './markdown-content';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -101,13 +102,7 @@ export default async function SharePage({ params }: PageProps) {
             "{share.query}"
           </h1>
 
-          <div className="prose prose-slate max-w-none">
-            {share.answer.split('\n').map((paragraph, i) => (
-              <p key={i} className="text-gray-700">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          <MarkdownContent content={share.answer} />
         </div>
 
         {/* Metadata sources */}
