@@ -162,7 +162,7 @@ export default function Home() {
 
         {result && (
           <div className="space-y-8">
-            <AnswerCard result={result} />
+            <AnswerCard result={result} query={searchedQuery} />
 
             {result.sources.metadata && result.sources.metadata.length > 0 && (
               <div>
@@ -240,9 +240,37 @@ function QueryTypeBadge({ type }: { type: QueryType }) {
   );
 }
 
-function AnswerCard({ result }: { result: SearchResponse }) {
+function AnswerCard({ result, query }: { result: SearchResponse; query: string }) {
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [selectedText, setSelectedText] = useState('');
+  const [shareStatus, setShareStatus] = useState<'idle' | 'sharing' | 'copied' | 'error'>('idle');
+
+  const handleShare = async () => {
+    setShareStatus('sharing');
+    try {
+      const response = await fetch('/api/share', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query, result }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to create share');
+      }
+
+      const { url } = await response.json();
+      const fullUrl = `${window.location.origin}${url}`;
+      await navigator.clipboard.writeText(fullUrl);
+      setShareStatus('copied');
+
+      // Reset after 3 seconds
+      setTimeout(() => setShareStatus('idle'), 3000);
+    } catch (err) {
+      console.error('Share error:', err);
+      setShareStatus('error');
+      setTimeout(() => setShareStatus('idle'), 3000);
+    }
+  };
 
   const handleReportError = () => {
     const selection = window.getSelection();
@@ -266,9 +294,27 @@ function AnswerCard({ result }: { result: SearchResponse }) {
   return (
     <>
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
-          <QueryTypeBadge type={result.queryType} />
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-3">
+            <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
+            <QueryTypeBadge type={result.queryType} />
+          </div>
+          <button
+            onClick={handleShare}
+            disabled={shareStatus === 'sharing'}
+            className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
+              shareStatus === 'copied'
+                ? 'bg-green-100 text-green-700'
+                : shareStatus === 'error'
+                ? 'bg-red-100 text-red-700'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {shareStatus === 'sharing' ? 'Sharing...' :
+             shareStatus === 'copied' ? 'Copied!' :
+             shareStatus === 'error' ? 'Error' :
+             'Share'}
+          </button>
         </div>
         <article className="prose prose-slate prose-headings:text-gray-900 max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
