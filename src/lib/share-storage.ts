@@ -27,6 +27,7 @@ export interface ShareableResult {
   createdAt: string;
   query: string;
   answer: string;
+  summary?: string;
   queryType: 'factual' | 'interpretive' | 'hybrid';
   sources: {
     transcripts?: TranscriptSource[];
@@ -80,6 +81,7 @@ function extractPrimaryEpisode(sources: ShareableResult['sources']): ShareableRe
 export async function saveShare(data: {
   query: string;
   answer: string;
+  summary?: string;
   queryType: 'factual' | 'interpretive' | 'hybrid';
   sources: ShareableResult['sources'];
 }): Promise<string> {
@@ -91,6 +93,7 @@ export async function saveShare(data: {
     createdAt: new Date().toISOString(),
     query: data.query,
     answer: data.answer,
+    summary: data.summary,
     queryType: data.queryType,
     sources: data.sources,
     primaryEpisode: extractPrimaryEpisode(data.sources),

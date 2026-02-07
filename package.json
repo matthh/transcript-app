@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run ingest && npm run upload-search-data && npm run bundle && next build",
+    "build": "node --import tsx ./scripts/build-orchestrator.ts && next build",
     "build:local": "npm run bundle && next build",
     "start": "next start",
     "lint": "next lint",

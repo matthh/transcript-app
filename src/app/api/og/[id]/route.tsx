@@ -1,7 +1,64 @@
 import { ImageResponse } from 'next/og';
 import { loadShare } from '@/lib/share-storage';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+
+const MAX_ANSWER_CHARS = 520;
+const MAX_CLIP_CHARS = 160;
+const FALLBACK_PNG_BASE64 =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=';
+const FALLBACK_PNG_BYTES = (() => {
+  if (typeof Buffer !== 'undefined') {
+    return Buffer.from(FALLBACK_PNG_BASE64, 'base64');
+  }
+  if (typeof atob !== 'undefined') {
+    return Uint8Array.from(atob(FALLBACK_PNG_BASE64), (c) => c.charCodeAt(0));
+  }
+  return new Uint8Array();
+})();
+
+function truncateText(text: string, maxChars: number): string {
+  if (text.length <= maxChars) {
+    return text;
+  }
+  return `${text.slice(0, maxChars).trim()}...`;
+}
+
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*/g, '')
+    .replace(/\*/g, '')
+    .replace(/`/g, '')
+    .replace(/#+\s/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^>\s?/gm, '')
+    .replace(/\n+/g, ' ')
+    .trim();
+}
+
+function formatEpisodeLine(share: Awaited<ReturnType<typeof loadShare>>): string | null {
+  if (!share) {
+    return null;
+  }
+
+  const metadata = share.sources.metadata?.[0];
+  if (metadata) {
+    return `S${metadata.season}E${metadata.episode} - ${metadata.film}`;
+  }
+
+  if (share.primaryEpisode) {
+    const { film, season, episode } = share.primaryEpisode;
+    if (season && episode) {
+      return `S${season}E${episode} - ${film}`;
+    }
+    if (episode) {
+      return `Episode ${episode} - ${film}`;
+    }
+    return film;
+  }
+
+  return null;
+}
 
 export async function GET(
   request: Request,
@@ -14,148 +71,114 @@ export async function GET(
     return new Response('Share not found', { status: 404 });
   }
 
-  // Truncate answer for display (roughly 200 chars)
-  const answerExcerpt =
-    share.answer.length > 200
-      ? share.answer.slice(0, 200).trim() + '...'
-      : share.answer;
+  const url = new URL(request.url);
+  const debugParam = url.searchParams.get('debug');
+  const debugJson = debugParam === '1' || request.url.includes('debug=1');
+  const debugRender = debugParam === 'render' || request.url.includes('debug=render');
 
-  // Clean markdown from answer for OG image
-  const cleanAnswer = answerExcerpt
-    .replace(/\*\*/g, '')
-    .replace(/\*/g, '')
-    .replace(/`/g, '')
-    .replace(/#+\s/g, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
-
-  // Format episode info
-  let episodeInfo = '';
-  if (share.primaryEpisode) {
-    const { film, season, episode } = share.primaryEpisode;
-    if (season && episode) {
-      episodeInfo = `S${season}E${episode} - ${film}`;
-    } else if (episode) {
-      episodeInfo = `Episode ${episode} - ${film}`;
-    } else {
-      episodeInfo = film;
-    }
+  if (debugJson) {
+    return Response.json({
+      id: share.id,
+      query: share.query,
+      queryType: share.queryType,
+      primaryEpisode: share.primaryEpisode ?? null,
+      transcriptCount: share.sources.transcripts?.length ?? 0,
+      metadataCount: share.sources.metadata?.length ?? 0,
+    });
   }
 
-  // Query type badge colors
-  const badgeColors = {
-    factual: { bg: '#dbeafe', text: '#2563eb', border: '#bfdbfe' },
-    interpretive: { bg: '#f3e8ff', text: '#9333ea', border: '#e9d5ff' },
-    hybrid: { bg: '#dcfce7', text: '#16a34a', border: '#bbf7d0' },
-  };
+  const answerExcerpt = truncateText(stripMarkdown(share.answer), MAX_ANSWER_CHARS);
+  const episodeLine = formatEpisodeLine(share);
+  const metadata = share.sources.metadata?.[0];
+  const transcript = share.sources.transcripts?.[0];
+  const clipExcerpt = transcript?.text
+    ? truncateText(stripMarkdown(transcript.text), MAX_CLIP_CHARS)
+    : null;
+  const timestampRange = transcript?.startTimestamp && transcript?.endTimestamp
+    ? `${transcript.startTimestamp} - ${transcript.endTimestamp}`
+    : null;
+  const speakers = transcript?.speakers ?? null;
+  const clipCount = share.sources.transcripts?.length ?? 0;
 
-  const badge = badgeColors[share.queryType];
-
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          backgroundColor: '#ffffff',
-          fontFamily: 'system-ui, sans-serif',
-        }}
-      >
-        {/* Header */}
+  try {
+    const imageResponse = new ImageResponse(
+      (
         <div
           style={{
+            width: '100%',
+            height: '100%',
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '24px 40px',
-            backgroundColor: '#1e40af',
-            color: '#ffffff',
+            flexDirection: 'column',
+            backgroundColor: '#0b1020',
+            color: '#f8fafc',
+            fontFamily: 'Arial, sans-serif',
+            padding: 56,
           }}
         >
-          <div
-            style={{
-              fontSize: 24,
-              fontWeight: 700,
-              letterSpacing: '-0.02em',
-            }}
-          >
+          <div style={{ fontSize: 20, fontWeight: 700, letterSpacing: 1, marginBottom: 24 }}>
             ESCAPE HATCH PODCAST SEARCH
           </div>
+
           <div
             style={{
               display: 'flex',
-              backgroundColor: badge.bg,
-              color: badge.text,
-              border: `2px solid ${badge.border}`,
-              padding: '6px 16px',
-              borderRadius: 20,
-              fontSize: 16,
-              fontWeight: 600,
-              textTransform: 'uppercase',
-            }}
-          >
-            {share.queryType}
-          </div>
-        </div>
-
-        {/* Content */}
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            flex: 1,
-            padding: '40px',
-            gap: 24,
-          }}
-        >
-          {/* Question */}
-          <div
-            style={{
-              fontSize: 36,
-              fontWeight: 600,
-              color: '#1f2937',
-              lineHeight: 1.3,
-            }}
-          >
-            "{share.query}"
-          </div>
-
-          {/* Answer excerpt */}
-          <div
-            style={{
-              fontSize: 24,
-              color: '#4b5563',
-              lineHeight: 1.5,
+              flexDirection: 'column',
+              backgroundColor: '#f8fafc',
+              color: '#0f172a',
+              borderRadius: 18,
+              padding: '28px 32px',
+              gap: 18,
               flex: 1,
             }}
           >
-            {cleanAnswer}
-          </div>
-
-          {/* Footer with episode info */}
-          {episodeInfo && (
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 8,
-                fontSize: 20,
-                color: '#6b7280',
-                borderTop: '1px solid #e5e7eb',
-                paddingTop: 20,
-              }}
-            >
-              <span style={{ fontWeight: 500 }}>Source:</span>
-              <span>{episodeInfo}</span>
+            <div style={{ fontSize: 28, fontWeight: 600, lineHeight: 1.35, color: '#0f172a' }}>
+              Answer
             </div>
-          )}
+            <div style={{ fontSize: 26, lineHeight: 1.5, color: '#1f2937' }}>
+              {answerExcerpt}
+            </div>
+            {episodeLine && (
+              <div style={{ fontSize: 18, fontWeight: 600, color: '#475569' }}>
+                {`Source: ${episodeLine}`}
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    ),
-    {
-      width: 1200,
-      height: 630,
+      ),
+      {
+        width: 1200,
+        height: 630,
+      }
+    );
+    const imageBuffer = await imageResponse.arrayBuffer();
+    if (debugRender) {
+      return new Response('OK', {
+        status: 200,
+        headers: { 'content-type': 'text/plain; charset=utf-8' },
+      });
     }
-  );
+    return new Response(imageBuffer, {
+      status: 200,
+      headers: {
+        'content-type': 'image/png',
+        'cache-control': 'public, max-age=0, must-revalidate',
+      },
+    });
+  } catch (error) {
+    console.error('OG image render failed:', error);
+    if (debugRender) {
+      return new Response(`OG render error: ${String(error)}`, {
+        status: 500,
+        headers: { 'content-type': 'text/plain; charset=utf-8' },
+      });
+    }
+    return new Response(FALLBACK_PNG_BYTES, {
+      status: 200,
+      headers: {
+        'content-type': 'image/png',
+        'cache-control': 'public, max-age=0, must-revalidate',
+        'x-og-fallback': '1',
+      },
+    });
+  }
 }

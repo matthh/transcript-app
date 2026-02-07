@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { saveShare } from '@/lib/share-storage';
+import { summarizeShareAnswer } from '@/lib/share-summary';
 
 export async function POST(request: NextRequest) {
   try {
@@ -36,9 +37,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const summary = await summarizeShareAnswer({ query, answer });
     const id = await saveShare({
       query,
       answer,
+      summary: summary || undefined,
       queryType,
       sources: sources || {},
     });

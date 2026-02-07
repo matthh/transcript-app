@@ -1,8 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as crypto from 'crypto';
 import OpenAI from 'openai';
 import * as dotenv from 'dotenv';
-import { list } from '@vercel/blob';
+import { list, put } from '@vercel/blob';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
@@ -119,8 +120,12 @@ interface StoredChunk {
 const TRANSCRIPTS_DIR = './transcripts';
 const STORE_PATH = './vector-store.json';
 const BM25_STORE_PATH = './bm25-index.json';
+const SEARCH_DATA_PREFIX = 'search-data/';
+const MANIFEST_PATH = `${SEARCH_DATA_PREFIX}ingest-manifest.json`;
 const TARGET_CHUNK_SIZE = 500;
 const OVERLAP_SIZE = 50;
+const SKIP_IF_NO_NEW = process.env.SKIP_INGEST_IF_NO_NEW === '1'
+  || process.env.SKIP_INGEST_IF_NO_NEW === 'true';
 
 function estimateTokens(text: string): number {
   return Math.ceil(text.length / 4);
@@ -241,8 +246,112 @@ async function loadBlobTranscripts(): Promise<{ name: string; transcript: Transc
   return results;
 }
 
+function hashObject(payload: unknown): string {
+  return crypto.createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+}
+
+function getLocalTranscriptFingerprint(): { hash: string; count: number } {
+  if (!fs.existsSync(TRANSCRIPTS_DIR)) {
+    return { hash: hashObject([]), count: 0 };
+  }
+
+  const entries = fs.readdirSync(TRANSCRIPTS_DIR)
+    .filter((file) => file.endsWith('.json'))
+    .map((file) => {
+      const filePath = path.join(TRANSCRIPTS_DIR, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      return {
+        file,
+        size: Buffer.byteLength(content, 'utf-8'),
+        contentHash: hashObject(content),
+      };
+    })
+    .sort((a, b) => a.file.localeCompare(b.file));
+
+  return { hash: hashObject(entries), count: entries.length };
+}
+
+async function getBlobTranscriptFingerprint(): Promise<{ hash: string; count: number }> {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    return { hash: hashObject([]), count: 0 };
+  }
+
+  try {
+    const blobs = await list({ prefix: 'transcripts/' });
+    const entries = blobs.blobs
+      .filter((blob) => blob.pathname.endsWith('.json'))
+      .map((blob) => ({
+        pathname: blob.pathname,
+        size: blob.size,
+        uploadedAt: blob.uploadedAt,
+      }))
+      .sort((a, b) => a.pathname.localeCompare(b.pathname));
+
+    return { hash: hashObject(entries), count: entries.length };
+  } catch (err) {
+    console.warn('Warning: Could not list transcript blobs for fingerprinting:', err);
+    return { hash: hashObject([]), count: 0 };
+  }
+}
+
+async function loadRemoteManifest(): Promise<{ hash: string } | null> {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    return null;
+  }
+
+  try {
+    const blobs = await list({ prefix: MANIFEST_PATH });
+    const match = blobs.blobs.find((b) => b.pathname === MANIFEST_PATH);
+    if (!match) {
+      return null;
+    }
+    const response = await fetch(match.url);
+    if (!response.ok) {
+      return null;
+    }
+    return await response.json();
+  } catch (err) {
+    console.warn('Warning: Could not load ingest manifest from Blob:', err);
+    return null;
+  }
+}
+
+async function saveRemoteManifest(payload: {
+  hash: string;
+  localCount: number;
+  blobCount: number;
+  updatedAt: string;
+}): Promise<void> {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    console.log('BLOB_READ_WRITE_TOKEN not set, skipping manifest upload');
+    return;
+  }
+
+  await put(MANIFEST_PATH, JSON.stringify(payload), {
+    access: 'public',
+    contentType: 'application/json',
+    addRandomSuffix: false,
+    allowOverwrite: true,
+  });
+}
+
 async function main() {
   console.log('Starting transcript ingestion...\n');
+
+  if (SKIP_IF_NO_NEW) {
+    const localFingerprint = getLocalTranscriptFingerprint();
+    const blobFingerprint = await getBlobTranscriptFingerprint();
+    const combinedHash = hashObject({
+      local: localFingerprint.hash,
+      blob: blobFingerprint.hash,
+    });
+    const manifest = await loadRemoteManifest();
+
+    if (manifest?.hash === combinedHash) {
+      console.log('No transcript changes detected. Skipping embeddings.');
+      return;
+    }
+  }
 
   const allChunks: Chunk[] = [];
   const seenEpisodes = new Set<string>();
@@ -337,6 +446,22 @@ async function main() {
   console.log(`  Indexed ${allChunks.length} chunks from ${seenEpisodes.size} transcript(s).`);
   console.log(`  Vector store saved to ${STORE_PATH}`);
   console.log(`  BM25 index saved to ${BM25_STORE_PATH}`);
+
+  if (SKIP_IF_NO_NEW) {
+    const localFingerprint = getLocalTranscriptFingerprint();
+    const blobFingerprint = await getBlobTranscriptFingerprint();
+    const combinedHash = hashObject({
+      local: localFingerprint.hash,
+      blob: blobFingerprint.hash,
+    });
+    await saveRemoteManifest({
+      hash: combinedHash,
+      localCount: localFingerprint.count,
+      blobCount: blobFingerprint.count,
+      updatedAt: new Date().toISOString(),
+    });
+    console.log('Updated ingest manifest in Blob storage.');
+  }
 }
 
 main().catch(console.error);

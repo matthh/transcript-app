@@ -8,6 +8,47 @@ interface PageProps {
   params: Promise<{ id: string }>;
 }
 
+const DESCRIPTION_MAX_CHARS = 500;
+
+function truncateText(text: string, maxChars: number): string {
+  if (text.length <= maxChars) {
+    return text;
+  }
+  return `${text.slice(0, maxChars).trim()}...`;
+}
+
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*/g, '')
+    .replace(/\*/g, '')
+    .replace(/`/g, '')
+    .replace(/#+\s/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^>\s?/gm, '')
+    .replace(/\n+/g, ' ')
+    .trim();
+}
+
+function formatEpisodeLine(share: ShareableResult): string | null {
+  const metadata = share.sources.metadata?.[0];
+  if (metadata) {
+    return `S${metadata.season}E${metadata.episode} - ${metadata.film}`;
+  }
+
+  if (share.primaryEpisode) {
+    const { film, season, episode } = share.primaryEpisode;
+    if (season && episode) {
+      return `S${season}E${episode} - ${film}`;
+    }
+    if (episode) {
+      return `Episode ${episode} - ${film}`;
+    }
+    return film;
+  }
+
+  return null;
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   const share = await loadShare(id);
@@ -18,21 +59,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  // Truncate answer for description
-  const description =
-    share.answer.length > 200
-      ? share.answer.slice(0, 200).trim() + '...'
-      : share.answer;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+    || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+  const episodeLine = formatEpisodeLine(share);
+  const description = truncateText(
+    share.summary || (episodeLine ? `Source: ${episodeLine}.` : 'Escape Hatch Podcast Search.'),
+    DESCRIPTION_MAX_CHARS
+  );
 
-  const ogImageUrl = `/api/og/${id}`;
+  const ogImageUrl = new URL(`/api/og/${id}`, baseUrl).toString();
+  const shareUrl = new URL(`/share/${id}`, baseUrl).toString();
 
   return {
     title: `"${share.query}" - Escape Hatch Podcast Search`,
     description,
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: share.query,
       description,
       type: 'article',
+      url: shareUrl,
       images: [
         {
           url: ogImageUrl,
