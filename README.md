@@ -29,3 +29,19 @@ npm run discord:bot
 ### Notes
 - The bot calls `/api/search` and `/api/share` on `DISCORD_SEARCH_BASE_URL`.
 - Results are cached in memory for 15 minutes to support button actions.
+
+## Warmup Endpoint
+
+To reduce cold-start latency, warm the vector store and BM25 index:
+
+```
+GET /api/warmup?token=YOUR_TOKEN
+```
+
+Set `WARMUP_TOKEN` in the environment to protect the endpoint.
+
+### Scheduled Warmup (GitHub Actions)
+
+Configure repo secrets:
+- `WARMUP_URL` (e.g. `https://your-app.vercel.app/api/warmup`)
+- `WARMUP_TOKEN` (optional, must match the env var if set)

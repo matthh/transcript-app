@@ -3,6 +3,8 @@ import { queryEpisodes } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
 import { detectQueryIntent, QueryIntent } from '@/lib/query-intent';
 import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
+import { isBM25Loaded } from '@/lib/bm25-loader';
+import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { synthesizeHybridAnswerStreaming, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { TranscriptChunk } from '@/types/transcript';
@@ -49,6 +51,7 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
 
 const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
+let loggedCacheStatus = false;
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
@@ -79,11 +82,21 @@ export async function POST(request: NextRequest) {
       };
 
       try {
+        const requestStart = Date.now();
+        if (!loggedCacheStatus) {
+          loggedCacheStatus = true;
+          console.log('Search cache status', {
+            vectorStoreLoaded: isVectorStoreLoaded(),
+            vectorStoreSize: getVectorStoreSize(),
+            bm25Loaded: isBM25Loaded(),
+          });
+        }
         // Intent detection (pre-classification routing)
         const intent = detectQueryIntent(query);
         if (intent.type !== 'none') {
           const aggregate = buildMetadataAggregateResponse(intent);
           if (aggregate) {
+            const totalMs = Date.now() - requestStart;
             send('progress', { stage: 'metadata', message: 'Answering from metadata...' });
             send('complete', {
               answer: aggregate.answer,
@@ -93,6 +106,10 @@ export async function POST(request: NextRequest) {
                 totalCount: aggregate.sources.metadata?.length || 0,
                 returnedCount: aggregate.sources.metadata?.length || 0,
                 hasMore: false,
+              },
+              perf: {
+                totalMs,
+                path: 'metadata',
               },
             });
             controller.close();
@@ -291,6 +308,7 @@ export async function POST(request: NextRequest) {
         }
 
         // Step 4: Send final result
+        const totalMs = Date.now() - requestStart;
         send('complete', {
           answer,
           queryType: classification.type,
@@ -302,6 +320,10 @@ export async function POST(request: NextRequest) {
             totalCount: metadataTotalCount,
             returnedCount: metadataEpisodes.length,
             hasMore: metadataHasMore,
+          },
+          perf: {
+            totalMs,
+            path: classification.type,
           },
         });
 

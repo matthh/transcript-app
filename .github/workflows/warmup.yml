@@ -1,0 +1,24 @@
+name: Warmup
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  warmup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Warm search cache
+        env:
+          WARMUP_URL: ${{ secrets.WARMUP_URL }}
+          WARMUP_TOKEN: ${{ secrets.WARMUP_TOKEN }}
+        run: |
+          if [ -z "$WARMUP_URL" ]; then
+            echo "WARMUP_URL secret is missing" >&2
+            exit 1
+          fi
+          if [ -n "$WARMUP_TOKEN" ]; then
+            curl -fsS "$WARMUP_URL?token=$WARMUP_TOKEN"
+          else
+            curl -fsS "$WARMUP_URL"
+          fi

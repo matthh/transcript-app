@@ -92,6 +92,14 @@ export function loadVectorStore(): StoredChunk[] {
   return [];
 }
 
+export function isVectorStoreLoaded(): boolean {
+  return cachedVectorStore !== null && cachedVectorStore.length > 0;
+}
+
+export function getVectorStoreSize(): number {
+  return cachedVectorStore ? cachedVectorStore.length : 0;
+}
+
 export function saveVectorStore(): void {
   // No-op in production - data is managed via Blob storage
   console.warn('saveVectorStore is not available in production');

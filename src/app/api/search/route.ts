@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { detectQueryIntent, QueryIntent } from '@/lib/query-intent';
 import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
+import { isBM25Loaded } from '@/lib/bm25-loader';
+import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
@@ -48,11 +50,23 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
 
 const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
+let loggedCacheStatus = false;
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { query, limit: rawLimit, offset: rawOffset } = body;
+
+    const requestStart = Date.now();
+
+    if (!loggedCacheStatus) {
+      loggedCacheStatus = true;
+      console.log('Search cache status', {
+        vectorStoreLoaded: isVectorStoreLoaded(),
+        vectorStoreSize: getVectorStoreSize(),
+        bm25Loaded: isBM25Loaded(),
+      });
+    }
 
     if (!query || typeof query !== 'string') {
       return NextResponse.json(
@@ -73,6 +87,7 @@ export async function POST(request: NextRequest) {
     if (intent.type !== 'none') {
       const aggregate = buildMetadataAggregateResponse(intent);
       if (aggregate) {
+        const totalMs = Date.now() - requestStart;
         return NextResponse.json({
           answer: aggregate.answer,
           queryType: 'factual',
@@ -81,6 +96,10 @@ export async function POST(request: NextRequest) {
             totalCount: aggregate.sources.metadata?.length || 0,
             returnedCount: aggregate.sources.metadata?.length || 0,
             hasMore: false,
+          },
+          perf: {
+            totalMs,
+            path: 'metadata',
           },
         });
       }
@@ -206,6 +225,7 @@ export async function POST(request: NextRequest) {
     );
 
     // Step 5: Build response with pagination metadata
+    const totalMs = Date.now() - requestStart;
     return NextResponse.json({
       answer,
       queryType: classification.type,
@@ -217,6 +237,10 @@ export async function POST(request: NextRequest) {
         totalCount: metadataTotalCount,
         returnedCount: metadataEpisodes.length,
         hasMore: metadataHasMore,
+      },
+      perf: {
+        totalMs,
+        path: classification.type,
       },
     });
   } catch (error) {

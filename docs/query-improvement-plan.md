@@ -68,3 +68,7 @@ Success criteria: each query returns the expected metadata or transcript answer 
 - No “No matching episodes found” for queries that can be answered from metadata.
 - Interpretive/entity questions trigger transcript search even when filters are empty.
 - “Latest/current/total/max” questions return deterministic metadata answers.
+
+## Performance Regression
+- `npm run perf:queries` runs a latency harness against `/api/search`.
+- Set `PERF_BASE_URL` to target prod/staging.
