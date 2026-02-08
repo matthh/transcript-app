@@ -20,7 +20,12 @@ const YEAR_RANGE_PATTERN = /\b(19|20)\d{2}\s*-\s*(19|20)\d{2}\b/;
 const YEAR_RANGE_WORD_PATTERN = /\bfrom\s+((19|20)\d{2})\s+to\s+((19|20)\d{2})\b/;
 
 function normalize(text: string): string {
-  return text.toLowerCase().replace(/\s+/g, ' ').trim();
+  return text
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[–—]/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function extractYearRange(query: string): { min: number; max: number } | null {
@@ -68,10 +73,6 @@ export function detectQueryIntent(query: string): QueryIntent {
     return { type: 'transcript_only' };
   }
 
-  if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent episode')) {
-    return { type: 'metadata_latest' };
-  }
-
   if ((normalized.includes('current season') || normalized.includes('what season') || normalized.includes('season is the pod on now'))
     && (normalized.includes('now') || normalized.includes('current') || normalized.includes('pod'))) {
     return { type: 'metadata_current_season' };
@@ -87,13 +88,17 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   const field = detectField(normalized);
   if (field) {
-    if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent')) {
-      return { type: 'metadata_field_latest', field };
-    }
     if (normalized.includes('greatest') || normalized.includes('most') || normalized.includes('highest')) {
       return { type: 'metadata_field_max', field };
     }
+    if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent')) {
+      return { type: 'metadata_field_latest', field };
+    }
     return { type: 'metadata_field_latest', field };
+  }
+
+  if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent episode')) {
+    return { type: 'metadata_latest' };
   }
 
   return { type: 'none' };
