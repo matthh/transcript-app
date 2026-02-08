@@ -102,7 +102,10 @@ export async function POST(request: NextRequest) {
 
         // Step 1: Classify query
         send('progress', { stage: 'classifying', message: 'Analyzing your query...' });
-        const classification = await classifyQuery(query);
+        let classification = await classifyQuery(query);
+        if (intent.type === 'transcript_only') {
+          classification = { ...classification, type: 'interpretive', filters: {} };
+        }
         console.log('Classification result:', JSON.stringify(classification));
         send('progress', {
           stage: 'classified',

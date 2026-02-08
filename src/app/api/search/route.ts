@@ -87,7 +87,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Step 2: Classify query
-    const classification = await classifyQuery(query);
+    let classification = await classifyQuery(query);
+    if (intent.type === 'transcript_only') {
+      classification = { ...classification, type: 'interpretive', filters: {} };
+    }
     console.log('Classification result:', JSON.stringify(classification));
 
     let transcriptChunks: TranscriptChunk[] = [];

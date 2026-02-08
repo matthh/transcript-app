@@ -65,7 +65,17 @@ export function detectQueryIntent(query: string): QueryIntent {
   const normalized = normalize(query);
   const yearRange = extractYearRange(normalized);
 
-  if (normalized.includes('what does') && normalized.includes('do for a living')) {
+  if (
+    (normalized.includes('what does') && normalized.includes('do for a living')) ||
+    (normalized.includes('what does') && normalized.includes('do for work')) ||
+    (normalized.includes('what does') && normalized.includes('do for a job')) ||
+    normalized.includes('what is their job') ||
+    normalized.includes('what is his job') ||
+    normalized.includes('what is her job') ||
+    normalized.includes('what is their occupation') ||
+    normalized.includes('what is his occupation') ||
+    normalized.includes('what is her occupation')
+  ) {
     return { type: 'transcript_only' };
   }
 
