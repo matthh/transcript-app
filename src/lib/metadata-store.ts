@@ -188,6 +188,55 @@ export interface EpisodeStats {
   averageThatsGreatCount: number;
 }
 
+export type MetadataFieldKey = 'mmmCount' | 'thatsGreatCount';
+
+export function getLatestEpisode(): EpisodeMetadata | null {
+  const episodes = loadEpisodeMetadata();
+  if (episodes.length === 0) {
+    return null;
+  }
+  return [...episodes].sort(
+    (a, b) => new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime()
+  )[0];
+}
+
+export function getCurrentSeason(): number | null {
+  const latest = getLatestEpisode();
+  return latest ? latest.season : null;
+}
+
+export function getTotalEpisodes(): number {
+  return loadEpisodeMetadata().length;
+}
+
+export function countByYearRange(min: number, max: number): number {
+  const episodes = loadEpisodeMetadata();
+  return episodes.filter(
+    (e) => e.filmYear !== null && e.filmYear >= min && e.filmYear <= max
+  ).length;
+}
+
+export function getEpisodeWithMaxField(field: MetadataFieldKey): EpisodeMetadata | null {
+  const episodes = loadEpisodeMetadata();
+  if (episodes.length === 0) {
+    return null;
+  }
+  return episodes.reduce((maxEpisode, current) =>
+    current[field] > maxEpisode[field] ? current : maxEpisode
+  );
+}
+
+export function getFieldForLatestEpisode(field: MetadataFieldKey): {
+  episode: EpisodeMetadata | null;
+  value: number | null;
+} {
+  const latest = getLatestEpisode();
+  if (!latest) {
+    return { episode: null, value: null };
+  }
+  return { episode: latest, value: latest[field] };
+}
+
 export function getStats(): EpisodeStats {
   const episodes = loadEpisodeMetadata();
 

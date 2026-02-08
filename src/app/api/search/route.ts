@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
+import { detectQueryIntent, QueryIntent } from '@/lib/query-intent';
+import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
@@ -43,6 +45,7 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   };
 }
 
+
 const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
 
@@ -65,7 +68,25 @@ export async function POST(request: NextRequest) {
     );
     const offset = Math.max(0, typeof rawOffset === 'number' ? rawOffset : 0);
 
-    // Step 1: Classify query
+    // Step 1: Intent detection (pre-classification routing)
+    const intent = detectQueryIntent(query);
+    if (intent.type !== 'none') {
+      const aggregate = buildMetadataAggregateResponse(intent);
+      if (aggregate) {
+        return NextResponse.json({
+          answer: aggregate.answer,
+          queryType: 'factual',
+          sources: aggregate.sources,
+          metadata: {
+            totalCount: aggregate.sources.metadata?.length || 0,
+            returnedCount: aggregate.sources.metadata?.length || 0,
+            hasMore: false,
+          },
+        });
+      }
+    }
+
+    // Step 2: Classify query
     const classification = await classifyQuery(query);
     console.log('Classification result:', JSON.stringify(classification));
 
@@ -74,8 +95,11 @@ export async function POST(request: NextRequest) {
     let metadataEpisodes: EpisodeMetadata[] = [];
     let metadataSources: MetadataSource[] = [];
 
-    // Step 2: Search based on classification
+    // Step 3: Search based on classification
     let shouldSearchTranscripts = classification.type === 'interpretive' || classification.type === 'hybrid';
+    if (intent.type === 'transcript_only') {
+      shouldSearchTranscripts = true;
+    }
 
     let metadataTotalCount = 0;
     let metadataHasMore = false;
@@ -110,7 +134,7 @@ export async function POST(request: NextRequest) {
       }
 
       // If unfiltered for a factual query, don't pass all episodes (prevents hallucination)
-      if (isUnfilteredResult && classification.type === 'factual') {
+      if (isUnfilteredResult && classification.type === 'factual' && intent.type !== 'transcript_only') {
         metadataEpisodes = [];
         metadataTotalCount = 0;
         metadataHasMore = false;

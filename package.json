@@ -11,6 +11,7 @@
     "ingest": "node --import tsx ./scripts/ingest.ts",
     "upload-search-data": "node --import tsx ./scripts/upload-search-data.ts",
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
+    "regression:queries": "node --import tsx ./scripts/regression-queries.ts",
     "transcribe": "node --import tsx ./scripts/transcribe.ts",
     "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts",
     "sync-metadata": "node --import tsx ./scripts/sync-metadata.ts",
