@@ -4,6 +4,7 @@ import { loadShare, ShareableResult } from '@/lib/share-storage';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import Link from 'next/link';
 import { MarkdownContent } from './markdown-content';
+import { FeedbackForm } from '@/components/FeedbackForm';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -152,7 +153,9 @@ export default async function SharePage({ params }: PageProps) {
           <MarkdownContent content={share.answer} />
         </div>
 
-        <div className="text-center">
+        <FeedbackForm query={share.query} answer={share.answer} queryType={share.queryType} />
+
+        <div className="text-center mt-8">
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
