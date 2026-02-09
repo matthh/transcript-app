@@ -15,7 +15,9 @@ const baseUrl = process.env.PERF_BASE_URL || 'http://localhost:3000';
 const endpoint = `${baseUrl}/api/search`;
 const warmupUrl = process.env.PERF_WARMUP_URL || `${baseUrl}/api/warmup`;
 const warmupToken = process.env.PERF_WARMUP_TOKEN;
-const runCount = Math.max(1, Number.parseInt(process.env.PERF_RUNS || '3', 10) || 3);
+const discardCount = Math.max(0, Number.parseInt(process.env.PERF_DISCARD || '1', 10) || 1);
+const rawRuns = Number.parseInt(process.env.PERF_RUNS || '4', 10) || 4;
+const runCount = Math.max(discardCount + 1, rawRuns);
 
 function nowMs(): number {
   return Date.now();
@@ -82,7 +84,7 @@ async function warmup(): Promise<void> {
 
 async function main() {
   console.log(`Perf base URL: ${baseUrl}`);
-  console.log(`Runs per case: ${runCount}`);
+  console.log(`Runs per case: ${runCount} (discarding first ${discardCount})`);
   await warmup();
   const results = [];
   for (const testCase of cases) {
@@ -91,20 +93,21 @@ async function main() {
       // eslint-disable-next-line no-await-in-loop
       const result = await runCase(testCase);
       runResults.push(result);
-      results.push(result);
     }
 
-    const okRuns = runResults.filter((r) => r.ok);
+    const measuredRuns = runResults.slice(discardCount);
+    results.push(...measuredRuns);
+    const okRuns = measuredRuns.filter((r) => r.ok);
     const latencies = okRuns.map((r) => r.elapsedMs);
-    const status = okRuns.length === runResults.length ? '✓' : '✗';
-    const statusSuffix = okRuns.length === runResults.length
+    const status = okRuns.length === measuredRuns.length ? '✓' : '✗';
+    const statusSuffix = okRuns.length === measuredRuns.length
       ? ''
-      : ` (${runResults.length - okRuns.length} failed)`;
+      : ` (${measuredRuns.length - okRuns.length} failed)`;
     console.log(
       `${status} ${testCase.name}: median ${median(latencies)}ms, p95 ${p95(latencies)}ms${statusSuffix}`
     );
-    if (okRuns.length !== runResults.length) {
-      const errors = runResults.filter((r) => !r.ok);
+    if (okRuns.length !== measuredRuns.length) {
+      const errors = measuredRuns.filter((r) => !r.ok);
       for (const error of errors) {
         console.log(`  Error: status ${error.status} ${error.error}`);
       }
