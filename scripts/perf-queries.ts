@@ -13,9 +13,29 @@ const cases: PerfCase[] = [
 
 const baseUrl = process.env.PERF_BASE_URL || 'http://localhost:3000';
 const endpoint = `${baseUrl}/api/search`;
+const warmupUrl = process.env.PERF_WARMUP_URL || `${baseUrl}/api/warmup`;
+const warmupToken = process.env.PERF_WARMUP_TOKEN;
+const runCount = Math.max(1, Number.parseInt(process.env.PERF_RUNS || '3', 10) || 3);
 
 function nowMs(): number {
   return Date.now();
+}
+
+function median(values: number[]): number {
+  if (values.length === 0) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) {
+    return Math.round((sorted[mid - 1] + sorted[mid]) / 2);
+  }
+  return sorted[mid];
+}
+
+function p95(values: number[]): number {
+  if (values.length === 0) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const idx = Math.min(sorted.length - 1, Math.ceil(0.95 * sorted.length) - 1);
+  return sorted[idx];
 }
 
 async function runCase(testCase: PerfCase) {
@@ -46,23 +66,54 @@ async function runCase(testCase: PerfCase) {
   return { ...testCase, elapsedMs: elapsed, ok: true, status: response.status };
 }
 
+async function warmup(): Promise<void> {
+  if (!warmupUrl) return;
+  const url = warmupToken ? `${warmupUrl}?token=${encodeURIComponent(warmupToken)}` : warmupUrl;
+  try {
+    const response = await fetch(url, { method: 'GET' });
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.warn(`Warmup failed (${response.status}): ${errorText.slice(0, 120)}`);
+    }
+  } catch (error) {
+    console.warn(`Warmup request failed: ${String(error)}`);
+  }
+}
+
 async function main() {
+  console.log(`Perf base URL: ${baseUrl}`);
+  console.log(`Runs per case: ${runCount}`);
+  await warmup();
   const results = [];
   for (const testCase of cases) {
-    // eslint-disable-next-line no-await-in-loop
-    const result = await runCase(testCase);
-    results.push(result);
-    const status = result.ok ? '✓' : '✗';
-    const statusSuffix = result.ok ? '' : ` (status ${result.status})`;
-    console.log(`${status} ${testCase.name}: ${result.elapsedMs}ms${statusSuffix}`);
-    if (!result.ok) {
-      console.log(`  Error: ${result.error}`);
+    const runResults = [];
+    for (let i = 0; i < runCount; i += 1) {
+      // eslint-disable-next-line no-await-in-loop
+      const result = await runCase(testCase);
+      runResults.push(result);
+      results.push(result);
+    }
+
+    const okRuns = runResults.filter((r) => r.ok);
+    const latencies = okRuns.map((r) => r.elapsedMs);
+    const status = okRuns.length === runResults.length ? '✓' : '✗';
+    const statusSuffix = okRuns.length === runResults.length
+      ? ''
+      : ` (${runResults.length - okRuns.length} failed)`;
+    console.log(
+      `${status} ${testCase.name}: median ${median(latencies)}ms, p95 ${p95(latencies)}ms${statusSuffix}`
+    );
+    if (okRuns.length !== runResults.length) {
+      const errors = runResults.filter((r) => !r.ok);
+      for (const error of errors) {
+        console.log(`  Error: status ${error.status} ${error.error}`);
+      }
     }
   }
 
   const okResults = results.filter((r) => r.ok);
   const avg = okResults.reduce((sum, r) => sum + r.elapsedMs, 0) / (okResults.length || 1);
-  console.log(`\nAverage latency: ${Math.round(avg)}ms`);
+  console.log(`\nAverage latency (all runs): ${Math.round(avg)}ms`);
 
   if (results.some((r) => !r.ok)) {
     process.exit(1);
