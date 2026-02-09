@@ -3,6 +3,7 @@ export type QueryIntentType =
   | 'metadata_current_season'
   | 'metadata_total_episodes'
   | 'metadata_year_range_count'
+  | 'metadata_year_range_sample'
   | 'metadata_field_latest'
   | 'metadata_field_max'
   | 'transcript_only'
@@ -61,6 +62,15 @@ function detectField(query: string): MetadataFieldKey | null {
   return null;
 }
 
+function wantsYearSample(normalized: string): boolean {
+  return (
+    /one\s+(movie|film)\s+from\s+each\s+year/.test(normalized) ||
+    /one\s+(movie|film)\s+per\s+year/.test(normalized) ||
+    /each\s+year.*(movie|film)/.test(normalized) ||
+    /list\s+one\s+(movie|film)\s+.*each\s+year/.test(normalized)
+  );
+}
+
 export function detectQueryIntent(query: string): QueryIntent {
   const normalized = normalize(query);
   const yearRange = extractYearRange(normalized);
@@ -90,6 +100,10 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if (normalized.includes('how many episodes') || normalized.includes('total episodes')) {
     return { type: 'metadata_total_episodes' };
+  }
+
+  if (yearRange && wantsYearSample(normalized)) {
+    return { type: 'metadata_year_range_sample', yearRange };
   }
 
   if (yearRange && (normalized.includes('how many films') || normalized.includes('how many movies') || normalized.includes('how many episodes'))) {

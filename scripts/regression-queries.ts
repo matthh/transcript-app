@@ -55,6 +55,12 @@ const cases: RegressionCase[] = [
     expectIntent: 'metadata_year_range_count',
     expectAnswerIncludes: ['1980', '1990'],
   },
+  {
+    name: 'Year range list one per year (no aggregate)',
+    query: 'list one movie from each year 1980-1990 that the pod has covered and give year with each',
+    expectIntent: 'metadata_year_range_sample',
+    expectAnswerIncludes: ['movies covered by year', '1980', '1990'],
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {

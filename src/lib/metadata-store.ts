@@ -216,6 +216,35 @@ export function countByYearRange(min: number, max: number): number {
   ).length;
 }
 
+export type YearSample = {
+  year: number;
+  episode: EpisodeMetadata | null;
+};
+
+export function getOneEpisodePerYear(min: number, max: number): YearSample[] {
+  const episodes = loadEpisodeMetadata()
+    .filter((e) => e.filmYear !== null && e.filmYear >= min && e.filmYear <= max)
+    .sort((a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode));
+
+  const byYear = new Map<number, EpisodeMetadata>();
+  for (const episode of episodes) {
+    const year = episode.filmYear as number;
+    if (!byYear.has(year)) {
+      byYear.set(year, episode);
+    }
+  }
+
+  const results: YearSample[] = [];
+  for (let year = min; year <= max; year += 1) {
+    results.push({
+      year,
+      episode: byYear.get(year) ?? null,
+    });
+  }
+
+  return results;
+}
+
 export function getEpisodeWithMaxField(field: MetadataFieldKey): EpisodeMetadata | null {
   const episodes = loadEpisodeMetadata();
   if (episodes.length === 0) {

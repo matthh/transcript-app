@@ -4,6 +4,7 @@ import {
   getEpisodeWithMaxField,
   getFieldForLatestEpisode,
   getLatestEpisode,
+  getOneEpisodePerYear,
   getTotalEpisodes,
   MetadataFieldKey,
 } from './metadata-store';
@@ -93,6 +94,28 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     return {
       answer: `There are ${total} episodes covering films released between ${min} and ${max}.`,
       sources: {},
+    };
+  }
+
+  if (intent.type === 'metadata_year_range_sample' && intent.yearRange) {
+    const { min, max } = intent.yearRange;
+    const samples = getOneEpisodePerYear(min, max);
+    const lines = samples.map((sample) => {
+      if (!sample.episode) {
+        return `${sample.year}: No episodes found in metadata.`;
+      }
+      const ep = sample.episode;
+      return `${sample.year}: ${ep.film} — S${ep.season}E${ep.episode}`;
+    });
+
+    const sources = samples
+      .map((sample) => sample.episode)
+      .filter((episode): episode is EpisodeMetadata => Boolean(episode))
+      .map(episodeToMetadataSource);
+
+    return {
+      answer: `Movies Covered by Year (${min}–${max})\n${lines.join('\n')}`,
+      sources: sources.length > 0 ? { metadata: sources } : {},
     };
   }
 

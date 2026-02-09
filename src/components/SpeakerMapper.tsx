@@ -4,6 +4,13 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { DialogueEntry } from '@/types/transcript';
 import { useAudioSync } from '@/hooks/useAudioSync';
 import AudioPlayer from '@/components/AudioPlayer';
+import { secondsToTimestamp } from '@/lib/timestamps';
+import {
+  buildSegmentMeta,
+  isInterjection,
+  isSampleCandidate,
+  isSounderCandidate,
+} from '@/lib/reviewHeuristics';
 
 interface SpeakerMapperProps {
   dialogues: DialogueEntry[];
@@ -13,26 +20,68 @@ interface SpeakerMapperProps {
   guestName?: string | null;
 }
 
-interface KnownSpeaker {
-  name: string;
-  count: number;
-}
-
 interface HistoryEntry {
   dialogues: DialogueEntry[];
   description: string;
 }
 
+interface DialogueBlock {
+  indices: number[];
+  name: string;
+  start: number;
+  end: number;
+  textPreview: string;
+}
+
 const PAGE_SIZE = 50;
 
-// Fixed speaker shortcuts (always in this order)
-const CORE_SPEAKERS = [
-  'Matt Haitch',
-  'Jason Goldman',
+const DEFAULT_INTRO_SECONDS = 180;
+const DEFAULT_OUTRO_SECONDS = 90;
+const DEFAULT_VOICEMAIL_SECONDS = 15 * 60;
+
+const HOST_SPEAKERS = ['Matt Haitch', 'Jason Goldman'];
+const DEFAULT_VOICEMAILERS = [
   'Corey',
   'kev voicemail',
   'birria',
+  'Mr Java',
+  'Lizzen',
+  'Animal Mother',
+  'Ethan',
 ];
+const CATEGORY_SPEAKERS = [
+  'Sounder/FX',
+  'Movie Sample',
+  'Voicemail (Unknown)',
+  'Overtalk/Interjection',
+];
+
+const VIEW_MODE_KEY = 'review.viewMode';
+const HIDE_INTERJECTIONS_KEY = 'review.hideInterjections';
+const HIGHLIGHT_SAMPLES_KEY = 'review.highlightSamples';
+const INTRO_SECONDS_KEY = 'review.introSeconds';
+const OUTRO_SECONDS_KEY = 'review.outroSeconds';
+const RECENT_SPEAKERS_KEY = 'review.roster.recent';
+
+const readStored = <T,>(key: string, fallback: T): T => {
+  if (typeof window === 'undefined') return fallback;
+  try {
+    const raw = window.localStorage.getItem(key);
+    if (!raw) return fallback;
+    return JSON.parse(raw) as T;
+  } catch {
+    return fallback;
+  }
+};
+
+const writeStored = (key: string, value: unknown) => {
+  if (typeof window === 'undefined') return;
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // Ignore storage errors
+  }
+};
 
 export default function SpeakerMapper({
   dialogues: initialDialogues,
@@ -44,8 +93,9 @@ export default function SpeakerMapper({
   // State
   const [dialogues, setDialogues] = useState<DialogueEntry[]>(initialDialogues);
   const [currentPage, setCurrentPage] = useState(1);
-  const [knownSpeakers, setKnownSpeakers] = useState<KnownSpeaker[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [recentSpeakers, setRecentSpeakers] = useState<string[]>(() =>
+    readStored<string[]>(RECENT_SPEAKERS_KEY, [])
+  );
 
   // Mapping mode state
   const [activeMappingLabel, setActiveMappingLabel] = useState<string | null>(null);
@@ -58,6 +108,24 @@ export default function SpeakerMapper({
 
   // Filter state
   const [speakerFilter, setSpeakerFilter] = useState<string>('all');
+  const [focusRange, setFocusRange] = useState<{ start: number; end: number } | null>(null);
+  const [rangeStartInput, setRangeStartInput] = useState('');
+  const [rangeEndInput, setRangeEndInput] = useState('');
+  const [viewMode, setViewMode] = useState<'segments' | 'blocks'>(() =>
+    readStored<'segments' | 'blocks'>(VIEW_MODE_KEY, 'segments')
+  );
+  const [hideInterjections, setHideInterjections] = useState<boolean>(() =>
+    readStored<boolean>(HIDE_INTERJECTIONS_KEY, false)
+  );
+  const [highlightSamples, setHighlightSamples] = useState<boolean>(() =>
+    readStored<boolean>(HIGHLIGHT_SAMPLES_KEY, true)
+  );
+  const [introSeconds, setIntroSeconds] = useState<number>(() =>
+    readStored<number>(INTRO_SECONDS_KEY, DEFAULT_INTRO_SECONDS)
+  );
+  const [outroSeconds, setOutroSeconds] = useState<number>(() =>
+    readStored<number>(OUTRO_SECONDS_KEY, DEFAULT_OUTRO_SECONDS)
+  );
 
   // Undo/redo history
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -65,35 +133,97 @@ export default function SpeakerMapper({
 
   // Refs
   const customInputRef = useRef<HTMLInputElement>(null);
+  const sounderAutoAppliedRef = useRef(false);
 
   // Audio sync
   const { state: audioState, controls, setAudioRef } = useAudioSync(dialogues);
 
-  // Derived values
-  const totalPages = Math.ceil(dialogues.length / PAGE_SIZE);
-  const startIndex = (currentPage - 1) * PAGE_SIZE;
-  const endIndex = Math.min(startIndex + PAGE_SIZE, dialogues.length);
+  useEffect(() => {
+    sounderAutoAppliedRef.current = false;
+  }, [initialDialogues]);
 
-  // Filter dialogues by speaker if filter is active
-  const filteredDialogues = useMemo(() => {
-    if (speakerFilter === 'all') return dialogues;
-    return dialogues.filter(d => d.name === speakerFilter);
-  }, [dialogues, speakerFilter]);
+  const segmentMeta = useMemo(
+    () => buildSegmentMeta(dialogues, audioState.duration),
+    [dialogues, audioState.duration]
+  );
 
-  const pageDialogues = useMemo(() => {
-    if (speakerFilter === 'all') {
-      return dialogues.slice(startIndex, endIndex);
+  const totalDuration = useMemo(() => {
+    if (!segmentMeta.length) return 0;
+    return segmentMeta[segmentMeta.length - 1].end;
+  }, [segmentMeta]);
+
+  const primaryShortcuts = useMemo(() => {
+    const shortcuts: string[] = [...HOST_SPEAKERS];
+    if (guestName && guestName.trim()) {
+      shortcuts.push(guestName.trim());
     }
-    // When filtering, paginate the filtered list
-    const filteredStart = (currentPage - 1) * PAGE_SIZE;
-    const filteredEnd = Math.min(filteredStart + PAGE_SIZE, filteredDialogues.length);
-    return filteredDialogues.slice(filteredStart, filteredEnd);
-  }, [dialogues, filteredDialogues, speakerFilter, currentPage, startIndex, endIndex]);
+    for (const fallback of DEFAULT_VOICEMAILERS) {
+      if (shortcuts.length >= 6) break;
+      if (!shortcuts.includes(fallback)) {
+        shortcuts.push(fallback);
+      }
+    }
+    return shortcuts.slice(0, 6);
+  }, [guestName]);
 
-  const effectiveTotalPages = useMemo(() => {
-    if (speakerFilter === 'all') return Math.ceil(dialogues.length / PAGE_SIZE);
-    return Math.ceil(filteredDialogues.length / PAGE_SIZE);
-  }, [dialogues.length, filteredDialogues.length, speakerFilter]);
+  const voicemailSpeakers = useMemo(() => {
+    const merged = [...DEFAULT_VOICEMAILERS];
+    for (const name of recentSpeakers) {
+      if (
+        !merged.includes(name) &&
+        !primaryShortcuts.includes(name) &&
+        !CATEGORY_SPEAKERS.includes(name)
+      ) {
+        merged.push(name);
+      }
+    }
+    return merged;
+  }, [recentSpeakers, primaryShortcuts]);
+
+  const speakerSuggestions = useMemo(() => {
+    const merged = [
+      ...primaryShortcuts,
+      ...voicemailSpeakers,
+      ...CATEGORY_SPEAKERS,
+      ...recentSpeakers,
+    ];
+    return Array.from(new Set(merged.filter(Boolean)));
+  }, [primaryShortcuts, voicemailSpeakers, recentSpeakers]);
+
+  const computeVisibleIndices = useCallback(
+    (rangeOverride?: { start: number; end: number } | null) => {
+      const indices: number[] = [];
+      const range = typeof rangeOverride === 'undefined' ? focusRange : rangeOverride;
+
+      for (let i = 0; i < dialogues.length; i++) {
+        if (speakerFilter !== 'all' && dialogues[i].name !== speakerFilter) continue;
+
+        const meta = segmentMeta[i];
+        if (hideInterjections && meta && isInterjection(dialogues[i].text, meta.duration)) continue;
+
+        if (range && meta) {
+          if (meta.start < range.start || meta.start > range.end) continue;
+        }
+
+        indices.push(i);
+      }
+
+      return indices;
+    },
+    [dialogues, focusRange, hideInterjections, segmentMeta, speakerFilter]
+  );
+
+  const visibleIndices = useMemo(() => computeVisibleIndices(), [computeVisibleIndices]);
+  const segmentStartIndex = (currentPage - 1) * PAGE_SIZE;
+  const segmentEndIndex = Math.min(segmentStartIndex + PAGE_SIZE, visibleIndices.length);
+  const pageIndices = useMemo(
+    () => visibleIndices.slice(segmentStartIndex, segmentEndIndex),
+    [visibleIndices, segmentStartIndex, segmentEndIndex]
+  );
+  const pageDialogues = useMemo(
+    () => pageIndices.map((i) => dialogues[i]),
+    [pageIndices, dialogues]
+  );
 
   // Count unique speakers detected
   const detectedSpeakers = useMemo(() => {
@@ -125,17 +255,25 @@ export default function SpeakerMapper({
     return dialogues.filter(d => isPlaceholderLabel(d.name)).length;
   }, [dialogues, isPlaceholderLabel]);
 
+  const isFilterActive = speakerFilter !== 'all' || focusRange !== null || hideInterjections;
+  const mappingScopeVisible = isFilterActive;
+
   // Segments in scope for mapping (matching label, not excluded)
   const segmentsInScope = useMemo(() => {
     if (!activeMappingLabel) return new Set<number>();
     const indices = new Set<number>();
+    const visibleSet = mappingScopeVisible ? new Set(visibleIndices) : null;
     dialogues.forEach((d, i) => {
-      if (d.name === activeMappingLabel && !excludedIndices.has(i)) {
+      if (
+        d.name === activeMappingLabel &&
+        !excludedIndices.has(i) &&
+        (!visibleSet || visibleSet.has(i))
+      ) {
         indices.add(i);
       }
     });
     return indices;
-  }, [dialogues, activeMappingLabel, excludedIndices]);
+  }, [dialogues, activeMappingLabel, excludedIndices, mappingScopeVisible, visibleIndices]);
 
   // Total segments matching the active label
   const totalMatchingSegments = useMemo(() => {
@@ -143,18 +281,102 @@ export default function SpeakerMapper({
     return dialogues.filter(d => d.name === activeMappingLabel).length;
   }, [dialogues, activeMappingLabel]);
 
-  // Build fixed speaker shortcuts list
-  useEffect(() => {
-    const speakers: KnownSpeaker[] = CORE_SPEAKERS.map(name => ({ name, count: 0 }));
+  const visibleMatchingSegments = useMemo(() => {
+    if (!activeMappingLabel) return 0;
+    return visibleIndices.filter(i => dialogues[i].name === activeMappingLabel).length;
+  }, [visibleIndices, dialogues, activeMappingLabel]);
 
-    // Add guest as the 6th shortcut if provided
-    if (guestName && guestName.trim()) {
-      speakers.push({ name: guestName.trim(), count: 0 });
+  const sounderCandidates = useMemo(() => {
+    const indices: number[] = [];
+    for (let i = 0; i < Math.min(2, dialogues.length); i++) {
+      if (isPlaceholderLabel(dialogues[i].name) && isSounderCandidate(dialogues[i], i)) {
+        indices.push(i);
+      }
+    }
+    return indices;
+  }, [dialogues, isPlaceholderLabel]);
+
+  const blocks = useMemo<DialogueBlock[]>(() => {
+    if (visibleIndices.length === 0) return [];
+
+    const result: DialogueBlock[] = [];
+    let current: DialogueBlock | null = null;
+    let lastIndex = -1;
+    let lastEnd = 0;
+
+    for (const idx of visibleIndices) {
+      const meta = segmentMeta[idx];
+      const start = meta ? meta.start : 0;
+      const end = meta ? meta.end : start;
+      const gap = idx === lastIndex + 1 ? start - lastEnd : Number.POSITIVE_INFINITY;
+
+      if (current && dialogues[idx].name === current.name && gap <= 4) {
+        current.indices.push(idx);
+        current.end = end;
+        lastIndex = idx;
+        lastEnd = end;
+        continue;
+      }
+
+      if (current) {
+        result.push(current);
+      }
+
+      current = {
+        indices: [idx],
+        name: dialogues[idx].name,
+        start,
+        end,
+        textPreview: dialogues[idx].text,
+      };
+      lastIndex = idx;
+      lastEnd = end;
     }
 
-    setKnownSpeakers(speakers);
-    setLoading(false);
-  }, [guestName]);
+    if (current) {
+      result.push(current);
+    }
+
+    return result;
+  }, [visibleIndices, dialogues, segmentMeta]);
+
+  const pageBlocks = useMemo(() => {
+    const blockStart = (currentPage - 1) * PAGE_SIZE;
+    return blocks.slice(blockStart, blockStart + PAGE_SIZE);
+  }, [blocks, currentPage]);
+
+  const effectiveTotalPages = useMemo(() => {
+    const count = viewMode === 'blocks' ? blocks.length : visibleIndices.length;
+    return Math.max(1, Math.ceil(count / PAGE_SIZE));
+  }, [blocks.length, visibleIndices.length, viewMode]);
+
+  useEffect(() => {
+    setCurrentPage((prev) => Math.min(prev, effectiveTotalPages));
+  }, [effectiveTotalPages]);
+
+  useEffect(() => {
+    writeStored(VIEW_MODE_KEY, viewMode);
+  }, [viewMode]);
+
+  useEffect(() => {
+    writeStored(HIDE_INTERJECTIONS_KEY, hideInterjections);
+  }, [hideInterjections]);
+
+  useEffect(() => {
+    writeStored(HIGHLIGHT_SAMPLES_KEY, highlightSamples);
+  }, [highlightSamples]);
+
+  useEffect(() => {
+    writeStored(INTRO_SECONDS_KEY, introSeconds);
+  }, [introSeconds]);
+
+  useEffect(() => {
+    writeStored(OUTRO_SECONDS_KEY, outroSeconds);
+  }, [outroSeconds]);
+
+  useEffect(() => {
+    writeStored(RECENT_SPEAKERS_KEY, recentSpeakers);
+  }, [recentSpeakers]);
 
   // Save to history before making changes
   const saveToHistory = useCallback((description: string) => {
@@ -172,6 +394,39 @@ export default function SpeakerMapper({
     });
     setHistoryIndex(prev => Math.min(prev + 1, 19));
   }, [dialogues, historyIndex]);
+
+  const trackRecentSpeaker = useCallback((name: string) => {
+    const trimmed = name.trim();
+    if (!trimmed) return;
+    setRecentSpeakers((prev) => {
+      const next = [trimmed, ...prev.filter((n) => n !== trimmed)];
+      return next.slice(0, 8);
+    });
+  }, []);
+
+  const applySpeakerToIndices = useCallback(
+    (indices: Set<number> | number[], newSpeakerName: string, description?: string) => {
+      const trimmed = newSpeakerName.trim();
+      if (!trimmed) return;
+      const indexSet = indices instanceof Set ? indices : new Set(indices);
+      if (indexSet.size === 0) return;
+
+      saveToHistory(description || `Assign "${trimmed}" to ${indexSet.size} segment(s)`);
+
+      setDialogues((prev) =>
+        prev.map((d, i) => (indexSet.has(i) ? { ...d, name: trimmed } : d))
+      );
+      trackRecentSpeaker(trimmed);
+    },
+    [saveToHistory, trackRecentSpeaker]
+  );
+
+  useEffect(() => {
+    if (sounderAutoAppliedRef.current) return;
+    if (sounderCandidates.length === 0) return;
+    sounderAutoAppliedRef.current = true;
+    applySpeakerToIndices(sounderCandidates, 'Sounder/FX', 'Auto-detect sounder');
+  }, [sounderCandidates, applySpeakerToIndices]);
 
   // Undo
   const undo = useCallback(() => {
@@ -281,14 +536,13 @@ export default function SpeakerMapper({
   // Apply speaker to selected segments
   const applyToSelected = useCallback((newSpeakerName: string) => {
     if (!newSpeakerName.trim() || selectedIndices.size === 0) return;
-
-    saveToHistory(`Assign "${newSpeakerName.trim()}" to ${selectedIndices.size} segment(s)`);
-
-    setDialogues(prev => prev.map((d, i) =>
-      selectedIndices.has(i) ? { ...d, name: newSpeakerName.trim() } : d
-    ));
+    applySpeakerToIndices(
+      selectedIndices,
+      newSpeakerName.trim(),
+      `Assign "${newSpeakerName.trim()}" to ${selectedIndices.size} segment(s)`
+    );
     clearSelection();
-  }, [selectedIndices, saveToHistory, clearSelection]);
+  }, [selectedIndices, applySpeakerToIndices, clearSelection]);
 
   // Select all segments matching active label
   const selectAllMatching = useCallback(() => {
@@ -299,25 +553,25 @@ export default function SpeakerMapper({
   const deselectAllMatching = useCallback(() => {
     if (!activeMappingLabel) return;
     const allMatchingIndices = new Set<number>();
+    const visibleSet = mappingScopeVisible ? new Set(visibleIndices) : null;
     dialogues.forEach((d, i) => {
-      if (d.name === activeMappingLabel) {
+      if (d.name === activeMappingLabel && (!visibleSet || visibleSet.has(i))) {
         allMatchingIndices.add(i);
       }
     });
     setExcludedIndices(allMatchingIndices);
-  }, [activeMappingLabel, dialogues]);
+  }, [activeMappingLabel, dialogues, mappingScopeVisible, visibleIndices]);
 
   // Apply mapping to selected segments
   const applyMapping = useCallback((newSpeakerName: string) => {
     if (!newSpeakerName.trim() || segmentsInScope.size === 0) return;
-
-    saveToHistory(`Map "${activeMappingLabel}" → "${newSpeakerName.trim()}"`);
-
-    setDialogues(prev => prev.map((d, i) =>
-      segmentsInScope.has(i) ? { ...d, name: newSpeakerName.trim() } : d
-    ));
+    applySpeakerToIndices(
+      segmentsInScope,
+      newSpeakerName.trim(),
+      `Map "${activeMappingLabel}" → "${newSpeakerName.trim()}"`
+    );
     exitMappingMode();
-  }, [segmentsInScope, activeMappingLabel, exitMappingMode, saveToHistory]);
+  }, [segmentsInScope, activeMappingLabel, exitMappingMode, applySpeakerToIndices]);
 
   // Audio seek on timestamp click
   const handleTimestampClick = useCallback(async (timestamp: string, e: React.MouseEvent) => {
@@ -325,6 +579,18 @@ export default function SpeakerMapper({
     if (!audioUrl) return;
 
     controls.seekToTimestamp(timestamp);
+    try {
+      await controls.play();
+    } catch (err) {
+      console.error('Audio play failed:', err);
+    }
+  }, [audioUrl, controls]);
+
+  const handleTimeClick = useCallback(async (time: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!audioUrl) return;
+
+    controls.seekTo(time);
     try {
       await controls.play();
     } catch (err) {
@@ -347,31 +613,113 @@ export default function SpeakerMapper({
     setCurrentPage(Math.max(1, Math.min(page, effectiveTotalPages)));
   }, [effectiveTotalPages]);
 
+  const parseTimeInput = useCallback((value: string): number | null => {
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+    if (/^\d+(\.\d+)?$/.test(trimmed)) {
+      const secs = Number(trimmed);
+      return Number.isFinite(secs) ? secs : null;
+    }
+
+    const parts = trimmed.split(':');
+    if (parts.length < 2 || parts.length > 3) return null;
+    const numbers = parts.map((part) => Number(part));
+    if (numbers.some((num) => Number.isNaN(num))) return null;
+
+    if (numbers.length === 2) {
+      return numbers[0] * 60 + numbers[1];
+    }
+    return numbers[0] * 3600 + numbers[1] * 60 + numbers[2];
+  }, []);
+
+  const applyFocusRange = useCallback(
+    (range: { start: number; end: number } | null, position: 'start' | 'end' = 'start') => {
+      setFocusRange(range);
+      if (range) {
+        setRangeStartInput(secondsToTimestamp(range.start));
+        setRangeEndInput(secondsToTimestamp(range.end));
+      }
+
+      if (!range) {
+        setCurrentPage(1);
+        return;
+      }
+
+      const indices = computeVisibleIndices(range);
+      if (!indices.length) return;
+
+      const targetIndex = position === 'end' ? indices.length - 1 : 0;
+      const targetPage = Math.floor(targetIndex / PAGE_SIZE) + 1;
+      setCurrentPage(targetPage);
+    },
+    [computeVisibleIndices]
+  );
+
+  const focusIntro = useCallback(() => {
+    const end = Math.min(totalDuration || introSeconds, introSeconds);
+    applyFocusRange({ start: 0, end }, 'start');
+  }, [applyFocusRange, totalDuration, introSeconds]);
+
+  const focusOutro = useCallback(() => {
+    if (!totalDuration) return;
+    const start = Math.max(0, totalDuration - outroSeconds);
+    applyFocusRange({ start, end: totalDuration }, 'end');
+  }, [applyFocusRange, totalDuration, outroSeconds]);
+
+  const focusVoicemails = useCallback(() => {
+    if (!totalDuration) return;
+    const start = Math.max(0, totalDuration - DEFAULT_VOICEMAIL_SECONDS);
+    applyFocusRange({ start, end: totalDuration }, 'end');
+    setViewMode('blocks');
+  }, [applyFocusRange, totalDuration]);
+
+  const clearFocusRange = useCallback(() => {
+    applyFocusRange(null, 'start');
+  }, [applyFocusRange]);
+
+  const selectRangeSegments = useCallback(() => {
+    const start = parseTimeInput(rangeStartInput);
+    const end = parseTimeInput(rangeEndInput);
+    if (start === null || end === null) return;
+    const range = { start: Math.min(start, end), end: Math.max(start, end) };
+    const indices = computeVisibleIndices(range);
+    setSelectedIndices(new Set(indices));
+    if (indices.length) {
+      setLastSelectedIndex(indices[indices.length - 1]);
+    }
+  }, [computeVisibleIndices, parseTimeInput, rangeStartInput, rangeEndInput]);
+
+  const focusManualRange = useCallback(() => {
+    const start = parseTimeInput(rangeStartInput);
+    const end = parseTimeInput(rangeEndInput);
+    if (start === null || end === null) return;
+    const range = { start: Math.min(start, end), end: Math.max(start, end) };
+    applyFocusRange(range, 'start');
+  }, [applyFocusRange, parseTimeInput, rangeStartInput, rangeEndInput]);
+
   // Find next unassigned segment and navigate to it
   const goToNextUnassigned = useCallback(() => {
-    const currentGlobalIndex = startIndex;
+    const scopeIndices = isFilterActive ? visibleIndices : dialogues.map((_, i) => i);
+    if (scopeIndices.length === 0) return;
 
-    // Find next unassigned after current position
-    for (let i = currentGlobalIndex; i < dialogues.length; i++) {
-      if (isPlaceholderLabel(dialogues[i].name)) {
-        const targetPage = Math.floor(i / PAGE_SIZE) + 1;
-        setCurrentPage(targetPage);
-        // Enter mapping mode for this speaker
-        enterMappingMode(dialogues[i].name);
-        return;
-      }
-    }
+    const currentIndexInScope = Math.min(segmentStartIndex, scopeIndices.length - 1);
 
-    // Wrap around to beginning
-    for (let i = 0; i < currentGlobalIndex; i++) {
-      if (isPlaceholderLabel(dialogues[i].name)) {
-        const targetPage = Math.floor(i / PAGE_SIZE) + 1;
-        setCurrentPage(targetPage);
-        enterMappingMode(dialogues[i].name);
-        return;
+    const findInScope = (startAt: number, endAt: number) => {
+      for (let s = startAt; s < endAt; s++) {
+        const globalIndex = scopeIndices[s];
+        if (isPlaceholderLabel(dialogues[globalIndex].name)) {
+          const targetPage = Math.floor(s / PAGE_SIZE) + 1;
+          setCurrentPage(targetPage);
+          enterMappingMode(dialogues[globalIndex].name);
+          return true;
+        }
       }
-    }
-  }, [dialogues, startIndex, isPlaceholderLabel, enterMappingMode]);
+      return false;
+    };
+
+    if (findInScope(currentIndexInScope, scopeIndices.length)) return;
+    findInScope(0, currentIndexInScope);
+  }, [dialogues, segmentStartIndex, isPlaceholderLabel, enterMappingMode, isFilterActive, visibleIndices]);
 
   // Submit handler
   const handleSubmit = useCallback(() => {
@@ -413,11 +761,11 @@ export default function SpeakerMapper({
       // Number keys 1-6 for quick assign when in mapping mode or selection mode
       if ((activeMappingLabel || selectedIndices.size > 0) && e.key >= '1' && e.key <= '6') {
         const index = parseInt(e.key) - 1;
-        if (index < knownSpeakers.length) {
+        if (index < primaryShortcuts.length) {
           if (activeMappingLabel) {
-            applyMapping(knownSpeakers[index].name);
+            applyMapping(primaryShortcuts[index]);
           } else {
-            applyToSelected(knownSpeakers[index].name);
+            applyToSelected(primaryShortcuts[index]);
           }
         }
         return;
@@ -426,6 +774,31 @@ export default function SpeakerMapper({
       // 'n' for next unassigned
       if (e.key === 'n' && !activeMappingLabel) {
         goToNextUnassigned();
+        return;
+      }
+
+      if (e.key === 'i' && !activeMappingLabel) {
+        focusIntro();
+        return;
+      }
+      if (e.key === 'o' && !activeMappingLabel) {
+        focusOutro();
+        return;
+      }
+      if (e.key === 'v' && !activeMappingLabel) {
+        focusVoicemails();
+        return;
+      }
+      if (e.key === 'b' && !activeMappingLabel) {
+        setViewMode((prev) => (prev === 'blocks' ? 'segments' : 'blocks'));
+        return;
+      }
+      if (e.key === 'm' && !activeMappingLabel) {
+        setHighlightSamples((prev) => !prev);
+        return;
+      }
+      if (e.key === 'h' && !activeMappingLabel) {
+        setHideInterjections((prev) => !prev);
         return;
       }
 
@@ -442,31 +815,31 @@ export default function SpeakerMapper({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeMappingLabel, knownSpeakers, applyMapping, exitMappingMode, undo, redo, goToNextUnassigned, goToPage, currentPage, selectedIndices, applyToSelected, clearSelection]);
+  }, [
+    activeMappingLabel,
+    primaryShortcuts,
+    applyMapping,
+    exitMappingMode,
+    undo,
+    redo,
+    goToNextUnassigned,
+    goToPage,
+    currentPage,
+    selectedIndices,
+    applyToSelected,
+    clearSelection,
+    focusIntro,
+    focusOutro,
+    focusVoicemails,
+    setViewMode,
+    setHighlightSamples,
+    setHideInterjections,
+  ]);
 
   // Get the global index for a dialogue in the filtered/paginated view
   const getGlobalIndex = useCallback((pageIndex: number) => {
-    if (speakerFilter === 'all') {
-      return startIndex + pageIndex;
-    }
-    // When filtering, find the actual index in the full dialogues array
-    const filteredItem = pageDialogues[pageIndex];
-    return dialogues.findIndex(d => d === filteredItem);
-  }, [speakerFilter, startIndex, pageDialogues, dialogues]);
-
-  if (loading) {
-    return (
-      <div className="p-6 bg-white rounded-lg shadow">
-        <div className="animate-pulse">
-          <div className="h-6 bg-gray-200 rounded w-1/3 mb-4"></div>
-          <div className="space-y-3">
-            <div className="h-20 bg-gray-200 rounded"></div>
-            <div className="h-20 bg-gray-200 rounded"></div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+    return pageIndices[pageIndex];
+  }, [pageIndices]);
 
   return (
     <div className="bg-white rounded-lg shadow">
@@ -514,7 +887,78 @@ export default function SpeakerMapper({
           </div>
         </div>
 
-        {/* Filter and shortcuts hint */}
+        {/* Workflow assistant */}
+        <div className="mt-4 p-3 rounded-lg border bg-gray-50">
+          <div className="flex items-center gap-2 flex-wrap">
+            <button
+              type="button"
+              onClick={focusIntro}
+              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
+            >
+              Intro pass (i)
+            </button>
+            <button
+              type="button"
+              onClick={focusOutro}
+              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
+            >
+              Outro pass (o)
+            </button>
+            <button
+              type="button"
+              onClick={focusVoicemails}
+              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
+            >
+              Voicemail mode (v)
+            </button>
+            {focusRange && (
+              <button
+                type="button"
+                onClick={clearFocusRange}
+                className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
+              >
+                Clear focus
+              </button>
+            )}
+            <div className="flex items-center gap-1 text-xs text-gray-500">
+              <label htmlFor="intro-seconds" className="ml-2">Intro sec</label>
+              <input
+                id="intro-seconds"
+                type="number"
+                min={30}
+                max={600}
+                value={introSeconds}
+                onChange={(e) => setIntroSeconds(Number(e.target.value))}
+                className="w-20 text-xs border rounded px-2 py-1"
+              />
+              <label htmlFor="outro-seconds" className="ml-2">Outro sec</label>
+              <input
+                id="outro-seconds"
+                type="number"
+                min={30}
+                max={600}
+                value={outroSeconds}
+                onChange={(e) => setOutroSeconds(Number(e.target.value))}
+                className="w-20 text-xs border rounded px-2 py-1"
+              />
+            </div>
+          </div>
+          <div className="mt-2 flex items-center gap-4 flex-wrap text-xs text-gray-500">
+            {focusRange && (
+              <span>
+                Focus: {secondsToTimestamp(focusRange.start)}–{secondsToTimestamp(focusRange.end)}
+              </span>
+            )}
+            {sounderCandidates.length > 0 && (
+              <span>Sounder: {sounderCandidates.length} auto-labeled</span>
+            )}
+            {totalDuration > 0 && (
+              <span>Total: {secondsToTimestamp(totalDuration)}</span>
+            )}
+          </div>
+        </div>
+
+        {/* Filters and controls */}
         <div className="mt-3 flex items-center gap-4 flex-wrap">
           <div className="flex items-center gap-2">
             <label htmlFor="speaker-filter" className="text-sm text-gray-600">Filter:</label>
@@ -536,6 +980,79 @@ export default function SpeakerMapper({
             </select>
           </div>
 
+          <div className="flex items-center gap-1">
+            <span className="text-sm text-gray-600">View:</span>
+            <button
+              type="button"
+              onClick={() => setViewMode('segments')}
+              className={`px-2 py-1 text-sm rounded border ${
+                viewMode === 'segments' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white'
+              }`}
+            >
+              Segments
+            </button>
+            <button
+              type="button"
+              onClick={() => setViewMode('blocks')}
+              className={`px-2 py-1 text-sm rounded border ${
+                viewMode === 'blocks' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white'
+              }`}
+            >
+              Blocks
+            </button>
+          </div>
+
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            <input
+              type="checkbox"
+              checked={hideInterjections}
+              onChange={(e) => setHideInterjections(e.target.checked)}
+            />
+            Hide interjections (h)
+          </label>
+
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            <input
+              type="checkbox"
+              checked={highlightSamples}
+              onChange={(e) => setHighlightSamples(e.target.checked)}
+            />
+            Highlight samples (m)
+          </label>
+
+          <div className="flex items-center gap-2">
+            <label className="text-sm text-gray-600">Range:</label>
+            <input
+              type="text"
+              value={rangeStartInput}
+              onChange={(e) => setRangeStartInput(e.target.value)}
+              placeholder="0:00"
+              className="w-20 text-sm border rounded px-2 py-1"
+            />
+            <span className="text-gray-400">–</span>
+            <input
+              type="text"
+              value={rangeEndInput}
+              onChange={(e) => setRangeEndInput(e.target.value)}
+              placeholder="3:00"
+              className="w-20 text-sm border rounded px-2 py-1"
+            />
+            <button
+              type="button"
+              onClick={focusManualRange}
+              className="px-2 py-1 text-sm rounded border bg-white hover:bg-gray-100"
+            >
+              Focus
+            </button>
+            <button
+              type="button"
+              onClick={selectRangeSegments}
+              className="px-2 py-1 text-sm rounded border bg-white hover:bg-gray-100"
+            >
+              Select
+            </button>
+          </div>
+
           {unassignedCount > 0 && (
             <button
               type="button"
@@ -547,7 +1064,7 @@ export default function SpeakerMapper({
           )}
 
           <span className="text-xs text-gray-400">
-            Click segment to select · Shift+click range · 1-6 assign · Esc cancel
+            Click to select · Shift+click range · 1-6 assign · Esc cancel · i/o/v focus
           </span>
         </div>
       </div>
@@ -585,21 +1102,50 @@ export default function SpeakerMapper({
             </button>
           </div>
 
-          <div className="flex items-center gap-3 flex-wrap">
-            {/* Quick assign buttons */}
-            {knownSpeakers.slice(0, 6).map(({ name }, index) => (
-              <button
-                key={name}
-                type="button"
-                onClick={() => applyToSelected(name)}
-                className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors"
-              >
-                <span className="opacity-60 mr-1">{index + 1}</span>
-                {name}
-              </button>
-            ))}
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-green-700">Hosts/Guest</span>
+              {primaryShortcuts.map((name, index) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyToSelected(name)}
+                  className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors"
+                >
+                  <span className="opacity-60 mr-1">{index + 1}</span>
+                  {name}
+                </button>
+              ))}
+            </div>
 
-            {/* Custom speaker input */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-green-700">Voicemailers</span>
+              {voicemailSpeakers.map((name) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyToSelected(name)}
+                  className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors"
+                >
+                  {name}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-green-700">Categories</span>
+              {CATEGORY_SPEAKERS.map((name) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyToSelected(name)}
+                  className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors"
+                >
+                  {name}
+                </button>
+              ))}
+            </div>
+
             <div className="flex items-center gap-1">
               <input
                 type="text"
@@ -618,7 +1164,7 @@ export default function SpeakerMapper({
                 list="known-speakers-selection"
               />
               <datalist id="known-speakers-selection">
-                {knownSpeakers.map(({ name }) => (
+                {speakerSuggestions.map((name) => (
                   <option key={name} value={name} />
                 ))}
               </datalist>
@@ -649,7 +1195,10 @@ export default function SpeakerMapper({
                   Mapping: {activeMappingLabel}
                 </span>
                 <span className="ml-2 text-sm text-blue-700">
-                  {segmentsInScope.size} of {totalMatchingSegments} segments selected
+                  {segmentsInScope.size} of {mappingScopeVisible ? visibleMatchingSegments : totalMatchingSegments} segments selected
+                  {mappingScopeVisible && (
+                    <span className="ml-1 text-blue-500">(filtered)</span>
+                  )}
                 </span>
               </div>
               {/* Select All / None buttons */}
@@ -680,26 +1229,65 @@ export default function SpeakerMapper({
             </button>
           </div>
 
-          <div className="flex items-center gap-3 flex-wrap">
-            {/* Quick assign buttons from known speakers with number hints */}
-            {knownSpeakers.slice(0, 6).map(({ name }, index) => (
-              <button
-                key={name}
-                type="button"
-                onClick={() => applyMapping(name)}
-                disabled={segmentsInScope.size === 0}
-                className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
-                  segmentsInScope.size === 0
-                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    : 'bg-blue-600 text-white hover:bg-blue-700'
-                }`}
-              >
-                <span className="opacity-60 mr-1">{index + 1}</span>
-                {name}
-              </button>
-            ))}
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-blue-700">Hosts/Guest</span>
+              {primaryShortcuts.map((name, index) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyMapping(name)}
+                  disabled={segmentsInScope.size === 0}
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+                    segmentsInScope.size === 0
+                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                  }`}
+                >
+                  <span className="opacity-60 mr-1">{index + 1}</span>
+                  {name}
+                </button>
+              ))}
+            </div>
 
-            {/* Custom speaker input */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-blue-700">Voicemailers</span>
+              {voicemailSpeakers.map((name) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyMapping(name)}
+                  disabled={segmentsInScope.size === 0}
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+                    segmentsInScope.size === 0
+                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                  }`}
+                >
+                  {name}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs uppercase tracking-wide text-blue-700">Categories</span>
+              {CATEGORY_SPEAKERS.map((name) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => applyMapping(name)}
+                  disabled={segmentsInScope.size === 0}
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+                    segmentsInScope.size === 0
+                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                  }`}
+                >
+                  {name}
+                </button>
+              ))}
+            </div>
+
             <div className="flex items-center gap-1">
               <input
                 ref={customInputRef}
@@ -720,7 +1308,7 @@ export default function SpeakerMapper({
                 autoFocus
               />
               <datalist id="known-speakers-mapping">
-                {knownSpeakers.map(({ name }) => (
+                {speakerSuggestions.map((name) => (
                   <option key={name} value={name} />
                 ))}
               </datalist>
@@ -743,102 +1331,213 @@ export default function SpeakerMapper({
 
       {/* Dialogue List */}
       <div className="divide-y max-h-[50vh] overflow-y-auto">
-        {pageDialogues.map((dialogue, pageIndex) => {
-          const globalIndex = getGlobalIndex(pageIndex);
-          const isActiveSegment = audioState.activeSegmentIndex === globalIndex;
-          const matchesActiveLabel = activeMappingLabel === dialogue.name;
-          const isExcluded = excludedIndices.has(globalIndex);
-          const isInScope = matchesActiveLabel && !isExcluded;
-          const isDimmed = activeMappingLabel && !matchesActiveLabel;
-          const isSelected = selectedIndices.has(globalIndex);
-
-          return (
-            <div
-              key={`${globalIndex}-${dialogue.timestamp}`}
-              onClick={(e) => handleSegmentClick(globalIndex, e)}
-              className={`flex items-start gap-3 p-3 transition-colors cursor-pointer ${
-                isSelected
-                  ? 'bg-green-100 border-l-4 border-green-500'
-                  : isInScope
-                    ? 'bg-blue-50 border-l-4 border-blue-500'
-                    : isExcluded && matchesActiveLabel
-                      ? 'bg-gray-100 border-l-4 border-gray-300'
-                      : isActiveSegment
-                        ? 'bg-yellow-50'
-                        : isDimmed
-                          ? 'bg-gray-50 opacity-50'
-                          : 'hover:bg-gray-50'
-              }`}
-            >
-              {/* Checkbox - for selected segments or segments matching active label */}
-              <div className="pt-0.5 w-5">
-                {(matchesActiveLabel || isSelected) && (
-                  <input
-                    type="checkbox"
-                    checked={matchesActiveLabel ? !isExcluded : isSelected}
-                    onChange={() => {
-                      if (matchesActiveLabel) {
-                        toggleSegmentExclusion(globalIndex);
-                      } else {
-                        setSelectedIndices(prev => {
-                          const next = new Set(prev);
-                          if (next.has(globalIndex)) {
-                            next.delete(globalIndex);
-                          } else {
-                            next.add(globalIndex);
-                          }
-                          return next;
-                        });
-                      }
-                    }}
-                    onClick={(e) => e.stopPropagation()}
-                    className={`h-4 w-4 rounded border-gray-300 cursor-pointer ${
-                      matchesActiveLabel ? 'text-blue-600 focus:ring-blue-500' : 'text-green-600 focus:ring-green-500'
-                    }`}
-                  />
-                )}
-              </div>
-
-              {/* Timestamp */}
-              <button
-                type="button"
-                onClick={(e) => handleTimestampClick(dialogue.timestamp, e)}
-                className={`text-sm font-mono min-w-[60px] text-left ${
-                  audioUrl
-                    ? 'text-blue-600 hover:text-blue-800 hover:underline'
-                    : 'text-gray-400'
-                }`}
-                disabled={!audioUrl}
-                title={audioUrl ? 'Click to play from here' : 'No audio available'}
-              >
-                {dialogue.timestamp}
-              </button>
-
-              {/* Speaker Label - clickable to enter mapping mode */}
-              <button
-                type="button"
-                onClick={(e) => handleSpeakerLabelClick(dialogue.name, e)}
-                className={`text-sm font-medium min-w-[100px] text-left px-2 py-0.5 rounded transition-colors ${
-                  activeMappingLabel === dialogue.name
-                    ? 'bg-blue-600 text-white'
-                    : isPlaceholderLabel(dialogue.name)
-                      ? 'text-orange-600 hover:bg-orange-100 border border-orange-300'
-                      : 'text-gray-900 hover:bg-gray-200 border border-gray-300'
-                }`}
-                title="Click to map all segments with this speaker"
-              >
-                {dialogue.name}
-              </button>
-
-              {/* Text */}
-              <p className={`text-sm flex-1 line-clamp-2 ${
-                isDimmed ? 'text-gray-400' : 'text-gray-700'
-              }`}>
-                {dialogue.text}
-              </p>
+        {viewMode === 'blocks' ? (
+          pageBlocks.length === 0 ? (
+            <div className="p-6 text-center text-sm text-gray-500">
+              No blocks match the current filters.
             </div>
-          );
-        })}
+          ) : (
+            pageBlocks.map((block) => {
+              const blockSelected = block.indices.every((i) => selectedIndices.has(i));
+              const blockActive = block.indices.includes(audioState.activeSegmentIndex);
+              const blockSample = highlightSamples && block.indices.some((i) => isSampleCandidate(dialogues[i].text));
+              const blockStart = secondsToTimestamp(block.start);
+              const blockEnd = secondsToTimestamp(block.end);
+
+              return (
+                <div
+                  key={`${block.indices[0]}-${block.start}`}
+                  onClick={(e) => {
+                    if (
+                      e.target instanceof HTMLButtonElement ||
+                      e.target instanceof HTMLInputElement
+                    ) {
+                      return;
+                    }
+                    if (activeMappingLabel) {
+                      exitMappingMode();
+                    }
+                    if (blockSelected) {
+                      clearSelection();
+                    } else {
+                      setSelectedIndices(new Set(block.indices));
+                      setLastSelectedIndex(block.indices[block.indices.length - 1]);
+                    }
+                  }}
+                  className={`flex items-start gap-3 p-3 transition-colors cursor-pointer ${
+                    blockSelected
+                      ? 'bg-green-100 border-l-4 border-green-500'
+                      : blockActive
+                        ? 'bg-yellow-50'
+                        : blockSample
+                          ? 'bg-amber-50 border-l-4 border-amber-300'
+                          : 'hover:bg-gray-50'
+                  }`}
+                >
+                  <div className="pt-0.5 w-5">
+                    {blockSelected && (
+                      <input
+                        type="checkbox"
+                        checked={blockSelected}
+                        onChange={() => {
+                          if (blockSelected) {
+                            clearSelection();
+                          } else {
+                            setSelectedIndices(new Set(block.indices));
+                            setLastSelectedIndex(block.indices[block.indices.length - 1]);
+                          }
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                        className="h-4 w-4 rounded border-gray-300 cursor-pointer text-green-600 focus:ring-green-500"
+                      />
+                    )}
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={(e) => handleTimeClick(block.start, e)}
+                    className={`text-sm font-mono min-w-[90px] text-left ${
+                      audioUrl
+                        ? 'text-blue-600 hover:text-blue-800 hover:underline'
+                        : 'text-gray-400'
+                    }`}
+                    disabled={!audioUrl}
+                    title={audioUrl ? 'Click to play from here' : 'No audio available'}
+                  >
+                    {blockStart}–{blockEnd}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={(e) => handleSpeakerLabelClick(block.name, e)}
+                    className={`text-sm font-medium min-w-[120px] text-left px-2 py-0.5 rounded transition-colors ${
+                      activeMappingLabel === block.name
+                        ? 'bg-blue-600 text-white'
+                        : isPlaceholderLabel(block.name)
+                          ? 'text-orange-600 hover:bg-orange-100 border border-orange-300'
+                          : 'text-gray-900 hover:bg-gray-200 border border-gray-300'
+                    }`}
+                    title="Click to map all segments with this speaker"
+                  >
+                    {block.name}
+                  </button>
+
+                  <p className="text-sm flex-1 line-clamp-2 text-gray-700">
+                    {block.textPreview}
+                  </p>
+
+                  <span className="text-xs text-gray-500">
+                    {block.indices.length} seg
+                  </span>
+                </div>
+              );
+            })
+          )
+        ) : pageDialogues.length === 0 ? (
+          <div className="p-6 text-center text-sm text-gray-500">
+            No segments match the current filters.
+          </div>
+        ) : (
+          pageDialogues.map((dialogue, pageIndex) => {
+            const globalIndex = getGlobalIndex(pageIndex);
+            const isActiveSegment = audioState.activeSegmentIndex === globalIndex;
+            const matchesActiveLabel = activeMappingLabel === dialogue.name;
+            const isExcluded = excludedIndices.has(globalIndex);
+            const isInScope = matchesActiveLabel && !isExcluded;
+            const isDimmed = activeMappingLabel && !matchesActiveLabel;
+            const isSelected = selectedIndices.has(globalIndex);
+            const isSample = highlightSamples && isSampleCandidate(dialogue.text);
+
+            return (
+              <div
+                key={`${globalIndex}-${dialogue.timestamp}`}
+                onClick={(e) => handleSegmentClick(globalIndex, e)}
+                className={`flex items-start gap-3 p-3 transition-colors cursor-pointer ${
+                  isSelected
+                    ? 'bg-green-100 border-l-4 border-green-500'
+                    : isInScope
+                      ? 'bg-blue-50 border-l-4 border-blue-500'
+                      : isExcluded && matchesActiveLabel
+                        ? 'bg-gray-100 border-l-4 border-gray-300'
+                        : isActiveSegment
+                          ? 'bg-yellow-50'
+                          : isSample
+                            ? 'bg-amber-50 border-l-4 border-amber-300'
+                            : isDimmed
+                              ? 'bg-gray-50 opacity-50'
+                              : 'hover:bg-gray-50'
+                }`}
+              >
+                {/* Checkbox - for selected segments or segments matching active label */}
+                <div className="pt-0.5 w-5">
+                  {(matchesActiveLabel || isSelected) && (
+                    <input
+                      type="checkbox"
+                      checked={matchesActiveLabel ? !isExcluded : isSelected}
+                      onChange={() => {
+                        if (matchesActiveLabel) {
+                          toggleSegmentExclusion(globalIndex);
+                        } else {
+                          setSelectedIndices(prev => {
+                            const next = new Set(prev);
+                            if (next.has(globalIndex)) {
+                              next.delete(globalIndex);
+                            } else {
+                              next.add(globalIndex);
+                            }
+                            return next;
+                          });
+                        }
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                      className={`h-4 w-4 rounded border-gray-300 cursor-pointer ${
+                        matchesActiveLabel ? 'text-blue-600 focus:ring-blue-500' : 'text-green-600 focus:ring-green-500'
+                      }`}
+                    />
+                  )}
+                </div>
+
+                {/* Timestamp */}
+                <button
+                  type="button"
+                  onClick={(e) => handleTimestampClick(dialogue.timestamp, e)}
+                  className={`text-sm font-mono min-w-[60px] text-left ${
+                    audioUrl
+                      ? 'text-blue-600 hover:text-blue-800 hover:underline'
+                      : 'text-gray-400'
+                  }`}
+                  disabled={!audioUrl}
+                  title={audioUrl ? 'Click to play from here' : 'No audio available'}
+                >
+                  {dialogue.timestamp}
+                </button>
+
+                {/* Speaker Label - clickable to enter mapping mode */}
+                <button
+                  type="button"
+                  onClick={(e) => handleSpeakerLabelClick(dialogue.name, e)}
+                  className={`text-sm font-medium min-w-[100px] text-left px-2 py-0.5 rounded transition-colors ${
+                    activeMappingLabel === dialogue.name
+                      ? 'bg-blue-600 text-white'
+                      : isPlaceholderLabel(dialogue.name)
+                        ? 'text-orange-600 hover:bg-orange-100 border border-orange-300'
+                        : 'text-gray-900 hover:bg-gray-200 border border-gray-300'
+                  }`}
+                  title="Click to map all segments with this speaker"
+                >
+                  {dialogue.name}
+                </button>
+
+                {/* Text */}
+                <p className={`text-sm flex-1 line-clamp-2 ${
+                  isDimmed ? 'text-gray-400' : 'text-gray-700'
+                }`}>
+                  {dialogue.text}
+                </p>
+              </div>
+            );
+          })
+        )}
       </div>
 
       {/* Pagination */}
@@ -858,9 +1557,14 @@ export default function SpeakerMapper({
 
         <span className="text-sm text-gray-600">
           Page {currentPage} of {effectiveTotalPages}
-          {speakerFilter !== 'all' && (
+          {viewMode === 'segments' && isFilterActive && (
             <span className="text-gray-400 ml-1">
-              ({filteredDialogues.length} filtered)
+              ({visibleIndices.length} filtered)
+            </span>
+          )}
+          {viewMode === 'blocks' && (
+            <span className="text-gray-400 ml-1">
+              ({blocks.length} blocks)
             </span>
           )}
         </span>
