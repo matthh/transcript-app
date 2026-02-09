@@ -56,7 +56,7 @@ export function FeedbackForm({ query, answer, queryType }: { query: string; answ
   }
 
   return (
-    <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+    <div className="bg-brand-plum-lighter border border-brand-plum/20 rounded-lg p-6">
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Was this answer helpful?</h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -95,7 +95,7 @@ export function FeedbackForm({ query, answer, queryType }: { query: string; answ
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
-            className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+            className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900"
             required
           />
         </div>
@@ -110,7 +110,7 @@ export function FeedbackForm({ query, answer, queryType }: { query: string; answ
             onChange={(e) => setComment(e.target.value)}
             placeholder="What could be improved? Was something missing or incorrect?"
             rows={3}
-            className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 resize-none"
+            className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900 resize-none"
           />
         </div>
 
@@ -121,7 +121,7 @@ export function FeedbackForm({ query, answer, queryType }: { query: string; answ
         <button
           type="submit"
           disabled={!name.trim() || !rating || submitting}
-          className="w-full py-3 px-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="w-full py-3 px-4 bg-brand-plum text-white rounded-lg font-medium hover:bg-brand-plum-light disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           {submitting ? 'Submitting...' : 'Submit Feedback'}
         </button>

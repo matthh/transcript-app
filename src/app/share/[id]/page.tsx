@@ -131,12 +131,18 @@ export default async function SharePage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <header className="text-center mb-8">
-          <Link href="/" className="text-blue-600 hover:text-blue-700 text-sm">
-            Escape Hatch Podcast Search
-          </Link>
-        </header>
+      <div className="bg-gradient-to-br from-brand-dark to-brand-plum">
+        <div className="max-w-4xl mx-auto px-4 py-6">
+          <header className="text-center">
+            <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-gray-300 text-sm transition-colors">
+              <img src="/logo.jpg" alt="Escape Hatch Podcast" className="w-8 h-8 rounded-full" />
+              Escape Hatch Podcast Search
+            </Link>
+          </header>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 py-8">
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
           <div className="flex items-center gap-3 mb-4">
@@ -158,7 +164,7 @@ export default async function SharePage({ params }: PageProps) {
         <div className="text-center mt-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-plum text-white rounded-lg font-medium hover:bg-brand-plum-light transition-colors"
           >
             Try Your Own Search
           </Link>

@@ -124,35 +124,43 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Escape Hatch Podcast Search
-          </h1>
-          <p className="text-gray-600">
-            Ask questions about podcast episodes and get answers with quotes
-          </p>
-        </header>
+      <div className="bg-gradient-to-br from-brand-dark to-brand-plum">
+        <div className="max-w-4xl mx-auto px-4 pt-10 pb-8">
+          <header className="text-center mb-8">
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <img src="/logo.jpg" alt="Escape Hatch Podcast" className="w-12 h-12 rounded-full" />
+              <h1 className="text-4xl font-bold text-white">
+                Escape Hatch Podcast Search
+              </h1>
+            </div>
+            <p className="text-gray-300">
+              Ask questions about podcast episodes and get answers with quotes
+            </p>
+          </header>
 
-        <form onSubmit={handleSearch} className="mb-8">
-          <div className="flex gap-3">
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="What have you said about Steven Spielberg?"
-              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400"
-              disabled={loading}
-            />
-            <button
-              type="submit"
-              disabled={loading || !query.trim()}
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            >
-              {loading ? 'Searching...' : 'Search'}
-            </button>
-          </div>
-        </form>
+          <form onSubmit={handleSearch}>
+            <div className="flex gap-3">
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="What have you said about Steven Spielberg?"
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900 placeholder-gray-400"
+                disabled={loading}
+              />
+              <button
+                type="submit"
+                disabled={loading || !query.trim()}
+                className="px-6 py-3 bg-brand-plum text-white rounded-lg font-medium hover:bg-brand-plum-light disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                {loading ? 'Searching...' : 'Search'}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 py-8">
 
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
@@ -509,7 +517,7 @@ function TranscriptionErrorModal({
             </p>
             <button
               onClick={onClose}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              className="px-4 py-2 bg-brand-plum text-white rounded-lg hover:bg-brand-plum-light"
             >
               Close
             </button>
@@ -586,15 +594,15 @@ function TranscriptionErrorModal({
               value={reporterName}
               onChange={(e) => setReporterName(e.target.value)}
               placeholder="Enter your name"
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900"
             />
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-3 text-sm">
-            <p className="text-blue-800">
+          <div className="bg-brand-plum-lighter rounded-lg p-3 text-sm">
+            <p className="text-brand-plum">
               <span className="font-medium">Context info that will be included:</span>
             </p>
-            <ul className="mt-1 text-blue-700 text-xs space-y-0.5">
+            <ul className="mt-1 text-brand-plum-muted text-xs space-y-0.5">
               <li>• Episode: {source.episodeTitle}</li>
               <li>• Timestamp: {source.startTimestamp} - {source.endTimestamp}</li>
               <li>• Speakers: {source.speakers}</li>
@@ -715,7 +723,7 @@ function AnswerErrorModal({
             </p>
             <button
               onClick={onClose}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              className="px-4 py-2 bg-brand-plum text-white rounded-lg hover:bg-brand-plum-light"
             >
               Close
             </button>
@@ -792,15 +800,15 @@ function AnswerErrorModal({
               value={reporterName}
               onChange={(e) => setReporterName(e.target.value)}
               placeholder="Enter your name"
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900"
             />
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-3 text-sm">
-            <p className="text-blue-800">
+          <div className="bg-brand-plum-lighter rounded-lg p-3 text-sm">
+            <p className="text-brand-plum">
               <span className="font-medium">Context info that will be included:</span>
             </p>
-            <ul className="mt-1 text-blue-700 text-xs space-y-0.5">
+            <ul className="mt-1 text-brand-plum-muted text-xs space-y-0.5">
               <li>• Episode(s): {episodeTitle}</li>
               <li>• Speakers: {speakers}</li>
             </ul>
@@ -873,7 +881,7 @@ function SearchProgress({ progress, streamingText }: { progress: ProgressState; 
         {/* Spinner */}
         <div className="relative mb-6">
           <div className="w-12 h-12 rounded-full border-4 border-gray-200"></div>
-          <div className="absolute top-0 left-0 w-12 h-12 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+          <div className="absolute top-0 left-0 w-12 h-12 rounded-full border-4 border-brand-plum border-t-transparent animate-spin"></div>
         </div>
 
         {/* Current stage */}
@@ -900,14 +908,14 @@ function SearchProgress({ progress, streamingText }: { progress: ProgressState; 
               <div
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                   index <= currentStep
-                    ? 'bg-blue-500 scale-110'
+                    ? 'bg-brand-plum scale-110'
                     : 'bg-gray-200'
                 }`}
               />
               {index < PROGRESS_STEPS.length - 1 && (
                 <div
                   className={`w-8 h-0.5 transition-colors duration-300 ${
-                    index < currentStep ? 'bg-blue-500' : 'bg-gray-200'
+                    index < currentStep ? 'bg-brand-plum' : 'bg-gray-200'
                   }`}
                 />
               )}
@@ -921,7 +929,7 @@ function SearchProgress({ progress, streamingText }: { progress: ProgressState; 
             <span
               key={step}
               className={`w-12 text-center ${
-                index === currentStep ? 'text-blue-500 font-medium' : ''
+                index === currentStep ? 'text-brand-plum font-medium' : ''
               }`}
             >
               {step}
@@ -936,7 +944,7 @@ function SearchProgress({ progress, streamingText }: { progress: ProgressState; 
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {streamingText}
               </ReactMarkdown>
-              <span className="inline-block w-2 h-4 bg-blue-500 animate-pulse ml-1" />
+              <span className="inline-block w-2 h-4 bg-brand-plum animate-pulse ml-1" />
             </article>
           </div>
         )}
