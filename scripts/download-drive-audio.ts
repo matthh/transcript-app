@@ -5,6 +5,7 @@
  *   npm run download-audio              # Scan and download
  *   npm run download-audio -- --dry-run # Just show matches, don't download
  *   npm run download-audio -- --list    # List all folders in Drive
+ *   npm run download-audio -- --episodes 230,239,241 # Download specific episodes
  *
  * Prerequisites:
  *   - Service account key file configured in .env.local
@@ -25,6 +26,22 @@ const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const listOnly = args.includes('--list');
 const verbose = args.includes('--verbose');
+
+function getArgValue(flag: string): string | null {
+  const idx = args.indexOf(flag);
+  if (idx !== -1 && idx + 1 < args.length) return args[idx + 1];
+  const prefixed = args.find(a => a.startsWith(`${flag}=`));
+  if (prefixed) return prefixed.split('=', 2)[1] || null;
+  return null;
+}
+
+const episodesArg = getArgValue('--episodes');
+const episodeOverrides = episodesArg
+  ? episodesArg
+      .split(',')
+      .map(s => parseInt(s.trim(), 10))
+      .filter(n => !Number.isNaN(n))
+  : null;
 
 const MP3_DIR = './mp3s';
 const TRANSCRIPTS_DIR = './transcripts';
@@ -189,6 +206,27 @@ function getEpisodesMissingTranscripts(): EpisodeMissing[] {
     }));
 }
 
+function getEpisodesByNumber(episodes: number[]): EpisodeMissing[] {
+  const metadata = loadEpisodeMetadata();
+  const episodeSet = new Set(episodes);
+
+  const matches = metadata
+    .filter(ep => episodeSet.has(ep.episode))
+    .map(ep => ({
+      episode: ep.episode,
+      film: ep.film,
+      season: ep.season,
+    }));
+
+  const found = new Set(matches.map(m => m.episode));
+  const missing = episodes.filter(n => !found.has(n));
+  if (missing.length > 0) {
+    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.join(', ')}`);
+  }
+
+  return matches;
+}
+
 function normalizeName(name: string): string {
   return name
     .toLowerCase()
@@ -316,9 +354,16 @@ async function main() {
     return;
   }
 
-  // Get episodes missing transcripts
-  const missingEpisodes = getEpisodesMissingTranscripts();
-  console.log(`${missingEpisodes.length} episodes missing transcripts.\n`);
+  // Get episodes to download
+  const missingEpisodes = episodeOverrides
+    ? getEpisodesByNumber(episodeOverrides)
+    : getEpisodesMissingTranscripts();
+
+  if (episodeOverrides) {
+    console.log(`Using explicit episode list (${missingEpisodes.length} found).\n`);
+  } else {
+    console.log(`${missingEpisodes.length} episodes missing transcripts.\n`);
+  }
 
   if (verbose) {
     console.log('Missing episodes:');

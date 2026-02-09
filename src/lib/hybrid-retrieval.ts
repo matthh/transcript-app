@@ -62,6 +62,20 @@ export function getAdaptiveK(classification: ClassificationResult): {
   }
 }
 
+function applyKOverrides(
+  base: { embeddingK: number; bm25K: number; finalK: number },
+  overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>
+): { embeddingK: number; bm25K: number; finalK: number } {
+  if (!overrides) {
+    return base;
+  }
+  return {
+    embeddingK: overrides.embeddingK ?? base.embeddingK,
+    bm25K: overrides.bm25K ?? base.bm25K,
+    finalK: overrides.finalK ?? base.finalK,
+  };
+}
+
 /**
  * Reciprocal Rank Fusion (RRF) to merge results from multiple sources.
  * RRF score = sum(1 / (k + rank)) for each source
@@ -132,7 +146,8 @@ function reciprocalRankFusion(
  */
 export async function hybridRetrieval(
   query: string,
-  classification: ClassificationResult
+  classification: ClassificationResult,
+  overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>
 ): Promise<RetrievalResult[]> {
   // Load vector store and BM25 index in parallel
   const [chunks, bm25Index] = await Promise.all([
@@ -145,7 +160,7 @@ export async function hybridRetrieval(
     return [];
   }
 
-  const { embeddingK, bm25K, finalK } = getAdaptiveK(classification);
+  const { embeddingK, bm25K, finalK } = applyKOverrides(getAdaptiveK(classification), overrides);
 
   // Run embedding search
   const queryEmbedding = await generateEmbedding(query);
@@ -169,7 +184,8 @@ export async function hybridRetrieval(
  */
 export async function embeddingOnlyRetrieval(
   query: string,
-  classification: ClassificationResult
+  classification: ClassificationResult,
+  overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>
 ): Promise<RetrievalResult[]> {
   const chunks = await loadVectorStoreAsync();
 
@@ -177,7 +193,7 @@ export async function embeddingOnlyRetrieval(
     return [];
   }
 
-  const { embeddingK, finalK } = getAdaptiveK(classification);
+  const { embeddingK, finalK } = applyKOverrides(getAdaptiveK(classification), overrides);
 
   const queryEmbedding = await generateEmbedding(query);
   const results = searchSimilar(queryEmbedding, chunks, Math.max(embeddingK, finalK));

@@ -19,20 +19,31 @@ function nowMs(): number {
 }
 
 async function runCase(testCase: PerfCase) {
+  const body = Buffer.from(JSON.stringify({ query: testCase.query }), 'utf-8');
   const start = nowMs();
   const response = await fetch(endpoint, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: testCase.query }),
+    headers: {
+      'Content-Type': 'application/json',
+      'Content-Length': body.length.toString(),
+      Accept: 'application/json',
+    },
+    body,
   });
   const elapsed = nowMs() - start;
 
   if (!response.ok) {
-    const error = await response.text();
-    return { ...testCase, elapsedMs: elapsed, ok: false, error };
+    const errorText = await response.text();
+    return {
+      ...testCase,
+      elapsedMs: elapsed,
+      ok: false,
+      status: response.status,
+      error: errorText.slice(0, 300),
+    };
   }
 
-  return { ...testCase, elapsedMs: elapsed, ok: true };
+  return { ...testCase, elapsedMs: elapsed, ok: true, status: response.status };
 }
 
 async function main() {
@@ -42,7 +53,11 @@ async function main() {
     const result = await runCase(testCase);
     results.push(result);
     const status = result.ok ? '✓' : '✗';
-    console.log(`${status} ${testCase.name}: ${result.elapsedMs}ms`);
+    const statusSuffix = result.ok ? '' : ` (status ${result.status})`;
+    console.log(`${status} ${testCase.name}: ${result.elapsedMs}ms${statusSuffix}`);
+    if (!result.ok) {
+      console.log(`  Error: ${result.error}`);
+    }
   }
 
   const okResults = results.filter((r) => r.ok);

@@ -9,6 +9,7 @@
  *   npm run batch-transcribe -- --dry-run # Preview what would be processed
  *   npm run batch-transcribe -- --status  # Show current progress
  *   npm run batch-transcribe -- --limit=5 # Process only first 5 episodes
+ *   npm run batch-transcribe -- --episodes 230,239,241 # Process specific episodes
  */
 
 import * as fs from 'fs';
@@ -35,6 +36,14 @@ const isDryRun = args.includes('--dry-run');
 const showStatus = args.includes('--status');
 const limitArg = args.find(a => a.startsWith('--limit='));
 const limit = limitArg ? parseInt(limitArg.split('=')[1], 10) : undefined;
+const episodesArg = args.find(a => a.startsWith('--episodes'));
+const explicitEpisodes = episodesArg
+  ? episodesArg
+      .split('=', 2)[1]
+      ?.split(',')
+      .map(s => parseInt(s.trim(), 10))
+      .filter(n => !Number.isNaN(n))
+  : undefined;
 
 interface ProgressEntry {
   episodeNumber: number;
@@ -152,6 +161,19 @@ async function fetchCoverage(): Promise<CoverageResponse> {
   }));
 
   return { episodes };
+}
+
+function filterCoverageByEpisodes(coverage: CoverageResponse, episodes: number[]): CoverageResponse {
+  const episodeSet = new Set(episodes);
+  const filtered = coverage.episodes.filter(ep => episodeSet.has(ep.episode));
+
+  const found = new Set(filtered.map(ep => ep.episode));
+  const missing = episodes.filter(n => !found.has(n));
+  if (missing.length > 0) {
+    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.join(', ')}`);
+  }
+
+  return { episodes: filtered };
 }
 
 function findAvailableMp3s(): Map<number, string> {
@@ -394,13 +416,18 @@ async function main(): Promise<void> {
 
   // Fetch coverage to find episodes needing transcription
   console.log('Fetching coverage data...');
-  const coverage = await fetchCoverage();
+  let coverage = await fetchCoverage();
+  if (explicitEpisodes && explicitEpisodes.length > 0) {
+    coverage = filterCoverageByEpisodes(coverage, explicitEpisodes);
+  }
 
   // Find episodes that need transcription and have MP3s available
   const episodesToProcess: Array<{ episodeNumber: number; mp3Path: string; film: string }> = [];
 
   for (const ep of coverage.episodes) {
-    if (!ep.hasTranscript && mp3Map.has(ep.episode)) {
+    const hasMp3 = mp3Map.has(ep.episode);
+    const shouldProcess = explicitEpisodes ? true : !ep.hasTranscript;
+    if (shouldProcess && hasMp3) {
       episodesToProcess.push({
         episodeNumber: ep.episode,
         mp3Path: mp3Map.get(ep.episode)!,
@@ -417,12 +444,17 @@ async function main(): Promise<void> {
 
   if (toProcess.length === 0) {
     console.log('\nNo episodes to process. Either:');
-    console.log('  - All episodes with MP3s already have transcripts');
+    if (explicitEpisodes) {
+      console.log('  - None of the specified episodes have MP3s in ./mp3s');
+    } else {
+      console.log('  - All episodes with MP3s already have transcripts');
+    }
     console.log('  - No MP3s match episodes in the metadata');
     return;
   }
 
-  console.log(`\n${toProcess.length} episode(s) to process${limit ? ` (limited to ${limit})` : ''}:\n`);
+  const modeNote = explicitEpisodes ? ' (explicit list)' : '';
+  console.log(`\n${toProcess.length} episode(s) to process${limit ? ` (limited to ${limit})` : ''}${modeNote}:\n`);
 
   for (const ep of toProcess) {
     console.log(`  - Episode ${ep.episodeNumber}: ${ep.film}`);

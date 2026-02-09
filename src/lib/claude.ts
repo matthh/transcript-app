@@ -113,12 +113,33 @@ function formatMetadataContext(episodes: EpisodeMetadata[]): string {
     .join('\n\n');
 }
 
+function computeCountSummary(
+  question: string,
+  episodes: EpisodeMetadata[],
+  metadataContext?: MetadataContext
+): string | null {
+  if (metadataContext?.hasMore) {
+    return null;
+  }
+
+  const normalized = question.toLowerCase();
+  const wantsCount = /(how many|what .*movies|which .*movies|what .*films|which .*films|what .*episodes|which .*episodes)/.test(normalized);
+  if (!wantsCount) {
+    return null;
+  }
+
+  const uniqueFilms = new Set(episodes.map((ep) => ep.film)).size;
+  const episodeCount = episodes.length;
+  return `COUNT_SUMMARY: ${uniqueFilms} films across ${episodeCount} episodes.`;
+}
+
 export async function synthesizeHybridAnswer(
   question: string,
   classification: ClassificationResult,
   transcriptChunks: TranscriptChunk[],
   metadataEpisodes: EpisodeMetadata[],
-  metadataContext?: MetadataContext
+  metadataContext?: MetadataContext,
+  tuning?: { model?: string; maxTokens?: number }
 ): Promise<string> {
   const hasTranscripts = transcriptChunks.length > 0;
   const hasMetadata = metadataEpisodes.length > 0;
@@ -136,13 +157,17 @@ export async function synthesizeHybridAnswer(
     truncationNote = `\n\nNOTE: Showing ${metadataContext.returnedCount} of ${metadataContext.totalCount} total matching episodes. The response includes the most recent episodes.`;
   }
 
+  const countSummary = classification.type === 'factual' && hasMetadata
+    ? computeCountSummary(question, metadataEpisodes, metadataContext)
+    : null;
+
   if (classification.type === 'factual' && hasMetadata) {
     sourceDescription = 'episode metadata (structured data about episodes)';
     const countInfo = metadataContext
       ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
       : '';
     contextSection = `EPISODE METADATA${countInfo}:
-${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
+${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}`;
   } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
     // Factual query fell back to transcripts (no metadata matched)
     sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
@@ -174,11 +199,12 @@ ${formatTranscriptContext(transcriptChunks)}`);
     contextSection = parts.join('\n\n---\n\n');
   }
 
-  const systemPrompt = buildSystemPrompt(classification.type, sourceDescription);
-  const maxTokens = getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
+  const systemPrompt = buildSystemPrompt(classification.type, sourceDescription, Boolean(countSummary));
+  const maxTokens = tuning?.maxTokens ?? getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
+  const model = tuning?.model ?? 'claude-sonnet-4-20250514';
 
   const message = await getAnthropic().messages.create({
-    model: 'claude-sonnet-4-20250514',
+    model,
     max_tokens: maxTokens,
     messages: [
       {
@@ -245,7 +271,8 @@ export async function* synthesizeHybridAnswerStreaming(
   classification: ClassificationResult,
   transcriptChunks: TranscriptChunk[],
   metadataEpisodes: EpisodeMetadata[],
-  metadataContext?: MetadataContext
+  metadataContext?: MetadataContext,
+  tuning?: { model?: string; maxTokens?: number }
 ): AsyncGenerator<{ type: 'chunk' | 'done'; text: string }> {
   const hasTranscripts = transcriptChunks.length > 0;
   const hasMetadata = metadataEpisodes.length > 0;
@@ -264,13 +291,17 @@ export async function* synthesizeHybridAnswerStreaming(
     truncationNote = `\n\nNOTE: Showing ${metadataContext.returnedCount} of ${metadataContext.totalCount} total matching episodes. The response includes the most recent episodes.`;
   }
 
+  const countSummary = classification.type === 'factual' && hasMetadata
+    ? computeCountSummary(question, metadataEpisodes, metadataContext)
+    : null;
+
   if (classification.type === 'factual' && hasMetadata) {
     sourceDescription = 'episode metadata (structured data about episodes)';
     const countInfo = metadataContext
       ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
       : '';
     contextSection = `EPISODE METADATA${countInfo}:
-${formatMetadataContext(metadataEpisodes)}${truncationNote}`;
+${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}`;
   } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
     // Factual query fell back to transcripts (no metadata matched)
     sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
@@ -302,11 +333,12 @@ ${formatTranscriptContext(transcriptChunks)}`);
     contextSection = parts.join('\n\n---\n\n');
   }
 
-  const systemPrompt = buildSystemPrompt(classification.type, sourceDescription);
-  const maxTokens = getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
+  const systemPrompt = buildSystemPrompt(classification.type, sourceDescription, Boolean(countSummary));
+  const maxTokens = tuning?.maxTokens ?? getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
+  const model = tuning?.model ?? 'claude-sonnet-4-20250514';
 
   const stream = getAnthropic().messages.stream({
-    model: 'claude-sonnet-4-20250514',
+    model,
     max_tokens: maxTokens,
     messages: [
       {
@@ -336,7 +368,8 @@ Provide a thoughtful answer based on the information above.`,
 
 function buildSystemPrompt(
   queryType: 'factual' | 'interpretive' | 'hybrid',
-  sourceDescription: string
+  sourceDescription: string,
+  hasCountSummary: boolean
 ): string {
   const basePrompt = `You are a helpful assistant that answers questions about the Escape Hatch podcast. You have access to ${sourceDescription}.
 
@@ -379,7 +412,8 @@ This is a FACTUAL query about episode metadata. Provide:
 - IMPORTANT: List ALL matching episodes - do not skip any or summarize. If 10 episodes match, list all 10.
 - Format lists clearly with bullet points or numbered items
 - Use ## headings to organize by year or category if listing many items
-- Verify your count matches the number of items you listed
+- If a COUNT_SUMMARY is provided, use it and do not restate or invent other counts
+- Verify your count matches the number of items you listed when you include counts
 - If no episodes match the criteria, clearly state that (e.g., "No Tim Burton films appear in the episode data")`;
 
     case 'interpretive':

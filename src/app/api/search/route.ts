@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
-import { detectQueryIntent, QueryIntent } from '@/lib/query-intent';
+import { detectQueryIntent } from '@/lib/query-intent';
 import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
 import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
+import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
@@ -55,7 +56,7 @@ let loggedCacheStatus = false;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { query, limit: rawLimit, offset: rawOffset } = body;
+    const { query, limit: rawLimit, offset: rawOffset, variant } = body;
 
     const requestStart = Date.now();
 
@@ -105,10 +106,17 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    const allowVariants = process.env.ALLOW_VARIANTS === '1' || process.env.NODE_ENV !== 'production';
+    const requestedVariant = typeof variant === 'string' ? variant : undefined;
+    let tuning = allowVariants ? getSearchTuning(requestedVariant) : null;
+
     // Step 2: Classify query
     let classification = await classifyQuery(query);
     if (intent.type === 'transcript_only') {
       classification = { ...classification, type: 'interpretive', filters: {} };
+    }
+    if (classification.type === 'interpretive' && !tuning) {
+      tuning = getSearchTuning('fast');
     }
     console.log('Classification result:', JSON.stringify(classification));
 
@@ -176,12 +184,14 @@ export async function POST(request: NextRequest) {
     }
 
     if (shouldSearchTranscripts) {
-      const { finalK } = getAdaptiveK(classification);
+      const baseK = getAdaptiveK(classification);
+      const interpretiveOverrides = classification.type === 'interpretive' ? tuning?.interpretiveK : undefined;
+      const finalK = interpretiveOverrides?.finalK ?? baseK.finalK;
       const hasBM25 = isBM25Available();
       console.log(`Transcript search: K=${finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
 
       // Use hybrid retrieval (embedding + BM25) with adaptive K
-      const results = await hybridRetrieval(query, classification);
+      const results = await hybridRetrieval(query, classification, interpretiveOverrides);
 
       if (results.length > 0) {
         transcriptChunks = results.map((r) => ({
@@ -216,12 +226,20 @@ export async function POST(request: NextRequest) {
       : undefined;
 
     // Step 4: Synthesize answer with Claude
+    const interpretiveTuning = classification.type === 'interpretive'
+      ? {
+          model: tuning?.interpretiveModel,
+          maxTokens: tuning?.interpretiveMaxTokens,
+        }
+      : undefined;
+
     const answer = await synthesizeHybridAnswer(
       query,
       classification,
       transcriptChunks,
       metadataEpisodes,
-      metadataCtx
+      metadataCtx,
+      interpretiveTuning
     );
 
     // Step 5: Build response with pagination metadata
