@@ -63,6 +63,10 @@ export async function POST(request: NextRequest) {
     const transcriptResponse = await client.transcripts.submit({
       audio_url: audioUrl,
       speaker_labels: true,
+      speaker_options: {
+        min_speakers_expected: 6,
+        max_speakers_expected: 10,
+      },
       webhook_url: webhookUrl,
       // Vocabulary boosting for podcast-specific terms
       word_boost: wordBoost,

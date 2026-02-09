@@ -44,6 +44,10 @@ const explicitEpisodes = episodesArg
       .map(s => parseInt(s.trim(), 10))
       .filter(n => !Number.isNaN(n))
   : undefined;
+const minSpeakersArg = args.find(a => a.startsWith('--min-speakers='));
+const maxSpeakersArg = args.find(a => a.startsWith('--max-speakers='));
+const minSpeakers = minSpeakersArg ? parseInt(minSpeakersArg.split('=')[1], 10) : 6;
+const maxSpeakers = maxSpeakersArg ? parseInt(maxSpeakersArg.split('=')[1], 10) : 10;
 
 interface ProgressEntry {
   episodeNumber: number;
@@ -228,9 +232,14 @@ async function uploadAudioToBlob(filePath: string, episodeNumber: number): Promi
 async function startTranscription(audioUrl: string, episodeNumber: number, episodeName: string): Promise<string> {
   const wordBoostList = getWordBoostList(500);
 
+  console.log(`    Speaker range: ${minSpeakers}–${maxSpeakers}`);
   const transcriptResponse = await client.transcripts.submit({
     audio_url: audioUrl,
     speaker_labels: true,
+    speaker_options: {
+      min_speakers_expected: minSpeakers,
+      max_speakers_expected: maxSpeakers,
+    },
     word_boost: wordBoostList,
     boost_param: 'high',
   });

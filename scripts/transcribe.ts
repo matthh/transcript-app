@@ -20,6 +20,8 @@ const OUTPUT_DIR = './transcripts';
 const args = process.argv.slice(2);
 const noBoost = args.includes('--no-boost');
 const maxBoostTerms = parseInt(args.find(a => a.startsWith('--max-boost='))?.split('=')[1] || '500', 10);
+const minSpeakers = parseInt(args.find(a => a.startsWith('--min-speakers='))?.split('=')[1] || '6', 10);
+const maxSpeakers = parseInt(args.find(a => a.startsWith('--max-speakers='))?.split('=')[1] || '10', 10);
 
 interface DialogueEntry {
   name: string;
@@ -86,7 +88,12 @@ async function transcribeFile(
   const transcriptConfig: Parameters<typeof client.transcripts.transcribe>[0] = {
     audio: filePath,
     speaker_labels: true,
+    speaker_options: {
+      min_speakers_expected: minSpeakers,
+      max_speakers_expected: maxSpeakers,
+    },
   };
+  console.log(`  Speaker range: ${minSpeakers}–${maxSpeakers}`);
 
   // Add word boosting if enabled
   if (wordBoostList && wordBoostList.length > 0) {
