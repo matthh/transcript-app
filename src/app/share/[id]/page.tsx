@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadShare, ShareableResult } from '@/lib/share-storage';
+import { formatEpisodeLabel } from '@/lib/episode-format';
 import Link from 'next/link';
 import { MarkdownContent } from './markdown-content';
 
@@ -32,13 +33,13 @@ function stripMarkdown(text: string): string {
 function formatEpisodeLine(share: ShareableResult): string | null {
   const metadata = share.sources.metadata?.[0];
   if (metadata) {
-    return `S${metadata.season}E${metadata.episode} - ${metadata.film}`;
+    return `${formatEpisodeLabel(metadata.season, metadata.episode)} - ${metadata.film}`;
   }
 
   if (share.primaryEpisode) {
     const { film, season, episode } = share.primaryEpisode;
     if (season && episode) {
-      return `S${season}E${episode} - ${film}`;
+      return `${formatEpisodeLabel(season, episode)} - ${film}`;
     }
     if (episode) {
       return `Episode ${episode} - ${film}`;

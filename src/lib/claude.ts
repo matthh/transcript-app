@@ -4,6 +4,7 @@ import {
   EpisodeMetadata,
   ClassificationResult,
 } from '@/types/episode-metadata';
+import { formatEpisodeDescriptor } from './episode-format';
 
 let anthropicClient: Anthropic | null = null;
 
@@ -86,7 +87,7 @@ function formatMetadataContext(episodes: EpisodeMetadata[]): string {
       const parts = [
         `[Episode ${i + 1}]`,
         `Film: ${ep.film}`,
-        `Season ${ep.season}, Episode ${ep.episode}`,
+        formatEpisodeDescriptor(ep.season, ep.episode),
         `Release Date: ${ep.releaseDate}`,
         `Length: ${ep.length}`,
         `Reviewer: ${ep.reviewer}`,

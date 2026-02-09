@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { formatEpisodeLabel } from '@/lib/episode-format';
 
 interface TranscriptSource {
   episodeTitle: string;
@@ -351,7 +352,7 @@ function MetadataCard({ source }: { source: MetadataSource }) {
         <div>
           <h3 className="font-medium text-gray-900">{source.film}</h3>
           <p className="text-sm text-gray-500">
-            S{source.season}E{source.episode} &bull; {source.releaseDate}
+            {formatEpisodeLabel(source.season, source.episode)} &bull; {source.releaseDate}
           </p>
         </div>
       </div>

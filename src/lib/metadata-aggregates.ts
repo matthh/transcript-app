@@ -10,6 +10,7 @@ import {
 } from './metadata-store';
 import { QueryIntent } from './query-intent';
 import { EpisodeMetadata, MetadataSource } from '@/types/episode-metadata';
+import { formatEpisodeLabel } from './episode-format';
 
 function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   const relevantFields: Record<string, string> = {};
@@ -64,7 +65,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     if (!latest) return null;
     const source = episodeToMetadataSource(latest);
     return {
-      answer: `The latest episode is "${latest.film}" (S${latest.season}E${latest.episode}), released ${latest.releaseDate}.`,
+      answer: `The latest episode is "${latest.film}" (${formatEpisodeLabel(latest.season, latest.episode)}), released ${latest.releaseDate}.`,
       sources: { metadata: [source] },
     };
   }
@@ -75,7 +76,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     if (!currentSeason || !latest) return null;
     const source = episodeToMetadataSource(latest);
     return {
-      answer: `The podcast is currently on season ${currentSeason}. The latest episode is "${latest.film}" (S${latest.season}E${latest.episode}).`,
+      answer: `The podcast is currently on season ${currentSeason}. The latest episode is "${latest.film}" (${formatEpisodeLabel(latest.season, latest.episode)}).`,
       sources: { metadata: [source] },
     };
   }
@@ -105,7 +106,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
         return `${sample.year}: No episodes found in metadata.`;
       }
       const ep = sample.episode;
-      return `${sample.year}: ${ep.film} — S${ep.season}E${ep.episode}`;
+      return `${sample.year}: ${ep.film} — ${formatEpisodeLabel(ep.season, ep.episode)}`;
     });
 
     const sources = samples
@@ -125,7 +126,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     const label = fieldLabel(intent.field);
     const source = episodeToMetadataSource(episode);
     return {
-      answer: `The episode with the highest ${label} is "${episode.film}" (S${episode.season}E${episode.episode}) with ${episode[intent.field]} ${label}.`,
+      answer: `The episode with the highest ${label} is "${episode.film}" (${formatEpisodeLabel(episode.season, episode.episode)}) with ${episode[intent.field]} ${label}.`,
       sources: { metadata: [source] },
     };
   }
@@ -137,7 +138,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     const episode = result.episode;
     const source = episodeToMetadataSource(episode);
     return {
-      answer: `The latest episode ("${episode.film}", S${episode.season}E${episode.episode}) has ${result.value} ${label}.`,
+      answer: `The latest episode ("${episode.film}", ${formatEpisodeLabel(episode.season, episode.episode)}) has ${result.value} ${label}.`,
       sources: { metadata: [source] },
     };
   }

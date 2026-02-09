@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { loadShare } from '@/lib/share-storage';
+import { formatEpisodeLabel } from '@/lib/episode-format';
 
 export const runtime = 'nodejs';
 
@@ -43,13 +44,13 @@ function formatEpisodeLine(share: Awaited<ReturnType<typeof loadShare>>): string
 
   const metadata = share.sources.metadata?.[0];
   if (metadata) {
-    return `S${metadata.season}E${metadata.episode} - ${metadata.film}`;
+    return `${formatEpisodeLabel(metadata.season, metadata.episode)} - ${metadata.film}`;
   }
 
   if (share.primaryEpisode) {
     const { film, season, episode } = share.primaryEpisode;
     if (season && episode) {
-      return `S${season}E${episode} - ${film}`;
+      return `${formatEpisodeLabel(season, episode)} - ${film}`;
     }
     if (episode) {
       return `Episode ${episode} - ${film}`;
