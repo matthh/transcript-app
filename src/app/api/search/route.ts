@@ -8,7 +8,6 @@ import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
-import { shouldForceTranscriptSearch } from '@/lib/search-routing';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
@@ -112,14 +111,8 @@ export async function POST(request: NextRequest) {
     const requestedVariant = typeof variant === 'string' ? variant : undefined;
     let tuning = allowVariants ? getSearchTuning(requestedVariant) : null;
 
-    // Step 2: Classify query
-    let classification = await classifyQuery(query);
-    if (intent.type === 'transcript_only') {
-      classification = { ...classification, type: 'interpretive', filters: {} };
-    }
-    if (shouldForceTranscriptSearch(query, classification)) {
-      classification = { ...classification, type: 'interpretive', filters: {} };
-    }
+    // Step 2: Classify query (for filter extraction + synthesis prompt hint)
+    const classification = await classifyQuery(query);
     if (classification.type === 'interpretive' && !tuning) {
       tuning = getSearchTuning('fast');
     }
@@ -129,99 +122,63 @@ export async function POST(request: NextRequest) {
     let transcriptSources: TranscriptSource[] = [];
     let metadataEpisodes: EpisodeMetadata[] = [];
     let metadataSources: MetadataSource[] = [];
-
-    // Step 3: Search based on classification
-    let shouldSearchTranscripts = classification.type === 'interpretive' || classification.type === 'hybrid';
-    if (intent.type === 'transcript_only') {
-      shouldSearchTranscripts = true;
-    }
-
     let metadataTotalCount = 0;
     let metadataHasMore = false;
 
-    // Track if we have an unfiltered result (no meaningful filter applied)
-    let isUnfilteredResult = false;
+    // Step 3: Always search both metadata + transcripts
+    // Metadata search — uses extracted filters to narrow results
+    console.log('Filters:', JSON.stringify(classification.filters));
 
-    if (classification.type === 'factual' || classification.type === 'hybrid') {
-      console.log('Filters:', JSON.stringify(classification.filters));
+    const result = queryEpisodes(classification.filters, {
+      limit,
+      offset,
+      sortBy: 'episode',
+      sortOrder: 'desc',
+    });
 
-      // For factual queries, use client-provided pagination (capped at MAX_LIMIT)
-      const result = queryEpisodes(classification.filters, {
-        limit,
-        offset,
-        sortBy: 'episode',
-        sortOrder: 'desc',
-      });
+    console.log('Query result:', result.returnedCount, 'of', result.totalCount, 'episodes, matched filters:', result.matchedFilters);
 
-      console.log('Query result:', result.returnedCount, 'of', result.totalCount, 'episodes, matched filters:', result.matchedFilters);
-
-      // Check if any meaningful filter was actually applied
-      const filtersRequested = Object.keys(classification.filters).length;
-      const filtersMatched = result.matchedFilters.length;
-
-      // Detect unfiltered results: filters were expected but none matched
-      if (filtersRequested > 0 && filtersMatched === 0) {
-        isUnfilteredResult = true;
-        console.log('Warning: Filters were extracted but none matched available criteria');
-      } else if (filtersMatched === 0 && result.totalCount > 50) {
-        isUnfilteredResult = true;
-        console.log('Warning: No filters applied, returning all episodes');
-      }
-
-      // If unfiltered for a factual query, don't pass all episodes (prevents hallucination)
-      if (isUnfilteredResult && classification.type === 'factual' && intent.type !== 'transcript_only') {
-        metadataEpisodes = [];
-        metadataTotalCount = 0;
-        metadataHasMore = false;
-        // Don't fall back to transcript search for this case
-        shouldSearchTranscripts = false;
-      } else {
-        metadataEpisodes = result.episodes;
-        metadataTotalCount = result.totalCount;
-        metadataHasMore = result.hasMore;
-        metadataSources = metadataEpisodes.map(episodeToMetadataSource);
-      }
-
-      // If factual query found no metadata results, fall back to transcript search
-      if (classification.type === 'factual' && metadataEpisodes.length === 0 && !isUnfilteredResult) {
-        shouldSearchTranscripts = true;
-      }
+    // Only include metadata if meaningful filters matched (avoid passing all 300+ episodes)
+    const filtersRequested = Object.keys(classification.filters).length;
+    const filtersMatched = result.matchedFilters.length;
+    if (filtersMatched > 0 || (filtersRequested === 0 && result.totalCount <= 50)) {
+      metadataEpisodes = result.episodes;
+      metadataTotalCount = result.totalCount;
+      metadataHasMore = result.hasMore;
+      metadataSources = metadataEpisodes.map(episodeToMetadataSource);
     }
 
-    if (shouldSearchTranscripts) {
-      const baseK = getAdaptiveK(classification);
-      const interpretiveOverrides = classification.type === 'interpretive' ? tuning?.interpretiveK : undefined;
-      const finalK = interpretiveOverrides?.finalK ?? baseK.finalK;
-      const hasBM25 = isBM25Available();
-      console.log(`Transcript search: K=${finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
+    // Transcript search — always run
+    const baseK = getAdaptiveK(classification);
+    const interpretiveOverrides = classification.type === 'interpretive' ? tuning?.interpretiveK : undefined;
+    const hasBM25 = isBM25Available();
+    console.log(`Transcript search: K=${baseK.finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
 
-      // Use hybrid retrieval (embedding + BM25) with adaptive K
-      const results = await hybridRetrieval(query, classification, interpretiveOverrides);
+    const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides);
 
-      if (results.length > 0) {
-        transcriptChunks = results.map((r) => ({
-          id: r.chunk.id,
-          text: r.chunk.text,
-          episodeTitle: r.chunk.metadata.episodeTitle,
-          speakers: r.chunk.metadata.speakers.split(', '),
-          startTimestamp: r.chunk.metadata.startTimestamp,
-          endTimestamp: r.chunk.metadata.endTimestamp,
-        }));
+    if (retrievalResults.length > 0) {
+      transcriptChunks = retrievalResults.map((r) => ({
+        id: r.chunk.id,
+        text: r.chunk.text,
+        episodeTitle: r.chunk.metadata.episodeTitle,
+        speakers: r.chunk.metadata.speakers.split(', '),
+        startTimestamp: r.chunk.metadata.startTimestamp,
+        endTimestamp: r.chunk.metadata.endTimestamp,
+      }));
 
-        transcriptSources = results.map((r) => ({
-          episodeTitle: r.chunk.metadata.episodeTitle,
-          speakers: r.chunk.metadata.speakers,
-          startTimestamp: r.chunk.metadata.startTimestamp,
-          endTimestamp: r.chunk.metadata.endTimestamp,
-          text: r.chunk.text,
-          score: r.score,
-        }));
-      }
-
-      console.log(`Found ${transcriptChunks.length} transcript passages`);
+      transcriptSources = retrievalResults.map((r) => ({
+        episodeTitle: r.chunk.metadata.episodeTitle,
+        speakers: r.chunk.metadata.speakers,
+        startTimestamp: r.chunk.metadata.startTimestamp,
+        endTimestamp: r.chunk.metadata.endTimestamp,
+        text: r.chunk.text,
+        score: r.score,
+      }));
     }
 
-    // Step 3: Build metadata context for synthesis
+    console.log(`Found ${transcriptChunks.length} transcript passages`);
+
+    // Build metadata context for synthesis
     const metadataCtx: MetadataContext | undefined = metadataTotalCount > 0
       ? {
           totalCount: metadataTotalCount,

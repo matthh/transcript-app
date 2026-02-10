@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { put } from '@vercel/blob';
 import { Resend } from 'resend';
 
 interface FeedbackEntry {
@@ -74,6 +75,19 @@ export async function POST(request: NextRequest) {
     console.log('=== NEW FEEDBACK ===');
     console.log(JSON.stringify(entry, null, 2));
     console.log('====================');
+
+    // Persist to Vercel Blob for offline analysis
+    const month = entry.timestamp.slice(0, 7); // "2026-02"
+    try {
+      await put(`feedback-log/${month}/${entry.id}.json`, JSON.stringify(entry), {
+        access: 'public',
+        contentType: 'application/json',
+        addRandomSuffix: false,
+      });
+    } catch (blobError) {
+      console.error('Failed to persist feedback to Blob:', blobError);
+      // Don't fail the request if Blob write fails
+    }
 
     // Send email notification
     const resend = getResend();
