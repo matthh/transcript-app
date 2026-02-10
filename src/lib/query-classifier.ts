@@ -220,8 +220,10 @@ Respond with ONLY valid JSON:
     }
   }
 
-  // Heuristic safety net: if LLM missed yearRange but query mentions a specific year, add it
-  if (!filters.yearRange && !filters.decade) {
+  // Heuristic safety net: always set yearRange for specific year mentions.
+  // Safe to combine with decade — queryEpisodes applies both sequentially,
+  // so decade:1980 (1980-1989) + yearRange:1980-1980 correctly narrows to 1980.
+  if (!filters.yearRange) {
     const heuristicYear = extractYearRange(query);
     if (heuristicYear) {
       filters.yearRange = heuristicYear;
