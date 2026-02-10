@@ -194,14 +194,13 @@ export async function POST(request: NextRequest) {
             metadataHasMore = false;
             send('progress', {
               stage: 'metadata_done',
-              message: 'No episodes match the specified criteria',
+              message: 'No metadata match, searching transcripts...',
               totalCount: 0,
               hasMore: false,
-              warning: 'No episodes matched the filter criteria. The database can filter by: film title, decade, season, guest, reviewer, director, cinematographer, actor, or genre.',
             });
-            // DON'T fall back to transcript search for this case - it will just return
-            // irrelevant passages and confuse the user. Let the "no data" message show.
-            shouldSearchTranscripts = false;
+            // Metadata couldn't answer this — fall back to transcript search.
+            // BM25 can find specific words/phrases the user is asking about.
+            shouldSearchTranscripts = true;
           } else {
             metadataEpisodes = result.episodes;
             metadataTotalCount = result.totalCount;

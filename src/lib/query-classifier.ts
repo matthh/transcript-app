@@ -119,6 +119,7 @@ IMPORTANT:
   - "horror movies" → genre: "Horror" (NOT film: "horror")
   - "sci-fi films" → genre: "Science Fiction"
   - "comedy episodes" → genre: "Comedy"
+- Queries about specific words, phrases, or content said IN episodes (e.g., "which episode uses the word X", "when did someone say Y") should be hybrid or interpretive — the answer requires searching transcript text, not metadata
 - Don't extract question words (who, what, which) as entity values
 
 Respond with ONLY valid JSON:

@@ -162,6 +162,16 @@ const cases: RetrievalCase[] = [
     expectMinResults: 3,
   },
 
+  // --- Transcript-content queries (must search transcripts, not just metadata) ---
+  {
+    name: 'Voicemail content findable via transcript search',
+    query: 'Kev voicemail asking about cinematography',
+    classification: HYBRID,
+    expectTextIncludes: ['Kev'],
+    expectMinResults: 2,
+    expectMinDistinctEpisodes: 2,
+  },
+
   // --- Edge cases ---
   {
     name: 'Exact quote retrieval',
