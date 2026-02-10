@@ -6,6 +6,7 @@ export type QueryIntentType =
   | 'metadata_year_range_sample'
   | 'metadata_field_latest'
   | 'metadata_field_max'
+  | 'metadata_tilda'
   | 'transcript_only'
   | 'none';
 
@@ -123,6 +124,18 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent episode')) {
     return { type: 'metadata_latest' };
+  }
+
+  if (
+    normalized.includes('tilda') &&
+    (
+      /\btilda\s+(play|would|should|pick|cast|as)\b/.test(normalized) ||
+      /\bcast\s+tilda\b/.test(normalized) ||
+      /\bwho\s+would\s+tilda\b/.test(normalized) ||
+      /\btilda\s+question\b/.test(normalized)
+    )
+  ) {
+    return { type: 'metadata_tilda' };
   }
 
   return { type: 'none' };

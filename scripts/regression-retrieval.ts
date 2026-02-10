@@ -180,6 +180,13 @@ const cases: RetrievalCase[] = [
     expectMinResults: 1,
   },
   {
+    name: 'Deakins Award mentions',
+    query: 'Deakins Award',
+    classification: INTERPRETIVE,
+    expectMinResults: 1,
+    expectTextIncludes: ['Deakins'],
+  },
+  {
     name: 'Misspelled name still finds results',
     query: 'what did Hatch say about the cinematography',
     classification: INTERPRETIVE,

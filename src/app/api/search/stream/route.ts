@@ -8,12 +8,12 @@ import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { synthesizeHybridAnswerStreaming, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
+import { shouldForceTranscriptSearch } from '@/lib/search-routing';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
   TranscriptSource,
   EpisodeMetadata,
-  ClassificationResult,
 } from '@/types/episode-metadata';
 
 function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
@@ -53,6 +53,8 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
 const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
 let loggedCacheStatus = false;
+
+ 
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
@@ -126,6 +128,9 @@ export async function POST(request: NextRequest) {
         send('progress', { stage: 'classifying', message: 'Analyzing your query...' });
         let classification = await classifyQuery(query);
         if (intent.type === 'transcript_only') {
+          classification = { ...classification, type: 'interpretive', filters: {} };
+        }
+        if (shouldForceTranscriptSearch(query, classification)) {
           classification = { ...classification, type: 'interpretive', filters: {} };
         }
         if (classification.type === 'interpretive' && !tuning) {

@@ -61,6 +61,18 @@ const cases: RegressionCase[] = [
     expectIntent: 'metadata_year_range_sample',
     expectAnswerIncludes: ['movies covered by year', '1980', '1990'],
   },
+  {
+    name: 'Tilda metadata aggregate',
+    query: 'who would tilda play',
+    expectIntent: 'metadata_tilda',
+    expectAnswerIncludes: ['tilda', 'found', 'breakdown'],
+  },
+  {
+    name: 'Tilda casting analysis',
+    query: 'are the hosts of Escape Hatch more likely to cast Tilda as a woman, a man, or an unanimate object',
+    expectIntent: 'metadata_tilda',
+    expectAnswerIncludes: ['found', 'breakdown'],
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {

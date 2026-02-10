@@ -8,6 +8,7 @@ import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
+import { shouldForceTranscriptSearch } from '@/lib/search-routing';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
@@ -52,6 +53,7 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
 const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
 let loggedCacheStatus = false;
+
 
 export async function POST(request: NextRequest) {
   try {
@@ -113,6 +115,9 @@ export async function POST(request: NextRequest) {
     // Step 2: Classify query
     let classification = await classifyQuery(query);
     if (intent.type === 'transcript_only') {
+      classification = { ...classification, type: 'interpretive', filters: {} };
+    }
+    if (shouldForceTranscriptSearch(query, classification)) {
       classification = { ...classification, type: 'interpretive', filters: {} };
     }
     if (classification.type === 'interpretive' && !tuning) {
