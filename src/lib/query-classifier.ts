@@ -230,6 +230,15 @@ Respond with ONLY valid JSON:
     }
   }
 
+  // Remove spurious film filters — LLM sometimes extracts generic words like
+  // "movies", "films", "1980" as film titles when they're not actual titles.
+  if (filters.film) {
+    const generic = /^(movies?|films?|episodes?|all|the|in|from|\d{4}(\s+movies?|\s+films?)?)$/i;
+    if (generic.test(filters.film.trim())) {
+      delete filters.film;
+    }
+  }
+
   return { type, confidence, filters };
 }
 
