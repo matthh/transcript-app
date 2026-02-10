@@ -149,7 +149,7 @@ export async function POST(request: NextRequest) {
         send('progress', { stage: 'metadata', message: 'Searching episode data...' });
         console.log('Filters:', JSON.stringify(classification.filters));
 
-        const result = queryEpisodes(classification.filters, {
+        let result = queryEpisodes(classification.filters, {
           limit,
           offset,
           sortBy: 'episode',
@@ -157,6 +157,17 @@ export async function POST(request: NextRequest) {
         });
 
         console.log('Query result:', result.returnedCount, 'of', result.totalCount, 'episodes, matched filters:', result.matchedFilters);
+
+        // Fallback: if year filters exist but LLM's other filters produced 0 results,
+        // retry with only year-based filters (decade/yearRange)
+        if (result.totalCount === 0 && (classification.filters.yearRange || classification.filters.decade)) {
+          const yearOnlyFilters: typeof classification.filters = {};
+          if (classification.filters.decade) yearOnlyFilters.decade = classification.filters.decade;
+          if (classification.filters.yearRange) yearOnlyFilters.yearRange = classification.filters.yearRange;
+          console.log('Year-filter fallback:', JSON.stringify(yearOnlyFilters));
+          result = queryEpisodes(yearOnlyFilters, { limit, offset, sortBy: 'episode', sortOrder: 'desc' });
+          console.log('Fallback result:', result.returnedCount, 'of', result.totalCount);
+        }
 
         // Only include metadata if meaningful filters matched (avoid passing all 300+ episodes)
         const filtersRequested = Object.keys(classification.filters).length;
