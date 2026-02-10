@@ -35,10 +35,6 @@ interface DialogueBlock {
 
 const PAGE_SIZE = 50;
 
-const DEFAULT_INTRO_SECONDS = 180;
-const DEFAULT_OUTRO_SECONDS = 90;
-const DEFAULT_VOICEMAIL_SECONDS = 15 * 60;
-
 const HOST_SPEAKERS = ['Matt Haitch', 'Jason Goldman'];
 const DEFAULT_VOICEMAILERS = [
   'Corey',
@@ -59,8 +55,6 @@ const CATEGORY_SPEAKERS = [
 const VIEW_MODE_KEY = 'review.viewMode';
 const HIDE_INTERJECTIONS_KEY = 'review.hideInterjections';
 const HIGHLIGHT_SAMPLES_KEY = 'review.highlightSamples';
-const INTRO_SECONDS_KEY = 'review.introSeconds';
-const OUTRO_SECONDS_KEY = 'review.outroSeconds';
 const RECENT_SPEAKERS_KEY = 'review.roster.recent';
 
 const readStored = <T,>(key: string, fallback: T): T => {
@@ -120,13 +114,6 @@ export default function SpeakerMapper({
   const [highlightSamples, setHighlightSamples] = useState<boolean>(() =>
     readStored<boolean>(HIGHLIGHT_SAMPLES_KEY, true)
   );
-  const [introSeconds, setIntroSeconds] = useState<number>(() =>
-    readStored<number>(INTRO_SECONDS_KEY, DEFAULT_INTRO_SECONDS)
-  );
-  const [outroSeconds, setOutroSeconds] = useState<number>(() =>
-    readStored<number>(OUTRO_SECONDS_KEY, DEFAULT_OUTRO_SECONDS)
-  );
-
   // Undo/redo history
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
@@ -365,14 +352,6 @@ export default function SpeakerMapper({
   useEffect(() => {
     writeStored(HIGHLIGHT_SAMPLES_KEY, highlightSamples);
   }, [highlightSamples]);
-
-  useEffect(() => {
-    writeStored(INTRO_SECONDS_KEY, introSeconds);
-  }, [introSeconds]);
-
-  useEffect(() => {
-    writeStored(OUTRO_SECONDS_KEY, outroSeconds);
-  }, [outroSeconds]);
 
   useEffect(() => {
     writeStored(RECENT_SPEAKERS_KEY, recentSpeakers);
@@ -655,24 +634,6 @@ export default function SpeakerMapper({
     [computeVisibleIndices]
   );
 
-  const focusIntro = useCallback(() => {
-    const end = Math.min(totalDuration || introSeconds, introSeconds);
-    applyFocusRange({ start: 0, end }, 'start');
-  }, [applyFocusRange, totalDuration, introSeconds]);
-
-  const focusOutro = useCallback(() => {
-    if (!totalDuration) return;
-    const start = Math.max(0, totalDuration - outroSeconds);
-    applyFocusRange({ start, end: totalDuration }, 'end');
-  }, [applyFocusRange, totalDuration, outroSeconds]);
-
-  const focusVoicemails = useCallback(() => {
-    if (!totalDuration) return;
-    const start = Math.max(0, totalDuration - DEFAULT_VOICEMAIL_SECONDS);
-    applyFocusRange({ start, end: totalDuration }, 'end');
-    setViewMode('blocks');
-  }, [applyFocusRange, totalDuration]);
-
   const clearFocusRange = useCallback(() => {
     applyFocusRange(null, 'start');
   }, [applyFocusRange]);
@@ -777,18 +738,6 @@ export default function SpeakerMapper({
         return;
       }
 
-      if (e.key === 'i' && !activeMappingLabel) {
-        focusIntro();
-        return;
-      }
-      if (e.key === 'o' && !activeMappingLabel) {
-        focusOutro();
-        return;
-      }
-      if (e.key === 'v' && !activeMappingLabel) {
-        focusVoicemails();
-        return;
-      }
       if (e.key === 'b' && !activeMappingLabel) {
         setViewMode((prev) => (prev === 'blocks' ? 'segments' : 'blocks'));
         return;
@@ -828,9 +777,6 @@ export default function SpeakerMapper({
     selectedIndices,
     applyToSelected,
     clearSelection,
-    focusIntro,
-    focusOutro,
-    focusVoicemails,
     setViewMode,
     setHighlightSamples,
     setHideInterjections,
@@ -884,77 +830,6 @@ export default function SpeakerMapper({
             >
               ↷ Redo
             </button>
-          </div>
-        </div>
-
-        {/* Workflow assistant */}
-        <div className="mt-4 p-3 rounded-lg border bg-gray-50">
-          <div className="flex items-center gap-2 flex-wrap">
-            <button
-              type="button"
-              onClick={focusIntro}
-              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
-            >
-              Intro pass (i)
-            </button>
-            <button
-              type="button"
-              onClick={focusOutro}
-              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
-            >
-              Outro pass (o)
-            </button>
-            <button
-              type="button"
-              onClick={focusVoicemails}
-              className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
-            >
-              Voicemail mode (v)
-            </button>
-            {focusRange && (
-              <button
-                type="button"
-                onClick={clearFocusRange}
-                className="px-3 py-1.5 text-sm rounded-md bg-white border hover:bg-gray-100"
-              >
-                Clear focus
-              </button>
-            )}
-            <div className="flex items-center gap-1 text-xs text-gray-500">
-              <label htmlFor="intro-seconds" className="ml-2">Intro sec</label>
-              <input
-                id="intro-seconds"
-                type="number"
-                min={30}
-                max={600}
-                value={introSeconds}
-                onChange={(e) => setIntroSeconds(Number(e.target.value))}
-                className="w-20 text-xs border rounded px-2 py-1"
-              />
-              <label htmlFor="outro-seconds" className="ml-2">Outro sec</label>
-              <input
-                id="outro-seconds"
-                type="number"
-                min={30}
-                max={600}
-                value={outroSeconds}
-                onChange={(e) => setOutroSeconds(Number(e.target.value))}
-                className="w-20 text-xs border rounded px-2 py-1"
-              />
-            </div>
-          </div>
-          <div className="mt-2 flex items-center gap-4 flex-wrap text-xs text-gray-500">
-            {focusRange && (
-              <span>
-                Focus: {secondsToTimestamp(focusRange.start)}–{secondsToTimestamp(focusRange.end)}
-              </span>
-            )}
-            {sounderCandidates.length > 0 && (
-              <span>Sounder: {sounderCandidates.length} auto-labeled</span>
-            )}
-            {totalDuration > 0 && (
-              <span>Total: {secondsToTimestamp(totalDuration)}</span>
-            )}
           </div>
         </div>
 
@@ -1051,6 +926,15 @@ export default function SpeakerMapper({
             >
               Select
             </button>
+            {focusRange && (
+              <button
+                type="button"
+                onClick={clearFocusRange}
+                className="px-2 py-1 text-sm rounded border bg-white hover:bg-gray-100 text-red-600"
+              >
+                Clear focus
+              </button>
+            )}
           </div>
 
           {unassignedCount > 0 && (
@@ -1064,7 +948,7 @@ export default function SpeakerMapper({
           )}
 
           <span className="text-xs text-gray-400">
-            Click to select · Shift+click range · 1-6 assign · Esc cancel · i/o/v focus
+            Click to select · Shift+click range · 1-6 assign · Esc cancel
           </span>
         </div>
       </div>
