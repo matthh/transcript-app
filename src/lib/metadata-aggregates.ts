@@ -6,6 +6,7 @@ import {
   getLatestEpisode,
   getOneEpisodePerYear,
   getTotalEpisodes,
+  loadEpisodeMetadata,
   MetadataFieldKey,
 } from './metadata-store';
 import { QueryIntent } from './query-intent';
@@ -55,6 +56,37 @@ function fieldLabel(field: MetadataFieldKey): string {
       return 'Count';
   }
 }
+
+const NO_TILDA_PATTERNS = [
+  /^n\/a$/i,
+  /^no answer$/i,
+  /^none$/i,
+  /^didn't answer/i,
+  /^didnt answer/i,
+  /no tilda/i,
+  /no tilda segment/i,
+  /voicemail/i,
+];
+
+function isTildaAnswer(value: string | null): value is string {
+  if (!value) return false;
+  const trimmed = value.trim();
+  if (!trimmed) return false;
+  return !NO_TILDA_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+function cleanTildaValue(value: string): string {
+  return value.replace(/\s+/g, ' ').trim();
+}
+
+const TILDA_FIELDS: Array<{ key: 'tildaH' | 'tildaJason' | 'tildaGuest' | 'tildaCorey'; label: string }> = [
+  { key: 'tildaH', label: 'H' },
+  { key: 'tildaJason', label: 'Jason' },
+  { key: 'tildaGuest', label: 'Guest' },
+  { key: 'tildaCorey', label: 'Corey' },
+];
+
+const MALE_ROLE_CUES = /\b(king|prince|mr\.?|sir|lord|baron|duke|father|dad|uncle|son|boy|man|him|his|husband)\b/i;
 
 export function buildMetadataAggregateResponse(intent: QueryIntent): {
   answer: string;
@@ -140,6 +172,73 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     return {
       answer: `The latest episode ("${episode.film}", ${formatEpisodeLabel(episode.season, episode.episode)}) has ${result.value} ${label}.`,
       sources: { metadata: [source] },
+    };
+  }
+
+  if (intent.type === 'metadata_tilda') {
+    const episodes = loadEpisodeMetadata();
+    const withTilda = episodes.filter((episode) =>
+      TILDA_FIELDS.some(({ key }) => isTildaAnswer(episode[key]))
+    );
+
+    if (withTilda.length === 0) {
+      return {
+        answer: 'No Tilda casting picks were found in the metadata.',
+        sources: {},
+      };
+    }
+
+    const sorted = [...withTilda].sort(
+      (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+    );
+
+    const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };
+    const maleExamples: string[] = [];
+    const sampleLines: string[] = [];
+    const sampleSources: MetadataSource[] = [];
+
+    for (const episode of sorted) {
+      const picks = TILDA_FIELDS.flatMap(({ key, label }) => {
+        const value = episode[key];
+        if (!isTildaAnswer(value)) return [];
+        counts[label as keyof typeof counts] += 1;
+        const cleaned = cleanTildaValue(value);
+        if (MALE_ROLE_CUES.test(cleaned) && maleExamples.length < 5 && !maleExamples.includes(cleaned)) {
+          maleExamples.push(cleaned);
+        }
+        return [{ label, value: cleaned }];
+      });
+
+      if (picks.length > 0 && sampleLines.length < 8) {
+        const parts = picks.map((pick) => `${pick.label}: ${pick.value}`);
+        sampleLines.push(`${formatEpisodeLabel(episode.season, episode.episode)} "${episode.film}" — ${parts.join(' · ')}`);
+        sampleSources.push(episodeToMetadataSource(episode));
+      }
+
+      if (sampleLines.length >= 8 && maleExamples.length >= 5) {
+        break;
+      }
+    }
+
+    const totalPicks = counts.H + counts.Jason + counts.Guest + counts.Corey;
+    const breakdown = `Breakdown: H ${counts.H}, Jason ${counts.Jason}, Guest ${counts.Guest}, Corey ${counts.Corey}.`;
+    const maleLine = maleExamples.length > 0
+      ? `Many picks are explicitly male roles (e.g., ${maleExamples.join(', ')}).`
+      : 'Some picks are explicitly male roles.';
+
+    const answer = [
+      `We track "Who would Tilda play?" in episode metadata.`,
+      `Found ${totalPicks} picks across ${withTilda.length} episodes.`,
+      breakdown,
+      maleLine,
+      sampleLines.length ? `Sample picks:\n${sampleLines.join('\n')}` : '',
+    ]
+      .filter(Boolean)
+      .join('\n\n');
+
+    return {
+      answer,
+      sources: sampleSources.length > 0 ? { metadata: sampleSources } : {},
     };
   }
 
