@@ -128,15 +128,11 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if (
     normalized.includes('tilda') &&
-    !normalized.includes('swinton') &&
     (
-      normalized.includes('tilda play') ||
-      normalized.includes('tilda would') ||
-      normalized.includes('tilda cast') ||
-      normalized.includes('tilda should') ||
-      normalized.includes('tilda pick') ||
-      normalized.includes('tilda question') ||
-      normalized.includes('who would tilda')
+      /\btilda\s+(play|would|should|pick|cast|as)\b/.test(normalized) ||
+      /\bcast\s+tilda\b/.test(normalized) ||
+      /\bwho\s+would\s+tilda\b/.test(normalized) ||
+      /\btilda\s+question\b/.test(normalized)
     )
   ) {
     return { type: 'metadata_tilda' };
