@@ -36,6 +36,27 @@ const DECADE_PATTERNS = [
 const SEASON_PATTERN = /\bseason\s*(\d+)\b/i;
 
 /**
+ * Extract yearRange from specific year mentions (not decades).
+ * Handles "made in 1980", "from 1985 to 1995", "1985-1995".
+ */
+function extractYearRange(query: string): { min: number; max: number } | null {
+  // Range: "from 1985 to 1995" or "1985-1995"
+  const rangeMatch = query.match(/\b(19[0-9]{2}|20[0-2][0-9])\s*(?:to|-)\s*(19[0-9]{2}|20[0-2][0-9])\b/i);
+  if (rangeMatch) {
+    return { min: parseInt(rangeMatch[1]), max: parseInt(rangeMatch[2]) };
+  }
+
+  // Single year not followed by "s" (which would be a decade): "in 1980", "made in 1980"
+  const yearMatch = query.match(/\b(19[0-9]{2}|20[0-2][0-9])\b(?!s)/i);
+  if (yearMatch) {
+    const year = parseInt(yearMatch[1]);
+    return { min: year, max: year };
+  }
+
+  return null;
+}
+
+/**
  * Classification logging for offline tuning.
  * In production, this could write to a database or analytics service.
  */
@@ -112,7 +133,19 @@ Extract filters if present (leave out if not mentioned):
 - actor: Actor/actress name (e.g., "Tom Hanks", "Sigourney Weaver")
 - genre: Film genre (e.g., "horror", "sci-fi", "comedy", "action")
 
-IMPORTANT:
+PRIORITY RULES (apply these BEFORE general classification):
+1. "what episode does [person] [action]" → interpretive. The word "episode" does NOT make it factual when asking about what someone did/said/performed.
+   - "what episode does Paul Atreides Nutz do his Desus and Mero bit" → interpretive
+   - "which episode does Kev ask about cinematography" → interpretive
+2. Queries about specific words, phrases, or content said IN episodes → interpretive or hybrid (requires transcript search)
+   - "which episode uses the word dingus" → interpretive
+   - "when did someone say lead paint chips" → interpretive
+3. Voicemailer/caller names and their content → interpretive or hybrid (found in transcripts, not metadata)
+   - "when did a caller say AKA a bunch of times" → interpretive
+4. "what does [person] do" questions about non-metadata topics → interpretive
+   - "what does Rosie do for a living" → interpretive
+
+GENERAL RULES:
 - Short queries like "Proto episodes" or "Dune" are typically factual (looking for episode list)
 - Questions about "what they said/thought/felt" are interpretive
 - Queries about directors, actors, or cinematographers are typically factual (e.g., "Tim Burton movies" → director filter)
@@ -120,11 +153,6 @@ IMPORTANT:
   - "horror movies" → genre: "Horror" (NOT film: "horror")
   - "sci-fi films" → genre: "Science Fiction"
   - "comedy episodes" → genre: "Comedy"
-- Queries about specific words, phrases, or content said IN episodes (e.g., "which episode uses the word X", "when did someone say Y") should be hybrid or interpretive — the answer requires searching transcript text, not metadata
-- Queries about specific voicemailer names, caller content, or what someone "did" or "does" in an episode need transcript search → interpretive or hybrid. Examples:
-  - "what episode does Paul Atreides Nutz do his bit" → interpretive (voicemailer content)
-  - "when did a caller say AKA a bunch of times" → interpretive (transcript content)
-  - "what does Rosie do for a living" → interpretive (discussed in transcripts)
 - Don't extract question words (who, what, which) as entity values
 
 Respond with ONLY valid JSON:
@@ -192,6 +220,14 @@ Respond with ONLY valid JSON:
     }
   }
 
+  // Heuristic safety net: if LLM missed yearRange but query mentions a specific year, add it
+  if (!filters.yearRange && !filters.decade) {
+    const heuristicYear = extractYearRange(query);
+    if (heuristicYear) {
+      filters.yearRange = heuristicYear;
+    }
+  }
+
   return { type, confidence, filters };
 }
 
@@ -206,6 +242,14 @@ function extractSimpleFilters(query: string): QueryFilters {
     if (match) {
       filters.decade = extract(match);
       break;
+    }
+  }
+
+  // If no decade matched, try specific year
+  if (!filters.decade) {
+    const yearRange = extractYearRange(query);
+    if (yearRange) {
+      filters.yearRange = yearRange;
     }
   }
 

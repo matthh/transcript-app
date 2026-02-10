@@ -408,6 +408,8 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 4. If asked about something not in the data, do NOT make up plausible-sounding answers
 5. When listing episodes from METADATA, only list ones that appear in the EPISODE METADATA section
 6. When using TRANSCRIPTS, you CAN extract factual information mentioned in the conversation (e.g., if hosts discuss covering a Tim Burton film, you can report that)
+7. When transcript excerpts are provided, CAREFULLY search through ALL of them for the specific words, phrases, names, or content the user is asking about. Only conclude "I don't have information" after verifying the content is not present in ANY excerpt.
+8. If the provided excerpts are related to the query topic but don't directly answer the question, describe what you DID find rather than just saying you don't have the information. Partial answers are better than no answer.
 
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
