@@ -54,11 +54,18 @@ const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
 let loggedCacheStatus = false;
 
+const QUICK_SYNTHESIS = {
+  maxChunks: 4,
+  model: 'claude-haiku-4-5-20251001',
+  maxTokens: 700,
+};
+
  
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { query, limit: rawLimit, offset: rawOffset, variant } = body;
+  const { query, limit: rawLimit, offset: rawOffset, variant, depth: rawDepth } = body;
+  const depth: 'quick' | 'deep' = rawDepth === 'deep' ? 'deep' : 'quick';
 
   if (!query || typeof query !== 'string') {
     return new Response(JSON.stringify({ error: 'Query is required' }), {
@@ -127,7 +134,7 @@ export async function POST(request: NextRequest) {
         // Step 1: Classify query (for filter extraction + synthesis prompt hint)
         send('progress', { stage: 'classifying', message: 'Analyzing your query...' });
         const classification = await classifyQuery(query);
-        if (classification.type === 'interpretive' && !tuning) {
+        if (classification.type === 'interpretive' && !tuning && depth !== 'deep') {
           tuning = getSearchTuning('fast');
         }
         console.log('Classification result:', JSON.stringify(classification));
@@ -266,20 +273,24 @@ export async function POST(request: NextRequest) {
         let answer = '';
         let chunkCount = 0;
 
-        const interpretiveTuning = classification.type === 'interpretive'
-          ? {
-              model: tuning?.interpretiveModel,
-              maxTokens: tuning?.interpretiveMaxTokens,
-            }
-          : undefined;
+        // Quick mode: fewer chunks + fast model; Deep mode: full synthesis
+        const synthesisChunks = depth === 'quick'
+          ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
+          : transcriptChunks;
+
+        const synthesistuning = depth === 'quick'
+          ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
+          : classification.type === 'interpretive'
+            ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
+            : undefined;
 
         for await (const chunk of synthesizeHybridAnswerStreaming(
           query,
           classification,
-          transcriptChunks,
+          synthesisChunks,
           metadataEpisodes,
           metadataCtx,
-          interpretiveTuning
+          synthesistuning
         )) {
           if (chunk.type === 'chunk') {
             chunkCount++;
@@ -308,6 +319,7 @@ export async function POST(request: NextRequest) {
         send('complete', {
           answer,
           queryType: classification.type,
+          canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
             metadata: metadataSources.length > 0 ? metadataSources : undefined,

@@ -6,7 +6,8 @@ const timelineSteps = [
   'Intent check (fast metadata answers)',
   'Query classification (factual / interpretive / hybrid)',
   'Data source selection (metadata, transcripts, or both)',
-  'Answer synthesis with citations + timestamps',
+  'Quick answer (fast model, top results)',
+  'Deeper analysis (full model, all results \u2014 on demand)',
 ];
 
 export default function QueryJourneyPage() {
@@ -48,21 +49,25 @@ export default function QueryJourneyPage() {
             This shows the high‑level flow from question to answer.
           </p>
           <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-4 overflow-x-auto">
-            <svg width="900" height="220" viewBox="0 0 900 220" className="min-w-[720px]">
+            <svg width="900" height="260" viewBox="0 0 900 260" className="min-w-[720px]">
               <defs>
                 <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                   <path d="M0,0 L10,3 L0,6 Z" fill="#2563eb" />
                 </marker>
+                <marker id="arrow-dashed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <path d="M0,0 L10,3 L0,6 Z" fill="#7c3aed" />
+                </marker>
               </defs>
               {[
-                { x: 20, y: 20, w: 160, h: 50, label: 'User question' },
-                { x: 220, y: 20, w: 200, h: 50, label: 'Intent check' },
-                { x: 460, y: 20, w: 200, h: 50, label: 'Classify question' },
-                { x: 700, y: 20, w: 180, h: 50, label: 'Pick data sources' },
-                { x: 460, y: 130, w: 200, h: 50, label: 'Answer synthesis' },
+                { x: 20, y: 20, w: 160, h: 50, label: 'User question', stroke: '#cbd5f5' },
+                { x: 220, y: 20, w: 200, h: 50, label: 'Intent check', stroke: '#cbd5f5' },
+                { x: 460, y: 20, w: 200, h: 50, label: 'Classify question', stroke: '#cbd5f5' },
+                { x: 700, y: 20, w: 180, h: 50, label: 'Pick data sources', stroke: '#cbd5f5' },
+                { x: 380, y: 120, w: 220, h: 50, label: 'Quick answer (Haiku)', stroke: '#93c5fd' },
+                { x: 380, y: 200, w: 220, h: 50, label: 'Deeper analysis (Sonnet)', stroke: '#c4b5fd' },
               ].map((box) => (
                 <g key={box.label}>
-                  <rect x={box.x} y={box.y} width={box.w} height={box.h} rx="10" fill="#ffffff" stroke="#cbd5f5" />
+                  <rect x={box.x} y={box.y} width={box.w} height={box.h} rx="10" fill="#ffffff" stroke={box.stroke} />
                   <text x={box.x + box.w / 2} y={box.y + 30} textAnchor="middle" fontSize="12" fill="#1f2937">
                     {box.label}
                   </text>
@@ -71,8 +76,10 @@ export default function QueryJourneyPage() {
               <line x1="180" y1="45" x2="220" y2="45" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
               <line x1="420" y1="45" x2="460" y2="45" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
               <line x1="660" y1="45" x2="700" y2="45" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
-              <line x1="560" y1="70" x2="560" y2="130" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
-              <text x="280" y="90" fontSize="10" fill="#6b7280">If metadata question → quick answer</text>
+              <line x1="490" y1="70" x2="490" y2="120" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
+              <line x1="490" y1="170" x2="490" y2="200" stroke="#7c3aed" strokeWidth="2" strokeDasharray="6 3" markerEnd="url(#arrow-dashed)" />
+              <text x="280" y="100" fontSize="10" fill="#6b7280">If metadata question, answer immediately</text>
+              <text x="510" y="190" fontSize="10" fill="#7c3aed">User clicks &quot;Show deeper analysis&quot;</text>
             </svg>
           </div>
         </section>
@@ -110,10 +117,20 @@ export default function QueryJourneyPage() {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-gray-900">4) Answer synthesis</h2>
+            <h2 className="text-xl font-semibold text-gray-900">4) Quick answer</h2>
             <p className="mt-2 text-gray-700">
-              The final response is assembled from the best matches, with citations and timestamps
-              so readers can jump to the source.
+              A fast answer is generated using a lightweight model (Haiku) and the top 4 transcript
+              passages. This typically arrives in 5-10 seconds. All retrieved sources are still
+              shown below the answer so you can browse what was found.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900">5) Deeper analysis (on demand)</h2>
+            <p className="mt-2 text-gray-700">
+              If more transcript passages were found than the quick answer used, a
+              &ldquo;Show deeper analysis&rdquo; button appears. Clicking it runs a second pass
+              with a more powerful model (Sonnet) and all retrieved passages, producing a richer,
+              more comprehensive answer. This takes longer (15-30 seconds) but draws on more evidence.
             </p>
           </div>
         </section>
@@ -124,10 +141,13 @@ export default function QueryJourneyPage() {
             This is a slightly more technical view of which systems are involved, without diving into code.
           </p>
           <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-4 overflow-x-auto">
-            <svg width="980" height="260" viewBox="0 0 980 260" className="min-w-[760px]">
+            <svg width="980" height="300" viewBox="0 0 980 300" className="min-w-[760px]">
               <defs>
                 <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                   <path d="M0,0 L10,3 L0,6 Z" fill="#0f766e" />
+                </marker>
+                <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <path d="M0,0 L10,3 L0,6 Z" fill="#7c3aed" />
                 </marker>
               </defs>
               {[
@@ -138,7 +158,8 @@ export default function QueryJourneyPage() {
                 { x: 220, y: 130, w: 170, h: 50, label: 'Metadata store' },
                 { x: 430, y: 130, w: 170, h: 50, label: 'Vector store' },
                 { x: 640, y: 130, w: 170, h: 50, label: 'BM25 index' },
-                { x: 820, y: 130, w: 140, h: 50, label: 'Answer synthesis' },
+                { x: 820, y: 100, w: 140, h: 50, label: 'Quick (Haiku)' },
+                { x: 820, y: 210, w: 140, h: 50, label: 'Deep (Sonnet)' },
               ].map((box) => (
                 <g key={box.label}>
                   <rect x={box.x} y={box.y} width={box.w} height={box.h} rx="10" fill="#ffffff" stroke="#99f6e4" />
@@ -155,7 +176,9 @@ export default function QueryJourneyPage() {
               <line x1="305" y1="70" x2="305" y2="130" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
               <line x1="390" y1="155" x2="430" y2="155" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
               <line x1="600" y1="155" x2="640" y2="155" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
-              <line x1="810" y1="155" x2="820" y2="155" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
+              <line x1="810" y1="140" x2="820" y2="135" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
+              <line x1="890" y1="150" x2="890" y2="210" stroke="#7c3aed" strokeWidth="2" strokeDasharray="6 3" markerEnd="url(#arrow3)" />
+              <text x="900" y="185" fontSize="10" fill="#7c3aed">on demand</text>
             </svg>
           </div>
           <div className="mt-6 grid gap-3 text-gray-700 md:grid-cols-2">
@@ -192,8 +215,12 @@ export default function QueryJourneyPage() {
               <p className="mt-1">Exact‑word search across transcript chunks.</p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
-              <h3 className="font-semibold text-gray-900">Answer synthesis</h3>
-              <p className="mt-1">Builds the final response with citations and timestamps.</p>
+              <h3 className="font-semibold text-gray-900">Quick synthesis (Haiku)</h3>
+              <p className="mt-1">Builds a fast answer from the top 4 passages using a lightweight model.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Deep synthesis (Sonnet)</h3>
+              <p className="mt-1">On demand: re-synthesizes using all passages with a more powerful model.</p>
             </div>
           </div>
         </section>
@@ -201,13 +228,64 @@ export default function QueryJourneyPage() {
         <section className="mt-12">
           <h2 className="text-xl font-semibold text-gray-900">Quick example</h2>
           <div className="mt-3 rounded-lg border border-gray-200 bg-gray-50 p-4 text-gray-700">
-            <p className="font-semibold">Question: “What did the hosts think about <em>Alien</em>?”</p>
+            <p className="font-semibold">Question: &ldquo;What did the hosts think about <em>Alien</em>?&rdquo;</p>
             <ul className="mt-2 list-disc pl-5 space-y-1">
               <li>Intent check: not a simple metadata question</li>
               <li>Classification: interpretive</li>
-              <li>Data sources: transcripts (hybrid search)</li>
-              <li>Answer: summary + cited quotes + timestamps</li>
+              <li>Data sources: transcripts (hybrid search) &mdash; finds 12 relevant passages</li>
+              <li>Quick answer (~8s): Haiku summarizes the top 4 passages with quotes</li>
+              <li>Deeper analysis (on demand, ~25s): Sonnet uses all 12 passages for a richer answer</li>
             </ul>
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold text-gray-900">How we test this</h2>
+          <p className="mt-2 text-gray-600">
+            Search quality is tricky to test because answers are generated by an LLM. We use a
+            combination of automated eval and manual spot-checks.
+          </p>
+          <div className="mt-4 space-y-4">
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Eval suite (37 cases)</h3>
+              <p className="mt-1 text-gray-700">
+                A dataset of representative queries with assertions: expected text in the answer,
+                text that should <em>not</em> appear, expected source episodes, classification type,
+                and minimum source counts. The suite runs end-to-end against the live SSE endpoint,
+                so it tests the full pipeline from classification through retrieval and synthesis.
+              </p>
+              <p className="mt-2 text-gray-700">
+                Cases are tagged (e.g. <code className="text-sm bg-gray-100 px-1 rounded">interpretive</code>,
+                {' '}<code className="text-sm bg-gray-100 px-1 rounded">voicemail</code>,
+                {' '}<code className="text-sm bg-gray-100 px-1 rounded">factual</code>) so we
+                can run targeted subsets when changing a specific area.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">A/B comparison mode</h3>
+              <p className="mt-1 text-gray-700">
+                The eval harness supports <code className="text-sm bg-gray-100 px-1 rounded">--baseline</code> and
+                {' '}<code className="text-sm bg-gray-100 px-1 rounded">--candidate</code> flags to run the same
+                queries against two different deployments and compare pass rates, latencies, and
+                answer quality side by side.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Feedback loop</h3>
+              <p className="mt-1 text-gray-700">
+                Users can rate answers as good or bad. Bad-rated queries are logged, and a script
+                converts them into eval case skeletons so the dataset grows from real usage patterns.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Quick vs deep validation</h3>
+              <p className="mt-1 text-gray-700">
+                The eval suite defaults to quick mode (the user-facing default). We verify that
+                quick answers still pass the same quality assertions. The 2 cases that currently
+                fail in quick mode are niche retrieval queries where 4 passages aren&apos;t enough
+                &mdash; exactly the scenario where &ldquo;Show deeper analysis&rdquo; exists.
+              </p>
+            </div>
           </div>
         </section>
       </div>

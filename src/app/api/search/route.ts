@@ -53,11 +53,18 @@ const MAX_LIMIT = 500;
 const DEFAULT_LIMIT = 100;
 let loggedCacheStatus = false;
 
+const QUICK_SYNTHESIS = {
+  maxChunks: 4,
+  model: 'claude-haiku-4-5-20251001',
+  maxTokens: 700,
+};
+
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { query, limit: rawLimit, offset: rawOffset, variant } = body;
+    const { query, limit: rawLimit, offset: rawOffset, variant, depth: rawDepth } = body;
+    const depth: 'quick' | 'deep' = rawDepth === 'deep' ? 'deep' : 'quick';
 
     const requestStart = Date.now();
 
@@ -113,7 +120,7 @@ export async function POST(request: NextRequest) {
 
     // Step 2: Classify query (for filter extraction + synthesis prompt hint)
     const classification = await classifyQuery(query);
-    if (classification.type === 'interpretive' && !tuning) {
+    if (classification.type === 'interpretive' && !tuning && depth !== 'deep') {
       tuning = getSearchTuning('fast');
     }
     console.log('Classification result:', JSON.stringify(classification));
@@ -202,20 +209,24 @@ export async function POST(request: NextRequest) {
       : undefined;
 
     // Step 4: Synthesize answer with Claude
-    const interpretiveTuning = classification.type === 'interpretive'
-      ? {
-          model: tuning?.interpretiveModel,
-          maxTokens: tuning?.interpretiveMaxTokens,
-        }
-      : undefined;
+    // Quick mode: fewer chunks + fast model; Deep mode: full synthesis
+    const synthesisChunks = depth === 'quick'
+      ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
+      : transcriptChunks;
+
+    const synthesisTuning = depth === 'quick'
+      ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
+      : classification.type === 'interpretive'
+        ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
+        : undefined;
 
     let answer = await synthesizeHybridAnswer(
       query,
       classification,
-      transcriptChunks,
+      synthesisChunks,
       metadataEpisodes,
       metadataCtx,
-      interpretiveTuning
+      synthesisTuning
     );
 
     if (transcriptTimedOut && metadataTotalCount > 0) {
@@ -227,6 +238,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       answer,
       queryType: classification.type,
+      canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
       sources: {
         transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
         metadata: metadataSources.length > 0 ? metadataSources : undefined,

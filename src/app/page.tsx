@@ -31,6 +31,7 @@ type QueryType = 'factual' | 'interpretive' | 'hybrid';
 interface SearchResponse {
   answer: string;
   queryType: QueryType;
+  canDeepen?: boolean;
   sources: {
     transcripts?: TranscriptSource[];
     metadata?: MetadataSource[];
@@ -51,6 +52,8 @@ export default function Home() {
   const [streamingText, setStreamingText] = useState('');
   const [result, setResult] = useState<SearchResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [deepening, setDeepening] = useState(false);
+  const [deepStreamingText, setDeepStreamingText] = useState('');
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,6 +63,8 @@ export default function Home() {
     setError(null);
     setResult(null);
     setStreamingText('');
+    setDeepening(false);
+    setDeepStreamingText('');
     setSearchedQuery(query);
     setProgress({ stage: 'starting', message: 'Starting search...' });
 
@@ -67,7 +72,7 @@ export default function Home() {
       const response = await fetch('/api/search/stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query }),
+        body: JSON.stringify({ query, depth: 'quick' }),
       });
 
       if (!response.ok) {
@@ -122,6 +127,68 @@ export default function Home() {
     }
   };
 
+  const handleDeepen = async () => {
+    if (!searchedQuery.trim()) return;
+
+    setDeepening(true);
+    setDeepStreamingText('');
+
+    try {
+      const response = await fetch('/api/search/stream', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: searchedQuery, depth: 'deep' }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Deep analysis failed');
+      }
+
+      const reader = response.body?.getReader();
+      if (!reader) throw new Error('No response body');
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let eventType = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (line.startsWith('event: ')) {
+            eventType = line.slice(7).trim();
+          } else if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.slice(6));
+
+              if (eventType === 'chunk') {
+                setDeepStreamingText((prev) => prev + data.text);
+              } else if (eventType === 'complete') {
+                setResult(data);
+                setDeepStreamingText('');
+              } else if (eventType === 'error') {
+                throw new Error(data.message);
+              }
+            } catch (parseErr) {
+              if (parseErr instanceof Error && parseErr.message.startsWith('Deep analysis failed')) throw parseErr;
+              console.error('Failed to parse SSE data:', line, parseErr);
+            }
+          }
+        }
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Deep analysis failed');
+    } finally {
+      setDeepening(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-brand-dark to-brand-plum">
@@ -172,7 +239,13 @@ export default function Home() {
 
         {result && (
           <div className="space-y-8">
-            <AnswerCard result={result} query={searchedQuery} />
+            <AnswerCard
+              result={result}
+              query={searchedQuery}
+              onDeepen={handleDeepen}
+              deepening={deepening}
+              deepStreamingText={deepStreamingText}
+            />
 
             {result.sources.metadata && result.sources.metadata.length > 0 && (
               <div>
@@ -250,7 +323,13 @@ function QueryTypeBadge({ type }: { type: QueryType }) {
   );
 }
 
-function AnswerCard({ result, query }: { result: SearchResponse; query: string }) {
+function AnswerCard({ result, query, onDeepen, deepening, deepStreamingText }: {
+  result: SearchResponse;
+  query: string;
+  onDeepen: () => void;
+  deepening: boolean;
+  deepStreamingText: string;
+}) {
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [selectedText, setSelectedText] = useState('');
   const [shareStatus, setShareStatus] = useState<'idle' | 'sharing' | 'copied' | 'error'>('idle');
@@ -331,16 +410,41 @@ function AnswerCard({ result, query }: { result: SearchResponse; query: string }
             {result.answer}
           </ReactMarkdown>
         </article>
-        {combinedSource && (
-          <div className="mt-4 pt-4 border-t border-gray-100">
+        {deepening && deepStreamingText && (
+          <div className="mt-4 pt-4 border-t border-gray-200">
+            <p className="text-xs font-medium text-gray-500 mb-2">Deeper analysis:</p>
+            <article className="prose prose-sm prose-slate prose-headings:text-gray-900 max-w-none">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {deepStreamingText}
+              </ReactMarkdown>
+              <span className="inline-block w-2 h-4 bg-brand-plum animate-pulse ml-1" />
+            </article>
+          </div>
+        )}
+        <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-4">
+          {result.canDeepen && !deepening && (
+            <button
+              onClick={onDeepen}
+              className="text-sm text-brand-plum hover:text-brand-plum-light font-medium transition-colors"
+            >
+              Show deeper analysis
+            </button>
+          )}
+          {deepening && !deepStreamingText && (
+            <span className="text-sm text-gray-500 flex items-center gap-2">
+              <span className="inline-block w-3 h-3 border-2 border-brand-plum border-t-transparent rounded-full animate-spin" />
+              Generating deeper analysis...
+            </span>
+          )}
+          {combinedSource && (
             <button
               onClick={handleReportError}
-              className="text-xs text-gray-400 hover:text-red-500 transition-colors"
+              className="text-xs text-gray-400 hover:text-red-500 transition-colors ml-auto"
             >
               Bad transcription?
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
       {showErrorModal && combinedSource && (
