@@ -31,22 +31,20 @@ const METADATA_CUES = [
 ];
 
 export function shouldForceTranscriptSearch(query: string, classification: ClassificationResult): boolean {
-  if (classification.type !== 'factual') return false;
-  if (Object.keys(classification.filters).length > 0) return false;
-
   const normalized = query.toLowerCase();
 
   if (METADATA_CUES.some((cue) => normalized.includes(cue))) {
     return false;
   }
 
-  if (TRANSCRIPT_FALLBACK_TRIGGERS.some((cue) => normalized.includes(cue))) {
+  const hasTranscriptCue = TRANSCRIPT_FALLBACK_TRIGGERS.some((cue) => normalized.includes(cue))
+    || /".+?"/.test(query);
+
+  if (hasTranscriptCue) {
     return true;
   }
 
-  if (/".+?"/.test(query)) {
-    return true;
-  }
+  if (classification.type !== 'factual') return false;
 
   return false;
 }

@@ -20,6 +20,12 @@ const FACTUAL_WITH_FILTER: ClassificationResult = {
   filters: { film: 'Alien' },
 };
 
+const FACTUAL_WITH_CINEMATOGRAPHER: ClassificationResult = {
+  type: 'factual',
+  confidence: 0.9,
+  filters: { cinematographer: 'Roger Deakins' },
+};
+
 const INTERPRETIVE: ClassificationResult = {
   type: 'interpretive',
   confidence: 0.9,
@@ -32,6 +38,18 @@ const cases: RoutingCase[] = [
     query: 'Deakins Award',
     classification: FACTUAL,
     expectForce: true,
+  },
+  {
+    name: 'Force transcript even with filters if transcript cue present',
+    query: 'Deakins Award',
+    classification: FACTUAL_WITH_CINEMATOGRAPHER,
+    expectForce: true,
+  },
+  {
+    name: 'Metadata cue overrides transcript cue',
+    query: 'Deakins Award episodes',
+    classification: FACTUAL,
+    expectForce: false,
   },
   {
     name: 'Do not force transcript for metadata question',
