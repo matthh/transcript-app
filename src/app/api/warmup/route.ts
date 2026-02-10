@@ -16,26 +16,25 @@ export async function GET(request: NextRequest) {
 
   const startedAt = Date.now();
 
-  const vectorStart = Date.now();
-  const vectorStore = await loadVectorStoreAsync();
-  const vectorMs = Date.now() - vectorStart;
-
-  const bm25Start = Date.now();
-  const bm25Index = await loadBM25IndexAsync();
-  const bm25Ms = Date.now() - bm25Start;
+  // Load both in parallel (saves ~50% on cold start vs sequential)
+  const vectorPromise = loadVectorStoreAsync().then(r => ({ data: r, ms: Date.now() - startedAt }));
+  const bm25Promise = loadBM25IndexAsync().then(r => ({ data: r, ms: Date.now() - startedAt }));
+  const [vectorResult, bm25Result] = await Promise.all([vectorPromise, bm25Promise]);
 
   const totalMs = Date.now() - startedAt;
+  const vectorStore = vectorResult.data;
+  const bm25Index = bm25Result.data;
 
   return NextResponse.json({
     ok: true,
     totalMs,
     vectorStore: {
       chunks: vectorStore.length,
-      ms: vectorMs,
+      ms: vectorResult.ms,
     },
     bm25: {
       docs: bm25Index?.numDocs || 0,
-      ms: bm25Ms,
+      ms: bm25Result.ms,
     },
   });
 }

@@ -204,7 +204,17 @@ export async function POST(request: NextRequest) {
           message: hasBM25 ? 'Running hybrid search (embedding + lexical)...' : 'Generating embedding...',
         });
 
-        const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides);
+        const isColdStart = !isVectorStoreLoaded();
+        const retrievalOptions = isColdStart ? { timeoutMs: 15000 } : undefined;
+        const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides, retrievalOptions);
+        const transcriptTimedOut = isColdStart && retrievalResults.length === 0;
+
+        if (transcriptTimedOut) {
+          send('progress', {
+            stage: 'transcripts_timeout',
+            message: 'Transcript search is still loading — using metadata results',
+          });
+        }
 
         if (retrievalResults.length > 0) {
           send('progress', {
@@ -285,6 +295,12 @@ export async function POST(request: NextRequest) {
           } else if (chunk.type === 'done') {
             answer = chunk.text;
           }
+        }
+
+        if (transcriptTimedOut && metadataTotalCount > 0) {
+          const note = '\n\n---\n*Transcript search is still loading — showing metadata results. Try again for full search.*';
+          answer += note;
+          send('chunk', { text: note });
         }
 
         // Step 4: Send final result

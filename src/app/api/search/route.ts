@@ -165,7 +165,10 @@ export async function POST(request: NextRequest) {
     const hasBM25 = isBM25Available();
     console.log(`Transcript search: K=${baseK.finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
 
-    const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides);
+    const isColdStart = !isVectorStoreLoaded();
+    const retrievalOptions = isColdStart ? { timeoutMs: 15000 } : undefined;
+    const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides, retrievalOptions);
+    const transcriptTimedOut = isColdStart && retrievalResults.length === 0;
 
     if (retrievalResults.length > 0) {
       transcriptChunks = retrievalResults.map((r) => ({
@@ -206,7 +209,7 @@ export async function POST(request: NextRequest) {
         }
       : undefined;
 
-    const answer = await synthesizeHybridAnswer(
+    let answer = await synthesizeHybridAnswer(
       query,
       classification,
       transcriptChunks,
@@ -214,6 +217,10 @@ export async function POST(request: NextRequest) {
       metadataCtx,
       interpretiveTuning
     );
+
+    if (transcriptTimedOut && metadataTotalCount > 0) {
+      answer += '\n\n---\n*Transcript search is still loading — showing metadata results. Try again for full search.*';
+    }
 
     // Step 5: Build response with pagination metadata
     const totalMs = Date.now() - requestStart;

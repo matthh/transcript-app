@@ -2,7 +2,7 @@ name: Warmup
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   warmup:
@@ -18,7 +18,12 @@ jobs:
             exit 1
           fi
           if [ -n "$WARMUP_TOKEN" ]; then
-            curl -fsS "$WARMUP_URL?token=$WARMUP_TOKEN"
+            URL="$WARMUP_URL?token=$WARMUP_TOKEN"
           else
-            curl -fsS "$WARMUP_URL"
+            URL="$WARMUP_URL"
           fi
+          # Send 3 concurrent requests to warm multiple Vercel instances
+          curl -fsS "$URL" &
+          curl -fsS "$URL" &
+          curl -fsS "$URL" &
+          wait

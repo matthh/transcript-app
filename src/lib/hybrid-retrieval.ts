@@ -10,7 +10,10 @@ import { generateEmbedding } from './embeddings';
 import { loadVectorStoreAsync, searchSimilar, StoredChunk } from './vectorstore';
 import { searchBM25 } from './bm25';
 import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
+import { BM25Index } from './bm25';
 import { ClassificationResult } from '@/types/episode-metadata';
+
+const LOAD_TIMEOUT = Symbol('LOAD_TIMEOUT');
 
 export interface RetrievalResult {
   chunk: StoredChunk;
@@ -273,13 +276,31 @@ export function diversifyByEpisode(
 export async function hybridRetrieval(
   query: string,
   classification: ClassificationResult,
-  overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>
+  overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>,
+  options?: { timeoutMs?: number }
 ): Promise<RetrievalResult[]> {
-  // Load vector store and BM25 index in parallel
-  const [chunks, bm25Index] = await Promise.all([
+  // Load vector store and BM25 index in parallel, with optional timeout
+  let chunks: StoredChunk[];
+  let bm25Index: BM25Index;
+
+  const loadData = Promise.all([
     loadVectorStoreAsync(),
     loadBM25IndexAsync(),
   ]);
+
+  if (options?.timeoutMs) {
+    const timeout = new Promise<typeof LOAD_TIMEOUT>((resolve) =>
+      setTimeout(() => resolve(LOAD_TIMEOUT), options.timeoutMs)
+    );
+    const result = await Promise.race([loadData, timeout]);
+    if (result === LOAD_TIMEOUT) {
+      console.warn(`Search data loading timed out after ${options.timeoutMs}ms — returning empty results`);
+      return [];
+    }
+    [chunks, bm25Index] = result;
+  } else {
+    [chunks, bm25Index] = await loadData;
+  }
 
   if (chunks.length === 0) {
     console.warn('No chunks loaded from vector store');
