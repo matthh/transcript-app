@@ -152,6 +152,16 @@ const cases: RetrievalCase[] = [
     expectMinResults: 3,
   },
 
+  // --- Keyword-concentrated single-episode queries ---
+  {
+    name: 'Villeneuve Marin interview retrieves ep 64 content',
+    query: 'what did Jason ask Villeneuve at the marin film festival',
+    classification: FACTUAL,
+    expectEpisodeInResults: ['Villeneuve interview'],
+    expectTextIncludes: ['Villeneuve'],
+    expectMinResults: 3,
+  },
+
   // --- Edge cases ---
   {
     name: 'Exact quote retrieval',

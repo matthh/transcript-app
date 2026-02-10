@@ -154,7 +154,7 @@ const STOPWORDS = new Set([
  * Extract meaningful query terms for keyword boosting.
  * Filters stopwords and short tokens.
  */
-function extractQueryTerms(query: string): string[] {
+export function extractQueryTerms(query: string): string[] {
   return query
     .toLowerCase()
     .replace(/[^a-z0-9\s'-]/g, '')
@@ -194,12 +194,43 @@ function boostKeywordMatches(
  * each episode's allocation so they aren't crowded out by semantically similar
  * but non-matching chunks from the same episode.
  */
-function diversifyByEpisode(
+export function diversifyByEpisode(
   results: RetrievalResult[],
   finalK: number,
   maxPerEpisode: number,
   queryTerms: string[] = []
 ): RetrievalResult[] {
+  // Compute per-episode cap overrides based on keyword-match concentration.
+  // When keyword matches cluster heavily in one episode, raise its cap so
+  // more of its chunks survive diversification.
+  const episodeCapOverrides = new Map<string, number>();
+
+  if (queryTerms.length >= 2) {
+    const multiMatchCounts = new Map<string, number>();
+    let totalMultiMatch = 0;
+
+    for (const result of results) {
+      const text = result.chunk.text.toLowerCase();
+      const matchCount = queryTerms.filter((t) => text.includes(t)).length;
+      if (matchCount >= 2) {
+        const episode = result.chunk.metadata.episodeTitle;
+        multiMatchCounts.set(episode, (multiMatchCounts.get(episode) || 0) + 1);
+        totalMultiMatch++;
+      }
+    }
+
+    if (totalMultiMatch > 0) {
+      for (const [episode, count] of multiMatchCounts) {
+        if (count >= 3 && count / totalMultiMatch >= 0.3) {
+          episodeCapOverrides.set(episode, maxPerEpisode * 2);
+        }
+      }
+    }
+  }
+
+  const getEpisodeCap = (episode: string) =>
+    episodeCapOverrides.get(episode) ?? maxPerEpisode;
+
   const episodeCounts = new Map<string, number>();
   const diversified: RetrievalResult[] = [];
 
@@ -209,7 +240,7 @@ function diversifyByEpisode(
       if (diversified.length >= finalK) break;
       const episode = result.chunk.metadata.episodeTitle;
       const count = episodeCounts.get(episode) || 0;
-      if (count >= maxPerEpisode) continue;
+      if (count >= getEpisodeCap(episode)) continue;
 
       const text = result.chunk.text.toLowerCase();
       if (queryTerms.some((t) => text.includes(t))) {
@@ -226,7 +257,7 @@ function diversifyByEpisode(
     if (included.has(result.chunk.id)) continue;
     const episode = result.chunk.metadata.episodeTitle;
     const count = episodeCounts.get(episode) || 0;
-    if (count >= maxPerEpisode) continue;
+    if (count >= getEpisodeCap(episode)) continue;
 
     diversified.push(result);
     episodeCounts.set(episode, count + 1);
