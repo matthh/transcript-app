@@ -44,6 +44,20 @@ flowchart LR
   J --> K["Response with citations"]
 ```
 
+### Component definitions
+
+- **Search UI** — The page where someone types a question and clicks search.
+- **/api/search** — The server endpoint that orchestrates the whole search flow.
+- **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, etc.).
+- **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
+- **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
+- **Episode metadata store** — The structured episode database (titles, guests, release dates, summaries).
+- **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
+- **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
+- **BM25 index (keywords)** — Exact‑word search over transcript chunks.
+- **Answer synthesis** — The response writer that blends metadata + transcripts into a readable answer.
+- **Response with citations** — The final output with sources and timestamps for verification.
+
 ---
 
 ## Step‑by‑step explanation

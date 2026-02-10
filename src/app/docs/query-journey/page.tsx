@@ -158,6 +158,44 @@ export default function QueryJourneyPage() {
               <line x1="810" y1="155" x2="820" y2="155" stroke="#0f766e" strokeWidth="2" markerEnd="url(#arrow2)" />
             </svg>
           </div>
+          <div className="mt-6 grid gap-3 text-gray-700 md:grid-cols-2">
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Search UI</h3>
+              <p className="mt-1">Where someone types a question and starts a search.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">/api/search</h3>
+              <p className="mt-1">The server endpoint that orchestrates the full search flow.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Intent + classification</h3>
+              <p className="mt-1">
+                Detects quick metadata questions and labels the query as factual, interpretive, or hybrid.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Data selection</h3>
+              <p className="mt-1">Decides whether to use metadata, transcripts, or both.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Metadata store</h3>
+              <p className="mt-1">
+                Structured episode data: titles, guests, release dates, and summaries.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Vector store</h3>
+              <p className="mt-1">Meaning‑based search across transcript chunks.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">BM25 index</h3>
+              <p className="mt-1">Exact‑word search across transcript chunks.</p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-4">
+              <h3 className="font-semibold text-gray-900">Answer synthesis</h3>
+              <p className="mt-1">Builds the final response with citations and timestamps.</p>
+            </div>
+          </div>
         </section>
 
         <section className="mt-12">
