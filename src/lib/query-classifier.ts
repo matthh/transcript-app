@@ -104,7 +104,8 @@ Extract filters if present (leave out if not mentioned):
 - guest: Person who appeared as a guest (e.g., "Proto", "Tommy Vietor")
 - film: Film/movie title (e.g., "Dune", "The Goonies", "close encounters")
 - reviewer: Specific host name if mentioned
-- decade: Base year for decade references (1980 for "80s")
+- decade: Base year for decade references (1980 for "80s", "the eighties")
+- yearRange: {min, max} for specific years or ranges ("made in 1980" → {min: 1980, max: 1980}, "from 1985 to 1995" → {min: 1985, max: 1995})
 - season: Season number
 - director: Film director name (e.g., "Tim Burton", "Denis Villeneuve", "Spielberg")
 - cinematographer: Director of Photography (e.g., "Roger Deakins", "Janusz Kamiński")
@@ -120,10 +121,14 @@ IMPORTANT:
   - "sci-fi films" → genre: "Science Fiction"
   - "comedy episodes" → genre: "Comedy"
 - Queries about specific words, phrases, or content said IN episodes (e.g., "which episode uses the word X", "when did someone say Y") should be hybrid or interpretive — the answer requires searching transcript text, not metadata
+- Queries about specific voicemailer names, caller content, or what someone "did" or "does" in an episode need transcript search → interpretive or hybrid. Examples:
+  - "what episode does Paul Atreides Nutz do his bit" → interpretive (voicemailer content)
+  - "when did a caller say AKA a bunch of times" → interpretive (transcript content)
+  - "what does Rosie do for a living" → interpretive (discussed in transcripts)
 - Don't extract question words (who, what, which) as entity values
 
 Respond with ONLY valid JSON:
-{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string"}}`,
+{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string", "decade?": 1980, "yearRange?": {"min": 1980, "max": 1980}}}`,
       },
     ],
   });
@@ -162,6 +167,12 @@ Respond with ONLY valid JSON:
     }
     if (parsed.filters.decade && typeof parsed.filters.decade === 'number') {
       filters.decade = parsed.filters.decade;
+    }
+    if (parsed.filters.yearRange && typeof parsed.filters.yearRange === 'object') {
+      const yr = parsed.filters.yearRange;
+      if (typeof yr.min === 'number' && typeof yr.max === 'number') {
+        filters.yearRange = { min: yr.min, max: yr.max };
+      }
     }
     if (parsed.filters.season && typeof parsed.filters.season === 'number') {
       filters.season = parsed.filters.season;

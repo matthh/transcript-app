@@ -1,11 +1,10 @@
 {
   "cases": [
     {
-      "name": "Dingus voicemail routing (known failure)",
+      "name": "Dingus voicemail routing (word not in transcripts)",
       "query": "in which episode is the word dingus used in a voicemail",
-      "tags": ["known-failure", "transcript-content", "routing"],
+      "tags": ["known-limitation", "transcript-content", "routing"],
       "expectClassificationType": ["interpretive", "hybrid"],
-      "rejectTextInAnswer": ["no information", "don't have", "cannot find"],
       "expectMinTranscriptSources": 1
     },
     {
@@ -243,6 +242,14 @@
       "tags": ["factual-fallback", "retrieval"],
       "expectSourceEpisode": "Rushmore",
       "rejectTextInAnswer": ["no information"]
+    },
+    {
+      "name": "1980 movies from metadata (year filter)",
+      "query": "list all movies reviewed by the pod that were made in 1980",
+      "tags": ["factual", "metadata", "year-filter"],
+      "expectClassificationType": ["factual"],
+      "expectTextInAnswer": ["Popeye", "Flash Gordon", "Altered States", "Empire Strikes Back"],
+      "expectMinMetadataSources": 4
     }
   ]
 }

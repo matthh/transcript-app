@@ -162,13 +162,26 @@ export async function synthesizeHybridAnswer(
     ? computeCountSummary(question, metadataEpisodes, metadataContext)
     : null;
 
-  if (classification.type === 'factual' && hasMetadata) {
+  if (classification.type === 'factual' && hasMetadata && !hasTranscripts) {
     sourceDescription = 'episode metadata (structured data about episodes)';
     const countInfo = metadataContext
       ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
       : '';
     contextSection = `EPISODE METADATA${countInfo}:
 ${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}`;
+  } else if (classification.type === 'factual' && hasMetadata && hasTranscripts) {
+    // Factual query with both sources — metadata is primary, transcripts supplement
+    sourceDescription = 'episode metadata AND podcast transcripts';
+    const countInfo = metadataContext
+      ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
+      : '';
+    contextSection = `EPISODE METADATA${countInfo}:
+${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}
+
+---
+
+PODCAST TRANSCRIPTS (${transcriptChunks.length} supplementary excerpts):
+${formatTranscriptContext(transcriptChunks)}`;
   } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
     // Factual query fell back to transcripts (no metadata matched)
     sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
@@ -176,11 +189,12 @@ ${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\
 ${formatTranscriptContext(transcriptChunks)}
 
 NOTE: No structured episode metadata matched this query. The transcripts above may contain relevant discussion.`;
-  } else if (classification.type === 'interpretive' && hasTranscripts) {
+  } else if (hasTranscripts && !hasMetadata) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
 ${formatTranscriptContext(transcriptChunks)}`;
-  } else if (classification.type === 'hybrid') {
+  } else {
+    // Both sources available (hybrid, or interpretive with metadata)
     sourceDescription = 'both episode metadata AND podcast transcripts';
     const parts: string[] = [];
 
@@ -296,25 +310,36 @@ export async function* synthesizeHybridAnswerStreaming(
     ? computeCountSummary(question, metadataEpisodes, metadataContext)
     : null;
 
-  if (classification.type === 'factual' && hasMetadata) {
+  if (classification.type === 'factual' && hasMetadata && !hasTranscripts) {
     sourceDescription = 'episode metadata (structured data about episodes)';
     const countInfo = metadataContext
       ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
       : '';
     contextSection = `EPISODE METADATA${countInfo}:
 ${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}`;
+  } else if (classification.type === 'factual' && hasMetadata && hasTranscripts) {
+    sourceDescription = 'episode metadata AND podcast transcripts';
+    const countInfo = metadataContext
+      ? ` (${metadataContext.returnedCount}${metadataContext.hasMore ? ` of ${metadataContext.totalCount}` : ''} episodes)`
+      : '';
+    contextSection = `EPISODE METADATA${countInfo}:
+${formatMetadataContext(metadataEpisodes)}${truncationNote}${countSummary ? `\n\n${countSummary}` : ''}
+
+---
+
+PODCAST TRANSCRIPTS (${transcriptChunks.length} supplementary excerpts):
+${formatTranscriptContext(transcriptChunks)}`;
   } else if (classification.type === 'factual' && !hasMetadata && hasTranscripts) {
-    // Factual query fell back to transcripts (no metadata matched)
     sourceDescription = 'podcast transcripts (searched because no structured metadata matched your query)';
     contextSection = `PODCAST TRANSCRIPTS (${transcriptChunks.length} excerpts):
 ${formatTranscriptContext(transcriptChunks)}
 
 NOTE: No structured episode metadata matched this query. The transcripts above may contain relevant discussion.`;
-  } else if (classification.type === 'interpretive' && hasTranscripts) {
+  } else if (hasTranscripts && !hasMetadata) {
     sourceDescription = 'podcast transcripts (what was actually said)';
     contextSection = `PODCAST TRANSCRIPTS:
 ${formatTranscriptContext(transcriptChunks)}`;
-  } else if (classification.type === 'hybrid') {
+  } else {
     sourceDescription = 'both episode metadata AND podcast transcripts';
     const parts: string[] = [];
 
