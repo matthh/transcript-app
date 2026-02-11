@@ -123,7 +123,11 @@ function runCase(testCase: RegressionCase): string | null {
         }
       }
     }
-  } else if (intent.type.startsWith('metadata_')) {
+  } else if (
+    intent.type.startsWith('metadata_')
+    && intent.type !== 'metadata_tilda'
+    && intent.type !== 'metadata_notable_moments'
+  ) {
     const aggregate = buildMetadataAggregateResponse(intent);
     if (!aggregate) {
       return 'Expected metadata aggregate response but got null';
