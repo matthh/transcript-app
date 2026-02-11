@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { queryEpisodes } from '@/lib/metadata-store';
+import { getEpisodeByNumber, queryEpisodes } from '@/lib/metadata-store';
 import { detectQueryIntent } from '@/lib/query-intent';
 import { buildMetadataAggregateResponse, collectTildaContext, getTildaEpisodePicks } from '@/lib/metadata-aggregates';
 import { extractEpisodeNumberFromQuery, extractTildaPickerFromQuery } from '@/lib/tilda-query';
+import { extractNotableMomentsFilm } from '@/lib/notable-moments-query';
 import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
@@ -102,6 +103,59 @@ export async function POST(request: NextRequest) {
     // Step 1: Intent detection (pre-classification routing)
     const intent = detectQueryIntent(query);
     if (intent.type !== 'none') {
+      if (intent.type === 'metadata_notable_moments' && depth !== 'deep') {
+        const episodeNumber = extractEpisodeNumberFromQuery(query);
+        let episodes: EpisodeMetadata[] = [];
+
+        if (episodeNumber !== null) {
+          const episode = getEpisodeByNumber(episodeNumber);
+          if (episode) episodes = [episode];
+        } else {
+          const filmQuery = extractNotableMomentsFilm(query);
+          if (filmQuery) {
+            const notableResult = queryEpisodes({ film: filmQuery }, {
+              limit: 5,
+              offset: 0,
+              sortBy: 'episode',
+              sortOrder: 'asc',
+            });
+            episodes = notableResult.episodes;
+          }
+        }
+
+        if (episodes.length === 0) {
+          return NextResponse.json({
+            answer: 'No notable moments were found for that episode or film.',
+            queryType: 'factual',
+            sources: {},
+            metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+            perf: { totalMs: Date.now() - requestStart, path: 'metadata_notable_moments' },
+          });
+        }
+
+        const sections = episodes.map((episode) => {
+          const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+          const notable = episode.notableMoments?.trim();
+          if (!notable) {
+            return `### ${epLabel} — "${episode.film}"\nNo notable moments recorded.`;
+          }
+          return `### ${epLabel} — "${episode.film}"\n${notable}`;
+        });
+
+        return NextResponse.json({
+          answer: `Notable Moments\n\n${sections.join('\n\n')}`,
+          queryType: 'factual',
+          canDeepen: depth === 'quick',
+          sources: { metadata: episodes.map(episodeToMetadataSource) },
+          metadata: {
+            totalCount: episodes.length,
+            returnedCount: episodes.length,
+            hasMore: false,
+          },
+          perf: { totalMs: Date.now() - requestStart, path: 'metadata_notable_moments' },
+        });
+      }
+
       // Tilda intent: collect data and synthesize with LLM
       if (intent.type === 'metadata_tilda') {
         const episodeNumber = extractEpisodeNumberFromQuery(query);

@@ -1,5 +1,6 @@
 import { detectQueryIntent, QueryIntentType } from '../src/lib/query-intent';
 import { buildMetadataAggregateResponse, collectTildaContext, getTildaEpisodePicks } from '../src/lib/metadata-aggregates';
+import { extractNotableMomentsFilm } from '../src/lib/notable-moments-query';
 
 type RegressionCase = {
   name: string;
@@ -9,6 +10,7 @@ type RegressionCase = {
   expectTildaContext?: boolean;
   expectTildaEpisode?: number;
   expectTildaEpisodePickIncludes?: string[];
+  expectNotableMomentsFilm?: string;
 };
 
 const cases: RegressionCase[] = [
@@ -83,6 +85,12 @@ const cases: RegressionCase[] = [
     expectTildaEpisode: 204,
     expectTildaEpisodePickIncludes: ['Corey', 'Charlie Sheen'],
   },
+  {
+    name: 'Notable moments intent',
+    query: 'what are Notable Moments from the Dune Messiah episode',
+    expectIntent: 'metadata_notable_moments',
+    expectNotableMomentsFilm: 'Dune Messiah',
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {
@@ -127,6 +135,13 @@ function runCase(testCase: RegressionCase): string | null {
           return `Answer missing "${fragment}"`;
         }
       }
+    }
+  }
+
+  if (testCase.expectNotableMomentsFilm) {
+    const film = extractNotableMomentsFilm(testCase.query);
+    if (!film || !film.toLowerCase().includes(testCase.expectNotableMomentsFilm.toLowerCase())) {
+      return `Expected notable moments film "${testCase.expectNotableMomentsFilm}" but got "${film ?? 'null'}"`;
     }
   }
 

@@ -200,6 +200,11 @@ export function getLatestEpisode(): EpisodeMetadata | null {
   )[0];
 }
 
+export function getEpisodeByNumber(episodeNumber: number): EpisodeMetadata | null {
+  const episodes = loadEpisodeMetadata();
+  return episodes.find((episode) => episode.episode === episodeNumber) ?? null;
+}
+
 export function getCurrentSeason(): number | null {
   const latest = getLatestEpisode();
   return latest ? latest.season : null;

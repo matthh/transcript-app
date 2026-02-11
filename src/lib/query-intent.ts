@@ -7,6 +7,7 @@ export type QueryIntentType =
   | 'metadata_field_latest'
   | 'metadata_field_max'
   | 'metadata_tilda'
+  | 'metadata_notable_moments'
   | 'transcript_only'
   | 'none';
 
@@ -124,6 +125,10 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent episode')) {
     return { type: 'metadata_latest' };
+  }
+
+  if (/\bnotable moments?\b/.test(normalized)) {
+    return { type: 'metadata_notable_moments' };
   }
 
   if (
