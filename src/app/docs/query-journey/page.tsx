@@ -88,15 +88,71 @@ export default function QueryJourneyPage() {
           <div>
             <h2 className="text-xl font-semibold text-gray-900">1) Intent check (quick answers)</h2>
             <p className="mt-2 text-gray-700">
-              Some questions are quick metadata lookups like “latest episode” or “how many episodes.”
-              When that happens, we answer directly from the episode list without a full transcript search.
+              Some questions are quick metadata lookups that can be answered directly from the episode
+              list without a full transcript search. The system pattern-matches your query against
+              specific phrases to decide if it can take this shortcut.
+            </p>
+            <p className="mt-2 text-gray-700">
+              Language that triggers a fast metadata answer:
+            </p>
+            <ul className="mt-2 list-disc pl-5 space-y-1 text-gray-700">
+              <li><strong>&ldquo;latest episode&rdquo;</strong>, <strong>&ldquo;last episode&rdquo;</strong>, or <strong>&ldquo;most recent episode&rdquo;</strong> &mdash; returns the newest episode directly</li>
+              <li><strong>&ldquo;how many episodes&rdquo;</strong> or <strong>&ldquo;total episodes&rdquo;</strong> &mdash; returns a count from the episode list</li>
+              <li><strong>&ldquo;current season&rdquo;</strong> (combined with words like &ldquo;now&rdquo; or &ldquo;current&rdquo;) &mdash; returns the active season</li>
+              <li><strong>Year ranges</strong> like &ldquo;1985-1995&rdquo; combined with &ldquo;how many films&rdquo; or &ldquo;how many episodes&rdquo; &mdash; returns a filtered count</li>
+              <li><strong>&ldquo;That&apos;s Great&rdquo; / &ldquo;MMM&rdquo; segment</strong> questions asking for the &ldquo;highest&rdquo;, &ldquo;most&rdquo;, or &ldquo;latest&rdquo; &mdash; looks up scores from metadata</li>
+              <li><strong>Tilda Swinton casting segment</strong> questions (e.g. &ldquo;who would Tilda play&rdquo;, &ldquo;Tilda casting picks&rdquo;) &mdash; synthesized from segment data</li>
+            </ul>
+            <p className="mt-2 text-gray-700">
+              Anything that doesn&apos;t match these patterns falls through to the full search pipeline below.
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold text-gray-900">2) Classification</h2>
             <p className="mt-2 text-gray-700">
-              We label the question as factual, interpretive, or hybrid, and extract filters
-              like guest, film, director, genre, or season.
+              We label the question as <strong>factual</strong>, <strong>interpretive</strong>, or <strong>hybrid</strong>,
+              and extract filters like guest, film, director, genre, or season. This is done by an LLM
+              (with a keyword-based fallback), and the classification shapes how the answer is synthesized.
+            </p>
+            <div className="mt-4 space-y-3">
+              <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+                <h3 className="font-semibold text-blue-900">Factual</h3>
+                <p className="mt-1 text-blue-800">
+                  Questions that ask for lists, counts, or specific data points. Language like
+                  {' '}<em>&ldquo;how many&rdquo;</em>, <em>&ldquo;which episodes&rdquo;</em>,
+                  {' '}<em>&ldquo;list all&rdquo;</em>, <em>&ldquo;who was the guest&rdquo;</em>,
+                  {' '}<em>&ldquo;who reviewed&rdquo;</em>, or <em>&ldquo;when did&rdquo;</em> points
+                  toward factual. Short queries like a film title or person&apos;s name on their own
+                  (e.g. &ldquo;Dune&rdquo;, &ldquo;Proto episodes&rdquo;) are also treated as factual.
+                </p>
+              </div>
+              <div className="rounded-lg border border-purple-200 bg-purple-50 p-4">
+                <h3 className="font-semibold text-purple-900">Interpretive</h3>
+                <p className="mt-1 text-purple-800">
+                  Questions about opinions, reactions, or what someone said. Language like
+                  {' '}<em>&ldquo;what did they think&rdquo;</em>, <em>&ldquo;thoughts on&rdquo;</em>,
+                  {' '}<em>&ldquo;feel about&rdquo;</em>, <em>&ldquo;said about&rdquo;</em>,
+                  {' '}<em>&ldquo;talked about&rdquo;</em>, <em>&ldquo;reaction to&rdquo;</em>,
+                  {' '}or <em>&ldquo;favorite&rdquo;</em> points toward interpretive. Questions about
+                  specific words or content <em>in</em> episodes also land here since they require
+                  searching through transcripts.
+                </p>
+              </div>
+              <div className="rounded-lg border border-green-200 bg-green-50 p-4">
+                <h3 className="font-semibold text-green-900">Hybrid</h3>
+                <p className="mt-1 text-green-800">
+                  Questions that mix both types &mdash; for example, asking for a list of episodes
+                  <em> and</em> what was said in them. When the query contains both factual and
+                  interpretive language, it gets classified as hybrid so both metadata and transcript
+                  results are weighted equally.
+                </p>
+              </div>
+            </div>
+            <p className="mt-3 text-gray-600 text-sm">
+              The classifier also extracts filters (film, guest, director, genre, decade, year range, season)
+              so the search can narrow results before retrieval. The classification type hints the synthesis
+              prompt &mdash; factual answers are more concise and list-oriented, while interpretive answers
+              include more quotes and analysis.
             </p>
           </div>
           <div>
