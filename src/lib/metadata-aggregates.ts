@@ -34,6 +34,12 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   if (episode.tildaJason) {
     relevantFields['Tilda Jason'] = episode.tildaJason;
   }
+  if (episode.tildaGuest) {
+    relevantFields['Tilda Guest'] = episode.tildaGuest;
+  }
+  if (episode.tildaCorey) {
+    relevantFields['Tilda Corey'] = episode.tildaCorey;
+  }
 
   return {
     film: episode.film,
@@ -191,6 +197,27 @@ export interface TildaContext {
   episodeCount: number;
   earliestEpisode: EpisodeMetadata | null;
   earliestPicks: string[];
+}
+
+export type TildaPick = { label: string; value: string };
+
+export function getTildaEpisodePicks(episodeNumber: number): {
+  episode: EpisodeMetadata;
+  picks: TildaPick[];
+} | null {
+  const episodes = loadEpisodeMetadata();
+  const episode = episodes.find((entry) => entry.episode === episodeNumber);
+  if (!episode) return null;
+
+  const picks: TildaPick[] = [];
+  for (const { key, label } of TILDA_FIELDS) {
+    const value = episode[key];
+    if (isTildaAnswer(value)) {
+      picks.push({ label, value: cleanTildaValue(value) });
+    }
+  }
+
+  return { episode, picks };
 }
 
 export function collectTildaContext(): TildaContext | null {

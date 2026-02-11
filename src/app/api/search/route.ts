@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { detectQueryIntent } from '@/lib/query-intent';
-import { buildMetadataAggregateResponse, collectTildaContext } from '@/lib/metadata-aggregates';
+import { buildMetadataAggregateResponse, collectTildaContext, getTildaEpisodePicks } from '@/lib/metadata-aggregates';
+import { extractEpisodeNumberFromQuery, extractTildaPickerFromQuery } from '@/lib/tilda-query';
 import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
@@ -36,6 +37,12 @@ function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   }
   if (episode.tildaJason) {
     relevantFields['Tilda Jason'] = episode.tildaJason;
+  }
+  if (episode.tildaGuest) {
+    relevantFields['Tilda Guest'] = episode.tildaGuest;
+  }
+  if (episode.tildaCorey) {
+    relevantFields['Tilda Corey'] = episode.tildaCorey;
   }
 
   return {
@@ -97,6 +104,50 @@ export async function POST(request: NextRequest) {
     if (intent.type !== 'none') {
       // Tilda intent: collect data and synthesize with LLM
       if (intent.type === 'metadata_tilda') {
+        const episodeNumber = extractEpisodeNumberFromQuery(query);
+        if (episodeNumber !== null) {
+          const episodeResult = getTildaEpisodePicks(episodeNumber);
+          if (!episodeResult) {
+            return NextResponse.json({
+              answer: `No metadata found for episode ${episodeNumber}.`,
+              queryType: 'factual',
+              sources: {},
+              metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+              perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+            });
+          }
+
+          const { episode, picks } = episodeResult;
+          const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+          const picker = extractTildaPickerFromQuery(query);
+          let answer: string;
+
+          if (picker) {
+            const match = picks.find((pick) => pick.label === picker);
+            if (match) {
+              answer = `${picker} pick for ${epLabel} — "${episode.film}": ${match.value}.`;
+            } else if (picks.length > 0) {
+              const picksLine = picks.map((pick) => `${pick.label}: ${pick.value}`).join(' · ');
+              answer = `No ${picker} pick recorded for ${epLabel} — "${episode.film}". Other picks: ${picksLine}.`;
+            } else {
+              answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
+            }
+          } else if (picks.length > 0) {
+            const picksLine = picks.map((pick) => `${pick.label}: ${pick.value}`).join(' · ');
+            answer = `Tilda picks for ${epLabel} — "${episode.film}": ${picksLine}.`;
+          } else {
+            answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
+          }
+
+          return NextResponse.json({
+            answer,
+            queryType: 'factual',
+            sources: { metadata: [episodeToMetadataSource(episode)] },
+            metadata: { totalCount: 1, returnedCount: 1, hasMore: false },
+            perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+          });
+        }
+
         const tildaResult = collectTildaContext();
         if (!tildaResult) {
           return NextResponse.json({

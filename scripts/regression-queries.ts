@@ -1,5 +1,5 @@
 import { detectQueryIntent, QueryIntentType } from '../src/lib/query-intent';
-import { buildMetadataAggregateResponse, collectTildaContext } from '../src/lib/metadata-aggregates';
+import { buildMetadataAggregateResponse, collectTildaContext, getTildaEpisodePicks } from '../src/lib/metadata-aggregates';
 
 type RegressionCase = {
   name: string;
@@ -7,6 +7,8 @@ type RegressionCase = {
   expectIntent: QueryIntentType;
   expectAnswerIncludes?: string[];
   expectTildaContext?: boolean;
+  expectTildaEpisode?: number;
+  expectTildaEpisodePickIncludes?: string[];
 };
 
 const cases: RegressionCase[] = [
@@ -74,6 +76,13 @@ const cases: RegressionCase[] = [
     expectIntent: 'metadata_tilda',
     expectTildaContext: true,
   },
+  {
+    name: 'Tilda episode lookup',
+    query: 'who did Corey say he would cast Tilda Swinton as in episode 204',
+    expectIntent: 'metadata_tilda',
+    expectTildaEpisode: 204,
+    expectTildaEpisodePickIncludes: ['Corey', 'Charlie Sheen'],
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {
@@ -90,6 +99,21 @@ function runCase(testCase: RegressionCase): string | null {
     }
     if (tildaCtx.totalPicks === 0) {
       return 'Expected Tilda picks but got 0';
+    }
+  }
+
+  if (testCase.expectTildaEpisode !== undefined) {
+    const episodeResult = getTildaEpisodePicks(testCase.expectTildaEpisode);
+    if (!episodeResult) {
+      return `Expected episode ${testCase.expectTildaEpisode} but it was not found`;
+    }
+    if (testCase.expectTildaEpisodePickIncludes) {
+      const pickText = episodeResult.picks.map((pick) => `${pick.label}: ${pick.value}`).join(' ').toLowerCase();
+      for (const fragment of testCase.expectTildaEpisodePickIncludes) {
+        if (!pickText.includes(fragment.toLowerCase())) {
+          return `Episode picks missing "${fragment}"`;
+        }
+      }
     }
   } else if (intent.type.startsWith('metadata_')) {
     const aggregate = buildMetadataAggregateResponse(intent);
