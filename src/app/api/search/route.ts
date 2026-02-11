@@ -107,6 +107,28 @@ export async function POST(request: NextRequest) {
           });
         }
 
+        const normalized = query.toLowerCase();
+        const wantsEarliest = /\b(first|earliest|original|start|started|begin|began|debut)\b/.test(normalized);
+        if (wantsEarliest && tildaResult.earliestEpisode) {
+          const earliest = tildaResult.earliestEpisode;
+          const epLabel = formatEpisodeLabel(earliest.season, earliest.episode);
+          const picksLine = tildaResult.earliestPicks.length > 0
+            ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
+            : 'No pick details recorded.';
+
+          return NextResponse.json({
+            answer: `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`,
+            queryType: 'factual',
+            sources: { metadata: tildaResult.sources },
+            metadata: {
+              totalCount: tildaResult.episodeCount,
+              returnedCount: tildaResult.sources.length,
+              hasMore: false,
+            },
+            perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+          });
+        }
+
         const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
         const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
         const message = await getAnthropic().messages.create({

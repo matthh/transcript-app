@@ -189,6 +189,8 @@ export interface TildaContext {
   sources: MetadataSource[];
   totalPicks: number;
   episodeCount: number;
+  earliestEpisode: EpisodeMetadata | null;
+  earliestPicks: string[];
 }
 
 export function collectTildaContext(): TildaContext | null {
@@ -199,16 +201,21 @@ export function collectTildaContext(): TildaContext | null {
 
   if (withTilda.length === 0) return null;
 
-  const sorted = [...withTilda].sort(
+  const sortedDesc = [...withTilda].sort(
     (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+  );
+  const sortedAsc = [...withTilda].sort(
+    (a, b) => (a.season * 1000 + a.episode) - (b.season * 1000 + b.episode)
   );
 
   const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };
   const lines: string[] = [];
   const sources: MetadataSource[] = [];
   const MAX_EPISODES = 50;
+  let earliestEpisode: EpisodeMetadata | null = null;
+  let earliestPicks: string[] = [];
 
-  for (const episode of sorted) {
+  for (const episode of sortedDesc) {
     const picks: string[] = [];
     for (const { key, label } of TILDA_FIELDS) {
       const value = episode[key];
@@ -229,8 +236,33 @@ export function collectTildaContext(): TildaContext | null {
     if (lines.length >= MAX_EPISODES) break;
   }
 
+  for (const episode of sortedAsc) {
+    const picks: string[] = [];
+    for (const { key, label } of TILDA_FIELDS) {
+      const value = episode[key];
+      if (isTildaAnswer(value)) {
+        picks.push(`${label}: "${cleanTildaValue(value)}"`);
+      }
+    }
+    if (picks.length > 0) {
+      earliestEpisode = episode;
+      earliestPicks = picks;
+      break;
+    }
+  }
+
+  if (earliestEpisode) {
+    sources.unshift(episodeToMetadataSource(earliestEpisode));
+  }
+  if (sources.length > 8) {
+    sources.length = 8;
+  }
+
   const totalPicks = counts.H + counts.Jason + counts.Guest + counts.Corey;
   const hostBreakdown = `Picks by host: H (${counts.H}), Jason (${counts.Jason}), Guest (${counts.Guest}), Corey (${counts.Corey})`;
+  const earliestLine = earliestEpisode
+    ? `Earliest recorded picks: ${formatEpisodeLabel(earliestEpisode.season, earliestEpisode.episode)} — ${earliestEpisode.film}: ${earliestPicks.join(', ')}`
+    : 'Earliest recorded picks: unavailable.';
 
   const context = `"Who Would Tilda Swinton Play?" picks from ${withTilda.length} episodes (${totalPicks} total picks):
 
@@ -238,5 +270,12 @@ ${lines.join('\n')}
 
 ${hostBreakdown}`;
 
-  return { context, sources, totalPicks, episodeCount: withTilda.length };
+  return {
+    context: `${context}\n\n${earliestLine}`,
+    sources,
+    totalPicks,
+    episodeCount: withTilda.length,
+    earliestEpisode,
+    earliestPicks,
+  };
 }

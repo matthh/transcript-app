@@ -123,6 +123,30 @@ export async function POST(request: NextRequest) {
               return;
             }
 
+            const normalized = query.toLowerCase();
+            const wantsEarliest = /\b(first|earliest|original|start|started|begin|began|debut)\b/.test(normalized);
+            if (wantsEarliest && tildaResult.earliestEpisode) {
+              const earliest = tildaResult.earliestEpisode;
+              const epLabel = formatEpisodeLabel(earliest.season, earliest.episode);
+              const picksLine = tildaResult.earliestPicks.length > 0
+                ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
+                : 'No pick details recorded.';
+
+              send('complete', {
+                answer: `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`,
+                queryType: 'factual',
+                sources: { metadata: tildaResult.sources },
+                metadata: {
+                  totalCount: tildaResult.episodeCount,
+                  returnedCount: tildaResult.sources.length,
+                  hasMore: false,
+                },
+                perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+              });
+              controller.close();
+              return;
+            }
+
             send('progress', { stage: 'synthesizing', message: 'Analyzing Tilda picks...' });
 
             const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
