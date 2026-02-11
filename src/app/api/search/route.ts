@@ -8,6 +8,7 @@ import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext, getAnthropic } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
+import { formatEpisodeLabel } from '@/lib/episode-format';
 import { TranscriptChunk } from '@/types/transcript';
 import {
   MetadataSource,
