@@ -54,6 +54,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [deepening, setDeepening] = useState(false);
   const [deepStreamingText, setDeepStreamingText] = useState('');
+  const [showTranscripts, setShowTranscripts] = useState(false);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -247,29 +248,22 @@ export default function Home() {
               deepStreamingText={deepStreamingText}
             />
 
-            {result.sources.metadata && result.sources.metadata.length > 0 && (
-              <div>
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                  Episode Data ({result.sources.metadata.length})
-                </h2>
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {result.sources.metadata.map((source, index) => (
-                    <MetadataCard key={index} source={source} />
-                  ))}
-                </div>
-              </div>
-            )}
-
             {result.sources.transcripts && result.sources.transcripts.length > 0 && (
               <div>
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                <button
+                  onClick={() => setShowTranscripts(prev => !prev)}
+                  className="flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors"
+                >
+                  <span className={`transition-transform ${showTranscripts ? 'rotate-90' : ''}`}>&#9654;</span>
                   Transcript Sources ({result.sources.transcripts.length})
-                </h2>
-                <div className="space-y-4">
-                  {result.sources.transcripts.map((source, index) => (
-                    <TranscriptCard key={index} source={source} />
-                  ))}
-                </div>
+                </button>
+                {showTranscripts && (
+                  <div className="space-y-4 mt-4">
+                    {result.sources.transcripts.map((source, index) => (
+                      <TranscriptCard key={index} source={source} />
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
