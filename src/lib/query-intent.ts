@@ -1,3 +1,6 @@
+import { loadEpisodeMetadata } from './metadata-store';
+import { extractEpisodeNumberFromQuery } from './tilda-query';
+
 export type QueryIntentType =
   | 'metadata_latest'
   | 'metadata_current_season'
@@ -6,17 +9,22 @@ export type QueryIntentType =
   | 'metadata_year_range_sample'
   | 'metadata_field_latest'
   | 'metadata_field_max'
+  | 'metadata_episode_fields'
   | 'metadata_tilda'
   | 'metadata_notable_moments'
   | 'transcript_only'
   | 'none';
 
 export type MetadataFieldKey = 'mmmCount' | 'thatsGreatCount';
+export type MetadataEpisodeField = 'guest' | 'reviewer';
 
 export interface QueryIntent {
   type: QueryIntentType;
   field?: MetadataFieldKey;
   yearRange?: { min: number; max: number };
+  episodeFields?: MetadataEpisodeField[];
+  episodeNumber?: number;
+  film?: string;
 }
 
 const YEAR_RANGE_PATTERN = /\b(19|20)\d{2}\s*-\s*(19|20)\d{2}\b/;
@@ -29,6 +37,20 @@ function normalize(text: string): string {
     .replace(/[–—]/g, '-')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function normalizeForMatch(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[–—]/g, '-')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function stripParenthetical(text: string): string {
+  return text.replace(/\([^)]*\)/g, ' ');
 }
 
 function extractYearRange(query: string): { min: number; max: number } | null {
@@ -53,6 +75,44 @@ function extractYearRange(query: string): { min: number; max: number } | null {
   return null;
 }
 
+function findFilmFromQuery(query: string): string | null {
+  const normalizedQuery = normalizeForMatch(query);
+  if (!normalizedQuery) return null;
+
+  const episodes = loadEpisodeMetadata();
+  let bestMatch: { film: string; normalized: string; score: number } | null = null;
+
+  for (const episode of episodes) {
+    const normalizedFilm = normalizeForMatch(episode.film);
+    const normalizedNoParen = normalizeForMatch(stripParenthetical(episode.film));
+    const candidates = [normalizedFilm, normalizedNoParen].filter(Boolean);
+    if (candidates.length === 0) continue;
+
+    let matched: string | null = null;
+    for (const candidate of candidates) {
+      if (normalizedQuery.includes(candidate)) {
+        matched = candidate;
+        break;
+      }
+    }
+    if (!matched) continue;
+
+    const score = matched.length;
+    if (!bestMatch || score > bestMatch.score) {
+      bestMatch = { film: episode.film, normalized: matched, score };
+    }
+  }
+
+  if (!bestMatch) return null;
+
+  const wordCount = bestMatch.normalized.split(' ').length;
+  if (bestMatch.normalized.length <= 3 && wordCount < 2) {
+    return null;
+  }
+
+  return bestMatch.film;
+}
+
 function detectField(query: string): MetadataFieldKey | null {
   const normalized = normalize(query);
   if (normalized.includes("that's great") || normalized.includes('thats great')) {
@@ -71,6 +131,32 @@ function wantsYearSample(normalized: string): boolean {
     /each\s+year.*(movie|film)/.test(normalized) ||
     /list\s+one\s+(movie|film)\s+.*each\s+year/.test(normalized)
   );
+}
+
+function detectEpisodeFieldsIntent(query: string): QueryIntent | null {
+  const normalized = normalize(query);
+  const wantsGuest = /\bguest\b/.test(normalized) || /\bguests\b/.test(normalized);
+  const wantsReviewer =
+    /\breviewer\b/.test(normalized) ||
+    /\breviewed\b/.test(normalized) ||
+    /\bwho reviewed\b/.test(normalized);
+
+  if (!wantsGuest && !wantsReviewer) return null;
+
+  const episodeNumber = extractEpisodeNumberFromQuery(query);
+  const film = episodeNumber ? null : findFilmFromQuery(query);
+  if (episodeNumber === null && !film) return null;
+
+  const episodeFields: MetadataEpisodeField[] = [];
+  if (wantsGuest) episodeFields.push('guest');
+  if (wantsReviewer) episodeFields.push('reviewer');
+
+  return {
+    type: 'metadata_episode_fields',
+    episodeFields,
+    episodeNumber: episodeNumber ?? undefined,
+    film: film ?? undefined,
+  };
 }
 
 export function detectQueryIntent(query: string): QueryIntent {
@@ -93,6 +179,11 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if (normalized.includes('join the discord') || normalized.includes('joined the discord')) {
     return { type: 'transcript_only' };
+  }
+
+  const episodeFieldsIntent = detectEpisodeFieldsIntent(query);
+  if (episodeFieldsIntent) {
+    return episodeFieldsIntent;
   }
 
   if ((normalized.includes('current season') || normalized.includes('what season') || normalized.includes('season is the pod on now'))

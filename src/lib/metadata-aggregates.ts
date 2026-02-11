@@ -1,6 +1,8 @@
 import {
   countByYearRange,
   getCurrentSeason,
+  getEpisodeByFilm,
+  getEpisodeByNumber,
   getEpisodeWithMaxField,
   getFieldForLatestEpisode,
   getLatestEpisode,
@@ -180,6 +182,39 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     const source = episodeToMetadataSource(episode);
     return {
       answer: `The latest episode ("${episode.film}", ${formatEpisodeLabel(episode.season, episode.episode)}) has ${result.value} ${label}.`,
+      sources: { metadata: [source] },
+    };
+  }
+
+  if (intent.type === 'metadata_episode_fields') {
+    const episode = intent.episodeNumber !== undefined
+      ? getEpisodeByNumber(intent.episodeNumber)
+      : intent.film
+        ? getEpisodeByFilm(intent.film)
+        : null;
+    if (!episode) return null;
+
+    const requestedFields = intent.episodeFields && intent.episodeFields.length > 0
+      ? intent.episodeFields
+      : ['reviewer', 'guest'];
+    const uniqueFields = Array.from(new Set(requestedFields));
+    const lines: string[] = [];
+
+    for (const field of uniqueFields) {
+      if (field === 'reviewer') {
+        lines.push(`Reviewer: ${episode.reviewer}`);
+      } else if (field === 'guest') {
+        const guestValue = episode.guest && episode.guest.trim()
+          ? episode.guest
+          : 'No guest listed';
+        lines.push(`Guest: ${guestValue}`);
+      }
+    }
+
+    const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+    const source = episodeToMetadataSource(episode);
+    return {
+      answer: `Credits for "${episode.film}" (${epLabel}):\n${lines.join('\n')}`,
       sources: { metadata: [source] },
     };
   }

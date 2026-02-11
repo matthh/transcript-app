@@ -92,6 +92,12 @@ const cases: RegressionCase[] = [
     expectNotableMomentsFilm: 'Dune Messiah',
   },
   {
+    name: 'Episode credits by film',
+    query: 'who was the guest and reviewer for No Country for Old Men',
+    expectIntent: 'metadata_episode_fields',
+    expectAnswerIncludes: ['credits for', 'reviewer', 'guest', 'no country for old men'],
+  },
+  {
     name: 'Moments film extraction',
     query: 'what are the most interesting moments in the 2001 episode',
     expectIntent: 'none',
