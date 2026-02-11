@@ -2,11 +2,11 @@ import { NextRequest } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
 import { detectQueryIntent } from '@/lib/query-intent';
-import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
+import { buildMetadataAggregateResponse, collectTildaContext } from '@/lib/metadata-aggregates';
 import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
-import { synthesizeHybridAnswerStreaming, MetadataContext } from '@/lib/claude';
+import { synthesizeHybridAnswerStreaming, MetadataContext, getAnthropic } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { logQuery } from '@/lib/query-logger';
 import { TranscriptChunk } from '@/types/transcript';
@@ -108,6 +108,64 @@ export async function POST(request: NextRequest) {
         // Intent detection (pre-classification routing)
         const intent = detectQueryIntent(query);
         if (intent.type !== 'none') {
+          // Tilda intent: collect data and synthesize with LLM
+          if (intent.type === 'metadata_tilda') {
+            const tildaResult = collectTildaContext();
+            if (!tildaResult) {
+              send('complete', {
+                answer: 'No Tilda casting picks were found in the metadata.',
+                queryType: 'factual',
+                sources: {},
+                metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+                perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+              });
+              controller.close();
+              return;
+            }
+
+            send('progress', { stage: 'synthesizing', message: 'Analyzing Tilda picks...' });
+
+            const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
+            const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
+            const tildaStream = getAnthropic().messages.stream({
+              model: tildaModel,
+              max_tokens: tildaMaxTokens,
+              messages: [{
+                role: 'user',
+                content: `You are a podcast search assistant for the Escape Hatch podcast. Always refer to "Matt Haitch" or "Haitch Matt" as just "H".
+
+${tildaResult.context}
+
+QUESTION: ${query}
+
+Answer based on the Tilda casting data above. Be specific, cite examples from the data. Use Markdown formatting with ## headings, **bold**, and bullet points.`,
+              }],
+            });
+
+            let answer = '';
+            for await (const event of tildaStream) {
+              if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+                answer += event.delta.text;
+                send('chunk', { text: event.delta.text });
+              }
+            }
+
+            send('complete', {
+              answer,
+              queryType: 'factual',
+              canDeepen: depth === 'quick',
+              sources: { metadata: tildaResult.sources },
+              metadata: {
+                totalCount: tildaResult.episodeCount,
+                returnedCount: tildaResult.sources.length,
+                hasMore: false,
+              },
+              perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+            });
+            controller.close();
+            return;
+          }
+
           const aggregate = buildMetadataAggregateResponse(intent);
           if (aggregate) {
             const totalMs = Date.now() - requestStart;

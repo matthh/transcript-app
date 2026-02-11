@@ -8,7 +8,7 @@ import { formatEpisodeDescriptor } from './episode-format';
 
 let anthropicClient: Anthropic | null = null;
 
-function getAnthropic(): Anthropic {
+export function getAnthropic(): Anthropic {
   if (!anthropicClient) {
     anthropicClient = new Anthropic({
       apiKey: process.env.ANTHROPIC_API_KEY,

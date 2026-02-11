@@ -90,17 +90,6 @@ const TILDA_FIELDS: Array<{ key: 'tildaH' | 'tildaJason' | 'tildaGuest' | 'tilda
   { key: 'tildaCorey', label: 'Corey' },
 ];
 
-const MALE_ROLE_CUES = /\b(king|prince|mr\.?|sir|lord|baron|duke|father|dad|uncle|son|boy|man|him|his|husband|brother|grandpa|grandfather|male)\b/i;
-const FEMALE_ROLE_CUES = /\b(queen|princess|mrs\.?|ms\.?|lady|duchess|mother|mom|aunt|daughter|girl|woman|her|she|wife|sister|grandma|grandmother|female)\b/i;
-const NON_HUMAN_CUES = /\b(dog|cat|horse|rat|dragon|unicorn|monster|creature|alien|robot|droid|android|ai|ghost|demon|angel|god|devil|vampire|werewolf|zombie|ship|spaceship|car|truck|plane|rocket|planet|moon|sun|star|asteroid|comet|bomb|gun|sword|mask|object|thing|the dog|the rat)\b/i;
-
-function classifyTildaPick(text: string): 'female' | 'male' | 'nonhuman' | 'unclear' {
-  const normalized = text.toLowerCase();
-  if (FEMALE_ROLE_CUES.test(normalized)) return 'female';
-  if (MALE_ROLE_CUES.test(normalized)) return 'male';
-  if (NON_HUMAN_CUES.test(normalized)) return 'nonhuman';
-  return 'unclear';
-}
 
 export function buildMetadataAggregateResponse(intent: QueryIntent): {
   answer: string;
@@ -189,110 +178,65 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     };
   }
 
-  if (intent.type === 'metadata_tilda') {
-    const episodes = loadEpisodeMetadata();
-    const withTilda = episodes.filter((episode) =>
-      TILDA_FIELDS.some(({ key }) => isTildaAnswer(episode[key]))
-    );
-
-    if (withTilda.length === 0) {
-      return {
-        answer: 'No Tilda casting picks were found in the metadata.',
-        sources: {},
-      };
-    }
-
-    const sorted = [...withTilda].sort(
-      (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
-    );
-
-    const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };
-    const categoryCounts = { female: 0, male: 0, nonhuman: 0, unclear: 0 };
-    const examples = {
-      female: [] as string[],
-      male: [] as string[],
-      nonhuman: [] as string[],
-      unclear: [] as string[],
-    };
-    const sampleSources: MetadataSource[] = [];
-
-    for (const episode of sorted) {
-      const picks = TILDA_FIELDS.flatMap(({ key, label }) => {
-        const value = episode[key];
-        if (!isTildaAnswer(value)) return [];
-        counts[label as keyof typeof counts] += 1;
-        const cleaned = cleanTildaValue(value);
-        const category = classifyTildaPick(cleaned);
-        categoryCounts[category] += 1;
-        if (examples[category].length < 5 && !examples[category].includes(cleaned)) {
-          examples[category].push(cleaned);
-        }
-        return [{ label, value: cleaned }];
-      });
-
-      if (picks.length > 0 && sampleSources.length < 8) {
-        sampleSources.push(episodeToMetadataSource(episode));
-      }
-
-      if (sampleSources.length >= 8 && examples.male.length >= 5 && examples.female.length >= 5) {
-        break;
-      }
-    }
-
-    const totalPicks = counts.H + counts.Jason + counts.Guest + counts.Corey;
-    const classifiedTotal = categoryCounts.female + categoryCounts.male + categoryCounts.nonhuman;
-    const breakdown = `Breakdown by host: H ${counts.H}, Jason ${counts.Jason}, Guest ${counts.Guest}, Corey ${counts.Corey}.`;
-    const categoryBreakdown = `Category breakdown (heuristic): female-coded ${categoryCounts.female}, male-coded ${categoryCounts.male}, non-human/object ${categoryCounts.nonhuman}, unclear ${categoryCounts.unclear}.`;
-    const categoryWinner = (() => {
-      const entries: Array<[keyof typeof categoryCounts, number]> = [
-        ['female', categoryCounts.female],
-        ['male', categoryCounts.male],
-        ['nonhuman', categoryCounts.nonhuman],
-      ];
-      entries.sort((a, b) => b[1] - a[1]);
-      if (entries.length === 0 || entries[0][1] === 0) return 'unclear';
-      if (entries.length > 1 && entries[0][1] === entries[1][1]) return 'mixed';
-      return entries[0][0];
-    })();
-
-    const pct = (count: number) => {
-      if (classifiedTotal === 0) return '0%';
-      return `${Math.round((count / classifiedTotal) * 100)}%`;
-    };
-
-    const conclusion = (() => {
-      if (categoryWinner === 'female') return `Answer: The metadata suggests the hosts are most likely to cast Tilda in female-coded roles.`;
-      if (categoryWinner === 'male') return `Answer: The metadata suggests the hosts are most likely to cast Tilda in male-coded roles.`;
-      if (categoryWinner === 'nonhuman') return `Answer: The metadata suggests the hosts are most likely to cast Tilda as a non-human or object role.`;
-      if (categoryWinner === 'mixed') return `Answer: The metadata suggests a mixed set of picks with no single category dominating.`;
-      return `Answer: The metadata is too ambiguous to show a clear preference.`;
-    })();
-
-    const exampleLine = (label: string, values: string[]) => {
-      if (values.length === 0) return `${label}: none found.`;
-      return `${label}: ${values.slice(0, 3).join(', ')}.`;
-    };
-
-    const answer = [
-      `We track "Who would Tilda play?" in episode metadata.`,
-      `Found ${totalPicks} picks across ${withTilda.length} episodes.`,
-      conclusion,
-      `Among classified picks: female-coded ${pct(categoryCounts.female)}, male-coded ${pct(categoryCounts.male)}, non-human/object ${pct(categoryCounts.nonhuman)}.`,
-      categoryBreakdown,
-      exampleLine('Female-coded examples', examples.female),
-      exampleLine('Male-coded examples', examples.male),
-      exampleLine('Non-human/object examples', examples.nonhuman),
-      breakdown,
-      `Note: category labels use simple keyword cues and may mark some picks as "unclear".`,
-    ]
-      .filter(Boolean)
-      .join('\n\n');
-
-    return {
-      answer,
-      sources: sampleSources.length > 0 ? { metadata: sampleSources } : {},
-    };
-  }
+  // metadata_tilda is handled by LLM synthesis in the route handlers
+  // (collectTildaContext provides the data, routes do the synthesis)
 
   return null;
+}
+
+export interface TildaContext {
+  context: string;
+  sources: MetadataSource[];
+  totalPicks: number;
+  episodeCount: number;
+}
+
+export function collectTildaContext(): TildaContext | null {
+  const episodes = loadEpisodeMetadata();
+  const withTilda = episodes.filter((episode) =>
+    TILDA_FIELDS.some(({ key }) => isTildaAnswer(episode[key]))
+  );
+
+  if (withTilda.length === 0) return null;
+
+  const sorted = [...withTilda].sort(
+    (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+  );
+
+  const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };
+  const lines: string[] = [];
+  const sources: MetadataSource[] = [];
+  const MAX_EPISODES = 50;
+
+  for (const episode of sorted) {
+    const picks: string[] = [];
+    for (const { key, label } of TILDA_FIELDS) {
+      const value = episode[key];
+      if (isTildaAnswer(value)) {
+        counts[label as keyof typeof counts] += 1;
+        picks.push(`${label}: "${cleanTildaValue(value)}"`);
+      }
+    }
+
+    if (picks.length > 0) {
+      const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+      lines.push(`${epLabel} — ${episode.film}: ${picks.join(', ')}`);
+      if (sources.length < 8) {
+        sources.push(episodeToMetadataSource(episode));
+      }
+    }
+
+    if (lines.length >= MAX_EPISODES) break;
+  }
+
+  const totalPicks = counts.H + counts.Jason + counts.Guest + counts.Corey;
+  const hostBreakdown = `Picks by host: H (${counts.H}), Jason (${counts.Jason}), Guest (${counts.Guest}), Corey (${counts.Corey})`;
+
+  const context = `"Who Would Tilda Swinton Play?" picks from ${withTilda.length} episodes (${totalPicks} total picks):
+
+${lines.join('\n')}
+
+${hostBreakdown}`;
+
+  return { context, sources, totalPicks, episodeCount: withTilda.length };
 }

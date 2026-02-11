@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { queryEpisodes } from '@/lib/metadata-store';
 import { detectQueryIntent } from '@/lib/query-intent';
-import { buildMetadataAggregateResponse } from '@/lib/metadata-aggregates';
+import { buildMetadataAggregateResponse, collectTildaContext } from '@/lib/metadata-aggregates';
 import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
-import { synthesizeHybridAnswer, MetadataContext } from '@/lib/claude';
+import { synthesizeHybridAnswer, MetadataContext, getAnthropic } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { TranscriptChunk } from '@/types/transcript';
 import {
@@ -94,6 +94,53 @@ export async function POST(request: NextRequest) {
     // Step 1: Intent detection (pre-classification routing)
     const intent = detectQueryIntent(query);
     if (intent.type !== 'none') {
+      // Tilda intent: collect data and synthesize with LLM
+      if (intent.type === 'metadata_tilda') {
+        const tildaResult = collectTildaContext();
+        if (!tildaResult) {
+          return NextResponse.json({
+            answer: 'No Tilda casting picks were found in the metadata.',
+            queryType: 'factual',
+            sources: {},
+            metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+            perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+          });
+        }
+
+        const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
+        const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
+        const message = await getAnthropic().messages.create({
+          model: tildaModel,
+          max_tokens: tildaMaxTokens,
+          messages: [{
+            role: 'user',
+            content: `You are a podcast search assistant for the Escape Hatch podcast. Always refer to "Matt Haitch" or "Haitch Matt" as just "H".
+
+${tildaResult.context}
+
+QUESTION: ${query}
+
+Answer based on the Tilda casting data above. Be specific, cite examples from the data. Use Markdown formatting with ## headings, **bold**, and bullet points.`,
+          }],
+        });
+
+        const textBlock = message.content.find((block) => block.type === 'text');
+        const answer = textBlock?.text ?? 'Unable to generate a response.';
+
+        return NextResponse.json({
+          answer,
+          queryType: 'factual',
+          canDeepen: depth === 'quick',
+          sources: { metadata: tildaResult.sources },
+          metadata: {
+            totalCount: tildaResult.episodeCount,
+            returnedCount: tildaResult.sources.length,
+            hasMore: false,
+          },
+          perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+        });
+      }
+
       const aggregate = buildMetadataAggregateResponse(intent);
       if (aggregate) {
         const totalMs = Date.now() - requestStart;
