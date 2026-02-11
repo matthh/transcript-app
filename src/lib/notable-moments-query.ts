@@ -1,5 +1,7 @@
 const NOTABLE_FILM_PATTERNS: RegExp[] = [
-  /\bnotable moments?\b.*?(?:from|for|in)\s+(?:the\s+)?(.+?)(?:\s+episode\b|$)/i,
+  /\b(?:notable|interesting|key|best|memorable)\s+moments?\b.*?(?:from|for|in|of)\s+(?:the\s+)?(.+?)(?:\s+episode\b|$)/i,
+  /\b(?:highlights?)\b.*?(?:from|for|in|of)\s+(?:the\s+)?(.+?)(?:\s+episode\b|$)/i,
+  /\b(?:most\s+)?(?:interesting|key|best|memorable)\s+moments?\s+in\s+(?:the\s+)?(.+?)\s+episode\b/i,
   /\bnotable moments?\b\s+(?:for|in)?\s*(.+)$/i,
 ];
 

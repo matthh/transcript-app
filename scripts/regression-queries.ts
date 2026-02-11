@@ -91,6 +91,12 @@ const cases: RegressionCase[] = [
     expectIntent: 'metadata_notable_moments',
     expectNotableMomentsFilm: 'Dune Messiah',
   },
+  {
+    name: 'Moments film extraction',
+    query: 'what are the most interesting moments in the 2001 episode',
+    expectIntent: 'none',
+    expectNotableMomentsFilm: '2001',
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {

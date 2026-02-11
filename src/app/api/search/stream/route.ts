@@ -381,6 +381,24 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           metadataHasMore = result.hasMore;
           metadataSources = metadataEpisodes.map(episodeToMetadataSource);
         }
+        // Fallback for "moments/highlights" queries: use metadata notable moments to augment transcripts
+        if (metadataEpisodes.length === 0) {
+          const momentsFilm = extractNotableMomentsFilm(query);
+          if (momentsFilm) {
+            const notableResult = queryEpisodes({ film: momentsFilm }, {
+              limit: 5,
+              offset: 0,
+              sortBy: 'episode',
+              sortOrder: 'asc',
+            });
+            if (notableResult.episodes.length > 0) {
+              metadataEpisodes = notableResult.episodes;
+              metadataTotalCount = notableResult.totalCount;
+              metadataHasMore = notableResult.hasMore;
+              metadataSources = metadataEpisodes.map(episodeToMetadataSource);
+            }
+          }
+        }
 
         const countMessage = metadataTotalCount > 0
           ? (metadataHasMore
