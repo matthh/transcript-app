@@ -1,11 +1,12 @@
 import { detectQueryIntent, QueryIntentType } from '../src/lib/query-intent';
-import { buildMetadataAggregateResponse } from '../src/lib/metadata-aggregates';
+import { buildMetadataAggregateResponse, collectTildaContext } from '../src/lib/metadata-aggregates';
 
 type RegressionCase = {
   name: string;
   query: string;
   expectIntent: QueryIntentType;
   expectAnswerIncludes?: string[];
+  expectTildaContext?: boolean;
 };
 
 const cases: RegressionCase[] = [
@@ -65,13 +66,13 @@ const cases: RegressionCase[] = [
     name: 'Tilda metadata aggregate',
     query: 'who would tilda play',
     expectIntent: 'metadata_tilda',
-    expectAnswerIncludes: ['tilda', 'found', 'breakdown'],
+    expectTildaContext: true,
   },
   {
     name: 'Tilda casting analysis',
     query: 'are the hosts of Escape Hatch more likely to cast Tilda as a woman, a man, or an unanimate object',
     expectIntent: 'metadata_tilda',
-    expectAnswerIncludes: ['found', 'breakdown'],
+    expectTildaContext: true,
   },
 ];
 
@@ -81,7 +82,16 @@ function runCase(testCase: RegressionCase): string | null {
     return `Expected intent ${testCase.expectIntent} but got ${intent.type}`;
   }
 
-  if (intent.type.startsWith('metadata_')) {
+  // Tilda intent is handled by LLM synthesis in routes, not buildMetadataAggregateResponse
+  if (testCase.expectTildaContext) {
+    const tildaCtx = collectTildaContext();
+    if (!tildaCtx) {
+      return 'Expected Tilda context but collectTildaContext returned null';
+    }
+    if (tildaCtx.totalPicks === 0) {
+      return 'Expected Tilda picks but got 0';
+    }
+  } else if (intent.type.startsWith('metadata_')) {
     const aggregate = buildMetadataAggregateResponse(intent);
     if (!aggregate) {
       return 'Expected metadata aggregate response but got null';
