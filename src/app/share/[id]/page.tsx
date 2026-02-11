@@ -4,6 +4,7 @@ import { loadShare, ShareableResult } from '@/lib/share-storage';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import Link from 'next/link';
 import { MarkdownContent } from './markdown-content';
+import { DeepenShare } from './deepen-share';
 import { FeedbackForm } from '@/components/FeedbackForm';
 
 interface PageProps {
@@ -157,6 +158,7 @@ export default async function SharePage({ params }: PageProps) {
           </h1>
 
           <MarkdownContent content={share.answer} />
+          <DeepenShare query={share.query} />
         </div>
 
         <FeedbackForm query={share.query} answer={share.answer} queryType={share.queryType} />
