@@ -91,6 +91,16 @@ function cleanTildaValue(value: string): string {
   return value.replace(/\s+/g, ' ').trim();
 }
 
+function formatKevsQuestion(value: string | null): string {
+  if (!value) return 'Not recorded';
+  const trimmed = value.trim();
+  if (!trimmed) return 'Not recorded';
+  if (/^(n\/a|na|none|no answer|no question)$/i.test(trimmed)) {
+    return 'Not recorded';
+  }
+  return trimmed;
+}
+
 const TILDA_FIELDS: Array<{ key: 'tildaH' | 'tildaJason' | 'tildaGuest' | 'tildaCorey'; label: string }> = [
   { key: 'tildaH', label: 'H' },
   { key: 'tildaJason', label: 'Jason' },
@@ -208,6 +218,10 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
           ? episode.guest
           : 'No guest listed';
         lines.push(`Guest: ${guestValue}`);
+      } else if (field === 'releaseDate') {
+        lines.push(`Release date: ${episode.releaseDate}`);
+      } else if (field === 'kevsQuestion') {
+        lines.push(`Kev's Question: ${formatKevsQuestion(episode.kevsQuestion)}`);
       }
     }
 

@@ -16,7 +16,7 @@ export type QueryIntentType =
   | 'none';
 
 export type MetadataFieldKey = 'mmmCount' | 'thatsGreatCount';
-export type MetadataEpisodeField = 'guest' | 'reviewer';
+export type MetadataEpisodeField = 'guest' | 'reviewer' | 'releaseDate' | 'kevsQuestion';
 
 export interface QueryIntent {
   type: QueryIntentType;
@@ -140,8 +140,16 @@ function detectEpisodeFieldsIntent(query: string): QueryIntent | null {
     /\breviewer\b/.test(normalized) ||
     /\breviewed\b/.test(normalized) ||
     /\bwho reviewed\b/.test(normalized);
+  const wantsReleaseDate =
+    /\brelease date\b/.test(normalized) ||
+    /\bwhen did\b.*\brelease\b/.test(normalized) ||
+    /\bwhen was\b.*\breleased\b/.test(normalized) ||
+    /\bwhat date\b.*\brelease\b/.test(normalized);
+  const wantsKevsQuestion =
+    /\bkev'?s?\s+question\b/.test(normalized) ||
+    /\bkev\s+question\b/.test(normalized);
 
-  if (!wantsGuest && !wantsReviewer) return null;
+  if (!wantsGuest && !wantsReviewer && !wantsReleaseDate && !wantsKevsQuestion) return null;
 
   const episodeNumber = extractEpisodeNumberFromQuery(query);
   const film = episodeNumber ? null : findFilmFromQuery(query);
@@ -150,6 +158,8 @@ function detectEpisodeFieldsIntent(query: string): QueryIntent | null {
   const episodeFields: MetadataEpisodeField[] = [];
   if (wantsGuest) episodeFields.push('guest');
   if (wantsReviewer) episodeFields.push('reviewer');
+  if (wantsReleaseDate) episodeFields.push('releaseDate');
+  if (wantsKevsQuestion) episodeFields.push('kevsQuestion');
 
   return {
     type: 'metadata_episode_fields',

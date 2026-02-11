@@ -4,7 +4,7 @@ This document explains, in plain language, what happens after someone types a qu
 
 ## The short version
 
-1. **We check for “simple” questions first.** If it’s something like “latest episode” or “how many episodes,” we answer directly from the episode metadata.
+1. **We check for “simple” questions first.** If it’s something like “latest episode,” “how many episodes,” or “who was the guest/reviewer/release date/Kev’s question for episode X,” we answer directly from the episode metadata.
 2. **We classify the question.** Is it asking for facts, interpretation, or both?
 3. **We search the right data sources.** That can be episode metadata, transcripts, or both.
 4. **We assemble a response.** The system writes an answer and includes citations and timestamps.
@@ -19,7 +19,7 @@ flowchart TD
   B -- "Yes" --> C["Answer from episode metadata"]
   B -- "No" --> D["Classify question: factual / interpretive / hybrid"]
   D --> E["Pick data sources"]
-  E --> F["Metadata search (episode list, guests, release dates)"]
+  E --> F["Metadata search (episode list, guests, reviewers, release dates, Kev’s question)"]
   E --> G["Transcript search (episode dialogue)"]
   F --> H["Answer synthesis"]
   G --> H["Answer synthesis"]
@@ -48,10 +48,10 @@ flowchart LR
 
 - **Search UI** — The page where someone types a question and clicks search.
 - **/api/search** — The server endpoint that orchestrates the whole search flow.
-- **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, etc.).
+- **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, guest/reviewer lookup, release date, Kev’s question, etc.).
 - **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
-- **Episode metadata store** — The structured episode database (titles, guests, release dates, summaries).
+- **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
 - **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
 - **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
 - **BM25 index (keywords)** — Exact‑word search over transcript chunks.
@@ -67,15 +67,18 @@ Some questions are **really just metadata lookups**, like:
 - “What’s the latest episode?”
 - “How many episodes are there?”
 - “What’s the latest episode with guest X?”
+- “Who was the guest or reviewer on *No Country for Old Men*?”
+- “When did episode 6 release?”
+- “What was Kev’s question on episode 1?”
 
-For these, the system **skips the heavier search** and answers directly from episode metadata (titles, guests, release dates, etc.). This is fast and avoids over‑complication.
+For these, the system **skips the heavier search** and answers directly from episode metadata (titles, guests, reviewers, release dates, Kev’s question, etc.). This is fast and avoids over‑complication.
 
 ---
 
 ### 2) Classification: What kind of question is it?
 If it’s not a quick metadata lookup, the system classifies the question into one of three buckets:
 
-- **Factual** — “Which episode covered *The Thing*?”
+- **Factual** — “Which episode covered *The Thing*?” / “Who was the guest on *No Country for Old Men*?” / “When did episode 6 release?”
 - **Interpretive** — “What did they think about *The Thing*?”
 - **Hybrid** — “Which episode covered *The Thing*, and what did they say?”
 
@@ -92,10 +95,11 @@ There are two main sources of truth:
 
 #### A) Episode metadata
 This is the structured data about each episode:
-- Title, guest, release date, season, episode number
+- Title, guest, reviewer, release date, season, episode number
+- Kev’s question (when available)
 - Notable moments, reviewer notes, and other summaries (when available)
 
-If the question is factual or hybrid, metadata is searched first using the extracted filters.
+If the question is factual or hybrid, metadata is searched first using the extracted filters. Certain factual questions are answered **directly** from metadata without transcript search (guest/reviewer lookup, release date, Kev’s question).
 
 #### B) Transcript search
 When we need **what was actually said**, we search the transcripts.

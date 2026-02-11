@@ -98,6 +98,18 @@ const cases: RegressionCase[] = [
     expectAnswerIncludes: ['credits for', 'reviewer', 'guest', 'no country for old men'],
   },
   {
+    name: 'Release date by film',
+    query: 'When did the No Country for Old Men episode release?',
+    expectIntent: 'metadata_episode_fields',
+    expectAnswerIncludes: ['release date', '7/6/2020'],
+  },
+  {
+    name: 'Kev question by film',
+    query: "What was Kev's question for Dune (1965) Part 1?",
+    expectIntent: 'metadata_episode_fields',
+    expectAnswerIncludes: ['kev', 'question', 'kev recorded 2 questions'],
+  },
+  {
     name: 'Moments film extraction',
     query: 'what are the most interesting moments in the 2001 episode',
     expectIntent: 'none',

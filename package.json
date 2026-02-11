@@ -19,6 +19,7 @@
     "download-audio": "node --import tsx ./scripts/download-drive-audio.ts",
     "batch-transcribe": "node --import tsx ./scripts/batch-transcribe.ts",
     "ab:queries": "node --import tsx ./scripts/ab-queries.ts",
+    "ab:intents": "node --import tsx ./scripts/ab-metadata-intents.ts",
     "eval": "node --import tsx ./scripts/eval-search.ts",
     "eval:generate": "node --import tsx ./scripts/generate-eval-queries.ts",
     "eval:feedback": "node --import tsx ./scripts/feedback-to-eval.ts"
