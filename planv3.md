@@ -278,9 +278,33 @@ A pragmatic middle ground: raise `QUICK_SYNTHESIS.maxChunks` so more transcript-
 queries land in the window. Doesn't fully solve the problem but reduces the failure rate without
 adding complexity. Could combine with Option B for a complete solution.
 
-### Decision
-TBD — needs further consideration of cost/latency tradeoffs and eval data on how often
-transcript-search factual queries occur vs. metadata-answerable ones.
+### Decision (Updated 2026-02-12)
+Based on recent failed/low-quality user queries (Truthsayer segment lookup, frequent
+voicemailer ranking, repeated-phrase lookups like "you hack", and Haitch band-history
+queries), the current boundary (`factual` => Haiku + 4 chunks) is not reliable.
+
+These queries are factual in form but transcript-heavy in evidence requirements, often
+cross-episode and multi-instance. They fail when synthesis only sees the top few chunks.
+
+**Adopted approach: Option C now, Option B next.**
+
+- **Immediate policy (Option C for transcript-path factual):**
+  remove 4-chunk slicing for factual queries that route through transcript retrieval;
+  keep Haiku for speed/cost, but pass all retrieved chunks to synthesis.
+- **Follow-up control layer (Option B):**
+  add classifier signal `requiresTranscriptDepth` so true metadata-answerable factual
+  queries can remain in cheap quick mode while transcript-search factual queries go deep.
+- **Aggregation-query carve-out:**
+  queries asking for frequency/ranking/count across speakers/voicemailers/phrases are
+  treated as transcript-depth-required by default.
+
+Option D (4 -> 8) is considered insufficient as a standalone fix; it may be used only as
+a temporary mitigation if rollout constraints block immediate Option C behavior.
+
+### Sequencing Relative to the Rest of the Plan
+Option C and Option B are Phase 1.5 priority work and should be completed before Phase 2
+retrieval-quality initiatives. They address current user-visible failures more directly than
+reranking/deduplication alone.
 
 ---
 
@@ -311,6 +335,10 @@ transcript-search factual queries occur vs. metadata-answerable ones.
 
 1. Calibrate classification confidence against eval dataset (1.3b).
 2. Implement confidence‑based routing policy (1.3c) — medium‑confidence intents run both paths.
-3. Normalize film titles in intent matching (1.1 remaining).
-4. Make transcript retrieval timeout configurable (1.4 remaining).
-5. Begin Phase 2 retrieval quality work — reranking + deduplication (2.1).
+3. Implement quick-mode decision above: remove 4-chunk slicing for transcript-path factual queries; keep Haiku.
+4. Add `requiresTranscriptDepth` signal and initial heuristics (aggregation/frequency/ranking queries => true).
+5. Expand eval set with high-impact transcript-factual cases (Truthsayer, frequent voicemailers, "you hack", Haitch band mentions).
+6. Normalize film titles in intent matching (1.1 remaining).
+7. Make transcript retrieval timeout configurable (1.4 remaining).
+8. Begin Phase 2 with metadata-informed transcript boosting (2.3).
+9. Continue Phase 2 reranking + deduplication (2.1).
