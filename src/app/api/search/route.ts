@@ -9,6 +9,7 @@ import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext, getAnthropic } from '@/lib/claude';
+import { generateEmbedding } from '@/lib/embeddings';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { logQuery, generateLogId } from '@/lib/query-logger';
 import { formatEpisodeLabel } from '@/lib/episode-format';
@@ -363,8 +364,15 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
     const requestedVariant = typeof variant === 'string' ? variant : undefined;
     let tuning = allowVariants ? getSearchTuning(requestedVariant) : null;
 
-    // Step 2: Classify query (for filter extraction + synthesis prompt hint)
-    const classification = await classifyQuery(query);
+    // Step 2: Classify query + pre-compute embedding in parallel
+    const embeddingPromise = generateEmbedding(query).catch((err) => {
+      console.warn('Pre-computed embedding failed:', err);
+      return null;
+    });
+    const [classification, precomputedEmbedding] = await Promise.all([
+      classifyQuery(query),
+      embeddingPromise,
+    ]);
     if (classification.type === 'interpretive' && !tuning && depth !== 'deep') {
       tuning = getSearchTuning('fast');
     }
@@ -436,8 +444,12 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
     console.log(`Transcript search: K=${baseK.finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
 
     const isColdStart = !isVectorStoreLoaded();
-    const retrievalOptions = isColdStart ? { timeoutMs: 15000 } : undefined;
-    const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides, retrievalOptions);
+    const retrievalOptions = {
+      ...(isColdStart ? { timeoutMs: 15000 } : {}),
+      ...(precomputedEmbedding ? { precomputedEmbedding } : {}),
+    };
+    const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides,
+      Object.keys(retrievalOptions).length > 0 ? retrievalOptions : undefined);
     const transcriptTimedOut = isColdStart && retrievalResults.length === 0;
 
     if (retrievalResults.length > 0) {

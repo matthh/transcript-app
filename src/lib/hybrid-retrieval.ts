@@ -277,7 +277,7 @@ export async function hybridRetrieval(
   query: string,
   classification: ClassificationResult,
   overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>,
-  options?: { timeoutMs?: number }
+  options?: { timeoutMs?: number; precomputedEmbedding?: number[] }
 ): Promise<RetrievalResult[]> {
   // Load vector store and BM25 index in parallel, with optional timeout
   let chunks: StoredChunk[];
@@ -315,7 +315,7 @@ export async function hybridRetrieval(
   const wideBm25K = bm25K * retrievalMultiplier;
 
   // Run embedding search
-  const queryEmbedding = await generateEmbedding(query);
+  const queryEmbedding = options?.precomputedEmbedding ?? await generateEmbedding(query);
   const embeddingResults = searchSimilar(queryEmbedding, chunks, wideEmbeddingK);
 
   // Run BM25 search (if index is available)
