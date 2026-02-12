@@ -1,7 +1,9 @@
+import type { EpisodeId } from '@/lib/episode-format';
+
 export interface EpisodeMetadata {
   pod: string;
   season: number;
-  episode: number;
+  episode: EpisodeId;
   film: string;
   filmYear: number | null;
   releaseDate: string;
@@ -63,7 +65,7 @@ export interface MetadataQueryResult {
 export interface MetadataSource {
   film: string;
   season: number;
-  episode: number;
+  episode: EpisodeId;
   releaseDate: string;
   guest: string | null;
   reviewer: string;
@@ -86,6 +88,7 @@ export interface ClassificationResult {
   type: QueryType;
   confidence: number;
   filters: QueryFilters;
+  requiresTranscriptDepth?: boolean;
 }
 
 export interface HybridSearchResponse {

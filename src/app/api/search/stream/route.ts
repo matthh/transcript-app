@@ -577,17 +577,23 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         let answer = '';
         let chunkCount = 0;
 
-        // Quick model: factual queries use Haiku for speed; all others use Sonnet.
-        // All queries get full chunks — no slicing (Option C from planv3).
-        const useQuickModel = depth === 'quick' && classification.type === 'factual';
+        // Quick synthesis: factual queries answerable from metadata (no transcript depth needed)
+        // use Haiku + limited chunks. All others get full depth.
+        const useQuickSynthesis = depth === 'quick'
+          && classification.type === 'factual'
+          && !classification.requiresTranscriptDepth;
 
         if (depth === 'quick' && classification.type !== 'factual') {
           console.log('Auto-deep: interpretive/hybrid query, using full synthesis');
+        } else if (depth === 'quick' && classification.type === 'factual' && classification.requiresTranscriptDepth) {
+          console.log('Auto-deep: transcript-search factual query, using full chunks');
         }
 
-        const synthesisChunks = transcriptChunks;
+        const synthesisChunks = useQuickSynthesis
+          ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
+          : transcriptChunks;
 
-        const synthesistuning = useQuickModel
+        const synthesistuning = useQuickSynthesis
           ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
           : classification.type === 'interpretive'
             ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
@@ -631,7 +637,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           queryId,
           queryType: classification.type,
           classificationConfidence: classification.confidence,
-          canDeepen: useQuickModel && transcriptChunks.length > 0,
+          canDeepen: useQuickSynthesis && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
             metadata: metadataSources.length > 0 ? metadataSources : undefined,

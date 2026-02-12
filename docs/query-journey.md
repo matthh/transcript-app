@@ -122,9 +122,12 @@ These two are combined into a “hybrid” search so we don’t miss relevant pa
 ### 4) Answer synthesis
 Once relevant metadata and transcript passages are gathered, the system **writes a response** in natural language.
 
-The synthesis mode depends on the query type:
-- **Factual queries** use a fast path: a smaller model (Haiku), all retrieved transcript chunks, and a shorter response cap. This keeps simple lookups snappy. A "Show deeper analysis" button lets the user opt into full synthesis with a more capable model if the quick answer isn't enough.
+The synthesis mode depends on the query type and whether the answer lives in metadata or transcripts:
+- **Factual, metadata-answerable** queries (e.g., "Tim Burton movies", "Proto episodes") use a fast path: a smaller model (Haiku), a limited set of transcript chunks, and a shorter response cap. A "Show deeper analysis" button lets the user opt into full synthesis if the quick answer isn't enough.
+- **Factual, transcript-depth** queries (e.g., "Did Haitch have a band?", "River Phoenix mentions") use Haiku but receive **all** retrieved transcript chunks, because the answer is buried in what was said rather than in episode metadata.
 - **Interpretive and hybrid queries** always get full synthesis: a more capable model (Sonnet), all retrieved transcript chunks, and a longer response cap. These queries need more context to produce a good answer, so they auto-deep even on first load.
+
+The system determines whether a factual query needs transcript depth using a classifier signal (`requiresTranscriptDepth`). Queries about opinions, quotes, biographical details, specific phrases, or frequency/ranking across episodes require transcript depth. Queries answerable from structured episode data (titles, guests, directors, dates) do not.
 
 The response includes:
 - **Citations** to the transcript snippets

@@ -29,8 +29,9 @@ The search pipeline:
 4. **Transcript search** — precomputed embedding + vector similarity + BM25, then
    Reciprocal Rank Fusion, keyword boosting, and episode diversification (max 2 per episode,
    dynamic cap to 4).
-5. **Synthesis** — all queries get full retrieved chunks (no slicing).
-   Factual quick mode: Haiku 4.5, all chunks, 700 tokens (`10e432a`).
+5. **Synthesis** — routing based on query type and transcript depth signal.
+   Factual + metadata-answerable (`requiresTranscriptDepth: false`): Haiku 4.5, 4 chunks, 700 tokens (quick mode).
+   Factual + transcript-depth (`requiresTranscriptDepth: true`): Haiku 4.5, all chunks, 700 tokens.
    Interpretive/hybrid auto-deep: Sonnet 4, all chunks (`a90315c`).
    Deep mode (on demand): Sonnet 4, all chunks.
 
@@ -292,12 +293,14 @@ cross-episode and multi-instance. They fail when synthesis only sees the top few
 - **Immediate policy (Option C for transcript-path factual):** ✅ Implemented (`10e432a`)
   Removed 4-chunk slicing for factual queries; Haiku sees all retrieved chunks.
   Eval: 36/37 passed (1 rate-limit 429). Dingus voicemail flipped FAIL→PASS.
-- **Follow-up control layer (Option B):**
-  add classifier signal `requiresTranscriptDepth` so true metadata-answerable factual
-  queries can remain in cheap quick mode while transcript-search factual queries go deep.
-- **Aggregation-query carve-out:**
-  queries asking for frequency/ranking/count across speakers/voicemailers/phrases are
-  treated as transcript-depth-required by default.
+- **Follow-up control layer (Option B):** ✅ Implemented (2026-02-12)
+  Added classifier signal `requiresTranscriptDepth` (LLM prompt + sync fallback).
+  Metadata-answerable factual queries (`requiresTranscriptDepth: false`) get cheap quick
+  mode (4 chunks, Haiku, 700 tokens). Transcript-search factual queries keep full depth.
+  Eval: 41/44 passed (3 pre-existing failures unrelated to this change).
+- **Aggregation-query carve-out:** ✅ Covered by Option B
+  Queries asking for frequency/ranking/count across speakers/voicemailers/phrases are
+  classified as `transcriptDepth: true` by the LLM prompt, defaulting to full depth.
 
 Option D (4 -> 8) is considered insufficient as a standalone fix; it may be used only as
 a temporary mitigation if rollout constraints block immediate Option C behavior.
@@ -306,6 +309,51 @@ a temporary mitigation if rollout constraints block immediate Option C behavior.
 Option C and Option B are Phase 1.5 priority work and should be completed before Phase 2
 retrieval-quality initiatives. They address current user-visible failures more directly than
 reranking/deduplication alone.
+
+---
+
+## Open Question: Full-Catalog Queries (2026-02-12)
+
+### Problem
+Query: "Review every movie the podcast has covered, then suggest 10 more films they should
+definitely have on their upcoming schedule." ([share link](https://search.escapehatchpod.com/share/shr_mljh8n2b_yll822))
+
+The system only listed ~10 films and declined to recommend, even though we have metadata for
+all ~297 episodes. The model had no idea what films the podcast has covered.
+
+### Root Cause
+`route.ts` line 461-469 guards against stuffing 300+ episodes into the synthesis prompt:
+
+```ts
+if (filtersMatched > 0 || (filtersRequested === 0 && result.totalCount <= 50)) {
+  metadataEpisodes = result.episodes;
+```
+
+This query has no filters, so `filtersRequested === 0`. But `totalCount` is ~297 (> 50), so
+the condition fails and **zero metadata episodes are passed to synthesis**. The model only
+sees transcript chunks and can't answer catalog-wide questions.
+
+The guard exists for a good reason — passing 297 full episode objects to synthesis would blow
+up context/cost. But queries like "suggest movies they should cover" or "what genres have they
+focused on" genuinely need catalog-level awareness.
+
+### Options to Consider
+
+**Option A: Compact catalog summary**
+When the query has no filters and totalCount > 50, pass a lightweight summary (film titles +
+years only, no full metadata) to synthesis. ~297 titles at ~20 tokens each ≈ 6K tokens —
+manageable. Could be a pre-formatted string injected into the synthesis prompt.
+
+**Option B: Classifier signal `needsFullCatalog`**
+Add a boolean to classification output. When true, inject the compact catalog summary.
+Queries like "suggest movies", "what haven't they covered", "genres breakdown" would trigger it.
+
+**Option C: Always include compact film list**
+Always inject a short film-title list into synthesis regardless of query. Low cost (~6K tokens)
+and removes the edge case entirely, but adds tokens to every query.
+
+### Decision
+TBD — related to the broader question of how much metadata context synthesis should see.
 
 ---
 
@@ -337,8 +385,8 @@ reranking/deduplication alone.
 1. Calibrate classification confidence against eval dataset (1.3b).
 2. Implement confidence‑based routing policy (1.3c) — medium‑confidence intents run both paths.
 3. ~~Implement quick-mode decision above: remove 4-chunk slicing for transcript-path factual queries; keep Haiku.~~ ✅ Done (`10e432a`).
-4. Add `requiresTranscriptDepth` signal and initial heuristics (aggregation/frequency/ranking queries => true).
-5. Expand eval set with high-impact transcript-factual cases (Truthsayer, frequent voicemailers, "you hack", Haitch band mentions).
+4. ~~Add `requiresTranscriptDepth` signal and initial heuristics (aggregation/frequency/ranking queries => true).~~ ✅ Done (2026-02-12).
+5. ~~Expand eval set with high-impact transcript-factual cases (Truthsayer, frequent voicemailers, "you hack", Haitch band mentions).~~ ✅ Done (`83d8548`).
 6. Normalize film titles in intent matching (1.1 remaining).
 7. Make transcript retrieval timeout configurable (1.4 remaining).
 8. Begin Phase 2 with metadata-informed transcript boosting (2.3).

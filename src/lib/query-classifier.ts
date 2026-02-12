@@ -155,8 +155,19 @@ GENERAL RULES:
   - "comedy episodes" → genre: "Comedy"
 - Don't extract question words (who, what, which) as entity values
 
+Determine if the query requires searching episode transcripts (what was actually said):
+- transcriptDepth: true — query asks about what was said, opinions, quotes, anecdotes, biographical details, specific words/phrases used, voicemailer content, frequency/ranking across episodes
+- transcriptDepth: false — query can be answered from episode metadata alone (titles, guests, reviewers, dates, directors, genres, counts)
+
+Examples:
+- "Tim Burton movies" → false (director filter on metadata)
+- "Proto episodes" → false (guest filter on metadata)
+- "Did Haitch have a band" → true (biographical detail in transcripts)
+- "who says yeah more" → true (frequency analysis of transcripts)
+- "what did they think about Alien" → true (opinions from transcripts)
+
 Respond with ONLY valid JSON:
-{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string", "decade?": 1980, "yearRange?": {"min": 1980, "max": 1980}}}`,
+{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string", "decade?": 1980, "yearRange?": {"min": 1980, "max": 1980}}, "transcriptDepth": true|false}`,
       },
     ],
   });
@@ -239,7 +250,10 @@ Respond with ONLY valid JSON:
     }
   }
 
-  return { type, confidence, filters };
+  // Default true (safe): if LLM omits the field, assume transcript depth needed
+  const requiresTranscriptDepth = parsed.transcriptDepth !== false;
+
+  return { type, confidence, filters, requiresTranscriptDepth };
 }
 
 /**
@@ -323,5 +337,9 @@ export function classifyQuerySync(query: string): ClassificationResult {
   const filters = extractSimpleFilters(query);
   const { type, confidence } = classifyByKeywords(query);
 
-  return { type, confidence, filters };
+  // Factual queries with filters can likely be answered from metadata alone;
+  // factual queries without filters (or non-factual) need transcript depth.
+  const requiresTranscriptDepth = type !== 'factual' || Object.keys(filters).length === 0;
+
+  return { type, confidence, filters, requiresTranscriptDepth };
 }
