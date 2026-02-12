@@ -8,7 +8,7 @@
 
 import { generateEmbedding } from './embeddings';
 import { loadVectorStoreAsync, searchSimilar, StoredChunk } from './vectorstore';
-import { searchBM25 } from './bm25';
+import { searchBM25, expandQueryTokens } from './bm25';
 import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
 import { BM25Index } from './bm25';
 import { ClassificationResult } from '@/types/episode-metadata';
@@ -158,11 +158,12 @@ const STOPWORDS = new Set([
  * Filters stopwords and short tokens.
  */
 export function extractQueryTerms(query: string): string[] {
-  return query
+  const baseTerms = query
     .toLowerCase()
     .replace(/[^a-z0-9\s'-]/g, '')
     .split(/\s+/)
     .filter((t) => t.length >= 3 && !STOPWORDS.has(t));
+  return expandQueryTokens(baseTerms);
 }
 
 /**

@@ -2,9 +2,10 @@
  * Download MP3 files from Google Drive for episodes missing transcripts.
  *
  * Usage:
- *   npm run download-audio              # Scan and download
- *   npm run download-audio -- --dry-run # Just show matches, don't download
- *   npm run download-audio -- --list    # List all folders in Drive
+ *   npm run download-audio                        # Download for episodes missing transcripts
+ *   npm run download-audio -- --missing-mp3s      # Download for episodes missing MP3 files
+ *   npm run download-audio -- --dry-run            # Just show matches, don't download
+ *   npm run download-audio -- --list               # List all folders in Drive
  *   npm run download-audio -- --episodes 230,239,241 # Download specific episodes
  *
  * Prerequisites:
@@ -18,6 +19,7 @@ import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { google, drive_v3 } from 'googleapis';
 import { loadEpisodeMetadata } from '../src/lib/metadata-store';
+import { type EpisodeId } from '../src/lib/episode-format';
 
 dotenv.config({ path: '.env.local' });
 dotenv.config({ path: '.env' });
@@ -26,6 +28,7 @@ const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const listOnly = args.includes('--list');
 const verbose = args.includes('--verbose');
+const missingMp3sMode = args.includes('--missing-mp3s');
 
 function getArgValue(flag: string): string | null {
   const idx = args.indexOf(flag);
@@ -59,7 +62,7 @@ interface DriveFile {
 }
 
 interface EpisodeMissing {
-  episode: number;
+  episode: EpisodeId;
   film: string;
   season: number;
 }
@@ -180,7 +183,7 @@ function getEpisodesMissingTranscripts(): EpisodeMissing[] {
   const metadata = loadEpisodeMetadata();
 
   // Get list of existing transcripts
-  const existingTranscripts = new Set<number>();
+  const existingTranscripts = new Set<EpisodeId>();
 
   if (fs.existsSync(TRANSCRIPTS_DIR)) {
     const files = fs.readdirSync(TRANSCRIPTS_DIR).filter(f => f.endsWith('.json'));
@@ -199,6 +202,27 @@ function getEpisodesMissingTranscripts(): EpisodeMissing[] {
   // Filter to episodes without transcripts
   return metadata
     .filter(ep => !existingTranscripts.has(ep.episode))
+    .map(ep => ({
+      episode: ep.episode,
+      film: ep.film,
+      season: ep.season,
+    }));
+}
+
+function getEpisodesMissingMp3s(): EpisodeMissing[] {
+  const metadata = loadEpisodeMetadata();
+
+  const existingMp3s = new Set<string>();
+  if (fs.existsSync(MP3_DIR)) {
+    const files = fs.readdirSync(MP3_DIR).filter(f => f.endsWith('.mp3'));
+    for (const file of files) {
+      // Strip .mp3 extension to get episode ID (e.g., "206.mp3" → "206", "147b1.mp3" → "147b1")
+      existingMp3s.add(file.replace(/\.mp3$/i, ''));
+    }
+  }
+
+  return metadata
+    .filter(ep => !existingMp3s.has(String(ep.episode)))
     .map(ep => ({
       episode: ep.episode,
       film: ep.film,
@@ -357,10 +381,14 @@ async function main() {
   // Get episodes to download
   const missingEpisodes = episodeOverrides
     ? getEpisodesByNumber(episodeOverrides)
-    : getEpisodesMissingTranscripts();
+    : missingMp3sMode
+      ? getEpisodesMissingMp3s()
+      : getEpisodesMissingTranscripts();
 
   if (episodeOverrides) {
     console.log(`Using explicit episode list (${missingEpisodes.length} found).\n`);
+  } else if (missingMp3sMode) {
+    console.log(`${missingEpisodes.length} episodes missing MP3 files.\n`);
   } else {
     console.log(`${missingEpisodes.length} episodes missing transcripts.\n`);
   }

@@ -304,6 +304,14 @@
       "expectTextInAnswer": ["Starman"]
     },
     {
+      "name": "Synonym expansion: voicemail/letter early era",
+      "query": "What voicemails or listener messages did they get on the No Country for Old Men episode",
+      "tags": ["query-expansion", "synonym", "single-episode"],
+      "expectSourceEpisode": "No Country for Old Men",
+      "expectMinTranscriptSources": 1,
+      "expectTextInAnswer": ["No Country"]
+    },
+    {
       "name": "Full catalog suggestion (known limitation)",
       "query": "Review every movie the podcast has covered, then suggest 10 more films they should cover",
       "tags": ["known-limitation", "full-catalog", "recommendation"],

@@ -33,6 +33,31 @@ export interface BM25Index {
 const K1 = 1.5; // Term frequency saturation
 const B = 0.75; // Document length normalization
 
+/** Podcast-specific synonym expansions for BM25 search. */
+const SYNONYM_MAP: Record<string, string[]> = {
+  'voicemail': ['letter', 'letters'],
+  'voicemails': ['letters', 'letter'],
+  'letter': ['voicemail', 'voicemails'],
+  'letters': ['voicemails', 'voicemail'],
+};
+
+/**
+ * Expand query tokens with synonyms.
+ * Returns original tokens + any synonym expansions (deduplicated).
+ */
+export function expandQueryTokens(tokens: string[]): string[] {
+  const expanded = new Set(tokens);
+  for (const token of tokens) {
+    const synonyms = SYNONYM_MAP[token];
+    if (synonyms) {
+      for (const syn of synonyms) {
+        expanded.add(syn);
+      }
+    }
+  }
+  return Array.from(expanded);
+}
+
 /**
  * Tokenize text into searchable terms.
  * Simple whitespace + punctuation tokenizer with lowercasing.
@@ -116,7 +141,7 @@ export function searchBM25(
   index: BM25Index,
   topK: number = 10
 ): { docId: string; score: number; docIndex: number }[] {
-  const queryTokens = tokenize(query);
+  const queryTokens = expandQueryTokens(tokenize(query));
 
   if (queryTokens.length === 0) {
     return [];
