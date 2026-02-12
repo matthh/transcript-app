@@ -20,6 +20,7 @@ export type MetadataEpisodeField = 'guest' | 'reviewer' | 'releaseDate' | 'kevsQ
 
 export interface QueryIntent {
   type: QueryIntentType;
+  confidence: 'high' | 'medium' | 'low';
   field?: MetadataFieldKey;
   yearRange?: { min: number; max: number };
   episodeFields?: MetadataEpisodeField[];
@@ -163,6 +164,7 @@ function detectEpisodeFieldsIntent(query: string): QueryIntent | null {
 
   return {
     type: 'metadata_episode_fields',
+    confidence: episodeNumber ? 'high' : 'medium',
     episodeFields,
     episodeNumber: episodeNumber ?? undefined,
     film: film ?? undefined,
@@ -184,11 +186,11 @@ export function detectQueryIntent(query: string): QueryIntent {
     normalized.includes('what is his occupation') ||
     normalized.includes('what is her occupation')
   ) {
-    return { type: 'transcript_only' };
+    return { type: 'transcript_only', confidence: 'high' };
   }
 
   if (normalized.includes('join the discord') || normalized.includes('joined the discord')) {
-    return { type: 'transcript_only' };
+    return { type: 'transcript_only', confidence: 'high' };
   }
 
   const episodeFieldsIntent = detectEpisodeFieldsIntent(query);
@@ -198,38 +200,38 @@ export function detectQueryIntent(query: string): QueryIntent {
 
   if ((normalized.includes('current season') || normalized.includes('what season') || normalized.includes('season is the pod on now'))
     && (normalized.includes('now') || normalized.includes('current') || normalized.includes('pod'))) {
-    return { type: 'metadata_current_season' };
+    return { type: 'metadata_current_season', confidence: 'high' };
   }
 
   if (normalized.includes('how many episodes') || normalized.includes('total episodes')) {
-    return { type: 'metadata_total_episodes' };
+    return { type: 'metadata_total_episodes', confidence: 'high' };
   }
 
   if (yearRange && wantsYearSample(normalized)) {
-    return { type: 'metadata_year_range_sample', yearRange };
+    return { type: 'metadata_year_range_sample', confidence: 'high', yearRange };
   }
 
   if (yearRange && (normalized.includes('how many films') || normalized.includes('how many movies') || normalized.includes('how many episodes'))) {
-    return { type: 'metadata_year_range_count', yearRange };
+    return { type: 'metadata_year_range_count', confidence: 'high', yearRange };
   }
 
   const field = detectField(normalized);
   if (field) {
     if (normalized.includes('greatest') || normalized.includes('most') || normalized.includes('highest')) {
-      return { type: 'metadata_field_max', field };
+      return { type: 'metadata_field_max', confidence: 'high', field };
     }
     if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent')) {
-      return { type: 'metadata_field_latest', field };
+      return { type: 'metadata_field_latest', confidence: 'high', field };
     }
-    return { type: 'metadata_field_latest', field };
+    return { type: 'metadata_field_latest', confidence: 'high', field };
   }
 
   if (normalized.includes('last episode') || normalized.includes('latest episode') || normalized.includes('most recent episode')) {
-    return { type: 'metadata_latest' };
+    return { type: 'metadata_latest', confidence: 'high' };
   }
 
   if (/\bnotable moments?\b/.test(normalized)) {
-    return { type: 'metadata_notable_moments' };
+    return { type: 'metadata_notable_moments', confidence: 'high' };
   }
 
   if (
@@ -243,8 +245,8 @@ export function detectQueryIntent(query: string): QueryIntent {
       /\btilda\b.*\broles?\b/.test(normalized)
     )
   ) {
-    return { type: 'metadata_tilda' };
+    return { type: 'metadata_tilda', confidence: 'high' };
   }
 
-  return { type: 'none' };
+  return { type: 'none', confidence: 'high' };
 }
