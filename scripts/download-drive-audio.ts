@@ -371,12 +371,18 @@ async function main() {
     if (missingEpisodes.length > 20) console.log(`  ... and ${missingEpisodes.length - 20} more\n`);
   }
 
-  // Match folders to episodes
+  // "Best of" episodes must match via container folder probing, not regular folder matching
+  // (otherwise they incorrectly match to the original episode's folder)
+  const BEST_OF_PATTERN = /best\s*of/i;
+  const regularEpisodes = missingEpisodes.filter(ep => !BEST_OF_PATTERN.test(ep.film));
+  const bestOfEpisodes = missingEpisodes.filter(ep => BEST_OF_PATTERN.test(ep.film));
+
+  // Match folders to regular (non-Best-Of) episodes
   const matches: Array<{ folder: DriveFolder; episode: EpisodeMissing }> = [];
   const unmatched: DriveFolder[] = [];
 
   for (const folder of folders) {
-    const match = matchFolderToEpisode(folder.name, missingEpisodes);
+    const match = matchFolderToEpisode(folder.name, regularEpisodes);
     if (match) {
       matches.push({ folder, episode: match });
     } else {
@@ -385,6 +391,64 @@ async function main() {
   }
 
   console.log(`Matched ${matches.length} folders to missing episodes.`);
+
+  // Second pass: probe inside container folders for individual MP3 files
+  // that match unresolved episodes (handles "Best Of" folder and similar containers)
+  const matchedEpisodes = new Set(matches.map(m => m.episode.episode));
+  const unmatchedEpisodes = [
+    ...regularEpisodes.filter(ep => !matchedEpisodes.has(ep.episode)),
+    ...bestOfEpisodes,
+  ];
+
+  // fileMatches: episode → { fileId, fileName, folderName }
+  const fileMatches: Array<{ episode: EpisodeMissing; fileId: string; fileName: string; folderName: string }> = [];
+
+  if (unmatchedEpisodes.length > 0) {
+    // Only probe folders that look like multi-episode containers
+    // (not matched to any single episode). Known containers: "Best Of", "Bonus", "Andor"
+    const CONTAINER_PATTERNS = /^(best\s*of|bonus|andor|specials?|extras?|live\s*shows?)$/i;
+    const foldersToProbe = unmatched.filter(f => CONTAINER_PATTERNS.test(f.name.trim()));
+
+    if (foldersToProbe.length > 0) {
+      console.log(`\nProbing ${foldersToProbe.length} container folder(s): ${foldersToProbe.map(f => f.name).join(', ')}`);
+    }
+
+    // For file-level matching, also strip "escape hatch" from episode names
+    // so "Best of The Matrix" can match "Best of Escape Hatch: The Matrix"
+    const containerEpisodes = unmatchedEpisodes.map(ep => ({
+      ...ep,
+      film: ep.film.replace(/escape\s*hatch\s*:?\s*/gi, ''),
+    }));
+
+    for (const folder of foldersToProbe) {
+      if (unmatchedEpisodes.length === 0) break;
+      const files = await listFilesInFolder(drive, folder.id);
+      const mp3Files = files.filter(f => f.name.toLowerCase().endsWith('.mp3'));
+
+      for (const mp3 of mp3Files) {
+        const cleanedName = mp3.name
+          .replace(/\s*-\s*FINAL\.mp3$/i, '')
+          .replace(/\.mp3$/i, '')
+          .replace(/escape\s*hatch\s*/gi, '');
+        const match = matchFolderToEpisode(cleanedName, containerEpisodes);
+        if (match) {
+          // Find the original episode (with original film name) by episode number
+          const originalEp = unmatchedEpisodes.find(e => e.episode === match.episode)!;
+          fileMatches.push({ episode: originalEp, fileId: mp3.id, fileName: mp3.name, folderName: folder.name });
+          // Remove from both lists
+          const idx = unmatchedEpisodes.findIndex(e => e.episode === match.episode);
+          if (idx !== -1) unmatchedEpisodes.splice(idx, 1);
+          const cIdx = containerEpisodes.findIndex(e => e.episode === match.episode);
+          if (cIdx !== -1) containerEpisodes.splice(cIdx, 1);
+        }
+      }
+    }
+
+    if (fileMatches.length > 0) {
+      console.log(`Matched ${fileMatches.length} file(s) from container folders.`);
+    }
+  }
+
   if (unmatched.length > 0 && verbose) {
     console.log(`\nUnmatched folders (${unmatched.length}):`);
     unmatched.slice(0, 10).forEach(f => console.log(`  - ${f.name}`));
@@ -393,6 +457,7 @@ async function main() {
 
   console.log('\nMatches:');
   matches.forEach(m => console.log(`  ${m.folder.name} → E${m.episode.episode}: ${m.episode.film}`));
+  fileMatches.forEach(m => console.log(`  ${m.folderName}/${m.fileName} → E${m.episode.episode}: ${m.episode.film}`));
 
   if (dryRun) {
     console.log('\nDry run complete. Use without --dry-run to download.');
@@ -429,6 +494,27 @@ async function main() {
     try {
       console.log(`  Downloading E${episode.episode}: ${mp3.name}...`);
       await downloadFile(drive, mp3.id, destPath);
+      console.log(`    → Saved to ${destPath}`);
+      downloaded++;
+    } catch (err) {
+      console.error(`  ERROR: E${episode.episode} - ${err}`);
+      errors++;
+    }
+  }
+
+  // Download file matches (from container folders like "Best Of")
+  for (const { episode, fileId, fileName, folderName } of fileMatches) {
+    const destPath = path.join(MP3_DIR, `${episode.episode}.mp3`);
+
+    if (fs.existsSync(destPath)) {
+      console.log(`  SKIP: E${episode.episode} - already exists`);
+      skipped++;
+      continue;
+    }
+
+    try {
+      console.log(`  Downloading E${episode.episode}: ${folderName}/${fileName}...`);
+      await downloadFile(drive, fileId, destPath);
       console.log(`    → Saved to ${destPath}`);
       downloaded++;
     } catch (err) {

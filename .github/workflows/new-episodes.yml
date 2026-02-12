@@ -1,0 +1,28 @@
+name: Check New Episodes
+
+on:
+  schedule:
+    - cron: "0 14 * * *" # Daily at 2 PM UTC (9 AM ET)
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90 # Transcription polling can take 60min
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check for new episodes
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY_JSON }}
+          ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: node --import tsx ./scripts/check-new-episodes.ts --verbose
