@@ -5,9 +5,10 @@ import { loadEpisodeMetadata } from '@/lib/metadata-store';
 import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
 import type { EpisodeMetadata } from '@/types/episode-metadata';
 import type { Transcript } from '@/types/transcript';
+import { type EpisodeId, episodeSortKey, isBonusEpisode } from '@/lib/episode-format';
 
 export interface CoverageEpisode {
-  episode: number;
+  episode: EpisodeId;
   film: string;
   season: number;
   releaseDate: string;
@@ -154,14 +155,16 @@ export async function GET() {
   }
 
   // Build lookup maps
-  const transcriptsByNumber = new Map<number, TranscriptInfo>();
+  const transcriptsByNumber = new Map<EpisodeId, TranscriptInfo>();
   const transcriptsByName: TranscriptInfo[] = [];
 
   for (const t of transcripts) {
-    if (typeof t.episodeNumber === 'number' && t.episodeNumber > 0) {
+    const id = t.episodeNumber;
+    // Add both numeric (>0) and string IDs (e.g. "49b1") to the lookup map
+    if ((typeof id === 'number' && id > 0) || typeof id === 'string') {
       // Only add if not already present (prefer filesystem over blob)
-      if (!transcriptsByNumber.has(t.episodeNumber)) {
-        transcriptsByNumber.set(t.episodeNumber, t);
+      if (!transcriptsByNumber.has(id)) {
+        transcriptsByNumber.set(id, t);
       }
     }
     transcriptsByName.push(t);
@@ -174,25 +177,13 @@ export async function GET() {
     let transcriptSource: 'filesystem' | 'blob' | undefined;
     let transcriptFile: string | undefined;
 
-    // Try to match by episode number first (for regular episodes)
-    if (ep.episode > 0 && transcriptsByNumber.has(ep.episode)) {
+    // Match by episode ID (works for both numeric and string IDs like "49b1")
+    if (transcriptsByNumber.has(ep.episode)) {
       const match = transcriptsByNumber.get(ep.episode)!;
       hasTranscript = true;
       needsReview = match.needsReview;
       transcriptSource = match.source;
       transcriptFile = match.filename;
-    }
-    // For bonus episodes (episode=0) or if no match, try to match by name
-    else {
-      for (const t of transcriptsByName) {
-        if (namesMatch(ep.film, t.episodeName)) {
-          hasTranscript = true;
-          needsReview = t.needsReview;
-          transcriptSource = t.source;
-          transcriptFile = t.filename;
-          break;
-        }
-      }
     }
 
     return {
@@ -212,7 +203,7 @@ export async function GET() {
   // Sort by season then episode
   episodes.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
-    return a.episode - b.episode;
+    return episodeSortKey(a.episode) - episodeSortKey(b.episode);
   });
 
   // Calculate stats

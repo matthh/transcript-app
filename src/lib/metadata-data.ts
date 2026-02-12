@@ -2046,7 +2046,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 3,
-    "episode": 0,
+    "episode": "49b1",
     "film": "WarGames (1983)",
     "filmYear": 1983,
     "releaseDate": "7/4/2021",
@@ -2094,7 +2094,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 3,
-    "episode": 0,
+    "episode": "49b2",
     "film": "Good Will Hunting (1997)",
     "filmYear": 1997,
     "releaseDate": "7/11/2021",
@@ -3484,7 +3484,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 5,
-    "episode": 0,
+    "episode": "79b1",
     "film": "ON DECK - STATION ELEVEN (2021)",
     "filmYear": 2021,
     "releaseDate": "1/20/2022",
@@ -4493,7 +4493,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 5,
-    "episode": 0,
+    "episode": "100b1",
     "film": "Dune (1965) EPISODE 1: SPECIAL EDITION",
     "filmYear": null,
     "releaseDate": "6/26/2022",
@@ -4660,7 +4660,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 6,
-    "episode": 0,
+    "episode": "103b1",
     "film": "1 Year Anniversary of the Dune IMAX Sneak Preview Event",
     "filmYear": null,
     "releaseDate": "7/21/2022",
@@ -6614,7 +6614,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 6,
-    "episode": 0,
+    "episode": "145b1",
     "film": "BONUS: Emergency Dune Part Two Trailer Reactions (2023)",
     "filmYear": 2023,
     "releaseDate": "5/3/2023",
@@ -6689,7 +6689,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 6,
-    "episode": 0,
+    "episode": "146b1",
     "film": "BONUS: Silo Episodes 1 & 2 (2023)",
     "filmYear": 2023,
     "releaseDate": "5/9/2023",
@@ -6763,7 +6763,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "DP",
     "season": 6,
-    "episode": 0,
+    "episode": "147b1",
     "film": "BONUS: Silo Hugh Howey Interview & Episode 3 (2023)",
     "filmYear": 2023,
     "releaseDate": "5/16/2023",
@@ -7423,7 +7423,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "EH",
     "season": 7,
-    "episode": 0,
+    "episode": "160b1",
     "film": "WGA - SAG-AFTRA Discussion with Patrick Somerville & Hoon Lee (2023)",
     "filmYear": 2023,
     "releaseDate": "9/1/2023",
@@ -8145,7 +8145,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "EH",
     "season": 7,
-    "episode": 0,
+    "episode": "175b1",
     "film": "BONUS: Emergency Dune Part Two Trailer 3 Reactions (2024)",
     "filmYear": 2024,
     "releaseDate": "12/13/2023",
@@ -8986,7 +8986,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
   {
     "pod": "EH",
     "season": 7,
-    "episode": 0,
+    "episode": "192b1",
     "film": "BONUS: Civil War (2024)",
     "filmYear": 2024,
     "releaseDate": "4/17/2024",

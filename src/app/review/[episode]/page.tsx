@@ -90,7 +90,7 @@ export default function EditorPage() {
           if (coverageResponse.ok) {
             const coverageData = await coverageResponse.json();
             const episodeNum = data.episode_number;
-            const epInfo = coverageData.episodes?.find((ep: { episode: number }) => ep.episode === episodeNum);
+            const epInfo = coverageData.episodes?.find((ep: { episode: number | string }) => String(ep.episode) === String(episodeNum));
             if (epInfo?.guest) {
               setGuestName(epInfo.guest);
             }

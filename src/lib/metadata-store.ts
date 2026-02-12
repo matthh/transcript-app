@@ -5,6 +5,7 @@ import {
   PaginationOptions,
 } from '@/types/episode-metadata';
 import { episodeMetadata } from './metadata-data';
+import { EpisodeId, episodeSortKey } from './episode-format';
 
 const DEFAULT_LIMIT = 50;
 const MAX_LIMIT = 200;
@@ -138,7 +139,7 @@ export function queryEpisodes(
     switch (sortBy) {
       case 'episode':
         // Sort by season then episode number
-        comparison = (a.season * 1000 + a.episode) - (b.season * 1000 + b.episode);
+        comparison = (a.season * 1000 + episodeSortKey(a.episode)) - (b.season * 1000 + episodeSortKey(b.episode));
         break;
       case 'releaseDate':
         comparison = new Date(a.releaseDate).getTime() - new Date(b.releaseDate).getTime();
@@ -200,7 +201,7 @@ export function getLatestEpisode(): EpisodeMetadata | null {
   )[0];
 }
 
-export function getEpisodeByNumber(episodeNumber: number): EpisodeMetadata | null {
+export function getEpisodeByNumber(episodeNumber: EpisodeId): EpisodeMetadata | null {
   const episodes = loadEpisodeMetadata();
   return episodes.find((episode) => episode.episode === episodeNumber) ?? null;
 }
@@ -229,7 +230,7 @@ export type YearSample = {
 export function getOneEpisodePerYear(min: number, max: number): YearSample[] {
   const episodes = loadEpisodeMetadata()
     .filter((e) => e.filmYear !== null && e.filmYear >= min && e.filmYear <= max)
-    .sort((a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode));
+    .sort((a, b) => (b.season * 1000 + episodeSortKey(b.episode)) - (a.season * 1000 + episodeSortKey(a.episode)));
 
   const byYear = new Map<number, EpisodeMetadata>();
   for (const episode of episodes) {

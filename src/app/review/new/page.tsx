@@ -69,7 +69,7 @@ function NewEpisodeContent() {
       const response = await fetch('/api/coverage');
       if (response.ok) {
         const data = await response.json();
-        const episode = data.episodes?.find((ep: { episode: number }) => ep.episode === parseInt(episodeNum, 10));
+        const episode = data.episodes?.find((ep: { episode: number | string }) => String(ep.episode) === episodeNum);
         if (episode?.guest) {
           setGuestName(episode.guest);
         }

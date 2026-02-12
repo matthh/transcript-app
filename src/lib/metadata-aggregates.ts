@@ -14,7 +14,7 @@ import {
 } from './metadata-store';
 import { QueryIntent } from './query-intent';
 import { EpisodeMetadata, MetadataSource } from '@/types/episode-metadata';
-import { formatEpisodeLabel } from './episode-format';
+import { type EpisodeId, formatEpisodeLabel, episodeSortKey } from './episode-format';
 
 function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
   const relevantFields: Record<string, string> = {};
@@ -240,7 +240,7 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     if (episodes.length === 0) return null; // fallthrough to full pipeline
 
     const sorted = [...episodes].sort(
-      (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+      (a, b) => (b.season * 1000 + episodeSortKey(b.episode)) - (a.season * 1000 + episodeSortKey(a.episode))
     );
     const lines = sorted.map((ep) => {
       const epLabel = formatEpisodeLabel(ep.season, ep.episode);
@@ -272,7 +272,7 @@ export interface TildaContext {
 
 export type TildaPick = { label: string; value: string };
 
-export function getTildaEpisodePicks(episodeNumber: number): {
+export function getTildaEpisodePicks(episodeNumber: EpisodeId): {
   episode: EpisodeMetadata;
   picks: TildaPick[];
 } | null {
@@ -300,10 +300,10 @@ export function collectTildaContext(): TildaContext | null {
   if (withTilda.length === 0) return null;
 
   const sortedDesc = [...withTilda].sort(
-    (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+    (a, b) => (b.season * 1000 + episodeSortKey(b.episode)) - (a.season * 1000 + episodeSortKey(a.episode))
   );
   const sortedAsc = [...withTilda].sort(
-    (a, b) => (a.season * 1000 + a.episode) - (b.season * 1000 + b.episode)
+    (a, b) => (a.season * 1000 + episodeSortKey(a.episode)) - (b.season * 1000 + episodeSortKey(b.episode))
   );
 
   const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };

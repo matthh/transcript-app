@@ -15,7 +15,7 @@ interface TranscriptSource {
 interface MetadataSource {
   film: string;
   season: number;
-  episode: number;
+  episode: number | string;
   releaseDate: string;
   guest: string | null;
   reviewer: string;
@@ -36,7 +36,7 @@ export interface ShareableResult {
   primaryEpisode?: {
     film: string;
     season?: number;
-    episode?: number;
+    episode?: number | string;
   };
 }
 
