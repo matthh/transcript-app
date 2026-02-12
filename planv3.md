@@ -29,8 +29,9 @@ The search pipeline:
 4. **Transcript search** — precomputed embedding + vector similarity + BM25, then
    Reciprocal Rank Fusion, keyword boosting, and episode diversification (max 2 per episode,
    dynamic cap to 4).
-5. **Synthesis** — quick mode for factual: Haiku 4.5, top 4 chunks, 700 tokens.
-   Interpretive/hybrid auto-deep (`a90315c`): Sonnet 4, all chunks, even in quick mode.
+5. **Synthesis** — all queries get full retrieved chunks (no slicing).
+   Factual quick mode: Haiku 4.5, all chunks, 700 tokens (`10e432a`).
+   Interpretive/hybrid auto-deep: Sonnet 4, all chunks (`a90315c`).
    Deep mode (on demand): Sonnet 4, all chunks.
 
 Key existing assets: 36‑case eval dataset with A/B harness, query logging to Vercel Blob,
@@ -288,9 +289,9 @@ cross-episode and multi-instance. They fail when synthesis only sees the top few
 
 **Adopted approach: Option C now, Option B next.**
 
-- **Immediate policy (Option C for transcript-path factual):**
-  remove 4-chunk slicing for factual queries that route through transcript retrieval;
-  keep Haiku for speed/cost, but pass all retrieved chunks to synthesis.
+- **Immediate policy (Option C for transcript-path factual):** ✅ Implemented (`10e432a`)
+  Removed 4-chunk slicing for factual queries; Haiku sees all retrieved chunks.
+  Eval: 36/37 passed (1 rate-limit 429). Dingus voicemail flipped FAIL→PASS.
 - **Follow-up control layer (Option B):**
   add classifier signal `requiresTranscriptDepth` so true metadata-answerable factual
   queries can remain in cheap quick mode while transcript-search factual queries go deep.
@@ -310,7 +311,7 @@ reranking/deduplication alone.
 
 ## Risks & Mitigations
 - **Over‑routing to transcripts increases cost** → gate by confidence; timeout transcript
-  retrieval; quick mode (4 chunks, Haiku) keeps baseline cost low.
+  retrieval; factual quick mode uses Haiku (all chunks but cheap model) to keep cost manageable.
 - **Reranker latency** → cap N, pre‑filter with hybrid retrieval, skip reranking in
   quick mode if latency budget is tight.
 - **Canonicalization false merges** → keep raw fields alongside normalized variants;
@@ -335,7 +336,7 @@ reranking/deduplication alone.
 
 1. Calibrate classification confidence against eval dataset (1.3b).
 2. Implement confidence‑based routing policy (1.3c) — medium‑confidence intents run both paths.
-3. Implement quick-mode decision above: remove 4-chunk slicing for transcript-path factual queries; keep Haiku.
+3. ~~Implement quick-mode decision above: remove 4-chunk slicing for transcript-path factual queries; keep Haiku.~~ ✅ Done (`10e432a`).
 4. Add `requiresTranscriptDepth` signal and initial heuristics (aggregation/frequency/ranking queries => true).
 5. Expand eval set with high-impact transcript-factual cases (Truthsayer, frequent voicemailers, "you hack", Haitch band mentions).
 6. Normalize film titles in intent matching (1.1 remaining).

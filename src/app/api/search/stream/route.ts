@@ -577,18 +577,17 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         let answer = '';
         let chunkCount = 0;
 
-        // Auto-deep: interpretive/hybrid queries always get full synthesis even in quick mode
-        const useQuickSynthesis = depth === 'quick' && classification.type === 'factual';
+        // Quick model: factual queries use Haiku for speed; all others use Sonnet.
+        // All queries get full chunks — no slicing (Option C from planv3).
+        const useQuickModel = depth === 'quick' && classification.type === 'factual';
 
         if (depth === 'quick' && classification.type !== 'factual') {
           console.log('Auto-deep: interpretive/hybrid query, using full synthesis');
         }
 
-        const synthesisChunks = useQuickSynthesis
-          ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
-          : transcriptChunks;
+        const synthesisChunks = transcriptChunks;
 
-        const synthesistuning = useQuickSynthesis
+        const synthesistuning = useQuickModel
           ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
           : classification.type === 'interpretive'
             ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
@@ -632,7 +631,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           queryId,
           queryType: classification.type,
           classificationConfidence: classification.confidence,
-          canDeepen: useQuickSynthesis && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
+          canDeepen: useQuickModel && transcriptChunks.length > 0,
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
             metadata: metadataSources.length > 0 ? metadataSources : undefined,
