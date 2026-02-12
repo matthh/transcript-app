@@ -197,16 +197,34 @@ function chunkTranscript(transcript: Transcript): Chunk[] {
 
 async function generateEmbeddings(texts: string[]): Promise<number[][]> {
   const batchSize = 100;
+  const maxRetries = 5;
   const embeddings: number[][] = [];
 
   for (let i = 0; i < texts.length; i += batchSize) {
     const batch = texts.slice(i, i + batchSize);
-    console.log(`  Generating embeddings for batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(texts.length / batchSize)}...`);
-    const response = await openai.embeddings.create({
-      model: 'text-embedding-3-small',
-      input: batch,
-    });
-    embeddings.push(...response.data.map((d) => d.embedding));
+    const batchNum = Math.floor(i / batchSize) + 1;
+    const totalBatches = Math.ceil(texts.length / batchSize);
+    console.log(`  Generating embeddings for batch ${batchNum}/${totalBatches}...`);
+
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        const response = await openai.embeddings.create({
+          model: 'text-embedding-3-small',
+          input: batch,
+        });
+        embeddings.push(...response.data.map((d) => d.embedding));
+        break;
+      } catch (err: unknown) {
+        const isRateLimit = err instanceof Error && 'status' in err && (err as { status: number }).status === 429;
+        if (isRateLimit && attempt < maxRetries - 1) {
+          const backoff = Math.pow(2, attempt + 1) * 1000;
+          console.log(`  Rate limited, retrying in ${backoff / 1000}s (attempt ${attempt + 2}/${maxRetries})...`);
+          await new Promise((r) => setTimeout(r, backoff));
+        } else {
+          throw err;
+        }
+      }
+    }
   }
 
   return embeddings;
