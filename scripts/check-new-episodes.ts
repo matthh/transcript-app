@@ -58,11 +58,15 @@ function run(cmd: string, label: string): boolean {
 // ---------------------------------------------------------------------------
 
 function setupServiceAccountShim() {
+  const hasJson = !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY_JSON;
+  const hasFile = !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE;
+  log(`Service account: KEY_JSON=${hasJson}, KEY_FILE=${hasFile}`);
+
   if (process.env.GOOGLE_SERVICE_ACCOUNT_KEY_JSON && !process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE) {
     const tmpPath = path.join(os.tmpdir(), 'gcp-sa-key.json');
     fs.writeFileSync(tmpPath, process.env.GOOGLE_SERVICE_ACCOUNT_KEY_JSON, { mode: 0o600 });
     process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE = tmpPath;
-    log('Wrote service-account key to temp file');
+    log(`Wrote service-account key to ${tmpPath}`);
   }
 }
 
