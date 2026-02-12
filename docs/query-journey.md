@@ -122,7 +122,11 @@ These two are combined into a “hybrid” search so we don’t miss relevant pa
 ### 4) Answer synthesis
 Once relevant metadata and transcript passages are gathered, the system **writes a response** in natural language.
 
-It also includes:
+The synthesis mode depends on the query type:
+- **Factual queries** use a fast path: a smaller model (Haiku), fewer transcript chunks (top 4), and a shorter response cap. This keeps simple lookups snappy. A "Show deeper analysis" button lets the user opt into full synthesis if the quick answer isn't enough.
+- **Interpretive and hybrid queries** always get full synthesis: a more capable model (Sonnet), all retrieved transcript chunks, and a longer response cap. These queries need more context to produce a good answer, so they auto-deep even on first load.
+
+The response includes:
 - **Citations** to the transcript snippets
 - **Timestamps** so you can jump to the right part of the episode
 

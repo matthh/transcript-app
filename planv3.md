@@ -29,7 +29,8 @@ The search pipeline:
 4. **Transcript search** — precomputed embedding + vector similarity + BM25, then
    Reciprocal Rank Fusion, keyword boosting, and episode diversification (max 2 per episode,
    dynamic cap to 4).
-5. **Synthesis** — quick mode: Haiku 4.5, top 4 chunks, 700 tokens.
+5. **Synthesis** — quick mode for factual: Haiku 4.5, top 4 chunks, 700 tokens.
+   Interpretive/hybrid auto-deep (`a90315c`): Sonnet 4, all chunks, even in quick mode.
    Deep mode (on demand): Sonnet 4, all chunks.
 
 Key existing assets: 36‑case eval dataset with A/B harness, query logging to Vercel Blob,
@@ -226,6 +227,60 @@ build time. Manual updates drift.
 **Success Criteria:**
 - Metadata freshness < 7 days from source updates.
 - No silent data quality regressions (validation catches missing/malformed entries).
+
+---
+
+## Open Question: Quick Mode Scope (2026-02-11)
+
+### Problem
+Auto-deep (committed `a90315c`) routes interpretive/hybrid queries to Sonnet + all chunks
+even in quick mode. This fixes queries like "who says yeah more, jason or matt" but does NOT
+fix **transcript-search factual** queries that the classifier labels `factual`:
+
+- "Did Haitch ever have a band? Did they ever open for another famous act?"
+- "In what context has River Phoenix been mentioned on the podcast?"
+
+Both are factual in nature (yes/no, list of instances) but the answer is buried in transcripts,
+not in metadata. With `factual` classification they get 4 chunks + Haiku + 700 tokens — the
+relevant chunk ranks 5th+ and gets cut. Deep mode finds it because it uses all chunks.
+
+### Root Cause
+The classifier's `factual` label conflates two different things:
+1. **Metadata-answerable** — "How many episodes?", "Proto episodes", "80s movies"
+   → genuinely works with 4 chunks because the answer is in structured data.
+2. **Transcript-search factual** — "Has River Phoenix been mentioned?", "Did Haitch have a band?"
+   → factual in nature but requires full transcript retrieval depth.
+
+Adding priority rules for specific patterns (e.g., "Did [person] ever...") is whack-a-mole.
+The underlying issue is that quick synthesis only works when the answer is in metadata or the
+top few transcript chunks.
+
+### Options Under Consideration
+
+**Option A: Flip the default — quick only for metadata-primary answers**
+Only use Haiku/4-chunk synthesis when the answer came primarily from metadata (e.g., intent
+detection fast-path hit, or transcript chunks contributed little). All other queries get full
+depth. Simple, but increases average cost/latency since most queries would go deep.
+
+**Option B: Add a classifier signal `requiresTranscriptDepth`**
+Separate from factual/interpretive. The classifier would output an additional boolean indicating
+whether the query needs deep transcript search. Quick synthesis only applies when
+`requiresTranscriptDepth: false`. Adds complexity to the classification prompt but is precise.
+
+**Option C: Drop the 4-chunk limit, keep Haiku for factual speed**
+Always pass all retrieved chunks to synthesis regardless of depth. Factual queries still use
+Haiku (fast, cheap) but see all 6-15 chunks instead of 4. Deep mode switches to Sonnet for
+higher quality. Simplest change — removes the chunk slicing entirely — but increases Haiku
+input token cost for every factual query.
+
+**Option D: Increase quick chunk count (e.g., 4 → 8)**
+A pragmatic middle ground: raise `QUICK_SYNTHESIS.maxChunks` so more transcript-search factual
+queries land in the window. Doesn't fully solve the problem but reduces the failure rate without
+adding complexity. Could combine with Option B for a complete solution.
+
+### Decision
+TBD — needs further consideration of cost/latency tradeoffs and eval data on how often
+transcript-search factual queries occur vs. metadata-answerable ones.
 
 ---
 
