@@ -4,8 +4,8 @@ This document explains, in plain language, what happens after someone types a qu
 
 ## The short version
 
-1. **We check for “simple” questions first.** If it’s something like “latest episode,” “how many episodes,” or “who was the guest/reviewer/release date/Kev’s question for episode X,” we answer directly from the episode metadata.
-2. **We classify the question.** Is it asking for facts, interpretation, or both?
+1. **We check for "simple" questions first.** If it's something like "latest episode," "how many episodes," "who was the guest/reviewer for episode X," "what episodes feature guest X," or "what was Kev's question," we answer directly from the episode metadata.
+2. **We classify the question and start embedding it** — both happen in parallel for speed.
 3. **We search the right data sources.** That can be episode metadata, transcripts, or both.
 4. **We assemble a response.** The system writes an answer and includes citations and timestamps.
 
@@ -17,7 +17,7 @@ This document explains, in plain language, what happens after someone types a qu
 flowchart TD
   A["User question"] --> B["Intent check: is this a quick metadata question?"]
   B -- "Yes" --> C["Answer from episode metadata"]
-  B -- "No" --> D["Classify question: factual / interpretive / hybrid"]
+  B -- "No" --> D["Classify question + generate embedding (in parallel)"]
   D --> E["Pick data sources"]
   E --> F["Metadata search (episode list, guests, reviewers, release dates, Kev’s question)"]
   E --> G["Transcript search (episode dialogue)"]
@@ -64,19 +64,26 @@ flowchart LR
 
 ### 1) Intent check (quick answers)
 Some questions are **really just metadata lookups**, like:
-- “What’s the latest episode?”
-- “How many episodes are there?”
-- “What’s the latest episode with guest X?”
-- “Who was the guest or reviewer on *No Country for Old Men*?”
-- “When did episode 6 release?”
-- “What was Kev’s question on episode 1?”
+- "What's the latest episode?"
+- "How many episodes are there?"
+- "What's the latest episode with guest X?"
+- "What episodes feature guest X?" (returns a formatted episode list)
+- "Who was the guest or reviewer on *No Country for Old Men*?"
+- "When did episode 6 release?"
+- "What was Kev's question on episode 1?"
 
-For these, the system **skips the heavier search** and answers directly from episode metadata (titles, guests, reviewers, release dates, Kev’s question, etc.). This is fast and avoids over‑complication.
+For these, the system **skips the heavier search** and answers directly from episode metadata (titles, guests, reviewers, release dates, Kev's question, etc.). This is fast and avoids over‑complication.
+
+If an intent fires but the metadata lookup returns nothing (e.g., the film isn't in the database), the system **falls through** to the full search pipeline rather than returning an empty result.
 
 ---
 
-### 2) Classification: What kind of question is it?
-If it’s not a quick metadata lookup, the system classifies the question into one of three buckets:
+### 2) Classification + embedding (in parallel)
+If it's not a quick metadata lookup, two things happen **at the same time** to save latency:
+- The query is **classified** into one of three buckets (below).
+- An **embedding** (a numeric meaning‑fingerprint) is generated for the query, ready for transcript search.
+
+The classification step produces one of three labels:
 
 - **Factual** — “Which episode covered *The Thing*?” / “Who was the guest on *No Country for Old Men*?” / “When did episode 6 release?”
 - **Interpretive** — “What did they think about *The Thing*?”
@@ -136,11 +143,8 @@ If the search found no strong matches, it will say so rather than guessing.
 
 > **Question:** “What did the hosts think about *Alien*?”
 
-1. Intent check → not a simple metadata question  
-2. Classification → interpretive  
-3. Data sources → transcripts (hybrid search)  
+1. Intent check → not a simple metadata question
+2. Classification + embedding → run in parallel; classified as interpretive
+3. Data sources → transcripts (hybrid search using precomputed embedding)
 4. Answer → summary + cited quotes + timestamps
 
----
-
-If you’d like, I can add a second diagram that shows the technical components (API routes, indexing, and LLM calls) without going too deep into code.

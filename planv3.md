@@ -1,172 +1,261 @@
 # Plan v3: Search Quality & Reliability
 
 ## Goals
-- Improve intent routing accuracy and reduce expensive misroutes.
-- Raise retrieval quality with better ranking and episode‑level aggregation.
-- Lower tail latency with safe parallelization.
-- Make quality measurable and regressions visible.
+- Improve intent routing accuracy and eliminate silent dead‑ends.
+- Raise retrieval quality with better ranking, deduplication, and metadata‑informed search.
+- Lower tail latency by parallelizing the right things (classification + embedding, not metadata).
+- Make quality measurable with metrics and CI gates on the existing eval harness.
 - Ensure metadata freshness and consistency.
 
 ## Scope
 - Search API flow (`/api/search` and `/api/search/stream`)
 - Intent detection + classification
 - Metadata retrieval + transcript retrieval
-- Answer synthesis and fallbacks
+- Answer synthesis (quick Haiku pass + optional deep Sonnet expansion)
 - Evaluation + monitoring
 - Metadata data quality and refresh process
+
+## Current Architecture (Reference)
+
+The search pipeline:
+
+1. **Intent detection** — sync regex/substring matching with confidence levels (high/medium/low).
+   If matched → metadata fast‑path (sub‑ms). If fast‑path returns null → falls through to full pipeline.
+   Includes guest search one‑box intent.
+2. **LLM classification + embedding generation** (run in parallel, 300–800ms) — classification
+   returns type (factual/interpretive/hybrid), confidence (clamped 0.5–0.95), and filters.
+   Embedding is precomputed and passed to transcript retrieval.
+3. **Metadata search** — in‑memory array scan, sub‑ms. Uses filters from step 2.
+4. **Transcript search** — precomputed embedding + vector similarity + BM25, then
+   Reciprocal Rank Fusion, keyword boosting, and episode diversification (max 2 per episode,
+   dynamic cap to 4).
+5. **Synthesis** — quick mode: Haiku 4.5, top 4 chunks, 700 tokens.
+   Deep mode (on demand): Sonnet 4, all chunks.
+
+Key existing assets: 36‑case eval dataset with A/B harness, query logging to Vercel Blob,
+user feedback collection (thumbs up/down + comments), feedback‑to‑eval pipeline.
 
 ---
 
 ## Phase 1: Routing & Latency Foundations (1–2 weeks)
 
-### 1.1 Expand Metadata Intents (Reviewer/Guest/Release Date/Kev’s Question)
-**Why:** These are deterministic metadata lookups and should bypass transcript search when confident.
-
-**Deliverables:**
-- Add explicit intent detection for reviewer/guest lookup by film or episode. ✅
-- Add explicit intent detection for episode release date by film or episode. ✅
-- Add explicit intent detection for “Kev’s Question” by film or episode. ✅
-- Normalize film titles (strip year/parentheticals) during matching.
-- Return structured metadata sources for the above intents. ✅
-
-**Testing Criteria:**
-- Add regression queries (minimum set):
-- “Who reviewed No Country for Old Men?” ✅
-- “Who was the guest on No Country for Old Men?” ✅
-- “When did the No Country for Old Men episode release?” ✅
-- “What was Kev’s question for No Country for Old Men?” ✅
-- Episode‑number variants (e.g., “episode 204” for each intent).
-- For each case:
-- Intent == `metadata_*` (no transcript routing).
-- Answer includes the requested field.
-- Metadata sources include the target episode.
+### 1.1 Expand Metadata Intents ✅ (Complete)
+**Why:** Deterministic metadata lookups should bypass transcript search.
 
 **Completed Work (2026‑02‑12):**
-- Implemented release date + Kev’s question metadata intents.
-- Added regression cases for release date and Kev’s question.
-- Added A/B harness for metadata intent testing and saved output log.
+- Reviewer, guest, release date, and Kev's Question intents implemented.
+- Regression cases added and passing for all four intent types.
+- A/B harness for metadata intent testing created and output logged.
 
-### 1.2 Confidence‑Based Routing Policy
-**Why:** Misroutes are high‑cost and hard to detect.
+**Additional work (2026‑02‑11):**
+- Guest search one‑box intent (`metadata_guest_search`) added — "what episodes feature X as guest" returns formatted episode list from metadata.
+- Reviewer credit footer displayed in one‑box and share page results.
+
+**Remaining:**
+- Normalize film titles (strip year/parentheticals) during matching.
+- Episode‑number variant regression cases (e.g., "episode 204" for each intent).
+
+### 1.2 Universal Fallthrough on Failed Metadata Intents ✅ (Complete)
+**Why:** When intent detection fires but the metadata lookup returns null (film not found,
+field missing), most intents dead‑end silently. Only `metadata_tilda` and
+`metadata_notable_moments` fall through to the full pipeline. This is a silent failure mode.
+
+**Completed (2026‑02‑11):**
+- All intent types now fall through to the full pipeline when metadata lookup returns null.
+- Failed fast‑path attempts are logged in routing telemetry.
+
+### 1.3 Confidence‑Based Routing (Partially Complete)
+**Why:** Misroutes are high‑cost. Today intent detection has no confidence signal (binary
+regex match) and classification confidence is uncalibrated (LLM‑reported, clamped).
 
 **Deliverables:**
-- Define intent/classification confidence thresholds (e.g., `high`, `medium`, `low`).
-- Add explicit override rules:
-  - If intent == metadata‑only but confidence < threshold → run metadata + transcript in parallel.
-  - If filters are empty or weak → treat as hybrid unless query is clearly metadata aggregate.
-- Log routing decision + confidence to enable auditing.
+- **1.3a** ✅ Add a `confidence` field to `QueryIntent`. Regex exact‑match intents get high
+  confidence; substring/fuzzy film matches get medium; ambiguous patterns get low.
+  *(Completed 2026‑02‑11)*
+- **1.3b** Calibrate classification confidence: run the eval dataset, compare LLM‑reported
+  confidence to actual correctness, and adjust thresholds or add heuristic corrections.
+- **1.3c** Routing policy:
+  - Intent confidence high → metadata fast‑path (existing behavior).
+  - Intent confidence medium → run metadata fast‑path AND fall through to full pipeline,
+    return whichever is better.
+  - Classification confidence low + filters empty → treat as hybrid regardless of LLM label.
+- **1.3d** ✅ Log routing decisions (intent type, confidence, classification type, confidence,
+  chosen path) to query log for auditing. *(Completed 2026‑02‑11)*
+
+**Remaining:** 1.3b (calibration) and 1.3c (routing policy).
 
 **Success Criteria:**
-- <5% of “metadata‑answerable” queries fall back to transcript‑only.
-- <5% of “interpretive” queries go metadata‑only.
+- <5% of metadata‑answerable queries fall back to transcript‑only unnecessarily.
+- <5% of interpretive queries get routed metadata‑only.
+- Routing decision log populated for all queries.
 
-### 1.3 Parallel Retrieval with Safe Short‑Circuit
-**Why:** Tail latency and “slow metadata only” are unnecessary.
+### 1.4 Latency: Parallelize Classification + Embedding Generation ✅ (Complete)
+**Why:** The real latency bottleneck is sequential: classification (300–800ms LLM call) must
+complete before transcript search starts. Metadata search is already sub‑ms and not worth
+parallelizing separately.
 
-**Deliverables:**
-- Trigger metadata and transcript retrieval in parallel.
-- If metadata answer is deterministic + confidence high, return immediately but keep transcript search warm for follow‑up.
-- Add configurable timeout for transcript retrieval; if timed out, return metadata with explicit notice.
+**Completed (2026‑02‑11):**
+- Classification and embedding generation now run in parallel via `Promise.all`.
+- `hybridRetrieval` accepts a `precomputedEmbedding` parameter; embedding failures
+  fall back gracefully to internal generation.
+- Cold‑start timeout exists for transcript retrieval.
 
-**Success Criteria:**
-- p95 latency reduced in mixed queries.
-- Fewer “no match” outcomes when transcripts are relevant.
+**Remaining:**
+- Make transcript retrieval timeout configurable for the normal (non‑cold‑start) path.
 
 ---
 
 ## Phase 2: Retrieval Quality (2–3 weeks)
 
-### 2.1 Reranking + Deduping
-**Why:** Hybrid retrieval returns noisy or redundant chunks.
+### 2.1 Improve Reranking + Deduplication
+**Why:** Hybrid retrieval returns noisy or redundant chunks. Episode diversification exists
+(max 2 per episode, dynamic cap to 4) but there is no semantic deduplication or reranking.
 
 **Deliverables:**
-- Add a reranker (cross‑encoder or lightweight LLM) for top‑N chunks.
-- Deduplicate near‑identical transcript chunks.
-- Add episode‑level aggregation to avoid multiple chunks from same episode dominating results.
+- Add a lightweight reranker (cross‑encoder or small LLM) for the top‑N chunks after
+  RRF fusion + keyword boosting.
+- Deduplicate near‑identical transcript chunks (e.g., overlapping text windows from the
+  same episode) using text similarity threshold before diversification.
+- Improve episode diversification: for queries targeting a specific episode (detected via
+  film filter), increase the per‑episode cap dynamically.
 
 **Success Criteria:**
-- Improved MRR/Recall@k on evaluation set.
+- Improved MRR/Recall@k on eval dataset.
 - Reduced repetition in synthesis outputs.
 
-### 2.2 Smarter Metadata Fallbacks
-**Why:** Strict filters lead to empty results even when close matches exist.
+### 2.2 Generalize Metadata Fallbacks
+**Why:** Strict filters lead to empty results. A year‑filter fallback already exists in
+the route handler but it's one‑off logic.
 
 **Deliverables:**
-- If metadata filter returns 0 and confidence is low, relax filters (e.g., remove secondary filters; keep film/guest exact).
-- Return a structured “closest matches” list with rationale.
-- Ensure metadata can still contribute even for interpretive queries (episode context).
+- Generalize the existing year‑filter fallback into a reusable filter relaxation strategy:
+  try full filters → if 0 results, drop secondary filters (keep film/guest exact) → retry.
+- Return a structured "closest matches" list with rationale when relaxation was applied.
+- Ensure metadata contributes context even for interpretive queries (episode title, guest,
+  reviewer as context for synthesis).
 
 **Success Criteria:**
-- Fewer “No matching episodes” for answerable queries.
+- Fewer "No matching episodes" for answerable queries.
+- Eval cases with edge‑case filters pass.
+
+### 2.3 Metadata‑Informed Transcript Retrieval (New)
+**Why:** When the classifier extracts a film or episode filter, transcript search runs
+completely independently. Chunks from the relevant episode should be prioritized.
+
+**Deliverables:**
+- When classification produces a film, guest, or episode filter, boost transcript chunks
+  from matching episodes in the RRF fusion step (e.g., +20% score for matching episode).
+- When a specific episode is identified, relax the per‑episode diversification cap for
+  that episode so more relevant chunks surface.
+
+**Success Criteria:**
+- Queries like "what did they say about Alien" return more chunks from the Alien episode.
+- No degradation on broad/cross‑episode queries (eval regression check).
 
 ---
 
-## Phase 3: Evaluation & Monitoring (2 weeks, parallel)
+## Phase 3: Evaluation & Monitoring (2 weeks, parallel with Phases 1–2)
 
-### 3.1 Offline Evaluation Harness
-**Why:** Changes are high‑risk without quantified impact.
+### 3.1 Extend Existing Eval Harness with Metrics + CI
+**Why:** The eval harness (36 cases, A/B comparison, tag filtering) exists but produces
+only pass/fail assertions. Quantitative metrics and CI integration are missing.
 
-**Deliverables:**
-- Golden query set with expected intents + target episodes.
-- Metrics: Recall@k, MRR, “answerability” rate, latency.
-- CI gate for regressions beyond thresholds.
-
-**Success Criteria:**
-- Automated report on each PR or nightly build.
-
-### 3.2 Online Feedback Loop
-**Why:** Real users reveal edge cases you won’t predict.
+**Starting point:** `scripts/eval-search.ts`, `data/eval-dataset.json` (36 cases),
+A/B mode with `--baseline`/`--candidate`.
 
 **Deliverables:**
-- Track user feedback (thumbs up/down).
-- Capture routed path, filters, latency, and sources.
-- Create a weekly triage report of failure modes.
+- Add quantitative metrics: Recall@k, MRR, latency percentiles (p50/p95/p99),
+  answerability rate (% of queries that produce a non‑empty answer).
+- Add eval cases for:
+  - Intent detection fast‑path correctness (verify routing, not just answer content).
+  - Quick vs. deep mode comparison.
+  - Failed intent fallthrough (nonexistent film queries).
+- CI gate: run eval on PR, fail if pass rate drops below threshold or p95 latency regresses.
+- Machine‑readable output (JSON) for trend tracking across runs.
 
 **Success Criteria:**
-- Clear top‑N failure reasons each week with trend lines.
+- Automated eval report on each PR or nightly build.
+- Eval dataset grows to 50+ cases covering all intent types and edge cases.
+
+### 3.2 Improve Query + Feedback Logging
+**Why:** Query logs and feedback logs have no join key. Query logs don't capture intent
+detection results or synthesis model. Routing decisions are invisible.
+
+**Deliverables:**
+- Add a `queryId` field to query log entries. Return it in the API response so the
+  feedback endpoint can include it, creating a join between query and feedback logs.
+- Extend `QueryLogEntry` to capture: intent detection result (type + confidence),
+  synthesis model used, depth parameter, and routing path taken.
+- Build a lightweight aggregation script that reads logs from Blob and produces a
+  weekly triage report: top failure modes, routing distribution, latency trends.
+
+**Success Criteria:**
+- Every feedback entry links to its query log entry.
+- Weekly report identifies top‑N failure reasons with trend lines.
 
 ---
 
 ## Phase 4: Metadata Quality & Freshness (2–3 weeks)
 
 ### 4.1 Metadata Canonicalization
-**Why:** Inconsistent naming breaks filters.
+**Why:** Inconsistent naming breaks filters. Current metadata search uses substring
+`includes()` matching, which causes false positives (e.g., film filter "the" matches
+every title containing "the").
 
 **Deliverables:**
-- Normalize fields: guest, reviewer, film titles (strip year, punctuation rules).
-- Canonical entity lists (guests, reviewers) for exact matching + synonyms.
+- Normalize fields: guest, reviewer, film titles (strip year, punctuation, casing rules).
+- Build canonical entity lists (guests, reviewers, films) for exact matching + synonyms.
+- Replace substring matching with exact‑match‑first, synonym‑match‑second, then fuzzy
+  as a last resort with lower confidence.
+- Add spurious filter cleanup for guest/director/actor (currently only film is cleaned).
 
 **Success Criteria:**
 - Reduced filter misses for known entities.
+- Reduced false‑positive matches from substring collisions.
 
 ### 4.2 Automated Metadata Sync
-**Why:** Manual updates drift.
+**Why:** Metadata lives in a static TypeScript file (`metadata-data.ts`) generated at
+build time. Manual updates drift.
 
 **Deliverables:**
-- Scheduled sync from source of truth (e.g., Google Sheet).
-- Validation checks (required fields, duplicates, missing film year).
-- A diff report that highlights changes before release.
+- Scheduled sync from source of truth (e.g., Google Sheet) to Vercel Blob.
+- Validation checks (required fields, duplicates, missing film year, TMDB enrichment
+  completeness).
+- A diff report that highlights changes before the data is promoted to production.
 
 **Success Criteria:**
 - Metadata freshness < 7 days from source updates.
+- No silent data quality regressions (validation catches missing/malformed entries).
 
 ---
 
 ## Risks & Mitigations
-- **Over‑routing to transcripts increases cost** → gate by confidence and timeouts.
-- **Reranker latency** → cap N, pre‑filter with hybrid retrieval.
-- **Canonicalization false merges** → keep raw fields and emit normalized variants.
+- **Over‑routing to transcripts increases cost** → gate by confidence; timeout transcript
+  retrieval; quick mode (4 chunks, Haiku) keeps baseline cost low.
+- **Reranker latency** → cap N, pre‑filter with hybrid retrieval, skip reranking in
+  quick mode if latency budget is tight.
+- **Canonicalization false merges** → keep raw fields alongside normalized variants;
+  prefer exact match over fuzzy.
+- **Parallel embedding + classification race condition** → embedding is query‑only and
+  does not depend on classification output; no shared mutable state.
+- **Confidence calibration is hard** → start with coarse buckets (high/medium/low) based
+  on match type rather than numeric thresholds; refine with eval data.
 
 ---
 
 ## Dependencies
 - Access to transcript index + metadata source of truth.
-- Compute budget for reranking.
-- Dedicated evaluation query set and expected outcomes.
+- Compute budget for reranking (cross‑encoder or LLM calls).
+- OpenAI embedding API reliability (mitigated by retry/backoff, added 2026‑02‑12).
+- Existing eval dataset (36 cases) and A/B harness as starting points.
 
 ---
 
-## Suggested Next Steps (First Week)
-1. Implement confidence thresholds + routing logs.
-2. Add parallel retrieval + transcript timeout handling.
-3. Start collecting query routing telemetry.
+## Suggested Next Steps
+*Items 1.2, 1.3a, 1.3d, and 1.4 were completed 2026‑02‑11.*
+
+1. Calibrate classification confidence against eval dataset (1.3b).
+2. Implement confidence‑based routing policy (1.3c) — medium‑confidence intents run both paths.
+3. Normalize film titles in intent matching (1.1 remaining).
+4. Make transcript retrieval timeout configurable (1.4 remaining).
+5. Begin Phase 2 retrieval quality work — reranking + deduplication (2.1).
