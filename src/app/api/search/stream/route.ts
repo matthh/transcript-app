@@ -577,12 +577,18 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         let answer = '';
         let chunkCount = 0;
 
-        // Quick mode: fewer chunks + fast model; Deep mode: full synthesis
-        const synthesisChunks = depth === 'quick'
+        // Auto-deep: interpretive/hybrid queries always get full synthesis even in quick mode
+        const useQuickSynthesis = depth === 'quick' && classification.type === 'factual';
+
+        if (depth === 'quick' && classification.type !== 'factual') {
+          console.log('Auto-deep: interpretive/hybrid query, using full synthesis');
+        }
+
+        const synthesisChunks = useQuickSynthesis
           ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
           : transcriptChunks;
 
-        const synthesistuning = depth === 'quick'
+        const synthesistuning = useQuickSynthesis
           ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
           : classification.type === 'interpretive'
             ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
@@ -626,7 +632,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           queryId,
           queryType: classification.type,
           classificationConfidence: classification.confidence,
-          canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
+          canDeepen: useQuickSynthesis && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
             metadata: metadataSources.length > 0 ? metadataSources : undefined,
