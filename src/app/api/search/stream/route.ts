@@ -10,7 +10,7 @@ import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { synthesizeHybridAnswerStreaming, MetadataContext, getAnthropic } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
-import { logQuery } from '@/lib/query-logger';
+import { logQuery, generateLogId } from '@/lib/query-logger';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import { TranscriptChunk } from '@/types/transcript';
 import {
@@ -102,6 +102,7 @@ export async function POST(request: NextRequest) {
 
       try {
         const requestStart = Date.now();
+        const queryId = generateLogId();
         if (!loggedCacheStatus) {
           loggedCacheStatus = true;
           console.log('Search cache status', {
@@ -158,8 +159,11 @@ export async function POST(request: NextRequest) {
               return `### ${epLabel} — "${episode.film}"\n${notable}`;
             });
 
+            const nmAnswer = `Notable Moments\n\n${sections.join('\n\n')}`;
+            const nmTotalMs = Date.now() - requestStart;
             send('complete', {
-              answer: `Notable Moments\n\n${sections.join('\n\n')}`,
+              answer: nmAnswer,
+              queryId,
               queryType: 'factual',
               canDeepen: depth === 'quick',
               sources: { metadata: episodes.map(episodeToMetadataSource) },
@@ -168,9 +172,23 @@ export async function POST(request: NextRequest) {
                 returnedCount: episodes.length,
                 hasMore: false,
               },
-              perf: { totalMs: Date.now() - requestStart, path: 'metadata_notable_moments' },
+              perf: { totalMs: nmTotalMs, path: 'metadata_notable_moments' },
             });
             controller.close();
+            logQuery({
+              query,
+              classification: { type: 'fast_path' },
+              sourceCount: episodes.length,
+              transcriptSourceCount: 0,
+              metadataSourceCount: episodes.length,
+              sourceEpisodes: episodes.map((e) => e.film),
+              answerLength: nmAnswer.length,
+              latencyMs: nmTotalMs,
+              path: 'metadata_notable_moments',
+              intent: { type: intent.type, confidence: intent.confidence },
+              depth,
+              routingPath: 'metadata_fast_path',
+            }, queryId).catch(() => {});
             return;
           }
 
@@ -213,14 +231,30 @@ export async function POST(request: NextRequest) {
                 answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
               }
 
+              const tildaEpMs = Date.now() - requestStart;
               send('complete', {
                 answer,
+                queryId,
                 queryType: 'factual',
                 sources: { metadata: [episodeToMetadataSource(episode)] },
                 metadata: { totalCount: 1, returnedCount: 1, hasMore: false },
-                perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+                perf: { totalMs: tildaEpMs, path: 'metadata_tilda' },
               });
               controller.close();
+              logQuery({
+                query,
+                classification: { type: 'fast_path' },
+                sourceCount: 1,
+                transcriptSourceCount: 0,
+                metadataSourceCount: 1,
+                sourceEpisodes: [episode.film],
+                answerLength: answer.length,
+                latencyMs: tildaEpMs,
+                path: 'metadata_tilda',
+                intent: { type: intent.type, confidence: intent.confidence },
+                depth,
+                routingPath: 'metadata_fast_path',
+              }, queryId).catch(() => {});
               return;
             }
 
@@ -246,8 +280,11 @@ export async function POST(request: NextRequest) {
                 ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
                 : 'No pick details recorded.';
 
+              const earliestAnswer = `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`;
+              const earliestMs = Date.now() - requestStart;
               send('complete', {
-                answer: `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`,
+                answer: earliestAnswer,
+                queryId,
                 queryType: 'factual',
                 sources: { metadata: tildaResult.sources },
                 metadata: {
@@ -255,9 +292,23 @@ export async function POST(request: NextRequest) {
                   returnedCount: tildaResult.sources.length,
                   hasMore: false,
                 },
-                perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+                perf: { totalMs: earliestMs, path: 'metadata_tilda' },
               });
               controller.close();
+              logQuery({
+                query,
+                classification: { type: 'fast_path' },
+                sourceCount: tildaResult.sources.length,
+                transcriptSourceCount: 0,
+                metadataSourceCount: tildaResult.sources.length,
+                sourceEpisodes: tildaResult.sources.map((s) => s.film),
+                answerLength: earliestAnswer.length,
+                latencyMs: earliestMs,
+                path: 'metadata_tilda',
+                intent: { type: intent.type, confidence: intent.confidence },
+                depth,
+                routingPath: 'metadata_fast_path',
+              }, queryId).catch(() => {});
               return;
             }
 
@@ -288,8 +339,10 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
               }
             }
 
+            const tildaSynthMs = Date.now() - requestStart;
             send('complete', {
               answer,
+              queryId,
               queryType: 'factual',
               canDeepen: depth === 'quick',
               sources: { metadata: tildaResult.sources },
@@ -298,23 +351,40 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
                 returnedCount: tildaResult.sources.length,
                 hasMore: false,
               },
-              perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+              perf: { totalMs: tildaSynthMs, path: 'metadata_tilda' },
             });
             controller.close();
+            logQuery({
+              query,
+              classification: { type: 'fast_path' },
+              sourceCount: tildaResult.sources.length,
+              transcriptSourceCount: 0,
+              metadataSourceCount: tildaResult.sources.length,
+              sourceEpisodes: tildaResult.sources.map((s) => s.film),
+              answerLength: answer.length,
+              latencyMs: tildaSynthMs,
+              path: 'metadata_tilda',
+              intent: { type: intent.type, confidence: intent.confidence },
+              synthesisModel: tildaModel,
+              depth,
+              routingPath: 'metadata_fast_path',
+            }, queryId).catch(() => {});
             return;
           }
 
           const aggregate = buildMetadataAggregateResponse(intent);
           if (aggregate) {
             const totalMs = Date.now() - requestStart;
+            const aggMetaCount = aggregate.sources.metadata?.length || 0;
             send('progress', { stage: 'metadata', message: 'Answering from metadata...' });
             send('complete', {
               answer: aggregate.answer,
+              queryId,
               queryType: 'factual',
               sources: aggregate.sources,
               metadata: {
-                totalCount: aggregate.sources.metadata?.length || 0,
-                returnedCount: aggregate.sources.metadata?.length || 0,
+                totalCount: aggMetaCount,
+                returnedCount: aggMetaCount,
                 hasMore: false,
               },
               perf: {
@@ -323,6 +393,20 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
               },
             });
             controller.close();
+            logQuery({
+              query,
+              classification: { type: 'fast_path' },
+              sourceCount: aggMetaCount,
+              transcriptSourceCount: 0,
+              metadataSourceCount: aggMetaCount,
+              sourceEpisodes: aggregate.sources.metadata?.map((s) => s.film) ?? [],
+              answerLength: aggregate.answer.length,
+              latencyMs: totalMs,
+              path: 'metadata',
+              intent: { type: intent.type, confidence: intent.confidence },
+              depth,
+              routingPath: 'metadata_fast_path',
+            }, queryId).catch(() => {});
             return;
           }
         }
@@ -530,8 +614,10 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
 
         // Step 4: Send final result
         const totalMs = Date.now() - requestStart;
+        const synthesisModel = synthesistuning?.model ?? 'claude-sonnet-4-20250514';
         send('complete', {
           answer,
+          queryId,
           queryType: classification.type,
           canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
           sources: {
@@ -570,7 +656,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           answerLength: answer.length,
           latencyMs: totalMs,
           path: classification.type,
-        }).catch(() => {/* already logged in logQuery */});
+          intent: { type: intent.type, confidence: intent.confidence },
+          synthesisModel,
+          depth,
+          routingPath: 'full_pipeline',
+        }, queryId).catch(() => {/* already logged in logQuery */});
       } catch (error) {
         console.error('Search error:', error);
         let errorMessage = 'Unknown error';

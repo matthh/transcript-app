@@ -10,6 +10,7 @@ import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext, getAnthropic } from '@/lib/claude';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
+import { logQuery, generateLogId } from '@/lib/query-logger';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import { TranscriptChunk } from '@/types/transcript';
 import {
@@ -76,6 +77,7 @@ export async function POST(request: NextRequest) {
     const depth: 'quick' | 'deep' = rawDepth === 'deep' ? 'deep' : 'quick';
 
     const requestStart = Date.now();
+    const queryId = generateLogId();
 
     if (!loggedCacheStatus) {
       loggedCacheStatus = true;
@@ -142,8 +144,25 @@ export async function POST(request: NextRequest) {
           return `### ${epLabel} — "${episode.film}"\n${notable}`;
         });
 
+        const nmAnswer = `Notable Moments\n\n${sections.join('\n\n')}`;
+        const nmTotalMs = Date.now() - requestStart;
+        logQuery({
+          query,
+          classification: { type: 'fast_path' },
+          sourceCount: episodes.length,
+          transcriptSourceCount: 0,
+          metadataSourceCount: episodes.length,
+          sourceEpisodes: episodes.map((e) => e.film),
+          answerLength: nmAnswer.length,
+          latencyMs: nmTotalMs,
+          path: 'metadata_notable_moments',
+          intent: { type: intent.type, confidence: intent.confidence },
+          depth,
+          routingPath: 'metadata_fast_path',
+        }, queryId).catch(() => {});
         return NextResponse.json({
-          answer: `Notable Moments\n\n${sections.join('\n\n')}`,
+          answer: nmAnswer,
+          queryId,
           queryType: 'factual',
           canDeepen: depth === 'quick',
           sources: { metadata: episodes.map(episodeToMetadataSource) },
@@ -152,7 +171,7 @@ export async function POST(request: NextRequest) {
             returnedCount: episodes.length,
             hasMore: false,
           },
-          perf: { totalMs: Date.now() - requestStart, path: 'metadata_notable_moments' },
+          perf: { totalMs: nmTotalMs, path: 'metadata_notable_moments' },
         });
       }
 
@@ -193,12 +212,28 @@ export async function POST(request: NextRequest) {
             answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
           }
 
+          const tildaEpMs = Date.now() - requestStart;
+          logQuery({
+            query,
+            classification: { type: 'fast_path' },
+            sourceCount: 1,
+            transcriptSourceCount: 0,
+            metadataSourceCount: 1,
+            sourceEpisodes: [episode.film],
+            answerLength: answer.length,
+            latencyMs: tildaEpMs,
+            path: 'metadata_tilda',
+            intent: { type: intent.type, confidence: intent.confidence },
+            depth,
+            routingPath: 'metadata_fast_path',
+          }, queryId).catch(() => {});
           return NextResponse.json({
             answer,
+            queryId,
             queryType: 'factual',
             sources: { metadata: [episodeToMetadataSource(episode)] },
             metadata: { totalCount: 1, returnedCount: 1, hasMore: false },
-            perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+            perf: { totalMs: tildaEpMs, path: 'metadata_tilda' },
           });
         }
 
@@ -222,8 +257,25 @@ export async function POST(request: NextRequest) {
             ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
             : 'No pick details recorded.';
 
+          const earliestAnswer = `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`;
+          const earliestMs = Date.now() - requestStart;
+          logQuery({
+            query,
+            classification: { type: 'fast_path' },
+            sourceCount: tildaResult.sources.length,
+            transcriptSourceCount: 0,
+            metadataSourceCount: tildaResult.sources.length,
+            sourceEpisodes: tildaResult.sources.map((s) => s.film),
+            answerLength: earliestAnswer.length,
+            latencyMs: earliestMs,
+            path: 'metadata_tilda',
+            intent: { type: intent.type, confidence: intent.confidence },
+            depth,
+            routingPath: 'metadata_fast_path',
+          }, queryId).catch(() => {});
           return NextResponse.json({
-            answer: `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`,
+            answer: earliestAnswer,
+            queryId,
             queryType: 'factual',
             sources: { metadata: tildaResult.sources },
             metadata: {
@@ -231,7 +283,7 @@ export async function POST(request: NextRequest) {
               returnedCount: tildaResult.sources.length,
               hasMore: false,
             },
-            perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+            perf: { totalMs: earliestMs, path: 'metadata_tilda' },
           });
         }
 
@@ -254,9 +306,26 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
 
         const textBlock = message.content.find((block) => block.type === 'text');
         const answer = textBlock?.text ?? 'Unable to generate a response.';
+        const tildaSynthMs = Date.now() - requestStart;
 
+        logQuery({
+          query,
+          classification: { type: 'fast_path' },
+          sourceCount: tildaResult.sources.length,
+          transcriptSourceCount: 0,
+          metadataSourceCount: tildaResult.sources.length,
+          sourceEpisodes: tildaResult.sources.map((s) => s.film),
+          answerLength: answer.length,
+          latencyMs: tildaSynthMs,
+          path: 'metadata_tilda',
+          intent: { type: intent.type, confidence: intent.confidence },
+          synthesisModel: tildaModel,
+          depth,
+          routingPath: 'metadata_fast_path',
+        }, queryId).catch(() => {});
         return NextResponse.json({
           answer,
+          queryId,
           queryType: 'factual',
           canDeepen: depth === 'quick',
           sources: { metadata: tildaResult.sources },
@@ -265,20 +334,36 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
             returnedCount: tildaResult.sources.length,
             hasMore: false,
           },
-          perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
+          perf: { totalMs: tildaSynthMs, path: 'metadata_tilda' },
         });
       }
 
       const aggregate = buildMetadataAggregateResponse(intent);
       if (aggregate) {
         const totalMs = Date.now() - requestStart;
+        const aggMetaCount = aggregate.sources.metadata?.length || 0;
+        logQuery({
+          query,
+          classification: { type: 'fast_path' },
+          sourceCount: aggMetaCount,
+          transcriptSourceCount: 0,
+          metadataSourceCount: aggMetaCount,
+          sourceEpisodes: aggregate.sources.metadata?.map((s) => s.film) ?? [],
+          answerLength: aggregate.answer.length,
+          latencyMs: totalMs,
+          path: 'metadata',
+          intent: { type: intent.type, confidence: intent.confidence },
+          depth,
+          routingPath: 'metadata_fast_path',
+        }, queryId).catch(() => {});
         return NextResponse.json({
           answer: aggregate.answer,
+          queryId,
           queryType: 'factual',
           sources: aggregate.sources,
           metadata: {
-            totalCount: aggregate.sources.metadata?.length || 0,
-            returnedCount: aggregate.sources.metadata?.length || 0,
+            totalCount: aggMetaCount,
+            returnedCount: aggMetaCount,
             hasMore: false,
           },
           perf: {
@@ -428,8 +513,33 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
 
     // Step 5: Build response with pagination metadata
     const totalMs = Date.now() - requestStart;
+    const synthesisModel = synthesisTuning?.model ?? 'claude-sonnet-4-20250514';
+    const allSourceEpisodes = [
+      ...(transcriptSources.map((s) => s.episodeTitle)),
+      ...(metadataSources.map((s) => s.film)),
+    ];
+    logQuery({
+      query,
+      classification: {
+        type: classification.type,
+        confidence: classification.confidence,
+        filters: { ...classification.filters },
+      },
+      sourceCount: transcriptSources.length + metadataSources.length,
+      transcriptSourceCount: transcriptSources.length,
+      metadataSourceCount: metadataSources.length,
+      sourceEpisodes: [...new Set(allSourceEpisodes)],
+      answerLength: answer.length,
+      latencyMs: totalMs,
+      path: classification.type,
+      intent: { type: intent.type, confidence: intent.confidence },
+      synthesisModel,
+      depth,
+      routingPath: 'full_pipeline',
+    }, queryId).catch(() => {});
     return NextResponse.json({
       answer,
+      queryId,
       queryType: classification.type,
       canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
       sources: {

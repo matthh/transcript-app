@@ -18,12 +18,16 @@ export interface QueryLogEntry {
   answerLength: number;
   latencyMs: number;
   path: string;
+  intent?: { type: string; confidence?: string };
+  synthesisModel?: string;
+  depth?: 'quick' | 'deep';
+  routingPath?: 'metadata_fast_path' | 'full_pipeline' | 'fallthrough';
   // Populated later if user submits feedback
   rating?: 'good' | 'bad' | null;
   comment?: string;
 }
 
-function generateLogId(): string {
+export function generateLogId(): string {
   const ts = Date.now().toString(36);
   const rand = Math.random().toString(36).substring(2, 8);
   return `ql_${ts}_${rand}`;
@@ -33,8 +37,8 @@ function generateLogId(): string {
  * Log a search query and its results to Vercel Blob.
  * Fire-and-forget — errors are logged but don't affect the response.
  */
-export async function logQuery(data: Omit<QueryLogEntry, 'id' | 'timestamp'>): Promise<string | null> {
-  const id = generateLogId();
+export async function logQuery(data: Omit<QueryLogEntry, 'id' | 'timestamp'>, preGeneratedId?: string): Promise<string | null> {
+  const id = preGeneratedId ?? generateLogId();
   const entry: QueryLogEntry = {
     id,
     timestamp: new Date().toISOString(),
