@@ -35,6 +35,7 @@ interface EvalCase {
   expectMinSources?: number;
   expectMinTranscriptSources?: number;
   expectMinMetadataSources?: number;
+  expectConfidenceAbove?: number;
 }
 
 interface EvalDataset {
@@ -44,6 +45,7 @@ interface EvalDataset {
 interface SSEResult {
   answer: string;
   queryType: string;
+  classificationConfidence?: number;
   sources: {
     transcripts?: Array<{ episodeTitle: string; text: string; score: number }>;
     metadata?: Array<{ film: string; episode: number; season: number }>;
@@ -93,6 +95,7 @@ async function runQuery(baseUrl: string, query: string): Promise<SSEResult> {
 
   let answer = '';
   let queryType = '';
+  let classificationConfidence: number | undefined;
   let sources: SSEResult['sources'] = {};
   let perf: SSEResult['perf'] = { totalMs: 0, path: '' };
   let errorMsg: string | undefined;
@@ -108,6 +111,7 @@ async function runQuery(baseUrl: string, query: string): Promise<SSEResult> {
         if (currentEvent === 'complete') {
           answer = data.answer || '';
           queryType = data.queryType || '';
+          classificationConfidence = data.classificationConfidence;
           sources = data.sources || {};
           perf = data.perf || perf;
         } else if (currentEvent === 'chunk') {
@@ -122,7 +126,7 @@ async function runQuery(baseUrl: string, query: string): Promise<SSEResult> {
     }
   }
 
-  return { answer, queryType, sources, perf, error: errorMsg };
+  return { answer, queryType, classificationConfidence, sources, perf, error: errorMsg };
 }
 
 // ---------------------------------------------------------------------------
@@ -221,6 +225,15 @@ function checkCase(testCase: EvalCase, result: SSEResult): string[] {
     if (count < testCase.expectMinMetadataSources) {
       failures.push(
         `Expected at least ${testCase.expectMinMetadataSources} metadata sources, got ${count}`
+      );
+    }
+  }
+
+  // expectConfidenceAbove — classification confidence exceeds threshold
+  if (testCase.expectConfidenceAbove !== undefined && result.classificationConfidence !== undefined) {
+    if (result.classificationConfidence < testCase.expectConfidenceAbove) {
+      failures.push(
+        `Expected confidence above ${testCase.expectConfidenceAbove}, got ${result.classificationConfidence}`
       );
     }
   }

@@ -352,7 +352,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
             }
           }
 
-          if (!fastPathHandled) {
+          if (!fastPathHandled && intent.confidence === 'medium') {
+            console.log('Medium-confidence intent, falling through to full pipeline', { type: intent.type, confidence: intent.confidence });
+          }
+
+          if (!fastPathHandled && intent.confidence !== 'medium') {
             const aggregate = buildMetadataAggregateResponse(intent);
             if (aggregate) {
               const totalMs = Date.now() - requestStart;
@@ -407,6 +411,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           classifyQuery(query),
           embeddingPromise,
         ]);
+        // Low-confidence classification with no filters → force hybrid to avoid misrouting
+        if (classification.confidence < 0.6 && Object.keys(classification.filters).length === 0) {
+          console.log('Low-confidence classification, forcing hybrid', { original: classification.type, confidence: classification.confidence });
+          classification.type = 'hybrid';
+        }
         if (classification.type === 'interpretive' && !tuning && depth !== 'deep') {
           tuning = getSearchTuning('fast');
         }
@@ -616,6 +625,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           answer,
           queryId,
           queryType: classification.type,
+          classificationConfidence: classification.confidence,
           canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
           sources: {
             transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
