@@ -227,8 +227,9 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
 
     const epLabel = formatEpisodeLabel(episode.season, episode.episode);
     const source = episodeToMetadataSource(episode);
+    const header = `Credits for "${episode.film}" (${epLabel}):`;
     return {
-      answer: lines.length > 0 ? lines.join('\n') : `Credits for "${episode.film}" (${epLabel}) not found.`,
+      answer: lines.length > 0 ? `${header}\n${lines.join('\n')}` : `${header} not found.`,
       sources: { metadata: [source] },
     };
   }
