@@ -23,23 +23,28 @@
 **Why:** These are deterministic metadata lookups and should bypass transcript search when confident.
 
 **Deliverables:**
-- Add explicit intent detection for reviewer/guest lookup by film or episode.
-- Add explicit intent detection for episode release date by film or episode.
-- Add explicit intent detection for “Kev’s Question” by film or episode.
+- Add explicit intent detection for reviewer/guest lookup by film or episode. ✅
+- Add explicit intent detection for episode release date by film or episode. ✅
+- Add explicit intent detection for “Kev’s Question” by film or episode. ✅
 - Normalize film titles (strip year/parentheticals) during matching.
-- Return structured metadata sources for the above intents.
+- Return structured metadata sources for the above intents. ✅
 
 **Testing Criteria:**
 - Add regression queries (minimum set):
-- “Who reviewed No Country for Old Men?”
-- “Who was the guest on No Country for Old Men?”
-- “When did the No Country for Old Men episode release?”
-- “What was Kev’s question for No Country for Old Men?”
+- “Who reviewed No Country for Old Men?” ✅
+- “Who was the guest on No Country for Old Men?” ✅
+- “When did the No Country for Old Men episode release?” ✅
+- “What was Kev’s question for No Country for Old Men?” ✅
 - Episode‑number variants (e.g., “episode 204” for each intent).
 - For each case:
 - Intent == `metadata_*` (no transcript routing).
 - Answer includes the requested field.
 - Metadata sources include the target episode.
+
+**Completed Work (2026‑02‑12):**
+- Implemented release date + Kev’s question metadata intents.
+- Added regression cases for release date and Kev’s question.
+- Added A/B harness for metadata intent testing and saved output log.
 
 ### 1.2 Confidence‑Based Routing Policy
 **Why:** Misroutes are high‑cost and hard to detect.
