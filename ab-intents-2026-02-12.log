@@ -1,0 +1,259 @@
+> transcript-app@0.1.0 ab:intents
+> node --import tsx ./scripts/ab-metadata-intents.ts
+
+A: http://localhost:3000
+B: http://localhost:3001
+
+## Guest by film
+Query: Who was the guest on No Country for Old Men?
+- A: 220ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 198ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Guest: Ian de Borja
+---
+B answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Guest: Ian de Borja
+---
+
+## Reviewer by film
+Query: Who reviewed No Country for Old Men?
+- A: 12ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 11ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Reviewer: Nexus9
+---
+B answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Reviewer: Nexus9
+---
+
+## Guest + reviewer by film
+Query: Who was the guest and reviewer for No Country for Old Men?
+- A: 12ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 12ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Guest: Ian de Borja
+Reviewer: Nexus9
+---
+B answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Guest: Ian de Borja
+Reviewer: Nexus9
+---
+
+## Release date by film
+Query: When did the No Country for Old Men episode release?
+- A: 11ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 9998ms | path=factual | type=factual | metadata=1/1 | transcripts=6 PASS
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Release date: 7/6/2020
+---
+B answer: ## Release Date
+
+Based on the episode metadata, the **No Country for Old Men** episode was released on **July 6, 2020** (7/6/2020).
+---
+
+## Kev question by film
+Query: What was Kev's question for Dune (1965) Part 1?
+- A: 16ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 5033ms | path=interpretive | type=interpretive | metadata=0/0 | transcripts=12 FAIL [missing "Kev recorded 2 questions", no metadata sources]
+---
+A answer: Credits for "Dune (1965) Part 1" (S1E1):
+Kev's Question: Kev recorded 2 questions for the re-release - What are you most afraid of losing from Dune going into Dune Part 2? If you could do a podcast about any other franchize, other than Dune, what would it be, and why would it be Star Trek?
+---
+B answer: ## Kev's Question for Dune (1965) Part 1
+
+Based on the transcript, Kev submitted **two questions** for the special edition remix of Episode 1:
+
+1. **The Dune Question:** "What are you most afraid of losing in the second half of Dune going into next fall and Dune, part two?"
+
+2. **The Dune Pod Question:** "If you could do a podcast about any other media franchise, other than Dune, what would it be? And why wouldn't it be Star Trek?"
+
+Kev framed these questions as particularly special since they were being asked on a "surprise episode" celebrating the remix of the very first episode, looking back over just over two years of the podcast's existence leading up to Episode 100.
+---
+
+## Reviewer by episode
+Query: Who reviewed episode 6?
+- A: 15ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 12ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Reviewer: Nexus9
+---
+B answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Reviewer: Nexus9
+---
+
+## Release date by episode
+Query: When did episode 6 release?
+- A: 9ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 3240ms | path=factual | type=factual | metadata=54/54 | transcripts=6 FAIL [missing "7/6/2020"]
+---
+A answer: Credits for "No Country for Old Men (2007)" (S1E6):
+Release date: 7/6/2020
+---
+B answer: ## Episode 6 Release Date
+
+Based on the episode metadata, **Episode 6 released on April 30, 2023**.
+
+This episode covered **Invasion of the Body Snatchers (1978)**, was Season 6, Episode 145, and featured Hex as the reviewer with Lorelei David as the guest.
+---
+
+## Kev question by episode
+Query: What was Kev's question for episode 1?
+- A: 13ms | path=metadata | type=factual | metadata=1/1 | transcripts=0 PASS
+- B: 5270ms | path=factual | type=factual | metadata=0/0 | transcripts=6 FAIL [missing "Kev recorded 2 questions", no metadata sources]
+---
+A answer: Credits for "Dune (1965) Part 1" (S1E1):
+Kev's Question: Kev recorded 2 questions for the re-release - What are you most afraid of losing from Dune going into Dune Part 2? If you could do a podcast about any other franchize, other than Dune, what would it be, and why would it be Star Trek?
+---
+B answer: # Kev's Question for Episode 1
+
+I don't have information about which episode was the actual "Episode 1" of the Escape Hatch podcast in the provided data, so I cannot definitively answer what Kev's question was for the series premiere.
+
+However, I can tell you about **Kev's questions from the earliest episodes in the transcripts provided**:
+
+## From the Adaptation (2002) Episode
+
+Kev asked: **"If you could do another podcast about anything, what would it be?"**
+
+In his answer, Kev mentioned he had wanted to do a DC Comics podcast specifically about post-crisis DC called "Midlife," but it fell apart when he stopped being friends with the collaborator he was going to do it with.
+
+This appears to be one of the earlier episodes in the available transcripts, though I cannot confirm if it's technically "Episode 1" without access to complete episode metadata showing the chronological order of all episodes.
+---
+
+## Interpretive opinion (should bypass metadata intent)
+Query: What did the hosts think about No Country for Old Men?
+- A: 17578ms | path=interpretive | type=interpretive | metadata=1/1 | transcripts=12 PASS
+- B: 11358ms | path=interpretive | type=interpretive | metadata=1/1 | transcripts=12 PASS
+---
+A answer: ## Overall Assessment
+
+The hosts were extremely enthusiastic about **No Country for Old Men**, viewing it as one of the Coen Brothers' finest works. Jason stated plainly: "this is a real, this is a real winner. I mean, like, I'm not like super into the obsessive ranking of of movies. But I will say that the Coen brothers are probably my favorite living directors. And this is, if not their best movie than like their one of their best movies. And so it is, it is among my favorite movies of all time."
+
+Haitch expressed similar reverence, though he approached it from a different angle. While he noted that **Miller's Crossing** had been his favorite movie for about 20 years, he emphasized the Coen Brothers' mastery: "I still feel like it is one of the most perfectly constructed films in terms of Script Direction. The cast all the elements of it is just an absolutely phenomenally well made film."
+
+## The Adaptation and Tone
+
+A key point of discussion was how remarkably well the Coen Brothers adapted Cormac McCarthy's source material. Jason highlighted the significance of this being their first true adaptation: "it's the first time they worked from adapted material. And it's such a faithful adaptation of the tone and of the book just generally, that it's kind of amazing that they never that the Cohens and Cormac McCarthy never found each other before." He noted with admiration that much of the film's dialogue was lifted directly from McCarthy's page, which is remarkable given how original the Coen Brothers' other work is.
+
+## Thematic Richness
+
+Ian de Borja identified a recurring philosophical theme across the Coen Brothers' filmography that resonates strongly in this film: "The Big Lebowski and No Country for Old Man as wildly different as they are... both movies are essentially about, like, does all this matter in the end?" He noted that this existential questioning appears throughout their work—in **Burn After Reading**, the final line asks "what did we learn?"—but **No Country for Old Men** handles it with subtlety while maintaining the thematic core.
+
+## Performances and Technical Craft
+
+The hosts were unanimous in praising the execution. Jason emphasized the universally excellent cast: "there's not a bad performance in this movie... literally everyone in this movie, who utters a line of dialogue is a champion."
+
+Ian particularly lauded cinematographer Roger Deakins, calling him "probably one of the top five or 10 most important people in film in the last 30 years or so maybe of all time." He praised Deakins' use of silhouettes and night/dusk cinematography, noting that "right off the bat, he is flexing his muscles like the second that the movie starts." The hosts also appreciated how the film merges "the modern and historical of a Western... perfectly married."
+---
+B answer: # The Hosts' Perspective on No Country for Old Men
+
+## Overall Acclaim
+
+The hosts were unequivocal in their praise for **No Country for Old Men**. Jason Goldman stated plainly: "this is a real, this is a real winner," and went on to say that "the Coen brothers are probably my favorite living directors. And this is, if not their best movie than like their one of their best movies. And so it is, it is among my favorite movies of all time."
+
+Haitch expressed similarly strong admiration, though he approached it from a different angle. He explained that **Miller's Crossing** had been his favorite film for about 20 years, describing it as "one of the most perfectly constructed films in terms of Script Direction." However, his enthusiasm for the Coen Brothers' body of work—including **Raising Arizona** and **Blood Simple**—made **No Country for Old Men** a natural continuation of his appreciation for their craft.
+
+## The Adaptation as a Turning Point
+
+Jason emphasized the significance of this being the Coen Brothers' first adapted screenplay from source material. He noted that it was "such a faithful adaptation of the tone and of the book just generally, that it's kind of amazing that they never that the Cohens and Cormac McCarthy never found each other before because it just seems like Oh, like this is perfect you guys should just do all just work together exclusively." He also highlighted that "so much of the dialogue that's in the movie is just directly from the page," which speaks to how well McCarthy's writing aligned with their sensibilities.
+
+## Thematic Depth
+
+Ian de Borja connected **No Country for Old Men** to a recurring theme across the Coen Brothers' filmography. He observed that like **The Big Lebowski**, the film fundamentally asks: "does all this matter in the end?" He explained that "both movies are essentially about, like, does all this matter in the end?" and that this existential question permeates much of their work. Ian noted the Coen Brothers' ability to explore this theme "in so many different types of movies" while maintaining their distinctive voice.
+
+## Technical Excellence
+
+The hosts were particularly impressed by the filmmaking craft. Ian praised cinematographer **Roger Deakins** effusively, calling him "probably one of the top five or 10 most important people in film in the last 30 years or so maybe of all time." He highlighted Deakins' mastery from the opening moments: "the second that the movie starts... the way he uses silhouettes and the way he shoots at night and dusk is just so freakin good."
+
+Haitch noted how the cinematography perfectly balanced "the merging of the modern and and historical of a Western. It is perfectly married."
+
+## Performance Quality
+
+Jason emphasized the uniformity of excellence in the cast: "there's not a bad performance in this movie... literally everyone in this movie, who utters a line of dialogue is a champion." Tommy Lee Jones, in particular, earned recognition for his delivery of McCarthy's dialogue and his portrayal of a world-weary sheriff grappling with his place in a changing world.
+---
+
+## Interpretive quote lookup (should bypass metadata intent)
+Query: Which episode uses the word dingus?
+- A: 4590ms | path=interpretive | type=interpretive | metadata=0/0 | transcripts=12 PASS
+- B: 5264ms | path=interpretive | type=interpretive | metadata=0/0 | transcripts=12 PASS
+---
+A answer: ## The Maltese Falcon Episode
+
+The word "dingus" appears in **The Maltese Falcon (1941)** episode.
+
+In a voicemail from caller Corey, he discusses the titular object from the film and notes an interesting observation about the word itself:
+
+> "What's up with the dingus? Like, I never knew that dingus was not an insult. I always use dingus as like, hey, you dingus. Or something like that. Sure. I guess it's a thing. Whatchamacallit, pickamajig, a doodad or something."
+
+Corey was referencing the Maltese Falcon itself—the "elusive dingus" that drives the plot of the film—and expressed surprise that the word refers to a generic object or thingamajig rather than being purely an insult as he had always assumed.
+---
+B answer: ## Episode with "Dingus"
+
+The word "dingus" appears in the **The Maltese Falcon (1941)** episode.
+
+In a voicemail from Corey, he discusses the film and mentions the titular "dingus" (the Maltese Falcon itself). He says:
+
+"What's up with the dingus? Like, I never knew that dingus was not an insult. I always use dingus as like, hey, you dingus. Or something like that. Sure. I guess it's a thing. Whatchamacallit, pickamajig, a doodad or something."
+
+Corey is reflecting on learning that "dingus" can be used as a general term for an object (similar to "thingamajig" or "doodad"), rather than just as an insult directed at a person.
+---
+
+## Interpretive discussion (should bypass metadata intent)
+Query: What did they say about Denis Villeneuve?
+- A: 48134ms | path=interpretive | type=interpretive | metadata=9/9 | transcripts=15 PASS
+- B: 10612ms | path=interpretive | type=interpretive | metadata=9/9 | transcripts=15 PASS
+---
+A answer: # What the Escape Hatch Hosts Said About Denis Villeneuve
+
+## Overview
+
+The hosts had extensive interaction with Denis Villeneuve, including a formal interview at the Mill Valley Film Festival. Their commentary reveals deep admiration for him as both an artist and a sophisticated communicator and operator.
+
+## Villeneuve as a Visionary Artist
+
+Haitch praised Villeneuve's connection to grand cinematic spectacle, comparing his approach to classic filmmaking: "This is kind of like a return to the Cecil B DeMille. You know, mass spectacle." Haitch noted that even in **Blade Runner 2049**, "the sheer numbers of people that you have, and the hardware, the machinery like the the scope that is conveyed in this in the conflict, and the struggle is just unbelievable. It's ridiculous."
+
+## Villeneuve as a Communicator and Operator
+
+Jason was particularly struck by Villeneuve's ability to articulate his vision across different audiences. He observed: "He's a pretty sophisticated operator, just from a communication standpoint." Rather than viewing him as a typical tech CEO, Jason emphasized that Villeneuve possesses "logistical and communications command" that goes beyond just being "a great artist or someone with a visual language." Haitch added that Villeneuve is "inspirational. In addition to being a competent artist and filmmaker, he's, he's an inspirational communicator."
+
+## Specific Technical Insights
+
+During their interview, Villeneuve explained his use of IMAX formatting as a deliberate artistic choice to create intimacy with characters and landscape. Jason was impressed: "That's a really interesting answer...he wanted to create something on a grand scale. That meant IMAX, I meant using the desert as a landscape and man, like creating a language of cinema."
+
+## His Approach to Violence
+
+The hosts discussed Villeneuve's philosophical approach to depicting violence on screen. According to their analysis, his methodology—developed through films like **Polytechnique** and **Sicario**—focuses on "showing the realism and always showing it from the victim's perspective. So it wasn't glorifying...if we're gonna show it, we have to show it and make it feel as honest as possible."
+---
+B answer: # What the Hosts Said About Denis Villeneuve
+
+The Escape Hatch hosts had extensive conversations about Denis Villeneuve across multiple episodes, particularly in their interview with him. Here's what they discussed:
+
+## On Villeneuve as a Filmmaker and Visionary
+
+The hosts were deeply impressed by Villeneuve's approach to filmmaking. Haitch noted that Villeneuve represents "a return to the Cecil B DeMille" tradition of "mass spectacle," pointing to both **Dune: Part Two** and **Blade Runner 2049** as examples of how "the sheer numbers of people that you have, and the hardware, the machinery like the scope that is conveyed in this in the conflict, and the struggle is just unbelievable."
+
+## On Villeneuve's Communication Skills
+
+Jason Goldman was particularly struck by Villeneuve's ability to articulate his vision. He observed: "he really seemed more to me, like a visionary. But like, someone who's meant to be running like a mass enterprise...he has a language for articulating that I can use to external people to internal people to like people who are allied to me to people who don't get it. He's just like, he's a pretty sophisticated operator, just from a communication standpoint."
+
+Haitch agreed, describing him as "inspirational. In addition to being a competent artist and filmmaker, he's an inspirational communicator."
+
+## On His Thematic Intentions
+
+The hosts appreciated how Villeneuve grounded his filmmaking choices in deeper meaning. When discussing **Dune**, Villeneuve emphasized that the novel is "a warning...against messianic figures" and that he tried "to focus on the idea of anti colonialism and the danger of Messianic figures."
+
+Goldman was impressed by how Villeneuve answered their question about aspect ratios by connecting it to theme: he "tie[d] it into...the nature of...the impact of a new landscape on the paul atreides psyche," demonstrating that his technical choices served his thematic vision.
+
+## On His Artistic Approach to Violence
+
+The hosts noted that Villeneuve has a distinctive philosophy about depicting violence on screen. According to their discussion, he learned through **Polytechnique** that he "didn't want to have to glorify anything," and his mindset was to "show the realism and always showing it from the victim's perspective." One host observed that "he seems to like showing torture...he's really got a dark side. This guy."
+
+## Personal Observations
+
+During a **Being the Ricardos** Q&A screening, Haitch asked Villeneuve about the comedy in his films, and Villeneuve responded that comedy emerges from conflict and good dialogue/situations rather than from him being a comedian. The hosts found him "very funny" and "really great" in person during this interaction.
+---
