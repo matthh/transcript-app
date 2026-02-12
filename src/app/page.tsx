@@ -465,6 +465,15 @@ function AnswerCard({ result, query, onDeepen, deepening, deepStreamingText }: {
             <p className="text-xs text-gray-600">
               {metadataSources.length === 1 ? 'Episode' : 'Episodes'}: {metadataSummary}
             </p>
+            {(() => {
+              const reviewers = [...new Set(metadataSources.map(s => s.reviewer).filter(Boolean))];
+              if (reviewers.length === 0) return null;
+              return (
+                <p className="text-xs text-gray-400 mt-1">
+                  Thank you PDC reviewer{reviewers.length > 1 ? 's' : ''}, {reviewers.join(', ')}
+                </p>
+              );
+            })()}
           </div>
         )}
         {deepening && deepStreamingText && (

@@ -159,6 +159,27 @@ export default async function SharePage({ params }: PageProps) {
 
           <MarkdownContent content={share.answer} />
           <DeepenShare query={share.query} />
+          {(() => {
+            const episodeLine = formatEpisodeLine(share);
+            const metadata = share.sources.metadata;
+            if (!episodeLine) return null;
+            return (
+              <div className="mt-4 pt-4 border-t border-[#dadce0]">
+                <p className="text-xs text-gray-600">
+                  Episode: {episodeLine}
+                </p>
+                {(() => {
+                  const reviewers = [...new Set(metadata?.map(s => s.reviewer).filter(Boolean) ?? [])];
+                  if (reviewers.length === 0) return null;
+                  return (
+                    <p className="text-xs text-gray-400 mt-1">
+                      Thank you PDC reviewer{reviewers.length > 1 ? 's' : ''}, {reviewers.join(', ')}
+                    </p>
+                  );
+                })()}
+              </div>
+            );
+          })()}
         </div>
 
         <FeedbackForm query={share.query} answer={share.answer} queryType={share.queryType} />

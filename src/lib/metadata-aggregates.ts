@@ -3,6 +3,7 @@ import {
   getCurrentSeason,
   getEpisodeByFilm,
   getEpisodeByNumber,
+  getEpisodesByGuest,
   getEpisodeWithMaxField,
   getFieldForLatestEpisode,
   getLatestEpisode,
@@ -231,6 +232,26 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     return {
       answer: lines.length > 0 ? `${header}\n${lines.join('\n')}` : `${header} not found.`,
       sources: { metadata: [source] },
+    };
+  }
+
+  if (intent.type === 'metadata_guest_search' && intent.guestName) {
+    const episodes = getEpisodesByGuest(intent.guestName);
+    if (episodes.length === 0) return null; // fallthrough to full pipeline
+
+    const sorted = [...episodes].sort(
+      (a, b) => (b.season * 1000 + b.episode) - (a.season * 1000 + a.episode)
+    );
+    const lines = sorted.map((ep) => {
+      const epLabel = formatEpisodeLabel(ep.season, ep.episode);
+      return `- **${ep.film}** (${epLabel})${ep.guest ? ` — Guest: ${ep.guest}` : ''}`;
+    });
+
+    const sources = sorted.slice(0, 8).map(episodeToMetadataSource);
+    const plural = episodes.length === 1 ? 'episode' : 'episodes';
+    return {
+      answer: `Found ${episodes.length} ${plural} with "${intent.guestName}" as guest:\n${lines.join('\n')}`,
+      sources: { metadata: sources },
     };
   }
 

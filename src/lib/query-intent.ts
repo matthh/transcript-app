@@ -10,6 +10,7 @@ export type QueryIntentType =
   | 'metadata_field_latest'
   | 'metadata_field_max'
   | 'metadata_episode_fields'
+  | 'metadata_guest_search'
   | 'metadata_tilda'
   | 'metadata_notable_moments'
   | 'transcript_only'
@@ -26,6 +27,7 @@ export interface QueryIntent {
   episodeFields?: MetadataEpisodeField[];
   episodeNumber?: number;
   film?: string;
+  guestName?: string;
 }
 
 const YEAR_RANGE_PATTERN = /\b(19|20)\d{2}\s*-\s*(19|20)\d{2}\b/;
@@ -134,6 +136,54 @@ function wantsYearSample(normalized: string): boolean {
   );
 }
 
+function extractGuestName(normalized: string): string | null {
+  // "feature/featuring/with/have/had mike isaac as (a) guest"
+  const asGuestMatch = normalized.match(
+    /(?:feature|featuring|with|have|had|has|include|including)\s+(.{2,}?)\s+as\s+(?:a\s+)?guest/
+  );
+  if (asGuestMatch) return asGuestMatch[1].trim();
+
+  // "was/is mike isaac (ever) a guest"
+  const wasGuestMatch = normalized.match(
+    /(?:was|were|is)\s+(.{2,}?)\s+(?:ever\s+)?(?:a\s+)?guest/
+  );
+  if (wasGuestMatch) return wasGuestMatch[1].trim();
+
+  // "has/did mike isaac (been a) guest"
+  const hasGuestMatch = normalized.match(
+    /(?:has|have|had|did)\s+(.{2,}?)\s+(?:been\s+)?(?:a\s+)?guest/
+  );
+  if (hasGuestMatch) return hasGuestMatch[1].trim();
+
+  // "guest episodes/appearances by/with mike isaac"
+  const guestByMatch = normalized.match(
+    /guest\s+(?:episodes?|appearances?)\s+(?:by|with|featuring|of)\s+(.{2,})/
+  );
+  if (guestByMatch) return guestByMatch[1].trim();
+
+  // "episodes with mike isaac" (no "as guest" but "guest" is elsewhere in query)
+  const withMatch = normalized.match(
+    /episodes?\s+(?:with|featuring)\s+(.{2,}?)(?:\s+as\s+(?:a\s+)?guest)?$/
+  );
+  if (withMatch) return withMatch[1].trim();
+
+  return null;
+}
+
+function detectGuestSearchIntent(query: string): QueryIntent | null {
+  const normalized = normalize(query);
+  if (!/\bguest\b/.test(normalized)) return null;
+
+  const name = extractGuestName(normalized);
+  if (!name) return null;
+
+  return {
+    type: 'metadata_guest_search',
+    confidence: 'medium',
+    guestName: name,
+  };
+}
+
 function detectEpisodeFieldsIntent(query: string): QueryIntent | null {
   const normalized = normalize(query);
   const wantsGuest = /\bguest\b/.test(normalized) || /\bguests\b/.test(normalized);
@@ -196,6 +246,11 @@ export function detectQueryIntent(query: string): QueryIntent {
   const episodeFieldsIntent = detectEpisodeFieldsIntent(query);
   if (episodeFieldsIntent) {
     return episodeFieldsIntent;
+  }
+
+  const guestSearchIntent = detectGuestSearchIntent(query);
+  if (guestSearchIntent) {
+    return guestSearchIntent;
   }
 
   if ((normalized.includes('current season') || normalized.includes('what season') || normalized.includes('season is the pod on now'))
