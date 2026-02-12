@@ -1,0 +1,3811 @@
+{
+  "episode_number": 206,
+  "episode_name": "The Goonies (1985) FINAL",
+  "dialogues": [
+    {
+      "name": "Tapedeck",
+      "timestamp": "0:01",
+      "text": "This, this, this is a tape deck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:18",
+      "text": "Hey, everybody, it's H. And welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined as always by my co host, Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "This is. The influence of Color Purple on the Goonies is hard to reconcile."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:34",
+      "text": "And it's the co host of Pod Save the World and Pod Save America, Tommy Vitor."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "0:40",
+      "text": "Yeah, Harry Styles held a door for me once and I was like, dude, he just held the door. It was pretty hot."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:45",
+      "text": "What's going on here?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:47",
+      "text": "We finally cover a classic. Steven Spielberg and Richard Donner's the Goonies. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. And now, without further adune, the Goonies."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:22",
+      "text": "Tommy, before, before you sat down, I was covering the best places to poop in the West Wing. I don't know if you have any. If you want to weigh in on, if you want to weigh in on that."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "1:30",
+      "text": "Well, so the one off the Roosevelt Room is a single stall and you don't want to get caught coming out of there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:35",
+      "text": "Yeah. And I've, I've had people I like, I like sort of. I was, I don't know, maybe I was just entitled. I would camp out there and just be like, this is my space. Like it's my, it's my time down here. And like I, and I once, I once there was a meeting of VCs in the Roosevelt Room and I was doing business in the bathroom off the Roosevelt Room and famed venture capitalist John Doerr banged loudly on the door to roust me from my station."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:00",
+      "text": "Of course he did."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:01",
+      "text": "Yeah. He was like, listen, I just can't wait. I was like, all right, fair enough."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:04",
+      "text": "I guess the, the bathroom by this situation room was, I think, the best overall bathroom because there were multiple stalls, multiple urinals, but you'd end up like side pissing with some people and it'd be really awkward. Like I like a four star. Yeah, literally Dave Petraeus was the story I was going to tell."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:19",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:20",
+      "text": "And I like saddle up and like, you know, literally dick in hand, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:23",
+      "text": "How are you, sir?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:23",
+      "text": "And he's like, I'm doing great. If you ever have a Chance to be CIA director. I suggest you do it. You got a ton of authorities, super interesting work."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:30",
+      "text": "Blah, blah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:31",
+      "text": "Like, what are you talking about?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:33",
+      "text": "Good tip."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:33",
+      "text": "I'm like, 29."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:36",
+      "text": "Our bathroom in the art. You were so. You were in. You were like. You were on that. Your office was like, right off that, like, where Ben's office was later."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:42",
+      "text": "Ben and I shared an office. Yeah, we were across from Brennan, who's the counterterrorism chief. Yeah, basically, we. We were in the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:50",
+      "text": "We."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:50",
+      "text": "I was so lucky to have that space because I could have. It was a skiff and I could have all my high side stuff."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:55",
+      "text": "Right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "2:55",
+      "text": "But still be in the west wing, which normally the person who had my job was over an eeob."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:00",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "3:00",
+      "text": "Managing that team. I decided to be the worst manager in the world and neglect that team."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:05",
+      "text": "But, like. And that's not like a standard because, like, Ned was in your office. Ned, like, took that over later, I think. I think you, like, sort of established a beachhead that persisted. Yeah, my. My office was in the basement of the eob, and so I got to pee next to the Counter Assault Secret Service team, which was amazing because they were like, right across the hall from us. So, like, dudes literally with, like, grenades and, like, the biggest fucking guns you've ever seen in your life."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "3:28",
+      "text": "Big weapons, too, with."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:34",
+      "text": "They had those on them, like, inside the building."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:36",
+      "text": "Yeah, yeah. They were just like. Because they were coming off from, like, fudgeing. Patrolling the roof or whatever. You know, back in my day, we patrolled the roof."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "3:44",
+      "text": "I don't know if, you know, the job of the CAT team guys is like, when shit goes down, they go. Go to the. And they go to the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:51",
+      "text": "Yeah, we had a. I'm sure this happened when you're there too. We had a. We had like, someone tried to charge the gate during daytime hours. And so, like, the, like, those guys came out, like, that was like. We're like. Well, yeah, we're in a decent spot defensively in this building."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "4:08",
+      "text": "They're in the woods in places you didn't expect. And the dogs go first."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:12",
+      "text": "The dogs go too, which is great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:13",
+      "text": "Did you watch Tommy? Did you watch Civil War earlier this year?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:17",
+      "text": "Oh, yeah, no."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "4:18",
+      "text": "Favreau told me it was great. I've been meaning to watch it. I don't think I was in that headspace for a while, but now I could do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:23",
+      "text": "Yeah, it's more vibes based than anything else. It's really just about saying, getting you to experience the idea, the stuff you've seen happening around the world could happen Here more than any reasons. But Jason and I were sitting next to each other and the end is an assault on the White House. And I. And he was like, oh, that's the right door that I used to come through. But a little internal geography had been redone."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:45",
+      "text": "That's a little alarming. That's a little alarming. You should watch it, though. It's good."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "4:48",
+      "text": "I did always think, like, you kind of walk out of that gates and you're a bit of a sitting duck as a staffer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:53",
+      "text": "Yeah, 100%. But, like, then you also, like, you also go to, like, the coffee shop across the corner where, like, every intelligence agency in the world is just permanently drinking Frappuccinos, waiting for whoever, like, stops by."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "5:05",
+      "text": "When I first got the NSC spokesman job, the, like, Chinese Embassy asked me to have a meeting and it was, like, me, some. Their, like, counterpart of me. And then, like, four dudes just, like, literally stood behind him and they gave me some sort of gift of, like, a pot or something. I'm like, all right, let's go into somebody else. And they gave me a bunch of DVDs. They're like, oh, put these in your computer home machine. Literally be like, check out our work. It was like CMTV thumb drives."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:34",
+      "text": "Thumb drives we'd like you to plug into various machines around your office."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:37",
+      "text": "Holy moly."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "5:38",
+      "text": "I was like, I guess, like, you. You know, you might as well throw the ball. It's like swinging a pitch. But I was like, come on, guys, you know?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:46",
+      "text": "So, Tommy, how are you feeling? You feeling great now? You feeling, like, so. You feeling so relaxed?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "5:52",
+      "text": "I feel like the vibes are the highest. They're going to be. Yeah, but we all know what's coming and we need to prepare for it emotionally, electorally, in terms of our. Our focus. Yeah, but I'm. I'm trying to let myself be happy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:08",
+      "text": "Yeah. Enjoy the couch memes for a week at least. Like, like, let's let. Let yourself have it after the. After the month that you've had, at least. Can we talk about that for a second?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "6:20",
+      "text": "Someone is going to have. I bet Donald Trump gets, like, this is what's trending on social media kind of briefing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:26",
+      "text": "Right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "6:27",
+      "text": "Someone is going to have to say JD and couches are going viral and tell them why."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:32",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:32",
+      "text": "I now feel the way that, like, we were projecting that they. That they felt during the cris was like, they really clearly just don't want Biden to drop out. Because now I very clearly feel. I really just don't want. JD is doing too badly And I'm worried that they're going to, I'm worried that they're going to dump him for like Tim Scott or something like that because it's just like it's, you can't. I mean now they've, they've literally got a, they've literally got a memo somewhere that says re couch fucking response strategies. And it's just like, yeah, good. Best of luck."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "7:03",
+      "text": "It's so good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:04",
+      "text": "It's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:05",
+      "text": "I like the idea. He doesn't get a presidential daily briefing anymore, but he gets a social briefing."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "7:10",
+      "text": "Well, he might get the PDB now. I bet he gets a version of it. It's not the real pdb, but they get intel briefings, shockingly so."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:19",
+      "text": "It's quite interesting. I sort of had the same position that Ali had on the pod today on psa, which was. I was not sort of expecting it to be Kamala and I had other candidates that I had thought it could be, but the notion of how quickly it has coalesced, the fact that the campaign has, you know, come over intact and then they got a quarter of a billion dollars, it's just insane. Dems in a ray crazy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:42",
+      "text": "The money is, the money is very surprising. Like the, the, the, the, the money and like all the first time donors is just like, holy shit. There is like this crazy pent up demand."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "7:52",
+      "text": "Yes, 60% new donors."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:54",
+      "text": "Yeah, yeah. It's just, it's a, it's a crazy stat for, for where we are in this cycle and seems very, seems very encouraging."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:03",
+      "text": "Good news. Yeah, I believe it's going to be a slog from here on out, but it is quite exciting to see people and I can't wait to see the next run of polls as we see some motion there soon. Holy moly. So I am curious. You talked about it a little bit on Pots of the World yesterday with Ben. But say a little bit more about what you think Kamala has in terms of room to operate and how you have this in a change election where people are very frustrated of where the country is right now, how much opportunity does she have to reset that and kind of distinguish herself to take the best parts, but then also to project some new ideas."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "8:39",
+      "text": "I mean, I think on foreign policy it's going to be mostly rhetorical. I think Joe Biden is going to want to, you know, get some things done between now and leaving office and foreign policy is the place he can do it. So, you know, I do think it's meaningful for her to sound more empathetic for, you know, civilians in Gaza. I do think it's meaningful to be a little harder on BB Netanyahu or to signal that there might be some sort of change in approach there were she to take office. But it is going to be awkward, like one president at a time. Biden's very sensitive about getting credit for his record, as you hear in every interview, so I don't know, it's not going to be a ton of room. Yeah, yeah, that makes sense."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:23",
+      "text": "Well, speaking of Gaza, I did want to ask, I mean, we wouldn't be a Gen X dad podcast if we didn't talk about, you know, what's happening. So. So this agreement with Hamas and Fatah out of China, you know, what's your take on that and what's your take on China kind of muscling in as a new global political superpower?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:40",
+      "text": "Yeah, I saw those reports."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "9:41",
+      "text": "I mean, I don't put a lot of stock in them being meaningful. You know, I do think the Chinese want to muscle their way into a lot of different spaces. I mean, what was the agreement they brokered? Was it with the Saudis and the Iranians or something? There's something recently that they were kind of behind. I think the Hamas Fatah split is pretty fundamental and not going to be fixed by any kind of. Yeah, you know, half assed diplomacy. It's going to take some real work. So I don't know, it'd be great if it was real. Although, you know, then you have a question of what, what from the Hamas perspective are we adopting, Are we, are we all agreeing that, you know, the state of Israel should no longer exist? Because that's not good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:22",
+      "text": "That's not going to work."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:23",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "10:24",
+      "text": "For anybody."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:25",
+      "text": "Yeah. Well, definitely looking for some, some hope on that, on that front to see to, to see where, where things could come."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "10:32",
+      "text": "It's just a nightmare."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:33",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "10:33",
+      "text": "It's so sad."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:35",
+      "text": "Yes. But it does feel like for the first time there's, there's a little energy and some, some excitement. Can we do just to circle back on, on, on Harris, any VP predictions? Who you, who are you leaning on for, for right now? Who do you think is our best shot?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:48",
+      "text": "Your guest from today."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "10:50",
+      "text": "I mean, it's interesting. Like initially it sounded like There was a four person shortlist. Now you're hearing as many as 12 people getting vetted."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "11:00",
+      "text": "Although some of them are saying, actually, no, I'm out. Like, I think it was Admiral Stavridis. Stavridis, whatever his name is, said no or no, it was like McRaven or some, you know, you're they're thrown in like the four star generals."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:11",
+      "text": "Right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "11:11",
+      "text": "Which I think is a fun idea to float but bad in practice because you have to be good at politics, you know, to be president. So I don't know, I think it sounds like she really has a good relationship with Roy Cooper. The governor of North Carolina, Josh Shapiro brings some obvious benefits. And I think being a governor is helpful because you don't have a trillion votes that everyone can demagogue. I'm a Mark Kelly resume Stan, although I don't know if he's the most exciting talker. So I mean, I do think like those make the most sense."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "11:46",
+      "text": "Shapiro makes the most like kind of brass, tax, obvious political sense, like Pennsylvania votes. Okay, let's go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:52",
+      "text": "Yeah. Yep."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:53",
+      "text": "Yep. Jason, what do you think?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:55",
+      "text": "I, as a Jew, worry about like sort of Kamala and her husband and a Jewish vice president. My, my, like, I remember growing up, my mom was just like, there will never be a Jewish president. Like this country just is not down for that. And I, I'm, I don't really need to test like sort of putting more at the top of the, you know, near the top of the ticket in this particular cycle. We'll have a chance like later. And so that, that's my only flag. That's my only flag on Shapiro. And I'm a space nerd. So I like Mark. I have a very simple calculus which is like if an astronaut is available, it seems like that's fun. Like I would go with that. I would go with the astronaut Naval aviator. Like. Yeah, I agree, I agree that like, you know, on tv it's not like, you know, it's not, he's not always the most dynamic. But I saw a clip yesterday he was talking about like descending in a fireball from 250 mil miles above the. I was like, yes, yes. Like, talk about that. Talk your Mark Kelly talk about coming down in the fireball. Like, that's all. You could do it in a low key register. It's fine. But I'm, I'm super down for, I'm super down for that. But I, I don't know, I'm, I'm not, I'm, I'm glad that we can enjoy this, this time."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "13:03",
+      "text": "Yeah. I don't know. I'm a Markel guy too. I mean, also just the Trump strategy is put him in special. Like put them in spaces where they can go after young men."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "13:15",
+      "text": "And I do wonder if you could then like, I don't know, send Mark Kelly to an Ultimate Fighting you know, event or put him on, you know, one of these, you know, shitty podcasts that Trump's doing all the time. Like he did Bryson DeChambeau's YouTube page."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:28",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "13:28",
+      "text": "Yesterday. That's such a smart thing to do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:31",
+      "text": "It was smart. Yeah, it was. And I've seen that. I've seen those clips everywhere, and Trump looks awesome."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "13:37",
+      "text": "The thing I saw on TikTok last night was him getting a birdie on his own and not using any of Bryson's shots, and it's like, yep, we can all make fun of him, but, like, he looked great there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:46",
+      "text": "He looked good. He was doing stuff. Yeah, I agree. And, you know, a friend pointed out this Nike ad that they ran during the Olympics about, like, you know, it was, you know, basically like, I'm an asshole and, like, I want to win or whatever. And there is this, like, kind of desire for strength and, like, alpha kind of, you know, like. Yeah. Like, I mean, I want to win, I want to compete, and, like, I don't need to be nice about it. And I think there's a way in which, like, we can play into that, like, that vibe as well without it having to be like, you know, therefore, we're going to deport, you know, 20 million people. And so. And I think having. So. I think having someone who can go to those spaces is good."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "14:23",
+      "text": "Yeah, I definitely. It's. It's a. We need to fill that gap."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:27",
+      "text": "Yeah. So it's not gonna be Romney then."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "14:30",
+      "text": "That was so funny, by the way. People. People who've talked to him lately are like, he looks really old."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:36",
+      "text": "Sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:36",
+      "text": "Oh, really? Sure."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "14:37",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:38",
+      "text": "He's. He's been in the ricket."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "14:40",
+      "text": "I mean, how old is he? 77."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:43",
+      "text": "Holy moly. Would you or Ben come back and. And be part of the cabinet or be part in the. In the cabinet."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "14:51",
+      "text": "That's qualify for that? No, for me, I don't know if Ben would. I mean, I think. I think you'd have to be the job. Right. Like, she's got a guy named Phil Gordon who's like her foreign policy person, who I imagine will be like, National Security Advisor. If I were her, I would think that Ben's, like, a brilliant guy. He could do literally anything. But I would imagine she would think kind of like Obama did in 08 of like. Okay. Kind of team of rival style. Like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:16",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "15:16",
+      "text": "Who's my Hillary Clinton version? Secretary of State."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:19",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "15:20",
+      "text": "Elected official, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:21",
+      "text": "Yeah. So this is like, from a staff level, cabinet is one thing, but from a staff level perspective, like, it is an Interesting time for like the kind of like the senior staff positions where."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "15:33",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:34",
+      "text": "Because it's not just that Biden was old and like, you know, he was at the top of the ticket. His entire, the, the people that he listened to were also very old and had been, you know, kind of in Washington for a very long time. And so there's now like an opportunity for like, you know, a new generation of staff to come in, which I think is, which I think is great. Totally will be exciting. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "15:54",
+      "text": "And there's like his staff, his senior level staff, like they were there for most of the administration and then behind them is a queue of people who are kind of presumed to be up next. And I just think like that gets reset."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:08",
+      "text": "Right? Yeah. I do think from a campaign perspective, I am super stoked to kind of see the folks on the campaign. Like, it's like a horse that like kind of has been allowed to run now. Like, you know, there's like, you know, it's like, you know, it's like they, they had a thing today where it's like, you know, they responded immediately to Trump being the 78 year old criminal goes on Fox and it's just like, oh, it's like they were, they've ready to fight. They've had the right tools, they just haven't had the right horse. And now they can, now they can run. And you know, all this stuff like, oh, she's so good at digital. Like, you know, she's, she's popping online and there is genuine enthusiasm driving that too. But it's also, there's a robust, amazing digital operation that now has stuff they can play into. And all you want from that perspective is things that you can play with that have room to room to get air on, you know, online. And so there, there's a lot of excitement for that too, I think."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "17:00",
+      "text": "Yeah, they had a candidate problem. Let's just, let's be honest. I mean, great man. Just had a real challenges communicating. And also she doesn't have a job really. I mean like vice president's job, but it's not really. She can just be out there all the time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:12",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:13",
+      "text": "Doesn't have a job, but does have two offices."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "17:15",
+      "text": "Somehow she's not going to be like casting like tie breaking votes, like, you know what I mean?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:20",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "17:21",
+      "text": "Yeah. Go live in Wisconsin."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:23",
+      "text": "Let's go. I'm fired up, man. I am, I am very fired up. It's a very strange feeling to be excited."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "17:29",
+      "text": "I know my wife's the same way. Like Hannah's not really Political at all. Like, we don't talk about this stuff at home. She, you know, she's like, will vote and is progressive, but doesn't, you know, it's not animating her day. She's, like, seeing all this Kamala stuff. She's excited about it. She thinks it's genuinely cool and exciting. It's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:47",
+      "text": "Well, we are super stoked to have you here joining us on Escape Hatch, Tommy. It's a long time coming. We've wanted to get you, and it's been amazing. Ben, you know, has now been with us three times."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "17:58",
+      "text": "Three times?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:59",
+      "text": "Yeah. Three times."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:01",
+      "text": "Holy shit. What movies did Ben do?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:03",
+      "text": "Ben has done Three Days of the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:04",
+      "text": "Three Days of the Condor. Her."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:06",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:07",
+      "text": "What's the third one? Great movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:08",
+      "text": "Hut for October."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:10",
+      "text": "Great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:10",
+      "text": "Jesus."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:11",
+      "text": "Yeah, saw that in the theater, I think."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:13",
+      "text": "Oh, really? Yeah. Yeah. And he's coming back for Tinker Taylor."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:18",
+      "text": "Oh, another great one. I mean, honestly, though, the book is better."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:21",
+      "text": "The book is really good. The book is really good. Ben is a giant Le Carre nerd, so I'm very excited for."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:28",
+      "text": "He got me on Le Carre. I read the Perfect Spy, like, the incredibly long one. It's just beautiful and brilliant and a great book."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:35",
+      "text": "Yeah, it's really good. This is what happened, Tommy. You're younger than us, but this is just what happens when you age and have children, is you start reading spy novels."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:42",
+      "text": "Oh, really? Why?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:43",
+      "text": "You already. You were."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:44",
+      "text": "You were."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:45",
+      "text": "Do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:45",
+      "text": "You already had the podcast, so you had one piece already checked off the dad."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:50",
+      "text": "The."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:51",
+      "text": "Early on that midlife crisis. Got it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:53",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:53",
+      "text": "I'm ahead of the curve there. You know, my reading."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:56",
+      "text": "I."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "18:56",
+      "text": "My wife finally had to tell me, like, you need to stop reading so much dark stuff because it's supposed to, like, kind of let your brain relax. And I was just read. I read Educated years after everybody else did. And that book, you think it's getting better for her, and it gets darker and darker and darker. So I'm currently reading Jeffrey Toobin's book about the O.J. simpson trial, which, obviously, dark material, but, yeah, awesome book."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:19",
+      "text": "Nice. Did you read Annie Jacobson's nuclear war scenario?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "19:22",
+      "text": "That's a nice, though. Well, the other one I had to put down because I was just like, I'm too bogged down in. This is the biography fee of J. Edgar Hoover, which is fantastic, but, like, you're signing up for a lot of J. Edgar hoover. Thousands."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "19:38",
+      "text": "30, 40 years."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:39",
+      "text": "Yeah. Just politically punishing enemies, destroying them, learning."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "19:45",
+      "text": "All your secrets for decades on behalf of presidents. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:49",
+      "text": "This has happened That's a. That. That's the funny part that brings it into sharp relief. Like, we've had this before. We've seen it, and we don't want it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "19:56",
+      "text": "And especially there was a deep state."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:58",
+      "text": "Done. Done much worse. But so we're. We're super stoked to have you here. And we gave a bunch of options, and it was kind of amazing. You have a huge pick that you made, and you came down to. You said either the Godfather or the Goonies. And we went with the Goonies because we thought, you know, first time out, we'll just get in there and just, like, bathe in that nostalgia."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:21",
+      "text": "This is. And this is one, a movie that we've talked about covering for 204 episodes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:26",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:26",
+      "text": "It is like, as a Gen X dad podcast focused on, like, 80s genre film, like, this is, like, in the top five that people ask for us and somehow has just not come up. So a real miraculous pick for Tommy. And we're excited. We're excited that you were excited that you pulled that one off the shelf."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "20:44",
+      "text": "Well, and I was also thinking of, like, what. What movies have I seen the most in my life? And Goonies has to be top five, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:51",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:51",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "20:52",
+      "text": "It was on cable. But also, I loved it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:54",
+      "text": "I had never seen it, so, like, for some. For some weird reason, I had never seen it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:58",
+      "text": "So that's why it's so weird."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:00",
+      "text": "That's why it took so long. Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:02",
+      "text": "It's because Matt's actually 127 years old, and so he only sort of took a Cribs note version of the 80s."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "21:07",
+      "text": "Oh, so good. It's such a movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:08",
+      "text": "Yes. So we will get to the Goonies in just a few minutes before we do Jason next week on Escape Hatch. Talk about milestones. After 200 episodes, sending voicemails, almost 200 episodes, Corey is finally coming onto the main portion."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:26",
+      "text": "That's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:27",
+      "text": "Corey Corcoran. And he is going to take us on the deep, dark world of Quentin Tarantino and Oliver Stone's Natural Born Killers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:35",
+      "text": "Amazing."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "21:35",
+      "text": "Great movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:37",
+      "text": "A super controversial movie when it came out. I'm so."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:39",
+      "text": "I'm scared."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:40",
+      "text": "I'm excited to record with Corey whatever he wants. Corey started producing a voicemail podcast in our voicemail segment where he would have guests on his voicemail. And so whatever he wants to do, we're excited for. I hope. I hope Noel makes an appearance. His wife."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:54",
+      "text": "Oh, my God, yes. Yeah, absolutely. So that is next week I will be off Orcas island and back in. In San Anselmo. So that'll be Don't."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:03",
+      "text": "Don't be so free with your assassination coordinates."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "22:06",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:09",
+      "text": "All right, so very quickly, Jason Hatch news."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:12",
+      "text": "Would you like to know more? That's news from beyond. Let's go. What do we got?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:18",
+      "text": "Well, we're talking some Dune stuff. First question, Tommy. Did you see Dune and Dune part 2? Do you have a history with Dune, by the way? Because we used to be a Dune podcast."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "22:25",
+      "text": "I know you were. I, I have no history with Dune. I did see both in the theater. And the only thing I'd say, my wife saw Dune 2 twice. And then, yeah, she went. And then we went again. We, like, got a baby. We got a babysitter to go do it. It was like a nice thing. And I should have brushed up on Dune 1 before going to see Dune 2, because I really was like, I turned to her, like, at the end."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "22:49",
+      "text": "I was like, what was the spice again?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "22:53",
+      "text": "But they're great. I will say Dune 2. I could have found 30 minutes of edits like that. I wouldn't have lost a thing. You don't need Chalamet doing this for the listeners. I'm just staring at it for the listeners."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:07",
+      "text": "He's giving a very. It's. I, I thought Timothy Chalamet had joined Riverside."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "23:11",
+      "text": "That's how crazy the look, the jawline."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:13",
+      "text": "Well, speaking of Timothy Chalamet, Jason, I know you've been waiting for this. We finally have the first trailer for his Bob Dylan biopic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:22",
+      "text": "Yes. And he's singing. I didn't realize he was singing in the trailer."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "23:25",
+      "text": "Oh, where have you been, my blue eyed son?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:31",
+      "text": "No way."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:32",
+      "text": "Of course he's singing. Of course he's singing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:34",
+      "text": "I thought that was Bob Dylan."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "23:36",
+      "text": "Good for Tim."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:37",
+      "text": "Yeah, it's a very convincing early Bob Dylan. He sounds great. I, I, look, I'm excited for Timmy. I want to support Timmy. As we've covered numerous times, Bob Dylan is not exactly my wheelhouse. The song in the trailer is hard Brains gonna fall. I think the song illustrates for me why Bob Dylan, like, it just is the same lyric over and over. 12 Misty Mountain, under river, a sad lonely forest. It's just like, I'm like, is this like, you know, there's a log in the forest and the hole in the bottom of the sea, like, what are we doing here? It just goes on forever. But Timmy looks great in it. Ed Norton's doing something weird in it. You know what else is nice is you get to see the Village, the period. Greenwich Village."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "24:24",
+      "text": "Totally."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:25",
+      "text": "And I like. And I used to live in the Village, so I'm excited about that."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "24:27",
+      "text": "So that sounds great. Timothy Chalamet is one of my favorite random LA sightings over the last like five or seven years, I think."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:35",
+      "text": "Oh, really?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "24:36",
+      "text": "I was walking out of a restaurant, he was walking in. I was like, that looks familiar. It's always like a did I go to high school with that person or are they famous thing?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:43",
+      "text": "Yeah, I hate that. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:45",
+      "text": "In line of the Erewhon, like, hey, what's happening?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "24:47",
+      "text": "Yeah, Harry Styles held a door for me once and I was like, that dude who just held the door. It was pretty hot. What's going on here?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:56",
+      "text": "I'm feeling things. Jason, second piece of Dune news. The Dune prophecy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:01",
+      "text": "Dune prophecy trailer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:03",
+      "text": "So the second trailer looks actually pretty strong."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:06",
+      "text": "They've adopted most, if not all the visual style, like production design from the Dune movies. They're, you know, it looks, I look, we're going to watch this movie and we're going to talk about that. We're going to watch this TV show, we're going to talk about it. And it's HBO show. They spend a bunch of money on it. Let. Let them."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:22",
+      "text": "Let them cook."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:22",
+      "text": "Let's see what happens. Could be great."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "25:24",
+      "text": "Cool."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:25",
+      "text": "Some Benny Jeserit doing witchy like 10,000 years before the events of the movie. Crystal saw it and was like, oh, like that sounds like she was intrigued. So I think this one's gonna work. I'm for it now."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "25:37",
+      "text": "Cool, man."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:38",
+      "text": "Maybe they can do like a Harris, you know, like, combo thing, right? With sisterhood."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:42",
+      "text": "And, you know, I, you know, that was a good, that was a good meme in the last week. Oh, really? Tommy was a, A good. World's colliding for us was that Nancy Pelosi is the Benny Jesuit of the Democrats. It's just like her plans are. Her plans are measured in centuries. You know, she shows up with the gob. Jabar."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "25:59",
+      "text": "What about us?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:00",
+      "text": "Yeah, Y lady knows politics like she's running."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "26:05",
+      "text": "And also you. I don't know when this post, but Bibi Netanyahu spoke in front of a joint session of Congress yesterday, and it was like a disgraceful speech. And she just came out hot out of the gate and just knifed the guy. And it was beautiful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:17",
+      "text": "Yeah, yeah. She's. She's. She knows. She knows what's going on. She knows what's going on. So that's when I was, I was not a replacer as soon as it was like, the. Nancy's not for this. All right, well, then it's rap. But like, if Nancy says it's not going to work, it's not going to work. Like, I mean, I don't, like, she's, she, she knows what I don't need to know any polls that whatever she's seen, that's enough. Like, that's enough for me."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "26:38",
+      "text": "Yeah, she was seeing a blood bloodbath politically."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:40",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:40",
+      "text": "Let's roll, Nancy. Let's. Let's roll. All right, are you guys ready to get into this movie?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:49",
+      "text": "Let's do it. Tell us about the movie we're going to watch."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:52",
+      "text": "All right, here we go. The Goonies is the refusal to give up no matter the odds against you. Mikey and Brand Walsh are gloomily spending their last weekend in their home of the Goon docks of Astoria, Washington, before their house is foreclosed on and destroyed to build a golf course. But when they discover a map that may lead to the inferno, the famously treasure laden ship of the Dread Pirate One Eyed Willie lost in 1632, they will assemble their own team of lovable kid misfits to track it down. Speed talking mouth food crushing chunk mad inventor data. Even Bran's romantic crush Andy and her best friend Steph join in the adventure. They will embark on a race against the evil Fratelli family through underground tunnels, facing perilous booby traps and perplexing riddles. Together they will seize the moment as their time and make sure the world will remember them forever as the Goonies."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "28:06",
+      "text": "Wow, what a synopsis. Well done."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:09",
+      "text": "The thing, the thing I bump on right out of the gate is the Goon docs. It's like calling something the Goon docs."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:17",
+      "text": "What is that from?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:18",
+      "text": "Like, we're really lucky that, like, they didn't, like, this movie could have easily been called the Gooners instead of the Goonies and then it would have just been lost for like all time. So thank God."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "28:30",
+      "text": "Yeah, good point."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:31",
+      "text": "Tommy, do you remember the first time you saw this? So this was 85. So you were a young child at that point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:36",
+      "text": "Yeah. You're too young to have seen this."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "28:37",
+      "text": "I was five years old. I mean, I definitely saw it at home kind of on cable or at a friend's house. I don't remember the first time, but it was definitely a. A multiple rewatch situation where anytime it was on tv, I feel like I would catch part of it. And you know the thing about the film, like, sometimes you watch a nostalgia film over again and you're like, oh, this actually sucked. I just kind of was a kid and liked it at the time. But you rewatch this and you realize, oh, this is a Spielberg joint. Like the opening scene is a car chase that introduces you to all the characters and it weaves them all together in this just brilliant way. And you rewatch that and you think like, oh, this is like masterful filmmaking just for a younger audience."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:18",
+      "text": "Yeah, like us like it. I think that's really well said because it is, it's a Spielberg Donner, Christopher Columbus joint. Like, these are people who know how to put together a movie. And yes, like, it's gonna be more cartoony and it's gonna have like weird, you know, like when people get hit or whatever. But like, you know, like it's it, you know, it is for kids. It's not, it's not an adult movie. But like they know where to put the camera and they know how to tell a story and they know how to move it along. Like there's very little waste in this movie. And you know, we'll talk about what got cut, but a lot got cut to make it as, as tidy as it is. And I don't remember the first time I saw it. I didn't see it in the theater. I was prime age because I was nine like when this movie came out. And so like was. Was just prime to love this movie. And it is definitely, as Tommy said, in the top five of movies I've seen the most. It's one of those. When we were watching, I was like, I don't even know if I need to re."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "30:14",
+      "text": "For God."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:15",
+      "text": "I've seen every scene of this. I actually, the only thing I didn't remember was how well done the chase was at the beginning. I forgot how. I forgot that it opened with a fake hanging, like, and like, like I was like, okay, like I didn't remember the hanging, but. But yeah, it's, it's really, it's really, it's really great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:34",
+      "text": "So, so, so my impressions not never having seen this film. I was 15 in 1985. So I was sort of like, like I was into shedding all my geek stuff and trying to be cool guy, getting into music and whatnot. And so this always felt a little kid oriented to me. Yeah, I loved seeing the, you know, the Inferno. And I remember those sets of the Inferno and them kind of getting chased and stuff and thinking it was very, very cool looking. But I just never took the time to, to go back and check it out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:04",
+      "text": "Matt H H Chad is in an uproar because I think you said Washington in the synopsis and this movie is heavily Oregon coded and the beavers among us are gonna lynch you if you don't like It's Astoria. Right. It's a real town story. It's Astoria, Oregon. It's like Cannon beach is like that big rock."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "31:23",
+      "text": "Like people still visit it apparently. It's like a tourist thing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:26",
+      "text": "Destination. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "31:27",
+      "text": "No way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:28",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:30",
+      "text": "The beach, the beach at the end is actually in Sonoma. It's Goat Rock Beach."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:33",
+      "text": "But the, the, the, the rock that's at the beginning is Cannon Beach. Right. Like, is that big rock? I think so."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:39",
+      "text": "It. I don't, I don't know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:40",
+      "text": "We need more data."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:41",
+      "text": "All right, well, apologies to, to the, the state of Oregon and, and Washington."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:47",
+      "text": "So, so some quick behind the scenes here. So Spielberg had a question while he was filming the Color Purple. And that question is what kind of wild adventures do kids get into on rainy days?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "31:57",
+      "text": "Huh? Huh."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:59",
+      "text": "So as, as it would come up during the Color Purple, did you get."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:02",
+      "text": "Into these kind of adventures with."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:05",
+      "text": "This is what this is like. There's all these like Gen X memes about like when we were kids, we would go into the woods and drink out of the hose. And it' is just what we did. We'd go find pirates, like Pacific Northwest pirates that are very well documented and existed in droves. Right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "32:21",
+      "text": "Finding One Eyed Willy's treasure map is literally every kid's dream."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "32:26",
+      "text": "And going on this adventure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:28",
+      "text": "Totally. And this is interesting because he wrote this and then also wrote Poltergeist and similarly apparently kind of like co directed this alongside Donner, which is interesting. That's how Sean Austin described it, that he was on set and very much involved."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:47",
+      "text": "This is like during this phase where Spielberg was just like, so his output was so incredible that he, I don't want to say puppeteered, but like would remote control like these other directors to work on his projects. I didn't know like, you know where Donner is doing this one. Toby Hooper's doing Poltergeist. But Spielberg's really running both to some degree like, and the people who worked on the movies will be. It's not as though those directors, like Donner's great, Toby Hoover's great, but it's."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:16",
+      "text": "Not as Donner's much bigger. Right. Like do like in 85, Toby Hooper was doing Life Force. Donner. Donner did Superman and Lethal Weapon."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:25",
+      "text": "So yeah, yeah. And he gets a Superman. He gets a Superman cameo in this movie. Like, but like, you know, it's, it's, it. It's still like just the power of Spielberg in the mid-80s was just crushable."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "33:36",
+      "text": "I mean Jaws was 1975. So he is at the height of his powers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:39",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "33:40",
+      "text": "And this is all being put together there?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:41",
+      "text": "Yeah, absolutely. So it actually is loosely based on this true story of the Santo Cristo de Burgos, which was a real life ship that went missing somewhere off the Oregon coast in the late 1600s."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "33:54",
+      "text": "Oh."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:55",
+      "text": "Shows what I know about Pacific Northwest pirates."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:59",
+      "text": "Exactly. Archaeologists believe that some pieces of timber found along the shoreline were remains of that ship, but that's as far as they ever got."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:06",
+      "text": "Oh, all right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:07",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:07",
+      "text": "Can we go on an adventure to find the rest of the shit? Like, should we. Can this podcast become a series? Like, where we go and find the real One Eyed Willie?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:16",
+      "text": "Can we get E. Bikes at least I have a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:18",
+      "text": "You worried about the pedaling? Is that the first issue you identified?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:24",
+      "text": "Yeah, so. So they shot this thing for five months on location. They were in Astoria. They were at Cola State Park. They were in Burbank at Warner Brothers studio, including stage 16, one of the largest stages in the U.S. that's where they."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:39",
+      "text": "They sure did get one of the largest stages. My God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:41",
+      "text": "That was one of the things that really stood out on this rewatch is when they get to the pirate ship. I was like, okay."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "34:46",
+      "text": "It's crazy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:46",
+      "text": "Like, y'."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "34:47",
+      "text": "All."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:47",
+      "text": "Like, it was like, we did Popeye."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:49",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:49",
+      "text": "It was just like, oh. Like, y' all just really built everything. You built a ship, a cave, a lagoon. Like, all of this stuff. Good work, Carpenters."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:58",
+      "text": "Totally budget here. $19 million worldwide. $125 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:07",
+      "text": "My God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:09",
+      "text": "Massive, massive hit also coming out in June of 1985 that you probably wouldn't have seen. Tommy Rambo, First Blood, Part two, Fletch, A View to a Kill, Cocoon, Beverly Hills Cop, Witness, Desperately Seeking Susan, St. Elmo's Fire, Back to the Future, and Lady Hawk."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "35:29",
+      "text": "Some great movies."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:30",
+      "text": "All those are in that in June."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "35:32",
+      "text": "That's a heater. Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:33",
+      "text": "I mean, they were in the box office in June."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "35:36",
+      "text": "They might have started earlier summer movies. Mean Fletch was my father's favorite movie, so I ended up watching it a thousand times."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:44",
+      "text": "Yeah, that's a big one. Big on the request list for us."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:47",
+      "text": "Saka is supposed to come do it. Jason, can you, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:49",
+      "text": "Saka is a. One of the world's foremost fletch experts."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "35:52",
+      "text": "Nice."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:53",
+      "text": "He's read all the books."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "35:54",
+      "text": "Oh, really?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:55",
+      "text": "Yeah. Yeah. Let's go. He's. He's very steeped."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:58",
+      "text": "That'd be big. He got Lebowski with us."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:01",
+      "text": "He is the world's foremost Lebowski expert for sure. Like, or at least. Yeah. He's. His bonafides are strong."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:06",
+      "text": "Wrong."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:06",
+      "text": "Amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:07",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:08",
+      "text": "All right, so. So the opening of this film, I thought it was really weird. There's no score. I. I like. I does my sound up, what's going on? But I love the skull and crossbones, the font. And I definitely was struck by a hanging to open this film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:22",
+      "text": "It seemed very strange, very maab. Yeah, he's like, I don't know. I mean, this is like, you know, look, in the opening of this movie, you get a hang. A fake hanging, but a hanging nonetheless. Like a, you know, a jail break. You get like a shit drop in the. Before the credits have stopped. Like, you know, like. Yeah, like PG meant something different in 1985."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "36:45",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:45",
+      "text": "We were raised rough in those times."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "36:48",
+      "text": "I mean, this is one of those movies where it's a kids movie, but there is some, like, some well displayed evil or badness in the bad characters. Like when the Mama Fratelli later threatens to cut out mouth's tongue. She's not kidding, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:03",
+      "text": "Right, right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "37:04",
+      "text": "Her treatment of Sloth, I think, speaks to her willingness to be cruel to all. To children in particular."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:09",
+      "text": "There's a lot of knife. There's a lot of knife work in this movie. Like a lot of people. Bagging blade. Bagging blades. One of the things I noticed at the end, Mama Fratelli really likes a sharp edge. Like, she. She's got the. She's got her blade. She almost cuts out mouse tongue at the end. She basically, like, when she's walking Andy off the plank, she, I think, hits Andy arm with a sword. I was like, jesus, like, what's gonna happen to her?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "37:30",
+      "text": "Yeah, she's not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:31",
+      "text": "It's pretty strong. It's a pretty. Pretty strong for the brutality in this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:37",
+      "text": "But I. I thought it was just so much fun, the. That. That car chase, much more aggressive than I was expecting. But it felt like a super. Like an MCU movie. Like introducing all of these heroes and seeing a little bit of their personality without taking too long."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:51",
+      "text": "Yes. Your synopsis sort of read like a mcu, like an Avengers movie. Like Chunk, a food enthusiast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:01",
+      "text": "But this town is gorgeous. You ever spend any time up there?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:04",
+      "text": "No, I've been to the Oregon coast. I've been to Cannon Beach. It is gorgeous. It's lovely up there. It does rain a lot, as they sort of indicate."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "38:14",
+      "text": "I think that was a problem during filming. They said, oh, really? Was they. There was a lot of rain. They had to match the rain for days off. So, like hosing down roads and stuff."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:21",
+      "text": "Oh, God, what a nightmare."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "38:23",
+      "text": "Yeah, Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:24",
+      "text": "I definitely thought during A lot of this movie, I was like, these kids, kids had to be on the verge of hypothermia for a good chunk. Like they're like, dunk them in the well, throw them in the lagoon, have them out in the rain. I was like, good. I mean, I, I don't know if this is like before the time in which, you know, they would just let child labor do whatever, but they had to be freezing during this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:49",
+      "text": "Well, and this film lives or dies, obviously, based on these kids. And so let's, let's start off with, you know, your impressions of Sean Astin as Mikey and our man Josh Brolin is brand."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:02",
+      "text": "Josh Brolin's really cool. He's always been great. I also really, I love the name brand as a short for Brandon. I've never heard that before or since."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "39:11",
+      "text": "Me either."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:12",
+      "text": "I think it's delightful. I love that he's so into working out."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "39:16",
+      "text": "He's got those like that spring thing he's doing, that was the key to everything."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:20",
+      "text": "If you had that man, you're in good shape."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:22",
+      "text": "He needs one of those like hand gripper ones. That's like the only thing he's missing. But yeah, I love, I love the outfit. Brolin's great. I Sean as here's my question about Mikey. I think Sean Aston like very earnest and I think it's well offset by like Mouth who's like a piece of in a kid form. So like, you know, I think Sean Aston's earnestness gets room to play and I think that's very difficult to do. Like in Labyrinth, the kid is also very earnest, but I just don't. I think it's harder for him. I. Bastion has a harder time carrying that like, it kind of comes off as corny. Sean as's corniness and up for me at least reading is more endearing because he's surrounded by a bunch of schmucks. Like is my, my, my analysis. One thing that I think is a little confusing is that we're meant to believe that Mikey is like, like deformed in some way. Like there it's sort of put the words right. He, he. Well, he can't get the words right and he has asthma. Those are kind of the two clues. The can't get the words right thing is sort of a running gag. Cuz Data has the booty trap, booby trap things. His, his mom also does it too. So the words right thing I think think is just meant to be as a running gag. But in terms of like what's wrong with Him. Like, I think asthma is the only clue. But there's these continual references to, like, oh, he really identifies with One Eyed Willie being like the original Goony because Oneeyed Willie had one eye and like that, like one ey Willie had like this, like, you know, disability to overcome too. And at the end, Andy says, like, you know, when the parts that. Parts of you that don't work as well catch up to the ones that do, like, you know, know you'll end up being really good with the ladies or whatever. And I'm like, what are the parts that don't? What are the. What is his issue? Like, what's wrong with this kid? Like, he seems fine. Like, is there. Am I missing it? Like, what is he."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "41:01",
+      "text": "I caught that too. There's a suggestion that he's kind of a klutz. Like, when Chunk and Mouth go to look for the rest of the Goonies, they walk through an area where, like, pipes are all strewn everywhere and they're like, oh, Mikey's definitely been through here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:13",
+      "text": "But earlier in the movie."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "41:15",
+      "text": "Now our Chunk as klutz is a big part of the script because he drops the painting that reveals the map."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:21",
+      "text": "Like, he gives him, knowing that it's going to happen and counts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:24",
+      "text": "Yeah, he counts to five. Knowing that he's going to drop it because he's a klutz. Yeah, like, but like, Mikey, like, there's something that's like, meant to read. Like there's something about the Goonie identity. It's a little weird where it's like they very proudly identify as Goonies. Part of that is class based. Like, they're not as rich as, like the country club club."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:41",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:42",
+      "text": "Kids that are going to take over the town. And that's like a very 80s kind of refrain, you know, that's in Caddy Show. It's like, you know, and a bunch of things like the rich country club kids, like, we're, you know, the working class cool kids. Which is. I don't understand how that was a thing during Reagan, just generally. But whatever. It's a very common. It's a very common thing. Two is there's something kind of hapless about Mikey. Like, he's unlucky in some way and his dad's like a nerd and. And I think that's meant to be part of the Goony spirit. But like, One Eye Willie just seems like a badass. Like, I, like, I don't know, I don't get like One Eye Willie being like the original Goony. It seemed like one I. Willie had the world beat. Killed all his dudes and just, like, hid out in a cave or whatever. Like, I don't know if that's like, he's, you know. Yes. He had one eye, but I don't know if it. I'm confused about them. I'm confused about that aspect of it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "42:29",
+      "text": "Yeah, me, too. I didn't get that. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:31",
+      "text": "I thought Goonies were just badasses."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:33",
+      "text": "Was the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:33",
+      "text": "Was the message."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:34",
+      "text": "No, I don't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:35",
+      "text": "Was the original. He was the original badass like you. You made the world you're on."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "42:38",
+      "text": "And, like, similar."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:39",
+      "text": "Like, Mouth. Mouth seems like Mouth's gonna be fine. Like, Mouth is gonna do well in this world. Right?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "42:45",
+      "text": "I love that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:46",
+      "text": "You know, he's. Yeah, he's. He's great."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "42:48",
+      "text": "Mouth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:49",
+      "text": "Mouth."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "42:49",
+      "text": "Mistranslating."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:50",
+      "text": "Yes."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "42:51",
+      "text": "To the housekeeper is so genuinely funny."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "43:07",
+      "text": "First you put the cocaine in the heroin here. And then the thing about the sexual torture in the attic. It's like, he's such a bad kid. Like, an actually bad kid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:16",
+      "text": "Yeah. He's got, like, his Members Only jacket. I think before that was. I think he started the Members Only jacket trend. He's got great hair. Very envious of mouse hair."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "43:28",
+      "text": "Me, too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:29",
+      "text": "Yeah, he looks great."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "43:30",
+      "text": "I saw Corey Feldman say that he and Corey Haim actually met at the Goonies audition. Begun a partnership that went a long time. Like, dream a little dream. Like a lot of iconic films."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:41",
+      "text": "You can't have Corey. Corey. Him and Sean Austin is a tough hang because there are two, like, they. That in that era would both read a little too, like, earnest. I think you need, like, the shittiness of Feldman to offset the whole thing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:57",
+      "text": "I just want to. I just want to call out that we have not done the Lost Boys."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:00",
+      "text": "Yeah, we've not done the Lost Boys. That's true. A big one still to come."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:04",
+      "text": "And so, yeah, you have all these, like, nice little details. You've got the Rube Goldberg machine, which comes."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "44:10",
+      "text": "Love that element."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:11",
+      "text": "Yeah. Early and comes back again. And actually, we had that in also in Back to the Future. Right. Had the. The dog food things. Like, we were really."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:20",
+      "text": "Yeah. But they really went for it. Whoever the production designer was that was like, given the assignment of. Yeah, we think there's probably, like, some contraptions in this movie. Was like, say less. I've got contraptions for days. I got one to open the gate. I got some on the pirate chip. I got, like, this piano that's going to kill kids. I've got. I've got all kinds of shit. You've Never seen. He was ready. The guy was ready."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:42",
+      "text": "So the production designer is J. Michael Riva, who did Halloween Two Bad Boys, Buckaroo Banzai, Color Purple, Lethal Weapon, Scrooged, A Few Good Men, Iron man and Django Unchained."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "44:56",
+      "text": "Okay, solid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:57",
+      "text": "The overlap of the influence of Color Purple on the Goonies is. Is hard to reconcile."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "45:04",
+      "text": "So, yeah, it's surprising. Did not expect you to say that. But the funny thing with the Rube Goldberg thing is, like, Data's like the Rube Goldberg machine guy. But also Mikey and Brand have it to open their house, and then it's on the ship. Like, everybody kind of gets to live in that fun world."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:19",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:20",
+      "text": "This is just a world of contraptions."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:22",
+      "text": "Yes. I was kind of surprised with the whole breaking the statue. David's dick off."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "45:28",
+      "text": "So funny."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:29",
+      "text": "Very funny."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "45:30",
+      "text": "That's my mom's favorite part. That's a great line."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:34",
+      "text": "Yeah, it's my mom's favorite part. It was meant to go that way. We'd piss it in our faces. Like, they really do a lot with this broken dick off the statue."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "45:44",
+      "text": "They really do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:45",
+      "text": "They get the maximum amount of jokes out of it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "45:48",
+      "text": "And that's the thing, I think that, like, great content from that period of time had jokes that were kind of just for adults. Like, my mom told me that, you know, watching Sesame street as a kid, there would be jokes in there. Like, there would be an architect named Frank Lloyd left. And it's just, you know, a little haha. For the moms watching this endless nightmare of kids programming, I thought that was a perfect anecdote."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:07",
+      "text": "Really?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:07",
+      "text": "Really."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:07",
+      "text": "And they also, like, let the joke play out over, like, a couple scenes. Like, they really. They're like, look like we're. We. We. We're gonna get as much out of this as we can. Yeah. Which I appreciate."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:18",
+      "text": "And it basically. I mean, it's very efficient in terms of setting up the characters and the relationships that they have. And then very quickly, they are up in the ATT Dad's stuff and finding the pirate things. And this first piece of Mikey giving the exposition. This is that first moment where I was like, holy shit, dude. Sean Astin has got it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:38",
+      "text": "Yeah."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "46:39",
+      "text": "And then the Armada. It took him a couple weeks, but then they caught up with Willie and. And then there was a whole big war between the Armada and Willie's ship, the Inferno. And during the firefight, there was just guns bursting here and cannons bursting. Interesting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:54",
+      "text": "There."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "46:54",
+      "text": "And then Will, he fled because he didn't want to stay around because he knew he'd get killed. If he stayed around and then he got into this cave and then the British, they blew up the walls all around him and he got caved in and he's been there ever since. Forever. Forever and ever trapped."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:11",
+      "text": "I love his delivery and everybody kind of being caught up in that. And it does. Like there's quite a bit. Right. You got Chester Copperfield and Tiger Pocket pot."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:23",
+      "text": "Come on."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:24",
+      "text": "Thank you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:25",
+      "text": "What kind of producing is this? Oh my."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:27",
+      "text": "Don't worry, it's fixed in post. And then, yeah, again we have the classic bomber of the house getting foreclosed to make a golf course. So, you know, this is trenchant commentary on, you know, mid Reagan, you know, the, the economy's starting to come off, you know, come off the whale."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:43",
+      "text": "This is a weird thing. Like, where it is like the golf, the golf. Country clubs were so evil coded in the mid-80s that like, I don't know, I don't know how they ever recovered. How did country clubs rebrand themselves?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "47:58",
+      "text": "Golf wasn't cool until Tiger woods came along, I think is the honest answer. Sean Astin, just a quick aside, was a big Hillary supporter in 07 08. And there was this moment I remember, I'll never forget. We had Kal Penn, who played Kumar in Harold and Kumar. I remember Sean Astin and Cal debating on cnn and Cal just kicked his ass. Worked that hobbit over with like Cal was dropping stuff about like the India, like nuclear deal and I was just like, like energy stuff. It was amazing. We still, I still think about it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:34",
+      "text": "That's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:35",
+      "text": "Oh my God. I hope there's a clip somewhere."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "48:38",
+      "text": "So good. I'll look for it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:40",
+      "text": "Fantastic. So we have now, you know, the beginning of the adventure and it starts with them watching MTV and Cyndi Lauper. So can I just."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:50",
+      "text": "Let's, let's take a long pause on this one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:53",
+      "text": "Yeah. So this video, there's the seven minute version which is online on YouTube. There's actually a 12 minute version because the. It. There's a part one and part two. It's the same song, but there's even Steven Spiel at the end of the seven minute. Like there's a call out to Steven Spielberg who is then revealed breaking the fourth wall."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "49:12",
+      "text": "How do I get out of this one?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:18",
+      "text": "Well, the first thing you. I don't know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:22",
+      "text": "It's just insane what this thing is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:24",
+      "text": "Yeah, it's insane what they did. Now that Tommy brings up the Sean Ast and Cal Pen debate, it makes me think that this is our response at the DNC to Hulk Hogan at the RNC is. We get whichever of these wrestlers are still Al. Alive and Cindy and Cyndi Lapper and recreate the Goons video. For reasons that will be revealed later. I think this is what we. This. But, like, some of those guys would. Some of those guys will be down for sure. Yeah. It's amazing. They really. I. And, like, they must have done the production of the video well before they shot the movie. Like, so, like, were they, like, making this or. Or was it just like they."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:03",
+      "text": "It's on the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:04",
+      "text": "Did the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:05",
+      "text": "I think it's after."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:05",
+      "text": "Did they do the reverse shots later? They just put that in later after they shot the. After they shot the video. Video. But all the kids. They must have shot at someone contemporaneous because the kids are in the video. The kids are in the Cindy Lauper video. They had all of the kids available to shoot the Cindy Lauper video as well."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:22",
+      "text": "I. I found it to be a very crass, like, capitalism moment. Like, it has, like, four. There's. There's like 45 seconds of just clips of the movie. Like, it was very aggressive."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:32",
+      "text": "It offended your. It offended your aesthetic sense of what a music video should be. Jesus Christ. Christ."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "50:39",
+      "text": "The Goonies Are Good Enough Video. Is that we're."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:42",
+      "text": "That's the one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:42",
+      "text": "The city labor. Goonies Are Good Enough video. Yeah, it's good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:46",
+      "text": "It's good. Good stuff."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:47",
+      "text": "I think this might be a good place to interject as well that the. The canonical version of the Goonies Are Good Enough song that I like is the 8 bit version that's on the Goonies 2 NES cartridge, which was quite. Yes. Which listeners will be hearing Next. The Goonies 1 video game was only available on, like, Famicom, so, like, no one had it in North America. Goonies 2 is this horrendously complicated, unbeatable game on the NES, but they somehow licensed the Cindy Lopper song or they just stole it. Who could say? It was the 80s. And they have an amazing 8 bit version that exists on that game."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "51:25",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:27",
+      "text": "Incredible."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:28",
+      "text": "Love it. Love it. But this is them kind of going off. They're taking off on the bikes. And this is where you realize one of many times where you realize how much of an impact this film had on the Duffer Brothers for Stranger Things. Right. Like, you always think of Spielberg as being kids on bikes, but this is. Is there a more canonical version than this one?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:47",
+      "text": "This is kids on bikes, for sure. There's multiple kids on multiple bikes."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "51:50",
+      "text": "They love multiple kids on bikes. And also, Brand almost gets killed on his bike because the evil rich Guy like Bran very easily could have been the evil, rich, sort of mean character, but they just made him like a loving brother, which is nice. And it's sort of a rare character that you're like the older good looking, but also nice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:06",
+      "text": "Totally."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "52:07",
+      "text": "But his counterpart nearly kills him."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:09",
+      "text": "Yeah. Is it bad to say I like Troy's car? I thought Troy's car looked cool."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "52:13",
+      "text": "It was a sweet car."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:15",
+      "text": "5O GT. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:16",
+      "text": "Hell, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:19",
+      "text": "I did take a note. I was like, brand has just been driven off the cliff to his death."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:23",
+      "text": "Off a cliff for sure."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "52:24",
+      "text": "At like 60 miles an hour."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:25",
+      "text": "They do a great job with the effects on that too, with the. With the training reels falling off and stuff."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "52:30",
+      "text": "Like, this is so good. It builds again to the point that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:33",
+      "text": "These are people who know how to make a movie. There's a bunch of, like, insert shots, whether it's of contraptions or stuff falling, the wheels falling off the cart. Like little things that just make this movie sing that I think you wouldn't get in the hands of a lesser. A lesser film crew."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "52:50",
+      "text": "Definitely."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:51",
+      "text": "Speaking of doing it better than a lesser film crew, Jason, you know, Mikey is able to hold up a doubloon in a real world location."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:00",
+      "text": "My God, it's really. That really was the only thing that was hard for me. That and the thinking of the movie being called the Gooners was like the two things I bumped on hard because the. It was so traumatic of just like, what is this thing where you're. My other question about holding up the doubloon and seeing like the rock and the lighthouse and the restaurant, I was like, was the restaurant there in 1636? Like, how long is this. How long is this seaside crab shack been serving Crab louie? Is it 400 years?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "53:30",
+      "text": "Years?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:31",
+      "text": "All right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:32",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:32",
+      "text": "A good question. I do want to call out again, tying to Stranger Things, the score here. So this is Dave Gruzen, who did this score, who I think of as like a jazz guy, but listen to these scores. Three Days of the Condor and Justice for All, Absence of Malice on Golden Pond and Tootsie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:52",
+      "text": "It's really. It's a beautiful score. Particularly like, all the sentimental kind of soft stuff of like, you know, of like all of the magical wonder of like discovering the magical, you know, going. The synth stuff going into the. Going into the treasure room. Like. Like my memory of those scenes is so entwined with the soundtrack from those moments."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "54:11",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:11",
+      "text": "That he really. He really sweetened the. Out of those scenes."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "54:14",
+      "text": "All the, like, under the earth, you know, kind of cave stuff, even when they're just at the wishing well, like, that's. It's a very poignant score, and it helps."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:22",
+      "text": "And you can kind of imagine, like, that stuff would have just sucked. Like, I mean, like, there's the. Particularly the cave stuff before they get to the lagoon. Like, would have just been a little bit corny. But, like, you have, like, the scenes where they're fudgeing with the pipes and, like, it becomes this whole kind of, you know, little opera, like, in the middle of, like, these different vignettes of things happening above and whatever. Like, he. He really added a lot to the movie."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "54:45",
+      "text": "Yeah, I agree."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:47",
+      "text": "Huge. Huge. So the boys. You find the restaurant. They come into the restaurant. They're immediately captured by. The Fratell is where we have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:54",
+      "text": "This restaurant. Sucks. This restaurant. Terrible restaurant. Looks terrible."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "54:58",
+      "text": "Disgusting restaurant."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:59",
+      "text": "I don't know what their plan was. They just, like, break into a restaurant. It's terrible."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:02",
+      "text": "Not good. But. So I love Robert Davi in this film as Jake, and he's singing his opera here to. To Sloth. But he, you know, for me, he will always be, you know, Special Agent Johnson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:18",
+      "text": "Yeah, Especially Johnson. Die Hard."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:19",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:20",
+      "text": "Reminds me of just like Saigon. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "55:22",
+      "text": "Apparently, the Fratelli brothers, the two actors actually didn't like each other. And really, Robert Davi made fun of the other guy, the younger brother Pants, for actually wearing a hairpiece. And then that became incorporated into the film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:35",
+      "text": "That's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:36",
+      "text": "Wow. Wow. I am dying. So, for me, Joey Pants, other than the Matrix and Bound now will always be Midnight Run, Charles Grodden and. And De Niro, which I'm dying to do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:49",
+      "text": "It's a great family. The. The. The Fratelli, like, they do a great job with, like, this. It feels cartoony. Like, they feel like, you know, caricatures of robbers while still being menacing. It's a very fine line to, like, do something where it's like you can imagine them as animated characters, but at the same time, it seems entirely credible that Mama Fratelli is going to cut mouse tongue out. So both of those things. Both of those things can seem compelling to me."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:16",
+      "text": "This is Ann Ramsey, who didn't start acting until she was 41, but what a glow up between this and throw mom off the train."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "56:22",
+      "text": "Just like, great movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:23",
+      "text": "Yeah, she was. She was huge."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:25",
+      "text": "My favorite moment of her in this movie is when she's, like. When they're, like, in pursuit of the kids in the tunnels, and it cuts back to her and they're, like, kind of marching, like, along the path, and they're. They just Insert this like kind of grunting, like sort of like like a smash mouth dog would make or something."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "56:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:43",
+      "text": "Like, it's just this like dogged relentlessness. I really appreciate and I do love."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "56:49",
+      "text": "That the, the, the entire like Sloth origin story turns out to be her dropping him as a baby. Somehow remembers that and is like, like apparently mangles his gigantic face. Apparently the actor that played Sloth was like an actual NFL player. Like the biggest guy in the league. And he. That do like five hours of makeup."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:10",
+      "text": "Oh God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:11",
+      "text": "He was also in Animal House. He's one of the wild guys in, In Animal House. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:17",
+      "text": "All right, good. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:19",
+      "text": "It's just, it's. And things start to accelerate now. They're trying to, they. They're finding ways to get down. They, they, you know, brand resc out but then they, they immediately go back in. We have Steph and Andy showing up. I just, I love Martha Plinth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:35",
+      "text": "She's really great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:36",
+      "text": "What do you think about Andy and, and her performance here?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "57:39",
+      "text": "I had a huge crush on Andy. I mean, no doubt."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:42",
+      "text": "Oh, wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:43",
+      "text": "For sure. For sure. Thought that. I think this movie does a really good job. If you're like 10 years old being like, this is what you like, like you as a, you know, heterosexual pubescent male want, like you're like, like this is this, this is what you should be."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "57:56",
+      "text": "She's a babe and she kisses."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:59",
+      "text": "Accident."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "58:00",
+      "text": "Could have been you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:01",
+      "text": "But like, but like Martha Plimpton seems like more interesting now like, you know, watching the movie now. Like she's like, you know, she's like more. She's like, she's like against whatever's happening and seems a little bit more sassy and like Andy's like a little bit more one dimensional in terms of she just wants like a nice boy to kiss her and so, you know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:21",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:21",
+      "text": "I think they're both given a bit of business to do."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:24",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "58:25",
+      "text": "Plimpton's kind of a Molly Ringwald kind of character. Like a little. Yeah. Skeptical, opposed to doing stuff. Andy is just like the joyful, you know, one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:34",
+      "text": "Yeah. On the spectrum of, of girls we were in love with. She's kind of like the cheerleader side. And then we had in real genius. Right. The. The super nerd."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:42",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:43",
+      "text": "That we were."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:43",
+      "text": "Yeah. I think Weird Science is really sort of what I would point to as like my sexual awakening in 80s film. But like this is that we're certainly, we're certainly in the, in the market. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "58:56",
+      "text": "Revenge of the Nerds would be pretty high up there for me for obvious reasons. If you've seen it, it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:01",
+      "text": "Yeah, for sure. It's so sad, man. Weird Science. I had a very, very strong tie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:07",
+      "text": "It's just."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "59:08",
+      "text": "It's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:08",
+      "text": "It's uncoverable."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:09",
+      "text": "Put away."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:10",
+      "text": "It's uncoverable."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:10",
+      "text": "Put away."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:11",
+      "text": "It's been canceled."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:12",
+      "text": "Can't do it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:12",
+      "text": "Is it too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:13",
+      "text": "Oh, is it?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "59:13",
+      "text": "Has it? I honestly didn't know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:14",
+      "text": "It's just too much. Two guys generate a girl for their pleasure. Like, that's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:18",
+      "text": "They generate a girl to have sex with. That's not good. That's fair."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "59:21",
+      "text": "And then they never do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:23",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:24",
+      "text": "Yes, exactly. Let's see. So. So, you know, them going down. We have all the stuff with Chunk. This is where, like, there's a whole portion of this movie where Chunk just really."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:35",
+      "text": "He takes over the movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:38",
+      "text": "He's incredible."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:38",
+      "text": "He's incredible. The whole. The whole scene where, like, where he's confession. He's given a ton of dialogue to do both when he's captured."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "59:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:46",
+      "text": "And, like, you know, like the scene where he's captured for the first time on the street. So funny. He starts saying a prayer in Hebrew and, like, Robert D, like, starts singing back at him. That's amazing. Like, he hands. Yeah. He's. He hams the. Out of that scene. And then the whole confession, which plays out over two separate sequences, like, it's hilarious. Goes on for so long. And it's hilarious. He has to do so much. Like, the puking thing is him performing that to those three other doctors with them just reacting and having no other business to do but just react to him telling the story about fake puke from the balcony. Like, it's a lot that he has to do."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "60:31",
+      "text": "And then I went to this movie theater, hit the puke of my jacket."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:36",
+      "text": "Climbed up to the balcony, and then."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "60:39",
+      "text": "I made a noise like this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:52",
+      "text": "It's great."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "60:52",
+      "text": "It's a genius monologue. Yeah. I love that character. Yeah. Really good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:56",
+      "text": "Really good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:58",
+      "text": "But meanwhile, they find Chester Copper Pot, the skeleton. I did think it was funny when they're going through his. Through his wallet, like a Lou Gehrig card, which is. How much is that worth?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "61:09",
+      "text": "Oh, yeah, like millions of dollars."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:12",
+      "text": "Throw that away. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "61:13",
+      "text": "You found the treasure, kid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:14",
+      "text": "Yeah, exactly. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:15",
+      "text": "It could go home, but they're. They're now, you know, going deeper, setting off various booby traps. And you had the bat swarms and stuff. But this moment in the wishing well. So the first time I. Any awareness of the Goonies was when Jason, in, like, episode five or something, made a comment to, like, down here, it's our time. And I Was like, whatever. I don't know what that means."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:37",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:37",
+      "text": "And I did include a little bit of the clip, Just that one portion of the clip, but I didn't watch the whole thing. And so for me, I was like, very deeply moved watching his performance in this scene. I think this monologue is really incredible."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "61:52",
+      "text": "Don't you realize the next time you see sky, it'll be over another town. The next time you take a test, it'll be in some other school. Our parents, they want the best of stuff for us. But right now they gotta do what's right for them. Cause it's their time. Their time up there. Down here, it's our time. It's our time down here. That's all over the second we ride up Troy's bucket."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:32",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:33",
+      "text": "I agree."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "62:35",
+      "text": "It has staying power. It's memorable, but it is staying power because I think it worked in the moment. And you could imagine why you would want to continue living in your kid only adventure world. Right. Versus going back up to reality. I think everybody's been there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:48",
+      "text": "Episode 17, apparently, is when. The first time it was used."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:53",
+      "text": "Amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:54",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:55",
+      "text": "That idea, though. You want to stay in that world. But he has an empathy for his parents and the constraints that they're under and wants them to be happy too. It's just very cool."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "63:06",
+      "text": "Yeah, they're both good kids, which is an interesting. It's not something you always see. It's obviously offset by Mouth being a disaster."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:15",
+      "text": "The other thing at the beginning of the description where they talk about, you know, they don't want to die, Andy says she doesn't want to die for it. And he says, goonies never say die. This was literally used as a meme last week before, you know, before Joe dropped out as a way for. For. Yeah, for our people in our politics channel to say that we were. We'll never give up. And Goonies never say die. So, like, I was like, this is awesome."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "63:41",
+      "text": "It's great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:42",
+      "text": "We found. We found the. We found our One Eye Willie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:45",
+      "text": "Exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:46",
+      "text": "Yeah. No, it's. It. It's, I think, like this, this scene. Again, Sean Aston has to carry a lot of earnest business in this. And it's. It could go sideways. Like, it could easily go sideways. I think he kills it here. And, you know, it's. It's great. That's why the movie. Why the movie works."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "64:04",
+      "text": "It's a weird movie where he's the lead. But it's the worst part."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:06",
+      "text": "Yeah, 100%. It's. It is the worst part because he has to give all of this, like, I mean, like, Mouth gets the best line in this scene."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:15",
+      "text": "The best."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:15",
+      "text": "Wait, stop, stop."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "64:16",
+      "text": "You can't do this."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "64:17",
+      "text": "Why? Why? Because these are somebody else's wishes. They're somebody else's dreams."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "64:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Goonies sample",
+      "timestamp": "64:26",
+      "text": "But you know what? This one, this one right here, this was my dream, my wish, and it didn't come true. So I'm taking it back. Taking them all back."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "64:40",
+      "text": "Yep."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:40",
+      "text": "The only weird thing about that is that he then dives under the water, which I don't understand as a move. Like, you know, you don't have to, like, just dive into the water. But, yeah, he really. He kills it. He kills that. He kills that delivery. That's the best line read in the scene. But Sean has to give this whole fucking expose on, you know, what it means to suffer from country club jerks. Yeah, you're."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:02",
+      "text": "You're too jaded. The. The Mikey's. Mikey's delivery for me is even more like. I loved. I love Mouth's delivery there, but I was. I was touched. I was touched. So let's talk about Sloth and Chunk and their. Their bonding and friendship. So, first of all, to just the amount of work on the prosthetics and the massive."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "65:22",
+      "text": "And it's like animatronic. It actually moves and twitches and stuff."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:26",
+      "text": "Very impressive. Very impressive. But they're kind of like. The Goonies are now on the run. They're going deeper. They're getting chased by the fatellis. This is my only question of. So my only bump up on this film is the Wile E. Coyote nature of how far that goes. Right. Data's chomping teeth and the sound effects."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:49",
+      "text": "There, the pincers apparel. You want to take out the pincher's apparel."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:53",
+      "text": "They're fun."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "65:53",
+      "text": "Oh, see, it was pure fun. I thought it was just pure joy. And I think they, you know, you have Data early on in the movie, kind of his Rube Goldberg machines failing. Right. So you're introduced to him as kind of a klutz and a goof who can't quite make the thing. But then when, like, the chips are down, he succeeds. And you're rooting for him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:11",
+      "text": "Yeah, yeah, yeah. I. I mean, I do. I, I, I did like it. I just had it. I. I struggled a bit with it as being a little too kid kitty for me at. At 54 for a first viewing, but they make their way. We. I. Let's just hit the pee break really quick with Andy kissing Mikey. So there's a. I think there is a couple."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:28",
+      "text": "There's a couple Interesting things. Like, one is, there was definitely a thing in 80s movies. I'm trying to think of the other examples where, like, finding a place to pee was like, oh, it was in. I think it was in the la. In. In Flight of the Navigator, there's like a thing about, like, sort of. I don't leak."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "66:46",
+      "text": "You leak."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:47",
+      "text": "Yeah, exactly. There's a thing. He has to go take a pee break. And so, like, there. I think this was, like, kind of a thing of like, oh, this is an anxiety all kids can identify with is, you have to pee and you're out and about. What are you going to do? I. I like that. That was a. I like. That was a trope for a while. I feel. I feel we maybe should bring that one back. I love the. The little boys room. We're going to the men's room joke. I think that's a fabulous joke. And I think that. I think they really. They. They crush it. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:11",
+      "text": "So. So they make their way to the Throne of Bones, and this is where we have this really cool musical clue trap. Although I was like, andy, please, come on, pull it together. Yeah, but, Jason, A is also B flat."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:23",
+      "text": "Yeah, I read a. I read a whole explainer on this. I mean, I knew that A sharp was B flat there. Someone had, like, a amazing post on Reddit that was attempting to justify why Andy might think that A sharp and B flat were different notes based on, like, listen, like, the move. The pirate ship was from the 17th century. In the 17th century, harpsichords had these additional semitone keys that were put in, so there actually would have been a note between A sharp and B flat. And so maybe Andy was aware of, like, sort of like, you know, the Baroque period, you know, composing. That's being alluded to. But it was probably just a goof to get set up. And it was just to set up the, you know, we're going to be flat joke. But that's fine."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:11",
+      "text": "Absolutely beautiful. Beautiful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:14",
+      "text": "When they go down the water slide, I was just like, so awesome. They built a frigging water slide."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:19",
+      "text": "Yes. It looked awesome."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:20",
+      "text": "Yeah. But then they dropped down. And this is the reveal of the unfortunate inferno. So Donner, famously, he restricted the actors the entire time from being able to see it while it was being built. And he brought them in blindfolded and then did action and had them turn around to get their real reaction, which it turned out, was so stunned they had to use the second take in order to do it. But, yeah, I had that feeling of being stunned seeing the ship. It's just movie magic."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "68:49",
+      "text": "It's so cool. Yeah, it really like, I mean you. The film brings you down a fantasy and like every great movie or book or anything, it builds and builds and builds and builds and you know, the, the climax is seeing this ship."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:06",
+      "text": "I did have a question. When they get on the ship, like Mouth and Steph are immediately very. Where's the gold? Listen, I was like, like settled."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:15",
+      "text": "They're outcome oriented. Yeah. It's like the. They got a job. It's like the whole ship is probably worth like, you know, $180 million. Like you know, even there's no. No gems on it. You just got to sell that sucker out of there. That was like. I also having watched Master and Commander Far side of the World last week was trying to be like, is there. Are there. Where would the treasure room be? You know, in the, in the layout of this room like versus, you know, where Captain Jack Aubrey's quarters were on the surprise. But yeah, I don't know. It was a great ship. Ship looked awesome."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "69:44",
+      "text": "Great ship. And you another moment where they, they make, you know, Mikey the hero in a very obvious way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:50",
+      "text": "Right."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "69:51",
+      "text": "We're not taking Willie's gold."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:52",
+      "text": "He's."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "69:53",
+      "text": "He's the mor. He's the good one. Which you know, it can feel a little bit heavy handed. But I also liked it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:59",
+      "text": "When he is. When he's talking to Willie and you were the first goony, his eyes are welling with tears. Like that performance. Holy moly. Couldn't believe it. Yeah. Really good. And just like the look on Bran's face when he's there. You know, he loves his brother."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "70:15",
+      "text": "Like God, he's a nice bro."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:17",
+      "text": "Really, really good. So then we have. The Fratellis are there and we have walking the plank. And then of course Captain Chunk and Sloth showing up to save the day. Which is a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:34",
+      "text": "Which is a nice plant and payoff because he watches this like, you know, he watches this on the screen in his little room and they play the same score. He does the same thing and it. And like it's kind of amazing because you see the exact same stunt, but the stunt still looks awesome. Like I was still totally in. I was like, man, using a knife to go down a sale is a great move. If you have that available. Definitely put that in your movie. It looked great. Really good. Really good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:04",
+      "text": "But now things go crazy. There's big, big fights and stuff. And then we have the, the dynamite blowing up the passage."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:09",
+      "text": "Now is this where the octopus would have been? Is this where."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "71:13",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:14",
+      "text": "This is where the deleted octopus footage was?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:16",
+      "text": "You tell me. I don't know. I didn't."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:17",
+      "text": "So there is. So, like, at the end of the movie, like, there's this throwaway line where. Where the cops and the reporters are interviewing the kids. They said, yeah, the octopus was really scary. They had a whole animatronic octopus that came out of the water and was going to. Was going to harass the kids. I think in this moment, as they were trying to swim to safety. And they cut it just because, like, it looked too."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "71:38",
+      "text": "I heard it looked terrible."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:39",
+      "text": "It looked terrible. Yeah. You can see some footage of it. It doesn't. It's not great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:44",
+      "text": "I'm thinking of Popeye, right, that. The octopus at the end of Popeye there was just, like, limp arms or whatever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:48",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "71:49",
+      "text": "I saw a background thing. I like a little documentary about the film. And they said that Donner would let them all watch all the dailies every day, so he bring all the kids in. I guess the octopus footage was just, like, hilariously bad."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:00",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "72:00",
+      "text": "It was like you had to wrap it around your neck to also fight it. And, you know, nobody bought it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:04",
+      "text": "Yeah. And they apparently used it in. According to C. Step in Chat, they used it in the Cindy Lopper video. So if you want to."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:11",
+      "text": "Yes, it's in there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:12",
+      "text": "You want to look. If you want to look for it, you can find it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:14",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "72:15",
+      "text": "It. It."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:16",
+      "text": "It exists. I will say, I love the. As a prank, after they were done filming Steven Fl. The kids, as a surprise, over to Hawaii, where Donner was on vacation."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "72:28",
+      "text": "That's cool. And."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:29",
+      "text": "And then they busted it. They busted in on him as a surprise."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "72:33",
+      "text": "He's like, ah, great. A bunch of kids on my vacation."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:37",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "72:37",
+      "text": "He."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:37",
+      "text": "He spends a lot of time in the behind the scenes describing how difficult it was working with the kids."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:42",
+      "text": "Yeah, it's a big bunch of kids."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:43",
+      "text": "It was just a really sweet coming together, having everybody coming together. You know, Data and his dad and Steph and Mal. It's just like. It's. It's very sweet. And then we have, you know, Chunk adopting Sloth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:56",
+      "text": "This is like. This was like, sort of like when we did Face off. And at the end of Face off, like, he, you know, he brings home the. The. He brings home the kid without, like, talking to his wife first. He's just like, yeah, I. We're taking this kid home now. I had the same reaction to when he's like, you're going to live with us. I was like, good luck. Hope your parents are chill with that. Oh, My God, he seems like you might need a lot, if not nothing else."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "73:24",
+      "text": "They sell them as sort of the brother that each wishes they always had. Right? Like that's the takeaway."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:30",
+      "text": "This again is a testament to chunks acting chops because he's acting against basically a, you know, a pro. Not, no offense to the NFL player who had to go through all the makeup to put this on. But he's not really, you know, he's not really. He doesn't have much dialogue. Like. And so like Sloth is having to like both sell. Yeah, to sell everything."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "73:50",
+      "text": "My favorite Sloth part is when he. He's chained up, right? He's like locked down in basement. And until he sees a candy bar, he doesn't realize he can just break these chains. And then finally he's like baby roof. Rips it out of the wall, smashes them open."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:03",
+      "text": "I love that scene too because he picks up. He like, they share the candy bar, they share the Baby Ruth. And then he. And then they. Yeah, they feed it to each other. He's like. It's very like, you know, nice little sweet seed which they're feeding each other candy bar. And then, then Sloth is so excited, he picks Chunk up in the chair to like, kiss him. And Chunk says, oh, you smell like fizz."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "74:27",
+      "text": "Just sl. Such a good joke."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:29",
+      "text": "It's so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:31",
+      "text": "Amazing. Amazing. Well, on the beach, as the dad and Troy try to get the signature that they need, the. The maid finds the marble bag."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:40",
+      "text": "I love this too. Like Mouth who has spoken like un translator perfect Spanish, like including like being able to translate like in rhymed meter and like, you know, ye, like archaic, like 17th century Spanish into its appropriate equivalent. And like making it all rhyme gets held up on her just saying like, don't sign. Like, that's the."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "75:04",
+      "text": "No, don't sign. Yeah. Can't be that hard."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:07",
+      "text": "That's the phrase that he's like, no sign."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:11",
+      "text": "No sign."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:12",
+      "text": "I love that. So funny. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:15",
+      "text": "But the ship is sailing out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:17",
+      "text": "I."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:17",
+      "text": "It. It was kind of cool, I guess. It didn't need air wind to get there. But it, you know, One Eyed Willie sends it out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:23",
+      "text": "You have objections to the end of the movie?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "75:25",
+      "text": "For nautical, the time was a white squall."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:29",
+      "text": "I've actually consulted. I've consulted a tide chart from 1985 and it turns out that the tide would have been low at that hour. And there's no way that it could have. It could have cleared the reef."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:39",
+      "text": "No, no, it works. And by Willie and thanks. And we have the credits as Cindy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:46",
+      "text": "How much do you think they're going to sell these gems for that were in the Marvel bag? Like, I mean, what are we talking?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "75:50",
+      "text": "I mean, I wondered that too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:51",
+      "text": "I mean, it does affect."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "75:52",
+      "text": "Feel like they're very big."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:53",
+      "text": "I watch a lot of gem negotiation tiktoks from the diamond district of New York where a guy will go in and attempt to buy some, you know, some like, you know, fired sapphires or whatever from a guy and they do a negotiation over it. And based on my extensive research, I think they've got maybe like incurred prices, like maybe a couple hundred grand of. Of gems. But like they're. That's not going to be enough to buy the whole town. I don't know what this deal was for buying out the town down for the, the golf course, but I feel they're going to need some extra scratch."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "76:24",
+      "text": "That's a good point. Maybe you can just pay off enough of a loan to keep one house. That ruins the whole thing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:29",
+      "text": "Oh yeah. Situation. Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "76:32",
+      "text": "You ever seen those city development, you know, photos where some developer tried to buy a whole block and someone's just like, no, I will not sell. So there's like a little shitty house in the middle of a couple buildings. I love that stuff."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:41",
+      "text": "That's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:42",
+      "text": "We applaud that. We applaud that."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "76:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:44",
+      "text": "Well, that is it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:45",
+      "text": "What a movie. Jesus Christ."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "76:47",
+      "text": "Fantastic movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:48",
+      "text": "Tommy. Who would Tilda Swinton play if you had to recast one role in the Goonies with Tilda Swinton, who would it be?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "76:57",
+      "text": "I mean, I guess Mikey and Brand's mom. Oh, but it's not the best character."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:04",
+      "text": "Yeah, she does get the scene. She does get the translation scene with Corey Feldman then though. That's pretty funny."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:10",
+      "text": "That's true. Yeah. You're so helpful enough."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:13",
+      "text": "It's just amazing what you could do with LA languages. It's just great."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:17",
+      "text": "So, yeah, I guess that makes sense."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:18",
+      "text": "That would work."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:19",
+      "text": "What do you think?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:19",
+      "text": "I'm going with Sloth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:21",
+      "text": "You're going Sloth? Tilde? Sloth is pretty strong."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:24",
+      "text": "Yeah, I see that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:25",
+      "text": "That's pretty strong. I was going to go with Martha Plimpton, just like throw her in as one of the kids. I think she could do it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:31",
+      "text": "Young Tilda."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:32",
+      "text": "I love the bit of business that they put in where the reason why Mikey and Brand's mom needs the lady to help pack the stuff stuff is because she's broke her arm. Like, it can't just be that she like needs help to like pack her house. They have to invent like some reason, like they have to invent like this whole bit of business where she has a broken arm that's like not explained unless it's explained. Maybe the Octopus got her arm. I don't know."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "77:55",
+      "text": "But they have a great line too. She says, I want this house clean before they tear it down."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:59",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "78:00",
+      "text": "It's just such a mom thing. It just made it, it made no sense, but it was relatable all at once."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:04",
+      "text": "I love when they, they introduce the dad at the end and the dad has like no up upper teeth. He's just all lip and bow tie. He's like the weirdest looking dude. He's definitely a man who had a bunch of pirate bullshit in his attic."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:19",
+      "text": "Jason, do you have a call for her?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:21",
+      "text": "I mean, look, I'm going to, I'm going to give chat its choice and say the Octopus could have been. That Tilda could have played the Octopus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:28",
+      "text": "Maybe she was."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:29",
+      "text": "Yeah, we don't know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:30",
+      "text": "Maybe she was."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:30",
+      "text": "It was in the deleted footage."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:32",
+      "text": "Yeah, it was her all along. Amazing. All right, guys, can we do some letters really quick, please?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:42",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:42",
+      "text": "All right, here we go. Here is our first letter."
+    },
+    {
+      "name": "birria",
+      "timestamp": "78:52",
+      "text": "Hey ya. Here, man. I love the Goonies. Just, you know, a formative movie for me as a kid. It struck me at the time that it might have been one of the first movies I ever saw where kids would swear a lot. Maybe like Bad News bears. Right. But for today's truth Sayer. Easy stuff. How many times do characters in the Goonies say the word shit, including data spelling it out S, H, I T. All right. Do they say 16 shits in the movie? Okay, is it 20 shits in the movie?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:28",
+      "text": "Oh my God. Oh my God, it's so high."
+    },
+    {
+      "name": "birria",
+      "timestamp": "79:30",
+      "text": "Or is it 27?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:31",
+      "text": "Oh my God."
+    },
+    {
+      "name": "birria",
+      "timestamp": "79:33",
+      "text": "In the Goonies. Easy peasy, right? How many shits does the truth sayer require for a correct answer today?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:39",
+      "text": "I. Wow."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "79:40",
+      "text": "Honestly, if you. If this hadn't been multiple choice, I would have said six."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:43",
+      "text": "Exactly. I would have taken the under on 10 for sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:46",
+      "text": "Oh no, I would definitely take. Take the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:48",
+      "text": "The bigger for a would be I'm gonna go 16. I'd be surprised if it's more than 16."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:53",
+      "text": "I'm taking 20. Here we go."
+    },
+    {
+      "name": "birria",
+      "timestamp": "79:56",
+      "text": "Okay, so how many shits appear in the Goonies? The correct answer is 19/data shit for a total of 2020 ships. I had to get out my pod data central clicker to count them all up here."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:10",
+      "text": "Thank you."
+    },
+    {
+      "name": "birria",
+      "timestamp": "80:12",
+      "text": "Counting, it's our specialty around here. Here ends the Truthsayer."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "80:16",
+      "text": "Impressive."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:17",
+      "text": "Amazing."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "80:18",
+      "text": "You know, funny re watching it, I was like kind of surprised at how early you mentioned this, Jason. How early? The first is dropped, but yeah, good to know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:26",
+      "text": "God. Well, shout out to Biria who who is a expert counter and the one of the motive forces behind Pod Data Central, our supercomputer for pod analytics. But also, I hope listeners are enjoying this super cut that Matt put together of all the shits in Goonies where he expertly added them all together right now that you're listening to. So please enjoy that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:47",
+      "text": "Uh huh. Okay, great, great. From Orcas."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:50",
+      "text": "From Orcas. Please put that together."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:51",
+      "text": "No problem."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "80:52",
+      "text": "Beautiful. I love that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:54",
+      "text": "All right, here is our next voicemail. Jason. It's the return of a favorite."
+    },
+    {
+      "name": "lizzen",
+      "timestamp": "81:00",
+      "text": "Hi friends, this is Lizn. Thrilled to see Tommy on the roster and excited to hear the episode. You are collecting crooked podcast hosts like Pokemon cards and I love to see it. So the Goonies is one of my blind spots. I never saw it and I never had any interest, but I do appreciate that it is a fan favorite. So my question for you is what are your blind spots of fan favorite cult films that you missed? And ps to all the haters, I am 100% pure old fashioned homegrown human born free right here in the real world. The silence may have a plan, but I'm just a theater kid, not an AI. XOXO Lizzen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:48",
+      "text": "Talk your shit, Lizzen. Don't take any trash for age. Yeah, H believed that Elizin was a bot. I choose one of our loyal voicemailers."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "81:57",
+      "text": "Of being an AI could see it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:59",
+      "text": "Someone asked the question and she was nice enough to call back in. Thank you, Lizn. I never doubted you."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:05",
+      "text": "Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:06",
+      "text": "Well, I already called out the Goonies that I hadn't watched it. And the other one I also hit this year was Seven Samurai, which I had never seen."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:13",
+      "text": "Good one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:13",
+      "text": "That's a good one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:14",
+      "text": "So I'm making good progress via this podcast. How about you, Tommy?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:18",
+      "text": "I mean, I told you guys the Godfather is a big blind spot for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:21",
+      "text": "You've never seen the. God, you've never seen it. Oh, I missed that in the. Holy shit."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:25",
+      "text": "Crazy. I don't know why it feels like an undertaking. I know I should see it. I just don't know. I just got to set aside three hours and just do it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:33",
+      "text": "Yeah, it's kind of crazy. Well, like, look like it's. It's sort of a bit on the pod where I slander the Godfather because like every movie podcast hosted by dudes thinks it's the best movie ever made, but it's actually a really good. It's a really good movie. She probably time to see it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:49",
+      "text": "I know, I know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:50",
+      "text": "Wow, that's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:52",
+      "text": "Really good."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "82:52",
+      "text": "What do you got?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:53",
+      "text": "What do I got? I feel like there was something that, well, Sorcerer was this, this movie that, like. I mean, I don't know if it's like a. If it's like a. A real Thief is another one. Like, there's a couple of these, like, kind of gritty, you know, dudes on criminal adventures situations that I've not seen that seem great. I'm going put Thief pretty high up. There is one that I know I should see in and. And haven't."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "83:17",
+      "text": "It's a good one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:19",
+      "text": "Really good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:19",
+      "text": "I finally saw that last year. Amazing, amazing flick. All right, here is our next voicemail from Kev."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "83:27",
+      "text": "Hey, guys, Kev here. Look, I'm going to be real. I don't have a big emotional relationship to the Goonies in the way that you or your guest, most of your audience do. I bought it on 4K, blind as an adult. And, you know, it's good. It's got that Amblin stuff that everybody like, loves. Hate the Truffle Shuffle, even for the time, unacceptable. And then like today to be celebrating that is just not my style. So. It's fine. It's fine. Kev's question. You know, even before I watched the Goonies, I knew about the Goonies house because to the best of my memory, the people who owned it did not want people to visit the house and actually got quite annoyed at them, which is like, what did you have expect? But the new owners are actually really friendly to people and they're going to dress it up and they're going to make, you know, they're going to make it friendly for you to go take selfies and do the Truffle Shuffle without even thinking about what that might mean for people who were asked to do things like that. Perhaps as a kid, not that I was, but I'm just saying, I was a fat kid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:29",
+      "text": "Kev's question."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "84:30",
+      "text": "What are your favorite real life movie locations? These are real houses or places that were used in movies. I would like to call out the hotel in Blake, Blade Runner, AKA the Bradbury Building. I have to say I think I stole Jason's answer here, but I watched the movie over the weekend last week and man, like, first of all, still great, but what a set. All right, enough of this. I'm going long. Peace and love, and I'll talk to you all next week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:57",
+      "text": "Love you, Kev."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:58",
+      "text": "Once again, it's Kev's questions."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:02",
+      "text": "We'll never make you do the Truffle Shuffle on your voicemail? Yeah. What do you think, Tommy? You got anything come to mind?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "85:08",
+      "text": "You know, which came to. I mean, this is like, maybe an obvious one, but Indiana Jones and the Last Crusade filming in Petra in Jordan."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:17",
+      "text": "Did you go there with. Were you on that trip? Did you go."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "85:19",
+      "text": "No, I did not get to go to that. But that's, you know, a magical place, brings you to a different world. Couldn't be a more perfect location for the Grail to be hanging out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:28",
+      "text": "That's a really good one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:29",
+      "text": "Carpenter's Cup."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:30",
+      "text": "I like. I like Union Square for the conversation, which we also have threatened to do a number of times. It's great. It's like a really good. It's a really good use of a specific location as, like, a key plot piece in the movie. And they kind of keep coming back to it. So I love. I love that. I love that one. What do you say, H. How about."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:54",
+      "text": "The bridge in Beetlejuice?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:56",
+      "text": "Oh, that's a good one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:58",
+      "text": "That they drive through. And the house, which I think they. The house I think they rebuilt, but I think the bridge was a real. Was a real place."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:04",
+      "text": "Oh, that's pretty good. Another. Another good one is, you know, that I was reminded of because I was there not too long ago, is the Bixby bridge on Highway 1 down to Big Sur, which is in, like, the opening credits of Big Little Lies and, like, a thousand car commercials or whatever else. That's like, a really. Like, it's used so much, but it always works. So it's actually my Mac. I'm noticing it's my Mac desktop right now, like, from, like. It's one of the default images on the Mac, so that's a good one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:32",
+      "text": "Nice, Nice. All right, here's our final voicemail. Speaking of Corey, here we go."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "86:44",
+      "text": "Hey. Hey, this is Corey calling from Austin, Texas, about the Goonies, which came out in 1985. So I was like, what, 13? You know, I was. So I'm a little bit younger than 8. So, like, you know, I didn't ride my dinosaur to work every day. But I think H wasn't into the Goonies. I think he said and seen it maybe. I think we were just a little too old. Even though I was probably right in the zone at 13. But I don't know. It was good. I like the Goonies. Don't get me wrong. I've revisited over the years off and on, what a cast. Like, obviously, Corey Feldman is my jam here. And Feldman, have you noticed that a lot of his Videos have been popping up of him just doing like his dance stuff. I have younger but an adult. But like, you know, I'm just so proud of him for sticking to that Michael Jackson style of dancing. Like he is still doing it to this day. I mean talk about a commitment to an art form. Anyway, I love Corey. What was I saying? Goonies. Great. How about Martha Plimpton? I don't think she gets enough credit of being like, you know, one of the hot ones from back then. Maybe just me. Maybe it was always been like, you know, into weird girls. But Corey's definitely Martha Plumson in this. She's super cute. It sounds creepy now that I'm an adult, but as a kid I thought she was cute as well. Anyway, I guess really Goonies is great, but I'm really a Monster Squad kind of kid and that came out a couple years later. And obviously that's because of monsters who would kill the Swinton play. I'm sure everyone's saying sloth maybe, but yeah, I'm going with sloth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "88:33",
+      "text": "Nailed it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:34",
+      "text": "Amazing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:35",
+      "text": "Wow, what a ride. Tommy. What a pick."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:37",
+      "text": "My God, what a great pick."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "88:39",
+      "text": "Thanks for having me. It was very fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:40",
+      "text": "I have, I am just fired up like between this movie and all of our radness. It's a good time. Tell the people you know what do you have to plug?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:49",
+      "text": "Where can they hear you, Tommy?"
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "88:51",
+      "text": "Oh yeah. If you want to hear me, yap, listen to Pod Save America or Pod Save the World. The latter show is about foreign policy and things happening outside of the US it's very fun to do. And Rhodes, another guest of yours is my co host."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:04",
+      "text": "Check it out. Yeah. The two Pokemon we've collected so far, the P, the Pikachu and Bulbasaur."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:12",
+      "text": "We'Ve."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:13",
+      "text": "Managed to lure our bot."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "89:15",
+      "text": "I love it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:16",
+      "text": "Nice. Nice. Well, yeah, we thank you so much, Tommy. Jason, what do you have to plug, buddy?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:21",
+      "text": "Oh man. I. Once again this happened out of me twice where I was supposed to go on a trip and the person I was going to meet with tested positive for Covid right before I got there. And like it's just like I, I'm, I guess grateful for. I'm gonna plug rapid tests because the COVID is going around right now and you can spare some people some trouble if you, if you test before hang out big gatherings. It is rampant. I'm Tommy. How did you guys not get Covid at going to the rnc? Because like that is just like a massive group of unvaxed mouth breathers. I was, I like, I I was like. Like, these guys are for sure. Like, they're gonna come back with eight diseases."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:02",
+      "text": "I thought so, too. I mean, the truth is we didn't get inside the security perimeter, so if we had, we would be done. And the weirdos we talked to were all outdoor, but yes, it. Not great. Not great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:13",
+      "text": "Oh, my God."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:13",
+      "text": "I came back and I had some sniffles that I've tested, like, every single day. And it's just. I think LA has a weird allergy thing happening right now because a ton of people are dealing with it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:21",
+      "text": "Yeah. Oh, wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:23",
+      "text": "Thank you for all."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:24",
+      "text": "Thank you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:24",
+      "text": "Thanks for everything you did, man. Seriously, like, what you guys were. You guys were really instrumental starting a month ago, right? The debate, like from Night of. And so I just want to. I just want to say thanks because it did make a difference and we're all going to benefit from that."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:38",
+      "text": "So you are. Nice to say, you know, all's well that ends well, we hope in November."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:44",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:45",
+      "text": "Let's do it."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:46",
+      "text": "You know, this. This story is not over is the thing that's scary."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:50",
+      "text": "Hell yeah."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:50",
+      "text": "The recriminations will begin. Things go south."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:54",
+      "text": "Oh, no. I mean, look, it's like it's circular. Firing squad for everyone. If. If. If we don't win."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "90:59",
+      "text": "Big time, Big time, big time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:01",
+      "text": "No one's. No one's getting a West Wing tour anytime soon. If we. If we don't. If we don't, we don't win."
+    },
+    {
+      "name": "Tommy Vietor",
+      "timestamp": "91:06",
+      "text": "Nope. See you in the camps."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:08",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:11",
+      "text": "And that's it for this episode of Escape Patch. I want to thank Jason and Tommy for an amazing conversation next week. After four years, Corey finally joins us and he takes us into the deep, dark world of Quentin Tarantino and Oliver Stone's Natural Born Killers. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and review wherever you listen to your podcast or just tell your friends about us, because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are the show notes. Escape Hatch is a Tape Deck podcast, John, a production of H Industries. Our artwork is by Catcher and our theme music was composed by Scott Fritz and who's the Boss music. The episode was edited and produced by me, H. Thanks for listening. We'll see everybody next week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:13",
+      "text": "What will become of poor Cindy now? Don't miss part two. Coming soon to a TV near you."
+    }
+  ]
+}
