@@ -250,6 +250,57 @@
       "expectClassificationType": ["factual"],
       "expectTextInAnswer": ["Popeye", "Flash Gordon", "Altered States", "Empire Strikes Back"],
       "expectMinMetadataSources": 4
+    },
+
+    {
+      "name": "Haitch band history (transcript-search factual)",
+      "query": "Did Haitch the host ever have a band? Did they ever open for another more famous act?",
+      "tags": ["transcript-factual", "biographical", "host"],
+      "rejectTextInAnswer": ["no information", "don't have", "not mentioned"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "River Phoenix mentions (transcript-search factual)",
+      "query": "In what context has the actor River Phoenix been mentioned on the podcast?",
+      "tags": ["transcript-factual", "cross-episode", "actor"],
+      "expectTextInAnswer": ["River Phoenix"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "You hack catchphrase",
+      "query": "when do the hosts say you hack on the podcast",
+      "tags": ["transcript-factual", "catchphrase", "cross-episode"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Truthsayer segment mentions",
+      "query": "what does Truthsayer talk about in their voicemails",
+      "tags": ["transcript-factual", "voicemail", "cross-episode"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 2
+    },
+    {
+      "name": "Most frequent voicemailers",
+      "query": "who are the most frequent voicemailers or callers on the podcast",
+      "tags": ["transcript-factual", "aggregation", "voicemail"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 2
+    },
+    {
+      "name": "Who says yeah more (interpretive aggregation)",
+      "query": "who says yeah more, jason or matt",
+      "tags": ["interpretive", "aggregation", "host-comparison"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Full catalog suggestion (known limitation)",
+      "query": "Review every movie the podcast has covered, then suggest 10 more films they should cover",
+      "tags": ["known-limitation", "full-catalog", "recommendation"],
+      "rejectTextInAnswer": ["no information", "don't have", "cannot"],
+      "expectMinSources": 1
     }
   ]
 }
