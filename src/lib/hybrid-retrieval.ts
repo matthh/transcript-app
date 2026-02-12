@@ -190,24 +190,58 @@ function boostKeywordMatches(
 }
 
 /**
+ * Boost RRF scores for chunks from targeted episodes (metadata-matched).
+ * Ensures that when the classifier identifies specific episodes via filters,
+ * those episodes' chunks rank higher without excluding cross-episode mentions.
+ */
+function boostTargetedEpisodes(
+  results: RetrievalResult[],
+  targetEpisodeTitles: string[]
+): RetrievalResult[] {
+  if (targetEpisodeTitles.length === 0) return results;
+  const targetSet = new Set(targetEpisodeTitles.map(t => t.toLowerCase()));
+  const boosted = results.map(r => {
+    const title = r.chunk.metadata.episodeTitle.toLowerCase();
+    if (targetSet.has(title)) {
+      return { ...r, score: r.score * 1.5 };
+    }
+    return r;
+  });
+  return boosted.sort((a, b) => b.score - a.score);
+}
+
+/**
  * Diversify results by capping chunks per episode.
  * Ensures results span multiple episodes rather than clustering on one.
  *
  * When queryTerms are provided, keyword-matching chunks get priority within
  * each episode's allocation so they aren't crowded out by semantically similar
  * but non-matching chunks from the same episode.
+ *
+ * When targetEpisodeTitles are provided (<=3), those episodes get a higher
+ * per-episode cap so more of their chunks survive diversification.
  */
 export function diversifyByEpisode(
   results: RetrievalResult[],
   finalK: number,
   maxPerEpisode: number,
-  queryTerms: string[] = []
+  queryTerms: string[] = [],
+  targetEpisodeTitles: string[] = []
 ): RetrievalResult[] {
-  // Compute per-episode cap overrides based on keyword-match concentration.
-  // When keyword matches cluster heavily in one episode, raise its cap so
-  // more of its chunks survive diversification.
+  // Compute per-episode cap overrides.
   const episodeCapOverrides = new Map<string, number>();
 
+  // Targeted-episode cap override: when few specific episodes are targeted,
+  // raise their cap so more chunks survive diversification.
+  if (targetEpisodeTitles.length > 0 && targetEpisodeTitles.length <= 3) {
+    const targetCap = maxPerEpisode * 3;
+    for (const title of targetEpisodeTitles) {
+      episodeCapOverrides.set(title.toLowerCase(), targetCap);
+    }
+  }
+
+  // Keyword-concentration cap override: when keyword matches cluster heavily
+  // in one episode, raise its cap. Takes max with any existing targeted cap.
   if (queryTerms.length >= 2) {
     const multiMatchCounts = new Map<string, number>();
     let totalMultiMatch = 0;
@@ -216,7 +250,7 @@ export function diversifyByEpisode(
       const text = result.chunk.text.toLowerCase();
       const matchCount = queryTerms.filter((t) => text.includes(t)).length;
       if (matchCount >= 2) {
-        const episode = result.chunk.metadata.episodeTitle;
+        const episode = result.chunk.metadata.episodeTitle.toLowerCase();
         multiMatchCounts.set(episode, (multiMatchCounts.get(episode) || 0) + 1);
         totalMultiMatch++;
       }
@@ -225,14 +259,18 @@ export function diversifyByEpisode(
     if (totalMultiMatch > 0) {
       for (const [episode, count] of multiMatchCounts) {
         if (count >= 3 && count / totalMultiMatch >= 0.3) {
-          episodeCapOverrides.set(episode, maxPerEpisode * 2);
+          const keywordCap = maxPerEpisode * 2;
+          episodeCapOverrides.set(
+            episode,
+            Math.max(episodeCapOverrides.get(episode) ?? maxPerEpisode, keywordCap)
+          );
         }
       }
     }
   }
 
   const getEpisodeCap = (episode: string) =>
-    episodeCapOverrides.get(episode) ?? maxPerEpisode;
+    episodeCapOverrides.get(episode.toLowerCase()) ?? maxPerEpisode;
 
   const episodeCounts = new Map<string, number>();
   const diversified: RetrievalResult[] = [];
@@ -277,7 +315,7 @@ export async function hybridRetrieval(
   query: string,
   classification: ClassificationResult,
   overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>,
-  options?: { timeoutMs?: number; precomputedEmbedding?: number[] }
+  options?: { timeoutMs?: number; precomputedEmbedding?: number[]; targetEpisodeTitles?: string[] }
 ): Promise<RetrievalResult[]> {
   // Load vector store and BM25 index in parallel, with optional timeout
   let chunks: StoredChunk[];
@@ -330,10 +368,14 @@ export async function hybridRetrieval(
   // Boost chunks containing exact query keywords so they survive deduplication
   const boostedResults = boostKeywordMatches(fusedResults, query);
 
+  // Boost chunks from metadata-targeted episodes
+  const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
+  const episodeBoosted = boostTargetedEpisodes(boostedResults, targetEpisodeTitles);
+
   // Diversify: cap chunks per episode so results span more episodes
   const maxPerEpisode = 2;
   const queryTerms = extractQueryTerms(query);
-  return diversifyByEpisode(boostedResults, finalK, maxPerEpisode, queryTerms);
+  return diversifyByEpisode(episodeBoosted, finalK, maxPerEpisode, queryTerms, targetEpisodeTitles);
 }
 
 /**

@@ -141,15 +141,20 @@ the route handler but it's one‑off logic.
 - Fewer "No matching episodes" for answerable queries.
 - Eval cases with edge‑case filters pass.
 
-### 2.3 Metadata‑Informed Transcript Retrieval (New)
+### 2.3 Metadata‑Informed Transcript Retrieval ✅ (Complete)
 **Why:** When the classifier extracts a film or episode filter, transcript search runs
 completely independently. Chunks from the relevant episode should be prioritized.
 
-**Deliverables:**
-- When classification produces a film, guest, or episode filter, boost transcript chunks
-  from matching episodes in the RRF fusion step (e.g., +20% score for matching episode).
-- When a specific episode is identified, relax the per‑episode diversification cap for
-  that episode so more relevant chunks surface.
+**Completed (2026‑02‑12):**
+- Added `boostTargetedEpisodes()` in `hybrid-retrieval.ts`: 1.5x multiplicative score
+  boost for chunks from metadata-matched episodes after RRF fusion + keyword boosting.
+- Extended `diversifyByEpisode()` with `targetEpisodeTitles` parameter: when ≤3 targeted
+  episodes, their per-episode cap is raised to `maxPerEpisode * 3` (6 instead of 2).
+  Merges with existing keyword-concentration override via `Math.max()`.
+- Normalized all `episodeCapOverrides` keys to lowercase for consistent lookup.
+- Route handlers (`route.ts` and `stream/route.ts`) construct `targetEpisodeTitles` from
+  metadata results when the set is focused (≤10 episodes with at least one filter matched).
+- Added eval case: "Targeted episode: Starman Hatch News segment".
 
 **Success Criteria:**
 - Queries like "what did they say about Alien" return more chunks from the Alien episode.
@@ -389,5 +394,5 @@ TBD — related to the broader question of how much metadata context synthesis s
 5. ~~Expand eval set with high-impact transcript-factual cases (Truthsayer, frequent voicemailers, "you hack", Haitch band mentions).~~ ✅ Done (`83d8548`).
 6. Normalize film titles in intent matching (1.1 remaining).
 7. Make transcript retrieval timeout configurable (1.4 remaining).
-8. Begin Phase 2 with metadata-informed transcript boosting (2.3).
+8. ~~Begin Phase 2 with metadata-informed transcript boosting (2.3).~~ ✅ Done (2026-02-12).
 9. Continue Phase 2 reranking + deduplication (2.1).

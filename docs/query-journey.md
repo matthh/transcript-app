@@ -115,7 +115,9 @@ This is done in two ways:
 - **Semantic search** (meaning-based, using embeddings)
 - **Keyword search** (exact words, using a BM25 index)
 
-These two are combined into a “hybrid” search so we don’t miss relevant passages.
+These two are combined into a "hybrid" search so we don't miss relevant passages.
+
+**Metadata-informed boosting:** When the metadata search identifies specific episodes (e.g., the classifier extracted a film filter like "Starman"), the transcript search boosts chunks from those episodes. This ensures that if you ask about a specific episode's content, the relevant chunks rank higher even if other episodes have similar keywords. The boosting is gentle (1.5x score multiplier) so cross-episode mentions still surface, and targeted episodes also get a higher per-episode cap in the diversification step so more of their chunks make it into the final results.
 
 ---
 

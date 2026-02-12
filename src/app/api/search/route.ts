@@ -444,9 +444,13 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
     console.log(`Transcript search: K=${baseK.finalK}, BM25=${hasBM25 ? 'on' : 'off'}`);
 
     const isColdStart = !isVectorStoreLoaded();
+    const targetEpisodeTitles = (metadataEpisodes.length > 0 && metadataEpisodes.length <= 10)
+      ? metadataEpisodes.map(e => e.film)
+      : [];
     const retrievalOptions = {
       ...(isColdStart ? { timeoutMs: 15000 } : {}),
       ...(precomputedEmbedding ? { precomputedEmbedding } : {}),
+      ...(targetEpisodeTitles.length > 0 ? { targetEpisodeTitles } : {}),
     };
     const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides,
       Object.keys(retrievalOptions).length > 0 ? retrievalOptions : undefined);

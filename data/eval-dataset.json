@@ -296,6 +296,14 @@
       "expectMinTranscriptSources": 1
     },
     {
+      "name": "Targeted episode: Starman Hatch News segment",
+      "query": "What was talked about in the Hatch News portion of the Starman episode",
+      "tags": ["targeted-episode", "single-episode"],
+      "expectSourceEpisode": "Starman",
+      "expectMinTranscriptSources": 2,
+      "expectTextInAnswer": ["Starman"]
+    },
+    {
       "name": "Full catalog suggestion (known limitation)",
       "query": "Review every movie the podcast has covered, then suggest 10 more films they should cover",
       "tags": ["known-limitation", "full-catalog", "recommendation"],
