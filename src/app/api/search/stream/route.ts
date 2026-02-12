@@ -117,6 +117,7 @@ export async function POST(request: NextRequest) {
         let tuning = allowVariants ? getSearchTuning(requestedVariant) : null;
         // Intent detection (pre-classification routing)
         const intent = detectQueryIntent(query);
+        let fastPathHandled = false;
         if (intent.type !== 'none') {
           if (intent.type === 'metadata_notable_moments' && depth !== 'deep') {
             const episodeNumber = extractEpisodeNumberFromQuery(query);
@@ -139,276 +140,260 @@ export async function POST(request: NextRequest) {
             }
 
             if (episodes.length === 0) {
+              console.log('Notable moments fast-path failed, falling through to full pipeline');
+            } else {
+              const sections = episodes.map((episode) => {
+                const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+                const notable = episode.notableMoments?.trim();
+                if (!notable) {
+                  return `### ${epLabel} — "${episode.film}"\nNo notable moments recorded.`;
+                }
+                return `### ${epLabel} — "${episode.film}"\n${notable}`;
+              });
+
+              const nmAnswer = `Notable Moments\n\n${sections.join('\n\n')}`;
+              const nmTotalMs = Date.now() - requestStart;
               send('complete', {
-                answer: 'No notable moments were found for that episode or film.',
+                answer: nmAnswer,
+                queryId,
                 queryType: 'factual',
-                sources: {},
-                metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
-                perf: { totalMs: Date.now() - requestStart, path: 'metadata_notable_moments' },
+                canDeepen: depth === 'quick',
+                sources: { metadata: episodes.map(episodeToMetadataSource) },
+                metadata: {
+                  totalCount: episodes.length,
+                  returnedCount: episodes.length,
+                  hasMore: false,
+                },
+                perf: { totalMs: nmTotalMs, path: 'metadata_notable_moments' },
               });
               controller.close();
-              return;
+              logQuery({
+                query,
+                classification: { type: 'fast_path' },
+                sourceCount: episodes.length,
+                transcriptSourceCount: 0,
+                metadataSourceCount: episodes.length,
+                sourceEpisodes: episodes.map((e) => e.film),
+                answerLength: nmAnswer.length,
+                latencyMs: nmTotalMs,
+                path: 'metadata_notable_moments',
+                intent: { type: intent.type, confidence: intent.confidence },
+                depth,
+                routingPath: 'metadata_fast_path',
+              }, queryId).catch(() => {});
+              fastPathHandled = true;
             }
-
-            const sections = episodes.map((episode) => {
-              const epLabel = formatEpisodeLabel(episode.season, episode.episode);
-              const notable = episode.notableMoments?.trim();
-              if (!notable) {
-                return `### ${epLabel} — "${episode.film}"\nNo notable moments recorded.`;
-              }
-              return `### ${epLabel} — "${episode.film}"\n${notable}`;
-            });
-
-            const nmAnswer = `Notable Moments\n\n${sections.join('\n\n')}`;
-            const nmTotalMs = Date.now() - requestStart;
-            send('complete', {
-              answer: nmAnswer,
-              queryId,
-              queryType: 'factual',
-              canDeepen: depth === 'quick',
-              sources: { metadata: episodes.map(episodeToMetadataSource) },
-              metadata: {
-                totalCount: episodes.length,
-                returnedCount: episodes.length,
-                hasMore: false,
-              },
-              perf: { totalMs: nmTotalMs, path: 'metadata_notable_moments' },
-            });
-            controller.close();
-            logQuery({
-              query,
-              classification: { type: 'fast_path' },
-              sourceCount: episodes.length,
-              transcriptSourceCount: 0,
-              metadataSourceCount: episodes.length,
-              sourceEpisodes: episodes.map((e) => e.film),
-              answerLength: nmAnswer.length,
-              latencyMs: nmTotalMs,
-              path: 'metadata_notable_moments',
-              intent: { type: intent.type, confidence: intent.confidence },
-              depth,
-              routingPath: 'metadata_fast_path',
-            }, queryId).catch(() => {});
-            return;
           }
 
           // Tilda intent: collect data and synthesize with LLM
-          if (intent.type === 'metadata_tilda') {
+          if (intent.type === 'metadata_tilda' && !fastPathHandled) {
             const episodeNumber = extractEpisodeNumberFromQuery(query);
             if (episodeNumber !== null) {
               const episodeResult = getTildaEpisodePicks(episodeNumber);
               if (!episodeResult) {
-                send('complete', {
-                  answer: `No metadata found for episode ${episodeNumber}.`,
-                  queryType: 'factual',
-                  sources: {},
-                  metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
-                  perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
-                });
-                controller.close();
-                return;
-              }
+                console.log(`Tilda episode fast-path failed for ep ${episodeNumber}, falling through to full pipeline`);
+              } else {
+                const { episode, picks } = episodeResult;
+                const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+                const picker = extractTildaPickerFromQuery(query);
+                let answer: string;
 
-              const { episode, picks } = episodeResult;
-              const epLabel = formatEpisodeLabel(episode.season, episode.episode);
-              const picker = extractTildaPickerFromQuery(query);
-              let answer: string;
-
-              if (picker) {
-                const match = picks.find((pick) => pick.label === picker);
-                if (match) {
-                  answer = `${picker} pick for ${epLabel} — "${episode.film}": ${match.value}.`;
+                if (picker) {
+                  const match = picks.find((pick) => pick.label === picker);
+                  if (match) {
+                    answer = `${picker} pick for ${epLabel} — "${episode.film}": ${match.value}.`;
+                  } else if (picks.length > 0) {
+                    const picksLine = picks.map((pick) => `${pick.label}: ${pick.value}`).join(' · ');
+                    answer = `No ${picker} pick recorded for ${epLabel} — "${episode.film}". Other picks: ${picksLine}.`;
+                  } else {
+                    answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
+                  }
                 } else if (picks.length > 0) {
                   const picksLine = picks.map((pick) => `${pick.label}: ${pick.value}`).join(' · ');
-                  answer = `No ${picker} pick recorded for ${epLabel} — "${episode.film}". Other picks: ${picksLine}.`;
+                  answer = `Tilda picks for ${epLabel} — "${episode.film}": ${picksLine}.`;
                 } else {
                   answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
                 }
-              } else if (picks.length > 0) {
-                const picksLine = picks.map((pick) => `${pick.label}: ${pick.value}`).join(' · ');
-                answer = `Tilda picks for ${epLabel} — "${episode.film}": ${picksLine}.`;
-              } else {
-                answer = `No Tilda picks recorded for ${epLabel} — "${episode.film}".`;
+
+                const tildaEpMs = Date.now() - requestStart;
+                send('complete', {
+                  answer,
+                  queryId,
+                  queryType: 'factual',
+                  sources: { metadata: [episodeToMetadataSource(episode)] },
+                  metadata: { totalCount: 1, returnedCount: 1, hasMore: false },
+                  perf: { totalMs: tildaEpMs, path: 'metadata_tilda' },
+                });
+                controller.close();
+                logQuery({
+                  query,
+                  classification: { type: 'fast_path' },
+                  sourceCount: 1,
+                  transcriptSourceCount: 0,
+                  metadataSourceCount: 1,
+                  sourceEpisodes: [episode.film],
+                  answerLength: answer.length,
+                  latencyMs: tildaEpMs,
+                  path: 'metadata_tilda',
+                  intent: { type: intent.type, confidence: intent.confidence },
+                  depth,
+                  routingPath: 'metadata_fast_path',
+                }, queryId).catch(() => {});
+                fastPathHandled = true;
               }
-
-              const tildaEpMs = Date.now() - requestStart;
-              send('complete', {
-                answer,
-                queryId,
-                queryType: 'factual',
-                sources: { metadata: [episodeToMetadataSource(episode)] },
-                metadata: { totalCount: 1, returnedCount: 1, hasMore: false },
-                perf: { totalMs: tildaEpMs, path: 'metadata_tilda' },
-              });
-              controller.close();
-              logQuery({
-                query,
-                classification: { type: 'fast_path' },
-                sourceCount: 1,
-                transcriptSourceCount: 0,
-                metadataSourceCount: 1,
-                sourceEpisodes: [episode.film],
-                answerLength: answer.length,
-                latencyMs: tildaEpMs,
-                path: 'metadata_tilda',
-                intent: { type: intent.type, confidence: intent.confidence },
-                depth,
-                routingPath: 'metadata_fast_path',
-              }, queryId).catch(() => {});
-              return;
             }
 
-            const tildaResult = collectTildaContext();
-            if (!tildaResult) {
-              send('complete', {
-                answer: 'No Tilda casting picks were found in the metadata.',
-                queryType: 'factual',
-                sources: {},
-                metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
-                perf: { totalMs: Date.now() - requestStart, path: 'metadata_tilda' },
-              });
-              controller.close();
-              return;
-            }
+            if (!fastPathHandled) {
+              const tildaResult = collectTildaContext();
+              if (!tildaResult) {
+                console.log('Tilda context fast-path failed, falling through to full pipeline');
+              } else {
+                const normalized = query.toLowerCase();
+                const wantsEarliest = /\b(first|earliest|original|start|started|begin|began|debut)\b/.test(normalized);
+                if (wantsEarliest && tildaResult.earliestEpisode) {
+                  const earliest = tildaResult.earliestEpisode;
+                  const epLabel = formatEpisodeLabel(earliest.season, earliest.episode);
+                  const picksLine = tildaResult.earliestPicks.length > 0
+                    ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
+                    : 'No pick details recorded.';
 
-            const normalized = query.toLowerCase();
-            const wantsEarliest = /\b(first|earliest|original|start|started|begin|began|debut)\b/.test(normalized);
-            if (wantsEarliest && tildaResult.earliestEpisode) {
-              const earliest = tildaResult.earliestEpisode;
-              const epLabel = formatEpisodeLabel(earliest.season, earliest.episode);
-              const picksLine = tildaResult.earliestPicks.length > 0
-                ? `Picks: ${tildaResult.earliestPicks.join(', ')}`
-                : 'No pick details recorded.';
+                  const earliestAnswer = `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`;
+                  const earliestMs = Date.now() - requestStart;
+                  send('complete', {
+                    answer: earliestAnswer,
+                    queryId,
+                    queryType: 'factual',
+                    sources: { metadata: tildaResult.sources },
+                    metadata: {
+                      totalCount: tildaResult.episodeCount,
+                      returnedCount: tildaResult.sources.length,
+                      hasMore: false,
+                    },
+                    perf: { totalMs: earliestMs, path: 'metadata_tilda' },
+                  });
+                  controller.close();
+                  logQuery({
+                    query,
+                    classification: { type: 'fast_path' },
+                    sourceCount: tildaResult.sources.length,
+                    transcriptSourceCount: 0,
+                    metadataSourceCount: tildaResult.sources.length,
+                    sourceEpisodes: tildaResult.sources.map((s) => s.film),
+                    answerLength: earliestAnswer.length,
+                    latencyMs: earliestMs,
+                    path: 'metadata_tilda',
+                    intent: { type: intent.type, confidence: intent.confidence },
+                    depth,
+                    routingPath: 'metadata_fast_path',
+                  }, queryId).catch(() => {});
+                  fastPathHandled = true;
+                } else {
+                  send('progress', { stage: 'synthesizing', message: 'Analyzing Tilda picks...' });
 
-              const earliestAnswer = `Earliest recorded "Who Would Tilda Swinton Play?" picks: ${epLabel} — "${earliest.film}".\n\n${picksLine}`;
-              const earliestMs = Date.now() - requestStart;
-              send('complete', {
-                answer: earliestAnswer,
-                queryId,
-                queryType: 'factual',
-                sources: { metadata: tildaResult.sources },
-                metadata: {
-                  totalCount: tildaResult.episodeCount,
-                  returnedCount: tildaResult.sources.length,
-                  hasMore: false,
-                },
-                perf: { totalMs: earliestMs, path: 'metadata_tilda' },
-              });
-              controller.close();
-              logQuery({
-                query,
-                classification: { type: 'fast_path' },
-                sourceCount: tildaResult.sources.length,
-                transcriptSourceCount: 0,
-                metadataSourceCount: tildaResult.sources.length,
-                sourceEpisodes: tildaResult.sources.map((s) => s.film),
-                answerLength: earliestAnswer.length,
-                latencyMs: earliestMs,
-                path: 'metadata_tilda',
-                intent: { type: intent.type, confidence: intent.confidence },
-                depth,
-                routingPath: 'metadata_fast_path',
-              }, queryId).catch(() => {});
-              return;
-            }
-
-            send('progress', { stage: 'synthesizing', message: 'Analyzing Tilda picks...' });
-
-            const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
-            const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
-            const tildaStream = getAnthropic().messages.stream({
-              model: tildaModel,
-              max_tokens: tildaMaxTokens,
-              messages: [{
-                role: 'user',
-                content: `You are a podcast search assistant for the Escape Hatch podcast. Always refer to "Matt Haitch" or "Haitch Matt" as just "H".
+                  const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
+                  const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
+                  const tildaStream = getAnthropic().messages.stream({
+                    model: tildaModel,
+                    max_tokens: tildaMaxTokens,
+                    messages: [{
+                      role: 'user',
+                      content: `You are a podcast search assistant for the Escape Hatch podcast. Always refer to "Matt Haitch" or "Haitch Matt" as just "H".
 
 ${tildaResult.context}
 
 QUESTION: ${query}
 
 Answer based on the Tilda casting data above. Be specific, cite examples from the data. Use Markdown formatting with ## headings, **bold**, and bullet points.`,
-              }],
-            });
+                    }],
+                  });
 
-            let answer = '';
-            for await (const event of tildaStream) {
-              if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
-                answer += event.delta.text;
-                send('chunk', { text: event.delta.text });
+                  let answer = '';
+                  for await (const event of tildaStream) {
+                    if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+                      answer += event.delta.text;
+                      send('chunk', { text: event.delta.text });
+                    }
+                  }
+
+                  const tildaSynthMs = Date.now() - requestStart;
+                  send('complete', {
+                    answer,
+                    queryId,
+                    queryType: 'factual',
+                    canDeepen: depth === 'quick',
+                    sources: { metadata: tildaResult.sources },
+                    metadata: {
+                      totalCount: tildaResult.episodeCount,
+                      returnedCount: tildaResult.sources.length,
+                      hasMore: false,
+                    },
+                    perf: { totalMs: tildaSynthMs, path: 'metadata_tilda' },
+                  });
+                  controller.close();
+                  logQuery({
+                    query,
+                    classification: { type: 'fast_path' },
+                    sourceCount: tildaResult.sources.length,
+                    transcriptSourceCount: 0,
+                    metadataSourceCount: tildaResult.sources.length,
+                    sourceEpisodes: tildaResult.sources.map((s) => s.film),
+                    answerLength: answer.length,
+                    latencyMs: tildaSynthMs,
+                    path: 'metadata_tilda',
+                    intent: { type: intent.type, confidence: intent.confidence },
+                    synthesisModel: tildaModel,
+                    depth,
+                    routingPath: 'metadata_fast_path',
+                  }, queryId).catch(() => {});
+                  fastPathHandled = true;
+                }
               }
             }
-
-            const tildaSynthMs = Date.now() - requestStart;
-            send('complete', {
-              answer,
-              queryId,
-              queryType: 'factual',
-              canDeepen: depth === 'quick',
-              sources: { metadata: tildaResult.sources },
-              metadata: {
-                totalCount: tildaResult.episodeCount,
-                returnedCount: tildaResult.sources.length,
-                hasMore: false,
-              },
-              perf: { totalMs: tildaSynthMs, path: 'metadata_tilda' },
-            });
-            controller.close();
-            logQuery({
-              query,
-              classification: { type: 'fast_path' },
-              sourceCount: tildaResult.sources.length,
-              transcriptSourceCount: 0,
-              metadataSourceCount: tildaResult.sources.length,
-              sourceEpisodes: tildaResult.sources.map((s) => s.film),
-              answerLength: answer.length,
-              latencyMs: tildaSynthMs,
-              path: 'metadata_tilda',
-              intent: { type: intent.type, confidence: intent.confidence },
-              synthesisModel: tildaModel,
-              depth,
-              routingPath: 'metadata_fast_path',
-            }, queryId).catch(() => {});
-            return;
           }
 
-          const aggregate = buildMetadataAggregateResponse(intent);
-          if (aggregate) {
-            const totalMs = Date.now() - requestStart;
-            const aggMetaCount = aggregate.sources.metadata?.length || 0;
-            send('progress', { stage: 'metadata', message: 'Answering from metadata...' });
-            send('complete', {
-              answer: aggregate.answer,
-              queryId,
-              queryType: 'factual',
-              sources: aggregate.sources,
-              metadata: {
-                totalCount: aggMetaCount,
-                returnedCount: aggMetaCount,
-                hasMore: false,
-              },
-              perf: {
-                totalMs,
+          if (!fastPathHandled) {
+            const aggregate = buildMetadataAggregateResponse(intent);
+            if (aggregate) {
+              const totalMs = Date.now() - requestStart;
+              const aggMetaCount = aggregate.sources.metadata?.length || 0;
+              send('progress', { stage: 'metadata', message: 'Answering from metadata...' });
+              send('complete', {
+                answer: aggregate.answer,
+                queryId,
+                queryType: 'factual',
+                sources: aggregate.sources,
+                metadata: {
+                  totalCount: aggMetaCount,
+                  returnedCount: aggMetaCount,
+                  hasMore: false,
+                },
+                perf: {
+                  totalMs,
+                  path: 'metadata',
+                },
+              });
+              controller.close();
+              logQuery({
+                query,
+                classification: { type: 'fast_path' },
+                sourceCount: aggMetaCount,
+                transcriptSourceCount: 0,
+                metadataSourceCount: aggMetaCount,
+                sourceEpisodes: aggregate.sources.metadata?.map((s) => s.film) ?? [],
+                answerLength: aggregate.answer.length,
+                latencyMs: totalMs,
                 path: 'metadata',
-              },
-            });
-            controller.close();
-            logQuery({
-              query,
-              classification: { type: 'fast_path' },
-              sourceCount: aggMetaCount,
-              transcriptSourceCount: 0,
-              metadataSourceCount: aggMetaCount,
-              sourceEpisodes: aggregate.sources.metadata?.map((s) => s.film) ?? [],
-              answerLength: aggregate.answer.length,
-              latencyMs: totalMs,
-              path: 'metadata',
-              intent: { type: intent.type, confidence: intent.confidence },
-              depth,
-              routingPath: 'metadata_fast_path',
-            }, queryId).catch(() => {});
-            return;
+                intent: { type: intent.type, confidence: intent.confidence },
+                depth,
+                routingPath: 'metadata_fast_path',
+              }, queryId).catch(() => {});
+              fastPathHandled = true;
+            }
           }
+        }
+
+        if (fastPathHandled) {
+          return;
         }
 
         // Step 1: Classify query (for filter extraction + synthesis prompt hint)
