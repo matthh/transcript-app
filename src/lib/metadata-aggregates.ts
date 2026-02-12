@@ -212,23 +212,23 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
 
     for (const field of uniqueFields) {
       if (field === 'reviewer') {
-        lines.push(`Reviewer: ${episode.reviewer}`);
+        lines.push(`- Reviewer: ${episode.reviewer}`);
       } else if (field === 'guest') {
         const guestValue = episode.guest && episode.guest.trim()
           ? episode.guest
           : 'No guest listed';
-        lines.push(`Guest: ${guestValue}`);
+        lines.push(`- Guest: ${guestValue}`);
       } else if (field === 'releaseDate') {
-        lines.push(`Release date: ${episode.releaseDate}`);
+        lines.push(`- Release date: ${episode.releaseDate}`);
       } else if (field === 'kevsQuestion') {
-        lines.push(`Kev's Question: ${formatKevsQuestion(episode.kevsQuestion)}`);
+        lines.push(`- Kev's Question: ${formatKevsQuestion(episode.kevsQuestion)}`);
       }
     }
 
     const epLabel = formatEpisodeLabel(episode.season, episode.episode);
     const source = episodeToMetadataSource(episode);
     return {
-      answer: `Credits for "${episode.film}" (${epLabel}):\n${lines.join('\n')}`,
+      answer: lines.length > 0 ? lines.join('\n') : `Credits for "${episode.film}" (${epLabel}) not found.`,
       sources: { metadata: [source] },
     };
   }

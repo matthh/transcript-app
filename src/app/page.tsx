@@ -32,6 +32,15 @@ interface SearchResponse {
   answer: string;
   queryType: QueryType;
   canDeepen?: boolean;
+  metadata?: {
+    totalCount: number;
+    returnedCount: number;
+    hasMore: boolean;
+  };
+  perf?: {
+    totalMs: number;
+    path: string;
+  };
   sources: {
     transcripts?: TranscriptSource[];
     metadata?: MetadataSource[];
@@ -374,36 +383,90 @@ function AnswerCard({ result, query, onDeepen, deepening, deepStreamingText }: {
       }
     : null;
 
+  const metadataPath = result.perf?.path ?? '';
+  const isMetadataIntentOnly = metadataPath.startsWith('metadata');
+  const metadataSources = result.sources.metadata ?? [];
+  const metadataCount = typeof result.metadata?.totalCount === 'number'
+    ? result.metadata.totalCount
+    : metadataSources.length;
+  const metadataSubtitle = metadataCount > 0
+    ? `${metadataCount} episode${metadataCount === 1 ? '' : 's'} matched`
+    : 'No matching episode metadata';
+  const metadataSummary = metadataSources.length === 1
+    ? `${formatEpisodeLabel(metadataSources[0].season, metadataSources[0].episode)} — "${metadataSources[0].film}"`
+    : metadataSources.length > 1
+      ? `${metadataSources
+          .slice(0, 2)
+          .map((source) => `"${source.film}"`)
+          .join(' · ')}${metadataSources.length > 2 ? ` +${metadataSources.length - 2} more` : ''}`
+      : '';
+
+  const shareButton = (
+    <button
+      onClick={handleShare}
+      disabled={shareStatus === 'sharing'}
+      className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
+        shareStatus === 'copied'
+          ? 'bg-green-100 text-green-700'
+          : shareStatus === 'error'
+          ? 'bg-red-100 text-red-700'
+          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+      }`}
+    >
+      {shareStatus === 'sharing' ? 'Sharing...' :
+       shareStatus === 'copied' ? 'Copied!' :
+       shareStatus === 'error' ? 'Error' :
+       'Share'}
+    </button>
+  );
+
   return (
     <>
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
-            <QueryTypeBadge type={result.queryType} />
+      <div
+        className={
+          isMetadataIntentOnly
+            ? 'bg-[#f8f9fa] border border-[#dadce0] rounded-xl shadow-sm p-6'
+            : 'bg-white rounded-lg shadow-sm border border-gray-200 p-6'
+        }
+      >
+        {isMetadataIntentOnly ? (
+          <div className="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <p className="text-xs uppercase tracking-wide text-gray-500">
+                Quick Answer from POD DATA CENTRAL
+              </p>
+              <p className="text-xs text-gray-500 mt-1">{metadataSubtitle}</p>
+              <div className="h-5 mt-2" />
+            </div>
+            {shareButton}
           </div>
-          <button
-            onClick={handleShare}
-            disabled={shareStatus === 'sharing'}
-            className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
-              shareStatus === 'copied'
-                ? 'bg-green-100 text-green-700'
-                : shareStatus === 'error'
-                ? 'bg-red-100 text-red-700'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {shareStatus === 'sharing' ? 'Sharing...' :
-             shareStatus === 'copied' ? 'Copied!' :
-             shareStatus === 'error' ? 'Error' :
-             'Share'}
-          </button>
-        </div>
-        <article className="prose prose-slate prose-headings:text-gray-900 max-w-none">
+        ) : (
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <h2 className="text-lg font-semibold text-gray-900">Answer</h2>
+              <QueryTypeBadge type={result.queryType} />
+            </div>
+            {shareButton}
+          </div>
+        )}
+        <article
+          className={
+            isMetadataIntentOnly
+              ? 'prose prose-slate prose-headings:text-gray-900 max-w-none text-[15px] leading-relaxed'
+              : 'prose prose-slate prose-headings:text-gray-900 max-w-none'
+          }
+        >
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {result.answer}
           </ReactMarkdown>
         </article>
+        {isMetadataIntentOnly && metadataSummary && (
+          <div className="mt-4 pt-4 border-t border-[#dadce0]">
+            <p className="text-xs text-gray-600">
+              {metadataSources.length === 1 ? 'Episode' : 'Episodes'}: {metadataSummary}
+            </p>
+          </div>
+        )}
         {deepening && deepStreamingText && (
           <div className="mt-4 pt-4 border-t border-gray-200">
             <p className="text-xs font-medium text-gray-500 mb-2">Deeper analysis:</p>
