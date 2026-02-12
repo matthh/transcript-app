@@ -309,7 +309,6 @@ export function collectTildaContext(): TildaContext | null {
   const counts = { H: 0, Jason: 0, Guest: 0, Corey: 0 };
   const lines: string[] = [];
   const sources: MetadataSource[] = [];
-  const MAX_EPISODES = 50;
   let earliestEpisode: EpisodeMetadata | null = null;
   let earliestPicks: string[] = [];
 
@@ -330,8 +329,6 @@ export function collectTildaContext(): TildaContext | null {
         sources.push(episodeToMetadataSource(episode));
       }
     }
-
-    if (lines.length >= MAX_EPISODES) break;
   }
 
   for (const episode of sortedAsc) {
