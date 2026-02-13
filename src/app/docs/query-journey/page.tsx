@@ -5,9 +5,9 @@ import Link from 'next/link';
 const timelineSteps = [
   'Intent check (fast metadata answers)',
   'Query classification (factual / interpretive / hybrid)',
-  'Data source selection (metadata, transcripts, or both)',
-  'Quick answer (fast model, top results)',
-  'Deeper analysis (full model, all results \u2014 on demand)',
+  'Full pipeline retrieval (metadata + transcripts)',
+  'Synthesis mode selection (quick vs full-depth)',
+  'Optional deepen pass (when quick mode was used)',
 ];
 
 export default function QueryJourneyPage() {
@@ -62,9 +62,9 @@ export default function QueryJourneyPage() {
                 { x: 20, y: 20, w: 160, h: 50, label: 'User question', stroke: '#cbd5f5' },
                 { x: 220, y: 20, w: 200, h: 50, label: 'Intent check', stroke: '#cbd5f5' },
                 { x: 460, y: 20, w: 200, h: 50, label: 'Classify question', stroke: '#cbd5f5' },
-                { x: 700, y: 20, w: 180, h: 50, label: 'Pick data sources', stroke: '#cbd5f5' },
-                { x: 380, y: 120, w: 220, h: 50, label: 'Quick answer (Haiku)', stroke: '#93c5fd' },
-                { x: 380, y: 200, w: 220, h: 50, label: 'Deeper analysis (Sonnet)', stroke: '#c4b5fd' },
+                { x: 700, y: 20, w: 180, h: 50, label: 'Search metadata + transcripts', stroke: '#cbd5f5' },
+                { x: 380, y: 120, w: 220, h: 50, label: 'Quick factual path (Haiku)', stroke: '#93c5fd' },
+                { x: 380, y: 200, w: 220, h: 50, label: 'Full-depth path (all chunks)', stroke: '#c4b5fd' },
               ].map((box) => (
                 <g key={box.label}>
                   <rect x={box.x} y={box.y} width={box.w} height={box.h} rx="10" fill="#ffffff" stroke={box.stroke} />
@@ -78,8 +78,8 @@ export default function QueryJourneyPage() {
               <line x1="660" y1="45" x2="700" y2="45" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
               <line x1="490" y1="70" x2="490" y2="120" stroke="#2563eb" strokeWidth="2" markerEnd="url(#arrow)" />
               <line x1="490" y1="170" x2="490" y2="200" stroke="#7c3aed" strokeWidth="2" strokeDasharray="6 3" markerEnd="url(#arrow-dashed)" />
-              <text x="280" y="100" fontSize="10" fill="#6b7280">If metadata question, answer immediately</text>
-              <text x="510" y="190" fontSize="10" fill="#7c3aed">User clicks &quot;Show deeper analysis&quot;</text>
+              <text x="280" y="100" fontSize="10" fill="#6b7280">High-confidence metadata intents can return immediately</text>
+              <text x="510" y="190" fontSize="10" fill="#7c3aed">Deepen button appears only after quick factual synthesis</text>
             </svg>
           </div>
         </section>
@@ -161,32 +161,33 @@ export default function QueryJourneyPage() {
               <div className="rounded-lg border border-gray-200 p-4">
                 <h3 className="font-semibold text-gray-900">Episode metadata</h3>
                 <p className="mt-1 text-gray-700">
-                  Titles, guests, release dates, and summary fields. Great for factual answers and filtering.
+                  Titles, guests, release dates, segment fields, and TMDB-enriched film fields. Used for filtering and metadata fast paths.
                 </p>
               </div>
               <div className="rounded-lg border border-gray-200 p-4">
                 <h3 className="font-semibold text-gray-900">Transcripts</h3>
                 <p className="mt-1 text-gray-700">
-                  Used for “what did they say?” questions. We run hybrid search (meaning + keywords).
+                  In the full pipeline, transcript retrieval always runs using hybrid search (embedding + BM25), then fusion/boosting/diversification.
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-gray-900">4) Quick answer</h2>
+            <h2 className="text-xl font-semibold text-gray-900">4) Synthesis mode selection</h2>
             <p className="mt-2 text-gray-700">
-              A fast answer is generated using a lightweight model (Haiku) and the top 4 transcript
-              passages. This typically arrives in 5-10 seconds. All retrieved sources are still
-              shown below the answer so you can browse what was found.
+              In quick mode, only <strong>factual queries that are metadata-answerable</strong> use a
+              fast synthesis path: Haiku with the top 4 transcript passages. Factual queries that require
+              transcript depth, plus hybrid queries, use full-depth synthesis immediately (all retrieved passages).
+              Interpretive queries also use all retrieved passages and default to fast-model tuning in quick mode.
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-gray-900">5) Deeper analysis (on demand)</h2>
+            <h2 className="text-xl font-semibold text-gray-900">5) Deeper analysis</h2>
             <p className="mt-2 text-gray-700">
-              If more transcript passages were found than the quick answer used, a
-              &ldquo;Show deeper analysis&rdquo; button appears. Clicking it runs a second pass
-              with a more powerful model (Sonnet) and all retrieved passages, producing a richer,
-              more comprehensive answer. This takes longer (15-30 seconds) but draws on more evidence.
+              If quick factual synthesis was used and extra transcript passages exist, a
+              &ldquo;Show deeper analysis&rdquo; button appears. Clicking it runs a deep pass
+              with Sonnet and all retrieved passages. For many interpretive/hybrid/transcript-depth
+              factual queries, this full-depth behavior already happens on first load.
             </p>
           </div>
         </section>
@@ -208,9 +209,9 @@ export default function QueryJourneyPage() {
               </defs>
               {[
                 { x: 20, y: 20, w: 160, h: 50, label: 'Search UI' },
-                { x: 220, y: 20, w: 160, h: 50, label: '/api/search' },
+                { x: 220, y: 20, w: 160, h: 50, label: '/api/search/stream' },
                 { x: 420, y: 20, w: 180, h: 50, label: 'Intent + classification' },
-                { x: 640, y: 20, w: 160, h: 50, label: 'Data selection' },
+                { x: 640, y: 20, w: 160, h: 50, label: 'Parallel retrieval' },
                 { x: 220, y: 130, w: 170, h: 50, label: 'Metadata store' },
                 { x: 430, y: 130, w: 170, h: 50, label: 'Vector store' },
                 { x: 640, y: 130, w: 170, h: 50, label: 'BM25 index' },
@@ -243,8 +244,8 @@ export default function QueryJourneyPage() {
               <p className="mt-1">Where someone types a question and starts a search.</p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
-              <h3 className="font-semibold text-gray-900">/api/search</h3>
-              <p className="mt-1">The server endpoint that orchestrates the full search flow.</p>
+              <h3 className="font-semibold text-gray-900">/api/search/stream</h3>
+              <p className="mt-1">The primary SSE endpoint that orchestrates the full search flow and streams progress/chunks.</p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
               <h3 className="font-semibold text-gray-900">Intent + classification</h3>
@@ -253,8 +254,8 @@ export default function QueryJourneyPage() {
               </p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
-              <h3 className="font-semibold text-gray-900">Data selection</h3>
-              <p className="mt-1">Decides whether to use metadata, transcripts, or both.</p>
+              <h3 className="font-semibold text-gray-900">Parallel retrieval</h3>
+              <p className="mt-1">Runs metadata filtering and transcript hybrid retrieval in the same request path.</p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
               <h3 className="font-semibold text-gray-900">Metadata store</h3>
@@ -272,11 +273,11 @@ export default function QueryJourneyPage() {
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
               <h3 className="font-semibold text-gray-900">Quick synthesis (Haiku)</h3>
-              <p className="mt-1">Builds a fast answer from the top 4 passages using a lightweight model.</p>
+              <p className="mt-1">Used for factual metadata-answerable quick mode (top 4 transcript passages, lower token cap).</p>
             </div>
             <div className="rounded-lg border border-gray-200 p-4">
-              <h3 className="font-semibold text-gray-900">Deep synthesis (Sonnet)</h3>
-              <p className="mt-1">On demand: re-synthesizes using all passages with a more powerful model.</p>
+              <h3 className="font-semibold text-gray-900">Full-depth synthesis</h3>
+              <p className="mt-1">Uses all retrieved passages; applies by default to many query types and for explicit deep mode.</p>
             </div>
           </div>
         </section>
@@ -288,9 +289,9 @@ export default function QueryJourneyPage() {
             <ul className="mt-2 list-disc pl-5 space-y-1">
               <li>Intent check: not a simple metadata question</li>
               <li>Classification: interpretive</li>
-              <li>Data sources: transcripts (hybrid search) &mdash; finds 12 relevant passages</li>
-              <li>Quick answer (~8s): Haiku summarizes the top 4 passages with quotes</li>
-              <li>Deeper analysis (on demand, ~25s): Sonnet uses all 12 passages for a richer answer</li>
+              <li>Data sources: full pipeline retrieval (metadata + transcript hybrid search)</li>
+              <li>First answer: full-depth interpretive synthesis uses all retrieved passages</li>
+              <li>Deep mode (optional): reruns with explicit depth=deep and Sonnet defaults</li>
             </ul>
           </div>
         </section>
@@ -303,7 +304,7 @@ export default function QueryJourneyPage() {
           </p>
           <div className="mt-4 space-y-4">
             <div className="rounded-lg border border-gray-200 p-4">
-              <h3 className="font-semibold text-gray-900">Eval suite (37 cases)</h3>
+              <h3 className="font-semibold text-gray-900">Eval suite (46 cases)</h3>
               <p className="mt-1 text-gray-700">
                 A dataset of representative queries with assertions: expected text in the answer,
                 text that should <em>not</em> appear, expected source episodes, classification type,
@@ -336,10 +337,9 @@ export default function QueryJourneyPage() {
             <div className="rounded-lg border border-gray-200 p-4">
               <h3 className="font-semibold text-gray-900">Quick vs deep validation</h3>
               <p className="mt-1 text-gray-700">
-                The eval suite defaults to quick mode (the user-facing default). We verify that
-                quick answers still pass the same quality assertions. The 2 cases that currently
-                fail in quick mode are niche retrieval queries where 4 passages aren&apos;t enough
-                &mdash; exactly the scenario where &ldquo;Show deeper analysis&rdquo; exists.
+                The eval suite defaults to quick mode (the user-facing default), and we also run deep mode
+                checks for regressions in synthesis quality. Because quick mode now auto-uses full-depth
+                synthesis for several query classes, this validation catches both quick-path and auto-deep behavior.
               </p>
             </div>
           </div>

@@ -6,8 +6,8 @@ This document explains, in plain language, what happens after someone types a qu
 
 1. **We check for "simple" questions first.** If it's something like "latest episode," "how many episodes," "who was the guest/reviewer for episode X," "what episodes feature guest X," or "what was Kev's question," we answer directly from the episode metadata.
 2. **We classify the question and start embedding it** — both happen in parallel for speed.
-3. **We search the right data sources.** That can be episode metadata, transcripts, or both.
-4. **We assemble a response.** The system writes an answer and includes citations and timestamps.
+3. **In the full pipeline, we search both metadata and transcripts.** Metadata uses extracted filters; transcript retrieval combines embedding + BM25.
+4. **We assemble a response.** The system returns an answer plus source excerpts (including transcript timestamps) so you can verify it.
 
 ---
 
@@ -30,7 +30,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  A["Search UI"] --> B["/api/search"]
+  A["Search UI"] --> B["/api/search/stream"]
   B --> C["Intent detection"]
   B --> D["Query classification"]
   D --> E["Metadata filters"]
@@ -47,7 +47,7 @@ flowchart LR
 ### Component definitions
 
 - **Search UI** — The page where someone types a question and clicks search.
-- **/api/search** — The server endpoint that orchestrates the whole search flow.
+- **/api/search/stream** — The primary server endpoint used by the UI (SSE streaming) that orchestrates the whole search flow. (`/api/search` is the non-streaming sibling.)
 - **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, guest/reviewer lookup, release date, Kev’s question, etc.).
 - **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
@@ -106,10 +106,10 @@ This is the structured data about each episode:
 - Kev’s question (when available)
 - Notable moments, reviewer notes, and other summaries (when available)
 
-If the question is factual or hybrid, metadata is searched first using the extracted filters. Certain factual questions are answered **directly** from metadata without transcript search (guest/reviewer lookup, release date, Kev’s question).
+If the question is factual or hybrid, metadata is searched using extracted filters. Certain factual questions are answered **directly** from metadata as a fast path (guest/reviewer lookup, release date, Kev’s question).
 
 #### B) Transcript search
-When we need **what was actually said**, we search the transcripts.
+In the full pipeline, transcript search always runs (alongside metadata search), because even factual queries may need evidence from what was said.
 
 This is done in two ways:
 - **Semantic search** (meaning-based, using embeddings)
@@ -126,10 +126,13 @@ Once relevant metadata and transcript passages are gathered, the system **writes
 
 The synthesis mode depends on the query type and whether the answer lives in metadata or transcripts:
 - **Factual, metadata-answerable** queries (e.g., "Tim Burton movies", "Proto episodes") use a fast path: a smaller model (Haiku), a limited set of transcript chunks, and a shorter response cap. A "Show deeper analysis" button lets the user opt into full synthesis if the quick answer isn't enough.
-- **Factual, transcript-depth** queries (e.g., "Did Haitch have a band?", "River Phoenix mentions") use Haiku but receive **all** retrieved transcript chunks, because the answer is buried in what was said rather than in episode metadata.
-- **Interpretive and hybrid queries** always get full synthesis: a more capable model (Sonnet), all retrieved transcript chunks, and a longer response cap. These queries need more context to produce a good answer, so they auto-deep even on first load.
+- **Factual, transcript-depth** queries (e.g., "Did Haitch have a band?", "River Phoenix mentions") auto-switch to full-depth synthesis on first load (all retrieved transcript chunks, default Sonnet model).
+- **Interpretive queries** use all retrieved transcript chunks on first load; in quick mode the system applies a fast-model tuning by default, while deep mode uses Sonnet.
+- **Hybrid queries** use full-depth synthesis (all retrieved transcript chunks) on first load.
 
 The system determines whether a factual query needs transcript depth using a classifier signal (`requiresTranscriptDepth`). Queries about opinions, quotes, biographical details, specific phrases, or frequency/ranking across episodes require transcript depth. Queries answerable from structured episode data (titles, guests, directors, dates) do not.
+
+The "Show deeper analysis" button appears only when quick synthesis was used (factual + metadata-answerable) and additional transcript chunks were available beyond the initial quick cap.
 
 The response includes:
 - **Citations** to the transcript snippets
@@ -156,4 +159,3 @@ If the search found no strong matches, it will say so rather than guessing.
 2. Classification + embedding → run in parallel; classified as interpretive
 3. Data sources → transcripts (hybrid search using precomputed embedding)
 4. Answer → summary + cited quotes + timestamps
-
