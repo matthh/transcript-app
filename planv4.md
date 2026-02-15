@@ -90,6 +90,13 @@ Deliverables:
   - preserve short but high-signal tokens (e.g., "tv") in query-term handling.
   - add normalization/synonym expansion for TV terms ("tv", "television", "series", "show").
   - reduce cross-medium bleed (TV query returning film-only evidence unless explicitly mixed).
+- Add entity-aware retrieval mode for person-centric questions:
+  - support speaker/entity constraints (e.g., "Corey", hosts, guests, voicemailers) as first-class retrieval signals.
+  - prioritize chunks where entity mention and target concept co-occur within a bounded window.
+  - add token normalization for possessives/plurals (e.g., "Corey's", "whips" -> "Corey", "whip").
+- Suppress boilerplate lexical noise in retrieval:
+  - downweight recurring outro language and signature phrases that inflate lexical matches (e.g., "Whip Song" credits).
+  - add optional segment-type filtering so factual/persona queries can avoid credits/outro-heavy chunks.
 - Generalize filter relaxation strategy:
   - full filters
   - relaxed secondary filters
@@ -100,6 +107,8 @@ Exit Criteria:
 - MRR and Recall@10 improvements hit phase target on eval subsets.
 - Repetition rate in generated answers decreases measurably.
 - TV-vs-film constrained queries show <10% cross-medium contamination on eval slices.
+- Person-centric concept queries improve Recall@10 by >=20% on dedicated eval slice.
+- Boilerplate-driven false positives reduced by >=50% on lexical-noise eval slice.
 - No regression on broad cross-episode queries.
 
 ### Phase 3: Synthesis Policy and Answer Grounding (1-2 weeks)
@@ -116,6 +125,10 @@ Deliverables:
   - require source linkage for key claims.
   - add fallback response when evidence is weak.
 - Add answerability guardrails to reduce confident-but-thin responses.
+- Add episode-attribution integrity checks in synthesis:
+  - when citing transcript evidence, preserve the source chunk's episode title exactly.
+  - prohibit cross-episode blending (quote/details from episode A labeled as episode B).
+  - require uncertainty wording when evidence spans multiple episodes without a clear primary.
 - Add role-aware attribution constraints in synthesis:
   - distinguish hosts vs guests in the provided context.
   - for host-scoped queries, exclude guest-only evidence unless explicitly requested.
@@ -123,12 +136,18 @@ Deliverables:
   - require repeated/strong evidence before asserting a preference.
   - downgrade to "mentioned" language when evidence is sparse.
   - prohibit upgrading a single mention into "favorite" claims.
+- Add cross-episode aggregation response policy for trait/persona queries:
+  - when query asks "what do we know about X and Y", aggregate evidence across episodes before concluding "no information."
+  - require returning top supporting quotes/episodes when evidence exists, even if weak.
+  - if evidence is mixed/ambiguous, return a qualified summary with uncertainty labels instead of flat denial.
 
 Exit Criteria:
 - Policy matrix implemented in one shared module.
 - Citation coverage threshold met on eval (target >=90% claim grounding for supported queries).
+- Episode attribution precision >=98% on citation-bearing answers in eval.
 - Host-scoped queries attribute people correctly (target >=95% precision on eval slice).
 - Preference-style answers pass evidence-threshold assertions on eval slice.
+- Trait/persona aggregation queries return evidence-backed summaries with <=5% false "no information" rate on eval slice.
 - Reduced hallucination-style failures in manual review samples.
 
 ### Phase 4: Eval, CI Gates, and Feedback Intelligence (2 weeks, parallelizable)
@@ -143,6 +162,13 @@ Deliverables:
     - host-only query must not include guest-only attributions.
     - TV-only query must not return film-only results unless explicitly mixed intent.
     - "favorite/all-time" query must include evidence-strength labels or conservative wording.
+  - episode attribution assertions:
+    - if answer claims "discussed in [episode]", at least one cited chunk must come from that episode.
+    - quoted details must map to the same episode named in the surrounding claim.
+  - person-centric trait assertions:
+    - if transcripts contain co-occurring evidence for entity+concept (e.g., Corey + whip), answer must not return "no information."
+    - outputs must include at least one supporting quote/episode for positive claims.
+    - credits/outro-only matches should not satisfy evidence requirements.
 - Add CI gate:
   - fail on pass-rate drops above threshold.
   - fail on p95 latency regression above threshold.
@@ -157,6 +183,8 @@ Exit Criteria:
 - Eval metrics reported in machine-readable JSON on every CI run.
 - CI gate active on main PR path.
 - New role/medium/preference assertion suite runs in CI and blocks regressions.
+- Episode-attribution assertion suite runs in CI and blocks regressions.
+- Person-centric trait assertion suite runs in CI and blocks regressions.
 - Weekly report produced automatically.
 
 ### Phase 5: Metadata Quality and Freshness (2-3 weeks)
