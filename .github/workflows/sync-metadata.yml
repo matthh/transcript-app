@@ -1,0 +1,54 @@
+name: Sync Metadata
+
+on:
+  schedule:
+    - cron: "0 13 * * *" # Daily at 1 PM UTC (8 AM ET)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Write service account key
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY_JSON }}
+        run: |
+          if [ -z "$GOOGLE_SERVICE_ACCOUNT_KEY_JSON" ]; then
+            echo "GOOGLE_SERVICE_ACCOUNT_KEY_JSON secret is required."
+            exit 1
+          fi
+          printf '%s' "$GOOGLE_SERVICE_ACCOUNT_KEY_JSON" > /tmp/gcp-sa-key.json
+          chmod 600 /tmp/gcp-sa-key.json
+
+      - name: Sync metadata from Google Sheet
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY_FILE: /tmp/gcp-sa-key.json
+        run: npm run sync-metadata
+
+      - name: Commit and push metadata changes
+        run: |
+          if git diff --quiet -- src/lib/metadata-data.ts; then
+            echo "No metadata changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/lib/metadata-data.ts
+          git commit -m "chore(metadata): sync sheet metadata"
+          git push origin HEAD:master

@@ -51,6 +51,10 @@ interface TranscriptInfo {
   needsReview: boolean;
 }
 
+function normalizeEpisodeId(id: EpisodeId | number | string): string {
+  return String(id).trim().toLowerCase();
+}
+
 /**
  * Normalize a film/episode name for fuzzy matching
  */
@@ -155,16 +159,17 @@ export async function GET() {
   }
 
   // Build lookup maps
-  const transcriptsByNumber = new Map<EpisodeId, TranscriptInfo>();
+  const transcriptsByNumber = new Map<string, TranscriptInfo>();
   const transcriptsByName: TranscriptInfo[] = [];
 
   for (const t of transcripts) {
     const id = t.episodeNumber;
     // Add both numeric (>0) and string IDs (e.g. "49b1") to the lookup map
     if ((typeof id === 'number' && id > 0) || typeof id === 'string') {
+      const idKey = normalizeEpisodeId(id);
       // Only add if not already present (prefer filesystem over blob)
-      if (!transcriptsByNumber.has(id)) {
-        transcriptsByNumber.set(id, t);
+      if (!transcriptsByNumber.has(idKey)) {
+        transcriptsByNumber.set(idKey, t);
       }
     }
     transcriptsByName.push(t);
@@ -178,8 +183,9 @@ export async function GET() {
     let transcriptFile: string | undefined;
 
     // Match by episode ID (works for both numeric and string IDs like "49b1")
-    if (transcriptsByNumber.has(ep.episode)) {
-      const match = transcriptsByNumber.get(ep.episode)!;
+    const epIdKey = normalizeEpisodeId(ep.episode);
+    if (transcriptsByNumber.has(epIdKey)) {
+      const match = transcriptsByNumber.get(epIdKey)!;
       hasTranscript = true;
       needsReview = match.needsReview;
       transcriptSource = match.source;
@@ -202,9 +208,9 @@ export async function GET() {
 
   // Include transcripts that exist but do not yet have metadata entries in this deployment.
   // This can happen when CI ingests/transcribes a new episode before the site is redeployed.
-  const metadataEpisodeIds = new Set(episodes.map(ep => String(ep.episode)));
+  const metadataEpisodeIds = new Set(episodes.map(ep => normalizeEpisodeId(ep.episode)));
   for (const t of transcripts) {
-    const transcriptId = String(t.episodeNumber);
+    const transcriptId = normalizeEpisodeId(t.episodeNumber);
     if (metadataEpisodeIds.has(transcriptId)) continue;
 
     episodes.push({
