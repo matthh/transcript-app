@@ -317,6 +317,14 @@
       "tags": ["known-limitation", "full-catalog", "recommendation"],
       "rejectTextInAnswer": ["no information", "don't have", "cannot"],
       "expectMinSources": 1
+    },
+    {
+      "name": "Joe Eszterhas security guy anecdote linkage",
+      "query": "what was the deal with Joe Esterhaus’ security guy who later installed Haitch’s security system and what episode was that discussed?",
+      "tags": ["transcript-factual", "anecdote-linkage", "episode-attribution"],
+      "expectTextInAnswer": ["Showgirls"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
     }
   ]
 }

@@ -17,6 +17,7 @@ import * as path from 'path';
 import { AssemblyAI } from 'assemblyai';
 import { put, head } from '@vercel/blob';
 import * as dotenv from 'dotenv';
+import { EpisodeId, episodeSortKey } from '../src/lib/episode-format';
 
 dotenv.config({ path: '.env.local' });
 
@@ -41,8 +42,8 @@ const explicitEpisodes = episodesArg
   ? episodesArg
       .split('=', 2)[1]
       ?.split(',')
-      .map(s => parseInt(s.trim(), 10))
-      .filter(n => !Number.isNaN(n))
+      .map(s => s.trim())
+      .filter(Boolean)
   : undefined;
 const minSpeakersArg = args.find(a => a.startsWith('--min-speakers='));
 const maxSpeakersArg = args.find(a => a.startsWith('--max-speakers='));
@@ -50,7 +51,7 @@ const minSpeakers = minSpeakersArg ? parseInt(minSpeakersArg.split('=')[1], 10) 
 const maxSpeakers = maxSpeakersArg ? parseInt(maxSpeakersArg.split('=')[1], 10) : 10;
 
 interface ProgressEntry {
-  episodeNumber: number;
+  episodeNumber: EpisodeId;
   status: 'pending' | 'uploading' | 'transcribing' | 'completed' | 'failed';
   jobId?: string;
   audioUrl?: string;
@@ -62,11 +63,11 @@ interface ProgressEntry {
 interface ProgressFile {
   startedAt: string;
   lastUpdated: string;
-  entries: Record<number, ProgressEntry>;
+  entries: Record<string, ProgressEntry>;
 }
 
 interface CoverageEpisode {
-  episode: number;
+  episode: EpisodeId;
   film: string;
   hasTranscript: boolean;
   needsReview: boolean;
@@ -83,7 +84,7 @@ interface DialogueEntry {
 }
 
 interface Transcript {
-  episode_number: number;
+  episode_number: EpisodeId;
   episode_name: string;
   dialogues: DialogueEntry[];
 }
@@ -91,6 +92,10 @@ interface Transcript {
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
 });
+
+function normalizeEpisodeId(id: EpisodeId): string {
+  return String(id).trim().toLowerCase();
+}
 
 function loadProgress(): ProgressFile {
   if (fs.existsSync(PROGRESS_FILE)) {
@@ -124,15 +129,15 @@ async function fetchCoverage(): Promise<CoverageResponse> {
 
   // Check filesystem transcripts
   const transcriptsDir = path.join(process.cwd(), 'transcripts');
-  const fsTranscriptNumbers = new Set<number>();
+  const fsTranscriptIds = new Set<string>();
 
   if (fs.existsSync(transcriptsDir)) {
     const files = fs.readdirSync(transcriptsDir).filter(f => f.endsWith('.json'));
     for (const filename of files) {
       try {
         const content = JSON.parse(fs.readFileSync(path.join(transcriptsDir, filename), 'utf-8'));
-        if (typeof content.episode_number === 'number') {
-          fsTranscriptNumbers.add(content.episode_number);
+        if (content.episode_number !== undefined && content.episode_number !== null) {
+          fsTranscriptIds.add(normalizeEpisodeId(content.episode_number));
         }
       } catch {
         // Skip
@@ -141,13 +146,14 @@ async function fetchCoverage(): Promise<CoverageResponse> {
   }
 
   // Try to fetch blob transcripts (may fail in dry-run without API token)
-  const blobNumbers = new Set<number>();
+  const blobIds = new Set<string>();
   try {
     if (process.env.BLOB_READ_WRITE_TOKEN) {
       const { listBlobTranscripts } = await import('../src/lib/blob-storage');
       const blobTranscripts = await listBlobTranscripts();
       for (const b of blobTranscripts) {
-        blobNumbers.add(b.episodeNumber);
+        const match = b.pathname.match(/episode_(.+)\.json$/);
+        if (match) blobIds.add(match[1].trim().toLowerCase());
       }
     }
   } catch (err) {
@@ -157,31 +163,31 @@ async function fetchCoverage(): Promise<CoverageResponse> {
     console.log('  (Skipping blob transcript check - no BLOB_READ_WRITE_TOKEN)');
   }
 
-  const episodes: CoverageEpisode[] = metadata.map((ep: { episode: number; film: string }) => ({
+  const episodes: CoverageEpisode[] = metadata.map((ep: { episode: EpisodeId; film: string }) => ({
     episode: ep.episode,
     film: ep.film,
-    hasTranscript: fsTranscriptNumbers.has(ep.episode) || blobNumbers.has(ep.episode),
+    hasTranscript: fsTranscriptIds.has(normalizeEpisodeId(ep.episode)) || blobIds.has(normalizeEpisodeId(ep.episode)),
     needsReview: false, // We don't need this for batch processing
   }));
 
   return { episodes };
 }
 
-function filterCoverageByEpisodes(coverage: CoverageResponse, episodes: number[]): CoverageResponse {
-  const episodeSet = new Set(episodes);
-  const filtered = coverage.episodes.filter(ep => episodeSet.has(ep.episode));
+function filterCoverageByEpisodes(coverage: CoverageResponse, episodes: EpisodeId[]): CoverageResponse {
+  const episodeSet = new Set(episodes.map(normalizeEpisodeId));
+  const filtered = coverage.episodes.filter(ep => episodeSet.has(normalizeEpisodeId(ep.episode)));
 
-  const found = new Set(filtered.map(ep => ep.episode));
-  const missing = episodes.filter(n => !found.has(n));
+  const found = new Set(filtered.map(ep => normalizeEpisodeId(ep.episode)));
+  const missing = episodes.filter(n => !found.has(normalizeEpisodeId(n)));
   if (missing.length > 0) {
-    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.join(', ')}`);
+    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.map(String).join(', ')}`);
   }
 
   return { episodes: filtered };
 }
 
-function findAvailableMp3s(): Map<number, string> {
-  const mp3Map = new Map<number, string>();
+function findAvailableMp3s(): Map<string, string> {
+  const mp3Map = new Map<string, string>();
 
   if (!fs.existsSync(MP3_DIR)) {
     return mp3Map;
@@ -190,20 +196,14 @@ function findAvailableMp3s(): Map<number, string> {
   const files = fs.readdirSync(MP3_DIR).filter(f => f.toLowerCase().endsWith('.mp3'));
 
   for (const filename of files) {
-    // Extract episode number from filename (e.g., "234.mp3" or "episode-234.mp3")
-    const match = filename.match(/(\d+)/);
-    if (match) {
-      const episodeNumber = parseInt(match[1], 10);
-      if (episodeNumber > 0) {
-        mp3Map.set(episodeNumber, path.join(MP3_DIR, filename));
-      }
-    }
+    const episodeId = filename.replace(/\.mp3$/i, '').trim().toLowerCase();
+    if (episodeId) mp3Map.set(episodeId, path.join(MP3_DIR, filename));
   }
 
   return mp3Map;
 }
 
-async function uploadAudioToBlob(filePath: string, episodeNumber: number): Promise<string> {
+async function uploadAudioToBlob(filePath: string, episodeNumber: EpisodeId): Promise<string> {
   const pathname = `${AUDIO_PREFIX}episode_${episodeNumber}.mp3`;
 
   // Check if already uploaded
@@ -229,7 +229,7 @@ async function uploadAudioToBlob(filePath: string, episodeNumber: number): Promi
   return blob.url;
 }
 
-async function startTranscription(audioUrl: string, episodeNumber: number, episodeName: string): Promise<string> {
+async function startTranscription(audioUrl: string, episodeNumber: EpisodeId, episodeName: string): Promise<string> {
   const wordBoostList = getWordBoostList(500);
 
   console.log(`    Speaker range: ${minSpeakers}–${maxSpeakers}`);
@@ -282,18 +282,19 @@ async function saveTranscriptToBlob(transcript: Transcript): Promise<void> {
 }
 
 async function processEpisode(
-  episodeNumber: number,
+  episodeNumber: EpisodeId,
   mp3Path: string,
   episodeName: string,
   progress: ProgressFile
 ): Promise<void> {
-  const entry = progress.entries[episodeNumber] || {
+  const entryKey = String(episodeNumber);
+  const entry = progress.entries[entryKey] || {
     episodeNumber,
     status: 'pending' as const,
     startedAt: new Date().toISOString(),
   };
 
-  progress.entries[episodeNumber] = entry;
+  progress.entries[entryKey] = entry;
 
   try {
     // Step 1: Upload audio if needed
@@ -374,7 +375,9 @@ async function showCurrentStatus(): Promise<void> {
   console.log(`Started: ${progress.startedAt}`);
   console.log(`Last updated: ${progress.lastUpdated}\n`);
 
-  const entries = Object.values(progress.entries).sort((a, b) => a.episodeNumber - b.episodeNumber);
+  const entries = Object.values(progress.entries).sort(
+    (a, b) => episodeSortKey(a.episodeNumber) - episodeSortKey(b.episodeNumber)
+  );
 
   const completed = entries.filter(e => e.status === 'completed');
   const failed = entries.filter(e => e.status === 'failed');
@@ -431,22 +434,23 @@ async function main(): Promise<void> {
   }
 
   // Find episodes that need transcription and have MP3s available
-  const episodesToProcess: Array<{ episodeNumber: number; mp3Path: string; film: string }> = [];
+  const episodesToProcess: Array<{ episodeNumber: EpisodeId; mp3Path: string; film: string }> = [];
 
   for (const ep of coverage.episodes) {
-    const hasMp3 = mp3Map.has(ep.episode);
+    const episodeId = normalizeEpisodeId(ep.episode);
+    const hasMp3 = mp3Map.has(episodeId);
     const shouldProcess = explicitEpisodes ? true : !ep.hasTranscript;
     if (shouldProcess && hasMp3) {
       episodesToProcess.push({
         episodeNumber: ep.episode,
-        mp3Path: mp3Map.get(ep.episode)!,
+        mp3Path: mp3Map.get(episodeId)!,
         film: ep.film,
       });
     }
   }
 
   // Sort by episode number
-  episodesToProcess.sort((a, b) => a.episodeNumber - b.episodeNumber);
+  episodesToProcess.sort((a, b) => episodeSortKey(a.episodeNumber) - episodeSortKey(b.episodeNumber));
 
   // Apply limit if specified
   const toProcess = limit ? episodesToProcess.slice(0, limit) : episodesToProcess;
@@ -500,7 +504,7 @@ async function main(): Promise<void> {
       const ep = processQueue.shift()!;
 
       // Skip if already completed
-      if (progress.entries[ep.episodeNumber]?.status === 'completed') {
+      if (progress.entries[String(ep.episodeNumber)]?.status === 'completed') {
         console.log(`[${ep.episodeNumber}] Already completed, skipping.`);
         continue;
       }

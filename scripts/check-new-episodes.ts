@@ -20,6 +20,7 @@ import { execSync } from 'child_process';
 import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
+import type { EpisodeId } from '../src/lib/episode-format';
 
 // ---------------------------------------------------------------------------
 // CLI flags
@@ -75,11 +76,15 @@ function setupServiceAccountShim() {
 // ---------------------------------------------------------------------------
 
 interface NewEpisode {
-  episode: number;
+  episode: EpisodeId;
   film: string;
   downloaded: boolean;
   transcribed: boolean;
   error?: string;
+}
+
+function normalizeEpisodeId(id: EpisodeId): string {
+  return String(id).trim().toLowerCase();
 }
 
 async function detectNewEpisodes(): Promise<NewEpisode[]> {
@@ -88,36 +93,37 @@ async function detectNewEpisodes(): Promise<NewEpisode[]> {
 
   const metadata = loadEpisodeMetadata();
 
-  // Collect episode numbers from BOTH sources (matching coverage API logic)
-  const existingNumbers = new Set<number>();
+  // Collect episode ids from BOTH sources (matching coverage API logic)
+  const existingIds = new Set<string>();
 
   // 1. Filesystem transcripts (committed to repo, available in CI)
   const transcriptsDir = path.resolve(__dirname, '..', 'transcripts');
   try {
     if (fs.existsSync(transcriptsDir)) {
       for (const file of fs.readdirSync(transcriptsDir)) {
-        const match = file.match(/^episode_(\d+)\.json$/);
-        if (match) existingNumbers.add(parseInt(match[1], 10));
+        const match = file.match(/^episode_(.+)\.json$/);
+        if (match) existingIds.add(match[1].trim().toLowerCase());
       }
     }
   } catch {
     // Directory doesn't exist — fine in some environments
   }
-  log(`Found ${existingNumbers.size} filesystem transcripts`);
+  log(`Found ${existingIds.size} filesystem transcripts`);
 
   // 2. Blob storage transcripts
   try {
     const blobTranscripts = await listBlobTranscripts();
     for (const b of blobTranscripts) {
-      existingNumbers.add(b.episodeNumber);
+      const match = b.pathname.match(/episode_(.+)\.json$/);
+      if (match) existingIds.add(match[1].trim().toLowerCase());
     }
-    log(`Total unique transcripts (filesystem + blob): ${existingNumbers.size}`);
+    log(`Total unique transcripts (filesystem + blob): ${existingIds.size}`);
   } catch {
     log('Warning: could not list blob transcripts — checking filesystem only');
   }
 
   const newEpisodes = metadata
-    .filter(ep => !existingNumbers.has(ep.episode))
+    .filter(ep => !existingIds.has(normalizeEpisodeId(ep.episode)))
     .map(ep => ({
       episode: ep.episode,
       film: ep.film,
@@ -276,9 +282,13 @@ async function main() {
     try {
       const { listBlobTranscripts } = await import('../src/lib/blob-storage');
       const afterTranscripts = await listBlobTranscripts();
-      const afterSet = new Set(afterTranscripts.map(b => b.episodeNumber));
+      const afterSet = new Set(
+        afterTranscripts
+          .map(b => b.pathname.match(/episode_(.+)\.json$/)?.[1]?.trim().toLowerCase())
+          .filter((id): id is string => Boolean(id))
+      );
       for (const ep of toTranscribe) {
-        ep.transcribed = afterSet.has(ep.episode);
+        ep.transcribed = afterSet.has(normalizeEpisodeId(ep.episode));
       }
     } catch {
       log('Warning: could not verify transcripts in Blob');

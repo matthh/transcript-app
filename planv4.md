@@ -9,6 +9,7 @@
 - Separated retrieval improvements from synthesis-policy work to reduce scope coupling.
 - Added CI quality-gate requirements and weekly triage reporting as core deliverables.
 - Added a formal definition of done tied to sustained post-launch stability.
+- Added anecdote-linkage safeguards for multi-clause factual queries (entity + event + episode).
 
 ## Purpose
 Create a clean, execution-ready roadmap to improve search quality, reliability, and observability without carrying historical implementation notes.
@@ -68,6 +69,9 @@ Objective: eliminate logic drift and remove high-cost misroutes.
 Deliverables:
 - Unify routing/synthesis policy between `/api/search` and `/api/search/stream`.
 - Centralize `useQuickSynthesis` decision in a shared utility.
+- Enforce transcript-depth parity:
+  - factual queries with `requiresTranscriptDepth=true` must use full synthesis on both endpoints.
+  - quick-mode truncation is allowed only for metadata-answerable factual queries.
 - Enforce confidence-based routing policy:
   - high-confidence metadata intents: fast-path.
   - medium-confidence metadata intents: run fast-path + full pipeline, pick best.
@@ -97,6 +101,10 @@ Deliverables:
 - Suppress boilerplate lexical noise in retrieval:
   - downweight recurring outro language and signature phrases that inflate lexical matches (e.g., "Whip Song" credits).
   - add optional segment-type filtering so factual/persona queries can avoid credits/outro-heavy chunks.
+- Add local context expansion for anecdote queries:
+  - when a top chunk matches key entities, include adjacent chunk neighbors from the same episode before synthesis.
+  - prioritize co-occurrence of entity + event verb + episode cue in the expanded window.
+  - prevent single-fragment retrieval from dropping the clause that answers "what was the deal".
 - Generalize filter relaxation strategy:
   - full filters
   - relaxed secondary filters
@@ -140,6 +148,10 @@ Deliverables:
   - when query asks "what do we know about X and Y", aggregate evidence across episodes before concluding "no information."
   - require returning top supporting quotes/episodes when evidence exists, even if weak.
   - if evidence is mixed/ambiguous, return a qualified summary with uncertainty labels instead of flat denial.
+- Add anecdote-linkage response policy for multi-clause factual prompts:
+  - if evidence contains the named entity and event context but misses one clause, return the partial finding + likely episode instead of a full "no information" denial.
+  - require explicit "insufficient excerpt coverage" wording when only part of the anecdote is present.
+  - preserve episode attribution for each clause (setup vs follow-up) when they come from different excerpts/episodes.
 
 Exit Criteria:
 - Policy matrix implemented in one shared module.
@@ -169,6 +181,9 @@ Deliverables:
     - if transcripts contain co-occurring evidence for entity+concept (e.g., Corey + whip), answer must not return "no information."
     - outputs must include at least one supporting quote/episode for positive claims.
     - credits/outro-only matches should not satisfy evidence requirements.
+  - anecdote-linkage assertions:
+    - multi-clause factual query (entity + event + "what episode") must return at least one supporting episode when any clause is evidenced.
+    - if only partial evidence is retrieved, answer must not claim total absence; it must return partial + uncertainty.
 - Add CI gate:
   - fail on pass-rate drops above threshold.
   - fail on p95 latency regression above threshold.

@@ -42,8 +42,8 @@ const episodesArg = getArgValue('--episodes');
 const episodeOverrides = episodesArg
   ? episodesArg
       .split(',')
-      .map(s => parseInt(s.trim(), 10))
-      .filter(n => !Number.isNaN(n))
+      .map(s => s.trim())
+      .filter(Boolean)
   : null;
 
 const MP3_DIR = './mp3s';
@@ -230,22 +230,22 @@ function getEpisodesMissingMp3s(): EpisodeMissing[] {
     }));
 }
 
-function getEpisodesByNumber(episodes: number[]): EpisodeMissing[] {
+function getEpisodesByNumber(episodes: EpisodeId[]): EpisodeMissing[] {
   const metadata = loadEpisodeMetadata();
-  const episodeSet = new Set(episodes);
+  const episodeSet = new Set(episodes.map(e => String(e).trim().toLowerCase()));
 
   const matches = metadata
-    .filter(ep => episodeSet.has(ep.episode))
+    .filter(ep => episodeSet.has(String(ep.episode).trim().toLowerCase()))
     .map(ep => ({
       episode: ep.episode,
       film: ep.film,
       season: ep.season,
     }));
 
-  const found = new Set(matches.map(m => m.episode));
-  const missing = episodes.filter(n => !found.has(n));
+  const found = new Set(matches.map(m => String(m.episode).trim().toLowerCase()));
+  const missing = episodes.filter(n => !found.has(String(n).trim().toLowerCase()));
   if (missing.length > 0) {
-    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.join(', ')}`);
+    console.warn(`Warning: ${missing.length} episode(s) not found in metadata: ${missing.map(String).join(', ')}`);
   }
 
   return matches;
