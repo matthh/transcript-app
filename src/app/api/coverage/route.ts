@@ -1,11 +1,15 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { unstable_noStore as noStore } from 'next/cache';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
 import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
 import type { EpisodeMetadata } from '@/types/episode-metadata';
 import type { Transcript } from '@/types/transcript';
 import { type EpisodeId, episodeSortKey, isBonusEpisode } from '@/lib/episode-format';
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export interface CoverageEpisode {
   episode: EpisodeId;
@@ -105,6 +109,7 @@ function namesMatch(metadataFilm: string, transcriptName: string): boolean {
  * Returns transcript coverage information comparing metadata to available transcripts
  */
 export async function GET() {
+  noStore();
   const metadata = loadEpisodeMetadata();
 
   // Load all transcripts with their info
