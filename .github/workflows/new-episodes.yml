@@ -3,7 +3,13 @@ name: Check New Episodes
 on:
   schedule:
     - cron: "0 14 * * *" # Daily at 2 PM UTC (9 AM ET)
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
+    inputs:
+      include_backfill:
+        description: "Include historical backfill episodes (not just recent/new)"
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   check:
@@ -25,4 +31,10 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY_JSON }}
           ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
-        run: node --import tsx ./scripts/check-new-episodes.ts --verbose
+          INCLUDE_BACKFILL: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_backfill || 'false' }}
+        run: |
+          if [ "$INCLUDE_BACKFILL" = "true" ]; then
+            node --import tsx ./scripts/check-new-episodes.ts --verbose --include-backfill
+          else
+            node --import tsx ./scripts/check-new-episodes.ts --verbose
+          fi
