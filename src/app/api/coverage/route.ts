@@ -211,12 +211,31 @@ export async function GET() {
     };
   });
 
-  // Include transcripts that exist but do not yet have metadata entries in this deployment.
+  // Second pass: if ID matching failed, try matching by film/title.
+  // This handles cases where transcript episode_number format drifts but title is accurate.
+  const unmatchedById = transcripts.filter(t => !episodes.some(
+    ep => normalizeEpisodeId(ep.episode) === normalizeEpisodeId(t.episodeNumber)
+  ));
+  for (const t of unmatchedById) {
+    const byNameIdx = episodes.findIndex(ep => !ep.hasTranscript && namesMatch(ep.film, t.episodeName));
+    if (byNameIdx !== -1) {
+      episodes[byNameIdx] = {
+        ...episodes[byNameIdx],
+        hasTranscript: true,
+        needsReview: t.needsReview,
+        transcriptSource: t.source,
+        transcriptFile: t.filename,
+      };
+    }
+  }
+
+  // Include transcripts that still do not have metadata entries in this deployment.
   // This can happen when CI ingests/transcribes a new episode before the site is redeployed.
   const metadataEpisodeIds = new Set(episodes.map(ep => normalizeEpisodeId(ep.episode)));
   for (const t of transcripts) {
     const transcriptId = normalizeEpisodeId(t.episodeNumber);
     if (metadataEpisodeIds.has(transcriptId)) continue;
+    if (episodes.some(ep => namesMatch(ep.film, t.episodeName))) continue;
 
     episodes.push({
       episode: t.episodeNumber,
