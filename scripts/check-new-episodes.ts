@@ -20,7 +20,7 @@ import { execSync } from 'child_process';
 import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
-import type { EpisodeId } from '../src/lib/episode-format';
+import { episodeSortKey, type EpisodeId } from '../src/lib/episode-format';
 
 // ---------------------------------------------------------------------------
 // CLI flags
@@ -28,6 +28,9 @@ import type { EpisodeId } from '../src/lib/episode-format';
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run') || args.includes('--detect-only');
 const verbose = args.includes('--verbose');
+const includeBackfill = args.includes('--include-backfill');
+const lookbackDaysArg = args.find(a => a.startsWith('--lookback-days='));
+const lookbackDays = lookbackDaysArg ? Math.max(0, parseInt(lookbackDaysArg.split('=')[1], 10) || 45) : 45;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -87,6 +90,19 @@ function normalizeEpisodeId(id: EpisodeId): string {
   return String(id).trim().toLowerCase();
 }
 
+function parseEpisodeId(id: string): EpisodeId {
+  return /^\d+$/.test(id) ? parseInt(id, 10) : id;
+}
+
+function isRecentRelease(releaseDate: string): boolean {
+  if (!releaseDate) return false;
+  const date = new Date(releaseDate);
+  if (Number.isNaN(date.getTime())) return false;
+  const now = new Date();
+  const daysAgo = (now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24);
+  return daysAgo >= 0 && daysAgo <= lookbackDays;
+}
+
 async function detectNewEpisodes(): Promise<NewEpisode[]> {
   const { loadEpisodeMetadata } = await import('../src/lib/metadata-store');
   const { listBlobTranscripts } = await import('../src/lib/blob-storage');
@@ -127,11 +143,28 @@ async function detectNewEpisodes(): Promise<NewEpisode[]> {
     .map(ep => ({
       episode: ep.episode,
       film: ep.film,
+      releaseDate: ep.releaseDate,
       downloaded: false,
       transcribed: false,
     }));
 
-  return newEpisodes;
+  if (includeBackfill) {
+    return newEpisodes.map(({ releaseDate: _releaseDate, ...rest }) => rest);
+  }
+
+  const existingSortKeys = [...existingIds].map(id => episodeSortKey(parseEpisodeId(id)));
+  const maxExistingSortKey = existingSortKeys.length > 0 ? Math.max(...existingSortKeys) : 0;
+
+  const filtered = newEpisodes.filter(ep =>
+    episodeSortKey(ep.episode) > maxExistingSortKey || isRecentRelease(ep.releaseDate)
+  );
+
+  log(
+    `Filtered historical backfill: ${newEpisodes.length - filtered.length} skipped, ` +
+    `${filtered.length} candidate(s) remain (lookback ${lookbackDays}d)`
+  );
+
+  return filtered.map(({ releaseDate: _releaseDate, ...rest }) => rest);
 }
 
 // ---------------------------------------------------------------------------
@@ -215,6 +248,9 @@ function writeReport(report: string) {
 
 async function main() {
   log(dryRun ? 'Starting (dry-run mode)' : 'Starting');
+  if (!includeBackfill) {
+    log(`Backfill filter enabled (lookback ${lookbackDays} days). Use --include-backfill to disable.`);
+  }
 
   // Step 0: Service-account shim
   setupServiceAccountShim();
