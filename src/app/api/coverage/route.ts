@@ -59,6 +59,14 @@ function normalizeEpisodeId(id: EpisodeId | number | string): string {
   return String(id).trim().toLowerCase();
 }
 
+function parseEpisodeNumberLike(id: EpisodeId | number | string): number | null {
+  const str = String(id).trim().toLowerCase();
+  const bonusMatch = str.match(/^(\d+)b\d+$/);
+  if (bonusMatch) return parseInt(bonusMatch[1], 10);
+  if (/^\d+$/.test(str)) return parseInt(str, 10);
+  return null;
+}
+
 /**
  * Normalize a film/episode name for fuzzy matching
  */
@@ -111,6 +119,7 @@ function namesMatch(metadataFilm: string, transcriptName: string): boolean {
 export async function GET() {
   noStore();
   const metadata = loadEpisodeMetadata();
+  const latestSeason = Math.max(...metadata.map(m => m.season));
 
   // Load all transcripts with their info
   const transcripts: TranscriptInfo[] = [];
@@ -238,10 +247,24 @@ export async function GET() {
     if (metadataEpisodeIds.has(transcriptId)) continue;
     if (episodes.some(ep => namesMatch(ep.film, t.episodeName))) continue;
 
+    const inferredNum = parseEpisodeNumberLike(t.episodeNumber);
+    let inferredSeason = 0;
+    if (inferredNum !== null) {
+      const nearest = metadata
+        .filter(m => {
+          const n = parseEpisodeNumberLike(m.episode);
+          return n !== null && n <= inferredNum;
+        })
+        .sort((a, b) => episodeSortKey(b.episode) - episodeSortKey(a.episode))[0];
+      inferredSeason = nearest?.season ?? latestSeason;
+    } else {
+      inferredSeason = latestSeason;
+    }
+
     episodes.push({
       episode: t.episodeNumber,
       film: t.episodeName || `Episode ${transcriptId}`,
-      season: 0,
+      season: inferredSeason,
       releaseDate: '',
       reviewer: '',
       guest: null,
