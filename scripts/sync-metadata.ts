@@ -16,6 +16,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { google } from 'googleapis';
+import { episodeSortKey, type EpisodeId } from '../src/lib/episode-format';
 
 dotenv.config({ path: '.env.local' });
 dotenv.config({ path: '.env' });
@@ -61,7 +62,7 @@ interface RawCSVRow {
 interface EpisodeMetadata {
   pod: string;
   season: number;
-  episode: number;
+  episode: EpisodeId;
   film: string;
   filmYear: number | null;
   releaseDate: string;
@@ -148,6 +149,16 @@ function parseNumber(value: string): number {
   return isNaN(num) ? 0 : num;
 }
 
+function parseEpisodeId(value: string): EpisodeId {
+  const trimmed = (value || '').trim();
+  if (!trimmed) return 0;
+  return /^\d+$/.test(trimmed) ? parseInt(trimmed, 10) : trimmed;
+}
+
+function normalizeEpisodeId(value: EpisodeId): string {
+  return String(value).trim().toLowerCase();
+}
+
 function parseOptionalString(value: string | undefined): string | null {
   if (!value) return null;
   const trimmed = value.trim();
@@ -161,7 +172,7 @@ function convertRow(row: RawCSVRow): EpisodeMetadata {
   return {
     pod: str('Pod') || 'EH',
     season: parseNumber(str('Season')),
-    episode: parseNumber(str('Ep') || str('Episode')),
+    episode: parseEpisodeId(str('Ep') || str('Episode')),
     film: str('Film'),
     filmYear: parseFilmYear(str('Film')),
     releaseDate: str('Release_Date') || str('Release Date') || str('Timestamp') || '',
@@ -330,23 +341,29 @@ function mergeWithExisting(
   sheetEpisodes: EpisodeMetadata[],
   existing: Map<string, EpisodeMetadata>
 ): { merged: EpisodeMetadata[]; newCount: number; updatedCount: number } {
+  let newCount = 0;
   let updatedCount = 0;
 
   // Build a map of sheet data by normalized film title
   const sheetByFilm = new Map<string, EpisodeMetadata>();
+  const sheetByEpisode = new Map<string, EpisodeMetadata>();
   for (const ep of sheetEpisodes) {
-    const key = normalizeFilmTitle(ep.film);
-    sheetByFilm.set(key, ep);
+    sheetByFilm.set(normalizeFilmTitle(ep.film), ep);
+    sheetByEpisode.set(normalizeEpisodeId(ep.episode), ep);
   }
 
-  // Update existing episodes with sheet data (don't add new ones from sheet)
+  // Update existing episodes with sheet data and track which sheet rows were consumed
   const merged: EpisodeMetadata[] = [];
+  const consumedSheetEpisodeIds = new Set<string>();
 
   for (const [, existingEp] of existing) {
-    const key = normalizeFilmTitle(existingEp.film);
-    const sheetEp = sheetByFilm.get(key);
+    const byEpisode = sheetByEpisode.get(normalizeEpisodeId(existingEp.episode));
+    const byFilm = sheetByFilm.get(normalizeFilmTitle(existingEp.film));
+    const sheetEp = byEpisode || byFilm;
 
     if (sheetEp) {
+      consumedSheetEpisodeIds.add(normalizeEpisodeId(sheetEp.episode));
+
       // Merge: keep existing core data, update supplementary fields from sheet
       const updated: EpisodeMetadata = {
         ...existingEp,
@@ -388,19 +405,32 @@ function mergeWithExisting(
     }
   }
 
-  // Count episodes in sheet but not in existing (for info only)
+  // Add new episodes present in sheet but missing from existing metadata
   const newInSheet = sheetEpisodes.filter(ep => {
-    const key = normalizeFilmTitle(ep.film);
-    return ![...existing.values()].some(e => normalizeFilmTitle(e.film) === key);
+    const episodeId = normalizeEpisodeId(ep.episode);
+    if (!episodeId || episodeId === '0') return false;
+    return !consumedSheetEpisodeIds.has(episodeId);
   });
 
-  if (newInSheet.length > 0 && verbose) {
-    console.log(`\n  Sheet has ${newInSheet.length} films not in existing data:`);
-    newInSheet.slice(0, 5).forEach(ep => console.log(`    - ${ep.film}`));
-    if (newInSheet.length > 5) console.log(`    ... and ${newInSheet.length - 5} more`);
+  if (newInSheet.length > 0) {
+    for (const ep of newInSheet) {
+      merged.push(ep);
+      newCount++;
+      if (verbose) console.log(`  ADDED: E${ep.episode} - ${ep.film}`);
+    }
   }
 
-  return { merged, newCount: 0, updatedCount };
+  if (newInSheet.length > 0 && verbose) {
+    console.log(`\n  Added ${newInSheet.length} episode(s) from sheet not in existing data.`);
+  }
+
+  merged.sort((a, b) => {
+    const seasonCmp = a.season - b.season;
+    if (seasonCmp !== 0) return seasonCmp;
+    return episodeSortKey(a.episode) - episodeSortKey(b.episode);
+  });
+
+  return { merged, newCount, updatedCount };
 }
 
 // ---------- Output Generation ----------
@@ -478,6 +508,7 @@ async function main() {
   console.log(`\nSync Summary:`);
   console.log(`  Episodes in sheet: ${episodes.length}`);
   console.log(`  Episodes in existing data: ${existing.size}`);
+  console.log(`  New episodes added from sheet: ${newCount}`);
   console.log(`  Episodes updated from sheet: ${updatedCount}`);
   console.log(`  With TMDB data: ${withTmdb}`);
   console.log(`  Need TMDB enrichment: ${withoutTmdb}`);
