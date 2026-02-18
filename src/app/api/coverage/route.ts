@@ -200,6 +200,28 @@ export async function GET() {
     };
   });
 
+  // Include transcripts that exist but do not yet have metadata entries in this deployment.
+  // This can happen when CI ingests/transcribes a new episode before the site is redeployed.
+  const metadataEpisodeIds = new Set(episodes.map(ep => String(ep.episode)));
+  for (const t of transcripts) {
+    const transcriptId = String(t.episodeNumber);
+    if (metadataEpisodeIds.has(transcriptId)) continue;
+
+    episodes.push({
+      episode: t.episodeNumber,
+      film: t.episodeName || `Episode ${transcriptId}`,
+      season: 0,
+      releaseDate: '',
+      reviewer: '',
+      guest: null,
+      hasTranscript: true,
+      needsReview: t.needsReview,
+      transcriptSource: t.source,
+      transcriptFile: t.filename,
+    });
+    metadataEpisodeIds.add(transcriptId);
+  }
+
   // Sort by season then episode
   episodes.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
