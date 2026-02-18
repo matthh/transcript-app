@@ -217,14 +217,15 @@ export async function GET() {
     ep => normalizeEpisodeId(ep.episode) === normalizeEpisodeId(t.episodeNumber)
   ));
   for (const t of unmatchedById) {
-    const byNameIdx = episodes.findIndex(ep => !ep.hasTranscript && namesMatch(ep.film, t.episodeName));
+    const byNameIdx = episodes.findIndex(ep => namesMatch(ep.film, t.episodeName));
     if (byNameIdx !== -1) {
       episodes[byNameIdx] = {
         ...episodes[byNameIdx],
         hasTranscript: true,
-        needsReview: t.needsReview,
-        transcriptSource: t.source,
-        transcriptFile: t.filename,
+        // Preserve existing true flags if multiple transcripts map to one episode
+        needsReview: episodes[byNameIdx].needsReview || t.needsReview,
+        transcriptSource: episodes[byNameIdx].transcriptSource || t.source,
+        transcriptFile: episodes[byNameIdx].transcriptFile || t.filename,
       };
     }
   }
