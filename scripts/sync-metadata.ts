@@ -218,12 +218,56 @@ async function fetchWithServiceAccount(): Promise<string[][] | null> {
 
   const sheets = google.sheets({ version: 'v4', auth });
 
-  const response = await sheets.spreadsheets.values.get({
+  // Pick the worksheet that actually has episode identifiers.
+  const spreadsheet = await sheets.spreadsheets.get({
     spreadsheetId: SHEET_ID,
-    range: 'A:Z',
+    fields: 'sheets(properties(title,sheetId))',
   });
 
-  return response.data.values || [];
+  const sheetProps = spreadsheet.data.sheets?.map(s => s.properties).filter(Boolean) || [];
+  let bestValues: string[][] | null = null;
+  let bestTitle = '';
+  let bestScore = -1;
+
+  for (const props of sheetProps) {
+    const title = props?.title || '';
+    if (!title) continue;
+
+    const escapedTitle = title.replace(/'/g, "''");
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: SHEET_ID,
+      range: `'${escapedTitle}'!A:Z`,
+    });
+
+    const values = response.data.values || [];
+    const headers = (values[0] || []).map(h => String(h).toLowerCase().trim());
+    if (headers.length === 0) continue;
+
+    const hasFilm = headers.includes('film');
+    const hasEpisode = headers.includes('ep') || headers.includes('episode');
+    const hasSeason = headers.includes('season');
+    const hasReleaseDate = headers.includes('release_date') || headers.includes('release date') || headers.includes('timestamp');
+
+    let score = 0;
+    if (hasFilm) score += 2;
+    if (hasEpisode) score += 3;
+    if (hasSeason) score += 1;
+    if (hasReleaseDate) score += 1;
+    score += Math.min(values.length, 500) / 500;
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestValues = values;
+      bestTitle = title;
+    }
+  }
+
+  if (bestValues && bestValues.length > 0) {
+    console.log(`  Using sheet tab: ${bestTitle}`);
+    return bestValues;
+  }
+
+  return null;
 }
 
 async function fetchWithApiKey(): Promise<string[][] | null> {
@@ -234,17 +278,58 @@ async function fetchWithApiKey(): Promise<string[][] | null> {
 
   console.log('Fetching via Google Sheets API key...');
 
-  const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/A:Z?key=${apiKey}`;
-  const response = await fetch(apiUrl);
-
-  if (!response.ok) {
-    const error = await response.text();
-    console.warn(`API key auth failed: ${response.status} - ${error}`);
+  // Fetch sheet list first so we can select the correct tab.
+  const metaUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}?fields=sheets(properties(title,sheetId))&key=${apiKey}`;
+  const metaResp = await fetch(metaUrl);
+  if (!metaResp.ok) {
+    const error = await metaResp.text();
+    console.warn(`API key metadata fetch failed: ${metaResp.status} - ${error}`);
     return null;
   }
+  const meta = await metaResp.json();
+  const sheetProps: Array<{ properties?: { title?: string } }> = meta.sheets || [];
 
-  const data = await response.json();
-  return data.values || [];
+  let bestValues: string[][] | null = null;
+  let bestTitle = '';
+  let bestScore = -1;
+
+  for (const s of sheetProps) {
+    const title = s.properties?.title || '';
+    if (!title) continue;
+    const range = `'${title.replace(/'/g, "''")}'!A:Z`;
+    const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(range)}?key=${apiKey}`;
+    const response = await fetch(apiUrl);
+    if (!response.ok) continue;
+    const data = await response.json();
+    const values: string[][] = data.values || [];
+    const headers = (values[0] || []).map((h: string) => String(h).toLowerCase().trim());
+    if (headers.length === 0) continue;
+
+    const hasFilm = headers.includes('film');
+    const hasEpisode = headers.includes('ep') || headers.includes('episode');
+    const hasSeason = headers.includes('season');
+    const hasReleaseDate = headers.includes('release_date') || headers.includes('release date') || headers.includes('timestamp');
+
+    let score = 0;
+    if (hasFilm) score += 2;
+    if (hasEpisode) score += 3;
+    if (hasSeason) score += 1;
+    if (hasReleaseDate) score += 1;
+    score += Math.min(values.length, 500) / 500;
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestValues = values;
+      bestTitle = title;
+    }
+  }
+
+  if (bestValues && bestValues.length > 0) {
+    console.log(`  Using sheet tab: ${bestTitle}`);
+    return bestValues;
+  }
+
+  return null;
 }
 
 async function fetchPublicCSV(): Promise<string[][] | null> {
@@ -472,6 +557,17 @@ async function main() {
   console.log(`Found ${headers.length} columns, ${rows.length - 1} data rows`);
   console.log(`Columns: ${headers.join(', ')}`);
 
+  // Safety guard: if we don't have episode identifiers, we're likely on the wrong tab/sheet.
+  const normalizedHeaders = headers.map(h => String(h).toLowerCase().trim());
+  const hasEpisodeHeader = normalizedHeaders.includes('ep') || normalizedHeaders.includes('episode');
+  const hasSeasonHeader = normalizedHeaders.includes('season');
+  if (!hasEpisodeHeader || !hasSeasonHeader) {
+    throw new Error(
+      `Sheet headers missing required columns (Season/Ep). ` +
+      `Got: ${headers.join(', ')}. Refusing to sync to avoid false backfill/transcription.`
+    );
+  }
+
   // Convert to episodes
   const episodes: EpisodeMetadata[] = [];
   for (let i = 1; i < rows.length; i++) {
@@ -485,6 +581,13 @@ async function main() {
     // Skip rows without a film title
     const film = row.Film || '';
     if (!film || film.trim() === '') {
+      continue;
+    }
+
+    // Skip rows that don't include a usable episode id.
+    const episodeRaw = (row.Ep || row.Episode || '').trim();
+    if (!episodeRaw) {
+      if (verbose) console.log(`  SKIP row ${i + 1}: missing Ep/Episode`);
       continue;
     }
 
