@@ -287,5 +287,10 @@ export async function GET() {
     bySeason,
   };
 
-  return NextResponse.json(response);
+  return NextResponse.json(response, {
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
+      'x-coverage-build': process.env.VERCEL_GIT_COMMIT_SHA || 'local',
+    },
+  });
 }
