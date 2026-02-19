@@ -13253,7 +13253,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/point-blank-1967-150192094",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1770493290671-c04273ae7d461.jpg",
     "letterboxdLink": "https://letterboxd.com/film/point-blank/",
-    "imdbLink": "https://www.imdb.com/title/tt0062138/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0062138/?ref_=ext_shr_lnk",
+    "tmdbId": 26039,
+    "tmdbPosterPath": "/4y8yNXdcP9KQJXd0cIUmQ0t3ezB.jpg",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "directors": [
+      "John Boorman"
+    ],
+    "cinematographers": [
+      "Philip H. Lathrop"
+    ],
+    "cast": [
+      "Lee Marvin",
+      "Angie Dickinson",
+      "Keenan Wynn",
+      "Carroll O'Connor",
+      "Lloyd Bochner",
+      "Michael Strong",
+      "John Vernon",
+      "Sharon Acker"
+    ]
   },
   {
     "pod": "EH",
@@ -13278,6 +13301,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/fast-times-at-150527536",
     "artworkLink": "",
     "letterboxdLink": "https://letterboxd.com/film/fast-times-at-ridgemont-high/",
-    "imdbLink": "https://www.imdb.com/title/tt0083929/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt0083929/?ref_=ext_shr_lnk",
+    "tmdbId": 13342,
+    "tmdbPosterPath": "/s1DA8H7qwoOcAEhow2rCzuQtpuO.jpg",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "directors": [
+      "Amy Heckerling"
+    ],
+    "cinematographers": [
+      "Matthew F. Leonetti"
+    ],
+    "cast": [
+      "Sean Penn",
+      "Jennifer Jason Leigh",
+      "Judge Reinhold",
+      "Phoebe Cates",
+      "Brian Backer",
+      "Robert Romanus",
+      "Ray Walston",
+      "Scott Thomson"
+    ]
   }
 ];
