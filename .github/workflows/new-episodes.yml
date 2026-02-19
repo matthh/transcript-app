@@ -31,6 +31,7 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY_JSON }}
           ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
           INCLUDE_BACKFILL: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_backfill || 'false' }}
         run: |
           if [ "$INCLUDE_BACKFILL" = "true" ]; then

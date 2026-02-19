@@ -242,6 +242,28 @@ function writeReport(report: string) {
   console.log('\n' + report);
 }
 
+async function triggerSearchRebuildIfConfigured(): Promise<boolean> {
+  const hookUrl = process.env.VERCEL_DEPLOY_HOOK_URL;
+  if (!hookUrl) {
+    log('VERCEL_DEPLOY_HOOK_URL not set — skipping search rebuild trigger');
+    return false;
+  }
+
+  try {
+    const resp = await fetch(hookUrl, { method: 'POST' });
+    if (!resp.ok) {
+      log(`Search rebuild trigger failed: ${resp.status} ${resp.statusText}`);
+      return false;
+    }
+    log('Triggered Vercel rebuild hook to refresh search index');
+    return true;
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    log(`Search rebuild trigger error: ${msg}`);
+    return false;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -334,8 +356,13 @@ async function main() {
   // Step 5: Report
   writeReport(generateReport(episodes, false));
 
-  // Exit 0 for partial success, 1 only for infra failure
+  // Step 6: Trigger search index rebuild if any transcript succeeded
   const anySuccess = episodes.some(e => e.transcribed);
+  if (anySuccess) {
+    await triggerSearchRebuildIfConfigured();
+  }
+
+  // Exit 0 for partial success, 1 only for infra failure
   const allFailed = toTranscribe.length > 0 && !anySuccess;
   process.exit(allFailed ? 1 : 0);
 }
