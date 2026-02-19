@@ -10,6 +10,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import dotenv from 'dotenv';
+import type { EpisodeMetadata } from '@/types/episode-metadata';
 
 // Load .env.local first, then .env as fallback
 dotenv.config({ path: '.env.local' });
@@ -37,17 +38,9 @@ interface TMDBMovieDetails {
   poster_path: string | null;
 }
 
-interface EpisodeMetadata {
-  film: string;
-  filmYear: number | null;
-  tmdbId?: number;
-  directors?: string[];
-  cinematographers?: string[];
-  cast?: string[];
-  genres?: string[];
-  tmdbPosterPath?: string;
+type MutableEpisodeMetadata = EpisodeMetadata & {
   [key: string]: unknown;
-}
+};
 
 // Rate limiting: TMDB allows 40 requests per 10 seconds
 const RATE_LIMIT_DELAY = 260; // ~260ms between requests = ~38 req/10s
@@ -224,11 +217,16 @@ async function main() {
     process.exit(1);
   }
 
-  const metadataPath = path.join(process.cwd(), 'data', 'episode-metadata.json');
-  const backupPath = path.join(process.cwd(), 'data', 'episode-metadata.backup.json');
+  const metadataPath = path.join(process.cwd(), 'src', 'lib', 'metadata-data.ts');
+  const backupPath = path.join(process.cwd(), 'src', 'lib', 'metadata-data.backup.json');
 
   console.log('Loading episode metadata...');
-  const episodes: EpisodeMetadata[] = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
+  const tsContent = fs.readFileSync(metadataPath, 'utf-8');
+  const match = tsContent.match(/export const episodeMetadata[^=]*=\s*(\[[\s\S]*\]);?\s*$/);
+  if (!match) {
+    throw new Error(`Could not parse episode metadata array from ${metadataPath}`);
+  }
+  const episodes: MutableEpisodeMetadata[] = JSON.parse(match[1]);
   console.log(`Found ${episodes.length} episodes.\n`);
 
   // Create backup
@@ -243,7 +241,7 @@ async function main() {
 
   console.log('Enriching episodes with TMDB data...\n');
 
-  const enrichedEpisodes: EpisodeMetadata[] = [];
+  const enrichedEpisodes: MutableEpisodeMetadata[] = [];
 
   for (let i = 0; i < episodes.length; i++) {
     const episode = episodes[i];
@@ -271,13 +269,24 @@ async function main() {
 
     // Save progress every 20 episodes
     if ((i + 1) % 20 === 0) {
-      fs.writeFileSync(metadataPath, JSON.stringify(enrichedEpisodes.concat(episodes.slice(i + 1)), null, 2));
+      const partial = enrichedEpisodes.concat(episodes.slice(i + 1));
+      fs.writeFileSync(
+        metadataPath,
+        `// Auto-generated - do not edit - ${partial.length} episodes - updated ${new Date().toISOString().split('T')[0]}\n` +
+        `import { EpisodeMetadata } from '@/types/episode-metadata';\n` +
+        `export const episodeMetadata: EpisodeMetadata[] = ${JSON.stringify(partial, null, 2)};\n`
+      );
       console.log(`  [Progress saved: ${i + 1}/${episodes.length}]\n`);
     }
   }
 
   // Final save
-  fs.writeFileSync(metadataPath, JSON.stringify(enrichedEpisodes, null, 2));
+  fs.writeFileSync(
+    metadataPath,
+    `// Auto-generated - do not edit - ${enrichedEpisodes.length} episodes - updated ${new Date().toISOString().split('T')[0]}\n` +
+    `import { EpisodeMetadata } from '@/types/episode-metadata';\n` +
+    `export const episodeMetadata: EpisodeMetadata[] = ${JSON.stringify(enrichedEpisodes, null, 2)};\n`
+  );
 
   console.log('\n=== TMDB Enrichment Complete ===');
   console.log(`  Enriched: ${enriched}`);
