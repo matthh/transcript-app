@@ -18,7 +18,12 @@ export default function QueryJourneyPage() {
           <Link href="/" className="text-sm text-blue-600 hover:underline">
             Back to search
           </Link>
-          <span className="text-xs text-gray-400">Docs</span>
+          <div className="flex items-center gap-4 text-sm">
+            <Link href="/docs/query-failure-modes" className="text-blue-600 hover:underline">
+              Failure Modes
+            </Link>
+            <span className="text-xs text-gray-400">Docs</span>
+          </div>
         </div>
 
         <header className="mt-6">

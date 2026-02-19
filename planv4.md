@@ -60,6 +60,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
+- Phrase-frequency comparisons over explicit episode windows (for example, "first 100 vs last 100") are non-deterministic and can miss true positives in recent windows.
 
 ## Roadmap
 
@@ -69,6 +70,7 @@ Objective: eliminate logic drift and remove high-cost misroutes.
 Deliverables:
 - Unify routing/synthesis policy between `/api/search` and `/api/search/stream`.
 - Centralize `useQuickSynthesis` decision in a shared utility.
+- Centralize deterministic analysis fast-path registration so any special analyzers run identically on both endpoints.
 - Enforce transcript-depth parity:
   - factual queries with `requiresTranscriptDepth=true` must use full synthesis on both endpoints.
   - quick-mode truncation is allowed only for metadata-answerable factual queries.
@@ -90,6 +92,11 @@ Deliverables:
 - Add post-retrieval reranking (lightweight cross-encoder or compact LLM reranker) on top-N fused chunks.
 - Add semantic deduplication for overlapping/near-identical chunks.
 - Improve diversification with dynamic episode caps tied to query intent and target-episode certainty.
+- Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
+  - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
+  - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
+  - return transcript coverage for each window (found vs expected transcripts) and conservative wording when coverage is incomplete.
+  - run via shared module used by both search endpoints.
 - Add medium-aware retrieval constraints for film vs TV intent:
   - preserve short but high-signal tokens (e.g., "tv") in query-term handling.
   - add normalization/synonym expansion for TV terms ("tv", "television", "series", "show").
@@ -184,6 +191,10 @@ Deliverables:
   - anecdote-linkage assertions:
     - multi-clause factual query (entity + event + "what episode") must return at least one supporting episode when any clause is evidenced.
     - if only partial evidence is retrieved, answer must not claim total absence; it must return partial + uncertainty.
+  - windowed phrase-frequency assertions:
+    - for known gold queries (for example, "we'll get there" first 100 vs last 100), reported counts must match offline transcript-scan fixtures.
+    - both `/api/search` and `/api/search/stream` must return the same winner and same per-window counts for the same input.
+    - responses must include coverage disclosure when transcripts are missing in either window.
 - Add CI gate:
   - fail on pass-rate drops above threshold.
   - fail on p95 latency regression above threshold.
