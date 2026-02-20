@@ -18,6 +18,8 @@ Input:
    - Metadata inclusion/exclusion decision.
    - Retrieval K, BM25 availability, fusion/boost/diversification behavior.
    - Top chunks quality (relevance, duplication, medium mismatch).
+   - For broad trait/persona queries (for example, "what does X think about Y"), record unique episode count in top transcript sources.
+   - If unique episode count is less than 2, flag `single_episode_anchoring_risk` and require constrained/uncertain wording in synthesis.
 4. Trace synthesis:
    - Model/tokens selected.
    - Prompt policy used (factual/interpretive/hybrid).
@@ -62,4 +64,3 @@ Why this is bad:
 Expected behavior:
 Any constraints (host-only, tv-only, etc.):
 ```
-

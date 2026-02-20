@@ -325,6 +325,27 @@
       "expectTextInAnswer": ["Showgirls"],
       "rejectTextInAnswer": ["no information", "don't have"],
       "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Jason fishing cross-episode aggregation",
+      "query": "What does Jason think of fishing",
+      "tags": ["cross-episode", "aggregation", "persona", "known-failure"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "expectTextInAnswer": ["fishing"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 2,
+      "expectMinDistinctTranscriptEpisodes": 2
+    },
+    {
+      "name": "Digital court jew episode attribution (single-episode non-movie)",
+      "query": "What episode did Jason say he'd be the digital court jew for the new pope?",
+      "tags": ["single-episode", "transcript-factual", "episode-attribution", "non-movie"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "expectTextInAnswer": ["digital court jew"],
+      "expectSourceEpisode": "Running Man (2025) - LIVE",
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1,
+      "expectMaxDistinctTranscriptEpisodes": 2
     }
   ]
 }

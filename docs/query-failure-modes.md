@@ -6,9 +6,9 @@ This document defines the most common ways search queries fail in the current ar
 - where each failure originates (routing, retrieval, synthesis, metadata, or eval coverage).
 
 It is intended to be used with:
-- `/Users/jason/Dropbox/Personal/Projects/transcript-app/docs/query-journey.md` (how the pipeline works),
-- `/Users/jason/Dropbox/Personal/Projects/transcript-app/docs/query-failure-triage.md` (how to triage incidents),
-- `/Users/jason/Dropbox/Personal/Projects/transcript-app/planv4.md` (how fixes are sequenced).
+- `docs/query-journey.md` (how the pipeline works),
+- `docs/query-failure-triage.md` (how to triage incidents),
+- `planv4.md` (how fixes are sequenced).
 
 ## How To Use This Document
 

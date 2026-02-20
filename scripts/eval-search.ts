@@ -34,6 +34,8 @@ interface EvalCase {
   expectClassificationType?: string[];
   expectMinSources?: number;
   expectMinTranscriptSources?: number;
+  expectMinDistinctTranscriptEpisodes?: number;
+  expectMaxDistinctTranscriptEpisodes?: number;
   expectMinMetadataSources?: number;
   expectConfidenceAbove?: number;
 }
@@ -215,6 +217,30 @@ function checkCase(testCase: EvalCase, result: SSEResult): string[] {
     if (count < testCase.expectMinTranscriptSources) {
       failures.push(
         `Expected at least ${testCase.expectMinTranscriptSources} transcript sources, got ${count}`
+      );
+    }
+  }
+
+  // expectMinDistinctTranscriptEpisodes
+  if (testCase.expectMinDistinctTranscriptEpisodes !== undefined) {
+    const distinctEpisodes = new Set(
+      (result.sources.transcripts || []).map((s) => (s.episodeTitle || '').toLowerCase().trim()).filter(Boolean)
+    );
+    if (distinctEpisodes.size < testCase.expectMinDistinctTranscriptEpisodes) {
+      failures.push(
+        `Expected at least ${testCase.expectMinDistinctTranscriptEpisodes} distinct transcript episodes, got ${distinctEpisodes.size}: [${[...distinctEpisodes].join(', ')}]`
+      );
+    }
+  }
+
+  // expectMaxDistinctTranscriptEpisodes
+  if (testCase.expectMaxDistinctTranscriptEpisodes !== undefined) {
+    const distinctEpisodes = new Set(
+      (result.sources.transcripts || []).map((s) => (s.episodeTitle || '').toLowerCase().trim()).filter(Boolean)
+    );
+    if (distinctEpisodes.size > testCase.expectMaxDistinctTranscriptEpisodes) {
+      failures.push(
+        `Expected at most ${testCase.expectMaxDistinctTranscriptEpisodes} distinct transcript episodes, got ${distinctEpisodes.size}: [${[...distinctEpisodes].join(', ')}]`
       );
     }
   }
