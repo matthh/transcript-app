@@ -71,6 +71,10 @@ Deliverables:
 - Unify routing/synthesis policy between `/api/search` and `/api/search/stream`.
 - Centralize `useQuickSynthesis` decision in a shared utility.
 - Centralize deterministic analysis fast-path registration so any special analyzers run identically on both endpoints.
+- Add explicit metadata episode-lookup intent coverage:
+  - support patterns like `what episode is 283` and `give me details about episode 283`.
+  - return deterministic metadata summary (title, season/episode, release date, guest/reviewer) when episode id exists.
+  - return explicit not-found response when episode id does not exist.
 - Enforce transcript-depth parity:
   - factual queries with `requiresTranscriptDepth=true` must use full synthesis on both endpoints.
   - quick-mode truncation is allowed only for metadata-answerable factual queries.

@@ -41,6 +41,7 @@ For each reported bad query:
 - Query type: factual/hybrid with entities (film/guest/director/genre)
 - Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search.
 - Common miss: no metadata matches, wrong film/person picked, fallback too broad.
+- Example: episode-id lookup misses such as "what episode is 283" or "give me details about episode 283".
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
 - Plan alignment: Phase 2 (relaxation strategy), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
 
@@ -113,6 +114,7 @@ For each reported bad query:
 - Query type: metadata-intent queries with partial mismatches
 - Why hard now: fast-path may trigger without robust fallback rationale.
 - Common miss: terse unhelpful output instead of fallback full pipeline + explanation.
+- Example: explicit episode-number questions fail to return metadata details and instead degrade into weak transcript-only responses.
 - User-visible symptom: abrupt “no result” or low-context answer.
 - Plan alignment: Phase 1 fast-path fallthrough guardrails, Phase 4 routing assertions.
 

@@ -14,6 +14,9 @@ Input:
 2. Trace routing:
    - Intent detection result and confidence.
    - Classification type, confidence, filters, `requiresTranscriptDepth`.
+   - If query contains an explicit episode id (for example, "episode 283"), verify both:
+     - episode-number extraction succeeded, and
+     - metadata episode-lookup fast-path was attempted (or explicitly skipped with reason).
 3. Trace retrieval:
    - Metadata inclusion/exclusion decision.
    - Retrieval K, BM25 availability, fusion/boost/diversification behavior.

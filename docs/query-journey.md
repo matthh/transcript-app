@@ -68,6 +68,7 @@ Some questions are **really just metadata lookups**, like:
 - "How many episodes are there?"
 - "What's the latest episode with guest X?"
 - "What episodes feature guest X?" (returns a formatted episode list)
+- "What episode is 283?" / "Give me details about episode 283"
 - "Who was the guest or reviewer on *No Country for Old Men*?"
 - "When did episode 6 release?"
 - "What was Kev's question on episode 1?"
