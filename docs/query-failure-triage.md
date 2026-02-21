@@ -22,6 +22,7 @@ Input:
 3. Trace retrieval:
    - Metadata inclusion/exclusion decision.
    - Retrieval K, BM25 availability, fusion/boost/diversification behavior.
+   - Boilerplate suppression, dedup, and adjacent-chunk expansion behavior (Phase 2a).
    - Top chunks quality (relevance, duplication, medium mismatch).
    - For broad trait/persona queries (for example, "what does X think about Y"), record unique episode count in top transcript sources.
    - If unique episode count is less than 2, flag `single_episode_anchoring_risk` and require constrained/uncertain wording in synthesis.

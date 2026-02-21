@@ -51,13 +51,18 @@ For each reported bad query:
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
 - Plan alignment: Phase 2 (relaxation strategy), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
 
-### FM-04: Sparse Retrieval Miss for Transcript-Depth Factual Queries
+### FM-04: Sparse Retrieval Miss for Transcript-Depth Factual Queries — PARTIALLY MITIGATED
 - Stage: Retrieval
 - Query type: phrase lookup, quote lookup, biography-like host questions, frequency/ranking queries
 - Why hard now: top-K chunk retrieval may not include the decisive evidence.
 - Common miss: synthesis concludes “not found” despite evidence elsewhere in corpus.
 - User-visible symptom: false negative on known in-transcript facts.
-- Plan alignment: Phase 2 (rerank/diversify/context expansion), Phase 4 recall assertions.
+- Plan alignment: Phase 2a (context expansion, dedup), Phase 2b (rerank), Phase 4 recall assertions.
+- Phase 2a mitigations shipped:
+  - `expandAdjacentChunks()` appends ±1 neighbor chunks for keyword-matching results at 0.5× parent score. Fixes cases where the entity mention and the connected anecdote are in adjacent chunks (e.g., Joe Eszterhas).
+  - `deduplicateChunks()` removes near-duplicate chunks (Jaccard ≥ 0.6), freeing slots for diverse evidence.
+  - `suppressBoilerplate()` downranks outro/credits chunks, promoting substantive content.
+- Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence.
 
 ### FM-05: Windowed Frequency Comparison Failure
 - Stage: Retrieval/Analysis
@@ -67,13 +72,14 @@ For each reported bad query:
 - User-visible symptom: incorrect comparative claim (“none in last 100”).
 - Plan alignment: Phase 2 (deterministic window analysis), Phase 4 gold-count assertions.
 
-### FM-06: Cross-Episode Aggregation Failure
+### FM-06: Cross-Episode Aggregation Failure — PARTIALLY MITIGATED
 - Stage: Retrieval + Synthesis
 - Query type: trait/persona summaries and “what do we know about X and Y”
 - Why hard now: evidence is distributed across episodes and may not co-occur in a single chunk.
 - Common miss: answer says “no information” despite scattered supporting evidence.
 - User-visible symptom: flat denial where partial/qualified synthesis was possible.
-- Plan alignment: Phase 2 (context expansion), Phase 3 (aggregation policy), Phase 4 assertions.
+- Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
+- Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer)
 - Stage: Synthesis (with retrieval contributors)
@@ -99,13 +105,15 @@ For each reported bad query:
 - User-visible symptom: off-target recommendations/examples.
 - Plan alignment: Phase 2 medium-aware retrieval, Phase 4 medium assertions.
 
-### FM-10: Boilerplate/Outro Dominance
+### FM-10: Boilerplate/Outro Dominance — MITIGATED
 - Stage: Retrieval
 - Query type: lexical phrase queries, trait/persona queries
-- Why hard now: recurring credits/outro text can dominate lexical matches.
+- ~~Why hard now: recurring credits/outro text can dominate lexical matches.~~
 - Common miss: high-ranked chunks are repetitive boilerplate, not semantic evidence.
 - User-visible symptom: answer anchored on repetitive show boilerplate.
-- Plan alignment: Phase 2 lexical-noise suppression, Phase 4 noise-focused assertions.
+- Plan alignment: Phase 2a boilerplate suppression, Phase 4 noise-focused assertions.
+- Phase 2a resolution: `suppressBoilerplate()` matches 6 regex patterns for recurring outro/credits language. 2+ pattern matches → 0.3× score penalty; 1 match → 0.6× penalty. Chunks are not removed (still findable if directly queried), just downranked.
+- Residual risk: boilerplate with novel phrasing not covered by the 6 patterns could still rank highly.
 
 ### FM-11: Weak-Evidence Overclaim
 - Stage: Synthesis

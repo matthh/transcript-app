@@ -56,7 +56,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 ## Current Gaps (to address)
 - ~~Routing behavior diverges between streaming and non-streaming paths.~~ **Resolved in Phase 1** — shared routing policy module (`src/lib/routing-policy.ts`) unifies all routing decisions.
 - ~~Confidence signals are not fully calibrated.~~ **Partially resolved in Phase 1** — medium-confidence intents skip metadata aggregate; low-confidence classifications force hybrid; `classificationConfidence` exposed in API response.
-- Retrieval still allows noisy/duplicative chunks in difficult queries.
+- ~~Retrieval still allows noisy/duplicative chunks in difficult queries.~~ **Partially resolved in Phase 2a** — boilerplate suppression, Jaccard dedup, and adjacent-chunk expansion shipped. Paraphrased re-broadcast duplicates (below Jaccard 0.6) remain.
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
@@ -98,13 +98,33 @@ Remaining (deferred to Phase 2+):
 - Tilda/notable-moments fast-path handlers still have presentation-layer duplication (endpoints format differently for JSON vs SSE).
 - `metadata-aggregates.ts` retains its own internal `episodeToMetadataSource` copy to avoid circular dependency risk.
 
-### Phase 2: Retrieval Quality Upgrades (2-3 weeks)
-Objective: raise relevance and reduce redundancy.
+### Phase 2a: Retrieval Quality — High-Impact Trio ✅ SHIPPED
+Objective: fix the two real retrieval failures from Phase 1 eval (Joe Eszterhas anecdote linkage, digital court jew episode attribution) with three retrieval-layer improvements.
+
+Implementation:
+- ✅ `suppressBoilerplate()` in `hybrid-retrieval.ts` — 6 regex patterns for recurring outro/credits; 2+ matches → 0.3× score, 1 match → 0.6× score.
+- ✅ `deduplicateChunks()` in `hybrid-retrieval.ts` — Jaccard similarity (≥0.6 threshold) on lowercased token sets removes near-duplicate chunks (e.g., Best-of re-broadcasts).
+- ✅ `parseChunkId()` + `expandAdjacentChunks()` in `hybrid-retrieval.ts` — appends ±1 neighbor chunks at 0.5× parent score for keyword-matching results.
+- ✅ `getChunkMap()` in `vectorstore.ts` — lazily-built `Map<string, StoredChunk>` for O(1) neighbor lookups, cached at module level.
+- ✅ Pipeline updated: `RRF → keyword boost → episode boost → boilerplate suppress → dedup → diversify → context expand`.
+- ✅ 20 unit tests added to `scripts/regression-retrieval.ts`; `regression:retrieval` npm script added.
+- ✅ Eval throttling + retry with backoff added to `scripts/eval-search.ts` (2s delay between cases, up to 3 retries with 10s/20s/40s backoff on 429s).
+
+Verification:
+- `npm run regression:retrieval` — 20/20 unit tests + 19/19 integration tests pass.
+- `npm run regression:queries` — 20/20 (no routing regressions).
+- `npm run regression:routing` — 10/10 (no routing regressions).
+- Eval: 45/52 → 50/52 (+6 improved, 1 borderline regression).
+  - Joe Eszterhas anecdote linkage: **fixed** (context expansion surfaces adjacent chunk).
+  - Digital court jew: improved (11 → 10 episodes) but still above ≤2 target.
+  - Haitch band history: borderline regression — answer is correct but synthesis phrasing triggers assertion.
+
+### Phase 2b: Retrieval Quality — Remaining Upgrades (2-3 weeks)
+Objective: address remaining retrieval gaps not covered by Phase 2a.
 
 Deliverables:
 - Add post-retrieval reranking (lightweight cross-encoder or compact LLM reranker) on top-N fused chunks.
-- Add semantic deduplication for overlapping/near-identical chunks.
-- Improve diversification with dynamic episode caps tied to query intent and target-episode certainty.
+- Further dedup improvements for digital court jew case (Best-of re-broadcasts use paraphrased language below Jaccard 0.6).
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
   - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
@@ -118,13 +138,6 @@ Deliverables:
   - support speaker/entity constraints (e.g., "Corey", hosts, guests, voicemailers) as first-class retrieval signals.
   - prioritize chunks where entity mention and target concept co-occur within a bounded window.
   - add token normalization for possessives/plurals (e.g., "Corey's", "whips" -> "Corey", "whip").
-- Suppress boilerplate lexical noise in retrieval:
-  - downweight recurring outro language and signature phrases that inflate lexical matches (e.g., "Whip Song" credits).
-  - add optional segment-type filtering so factual/persona queries can avoid credits/outro-heavy chunks.
-- Add local context expansion for anecdote queries:
-  - when a top chunk matches key entities, include adjacent chunk neighbors from the same episode before synthesis.
-  - prioritize co-occurrence of entity + event verb + episode cue in the expanded window.
-  - prevent single-fragment retrieval from dropping the clause that answers "what was the deal".
 - Generalize filter relaxation strategy:
   - full filters
   - relaxed secondary filters
@@ -249,7 +262,8 @@ Exit Criteria:
 
 ## Milestones
 - M1 (end Phase 1): unified routing policy shipped. ✅
-- M2 (end Phase 2): retrieval gains validated on eval set.
+- M1.5 (end Phase 2a): high-impact retrieval trio shipped. ✅ Eval: 45/52 → 50/52.
+- M2 (end Phase 2b): remaining retrieval gains validated on eval set.
 - M3 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.
