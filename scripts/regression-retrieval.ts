@@ -12,7 +12,15 @@
 import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
-import { hybridRetrieval, RetrievalResult } from '../src/lib/hybrid-retrieval';
+import {
+  hybridRetrieval,
+  RetrievalResult,
+  parseChunkId,
+  suppressBoilerplate,
+  deduplicateChunks,
+  expandAdjacentChunks,
+} from '../src/lib/hybrid-retrieval';
+import { StoredChunk } from '../src/lib/vectorstore';
 import { ClassificationResult } from '../src/types/episode-metadata';
 
 interface RetrievalCase {
@@ -200,6 +208,166 @@ const cases: RetrievalCase[] = [
   },
 ];
 
+// --- Unit tests for new retrieval functions ---
+
+function makeChunk(id: string, text: string, episode: string = 'Test Episode'): StoredChunk {
+  return {
+    id,
+    text,
+    embedding: [],
+    metadata: {
+      episodeTitle: episode,
+      speakers: 'Speaker A',
+      startTimestamp: '00:00:00',
+      endTimestamp: '00:01:00',
+    },
+  };
+}
+
+function makeResult(id: string, text: string, score: number, episode: string = 'Test Episode'): RetrievalResult {
+  return {
+    chunk: makeChunk(id, text, episode),
+    score,
+    source: 'both',
+  };
+}
+
+function runUnitTests(): { passed: number; failed: number; errors: string[] } {
+  let passed = 0;
+  let failed = 0;
+  const errors: string[] = [];
+
+  function assert(condition: boolean, msg: string) {
+    if (condition) {
+      passed++;
+    } else {
+      failed++;
+      errors.push(msg);
+    }
+  }
+
+  // --- parseChunkId tests ---
+  const p1 = parseChunkId('Ep_64_Villeneuve_5');
+  assert(p1 !== null && p1.prefix === 'Ep_64_Villeneuve' && p1.index === 5,
+    'parseChunkId: normal ID with underscores');
+
+  const p2 = parseChunkId('Best_of__Season_2_12');
+  assert(p2 !== null && p2.prefix === 'Best_of__Season_2' && p2.index === 12,
+    'parseChunkId: double underscores');
+
+  const p3 = parseChunkId('Simple_0');
+  assert(p3 !== null && p3.prefix === 'Simple' && p3.index === 0,
+    'parseChunkId: index zero');
+
+  const p4 = parseChunkId('nounderscore');
+  assert(p4 === null, 'parseChunkId: no underscore returns null');
+
+  const p5 = parseChunkId('prefix_abc');
+  assert(p5 === null, 'parseChunkId: non-numeric index returns null');
+
+  const p6 = parseChunkId('a_b_c_99');
+  assert(p6 !== null && p6.prefix === 'a_b_c' && p6.index === 99,
+    'parseChunkId: multiple underscores, last segment is index');
+
+  // --- suppressBoilerplate tests ---
+  const boilerplateChunk = makeResult('bp_1',
+    "That's it for this episode. We want to thank our guest for an amazing conversation. Leave us a five star rating.",
+    1.0);
+  const cleanChunk = makeResult('clean_1',
+    "The cinematography in Blade Runner is absolutely stunning. Roger Deakins really outdid himself.",
+    1.0);
+  const singleMatch = makeResult('sm_1',
+    "If you're enjoying the show, check out our other episodes about sci-fi classics.",
+    1.0);
+
+  const suppressed = suppressBoilerplate([boilerplateChunk, cleanChunk, singleMatch]);
+  const bpResult = suppressed.find(r => r.chunk.id === 'bp_1')!;
+  const clResult = suppressed.find(r => r.chunk.id === 'clean_1')!;
+  const smResult = suppressed.find(r => r.chunk.id === 'sm_1')!;
+
+  assert(Math.abs(bpResult.score - 0.3) < 0.001,
+    `suppressBoilerplate: 3-pattern match → 0.3x (got ${bpResult.score})`);
+  assert(clResult.score === 1.0,
+    'suppressBoilerplate: clean chunk unchanged');
+  assert(Math.abs(smResult.score - 0.6) < 0.001,
+    `suppressBoilerplate: 1-pattern match → 0.6x (got ${smResult.score})`);
+
+  // --- deduplicateChunks tests ---
+  const original = makeResult('orig_1',
+    'the quick brown fox jumps over the lazy dog near the river bank',
+    1.0, 'Episode A');
+  const duplicate = makeResult('dup_1',
+    'the quick brown fox jumps over the lazy dog near the river bank today',
+    0.9, 'Episode B');
+  const different = makeResult('diff_1',
+    'cinematography and lighting techniques in modern horror films are fascinating',
+    0.8, 'Episode C');
+
+  const deduped = deduplicateChunks([original, duplicate, different]);
+  assert(deduped.length === 2,
+    `deduplicateChunks: removes near-duplicate (got ${deduped.length} results)`);
+  assert(deduped[0].chunk.id === 'orig_1',
+    'deduplicateChunks: keeps higher-scored original');
+  assert(deduped[1].chunk.id === 'diff_1',
+    'deduplicateChunks: keeps different chunk');
+
+  // Verify distinct chunks are kept
+  const allDistinct = [
+    makeResult('d_1', 'alpha beta gamma delta epsilon', 1.0),
+    makeResult('d_2', 'zeta eta theta iota kappa', 0.9),
+    makeResult('d_3', 'lambda omicron sigma omega tau', 0.8),
+  ];
+  const dedupedDistinct = deduplicateChunks(allDistinct);
+  assert(dedupedDistinct.length === 3,
+    'deduplicateChunks: keeps all distinct chunks');
+
+  // --- expandAdjacentChunks tests ---
+  const chunkMap = new Map<string, StoredChunk>();
+  chunkMap.set('ep_a_4', makeChunk('ep_a_4', 'Previous chunk about Eszterhas anecdote'));
+  chunkMap.set('ep_a_5', makeChunk('ep_a_5', 'Main chunk mentioning Eszterhas'));
+  chunkMap.set('ep_a_6', makeChunk('ep_a_6', 'Next chunk continues the Eszterhas story'));
+  chunkMap.set('ep_b_2', makeChunk('ep_b_2', 'Unrelated chunk about something else'));
+
+  const inputResults: RetrievalResult[] = [
+    { chunk: chunkMap.get('ep_a_5')!, score: 1.0, source: 'both' },
+    { chunk: chunkMap.get('ep_b_2')!, score: 0.8, source: 'bm25' },
+  ];
+
+  const expanded = expandAdjacentChunks(inputResults, ['eszterhas'], chunkMap);
+  assert(expanded.length === 4,
+    `expandAdjacentChunks: adds 2 neighbors for keyword match (got ${expanded.length})`);
+  const neighborIds = expanded.map(r => r.chunk.id);
+  assert(neighborIds.includes('ep_a_4'),
+    'expandAdjacentChunks: includes previous chunk');
+  assert(neighborIds.includes('ep_a_6'),
+    'expandAdjacentChunks: includes next chunk');
+
+  const neighbor4 = expanded.find(r => r.chunk.id === 'ep_a_4')!;
+  assert(Math.abs(neighbor4.score - 0.5) < 0.001,
+    `expandAdjacentChunks: neighbor score is 0.5x parent (got ${neighbor4.score})`);
+
+  // Non-keyword chunk should not expand
+  assert(!neighborIds.includes('ep_b_1') && !neighborIds.includes('ep_b_3'),
+    'expandAdjacentChunks: non-keyword chunk does not expand');
+
+  // Already-present neighbors should not be duplicated
+  const withExisting: RetrievalResult[] = [
+    { chunk: chunkMap.get('ep_a_5')!, score: 1.0, source: 'both' },
+    { chunk: chunkMap.get('ep_a_6')!, score: 0.9, source: 'embedding' },
+  ];
+  const expandedExisting = expandAdjacentChunks(withExisting, ['eszterhas'], chunkMap);
+  const ep_a_6_count = expandedExisting.filter(r => r.chunk.id === 'ep_a_6').length;
+  assert(ep_a_6_count === 1,
+    `expandAdjacentChunks: skips already-present neighbor (got ${ep_a_6_count} copies)`);
+
+  // Empty query terms should return unchanged
+  const noExpand = expandAdjacentChunks(inputResults, [], chunkMap);
+  assert(noExpand.length === inputResults.length,
+    'expandAdjacentChunks: empty queryTerms returns unchanged');
+
+  return { passed, failed, errors };
+}
+
 function getDistinctEpisodes(results: RetrievalResult[]): Set<string> {
   return new Set(results.map((r) => r.chunk.metadata.episodeTitle));
 }
@@ -257,6 +425,19 @@ async function runCase(testCase: RetrievalCase): Promise<string[]> {
 }
 
 async function main() {
+  // --- Unit tests (no data loading required) ---
+  console.log('=== Retrieval Unit Tests ===\n');
+  const unit = runUnitTests();
+  if (unit.failed > 0) {
+    console.log(`  FAIL  ${unit.failed} unit test(s) failed:`);
+    for (const err of unit.errors) {
+      console.log(`        - ${err}`);
+    }
+    process.exit(1);
+  }
+  console.log(`  PASS  All ${unit.passed} unit tests passed.\n`);
+
+  // --- Integration tests (require data loading) ---
   console.log('=== Retrieval Regression Tests ===\n');
   console.log(`Running ${cases.length} test cases...\n`);
 

@@ -13,6 +13,7 @@
     "bundle": "node --import tsx ./scripts/bundle-data.ts",
     "regression:queries": "node --import tsx ./scripts/regression-queries.ts",
     "regression:routing": "node --import tsx ./scripts/regression-routing.ts",
+    "regression:retrieval": "node --import tsx ./scripts/regression-retrieval.ts",
     "perf:queries": "node --import tsx ./scripts/perf-queries.ts",
     "transcribe": "node --import tsx ./scripts/transcribe.ts",
     "enrich-tmdb": "node --import tsx ./scripts/enrich-tmdb.ts",

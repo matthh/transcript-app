@@ -100,6 +100,23 @@ export function getVectorStoreSize(): number {
   return cachedVectorStore ? cachedVectorStore.length : 0;
 }
 
+// Lazily-built chunk map for O(1) neighbor lookups by ID
+let cachedChunkMap: Map<string, StoredChunk> | null = null;
+let cachedChunkMapSource: StoredChunk[] | null = null;
+
+/**
+ * Build (or return cached) a Map from chunk ID → StoredChunk for O(1) lookups.
+ * Cache is invalidated if the underlying chunks array changes.
+ */
+export function getChunkMap(chunks: StoredChunk[]): Map<string, StoredChunk> {
+  if (cachedChunkMap && cachedChunkMapSource === chunks) {
+    return cachedChunkMap;
+  }
+  cachedChunkMap = new Map(chunks.map(c => [c.id, c]));
+  cachedChunkMapSource = chunks;
+  return cachedChunkMap;
+}
+
 export function saveVectorStore(): void {
   // No-op in production - data is managed via Blob storage
   console.warn('saveVectorStore is not available in production');

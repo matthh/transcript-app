@@ -7,7 +7,7 @@
  */
 
 import { generateEmbedding } from './embeddings';
-import { loadVectorStoreAsync, searchSimilar, StoredChunk } from './vectorstore';
+import { loadVectorStoreAsync, searchSimilar, StoredChunk, getChunkMap } from './vectorstore';
 import { searchBM25, expandQueryTokens } from './bm25';
 import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
 import { BM25Index } from './bm25';
@@ -211,6 +211,131 @@ function boostTargetedEpisodes(
   return boosted.sort((a, b) => b.score - a.score);
 }
 
+// --- Boilerplate suppression ---
+
+const BOILERPLATE_PATTERNS = [
+  /that'?s it for this episode/i,
+  /want to thank.*amazing conversation/i,
+  /leave us a (?:five star )?rating/i,
+  /if you'?re enjoying the (?:show|podcast)/i,
+  /need your help.*take a minute/i,
+  /patreon\.com\/escapehatch/i,
+];
+
+/**
+ * Downweight chunks matching recurring outro/credits patterns.
+ * 2+ matches → 0.3× score; 1 match → 0.6× score. Re-sort after penalties.
+ */
+export function suppressBoilerplate(results: RetrievalResult[]): RetrievalResult[] {
+  return results
+    .map((r) => {
+      const text = r.chunk.text;
+      const matchCount = BOILERPLATE_PATTERNS.filter((p) => p.test(text)).length;
+      if (matchCount >= 2) return { ...r, score: r.score * 0.3 };
+      if (matchCount === 1) return { ...r, score: r.score * 0.6 };
+      return r;
+    })
+    .sort((a, b) => b.score - a.score);
+}
+
+// --- Near-duplicate removal ---
+
+function tokenizeForDedup(text: string): Set<string> {
+  return new Set(
+    text.toLowerCase().split(/\s+/).filter((t) => t.length > 2)
+  );
+}
+
+function jaccardSimilarity(a: Set<string>, b: Set<string>): number {
+  let intersection = 0;
+  for (const token of a) {
+    if (b.has(token)) intersection++;
+  }
+  const union = a.size + b.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+/**
+ * Remove near-duplicate chunks using Jaccard similarity on lowercased token sets.
+ * Processes results in score-descending order; discards any chunk with Jaccard ≥ 0.6
+ * against an already-kept chunk.
+ */
+export function deduplicateChunks(results: RetrievalResult[]): RetrievalResult[] {
+  const kept: { result: RetrievalResult; tokens: Set<string> }[] = [];
+
+  for (const result of results) {
+    const tokens = tokenizeForDedup(result.chunk.text);
+    const isDuplicate = kept.some((k) => jaccardSimilarity(tokens, k.tokens) >= 0.6);
+    if (!isDuplicate) {
+      kept.push({ result, tokens });
+    }
+  }
+
+  return kept.map((k) => k.result);
+}
+
+// --- Chunk ID parsing and adjacent expansion ---
+
+/**
+ * Parse a chunk ID into its episode prefix and numeric chunk index.
+ * IDs follow the format: `sanitized_episode_name_<index>` where the index
+ * is always the final numeric segment after the last underscore.
+ */
+export function parseChunkId(id: string): { prefix: string; index: number } | null {
+  const lastUnderscore = id.lastIndexOf('_');
+  if (lastUnderscore === -1) return null;
+  const prefix = id.slice(0, lastUnderscore);
+  const indexStr = id.slice(lastUnderscore + 1);
+  const index = parseInt(indexStr, 10);
+  if (isNaN(index)) return null;
+  return { prefix, index };
+}
+
+/**
+ * Expand results by appending adjacent chunks for keyword-matching results.
+ * For each result containing at least 1 query keyword, look up neighbors
+ * (index ± 1) in the chunk map. Neighbors get 0.5× the parent's score.
+ */
+export function expandAdjacentChunks(
+  results: RetrievalResult[],
+  queryTerms: string[],
+  chunkMap: Map<string, StoredChunk>
+): RetrievalResult[] {
+  if (queryTerms.length === 0) return results;
+
+  const resultIds = new Set(results.map((r) => r.chunk.id));
+  const expanded: RetrievalResult[] = [...results];
+
+  for (const result of results) {
+    const text = result.chunk.text.toLowerCase();
+    const hasKeyword = queryTerms.some((t) => text.includes(t));
+    if (!hasKeyword) continue;
+
+    const parsed = parseChunkId(result.chunk.id);
+    if (!parsed) continue;
+
+    const neighborIds = [
+      `${parsed.prefix}_${parsed.index - 1}`,
+      `${parsed.prefix}_${parsed.index + 1}`,
+    ];
+
+    for (const neighborId of neighborIds) {
+      if (resultIds.has(neighborId)) continue;
+      const neighbor = chunkMap.get(neighborId);
+      if (!neighbor) continue;
+
+      expanded.push({
+        chunk: neighbor,
+        score: result.score * 0.5,
+        source: result.source,
+      });
+      resultIds.add(neighborId);
+    }
+  }
+
+  return expanded;
+}
+
 /**
  * Diversify results by capping chunks per episode.
  * Ensures results span multiple episodes rather than clustering on one.
@@ -373,10 +498,20 @@ export async function hybridRetrieval(
   const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
   const episodeBoosted = boostTargetedEpisodes(boostedResults, targetEpisodeTitles);
 
+  // Suppress boilerplate outro/credits chunks
+  const boilerplateSuppressed = suppressBoilerplate(episodeBoosted);
+
+  // Remove near-duplicate chunks (e.g. Best-of re-broadcasts)
+  const deduplicated = deduplicateChunks(boilerplateSuppressed);
+
   // Diversify: cap chunks per episode so results span more episodes
   const maxPerEpisode = 2;
   const queryTerms = extractQueryTerms(query);
-  return diversifyByEpisode(episodeBoosted, finalK, maxPerEpisode, queryTerms, targetEpisodeTitles);
+  const diversified = diversifyByEpisode(deduplicated, finalK, maxPerEpisode, queryTerms, targetEpisodeTitles);
+
+  // Expand with adjacent chunks for keyword-matching results
+  const chunkMap = getChunkMap(chunks);
+  return expandAdjacentChunks(diversified, queryTerms, chunkMap);
 }
 
 /**
