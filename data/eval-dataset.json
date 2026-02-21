@@ -10,7 +10,7 @@
     {
       "name": "Paul Atriedeez Nutz Desus and Mero bit",
       "query": "what episode does Paul Atreides Nutz do his Desus and Mero bit",
-      "tags": ["known-failure", "voicemail", "transcript-content"],
+      "tags": ["voicemail", "transcript-content"],
       "expectClassificationType": ["interpretive", "hybrid"],
       "expectTextInAnswer": ["Paul"],
       "rejectTextInAnswer": ["no information", "don't have"],
@@ -19,7 +19,7 @@
     {
       "name": "AKA caller voicemail",
       "query": "when did a caller say AKA a bunch of times",
-      "tags": ["known-failure", "voicemail", "transcript-content"],
+      "tags": ["voicemail", "transcript-content"],
       "expectClassificationType": ["interpretive", "hybrid"],
       "rejectTextInAnswer": ["no information", "don't have"],
       "expectMinTranscriptSources": 1
@@ -27,7 +27,7 @@
     {
       "name": "Villeneuve Marin interview retrieval",
       "query": "what did Jason ask Villeneuve at the marin film festival",
-      "tags": ["known-failure", "transcript-content", "retrieval"],
+      "tags": ["transcript-content", "retrieval"],
       "expectSourceEpisode": "Villeneuve",
       "expectMinTranscriptSources": 2
     },
@@ -163,6 +163,25 @@
       "query": "how many total episodes has the podcast done",
       "tags": ["intent", "metadata"],
       "rejectTextInAnswer": ["no information"]
+    },
+
+    {
+      "name": "Episode lookup by number (intent detection)",
+      "query": "what is episode 283",
+      "tags": ["intent", "metadata", "episode-lookup"],
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Episode lookup bare (intent detection)",
+      "query": "episode 204",
+      "tags": ["intent", "metadata", "episode-lookup"],
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Episode details request (intent detection)",
+      "query": "tell me about episode 150",
+      "tags": ["intent", "metadata", "episode-lookup"],
+      "rejectTextInAnswer": ["no information", "don't have"]
     },
 
     {
@@ -329,7 +348,7 @@
     {
       "name": "Jason fishing cross-episode aggregation",
       "query": "What does Jason think of fishing",
-      "tags": ["cross-episode", "aggregation", "persona", "known-failure"],
+      "tags": ["cross-episode", "aggregation", "persona"],
       "expectClassificationType": ["interpretive", "hybrid"],
       "expectTextInAnswer": ["fishing"],
       "rejectTextInAnswer": ["no information", "don't have"],

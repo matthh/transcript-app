@@ -14,9 +14,11 @@ Input:
 2. Trace routing:
    - Intent detection result and confidence.
    - Classification type, confidence, filters, `requiresTranscriptDepth`.
-   - If query contains an explicit episode id (for example, "episode 283"), verify both:
-     - episode-number extraction succeeded, and
-     - metadata episode-lookup fast-path was attempted (or explicitly skipped with reason).
+   - If query contains an explicit episode id (for example, "episode 283"), verify:
+     - `metadata_episode_lookup` intent was detected (added in Phase 1),
+     - episode-number extraction succeeded,
+     - metadata episode-lookup fast-path returned a deterministic summary (or fell through to full pipeline with reason when episode not found).
+   - Check confidence-based routing: medium-confidence intents should skip metadata aggregate; low-confidence (< 0.6) + no filters should force hybrid.
 3. Trace retrieval:
    - Metadata inclusion/exclusion decision.
    - Retrieval K, BM25 availability, fusion/boost/diversification behavior.

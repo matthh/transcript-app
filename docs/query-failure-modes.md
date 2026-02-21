@@ -27,21 +27,27 @@ For each reported bad query:
 - Common miss: query sent to metadata fast-path, returns thin or wrong answer.
 - User-visible symptom: confident but incomplete answer, or irrelevant metadata list.
 - Plan alignment: Phase 1 (routing guardrails), Phase 4 (routing assertions).
+- Phase 1 mitigations shipped:
+  - Medium-confidence intents skip metadata fast-path, fall through to full pipeline.
+  - Low-confidence classifications (< 0.6) with no filters force hybrid handling.
+  - Quick synthesis restricted to factual queries without `requiresTranscriptDepth`.
 
-### FM-02: Endpoint Drift (`/api/search` vs `/api/search/stream`)
+### FM-02: Endpoint Drift (`/api/search` vs `/api/search/stream`) — MITIGATED
 - Stage: Routing/Policy
 - Query type: any
-- Why hard now: duplicated logic can diverge subtly over time.
+- ~~Why hard now: duplicated logic can diverge subtly over time.~~
 - Common miss: same query yields different routing, depth, or result quality by endpoint.
 - User-visible symptom: UI answer differs from non-stream API answer.
 - Plan alignment: Phase 1 (shared policy), Phase 4 (endpoint parity assertions).
+- Phase 1 resolution: shared routing policy module (`src/lib/routing-policy.ts`) centralizes all routing decisions (`shouldSkipMetadataAggregate`, `shouldForceHybridClassification`, `shouldUseQuickSynthesis`, constants, `episodeToMetadataSource`). Both endpoints import from this module. Presentation-layer duplication (Tilda/notable-moments formatting) remains but is expected (JSON vs SSE).
+- Residual risk: future changes could re-introduce drift if new routing logic is added inline instead of via the shared module. Phase 4 endpoint parity assertions will guard against this.
 
 ### FM-03: Filter Extraction Failure
 - Stage: Classification -> Metadata retrieval
 - Query type: factual/hybrid with entities (film/guest/director/genre)
 - Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search.
 - Common miss: no metadata matches, wrong film/person picked, fallback too broad.
-- Example: episode-id lookup misses such as "what episode is 283" or "give me details about episode 283".
+- ~~Example: episode-id lookup misses such as “what episode is 283” or “give me details about episode 283”.~~ **Resolved in Phase 1** — dedicated `metadata_episode_lookup` intent now handles these patterns deterministically.
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
 - Plan alignment: Phase 2 (relaxation strategy), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
 
@@ -114,9 +120,10 @@ For each reported bad query:
 - Query type: metadata-intent queries with partial mismatches
 - Why hard now: fast-path may trigger without robust fallback rationale.
 - Common miss: terse unhelpful output instead of fallback full pipeline + explanation.
-- Example: explicit episode-number questions fail to return metadata details and instead degrade into weak transcript-only responses.
+- ~~Example: explicit episode-number questions fail to return metadata details and instead degrade into weak transcript-only responses.~~ **Resolved in Phase 1** — `metadata_episode_lookup` intent returns a deterministic summary; falls through to full pipeline when episode not found.
 - User-visible symptom: abrupt “no result” or low-context answer.
 - Plan alignment: Phase 1 fast-path fallthrough guardrails, Phase 4 routing assertions.
+- Phase 1 mitigations shipped: medium-confidence intents bypass fast-path entirely; all fast-path misses log structured reason and fall through.
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
@@ -132,15 +139,15 @@ These are expected to be hard until dedicated handling is added:
 - False negatives from insufficient retrieval coverage.
 - Right evidence, wrong person attribution.
 - Right quote, wrong episode attribution.
-- Correct intent, wrong depth mode.
+- Correct intent, wrong depth mode. *(Partially mitigated: quick synthesis now gated on `requiresTranscriptDepth`.)*
 - Correct metadata filter domain, wrong extracted value.
 - Overconfident summary language when evidence is sparse.
-- Endpoint-specific inconsistencies.
+- ~~Endpoint-specific inconsistencies.~~ *(Mitigated by shared routing policy module.)*
 
 ## Detection Signals (Operational)
 
 Track these signals to detect failure modes early:
-- High disagreement rate between `/api/search` and `/api/search/stream` for same query.
+- High disagreement rate between `/api/search` and `/api/search/stream` for same query. *(Should now be rare given shared routing policy; monitor for regression.)*
 - High rate of “no information” for queries later verified as answerable.
 - Elevated citation-episode mismatch rate.
 - Elevated host/guest attribution correction rate in user feedback.
