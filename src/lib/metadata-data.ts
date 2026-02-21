@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 306 episodes - updated 2026-02-20
+// Auto-generated - do not edit - 307 episodes - updated 2026-02-21
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -205,9 +205,9 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "length": "1:16:19",
     "reviewer": "birria",
     "guest": "ctcher",
-    "mmmCount": 6,
-    "thatsGreatCount": 1,
-    "notableMoments": "- Pod-First: Jason suggests the segment: Who Would Tilda Swinton Play? \n- Jason has concerns about Timmy as Paul. ",
+    "mmmCount": 17,
+    "thatsGreatCount": 5,
+    "notableMoments": "- Dune News - Set pics including the Ornathopter \n- Ian talks about Jodorowsli's Dune \n- Ian reveals a shocking lack of taste by stating that they did not like Blade Runner 2049 in the Hot Takes segment \n- Cohen Brothers are Jason's favorite living directors, and No Country is one of his favorite films of all time \n- Cohens and Roger Deakins make this a beautiful movie \n- Javier Bardem as Anton Chigurh is one of the best villains of all time \n- Jason still worried about the plan to make Dune Part 1 and Part 2 \n- Great episode from early in the Dune Pod days \n- Letters - Jonesy Loves Beer with a letter about finishing reading Dune, Letter from Jason's Mom",
     "hFlex": "N/A",
     "jFlex": "Jason used to wear a beige trenchcoat, thinks Dylan is the most overrated songwriter ever. ",
     "kevsQuestion": "N/A",
@@ -13324,5 +13324,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Ray Walston",
       "Scott Thomson"
     ]
+  },
+  {
+    "pod": "EH",
+    "season": 8,
+    "episode": 296,
+    "film": "Best of Escape Hatch: No Country for Old Men (2007)",
+    "filmYear": 2007,
+    "releaseDate": "2/22/2026",
+    "length": "1:47:05",
+    "reviewer": "birria",
+    "guest": "Ian de Borja",
+    "mmmCount": 0,
+    "thatsGreatCount": 0,
+    "notableMoments": "A re-release of episode 6 of Dune Pod from 6/30/2020 \n- Is the 6/7 meme dead? \n- Vacation week - Haitch in Tahoe and Jason on an Island in the South Pacific \n- Jason has been vibe-coding with Claude Code for Pod Data Central 2.0, and Transcript Bots \n- The guys reflect on listening back to an episode from very early in the Pod, deep in Covid",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "N/A",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "https://www.patreon.com/posts/best-of-escape-150616939",
+    "artworkLink": "",
+    "letterboxdLink": "https://letterboxd.com/film/no-country-for-old-men/",
+    "imdbLink": "https://www.imdb.com/title/tt0477348/?ref_=ext_shr_lnk"
   }
 ];
