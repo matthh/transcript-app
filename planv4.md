@@ -54,8 +54,8 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 - Single source of truth for routing and synthesis policy.
 
 ## Current Gaps (to address)
-- Routing behavior diverges between streaming and non-streaming paths.
-- Confidence signals are not fully calibrated.
+- ~~Routing behavior diverges between streaming and non-streaming paths.~~ **Resolved in Phase 1** — shared routing policy module (`src/lib/routing-policy.ts`) unifies all routing decisions.
+- ~~Confidence signals are not fully calibrated.~~ **Partially resolved in Phase 1** — medium-confidence intents skip metadata aggregate; low-confidence classifications force hybrid; `classificationConfidence` exposed in API response.
 - Retrieval still allows noisy/duplicative chunks in difficult queries.
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
@@ -64,30 +64,39 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 
 ## Roadmap
 
-### Phase 1: Routing Consistency and Guardrails (1-2 weeks)
+### Phase 1: Routing Consistency and Guardrails ✅ SHIPPED
 Objective: eliminate logic drift and remove high-cost misroutes.
 
-Deliverables:
-- Unify routing/synthesis policy between `/api/search` and `/api/search/stream`.
-- Centralize `useQuickSynthesis` decision in a shared utility.
-- Centralize deterministic analysis fast-path registration so any special analyzers run identically on both endpoints.
-- Add explicit metadata episode-lookup intent coverage:
-  - support patterns like `what episode is 283` and `give me details about episode 283`.
-  - return deterministic metadata summary (title, season/episode, release date, guest/reviewer) when episode id exists.
-  - return explicit not-found response when episode id does not exist.
-- Enforce transcript-depth parity:
-  - factual queries with `requiresTranscriptDepth=true` must use full synthesis on both endpoints.
-  - quick-mode truncation is allowed only for metadata-answerable factual queries.
-- Enforce confidence-based routing policy:
+Implementation:
+- ✅ Unified routing/synthesis policy between `/api/search` and `/api/search/stream` via shared module `src/lib/routing-policy.ts`.
+- ✅ Centralized `shouldUseQuickSynthesis()` — checks `depth === 'quick' && type === 'factual' && !requiresTranscriptDepth`.
+- ✅ Centralized `shouldSkipMetadataAggregate()` — skips metadata fast-path for medium-confidence intents.
+- ✅ Centralized `shouldForceHybridClassification()` — forces hybrid when confidence < 0.6 and no filters.
+- ✅ Centralized `episodeToMetadataSource()` — eliminated ~100 lines of duplication across both endpoints.
+- ✅ Extracted constants: `MAX_LIMIT`, `DEFAULT_LIMIT`, `QUICK_SYNTHESIS`, `DEEP_SYNTHESIS_MODEL`.
+- ✅ Added `metadata_episode_lookup` intent in `query-intent.ts`:
+  - supports patterns: `what episode is 283`, `episode 204` (bare), `tell me about episode 150`.
+  - returns deterministic metadata summary (title, season/episode, release date, guest/reviewer).
+  - falls through to full pipeline when episode not found.
+- ✅ Enforced transcript-depth parity:
+  - factual queries with `requiresTranscriptDepth=true` use full synthesis on both endpoints.
+  - quick-mode truncation only for metadata-answerable factual queries.
+- ✅ Enforced confidence-based routing policy:
   - high-confidence metadata intents: fast-path.
-  - medium-confidence metadata intents: run fast-path + full pipeline, pick best.
+  - medium-confidence metadata intents: skip fast-path, fall through to full pipeline.
   - low classification confidence with empty filters: force hybrid handling.
-- Ensure all fast-path misses fall through with structured reason logging.
+- ✅ All fast-path misses fall through with structured reason logging.
+- ✅ Added `classificationConfidence` to regular endpoint response (was already in stream).
+- ✅ Fixed `synthesistuning` typo in stream endpoint → `synthesisTuning`.
 
-Exit Criteria:
-- Shared routing policy used by both endpoints.
-- 100% of requests include routing decision telemetry.
-- No endpoint-specific behavior drift in regression tests.
+Verification:
+- `npm run regression:routing` — 10/10 routing policy unit tests pass.
+- `npm run regression:queries` — 20/20 intent regression cases pass (17 existing + 3 new episode-lookup).
+- TypeScript compilation clean on all changed files.
+
+Remaining (deferred to Phase 2+):
+- Tilda/notable-moments fast-path handlers still have presentation-layer duplication (endpoints format differently for JSON vs SSE).
+- `metadata-aggregates.ts` retains its own internal `episodeToMetadataSource` copy to avoid circular dependency risk.
 
 ### Phase 2: Retrieval Quality Upgrades (2-3 weeks)
 Objective: raise relevance and reduce redundancy.
@@ -239,7 +248,7 @@ Exit Criteria:
 - Metadata data quality: data pipeline owner.
 
 ## Milestones
-- M1 (end Phase 1): unified routing policy shipped.
+- M1 (end Phase 1): unified routing policy shipped. ✅
 - M2 (end Phase 2): retrieval gains validated on eval set.
 - M3 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.

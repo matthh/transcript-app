@@ -47,8 +47,8 @@ flowchart LR
 ### Component definitions
 
 - **Search UI** — The page where someone types a question and clicks search.
-- **/api/search/stream** — The primary server endpoint used by the UI (SSE streaming) that orchestrates the whole search flow. (`/api/search` is the non-streaming sibling.)
-- **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, guest/reviewer lookup, release date, Kev’s question, etc.).
+- **/api/search/stream** — The primary server endpoint used by the UI (SSE streaming) that orchestrates the whole search flow. (`/api/search` is the non-streaming sibling.) Both endpoints share routing policy and synthesis decisions via a common module (`src/lib/routing-policy.ts`).
+- **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, episode lookup, guest/reviewer lookup, release date, Kev’s question, etc.).
 - **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
@@ -77,6 +77,8 @@ For these, the system **skips the heavier search** and answers directly from epi
 
 If an intent fires but the metadata lookup returns nothing (e.g., the film isn't in the database), the system **falls through** to the full search pipeline rather than returning an empty result.
 
+**Confidence guardrail:** When intent detection has only **medium confidence**, the system skips the metadata fast-path entirely and falls through to the full pipeline. This prevents low-quality deterministic answers for ambiguous queries.
+
 ---
 
 ### 2) Classification + embedding (in parallel)
@@ -94,6 +96,8 @@ At the same time, the system extracts **filters** like:
 guest, film, director, actor, genre, decade, season.
 
 These filters help narrow down the search to the most relevant episodes.
+
+**Low-confidence guardrail:** If the classifier has low confidence (< 0.6) and extracted no filters, the system forces the query type to **hybrid** regardless of what the LLM returned. This prevents misrouting ambiguous queries into the wrong search mode.
 
 ---
 
