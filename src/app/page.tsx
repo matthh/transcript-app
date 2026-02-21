@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { formatEpisodeLabel } from '@/lib/episode-format';
@@ -65,24 +65,28 @@ export default function Home() {
   const [deepStreamingText, setDeepStreamingText] = useState('');
   const [showTranscripts, setShowTranscripts] = useState(false);
 
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!query.trim()) return;
+  const runSearch = useCallback(async (searchQuery: string) => {
+    const trimmed = searchQuery.trim();
+    if (!trimmed) return;
 
+    setQuery(trimmed);
     setLoading(true);
     setError(null);
     setResult(null);
     setStreamingText('');
     setDeepening(false);
     setDeepStreamingText('');
-    setSearchedQuery(query);
+    setSearchedQuery(trimmed);
     setProgress({ stage: 'starting', message: 'Starting search...' });
+
+    // Update URL to reflect current query
+    window.history.replaceState(null, '', '/?q=' + encodeURIComponent(trimmed));
 
     try {
       const response = await fetch('/api/search/stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query, depth: 'quick' }),
+        body: JSON.stringify({ query: trimmed, depth: 'quick' }),
       });
 
       if (!response.ok) {
@@ -135,7 +139,21 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
+  }, []);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    runSearch(query);
   };
+
+  // Auto-search from ?q= URL parameter on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q) {
+      runSearch(q);
+    }
+  }, [runSearch]);
 
   const handleDeepen = async () => {
     if (!searchedQuery.trim()) return;
