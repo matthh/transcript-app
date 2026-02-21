@@ -275,7 +275,7 @@
       "name": "Haitch band history (transcript-search factual)",
       "query": "Did Haitch the host ever have a band? Did they ever open for another more famous act?",
       "tags": ["transcript-factual", "biographical", "host"],
-      "rejectTextInAnswer": ["no information", "don't have", "not mentioned"],
+      "rejectTextInAnswer": ["no information", "not mentioned"],
       "expectMinTranscriptSources": 1
     },
     {

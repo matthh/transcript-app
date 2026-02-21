@@ -238,6 +238,27 @@ export function suppressBoilerplate(results: RetrievalResult[]): RetrievalResult
     .sort((a, b) => b.score - a.score);
 }
 
+// --- Best-of re-broadcast suppression ---
+
+const BEST_OF_PATTERN = /best of escape hatch/i;
+
+/**
+ * Downweight chunks from "Best of" re-broadcast episodes.
+ * These compilations duplicate content from original episodes, inflating
+ * per-episode counts and wasting result slots.
+ * 0.4× score penalty; re-sort after.
+ */
+export function suppressBestOfRebroadcasts(results: RetrievalResult[]): RetrievalResult[] {
+  return results
+    .map((r) => {
+      if (BEST_OF_PATTERN.test(r.chunk.metadata.episodeTitle)) {
+        return { ...r, score: r.score * 0.4 };
+      }
+      return r;
+    })
+    .sort((a, b) => b.score - a.score);
+}
+
 // --- Near-duplicate removal ---
 
 function tokenizeForDedup(text: string): Set<string> {
@@ -293,8 +314,10 @@ export function parseChunkId(id: string): { prefix: string; index: number } | nu
 
 /**
  * Expand results by appending adjacent chunks for keyword-matching results.
- * For each result containing at least 1 query keyword, look up neighbors
+ * For each result containing at least 2 query keywords, look up neighbors
  * (index ± 1) in the chunk map. Neighbors get 0.5× the parent's score.
+ * The 2-keyword minimum prevents expansion on generic single-term matches
+ * (e.g., a common host name) while still triggering for substantive matches.
  */
 export function expandAdjacentChunks(
   results: RetrievalResult[],
@@ -303,13 +326,14 @@ export function expandAdjacentChunks(
 ): RetrievalResult[] {
   if (queryTerms.length === 0) return results;
 
+  const minKeywords = Math.min(2, queryTerms.length);
   const resultIds = new Set(results.map((r) => r.chunk.id));
   const expanded: RetrievalResult[] = [...results];
 
   for (const result of results) {
     const text = result.chunk.text.toLowerCase();
-    const hasKeyword = queryTerms.some((t) => text.includes(t));
-    if (!hasKeyword) continue;
+    const matchCount = queryTerms.filter((t) => text.includes(t)).length;
+    if (matchCount < minKeywords) continue;
 
     const parsed = parseChunkId(result.chunk.id);
     if (!parsed) continue;
@@ -501,8 +525,11 @@ export async function hybridRetrieval(
   // Suppress boilerplate outro/credits chunks
   const boilerplateSuppressed = suppressBoilerplate(episodeBoosted);
 
+  // Suppress Best-of re-broadcast episodes
+  const bestOfSuppressed = suppressBestOfRebroadcasts(boilerplateSuppressed);
+
   // Remove near-duplicate chunks (e.g. Best-of re-broadcasts)
-  const deduplicated = deduplicateChunks(boilerplateSuppressed);
+  const deduplicated = deduplicateChunks(bestOfSuppressed);
 
   // Diversify: cap chunks per episode so results span more episodes
   const maxPerEpisode = 2;

@@ -17,6 +17,7 @@ import {
   RetrievalResult,
   parseChunkId,
   suppressBoilerplate,
+  suppressBestOfRebroadcasts,
   deduplicateChunks,
   expandAdjacentChunks,
 } from '../src/lib/hybrid-retrieval';
@@ -364,6 +365,47 @@ function runUnitTests(): { passed: number; failed: number; errors: string[] } {
   const noExpand = expandAdjacentChunks(inputResults, [], chunkMap);
   assert(noExpand.length === inputResults.length,
     'expandAdjacentChunks: empty queryTerms returns unchanged');
+
+  // With 2+ query terms, chunk matching only 1 term should NOT expand
+  chunkMap.set('ep_c_5', makeChunk('ep_c_5', 'This chunk mentions only digital effects'));
+  chunkMap.set('ep_c_4', makeChunk('ep_c_4', 'Neighbor of digital chunk'));
+  chunkMap.set('ep_c_6', makeChunk('ep_c_6', 'Other neighbor of digital chunk'));
+  const multiTermInput: RetrievalResult[] = [
+    { chunk: chunkMap.get('ep_a_5')!, score: 1.0, source: 'both' }, // has "eszterhas" only
+    { chunk: chunkMap.get('ep_c_5')!, score: 0.8, source: 'bm25' }, // has "digital" only
+  ];
+  const multiTermExpanded = expandAdjacentChunks(multiTermInput, ['eszterhas', 'digital', 'court'], chunkMap);
+  // ep_a_5 has only 1 of 3 terms → no expansion; ep_c_5 has only 1 of 3 terms → no expansion
+  assert(multiTermExpanded.length === 2,
+    `expandAdjacentChunks: single-term match with multi-term query does not expand (got ${multiTermExpanded.length})`);
+
+  // With 2+ query terms, chunk matching 2+ terms SHOULD expand
+  chunkMap.set('ep_d_5', makeChunk('ep_d_5', 'Digital court jew discussion here'));
+  chunkMap.set('ep_d_4', makeChunk('ep_d_4', 'Previous context for court jew'));
+  chunkMap.set('ep_d_6', makeChunk('ep_d_6', 'Next context for court jew'));
+  const multiMatchInput: RetrievalResult[] = [
+    { chunk: chunkMap.get('ep_d_5')!, score: 1.0, source: 'both' }, // has "digital" + "court" + "jew"
+  ];
+  const multiMatchExpanded = expandAdjacentChunks(multiMatchInput, ['digital', 'court', 'jew'], chunkMap);
+  assert(multiMatchExpanded.length === 3,
+    `expandAdjacentChunks: multi-term match expands neighbors (got ${multiMatchExpanded.length})`);
+
+  // --- suppressBestOfRebroadcasts tests ---
+  const originalEp = makeResult('orig_ep_1', 'Great discussion about the movie', 1.0, 'Tron: Legacy (2010)');
+  const bestOfEp = makeResult('bestof_1', 'Great discussion about the movie', 0.9, 'Best of Escape Hatch: Tron: Legacy (2010)');
+  const regularEp = makeResult('reg_1', 'Another movie discussion', 0.8, 'The Matrix');
+
+  const bestOfSuppressed = suppressBestOfRebroadcasts([originalEp, bestOfEp, regularEp]);
+  const bestOfResult = bestOfSuppressed.find(r => r.chunk.id === 'bestof_1')!;
+  const origResult = bestOfSuppressed.find(r => r.chunk.id === 'orig_ep_1')!;
+  const regResult = bestOfSuppressed.find(r => r.chunk.id === 'reg_1')!;
+
+  assert(Math.abs(bestOfResult.score - 0.36) < 0.001,
+    `suppressBestOfRebroadcasts: Best-of gets 0.4x penalty (got ${bestOfResult.score})`);
+  assert(origResult.score === 1.0,
+    'suppressBestOfRebroadcasts: original episode unchanged');
+  assert(regResult.score === 0.8,
+    'suppressBestOfRebroadcasts: regular episode unchanged');
 
   return { passed, failed, errors };
 }
