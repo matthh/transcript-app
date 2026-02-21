@@ -19,56 +19,18 @@ import {
   TranscriptSource,
   EpisodeMetadata,
 } from '@/types/episode-metadata';
+import {
+  MAX_LIMIT,
+  DEFAULT_LIMIT,
+  QUICK_SYNTHESIS,
+  DEEP_SYNTHESIS_MODEL,
+  episodeToMetadataSource,
+  shouldSkipMetadataAggregate,
+  shouldForceHybridClassification,
+  shouldUseQuickSynthesis,
+} from '@/lib/routing-policy';
 
-function episodeToMetadataSource(episode: EpisodeMetadata): MetadataSource {
-  const relevantFields: Record<string, string> = {};
-
-  if (episode.notableMoments) {
-    relevantFields['Notable Moments'] = episode.notableMoments;
-  }
-  if (episode.hFlex) {
-    relevantFields['H Flex'] = episode.hFlex;
-  }
-  if (episode.jFlex) {
-    relevantFields['J Flex'] = episode.jFlex;
-  }
-  if (episode.kevsQuestion) {
-    relevantFields["Kev's Question"] = episode.kevsQuestion;
-  }
-  if (episode.tildaH) {
-    relevantFields['Tilda H'] = episode.tildaH;
-  }
-  if (episode.tildaJason) {
-    relevantFields['Tilda Jason'] = episode.tildaJason;
-  }
-  if (episode.tildaGuest) {
-    relevantFields['Tilda Guest'] = episode.tildaGuest;
-  }
-  if (episode.tildaCorey) {
-    relevantFields['Tilda Corey'] = episode.tildaCorey;
-  }
-
-  return {
-    film: episode.film,
-    season: episode.season,
-    episode: episode.episode,
-    releaseDate: episode.releaseDate,
-    guest: episode.guest,
-    reviewer: episode.reviewer,
-    relevantFields,
-  };
-}
-
-
-const MAX_LIMIT = 500;
-const DEFAULT_LIMIT = 100;
 let loggedCacheStatus = false;
-
-const QUICK_SYNTHESIS = {
-  maxChunks: 4,
-  model: 'claude-haiku-4-5-20251001',
-  maxTokens: 700,
-};
 
 
 export async function POST(request: NextRequest) {
@@ -271,7 +233,7 @@ export async function POST(request: NextRequest) {
               });
             }
 
-            const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : 'claude-sonnet-4-20250514';
+            const tildaModel = depth === 'quick' ? QUICK_SYNTHESIS.model : DEEP_SYNTHESIS_MODEL;
             const tildaMaxTokens = depth === 'quick' ? QUICK_SYNTHESIS.maxTokens : 2048;
             const message = await getAnthropic().messages.create({
               model: tildaModel,
@@ -324,7 +286,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         }
       }
 
-      const aggregate = buildMetadataAggregateResponse(intent);
+      if (shouldSkipMetadataAggregate(intent)) {
+        console.log('Medium-confidence intent, falling through to full pipeline', { type: intent.type, confidence: intent.confidence });
+      }
+
+      const aggregate = !shouldSkipMetadataAggregate(intent) ? buildMetadataAggregateResponse(intent) : null;
       if (aggregate) {
         const totalMs = Date.now() - requestStart;
         const aggMetaCount = aggregate.sources.metadata?.length || 0;
@@ -373,6 +339,10 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       classifyQuery(query),
       embeddingPromise,
     ]);
+    if (shouldForceHybridClassification(classification)) {
+      console.log('Low-confidence classification, forcing hybrid', { original: classification.type, confidence: classification.confidence });
+      classification.type = 'hybrid';
+    }
     if (classification.type === 'interpretive' && !tuning && depth !== 'deep') {
       tuning = getSearchTuning('fast');
     }
@@ -488,12 +458,19 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       : undefined;
 
     // Step 4: Synthesize answer with Claude
-    // Quick mode: fewer chunks + fast model; Deep mode: full synthesis
-    const synthesisChunks = depth === 'quick'
+    const useQuickSynthesis = shouldUseQuickSynthesis(depth, classification);
+
+    if (depth === 'quick' && classification.type !== 'factual') {
+      console.log('Auto-deep: interpretive/hybrid query, using full synthesis');
+    } else if (depth === 'quick' && classification.type === 'factual' && classification.requiresTranscriptDepth) {
+      console.log('Auto-deep: transcript-search factual query, using full chunks');
+    }
+
+    const synthesisChunks = useQuickSynthesis
       ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
       : transcriptChunks;
 
-    const synthesisTuning = depth === 'quick'
+    const synthesisTuning = useQuickSynthesis
       ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
       : classification.type === 'interpretive'
         ? { model: tuning?.interpretiveModel, maxTokens: tuning?.interpretiveMaxTokens }
@@ -514,7 +491,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
 
     // Step 5: Build response with pagination metadata
     const totalMs = Date.now() - requestStart;
-    const synthesisModel = synthesisTuning?.model ?? 'claude-sonnet-4-20250514';
+    const synthesisModel = synthesisTuning?.model ?? DEEP_SYNTHESIS_MODEL;
     const allSourceEpisodes = [
       ...(transcriptSources.map((s) => s.episodeTitle)),
       ...(metadataSources.map((s) => s.film)),
@@ -542,7 +519,8 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       answer,
       queryId,
       queryType: classification.type,
-      canDeepen: depth === 'quick' && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
+      classificationConfidence: classification.confidence,
+      canDeepen: useQuickSynthesis && transcriptChunks.length > QUICK_SYNTHESIS.maxChunks,
       sources: {
         transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
         metadata: metadataSources.length > 0 ? metadataSources : undefined,

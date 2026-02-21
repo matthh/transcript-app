@@ -115,6 +115,24 @@ const cases: RegressionCase[] = [
     expectIntent: 'none',
     expectNotableMomentsFilm: '2001',
   },
+  {
+    name: 'Episode lookup by number',
+    query: 'what is episode 283',
+    expectIntent: 'metadata_episode_lookup',
+    expectAnswerIncludes: ['episode 283'],
+  },
+  {
+    name: 'Episode lookup bare',
+    query: 'episode 204',
+    expectIntent: 'metadata_episode_lookup',
+    expectAnswerIncludes: ['episode 204'],
+  },
+  {
+    name: 'Episode lookup tell me about',
+    query: 'tell me about episode 150',
+    expectIntent: 'metadata_episode_lookup',
+    expectAnswerIncludes: ['episode 150'],
+  },
 ];
 
 function runCase(testCase: RegressionCase): string | null {

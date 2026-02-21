@@ -235,6 +235,26 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     };
   }
 
+  if (intent.type === 'metadata_episode_lookup' && intent.episodeNumber !== undefined) {
+    const episode = getEpisodeByNumber(intent.episodeNumber);
+    if (!episode) return null;
+
+    const epLabel = formatEpisodeLabel(episode.season, episode.episode);
+    const lines: string[] = [];
+    lines.push(`- Film: ${episode.film}`);
+    lines.push(`- Episode: ${epLabel}`);
+    if (episode.releaseDate) lines.push(`- Release date: ${episode.releaseDate}`);
+    lines.push(`- Reviewer: ${episode.reviewer}`);
+    const guestValue = episode.guest && episode.guest.trim() ? episode.guest : 'No guest listed';
+    lines.push(`- Guest: ${guestValue}`);
+
+    const source = episodeToMetadataSource(episode);
+    return {
+      answer: `Episode ${intent.episodeNumber} — "${episode.film}" (${epLabel}):\n${lines.join('\n')}`,
+      sources: { metadata: [source] },
+    };
+  }
+
   if (intent.type === 'metadata_guest_search' && intent.guestName) {
     const episodes = getEpisodesByGuest(intent.guestName);
     if (episodes.length === 0) return null; // fallthrough to full pipeline

@@ -10,6 +10,7 @@ export type QueryIntentType =
   | 'metadata_field_latest'
   | 'metadata_field_max'
   | 'metadata_episode_fields'
+  | 'metadata_episode_lookup'
   | 'metadata_guest_search'
   | 'metadata_tilda'
   | 'metadata_notable_moments'
@@ -170,6 +171,35 @@ function extractGuestName(normalized: string): string | null {
   return null;
 }
 
+function detectEpisodeLookupIntent(query: string): QueryIntent | null {
+  const episodeNumber = extractEpisodeNumberFromQuery(query);
+  if (episodeNumber === null) return null;
+
+  const normalized = normalize(query);
+
+  // Skip if query asks for specific fields (handled by detectEpisodeFieldsIntent)
+  if (/\b(guest|reviewer|reviewed|release date|kev'?s?\s+question)\b/.test(normalized)) return null;
+
+  // Skip if query mentions tilda or notable moments (handled by later intents)
+  if (/\btilda\b/.test(normalized)) return null;
+  if (/\bnotable moments?\b/.test(normalized)) return null;
+
+  // Match general episode queries
+  const isEpisodeQuery =
+    /\b(?:what\s+(?:is|was|are)\s+)?(?:episode|ep)\s*#?\s*\d/.test(normalized) ||
+    /\btell\s+me\s+about\s+(?:episode|ep)\s*#?\s*\d/.test(normalized) ||
+    /\bdetails?\s+(?:about|for|on)\s+(?:episode|ep)\s*#?\s*\d/.test(normalized) ||
+    /^(?:episode|ep)\s*#?\s*\d{1,4}\s*$/.test(normalized.trim());
+
+  if (!isEpisodeQuery) return null;
+
+  return {
+    type: 'metadata_episode_lookup',
+    confidence: 'high',
+    episodeNumber,
+  };
+}
+
 function detectGuestSearchIntent(query: string): QueryIntent | null {
   const normalized = normalize(query);
   if (!/\bguest\b/.test(normalized)) return null;
@@ -246,6 +276,11 @@ export function detectQueryIntent(query: string): QueryIntent {
   const episodeFieldsIntent = detectEpisodeFieldsIntent(query);
   if (episodeFieldsIntent) {
     return episodeFieldsIntent;
+  }
+
+  const episodeLookupIntent = detectEpisodeLookupIntent(query);
+  if (episodeLookupIntent) {
+    return episodeLookupIntent;
   }
 
   const guestSearchIntent = detectGuestSearchIntent(query);
