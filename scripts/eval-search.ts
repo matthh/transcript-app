@@ -71,28 +71,64 @@ interface CaseResult {
 // SSE client — calls /api/search/stream and parses events
 // ---------------------------------------------------------------------------
 
-async function runQuery(baseUrl: string, query: string): Promise<SSEResult> {
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function runQuery(baseUrl: string, query: string, maxRetries = 3): Promise<SSEResult> {
   const url = `${baseUrl.replace(/\/$/, '')}/api/search/stream`;
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
-  });
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+    });
 
-  if (!response.ok) {
-    const text = await response.text();
-    return {
-      answer: '',
-      queryType: 'error',
-      sources: {},
-      perf: { totalMs: 0, path: 'error' },
-      error: `HTTP ${response.status}: ${text.slice(0, 200)}`,
-    };
+    if (response.status === 429) {
+      if (attempt < maxRetries) {
+        const backoff = Math.pow(2, attempt + 1) * 5000; // 10s, 20s, 40s
+        console.log(`        429 rate limited, retrying in ${backoff / 1000}s (attempt ${attempt + 1}/${maxRetries})...`);
+        await sleep(backoff);
+        continue;
+      }
+    }
+
+    // Also check for 429 embedded in the SSE response body (app-level rate limit errors)
+    if (!response.ok) {
+      const text = await response.text();
+      return {
+        answer: '',
+        queryType: 'error',
+        sources: {},
+        perf: { totalMs: 0, path: 'error' },
+        error: `HTTP ${response.status}: ${text.slice(0, 200)}`,
+      };
+    }
+
+    // Success — parse and check for embedded rate limit error in SSE
+    const body = await response.text();
+    const parsed = parseSSEBody(body);
+
+    if (parsed.error && parsed.error.includes('429') && attempt < maxRetries) {
+      const backoff = Math.pow(2, attempt + 1) * 5000;
+      console.log(`        429 in response body, retrying in ${backoff / 1000}s (attempt ${attempt + 1}/${maxRetries})...`);
+      await sleep(backoff);
+      continue;
+    }
+
+    return parsed;
   }
 
-  // Parse SSE events from the response body
-  const body = await response.text();
+  // Should not reach here, but just in case
+  return {
+    answer: '',
+    queryType: 'error',
+    sources: {},
+    perf: { totalMs: 0, path: 'error' },
+    error: 'Max retries exceeded',
+  };
+}
+
+function parseSSEBody(body: string): SSEResult {
   const lines = body.split('\n');
 
   let answer = '';
@@ -293,7 +329,14 @@ async function runEval(
 
   const results: CaseResult[] = [];
 
-  for (const testCase of cases) {
+  const THROTTLE_MS = 2000; // delay between cases to avoid rate limits
+
+  for (let ci = 0; ci < cases.length; ci++) {
+    const testCase = cases[ci];
+
+    // Throttle: wait between requests (skip before first)
+    if (ci > 0) await sleep(THROTTLE_MS);
+
     const start = Date.now();
     try {
       const result = await runQuery(baseUrl, testCase.query);
