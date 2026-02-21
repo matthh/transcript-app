@@ -77,6 +77,7 @@ function normalizeName(name: string): string {
     .replace(/\s+/g, ' ')
     .replace(/\b(the|a|an)\b/g, '') // Remove articles
     .replace(/\(\d{4}\)/g, '') // Remove year in parens
+    .replace(/\d{4}$/g, '') // Remove year at end (parens already stripped above)
     .replace(/bonus\s*/gi, '')
     .replace(/on deck\s*-?\s*/gi, '')
     .replace(/episode\s*\d+\s*:?\s*/gi, '')
@@ -85,17 +86,29 @@ function normalizeName(name: string): string {
 }
 
 /**
- * Check if two names match (fuzzy)
+ * Check if two names match (fuzzy).
+ * Uses length-ratio guards on substring checks to prevent false positives
+ * (e.g. "Best of: No Country for Old Men" should NOT match "No Country for Old Men"
+ * as a different episode just because one contains the other).
  */
 function namesMatch(metadataFilm: string, transcriptName: string): boolean {
   const normalizedMeta = normalizeName(metadataFilm);
   const normalizedTranscript = normalizeName(transcriptName);
 
+  if (!normalizedMeta || !normalizedTranscript) return false;
+
   // Exact match after normalization
   if (normalizedMeta === normalizedTranscript) return true;
 
-  // One contains the other
-  if (normalizedMeta.includes(normalizedTranscript) || normalizedTranscript.includes(normalizedMeta)) return true;
+  // One contains the other — but only if the shorter string is at least 70% the
+  // length of the longer one.  This prevents "No Country Old Men" (short) from
+  // matching "Escape Hatch No Country Old Men" (long) when they are different episodes.
+  const shorter = normalizedMeta.length <= normalizedTranscript.length ? normalizedMeta : normalizedTranscript;
+  const longer  = normalizedMeta.length >  normalizedTranscript.length ? normalizedMeta : normalizedTranscript;
+
+  if (longer.includes(shorter) && shorter.length >= longer.length * 0.7) {
+    return true;
+  }
 
   // Check if significant words match
   const metaWords = normalizedMeta.split(' ').filter(w => w.length > 2);
@@ -103,8 +116,9 @@ function namesMatch(metadataFilm: string, transcriptName: string): boolean {
 
   if (metaWords.length > 0 && transWords.length > 0) {
     const matchingWords = metaWords.filter(w => transWords.includes(w));
-    // If most words match, consider it a match
-    if (matchingWords.length >= Math.min(metaWords.length, transWords.length) * 0.6) {
+    const matchRatio = matchingWords.length / Math.max(metaWords.length, transWords.length);
+    // Require at least 60% of the LARGER word set to match (not just the smaller)
+    if (matchRatio >= 0.6) {
       return true;
     }
   }
@@ -222,19 +236,20 @@ export async function GET() {
 
   // Second pass: if ID matching failed, try matching by film/title.
   // This handles cases where transcript episode_number format drifts but title is accurate.
+  // IMPORTANT: only assign to episodes that don't already have a transcript from
+  // the first pass — otherwise a stray name match can corrupt an already-good episode.
   const unmatchedById = transcripts.filter(t => !episodes.some(
     ep => normalizeEpisodeId(ep.episode) === normalizeEpisodeId(t.episodeNumber)
   ));
   for (const t of unmatchedById) {
-    const byNameIdx = episodes.findIndex(ep => namesMatch(ep.film, t.episodeName));
+    const byNameIdx = episodes.findIndex(ep => !ep.hasTranscript && namesMatch(ep.film, t.episodeName));
     if (byNameIdx !== -1) {
       episodes[byNameIdx] = {
         ...episodes[byNameIdx],
         hasTranscript: true,
-        // Preserve existing true flags if multiple transcripts map to one episode
-        needsReview: episodes[byNameIdx].needsReview || t.needsReview,
-        transcriptSource: episodes[byNameIdx].transcriptSource || t.source,
-        transcriptFile: episodes[byNameIdx].transcriptFile || t.filename,
+        needsReview: t.needsReview,
+        transcriptSource: t.source,
+        transcriptFile: t.filename,
       };
     }
   }

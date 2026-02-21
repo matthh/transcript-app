@@ -11,6 +11,9 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -18,6 +21,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -38,4 +43,34 @@ jobs:
             node --import tsx ./scripts/check-new-episodes.ts --verbose --include-backfill
           else
             node --import tsx ./scripts/check-new-episodes.ts --verbose
+          fi
+
+      # The script runs sync-metadata internally, which updates metadata-data.ts
+      # on disk but doesn't commit it. Commit here so the deploy includes the
+      # latest metadata (guests, episode info, etc.) — prevents the gap where a
+      # transcript exists in Blob but metadata is missing from the deployed build.
+      - name: Commit metadata changes
+        run: |
+          if git diff --quiet -- src/lib/metadata-data.ts; then
+            echo "No metadata changes to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/lib/metadata-data.ts
+            git commit -m "chore(metadata): sync sheet metadata"
+            git push origin HEAD:master
+            echo "METADATA_COMMITTED=true" >> "$GITHUB_ENV"
+          fi
+
+      # If metadata was committed, trigger one more deploy so the build uses the
+      # commit that has both the transcript AND the metadata.  The script may have
+      # already triggered a deploy (with stale metadata) — this ensures correctness.
+      - name: Trigger deploy with updated metadata
+        if: env.METADATA_COMMITTED == 'true'
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            curl -sf -X POST "$VERCEL_DEPLOY_HOOK_URL" || echo "Deploy hook trigger failed (non-fatal)"
+            echo "Triggered Vercel deploy with updated metadata."
           fi
