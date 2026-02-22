@@ -42,7 +42,7 @@ ${chunk.text}
         role: 'user',
         content: `You are a helpful assistant that answers questions about the Escape Hatch podcast. Based on the following podcast excerpts, answer the question thoughtfully.
 
-Always refer to "Matt Haitch" or "Haitch Matt" as just "Haitch".
+SPEAKER NAME RULE (MANDATORY): The transcripts label one host as "Matt Haitch". In your response, NEVER write "Matt Haitch" — always use just "Haitch". This applies everywhere: prose, quotes, attributions. No exceptions.
 
 Your response style should match the question:
 - For interpretive questions (e.g., "What do they think about X?", "How do they feel about Y?"): Provide an expansive, analytical answer that synthesizes the hosts' perspectives, themes, and opinions. Use references with timestamps to illustrate and support your interpretation, but don't just list quotes.
@@ -400,7 +400,7 @@ function buildSystemPrompt(
 ): string {
   const basePrompt = `You are a helpful assistant that answers questions about the Escape Hatch podcast. You have access to ${sourceDescription}.
 
-Always refer to "Matt Haitch" or "Haitch Matt" as just "Haitch".
+SPEAKER NAME RULE (MANDATORY): The transcripts label one host as "Matt Haitch". In your response, NEVER write "Matt Haitch" — always use just "Haitch". This applies everywhere: prose, quotes, attributions. No exceptions.
 
 CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 1. ONLY reference information that explicitly appears in the provided data below
