@@ -56,7 +56,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 ## Current Gaps (to address)
 - ~~Routing behavior diverges between streaming and non-streaming paths.~~ **Resolved in Phase 1** — shared routing policy module (`src/lib/routing-policy.ts`) unifies all routing decisions.
 - ~~Confidence signals are not fully calibrated.~~ **Partially resolved in Phase 1** — medium-confidence intents skip metadata aggregate; low-confidence classifications force hybrid; `classificationConfidence` exposed in API response.
-- ~~Retrieval still allows noisy/duplicative chunks in difficult queries.~~ **Partially resolved in Phase 2a+2b** — boilerplate suppression, Jaccard dedup, adjacent-chunk expansion, and LLM reranking shipped. Paraphrased re-broadcast duplicates (below Jaccard 0.6) remain.
+- ~~Retrieval still allows noisy/duplicative chunks in difficult queries.~~ **Largely resolved in Phase 2a+2b+2c** — boilerplate suppression, Jaccard dedup, adjacent-chunk expansion, LLM reranking with keyword-centered excerpts and omission honoring shipped. Paraphrased re-broadcast duplicates (below Jaccard 0.6) remain.
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
@@ -137,13 +137,27 @@ Verification:
 - Eval: 50/53 (effectively 52/53 — 2 flaky failures pass on re-run, +1 new case added).
   - Haitch band history: **fixed** by reranking (was borderline in 2a).
   - Joe Eszterhas anecdote + Zelda multi-referent: **flaky** — pass consistently on re-run (synthesis nondeterminism).
-  - Digital court jew: sole persistent failure (10 episodes, ≤2 target) — pre-existing.
+  - Digital court jew: persistent failure (10 episodes, ≤2 target) — **fixed in Phase 2c**.
 
-### Phase 2c: Retrieval Quality — Remaining Upgrades
-Objective: address remaining retrieval gaps not covered by Phase 2a/2b.
+### Phase 2c: Reranker Precision ✅ SHIPPED
+Objective: make LLM reranker effective at filtering irrelevant keyword-matching chunks.
+
+Implementation:
+- ✅ Honor reranker omissions — removed re-append block that silently added back all chunks the LLM omitted from its ranking.
+- ✅ Keyword-centered excerpt extraction — `extractRelevantExcerpt()` in `src/lib/reranker.ts` finds where query keywords cluster in each chunk and centers the 600-char excerpt window there, instead of blindly taking the first 600 chars. Same token budget, but the LLM now sees the relevant content.
+- ✅ Empty-response safety fallback — if the LLM returns `[]`, fall back to original results.
+
+Verification:
+- `npm run regression:retrieval` — 31/31 unit tests + 19/19 integration tests pass.
+- Eval: 50/53 → 51/53.
+  - Digital court jew: **fixed** (41 chunks / 13 episodes → 2 chunks / 1 episode after reranking).
+  - Full catalog suggestion: known limitation (synthesis nondeterminism).
+  - Zelda multi-referent: flaky (synthesis scope narrowing, not retrieval).
+
+### Phase 2d: Retrieval Quality — Remaining Upgrades
+Objective: address remaining retrieval gaps not covered by Phase 2a/2b/2c.
 
 Deliverables:
-- Further dedup improvements for digital court jew case (Best-of re-broadcasts use paraphrased language below Jaccard 0.6).
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
   - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
@@ -291,7 +305,8 @@ Exit Criteria:
 - M1 (end Phase 1): unified routing policy shipped. ✅
 - M1.5 (end Phase 2a): high-impact retrieval trio shipped. ✅ Eval: 45/52 → 50/52.
 - M2 (end Phase 2b): LLM reranking shipped. ✅ Eval: 50/53.
-- M2.5 (end Phase 2c): remaining retrieval gains validated on eval set.
+- M2.5 (end Phase 2c): reranker precision shipped. ✅ Eval: 51/53.
+- M3 (end Phase 2d): remaining retrieval gains validated on eval set.
 - M3 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.

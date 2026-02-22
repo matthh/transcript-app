@@ -129,7 +129,7 @@ These two are combined into a "hybrid" search so we don't miss relevant passages
 - **Boilerplate suppression** — recurring outro/credits language (e.g., "that's it for this episode", "leave us a rating", Patreon links) is downweighted so it doesn't crowd out substantive content.
 - **Near-duplicate removal** — chunks with high token overlap (e.g., from "Best of" re-broadcast episodes) are deduplicated so the same content doesn't consume multiple result slots.
 - **Adjacent chunk expansion** — when a result mentions a query keyword, its neighboring chunks from the same episode are appended. This helps when an anecdote spans two chunks and the entity mention is in one but the story continues in the next.
-- **LLM reranking** — a lightweight model (Haiku) reorders the top candidate chunks by semantic relevance to the query. This catches cases where lexical/embedding scores rank a chunk highly but it's not actually the best match for the user's intent. Skipped when ≤5 results; falls back to original order on timeout (5s).
+- **LLM reranking** — a lightweight model (Haiku) reorders the top candidate chunks by semantic relevance to the query, and omits chunks clearly irrelevant to the query. This catches cases where lexical/embedding scores rank a chunk highly but it's not actually the best match for the user's intent. Excerpts shown to the reranker use keyword-centered windowing (the 600-char window is centered where query terms cluster, not blindly from the start of the chunk). Skipped when ≤5 results; falls back to original order on timeout (5s).
 
 ---
 

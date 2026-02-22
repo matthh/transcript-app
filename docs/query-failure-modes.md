@@ -64,6 +64,10 @@ For each reported bad query:
   - `suppressBoilerplate()` downranks outro/credits chunks, promoting substantive content.
 - Phase 2b mitigations shipped:
   - `rerankChunks()` — LLM reranking via Haiku reorders top-N chunks by semantic relevance, catching cases where lexical/embedding scores don't reflect actual query match quality. Skipped for ≤5 results; 5s timeout fallback.
+- Phase 2c mitigations shipped:
+  - Reranker omissions honored — chunks the LLM omits as "clearly irrelevant" are now actually dropped instead of silently re-appended.
+  - Keyword-centered excerpt extraction — `extractRelevantExcerpt()` centers the 600-char reranker excerpt window where query keywords cluster, so the LLM sees relevant content even in long (8K+) chunks. Previously, blind first-600-char truncation hid key phrases from the reranker.
+  - Fixes "digital court jew" failure: 41 keyword-matching chunks from 13 episodes → 2 relevant chunks from 1 episode after reranking.
 - Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots.
 
 ### FM-05: Windowed Frequency Comparison Failure
