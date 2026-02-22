@@ -13,6 +13,18 @@ import { QUICK_SYNTHESIS } from './routing-policy';
 
 const RERANK_TIMEOUT_MS = 5000;
 const RERANK_MIN_RESULTS = 6;
+const EXCERPT_MAX_LEN = 600;
+
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+  'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'been',
+  'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
+  'could', 'should', 'may', 'might', 'can', 'shall', 'not', 'what',
+  'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'how',
+  'when', 'where', 'why', 'say', 'said', 'episode', 'about', 'like',
+  'into', 'than', 'then', 'its', 'his', 'her', 'your', 'our', 'their',
+  'they', 'them', 'you', 'him', 'she', 'he', 'it', 'we', 'me',
+]);
 
 /**
  * Rerank retrieval results using Haiku for semantic relevance scoring.
@@ -50,10 +62,7 @@ async function callReranker(
   // Build numbered excerpt list (1-indexed for LLM clarity)
   const excerpts = results.map((r, i) => {
     const title = r.chunk.metadata.episodeTitle;
-    // Truncate long chunks to stay within token budget
-    const text = r.chunk.text.length > 600
-      ? r.chunk.text.slice(0, 600) + '...'
-      : r.chunk.text;
+    const text = extractRelevantExcerpt(r.chunk.text, query, EXCERPT_MAX_LEN);
     return `[${i + 1}] Episode: ${title} | ${text}`;
   });
 
@@ -112,6 +121,63 @@ Respond with ONLY a JSON array of numbers, e.g. [3, 1, 5, 2]`;
     ...r,
     score: reordered.length - i,
   }));
+}
+
+/**
+ * Extract the most query-relevant window from a long chunk.
+ * Finds where query keywords cluster and centers the excerpt there,
+ * instead of blindly taking the first N chars.
+ */
+function extractRelevantExcerpt(text: string, query: string, maxLen: number): string {
+  if (text.length <= maxLen) return text;
+
+  const lowerText = text.toLowerCase();
+  const keywords = query.toLowerCase()
+    .split(/\W+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+
+  if (keywords.length === 0) {
+    return text.slice(0, maxLen) + '...';
+  }
+
+  // Find all keyword occurrence positions
+  const positions: number[] = [];
+  for (const kw of keywords) {
+    let idx = 0;
+    while ((idx = lowerText.indexOf(kw, idx)) !== -1) {
+      positions.push(idx);
+      idx += kw.length;
+    }
+  }
+
+  if (positions.length === 0) {
+    return text.slice(0, maxLen) + '...';
+  }
+
+  // Find the window that contains the most keyword matches
+  positions.sort((a, b) => a - b);
+
+  let bestStart = 0;
+  let bestCount = 0;
+
+  for (const pos of positions) {
+    const start = Math.max(0, pos - Math.floor(maxLen / 3));
+    const end = start + maxLen;
+    const count = positions.filter(p => p >= start && p < end).length;
+    if (count > bestCount) {
+      bestCount = count;
+      bestStart = start;
+    }
+  }
+
+  const end = Math.min(text.length, bestStart + maxLen);
+  const start = Math.max(0, end - maxLen);
+
+  let excerpt = text.slice(start, end);
+  if (start > 0) excerpt = '...' + excerpt;
+  if (end < text.length) excerpt += '...';
+
+  return excerpt;
 }
 
 function rejectAfterTimeout(ms: number): Promise<never> {
