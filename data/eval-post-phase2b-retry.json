@@ -1,0 +1,538 @@
+[
+  {
+    "name": "Dingus voicemail routing (word not in transcripts)",
+    "query": "in which episode is the word dingus used in a voicemail",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 26501,
+    "answer": "Unfortunately, I did not find any instance of the word \"dingus\" being used in a voicemail across the provided transcripts. The transcripts cover a wide range of Escape Hatch podcast episodes, but do not contain any references to the word \"dingus\" being used in a voicemail. Without more specific information about which episode this occurred in, I cannot pinpoint the location where this word was used. My apologies, but I do not have enough information to directly answer this question based on the data provided.",
+    "queryType": "interpretive",
+    "sourceCount": 36
+  },
+  {
+    "name": "Paul Atriedeez Nutz Desus and Mero bit",
+    "query": "what episode does Paul Atreides Nutz do his Desus and Mero bit",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 10319,
+    "answer": "Unfortunately, I did not find any mention of a character named \"Paul Atreides Nutz\" or him doing a bit related to Desus and Mero in the provided transcripts. The transcripts cover various conversations about the Dune franchise, movies, and podcasting, but do not contain any references to a character with that specific name or a Desus and Mero bit. Without more context from the original query, I cannot provide a detailed answer about an episode that does not seem to be present in the given material.",
+    "queryType": "interpretive",
+    "sourceCount": 34
+  },
+  {
+    "name": "AKA caller voicemail",
+    "query": "when did a caller say AKA a bunch of times",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 50125,
+    "answer": "I did not find any instance in the provided transcripts where a caller said \"AKA\" a bunch of times. The transcripts do not contain any callers using the term \"AKA\" repeatedly.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Villeneuve Marin interview retrieval",
+    "query": "what did Jason ask Villeneuve at the marin film festival",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 9973,
+    "answer": "Based on the transcript, Jason did not actually ask Denis Villeneuve a question at the Mill Valley Film Festival. The transcript indicates that Jason and Matt were able to attend the festival and the red carpet event where Villeneuve was present, but they did not get to directly interview or question him. \n\nThe transcript shows that Jason and Matt were able to get press credentials to attend the festival and red carpet, which was a major accomplishment for the podcast that they were excited about. They describe the red carpet setup and Villeneuve's interactions with the other media there. However, the transcript does not indicate that Jason or Matt were able to ask Villeneuve any questions directly. The only interaction mentioned is that the festival interviewer asked Villeneuve some basic questions about the film.\n\nSo in summary, while Jason and Matt were able to attend the event and get close to Villeneuve, they did not actually get the opportunity to ask him any questions themselves during this encounter. The transcript suggests they were grateful just to be able to be present and observe Villeneuve at the festival as part of their coverage of the new Dune film.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Lead paint chips quote",
+    "query": "which episode has someone saying lead paint chips were delicious",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 66968,
+    "answer": "The statement \"lead paint chips were delicious\" is made in the Jurassic Park episode transcript. Here is the relevant excerpt:\n\n[21:05] birria: As a child of the 70s, I just like to say I always thought lead paint chips were delicious.\n\n[21:10] Jason Goldman: Yeah, exactly.\n\n[21:10] Jason Goldman: And look how we turned out.\n\nThis is a humorous remark acknowledging the known health risks of lead paint exposure, especially for children in the 1970s. The hosts find it a funny and relatable quip, suggesting that those who grew up eating lead paint chips (whether intentionally or not) still turned out okay, despite the dangers. It's a lighthearted nod to the hazards many children faced in that era before lead paint was banned.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Jodorowsky cross-episode recall",
+    "query": "earliest mentions of director Jodorowsky on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 9112,
+    "answer": "## Earliest Mentions of Director Jodorowsky\n\nBased on the provided transcript excerpts, all discussions of director Jodorowsky appear in the same episode: **Jodorowsky's Dune**. The transcripts don't indicate whether this is the earliest mention of the director on the Escape Hatch podcast overall, as I only have access to these four excerpts from this particular episode.\n\n## What the Transcripts Show\n\nWithin the **Jodorowsky's Dune** episode, the earliest substantive discussion begins with stephen Scarlotta describing his discovery of Jodorowsky's work:\n\n- Scarlotta mentions stumbling upon **Santa Sangre** (a film with Claudio Argento's name on it) in video store days during film school\n- This led him to explore other works by the director, including **El Topo**, **Holy Mountain**, and eventually discovering information about his unrealized **Dune** project through online resources\n- Scarlotta describes how he became passionate about researching Jodorowsky's work throughout the 1990s, checking IMDb regularly for updates on potential projects like **The Sons of El Topo**\n\n## Limitation\n\nI don't have structured episode metadata or access to other episodes that might mention Jodorowsky earlier in the podcast's history. **The earliest mention in the provided data is from the Jodorowsky's Dune episode**, but I cannot confirm this is the podcast's earliest reference to the director overall.",
+    "queryType": "factual",
+    "sourceCount": 11
+  },
+  {
+    "name": "Bill Murray mentions",
+    "query": "every time Bill Murray is mentioned or discussed",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 8800,
+    "answer": "## Bill Murray's Performance as Herman Bloom\n\nThe podcast hosts discuss Bill Murray's excellent performance as Herman Bloom in Rushmore:\n\n- Birria notes that Murray's role in Rushmore was important in changing perceptions of him, showing he could handle more dramatic and emotional material beyond just comedy. \n- Jason comments that Murray is \"doing more in this one in a way that's, like, kind of interesting\" and that he has \"more empathy\" for the character of Max as a parent.\n- The hosts agree that Murray is \"tremendous\" in the film, with Matt praising his small but powerful moments like the line delivery of \"I'll take punctuality\" and his reaction when meeting Max's father.\n- Birria and Jason discuss how Murray is able to convey both the sad, beaten-down side of Bloom as well as the comedic moments, making for a layered and nuanced performance.\n- Overall, the hosts believe Murray's work in Rushmore was a pivotal moment that expanded perceptions of him as an actor and allowed him to take on more complex dramatic roles in later Wes Anderson films.",
+    "queryType": "interpretive",
+    "sourceCount": 28
+  },
+  {
+    "name": "Spielberg across episodes",
+    "query": "what have the hosts said about Steven Spielberg across different episodes",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 55924,
+    "answer": "Based on the transcripts, the hosts have made several insightful observations and comments about Steven Spielberg across different episodes:\n\n## Jaws (1975)\n- Spielberg heavily involved in the production, from working with ILM on the special effects to collaborating closely with the writer Carl Gottlieb to shape the dialogue and characters\n- The adaptation of the novel Jaws was much improved in the film, with the hosts noting the book had more dramatic backstories that were rightfully cut\n- Praised Jaws as a \"perfect movie\" and one of the best adaptations, where the film surpasses the original source material\n\n## Close Encounters of the Third Kind\n- Discussed Spielberg's early interest in science fiction and filmmaking, noting he made a full-length sci-fi film called Firelignt at age 18 that influenced Close Encounters\n- Analyzed how the film reflected post-Watergate distrust in the government and authority, with Spielberg using crates and government coverups as a motif\n- Commented on the film's blend of wonder, horror, and suspense, with the hosts praising Spielberg's skillful direction in creating a sense of dread and unease\n\n## Raiders of the Lost Ark\n- Discussed the collaborative story development process between Spielberg, Lucas, and screenwriter Lawrence Kasdan, noting how they steered the character away from Lucas' original concept of making Indiana Jones a kung fu practitioner and playboy\n- Praised Spielberg's expert filmmaking, drawing comparisons to his ability to craft action sequences that are thrilling yet coherent, similar to the famous oner shot in Jaws\n\n## Poltergeist\n- Debated the extent of Spielberg's involvement as producer versus Tobe Hooper's role as director, recognizing the film as a collaborative effort that combined both their sensibilities\n- Discussed how Spielberg's background and style can be seen in the film's suburban setting and depiction of family dynamics, even as it also exhibits Hooper's darker horror elements\n\nOverall, the hosts consistently celebrate Spielberg's mastery of filmmaking, from his skill in adapting source material, to his talent for crafting suspenseful and visually captivating sequences, to his ability to blend genre elements in unique ways. They recognize him as a pivotal figure who helped define the blockbuster era of American cinema.",
+    "queryType": "interpretive",
+    "sourceCount": 38
+  },
+  {
+    "name": "Jaws episode discussion",
+    "query": "what did the hosts think about Jaws",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 12868,
+    "answer": "## Overview\nThe hosts had a deep appreciation and admiration for Jaws, considering it a masterpiece of filmmaking. They discussed various aspects of the film, including:\n\n- The iconic opening sequence and cinematography\n- The exceptional character development and dialogue, despite the film's reported chaotic production\n- The film's influence on summer blockbusters and the Hollywood system\n- The hosts' personal connections to and experiences with the film over the years\n\n## Perspectives on the Filmmaking\n- The hosts were impressed by Spielberg's directing prowess, especially given his young age at the time. They noted how he was able to craft such a visually striking and narratively tight film, especially compared to the \"fussy\" approach of other 1970s directors.\n- They praised the collaborative nature of the filmmaking, with Spielberg bringing in writer Carl Gottlieb to rework the script through improvisation and on-set rewrites. This gave the film a spontaneous, adventure-filled quality.\n- The hosts were fascinated by the film's production challenges, such as the unreliable mechanical shark, and how the crew was able to overcome them to deliver such an effective final product.\n\n## Personal Connections\n- The hosts shared their own memories and experiences watching Jaws, from seeing it in theaters as children to discovering it on home video. This gave them a deep personal appreciation for the film.\n- Several hosts, like Jason Goldman, noted how their perception of the film evolved over time, from initially being a simple \"killer shark\" movie to recognizing its nuanced character development and technical mastery.\n- Dale's and Stephen's expertise on shark movies and the \"sharksploitation\" genre gave them a unique perspective on Jaws' cultural impact and influence.\n\n## Lasting Legacy\n- The hosts unanimously agreed that Jaws is one of the greatest films ever made, with Jason going so far as to say he would preserve it over The Godfather in a hypothetical \"archive of cinematic history.\"\n- They discussed how the film redefined the summer blockbuster and the Hollywood system, for better or worse, setting a template that is still felt today in the Marvel Cinematic Universe and other franchises.\n- Overall, the hosts celebrated Jaws as a masterpiece of filmmaking, one that has endured and influenced cinema in profound ways, while also maintaining a deep personal connection to the film.",
+    "queryType": "interpretive",
+    "sourceCount": 33
+  },
+  {
+    "name": "Godfather legacy discussion",
+    "query": "discussion about The Godfather and its legacy",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 55596,
+    "answer": "## The Enduring Legacy of The Godfather\n\nThe Godfather and its sequel The Godfather Part II have left an indelible mark on cinema, captivating audiences and filmmakers alike. As the hosts discuss, these films have become \"titans\" of the medium, transcending their genre to explore timeless themes of power, family, and the American dream.\n\n### The Godfather as an American Epic\n\n**Tommy Vietor** notes that The Godfather \"speaks to all of us of the American dream, traditional and family values, generational conflict, and the false comfort of simpler times and places.\" The film's ability to weave these grand themes into an intimate family saga is part of what makes it such an enduring classic. As **Jason Goldman** observes, it is \"not just a gangster movie\" but a profound exploration of morality and the corrupting influence of power.\n\n### Coppola's Mastery of Filmmaking\n\nThe hosts praise Francis Ford Coppola's technical virtuosity in bringing these stories to life. **Matt Haitch** highlights the \"scope\", \"costumes\", and \"set designs\" that create a fully realized world, while **Dave Mandel** calls the films \"a master class in dramatic structure and screenwriting.\"\n\nCoppola's skill as a problem-solver is also noted, with the hosts discussing how he navigated challenges and creative constraints to deliver two cinematic masterpieces. As **Jason Goldman** puts it, Coppola has \"an amazing ability to just like, no matter what happens, we're making the picture and like, something. And like, you know, people could die. Like, people cannot show up. Like, we will figure out a solve.\"\n\n### The Corruption of Power\n\nA key theme that resonates throughout the films is the corrupting nature of power, as seen in Michael Corleone's transformation from idealistic war hero to ruthless mob boss. **Dave Mandel** praises how Coppola \"takes these people you love and just showing, oh my God, they really are monsters in a really incredible way.\"\n\nThis is exemplified in the Senate hearing scene, where Michael brazenly lies to Congress about his criminal ties. As **Matt Haitch** observes, it captures the \"implicit and explicit power\" of those who can invoke patriotism and service to shield themselves from accountability.\n\n### Emotional Impact and Memorable Performances\n\nUnderlying the films' thematic depth are indelible moments of emotional impact, such as Kay's abortion reveal and the \"You broke my heart, Fredo\" scene. **Dave Mandel** describes these as \"powerhouse scene[s] after powerhouse scene,\" with performances that leave a lasting impression on the audience.\n\nThe hosts single out Marlon Brando's iconic turn as Vito Corleone, with **Jason Goldman** acknowledging the character's larger-than-life quality, while also noting that \"there's flaws in this movie\" and that Brando's performance is not universally praised.\n\n## Conclusion\n\nThrough their rich discussion, the hosts demonstrate how The Godfather and its sequel have cemented their status as cinematic landmarks, inspiring and challenging filmmakers an",
+    "queryType": "interpretive",
+    "sourceCount": 23
+  },
+  {
+    "name": "Rosie Knight guest discussion",
+    "query": "Rosie Knight talking about comics or superheroes",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 12509,
+    "answer": "Here is a thoughtful answer based on Rosie Knight's comments about comics and superheroes:\n\nRosie Knight is clearly very knowledgeable and passionate about comics, superheroes, and the broader geek culture landscape. A few key points emerge from her comments:\n\n1. Expansive Knowledge of Comics History and Characters: Rosie demonstrates a deep familiarity with classic comics runs, characters, and storylines - from X-Men under Claremont, to Daredevil's \"Born Again\" arc, to obscure titles like Queen & Country. She's able to provide insightful commentary and historical context around these works.\n\n2. Appreciation for Diversity and Representation: Rosie values comics and adaptations that are more inclusive and representative, whether it's the queer themes in the Agatha: Coven of Chaos series or the diverse casting in Shogun. She seems to gravitate towards projects that bring new perspectives to the genre.\n\n3. Desire for Creative Risk-Taking: Rosie is excited by superhero/comic book adaptations that take creative risks and don't just play it safe - things like Sam Raimi's idiosyncratic take on Doctor Strange or the stylized anime adaptation of Scott Pilgrim. She wants to see the medium pushed in bold new directions.\n\n4. Appreciation for Worldbuilding and Lore: Rosie is fascinated by the deep, expansive mythologies and \"worlds\" that get built up around certain comics properties, from the Dune expanded universe to the Riddick Chronicles. She relishes diving into these rich narrative tapestries.\n\nOverall, Rosie comes across as an enthusiastic, knowledgeable, and discerning comics fan who wants to see the medium and genre continue to evolve in exciting ways - with more diverse voices, stronger creative visions, and a deeper embrace of the medium's potential for complex worldbuilding and storytelling. Her passion and expertise shine through in her insightful commentary.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Kev voicemail questions",
+    "query": "Kev's voicemail questions to the hosts",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 70706,
+    "answer": "## Kev's Question 1\nKev asks: \"What are your guilty pleasures?\"\n\nBased on the podcast discussion, it seems the hosts have a range of guilty pleasures, from watching the Saw movie franchise to keeping up with celebrity gossip and TikTok content. \n\nMatt says he generally tries to avoid \"schlock\" or bad movies, but he admits to still giving Joker 2 a 3-star rating on Letterboxd despite its flaws. Jason mentions that all slasher films are guilty pleasures for him. Meredith confesses to a daily celebrity gossip habit, though she feels guilty about it.\n\nThe hosts seem to embrace their guilty pleasures to an extent, acknowledging that not everything they enjoy has to be high-brow. They recognize that sometimes it's just fun to indulge in things that may not be considered culturally or artistically significant.\n\n## Kev's Question 2\nKev asks: \"If you weren't doing a podcast on Dune, what other media franchise would you cover?\"\n\nThe hosts discuss a few options they would consider:\n\n- Jason says he thinks TV is the future, so he would be interested in doing a podcast on a major TV franchise like Star Wars or Lord of the Rings.\n- Matt suggests they could do a podcast on Game of Thrones or the Dune book series beyond just the first novel.\n- Corey in the chat room suggests they could cover the River Phoenix filmography.\n\nOverall, the hosts indicate they would be interested in tackling other expansive, multi-media franchises that could provide lots of material to discuss, similar to how they approach the world of Dune.",
+    "queryType": "interpretive",
+    "sourceCount": 36
+  },
+  {
+    "name": "birria discussing a movie",
+    "query": "birria discussing a movie on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 12095,
+    "answer": "## Overview of birria's Role\n\nBased on the transcripts, birria is a recurring guest on the Escape Hatch podcast who contributes a segment called the \"Truthsayer.\" In this segment, birria presents 3 stories about a topic - two of which are false and one is true. The hosts then have to guess which story is true.\n\n## birria's Discussions of Movies\n\nThe transcripts show that birria has discussed several films on the podcast, including:\n\n**Adaptation (2002):**\n- birria describes Adaptation as a \"miraculous film\" and discusses the music and soundtrack choices by director Spike Jonze.\n- For the Truthsayer segment, birria quizzes the hosts on which music artist Jonze has not directed a music video for.\n\n**Rushmore (1998):**\n- birria is a big fan of Rushmore and shares his personal connection to the setting and themes of the film.\n- He provides background on the film's production, including the casting of Jason Schwartzman and the music choices by Wes Anderson.\n\n**Sunset Boulevard (1950):** \n- birria shares a Truthsayer quiz about eccentric pet ownership by old Hollywood stars like Mae West and Greta Garbo.\n\nThrough these discussions, birria demonstrates a deep knowledge and appreciation for the films covered on the podcast. He is able to provide insightful commentary, production details, and thought-provoking trivia that enriches the hosts' and listeners' understanding of the movies. birria's Truthsayer segments in particular showcase his creativity and ability to engage the podcast audience.",
+    "queryType": "interpretive",
+    "sourceCount": 27
+  },
+  {
+    "name": "Practical effects vs CGI",
+    "query": "discussions about practical effects versus CGI",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 32464,
+    "answer": "## Practical Effects vs. CGI\n\nThe podcast guests had an interesting discussion about the use of practical effects versus CGI in films, with some strong opinions on both sides:\n\n**In Favor of Practical Effects:**\n- Lorelei argued that there is often too much emphasis on whether effects are \"not CGI\" rather than celebrating the artistry and craft of practical effects. She felt the promotion should focus more on how impressive the practical costumes/props are.\n- Todd pointed out that when an actor or stunt performer is working with physical props and rigs, they should be proud of the incredible work they're doing, rather than dismissing it as something that will later be replaced with CGI.\n- The guests agreed that well-executed practical effects can be more immersive and believable for the audience, especially when the actors have physical elements to react to.\n- Examples like the suits in Edge of Tomorrow and the Sept sets in House of the Dragon were praised for providing a tangible, grounded experience for the actors.\n\n**In Favor of CGI:**\n- Matt acknowledged that CGI has become cheaper and easier to implement, sometimes to the detriment of the final product if not executed well.\n- Jason noted that CGI allows for more flexibility and experimentation that may not be possible with practical effects alone.\n- Todd argued that some filmmakers are overly resistant to new technology, similar to the initial skepticism towards sound in early cinema. He believes good CGI can be just as effective as practical effects when used skillfully.\n\n**Balancing Practical and CGI:**\n- The consensus seemed to be that the key is finding the right balance and using each technique where it serves the story and performance best. Overreliance on either can be problematic.\n- Successful films like Jurassic Park and House of the Dragon were cited as examples where practical and CGI elements were seamlessly integrated.\n- The importance of the collaborative process between the director, cinematographer, and visual effects team was emphasized - having everyone on the same page about the aesthetic and technical approach is crucial.\n\nOverall, the discussion highlighted the merits of both practical and CGI effects, with a recognition that the most compelling filmmaking often comes from striking the right balance and employing each technique where it serves the story most effectively.",
+    "queryType": "interpretive",
+    "sourceCount": 127
+  },
+  {
+    "name": "Soundtrack and score mentions",
+    "query": "when do the hosts talk about the soundtrack or musical score of a film",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 81511,
+    "answer": "Based on the podcast transcripts, the hosts discuss the soundtrack and musical score of films at several points:\n\n## Rushmore (1998)\n- They discuss how the soundtrack and score by Mark Mothersbaugh are \"inexorably tied together\" and \"infuse everything in the movie\" (birria)\n- They talk about how Wes Anderson wrote the entire movie with a specific cassette tape of British Invasion music in mind (birria)\n- They highlight specific musical moments like the \"who A quick one while he's away\" song drop and how the music sets the tone (birria, Matt Haitch)\n\n## Thin Red Line\n- They comment on the powerful, iconic score by Hans Zimmer, with Jason Goldman saying he remembered the musical cues so well from when he first saw the film (Jason Goldman)\n- They discuss how Zimmer used unique techniques like recording separate orchestral passes to follow the characters' movements onscreen (Matt Haitch)\n\n## Gravity (2013) \n- They praise the sound design and score by Steven Price, noting how he had to innovate new techniques to score the film without traditional action music (Matt Haitch)\n- They discuss how the score was used to convey emotion and character through subtle techniques like moving string lines (Jason Goldman)\n\nSo in summary, the hosts seem to really appreciate when the musical elements of a film, whether it's the soundtrack curation or the original score, are deeply integrated into the storytelling and themes. They enjoy analyzing how the music enhances the film's impact and emotional resonance.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Deakins Award mentions",
+    "query": "Deakins Award",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 7885,
+    "answer": "## The Deakins Award for Outstanding Excellence\n\nBased on the podcast transcripts, the \"Deakins Award for Outstanding Excellence\" is a recurring theme that Haitch invokes to celebrate exceptional cinematography and production design in films.\n\n### Origin and Usage\n\nAccording to Haitch's own explanation: **\"It's just the whole thing. I invoke Deacons. I invoke Deacon's name for any time anything looks amazing.\"** The award celebrates work in cinematography, production design, or the overall visual excellence of a film.\n\n### Notable Recipients Discussed\n\nThe transcripts reference several cinematographers and production designers honored with this award:\n\n- **Roger Deakins** - The namesake, who has been the cinematographer on most Coen Brothers films, with his work noted on **No Country for Old Men**, **The Big Lebowski**, and other projects\n- **Emmanuel Lubezki** (\"El Chivo\") - Honored for his work on films including **Gravity**, **Birdman**, and **The Revenant**\n- **Greg Fraser** - Recognized for cinematography on **Rogue One**, **Zero Dark Thirty**, **Dune Part One**, and **Dune Part Two**\n- **Robert Yeoman** - Celebrated for his cinematography across Wes Anderson's films\n- **Dave Wasco** - Production designer with an impressive resume including **Pulp Fiction**, **Kill Bill**, **La La Land**, and **Molly's Game**\n- **Dennis Gassner** - Highlighted for **Miller's Crossing**, **O Brother, Where Art Thou?**, **1917**, and **Blade Runner 2049**",
+    "queryType": "factual",
+    "sourceCount": 24
+  },
+  {
+    "name": "Episode count (factual)",
+    "query": "how many episodes are there",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 131,
+    "answer": "There are 304 episodes in the metadata database.",
+    "queryType": "factual",
+    "sourceCount": 0
+  },
+  {
+    "name": "Guest lookup (factual)",
+    "query": "which episodes had Proto as a guest",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 6504,
+    "answer": "## Proto as Guest\n\nBased on the episode metadata provided, **Proto appears as a guest on all 12 episodes** in the Escape Hatch podcast database:\n\n1. **Solarbabies** (1986) - Season 7, Episode 165\n2. **Johnny Mnemonic** (1995) - Season 6, Episode 105\n3. **Dune** (1965) - Season 5, Bonus Episode\n4. **The Thin Red Line** (1998) - Season 5, Episode 81\n5. **Chapterhouse Dune** (1985) - Season 4, Episode 59\n6. **Heretics of Dune** (1981) - Season 3, Episode 48\n7. **God Emperor of Dune** (1981) - Season 3, Episode 30\n8. **Children of Dune** (1976) Part Two - Season 2, Episode 19\n9. **Children of Dune** (1976) Part One - Season 2, Episode 18\n10. **Dune Messiah** (1969) Part Two - Season 1, Episode 9\n11. **Dune Messiah** (1969) Part One - Season 1, Episode 8\n12. **Dune** (1965) Part 1 - Season 1, Episode 1\n\nProto is a consistent presence throughout the podcast, appearing as the \"spiritual advisor\" mentioned in the episode introductions.",
+    "queryType": "factual",
+    "sourceCount": 29
+  },
+  {
+    "name": "Director filter (factual)",
+    "query": "Tim Burton movies on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 7327,
+    "answer": "## Tim Burton Movies on the Escape Hatch Podcast\n\nBased on the provided data, I can tell you the following about Tim Burton coverage:\n\n### Episodes Covered\n\nThe podcast has only covered **one Tim Burton film**:\n\n- **Batman (1989)** - Season 4, Episode 54 (Released 8/8/2021)\n  - Reviewer: Buddha\n  - Guest: Anil Dash\n\n### Other Tim Burton Films Discussed But Not Yet Covered\n\nIn a later episode transcript (Point Blank), the hosts explicitly discuss Tim Burton films they *haven't* covered yet:\n\n- **Beetlejuice** - Jason Goldman notes: \"We've not done Beetlejuice. Which is wild.\"\n- The hosts confirm that despite Tim Burton's prolific filmography, **Batman is their only Tim Burton episode to date**\n\nDuring the Batman episode discussion, they mention **Alice in Wonderland** as an example of Burton's mainstream success (noting it made over a billion dollars), but there's no indication this has been covered on the podcast.\n\n### Summary\n\nThe Escape Hatch has only formally reviewed **Batman (1989)** from Tim Burton's extensive catalog, leaving significant room for future Burton coverage, including **Beetlejuice**, which the hosts explicitly expressed interest in covering.",
+    "queryType": "factual",
+    "sourceCount": 17
+  },
+  {
+    "name": "Opinion is interpretive",
+    "query": "what did the hosts think about the ending of Inception",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 10272,
+    "answer": "Based on the transcript, the hosts had differing perspectives on the ending of Inception:\n\n## The Ambiguity of the Ending\n- Matt Haitch notes that the ending with the spinning top is \"one of the most famous cut to credits in cinema history\" and that the audience gets \"so ratcheted up on like, watching the top spin.\"\n- Jason Goldman says the ending is meant to be ambiguous and that Nolan \"doesn't want to give a definite answer\" about whether the top is still spinning, representing Cobb still being in a dream. \n- He argues that the point of the ending is to \"provoke you and meant to antagonize you into not knowing\" the true answer.\n\n## Nolan's Perspective\n- According to the transcript, Nolan has said that the \"correct answer\" about the ending is that the top represents Cobb's character, not whether he is in a dream or not.\n- The hosts discuss how Nolan's wife Emma Thomas pointed this out to him, that the focus should be on Cobb being reunited with his children, not the spinning top.\n\nSo in summary, the hosts recognized the intentional ambiguity of the ending, with Nolan ultimately seeing the significance as being about the character's journey, not a definitive answer about the dream state. The hosts had different interpretations, but appreciated Nolan's approach of leaving the ending open to interpretation.",
+    "queryType": "interpretive",
+    "sourceCount": 35
+  },
+  {
+    "name": "Reaction is interpretive",
+    "query": "how did Jason react to the twist in The Prestige",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 11200,
+    "answer": "Based on the details provided, it seems Jason had a strong reaction to the twist in The Prestige. The transcript mentions that the movie \"elevated\" from Dark City, with the soundtrack and the importance of music being a key differentiator. It also notes that the twist in The Prestige caught Jason off guard, saying \"it also has the pacing problem of like the El driver fight also feels like a little claustrophobic and like it's in a house. And they're like, so neither of like the, none of the, the deaths of the boss battles in this have like the scope of the, you know, uh, I have like the scope of the Orion Nishi fight.\" This suggests Jason felt the twist didn't quite land with the same impact as other key moments in the film. Overall, it seems Jason had a thoughtful, nuanced reaction to the twist, appreciating certain aspects while also feeling it didn't fully land compared to other elements of the film.",
+    "queryType": "interpretive",
+    "sourceCount": 33
+  },
+  {
+    "name": "Latest episode (intent detection)",
+    "query": "what was the latest episode",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 124,
+    "answer": "The latest episode is \"Panic Room (2002)\" (S8E293), released 2/1/2026.",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "Current season (intent detection)",
+    "query": "what season is the pod on now",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 133,
+    "answer": "The podcast is currently on season 8. The latest episode is \"Panic Room (2002)\" (S8E293).",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "Total episodes (intent detection)",
+    "query": "how many total episodes has the podcast done",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 119,
+    "answer": "There are 304 episodes in the metadata database.",
+    "queryType": "factual",
+    "sourceCount": 0
+  },
+  {
+    "name": "Episode lookup by number (intent detection)",
+    "query": "what is episode 283",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 125,
+    "answer": "Episode 283 — \"The Running Man (2025) - LIVE\" (S8E283):\n- Film: The Running Man (2025) - LIVE\n- Episode: S8E283\n- Release date: 11/23/2025\n- Reviewer: birria\n- Guest: All of us!",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "Episode lookup bare (intent detection)",
+    "query": "episode 204",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 113,
+    "answer": "Episode 204 — \"Being John Malkovich (1999)\" (S8E204):\n- Film: Being John Malkovich (1999)\n- Episode: S8E204\n- Release date: 7/14/2024\n- Reviewer: Space Monkey\n- Guest: Rob Schroeder / Ben Barnes",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "Episode details request (intent detection)",
+    "query": "tell me about episode 150",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 125,
+    "answer": "Episode 150 — \"Brazil (1985)\" (S6E150):\n- Film: Brazil (1985)\n- Episode: S6E150\n- Release date: 6/4/2023\n- Reviewer: Hex\n- Guest: Greg Yaitanes",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "80s movies decade filter",
+    "query": "which 80s movies did they enjoy the most",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 11133,
+    "answer": "Based on the conversations in the transcripts, it seems the hosts really enjoyed several 80s movies, including:\n\n- Ghostbusters - This was one of Jason and David's favorite 80s movies that they watched repeatedly as kids. They had a lot of fun discussing the iconic moments and lines from the film.\n\n- Die Hard - This was considered the definitive Christmas action movie that they loved. They discussed its cultural impact and memorable scenes. \n\n- Rambo: First Blood Part II - While the politics around the POW conspiracy theory were controversial, the hosts found the 80s action style and themes around the mistreatment of Vietnam veterans compelling.\n\n- Flight of the Navigator - Jason in particular had a strong nostalgic connection to this movie from his childhood, describing it as formative and influential. The hosts enjoyed discussing the mix of sci-fi and family elements.\n\nOverall, the hosts seemed to have a real fondness for the high-concept, energetic 80s genre films, whether it was the supernatural comedy of Ghostbusters, the action heroics of Die Hard and Rambo, or the sci-fi adventure of Flight of the Navigator. The 80s seemed to be a sweet spot for their shared cinematic interests and experiences.",
+    "queryType": "interpretive",
+    "sourceCount": 104
+  },
+  {
+    "name": "Challenger disaster retrieval",
+    "query": "what have hosts said about the Challenger disaster?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 50815,
+    "answer": "## Perspectives on the Challenger Disaster\n\nThe hosts have discussed the Challenger disaster and its impact in a few instances:\n\n**Matt Haitch's Perspective:**\n- Matt shared that he was able to witness the Challenger explosion live, and it was a very formative experience for him. He described it as a \"really depressing time\" when he later visited Cape Canaveral, seeing that the space program had stalled and not much was happening there anymore.\n- However, Matt also expressed thankfulness that the US is now able to launch rockets with astronauts into space again, and he celebrates the spirit of pushing boundaries and getting back out into space, even if he's unsure of the strategic value.\n\n**Jason Goldman's Perspective:**\n- Jason recounted that when the Challenger disaster occurred, it was one of the \"top 10 easily and probably top 5 experiences\" of his life. He was able to witness the last launch of the Discovery shuttle, which he found to be an incredibly powerful and moving experience.\n\n**Reagan's Challenger Speech:**\n- The hosts also discussed Ronald Reagan's speech following the Challenger disaster, in which he famously referred to the crew as having \"slipped the surly bonds of earth to touch the face of God.\" \n- Matt and Jason agreed that this was a powerful and well-written speech, even though Reagan himself did not write it. They felt it was a fitting tribute to the Challenger crew.\n\nOverall, the hosts seem to view the Challenger disaster as a tragic but formative moment in the history of the US space program. While it was deeply impactful, they also express a sense of optimism about the renewed efforts to continue space exploration, even if they have some reservations. The hosts appreciate the symbolic significance of the disaster and Reagan's response to it.",
+    "queryType": "interpretive",
+    "sourceCount": 14
+  },
+  {
+    "name": "Kev voicemail about cinematography",
+    "query": "Kev voicemail asking about cinematography",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 11475,
+    "answer": "Based on Kev's comments, it seems he was particularly struck by the cinematography and visual techniques used in The French Dispatch that were reminiscent of Wes Anderson's animated films. Kev notes that there are several stylistic flourishes that seem to be borrowed from Anderson's animated work, such as the frozen in place panning shots and the use of 2D animation for certain sequences.\n\nThis suggests that the visual language of The French Dispatch blends live-action filmmaking with animated techniques in an intentional way, creating a unique visual style that recalls Anderson's previous work in animation. Kev seems to appreciate how this creates a distinctive aesthetic for the film that sets it apart from a more traditional live-action approach. His comments highlight how the cinematography and visual effects play a key role in shaping the overall tone and feel of The French Dispatch.",
+    "queryType": "interpretive",
+    "sourceCount": 36
+  },
+  {
+    "name": "Broad query returns diverse episodes",
+    "query": "funniest moments on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 51981,
+    "answer": "## Funniest Moments on the Podcast\n\nBased on the provided transcripts, some of the funniest moments on the Escape Hatch podcast include:\n\n- Haitch's reaction to the \"stinky\" meme face of Robert Pattinson as Edward in the Twilight movie. The hosts discuss how \"wrong\" Pattinson's facial expression was in that iconic scene.\n\n- The hosts' discussion of the Cullen family's repeated high school graduations and joking about how they should just \"upzone\" their living situation instead of constantly moving. Rosie Knight points out the humor in the Cullens' ridiculous immortality practices.\n\n- The hosts' riffing on the idea of \"sexy demons\" and how the portrayal of the demon character in Legend has evolved in cultural perception over time, from terrifying to almost alluring.\n\n- The hilarious voicemail from \"Ethan\" describing various bizarre and comedic moments in Australian politics, like the Prime Minister who would regularly eat raw onions on live TV.\n\n- Corey's pitch to cast Tilda Swinton as the character of Charlie in Adaptation, opposite Nicolas Cage as Donald, which the hosts agree would be an inspired bit of recasting.\n\n- The ongoing running joke about Kev and his \"Dune Pod\" podcast, including the hosts' exasperation at Kev's tendency to ask difficult \"Kev's questions.\"\n\nThe podcast features a great dynamic between the hosts, with plenty of witty banter, amusing impressions, and a willingness to playfully critique and poke fun at the films they discuss. The transcripts capture the humor and camaraderie of the Escape Hatch team.",
+    "queryType": "interpretive",
+    "sourceCount": 20
+  },
+  {
+    "name": "Exact quote retrieval",
+    "query": "lead paint chips were delicious",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 9807,
+    "answer": "I do not have any information in the provided data about whether lead paint chips were delicious. The transcripts do not contain any discussion about the tastiness of lead paint chips. Without any relevant facts from the source material, I cannot provide a thoughtful answer to this question. The provided data does not contain information to address this query.",
+    "queryType": "interpretive",
+    "sourceCount": 26
+  },
+  {
+    "name": "Denis Villeneuve opinions",
+    "query": "What did they say about Denis Villeneuve?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 59792,
+    "answer": "The podcast guests had several insightful comments about Denis Villeneuve and his approach to filmmaking:\n\n- They noted that Villeneuve seems to have a strong command of both the technical and communicative aspects of directing. He is described as a \"sophisticated operator\" who can effectively articulate his vision and intentions to both internal and external stakeholders.\n\n- Villeneuve is praised for his cinematic sensibilities, with the hosts comparing his work to that of Stanley Kubrick. They appreciate his focus on creating a powerful visual language and immersive cinematic experience, rather than just relying on literary exposition.\n\n- The hosts suggest Villeneuve has a \"dark side\" in his filmmaking, with a tendency to explore themes of violence and disturbing subject matter. However, they note he approaches these themes with restraint and an aim to portray them honestly from the victim's perspective.\n\n- Overall, the podcast guests seem to have a deep respect and enthusiasm for Villeneuve's talents as a director. They see him as a bold, visionary filmmaker who is adept at crafting ambitious, thematically rich cinematic experiences. His work on Dune is eagerly anticipated as potentially cementing his status as a premier director of his generation.",
+    "queryType": "interpretive",
+    "sourceCount": 40
+  },
+  {
+    "name": "Rosie's job (transcript-only)",
+    "query": "What does Rosie do for a living?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 9301,
+    "answer": "Based on the conversations in the transcripts, it seems that Rosie Knight works as a journalist and writer focused on film, television, and pop culture topics. Some key details that suggest this:\n\n- Rosie mentions writing for publications like Empire magazine when she was younger, and indicates she had ambitions to write for them.\n- She discusses covering the Twilight franchise extensively, including researching and writing about the production, lore, and cultural impact.\n- Rosie refers to writing \"easter egg pieces\" about Marvel movies, suggesting she does in-depth analysis and reporting on films.\n- She says she \"watches a lot of movies\" while working from home, implying her job involves consuming and writing about various films and shows.\n- Rosie also mentions working on a graphic novel called \"Godzilla Monster Island Summer Camp\", further indicating she has writing and creative projects outside of journalism.\n\nSo in summary, it seems Rosie works as some kind of film/TV journalist, critic, or pop culture writer, drawing on her deep knowledge and passion for genre films, franchises, and niche entertainment. Her role appears to involve a lot of research, analysis, and creative projects related to the broader entertainment industry.",
+    "queryType": "interpretive",
+    "sourceCount": 26
+  },
+  {
+    "name": "Luke Skywalker opinions",
+    "query": "What do the hosts think about Luke Skywalker?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 59882,
+    "answer": "## Perspectives on Luke Skywalker\n\nThe hosts share several perspectives on Luke Skywalker in the provided transcripts:\n\n**Jason Goldman**:\n- Sees Luke as the \"ultimate cinematic hero\" for his generation, and is glad to see him portrayed as a \"tortured, broken\" character in The Last Jedi\n- Relates to Luke being \"old and broken\" and \"just trying to get through the day\" - finds this portrayal very \"deeply believable\"\n- Thinks Mark Hamill \"really kills it\" in his performance as the broken Luke\n\n**Matt Haitch**: \n- Doesn't understand the fan outrage over Luke's actions, pointing out that Jedi masters like Yoda and Obi-Wan also went into exile\n- Appreciates the poetic symmetry of Luke resisting the call to adventure, mirroring his arc in A New Hope\n\nOverall, the hosts seem to appreciate the more complex, nuanced take on Luke in The Last Jedi, seeing it as a natural progression for the character rather than a betrayal of the original. They highlight Hamill's strong performance in conveying Luke's brokenness and worldweariness. The hosts see Luke's journey as a meaningful exploration of the challenges faced by legendary heroes as they age.",
+    "queryType": "interpretive",
+    "sourceCount": 29
+  },
+  {
+    "name": "Tilda casting (intent detection)",
+    "query": "who would Tilda play in the next movie",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 4644,
+    "answer": "# Who Would Tilda Play in the Next Movie?\n\nI'd be happy to help you find Tilda casting picks, but I need more information! You haven't specified which movie you're asking about.\n\n## How to Ask\n\nPlease provide:\n- **Movie title** - the specific film you want to know about\n- **Optional context** - like the year, director, or genre\n\n## Example Questions I Can Answer\n\n- \"Who would Tilda play in Casablanca?\"\n- \"What's Tilda's role in The Matrix?\"\n- \"Any Tilda picks for Die Hard?\"\n\n## What I Can Tell You\n\nOnce you name a movie from the database, I can show you:\n- **All four hosts' picks** (H, Jason, Guest, Corey)\n- **Specific character names** they chose\n- **Context or jokes** from the episode\n- **Episode number** where it was discussed\n\n## Fun Facts from the Data\n\nThe hosts have cast Tilda in **265 different films** across **928 total picks**! The most popular casting choices include:\n- **Morpheus** - picked 4 times (*The Matrix*, *Tinker Tailor Soldier Spy*, *Real Genius*)\n- **The Bishop/Imperious** - picked 3 times (*Ladyhawke*, *The King*)\n- **Darkness** - picked 3 times (*Legend*)\n\n**What movie would you like to know about?**",
+    "queryType": "factual",
+    "sourceCount": 8
+  },
+  {
+    "name": "MMM count (intent detection)",
+    "query": "what was the latest MMM count",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 137,
+    "answer": "The latest episode (\"Panic Room (2002)\", S8E293) has 27 MMM count.",
+    "queryType": "factual",
+    "sourceCount": 1
+  },
+  {
+    "name": "Director ranking discussion",
+    "query": "hosts ranking or comparing movies by the same director",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 17617,
+    "answer": "## Thoughtful Approaches to Ranking or Comparing Movies by the Same Director\n\nThe hosts discuss a few key approaches to ranking or comparing movies from the same director:\n\n**Embrace Nuance, Avoid Rigid Ranking**\n- Jason Goldman expresses discomfort with rigidly ranking movies, as he feels it oversimplifies the nuances between films. He notes that ranking \"Ahsoka versus Andor\" is not an apples-to-apples comparison, as they are vastly different in scale and artistry.\n- Rosie Knight agrees, suggesting that directors like Quentin Tarantino and Denis Villeneuve have bodies of work that span genres and tones, making it difficult to definitively rank them.\n\n**Consider Influence and Importance**\n- The hosts acknowledge that some directors, like Darth Vader and Luke Skywalker in Star Wars, have created iconic cinematic archetypes that transcend individual film quality.\n- They suggest evaluating a director's influence and importance to the medium, not just personal preference for certain films.\n\n**Analyze Progression and Evolution**\n- The group discusses how examining a director's filmography over time can reveal interesting patterns and evolution, such as Villeneuve's shift from \"nihilistic and dark\" early films to his nuanced approach to Dune.\n- Tracing a director's growth and thematic developments across their body of work provides valuable context for analyzing individual films.\n\n**Embrace Subjectivity and Personal Connection**\n- Ultimately, the hosts recognize that ranking or comparing films comes down to personal taste and connection. \n- They acknowledge that certain directors or films may resonate more strongly based on an individual's experiences and sensibilities.\n\nThe key seems to be balancing objective analysis of a director's craft and cultural impact with the subjective nature of cinematic appreciation. A nuanced, contextual approach that considers progression, influence, and personal connection yields more insightful comparisons than rigid rankings.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Factual fallback: Rushmore director",
+    "query": "who directed Rushmore according to the hosts",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 7600,
+    "answer": "According to the podcast transcript, Rushmore was directed by Wes Anderson. The hosts make several references to Wes Anderson directing the film, including:\n\n- \"Wes Anderson went to St. John's School, right? So he was five years ahead of me.\"\n- \"Wes Anderson just continuing to innovate and like, hey, I can take something that's so specific to its form.\"\n- \"Everything about this movie is fantastic. But I'm really glad you guys are covering it. And I'm very curious to hear what you guys have to say about it.\"\n\nThe hosts clearly recognize and acknowledge that Wes Anderson directed Rushmore throughout the conversation. There is no indication that any other director was involved with the film.",
+    "queryType": "interpretive",
+    "sourceCount": 23
+  },
+  {
+    "name": "1980 movies from metadata (year filter)",
+    "query": "list all movies reviewed by the pod that were made in 1980",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 4291,
+    "answer": "## 1980 Films Reviewed by Escape Hatch\n\nBased on the episode metadata provided, here are the films from 1980 that have been reviewed:\n\n1. **The Empire Strikes Back** (Season 8, Episode 250 - May 4, 2025)\n2. **Altered States** (Season 7, Episode 181 - February 4, 2024)\n3. **Flash Gordon** (Season 7, Episode 172 - November 19, 2023)\n4. **Popeye** (Season 6, Episode 147 - May 14, 2023)\n\nAll four of these films were released in 1980 and have dedicated episodes in the Escape Hatch podcast catalog.",
+    "queryType": "factual",
+    "sourceCount": 22
+  },
+  {
+    "name": "Haitch band history (transcript-search factual)",
+    "query": "Did Haitch the host ever have a band? Did they ever open for another more famous act?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 66903,
+    "answer": "Based on the information provided in the transcripts, there is no indication that Haitch the host ever had a band or opened for another more famous act. The transcripts focus on discussions around movies, TV shows, music, and pop culture, but do not mention Haitch being part of a band. The only reference to Haitch's musical background is when he describes participating in a talent contest at his high school, where he did an acapella performance and a strip tease dance to popular songs. However, there is no suggestion that Haitch was part of an actual band or musical act. The transcripts suggest Haitch's interests and experiences are more centered around film, television, and general pop culture rather than being a musician himself.",
+    "queryType": "interpretive",
+    "sourceCount": 36
+  },
+  {
+    "name": "River Phoenix mentions (transcript-search factual)",
+    "query": "In what context has the actor River Phoenix been mentioned on the podcast?",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 11011,
+    "answer": "River Phoenix has been mentioned in a few different contexts on the podcast:\n\n1. Matt Haitch references Phoenix's performance in the film \"Blade Runner\" as his favorite of Phoenix's, describing the \"emotion that he shows the vulnerability, the fear, the anger, just for replicant He's incredible.\"\n\n2. When discussing the film \"I Love You to Death\", Matt Haitch mentions that Phoenix was in a band and lived in Gainesville, Florida around the time he was filming that movie. Haitch recalls seeing Phoenix's band play and being \"starstruck\" by him.\n\n3. There is a discussion about Phoenix's distinctive hairstyle, with Haitch noting he's been trying to recreate it for 30 years. This suggests Phoenix's look and persona made an impression on Haitch.\n\n4. Overall, the podcast participants seem to have a fondness and appreciation for River Phoenix's talent and charisma as an actor. His performances, music, and personal style are referred to positively, indicating he is viewed as an iconic figure from that era of filmmaking.",
+    "queryType": "interpretive",
+    "sourceCount": 35
+  },
+  {
+    "name": "You hack catchphrase",
+    "query": "when do the hosts say you hack on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 58279,
+    "answer": "Unfortunately, I did not find any instances in the provided transcripts where the hosts explicitly say \"you hack\" on the podcast. The transcripts do not contain that exact phrase. The discussions focus more broadly on hacking and the depiction of hacking in the film Hackers, but the hosts do not directly address the listener and say \"you hack\".",
+    "queryType": "interpretive",
+    "sourceCount": 26
+  },
+  {
+    "name": "Truthsayer segment mentions",
+    "query": "what does Truthsayer talk about in their voicemails",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 13931,
+    "answer": "Based on the transcripts provided, the Truthsayer appears to present a series of three stories or claims about a topic related to the movie being discussed, and then reveals which one of the three is the true or factual story.\n\nFor example, in the discussion of Jaws, the Truthsayer presents three stories about Jimmy Cliff's musical career, and then reveals that the true story is that Cliff was selected as one of Jamaica's representatives at the 1964 New York World's Fair.\n\nSimilarly, in the discussion of Natural Born Killers, the Truthsayer presents three stories about a photograph displayed in Juliette Lewis's home, and then reveals that the true story is that it is a poster-sized mug shot photo from when she was arrested as a teenager.\n\nThe Truthsayer uses this format to provide interesting trivia or behind-the-scenes information related to the movies being discussed, while also testing the hosts' and listeners' ability to discern the true facts from the fictional claims. It seems to be a regular segment that the hosts and audience enjoy.",
+    "queryType": "interpretive",
+    "sourceCount": 36
+  },
+  {
+    "name": "Most frequent voicemailers",
+    "query": "who are the most frequent voicemailers or callers on the podcast",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 74529,
+    "answer": "Based on the podcast transcripts provided, the most frequent voicemailers or callers on the podcast appear to be:\n\n1. **Silly Oswald**: Silly Oswald appears multiple times, often with very creative, surreal, and imaginative voicemails that blend reality and fiction in an entertaining way.\n\n2. **Kev**: Kev is a regular voicemail contributor who often asks thoughtful questions about the films and topics discussed on the podcast. The hosts seem to enjoy Kev's participation.\n\n3. **Corey**: Corey is a very enthusiastic and frequent caller who shares his love for the movies covered and interacts with the hosts in a fun, casual way.\n\n4. **Animal Mother**: Animal Mother provides intense, philosophical, and sometimes confrontational voicemails that challenge the hosts' perspectives in an engaging manner.\n\n5. **Lizzen**: Lizzen calls in with passionate, humorous takes on the films, especially when it comes to topics like casting and deleted scenes.\n\n6. **Birria**: Birria frequently contributes the \"Truthsayer\" segments, presenting creative fictional scenarios and challenges the hosts to determine which one is real.\n\n7. **Nexus9**: Nexus9 is a fan from Australia who provides thoughtful and appreciative messages about their enjoyment of the podcast and its community.\n\nThe podcast seems to have cultivated a core group of regular voicemailers who add their unique voices and perspectives to the discussions in a way that the hosts clearly value and enjoy. These callers help create a sense of community and interactivity that is central to the podcast's identity.",
+    "queryType": "interpretive",
+    "sourceCount": 28
+  },
+  {
+    "name": "Who says yeah more (interpretive aggregation)",
+    "query": "who says yeah more, jason or matt",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 10186,
+    "answer": "Based on the provided transcripts, it seems that both Jason and Matt frequently say \"yeah\" in their conversations, though Jason may say it slightly more often.\n\nA few key observations:\n\n1. Jason often uses \"yeah\" to acknowledge or agree with what the other person is saying, such as in this exchange:\n\nMatt: That's interesting. I think it's important to show that he prevented it from happening. And it caused that universe's instance of source code not to go off at this point. And that that will happen at some later point. And this is multiversal. Right? This has many worlds?\nJason: Yes, I think that's what we're meant to believe.\n\n2. Matt also uses \"yeah\" frequently, often in a similar acknowledgement or agreement context, like when Jason says \"End on the shake.\" and Matt responds \"Mmm!\"\n\n3. There are a few instances where Jason says \"yeah\" multiple times in quick succession, such as when he's joking around: \"The Harlem Shake meme? [clip of Harlem Shake plays] If you can end on the shake, end on the shake. That's just one of the rules of filmmaking.\"\n\nSo while both use \"yeah\" extensively, the transcripts suggest Jason may use it slightly more often, especially when actively engaging with and agreeing with the other speakers. But it's a close call, and they both demonstrate a propensity for the ubiquitous \"yeah\" in their conversational styles.",
+    "queryType": "interpretive",
+    "sourceCount": 33
+  },
+  {
+    "name": "Targeted episode: Starman Hatch News segment",
+    "query": "What was talked about in the Hatch News portion of the Starman episode",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 67483,
+    "answer": "In the Hatch News portion of the Starman episode, the following was discussed:\n\n## Dune Updates\n- The release date for Dune Part 2 has been pushed back, now scheduled for March 2024. This is due to the ongoing writers and actors strikes.\n- Jason expresses concern that the delays could negatively impact the momentum and excitement for the Dune sequels, worrying that \"the shine [could] come off\" the franchise.\n- There was discussion about Denis Villeneuve's comments on potentially adapting Dune Messiah as a trilogy, with Jason noting that while Villeneuve seems interested, the later Dune books get increasingly \"esoteric\" which may be challenging to adapt.\n\n## Escape Hatch Meetup\n- The hosts announced that the Escape Hatch 2025 meetup is scheduled for November 15, 2025 in San Francisco.\n- Details about the event are still being worked out, but it was mentioned there will be unofficial events the night before, a hike on Saturday, and some people sticking around on Sunday.\n- The hosts encouraged listeners to join the Discord server for more information as the plans get finalized.\n\n## New Patrons\n- The hosts welcomed several new patrons to the Escape Hatch Patreon - Will, Ed, and Anna.\n- They noted that patrons get access to uncut episodes, early episode releases, and video episodes on Fridays.\n\nSo in summary, the main Hatch News focused on updates around the Dune franchise and the upcoming Escape Hatch meetup, as well as welcoming some new financial supporters of the podcast.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Synonym expansion: voicemail/letter early era",
+    "query": "What voicemails or listener messages did they get on the No Country for Old Men episode",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 11231,
+    "answer": "Unfortunately, the transcripts do not contain any voicemails or listener messages that were played on the No Country for Old Men episode. The transcripts focus on other films like Face/Off, Enemy, Ladyhawke, Network, Midsommar, Zardoz, Inside Llewyn Davis, Michael Clayton, and Interstellar. There are no references to voicemails or messages related to the No Country for Old Men episode.",
+    "queryType": "interpretive",
+    "sourceCount": 35
+  },
+  {
+    "name": "Full catalog suggestion (known limitation)",
+    "query": "Review every movie the podcast has covered, then suggest 10 more films they should cover",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 23924,
+    "answer": "## Overview\n\nBased on the provided transcripts, I can identify the movies this podcast (Escape Hatch, formerly Dune Pod) has covered, though the transcripts don't contain comprehensive discussions of every film. The show appears to blend science fiction classics, acclaimed dramas, and cult favorites with a focus on thoughtful analysis.\n\n## Movies Covered (Based on Available Data)\n\n**From Episode Metadata:**\n- **The King** (2019) - Historical drama with Timothée Chalamet and Robert Pattinson\n- **Tron Legacy** (2010) - Sci-fi sequel with stunning visuals and Daft Punk score\n- **Crimson Tide** (1995) - Submarine thriller with Denzel Washington and Gene Hackman\n- **Seven Samurai** (1954) - Kurosawa's epic masterpiece\n- **Children of Men** (2006) - Alfonso Cuarón's dystopian thriller\n- **Michael Clayton** (2007) - Legal thriller with George Clooney and Tilda Swinton\n- **Adaptation** (2002) - Spike Jonze/Charlie Kaufman meta-comedy\n- **Glengarry Glen Ross** (1992) - David Mamet's sales drama\n- **Polytechnique** (2009) - Denis Villeneuve's difficult but important film\n- **The Fugitive** (1993) - Harrison Ford thriller\n\n**Additional Films Mentioned:**\n- Dune (2021) and related Dune films\n- Blue Velvet, Excalibur, Little Women, Cloud Atlas, Blade Runner 2049, Call Me by Your Name, Ladybird, Escape from New York, Close Encounters of the Third Kind, Game Night, Bones and All, Heavy Metal (1981)\n\n## 10 Film Recommendations\n\nBased on their clear appreciation for thoughtful science fiction, prestige dramas, and films that reward deep analysis, here are my suggestions:\n\n### **Science Fiction & Dystopian**\n1. **Arrival** (2016) - Another Denis Villeneuve masterpiece that pairs with their Dune coverage\n2. **The Matrix** (1999) - Philosophical sci-fi that matches their analytical approach\n3. **Minority Report** (2002) - Spielberg's Phillip K. Dick adaptation with prescient themes\n\n### **Prestige Character Studies**\n4. **There Will Be Blood** (2007) - Paul Thomas Anderson's masterpiece perfect for their dramatic analysis style\n5. **The Social Network** (2010) - Fincher's examination of power and ambition, echoing their Michael Clayton discussion\n6. **Heat** (1995) - Since they referenced the De Niro/Pacino dynamic in The King episode\n\n### **International Cinema**\n7. **Parasite** (2019) - Bong Joon-ho's genre-blending thriller that rewards close analysis\n8. **The Hunt** (2012) - Vinterberg's intense character study that matches their Polytechnique approach to difficult subjects\n\n### **Genre-Bending Classics**\n9. **Mulholland Drive** (2001) - Lynch's puzzle box that would generate the kind of deep discussion they love\n10. **The Assassination of Jesse James by the Coward Robert Ford** (2007) - Contemplative Western that matches their appreciation for character-driven narratives\n\nThese recommendations build on their demonstrated interests while introducing new directors and themes that would generate the kind of substantive, analytical discussions evident in their transcripts. Each film offers multiple layers for interpretation and connects thematically with movies they've already covered successfully.",
+    "queryType": "hybrid",
+    "sourceCount": 29
+  },
+  {
+    "name": "Joe Eszterhas security guy anecdote linkage",
+    "query": "what was the deal with Joe Esterhaus’ security guy who later installed Haitch’s security system and what episode was that discussed?",
+    "pass": false,
+    "failures": [
+      "Expected answer to contain \"Showgirls\""
+    ],
+    "latencyMs": 10661,
+    "answer": "The podcast transcript does not mention any details about Joe Esterhaus' security guy installing Haitch's security system. This appears to be a reference to something discussed in a previous episode that was not included in the provided transcripts. Without access to the full context from prior episodes, I do not have enough information to provide a detailed answer about the relationship between Joe Esterhaus' security guy and Haitch's security system. The transcripts only mention that Esterhaus was obsessed with security and building sophisticated security systems, but do not connect that to anything related to Haitch.",
+    "queryType": "interpretive",
+    "sourceCount": 30
+  },
+  {
+    "name": "Jason fishing cross-episode aggregation",
+    "query": "What does Jason think of fishing",
+    "pass": true,
+    "failures": [],
+    "latencyMs": 64303,
+    "answer": "Based on the provided transcripts, here is a summary of Jason's thoughts on fishing:\n\n## Jason's Thoughts on Fishing\n- Jason and his son Griffin have been trying to go fishing, but they haven't successfully caught any fish yet. They went to a sporting goods store and bought fishing tackle, but haven't had any luck so far.\n- Jason seems generally interested in and open to fishing. He noted that Griffin is \"very interested in fishing\" and that they've \"only tried\" catching fish so far.\n- When discussing the sporting goods store trip, Jason described some of the fishing gear he bought, including a pocket knife that he thinks looks \"kind of like, you know, aquatic, like, you know, very cool.\" This suggests he's excited about the fishing gear and the aesthetic of it.\n- Jason also mentioned that he's used the pocket knife \"for actual fishing\", implying he has some prior experience with or interest in fishing.\n- Overall, the transcripts paint Jason as someone who is supportive of his son's interest in fishing and is open to trying it himself, even if they haven't had success catching any fish yet. He seems to appreciate the gear and aesthetic of fishing, even if he's not an avid or experienced fisherman himself.",
+    "queryType": "interpretive",
+    "sourceCount": 32
+  },
+  {
+    "name": "Digital court jew episode attribution (single-episode non-movie)",
+    "query": "What episode did Jason say he'd be the digital court jew for the new pope?",
+    "pass": false,
+    "failures": [
+      "Expected at most 2 distinct transcript episodes, got 10: [the running man (2025) - live, jesus christ superstar (1973), red dawn, terminator 2, bound, hunt for red october, lost highway, alita battle angel, tron, spiderman 2]"
+    ],
+    "latencyMs": 10258,
+    "answer": "I could not find a specific quote where Jason said he would be the \"digital court Jew\" for the new pope. The closest relevant statement is this exchange:\n\nJason Goldman: I need to get a job with this Pope. This Pope is this.\nMatt Haitch: If he needs, like, tweet.\nJason Goldman: If he. Yeah, he tweets. Are you kidding? He's like this. This Pope. If he needs, like, a digital court Jew, like, to come and, like, help in any way. Like, he.\n\nFrom this, it seems Jason was joking that if the new, progressive Pope needs help using social media or engaging with pop culture, Jason would be a good candidate to serve as his \"digital court Jew.\" However, there is no direct quote of Jason explicitly stating he would take on that role. It was more of a humorous hypothetical than a concrete plan.",
+    "queryType": "interpretive",
+    "sourceCount": 33
+  },
+  {
+    "name": "Zelda multi-referent scope (ambiguous term)",
+    "query": "Zelda",
+    "pass": false,
+    "failures": [
+      "Expected answer to contain \"Zelda Rubinstein\""
+    ],
+    "latencyMs": 6332,
+    "answer": "# Zelda Discussion on Escape Hatch\n\nBased on the podcast transcripts, **Zelda: Breath of the Wild** is mentioned in the context of video game comparisons on the Escape Hatch podcast.\n\n## Context\n\nIn the **Krull episode**, listener Sophia Jones asks about **Elden Ring**, describing it as a combination of **Dark Souls**, **The Witcher: Wild Hunt**, and **Zelda: Breath of the Wild**.\n\nJason responds to this comparison, explaining that he uses the shorthand \"Skyrim souls\" to describe **Elden Ring**. He notes that it's definitely a souls game in terms of look, feel, and difficulty curve, but it also features:\n\n- A big open map with lots of weird side quests\n- A main story that you can work through at your own pace\n\nJason expresses enthusiasm about the game, saying \"Yeah, that's great. I love it.\"\n\n## Note\n\nI don't have information about whether the Escape Hatch podcast has covered any **Legend of Zelda** films or games as dedicated episodes. The only reference to Zelda in the provided transcripts is this comparison used to describe **Elden Ring's** gameplay style.",
+    "queryType": "factual",
+    "sourceCount": 17
+  }
+]
