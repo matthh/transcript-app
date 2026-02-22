@@ -329,7 +329,7 @@ async function runEval(
 
   const results: CaseResult[] = [];
 
-  const THROTTLE_MS = 2000; // delay between cases to avoid rate limits
+  const THROTTLE_MS = 4000; // delay between cases to avoid rate limits (3 Haiku + 1 Sonnet per query)
 
   for (let ci = 0; ci < cases.length; ci++) {
     const testCase = cases[ci];

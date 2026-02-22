@@ -12,6 +12,7 @@ export function getAnthropic(): Anthropic {
   if (!anthropicClient) {
     anthropicClient = new Anthropic({
       apiKey: process.env.ANTHROPIC_API_KEY,
+      maxRetries: 4,
     });
   }
   return anthropicClient;
