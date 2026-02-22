@@ -102,11 +102,9 @@ Respond with ONLY a JSON array of numbers, e.g. [3, 1, 5, 2]`;
     }
   }
 
-  // Append any results the LLM didn't mention (preserve rather than drop)
-  for (let i = 0; i < results.length; i++) {
-    if (!used.has(i)) {
-      reordered.push(results[i]);
-    }
+  // If LLM returned nothing useful, fall back to original results
+  if (reordered.length === 0) {
+    return results;
   }
 
   // Assign descending scores so downstream ordering is preserved
