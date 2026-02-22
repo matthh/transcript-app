@@ -11,6 +11,7 @@ import { getSearchTuning } from '@/lib/search-tuning';
 import { synthesizeHybridAnswerStreaming, MetadataContext, getAnthropic } from '@/lib/claude';
 import { generateEmbedding } from '@/lib/embeddings';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
+import { rerankChunks } from '@/lib/reranker';
 import { logQuery, generateLogId } from '@/lib/query-logger';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import { TranscriptChunk } from '@/types/transcript';
@@ -481,9 +482,10 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           ...(precomputedEmbedding ? { precomputedEmbedding } : {}),
           ...(targetEpisodeTitles.length > 0 ? { targetEpisodeTitles } : {}),
         };
-        const retrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides,
+        const rawRetrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides,
           Object.keys(retrievalOptions).length > 0 ? retrievalOptions : undefined);
-        const transcriptTimedOut = isColdStart && retrievalResults.length === 0;
+        const transcriptTimedOut = isColdStart && rawRetrievalResults.length === 0;
+        const retrievalResults = transcriptTimedOut ? rawRetrievalResults : await rerankChunks(query, rawRetrievalResults);
 
         if (transcriptTimedOut) {
           send('progress', {

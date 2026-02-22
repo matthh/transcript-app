@@ -21,6 +21,7 @@ import {
   deduplicateChunks,
   expandAdjacentChunks,
 } from '../src/lib/hybrid-retrieval';
+import { rerankChunks } from '../src/lib/reranker';
 import { StoredChunk } from '../src/lib/vectorstore';
 import { ClassificationResult } from '../src/types/episode-metadata';
 
@@ -233,7 +234,7 @@ function makeResult(id: string, text: string, score: number, episode: string = '
   };
 }
 
-function runUnitTests(): { passed: number; failed: number; errors: string[] } {
+async function runUnitTests(): Promise<{ passed: number; failed: number; errors: string[] }> {
   let passed = 0;
   let failed = 0;
   const errors: string[] = [];
@@ -407,6 +408,35 @@ function runUnitTests(): { passed: number; failed: number; errors: string[] } {
   assert(regResult.score === 0.8,
     'suppressBestOfRebroadcasts: regular episode unchanged');
 
+  // --- rerankChunks tests (no real API calls) ---
+
+  // Skip behavior: ≤5 results returns unchanged (no API call)
+  const fewResults = [
+    makeResult('r_1', 'chunk one', 1.0, 'Ep A'),
+    makeResult('r_2', 'chunk two', 0.9, 'Ep B'),
+    makeResult('r_3', 'chunk three', 0.8, 'Ep C'),
+  ];
+  const skipReranked = await rerankChunks('test query', fewResults);
+  assert(skipReranked.length === 3, `rerankChunks skip: returns 3 results (got ${skipReranked.length})`);
+  assert(skipReranked[0].chunk.id === 'r_1', 'rerankChunks skip: preserves order');
+  assert(skipReranked[0].score === 1.0, 'rerankChunks skip: preserves scores');
+
+  // Skip behavior: exactly 5 results also skips
+  const fiveResults = [
+    makeResult('r_1', 'chunk one', 1.0, 'Ep A'),
+    makeResult('r_2', 'chunk two', 0.9, 'Ep B'),
+    makeResult('r_3', 'chunk three', 0.8, 'Ep C'),
+    makeResult('r_4', 'chunk four', 0.7, 'Ep D'),
+    makeResult('r_5', 'chunk five', 0.6, 'Ep E'),
+  ];
+  const fiveReranked = await rerankChunks('test query', fiveResults);
+  assert(fiveReranked.length === 5, `rerankChunks skip@5: returns 5 results (got ${fiveReranked.length})`);
+  assert(fiveReranked[0].score === 1.0, 'rerankChunks skip@5: preserves scores');
+
+  // Skip behavior: empty input returns empty
+  const emptyReranked = await rerankChunks('test query', []);
+  assert(emptyReranked.length === 0, `rerankChunks skip empty: returns 0 results (got ${emptyReranked.length})`);
+
   return { passed, failed, errors };
 }
 
@@ -469,7 +499,7 @@ async function runCase(testCase: RetrievalCase): Promise<string[]> {
 async function main() {
   // --- Unit tests (no data loading required) ---
   console.log('=== Retrieval Unit Tests ===\n');
-  const unit = runUnitTests();
+  const unit = await runUnitTests();
   if (unit.failed > 0) {
     console.log(`  FAIL  ${unit.failed} unit test(s) failed:`);
     for (const err of unit.errors) {
