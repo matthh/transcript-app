@@ -57,12 +57,14 @@ For each reported bad query:
 - Why hard now: top-K chunk retrieval may not include the decisive evidence.
 - Common miss: synthesis concludes “not found” despite evidence elsewhere in corpus.
 - User-visible symptom: false negative on known in-transcript facts.
-- Plan alignment: Phase 2a (context expansion, dedup), Phase 2b (rerank), Phase 4 recall assertions.
+- Plan alignment: Phase 2a (context expansion, dedup), Phase 2b (rerank), Phase 2c (remaining), Phase 4 recall assertions.
 - Phase 2a mitigations shipped:
   - `expandAdjacentChunks()` appends ±1 neighbor chunks for keyword-matching results at 0.5× parent score. Fixes cases where the entity mention and the connected anecdote are in adjacent chunks (e.g., Joe Eszterhas).
   - `deduplicateChunks()` removes near-duplicate chunks (Jaccard ≥ 0.6), freeing slots for diverse evidence.
   - `suppressBoilerplate()` downranks outro/credits chunks, promoting substantive content.
-- Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence.
+- Phase 2b mitigations shipped:
+  - `rerankChunks()` — LLM reranking via Haiku reorders top-N chunks by semantic relevance, catching cases where lexical/embedding scores don't reflect actual query match quality. Skipped for ≤5 results; 5s timeout fallback.
+- Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots.
 
 ### FM-05: Windowed Frequency Comparison Failure
 - Stage: Retrieval/Analysis
@@ -132,6 +134,15 @@ For each reported bad query:
 - User-visible symptom: abrupt “no result” or low-context answer.
 - Plan alignment: Phase 1 fast-path fallthrough guardrails, Phase 4 routing assertions.
 - Phase 1 mitigations shipped: medium-confidence intents bypass fast-path entirely; all fast-path misses log structured reason and fall through.
+
+### FM-13: Ambiguous Term Scope Narrowing in Synthesis
+- Stage: Synthesis
+- Query type: single-word or short queries where the term has multiple referents across transcripts (person name, franchise, character, etc.)
+- Why hard now: synthesis model latches onto the most "obvious" interpretation (e.g., Zelda = video game) and ignores other valid referents (e.g., Zelda Rubinstein the actress, Madame Zelda story) even when evidence for those referents is present in the provided sources.
+- Common miss: answer discusses only one interpretation despite sources containing multiple distinct referents; concludes with false denial about other referents.
+- User-visible symptom: answer feels incomplete — user knows the term appears in more contexts than the answer covers.
+- Example: query "Zelda" — retrieval finds 4 episodes with mentions (video game, Zelda Rubinstein actress, Madame Zelda Nathan Lane story, Zelda character in Southland Tales) but synthesis only discusses the video game reference and says "I don't have information about any Legend of Zelda films."
+- Plan alignment: Phase 3 (synthesis grounding checks — require synthesis to address all distinct referent clusters in provided sources), Phase 4 (multi-referent assertions).
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 

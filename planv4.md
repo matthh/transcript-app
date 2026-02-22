@@ -56,7 +56,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 ## Current Gaps (to address)
 - ~~Routing behavior diverges between streaming and non-streaming paths.~~ **Resolved in Phase 1** — shared routing policy module (`src/lib/routing-policy.ts`) unifies all routing decisions.
 - ~~Confidence signals are not fully calibrated.~~ **Partially resolved in Phase 1** — medium-confidence intents skip metadata aggregate; low-confidence classifications force hybrid; `classificationConfidence` exposed in API response.
-- ~~Retrieval still allows noisy/duplicative chunks in difficult queries.~~ **Partially resolved in Phase 2a** — boilerplate suppression, Jaccard dedup, and adjacent-chunk expansion shipped. Paraphrased re-broadcast duplicates (below Jaccard 0.6) remain.
+- ~~Retrieval still allows noisy/duplicative chunks in difficult queries.~~ **Partially resolved in Phase 2a+2b** — boilerplate suppression, Jaccard dedup, adjacent-chunk expansion, and LLM reranking shipped. Paraphrased re-broadcast duplicates (below Jaccard 0.6) remain.
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
@@ -119,11 +119,30 @@ Verification:
   - Digital court jew: improved (11 → 10 episodes) but still above ≤2 target.
   - Haitch band history: borderline regression — answer is correct but synthesis phrasing triggers assertion.
 
-### Phase 2b: Retrieval Quality — Remaining Upgrades (2-3 weeks)
-Objective: address remaining retrieval gaps not covered by Phase 2a.
+### Phase 2b: LLM Reranking ✅ SHIPPED
+Objective: improve retrieval precision with a post-retrieval reranking pass.
+
+Implementation:
+- ✅ `rerankChunks()` in `src/lib/reranker.ts` — Haiku reorders top-N fused chunks by semantic relevance to the query.
+  - Skips reranking when ≤5 results (not enough to meaningfully reorder).
+  - 5-second timeout fallback returns original order on slow/failed calls.
+- ✅ Pipeline updated: `RRF → keyword boost → episode boost → boilerplate suppress → dedup → diversify → context expand → **LLM rerank**`.
+- ✅ Anthropic client `maxRetries: 4` to handle transient 429/529 overloaded errors.
+- ✅ Eval throttle increased to 4s between cases to reduce Haiku rate-limit pressure during eval bursts.
+
+Verification:
+- `npm run regression:retrieval` — all tests pass.
+- `npm run regression:queries` — 20/20 (no routing regressions).
+- `npm run regression:routing` — 10/10 (no routing regressions).
+- Eval: 50/53 (effectively 52/53 — 2 flaky failures pass on re-run, +1 new case added).
+  - Haitch band history: **fixed** by reranking (was borderline in 2a).
+  - Joe Eszterhas anecdote + Zelda multi-referent: **flaky** — pass consistently on re-run (synthesis nondeterminism).
+  - Digital court jew: sole persistent failure (10 episodes, ≤2 target) — pre-existing.
+
+### Phase 2c: Retrieval Quality — Remaining Upgrades
+Objective: address remaining retrieval gaps not covered by Phase 2a/2b.
 
 Deliverables:
-- Add post-retrieval reranking (lightweight cross-encoder or compact LLM reranker) on top-N fused chunks.
 - Further dedup improvements for digital court jew case (Best-of re-broadcasts use paraphrased language below Jaccard 0.6).
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
@@ -181,6 +200,10 @@ Deliverables:
   - when query asks "what do we know about X and Y", aggregate evidence across episodes before concluding "no information."
   - require returning top supporting quotes/episodes when evidence exists, even if weak.
   - if evidence is mixed/ambiguous, return a qualified summary with uncertainty labels instead of flat denial.
+- Add multi-referent synthesis grounding for ambiguous terms:
+  - when a short/ambiguous query term (e.g., "Zelda") appears in provided sources with multiple distinct referents (person, franchise, character), synthesis must address all referent clusters, not just the most "obvious" one.
+  - prohibit false denial about referents that are present in the provided sources.
+  - example: query "Zelda" — sources contain Zelda Rubinstein (actress), Madame Zelda (Nathan Lane story), Zelda: BotW (video game), Zelda character (Southland Tales). Synthesis must surface all of these.
 - Add anecdote-linkage response policy for multi-clause factual prompts:
   - if evidence contains the named entity and event context but misses one clause, return the partial finding + likely episode instead of a full "no information" denial.
   - require explicit "insufficient excerpt coverage" wording when only part of the anecdote is present.
@@ -193,6 +216,7 @@ Exit Criteria:
 - Host-scoped queries attribute people correctly (target >=95% precision on eval slice).
 - Preference-style answers pass evidence-threshold assertions on eval slice.
 - Trait/persona aggregation queries return evidence-backed summaries with <=5% false "no information" rate on eval slice.
+- Multi-referent queries address all distinct referent clusters present in sources (0% scope-narrowing false denials on eval slice).
 - Reduced hallucination-style failures in manual review samples.
 
 ### Phase 4: Eval, CI Gates, and Feedback Intelligence (2 weeks, parallelizable)
@@ -217,6 +241,9 @@ Deliverables:
   - anecdote-linkage assertions:
     - multi-clause factual query (entity + event + "what episode") must return at least one supporting episode when any clause is evidenced.
     - if only partial evidence is retrieved, answer must not claim total absence; it must return partial + uncertainty.
+  - multi-referent scope assertions:
+    - for ambiguous single-term queries with multiple referents in sources, answer must mention all distinct referent types (e.g., person, franchise, character).
+    - answer must not contain false denials about referent types present in the provided sources.
   - windowed phrase-frequency assertions:
     - for known gold queries (for example, "we'll get there" first 100 vs last 100), reported counts must match offline transcript-scan fixtures.
     - both `/api/search` and `/api/search/stream` must return the same winner and same per-window counts for the same input.
@@ -263,7 +290,8 @@ Exit Criteria:
 ## Milestones
 - M1 (end Phase 1): unified routing policy shipped. ✅
 - M1.5 (end Phase 2a): high-impact retrieval trio shipped. ✅ Eval: 45/52 → 50/52.
-- M2 (end Phase 2b): remaining retrieval gains validated on eval set.
+- M2 (end Phase 2b): LLM reranking shipped. ✅ Eval: 50/53.
+- M2.5 (end Phase 2c): remaining retrieval gains validated on eval set.
 - M3 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.

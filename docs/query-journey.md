@@ -38,9 +38,10 @@ flowchart LR
   E --> G["Episode metadata store"]
   F --> H["Vector store (embeddings)"]
   F --> I["BM25 index (keywords)"]
+  H --> L["Post-retrieval (dedup, rerank)"]
+  I --> L
   G --> J["Answer synthesis"]
-  H --> J
-  I --> J
+  L --> J
   J --> K["Response with citations"]
 ```
 
@@ -124,10 +125,11 @@ These two are combined into a "hybrid" search so we don't miss relevant passages
 
 **Metadata-informed boosting:** When the metadata search identifies specific episodes (e.g., the classifier extracted a film filter like "Starman"), the transcript search boosts chunks from those episodes. This ensures that if you ask about a specific episode's content, the relevant chunks rank higher even if other episodes have similar keywords. The boosting is gentle (1.5x score multiplier) so cross-episode mentions still surface, and targeted episodes also get a higher per-episode cap in the diversification step so more of their chunks make it into the final results.
 
-**Post-retrieval processing (Phase 2a):** After fusion and boosting, three additional steps clean up the candidate set before the final answer:
+**Post-retrieval processing (Phase 2a+2b):** After fusion and boosting, several additional steps clean up and reorder the candidate set before the final answer:
 - **Boilerplate suppression** — recurring outro/credits language (e.g., "that's it for this episode", "leave us a rating", Patreon links) is downweighted so it doesn't crowd out substantive content.
 - **Near-duplicate removal** — chunks with high token overlap (e.g., from "Best of" re-broadcast episodes) are deduplicated so the same content doesn't consume multiple result slots.
 - **Adjacent chunk expansion** — when a result mentions a query keyword, its neighboring chunks from the same episode are appended. This helps when an anecdote spans two chunks and the entity mention is in one but the story continues in the next.
+- **LLM reranking** — a lightweight model (Haiku) reorders the top candidate chunks by semantic relevance to the query. This catches cases where lexical/embedding scores rank a chunk highly but it's not actually the best match for the user's intent. Skipped when ≤5 results; falls back to original order on timeout (5s).
 
 ---
 
