@@ -365,6 +365,15 @@
       "rejectTextInAnswer": ["no information", "don't have"],
       "expectMinTranscriptSources": 1,
       "expectMaxDistinctTranscriptEpisodes": 2
+    },
+    {
+      "name": "Zelda multi-referent scope (ambiguous term)",
+      "query": "Zelda",
+      "tags": ["ambiguous-term", "multi-referent", "synthesis", "cross-episode"],
+      "expectTextInAnswer": ["Zelda Rubinstein", "Breath of the Wild"],
+      "rejectTextInAnswer": ["limited to a brief video game"],
+      "expectMinTranscriptSources": 3,
+      "expectMinDistinctTranscriptEpisodes": 2
     }
   ]
 }
