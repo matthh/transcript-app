@@ -56,7 +56,14 @@ Respond in JSON format only:
       return NextResponse.json({ error: 'No response from model' }, { status: 500 });
     }
 
-    const parsed = JSON.parse(textBlock.text);
+    // Extract JSON from response (handle markdown code fences)
+    const jsonMatch = textBlock.text.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) {
+      console.error('No JSON in generate response:', textBlock.text);
+      return NextResponse.json({ error: 'Invalid model response' }, { status: 500 });
+    }
+
+    const parsed = JSON.parse(jsonMatch[0]);
     return NextResponse.json(parsed);
   } catch (err) {
     console.error('Question generation error:', err);
