@@ -64,6 +64,10 @@ export default function Home() {
   const [deepening, setDeepening] = useState(false);
   const [deepStreamingText, setDeepStreamingText] = useState('');
   const [showTranscripts, setShowTranscripts] = useState(false);
+  const [followUpQuery, setFollowUpQuery] = useState('');
+  const [followUpLoading, setFollowUpLoading] = useState(false);
+  const [followUpStreamingText, setFollowUpStreamingText] = useState('');
+  const [followUpAnswer, setFollowUpAnswer] = useState<string | null>(null);
 
   const runSearch = useCallback(async (searchQuery: string) => {
     const trimmed = searchQuery.trim();
@@ -76,6 +80,10 @@ export default function Home() {
     setStreamingText('');
     setDeepening(false);
     setDeepStreamingText('');
+    setFollowUpQuery('');
+    setFollowUpLoading(false);
+    setFollowUpStreamingText('');
+    setFollowUpAnswer(null);
     setSearchedQuery(trimmed);
     setProgress({ stage: 'starting', message: 'Starting search...' });
 
@@ -217,6 +225,75 @@ export default function Home() {
     }
   };
 
+  const handleFollowUp = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!followUpQuery.trim() || !result) return;
+
+    setFollowUpLoading(true);
+    setFollowUpStreamingText('');
+    setFollowUpAnswer(null);
+
+    try {
+      const response = await fetch('/api/search/followup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query: searchedQuery,
+          followUpQuery: followUpQuery.trim(),
+          previousAnswer: result.answer,
+          sources: result.sources,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Follow-up failed');
+      }
+
+      const reader = response.body?.getReader();
+      if (!reader) throw new Error('No response body');
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let eventType = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (line.startsWith('event: ')) {
+            eventType = line.slice(7).trim();
+          } else if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.slice(6));
+
+              if (eventType === 'chunk') {
+                setFollowUpStreamingText((prev) => prev + data.text);
+              } else if (eventType === 'complete') {
+                setFollowUpAnswer(data.answer);
+                setFollowUpStreamingText('');
+              } else if (eventType === 'error') {
+                throw new Error(data.message);
+              }
+            } catch (parseErr) {
+              if (parseErr instanceof Error && parseErr.message.startsWith('Follow-up failed')) throw parseErr;
+              console.error('Failed to parse SSE data:', line, parseErr);
+            }
+          }
+        }
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Follow-up failed');
+    } finally {
+      setFollowUpLoading(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-brand-dark to-brand-plum">
@@ -274,6 +351,40 @@ export default function Home() {
               deepening={deepening}
               deepStreamingText={deepStreamingText}
             />
+
+            {/* Follow-up answer */}
+            {(followUpAnswer || followUpStreamingText) && (
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">Follow-up</h2>
+                <article className="prose prose-slate prose-headings:text-gray-900 max-w-none">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {followUpAnswer || followUpStreamingText}
+                  </ReactMarkdown>
+                  {followUpStreamingText && !followUpAnswer && (
+                    <span className="inline-block w-2 h-4 bg-brand-plum animate-pulse ml-1" />
+                  )}
+                </article>
+              </div>
+            )}
+
+            {/* Follow-up input */}
+            <form onSubmit={handleFollowUp} className="flex gap-3">
+              <input
+                type="text"
+                value={followUpQuery}
+                onChange={(e) => setFollowUpQuery(e.target.value)}
+                placeholder="Ask a follow-up question..."
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-plum focus:border-transparent text-gray-900 placeholder-gray-400"
+                disabled={followUpLoading}
+              />
+              <button
+                type="submit"
+                disabled={followUpLoading || !followUpQuery.trim()}
+                className="px-6 py-3 bg-brand-plum text-white rounded-lg font-medium hover:bg-brand-plum-light disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                {followUpLoading ? 'Thinking...' : 'Ask'}
+              </button>
+            </form>
 
             {result.sources.transcripts && result.sources.transcripts.length > 0 && (
               <div>
