@@ -17,7 +17,6 @@ import {
   RetrievalResult,
   parseChunkId,
   suppressBoilerplate,
-  suppressBestOfRebroadcasts,
   deduplicateChunks,
   expandAdjacentChunks,
 } from '../src/lib/hybrid-retrieval';
@@ -390,23 +389,6 @@ async function runUnitTests(): Promise<{ passed: number; failed: number; errors:
   const multiMatchExpanded = expandAdjacentChunks(multiMatchInput, ['digital', 'court', 'jew'], chunkMap);
   assert(multiMatchExpanded.length === 3,
     `expandAdjacentChunks: multi-term match expands neighbors (got ${multiMatchExpanded.length})`);
-
-  // --- suppressBestOfRebroadcasts tests ---
-  const originalEp = makeResult('orig_ep_1', 'Great discussion about the movie', 1.0, 'Tron: Legacy (2010)');
-  const bestOfEp = makeResult('bestof_1', 'Great discussion about the movie', 0.9, 'Best of Escape Hatch: Tron: Legacy (2010)');
-  const regularEp = makeResult('reg_1', 'Another movie discussion', 0.8, 'The Matrix');
-
-  const bestOfSuppressed = suppressBestOfRebroadcasts([originalEp, bestOfEp, regularEp]);
-  const bestOfResult = bestOfSuppressed.find(r => r.chunk.id === 'bestof_1')!;
-  const origResult = bestOfSuppressed.find(r => r.chunk.id === 'orig_ep_1')!;
-  const regResult = bestOfSuppressed.find(r => r.chunk.id === 'reg_1')!;
-
-  assert(Math.abs(bestOfResult.score - 0.36) < 0.001,
-    `suppressBestOfRebroadcasts: Best-of gets 0.4x penalty (got ${bestOfResult.score})`);
-  assert(origResult.score === 1.0,
-    'suppressBestOfRebroadcasts: original episode unchanged');
-  assert(regResult.score === 0.8,
-    'suppressBestOfRebroadcasts: regular episode unchanged');
 
   // --- rerankChunks tests (no real API calls) ---
 

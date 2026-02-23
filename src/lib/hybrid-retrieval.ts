@@ -238,27 +238,6 @@ export function suppressBoilerplate(results: RetrievalResult[]): RetrievalResult
     .sort((a, b) => b.score - a.score);
 }
 
-// --- Best-of re-broadcast suppression ---
-
-const BEST_OF_PATTERN = /best of escape hatch/i;
-
-/**
- * Downweight chunks from "Best of" re-broadcast episodes.
- * These compilations duplicate content from original episodes, inflating
- * per-episode counts and wasting result slots.
- * 0.4× score penalty; re-sort after.
- */
-export function suppressBestOfRebroadcasts(results: RetrievalResult[]): RetrievalResult[] {
-  return results
-    .map((r) => {
-      if (BEST_OF_PATTERN.test(r.chunk.metadata.episodeTitle)) {
-        return { ...r, score: r.score * 0.4 };
-      }
-      return r;
-    })
-    .sort((a, b) => b.score - a.score);
-}
-
 // --- Near-duplicate removal ---
 
 function tokenizeForDedup(text: string): Set<string> {
@@ -525,11 +504,8 @@ export async function hybridRetrieval(
   // Suppress boilerplate outro/credits chunks
   const boilerplateSuppressed = suppressBoilerplate(episodeBoosted);
 
-  // Suppress Best-of re-broadcast episodes
-  const bestOfSuppressed = suppressBestOfRebroadcasts(boilerplateSuppressed);
-
   // Remove near-duplicate chunks (e.g. Best-of re-broadcasts)
-  const deduplicated = deduplicateChunks(bestOfSuppressed);
+  const deduplicated = deduplicateChunks(boilerplateSuppressed);
 
   // Diversify: cap chunks per episode so results span more episodes
   const maxPerEpisode = 2;

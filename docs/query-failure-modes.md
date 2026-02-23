@@ -68,7 +68,7 @@ For each reported bad query:
   - Reranker omissions honored — chunks the LLM omits as "clearly irrelevant" are now actually dropped instead of silently re-appended.
   - Keyword-centered excerpt extraction — `extractRelevantExcerpt()` centers the 600-char reranker excerpt window where query keywords cluster, so the LLM sees relevant content even in long (8K+) chunks. Previously, blind first-600-char truncation hid key phrases from the reranker.
   - Fixes "digital court jew" failure: 41 keyword-matching chunks from 13 episodes → 2 relevant chunks from 1 episode after reranking.
-- Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots.
+- Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots. Note: blanket best-of suppression was removed because Jaccard dedup + diversification adequately handle rebroadcast content, and the score penalty was crushing unique intro/outro content in best-of episodes (e.g., episode 296's AI/coding discussion).
 
 ### FM-05: Windowed Frequency Comparison Failure
 - Stage: Retrieval/Analysis
