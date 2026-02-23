@@ -16,4 +16,6 @@ if (isPreview || isLocal) {
 
 run('npm', ['run', 'ingest']);
 run('npm', ['run', 'upload-search-data']);
-run('npm', ['run', 'bundle']);
+// Note: bundle step removed. src/lib/metadata-data.ts is maintained directly
+// by sync-metadata.ts (via GitHub Action) and committed to git.
+// The old bundle-data.ts would overwrite it with stale data/episode-metadata.json.

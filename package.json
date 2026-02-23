@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "node --import tsx ./scripts/build-orchestrator.ts && next build",
-    "build:local": "npm run bundle && next build",
+    "build:local": "next build",
     "start": "next start",
     "lint": "next lint",
     "ingest": "node --import tsx ./scripts/ingest.ts",
