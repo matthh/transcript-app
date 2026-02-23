@@ -8,7 +8,7 @@ import { isBM25Loaded } from '@/lib/bm25-loader';
 import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
-import { synthesizeHybridAnswer, MetadataContext, getAnthropic } from '@/lib/claude';
+import { synthesizeHybridAnswer, MetadataContext, getAnthropic, HOST_IDENTITY_RULE } from '@/lib/claude';
 import { generateEmbedding } from '@/lib/embeddings';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { rerankChunks } from '@/lib/reranker';
@@ -241,7 +241,9 @@ export async function POST(request: NextRequest) {
               max_tokens: tildaMaxTokens,
               messages: [{
                 role: 'user',
-                content: `You are a podcast search assistant for the Escape Hatch podcast. Always refer to "Matt Haitch" or "Haitch Matt" as just "H".
+                content: `You are a podcast search assistant for the Escape Hatch podcast.
+
+${HOST_IDENTITY_RULE}
 
 ${tildaResult.context}
 

@@ -6,6 +6,24 @@ import {
 } from '@/types/episode-metadata';
 import { formatEpisodeDescriptor } from './episode-format';
 
+/**
+ * Normalize speaker names before they reach synthesis prompts.
+ * "Matt Haitch" / "Haitch Matt" → "Haitch" so the LLM never sees the confusing full label.
+ */
+function normalizeSpeakers(speakers: string[]): string[] {
+  return speakers.map((s) => {
+    const lower = s.toLowerCase().trim();
+    if (lower === 'matt haitch' || lower === 'haitch matt') return 'Haitch';
+    return s;
+  });
+}
+
+export const HOST_IDENTITY_RULE = `HOST IDENTITY RULE (MANDATORY):
+- The Escape Hatch podcast has exactly TWO hosts: "Haitch" and "Jason". Every episode features both of them.
+- "Matt", "Matt Haitch", and "Haitch" are ALL the same person — use "Haitch" only.
+- All other named speakers (e.g., Proto, Slim, Corey, Kev, Jonesy, Rosie, birria, Hex, Nexus9, Truthsayer, etc.) are guests, featured reviewers, or voicemailers — NEVER refer to them as hosts.
+- When the user says "the hosts", they mean Haitch and Jason exclusively.`;
+
 let anthropicClient: Anthropic | null = null;
 
 export function getAnthropic(): Anthropic {
@@ -26,7 +44,7 @@ export async function answerQuestion(
     .map((chunk, i) => {
       return `[Source ${i + 1}]
 Episode: ${chunk.episodeTitle}
-Speakers: ${chunk.speakers.join(', ')}
+Speakers: ${normalizeSpeakers(chunk.speakers).join(', ')}
 Timestamp: ${chunk.startTimestamp} - ${chunk.endTimestamp}
 ---
 ${chunk.text}
@@ -42,7 +60,7 @@ ${chunk.text}
         role: 'user',
         content: `You are a helpful assistant that answers questions about the Escape Hatch podcast. Based on the following podcast excerpts, answer the question thoughtfully.
 
-SPEAKER NAME RULE (MANDATORY): The transcripts label one host as "Matt Haitch". In your response, NEVER write "Matt Haitch" — always use just "Haitch". This applies everywhere: prose, quotes, attributions. No exceptions.
+${HOST_IDENTITY_RULE}
 
 Your response style should match the question:
 - For interpretive questions (e.g., "What do they think about X?", "How do they feel about Y?"): Provide an expansive, analytical answer that synthesizes the hosts' perspectives, themes, and opinions. Use references with timestamps to illustrate and support your interpretation, but don't just list quotes.
@@ -71,7 +89,7 @@ function formatTranscriptContext(chunks: TranscriptChunk[]): string {
     .map((chunk, i) => {
       return `[Transcript ${i + 1}]
 Episode: ${chunk.episodeTitle}
-Speakers: ${chunk.speakers.join(', ')}
+Speakers: ${normalizeSpeakers(chunk.speakers).join(', ')}
 Timestamp: ${chunk.startTimestamp} - ${chunk.endTimestamp}
 ---
 ${chunk.text}
@@ -400,7 +418,7 @@ function buildSystemPrompt(
 ): string {
   const basePrompt = `You are a helpful assistant that answers questions about the Escape Hatch podcast. You have access to ${sourceDescription}.
 
-SPEAKER NAME RULE (MANDATORY): The transcripts label one host as "Matt Haitch". In your response, NEVER write "Matt Haitch" — always use just "Haitch". This applies everywhere: prose, quotes, attributions. No exceptions.
+${HOST_IDENTITY_RULE}
 
 CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 1. ONLY reference information that explicitly appears in the provided data below

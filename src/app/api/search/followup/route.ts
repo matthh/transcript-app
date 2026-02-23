@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getAnthropic } from '@/lib/claude';
+import { getAnthropic, HOST_IDENTITY_RULE } from '@/lib/claude';
 import { DEEP_SYNTHESIS_MODEL } from '@/lib/routing-policy';
 
 interface TranscriptSourceInput {
@@ -104,7 +104,7 @@ ${t.text}
 
         const prompt = `You are a helpful assistant answering follow-up questions about the Escape Hatch podcast.
 
-SPEAKER NAME RULE (MANDATORY): The transcripts label one host as "Matt Haitch". In your response, NEVER write "Matt Haitch" — always use just "Haitch". This applies everywhere: prose, quotes, attributions. No exceptions.
+${HOST_IDENTITY_RULE}
 
 The user previously searched for: "${query || ''}"
 
