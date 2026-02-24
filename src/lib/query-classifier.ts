@@ -260,7 +260,9 @@ Respond with ONLY valid JSON:
   }
 
   // Fallback: resolve director-debut patterns (e.g. "Wachowskis' directorial debut" → "Bound (1996)")
-  if (!filters.film) {
+  // Use !detectedFilm (not !filters.film) because LLM may have extracted a non-catalog
+  // film value (e.g. "Wachowski") that would block the debut resolution.
+  if (!detectedFilm) {
     const debutFilm = findDebutFilmFromQuery(query);
     if (debutFilm) {
       filters.film = debutFilm;
