@@ -477,7 +477,7 @@
     {
       "name": "Cross-cutting personal query: hosts' favorite foods",
       "query": "What are some of the hosts' favorite foods?",
-      "tags": ["cross-cutting-personal", "retrieval", "FM-15"],
+      "tags": ["cross-cutting-personal", "retrieval", "FM-15", "synthesis-grounding"],
       "expectClassificationType": ["interpretive", "hybrid"],
       "expectTextInAnswer": ["Velveeta"],
       "expectMinTranscriptSources": 2,

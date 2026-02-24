@@ -229,6 +229,12 @@ Phase 3c shipped deliverables (synthesis policy hardening):
 - ✅ Formalized synthesis policy matrix as JSDoc in `src/lib/routing-policy.ts` — documents all 5 query class combinations (model, token budget, chunks, prompt style) and lists all 12 grounding rules + HOST_IDENTITY_RULE.
 - ✅ Added 2 eval cases: host-scoped opinion with guest present (Panic Room, FM-07), preference-confidence hedging (favorite film, FM-11). Eval dataset: 61 → 63 cases.
 
+Phase 3d shipped deliverables (synthesis relevance gate):
+- ✅ Refined Rule #8 (PARTIAL EVIDENCE) with direct vs tangential evidence distinction — DIRECT evidence (hosts explicitly discuss the queried topic) gets full treatment; TANGENTIAL evidence (topic appears only in fictional/film context or passing mention) is reported but clearly qualified, with no extrapolation. Preserves the "MUST describe what you found" mandate while preventing hallucination on weak evidence.
+- ✅ Strengthened Rule #12 (PREFERENCE-CONFIDENCE) WEAK tier — now requires explicit sourcing (quote/paraphrase) alongside hedged language. Prevents model from hedging while still inventing content.
+- ✅ Added `synthesis-grounding` tag to FM-15 favorite foods eval case for targeted runs.
+- Targets FM-15 (hosts' favorite foods hallucination). Eval: 60/65 baseline, target ≥60/65 (no regressions).
+
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
 - Align quick/deep behavior and `canDeepen` semantics across endpoints.
@@ -344,6 +350,7 @@ Exit Criteria:
 - M3 (end Phase 2d): remaining retrieval gains validated on eval set.
 - M3.5 (end Phase 3a+3b): synthesis hardening + classifier stabilization shipped. ✅ Eval: 58/61 (95.1%).
 - M3.75 (end Phase 3c): synthesis policy hardening shipped. Rules #11/#12 + policy matrix. Eval: 63 cases.
+- M3.8 (end Phase 3d): synthesis relevance gate shipped. Rule #8 direct/tangential distinction + Rule #12 sourcing requirement. Eval: 65 cases.
 - M4 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.
