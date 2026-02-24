@@ -447,6 +447,24 @@
       "rejectTextInAnswer": ["no information", "don't have"],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2
+    },
+    {
+      "name": "Host-scoped opinion with guest present (Panic Room)",
+      "query": "What did the hosts think about Panic Room?",
+      "tags": ["host-attribution", "synthesis", "FM-07", "phase-3c"],
+      "expectSourceEpisode": "Panic Room",
+      "expectTextInAnswer": ["Haitch", "Jason"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Preference-confidence hedging (favorite film)",
+      "query": "What is the hosts' all-time favorite movie they've covered on the podcast?",
+      "tags": ["preference", "synthesis", "FM-11", "phase-3c"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "rejectTextInAnswer": ["no information", "don't have", "definitely their favorite", "without a doubt"],
+      "expectMinTranscriptSources": 2,
+      "expectMinDistinctTranscriptEpisodes": 2
     }
   ]
 }

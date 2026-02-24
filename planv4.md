@@ -164,11 +164,14 @@ Deliverables:
   - Deterministic film detection in `query-classifier.ts` — `findFilmFromQuery()` (from `query-intent.ts`) always runs and overrides LLM film extraction with the canonical catalog match (includes year suffix). Eliminates classifier non-determinism for any film title in the episode catalog.
   - `normalizeEpisodeTitle()` — strips `(YYYY)` year suffixes for comparison, fixing mismatch between metadata film field ("They Live (1988)") and chunk episodeTitle ("They Live"). Applied in injection, boosting, and diversification.
   - Production eval results: Malcolm & Marie, Star Trek, They Live, Dune sleeves all pass. 55/61 overall (up from 53/61 pre-phase-2d baseline, adjusting for 8 new cases added).
+**2d-1: Deterministic transcript analytics**
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
   - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
   - return transcript coverage for each window (found vs expected transcripts) and conservative wording when coverage is incomplete.
   - run via shared module used by both search endpoints.
+
+**2d-2: Retrieval expansions and entity-aware constraints**
 - Add medium-aware retrieval constraints for film vs TV intent:
   - preserve short but high-signal tokens (e.g., "tv") in query-term handling.
   - add normalization/synonym expansion for TV terms ("tv", "television", "series", "show").
@@ -208,12 +211,14 @@ Phase 3b shipped deliverables (classifier + synthesis stabilization):
 - ✅ Few-shot examples for synthesis rules #9/#10 — added PROCEDURE steps (a/b/c checklists) and WRONG/RIGHT example pairs. Rule #9 uses Wachowskis/Bound example, rule #10 uses Mercury multi-referent example. Examples differ from test cases to ensure generalization.
 - Eval results: 57/61 → 58/61 (93.4% → 95.1%). They Live (FM-03) now consistently passes. Zelda and Wachowskis/Bound remain flaky (retrieval-level issues).
 
+Phase 3c shipped deliverables (synthesis policy hardening):
+- ✅ Added HOST-SCOPED EVIDENCE PRIORITY rule (#11) — when query targets "the hosts"/"Haitch"/"Jason", prioritize host speech; attribute guest/voicemailer speech explicitly if included; never silently substitute guest opinions for host opinions.
+- ✅ Added PREFERENCE-CONFIDENCE THRESHOLD rule (#12) — three-tier evidence scale (STRONG/WEAK/NO) for superlative queries ("favorite", "best", "all-time", etc.). Requires hedged language for weak evidence, explicit "no evidence" for absent data.
+- ✅ Formalized synthesis policy matrix as JSDoc in `src/lib/routing-policy.ts` — documents all 5 query class combinations (model, token budget, chunks, prompt style) and lists all 12 grounding rules + HOST_IDENTITY_RULE.
+- ✅ Added 2 eval cases: host-scoped opinion with guest present (Panic Room, FM-07), preference-confidence hedging (favorite film, FM-11). Eval dataset: 61 → 63 cases.
+
 Remaining deliverables:
-- Formalize synthesis policy matrix by query class:
-  - metadata-answerable factual
-  - transcript-depth factual
-  - interpretive
-  - hybrid
+- ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
 - Align quick/deep behavior and `canDeepen` semantics across endpoints.
 - Add stricter citation grounding checks:
   - require source linkage for key claims.
@@ -225,12 +230,9 @@ Remaining deliverables:
   - require uncertainty wording when evidence spans multiple episodes without a clear primary.
 - Add role-aware attribution constraints in synthesis:
   - ~~distinguish hosts vs guests in the provided context.~~ **Partially shipped** — `HOST_IDENTITY_RULE` declares exactly two hosts (Haitch and Jason), normalizes speaker names at data level, and tells synthesis all other speakers are guests/reviewers/voicemailers.
-  - for host-scoped queries, exclude guest-only evidence unless explicitly requested.
+  - ~~for host-scoped queries, exclude guest-only evidence unless explicitly requested.~~ **Shipped in Phase 3c** — rule #11 (HOST-SCOPED EVIDENCE PRIORITY).
   - remaining: transcript speaker labeling errors (whisper misattribution) still cause wrong-person quotes; needs transcript QA pass or speaker-diarization improvement.
-- Add preference-confidence policy for "favorite/all-time/best" queries:
-  - require repeated/strong evidence before asserting a preference.
-  - downgrade to "mentioned" language when evidence is sparse.
-  - prohibit upgrading a single mention into "favorite" claims.
+- ~~Add preference-confidence policy for "favorite/all-time/best" queries~~ **Shipped in Phase 3c** — rule #12 (PREFERENCE-CONFIDENCE THRESHOLD) with three-tier evidence scale (STRONG/WEAK/NO).
 - Add cross-episode aggregation response policy for trait/persona queries:
   - when query asks "what do we know about X and Y", aggregate evidence across episodes before concluding "no information."
   - require returning top supporting quotes/episodes when evidence exists, even if weak.
@@ -258,6 +260,8 @@ Objective: make quality changes safe and continuously measurable.
 Deliverables:
 - Extend eval harness with:
   - Recall@k, MRR, answerability rate, latency percentiles.
+  - **Eval tier reporting**: report pass rates per tier (`gating`, `non-gating`, `known-limitation`, `flaky`) using existing tags. Require 100% pass on gating tier; allow partial pass on non-gating and known-limitation tiers. Flaky cases report N-of-M pass rate.
+  - **Cross-endpoint parity assertions**: for a subset of queries, assert that `/api/search` and `/api/search/stream` return matching classification, source episodes, and key answer claims. Prevents FM-02 regression beyond shared routing module.
   - routing correctness assertions.
   - quick vs deep behavior assertions.
   - role and medium assertions for high-risk queries:
@@ -327,6 +331,7 @@ Exit Criteria:
 - M2.5 (end Phase 2c): reranker precision shipped. ✅ Eval: 51/53.
 - M3 (end Phase 2d): remaining retrieval gains validated on eval set.
 - M3.5 (end Phase 3a+3b): synthesis hardening + classifier stabilization shipped. ✅ Eval: 58/61 (95.1%).
+- M3.75 (end Phase 3c): synthesis policy hardening shipped. Rules #11/#12 + policy matrix. Eval: 63 cases.
 - M4 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.
