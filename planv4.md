@@ -229,12 +229,12 @@ Phase 3c shipped deliverables (synthesis policy hardening):
 - ✅ Formalized synthesis policy matrix as JSDoc in `src/lib/routing-policy.ts` — documents all 5 query class combinations (model, token budget, chunks, prompt style) and lists all 12 grounding rules + HOST_IDENTITY_RULE.
 - ✅ Added 2 eval cases: host-scoped opinion with guest present (Panic Room, FM-07), preference-confidence hedging (favorite film, FM-11). Eval dataset: 61 → 63 cases.
 
-Phase 3d shipped deliverables (synthesis anti-fabrication):
-- ✅ Added Rule #13 (ANTI-FABRICATION) — when describing source content, the model may ONLY cite specific items/names/facts that appear as text in the provided excerpts. If sources touch a topic without naming specifics, describe in general terms without inventing details. Targets hallucination-from-tangential-evidence (e.g., model inventing Italian dish names from food-adjacent chunks).
-- ✅ Strengthened Rule #12 (PREFERENCE-CONFIDENCE) WEAK tier — now requires explicit sourcing (quote/paraphrase) alongside hedged language. Prevents model from hedging while still inventing content.
-- ✅ Added `synthesis-grounding` tag to FM-15 favorite foods eval case for targeted runs.
-- Note: initial approach (direct/tangential distinction in Rule #8) caused regression on Jason BBQ case — model over-qualified genuine evidence. Reverted Rule #8 to original; anti-fabrication rule is more surgical.
-- Targets FM-15 (hosts' favorite foods hallucination). Eval: 60/65 baseline, target ≥60/65 (no regressions).
+Phase 3d attempted and reverted (synthesis anti-fabrication):
+- ❌ **Attempt 1**: direct/tangential evidence distinction in Rule #8 — caused regression on Jason BBQ (model over-qualified genuine evidence with "does not contain" phrasing). Reverted.
+- ❌ **Attempt 2**: standalone Rule #13 (ANTI-FABRICATION) requiring specifics to appear in source text — too weak for hallucination (model ignored it on favorite foods, still invented Italian dishes) and too strong for genuine evidence (Jason BBQ regressed from 3/3 → 1/3). Reverted.
+- ❌ **Attempt 3**: Rule #12 WEAK tier sourcing requirement — same over-qualification dynamic. Reverted.
+- ✅ Added `synthesis-grounding` tag to FM-15 favorite foods eval case (kept).
+- **Key learning**: prompt-level anti-hallucination rules cannot solve FM-15. The model's world-knowledge priors about plausible food preferences are stronger than any grounding rule when retrieval delivers 5 tangentially food-related chunks and zero direct evidence. The same rule that prevents fabrication also makes the model over-qualify genuine direct evidence (Jason BBQ). This is a retrieval problem — fix requires actually surfacing the Velveeta/food-preference chunks, likely via topic-segment sub-chunking or targeted re-embedding of personal asides.
 
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
@@ -351,7 +351,7 @@ Exit Criteria:
 - M3 (end Phase 2d): remaining retrieval gains validated on eval set.
 - M3.5 (end Phase 3a+3b): synthesis hardening + classifier stabilization shipped. ✅ Eval: 58/61 (95.1%).
 - M3.75 (end Phase 3c): synthesis policy hardening shipped. Rules #11/#12 + policy matrix. Eval: 63 cases.
-- M3.8 (end Phase 3d): synthesis relevance gate shipped. Rule #8 direct/tangential distinction + Rule #12 sourcing requirement. Eval: 65 cases.
+- M3.8 (Phase 3d): attempted synthesis anti-fabrication — all approaches reverted (see Phase 3d notes). FM-15 reclassified as retrieval problem.
 - M4 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M4 (end Phase 4): CI quality gates active.
 - M5 (end Phase 5): metadata pipeline automated and validated.
