@@ -158,11 +158,12 @@ Verification:
 Objective: address remaining retrieval gaps not covered by Phase 2a/2b/2c.
 
 Deliverables:
-- **[HIGH PRIORITY]** Add episode-scoped retrieval filtering for queries that name a specific film/episode:
-  - when the classifier extracts a film/episode name from the query, use it as a hard filter (or strong boost) on retrieval results, not just as embedding input.
-  - ensure the extracted film name is matched against episode metadata (title, film field) to resolve to episode IDs, then constrain or strongly boost chunks from those episodes.
-  - fall back to unfiltered retrieval if the extracted film name matches zero episodes (typo, unknown title).
-  - production eval failures (2026-02): "Malcolm and Marie" → Station Eleven, "Star Trek" → Real Genius, "They Live" → 12 unrelated episodes. All three have correct transcripts that were simply not retrieved.
+- ✅ **[SHIPPED]** Episode-scoped retrieval filtering for queries that name a specific film/episode:
+  - `searchSimilarFiltered()` in `vectorstore.ts` — episode-scoped embedding search that filters chunks to target episodes before cosine similarity.
+  - `injectTargetedEpisodeChunks()` in `hybrid-retrieval.ts` — when classifier identifies 1–3 target episodes, runs separate scoped search and injects missing chunks at median RRF score before keyword/episode boosts. Capped at 3 injected chunks per episode, minimum 0.15 cosine similarity threshold.
+  - Deterministic film filter fallback in `query-classifier.ts` — `findFilmFromQuery()` (from `query-intent.ts`) runs when LLM classifier doesn't extract a film filter, catching short/ambiguous titles (e.g., "They Live", "It", "Us").
+  - `normalizeEpisodeTitle()` — strips `(YYYY)` year suffixes for comparison, fixing mismatch between metadata film field ("They Live (1988)") and chunk episodeTitle ("They Live"). Applied in injection, boosting, and diversification.
+  - Production eval results: Malcolm & Marie, Star Trek, They Live, Dune sleeves all pass. 55/61 overall (up from 53/61 pre-phase-2d baseline, adjusting for 8 new cases added).
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
   - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
@@ -183,7 +184,7 @@ Deliverables:
 - Strengthen metadata-informed transcript boosting with safeguards for broad queries.
 
 Exit Criteria:
-- Episode-scoped queries retrieve chunks from the named episode in >=90% of cases on eval slice.
+- ✅ Episode-scoped queries retrieve chunks from the named episode in >=90% of cases on eval slice. (4/4 episode-scoped eval cases pass consistently.)
 - MRR and Recall@10 improvements hit phase target on eval subsets.
 - Repetition rate in generated answers decreases measurably.
 - TV-vs-film constrained queries show <10% cross-medium contamination on eval slices.

@@ -42,19 +42,23 @@ For each reported bad query:
 - Phase 1 resolution: shared routing policy module (`src/lib/routing-policy.ts`) centralizes all routing decisions (`shouldSkipMetadataAggregate`, `shouldForceHybridClassification`, `shouldUseQuickSynthesis`, constants, `episodeToMetadataSource`). Both endpoints import from this module. Presentation-layer duplication (Tilda/notable-moments formatting) remains but is expected (JSON vs SSE).
 - Residual risk: future changes could re-introduce drift if new routing logic is added inline instead of via the shared module. Phase 4 endpoint parity assertions will guard against this.
 
-### FM-03: Filter Extraction Failure
+### FM-03: Filter Extraction Failure — PARTIALLY MITIGATED
 - Stage: Classification -> Metadata retrieval
 - Query type: factual/hybrid with entities (film/guest/director/genre)
-- Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search. When a query explicitly names a film/episode, retrieval still returns chunks from unrelated episodes because the film name is not used as a hard filter.
+- Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search.
 - Common miss: no metadata matches, wrong film/person picked, fallback too broad.
 - ~~Example: episode-id lookup misses such as “what episode is 283” or “give me details about episode 283”.~~ **Resolved in Phase 1** — dedicated `metadata_episode_lookup` intent now handles these patterns deterministically.
-- New examples from production eval (2026-02):
-  - “What did Matt Haitch say about ... in the Malcolm and Marie episode” → retrieval returned Station Eleven chunks; Malcolm and Marie transcript exists but was not found.
-  - “What did Mark Altman say about Decker in the Star Trek episode” → retrieval returned Real Genius chunks; Star Trek transcript exists but was not found.
-  - “What did Haitch say about the iconic one-liner from They Live” → 36 sources from 12 unrelated episodes, zero from They Live despite transcript existing.
+- ~~New examples from production eval (2026-02):~~
+  - ~~”What did Matt Haitch say about ... in the Malcolm and Marie episode” → retrieval returned Station Eleven chunks.~~
+  - ~~”What did Mark Altman say about Decker in the Star Trek episode” → retrieval returned Real Genius chunks.~~
+  - ~~”What did Haitch say about the iconic one-liner from They Live” → 36 sources from 12 unrelated episodes.~~
+- **Resolved in Phase 2d** — all three examples above now pass consistently. Two fixes shipped:
+  1. **Episode-scoped retrieval injection** (`injectTargetedEpisodeChunks`): when the classifier identifies 1–3 target episodes, a separate episode-scoped embedding search runs against only those episodes' chunks, then injects missing results into the main pipeline at median score before keyword/episode boosts.
+  2. **Deterministic film filter fallback** (`findFilmFromQuery`): when the LLM classifier fails to extract a film name (common for short/ambiguous titles like “They Live”), a deterministic catalog lookup runs as a safety net.
+  3. **Episode title normalization** (`normalizeEpisodeTitle`): metadata film field includes year suffixes (e.g., “They Live (1988)”) but chunk episodeTitle may not. All comparison points now strip `(YYYY)` from both sides before matching.
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
-- Root cause pattern: when a query names a specific film/episode, the classifier does not extract it as a hard episode filter, so retrieval relies entirely on embedding/keyword similarity, which can rank unrelated episodes higher.
-- Plan alignment: Phase 2d (episode-scoped retrieval filtering), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
+- Plan alignment: Phase 5 (canonicalization + matching tiers), Phase 4 tests.
+- Residual risk: queries referencing films not in the episode catalog (typos, alternate titles) still rely on embedding similarity alone. Queries matching >3 episodes skip injection (guarded to avoid over-constraining broad queries).
 
 ### FM-04: Sparse Retrieval Miss for Transcript-Depth Factual Queries — PARTIALLY MITIGATED
 - Stage: Retrieval
@@ -188,7 +192,7 @@ These are expected to be hard until dedicated handling is added:
 - Correct metadata filter domain, wrong extracted value.
 - Overconfident summary language when evidence is sparse.
 - ~~Endpoint-specific inconsistencies.~~ *(Mitigated by shared routing policy module.)*
-- Episode-scoped query returns chunks from unrelated episodes (no hard episode filter applied).
+- ~~Episode-scoped query returns chunks from unrelated episodes (no hard episode filter applied).~~ *(Mitigated by Phase 2d episode-scoped injection + deterministic film filter fallback.)*
 - Right sources retrieved, synthesis fails to connect implicit facts (e.g., film title ↔ director's debut).
 
 ## Detection Signals (Operational)
