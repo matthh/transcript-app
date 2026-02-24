@@ -200,9 +200,9 @@ function boostTargetedEpisodes(
   targetEpisodeTitles: string[]
 ): RetrievalResult[] {
   if (targetEpisodeTitles.length === 0) return results;
-  const targetSet = new Set(targetEpisodeTitles.map(t => t.toLowerCase()));
+  const targetSet = new Set(targetEpisodeTitles.map(normalizeEpisodeTitle));
   const boosted = results.map(r => {
-    const title = r.chunk.metadata.episodeTitle.toLowerCase();
+    const title = normalizeEpisodeTitle(r.chunk.metadata.episodeTitle);
     if (targetSet.has(title)) {
       return { ...r, score: r.score * 1.5 };
     }
@@ -365,7 +365,7 @@ export function diversifyByEpisode(
   if (targetEpisodeTitles.length > 0 && targetEpisodeTitles.length <= 3) {
     const targetCap = maxPerEpisode * 3;
     for (const title of targetEpisodeTitles) {
-      episodeCapOverrides.set(title.toLowerCase(), targetCap);
+      episodeCapOverrides.set(normalizeEpisodeTitle(title), targetCap);
     }
   }
 
@@ -379,7 +379,7 @@ export function diversifyByEpisode(
       const text = result.chunk.text.toLowerCase();
       const matchCount = queryTerms.filter((t) => text.includes(t)).length;
       if (matchCount >= 2) {
-        const episode = result.chunk.metadata.episodeTitle.toLowerCase();
+        const episode = normalizeEpisodeTitle(result.chunk.metadata.episodeTitle);
         multiMatchCounts.set(episode, (multiMatchCounts.get(episode) || 0) + 1);
         totalMultiMatch++;
       }
@@ -399,7 +399,7 @@ export function diversifyByEpisode(
   }
 
   const getEpisodeCap = (episode: string) =>
-    episodeCapOverrides.get(episode.toLowerCase()) ?? maxPerEpisode;
+    episodeCapOverrides.get(normalizeEpisodeTitle(episode)) ?? maxPerEpisode;
 
   const episodeCounts = new Map<string, number>();
   const diversified: RetrievalResult[] = [];
@@ -437,6 +437,14 @@ export function diversifyByEpisode(
 }
 
 /**
+ * Normalize episode title for comparison by stripping year suffixes.
+ * Metadata film field has "(1988)" but chunk episodeTitle may or may not.
+ */
+function normalizeEpisodeTitle(t: string): string {
+  return t.replace(/\s*\(\d{4}\)/g, '').trim().toLowerCase();
+}
+
+/**
  * Inject chunks from targeted episodes that are missing from fused results.
  * Runs a separate episode-scoped embedding search and merges results at
  * the median score so they can be evaluated by downstream boosts/reranker.
@@ -452,13 +460,13 @@ function injectTargetedEpisodeChunks(
     return fusedResults;
   }
 
-  const targetSet = new Set(targetEpisodeTitles.map(t => t.toLowerCase()));
+  const targetSet = new Set(targetEpisodeTitles.map(normalizeEpisodeTitle));
   const existingIds = new Set(fusedResults.map(r => r.chunk.id));
 
   // Count existing target-episode chunks per episode
   const existingCounts = new Map<string, number>();
   for (const r of fusedResults) {
-    const title = r.chunk.metadata.episodeTitle.toLowerCase();
+    const title = normalizeEpisodeTitle(r.chunk.metadata.episodeTitle);
     if (targetSet.has(title)) {
       existingCounts.set(title, (existingCounts.get(title) || 0) + 1);
     }
@@ -466,7 +474,7 @@ function injectTargetedEpisodeChunks(
 
   // If every target episode already has >= 3 chunks, skip
   const allWellRepresented = targetEpisodeTitles.every(
-    t => (existingCounts.get(t.toLowerCase()) || 0) >= 3
+    t => (existingCounts.get(normalizeEpisodeTitle(t)) || 0) >= 3
   );
   if (allWellRepresented) return fusedResults;
 
@@ -497,7 +505,7 @@ function injectTargetedEpisodeChunks(
   const injected: RetrievalResult[] = [];
 
   for (const candidate of candidates) {
-    const title = candidate.chunk.metadata.episodeTitle.toLowerCase();
+    const title = normalizeEpisodeTitle(candidate.chunk.metadata.episodeTitle);
     const count = injectedCounts.get(title) || 0;
     if (count >= 3) continue;
 

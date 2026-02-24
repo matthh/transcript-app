@@ -159,9 +159,12 @@ export function searchSimilarFiltered(
   episodeTitles: string[],
   topK: number = 10
 ): { chunk: StoredChunk; score: number }[] {
-  const titleSet = new Set(episodeTitles.map(t => t.toLowerCase()));
+  // Normalize by stripping year suffixes — metadata film has "(1988)" but
+  // chunk episodeTitle may or may not, so strip from both sides.
+  const normalize = (t: string) => t.replace(/\s*\(\d{4}\)/g, '').trim().toLowerCase();
+  const titleSet = new Set(episodeTitles.map(normalize));
   const filtered = chunks.filter(c =>
-    titleSet.has(c.metadata.episodeTitle.toLowerCase())
+    titleSet.has(normalize(c.metadata.episodeTitle))
   );
   if (filtered.length === 0) return [];
 
