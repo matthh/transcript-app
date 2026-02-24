@@ -98,6 +98,8 @@ guest, film, director, actor, genre, decade, season.
 
 These filters help narrow down the search to the most relevant episodes.
 
+**Deterministic film detection:** After LLM classification, the system always runs a deterministic film matcher (`findFilmFromQuery`) that checks the query against the full episode catalog. If a catalog film title appears as a substring in the query, the canonical match (with year suffix, e.g., "They Live (1988)") overrides whatever the LLM extracted. This eliminates flakiness for short or ambiguous film titles that the LLM may not consistently recognize.
+
 **Low-confidence guardrail:** If the classifier has low confidence (< 0.6) and extracted no filters, the system forces the query type to **hybrid** regardless of what the LLM returned. This prevents misrouting ambiguous queries into the wrong search mode.
 
 ---
@@ -124,6 +126,8 @@ This is done in two ways:
 These two are combined into a "hybrid" search so we don't miss relevant passages.
 
 **Metadata-informed boosting:** When the metadata search identifies specific episodes (e.g., the classifier extracted a film filter like "Starman"), the transcript search boosts chunks from those episodes. This ensures that if you ask about a specific episode's content, the relevant chunks rank higher even if other episodes have similar keywords. The boosting is gentle (1.5x score multiplier) so cross-episode mentions still surface, and targeted episodes also get a higher per-episode cap in the diversification step so more of their chunks make it into the final results.
+
+**Film filter fallback:** If the classifier detected a film filter but the metadata query returned 0 results (e.g., because additional filters like host or topic narrowed too aggressively), the detected film is still passed to transcript search as a target. This ensures retrieval injection, boosting, and diversification always fire for the detected episode.
 
 **Post-retrieval processing (Phase 2a+2b):** After fusion and boosting, several additional steps clean up and reorder the candidate set before the final answer:
 - **Boilerplate suppression** — recurring outro/credits language (e.g., "that's it for this episode", "leave us a rating", Patreon links) is downweighted so it doesn't crowd out substantive content.

@@ -479,6 +479,12 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         const targetEpisodeTitles = (metadataEpisodes.length > 0 && metadataEpisodes.length <= 10)
           ? metadataEpisodes.map(e => e.film)
           : [];
+        // If classifier detected a film but metadata query returned 0 results
+        // (e.g. extra filters like host narrowed too aggressively), still target
+        // the detected film so retrieval injection/boost/diversification fire.
+        if (targetEpisodeTitles.length === 0 && classification.filters.film) {
+          targetEpisodeTitles.push(classification.filters.film);
+        }
         const retrievalOptions = {
           ...(isColdStart ? { timeoutMs: 15000 } : {}),
           ...(precomputedEmbedding ? { precomputedEmbedding } : {}),

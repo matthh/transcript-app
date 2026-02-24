@@ -362,6 +362,38 @@ TBD — related to the broader question of how much metadata context synthesis s
 
 ---
 
+## Phase 3b: Classifier & Synthesis Stabilization (2026-02-24)
+
+### 3b.1 Always-On Deterministic Film Detection ✅ (Complete)
+**Why:** `findFilmFromQuery()` only ran when the LLM failed to extract a film filter. When
+Haiku *did* extract one (but inconsistently or without the year suffix), the fallback never
+fired. This caused flaky episode-scoped retrieval (~80% pass rate for "They Live" queries).
+
+**Fix:** Always run `findFilmFromQuery()` and prefer the canonical catalog match over
+LLM extraction. The catalog entry includes the year suffix and is guaranteed to match metadata.
+
+### 3b.2 Film Filter Fallback in Route Handlers ✅ (Complete)
+**Why:** `targetEpisodeTitles` was only built from metadata query results. When the metadata
+query returned 0 results (e.g., extra filters like `host` narrowed too aggressively), the
+film filter was lost before reaching retrieval — injection, boosting, and diversification
+all skipped.
+
+**Fix:** Both route handlers now fall back to `classification.filters.film` when
+`metadataEpisodes` is empty, ensuring retrieval always targets the detected episode.
+
+### 3b.3 Synthesis Few-Shot Examples for Rules #9/#10 ✅ (Complete)
+**Why:** Rules #9 (implicit knowledge bridging) and #10 (multi-referent coverage) existed as
+imperative instructions but the LLM inconsistently followed them — rules #1-2 ("don't
+invent") competed with #9, and no examples showed correct vs incorrect behavior.
+
+**Fix:** Added explicit PROCEDURE steps (a/b/c checklists) and WRONG/RIGHT example pairs to
+both rules. Examples use different content than test cases to ensure generalization.
+
+**Eval impact:** They Live (FM-03) now passes consistently (3/3). Zelda multi-referent and
+Wachowskis/Bound remain flaky (retrieval-level issues, not synthesis-only).
+
+---
+
 ## Risks & Mitigations
 - **Over‑routing to transcripts increases cost** → gate by confidence; timeout transcript
   retrieval; factual quick mode uses Haiku (all chunks but cheap model) to keep cost manageable.

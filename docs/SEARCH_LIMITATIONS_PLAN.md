@@ -16,11 +16,12 @@ Search pipeline: query classification, metadata retrieval, transcript retrieval,
 - Log classification outcomes for offline tuning.
 
 ### 2) Factual/hybrid filters rely on LLM extraction; failures degrade metadata recall
-**Observed:** If extraction fails, filters are weak or missing.  
-**Proposed approach:**  
+**Observed:** If extraction fails, filters are weak or missing.
+**Proposed approach:**
 - Add deterministic fallbacks (regex for episode numbers, guest names from known list).
 - Maintain a canonical entity list derived from `data/episode-metadata.json`.
 - Capture LLM parsing errors and return diagnostic metadata in debug mode.
+- ✅ **DONE (2026-02-24):** Deterministic film detection (`findFilmFromQuery`) now always overrides LLM extraction with canonical catalog match. Route handlers fall back to classifier film filter when metadata query returns 0 results.
 
 ### 3) Transcript retrieval is pure embedding top‑K (no lexical match or rerank)
 **Observed:** Rare/precise terms can be missed.

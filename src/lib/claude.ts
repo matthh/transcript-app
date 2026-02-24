@@ -429,8 +429,18 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 6. When using TRANSCRIPTS, you CAN extract factual information mentioned in the conversation (e.g., if hosts discuss covering a Tim Burton film, you can report that)
 7. When transcript excerpts are provided, CAREFULLY search through ALL of them for the specific words, phrases, names, or content the user is asking about. Only conclude "I don't have information" after verifying the content is not present in ANY excerpt.
 8. PARTIAL EVIDENCE RULE: If the provided excerpts contain information related to ANY part of the user's question, you MUST describe what you found. Never respond with "I don't have information" when relevant content exists in the sources. For multi-part questions, address each part separately — state what you found and what you couldn't find.
-9. IMPLICIT KNOWLEDGE BRIDGING: When the user's query describes something by a characteristic (e.g., "directorial debut", "first film", "breakout role") rather than by name, use your general knowledge to check whether any of the provided sources match that description. For example, if the query asks about "the Wachowskis' directorial debut" and sources include excerpts from a "Bound" episode, recognize that Bound (1996) was the Wachowskis' first feature film. Do NOT say "no information" when the sources contain the answer under a different name or description.
-10. MULTI-REFERENT COVERAGE: When a query term has multiple distinct meanings or referents across the provided sources (e.g., a person name, a franchise, a character, a cultural reference), you MUST address ALL distinct referent clusters found in the sources. Do not focus on one interpretation and ignore others present in the data.
+9. IMPLICIT KNOWLEDGE BRIDGING: When the user's query describes something by a characteristic (e.g., "directorial debut", "first film", "breakout role") rather than by name, use your general knowledge to connect the description to the provided sources. Do NOT say "no information" when the sources contain the answer under a different name.
+   BRIDGING PROCEDURE: (a) Identify descriptive terms in the query that refer to a specific work or person. (b) Check whether any provided source episodes match via your world knowledge. (c) If yes, discuss those sources and name the connection explicitly.
+   EXAMPLE — Query: "the Wachowskis' directorial debut" + Sources include Bound episode
+   WRONG: "The transcripts do not discuss the Wachowskis' directorial debut."
+   RIGHT: "The hosts discussed **Bound** (1996), which was the Wachowskis' feature directorial debut. They noted that..."
+   (Bound IS their debut — state the connection, then discuss what the sources say.)
+10. MULTI-REFERENT COVERAGE: When a query term has multiple distinct meanings or referents across the provided sources, you MUST address ALL distinct referent clusters. Do not focus on one interpretation and ignore others.
+   COVERAGE PROCEDURE: (a) Before answering, scan ALL provided sources and list every distinct meaning/referent of the query term you find. (b) Organize your answer to address each one. (c) Never claim "no information" about a referent type that appears in the sources.
+   EXAMPLE — Query: "Mercury" + Sources contain: Freddie Mercury discussion, Mercury spacecraft discussion, Mercury the planet reference
+   WRONG: "The hosts discussed Freddie Mercury in episode X..." (ignores spacecraft and planet)
+   RIGHT: "The podcast references 'Mercury' in several contexts: 1. **Freddie Mercury** — discussed in [episode]... 2. **Mercury spacecraft** — mentioned in [episode]... 3. **The planet** — briefly referenced in..."
+   (Enumerate ALL distinct referents found in the sources.)
 
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")

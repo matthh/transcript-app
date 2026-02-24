@@ -251,14 +251,12 @@ Respond with ONLY valid JSON:
     }
   }
 
-  // Deterministic fallback: if LLM didn't extract a film filter, try matching
-  // the query against the full episode catalog. Catches short/ambiguous titles
-  // (e.g., "They Live", "It", "Us") that the LLM may not recognize as film names.
-  if (!filters.film) {
-    const detectedFilm = findFilmFromQuery(query);
-    if (detectedFilm) {
-      filters.film = detectedFilm;
-    }
+  // Always run deterministic film detection against the episode catalog.
+  // Prefer the canonical catalog match over LLM extraction for consistency —
+  // the catalog entry includes the year suffix and is guaranteed to match metadata.
+  const detectedFilm = findFilmFromQuery(query);
+  if (detectedFilm) {
+    filters.film = detectedFilm;
   }
 
   // Default true (safe): if LLM omits the field, assume transcript depth needed
