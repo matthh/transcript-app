@@ -28,6 +28,7 @@ import { QueryIntent } from './query-intent';
  *  #10 MULTI-REFERENT COVERAGE — address all distinct referent clusters
  *  #11 HOST-SCOPED EVIDENCE PRIORITY — attribute host vs guest speech correctly
  *  #12 PREFERENCE-CONFIDENCE THRESHOLD — calibrate confidence to evidence strength
+ *  #13 ANTI-FABRICATION — only cite specifics that appear as text in provided excerpts
  *  +   HOST_IDENTITY_RULE — Haitch & Jason are the only hosts
  */
 

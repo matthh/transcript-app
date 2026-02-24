@@ -188,8 +188,9 @@ For each reported bad query:
   2. **Speaker-aware boost**: `extractTargetSpeakers()` + `boostSpeakerMatches()` gives 1.3x boost when query names a host/guest and that person appears in chunk `metadata.speakers`.
 - Results: "Does Jason like BBQ" now passes consistently (retrieves relevant personal content). "Hosts' favorite foods" retrieves 5 sources but synthesis hallucinates instead of grounding on actual content — the specific "Velveeta" chunk is still not surfaced by retrieval.
 - Phase 3d mitigations shipped:
-  3. **Rule #8 relevance gate**: refined PARTIAL EVIDENCE rule to distinguish DIRECT evidence (hosts explicitly discuss the queried topic) from TANGENTIAL evidence (topic appears only in fictional/film context or passing mention). Tangential evidence is still reported but clearly qualified — no extrapolation or inference allowed. Prevents hallucination when retrieved chunks are only tangentially related.
+  3. **Rule #13 anti-fabrication**: new rule requiring that all specific items, names, dishes, preferences, or facts cited in the answer must appear as text in the provided excerpts. If sources touch a topic without naming specifics, model must describe in general terms without inventing details. Targets hallucination-from-tangential-evidence directly without affecting partial-evidence behavior.
   4. **Rule #12 sourcing requirement**: WEAK evidence tier now requires explicit sourcing (quote/paraphrase) alongside hedged language. Prevents model from hedging while still inventing content.
+  - Note: initial approach (direct/tangential distinction in Rule #8) caused regression on Jason BBQ — model over-qualified genuine evidence with "does not contain" phrasing. Reverted; anti-fabrication rule is more surgical.
 - Residual issues:
   - Generic personal queries without a named speaker (e.g., "hosts' favorite foods") don't benefit from speaker boost, and synonym expansion alone isn't enough to overcome embedding mismatch.
   - The specific "Velveeta" chunk is still not surfaced by retrieval — deeper fix likely requires topic-segment sub-chunking (re-embedding) so personal asides get their own vectors.

@@ -229,10 +229,11 @@ Phase 3c shipped deliverables (synthesis policy hardening):
 - ✅ Formalized synthesis policy matrix as JSDoc in `src/lib/routing-policy.ts` — documents all 5 query class combinations (model, token budget, chunks, prompt style) and lists all 12 grounding rules + HOST_IDENTITY_RULE.
 - ✅ Added 2 eval cases: host-scoped opinion with guest present (Panic Room, FM-07), preference-confidence hedging (favorite film, FM-11). Eval dataset: 61 → 63 cases.
 
-Phase 3d shipped deliverables (synthesis relevance gate):
-- ✅ Refined Rule #8 (PARTIAL EVIDENCE) with direct vs tangential evidence distinction — DIRECT evidence (hosts explicitly discuss the queried topic) gets full treatment; TANGENTIAL evidence (topic appears only in fictional/film context or passing mention) is reported but clearly qualified, with no extrapolation. Preserves the "MUST describe what you found" mandate while preventing hallucination on weak evidence.
+Phase 3d shipped deliverables (synthesis anti-fabrication):
+- ✅ Added Rule #13 (ANTI-FABRICATION) — when describing source content, the model may ONLY cite specific items/names/facts that appear as text in the provided excerpts. If sources touch a topic without naming specifics, describe in general terms without inventing details. Targets hallucination-from-tangential-evidence (e.g., model inventing Italian dish names from food-adjacent chunks).
 - ✅ Strengthened Rule #12 (PREFERENCE-CONFIDENCE) WEAK tier — now requires explicit sourcing (quote/paraphrase) alongside hedged language. Prevents model from hedging while still inventing content.
 - ✅ Added `synthesis-grounding` tag to FM-15 favorite foods eval case for targeted runs.
+- Note: initial approach (direct/tangential distinction in Rule #8) caused regression on Jason BBQ case — model over-qualified genuine evidence. Reverted Rule #8 to original; anti-fabrication rule is more surgical.
 - Targets FM-15 (hosts' favorite foods hallucination). Eval: 60/65 baseline, target ≥60/65 (no regressions).
 
 Remaining deliverables:
