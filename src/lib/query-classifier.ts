@@ -4,6 +4,7 @@ import {
   QueryFilters,
   ClassificationResult,
 } from '@/types/episode-metadata';
+import { findFilmFromQuery } from './query-intent';
 
 // Fallback heuristics - only used if LLM fails
 const FACTUAL_TRIGGERS = [
@@ -247,6 +248,16 @@ Respond with ONLY valid JSON:
     const generic = /^(movies?|films?|episodes?|all|the|in|from|\d{4}(\s+movies?|\s+films?)?)$/i;
     if (generic.test(filters.film.trim())) {
       delete filters.film;
+    }
+  }
+
+  // Deterministic fallback: if LLM didn't extract a film filter, try matching
+  // the query against the full episode catalog. Catches short/ambiguous titles
+  // (e.g., "They Live", "It", "Us") that the LLM may not recognize as film names.
+  if (!filters.film) {
+    const detectedFilm = findFilmFromQuery(query);
+    if (detectedFilm) {
+      filters.film = detectedFilm;
     }
   }
 

@@ -79,7 +79,7 @@ function extractYearRange(query: string): { min: number; max: number } | null {
   return null;
 }
 
-function findFilmFromQuery(query: string): string | null {
+export function findFilmFromQuery(query: string): string | null {
   const normalizedQuery = normalizeForMatch(query);
   if (!normalizedQuery) return null;
 
