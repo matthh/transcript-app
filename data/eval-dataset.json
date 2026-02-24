@@ -465,6 +465,24 @@
       "rejectTextInAnswer": ["no information", "don't have", "definitely their favorite", "without a doubt"],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2
+    },
+    {
+      "name": "Person-scoped personal query: Jason food preferences",
+      "query": "Does Jason like BBQ?",
+      "tags": ["cross-cutting-personal", "retrieval", "FM-15", "speaker-boost"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have", "does not contain"]
+    },
+    {
+      "name": "Cross-cutting personal query: hosts' favorite foods",
+      "query": "What are some of the hosts' favorite foods?",
+      "tags": ["cross-cutting-personal", "retrieval", "FM-15"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "expectTextInAnswer": ["Velveeta"],
+      "expectMinTranscriptSources": 2,
+      "expectMinDistinctTranscriptEpisodes": 2,
+      "rejectTextInAnswer": ["no information", "don't have", "does not contain", "does not directly discuss"]
     }
   ]
 }

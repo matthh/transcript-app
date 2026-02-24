@@ -186,6 +186,17 @@ Deliverables:
   - return rationale + closest matches when relaxation is used
 - Strengthen metadata-informed transcript boosting with safeguards for broad queries.
 
+**2d-3: Cross-cutting personal/lifestyle retrieval (FM-15)** ✅ SHIPPED
+- Problem: queries about personal topics (food preferences, hobbies, personal anecdotes) retrieve 1–2 tangential chunks because evidence is embedded within film-discussion chunks whose embedding vectors are dominated by the film topic.
+- Examples: "Does Jason like BBQ" → 1 Matrix chunk; "hosts' favorite foods" → Dune chunk about Fremen food.
+- Shipped mitigations:
+  1. **BM25 synonym expansion** (`src/lib/bm25.ts`): added food, music, and preference synonym clusters to `SYNONYM_MAP`. Feeds into both BM25 search and `extractQueryTerms()` keyword boosting.
+  2. **Speaker-aware retrieval boost** (`src/lib/hybrid-retrieval.ts`): `extractTargetSpeakers()` does deterministic word-boundary matching against `SPEAKER_NAME_MAP`; `boostSpeakerMatches()` applies 1.3x boost to chunks where matched speaker appears in `metadata.speakers`. Placed in pipeline after keyword boost, before episode boost.
+- Deferred: topic-segment sub-chunking (requires re-embedding, higher effort).
+- Acceptance criteria:
+  - "hosts' favorite foods" retrieves ≥2 chunks from ≥2 distinct episodes containing actual personal food discussion (not fictional food from shows).
+  - Cross-cutting personal queries achieve ≥3 transcript sources on average across FM-15 eval slice.
+
 Exit Criteria:
 - ✅ Episode-scoped queries retrieve chunks from the named episode in >=90% of cases on eval slice. (4/4 episode-scoped eval cases pass consistently.)
 - MRR and Recall@10 improvements hit phase target on eval subsets.
@@ -194,6 +205,7 @@ Exit Criteria:
 - Person-centric concept queries improve Recall@10 by >=20% on dedicated eval slice.
 - Boilerplate-driven false positives reduced by >=50% on lexical-noise eval slice.
 - No regression on broad cross-episode queries.
+- Cross-cutting personal/lifestyle queries (FM-15) retrieve ≥2 relevant chunks from ≥2 distinct episodes on eval slice.
 
 ### Phase 3: Synthesis Policy and Answer Grounding (1-2 weeks)
 Objective: make answer depth predictable and evidence-driven.

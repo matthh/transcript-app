@@ -19,7 +19,10 @@ import {
   suppressBoilerplate,
   deduplicateChunks,
   expandAdjacentChunks,
+  extractTargetSpeakers,
+  boostSpeakerMatches,
 } from '../src/lib/hybrid-retrieval';
+import { expandQueryTokens } from '../src/lib/bm25';
 import { rerankChunks } from '../src/lib/reranker';
 import { StoredChunk } from '../src/lib/vectorstore';
 import { ClassificationResult } from '../src/types/episode-metadata';
@@ -389,6 +392,84 @@ async function runUnitTests(): Promise<{ passed: number; failed: number; errors:
   const multiMatchExpanded = expandAdjacentChunks(multiMatchInput, ['digital', 'court', 'jew'], chunkMap);
   assert(multiMatchExpanded.length === 3,
     `expandAdjacentChunks: multi-term match expands neighbors (got ${multiMatchExpanded.length})`);
+
+  // --- expandQueryTokens synonym expansion tests ---
+  const foodExpanded = expandQueryTokens(['food']);
+  assert(foodExpanded.includes('eat'), 'expandQueryTokens: food → includes eat');
+  assert(foodExpanded.includes('meal'), 'expandQueryTokens: food → includes meal');
+  assert(foodExpanded.includes('restaurant'), 'expandQueryTokens: food → includes restaurant');
+  assert(foodExpanded.includes('food'), 'expandQueryTokens: food → preserves original');
+
+  const bbqExpanded = expandQueryTokens(['bbq']);
+  assert(bbqExpanded.includes('barbecue'), 'expandQueryTokens: bbq → includes barbecue');
+  assert(bbqExpanded.includes('grill'), 'expandQueryTokens: bbq → includes grill');
+  assert(bbqExpanded.includes('smoked'), 'expandQueryTokens: bbq → includes smoked');
+
+  const favExpanded = expandQueryTokens(['favorite']);
+  assert(favExpanded.includes('favourite'), 'expandQueryTokens: favorite → includes favourite');
+  assert(favExpanded.includes('love'), 'expandQueryTokens: favorite → includes love');
+  assert(favExpanded.includes('prefer'), 'expandQueryTokens: favorite → includes prefer');
+
+  const musicExpanded = expandQueryTokens(['music']);
+  assert(musicExpanded.includes('song'), 'expandQueryTokens: music → includes song');
+  assert(musicExpanded.includes('band'), 'expandQueryTokens: music → includes band');
+  assert(musicExpanded.includes('album'), 'expandQueryTokens: music → includes album');
+
+  // --- extractTargetSpeakers tests ---
+  const jasonSpeakers = extractTargetSpeakers('Does Jason like BBQ');
+  assert(jasonSpeakers.includes('Jason Goldman'), 'extractTargetSpeakers: Jason → Jason Goldman');
+  assert(jasonSpeakers.includes('Jason'), 'extractTargetSpeakers: Jason → Jason');
+
+  const haitchSpeakers = extractTargetSpeakers('What does Haitch think');
+  assert(haitchSpeakers.includes('Haitch'), 'extractTargetSpeakers: Haitch → Haitch');
+  assert(haitchSpeakers.includes('Matt Haitch'), 'extractTargetSpeakers: Haitch → Matt Haitch');
+
+  const hostsSpeakers = extractTargetSpeakers('hosts favorite foods');
+  assert(hostsSpeakers.length === 0, `extractTargetSpeakers: "hosts" → empty (got ${hostsSpeakers.length})`);
+
+  const noSpeakers = extractTargetSpeakers('what movies did they review');
+  assert(noSpeakers.length === 0, `extractTargetSpeakers: generic query → empty (got ${noSpeakers.length})`);
+
+  // Ensure word-boundary matching (no substring false positives)
+  const mattSpeakers = extractTargetSpeakers('What does Matt think about the format');
+  assert(mattSpeakers.includes('Haitch'), 'extractTargetSpeakers: Matt → Haitch');
+
+  // --- boostSpeakerMatches tests ---
+  function makeResultWithSpeakers(id: string, text: string, score: number, speakers: string, episode: string = 'Test Episode'): RetrievalResult {
+    return {
+      chunk: {
+        id,
+        text,
+        embedding: [],
+        metadata: {
+          episodeTitle: episode,
+          speakers,
+          startTimestamp: '00:00:00',
+          endTimestamp: '00:01:00',
+        },
+      },
+      score,
+      source: 'both',
+    };
+  }
+
+  const speakerResults = [
+    makeResultWithSpeakers('s_1', 'talking about bbq and grilling', 1.0, 'Jason Goldman, Haitch'),
+    makeResultWithSpeakers('s_2', 'discussion of film techniques', 1.0, 'Haitch, Proto'),
+  ];
+
+  const jasonBoosted = boostSpeakerMatches(speakerResults, 'Does Jason like BBQ');
+  const s1Boosted = jasonBoosted.find(r => r.chunk.id === 's_1')!;
+  const s2Boosted = jasonBoosted.find(r => r.chunk.id === 's_2')!;
+  assert(Math.abs(s1Boosted.score - 1.3) < 0.001,
+    `boostSpeakerMatches: Jason-speaker chunk gets 1.3x (got ${s1Boosted.score})`);
+  assert(s2Boosted.score === 1.0,
+    `boostSpeakerMatches: non-Jason chunk unchanged (got ${s2Boosted.score})`);
+
+  // No target speakers → unchanged
+  const noBoost = boostSpeakerMatches(speakerResults, 'what movies were reviewed');
+  assert(noBoost[0].score === 1.0 && noBoost[1].score === 1.0,
+    'boostSpeakerMatches: no target speakers → scores unchanged');
 
   // --- rerankChunks tests (no real API calls) ---
 

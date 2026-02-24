@@ -39,6 +39,23 @@ const SYNONYM_MAP: Record<string, string[]> = {
   'voicemails': ['letters', 'letter'],
   'letter': ['voicemail', 'voicemails'],
   'letters': ['voicemails', 'voicemail'],
+
+  // Food cluster
+  'food': ['eat', 'eating', 'meal', 'restaurant', 'snack', 'dinner', 'lunch', 'breakfast', 'hungry'],
+  'foods': ['eat', 'eating', 'meal', 'restaurant', 'snack', 'dinner', 'lunch', 'breakfast', 'hungry'],
+  'eat': ['food', 'eating', 'meal', 'restaurant', 'dinner', 'lunch'],
+  'eating': ['food', 'eat', 'meal', 'restaurant', 'dinner', 'lunch'],
+  'bbq': ['barbecue', 'grill', 'grilling', 'smoked'],
+  'barbecue': ['bbq', 'grill', 'grilling', 'smoked'],
+
+  // Music cluster
+  'music': ['song', 'band', 'concert', 'instrument', 'playlist', 'album'],
+  'song': ['music', 'band', 'album', 'track'],
+  'band': ['music', 'song', 'concert', 'album'],
+
+  // Preference synonyms
+  'favorite': ['favourite', 'love', 'prefer', 'preference'],
+  'favourite': ['favorite', 'love', 'prefer', 'preference'],
 };
 
 /**

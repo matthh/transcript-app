@@ -211,6 +211,71 @@ function boostTargetedEpisodes(
   return boosted.sort((a, b) => b.score - a.score);
 }
 
+// --- Speaker-aware boost ---
+
+/**
+ * Known podcast speaker name map.
+ * Keys are lowercase query tokens; values are speaker name variants
+ * as they appear in chunk metadata.speakers.
+ */
+const SPEAKER_NAME_MAP: Record<string, string[]> = {
+  'jason': ['Jason Goldman', 'Jason'],
+  'haitch': ['Haitch', 'Matt Haitch'],
+  'matt': ['Haitch', 'Matt Haitch'],
+  'corey': ['Corey'],
+  'proto': ['Proto'],
+  'slim': ['Slim'],
+  'kev': ['Kev'],
+  'rosie': ['Rosie'],
+  'birria': ['birria'],
+  'jonesy': ['Jonesy'],
+};
+
+/**
+ * Extract target speaker names from query using deterministic word-boundary matching.
+ * Returns deduplicated list of speaker name variants found.
+ */
+export function extractTargetSpeakers(query: string): string[] {
+  const lowerQuery = query.toLowerCase();
+  const speakers = new Set<string>();
+
+  for (const [keyword, variants] of Object.entries(SPEAKER_NAME_MAP)) {
+    const regex = new RegExp(`\\b${keyword}\\b`);
+    if (regex.test(lowerQuery)) {
+      for (const v of variants) {
+        speakers.add(v);
+      }
+    }
+  }
+
+  return Array.from(speakers);
+}
+
+/**
+ * Boost RRF scores for chunks where a target speaker appears in metadata.speakers.
+ * Applied after keyword boost, before episode boost.
+ * 1.3x multiplier — lower than episode boost (1.5x) since speaker presence
+ * alone isn't very discriminating, but compounds with keyword boost.
+ */
+export function boostSpeakerMatches(
+  results: RetrievalResult[],
+  query: string
+): RetrievalResult[] {
+  const targetSpeakers = extractTargetSpeakers(query);
+  if (targetSpeakers.length === 0) return results;
+
+  return results
+    .map((r) => {
+      const speakers = r.chunk.metadata.speakers.toLowerCase();
+      const hasSpeaker = targetSpeakers.some((s) => speakers.includes(s.toLowerCase()));
+      return {
+        ...r,
+        score: hasSpeaker ? r.score * 1.3 : r.score,
+      };
+    })
+    .sort((a, b) => b.score - a.score);
+}
+
 // --- Boilerplate suppression ---
 
 const BOILERPLATE_PATTERNS = [
@@ -590,8 +655,11 @@ export async function hybridRetrieval(
   // Boost chunks containing exact query keywords so they survive deduplication
   const boostedResults = boostKeywordMatches(injectedResults, query);
 
+  // Boost chunks where a target speaker is active (person-scoped queries)
+  const speakerBoosted = boostSpeakerMatches(boostedResults, query);
+
   // Boost chunks from metadata-targeted episodes
-  const episodeBoosted = boostTargetedEpisodes(boostedResults, targetEpisodeTitles);
+  const episodeBoosted = boostTargetedEpisodes(speakerBoosted, targetEpisodeTitles);
 
   // Suppress boilerplate outro/credits chunks
   const boilerplateSuppressed = suppressBoilerplate(episodeBoosted);

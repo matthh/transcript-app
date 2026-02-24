@@ -177,6 +177,21 @@ For each reported bad query:
 - Plan alignment: Phase 3 (further synthesis grounding), Phase 4 (implicit-connection assertions).
 - Residual risk: Wachowskis/Bound still flaky — synthesis sometimes ignores the bridging rule despite 4 correct source chunks. May need stronger prompting or few-shot examples.
 
+### FM-15: Cross-Cutting Personal/Lifestyle Retrieval Gap
+- Stage: Retrieval
+- Query type: personal preference, lifestyle, off-topic cross-episode queries (e.g., "Does Jason like BBQ", "What are the hosts' favorite foods", "Do the hosts have pets")
+- Why hard now: personal/lifestyle content is mentioned incidentally during film discussions. Chunk embedding vectors are dominated by the episode's primary topic (the film), so queries about food, hobbies, or personal life have weak cosine similarity. BM25 helps only when exact keywords appear, but hosts use specific food names (e.g., "Velveeta shells and cheese") rather than generic terms (e.g., "food", "BBQ").
+- Common miss: retrieval returns 1–2 chunks from tangentially-related episodes (e.g., Dune chunk mentioning fictional Fremen food instead of the Matrix chunk where Jason discusses his actual favorite foods). Evidence that does exist is systematically underranked because it's embedded within film-discussion chunks.
+- User-visible symptom: answer says "I don't have information" or synthesizes from tangential content, despite relevant personal discussion existing elsewhere in the corpus.
+- Examples:
+  - "Does Jason like BBQ" → 1 chunk from Matrix episode (which does contain Jason's food preferences — Velveeta, fried chicken, bagels — but not BBQ specifically). Only 1 chunk retrieved despite food mentions existing across episodes.
+  - "What are some of the hosts favorite foods" → 2 chunks from Dune (Fremen food in the show) and Highlander (no food content). The Matrix chunk with actual host food preferences is not retrieved at all.
+- Plan alignment: Phase 2d (entity-aware retrieval, person-centric queries). Potential mitigations:
+  - Speaker-weighted retrieval: boost chunks where the queried person (e.g., "Jason") is an active speaker AND the query topic co-occurs.
+  - Topic-segment sub-chunking: split long multi-topic chunks so personal asides get their own embedding vectors distinct from the film discussion.
+  - Query expansion: for personal/lifestyle queries, expand with related terms (e.g., "BBQ" → "barbecue", "grill", "ribs", "brisket"; "food" → "eat", "hungry", "restaurant", "meal").
+- Relationship to other FMs: overlaps with FM-04 (sparse retrieval miss) and FM-06 (cross-episode aggregation). Distinct because the root cause is systematic embedding mismatch for off-topic content, not just top-K ranking issues.
+
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
 These are expected to be hard until dedicated handling is added:
@@ -186,6 +201,7 @@ These are expected to be hard until dedicated handling is added:
 - Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence.
 - Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards.
 - Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).
+- Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).
 
 ## Common Miss Patterns We Should Expect
 
