@@ -147,3 +147,29 @@ export function searchSimilar(
   scored.sort((a, b) => b.score - a.score);
   return scored.slice(0, topK);
 }
+
+/**
+ * Episode-scoped embedding search: filters chunks to target episodes
+ * before running cosine similarity. Used for targeted sub-search
+ * when the classifier identifies specific episodes.
+ */
+export function searchSimilarFiltered(
+  queryEmbedding: number[],
+  chunks: StoredChunk[],
+  episodeTitles: string[],
+  topK: number = 10
+): { chunk: StoredChunk; score: number }[] {
+  const titleSet = new Set(episodeTitles.map(t => t.toLowerCase()));
+  const filtered = chunks.filter(c =>
+    titleSet.has(c.metadata.episodeTitle.toLowerCase())
+  );
+  if (filtered.length === 0) return [];
+
+  const scored = filtered.map((chunk) => ({
+    chunk,
+    score: cosineSimilarity(queryEmbedding, chunk.embedding),
+  }));
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, topK);
+}

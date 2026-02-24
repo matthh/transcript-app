@@ -7,7 +7,7 @@
  */
 
 import { generateEmbedding } from './embeddings';
-import { loadVectorStoreAsync, searchSimilar, StoredChunk, getChunkMap } from './vectorstore';
+import { loadVectorStoreAsync, searchSimilar, searchSimilarFiltered, StoredChunk, getChunkMap } from './vectorstore';
 import { searchBM25, expandQueryTokens } from './bm25';
 import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
 import { BM25Index } from './bm25';
@@ -437,6 +437,87 @@ export function diversifyByEpisode(
 }
 
 /**
+ * Inject chunks from targeted episodes that are missing from fused results.
+ * Runs a separate episode-scoped embedding search and merges results at
+ * the median score so they can be evaluated by downstream boosts/reranker.
+ */
+function injectTargetedEpisodeChunks(
+  fusedResults: RetrievalResult[],
+  chunks: StoredChunk[],
+  queryEmbedding: number[],
+  targetEpisodeTitles: string[]
+): RetrievalResult[] {
+  // Guard: skip if no targets or too many (broad queries)
+  if (targetEpisodeTitles.length === 0 || targetEpisodeTitles.length > 3) {
+    return fusedResults;
+  }
+
+  const targetSet = new Set(targetEpisodeTitles.map(t => t.toLowerCase()));
+  const existingIds = new Set(fusedResults.map(r => r.chunk.id));
+
+  // Count existing target-episode chunks per episode
+  const existingCounts = new Map<string, number>();
+  for (const r of fusedResults) {
+    const title = r.chunk.metadata.episodeTitle.toLowerCase();
+    if (targetSet.has(title)) {
+      existingCounts.set(title, (existingCounts.get(title) || 0) + 1);
+    }
+  }
+
+  // If every target episode already has >= 3 chunks, skip
+  const allWellRepresented = targetEpisodeTitles.every(
+    t => (existingCounts.get(t.toLowerCase()) || 0) >= 3
+  );
+  if (allWellRepresented) return fusedResults;
+
+  // Run episode-scoped embedding search (top 6 per episode as candidate pool)
+  const candidatePool = searchSimilarFiltered(
+    queryEmbedding,
+    chunks,
+    targetEpisodeTitles,
+    6 * targetEpisodeTitles.length
+  );
+
+  // Filter: must not already exist in results, and must meet minimum similarity
+  const MIN_SIMILARITY = 0.15;
+  const candidates = candidatePool.filter(
+    c => !existingIds.has(c.chunk.id) && c.score >= MIN_SIMILARITY
+  );
+
+  if (candidates.length === 0) return fusedResults;
+
+  // Compute median score of existing fused results for injection score
+  const scores = fusedResults.map(r => r.score).sort((a, b) => a - b);
+  const medianScore = scores.length > 0
+    ? scores[Math.floor(scores.length / 2)]
+    : 0;
+
+  // Cap at 3 injected chunks per target episode
+  const injectedCounts = new Map<string, number>();
+  const injected: RetrievalResult[] = [];
+
+  for (const candidate of candidates) {
+    const title = candidate.chunk.metadata.episodeTitle.toLowerCase();
+    const count = injectedCounts.get(title) || 0;
+    if (count >= 3) continue;
+
+    injected.push({
+      chunk: candidate.chunk,
+      score: medianScore,
+      source: 'embedding',
+    });
+    injectedCounts.set(title, count + 1);
+  }
+
+  if (injected.length === 0) return fusedResults;
+
+  // Merge and re-sort
+  const merged = [...fusedResults, ...injected];
+  merged.sort((a, b) => b.score - a.score);
+  return merged;
+}
+
+/**
  * Perform hybrid retrieval combining embedding and BM25 search.
  * Loads data from Blob storage on first request.
  */
@@ -494,11 +575,14 @@ export async function hybridRetrieval(
   // Merge results using Reciprocal Rank Fusion
   const fusedResults = reciprocalRankFusion(embeddingResults, bm25Results, chunks);
 
+  // Inject chunks from targeted episodes that may be missing from fused results
+  const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
+  const injectedResults = injectTargetedEpisodeChunks(fusedResults, chunks, queryEmbedding, targetEpisodeTitles);
+
   // Boost chunks containing exact query keywords so they survive deduplication
-  const boostedResults = boostKeywordMatches(fusedResults, query);
+  const boostedResults = boostKeywordMatches(injectedResults, query);
 
   // Boost chunks from metadata-targeted episodes
-  const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
   const episodeBoosted = boostTargetedEpisodes(boostedResults, targetEpisodeTitles);
 
   // Suppress boilerplate outro/credits chunks

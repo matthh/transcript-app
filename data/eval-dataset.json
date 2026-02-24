@@ -374,6 +374,72 @@
       "rejectTextInAnswer": ["limited to a brief video game"],
       "expectMinTranscriptSources": 3,
       "expectMinDistinctTranscriptEpisodes": 2
+    },
+
+    {
+      "name": "Malcolm and Marie episode-scoped retrieval (FM-03)",
+      "query": "What did the hosts say about self-perception and relationships in the Malcolm and Marie episode?",
+      "tags": ["episode-scoped", "retrieval", "FM-03", "prod-eval-2026-02"],
+      "expectSourceEpisode": "Malcolm and Marie",
+      "rejectTextInAnswer": ["no information", "don't have", "Station Eleven"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Star Trek episode-scoped retrieval (FM-03)",
+      "query": "What did the hosts discuss about Decker in the Star Trek episode?",
+      "tags": ["episode-scoped", "retrieval", "FM-03", "prod-eval-2026-02"],
+      "expectSourceEpisode": "Star Trek",
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "They Live one-liner episode-scoped retrieval (FM-03/FM-04)",
+      "query": "What did Haitch say about the iconic one-liner from They Live?",
+      "tags": ["episode-scoped", "retrieval", "quote", "FM-03", "FM-04", "prod-eval-2026-02"],
+      "expectSourceEpisode": "They Live",
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Dune sleeves quote cross-episode (FM-06)",
+      "query": "What did Jason mean when he said 'Never fuck with someone with sleeves in the Dune Universe'?",
+      "tags": ["cross-episode", "quote", "FM-06", "prod-eval-2026-02"],
+      "expectTextInAnswer": ["sleeve"],
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 2
+    },
+    {
+      "name": "The Mark American Movie reference (FM-13)",
+      "query": "What did Jason mean when he said Haitch is 'the Mark' of the podcast?",
+      "tags": ["ambiguous-term", "synthesis", "FM-13", "prod-eval-2026-02"],
+      "expectSourceEpisode": "American Movie",
+      "rejectTextInAnswer": ["no information", "don't have", "don't see any evidence"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Wachowskis directorial debut Bound (FM-14)",
+      "query": "What did the hosts think about how the Wachowskis' directorial debut compared to other first-time filmmakers?",
+      "tags": ["implicit-knowledge", "synthesis", "FM-14", "prod-eval-2026-02"],
+      "expectSourceEpisode": "Bound",
+      "expectTextInAnswer": ["Bound"],
+      "rejectTextInAnswer": ["no information", "don't have", "do not contain"],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Villeneuve across Arrival and Sicario (FM-07 host identity)",
+      "query": "What did the hosts think about Denis Villeneuve's filmmaking across Arrival and Sicario?",
+      "tags": ["cross-episode", "FM-07", "host-identity", "prod-eval-2026-02"],
+      "expectMinTranscriptSources": 2,
+      "expectMinDistinctTranscriptEpisodes": 2,
+      "rejectTextInAnswer": ["host B", "host C", "host A", "no information"]
+    },
+    {
+      "name": "Andor Nemek manifesto speaker attribution (FM-07)",
+      "query": "What did the hosts say about Nemek's manifesto spreading in Andor?",
+      "tags": ["episode-scoped", "FM-07", "attribution", "prod-eval-2026-02"],
+      "expectSourceEpisode": "Andor",
+      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectMinTranscriptSources": 1
     }
   ]
 }

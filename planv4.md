@@ -158,6 +158,11 @@ Verification:
 Objective: address remaining retrieval gaps not covered by Phase 2a/2b/2c.
 
 Deliverables:
+- **[HIGH PRIORITY]** Add episode-scoped retrieval filtering for queries that name a specific film/episode:
+  - when the classifier extracts a film/episode name from the query, use it as a hard filter (or strong boost) on retrieval results, not just as embedding input.
+  - ensure the extracted film name is matched against episode metadata (title, film field) to resolve to episode IDs, then constrain or strongly boost chunks from those episodes.
+  - fall back to unfiltered retrieval if the extracted film name matches zero episodes (typo, unknown title).
+  - production eval failures (2026-02): "Malcolm and Marie" → Station Eleven, "Star Trek" → Real Genius, "They Live" → 12 unrelated episodes. All three have correct transcripts that were simply not retrieved.
 - Add deterministic transcript analysis for explicit windowed phrase-frequency queries:
   - detect patterns like quoted phrase + `first N episodes` + `last N episodes` (+ optional speaker constraint).
   - compute counts by scanning transcripts in the requested windows, not by sparse top-K retrieval.
@@ -178,6 +183,7 @@ Deliverables:
 - Strengthen metadata-informed transcript boosting with safeguards for broad queries.
 
 Exit Criteria:
+- Episode-scoped queries retrieve chunks from the named episode in >=90% of cases on eval slice.
 - MRR and Recall@10 improvements hit phase target on eval subsets.
 - Repetition rate in generated answers decreases measurably.
 - TV-vs-film constrained queries show <10% cross-medium contamination on eval slices.
@@ -204,8 +210,9 @@ Deliverables:
   - prohibit cross-episode blending (quote/details from episode A labeled as episode B).
   - require uncertainty wording when evidence spans multiple episodes without a clear primary.
 - Add role-aware attribution constraints in synthesis:
-  - distinguish hosts vs guests in the provided context.
+  - ~~distinguish hosts vs guests in the provided context.~~ **Partially shipped** — `HOST_IDENTITY_RULE` declares exactly two hosts (Haitch and Jason), normalizes speaker names at data level, and tells synthesis all other speakers are guests/reviewers/voicemailers.
   - for host-scoped queries, exclude guest-only evidence unless explicitly requested.
+  - remaining: transcript speaker labeling errors (whisper misattribution) still cause wrong-person quotes; needs transcript QA pass or speaker-diarization improvement.
 - Add preference-confidence policy for "favorite/all-time/best" queries:
   - require repeated/strong evidence before asserting a preference.
   - downgrade to "mentioned" language when evidence is sparse.
@@ -218,6 +225,10 @@ Deliverables:
   - when a short/ambiguous query term (e.g., "Zelda") appears in provided sources with multiple distinct referents (person, franchise, character), synthesis must address all referent clusters, not just the most "obvious" one.
   - prohibit false denial about referents that are present in the provided sources.
   - example: query "Zelda" — sources contain Zelda Rubinstein (actress), Madame Zelda (Nathan Lane story), Zelda: BotW (video game), Zelda character (Southland Tales). Synthesis must surface all of these.
+- Add implicit-knowledge bridging in synthesis prompts:
+  - when retrieved sources discuss a specific film/person/event, synthesis should use world knowledge to connect descriptions in the query (e.g., "directorial debut", "first film") to the content in sources (e.g., chunks from "Bound" episode).
+  - add grounding rule: before concluding "no information", check whether any retrieved episode could plausibly match the query description using common film/director knowledge.
+  - example: "Wachowskis' directorial debut" → sources contain Bound episode → synthesis should recognize Bound as the Wachowskis' debut.
 - Add anecdote-linkage response policy for multi-clause factual prompts:
   - if evidence contains the named entity and event context but misses one clause, return the partial finding + likely episode instead of a full "no information" denial.
   - require explicit "insufficient excerpt coverage" wording when only part of the anecdote is present.

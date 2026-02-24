@@ -45,11 +45,16 @@ For each reported bad query:
 ### FM-03: Filter Extraction Failure
 - Stage: Classification -> Metadata retrieval
 - Query type: factual/hybrid with entities (film/guest/director/genre)
-- Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search.
+- Why hard now: extraction errors or generic token extraction can overconstrain/underconstrain search. When a query explicitly names a film/episode, retrieval still returns chunks from unrelated episodes because the film name is not used as a hard filter.
 - Common miss: no metadata matches, wrong film/person picked, fallback too broad.
 - ~~Example: episode-id lookup misses such as “what episode is 283” or “give me details about episode 283”.~~ **Resolved in Phase 1** — dedicated `metadata_episode_lookup` intent now handles these patterns deterministically.
+- New examples from production eval (2026-02):
+  - “What did Matt Haitch say about ... in the Malcolm and Marie episode” → retrieval returned Station Eleven chunks; Malcolm and Marie transcript exists but was not found.
+  - “What did Mark Altman say about Decker in the Star Trek episode” → retrieval returned Real Genius chunks; Star Trek transcript exists but was not found.
+  - “What did Haitch say about the iconic one-liner from They Live” → 36 sources from 12 unrelated episodes, zero from They Live despite transcript existing.
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
-- Plan alignment: Phase 2 (relaxation strategy), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
+- Root cause pattern: when a query names a specific film/episode, the classifier does not extract it as a hard episode filter, so retrieval relies entirely on embedding/keyword similarity, which can rank unrelated episodes higher.
+- Plan alignment: Phase 2d (episode-scoped retrieval filtering), Phase 5 (canonicalization + matching tiers), Phase 4 tests.
 
 ### FM-04: Sparse Retrieval Miss for Transcript-Depth Factual Queries — PARTIALLY MITIGATED
 - Stage: Retrieval
@@ -87,13 +92,17 @@ For each reported bad query:
 - Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
 - Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
 
-### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer)
+### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED
 - Stage: Synthesis (with retrieval contributors)
 - Query type: person-scoped prompts ("Did Haitch...", "What did Corey...")
-- Why hard now: chunks often contain multiple speakers; role constraints are weak.
-- Common miss: guest quote attributed to host, or vice versa.
-- User-visible symptom: wrong person credited for claim.
+- Why hard now: chunks often contain multiple speakers; role constraints are weak. Transcript speaker labels can be inaccurate (whisper transcription errors).
+- Common miss: guest quote attributed to host, or vice versa. Synthesis invents generic speaker labels ("host B", "host C").
+- User-visible symptom: wrong person credited for claim, or generic labels instead of names.
+- Examples from production eval (2026-02):
+  - Nemek's manifesto (Andor): answer attributes Jason's quote to Haitch — likely transcript speaker labeling error.
+  - Villeneuve across Arrival/Sicario: synthesis output contained "host B" and "host C" instead of proper names.
 - Plan alignment: Phase 3 (role-aware attribution), Phase 4 role assertions.
+- Partial mitigation shipped: `HOST_IDENTITY_RULE` in all synthesis prompts declares exactly two hosts (Haitch and Jason), normalizes "Matt Haitch" → "Haitch" at data level, and tells the LLM all other speakers are guests/reviewers/voicemailers. Fixes the "host B/C" generic label problem. Does not fix underlying transcript speaker labeling errors.
 
 ### FM-08: Episode Attribution Error
 - Stage: Synthesis
@@ -145,8 +154,20 @@ For each reported bad query:
 - Why hard now: synthesis model latches onto the most "obvious" interpretation (e.g., Zelda = video game) and ignores other valid referents (e.g., Zelda Rubinstein the actress, Madame Zelda story) even when evidence for those referents is present in the provided sources.
 - Common miss: answer discusses only one interpretation despite sources containing multiple distinct referents; concludes with false denial about other referents.
 - User-visible symptom: answer feels incomplete — user knows the term appears in more contexts than the answer covers.
-- Example: query "Zelda" — retrieval finds 4 episodes with mentions (video game, Zelda Rubinstein actress, Madame Zelda Nathan Lane story, Zelda character in Southland Tales) but synthesis only discusses the video game reference and says "I don't have information about any Legend of Zelda films."
+- Examples:
+  - Query "Zelda" — retrieval finds 4 episodes with mentions (video game, Zelda Rubinstein actress, Madame Zelda Nathan Lane story, Zelda character in Southland Tales) but synthesis only discusses the video game reference and says "I don't have information about any Legend of Zelda films."
+  - Query about "the Mark" of the podcast (referring to Mark Borchardt from American Movie) — American Movie episode is in the sources but synthesis fails to connect the cultural reference and denies it exists.
 - Plan alignment: Phase 3 (synthesis grounding checks — require synthesis to address all distinct referent clusters in provided sources), Phase 4 (multi-referent assertions).
+
+### FM-14: Synthesis Implicit Knowledge Gap
+- Stage: Synthesis
+- Query type: questions that require connecting facts across the query and the retrieved sources using world knowledge (e.g., "Wachowskis' debut" requires knowing Bound is their debut).
+- Why hard now: synthesis only sees chunk text and the query; if the query uses a description (e.g., "directorial debut") rather than the film title, and the chunks don't explicitly state the connection, synthesis cannot bridge the gap.
+- Common miss: correct episode chunks are retrieved but synthesis says "no information" because it doesn't make the implicit connection.
+- User-visible symptom: answer says "I don't have information about X" despite X being present in the sources under a different description.
+- Example from production eval (2026-02):
+  - "What did the hosts think about how the Wachowskis' directorial debut compared to other first-time filmmakers?" — Bound episode chunks retrieved (4 sources), but synthesis says "the provided transcripts do not contain any discussion about the Wachowskis' directorial debut" because the chunks discuss "Bound" without explicitly stating it's their debut.
+- Plan alignment: Phase 3 (synthesis grounding — require synthesis to use world knowledge to connect entity descriptions to retrieved evidence), Phase 4 (implicit-connection assertions).
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
@@ -156,16 +177,19 @@ These are expected to be hard until dedicated handling is added:
 - Person-scoped attribution questions in transcripts with dense multi-speaker exchanges.
 - Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence.
 - Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards.
+- Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).
 
 ## Common Miss Patterns We Should Expect
 
 - False negatives from insufficient retrieval coverage.
-- Right evidence, wrong person attribution.
+- Right evidence, wrong person attribution. *(Partially mitigated: HOST_IDENTITY_RULE shipped; transcript speaker labeling errors remain.)*
 - Right quote, wrong episode attribution.
 - Correct intent, wrong depth mode. *(Partially mitigated: quick synthesis now gated on `requiresTranscriptDepth`.)*
 - Correct metadata filter domain, wrong extracted value.
 - Overconfident summary language when evidence is sparse.
 - ~~Endpoint-specific inconsistencies.~~ *(Mitigated by shared routing policy module.)*
+- Episode-scoped query returns chunks from unrelated episodes (no hard episode filter applied).
+- Right sources retrieved, synthesis fails to connect implicit facts (e.g., film title ↔ director's debut).
 
 ## Detection Signals (Operational)
 
