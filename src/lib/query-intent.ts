@@ -1,5 +1,6 @@
 import { loadEpisodeMetadata } from './metadata-store';
 import { extractEpisodeNumberFromQuery } from './tilda-query';
+import { episodeSortKey } from './episode-format';
 
 export type QueryIntentType =
   | 'metadata_latest'
@@ -115,6 +116,59 @@ export function findFilmFromQuery(query: string): string | null {
   }
 
   return bestMatch.film;
+}
+
+/**
+ * Detect "directorial debut" / "first film" patterns and resolve director → earliest episode.
+ * Only fires when findFilmFromQuery() returns null (no explicit film title in query).
+ *
+ * Strategy: check if query mentions a debut concept, then search the director catalog
+ * for a matching last name in the query text. More robust than regex name extraction.
+ */
+const DEBUT_CONCEPT = /directorial\s+debut|first\s+(?:film|feature|movie)\b/i;
+
+export function findDebutFilmFromQuery(query: string): string | null {
+  const normalized = normalize(query);
+  if (!DEBUT_CONCEPT.test(normalized)) return null;
+
+  const episodes = loadEpisodeMetadata();
+
+  // Collect unique directors from catalog
+  const directorToEpisodes = new Map<string, typeof episodes>();
+  for (const ep of episodes) {
+    if (!ep.directors) continue;
+    for (const d of ep.directors) {
+      if (!directorToEpisodes.has(d)) directorToEpisodes.set(d, []);
+      directorToEpisodes.get(d)!.push(ep);
+    }
+  }
+
+  // Find the best matching director: check if their last name appears in the query
+  let bestDirector: string | null = null;
+  let bestLen = 0;
+  for (const director of directorToEpisodes.keys()) {
+    const lastName = director.split(' ').pop()!.toLowerCase();
+    if (lastName.length < 3) continue;
+    // Check if query contains the last name (handles plurals/possessives via substring)
+    if (normalized.includes(lastName) && lastName.length > bestLen) {
+      bestDirector = director;
+      bestLen = lastName.length;
+    }
+  }
+
+  if (!bestDirector) return null;
+
+  // Find this director's earliest film by release year (best proxy for debut)
+  const dirEpisodes = directorToEpisodes.get(bestDirector)!;
+  const sorted = [...dirEpisodes].sort((a, b) => {
+    // Prefer filmYear; fallback to episode order
+    if (a.filmYear && b.filmYear) return a.filmYear - b.filmYear;
+    if (a.filmYear) return -1;
+    if (b.filmYear) return 1;
+    return (a.season * 1000 + episodeSortKey(a.episode)) - (b.season * 1000 + episodeSortKey(b.episode));
+  });
+
+  return sorted[0].film;
 }
 
 function detectField(query: string): MetadataFieldKey | null {

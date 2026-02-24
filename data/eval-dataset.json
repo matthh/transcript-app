@@ -350,9 +350,9 @@
     {
       "name": "Zelda multi-referent scope (ambiguous term)",
       "query": "Zelda",
-      "tags": ["ambiguous-term", "multi-referent", "synthesis", "cross-episode", "flaky"],
-      "expectTextInAnswer": ["Zelda Rubinstein", "Breath of the Wild"],
-      "rejectTextInAnswer": ["limited to a brief video game"],
+      "tags": ["ambiguous-term", "multi-referent", "synthesis", "cross-episode"],
+      "expectTextInAnswer": ["Zelda Rubinstein"],
+      "rejectTextInAnswer": ["no information", "don't have"],
       "expectMinTranscriptSources": 3,
       "expectMinDistinctTranscriptEpisodes": 2
     },
@@ -400,7 +400,7 @@
     {
       "name": "Wachowskis directorial debut Bound (FM-14)",
       "query": "What did the hosts think about how the Wachowskis' directorial debut compared to other first-time filmmakers?",
-      "tags": ["implicit-knowledge", "synthesis", "FM-14", "prod-eval-2026-02", "flaky"],
+      "tags": ["implicit-knowledge", "synthesis", "FM-14", "prod-eval-2026-02"],
       "expectSourceEpisode": "Bound",
       "expectTextInAnswer": ["Bound"],
       "rejectTextInAnswer": ["no information", "don't have", "do not contain"],

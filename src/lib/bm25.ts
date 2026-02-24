@@ -56,6 +56,12 @@ const SYNONYM_MAP: Record<string, string[]> = {
   // Preference synonyms
   'favorite': ['favourite', 'love', 'prefer', 'preference'],
   'favourite': ['favorite', 'love', 'prefer', 'preference'],
+
+  // Whisper transcription error synonyms (proper names misheard)
+  'eszterhas': ['esther', 'ester'],
+  "eszterhas'": ['esther', 'ester'],
+  'esterhaus': ['esther', 'ester'],
+  "esterhaus'": ['esther', 'ester'],
 };
 
 /**

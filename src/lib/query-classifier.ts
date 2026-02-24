@@ -4,7 +4,7 @@ import {
   QueryFilters,
   ClassificationResult,
 } from '@/types/episode-metadata';
-import { findFilmFromQuery } from './query-intent';
+import { findFilmFromQuery, findDebutFilmFromQuery } from './query-intent';
 
 // Fallback heuristics - only used if LLM fails
 const FACTUAL_TRIGGERS = [
@@ -257,6 +257,14 @@ Respond with ONLY valid JSON:
   const detectedFilm = findFilmFromQuery(query);
   if (detectedFilm) {
     filters.film = detectedFilm;
+  }
+
+  // Fallback: resolve director-debut patterns (e.g. "Wachowskis' directorial debut" → "Bound (1996)")
+  if (!filters.film) {
+    const debutFilm = findDebutFilmFromQuery(query);
+    if (debutFilm) {
+      filters.film = debutFilm;
+    }
   }
 
   // Default true (safe): if LLM omits the field, assume transcript depth needed
