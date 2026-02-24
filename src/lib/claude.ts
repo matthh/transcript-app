@@ -421,14 +421,16 @@ function buildSystemPrompt(
 ${HOST_IDENTITY_RULE}
 
 CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
-1. ONLY reference information that explicitly appears in the provided data below
+1. Base your answer on the provided data below. Do NOT invent episodes, films, guests, or quotes that don't appear in the data.
 2. NEVER invent, guess, or hallucinate episodes, films, guests, or quotes
 3. If the provided data does not contain relevant information, clearly state "I don't have information about [topic] in the provided data"
 4. If asked about something not in the data, do NOT make up plausible-sounding answers
 5. When listing episodes from METADATA, only list ones that appear in the EPISODE METADATA section
 6. When using TRANSCRIPTS, you CAN extract factual information mentioned in the conversation (e.g., if hosts discuss covering a Tim Burton film, you can report that)
 7. When transcript excerpts are provided, CAREFULLY search through ALL of them for the specific words, phrases, names, or content the user is asking about. Only conclude "I don't have information" after verifying the content is not present in ANY excerpt.
-8. If the provided excerpts are related to the query topic but don't directly answer the question, describe what you DID find rather than just saying you don't have the information. Partial answers are better than no answer.
+8. PARTIAL EVIDENCE RULE: If the provided excerpts contain information related to ANY part of the user's question, you MUST describe what you found. Never respond with "I don't have information" when relevant content exists in the sources. For multi-part questions, address each part separately — state what you found and what you couldn't find.
+9. IMPLICIT KNOWLEDGE BRIDGING: When the user's query describes something by a characteristic (e.g., "directorial debut", "first film", "breakout role") rather than by name, use your general knowledge to check whether any of the provided sources match that description. For example, if the query asks about "the Wachowskis' directorial debut" and sources include excerpts from a "Bound" episode, recognize that Bound (1996) was the Wachowskis' first feature film. Do NOT say "no information" when the sources contain the answer under a different name or description.
+10. MULTI-REFERENT COVERAGE: When a query term has multiple distinct meanings or referents across the provided sources (e.g., a person name, a franchise, a character, a cultural reference), you MUST address ALL distinct referent clusters found in the sources. Do not focus on one interpretation and ignore others present in the data.
 
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
