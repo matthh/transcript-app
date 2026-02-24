@@ -152,7 +152,7 @@ For each reported bad query:
 - Plan alignment: Phase 1 fast-path fallthrough guardrails, Phase 4 routing assertions.
 - Phase 1 mitigations shipped: medium-confidence intents bypass fast-path entirely; all fast-path misses log structured reason and fall through.
 
-### FM-13: Ambiguous Term Scope Narrowing in Synthesis
+### FM-13: Ambiguous Term Scope Narrowing in Synthesis — PARTIALLY MITIGATED
 - Stage: Synthesis
 - Query type: single-word or short queries where the term has multiple referents across transcripts (person name, franchise, character, etc.)
 - Why hard now: synthesis model latches onto the most "obvious" interpretation (e.g., Zelda = video game) and ignores other valid referents (e.g., Zelda Rubinstein the actress, Madame Zelda story) even when evidence for those referents is present in the provided sources.
@@ -160,10 +160,12 @@ For each reported bad query:
 - User-visible symptom: answer feels incomplete — user knows the term appears in more contexts than the answer covers.
 - Examples:
   - Query "Zelda" — retrieval finds 4 episodes with mentions (video game, Zelda Rubinstein actress, Madame Zelda Nathan Lane story, Zelda character in Southland Tales) but synthesis only discusses the video game reference and says "I don't have information about any Legend of Zelda films."
-  - Query about "the Mark" of the podcast (referring to Mark Borchardt from American Movie) — American Movie episode is in the sources but synthesis fails to connect the cultural reference and denies it exists.
-- Plan alignment: Phase 3 (synthesis grounding checks — require synthesis to address all distinct referent clusters in provided sources), Phase 4 (multi-referent assertions).
+  - Query about "the Mark" of the podcast (referring to Mark Borchardt from American Movie) — retrieval doesn't surface American Movie episode chunks (cultural reference "the Mark" doesn't match on embedding/keyword similarity).
+- Phase 3a partial mitigation shipped: grounding rule #10 (MULTI-REFERENT COVERAGE) requires synthesis to address all distinct referent clusters found in sources. Helps when sources already contain multiple referents, but doesn't fix retrieval gaps (e.g., "the Mark" case where the right chunks aren't retrieved at all).
+- Plan alignment: Phase 3 (further synthesis grounding), Phase 4 (multi-referent assertions).
+- Residual risk: Zelda still flaky — synthesis sometimes ignores the rule. "The Mark" is a retrieval problem, not synthesis.
 
-### FM-14: Synthesis Implicit Knowledge Gap
+### FM-14: Synthesis Implicit Knowledge Gap — PARTIALLY MITIGATED
 - Stage: Synthesis
 - Query type: questions that require connecting facts across the query and the retrieved sources using world knowledge (e.g., "Wachowskis' debut" requires knowing Bound is their debut).
 - Why hard now: synthesis only sees chunk text and the query; if the query uses a description (e.g., "directorial debut") rather than the film title, and the chunks don't explicitly state the connection, synthesis cannot bridge the gap.
@@ -171,7 +173,9 @@ For each reported bad query:
 - User-visible symptom: answer says "I don't have information about X" despite X being present in the sources under a different description.
 - Example from production eval (2026-02):
   - "What did the hosts think about how the Wachowskis' directorial debut compared to other first-time filmmakers?" — Bound episode chunks retrieved (4 sources), but synthesis says "the provided transcripts do not contain any discussion about the Wachowskis' directorial debut" because the chunks discuss "Bound" without explicitly stating it's their debut.
-- Plan alignment: Phase 3 (synthesis grounding — require synthesis to use world knowledge to connect entity descriptions to retrieved evidence), Phase 4 (implicit-connection assertions).
+- Phase 3a partial mitigation shipped: grounding rule #9 (IMPLICIT KNOWLEDGE BRIDGING) instructs synthesis to use world knowledge to connect query descriptions ("directorial debut") to source content ("Bound" episode). Also relaxed rule #1 from "ONLY explicitly appears" to allow bridging while still prohibiting hallucination.
+- Plan alignment: Phase 3 (further synthesis grounding), Phase 4 (implicit-connection assertions).
+- Residual risk: Wachowskis/Bound still flaky — synthesis sometimes ignores the bridging rule despite 4 correct source chunks. May need stronger prompting or few-shot examples.
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 

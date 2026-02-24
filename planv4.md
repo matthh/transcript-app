@@ -195,7 +195,14 @@ Exit Criteria:
 ### Phase 3: Synthesis Policy and Answer Grounding (1-2 weeks)
 Objective: make answer depth predictable and evidence-driven.
 
-Deliverables:
+Phase 3a shipped deliverables (synthesis prompt hardening in `src/lib/claude.ts`):
+- ✅ Relaxed grounding rule #1 from "ONLY explicitly appears" to allow world-knowledge bridging while still prohibiting hallucination.
+- ✅ Strengthened partial-evidence rule (#8): MUST report findings when any relevant content exists; never deny when sources have answers. Fixed Full Catalog Suggestion (consistent fail → pass) and stabilized Joe Eszterhas anecdote linkage (flaky → consistent).
+- ✅ Added implicit-knowledge bridging rule (#9): connect query descriptions ("directorial debut") to source content ("Bound" episode). Targets FM-14; still flaky on Wachowskis/Bound case.
+- ✅ Added multi-referent coverage rule (#10): require addressing all distinct referent clusters in sources. Targets FM-13; still flaky on Zelda case.
+- Eval results: 55/61 → 57/61 (90.2% → 93.4%). Two consistent new passes (Full Catalog, Eszterhas). Zelda and Wachowskis/Bound improved but not yet consistently passing.
+
+Remaining deliverables:
 - Formalize synthesis policy matrix by query class:
   - metadata-answerable factual
   - transcript-depth factual
@@ -222,14 +229,8 @@ Deliverables:
   - when query asks "what do we know about X and Y", aggregate evidence across episodes before concluding "no information."
   - require returning top supporting quotes/episodes when evidence exists, even if weak.
   - if evidence is mixed/ambiguous, return a qualified summary with uncertainty labels instead of flat denial.
-- Add multi-referent synthesis grounding for ambiguous terms:
-  - when a short/ambiguous query term (e.g., "Zelda") appears in provided sources with multiple distinct referents (person, franchise, character), synthesis must address all referent clusters, not just the most "obvious" one.
-  - prohibit false denial about referents that are present in the provided sources.
-  - example: query "Zelda" — sources contain Zelda Rubinstein (actress), Madame Zelda (Nathan Lane story), Zelda: BotW (video game), Zelda character (Southland Tales). Synthesis must surface all of these.
-- Add implicit-knowledge bridging in synthesis prompts:
-  - when retrieved sources discuss a specific film/person/event, synthesis should use world knowledge to connect descriptions in the query (e.g., "directorial debut", "first film") to the content in sources (e.g., chunks from "Bound" episode).
-  - add grounding rule: before concluding "no information", check whether any retrieved episode could plausibly match the query description using common film/director knowledge.
-  - example: "Wachowskis' directorial debut" → sources contain Bound episode → synthesis should recognize Bound as the Wachowskis' debut.
+- ~~Add multi-referent synthesis grounding for ambiguous terms~~ **Partially shipped in Phase 3a** — rule #10 added. Still flaky on Zelda case; may need few-shot examples or stronger prompting to reliably trigger multi-referent coverage.
+- ~~Add implicit-knowledge bridging in synthesis prompts~~ **Partially shipped in Phase 3a** — rule #9 added, rule #1 relaxed. Still flaky on Wachowskis/Bound case; may need few-shot examples in the prompt or a retrieval-side fix to inject the film-to-director mapping.
 - Add anecdote-linkage response policy for multi-clause factual prompts:
   - if evidence contains the named entity and event context but misses one clause, return the partial finding + likely episode instead of a full "no information" denial.
   - require explicit "insufficient excerpt coverage" wording when only part of the anecdote is present.
