@@ -55,7 +55,7 @@ flowchart LR
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
 - **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
 - **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
-- **BM25 index (keywords)** — Exact‑word search over transcript chunks.
+- **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences) and Whisper transcription error bridges (e.g., "Eszterhas" → "Esther"/"Ester").
 - **Answer synthesis** — The response writer that blends metadata + transcripts into a readable answer.
 - **Response with citations** — The final output with sources and timestamps for verification.
 
@@ -99,6 +99,8 @@ guest, film, director, actor, genre, decade, season.
 These filters help narrow down the search to the most relevant episodes.
 
 **Deterministic film detection:** After LLM classification, the system always runs a deterministic film matcher (`findFilmFromQuery`) that checks the query against the full episode catalog. If a catalog film title appears as a substring in the query, the canonical match (with year suffix, e.g., "They Live (1988)") overrides whatever the LLM extracted. This eliminates flakiness for short or ambiguous film titles that the LLM may not consistently recognize.
+
+**Director-debut resolution:** If no film title is found in the query, the system checks for "directorial debut" or "first film" patterns. When detected, it searches the director catalog for a matching last name in the query and returns their earliest film by release year. For example, "Wachowskis' directorial debut" resolves to "Bound (1996)". This ensures `targetEpisodeTitles` gets populated for implicit film references, triggering episode injection and boosting downstream.
 
 **Low-confidence guardrail:** If the classifier has low confidence (< 0.6) and extracted no filters, the system forces the query type to **hybrid** regardless of what the LLM returned. This prevents misrouting ambiguous queries into the wrong search mode.
 
