@@ -195,6 +195,178 @@ function chunkTranscript(transcript: Transcript): Chunk[] {
   return chunks;
 }
 
+// ============================================
+// Personal-aside sub-chunking
+// ============================================
+
+const HOST_NAMES_LOWER = [
+  'matt haitch', 'jason goldman', 'jason', 'haitch',
+  'matt', 'haitch matt', 'mattie',
+];
+
+function isHostSpeaker(name: string): boolean {
+  const lower = name.toLowerCase().trim();
+  return HOST_NAMES_LOWER.some((h) => lower.includes(h));
+}
+
+interface AsideCategory {
+  name: string;
+  preferenceMarkers: RegExp[];
+  topicNouns: RegExp[];
+  minPreferenceMarkers: number;
+  minTopicNouns: number;
+}
+
+const ASIDE_CATEGORIES: AsideCategory[] = [
+  {
+    name: 'food-preference',
+    preferenceMarkers: [
+      // Food-specific preference language (avoid generic "i love", "my favorite")
+      /the answer is/i, /really delicious/i, /comfort food/i,
+      /i would .{0,20}(eat|have|get|order)/i, /guilty pleasure/i,
+      /i('m| am) hungry/i, /food focused/i,
+      /late night snack/i, /looking for is/i,
+      /favorite (food|snack|meal|dish|restaurant)/i,
+    ],
+    topicNouns: [
+      // Specific food items unlikely to appear in movie discussion
+      /velveeta/i, /shells and cheese/i, /burrito/i, /bbq/i,
+      /barbecue/i, /bagel/i, /\blox\b/i, /babka/i, /rice pudding/i,
+      /salt lick/i, /\bsnack/i, /fried chicken/i,
+      /ramen/i, /sushi/i, /mac and cheese/i, /ice cream/i,
+      /cozy shack/i, /prepared food/i, /pickle/i,
+      /brisket/i, /chihuahua/i,
+      // The word "food(s)" itself is a strong signal
+      /\bfoods?\b/i,
+    ],
+    minPreferenceMarkers: 1,
+    minTopicNouns: 2,
+  },
+];
+
+const ASIDE_WINDOW_SIZE = 15;
+const ASIDE_MAX_TOKENS = 400;
+const ASIDE_CHUNK_ID_OFFSET = 1000;
+
+function extractPersonalAsides(transcript: Transcript): Chunk[] {
+  const dialogues = transcript.dialogues;
+  if (!dialogues || dialogues.length < 3) return [];
+
+  const asides: Chunk[] = [];
+  const coveredRanges: [number, number][] = [];
+  let asideIndex = 0;
+
+  for (const category of ASIDE_CATEGORIES) {
+    for (let windowStart = 0; windowStart <= dialogues.length - 3; windowStart++) {
+      const windowEnd = Math.min(windowStart + ASIDE_WINDOW_SIZE, dialogues.length);
+      const window = dialogues.slice(windowStart, windowEnd);
+
+      // Check if window overlaps with an already-extracted aside
+      if (coveredRanges.some(([s, e]) => windowStart < e && windowEnd > s)) continue;
+
+      // Check for host speaker
+      const hasHost = window.some((d) => isHostSpeaker(d.name));
+      if (!hasHost) continue;
+
+      // Count preference markers across window text
+      const windowText = window.map((d) => d.text).join(' ');
+      let prefCount = 0;
+      for (const pat of category.preferenceMarkers) {
+        if (pat.test(windowText)) prefCount++;
+      }
+      if (prefCount < category.minPreferenceMarkers) continue;
+
+      // Count topic nouns
+      let nounCount = 0;
+      for (const pat of category.topicNouns) {
+        if (pat.test(windowText)) nounCount++;
+      }
+      if (nounCount < category.minTopicNouns) continue;
+
+      // Find the tightest relevant range within the window
+      const range = findRelevantRange(window, category, windowStart);
+      if (!range) continue;
+
+      const [relStart, relEnd] = range;
+      const absStart = windowStart + relStart;
+      const absEnd = windowStart + relEnd;
+
+      // Check overlap again with absolute range
+      if (coveredRanges.some(([s, e]) => absStart < e && absEnd > s)) continue;
+
+      // Extract dialogue turns with 1-turn context padding
+      const padStart = Math.max(0, absStart - 1);
+      const padEnd = Math.min(dialogues.length, absEnd + 1);
+      const asideDialogues = dialogues.slice(padStart, padEnd);
+
+      // Cap at max tokens
+      let text = '';
+      const usedDialogues: DialogueEntry[] = [];
+      for (const d of asideDialogues) {
+        const line = `[${d.timestamp}] ${d.name}: ${d.text}`;
+        if (estimateTokens(text + '\n' + line) > ASIDE_MAX_TOKENS && usedDialogues.length > 0) break;
+        usedDialogues.push(d);
+        text = text ? text + '\n' + line : line;
+      }
+
+      if (usedDialogues.length < 2) continue;
+
+      const speakers = [...new Set(usedDialogues.map((d) => d.name))];
+      const sanitizedName = transcript.episode_name.replace(/[^a-zA-Z0-9]/g, '_');
+      const chunkId = `${sanitizedName}_${ASIDE_CHUNK_ID_OFFSET + asideIndex}`;
+
+      asides.push({
+        id: chunkId,
+        text,
+        episodeTitle: transcript.episode_name,
+        speakers,
+        startTimestamp: usedDialogues[0].timestamp,
+        endTimestamp: usedDialogues[usedDialogues.length - 1].timestamp,
+      });
+
+      coveredRanges.push([absStart, absEnd]);
+      asideIndex++;
+    }
+  }
+
+  return asides;
+}
+
+function findRelevantRange(
+  window: DialogueEntry[],
+  category: AsideCategory,
+  _windowStart: number,
+): [number, number] | null {
+  // Score each dialogue turn for relevance
+  const scores: number[] = window.map((d) => {
+    let score = 0;
+    for (const pat of category.preferenceMarkers) {
+      if (pat.test(d.text)) score += 2;
+    }
+    for (const pat of category.topicNouns) {
+      if (pat.test(d.text)) score += 1;
+    }
+    return score;
+  });
+
+  // Find first and last relevant turn (score > 0)
+  let first = -1;
+  let last = -1;
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i] > 0) {
+      if (first === -1) first = i;
+      last = i;
+    }
+  }
+
+  if (first === -1) return null;
+
+  // Return [first, last+1) as a half-open range
+  return [first, last + 1];
+}
+
+// ============================================
+
 async function generateEmbeddings(texts: string[]): Promise<number[][]> {
   const batchSize = 100;
   const maxRetries = 5;
@@ -389,8 +561,10 @@ async function main() {
       seenEpisodes.add(transcript.episode_name);
 
       const chunks = chunkTranscript(transcript);
-      allChunks.push(...chunks);
-      console.log(`  Created ${chunks.length} chunks from ${transcript.dialogues?.length || 0} dialogue entries.`);
+      const asides = extractPersonalAsides(transcript);
+      allChunks.push(...chunks, ...asides);
+      const asideMsg = asides.length > 0 ? ` + ${asides.length} aside(s)` : '';
+      console.log(`  Created ${chunks.length} chunks${asideMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     }
   } else {
     console.log(`${TRANSCRIPTS_DIR} directory not found, will try Blob storage.\n`);
@@ -410,8 +584,10 @@ async function main() {
 
     console.log(`Processing from Blob: ${name}`);
     const chunks = chunkTranscript(transcript);
-    allChunks.push(...chunks);
-    console.log(`  Created ${chunks.length} chunks from ${transcript.dialogues?.length || 0} dialogue entries.`);
+    const asides = extractPersonalAsides(transcript);
+    allChunks.push(...chunks, ...asides);
+    const asideMsg = asides.length > 0 ? ` + ${asides.length} aside(s)` : '';
+    console.log(`  Created ${chunks.length} chunks${asideMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     blobCount++;
   }
 
@@ -482,4 +658,41 @@ async function main() {
   }
 }
 
-main().catch(console.error);
+async function dryRunAsides() {
+  console.log('Dry-run: scanning transcripts for personal asides...\n');
+
+  let totalAsides = 0;
+  const allResults: { episode: string; asides: Chunk[] }[] = [];
+
+  if (fs.existsSync(TRANSCRIPTS_DIR)) {
+    const files = fs.readdirSync(TRANSCRIPTS_DIR).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const filePath = path.join(TRANSCRIPTS_DIR, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      const transcript: Transcript = JSON.parse(content);
+      const asides = extractPersonalAsides(transcript);
+      if (asides.length > 0) {
+        allResults.push({ episode: transcript.episode_name, asides });
+        totalAsides += asides.length;
+      }
+    }
+  }
+
+  console.log(`Found ${totalAsides} aside(s) across ${allResults.length} episode(s):\n`);
+  for (const { episode, asides } of allResults) {
+    for (const aside of asides) {
+      console.log(`  [${episode}] ${aside.id}`);
+      console.log(`    Timestamps: ${aside.startTimestamp} - ${aside.endTimestamp}`);
+      console.log(`    Speakers: ${aside.speakers.join(', ')}`);
+      console.log(`    Tokens: ~${estimateTokens(aside.text)}`);
+      console.log(`    Preview: ${aside.text.substring(0, 150).replace(/\n/g, ' ')}...`);
+      console.log();
+    }
+  }
+}
+
+if (process.argv.includes('--dry-run-asides')) {
+  dryRunAsides().catch(console.error);
+} else {
+  main().catch(console.error);
+}
