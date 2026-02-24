@@ -180,6 +180,10 @@ Deliverables:
   - support speaker/entity constraints (e.g., "Corey", hosts, guests, voicemailers) as first-class retrieval signals.
   - prioritize chunks where entity mention and target concept co-occur within a bounded window.
   - add token normalization for possessives/plurals (e.g., "Corey's", "whips" -> "Corey", "whip").
+- Add concept-vs-instance query disambiguation (FM-16):
+  - When query uses a concept word ("catchphrase", "hot take", "running joke"), retrieval should prioritize distributed cross-episode evidence of the concept in practice, not single-episode meta-discussion about the concept.
+  - May require query rewriting (e.g., "catchphrase" → also search for known recurring phrases) or concept synonym expansion at retrieval time.
+  - Acceptance criteria: "If Jason had a catchphrase" retrieves chunks from ≥2 episodes including "you hack" content; answer mentions "you hack" as a candidate.
 - Generalize filter relaxation strategy:
   - full filters
   - relaxed secondary filters

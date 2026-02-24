@@ -98,6 +98,7 @@ For each reported bad query:
 - User-visible symptom: flat denial where partial/qualified synthesis was possible.
 - Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
 - Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
+- Related example: "If Jason had a catchphrase" — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns. See FM-16 for keyword-anchored misdirection variant.
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED
 - Stage: Synthesis (with retrieval contributors)
@@ -197,6 +198,16 @@ For each reported bad query:
   - The specific "Velveeta" chunk is still not surfaced by retrieval — fix requires topic-segment sub-chunking (re-embedding) so personal asides get their own vectors, or targeted personal-content indexing.
   - Synthesis hallucination from tangential evidence remains unsolved at prompt level; must be addressed by improving retrieval precision.
 - Relationship to other FMs: overlaps with FM-04 (sparse retrieval miss), FM-06 (cross-episode aggregation), and FM-11 (weak-evidence overclaim — synthesis invents rather than hedging).
+
+### FM-16: Keyword-Anchored Retrieval Misdirection (Concept-About vs Concept-Of)
+- Stage: Retrieval + Synthesis
+- Query type: creative/aggregation queries using a concept word (e.g., "catchphrase", "hot take", "running joke") where the user wants instances-of-the-concept across episodes, but retrieval surfaces discussions-about-the-concept from a single episode.
+- Why hard now: when the query contains a distinctive keyword (e.g., "catchphrase"), BM25 and embedding retrieval both anchor on chunks where that word appears literally — typically meta-discussion segments (e.g., a "notable quotables" segment about film catchphrases) rather than the distributed cross-episode evidence of the concept in practice.
+- Common miss: retrieval surfaces 1-2 chunks from a single episode that discusses the concept explicitly (movie catchphrases in Chronicles of Riddick), while the actual evidence (Jason's recurring "you hack" phrase across dozens of episodes) is never retrieved because those chunks don't contain the word "catchphrase."
+- User-visible symptom: answer proposes a movie quote the host liked as their "catchphrase" rather than identifying actual recurring speech patterns.
+- Example: "If Jason had a catchphrase based on the transcripts what would it be" → answer proposes "Get that ass moving" (a Vin Diesel quote from Chronicles of Riddick) instead of "you hack" (Jason's actual recurring catchphrase across many episodes).
+- Relationship to other FMs: variant of FM-06 (cross-episode aggregation) where the keyword anchor actively misdirects retrieval away from distributed evidence. Also overlaps FM-11 (weak-evidence overclaim — treating a single movie-quote appreciation as a personal catchphrase).
+- Plan alignment: Phase 2d-2 (entity-aware retrieval, synonym/concept expansion). May also benefit from query rewriting or concept-vs-instance disambiguation at classification time.
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 

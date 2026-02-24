@@ -483,6 +483,16 @@
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2,
       "rejectTextInAnswer": ["no information", "don't have", "does not contain", "does not directly discuss"]
+    },
+    {
+      "name": "Creative catchphrase aggregation: Jason's recurring phrases",
+      "query": "If Jason had a catchphrase based on the transcripts what would it be",
+      "tags": ["cross-episode", "aggregation", "persona", "FM-06", "FM-16"],
+      "expectClassificationType": ["interpretive", "hybrid"],
+      "expectTextInAnswer": ["you hack"],
+      "expectMinTranscriptSources": 2,
+      "expectMinDistinctTranscriptEpisodes": 2,
+      "rejectTextInAnswer": ["no information", "don't have"]
     }
   ]
 }
