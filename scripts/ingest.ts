@@ -366,6 +366,65 @@ function findRelevantRange(
 }
 
 // ============================================
+// Catchphrase sub-chunking
+// ============================================
+
+/**
+ * Known recurring catchphrases to extract as sub-chunks.
+ * Each entry maps a phrase pattern to its canonical form and speaker.
+ */
+const CATCHPHRASE_PATTERNS: { pattern: RegExp; speaker: string; label: string }[] = [
+  { pattern: /you hack/i, speaker: 'Jason Goldman', label: 'you hack' },
+];
+
+const CATCHPHRASE_CHUNK_ID_OFFSET = 2000;
+
+/**
+ * Extract small sub-chunks around known recurring catchphrases.
+ * For each occurrence, creates a 3-turn window (line before, the line, line after)
+ * to give embedding context while keeping the chunk focused on the catchphrase usage.
+ */
+function extractCatchphraseChunks(transcript: Transcript): Chunk[] {
+  const dialogues = transcript.dialogues;
+  if (!dialogues || dialogues.length === 0) return [];
+
+  const chunks: Chunk[] = [];
+  let chunkIndex = 0;
+
+  for (const cp of CATCHPHRASE_PATTERNS) {
+    for (let i = 0; i < dialogues.length; i++) {
+      if (!cp.pattern.test(dialogues[i].text)) continue;
+
+      // 3-turn window: one before, the line, one after
+      const start = Math.max(0, i - 1);
+      const end = Math.min(dialogues.length, i + 2);
+      const window = dialogues.slice(start, end);
+
+      const text = window
+        .map((d) => `[${d.timestamp}] ${d.name}: ${d.text}`)
+        .join('\n');
+
+      const speakers = [...new Set(window.map((d) => d.name))];
+      const sanitizedName = transcript.episode_name.replace(/[^a-zA-Z0-9]/g, '_');
+      const chunkId = `${sanitizedName}_${CATCHPHRASE_CHUNK_ID_OFFSET + chunkIndex}`;
+
+      chunks.push({
+        id: chunkId,
+        text,
+        episodeTitle: transcript.episode_name,
+        speakers,
+        startTimestamp: window[0].timestamp,
+        endTimestamp: window[window.length - 1].timestamp,
+      });
+
+      chunkIndex++;
+    }
+  }
+
+  return chunks;
+}
+
+// ============================================
 
 async function generateEmbeddings(texts: string[]): Promise<number[][]> {
   const batchSize = 100;
@@ -562,9 +621,11 @@ async function main() {
 
       const chunks = chunkTranscript(transcript);
       const asides = extractPersonalAsides(transcript);
-      allChunks.push(...chunks, ...asides);
-      const asideMsg = asides.length > 0 ? ` + ${asides.length} aside(s)` : '';
-      console.log(`  Created ${chunks.length} chunks${asideMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
+      const catchphrases = extractCatchphraseChunks(transcript);
+      allChunks.push(...chunks, ...asides, ...catchphrases);
+      const subMsg = (asides.length + catchphrases.length) > 0
+        ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s)` : '';
+      console.log(`  Created ${chunks.length} chunks${subMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     }
   } else {
     console.log(`${TRANSCRIPTS_DIR} directory not found, will try Blob storage.\n`);
@@ -585,9 +646,11 @@ async function main() {
     console.log(`Processing from Blob: ${name}`);
     const chunks = chunkTranscript(transcript);
     const asides = extractPersonalAsides(transcript);
-    allChunks.push(...chunks, ...asides);
-    const asideMsg = asides.length > 0 ? ` + ${asides.length} aside(s)` : '';
-    console.log(`  Created ${chunks.length} chunks${asideMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
+    const catchphrases = extractCatchphraseChunks(transcript);
+    allChunks.push(...chunks, ...asides, ...catchphrases);
+    const subMsg = (asides.length + catchphrases.length) > 0
+      ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s)` : '';
+    console.log(`  Created ${chunks.length} chunks${subMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     blobCount++;
   }
 
