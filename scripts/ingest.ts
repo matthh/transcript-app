@@ -400,9 +400,11 @@ function extractCatchphraseChunks(transcript: Transcript): Chunk[] {
       const end = Math.min(dialogues.length, i + 2);
       const window = dialogues.slice(start, end);
 
-      const text = window
+      const dialogueText = window
         .map((d) => `[${d.timestamp}] ${d.name}: ${d.text}`)
         .join('\n');
+      // Prefix with semantic context so embedding matches "catchphrase" queries
+      const text = `[Recurring catchphrase: "${cp.label}" — ${cp.speaker}]\n${dialogueText}`;
 
       const speakers = [...new Set(window.map((d) => d.name))];
       const sanitizedName = transcript.episode_name.replace(/[^a-zA-Z0-9]/g, '_');
