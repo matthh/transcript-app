@@ -651,6 +651,7 @@ export async function hybridRetrieval(
   // Merge supplemental query results if present
   let mergedResults = fusedResults;
   if (options?.supplementalQueries?.length) {
+    console.log(`Supplemental queries: ${JSON.stringify(options.supplementalQueries)}, embeddings: ${options.supplementalEmbeddings?.length ?? 0}`);
     const suppQueries = options.supplementalQueries;
     const suppEmbeddings = options.supplementalEmbeddings ?? [];
 
@@ -708,6 +709,9 @@ export async function hybridRetrieval(
 
     mergedResults = Array.from(mainScores.values())
       .sort((a, b) => b.score - a.score);
+
+    const suppOnlyCount = mergedResults.length - fusedResults.length;
+    console.log(`Supplemental merge: ${supplementalScores.size} supplemental chunks, ${suppOnlyCount} new, merged total: ${mergedResults.length}`);
   }
 
   // Inject chunks from targeted episodes that may be missing from fused results

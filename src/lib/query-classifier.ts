@@ -70,6 +70,7 @@ function logClassification(query: string, result: ClassificationResult, source: 
     filters: result.filters,
     source,
     latencyMs,
+    ...(result.supplementalQueries?.length ? { supplementalQueries: result.supplementalQueries } : {}),
   };
   console.log('CLASSIFICATION_LOG:', JSON.stringify(logEntry));
 }
