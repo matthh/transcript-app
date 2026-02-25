@@ -18,12 +18,16 @@ flowchart TD
   A["User question"] --> B["Intent check: is this a quick metadata question?"]
   B -- "Yes" --> C["Answer from episode metadata"]
   B -- "No" --> D["Classify question + generate embedding (in parallel)"]
-  D --> E["Pick data sources"]
+  D --> R["Routing decision: RAG or Agent?"]
+  R -- "Agent (counting/frequency)" --> AG["Agent loop: grep raw transcripts iteratively"]
+  AG --> AGR["Agent synthesizes answer with citations"]
+  R -- "RAG (default)" --> E["Pick data sources"]
   E --> F["Metadata search (episode list, guests, reviewers, release dates, Kev’s question)"]
   E --> G["Transcript search (episode dialogue)"]
   F --> H["Answer synthesis"]
   G --> H["Answer synthesis"]
   H --> I["Final response with citations + timestamps"]
+  AGR --> I
 ```
 
 ## Technical components (high level)
@@ -33,8 +37,11 @@ flowchart LR
   A["Search UI"] --> B["/api/search/stream"]
   B --> C["Intent detection"]
   B --> D["Query classification"]
-  D --> E["Metadata filters"]
-  D --> F["Hybrid retrieval"]
+  D --> R["Routing gate"]
+  R -- "agent" --> AG["Agent search (Sonnet + grep tools)"]
+  AG --> K["Response with citations"]
+  R -- "rag" --> E["Metadata filters"]
+  R -- "rag" --> F["Hybrid retrieval"]
   E --> G["Episode metadata store"]
   F --> H["Vector store (embeddings)"]
   F --> I["BM25 index (keywords)"]
@@ -42,7 +49,7 @@ flowchart LR
   I --> L
   G --> J["Answer synthesis"]
   L --> J
-  J --> K["Response with citations"]
+  J --> K
 ```
 
 ### Component definitions
@@ -51,11 +58,13 @@ flowchart LR
 - **/api/search/stream** — The primary server endpoint used by the UI (SSE streaming) that orchestrates the whole search flow. (`/api/search` is the non-streaming sibling.) Both endpoints share routing policy and synthesis decisions via a common module (`src/lib/routing-policy.ts`).
 - **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, episode lookup, guest/reviewer lookup, release date, Kev’s question, etc.).
 - **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
+- **Routing gate** — Two-step decision in `routing-policy.ts` that determines whether a query goes to the agent search path or the RAG pipeline. Requires both a feature flag (`AGENT_SEARCH_ENABLED=true`) and a deterministic regex pattern match. Currently routes counting/frequency queries (e.g., “how many times does Jason say X”) to the agent; everything else goes to RAG. See `docs/rewrite.md` for full design.
+- **Agent search** — An LLM agent (Sonnet) with tool-use that iteratively greps raw transcript files to answer queries RAG can’t handle (counting, frequency, cross-episode aggregation). Has 4 tools: `grep_transcripts`, `read_episode_transcript`, `search_episodes`, `list_episodes`. Max 10 iterations, 45s timeout. Falls back to RAG on failure. Implemented in `src/lib/agent-search.ts`.
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
 - **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
 - **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
-- **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences, catchphrase) and Whisper transcription error bridges (e.g., "Eszterhas" → "Esther"/"Ester").
+- **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences, catchphrase) and Whisper transcription error bridges (e.g., “Eszterhas” → “Esther”/”Ester”).
 - **Answer synthesis** — The response writer that blends metadata + transcripts into a readable answer.
 - **Response with citations** — The final output with sources and timestamps for verification.
 
@@ -105,6 +114,29 @@ These filters help narrow down the search to the most relevant episodes.
 **Supplemental query generation:** For persona, aggregation, or cross-episode pattern queries, the classifier also generates 1–3 supplemental search queries that rephrase the question to target underlying content rather than concept words. For example, "If Jason had a catchphrase" generates supplemental queries like "Jason Goldman you hack" and "Jason recurring phrase". These are run through the same BM25 + embedding pipeline with a discount factor and merged into the main results. Certain known patterns (e.g., catchphrase + host name) also trigger deterministic supplemental queries for reliability.
 
 **Low-confidence guardrail:** If the classifier has low confidence (< 0.6) and extracted no filters, the system forces the query type to **hybrid** regardless of what the LLM returned. This prevents misrouting ambiguous queries into the wrong search mode.
+
+---
+
+### 2b) Agent search routing (counting/frequency queries)
+
+After classification, the system checks whether the query should be handled by the **agent search path** instead of the standard RAG pipeline. This is a two-step gate:
+
+1. **Feature flag check**: `AGENT_SEARCH_ENABLED` must be `true` (set via environment variable).
+2. **Pattern match**: The query must match a deterministic regex for counting/frequency queries — currently: "how many times/how often/every time ... say/said/mention".
+
+If both conditions pass, the query goes to an **LLM agent** (Sonnet) that has tools to grep raw transcript files. The agent iteratively searches, reads results, reformulates queries, and counts occurrences across episodes. This handles queries like "How many times does Jason say big time?" that RAG fundamentally cannot answer (RAG retrieves the best-matching chunks, but can't count all occurrences).
+
+The agent has 4 tools:
+- **grep_transcripts** — regex search across all 300 transcript files
+- **read_episode_transcript** — load and read a specific episode's full transcript
+- **search_episodes** — search episode metadata (films, guests, etc.)
+- **list_episodes** — list all episodes with numbers and titles
+
+The agent loop runs up to 10 iterations with a 45-second timeout. If the agent fails (timeout, errors, or insufficient evidence), the system falls back to the standard RAG pipeline. The user always gets an answer.
+
+For agent queries, the UI shows "Deep searching..." with progress events describing what the agent is doing ("Searching for recurring phrases...", "Found 12 matches across 8 episodes...").
+
+If the query does **not** match agent patterns, it proceeds to the standard RAG pipeline (steps 3-4 below) as before.
 
 ---
 

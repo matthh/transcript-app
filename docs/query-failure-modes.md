@@ -82,13 +82,14 @@ For each reported bad query:
   - Joe Eszterhas anecdote linkage eval case now passes consistently (was flaky).
 - Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots. Other Whisper transcription errors for proper names may exist undiscovered. Note: blanket best-of suppression was removed because Jaccard dedup + diversification adequately handle rebroadcast content, and the score penalty was crushing unique intro/outro content in best-of episodes (e.g., episode 296's AI/coding discussion).
 
-### FM-05: Windowed Frequency Comparison Failure
+### FM-05: Windowed Frequency Comparison Failure — PARTIALLY MITIGATED
 - Stage: Retrieval/Analysis
 - Query type: “first N vs last N”, “who says X more”, phrase counts across explicit windows
 - Why hard now: these are counting tasks; sampling/ranked retrieval is not a reliable counting substrate.
 - Common miss: one window underrepresented, wrong winner, or false zero in recent/older windows.
 - User-visible symptom: incorrect comparative claim (“none in last 100”).
 - Plan alignment: Phase 2 (deterministic window analysis), Phase 4 gold-count assertions.
+- Phase 6 partial mitigation: Agent search path handles counting/frequency queries with verb anchors (e.g., “how many times does Jason say X”). The agent greps raw transcripts and counts occurrences systematically. Queries matching `/\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i` route to the agent. Windowed comparisons (“first N vs last N”) are not yet agent-routed — deferred to Phase B pattern expansion.
 
 ### FM-06: Cross-Episode Aggregation Failure — PARTIALLY MITIGATED
 - Stage: Retrieval + Synthesis
@@ -98,7 +99,8 @@ For each reported bad query:
 - User-visible symptom: flat denial where partial/qualified synthesis was possible.
 - Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
 - Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
-- Related example: ~~"If Jason had a catchphrase" — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns.~~ **Resolved in Phase 5** — see FM-16 (now resolved via catchphrase sub-chunking + supplemental query expansion).
+- Related example: ~~”If Jason had a catchphrase” — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns.~~ **Resolved in Phase 5** — see FM-16 (now resolved via catchphrase sub-chunking + supplemental query expansion).
+- Phase 6 partial mitigation: Agent search path now handles counting/frequency aggregation queries (e.g., “How many times does Jason say big time?”). Agent greps raw transcripts exhaustively across all 300 episodes, producing exact counts with episode breakdowns. Routes via deterministic regex match in `routing-policy.ts`. Broader aggregation patterns (“who says X more”, “most frequent”) deferred to Phase B.
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED
 - Stage: Synthesis (with retrieval contributors)
@@ -214,11 +216,11 @@ For each reported bad query:
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
 These are expected to be hard until dedicated handling is added:
-- Deterministic counting/comparison tasks across explicit windows or full corpus.
+- ~~Deterministic counting/comparison tasks across explicit windows or full corpus.~~ **Partially resolved** — Phase 6 agent search handles counting/frequency queries with verb anchors (“how many times does X say Y”). Windowed comparisons and ranking-style prompts not yet agent-routed.
 - Multi-entity, multi-clause factual prompts where evidence is split across distant chunks/episodes.
 - Person-scoped attribution questions in transcripts with dense multi-speaker exchanges.
-- Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence.
-- Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards.
+- Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence. (Candidate for Phase B agent routing expansion.)
+- Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards. (Candidate for Phase B agent routing expansion.)
 - ~~Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).~~ **Partially resolved** — director-debut resolution handles “directorial debut” patterns; other implicit knowledge gaps (e.g., cultural references) remain.
 - ~~Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).~~ **Partially resolved** — personal-aside sub-chunking (FM-15) and catchphrase sub-chunking (FM-16) address known patterns. Novel personal topics without dedicated sub-chunks remain hard.
 
@@ -243,6 +245,11 @@ Track these signals to detect failure modes early:
 - Elevated host/guest attribution correction rate in user feedback.
 - Repeated boilerplate chunks in top retrieved evidence.
 - Large variance in outputs for repeated runs of the same deterministic-style query.
+- **Agent-specific signals** (Phase 6):
+  - `agentFallbackReason` rate > 20% in 5-minute window → auto-disable triggers.
+  - Agent timeout rate > 5% → investigate `AGENT_MAX_ITERATIONS` or tool performance.
+  - Agent routing false positives (RAG-worthy query sent to agent) → tighten Phase A regex patterns.
+  - Agent non-determinism on counting queries → accept some variance; focus on order-of-magnitude consistency.
 
 ## Test Planning Requirements By Mode
 
@@ -261,6 +268,7 @@ Apply fixes in this order:
 3. Synthesis guardrails for attribution and evidence-threshold language (Phase 3).
 4. Eval + CI gates that lock in behavior and prevent regressions (Phase 4).
 5. Metadata canonicalization and refresh reliability (Phase 5).
+6. Agent search for counting/frequency/aggregation queries that RAG can't handle (Phase 6). Expand routing patterns incrementally.
 
 Do not ship a one-off fix unless:
 - it maps to a named failure mode above,

@@ -261,6 +261,19 @@ Phase 5 shipped deliverables (supplemental query expansion + catchphrase sub-chu
 - ✅ **Starman eval relaxation**: `expectMinTranscriptSources` relaxed from 2 to 1 — stable regression from larger corpus diluting per-query source counts.
 - Eval results: 64/66 → **66/66 (100%)**. FM-16 resolved. FM-13 (The Mark/American Movie) resolved as bonus from full re-ingest improving retrieval coverage.
 
+Phase 6 shipped deliverables (agent-grep hybrid search):
+- ✅ **Agent search module** (`src/lib/agent-search.ts`): New file (~330 lines). LLM agent with tool-use loop that greps raw transcripts for queries RAG can't handle — counting, frequency, cross-episode aggregation. Sonnet for full loop (tool-use turns + final synthesis). 4 tools: `grep_transcripts` (regex search across all 300 transcript JSON files), `read_episode_transcript` (single file load + formatting), `search_episodes` (metadata wrapper), `list_episodes` (metadata wrapper). Source collection via Map dedup. Progress callback support for streaming UX.
+- ✅ **Two-step routing gate** (`src/lib/routing-policy.ts`): `resolveSearchStrategy()` gates agent activation: (1) `AGENT_SEARCH_ENABLED` feature flag must be `true`, (2) query must match a Phase A deterministic regex, (3) rollout percentage check passes. Default is always RAG. Phase A scope is narrow: only counting/frequency queries with verb anchor (`/\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i`). Catchphrase patterns excluded from Phase A after testing showed non-deterministic results — RAG handles via pre-built sub-chunks.
+- ✅ **Feature flags and kill switches** (`src/lib/routing-policy.ts`): `AGENT_SEARCH_ENABLED` (master on/off, default `false`), `AGENT_SEARCH_PERCENT_ROLLOUT` (0-100), `AGENT_SEARCH_FORCE_FOR_TAGS` (eval bypass), `AGENT_SEARCH_DISABLE_ON_ERROR_RATE` (auto-disable at 20% error rate in 5-min window). In-memory error rate tracking with sliding window.
+- ✅ **Agent telemetry** (`src/lib/query-logger.ts`): Extended `QueryLogEntry` with `searchStrategy`, `agentIterationCount`, `agentToolCallCount`, `agentFallbackReason`, `agentLatencyBreakdownMs`. New `routingPath` value `'agent_search'`.
+- ✅ **Route integration**: Agent branch added to both `stream/route.ts` and `route.ts` after classification, before RAG pipeline. Agent queries bypass supplemental query expansion (mutually exclusive paths). On agent failure, falls through to RAG pipeline.
+- ✅ **Transcript bundling** (`next.config.js`): `./transcripts/**/*` added to `outputFileTracingIncludes` for both search endpoints. ~43MB JSON, well within Vercel 250MB limit.
+- ✅ **SearchStrategy type** (`src/types/episode-metadata.ts`): `SearchStrategy = 'rag' | 'agent'` type and optional `searchStrategy` field on `ClassificationResult`.
+- ✅ **Eval tagging**: 9 eval cases tagged `"agent"` — FM-13, FM-16, FM-15, FM-06, and aggregation cases.
+- ✅ **Production deployment**: Live on prod with `AGENT_SEARCH_ENABLED=true`. Verified agent and RAG paths both working.
+- Eval results: Full regression 65/66 (FM-13 known-limitation flake on RAG path, not agent regression). Agent-tagged slice 8/9. Novel synthetic queries (counting "big time", comparing "I mean" frequency, Letterboxd mentions) produce rich cross-episode breakdowns that RAG cannot.
+- Design doc: `docs/rewrite.md`.
+
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
 - Align quick/deep behavior and `canDeepen` semantics across endpoints.
@@ -380,6 +393,7 @@ Exit Criteria:
 - M3.9 (Phase 4 — flaky stabilization): director-debut resolution + Eszterhas BM25 synonyms + Zelda eval fix. ✅ Eval: 60/65 → 63/65 (96.9%).
 - M3.95 (Phase 4+ — personal-aside sub-chunking): `extractPersonalAsides()` for food-preference retrieval. ✅ Eval: 63/65 → 64/66 (97.0%). FM-15 resolved.
 - M4.0 (Phase 5 — supplemental queries + catchphrase sub-chunking): supplemental query expansion infrastructure + `extractCatchphraseChunks()` + full re-ingest (4848 chunks). ✅ Eval: 64/66 → **66/66 (100%)**. FM-16 resolved. FM-13 resolved (bonus from re-ingest).
+- M4.1 (Phase 6 — agent-grep hybrid search): agent search module + two-step routing gate + feature flags + telemetry + route integration + transcript bundling + eval tagging. ✅ Live on prod. Eval: 65/66 (FM-13 known-limitation flake). Novel counting/frequency queries produce rich cross-episode results.
 - M4.5 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M5 (end Phase 4): CI quality gates active.
 - M6 (end Phase 5): metadata pipeline automated and validated.

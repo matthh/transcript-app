@@ -3,7 +3,7 @@
 **Author**: Claude (AI pair programmer)
 **Date**: 2026-02-24
 **Updated**: 2026-02-24 (post-critique, incorporating operational controls)
-**Status**: Draft — critique addressed, ready for implementation review
+**Status**: Implemented and deployed to production (commit d778e08)
 **Scope**: Add a general-purpose agent search path to replace bespoke per-query-pattern RAG patches with a scalable architecture
 
 ---
@@ -189,12 +189,13 @@ On any disagreement, low confidence, or feature flag off → default to RAG.
 
 #### Phase A — Day-1 Scope (Narrow)
 
-Only FM-16/FM-06 style queries: aggregation, recurrence, counting. Two regex patterns:
+Only counting/frequency queries with verb anchor. One regex pattern:
 
 ```regex
-/\b(catchphrase|recurring phrase|always says|running joke)\b/i
 /\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i
 ```
+
+The catchphrase pattern (`/\b(catchphrase|recurring phrase|always says|running joke)\b/i`) was tested during implementation but **excluded from Phase A** — the agent cannot reliably discover specific catchphrases (e.g., "you hack") from scratch because common filler phrases ("big time", "I love that") dominate raw frequency counts. RAG handles catchphrase queries well via pre-built catchphrase sub-chunks (`_2000+` offset).
 
 The following broad patterns from early drafts are explicitly **deferred to Phase B**:
 - ~~`/\b(who says .* more|says .* the most)\b/i`~~
