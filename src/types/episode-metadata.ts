@@ -89,6 +89,7 @@ export interface ClassificationResult {
   confidence: number;
   filters: QueryFilters;
   requiresTranscriptDepth?: boolean;
+  supplementalQueries?: string[];
 }
 
 export interface HybridSearchResponse {

@@ -598,7 +598,7 @@ export async function hybridRetrieval(
   query: string,
   classification: ClassificationResult,
   overrides?: Partial<{ embeddingK: number; bm25K: number; finalK: number }>,
-  options?: { timeoutMs?: number; precomputedEmbedding?: number[]; targetEpisodeTitles?: string[] }
+  options?: { timeoutMs?: number; precomputedEmbedding?: number[]; targetEpisodeTitles?: string[]; supplementalQueries?: string[]; supplementalEmbeddings?: number[][] }
 ): Promise<RetrievalResult[]> {
   // Load vector store and BM25 index in parallel, with optional timeout
   let chunks: StoredChunk[];
@@ -648,9 +648,71 @@ export async function hybridRetrieval(
   // Merge results using Reciprocal Rank Fusion
   const fusedResults = reciprocalRankFusion(embeddingResults, bm25Results, chunks);
 
+  // Merge supplemental query results if present
+  let mergedResults = fusedResults;
+  if (options?.supplementalQueries?.length) {
+    const suppQueries = options.supplementalQueries;
+    const suppEmbeddings = options.supplementalEmbeddings ?? [];
+
+    // Collect all supplemental results with discount
+    const SUPP_DISCOUNT = 0.7;
+    const supplementalScores: Map<string, { score: number; chunk: StoredChunk }> = new Map();
+
+    for (let i = 0; i < suppQueries.length; i++) {
+      // BM25 search (free — in-memory, no API call)
+      const suppBm25 = bm25Index && bm25Index.numDocs > 0
+        ? searchBM25(suppQueries[i], bm25Index, wideBm25K)
+        : [];
+
+      // Embedding search (use precomputed supplemental embedding if available)
+      const suppEmbedding = suppEmbeddings[i];
+      const suppEmbResults = suppEmbedding
+        ? searchSimilar(suppEmbedding, chunks, wideEmbeddingK)
+        : [];
+
+      // RRF for this supplemental query
+      const suppFused = reciprocalRankFusion(suppEmbResults, suppBm25, chunks);
+
+      // Add discounted scores to accumulator
+      for (const result of suppFused) {
+        const existing = supplementalScores.get(result.chunk.id);
+        const discountedScore = result.score * SUPP_DISCOUNT;
+        if (existing) {
+          existing.score = Math.max(existing.score, discountedScore);
+        } else {
+          supplementalScores.set(result.chunk.id, {
+            score: discountedScore,
+            chunk: result.chunk,
+          });
+        }
+      }
+    }
+
+    // Merge: add supplemental scores to main results
+    const mainScores = new Map(mergedResults.map(r => [r.chunk.id, r]));
+
+    for (const [id, supp] of supplementalScores) {
+      const main = mainScores.get(id);
+      if (main) {
+        // Chunk appeared in both main and supplemental — boost it
+        main.score += supp.score;
+      } else {
+        // Chunk only in supplemental — add with discounted score
+        mainScores.set(id, {
+          chunk: supp.chunk,
+          score: supp.score,
+          source: 'bm25' as const,
+        });
+      }
+    }
+
+    mergedResults = Array.from(mainScores.values())
+      .sort((a, b) => b.score - a.score);
+  }
+
   // Inject chunks from targeted episodes that may be missing from fused results
   const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
-  const injectedResults = injectTargetedEpisodeChunks(fusedResults, chunks, queryEmbedding, targetEpisodeTitles);
+  const injectedResults = injectTargetedEpisodeChunks(mergedResults, chunks, queryEmbedding, targetEpisodeTitles);
 
   // Boost chunks containing exact query keywords so they survive deduplication
   const boostedResults = boostKeywordMatches(injectedResults, query);

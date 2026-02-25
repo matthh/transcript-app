@@ -57,6 +57,9 @@ const SYNONYM_MAP: Record<string, string[]> = {
   'favorite': ['favourite', 'love', 'prefer', 'preference'],
   'favourite': ['favorite', 'love', 'prefer', 'preference'],
 
+  // Catchphrase / recurring phrase synonyms
+  'catchphrase': ['phrase', 'saying', 'says', 'always'],
+
   // Whisper transcription error synonyms (proper names misheard)
   'eszterhas': ['esther', 'ester'],
   "eszterhas'": ['esther', 'ester'],

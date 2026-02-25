@@ -103,7 +103,7 @@ async function classifyWithLLM(query: string): Promise<ClassificationResult> {
 
   const message = await anthropic.messages.create({
     model: 'claude-haiku-4-5-20251001',
-    max_tokens: 256,
+    max_tokens: 384,
     messages: [
       {
         role: 'user',
@@ -167,8 +167,20 @@ Examples:
 - "who says yeah more" → true (frequency analysis of transcripts)
 - "what did they think about Alien" → true (opinions from transcripts)
 
+For persona, aggregation, or cross-episode pattern queries, generate 1-3 supplemental
+search queries that rephrase the question to target the underlying content rather than
+the concept. Only generate these when the original query uses abstract/concept language
+that may not appear in transcripts.
+
+Examples:
+- "If Jason had a catchphrase what would it be" → ["Jason recurring phrase", "Jason always says", "Jason you hack"]
+- "What's Matt's most controversial take" → ["Matt hot take", "Matt disagrees", "Matt unpopular opinion"]
+- "Who says yeah more" → ["Jason yeah", "Matt yeah"]
+- "Dune" → [] (no supplemental needed — direct topic match)
+- "Proto episodes" → [] (direct metadata query)
+
 Respond with ONLY valid JSON:
-{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string", "decade?": 1980, "yearRange?": {"min": 1980, "max": 1980}}, "transcriptDepth": true|false}`,
+{"type": "factual|interpretive|hybrid", "confidence": 0.7-0.95, "filters": {"guest?": "string", "film?": "string", "director?": "string", "actor?": "string", "genre?": "string", "decade?": 1980, "yearRange?": {"min": 1980, "max": 1980}}, "transcriptDepth": true|false, "supplementalQueries": []}`,
       },
     ],
   });
@@ -272,7 +284,20 @@ Respond with ONLY valid JSON:
   // Default true (safe): if LLM omits the field, assume transcript depth needed
   const requiresTranscriptDepth = parsed.transcriptDepth !== false;
 
-  return { type, confidence, filters, requiresTranscriptDepth };
+  // Parse supplemental queries (for persona/aggregation/cross-episode patterns)
+  const supplementalQueries: string[] = [];
+  if (Array.isArray(parsed.supplementalQueries)) {
+    for (const q of parsed.supplementalQueries) {
+      if (typeof q === 'string' && q.trim().length > 0) {
+        supplementalQueries.push(q.trim());
+      }
+    }
+  }
+
+  return {
+    type, confidence, filters, requiresTranscriptDepth,
+    ...(supplementalQueries.length > 0 ? { supplementalQueries: supplementalQueries.slice(0, 3) } : {}),
+  };
 }
 
 /**

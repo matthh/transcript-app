@@ -9,7 +9,7 @@ import { getVectorStoreSize, isVectorStoreLoaded } from '@/lib/vectorstore';
 import { getSearchTuning } from '@/lib/search-tuning';
 import { classifyQuery } from '@/lib/query-classifier';
 import { synthesizeHybridAnswer, MetadataContext, getAnthropic, HOST_IDENTITY_RULE } from '@/lib/claude';
-import { generateEmbedding } from '@/lib/embeddings';
+import { generateEmbedding, generateEmbeddings } from '@/lib/embeddings';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { rerankChunks } from '@/lib/reranker';
 import { logQuery, generateLogId } from '@/lib/query-logger';
@@ -351,6 +351,16 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
     }
     console.log('Classification result:', JSON.stringify(classification));
 
+    // Generate supplemental embeddings if classifier produced supplemental queries
+    let supplementalEmbeddings: number[][] | undefined;
+    if (classification.supplementalQueries?.length) {
+      try {
+        supplementalEmbeddings = await generateEmbeddings(classification.supplementalQueries);
+      } catch (err) {
+        console.warn('Supplemental embedding generation failed:', err);
+      }
+    }
+
     let transcriptChunks: TranscriptChunk[] = [];
     let transcriptSources: TranscriptSource[] = [];
     let metadataEpisodes: EpisodeMetadata[] = [];
@@ -430,6 +440,8 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       ...(isColdStart ? { timeoutMs: 15000 } : {}),
       ...(precomputedEmbedding ? { precomputedEmbedding } : {}),
       ...(targetEpisodeTitles.length > 0 ? { targetEpisodeTitles } : {}),
+      ...(classification.supplementalQueries?.length ? { supplementalQueries: classification.supplementalQueries } : {}),
+      ...(supplementalEmbeddings ? { supplementalEmbeddings } : {}),
     };
     const rawRetrievalResults = await hybridRetrieval(query, classification, interpretiveOverrides,
       Object.keys(retrievalOptions).length > 0 ? retrievalOptions : undefined);
