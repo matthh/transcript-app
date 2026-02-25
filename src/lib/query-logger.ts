@@ -21,10 +21,21 @@ export interface QueryLogEntry {
   intent?: { type: string; confidence?: string };
   synthesisModel?: string;
   depth?: 'quick' | 'deep';
-  routingPath?: 'metadata_fast_path' | 'full_pipeline' | 'fallthrough';
+  routingPath?: 'metadata_fast_path' | 'full_pipeline' | 'fallthrough' | 'agent_search';
   // Populated later if user submits feedback
   rating?: 'good' | 'bad' | null;
   comment?: string;
+  // Agent search telemetry (only populated when routingPath='agent_search')
+  searchStrategy?: 'rag' | 'agent';
+  agentIterationCount?: number;
+  agentToolCallCount?: number;
+  agentFallbackReason?: null | 'timeout' | 'error_threshold' | 'weak_evidence' | 'model_error';
+  agentLatencyBreakdownMs?: {
+    route: number;
+    tooling: number;
+    synthesis: number;
+    total: number;
+  };
 }
 
 export function generateLogId(): string {

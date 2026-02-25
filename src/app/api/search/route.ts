@@ -29,7 +29,10 @@ import {
   shouldSkipMetadataAggregate,
   shouldForceHybridClassification,
   shouldUseQuickSynthesis,
+  resolveSearchStrategy,
+  recordAgentResult,
 } from '@/lib/routing-policy';
+import { runAgentSearch } from '@/lib/agent-search';
 
 let loggedCacheStatus = false;
 
@@ -360,6 +363,70 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         console.warn('Supplemental embedding generation failed:', err);
       }
     }
+
+    // ── Agent Search Branch ──────────────────────────────────────
+    const searchStrategy = resolveSearchStrategy(query, classification.searchStrategy);
+    if (searchStrategy === 'agent') {
+      console.log('Agent search activated for query:', query);
+      const agentStart = Date.now();
+
+      try {
+        const agentResult = await runAgentSearch(query);
+        const agentMs = Date.now() - agentStart;
+        const totalMs = Date.now() - requestStart;
+
+        recordAgentResult(!agentResult.fallbackReason || agentResult.fallbackReason === 'weak_evidence');
+
+        const allSourceEpisodes = [...new Set(agentResult.sources.map(s => s.episodeTitle))];
+        logQuery({
+          query,
+          classification: {
+            type: classification.type,
+            confidence: classification.confidence,
+            filters: { ...classification.filters },
+          },
+          sourceCount: agentResult.sources.length,
+          transcriptSourceCount: agentResult.sources.length,
+          metadataSourceCount: 0,
+          sourceEpisodes: allSourceEpisodes,
+          answerLength: agentResult.answer.length,
+          latencyMs: totalMs,
+          path: 'agent_search',
+          intent: { type: intent.type, confidence: intent.confidence },
+          synthesisModel: 'claude-sonnet-4-20250514',
+          depth,
+          routingPath: 'agent_search',
+          searchStrategy: 'agent',
+          agentIterationCount: agentResult.iterationCount,
+          agentToolCallCount: agentResult.toolCallCount,
+          agentFallbackReason: agentResult.fallbackReason,
+          agentLatencyBreakdownMs: {
+            route: agentStart - requestStart,
+            tooling: agentMs,
+            synthesis: 0,
+            total: totalMs,
+          },
+        }, queryId).catch(() => {});
+
+        return NextResponse.json({
+          answer: agentResult.answer,
+          queryId,
+          queryType: classification.type,
+          classificationConfidence: classification.confidence,
+          searchStrategy: 'agent',
+          sources: {
+            transcripts: agentResult.sources.length > 0 ? agentResult.sources : undefined,
+          },
+          metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+          perf: { totalMs, path: 'agent_search' },
+        });
+      } catch (agentError) {
+        console.error('Agent search failed, falling through to RAG:', agentError);
+        recordAgentResult(false);
+        // Fall through to RAG pipeline below
+      }
+    }
+    // ── End Agent Search Branch ──────────────────────────────────
 
     let transcriptChunks: TranscriptChunk[] = [];
     let transcriptSources: TranscriptSource[] = [];

@@ -84,12 +84,15 @@ export interface TranscriptSource {
 
 export type QueryType = 'factual' | 'interpretive' | 'hybrid';
 
+export type SearchStrategy = 'rag' | 'agent';
+
 export interface ClassificationResult {
   type: QueryType;
   confidence: number;
   filters: QueryFilters;
   requiresTranscriptDepth?: boolean;
   supplementalQueries?: string[];
+  searchStrategy?: SearchStrategy;
 }
 
 export interface HybridSearchResponse {

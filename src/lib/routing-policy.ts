@@ -1,4 +1,4 @@
-import { EpisodeMetadata, MetadataSource, ClassificationResult } from '@/types/episode-metadata';
+import { EpisodeMetadata, MetadataSource, ClassificationResult, SearchStrategy } from '@/types/episode-metadata';
 import { QueryIntent } from './query-intent';
 
 /**
@@ -102,4 +102,117 @@ export function shouldUseQuickSynthesis(
   return depth === 'quick'
     && classification.type === 'factual'
     && !classification.requiresTranscriptDepth;
+}
+
+// ─── Agent Search Constants ────────────────────────────────────────────────
+
+export const AGENT_SEARCH_MODEL = 'claude-sonnet-4-20250514';
+export const AGENT_MAX_ITERATIONS = 10;
+export const AGENT_TIMEOUT_MS = 45_000;
+export const AGENT_MAX_TOOL_ERRORS = 3;
+export const AGENT_WEAK_EVIDENCE_THRESHOLD = 2; // sources below this = weak evidence
+
+// ─── Agent Feature Flags ───────────────────────────────────────────────────
+
+export interface AgentFeatureFlags {
+  enabled: boolean;
+  percentRollout: number;
+  forceForTags: string[];
+  disableOnErrorRate: number;
+}
+
+export function getAgentFeatureFlags(): AgentFeatureFlags {
+  return {
+    enabled: process.env.AGENT_SEARCH_ENABLED === 'true',
+    percentRollout: Math.min(100, Math.max(0,
+      parseInt(process.env.AGENT_SEARCH_PERCENT_ROLLOUT ?? '100', 10) || 100
+    )),
+    forceForTags: process.env.AGENT_SEARCH_FORCE_FOR_TAGS
+      ? JSON.parse(process.env.AGENT_SEARCH_FORCE_FOR_TAGS) as string[]
+      : [],
+    disableOnErrorRate: parseFloat(process.env.AGENT_SEARCH_DISABLE_ON_ERROR_RATE ?? '0.2') || 0.2,
+  };
+}
+
+// In-memory error rate tracking for auto-disable
+let agentErrorWindow: number[] = [];
+let agentRequestWindow: number[] = [];
+let agentAutoDisabled = false;
+const ERROR_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
+
+export function recordAgentResult(success: boolean): void {
+  const now = Date.now();
+  agentRequestWindow.push(now);
+  if (!success) agentErrorWindow.push(now);
+
+  // Prune old entries
+  agentErrorWindow = agentErrorWindow.filter(t => now - t < ERROR_WINDOW_MS);
+  agentRequestWindow = agentRequestWindow.filter(t => now - t < ERROR_WINDOW_MS);
+
+  const flags = getAgentFeatureFlags();
+  if (agentRequestWindow.length >= 5) { // need minimum sample
+    const errorRate = agentErrorWindow.length / agentRequestWindow.length;
+    if (errorRate > flags.disableOnErrorRate) {
+      console.warn(`Agent auto-disabled: error rate ${(errorRate * 100).toFixed(1)}% exceeds threshold ${(flags.disableOnErrorRate * 100).toFixed(0)}%`);
+      agentAutoDisabled = true;
+    }
+  }
+}
+
+export function isAgentAutoDisabled(): boolean {
+  return agentAutoDisabled;
+}
+
+// ─── Agent Routing Decision (Two-Step Gate) ────────────────────────────────
+
+/**
+ * Phase A day-1 regex patterns — narrow scope: counting/frequency queries with verb anchor.
+ *
+ * Catchphrase/recurring-phrase patterns are deferred to Phase B because the agent
+ * cannot reliably discover specific catchphrases (e.g., "you hack") from scratch.
+ * RAG handles these via pre-built catchphrase sub-chunks.
+ *
+ * Phase B patterns (broader aggregation, cultural reference, catchphrase) are deferred.
+ */
+const AGENT_PHASE_A_PATTERNS: RegExp[] = [
+  /\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i,
+];
+
+/**
+ * Two-step routing gate:
+ * Step 1: Classifier suggests searchStrategy='agent'
+ * Step 2: Deterministic policy approves (pattern match + feature flags)
+ *
+ * Returns 'agent' only when ALL conditions are met:
+ * - AGENT_SEARCH_ENABLED=true and not auto-disabled
+ * - Query matches a Phase A deterministic pattern
+ * - Classifier suggested 'agent' OR query matches a force-override pattern
+ * - Rollout percentage check passes
+ *
+ * Otherwise returns 'rag'.
+ */
+export function resolveSearchStrategy(
+  query: string,
+  classifierSuggestion?: SearchStrategy,
+): SearchStrategy {
+  const flags = getAgentFeatureFlags();
+
+  // Gate 1: Master switch
+  if (!flags.enabled || agentAutoDisabled) return 'rag';
+
+  // Gate 2: Query must match at least one deterministic pattern
+  const matchesPattern = AGENT_PHASE_A_PATTERNS.some(p => p.test(query));
+  if (!matchesPattern) return 'rag';
+
+  // Gate 3: Classifier must have suggested agent, OR pattern is a force-override
+  // (Phase A patterns are force-overrides — they're narrow enough to be trusted)
+  // So if the pattern matched, we proceed even without classifier agreement.
+
+  // Gate 4: Rollout percentage
+  if (flags.percentRollout < 100) {
+    const roll = Math.random() * 100;
+    if (roll >= flags.percentRollout) return 'rag';
+  }
+
+  return 'agent';
 }

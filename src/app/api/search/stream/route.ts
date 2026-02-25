@@ -29,7 +29,10 @@ import {
   shouldSkipMetadataAggregate,
   shouldForceHybridClassification,
   shouldUseQuickSynthesis,
+  resolveSearchStrategy,
+  recordAgentResult,
 } from '@/lib/routing-policy';
+import { runAgentSearch } from '@/lib/agent-search';
 
 let loggedCacheStatus = false;
 
@@ -400,6 +403,85 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           message: `Query type: ${classification.type}`,
           queryType: classification.type,
         });
+
+        // ── Agent Search Branch ──────────────────────────────────────
+        const searchStrategy = resolveSearchStrategy(query, classification.searchStrategy);
+        if (searchStrategy === 'agent') {
+          console.log('Agent search activated for query:', query);
+          send('progress', { stage: 'agent_search', message: 'Deep searching...' });
+          const agentStart = Date.now();
+
+          try {
+            const agentResult = await runAgentSearch(query, (msg) => {
+              send('progress', { stage: 'agent_search', message: msg });
+            });
+
+            const agentMs = Date.now() - agentStart;
+            const totalMs = Date.now() - requestStart;
+            const answer = agentResult.answer;
+            const transcriptSources: TranscriptSource[] = agentResult.sources;
+
+            recordAgentResult(!agentResult.fallbackReason || agentResult.fallbackReason === 'weak_evidence');
+
+            // Stream the answer
+            send('progress', { stage: 'synthesizing', message: 'Composing answer...' });
+            for (let ci = 0; ci < answer.length; ci += 20) {
+              send('chunk', { text: answer.slice(ci, ci + 20) });
+            }
+
+            send('complete', {
+              answer,
+              queryId,
+              queryType: classification.type,
+              classificationConfidence: classification.confidence,
+              searchStrategy: 'agent',
+              sources: {
+                transcripts: transcriptSources.length > 0 ? transcriptSources : undefined,
+              },
+              metadata: { totalCount: 0, returnedCount: 0, hasMore: false },
+              perf: { totalMs, path: 'agent_search' },
+            });
+            controller.close();
+
+            const allSourceEpisodes = [...new Set(transcriptSources.map(s => s.episodeTitle))];
+            logQuery({
+              query,
+              classification: {
+                type: classification.type,
+                confidence: classification.confidence,
+                filters: { ...classification.filters },
+              },
+              sourceCount: transcriptSources.length,
+              transcriptSourceCount: transcriptSources.length,
+              metadataSourceCount: 0,
+              sourceEpisodes: allSourceEpisodes,
+              answerLength: answer.length,
+              latencyMs: totalMs,
+              path: 'agent_search',
+              intent: { type: intent.type, confidence: intent.confidence },
+              synthesisModel: 'claude-sonnet-4-20250514',
+              depth,
+              routingPath: 'agent_search',
+              searchStrategy: 'agent',
+              agentIterationCount: agentResult.iterationCount,
+              agentToolCallCount: agentResult.toolCallCount,
+              agentFallbackReason: agentResult.fallbackReason,
+              agentLatencyBreakdownMs: {
+                route: agentStart - requestStart,
+                tooling: agentMs,
+                synthesis: 0, // synthesis is inline with agent loop
+                total: totalMs,
+              },
+            }, queryId).catch(() => {});
+            return;
+          } catch (agentError) {
+            console.error('Agent search failed, falling through to RAG:', agentError);
+            recordAgentResult(false);
+            send('progress', { stage: 'agent_fallback', message: 'Deep search failed, using standard search...' });
+            // Fall through to RAG pipeline below
+          }
+        }
+        // ── End Agent Search Branch ──────────────────────────────────
 
         let transcriptChunks: TranscriptChunk[] = [];
         let transcriptSources: TranscriptSource[] = [];

@@ -2,8 +2,8 @@
 const nextConfig = {
   serverExternalPackages: ['chromadb'],
   outputFileTracingIncludes: {
-    '/api/search': ['./vector-store.json', './data/**/*'],
-    '/api/search/stream': ['./vector-store.json', './data/**/*'],
+    '/api/search': ['./vector-store.json', './data/**/*', './transcripts/**/*'],
+    '/api/search/stream': ['./vector-store.json', './data/**/*', './transcripts/**/*'],
   },
 };
 
