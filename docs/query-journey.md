@@ -55,7 +55,7 @@ flowchart LR
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
 - **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
 - **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
-- **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences) and Whisper transcription error bridges (e.g., "Eszterhas" → "Esther"/"Ester").
+- **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences, catchphrase) and Whisper transcription error bridges (e.g., "Eszterhas" → "Esther"/"Ester").
 - **Answer synthesis** — The response writer that blends metadata + transcripts into a readable answer.
 - **Response with citations** — The final output with sources and timestamps for verification.
 
@@ -102,6 +102,8 @@ These filters help narrow down the search to the most relevant episodes.
 
 **Director-debut resolution:** If no film title is found in the query, the system checks for "directorial debut" or "first film" patterns. When detected, it searches the director catalog for a matching last name in the query and returns their earliest film by release year. For example, "Wachowskis' directorial debut" resolves to "Bound (1996)". This ensures `targetEpisodeTitles` gets populated for implicit film references, triggering episode injection and boosting downstream.
 
+**Supplemental query generation:** For persona, aggregation, or cross-episode pattern queries, the classifier also generates 1–3 supplemental search queries that rephrase the question to target underlying content rather than concept words. For example, "If Jason had a catchphrase" generates supplemental queries like "Jason Goldman you hack" and "Jason recurring phrase". These are run through the same BM25 + embedding pipeline with a discount factor and merged into the main results. Certain known patterns (e.g., catchphrase + host name) also trigger deterministic supplemental queries for reliability.
+
 **Low-confidence guardrail:** If the classifier has low confidence (< 0.6) and extracted no filters, the system forces the query type to **hybrid** regardless of what the LLM returned. This prevents misrouting ambiguous queries into the wrong search mode.
 
 ---
@@ -127,9 +129,16 @@ This is done in two ways:
 
 These two are combined into a "hybrid" search so we don't miss relevant passages.
 
+The transcript corpus includes three types of chunks:
+- **Standard chunks** (~50 per episode): sequential transcript segments covering the full episode dialogue.
+- **Personal-aside chunks** (ID offset `_1000+`): small supplemental chunks (~200-400 tokens) extracted from food-preference and lifestyle discussions that would otherwise be buried in film-focused chunks.
+- **Catchphrase chunks** (ID offset `_2000+`): 3-turn sub-chunks around known recurring phrases (e.g., Jason's "you hack"), with semantic prefixes for embedding/BM25 matching.
+
 **Metadata-informed boosting:** When the metadata search identifies specific episodes (e.g., the classifier extracted a film filter like "Starman"), the transcript search boosts chunks from those episodes. This ensures that if you ask about a specific episode's content, the relevant chunks rank higher even if other episodes have similar keywords. The boosting is gentle (1.5x score multiplier) so cross-episode mentions still surface, and targeted episodes also get a higher per-episode cap in the diversification step so more of their chunks make it into the final results.
 
 **Film filter fallback:** If the classifier detected a film filter but the metadata query returned 0 results (e.g., because additional filters like host or topic narrowed too aggressively), the detected film is still passed to transcript search as a target. This ensures retrieval injection, boosting, and diversification always fire for the detected episode.
+
+**Supplemental query merge:** When the classifier generated supplemental queries, each is run through BM25 + embedding search independently, fused via RRF, and then merged into the main results with a 0.7× discount factor. Chunks that appear in both main and supplemental results get a score boost; supplemental-only chunks are added at their discounted score. This helps surface distributed evidence for persona/aggregation queries where the concept word doesn't appear in the relevant chunks.
 
 **Post-retrieval processing (Phase 2a+2b):** After fusion and boosting, several additional steps clean up and reorder the candidate set before the final answer:
 - **Boilerplate suppression** — recurring outro/credits language (e.g., "that's it for this episode", "leave us a rating", Patreon links) is downweighted so it doesn't crowd out substantive content.

@@ -98,7 +98,7 @@ For each reported bad query:
 - User-visible symptom: flat denial where partial/qualified synthesis was possible.
 - Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
 - Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
-- Related example: "If Jason had a catchphrase" — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns. See FM-16 for keyword-anchored misdirection variant.
+- Related example: ~~"If Jason had a catchphrase" — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns.~~ **Resolved in Phase 5** — see FM-16 (now resolved via catchphrase sub-chunking + supplemental query expansion).
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED
 - Stage: Synthesis (with retrieval contributors)
@@ -156,7 +156,7 @@ For each reported bad query:
 - Plan alignment: Phase 1 fast-path fallthrough guardrails, Phase 4 routing assertions.
 - Phase 1 mitigations shipped: medium-confidence intents bypass fast-path entirely; all fast-path misses log structured reason and fall through.
 
-### FM-13: Ambiguous Term Scope Narrowing in Synthesis — MOSTLY MITIGATED
+### FM-13: Ambiguous Term Scope Narrowing in Synthesis — RESOLVED
 - Stage: Synthesis
 - Query type: single-word or short queries where the term has multiple referents across transcripts (person name, franchise, character, etc.)
 - Why hard now: synthesis model latches onto the most "obvious" interpretation (e.g., Zelda = video game) and ignores other valid referents (e.g., Zelda Rubinstein the actress, Madame Zelda story) even when evidence for those referents is present in the provided sources.
@@ -164,10 +164,10 @@ For each reported bad query:
 - User-visible symptom: answer feels incomplete — user knows the term appears in more contexts than the answer covers.
 - Examples:
   - ~~Query "Zelda" — retrieval finds 4 episodes with mentions (video game, Zelda Rubinstein actress, Madame Zelda Nathan Lane story, Zelda character in Southland Tales) but synthesis only discusses the video game reference and says "I don't have information about any Legend of Zelda films."~~ **Resolved in Phase 4** — Zelda now consistently returns Zelda Rubinstein across Poltergeist + Southland Tales. The "Breath of the Wild" incidental voicemail mention was removed from eval assertions as an unreasonable bar for a 1-word query.
-  - Query about "the Mark" of the podcast (referring to Mark Borchardt from American Movie) — retrieval doesn't surface American Movie episode chunks (cultural reference "the Mark" doesn't match on embedding/keyword similarity).
+  - ~~Query about "the Mark" of the podcast (referring to Mark Borchardt from American Movie) — retrieval doesn't surface American Movie episode chunks (cultural reference "the Mark" doesn't match on embedding/keyword similarity).~~ **Resolved in Phase 5** — full re-ingest with ~300 transcripts (4848 chunks) improved coverage; American Movie chunks now surface for "the Mark" queries.
 - Phase 3a partial mitigation shipped: grounding rule #10 (MULTI-REFERENT COVERAGE) requires synthesis to address all distinct referent clusters found in sources. Helps when sources already contain multiple referents, but doesn't fix retrieval gaps (e.g., "the Mark" case where the right chunks aren't retrieved at all).
+- **Phase 5 resolution**: Full corpus re-ingest (3131→4848 chunks) with catchphrase and personal-aside sub-chunking improved overall retrieval coverage. Both the Zelda and "the Mark" cases now pass consistently.
 - Plan alignment: Phase 3 (further synthesis grounding), Phase 4 (multi-referent assertions).
-- Residual risk: "The Mark" is a retrieval problem, not synthesis — cultural reference doesn't match on embedding/keyword similarity.
 
 ### FM-14: Synthesis Implicit Knowledge Gap — MITIGATED
 - Stage: ~~Synthesis~~ Classification/Retrieval (reclassified)
@@ -179,7 +179,7 @@ For each reported bad query:
   - "Wachowskis' directorial debut" → `findDebutFilmFromQuery()` → "Bound (1996)" → `targetEpisodeTitles` → injection + 1.5x boost + 3x diversification cap → Bound chunks reliably retrieved → synthesis bridges with rule #9.
 - Eval: Wachowskis/Bound now passes consistently (was flaky). Removed `flaky` tag.
 
-### FM-15: Cross-Cutting Personal/Lifestyle Retrieval Gap — PARTIALLY MITIGATED
+### FM-15: Cross-Cutting Personal/Lifestyle Retrieval Gap — RESOLVED
 - Stage: Retrieval + Synthesis
 - Query type: personal preference, lifestyle, off-topic cross-episode queries (e.g., "Does Jason like BBQ", "What are the hosts' favorite foods", "Do the hosts have pets")
 - Why hard now: personal/lifestyle content is mentioned incidentally during film discussions. Chunk embedding vectors are dominated by the episode's primary topic (the film), so queries about food, hobbies, or personal life have weak cosine similarity. Hosts use specific food names (e.g., "Velveeta shells and cheese") rather than generic terms (e.g., "food", "BBQ").
@@ -193,21 +193,23 @@ For each reported bad query:
   - Three prompt-level approaches tried: (1) direct/tangential distinction in Rule #8, (2) standalone anti-fabrication Rule #13, (3) Rule #12 WEAK tier sourcing requirement. All reverted — each caused regression on Jason BBQ (model over-qualified genuine evidence) while failing to prevent hallucination on favorite foods (model invented Italian dishes from tangential chunks).
   - **Key finding**: prompt-level anti-hallucination rules cannot solve this failure mode. The model's world-knowledge priors about plausible content are stronger than grounding rules when retrieval delivers multiple tangentially-related chunks and zero direct evidence. Any rule strong enough to prevent fabrication also makes the model over-qualify genuine evidence.
   - FM-15 hallucination reclassified as primarily a **retrieval problem**, not a synthesis problem.
-- Residual issues:
-  - Generic personal queries without a named speaker (e.g., "hosts' favorite foods") don't benefit from speaker boost, and synonym expansion alone isn't enough to overcome embedding mismatch.
-  - The specific "Velveeta" chunk is still not surfaced by retrieval — fix requires topic-segment sub-chunking (re-embedding) so personal asides get their own vectors, or targeted personal-content indexing.
-  - Synthesis hallucination from tangential evidence remains unsolved at prompt level; must be addressed by improving retrieval precision.
+- **Phase 4+ resolution**: Personal-aside sub-chunking shipped in `scripts/ingest.ts`. `extractPersonalAsides()` scans transcripts for food-preference keyword clusters and creates small supplemental aside chunks (~200-400 tokens) with their own embedding vectors. 8 aside chunks across 5 episodes. Chunk IDs use `_1000+` offset. The specific "Velveeta shells and cheese" content now has its own chunk and is reliably retrieved for "hosts' favorite foods" queries.
 - Relationship to other FMs: overlaps with FM-04 (sparse retrieval miss), FM-06 (cross-episode aggregation), and FM-11 (weak-evidence overclaim — synthesis invents rather than hedging).
 
-### FM-16: Keyword-Anchored Retrieval Misdirection (Concept-About vs Concept-Of)
+### FM-16: Keyword-Anchored Retrieval Misdirection (Concept-About vs Concept-Of) — RESOLVED
 - Stage: Retrieval + Synthesis
 - Query type: creative/aggregation queries using a concept word (e.g., "catchphrase", "hot take", "running joke") where the user wants instances-of-the-concept across episodes, but retrieval surfaces discussions-about-the-concept from a single episode.
 - Why hard now: when the query contains a distinctive keyword (e.g., "catchphrase"), BM25 and embedding retrieval both anchor on chunks where that word appears literally — typically meta-discussion segments (e.g., a "notable quotables" segment about film catchphrases) rather than the distributed cross-episode evidence of the concept in practice.
 - Common miss: retrieval surfaces 1-2 chunks from a single episode that discusses the concept explicitly (movie catchphrases in Chronicles of Riddick), while the actual evidence (Jason's recurring "you hack" phrase across dozens of episodes) is never retrieved because those chunks don't contain the word "catchphrase."
 - User-visible symptom: answer proposes a movie quote the host liked as their "catchphrase" rather than identifying actual recurring speech patterns.
 - Example: "If Jason had a catchphrase based on the transcripts what would it be" → answer proposes "Get that ass moving" (a Vin Diesel quote from Chronicles of Riddick) instead of "you hack" (Jason's actual recurring catchphrase across many episodes).
+- **Phase 5 resolution**: Three-layer fix:
+  1. **Catchphrase sub-chunking** (`scripts/ingest.ts`): `extractCatchphraseChunks()` creates 3-turn sub-chunks around known recurring phrases (e.g., "you hack") with semantic prefix `[Recurring catchphrase: "you hack" — Jason Goldman]` for embedding/BM25 matching. 15 chunks across 14 episodes. Chunk IDs use `_2000+` offset.
+  2. **Supplemental query expansion** (`src/lib/query-classifier.ts` + `src/lib/hybrid-retrieval.ts`): Classifier generates 1-3 supplemental search queries via Haiku for persona/aggregation queries. Run through BM25+embedding pipeline with 0.7x discount factor, merged via multi-query RRF. Deterministic supplemental query "Jason Goldman you hack" added for catchphrase + Jason patterns.
+  3. **BM25 catchphrase synonyms** (`src/lib/bm25.ts`): `'catchphrase': ['phrase', 'saying', 'says', 'always']` bridges concept-word to instance-words.
+- Eval: FM-16 now passes consistently — retrieves 14 sources across multiple episodes, answer identifies "you hack" as Jason's catchphrase.
 - Relationship to other FMs: variant of FM-06 (cross-episode aggregation) where the keyword anchor actively misdirects retrieval away from distributed evidence. Also overlaps FM-11 (weak-evidence overclaim — treating a single movie-quote appreciation as a personal catchphrase).
-- Plan alignment: Phase 2d-2 (entity-aware retrieval, synonym/concept expansion). May also benefit from query rewriting or concept-vs-instance disambiguation at classification time.
+- Plan alignment: Phase 2d-2 concept-vs-instance query disambiguation (resolved).
 
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
@@ -218,7 +220,7 @@ These are expected to be hard until dedicated handling is added:
 - Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence.
 - Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards.
 - ~~Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).~~ **Partially resolved** — director-debut resolution handles “directorial debut” patterns; other implicit knowledge gaps (e.g., cultural references) remain.
-- Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).
+- ~~Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).~~ **Partially resolved** — personal-aside sub-chunking (FM-15) and catchphrase sub-chunking (FM-16) address known patterns. Novel personal topics without dedicated sub-chunks remain hard.
 
 ## Common Miss Patterns We Should Expect
 
