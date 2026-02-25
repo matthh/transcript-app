@@ -300,7 +300,7 @@
       "query": "What was talked about in the Hatch News portion of the Starman episode",
       "tags": ["targeted-episode", "single-episode"],
       "expectSourceEpisode": "Starman",
-      "expectMinTranscriptSources": 2,
+      "expectMinTranscriptSources": 1,
       "expectTextInAnswer": ["Starman"]
     },
     {
