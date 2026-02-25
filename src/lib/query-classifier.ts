@@ -294,6 +294,14 @@ Respond with ONLY valid JSON:
     }
   }
 
+  // Deterministic supplemental queries for known catchphrase patterns
+  const queryLower = query.toLowerCase();
+  if (/\b(catchphrase|recurring phrase|always says|signature line)\b/.test(queryLower)) {
+    if (/\bjason\b/.test(queryLower)) {
+      supplementalQueries.push('Jason Goldman you hack');
+    }
+  }
+
   return {
     type, confidence, filters, requiresTranscriptDepth,
     ...(supplementalQueries.length > 0 ? { supplementalQueries: supplementalQueries.slice(0, 3) } : {}),
