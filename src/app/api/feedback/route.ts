@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { put } from '@vercel/blob';
+import { put, list } from '@vercel/blob';
 import { Resend } from 'resend';
 
 interface FeedbackEntry {
@@ -11,6 +11,8 @@ interface FeedbackEntry {
   rating: 'good' | 'bad';
   comment?: string;
   queryType?: string;
+  source?: string;
+  shareUrl?: string;
 }
 
 let resendClient: Resend | null = null;
@@ -30,7 +32,7 @@ const FEEDBACK_EMAIL = process.env.FEEDBACK_EMAIL || 'delivered@resend.dev';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, query, answer, rating, comment, queryType } = body;
+    const { name, query, answer, rating, comment, queryType, source, shareUrl } = body;
 
     if (!name || typeof name !== 'string' || name.trim() === '') {
       return NextResponse.json(
@@ -69,6 +71,8 @@ export async function POST(request: NextRequest) {
       rating,
       comment: comment?.trim() || undefined,
       queryType,
+      source: source?.trim() || undefined,
+      shareUrl: shareUrl?.trim() || undefined,
     };
 
     // Log to console (always visible in Vercel function logs)
@@ -165,5 +169,51 @@ export async function POST(request: NextRequest) {
       { error: 'Failed to submit feedback' },
       { status: 500 }
     );
+  }
+}
+
+export async function GET(request: NextRequest) {
+  const token = process.env.FEEDBACK_API_TOKEN;
+  if (token) {
+    const auth = request.headers.get('authorization');
+    if (auth !== `Bearer ${token}`) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+  }
+
+  const { searchParams } = new URL(request.url);
+  const month = searchParams.get('month'); // e.g. "2026-02"
+  const ratingFilter = searchParams.get('rating'); // "good" | "bad"
+  const sourceFilter = searchParams.get('source'); // e.g. "discord"
+
+  try {
+    const prefix = month ? `feedback-log/${month}/` : 'feedback-log/';
+    const { blobs } = await list({ prefix });
+
+    const entries = await Promise.all(
+      blobs.map(async (blob) => {
+        try {
+          const res = await fetch(blob.url);
+          return (await res.json()) as FeedbackEntry;
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    let results = entries.filter((e): e is FeedbackEntry => e !== null);
+    if (ratingFilter === 'good' || ratingFilter === 'bad') {
+      results = results.filter((e) => e.rating === ratingFilter);
+    }
+    if (sourceFilter) {
+      results = results.filter((e) => e.source === sourceFilter);
+    }
+
+    results.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+
+    return NextResponse.json({ count: results.length, entries: results });
+  } catch (error) {
+    console.error('Feedback list error:', error);
+    return NextResponse.json({ error: 'Failed to list feedback' }, { status: 500 });
   }
 }
