@@ -58,6 +58,7 @@ For each reported bad query:
   3. **Episode title normalization** (`normalizeEpisodeTitle`): metadata film field includes year suffixes (e.g., “They Live (1988)”) but chunk episodeTitle may not. All comparison points now strip `(YYYY)` from both sides before matching.
 - User-visible symptom: “no matches” where known matches exist, or wrong episode set.
 - Plan alignment: Phase 5 (canonicalization + matching tiers), Phase 4 tests.
+- **Director-name routing**: `findDirectorFromQuery()` + `metadata_director_films` intent now handles "what [director] movies/films" listing queries deterministically. When the query contains a listing verb + film/episode noun and a catalog director name (≥4 char last name match), the query is routed to the metadata fast-path which returns all episodes for that director. Addresses F9 ("what villeneuve movies have been episodes").
 - Residual risk: queries referencing films not in the episode catalog (typos, alternate titles) still rely on embedding similarity alone. Queries matching >3 episodes skip injection (guarded to avoid over-constraining broad queries).
 
 ### FM-04: Sparse Retrieval Miss for Transcript-Depth Factual Queries — MOSTLY MITIGATED
@@ -91,7 +92,7 @@ For each reported bad query:
 - Plan alignment: Phase 2 (deterministic window analysis), Phase 4 gold-count assertions.
 - Phase 6 partial mitigation: Agent search path handles counting/frequency queries with verb anchors (e.g., “how many times does Jason say X”). The agent greps raw transcripts and counts occurrences systematically.
 - Phase B mitigations shipped: B1 (speaker comparison — “who says X more”) and B2 (windowed comparison — “first/last N episodes” + comparison word) now route to agent. Covers user-reported failure F5 (“Has Haitch said 'we'll get there' more in the last 100 episodes or the first 100”).
-- Residual risk: complex multi-variable comparisons (e.g., “does Jason say X more when a guest is present”) remain hard.
+- Residual risk: Phase A verb allowlist is narrow — queries using action verbs outside `(say|said|mention|mentioned)` (e.g., “how many times has Haitch **interrupted** a guest with 'we'll get there'”) bypass agent routing and fall to RAG, which returns irrelevant chunks and false-negative synthesis. 91 transcript matches exist for “we'll get there” but the verb “interrupted” isn't in the Phase A gate. Fix: expand verb set in Phase A pattern (add `interrupted`, `used`, `asked`, `told`, `brought up`, etc.).
 
 ### FM-06: Cross-Episode Aggregation Failure — MOSTLY MITIGATED
 - Stage: Retrieval + Synthesis

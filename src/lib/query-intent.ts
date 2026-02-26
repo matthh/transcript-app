@@ -13,6 +13,7 @@ export type QueryIntentType =
   | 'metadata_episode_fields'
   | 'metadata_episode_lookup'
   | 'metadata_guest_search'
+  | 'metadata_director_films'
   | 'metadata_tilda'
   | 'metadata_notable_moments'
   | 'transcript_only'
@@ -30,6 +31,7 @@ export interface QueryIntent {
   episodeNumber?: number;
   film?: string;
   guestName?: string;
+  director?: string;
 }
 
 const YEAR_RANGE_PATTERN = /\b(19|20)\d{2}\s*-\s*(19|20)\d{2}\b/;
@@ -169,6 +171,47 @@ export function findDebutFilmFromQuery(query: string): string | null {
   });
 
   return sorted[0].film;
+}
+
+export function findDirectorFromQuery(query: string): string | null {
+  const normalizedQuery = normalizeForMatch(query);
+  if (!normalizedQuery) return null;
+
+  const episodes = loadEpisodeMetadata();
+
+  // Collect unique directors
+  const directors = new Set<string>();
+  for (const ep of episodes) {
+    if (ep.directors) {
+      for (const d of ep.directors) directors.add(d);
+    }
+  }
+
+  let bestMatch: { director: string; score: number } | null = null;
+
+  for (const director of directors) {
+    const normalizedDirector = normalizeForMatch(director);
+    if (!normalizedDirector) continue;
+
+    // Check full name first, then last name
+    const lastName = director.split(' ').pop()!;
+    const normalizedLast = normalizeForMatch(lastName);
+
+    if (normalizedQuery.includes(normalizedDirector)) {
+      const score = normalizedDirector.length;
+      if (!bestMatch || score > bestMatch.score) {
+        bestMatch = { director, score };
+      }
+    } else if (normalizedLast && normalizedLast.length >= 4 && normalizedQuery.includes(normalizedLast)) {
+      // Last name match — require ≥4 chars to avoid "Lee", "Bay", etc.
+      const score = normalizedLast.length;
+      if (!bestMatch || score > bestMatch.score) {
+        bestMatch = { director, score };
+      }
+    }
+  }
+
+  return bestMatch?.director ?? null;
 }
 
 function detectField(query: string): MetadataFieldKey | null {
@@ -340,6 +383,17 @@ export function detectQueryIntent(query: string): QueryIntent {
   const guestSearchIntent = detectGuestSearchIntent(query);
   if (guestSearchIntent) {
     return guestSearchIntent;
+  }
+
+  // Director-film listing: "what [director] movies/films have been episodes/covered/reviewed"
+  const directorListingMatch = /\b(what|which|list)\b.*\b(movies?|films?|episodes?)\b/.test(normalized)
+    && !yearRange // Don't hijack year-range queries
+    && !/\bfilm\s+festival\b/.test(normalized); // "film festival" ≠ listing intent
+  if (directorListingMatch) {
+    const director = findDirectorFromQuery(query);
+    if (director) {
+      return { type: 'metadata_director_films', confidence: 'high', director };
+    }
   }
 
   if ((normalized.includes('current season') || normalized.includes('what season') || normalized.includes('season is the pod on now'))

@@ -152,7 +152,7 @@ Agent routing gate expanded from 1 narrow regex (Phase A) to 8 patterns (Phase A
 | F4 | "Jason's opinion of John Boorman" | Director→film routing gap — needs `findFilmsByDirectorFromQuery()` |
 | F6 | "What does Jason think of fishing" | Cross-cutting personal topic — needs personal-aside sub-chunk expansion |
 | F8 | "how many episodes are there" | Metadata counting — needs dedicated metadata aggregation path |
-| F9 | "what villeneuve movies have been episodes" | Metadata listing — no utterance verb, stays on RAG |
+| F9 | "what villeneuve movies have been episodes" | ~~Metadata listing~~ **Addressed** — `metadata_director_films` intent + `findDirectorFromQuery()` routes to metadata fast-path |
 | F10 | "one movie from each year 1980-1990" | Metadata aggregation + year hallucination — needs metadata path |
 | F12 | "what have hosts said about the Challenger disaster" | Sparse retrieval for incidental topics — needs broader sub-chunking |
 

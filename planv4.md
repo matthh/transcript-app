@@ -61,6 +61,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
 - ~~Phrase-frequency comparisons over explicit episode windows (for example, "first 100 vs last 100") are non-deterministic and can miss true positives in recent windows.~~ **Mostly resolved** — Phase 6 agent search handles counting/frequency queries; Phase B expanded routing gate to cover windowed comparisons, speaker comparisons, exhaustive listings, temporal ordering, frequency ranking, episode counting, and multi-episode entity extraction.
+- Agent routing Phase A verb allowlist is too narrow — counting queries with action verbs outside `(say|said|mention|mentioned)` (e.g., "how many times has Haitch **interrupted**...") bypass agent and fall to RAG. Fix: broaden Phase A verb set.
 
 ## Roadmap
 

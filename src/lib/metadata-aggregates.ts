@@ -10,6 +10,7 @@ import {
   getOneEpisodePerYear,
   getTotalEpisodes,
   loadEpisodeMetadata,
+  queryEpisodes,
   MetadataFieldKey,
 } from './metadata-store';
 import { QueryIntent } from './query-intent';
@@ -271,6 +272,32 @@ export function buildMetadataAggregateResponse(intent: QueryIntent): {
     const plural = episodes.length === 1 ? 'episode' : 'episodes';
     return {
       answer: `Found ${episodes.length} ${plural} with "${intent.guestName}" as guest:\n${lines.join('\n')}`,
+      sources: { metadata: sources },
+    };
+  }
+
+  if (intent.type === 'metadata_director_films' && intent.director) {
+    const result = queryEpisodes({ director: intent.director }, {
+      limit: 200,
+      offset: 0,
+      sortBy: 'filmYear',
+      sortOrder: 'asc',
+    });
+
+    if (result.episodes.length === 0) return null; // fallthrough to full pipeline
+
+    const lines = result.episodes.map((ep) => {
+      const epLabel = formatEpisodeLabel(ep.season, ep.episode);
+      // Only append year if the film title doesn't already contain it
+      const filmHasYear = ep.filmYear && ep.film.includes(`(${ep.filmYear})`);
+      const yearStr = ep.filmYear && !filmHasYear ? ` (${ep.filmYear})` : '';
+      return `- **${ep.film}**${yearStr} — ${epLabel}`;
+    });
+
+    const sources = result.episodes.slice(0, 8).map(episodeToMetadataSource);
+    const plural = result.episodes.length === 1 ? 'episode' : 'episodes';
+    return {
+      answer: `Found ${result.episodes.length} ${plural} directed by ${intent.director}:\n${lines.join('\n')}`,
       sources: { metadata: sources },
     };
   }

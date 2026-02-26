@@ -1041,6 +1041,33 @@
         "no information",
         "don't have"
       ]
+    },
+    {
+      "name": "Counting with action verb: Haitch 'we'll get there' interruptions (agent routing gap)",
+      "query": "how many times has Haitch interrupted a guest with the words 'we'll get there'",
+      "tags": ["factual", "agent", "counting", "FM-05"],
+      "expectClassificationType": ["factual", "interpretive"],
+      "expectTextInAnswer": ["we'll get there"],
+      "expectMinTranscriptSources": 2,
+      "rejectTextInAnswer": ["no instances", "did not find any", "no information", "don't have"]
+    },
+    {
+      "name": "Director-film listing: Villeneuve (metadata fast-path)",
+      "query": "what villeneuve movies have been episodes on the podcast",
+      "tags": ["factual", "metadata", "director", "FM-09"],
+      "expectClassificationType": ["factual"],
+      "expectTextInAnswer": ["Arrival", "Sicario", "Dune"],
+      "expectMinMetadataSources": 3,
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Director-film listing: Carpenter (metadata fast-path)",
+      "query": "which John Carpenter films has the pod covered",
+      "tags": ["factual", "metadata", "director"],
+      "expectClassificationType": ["factual"],
+      "expectTextInAnswer": ["They Live"],
+      "expectMinMetadataSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have"]
     }
   ]
 }
