@@ -1041,6 +1041,36 @@
       ]
     },
     {
+      "name": "Segment-topic listing: truthsayer cocaine (FM-04/FM-06 segment sub-chunking)",
+      "query": "Which Truthsayer segments have had to do with Cocaine?",
+      "tags": ["factual", "FM-04", "FM-06", "segment"],
+      "expectClassificationType": ["factual", "interpretive"],
+      "expectTextInAnswer": ["Jaws", "Quaid"],
+      "expectSourceEpisode": "Jaws",
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Distinctive phrase existence: rollerskating monkey truthsayer (FM-04 segment sub-chunking)",
+      "query": "is there a truthsayer or birria segment with a rollerskating monkey",
+      "tags": ["factual", "FM-04", "segment"],
+      "expectClassificationType": ["factual", "interpretive"],
+      "expectTextInAnswer": ["roller"],
+      "expectSourceEpisode": "Close Encounters",
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "does not", "don't have"]
+    },
+    {
+      "name": "Episode-scoped topic retrieval: Twitter in Galaxy Quest original (FM-04 best-of disambiguation)",
+      "query": "what was said about Twitter in the Galaxy Quest episode, original version",
+      "tags": ["interpretive", "episode-scoped", "FM-04"],
+      "expectClassificationType": ["interpretive"],
+      "expectTextInAnswer": ["Twitter"],
+      "expectSourceEpisode": "Galaxy Quest",
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "no mentions", "not discussed", "don't have"]
+    },
+    {
       "name": "Director-scoped retrieval: Boorman opinion (F4 director→film routing)",
       "query": "What is Jason's opinion of John Boorman as a director",
       "tags": ["interpretive", "director", "FM-03"],
@@ -1074,6 +1104,16 @@
       "expectClassificationType": ["factual"],
       "expectTextInAnswer": ["They Live"],
       "expectMinMetadataSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Segment-scoped question: Kev's question about sequels in Jaws (FM-04 segment sub-chunking)",
+      "query": "what was kev's question in the jaws episode",
+      "tags": ["factual", "segment", "FM-04"],
+      "expectClassificationType": ["factual"],
+      "expectTextInAnswer": ["sequel"],
+      "expectSourceEpisode": "Jaws",
+      "expectMinTranscriptSources": 1,
       "rejectTextInAnswer": ["no information", "don't have"]
     }
   ]

@@ -6,7 +6,10 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import * as dotenv from 'dotenv';
 import { put } from '@vercel/blob';
+
+dotenv.config({ path: '.env.local' });
 
 const SEARCH_DATA_PREFIX = 'search-data/';
 

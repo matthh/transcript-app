@@ -379,6 +379,45 @@ const CATCHPHRASE_PATTERNS: { pattern: RegExp; speaker: string; label: string }[
 
 const CATCHPHRASE_CHUNK_ID_OFFSET = 2000;
 
+// ============================================
+// Segment sub-chunking (voicemail segments)
+// ============================================
+
+const SEGMENT_CHUNK_ID_OFFSET = 3000;
+
+const SEGMENT_CONFIGS = [
+  {
+    label: 'Truthsayer / Birria',
+    speakerNames: ['birria'],
+    semanticPrefix: '[Recurring segment: Truthsayer / Birria voicemail]',
+  },
+  {
+    label: "Kev's Questions",
+    speakerNames: ['kev voicemail', 'Kev', 'KEV'],
+    semanticPrefix: "[Recurring segment: Kev's Questions voicemail]",
+  },
+  {
+    label: "Corey's Voicemail",
+    speakerNames: ['Corey'],
+    semanticPrefix: "[Recurring segment: Corey's Voicemail]",
+  },
+  {
+    label: 'Animal Mother',
+    speakerNames: ['Animal Mother'],
+    semanticPrefix: '[Recurring segment: Animal Mother voicemail]',
+  },
+  {
+    label: 'Mr Java',
+    speakerNames: ['Mr Java', 'Mr. Java'],
+    semanticPrefix: '[Recurring segment: Mr Java voicemail]',
+  },
+  {
+    label: 'Lizzen',
+    speakerNames: ['Lizzen', 'lizzen'],
+    semanticPrefix: '[Recurring segment: Lizzen voicemail]',
+  },
+] as const;
+
 /**
  * Extract small sub-chunks around known recurring catchphrases.
  * For each occurrence, creates a 3-turn window (line before, the line, line after)
@@ -426,38 +465,173 @@ function extractCatchphraseChunks(transcript: Transcript): Chunk[] {
   return chunks;
 }
 
+/**
+ * Extract sub-chunks for recurring voicemailer segments (truthsayer, kev, corey, etc.).
+ * A segment starts when a configured speaker name appears and ends after 5 consecutive
+ * non-voicemailer turns. Host turns interleaved with voicemailer turns are included
+ * (hosts react/discuss within the segment). Large segments are split at ~600 tokens.
+ */
+function extractSegmentChunks(transcript: Transcript): Chunk[] {
+  const dialogues = transcript.dialogues;
+  if (!dialogues || dialogues.length < 3) return [];
+
+  const chunks: Chunk[] = [];
+  let chunkIndex = 0;
+
+  for (const config of SEGMENT_CONFIGS) {
+    const speakerSet = new Set(config.speakerNames.map(s => s.toLowerCase()));
+    let segmentStart: number | null = null;
+    let lastVoicemailerTurn = -1;
+    const HOST_GAP_THRESHOLD = 5;
+
+    for (let i = 0; i <= dialogues.length; i++) {
+      const name = i < dialogues.length ? dialogues[i].name.toLowerCase() : '';
+      const isVoicemailer = speakerSet.has(name);
+
+      if (isVoicemailer && segmentStart === null) {
+        segmentStart = i;
+        lastVoicemailerTurn = i;
+      } else if (isVoicemailer) {
+        lastVoicemailerTurn = i;
+      }
+
+      const gapExceeded = segmentStart !== null && i - lastVoicemailerTurn > HOST_GAP_THRESHOLD;
+      const atEnd = i === dialogues.length && segmentStart !== null;
+
+      if (gapExceeded || atEnd) {
+        // Include 1 host reaction after last voicemailer turn
+        const segEnd = Math.min(lastVoicemailerTurn + 2, dialogues.length);
+        const window = dialogues.slice(segmentStart!, segEnd);
+
+        if (window.length >= 2) {
+          const dialogueText = window
+            .map(d => `[${d.timestamp}] ${d.name}: ${d.text}`)
+            .join('\n');
+          const text = `${config.semanticPrefix}\n${dialogueText}`;
+
+          if (estimateTokens(text) <= 800 || window.length <= 4) {
+            // Small enough for a single chunk
+            const speakers = [...new Set(window.map(d => d.name))];
+            const sanitizedName = transcript.episode_name.replace(/[^a-zA-Z0-9]/g, '_');
+            const chunkId = `${sanitizedName}_${SEGMENT_CHUNK_ID_OFFSET + chunkIndex}`;
+
+            chunks.push({
+              id: chunkId,
+              text,
+              episodeTitle: transcript.episode_name,
+              speakers,
+              startTimestamp: window[0].timestamp,
+              endTimestamp: window[window.length - 1].timestamp,
+            });
+            chunkIndex++;
+          } else {
+            // Large segment: split into sub-chunks of ~600 tokens
+            let subStart = 0;
+            while (subStart < window.length) {
+              let subEnd = subStart + 2;
+              while (subEnd <= window.length) {
+                const candidate = window.slice(subStart, subEnd)
+                  .map(d => `[${d.timestamp}] ${d.name}: ${d.text}`)
+                  .join('\n');
+                if (estimateTokens(config.semanticPrefix + '\n' + candidate) > 600 && subEnd > subStart + 2) break;
+                subEnd++;
+              }
+              subEnd = Math.min(subEnd, window.length);
+              const subWindow = window.slice(subStart, subEnd);
+              const subDialogueText = subWindow.map(d => `[${d.timestamp}] ${d.name}: ${d.text}`).join('\n');
+              const subText = `${config.semanticPrefix}\n${subDialogueText}`;
+
+              const speakers = [...new Set(subWindow.map(d => d.name))];
+              const sanitizedName = transcript.episode_name.replace(/[^a-zA-Z0-9]/g, '_');
+              const chunkId = `${sanitizedName}_${SEGMENT_CHUNK_ID_OFFSET + chunkIndex}`;
+
+              chunks.push({
+                id: chunkId,
+                text: subText,
+                episodeTitle: transcript.episode_name,
+                speakers,
+                startTimestamp: subWindow[0].timestamp,
+                endTimestamp: subWindow[subWindow.length - 1].timestamp,
+              });
+              chunkIndex++;
+              subStart = subEnd;
+            }
+          }
+        }
+
+        segmentStart = null;
+        lastVoicemailerTurn = -1;
+      }
+    }
+  }
+
+  return chunks;
+}
+
 // ============================================
 
+// text-embedding-3-small max input is 8191 tokens (cl100k_base).
+// Individual chunks are within per-input limits, but batches of 100 can
+// exceed the per-request total token limit. Use MAX_EMBEDDING_CHARS as
+// safety net for edge cases.
+const MAX_EMBEDDING_CHARS = 30000;
+
 async function generateEmbeddings(texts: string[]): Promise<number[][]> {
-  const batchSize = 100;
   const maxRetries = 5;
   const embeddings: number[][] = [];
 
-  for (let i = 0; i < texts.length; i += batchSize) {
-    const batch = texts.slice(i, i + batchSize);
-    const batchNum = Math.floor(i / batchSize) + 1;
-    const totalBatches = Math.ceil(texts.length / batchSize);
-    console.log(`  Generating embeddings for batch ${batchNum}/${totalBatches}...`);
+  // Truncate any texts that might exceed the embedding model's token limit
+  let truncatedCount = 0;
+  const safeBatch = texts.map((t) => {
+    if (t.length > MAX_EMBEDDING_CHARS) {
+      truncatedCount++;
+      return t.slice(0, MAX_EMBEDDING_CHARS);
+    }
+    return t;
+  });
+  if (truncatedCount > 0) {
+    console.log(`  Note: truncated ${truncatedCount} texts exceeding ${MAX_EMBEDDING_CHARS} chars for embedding safety.`);
+  }
 
+  // Embed a batch of texts with retry and adaptive batch splitting
+  async function embedBatch(batch: string[], batchLabel: string): Promise<number[][]> {
     for (let attempt = 0; attempt < maxRetries; attempt++) {
       try {
         const response = await openai.embeddings.create({
           model: 'text-embedding-3-small',
           input: batch,
         });
-        embeddings.push(...response.data.map((d) => d.embedding));
-        break;
+        return response.data.map((d) => d.embedding);
       } catch (err: unknown) {
-        const isRateLimit = err instanceof Error && 'status' in err && (err as { status: number }).status === 429;
-        if (isRateLimit && attempt < maxRetries - 1) {
+        const status = err instanceof Error && 'status' in err ? (err as { status: number }).status : 0;
+        if (status === 429 && attempt < maxRetries - 1) {
           const backoff = Math.pow(2, attempt + 1) * 1000;
-          console.log(`  Rate limited, retrying in ${backoff / 1000}s (attempt ${attempt + 2}/${maxRetries})...`);
+          console.log(`  Rate limited on ${batchLabel}, retrying in ${backoff / 1000}s...`);
           await new Promise((r) => setTimeout(r, backoff));
+        } else if (status === 400 && batch.length > 1) {
+          // Split batch in half and retry each half
+          const mid = Math.ceil(batch.length / 2);
+          console.log(`  Bad request on ${batchLabel} (${batch.length} texts), splitting into halves...`);
+          const left = await embedBatch(batch.slice(0, mid), `${batchLabel}a`);
+          const right = await embedBatch(batch.slice(mid), `${batchLabel}b`);
+          return [...left, ...right];
         } else {
           throw err;
         }
       }
     }
+    throw new Error(`Failed after ${maxRetries} retries on ${batchLabel}`);
+  }
+
+  const batchSize = 100;
+  for (let i = 0; i < safeBatch.length; i += batchSize) {
+    const batch = safeBatch.slice(i, i + batchSize);
+    const batchNum = Math.floor(i / batchSize) + 1;
+    const totalBatches = Math.ceil(safeBatch.length / batchSize);
+    console.log(`  Generating embeddings for batch ${batchNum}/${totalBatches}...`);
+
+    const batchEmbeddings = await embedBatch(batch, `batch-${batchNum}`);
+    embeddings.push(...batchEmbeddings);
   }
 
   return embeddings;
@@ -624,9 +798,11 @@ async function main() {
       const chunks = chunkTranscript(transcript);
       const asides = extractPersonalAsides(transcript);
       const catchphrases = extractCatchphraseChunks(transcript);
-      allChunks.push(...chunks, ...asides, ...catchphrases);
-      const subMsg = (asides.length + catchphrases.length) > 0
-        ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s)` : '';
+      const segments = extractSegmentChunks(transcript);
+      allChunks.push(...chunks, ...asides, ...catchphrases, ...segments);
+      const suppCount = asides.length + catchphrases.length + segments.length;
+      const subMsg = suppCount > 0
+        ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s) + ${segments.length} segment(s)` : '';
       console.log(`  Created ${chunks.length} chunks${subMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     }
   } else {
@@ -649,9 +825,11 @@ async function main() {
     const chunks = chunkTranscript(transcript);
     const asides = extractPersonalAsides(transcript);
     const catchphrases = extractCatchphraseChunks(transcript);
-    allChunks.push(...chunks, ...asides, ...catchphrases);
-    const subMsg = (asides.length + catchphrases.length) > 0
-      ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s)` : '';
+    const segments = extractSegmentChunks(transcript);
+    allChunks.push(...chunks, ...asides, ...catchphrases, ...segments);
+    const suppCount = asides.length + catchphrases.length + segments.length;
+    const subMsg = suppCount > 0
+      ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s) + ${segments.length} segment(s)` : '';
     console.log(`  Created ${chunks.length} chunks${subMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
     blobCount++;
   }
@@ -756,8 +934,63 @@ async function dryRunAsides() {
   }
 }
 
+async function dryRunSegments() {
+  console.log('Dry-run: scanning transcripts for voicemailer segments...\n');
+
+  let totalSegments = 0;
+  const allResults: { episode: string; segments: Chunk[] }[] = [];
+
+  if (fs.existsSync(TRANSCRIPTS_DIR)) {
+    const files = fs.readdirSync(TRANSCRIPTS_DIR).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const filePath = path.join(TRANSCRIPTS_DIR, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      const transcript: Transcript = JSON.parse(content);
+      const segments = extractSegmentChunks(transcript);
+      if (segments.length > 0) {
+        allResults.push({ episode: transcript.episode_name, segments });
+        totalSegments += segments.length;
+      }
+    }
+  }
+
+  console.log(`Found ${totalSegments} segment chunk(s) across ${allResults.length} episode(s):\n`);
+
+  // Summary by segment type
+  const bySeg: Record<string, number> = {};
+  for (const { segments } of allResults) {
+    for (const seg of segments) {
+      const prefix = seg.text.split('\n')[0];
+      bySeg[prefix] = (bySeg[prefix] || 0) + 1;
+    }
+  }
+  console.log('By segment type:');
+  for (const [prefix, count] of Object.entries(bySeg)) {
+    console.log(`  ${prefix}: ${count}`);
+  }
+  console.log();
+
+  // Show a few examples
+  let shown = 0;
+  for (const { episode, segments } of allResults) {
+    if (shown >= 10) break;
+    for (const seg of segments) {
+      if (shown >= 10) break;
+      console.log(`  [${episode}] ${seg.id}`);
+      console.log(`    Timestamps: ${seg.startTimestamp} - ${seg.endTimestamp}`);
+      console.log(`    Speakers: ${seg.speakers.join(', ')}`);
+      console.log(`    Tokens: ~${estimateTokens(seg.text)}`);
+      console.log(`    Preview: ${seg.text.substring(0, 200).replace(/\n/g, ' ')}...`);
+      console.log();
+      shown++;
+    }
+  }
+}
+
 if (process.argv.includes('--dry-run-asides')) {
   dryRunAsides().catch(console.error);
+} else if (process.argv.includes('--dry-run-segments')) {
+  dryRunSegments().catch(console.error);
 } else {
   main().catch(console.error);
 }

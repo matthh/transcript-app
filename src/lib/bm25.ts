@@ -60,6 +60,12 @@ const SYNONYM_MAP: Record<string, string[]> = {
   // Catchphrase / recurring phrase synonyms
   'catchphrase': ['phrase', 'saying', 'says', 'always'],
 
+  // Segment / voicemailer synonyms
+  'truthsayer': ['birria', 'voicemail', 'segment'],
+  'birria': ['truthsayer', 'voicemail', 'segment'],
+  'kev': ['voicemail', 'segment', 'question'],
+  'corey': ['voicemail', 'segment'],
+
   // Whisper transcription error synonyms (proper names misheard)
   'eszterhas': ['esther', 'ester'],
   "eszterhas'": ['esther', 'ester'],

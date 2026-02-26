@@ -61,7 +61,9 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
 - ~~Phrase-frequency comparisons over explicit episode windows (for example, "first 100 vs last 100") are non-deterministic and can miss true positives in recent windows.~~ **Mostly resolved** — Phase 6 agent search handles counting/frequency queries; Phase B expanded routing gate to cover windowed comparisons, speaker comparisons, exhaustive listings, temporal ordering, frequency ranking, episode counting, and multi-episode entity extraction.
-- Agent routing Phase A verb allowlist is too narrow — counting queries with action verbs outside `(say|said|mention|mentioned)` (e.g., "how many times has Haitch **interrupted**...") bypass agent and fall to RAG. Fix: broaden Phase A verb set.
+- ~~Agent routing Phase A verb allowlist is too narrow~~ — **Resolved in Phase B+**: broadened from 4 to 16 verbs.
+- Best-of / original episode disambiguation: queries specifying "original version" for episodes with both original + best-of rebroadcast can intermittently miss due to query noise. Observed for Galaxy Quest (S6E119 original, S8E235 best-of). Low priority — non-reproducible, likely retrieval non-determinism.
+- ~~Agent routing for segment-scoped queries~~ **Resolved via segment sub-chunking**: `extractSegmentChunks()` in `scripts/ingest.ts` creates dedicated sub-chunks for 6 recurring voicemailer segments (Truthsayer/Birria, Kev, Corey, Animal Mother, Mr Java, Lizzen) with semantic prefixes and `_3000+` chunk ID offset. BM25 synonyms bridge "truthsayer"↔"birria" and segment name variants. Fixes "rollerskating monkey" (Close Encounters) and "truthsayer cocaine" (Jaws).
 
 ## Roadmap
 
@@ -420,6 +422,7 @@ Exit Criteria:
 - M4.0 (Phase 5 — supplemental queries + catchphrase sub-chunking): supplemental query expansion infrastructure + `extractCatchphraseChunks()` + full re-ingest (4848 chunks). ✅ Eval: 64/66 → **66/66 (100%)**. FM-16 resolved. FM-13 resolved (bonus from re-ingest).
 - M4.1 (Phase 6 — agent-grep hybrid search): agent search module + two-step routing gate + feature flags + telemetry + route integration + transcript bundling + eval tagging. ✅ Live on prod. Eval: 65/66 (FM-13 known-limitation flake). Novel counting/frequency queries produce rich cross-episode results.
 - M4.2 (Phase B — agent routing expansion): 7 new routing patterns (B1–B7) covering speaker comparison, windowed comparison, exhaustive listing, temporal ordering, frequency ranking, episode counting, multi-episode extraction. 4 new eval cases. ✅ Eval: 69/70 (Eszterhas known flake). Addresses 5 of 13 user feedback failures.
+- M4.3 (Segment sub-chunking): `extractSegmentChunks()` creates dedicated sub-chunks for 6 recurring voicemailer segments (Truthsayer/Birria, Kev, Corey, Animal Mother, Mr Java, Lizzen). Chunk IDs use `_3000+` offset. BM25 synonyms for segment names. 3 eval cases (2 updated FM-04 + 1 new). Fixes FM-04 segment-scoped retrieval failures.
 - M4.5 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M5 (end Phase 4): CI quality gates active.
 - M6 (end Phase 5): metadata pipeline automated and validated.
