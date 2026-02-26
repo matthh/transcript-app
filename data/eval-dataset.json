@@ -83,7 +83,9 @@
       "query": "earliest mentions of director Jodorowsky on the podcast",
       "tags": [
         "cross-episode",
-        "retrieval"
+        "retrieval",
+        "agent",
+        "agent-phase-b"
       ],
       "expectTextInAnswer": [
         "Jodorowsky"
@@ -503,7 +505,8 @@
         "transcript-factual",
         "aggregation",
         "voicemail",
-        "agent"
+        "agent",
+        "agent-phase-b"
       ],
       "rejectTextInAnswer": [
         "no information",
@@ -518,7 +521,8 @@
         "interpretive",
         "aggregation",
         "host-comparison",
-        "agent"
+        "agent",
+        "agent-phase-b"
       ],
       "rejectTextInAnswer": [
         "no information",
@@ -952,6 +956,67 @@
         "no information",
         "don't have"
       ]
+    },
+    {
+      "name": "Exhaustive listing: props discussed on pod (agent B3)",
+      "query": "List all the props the hosts have talked about buying on the pod",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "exhaustive-listing",
+        "FM-06"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
+      "expectMinTranscriptSources": 3
+    },
+    {
+      "name": "Windowed frequency: we'll get there comparison (agent B2)",
+      "query": "Has Haitch said we'll get there more in the last 100 episodes or more in the first 100 episodes",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "windowed-comparison",
+        "FM-05"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Most repeated phrases: Jason's recurring terms (agent B5)",
+      "query": "what are some of Jason's most oft-repeated terms or phrases on the podcast",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "frequency-ranking",
+        "FM-06"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
+      "expectMinTranscriptSources": 2
+    },
+    {
+      "name": "Multi-episode voicemailers across episodes (agent B7)",
+      "query": "who are the people who leave voicemails in the Midsommar episode and the 4 episodes prior to it",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "multi-episode",
+        "entity-extraction",
+        "FM-06"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
+      "expectMinTranscriptSources": 2
     },
     {
       "name": "Character-name query: Spicoli and American Revolution (Fast Times)",

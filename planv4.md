@@ -60,7 +60,7 @@ Users get accurate, well-grounded answers quickly, with predictable behavior acr
 - Filter relaxation is limited and not standardized.
 - Quality improvements are not consistently gated in CI with quantitative metrics.
 - Metadata matching is still too substring-heavy in places.
-- Phrase-frequency comparisons over explicit episode windows (for example, "first 100 vs last 100") are non-deterministic and can miss true positives in recent windows.
+- ~~Phrase-frequency comparisons over explicit episode windows (for example, "first 100 vs last 100") are non-deterministic and can miss true positives in recent windows.~~ **Mostly resolved** — Phase 6 agent search handles counting/frequency queries; Phase B expanded routing gate to cover windowed comparisons, speaker comparisons, exhaustive listings, temporal ordering, frequency ranking, episode counting, and multi-episode entity extraction.
 
 ## Roadmap
 
@@ -263,7 +263,7 @@ Phase 5 shipped deliverables (supplemental query expansion + catchphrase sub-chu
 
 Phase 6 shipped deliverables (agent-grep hybrid search):
 - ✅ **Agent search module** (`src/lib/agent-search.ts`): New file (~330 lines). LLM agent with tool-use loop that greps raw transcripts for queries RAG can't handle — counting, frequency, cross-episode aggregation. Sonnet for full loop (tool-use turns + final synthesis). 4 tools: `grep_transcripts` (regex search across all 300 transcript JSON files), `read_episode_transcript` (single file load + formatting), `search_episodes` (metadata wrapper), `list_episodes` (metadata wrapper). Source collection via Map dedup. Progress callback support for streaming UX.
-- ✅ **Two-step routing gate** (`src/lib/routing-policy.ts`): `resolveSearchStrategy()` gates agent activation: (1) `AGENT_SEARCH_ENABLED` feature flag must be `true`, (2) query must match a Phase A deterministic regex, (3) rollout percentage check passes. Default is always RAG. Phase A scope is narrow: only counting/frequency queries with verb anchor (`/\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i`). Catchphrase patterns excluded from Phase A after testing showed non-deterministic results — RAG handles via pre-built sub-chunks.
+- ✅ **Two-step routing gate** (`src/lib/routing-policy.ts`): `resolveSearchStrategy()` gates agent activation: (1) `AGENT_SEARCH_ENABLED` feature flag must be `true`, (2) query must match at least one `AGENT_ROUTING_PATTERNS` regex, (3) rollout percentage check passes. Default is always RAG. Phase A shipped with a single narrow counting/frequency pattern. Phase B expanded to 8 patterns (see Phase B below). Catchphrase patterns excluded — RAG handles via pre-built sub-chunks.
 - ✅ **Feature flags and kill switches** (`src/lib/routing-policy.ts`): `AGENT_SEARCH_ENABLED` (master on/off, default `false`), `AGENT_SEARCH_PERCENT_ROLLOUT` (0-100), `AGENT_SEARCH_FORCE_FOR_TAGS` (eval bypass), `AGENT_SEARCH_DISABLE_ON_ERROR_RATE` (auto-disable at 20% error rate in 5-min window). In-memory error rate tracking with sliding window.
 - ✅ **Agent telemetry** (`src/lib/query-logger.ts`): Extended `QueryLogEntry` with `searchStrategy`, `agentIterationCount`, `agentToolCallCount`, `agentFallbackReason`, `agentLatencyBreakdownMs`. New `routingPath` value `'agent_search'`.
 - ✅ **Route integration**: Agent branch added to both `stream/route.ts` and `route.ts` after classification, before RAG pipeline. Agent queries bypass supplemental query expansion (mutually exclusive paths). On agent failure, falls through to RAG pipeline.
@@ -273,6 +273,22 @@ Phase 6 shipped deliverables (agent-grep hybrid search):
 - ✅ **Production deployment**: Live on prod with `AGENT_SEARCH_ENABLED=true`. Verified agent and RAG paths both working.
 - Eval results: Full regression 65/66 (FM-13 known-limitation flake on RAG path, not agent regression). Agent-tagged slice 8/9. Novel synthetic queries (counting "big time", comparing "I mean" frequency, Letterboxd mentions) produce rich cross-episode breakdowns that RAG cannot.
 - Design doc: `docs/rewrite.md`.
+
+Phase B shipped deliverables (agent routing gate expansion):
+- ✅ **Expanded routing patterns** (`src/lib/routing-policy.ts`): Renamed `AGENT_PHASE_A_PATTERNS` → `AGENT_ROUTING_PATTERNS`. Added 7 new regex patterns (B1–B7) covering broader aggregation query classes identified from user feedback analysis (11 of 13 negative feedback entries involved FM-06 cross-episode aggregation):
+  - B1: Speaker comparison ("who says X more") — routes "who says yeah more, jason or matt"
+  - B2: Windowed comparison ("first/last N episodes" + comparison word) — routes "Has Haitch said 'we'll get there' more in the last 100 episodes"
+  - B3: Exhaustive listing ("list/name all/every" + utterance verb) — routes "List all the props...talked about buying"
+  - B4: Temporal ordering ("earliest/first mention of") — routes "earliest mentions of Jodorowsky"
+  - B5: Frequency ranking ("most frequent/common/repeated" + noun) — routes "most oft-repeated terms or phrases"
+  - B6: Episode counting ("how many episodes" + topic verb) — routes "how many episodes mention Kubrick"
+  - B7: Multi-episode entity extraction ("N episodes prior/before/after") — routes "voicemails in Midsommar and 4 episodes prior"
+  - Phase A pattern also broadened: added `mentioned` to verb list (enables "every time Bill Murray is mentioned or discussed")
+- ✅ **False-positive guards**: B3 requires utterance verb (talked/discussed/mentioned/said/brought up) — metadata-only queries like "list all movies reviewed" don't match. B4 requires `(of|that)` after the noun to prevent "first time I saw" matching. Catchphrase/recurring-phrase patterns remain excluded — RAG handles via sub-chunks.
+- ✅ **4 new eval cases** (`data/eval-dataset.json`): exhaustive listing (B3), windowed comparison (B2), frequency ranking (B5), multi-episode extraction (B7). Updated tags on 3 existing cases (Jodorowsky, most frequent voicemailers, who says yeah more) to include `agent-phase-b`. Eval dataset: 66 → 70 cases.
+- ✅ **Docs updated**: `query-failure-modes.md` (FM-05 → MOSTLY MITIGATED, FM-06 → MOSTLY MITIGATED, "Intrinsically Hard" section updated), `user-feedback-analysis.md` (Phase B Resolution section with addressed/unaddressed failure mapping).
+- Eval results: 70 cases, 69/70 pass (Eszterhas known flake, not a regression). All 7 agent-phase-b cases pass. All existing agent cases confirmed passing under new routing. 0 regressions.
+- User feedback failures addressed: F1 (props listing), F5 (windowed comparison), F7 (repeated phrases), F11 (earliest Jodorowsky), F13 (multi-episode voicemailers). Remaining unaddressed: F2–F4, F6, F8–F10, F12 (require other fixes: metadata aggregation, director routing, personal sub-chunk expansion).
 
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
@@ -402,6 +418,7 @@ Exit Criteria:
 - M3.95 (Phase 4+ — personal-aside sub-chunking): `extractPersonalAsides()` for food-preference retrieval. ✅ Eval: 63/65 → 64/66 (97.0%). FM-15 resolved.
 - M4.0 (Phase 5 — supplemental queries + catchphrase sub-chunking): supplemental query expansion infrastructure + `extractCatchphraseChunks()` + full re-ingest (4848 chunks). ✅ Eval: 64/66 → **66/66 (100%)**. FM-16 resolved. FM-13 resolved (bonus from re-ingest).
 - M4.1 (Phase 6 — agent-grep hybrid search): agent search module + two-step routing gate + feature flags + telemetry + route integration + transcript bundling + eval tagging. ✅ Live on prod. Eval: 65/66 (FM-13 known-limitation flake). Novel counting/frequency queries produce rich cross-episode results.
+- M4.2 (Phase B — agent routing expansion): 7 new routing patterns (B1–B7) covering speaker comparison, windowed comparison, exhaustive listing, temporal ordering, frequency ranking, episode counting, multi-episode extraction. 4 new eval cases. ✅ Eval: 69/70 (Eszterhas known flake). Addresses 5 of 13 user feedback failures.
 - M4.5 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M5 (end Phase 4): CI quality gates active.
 - M6 (end Phase 5): metadata pipeline automated and validated.

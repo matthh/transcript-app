@@ -82,16 +82,18 @@ For each reported bad query:
   - Joe Eszterhas anecdote linkage eval case now passes consistently (was flaky).
 - Residual risk: anecdotes spanning >2 chunks or cases where entity mention is far from the evidence. Paraphrased re-broadcast duplicates below Jaccard 0.6 still consume slots. Other Whisper transcription errors for proper names may exist undiscovered. Note: blanket best-of suppression was removed because Jaccard dedup + diversification adequately handle rebroadcast content, and the score penalty was crushing unique intro/outro content in best-of episodes (e.g., episode 296's AI/coding discussion).
 
-### FM-05: Windowed Frequency Comparison Failure — PARTIALLY MITIGATED
+### FM-05: Windowed Frequency Comparison Failure — MOSTLY MITIGATED
 - Stage: Retrieval/Analysis
 - Query type: “first N vs last N”, “who says X more”, phrase counts across explicit windows
 - Why hard now: these are counting tasks; sampling/ranked retrieval is not a reliable counting substrate.
 - Common miss: one window underrepresented, wrong winner, or false zero in recent/older windows.
 - User-visible symptom: incorrect comparative claim (“none in last 100”).
 - Plan alignment: Phase 2 (deterministic window analysis), Phase 4 gold-count assertions.
-- Phase 6 partial mitigation: Agent search path handles counting/frequency queries with verb anchors (e.g., “how many times does Jason say X”). The agent greps raw transcripts and counts occurrences systematically. Queries matching `/\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i` route to the agent. Windowed comparisons (“first N vs last N”) are not yet agent-routed — deferred to Phase B pattern expansion.
+- Phase 6 partial mitigation: Agent search path handles counting/frequency queries with verb anchors (e.g., “how many times does Jason say X”). The agent greps raw transcripts and counts occurrences systematically.
+- Phase B mitigations shipped: B1 (speaker comparison — “who says X more”) and B2 (windowed comparison — “first/last N episodes” + comparison word) now route to agent. Covers user-reported failure F5 (“Has Haitch said 'we'll get there' more in the last 100 episodes or the first 100”).
+- Residual risk: complex multi-variable comparisons (e.g., “does Jason say X more when a guest is present”) remain hard.
 
-### FM-06: Cross-Episode Aggregation Failure — PARTIALLY MITIGATED
+### FM-06: Cross-Episode Aggregation Failure — MOSTLY MITIGATED
 - Stage: Retrieval + Synthesis
 - Query type: trait/persona summaries and “what do we know about X and Y”
 - Why hard now: evidence is distributed across episodes and may not co-occur in a single chunk.
@@ -100,7 +102,15 @@ For each reported bad query:
 - Plan alignment: Phase 2a (dedup frees episode slots), Phase 2b (entity-aware retrieval), Phase 3 (aggregation policy), Phase 4 assertions.
 - Phase 2a mitigations shipped: dedup removes near-duplicate chunks that inflate per-episode counts, freeing slots for more diverse episodes. Boilerplate suppression prevents outro chunks from consuming episode slots.
 - Related example: ~~”If Jason had a catchphrase” — retrieval surfaces meta-discussion of film catchphrases instead of cross-episode evidence of Jason's recurring speech patterns.~~ **Resolved in Phase 5** — see FM-16 (now resolved via catchphrase sub-chunking + supplemental query expansion).
-- Phase 6 partial mitigation: Agent search path now handles counting/frequency aggregation queries (e.g., “How many times does Jason say big time?”). Agent greps raw transcripts exhaustively across all 300 episodes, producing exact counts with episode breakdowns. Routes via deterministic regex match in `routing-policy.ts`. Broader aggregation patterns (“who says X more”, “most frequent”) deferred to Phase B.
+- Phase 6 partial mitigation: Agent search path handles counting/frequency aggregation queries (e.g., “How many times does Jason say big time?”). Agent greps raw transcripts exhaustively across all 300 episodes.
+- Phase B mitigations shipped: Seven new routing patterns now route broader aggregation queries to agent:
+  - B3 (exhaustive listing — “list/name all/every” + utterance verb): covers F1 (“list all props talked about buying”)
+  - B4 (temporal ordering — “earliest/first mention of”): covers F11 (“earliest mentions of Jodorowsky”)
+  - B5 (frequency ranking — “most frequent/common/repeated” + noun): covers F7 (“most oft-repeated terms or phrases”)
+  - B6 (episode counting — “how many episodes mention/discuss”): covers episode-level counting
+  - B7 (multi-episode entity extraction — “N episodes prior/before/after”): covers F13 (“voicemails in Midsommar and 4 episodes prior”)
+  - B1/B2 also help (see FM-05)
+- Residual risk: queries without utterance verbs (e.g., “what villeneuve movies have been episodes”) stay on RAG — these are metadata-answerable. Persona aggregation (“What does Jason think of fishing”) stays on RAG — handled by sub-chunks and supplemental queries.
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED
 - Stage: Synthesis (with retrieval contributors)
@@ -232,11 +242,11 @@ For each reported bad query:
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
 These are expected to be hard until dedicated handling is added:
-- ~~Deterministic counting/comparison tasks across explicit windows or full corpus.~~ **Partially resolved** — Phase 6 agent search handles counting/frequency queries with verb anchors (“how many times does X say Y”). Windowed comparisons and ranking-style prompts not yet agent-routed.
+- ~~Deterministic counting/comparison tasks across explicit windows or full corpus.~~ **Mostly resolved** — Phase 6 agent search handles counting/frequency queries. Phase B expanded routing to cover windowed comparisons (B2), speaker comparisons (B1), exhaustive listings (B3), temporal ordering (B4), frequency ranking (B5), episode counting (B6), and multi-episode entity extraction (B7).
 - Multi-entity, multi-clause factual prompts where evidence is split across distant chunks/episodes.
 - Person-scoped attribution questions in transcripts with dense multi-speaker exchanges.
-- Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence. (Candidate for Phase B agent routing expansion.)
-- Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards. (Candidate for Phase B agent routing expansion.)
+- ~~Ranking-style prompts (“most often”, “top 5 times”, “strongest preference over time”) requiring exhaustive or near-exhaustive evidence.~~ **Mostly resolved** — Phase B patterns B5 (frequency ranking) and B1 (speaker comparison) route these to agent search.
+- Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards.
 - ~~Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).~~ **Partially resolved** — director-debut resolution handles “directorial debut” patterns; other implicit knowledge gaps (e.g., cultural references) remain.
 - ~~Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).~~ **Partially resolved** — personal-aside sub-chunking (FM-15) and catchphrase sub-chunking (FM-16) address known patterns. Novel personal topics without dedicated sub-chunks remain hard.
 - Queries referencing fictional character names rather than film titles (FM-17). Routing depends on LLM world knowledge; within-episode retrieval struggles when the relevant discussion is a small section of a large chunk dominated by other topics. TMDB character-name enrichment (planned Phase 5) will add deterministic character→film routing.

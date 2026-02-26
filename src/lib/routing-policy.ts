@@ -166,16 +166,45 @@ export function isAgentAutoDisabled(): boolean {
 // ─── Agent Routing Decision (Two-Step Gate) ────────────────────────────────
 
 /**
- * Phase A day-1 regex patterns — narrow scope: counting/frequency queries with verb anchor.
+ * Agent routing patterns — deterministic regex gate for agent search.
  *
- * Catchphrase/recurring-phrase patterns are deferred to Phase B because the agent
- * cannot reliably discover specific catchphrases (e.g., "you hack") from scratch.
- * RAG handles these via pre-built catchphrase sub-chunks.
+ * Phase A (day-1): counting/frequency queries with verb anchor.
+ * Phase B: broader aggregation patterns from user feedback analysis (Feb 2026).
+ *   B1: Speaker comparison — "who says X more"
+ *   B2: Windowed comparison — "first/last N episodes" with comparison word
+ *   B3: Exhaustive listing — "list/name all/every" + utterance verb
+ *   B4: Earliest/first mention — temporal ordering
+ *   B5: Most frequent/common/repeated + noun signal
+ *   B6: Episode counting with topic verb — "how many episodes mention/discuss X"
+ *   B7: Multi-episode entity extraction — "in [episode] and N episodes prior/before/after"
  *
- * Phase B patterns (broader aggregation, cultural reference, catchphrase) are deferred.
+ * Catchphrase/recurring-phrase patterns remain deferred — RAG handles via sub-chunks.
+ * Metadata-only listing queries (e.g., "list all movies reviewed") stay on RAG (no utterance verb).
  */
-const AGENT_PHASE_A_PATTERNS: RegExp[] = [
-  /\b(how many times|how often|every time)\b.*\b(say|said|mention)\b/i,
+const AGENT_ROUTING_PATTERNS: RegExp[] = [
+  // Phase A: counting/frequency with verb anchor
+  /\b(how many times|how often|every time)\b.*\b(say|said|mention|mentioned)\b/i,
+
+  // Phase B1: Speaker comparison — "who says X more"
+  /\bwho\s+(say|says|said)\b.*\bmore\b/i,
+
+  // Phase B2: Windowed comparison — "first/last N episodes" with comparison word
+  /\b(first|last)\s+\d+\s*(episode|ep)s?\b.*\b(more|less|most|often|first|last)\b/i,
+
+  // Phase B3: Exhaustive listing — "list/name all/every" + utterance verb
+  /\b(list|name)\s+(all|every)\b.*\b(talked|discussed|mentioned|said|brought up)\b/i,
+
+  // Phase B4: Earliest/first mention — temporal ordering
+  /\b(earliest|first)\s+(mention|time|instance|reference|discussion)s?\s+(of|that)\b/i,
+
+  // Phase B5: Most frequent/common/repeated + noun signal (plural-safe)
+  /\bmost\s+(frequent|common|oft|often|repeated|recurring)\b.*\b(phrases?|words?|terms?|expressions?|things?|catchphrases?|voicemailers?|callers?)\b/i,
+
+  // Phase B6: Episode counting with topic verb — "how many episodes mention/discuss X"
+  /\bhow many\b.*\bepisodes?\b.*\b(mention|discuss|talk|cover|reference|feature|bring up)\b/i,
+
+  // Phase B7: Multi-episode entity extraction — "in [episode] and N episodes prior/before/after"
+  /\b\d+\s*(episode|ep)s?\s*(prior|before|after|earlier|later)\b/i,
 ];
 
 /**
@@ -185,9 +214,18 @@ const AGENT_PHASE_A_PATTERNS: RegExp[] = [
  *
  * Returns 'agent' only when ALL conditions are met:
  * - AGENT_SEARCH_ENABLED=true and not auto-disabled
- * - Query matches a Phase A deterministic pattern
- * - Classifier suggested 'agent' OR query matches a force-override pattern
+ * - Query matches at least one AGENT_ROUTING_PATTERNS regex (Phase A + B)
  * - Rollout percentage check passes
+ *
+ * Phase A patterns: counting/frequency with verb anchor.
+ * Phase B patterns: speaker comparison, windowed comparison, exhaustive listing,
+ *   temporal ordering, frequency ranking, episode counting, multi-episode extraction.
+ *
+ * Queries that stay on RAG (no pattern match):
+ * - Personal queries ("Does Jason like BBQ?") — RAG sub-chunks
+ * - Catchphrase queries ("If Jason had a catchphrase") — RAG sub-chunks
+ * - Metadata-only listings ("list all movies reviewed") — no utterance verb
+ * - Single-episode opinion queries — standard retrieval
  *
  * Otherwise returns 'rag'.
  */
@@ -201,7 +239,7 @@ export function resolveSearchStrategy(
   if (!flags.enabled || agentAutoDisabled) return 'rag';
 
   // Gate 2: Query must match at least one deterministic pattern
-  const matchesPattern = AGENT_PHASE_A_PATTERNS.some(p => p.test(query));
+  const matchesPattern = AGENT_ROUTING_PATTERNS.some(p => p.test(query));
   if (!matchesPattern) return 'rag';
 
   // Gate 3: Classifier must have suggested agent, OR pattern is a force-override

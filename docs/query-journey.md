@@ -19,7 +19,7 @@ flowchart TD
   B -- "Yes" --> C["Answer from episode metadata"]
   B -- "No" --> D["Classify question + generate embedding (in parallel)"]
   D --> R["Routing decision: RAG or Agent?"]
-  R -- "Agent (counting/frequency)" --> AG["Agent loop: grep raw transcripts iteratively"]
+  R -- "Agent (aggregation/counting)" --> AG["Agent loop: grep raw transcripts iteratively"]
   AG --> AGR["Agent synthesizes answer with citations"]
   R -- "RAG (default)" --> E["Pick data sources"]
   E --> F["Metadata search (episode list, guests, reviewers, release dates, Kev’s question)"]
@@ -58,7 +58,7 @@ flowchart LR
 - **/api/search/stream** — The primary server endpoint used by the UI (SSE streaming) that orchestrates the whole search flow. (`/api/search` is the non-streaming sibling.) Both endpoints share routing policy and synthesis decisions via a common module (`src/lib/routing-policy.ts`).
 - **Intent detection** — A quick check for “easy” metadata questions (latest episode, total count, episode lookup, guest/reviewer lookup, release date, Kev’s question, etc.).
 - **Query classification** — Labels the question as factual, interpretive, or hybrid, and extracts filters.
-- **Routing gate** — Two-step decision in `routing-policy.ts` that determines whether a query goes to the agent search path or the RAG pipeline. Requires both a feature flag (`AGENT_SEARCH_ENABLED=true`) and a deterministic regex pattern match. Currently routes counting/frequency queries (e.g., “how many times does Jason say X”) to the agent; everything else goes to RAG. See `docs/rewrite.md` for full design.
+- **Routing gate** — Two-step decision in `routing-policy.ts` that determines whether a query goes to the agent search path or the RAG pipeline. Requires both a feature flag (`AGENT_SEARCH_ENABLED=true`) and a match against `AGENT_ROUTING_PATTERNS` (8 regex patterns). Routes counting/frequency queries, speaker comparisons (“who says X more”), windowed comparisons (“first/last N episodes”), exhaustive listings (“list all...talked about”), temporal ordering (“earliest mention of”), frequency rankings (“most frequent/repeated”), episode counting (“how many episodes discuss”), and multi-episode extraction (“N episodes prior/before/after”) to the agent. Everything else goes to RAG. See `docs/rewrite.md` for full design.
 - **Agent search** — An LLM agent (Sonnet) with tool-use that iteratively greps raw transcript files to answer queries RAG can’t handle (counting, frequency, cross-episode aggregation). Has 4 tools: `grep_transcripts`, `read_episode_transcript`, `search_episodes`, `list_episodes`. Max 10 iterations, 45s timeout. Falls back to RAG on failure. Implemented in `src/lib/agent-search.ts`.
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
@@ -117,14 +117,22 @@ These filters help narrow down the search to the most relevant episodes.
 
 ---
 
-### 2b) Agent search routing (counting/frequency queries)
+### 2b) Agent search routing (aggregation queries)
 
 After classification, the system checks whether the query should be handled by the **agent search path** instead of the standard RAG pipeline. This is a two-step gate:
 
 1. **Feature flag check**: `AGENT_SEARCH_ENABLED` must be `true` (set via environment variable).
-2. **Pattern match**: The query must match a deterministic regex for counting/frequency queries — currently: "how many times/how often/every time ... say/said/mention".
+2. **Pattern match**: The query must match at least one of 8 deterministic regex patterns in `AGENT_ROUTING_PATTERNS`:
+   - **Counting/frequency**: "how many times/how often/every time ... say/said/mention/mentioned"
+   - **Speaker comparison**: "who says X more"
+   - **Windowed comparison**: "first/last N episodes" + comparison word (more/less/most)
+   - **Exhaustive listing**: "list/name all/every" + utterance verb (talked/discussed/mentioned/said/brought up)
+   - **Temporal ordering**: "earliest/first mention/time/instance of"
+   - **Frequency ranking**: "most frequent/common/repeated" + noun (phrases/words/callers/voicemailers)
+   - **Episode counting**: "how many episodes" + topic verb (mention/discuss/cover)
+   - **Multi-episode extraction**: "N episodes prior/before/after"
 
-If both conditions pass, the query goes to an **LLM agent** (Sonnet) that has tools to grep raw transcript files. The agent iteratively searches, reads results, reformulates queries, and counts occurrences across episodes. This handles queries like "How many times does Jason say big time?" that RAG fundamentally cannot answer (RAG retrieves the best-matching chunks, but can't count all occurrences).
+If both conditions pass, the query goes to an **LLM agent** (Sonnet) that has tools to grep raw transcript files. The agent iteratively searches, reads results, reformulates queries, and counts occurrences across episodes. This handles queries like "How many times does Jason say big time?" or "List all the props they talked about buying" that RAG fundamentally cannot answer (RAG retrieves the best-matching chunks, but can't exhaustively scan the corpus).
 
 The agent has 4 tools:
 - **grep_transcripts** — regex search across all 300 transcript files
