@@ -368,11 +368,19 @@ Deliverables:
 - Move from substring-first matching toward exact/synonym/fuzzy tiered matching.
 - Add validation pipeline (required fields, duplicates, malformed values, enrichment completeness).
 - Automate metadata sync from source-of-truth with promotion checks and diff summaries.
+- **TMDB character-name enrichment** (FM-17):
+  - Extend `scripts/enrich-tmdb.ts` to extract `character` field from TMDB credits API alongside actor `name`. The API already returns character names (e.g., Sean Penn → Jeff Spicoli, Ray Walston → Mr. Hand); the script currently ignores them.
+  - Add `characters` field to `EpisodeMetadata` type — array of `{ actor: string; character: string }` for top 8 billed cast, or a flat `characterNames: string[]` for simpler indexing.
+  - Implement `findCharacterFromQuery()` in `query-intent.ts` — deterministic scan of query text against all character names in the episode catalog, returns the matching episode's canonical film title. Analogous to `findFilmFromQuery()` but for character names instead of film titles. Wire as fallback in `query-classifier.ts` after `findFilmFromQuery()` and `findDebutFilmFromQuery()`.
+  - Benefits: deterministic character→episode routing (more reliable than depending on LLM world knowledge for obscure characters like Mark Ratner, Jefferson, Brad Hamilton). Broadens the class of queries that get episode-scoped injection, 1.5x boost, and 3x diversification cap.
+  - Risk: character name collisions across films (e.g., "Jack" appears in many movies). Mitigate with minimum name length threshold and prefer longer/unique matches, similar to `findFilmFromQuery()`'s scoring approach.
+  - Companion fix: add BM25 Whisper synonyms for known character-name transcription errors (e.g., `pacoli`/`spagoli` → `spicoli`).
 
 Exit Criteria:
 - Measurable drop in false-positive and false-negative metadata matches.
 - Metadata freshness SLA: <7 days.
 - Validation failures block promotion.
+- Character-name queries for top-8 cast of enriched episodes route deterministically to the correct episode (new eval slice).
 
 ## Workstreams and Ownership
 - Routing + API consistency: backend search owner.

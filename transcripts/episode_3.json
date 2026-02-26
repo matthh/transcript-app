@@ -1,0 +1,4771 @@
+{
+  "episode_number": 3,
+  "episode_name": "Blade Runner 2049 (2017)",
+  "dialogues": [
+    {
+      "name": "A",
+      "timestamp": "0:01",
+      "text": "This."
+    },
+    {
+      "name": "B",
+      "timestamp": "0:01",
+      "text": "This is a tape deck podcast."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:14",
+      "text": "Hey, everybody, it's H. And welcome to."
+    },
+    {
+      "name": "D",
+      "timestamp": "0:17",
+      "text": "The latest installment of Dune Pod, your."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:19",
+      "text": "One stop shop to get ready for the new Dune movie."
+    },
+    {
+      "name": "D",
+      "timestamp": "0:22",
+      "text": "Or just talk about great movies, if."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:23",
+      "text": "You don't care about Dune. Hey."
+    },
+    {
+      "name": "D",
+      "timestamp": "0:25",
+      "text": "This week I'm joined, as always, by."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:27",
+      "text": "My co host, Jason Ridley Scott."
+    },
+    {
+      "name": "B",
+      "timestamp": "0:29",
+      "text": "You're a hack. You should have listened to the producers. Put the happy ending back in. Put the voiceover back in. Whoa. He's not a robot. Yeah. Let's do it."
+    },
+    {
+      "name": "D",
+      "timestamp": "0:37",
+      "text": "And by the co founder and CTO."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:40",
+      "text": "Of Slack, Cal Henderson."
+    },
+    {
+      "name": "A",
+      "timestamp": "0:42",
+      "text": "I mean, it seems unlikely that they would get planning permission for that kind of level of housing in San Francisco in the next hundred years."
+    },
+    {
+      "name": "D",
+      "timestamp": "0:48",
+      "text": "On this episode, we complete our Ridley."
+    },
+    {
+      "name": "C",
+      "timestamp": "0:50",
+      "text": "Scott doubleheader with his 1982 masterpiece, the Greatest science fiction film of all time, Blade Runner. We cover the power of production design, debate whether Deckard is a Replicant again, and make the biggest announcement in show history. If you're enjoying the show, check out our Discord server, where you can hang out with us whenever you want. And now, without further adune, Blade Runner."
+    },
+    {
+      "name": "D",
+      "timestamp": "1:19",
+      "text": "Cal Henderson. How you doing, buddy? Welcome back. It's good to see you."
+    },
+    {
+      "name": "A",
+      "timestamp": "1:23",
+      "text": "Hey, I'm doing good. It's good to be back. Has that movie come out yet, the Dune one?"
+    },
+    {
+      "name": "D",
+      "timestamp": "1:28",
+      "text": "I don't know. What's the deal with that? Jason, have you heard anything about it?"
+    },
+    {
+      "name": "B",
+      "timestamp": "1:31",
+      "text": "I just saw a thing before we started recording that. No, seriously, that Venom, which is supposed to come out the week before, is probably getting pushed back. So who could say we're just going to be. I love it. It's Waiting for Godot. The podcast. It's the best thing that's ever happened."
+    },
+    {
+      "name": "A",
+      "timestamp": "1:47",
+      "text": "I'm quite excited about the new Venom movie, Carnage. Yeah, that looks pretty good."
+    },
+    {
+      "name": "B",
+      "timestamp": "1:52",
+      "text": "It looks pretty good."
+    },
+    {
+      "name": "A",
+      "timestamp": "1:53",
+      "text": "As a fan of the first one, I know not a whole lot of people were."
+    },
+    {
+      "name": "D",
+      "timestamp": "1:56",
+      "text": "Yeah, I didn't see it, but people."
+    },
+    {
+      "name": "C",
+      "timestamp": "1:58",
+      "text": "Said it was absolutely bananas and that Tom Hardy's performance was actually just really fun and over the top."
+    },
+    {
+      "name": "A",
+      "timestamp": "2:04",
+      "text": "Yeah, I'd say that was accurate. I like movies set in, you know, San Francisco as well. And it felt very San Francisco. Not like Planet of the Apes, that kind of messes with the geography a lot, but it just felt actually in San Francisco, it."
+    },
+    {
+      "name": "B",
+      "timestamp": "2:17",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "2:18",
+      "text": "The nuclear power plant in Marin County, I was personally a big fan of. That was pretty cool."
+    },
+    {
+      "name": "A",
+      "timestamp": "2:25",
+      "text": "You didn't know about that?"
+    },
+    {
+      "name": "C",
+      "timestamp": "2:26",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "A",
+      "timestamp": "2:28",
+      "text": "It's big local news."
+    },
+    {
+      "name": "C",
+      "timestamp": "2:30",
+      "text": "Well, we are super stoked, Cal, to have you. And we decided with season four, I."
+    },
+    {
+      "name": "D",
+      "timestamp": "2:34",
+      "text": "Will just say with season four, we."
+    },
+    {
+      "name": "C",
+      "timestamp": "2:36",
+      "text": "Decided we were going to kick it up a notch and we were going to, you know, basically go for the big ones. The big ones. And if you think about movies that had an impact on us, on culture, on science fiction, and ultimately around Dune, there is one film that is at the top of the heap. And so we started last week with Ridley Scott for this two parter and this week it is literally the, the big one. It is Blade Runner."
+    },
+    {
+      "name": "B",
+      "timestamp": "3:07",
+      "text": "Man, what a movie. Yeah, it's, it's, it really is, it really is the movie on top of the well lit ziggurat in the middle of futuristic Los Angeles. It's, it's a very, the very pinnacle of that pyramid. Yeah, yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "3:24",
+      "text": "And we're going to get into it in the, in the bottom of the hour. We have a little bit of business."
+    },
+    {
+      "name": "C",
+      "timestamp": "3:27",
+      "text": "We have to take care of, but."
+    },
+    {
+      "name": "D",
+      "timestamp": "3:29",
+      "text": "I just do want to call out. So folks, you know, we get, we."
+    },
+    {
+      "name": "C",
+      "timestamp": "3:31",
+      "text": "Get some heat sometimes. Jason, I don't know if you've seen this before, but we take some heat sometimes. Like, you know, is this podcast really about Dune? Does it, you know, are you just like clickbaiting us when you post this in the Reddit?"
+    },
+    {
+      "name": "D",
+      "timestamp": "3:42",
+      "text": "And this is about Dune. We love Dune. We think about it all the time."
+    },
+    {
+      "name": "C",
+      "timestamp": "3:47",
+      "text": "We obsess about it."
+    },
+    {
+      "name": "D",
+      "timestamp": "3:48",
+      "text": "But this one is actually even more."
+    },
+    {
+      "name": "C",
+      "timestamp": "3:49",
+      "text": "Special because in 1976, Dino De Laurentiis got the rights to Dune. He purchased them from the Gibbons consortium who had been working with Jodorowsky. And he hired Herbert to, to write a new screenplay in 78, which was 175 pages long. And in 79, De Laurentiis hired Ridley Scott to make Dune."
+    },
+    {
+      "name": "B",
+      "timestamp": "4:17",
+      "text": "What do you think about that connection? Dune, Reddit? You think this podcast has no plan? This podcast is well planned."
+    },
+    {
+      "name": "C",
+      "timestamp": "4:24",
+      "text": "Yeah, it's real. Kat, how much time do you spend on Reddit?"
+    },
+    {
+      "name": "A",
+      "timestamp": "4:28",
+      "text": "Too much. But you know, mostly just looking at the memes."
+    },
+    {
+      "name": "C",
+      "timestamp": "4:31",
+      "text": "Yeah. What is your favorite, what's your favorite subreddit?"
+    },
+    {
+      "name": "A",
+      "timestamp": "4:33",
+      "text": "Right now it's probably Minecraft builds because I'm back into playing Minecraft with my, with my, with my 7 year old and so yeah, get an inspiration."
+    },
+    {
+      "name": "D",
+      "timestamp": "4:42",
+      "text": "7."
+    },
+    {
+      "name": "B",
+      "timestamp": "4:43",
+      "text": "Minecraft. Minecraft got wild. Incidentally, this is a tangent, but like I, I see these like videos on Tik Tok occasionally of people who are like building, you know, replicators and in, in Minecraft. It's, it is wild what you can do in there nowadays."
+    },
+    {
+      "name": "A",
+      "timestamp": "4:59",
+      "text": "It moved on a lot over the last few years and those kind of, they, they call them technical players. The, the people who Figure out how to do the crazy machines. That's pretty great."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:08",
+      "text": "It's a different game."
+    },
+    {
+      "name": "B",
+      "timestamp": "5:09",
+      "text": "Yeah. I just thought it was about whacking trees. I was into the whacking tree version. I wasn't into this, like, building supercomputers."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:16",
+      "text": "For a long time. You've been that way. That's. That's like. You're known for that."
+    },
+    {
+      "name": "B",
+      "timestamp": "5:20",
+      "text": "Yeah, I'm known for a tr. As a tweet. A tree whacker. A tree whacker. A twee whacker."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:24",
+      "text": "Tree whacker."
+    },
+    {
+      "name": "B",
+      "timestamp": "5:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:26",
+      "text": "All right, so. So back to. Back to Blade Runner and Ridley Scott."
+    },
+    {
+      "name": "D",
+      "timestamp": "5:30",
+      "text": "So he was hired to do Dune. He was in active development on it."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:35",
+      "text": "Was working on scripts."
+    },
+    {
+      "name": "D",
+      "timestamp": "5:36",
+      "text": "I was attracted to Dune because it."
+    },
+    {
+      "name": "E",
+      "timestamp": "5:38",
+      "text": "Was beyond what I'd done in Alien, which was kind of hardcore kind of horror film."
+    },
+    {
+      "name": "D",
+      "timestamp": "5:45",
+      "text": "And Dune would be a step very."
+    },
+    {
+      "name": "E",
+      "timestamp": "5:48",
+      "text": "Strongly, very, very strongly in the direction of Star Wars."
+    },
+    {
+      "name": "C",
+      "timestamp": "5:53",
+      "text": "And then tragically, his brother died of cancer and he realized that he was not going to be in a position to be able to tackle all of the development and the work that was going to be needed for Dune. So he dropped out and stepped away, which then obviously cleared it for David lynch to come in and. And make an amazing movie. Yep, it all worked out."
+    },
+    {
+      "name": "B",
+      "timestamp": "6:16",
+      "text": "It all worked out great. Especially for us. Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "6:19",
+      "text": "So we'll be getting into Blade Runner."
+    },
+    {
+      "name": "C",
+      "timestamp": "6:21",
+      "text": "We'll be getting into Ridley just around the corner next week. I'm pretty excited about this. I will say this film is. Is, you know, also extremely formative for me."
+    },
+    {
+      "name": "D",
+      "timestamp": "6:33",
+      "text": "In the 80s, as a huge Star."
+    },
+    {
+      "name": "C",
+      "timestamp": "6:35",
+      "text": "Trek fan, there was kind of the definitive second generation of Star Trek movies featuring the original cast. And that is the film we are going to take. Arguably the best of the series, Star Trek 4, the Voyage Home."
+    },
+    {
+      "name": "B",
+      "timestamp": "6:51",
+      "text": "Star Trek 4. Has anyone ever just started on the fourth episode of a movie series?"
+    },
+    {
+      "name": "D",
+      "timestamp": "6:58",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "6:58",
+      "text": "I mean, like, what a great place to just like, pick up."
+    },
+    {
+      "name": "D",
+      "timestamp": "7:02",
+      "text": "Why are we doing this? Why are we doing this?"
+    },
+    {
+      "name": "B",
+      "timestamp": "7:04",
+      "text": "Well, it's a San Francisco movie, okay. It involves. Not to spoil it for people who haven't seen Star Trek, A Voyage Home, but it involves capturing whales in the belly of a ship and in doing so, anticipates chapter house Dune, in which they capture a worm in the belly of a ship in order to preserve the ecology of the future."
+    },
+    {
+      "name": "C",
+      "timestamp": "7:30",
+      "text": "Deep Pole."
+    },
+    {
+      "name": "B",
+      "timestamp": "7:31",
+      "text": "So it's entirely planned, like everything we do. It's very well planned."
+    },
+    {
+      "name": "C",
+      "timestamp": "7:36",
+      "text": "That's right."
+    },
+    {
+      "name": "B",
+      "timestamp": "7:37",
+      "text": "But it's also a favorite film of our special guest for next week."
+    },
+    {
+      "name": "C",
+      "timestamp": "7:43",
+      "text": "Yes. Please introduce our special guest for next week."
+    },
+    {
+      "name": "B",
+      "timestamp": "7:46",
+      "text": "Our special guest for next week. The first of many exciting announcements tonight is Biz Stone, co founder of Twitter Boom, who will be here to talk about. To talk about Star Trek 4."
+    },
+    {
+      "name": "C",
+      "timestamp": "7:59",
+      "text": "This is founders Month. Founders Month on Dune Pod."
+    },
+    {
+      "name": "B",
+      "timestamp": "8:02",
+      "text": "Yeah. I'll spoil for you in advance that he does a really amazing transparent aluminum impression. And so you'll want to turn in. You'll want to tune in for that."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:12",
+      "text": "Nuclear Wessels."
+    },
+    {
+      "name": "A",
+      "timestamp": "8:14",
+      "text": "Wessels."
+    },
+    {
+      "name": "B",
+      "timestamp": "8:15",
+      "text": "Yeah, you'll get it all. You'll get it all."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:17",
+      "text": "Computer. There's a lot of good. Yeah, there's a lot of good material in here."
+    },
+    {
+      "name": "B",
+      "timestamp": "8:21",
+      "text": "Yes."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:21",
+      "text": "So we are very excited about that."
+    },
+    {
+      "name": "D",
+      "timestamp": "8:23",
+      "text": "Biz."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:23",
+      "text": "Welcome finally coming on. I cannot wait to hear the stories of Jason as a young product, you know, lead charting the course of the Internet for all humans."
+    },
+    {
+      "name": "B",
+      "timestamp": "8:34",
+      "text": "Like, more importantly, Biz and I once visited the Star Trek experience, which no longer exists. It used to be a music museum in Vegas. In Vegas, yeah. And so Biz and I went there for a bachelor party. During a bachelor party, we took time out to go there."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:51",
+      "text": "We'll be right back."
+    },
+    {
+      "name": "B",
+      "timestamp": "8:52",
+      "text": "And so he'll be able to tell you about that."
+    },
+    {
+      "name": "C",
+      "timestamp": "8:54",
+      "text": "Okay, perfect. Sounds good. Well, we're super stoked for that. So next week, Star Trek, the Voyage Home."
+    },
+    {
+      "name": "D",
+      "timestamp": "9:00",
+      "text": "And listen, let's just get."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:02",
+      "text": "It's too big. The news that we have is too big, including the biggest announcement we have ever had. So let's get into Dune news."
+    },
+    {
+      "name": "B",
+      "timestamp": "9:12",
+      "text": "Would you like to know more? I can't wait."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:14",
+      "text": "You got to say. You got to say Dune News, Jason."
+    },
+    {
+      "name": "B",
+      "timestamp": "9:16",
+      "text": "Oh, yeah, I got to say Dune. I'm, like, too excited. I can't even say Dune news. But I'll say it. Dune news."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:22",
+      "text": "Okay, very good. So let's start with the first one."
+    },
+    {
+      "name": "D",
+      "timestamp": "9:24",
+      "text": "We thought this was going to be."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:25",
+      "text": "The big news right here. We thought this was going to be huge. Denny Villeneuve was quoted in an interview in Il Venerity de Republica as saying that Chani, not Paul, is the protagonist for Dune 2."
+    },
+    {
+      "name": "B",
+      "timestamp": "9:41",
+      "text": "That is a big piece of news. We're not entirely sure what that means."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:45",
+      "text": "Let me read it."
+    },
+    {
+      "name": "B",
+      "timestamp": "9:45",
+      "text": "Okay, you go ahead and read it. In the original Italian, please."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:48",
+      "text": "Yes."
+    },
+    {
+      "name": "D",
+      "timestamp": "9:48",
+      "text": "This is translated by Johnny Sobchak, our."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:51",
+      "text": "Man on the street who's keeping it real."
+    },
+    {
+      "name": "D",
+      "timestamp": "9:55",
+      "text": "It says, I'm honored to present two such explosive talents on screen."
+    },
+    {
+      "name": "C",
+      "timestamp": "9:59",
+      "text": "And I can't wait to shoot the second part of Dune to have them back together, knowing that in the next chapter, Zendaya will be the star of the story."
+    },
+    {
+      "name": "B",
+      "timestamp": "10:07",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "10:08",
+      "text": "Wow."
+    },
+    {
+      "name": "B",
+      "timestamp": "10:08",
+      "text": "The star or like the hero? It depends on the translation."
+    },
+    {
+      "name": "C",
+      "timestamp": "10:11",
+      "text": "You look at oh, is there controversy on the translation?"
+    },
+    {
+      "name": "B",
+      "timestamp": "10:15",
+      "text": "Yes, there's controversy in Italian Dune circles. Go to Reddit Italian Laduna. No, like, I think what our speculation is is that this may mean that. Well, he's given other quotes in there about how he wanted to center more of the women characters in the story. And so that's like one piece."
+    },
+    {
+      "name": "C",
+      "timestamp": "10:34",
+      "text": "Thank you."
+    },
+    {
+      "name": "B",
+      "timestamp": "10:35",
+      "text": "And then thing two is, I think in part two, you could imagine that Paul maybe is in the. The spice trance for some part of the story, and that Chani kind of picks up part of the Fremen, you know, becomes the Fremen point of view as they wage their guerrilla war against the Harkonnen. So I. That's my. That's my interpretation of what's going on there."
+    },
+    {
+      "name": "C",
+      "timestamp": "10:54",
+      "text": "Cal, what's your take?"
+    },
+    {
+      "name": "A",
+      "timestamp": "10:56",
+      "text": "I have no idea, honestly."
+    },
+    {
+      "name": "C",
+      "timestamp": "10:58",
+      "text": "Okay, good."
+    },
+    {
+      "name": "B",
+      "timestamp": "10:59",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "10:59",
+      "text": "But the. I don't know."
+    },
+    {
+      "name": "B",
+      "timestamp": "11:02",
+      "text": "Good."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:04",
+      "text": "That works. You are not on the hook for anything."
+    },
+    {
+      "name": "F",
+      "timestamp": "11:06",
+      "text": "That."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:07",
+      "text": "That's."
+    },
+    {
+      "name": "B",
+      "timestamp": "11:07",
+      "text": "That."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:07",
+      "text": "That's just an option if you. If you want to have it. So. But not."
+    },
+    {
+      "name": "D",
+      "timestamp": "11:11",
+      "text": "People have. People have been losing their shit. Like, people are saying that they're going."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:14",
+      "text": "To change the story and it's not going to be Paul, it's going to be Chani. Like, they're going to shift the whole thing. It's like, that is not happening. That is not what Denny is doing. But I think this is going to be a really great adaptation."
+    },
+    {
+      "name": "D",
+      "timestamp": "11:24",
+      "text": "And again, we already saw the role."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:26",
+      "text": "Of Chani being expanded to in the first 10 minutes of the film."
+    },
+    {
+      "name": "B",
+      "timestamp": "11:31",
+      "text": "Right."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:31",
+      "text": "And so in a real smart way, we won't get into the details of it, but it's. It's an excellent, I think, tuning that is happening. So we're stoked and not to."
+    },
+    {
+      "name": "B",
+      "timestamp": "11:40",
+      "text": "Not to further delay other big news, but there was another Denis villain of controversy this week."
+    },
+    {
+      "name": "C",
+      "timestamp": "11:45",
+      "text": "Oh, please."
+    },
+    {
+      "name": "B",
+      "timestamp": "11:46",
+      "text": "Or just. Just today. So he gave this quote in which he said, first of all, the enemy of cinema is the pandemic. That's the thing. We understand that the cinema industry is under tremendous pressure right now. That I get. But then he said, this is the important part. To watch Dune on a television is. The best way I can compare it is to drive a speedboat in your bathtub. For me, it's ridiculous. So he's very upset about the streaming thing still. And you know, that's just going to be what it's going to be because it's going to. It's going to stream."
+    },
+    {
+      "name": "C",
+      "timestamp": "12:17",
+      "text": "Does Denny have a speedboat? Is my first question."
+    },
+    {
+      "name": "A",
+      "timestamp": "12:21",
+      "text": "And how big is his bath?"
+    },
+    {
+      "name": "C",
+      "timestamp": "12:23",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "B",
+      "timestamp": "12:24",
+      "text": "Exactly."
+    },
+    {
+      "name": "C",
+      "timestamp": "12:24",
+      "text": "Second question."
+    },
+    {
+      "name": "B",
+      "timestamp": "12:26",
+      "text": "If you Just make. If you just make the bath big enough, the movie will look great."
+    },
+    {
+      "name": "D",
+      "timestamp": "12:30",
+      "text": "I do want to go on record."
+    },
+    {
+      "name": "C",
+      "timestamp": "12:31",
+      "text": "Of saying I think Denny is completely committed to this film. He's committed to the idea of cinema. I think it's absolutely absurd to think that people can't really enjoy films at home. Many people watch every movie they've ever seen, you know, at home, and all of the best movies they've ever seen, they watch them at home. So it's like, it's fine. People should see it in the theater."
+    },
+    {
+      "name": "D",
+      "timestamp": "12:53",
+      "text": "If they have an opportunity."
+    },
+    {
+      "name": "C",
+      "timestamp": "12:54",
+      "text": "Like if you get an opportunity to see Dune in the theater, especially if you get the opportunity to see it in imax, you should probably do that."
+    },
+    {
+      "name": "B",
+      "timestamp": "13:03",
+      "text": "You should probably do that."
+    },
+    {
+      "name": "C",
+      "timestamp": "13:04",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "13:05",
+      "text": "All right, so next piece of Dune news."
+    },
+    {
+      "name": "C",
+      "timestamp": "13:07",
+      "text": "I've hit my saturation point on new images and video."
+    },
+    {
+      "name": "B",
+      "timestamp": "13:11",
+      "text": "Okay."
+    },
+    {
+      "name": "C",
+      "timestamp": "13:12",
+      "text": "Like, I can't just."
+    },
+    {
+      "name": "B",
+      "timestamp": "13:13",
+      "text": "Generally. You're gonna blind yourself until."
+    },
+    {
+      "name": "D",
+      "timestamp": "13:15",
+      "text": "No, I just, like, I can't absorb."
+    },
+    {
+      "name": "C",
+      "timestamp": "13:18",
+      "text": "It and enjoy it and get excited about it in the way that I was. In the same way, I just feel like I'm seeing so much. So I'm just calling that out. We did get this week some behind the scenes leaked images from the art and soul of Dune, from our Fedeken warriors, and there was some wild stuff in there. So I was pretty into it."
+    },
+    {
+      "name": "B",
+      "timestamp": "13:36",
+      "text": "But you just said you weren't into it. You're a liar. I think you're falling apart like HAL 9000 in 2001 because you're trying to be duplicitous with our audience by holding out and your hat brim is too flat. And there's just. Generally, it's just. It's just a lot's happening for you right now."
+    },
+    {
+      "name": "C",
+      "timestamp": "13:55",
+      "text": "I'm conflicted."
+    },
+    {
+      "name": "B",
+      "timestamp": "13:56",
+      "text": "I think we just need to. I think we need to get to the news before. Before you start sweating milk."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:00",
+      "text": "Okay."
+    },
+    {
+      "name": "A",
+      "timestamp": "14:01",
+      "text": "At what point is it just going to spoil your enjoyment of the movie when it does come out? You know, do you. Do you feel like there's a limit there to how much you're going to know about it before you go into it?"
+    },
+    {
+      "name": "D",
+      "timestamp": "14:11",
+      "text": "I didn't read the script, so Jason."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:13",
+      "text": "And I got the script last year."
+    },
+    {
+      "name": "D",
+      "timestamp": "14:14",
+      "text": "I think Jason flipped through it a little bit."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:16",
+      "text": "I started the very first page and I immediately turned it off. And I was happy to see that ultimately that script was not what was that opening was not what they used."
+    },
+    {
+      "name": "D",
+      "timestamp": "14:25",
+      "text": "So, I mean, obviously I've read the."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:26",
+      "text": "Book a million times. I know already most of the stuff that's in there, but I think it's gonna be. It's gonna be fine."
+    },
+    {
+      "name": "A",
+      "timestamp": "14:31",
+      "text": "I feel like some of the best movies, best moviegoing experiences I've had is when I go in with pretty much zero, you know, pre information about. About what the movie's gonna contain. You know, sometimes even who's gonna be in it."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:43",
+      "text": "Totally. Yeah, totally."
+    },
+    {
+      "name": "D",
+      "timestamp": "14:44",
+      "text": "Those are magic moments for sure."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:46",
+      "text": "That's just not an option for me."
+    },
+    {
+      "name": "A",
+      "timestamp": "14:47",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "14:48",
+      "text": "For this, I am legally obligated to watch all this shit."
+    },
+    {
+      "name": "B",
+      "timestamp": "14:50",
+      "text": "So, yeah, we'll get sued by Tape Deck if we don't stay up to date."
+    },
+    {
+      "name": "A",
+      "timestamp": "14:56",
+      "text": "So, yeah, that's understandable."
+    },
+    {
+      "name": "B",
+      "timestamp": "14:58",
+      "text": "They have a lean against our children."
+    },
+    {
+      "name": "D",
+      "timestamp": "15:00",
+      "text": "So every week we have our live recordings that we do in our Discord."
+    },
+    {
+      "name": "C",
+      "timestamp": "15:05",
+      "text": "We have friends that join along. The people are chatting right now, and we're able to respond. Also, people can hang out with us whenever they want, post links and stuff. It's just a really great community of people this week."
+    },
+    {
+      "name": "D",
+      "timestamp": "15:15",
+      "text": "Jason, listen to this. This week, new Discord members since last Wednesday."
+    },
+    {
+      "name": "B",
+      "timestamp": "15:20",
+      "text": "Okay."
+    },
+    {
+      "name": "C",
+      "timestamp": "15:21",
+      "text": "All right. Tim, 24 frames. Michael Sippy. Anthony Iupi. Jarrett gets games."
+    },
+    {
+      "name": "D",
+      "timestamp": "15:29",
+      "text": "Who's been a listener since episode four."
+    },
+    {
+      "name": "C",
+      "timestamp": "15:31",
+      "text": "Arrival all the Way Back Noble. A listener since episode one, Auto Golf and Crash Fodder."
+    },
+    {
+      "name": "B",
+      "timestamp": "15:41",
+      "text": "Mm. Holy moly, that's a lot of people. Also, there was a bug on our Discord this week where some people were unable to post after joining. So that's a good. Welcome. Join our Discord, and maybe you won't be able. Maybe you won't be able to join in. Who knows? Did you mention one man? Did you say one man and one man?"
+    },
+    {
+      "name": "C",
+      "timestamp": "16:00",
+      "text": "One man. Thank you. Yeah. Okay. That was close."
+    },
+    {
+      "name": "D",
+      "timestamp": "16:04",
+      "text": "So welcome, everybody."
+    },
+    {
+      "name": "C",
+      "timestamp": "16:06",
+      "text": "Thank you for joining, especially everybody here who is here with us live tonight. We have a great time, and we really enjoy that."
+    },
+    {
+      "name": "D",
+      "timestamp": "16:11",
+      "text": "Jason, do we have any other news?"
+    },
+    {
+      "name": "B",
+      "timestamp": "16:13",
+      "text": "We have one other piece of news."
+    },
+    {
+      "name": "C",
+      "timestamp": "16:14",
+      "text": "Oh, please, go ahead."
+    },
+    {
+      "name": "B",
+      "timestamp": "16:16",
+      "text": "No, I think you should. I think you should do it, man. I think you should do the news. You're. You're. You're. You're. You're. You're the captain of this ship."
+    },
+    {
+      "name": "C",
+      "timestamp": "16:23",
+      "text": "So listen, you know, we asked for tickets to go to Tiff, and by."
+    },
+    {
+      "name": "B",
+      "timestamp": "16:30",
+      "text": "Ask for tickets to go to Tiff, Matt just would randomly accost people who he thought might be Canadian on the street and ask them if he could get invited to go to Toronto, the Toronto Film Festival."
+    },
+    {
+      "name": "C",
+      "timestamp": "16:44",
+      "text": "This is yelling at Catcher. Come on, Catcher, get us some goddamn tickets."
+    },
+    {
+      "name": "D",
+      "timestamp": "16:48",
+      "text": "So. So we didn't get into tiff. We didn't get into the Venice Film Festival."
+    },
+    {
+      "name": "C",
+      "timestamp": "16:51",
+      "text": "I haven't heard anything about, you know, getting to A Hollywood premiere."
+    },
+    {
+      "name": "D",
+      "timestamp": "16:56",
+      "text": "So we decided in typical, you know, crisis, you gotta rise to it."
+    },
+    {
+      "name": "B",
+      "timestamp": "17:00",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "17:00",
+      "text": "And so we decided, eff it. We are hosting our own exclusive opening."
+    },
+    {
+      "name": "D",
+      "timestamp": "17:09",
+      "text": "Night private IMAX screening in San Francisco. We have all 430 seats booked."
+    },
+    {
+      "name": "C",
+      "timestamp": "17:17",
+      "text": "We have the entire theater booked. This is just us, our friends, and we are going to make this happen."
+    },
+    {
+      "name": "B",
+      "timestamp": "17:23",
+      "text": "Yep. We are going to invite everyone we've ever done the show with, the folks that we hang out in Discord with. We are going to invite the Dunepod family to come watch the Dune premiere with us in San Francisco in IMAX on October 21, before most of the world can even see it. The Dune Pod premiere of Dune."
+    },
+    {
+      "name": "C",
+      "timestamp": "17:44",
+      "text": "Dune. Dune 2021."
+    },
+    {
+      "name": "B",
+      "timestamp": "17:46",
+      "text": "Yes. Of Dune 2021. Yeah. We're not showing. We're not showing the David Lynch Dune. It's not like a bait and switch."
+    },
+    {
+      "name": "A",
+      "timestamp": "17:51",
+      "text": "I think people have already seen that one, to be fair. Yeah, that wouldn't really be much of a premiere."
+    },
+    {
+      "name": "B",
+      "timestamp": "17:55",
+      "text": "You're going to fly to San Francisco and it's like a screening of like a VHS copy of the Sci FI Channel. Like Dune with William Hurt. The whole thing be wild."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:04",
+      "text": "That's right."
+    },
+    {
+      "name": "D",
+      "timestamp": "18:05",
+      "text": "So. So Brian Mosley calling out in chat that he has already booked his tickets."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:10",
+      "text": "Because there might have been a leak before this, before this recording. So, Cal, I'll give you the opportunity to be the first person outside of Brian to officially confirm if you would like one of those tickets. Obviously, all of our. All of our hosts who have joined us will be welcome."
+    },
+    {
+      "name": "B",
+      "timestamp": "18:23",
+      "text": "Yes. We'll be invited."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:24",
+      "text": "Yes."
+    },
+    {
+      "name": "A",
+      "timestamp": "18:25",
+      "text": "Yeah, count me in. I'll be there."
+    },
+    {
+      "name": "D",
+      "timestamp": "18:26",
+      "text": "This is going to be incredible. This is one of the largest IMAX."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:29",
+      "text": "Screens and theaters in the United States. And it is a truly incredible venue. So we're super stoked. It's going to be seven o', clock, we'll watch it and then we'll go home and record and watch on HBO Max and, you know, generally freak out."
+    },
+    {
+      "name": "D",
+      "timestamp": "18:44",
+      "text": "So stay tuned for details on how."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:48",
+      "text": "It'S going to work, how you can join us. This is a free event. Anyone who wants to come can come for free."
+    },
+    {
+      "name": "B",
+      "timestamp": "18:55",
+      "text": "It's going to be, must be, must be vaccinated. That's."
+    },
+    {
+      "name": "C",
+      "timestamp": "18:59",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "18:59",
+      "text": "Because the only reason we're doing this is because we don't want to catch COVID to go see the premiere of Dude. Also, the fact that we're doing this and have like committed to do this with AMC definitely means that the movie is going to be postponed 100%. We've, like guaranteed that the movie is going to be postponed now. So sorry for that in advance."
+    },
+    {
+      "name": "C",
+      "timestamp": "19:15",
+      "text": "Good luck."
+    },
+    {
+      "name": "A",
+      "timestamp": "19:16",
+      "text": "Thanks."
+    },
+    {
+      "name": "D",
+      "timestamp": "19:21",
+      "text": "All right."
+    },
+    {
+      "name": "C",
+      "timestamp": "19:22",
+      "text": "Well, shall we get into Blade Runner?"
+    },
+    {
+      "name": "B",
+      "timestamp": "19:24",
+      "text": "Oh, my God. Now we gotta talk about Blade Runner. I feel so emotional already. Okay, let's do it."
+    },
+    {
+      "name": "C",
+      "timestamp": "19:29",
+      "text": "All right, here we go."
+    },
+    {
+      "name": "D",
+      "timestamp": "19:33",
+      "text": "Blade Runner is a battle for freedom."
+    },
+    {
+      "name": "C",
+      "timestamp": "19:37",
+      "text": "In a dark future."
+    },
+    {
+      "name": "D",
+      "timestamp": "19:40",
+      "text": "Rick Deckard is reactivated to his old Blade Runner police unit to hunt and."
+    },
+    {
+      "name": "C",
+      "timestamp": "19:45",
+      "text": "Terminate, or more euphemistically, retire, a group of murderous Nexus 6 replicants who have escaped the offworld colonies and returned to Los Angeles. These biomechanoids, Leon, Roy, Zora and Priss."
+    },
+    {
+      "name": "D",
+      "timestamp": "20:00",
+      "text": "Endowed with incredible strength and nearly impervious."
+    },
+    {
+      "name": "C",
+      "timestamp": "20:03",
+      "text": "To pain, will stop at nothing to find a way to extend their lifespans."
+    },
+    {
+      "name": "D",
+      "timestamp": "20:09",
+      "text": "Deckard is drawn down a path of."
+    },
+    {
+      "name": "C",
+      "timestamp": "20:10",
+      "text": "Investigation that leads him from dark and."
+    },
+    {
+      "name": "D",
+      "timestamp": "20:12",
+      "text": "Seedy alleyways to the pinnacles of power."
+    },
+    {
+      "name": "C",
+      "timestamp": "20:15",
+      "text": "Atop the Tyrell Corporation's pyramids."
+    },
+    {
+      "name": "D",
+      "timestamp": "20:18",
+      "text": "Along the way, he will meet Tyrell's."
+    },
+    {
+      "name": "C",
+      "timestamp": "20:20",
+      "text": "Stunning niece, Rachel, herself a Nexus Replicant struggling to accept what she is."
+    },
+    {
+      "name": "D",
+      "timestamp": "20:26",
+      "text": "Will Deckard survive long enough to complete."
+    },
+    {
+      "name": "C",
+      "timestamp": "20:29",
+      "text": "His mission and retire these machines? Or will he be forced to question his own reality and duty as a blade?"
+    },
+    {
+      "name": "B",
+      "timestamp": "20:45",
+      "text": "Oh, so good. That's great art."
+    },
+    {
+      "name": "F",
+      "timestamp": "20:47",
+      "text": "Art."
+    },
+    {
+      "name": "B",
+      "timestamp": "20:48",
+      "text": "Was hoping that the synopsis would end with. Or will he run the blades? Which I think. Which I think would have been amazing. But I like what you chose instead."
+    },
+    {
+      "name": "C",
+      "timestamp": "21:00",
+      "text": "That's fine, thank you. I'm a purist."
+    },
+    {
+      "name": "B",
+      "timestamp": "21:03",
+      "text": "I also noticed what you put in there with the reactivated. We know. We know what you're doing. And you think you're clever, but we see what you're doing."
+    },
+    {
+      "name": "A",
+      "timestamp": "21:11",
+      "text": "Do we know who came up with the title, like, because it is kind of nonsensical."
+    },
+    {
+      "name": "C",
+      "timestamp": "21:15",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "21:16",
+      "text": "It's actually based on a William S."
+    },
+    {
+      "name": "C",
+      "timestamp": "21:17",
+      "text": "Burroughs novel called Blade Runner. And it was. I think it might have been Hampton Fancher, the original scriptwriter or one of the producers who requested to Burroughs that they use it and he allowed them to do so."
+    },
+    {
+      "name": "B",
+      "timestamp": "21:30",
+      "text": "Oh, so nice. That's great. What a champion."
+    },
+    {
+      "name": "D",
+      "timestamp": "21:32",
+      "text": "It was originally titled Dangerous Days. And so let's just do a little."
+    },
+    {
+      "name": "C",
+      "timestamp": "21:35",
+      "text": "Bit of behind the scenes here stuff. So. So do Androids Dream of Electric Sheep? Philip K. Dick, one of his classic films. And this was a time before any of his movies had ever been made. And since, you know, between Minority Report and Total Recall and. And Blade Runner and many others, you know, he's become one of the most translated authors out there."
+    },
+    {
+      "name": "D",
+      "timestamp": "21:58",
+      "text": "And a guy named Hampton Fancher basically."
+    },
+    {
+      "name": "C",
+      "timestamp": "22:01",
+      "text": "Created a script that was the essence of this film. But the entire movie took place, like, inside, like, his apartment. Like nothing happened. Is like this tiny Little small movie. And after Ridley was hired, he basically took it, expanded it way out, and then ultimately took Fancher off and brought in David Peoples to be his personal writer so that they could rework it and get to where they wanted it to be."
+    },
+    {
+      "name": "B",
+      "timestamp": "22:25",
+      "text": "Hampton Fancher is just an amazing name, by the way. Like, they should have called the movie that, like, just, Just. Or will he? Hampton the Fancier."
+    },
+    {
+      "name": "C",
+      "timestamp": "22:35",
+      "text": "Totally."
+    },
+    {
+      "name": "D",
+      "timestamp": "22:36",
+      "text": "So, Cal, what was your experience like?"
+    },
+    {
+      "name": "C",
+      "timestamp": "22:38",
+      "text": "When did you first watch Blade Runner?"
+    },
+    {
+      "name": "A",
+      "timestamp": "22:40",
+      "text": "That's hard. It was a long time ago. You know, it's very formative movie for me. It came out in 81."
+    },
+    {
+      "name": "C",
+      "timestamp": "22:46",
+      "text": "82."
+    },
+    {
+      "name": "A",
+      "timestamp": "22:46",
+      "text": "82, yeah. So I didn't watch it when it came out on account of me, you know, being a toddler, but did watch it later. And almost certainly when I watched it the first time, I didn't. Didn't get it in the way that I have watching it, since it's a movie I've seen a lot of times and a bunch of the different versions, which I'm sure we will discuss. When you look at the kind of visuals it is for the time at which it was made, it is still a really enduring image of the future that it's. Obviously there's been a lot of things that were derivative of it since and use that kind of view of LA in the future, but it feels. Still feels super modern if you strip out Atari, you know, it feels like a possible vision of the future. And it's, you know, so. So few things in it aged poorly."
+    },
+    {
+      "name": "D",
+      "timestamp": "23:31",
+      "text": "It's now an alternate history."
+    },
+    {
+      "name": "C",
+      "timestamp": "23:32",
+      "text": "Right. Like, it's like it is 2019. So it's become this, like, what if history or if the past had developed in a different way or developed more quickly."
+    },
+    {
+      "name": "A",
+      "timestamp": "23:40",
+      "text": "Yeah. And I guess maybe it's still going to be our 2019. You know, when society collapses and we. We lose track of the calendar. So maybe it's still a plausible future."
+    },
+    {
+      "name": "B",
+      "timestamp": "23:50",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "23:50",
+      "text": "Something to look forward to."
+    },
+    {
+      "name": "C",
+      "timestamp": "23:51",
+      "text": "Jason, how about you?"
+    },
+    {
+      "name": "B",
+      "timestamp": "23:52",
+      "text": "They've got good noodles still."
+    },
+    {
+      "name": "C",
+      "timestamp": "23:54",
+      "text": "I was great."
+    },
+    {
+      "name": "B",
+      "timestamp": "23:56",
+      "text": "I don't remember. Like, I saw this on, like, Saturday afternoon television and in St. Louis. Like, Channel 11 in St. Louis used to show afternoon movies. And this was definitely one of the TV cuts was on there. And then, you know, we had it on VHS as a kid because as mentioned before, my. My dad had a VHS store, a video rental place. And so I just had seen it a bunch, like, as a young child. And. Yeah, it was just total. I, you know, was just totally obsessed by it. There's. There's scenes in the movie and things in the movie that I just, you know, had never encountered before. And, you know, all the things that Sakal said in terms of it being visually this language that just informed the rest of cinema, I think it. I think the comparison to 2001 is apartment because it just had that kind of like, this is what this. This is what this kind of movie looks like. And everyone's like, oh, okay, cool, I'll do that. Yeah. So has always just been a part of my life. So much so that when I was rewatching for this pod, like, just from the opening, I have this, like, Pavlovian response of just like, yes, this is coming home for me."
+    },
+    {
+      "name": "D",
+      "timestamp": "25:05",
+      "text": "For me."
+    },
+    {
+      "name": "C",
+      "timestamp": "25:05",
+      "text": "Like, even from the Alan from the Ladd Corporation logo, the green tree scrolling across."
+    },
+    {
+      "name": "B",
+      "timestamp": "25:11",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "25:13",
+      "text": "Like, that immediately locks me in. And then when the. The big drum, you know, for the. For the opening scrawl happens, you know, I am viscerally, viscerally affected. So same thing. I watch this on video many times as a kid, and then I realize now in 92. That was when I moved to San Francisco and I think I saw it in Berkeley. The director's cut."
+    },
+    {
+      "name": "B",
+      "timestamp": "25:34",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "25:35",
+      "text": "And was like, holy shit. You have completely changed the entire meaning of this film with 24 seconds. You, like, you're a genius. And this is the greatest thing that's ever happened. And just continued to watch it so many times through my life. I love, love, love this film."
+    },
+    {
+      "name": "B",
+      "timestamp": "25:51",
+      "text": "Yeah, I guess. I mean, we'll talk about that with the different versions. I definitely like my overall impression. I was trying to go into this one a little bit more fresh, I guess, than some of our other movies where I. I do a lot of, like, obsessive, like, comparison of what's in the cut versus and how it's changed. Because I wanted to see if I could, like, see it somewhat afresh. And, like, my overall impression, I guess, is, like, that a lot of that different version stuff just doesn't really matter. Like, the genius of. The genius of the movie is, like, the way it looks and the vibe of the movie. And it's just so. All of that is just so timeless that, like, some of the narrative differences are just not super, like, religious to me at this point."
+    },
+    {
+      "name": "A",
+      "timestamp": "26:33",
+      "text": "I'll."
+    },
+    {
+      "name": "F",
+      "timestamp": "26:34",
+      "text": "I'll."
+    },
+    {
+      "name": "A",
+      "timestamp": "26:34",
+      "text": "I'll disagree there. I think the."
+    },
+    {
+      "name": "C",
+      "timestamp": "26:36",
+      "text": "Do it. Get him, Cal. Get his ass."
+    },
+    {
+      "name": "A",
+      "timestamp": "26:39",
+      "text": "There is yet to be a really good cut of this movie."
+    },
+    {
+      "name": "B",
+      "timestamp": "26:42",
+      "text": "Okay."
+    },
+    {
+      "name": "C",
+      "timestamp": "26:43",
+      "text": "Why?"
+    },
+    {
+      "name": "A",
+      "timestamp": "26:43",
+      "text": "And I feel like the, you know, there will be a perfect cut in the future. That somewhere between the original theatrical release and the director's cut or the, you know, the final cut, whatever the current one is, like this. He should not be a Replicant in it. It doesn't make sense. So much of the rest of the movie doesn't hang together correctly."
+    },
+    {
+      "name": "B",
+      "timestamp": "27:03",
+      "text": "Whoa. The podcast. The podcast is falling apart. It was a good run. Yeah, no, I. I actually. I actually respect that point of view in the. The. He shouldn't be a Replicant point of view."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:13",
+      "text": "Let's. Let's. We'll have it. I. I definitely want to have this. This debate. Like, we. We have to do it."
+    },
+    {
+      "name": "B",
+      "timestamp": "27:18",
+      "text": "We have to. We have to warm up to it, is what you're saying."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:20",
+      "text": "Yeah, let's. Let's."
+    },
+    {
+      "name": "B",
+      "timestamp": "27:20",
+      "text": "You have to ease into it. We can't just jump in the bathtub."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:23",
+      "text": "Jesus."
+    },
+    {
+      "name": "B",
+      "timestamp": "27:24",
+      "text": "All right."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:24",
+      "text": "I didn't see it coming, I'll tell you that. Like, and, And. And when Paper Keg did Blade Runner many years ago, I was shocked that the hosts did not believe, you know, Slim and Dale Jonesy."
+    },
+    {
+      "name": "D",
+      "timestamp": "27:38",
+      "text": "None of them."
+    },
+    {
+      "name": "B",
+      "timestamp": "27:39",
+      "text": "Oh, yeah, no, Dale's in the Discord. He's mad already."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:42",
+      "text": "None of them believed that Deckard was a Replicant. It just pissed me off."
+    },
+    {
+      "name": "D",
+      "timestamp": "27:45",
+      "text": "So."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:46",
+      "text": "So we'll. We'll get into it."
+    },
+    {
+      "name": "D",
+      "timestamp": "27:47",
+      "text": "For the record, we did watch for."
+    },
+    {
+      "name": "C",
+      "timestamp": "27:49",
+      "text": "This podcast, we will be discussing primarily the final cut, which, in my mind, the differences between the director's cut and the final cut are. Are very minor. Like, doesn't really matter that much, but."
+    },
+    {
+      "name": "D",
+      "timestamp": "28:00",
+      "text": "All right, well, why don't we get."
+    },
+    {
+      "name": "C",
+      "timestamp": "28:01",
+      "text": "Into this and let's get started. We've talked about this for Dune many times. Like, the amount of exposition you generally need is like a pain in the ass in science fiction films."
+    },
+    {
+      "name": "D",
+      "timestamp": "28:10",
+      "text": "And I feel like the Scrawl does."
+    },
+    {
+      "name": "C",
+      "timestamp": "28:12",
+      "text": "Such a great job and the music is so intense and ominous. Like, it's a really fantastic job of conveying what replicants are and what it means and whatnot."
+    },
+    {
+      "name": "B",
+      "timestamp": "28:21",
+      "text": "Yeah, I mean, I think. I think, like, it's funny. I was watching with Crystal who's. Who's seen the movie before. But, like, you know, like. Like, if you're coming into it fresh, like, I think the opening scrawl can. Can be a little, like, well, this seems goofy. Like, this is like, kind of very. It seems very serious. Like, from. You're like, oh, this is like some be some serious. But, like, it's called Blade Runner. Like, that seems kind of weird. Like, there's just parts of it that seem a little absurd, like, on its face. But. But, yeah, I do think it does a decent. I do. I. To me, it means that you don't need the voiceover that is in the theatrical."
+    },
+    {
+      "name": "C",
+      "timestamp": "29:02",
+      "text": "Cal."
+    },
+    {
+      "name": "B",
+      "timestamp": "29:02",
+      "text": "Are you a voiceover defender in addition to a Deckard as a human defender?"
+    },
+    {
+      "name": "A",
+      "timestamp": "29:06",
+      "text": "Okay, no, no, no, no, no. The, you know, the perfect version of the movie for me would basically be the theatrical cut, but without the terrible voiceovers."
+    },
+    {
+      "name": "B",
+      "timestamp": "29:15",
+      "text": "Okay, Right."
+    },
+    {
+      "name": "A",
+      "timestamp": "29:16",
+      "text": "And there's the whole. Was he doing it badly on purpose? Which it seemed like he really was, but then has denied since. But Harrison Ford is not an amazing actor."
+    },
+    {
+      "name": "B",
+      "timestamp": "29:25",
+      "text": "Right."
+    },
+    {
+      "name": "A",
+      "timestamp": "29:25",
+      "text": "Like, he's been in many amazing movies. You know, he's not an amazing actor, especially playing this character. But he's not that bad. Like, the voiceover just sounds so disinterested."
+    },
+    {
+      "name": "C",
+      "timestamp": "29:36",
+      "text": "This is covered in the. In the. What's it called? Dangerous Days. The documentary. Three and a half hours Making of Documentary, which I watched. And they had many different takes on the voiceover work. Ridley was involved for a bunch of them and they were going back and forth and it was really tough. And when they were out of time and it was all done and it was the last day Harrison was in England by himself with one guy working through it. And I think he was just kind of frustrated to get it done. He wasn't trying to sabotage it, but he was definitely frustrated. You could tell that. And it seems like through this entire production, that was sort of like a running theme. Harrison was frustrated with Sean."
+    },
+    {
+      "name": "D",
+      "timestamp": "30:12",
+      "text": "Harrison was frustrated with Ridley."
+    },
+    {
+      "name": "C",
+      "timestamp": "30:14",
+      "text": "Like, it was."
+    },
+    {
+      "name": "D",
+      "timestamp": "30:15",
+      "text": "It was a tough."
+    },
+    {
+      "name": "C",
+      "timestamp": "30:15",
+      "text": "A tough production for him."
+    },
+    {
+      "name": "B",
+      "timestamp": "30:16",
+      "text": "Well, Harrison Ford doesn't really like showing up to work very much. He doesn't really enjoy the. The doing the acting part of being an actor, it seems."
+    },
+    {
+      "name": "C",
+      "timestamp": "30:24",
+      "text": "Can I wear a T shirt? Can I just, like, why do I. Yeah, I'm just."
+    },
+    {
+      "name": "B",
+      "timestamp": "30:28",
+      "text": "I'm showing up in this. I'm gna. Fly my plane in and do my lines. I'm going to get out. I'm going to look good doing it. Cut the check."
+    },
+    {
+      "name": "A",
+      "timestamp": "30:36",
+      "text": "You know, he didn't have a lot to work with for the voiceover script either. You know, it's."
+    },
+    {
+      "name": "B",
+      "timestamp": "30:41",
+      "text": "Yeah, it's."
+    },
+    {
+      "name": "A",
+      "timestamp": "30:42",
+      "text": "It's not. It's not amazing work."
+    },
+    {
+      "name": "B",
+      "timestamp": "30:44",
+      "text": "Yeah, no, that's right. It's not great."
+    },
+    {
+      "name": "C",
+      "timestamp": "30:46",
+      "text": "All right, well, so. But we do have very quickly, you know, with. Once we open up with Los Angeles, you know, they are flexing big time. You have Douglas Trumbull, who did the special effects for 2001, doing the special effects here. The team that he assembled was incredible."
+    },
+    {
+      "name": "D",
+      "timestamp": "31:01",
+      "text": "And one of the things they called."
+    },
+    {
+      "name": "C",
+      "timestamp": "31:02",
+      "text": "Out is There are only 50 shots in this movie. There are only 50 special effects shots. There are not that many. But they compared to Star wars or others that had hundreds."
+    },
+    {
+      "name": "F",
+      "timestamp": "31:12",
+      "text": "There are."
+    },
+    {
+      "name": "C",
+      "timestamp": "31:12",
+      "text": "But it was so well done and so tightly integrated and so completely believable and visceral that it really affected everything."
+    },
+    {
+      "name": "B",
+      "timestamp": "31:21",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "31:22",
+      "text": "Are they also longer shots or does it just feel that way? Doesn't. You know, feels like we have long panning, you know, track shots of the. Of the miniatures at the beginning that set the stage slowly with fewer shots."
+    },
+    {
+      "name": "B",
+      "timestamp": "31:35",
+      "text": "I think there is. There's. I don't know if in the beginning, but there's definitely some stuff where they. In the final cut, one of the things they did was extend a little bit. Like a few scenes are just like. There's a little bit more padding in them. And so it does feel like it has a bit more space to breathe, I think."
+    },
+    {
+      "name": "C",
+      "timestamp": "31:50",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "31:50",
+      "text": "Not. Not talking about the most padded scene maybe of any movie ever, which I'm sure we'll get to."
+    },
+    {
+      "name": "C",
+      "timestamp": "31:56",
+      "text": "Oh, man, I can't wait. I have my padding that I. That I'm worried about, but."
+    },
+    {
+      "name": "B",
+      "timestamp": "32:00",
+      "text": "You mean shoulder pads? You mean Sean Young's shoulder pads?"
+    },
+    {
+      "name": "A",
+      "timestamp": "32:04",
+      "text": "That's accurate, too."
+    },
+    {
+      "name": "C",
+      "timestamp": "32:05",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "32:07",
+      "text": "One detail I love about the landscape."
+    },
+    {
+      "name": "C",
+      "timestamp": "32:10",
+      "text": "Is the fact that a million people live and work in Tyrell's pyramid."
+    },
+    {
+      "name": "B",
+      "timestamp": "32:16",
+      "text": "Oh, that's a good one. I didn't know that."
+    },
+    {
+      "name": "C",
+      "timestamp": "32:18",
+      "text": "Like, just the scope."
+    },
+    {
+      "name": "A",
+      "timestamp": "32:19",
+      "text": "Have you done the math on that? Does that make sense?"
+    },
+    {
+      "name": "C",
+      "timestamp": "32:21",
+      "text": "It's in the background. Somebody, whatever. I've read articles about it or whatever."
+    },
+    {
+      "name": "D",
+      "timestamp": "32:25",
+      "text": "So, like, is there going to be."
+    },
+    {
+      "name": "C",
+      "timestamp": "32:26",
+      "text": "A Salesforce tower, Cal, that will be, you know, basically the size of San Francisco?"
+    },
+    {
+      "name": "A",
+      "timestamp": "32:31",
+      "text": "Yeah. That's more people than live in San Francisco."
+    },
+    {
+      "name": "C",
+      "timestamp": "32:34",
+      "text": "Right."
+    },
+    {
+      "name": "A",
+      "timestamp": "32:34",
+      "text": "So, I mean, it seems unlikely that they would get planning permission for kind of level of housing in San Francisco in the next hundred years."
+    },
+    {
+      "name": "B",
+      "timestamp": "32:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "32:41",
+      "text": "So, okay, yeah, maybe in la."
+    },
+    {
+      "name": "B",
+      "timestamp": "32:44",
+      "text": "It's a lot of upzoning, for sure. I. Well, I mean, it's amazing that Ridley Scott was able to get like a million extras to fill that pyramid, too. So, like, good work on that. The second ad for that."
+    },
+    {
+      "name": "D",
+      "timestamp": "32:55",
+      "text": "So let's talk about Leon and the Voight comp test."
+    },
+    {
+      "name": "B",
+      "timestamp": "32:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "32:59",
+      "text": "Because it is a punch in the face."
+    },
+    {
+      "name": "C",
+      "timestamp": "33:00",
+      "text": "It's a punch in the face for the film. The way that it opens here, it's very strong."
+    },
+    {
+      "name": "E",
+      "timestamp": "33:05",
+      "text": "The tortoise lays on its back, its belly baking in the hot sun, beating its legs, trying to turn itself over, but it can't, not without your help. But you're not helping. What do you mean I'm not helping? I mean you're not helping. Why is that, Leon?"
+    },
+    {
+      "name": "C",
+      "timestamp": "33:19",
+      "text": "There's."
+    },
+    {
+      "name": "B",
+      "timestamp": "33:20",
+      "text": "There's two things I Noticed about watching this, this time, one is, I really like the way it's filmed. I like that it starts in this, like, long shot of what, Holden. That's the other guy's name."
+    },
+    {
+      "name": "C",
+      "timestamp": "33:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "33:33",
+      "text": "And, like, it slowly pushes in on them over the course of the scene. Like, as he's administering the test, it gets closer and closer on Holden and on Leon. And I really. I really like the way that they build the tension of the scene by doing that."
+    },
+    {
+      "name": "E",
+      "timestamp": "33:47",
+      "text": "Describe in single words only the good things that come into your mind about your mother. Mother, yeah. Let me tell you about my mother."
+    },
+    {
+      "name": "B",
+      "timestamp": "34:01",
+      "text": "Also. Just, like, everything just looks amazing. The Void comp machine just is immediately compelling. You know, having seen the movie a billion times, it's compelling. I think having. You know, if you've not seen the movie, you're just like, what the hell is going on with that machine? All the stuff that. The dialogue that Holden has to give, like the stuff with the tortoise. I mean, there's a reason why those samples are so iconic, is because it immediately draws you in. Even more than, like, the. Even more than, like, the. The scroll. It establishes, like, this future that you're. You just want to know more about. You just want to know, like, what the hell is. What's going on here? Like, even if you didn't have the scroll, you'd be drawn in by what's happening in that one scene."
+    },
+    {
+      "name": "A",
+      "timestamp": "34:44",
+      "text": "It is such a powerful scene that I think it kind of overrides the fact that it doesn't make any sense. Like, from a story point of view, it. It's nonsensical. Like, why would you not just make machines so that you could, you know, point a scanner at them and say, yep, replicant."
+    },
+    {
+      "name": "B",
+      "timestamp": "34:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "34:58",
+      "text": "Like, if this is a problem, you know, they've had to create a police department to deal with. You just do it more straightforwardly. But it makes for great cinema."
+    },
+    {
+      "name": "D",
+      "timestamp": "35:08",
+      "text": "Well, I mean, this speaks to the."
+    },
+    {
+      "name": "C",
+      "timestamp": "35:10",
+      "text": "Concept of, you know, the power that's being wielded by corporate America. Right. Like, the Tyrell's been able to lobby to avoid that kind of. Of regulation."
+    },
+    {
+      "name": "B",
+      "timestamp": "35:19",
+      "text": "Yeah, that's a good point."
+    },
+    {
+      "name": "C",
+      "timestamp": "35:20",
+      "text": "They could get away with it. So I think it's an indictment."
+    },
+    {
+      "name": "B",
+      "timestamp": "35:24",
+      "text": "It also goes to a point that you get just to tie it back to Dune to further push back on our haters. Like, it goes to this point, which is, like, if you build synthetic beings that are meant to imitate humans, if you do your job good enough, not only do they fool the humans, but they end up fooling themselves. And then you really Kind of have a problem. Face dancers, which is a theme in the. Yeah, it's a theme in the latter Dune books with the face dancers who become undetectable in some way because they truly believe that they are the people they're imitating."
+    },
+    {
+      "name": "A",
+      "timestamp": "35:53",
+      "text": "This is obviously the case for Rachel, but the, you know, the four escaped replicants very much know their replicants."
+    },
+    {
+      "name": "C",
+      "timestamp": "35:59",
+      "text": "They do, yeah, they do."
+    },
+    {
+      "name": "D",
+      "timestamp": "36:00",
+      "text": "But that's the thing."
+    },
+    {
+      "name": "C",
+      "timestamp": "36:01",
+      "text": "They're Nexus 6 and she's Nexus 7."
+    },
+    {
+      "name": "B",
+      "timestamp": "36:03",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "36:04",
+      "text": "Is the implication that, you know, the kind of off world slaves of the next model would not know that they're. They would just think they were human slaves? Is that better?"
+    },
+    {
+      "name": "B",
+      "timestamp": "36:13",
+      "text": "This is like, yeah. And so like, this is like what In Blade Runner 2049, they're like, okay, well we're never doing that again. Like the replicants that we build are going to explicitly know that they're replicants and like, we're just going to have like tight controls on them, which also doesn't work. But yeah, that's the, that's like sort of where the sequel picks up the story."
+    },
+    {
+      "name": "A",
+      "timestamp": "36:30",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "36:31",
+      "text": "So we cut from there, from the."
+    },
+    {
+      "name": "C",
+      "timestamp": "36:33",
+      "text": "Voight comptest and you know, Leon taking out Holden to Deckard sitting, waiting to get his noodles in the rain. And I think I said this when we talked about Blade Runner 2049, but for me, the notion that I always loved is the idea that some technicians like basically put Deckard in position. They'd given him his previous memories, they'd activated him, that he's an old Blade Runner and that he's coming back out of retirement. They basically set everything in motion and they're doing this big kabuki show. And so this is the start in our introduction to him as well as to Gav. So go ahead, Cal."
+    },
+    {
+      "name": "A",
+      "timestamp": "37:10",
+      "text": "This, I think one of the core reasons why that story doesn't make sense. You know, the premise that he's just been activated as a Replicant is, you know, when you think about the Roy Batty character or Priss, they are like the high end combat models, right?"
+    },
+    {
+      "name": "C",
+      "timestamp": "37:26",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "37:26",
+      "text": "Why on earth wouldn't they use a combat model for Deckard if he was a Replicant? Why wouldn't they make his job plausible and easy and instead he's just like some old dude getting beaten up by machines."
+    },
+    {
+      "name": "B",
+      "timestamp": "37:37",
+      "text": "We go for. We go for a rebuttal to H."
+    },
+    {
+      "name": "C",
+      "timestamp": "37:40",
+      "text": "No, I mean, like, look at how everything turned out. Everything worked out."
+    },
+    {
+      "name": "D",
+      "timestamp": "37:43",
+      "text": "Everything worked out largely right."
+    },
+    {
+      "name": "C",
+      "timestamp": "37:45",
+      "text": "I mean, there were a few. A few casualties."
+    },
+    {
+      "name": "B",
+      "timestamp": "37:47",
+      "text": "Oh my God."
+    },
+    {
+      "name": "A",
+      "timestamp": "37:48",
+      "text": "But that's not because of anything deca did like, no, of course. I think that's one of the challenges of the movie, of the plot of the movie. It's still a great movie. Is that if he wasn't in it, it would have still been the same outcome. Just nobody would have been there to hear Ragahar's like amazing lines at the end."
+    },
+    {
+      "name": "C",
+      "timestamp": "38:05",
+      "text": "I don't know about that. So let's keep going. I'm going to work through this as we get there."
+    },
+    {
+      "name": "B",
+      "timestamp": "38:12",
+      "text": "Yeah, work through the pain. Just shake it off. Shake that one off."
+    },
+    {
+      "name": "C",
+      "timestamp": "38:17",
+      "text": "All right, so how about this, you know. So they get to headquarters and we have M. Emmett Walsh as Bryant. I love him in this movie."
+    },
+    {
+      "name": "B",
+      "timestamp": "38:28",
+      "text": "Love seeing Emmett Walsh. He's great in. He's great in Raising Arizona. So here's Bill walking down nine miles. That's Bill Parker, you understand? He's got his sandwich in one hand and the head in the other. Yeah, yeah, exactly. Yeah. And he's. He's got a dope lamp on his table in this scene."
+    },
+    {
+      "name": "D",
+      "timestamp": "38:52",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "38:53",
+      "text": "Like weird western scenes on it. I noticed that. I was noticing a lot of like the set design this time around because it is so very like specific and weird. Like there's so many weird textures of like blocks and walls and the things on lamps and the things on desks. It's all this weird, blocky, organic, but like also like cold shit. Really, really good stuff. Love that stuff."
+    },
+    {
+      "name": "C",
+      "timestamp": "39:18",
+      "text": "Also, every bit of dialogue that he says is incredible."
+    },
+    {
+      "name": "B",
+      "timestamp": "39:23",
+      "text": "Yeah."
+    },
+    {
+      "name": "E",
+      "timestamp": "39:23",
+      "text": "I need you, Dex."
+    },
+    {
+      "name": "B",
+      "timestamp": "39:25",
+      "text": "This is a bad one, the worst yet."
+    },
+    {
+      "name": "E",
+      "timestamp": "39:28",
+      "text": "I need the old Blade Runner. I need your magic was quit when I come in here, Brian. I'm twice as quick now."
+    },
+    {
+      "name": "A",
+      "timestamp": "39:39",
+      "text": "Stop right where you are."
+    },
+    {
+      "name": "B",
+      "timestamp": "39:40",
+      "text": "You know the score, pal. You're not cop, you're little people. Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "39:45",
+      "text": "And then he begins describing the replicants. And so Leon, he could lift 400 pound atomic loads all day long."
+    },
+    {
+      "name": "B",
+      "timestamp": "39:52",
+      "text": "It's funny, like the stuff that they throw in like. Of like atomic loads and C beams glittering and you're just like, what the hell is any of that shit mean? Doesn't mean anything."
+    },
+    {
+      "name": "A",
+      "timestamp": "40:03",
+      "text": "But that's so good, right? Like it's. It's not meant supposed to mean anything. It's evocative."
+    },
+    {
+      "name": "C",
+      "timestamp": "40:07",
+      "text": "Zoro's on a trade for off world kick. Murder Squad."
+    },
+    {
+      "name": "B",
+      "timestamp": "40:11",
+      "text": "What is a kick? What is it? What is the kick modifying in Murder Squad? Does that mean they kill people by kicking? Is it like an honor death trail?"
+    },
+    {
+      "name": "C",
+      "timestamp": "40:20",
+      "text": "Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "40:21",
+      "text": "What does the kicking mean? Or does it mean like."
+    },
+    {
+      "name": "C",
+      "timestamp": "40:23",
+      "text": "I don't know."
+    },
+    {
+      "name": "A",
+      "timestamp": "40:24",
+      "text": "I think the kicking means something different to everyone. And that's what's beautiful about it."
+    },
+    {
+      "name": "C",
+      "timestamp": "40:28",
+      "text": "That is exactly."
+    },
+    {
+      "name": "B",
+      "timestamp": "40:29",
+      "text": "So."
+    },
+    {
+      "name": "C",
+      "timestamp": "40:30",
+      "text": "I just think. I think his performance there is great and sort of setting things up."
+    },
+    {
+      "name": "D",
+      "timestamp": "40:34",
+      "text": "Although I did notice in rewatching it."
+    },
+    {
+      "name": "C",
+      "timestamp": "40:37",
+      "text": "They give the exposition twice. The fact that there was. They got a shuttle, they killed everybody, and then they came and they landed. So that was kind of. That could have been tightened up just a little bit."
+    },
+    {
+      "name": "A",
+      "timestamp": "40:47",
+      "text": "Yeah, that bit's kind of important exposition, though, because without that, you kind of feel sorry for. More sorry for them than you do later, you know? Yeah, they don't really do anything bad on screen."
+    },
+    {
+      "name": "B",
+      "timestamp": "40:58",
+      "text": "Yeah, right. That's true."
+    },
+    {
+      "name": "C",
+      "timestamp": "41:00",
+      "text": "They kill a lot. They kill a lot of people. Not a lot. I guess they killed James Hong off screen, but, yeah, they're definitely killing. They're definitely killing folks."
+    },
+    {
+      "name": "A",
+      "timestamp": "41:08",
+      "text": "Yeah, you don't. You don't see a lot of that. Right, though."
+    },
+    {
+      "name": "C",
+      "timestamp": "41:10",
+      "text": "That's true."
+    },
+    {
+      "name": "B",
+      "timestamp": "41:10",
+      "text": "They killing people who deserve to die."
+    },
+    {
+      "name": "A",
+      "timestamp": "41:12",
+      "text": "Yeah, they're killing people who are trying to kill them."
+    },
+    {
+      "name": "B",
+      "timestamp": "41:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "41:15",
+      "text": "You know, what would you do in this situation?"
+    },
+    {
+      "name": "C",
+      "timestamp": "41:17",
+      "text": "Well, no, this is the point of the film."
+    },
+    {
+      "name": "D",
+      "timestamp": "41:20",
+      "text": "All right, so Deckard is told that."
+    },
+    {
+      "name": "C",
+      "timestamp": "41:22",
+      "text": "There's a Nexus 6 over at Tyrell and to go put the test on her. Put the machine on him. And so this is the introduction of Rachel."
+    },
+    {
+      "name": "D",
+      "timestamp": "41:36",
+      "text": "Do you like our owl?"
+    },
+    {
+      "name": "E",
+      "timestamp": "41:41",
+      "text": "It's artificial. Of course it is."
+    },
+    {
+      "name": "C",
+      "timestamp": "41:45",
+      "text": "I can't be impartial here. Somebody else talk about Rachel."
+    },
+    {
+      "name": "B",
+      "timestamp": "41:48",
+      "text": "Oh, I thought you were gonna play a sample or something. I was like, I'm definitely gonna. I don't know what. I don't know why I was, like, expecting to see Rachel. Well, first of all, I mean, like, look, just up there with. Up there with Jessica from the Lynch Dune. One of the most amazing hairstyles in the history of 80s cinema. I mean, just an unbelievable hairstyle."
+    },
+    {
+      "name": "C",
+      "timestamp": "42:08",
+      "text": "Two. Two of the best."
+    },
+    {
+      "name": "B",
+      "timestamp": "42:09",
+      "text": "She has to. Because when she lets it down. You like that? You like that, too?"
+    },
+    {
+      "name": "C",
+      "timestamp": "42:12",
+      "text": "Yeah, very much."
+    },
+    {
+      "name": "B",
+      "timestamp": "42:13",
+      "text": "Also, just great wardrobe throughout. Like, amazing coats, amazing shoulder pads, phenomenal makeup. She gives a tremendous performance doing both, like, steely. Like, she's, like, quickly established as, like, equal to Deckard. Like, can fend him off. Like, she's hard to catch. But then, you know, when she finds out the reality of her situation is, you know, is, like, shattered and vulnerable in a way that's, like, compelling. And she's just great. Just absolutely a phenomenal performance. A really one of the great, great things about the movie."
+    },
+    {
+      "name": "A",
+      "timestamp": "42:46",
+      "text": "Yeah, so that's definitely true. With the exception of the complete lack of any chemistry between her and Harrison Ford."
+    },
+    {
+      "name": "B",
+      "timestamp": "42:53",
+      "text": "Yeah. Well, what are you going to do? I Mean, you know, Harrison Ford didn't want to be there, so he doesn't have time. So they hated each other, Right? That was the thing. Like, they didn't. They didn't like each other."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:04",
+      "text": "I don't think it was that they hated each other."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:06",
+      "text": "I think it was the fact that she was very inexperienced and extremely young. And so this is similar to casting Sigourney in Alien."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:15",
+      "text": "A lot of the behind the scenes."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:17",
+      "text": "Talked about how he. Ridley was constantly tearing into Sigourney and."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:22",
+      "text": "Also having, like, Yafet Kodo in the."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:24",
+      "text": "Scene where he's yelling at her about, you know, she wants to do Dallas's plan. And he's like, I'm for killing that."
+    },
+    {
+      "name": "B",
+      "timestamp": "43:30",
+      "text": "Goddamn thing right now."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:31",
+      "text": "Okay, well, let's talk about killing it. We know it's using the air shafts. Will you listen to me, Parker?"
+    },
+    {
+      "name": "F",
+      "timestamp": "43:39",
+      "text": "Shut up."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:39",
+      "text": "Let's hear it. Let's hear it. That was Ridley pushing Yaphet to push Sigourney. And here you can see in the."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:48",
+      "text": "Behind the scenes, she is, like a."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:49",
+      "text": "Really fun and outgoing and energetic and very quirky human being."
+    },
+    {
+      "name": "B",
+      "timestamp": "43:54",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:54",
+      "text": "And her performance is so flat."
+    },
+    {
+      "name": "B",
+      "timestamp": "43:57",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:57",
+      "text": "And I love it."
+    },
+    {
+      "name": "C",
+      "timestamp": "43:58",
+      "text": "Like, I love."
+    },
+    {
+      "name": "D",
+      "timestamp": "43:59",
+      "text": "It's so restrained. It's so tight."
+    },
+    {
+      "name": "C",
+      "timestamp": "44:01",
+      "text": "And then she was also under a lot of pressure. So, I don't know, I just think she's amazing."
+    },
+    {
+      "name": "B",
+      "timestamp": "44:06",
+      "text": "You know, I mean. And also, it should just be said, as we talked about in the Batman episode, like, Sean Young had a pretty rough. Like, was. Was not treated well by Hollywood, like, during her career. So not great."
+    },
+    {
+      "name": "D",
+      "timestamp": "44:18",
+      "text": "All of the."
+    },
+    {
+      "name": "C",
+      "timestamp": "44:19",
+      "text": "The void conf. Test that they're doing. Jason, you talked about her kind of going toe to toe with him. The smoke, this thing for me, through this movie, the cigarette smoke and the lighting through the cigarette smoke."
+    },
+    {
+      "name": "D",
+      "timestamp": "44:30",
+      "text": "And they're back and forth through this Voight comp test."
+    },
+    {
+      "name": "E",
+      "timestamp": "44:33",
+      "text": "You're watching television. Suddenly you realize there's a wasp crawling on your arm."
+    },
+    {
+      "name": "D",
+      "timestamp": "44:38",
+      "text": "I'd kill it."
+    },
+    {
+      "name": "E",
+      "timestamp": "44:43",
+      "text": "You're reading a magazine. You come across a full page nude photo of a girl. Is this testing whether I'm a Replicant or a lesbian? Mr. Deckard, just answer the question, please."
+    },
+    {
+      "name": "C",
+      "timestamp": "44:52",
+      "text": "Feels very like a 40s noir scene."
+    },
+    {
+      "name": "B",
+      "timestamp": "44:55",
+      "text": "Yeah. I also love the way that he shoots, like, the eyeballs so that you get like the weird cat eye. Like, you know, you get the glow off the back of the retina a lot of the time. I love that. I don't know how they do that cinematically, but it looks dope as hell."
+    },
+    {
+      "name": "C",
+      "timestamp": "45:10",
+      "text": "To establish who's a Replicant and who's Not a replicant."
+    },
+    {
+      "name": "B",
+      "timestamp": "45:13",
+      "text": "Yes, but I mean, it just looks really cool."
+    },
+    {
+      "name": "C",
+      "timestamp": "45:15",
+      "text": "That's right. It looks cool when, when Deckard has that in his eyes. Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "45:20",
+      "text": "So in Leon's apartment we have the photos, we have the scale. This is a bit of so Cal, your take on this as a film."
+    },
+    {
+      "name": "C",
+      "timestamp": "45:26",
+      "text": "Noir and kind of investigating component."
+    },
+    {
+      "name": "A",
+      "timestamp": "45:30",
+      "text": "I think that each time I've watched that scene, it has somehow gotten longer as well. Because it's what, it's three. It's now like three hours in the middle of the movie. Was. Was. Is. Is this movie, is that scene to blame for the kind of csi, you know, enhance kind of trope? Is this where it came from to begin with?"
+    },
+    {
+      "name": "B",
+      "timestamp": "45:53",
+      "text": "I think so. I like. I think this is where enhance 126 by 174 comes from. Yeah, yeah, yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "45:59",
+      "text": "Love it. Can't get enough of it."
+    },
+    {
+      "name": "A",
+      "timestamp": "46:01",
+      "text": "And it's, it's such like a police procedural. Right. It grounds him as a, you know, it's like he's a cop. This is his job. It's the kind of thing he does. It takes a long time."
+    },
+    {
+      "name": "B",
+      "timestamp": "46:11",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "46:12",
+      "text": "And the technology is not, is good, but not super helpful. And that makes it feel more plausible as well."
+    },
+    {
+      "name": "D",
+      "timestamp": "46:18",
+      "text": "It's kind of funny."
+    },
+    {
+      "name": "C",
+      "timestamp": "46:19",
+      "text": "This is the retro part of it, right. To see the, you know, the hard copies and that kind of stuff is, is really funny. I do love as he's kind of sort. As he's getting stuff out of Leon's apartment. We cut to Leon outside and he goes and meets with Roy. And then as they're walking into Animal Chu, Hannibal Chu about making eyes. You have the, the people riding their bicycles by."
+    },
+    {
+      "name": "D",
+      "timestamp": "46:45",
+      "text": "Yeah, that scene is amazing."
+    },
+    {
+      "name": "B",
+      "timestamp": "46:48",
+      "text": "It also has the Rucker how line men, police men, which I really enjoy. I, I Rucker Hower is, is phenomenal in this. I mean, like, you know, just so, just so good. I think like, you know, part of it's just that he's, you know, Danish or whatever and so like that reads as vaguely robotic. He just does such a great job, like, and just. And then like, you know, Rugger Howard's portrayal of Roy Batty becomes an archetype in science fiction. Like the blonde haired, leather clad killer, like, you know, cyberpunk killer."
+    },
+    {
+      "name": "C",
+      "timestamp": "47:23",
+      "text": "He came up with that whole look. He showed up. He showed up with the haircut, died like the whole, the whole deal."
+    },
+    {
+      "name": "B",
+      "timestamp": "47:29",
+      "text": "What a. What a fucking. What a fucking legend. Rutger Hauer is. Man boss rip."
+    },
+    {
+      "name": "A",
+      "timestamp": "47:33",
+      "text": "This is, was the inspiration for Harrison showing up in like, you know, T shirt sweatpants and being like, this is my Character now."
+    },
+    {
+      "name": "B",
+      "timestamp": "47:44",
+      "text": "Man. Just showing up in Athleisure."
+    },
+    {
+      "name": "C",
+      "timestamp": "47:48",
+      "text": "We cut from there to Rachel hiding in Deckard's. In Deckard's elevator. And to me, I want to hit. I talked about this last week. The sound design, the sound effects, voice print identification. Your floor number, please."
+    },
+    {
+      "name": "E",
+      "timestamp": "48:04",
+      "text": "Decker, 97."
+    },
+    {
+      "name": "D",
+      "timestamp": "48:05",
+      "text": "97."
+    },
+    {
+      "name": "C",
+      "timestamp": "48:06",
+      "text": "Thank you. The sound of the elevator, the sound of his. Of Deckard's apartment. We'll have a link in the show notes to 12 hours of ambient. Decker, apartment. It's freaking amazing."
+    },
+    {
+      "name": "B",
+      "timestamp": "48:23",
+      "text": "We're just gonna play it now, so after you hear those 12 hours, you will. We'll come back to the pot. So just sit tight for the next 12 hours, and then we'll be back with the pod right after that's over. Thank you."
+    },
+    {
+      "name": "C",
+      "timestamp": "48:36",
+      "text": "Yes."
+    },
+    {
+      "name": "D",
+      "timestamp": "48:37",
+      "text": "So why is he so nervous? Why, like, why is he so scared?"
+    },
+    {
+      "name": "B",
+      "timestamp": "48:40",
+      "text": "Because she's a killer robot. Like, she's a. She's a deadly robot. Like, he doesn't want to be. He doesn't want to have to kill her. And. But, like, she's, you know, he. She's what he's trained to kill because they. They're part of kick murder squads and shit. He might. She might start kicking at any minute."
+    },
+    {
+      "name": "A",
+      "timestamp": "48:56",
+      "text": "I was under the impression she wasn't the kick Murder squad model, but she was. You know, she's the next generation. But she isn't necessarily the murder version."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:04",
+      "text": "You don't know. You don't know when she's gonna. Like, when the kicking is gonna start, Cal. Like, I mean, like, that's fair."
+    },
+    {
+      "name": "A",
+      "timestamp": "49:10",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "49:11",
+      "text": "It might be a different kind of kick, though, right? It could be a mental kick."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:14",
+      "text": "Yeah. Or like a heart kick."
+    },
+    {
+      "name": "C",
+      "timestamp": "49:15",
+      "text": "Exactly."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:16",
+      "text": "Like a kick right to the heart."
+    },
+    {
+      "name": "C",
+      "timestamp": "49:18",
+      "text": "Exactly."
+    },
+    {
+      "name": "D",
+      "timestamp": "49:19",
+      "text": "So. So he tells her, you know, he's read her file."
+    },
+    {
+      "name": "C",
+      "timestamp": "49:22",
+      "text": "He knows what her secret memories are. He tells her that, she starts crying and his whole delivery of like, okay, bad joke. You're not a Replicant. Go home."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:31",
+      "text": "Yeah, yeah, yeah. No, he's like, no, I'm."
+    },
+    {
+      "name": "F",
+      "timestamp": "49:34",
+      "text": "That."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:34",
+      "text": "That, to Cal's point, is where, like, Harrison Ford has to do a bit of acting and cannot be done. It can't really. It doesn't really work."
+    },
+    {
+      "name": "C",
+      "timestamp": "49:43",
+      "text": "It's."
+    },
+    {
+      "name": "B",
+      "timestamp": "49:43",
+      "text": "We've talked about this before when we talked about Blade Runner 2049. I just sort of have an inability to see Harrison Ford as anything but a great actor. I recognize that that is not actually true. But, like, in this. In this moment, this is where the. Even for me, like, sort of the scales fall away because he's just like, okay, bad Mo. You know, bad joke. Like, he's got to. He's got to do some business."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:04",
+      "text": "It's not good."
+    },
+    {
+      "name": "B",
+      "timestamp": "50:05",
+      "text": "That being said. That being said, the moment where. Like the moment where when he's drinking again, as soon as he has a whiskey glass in his hand."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:12",
+      "text": "You're back."
+    },
+    {
+      "name": "B",
+      "timestamp": "50:13",
+      "text": "I'm back."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:13",
+      "text": "You're back."
+    },
+    {
+      "name": "B",
+      "timestamp": "50:13",
+      "text": "I'm like, all right, that's my guy. Whatever he wants to do from here on out, take me with you."
+    },
+    {
+      "name": "A",
+      "timestamp": "50:18",
+      "text": "Think that scene was like, shot later in retakes and it's a second unit scene and she's not really there or like. Yeah, I don't know."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:27",
+      "text": "I don't."
+    },
+    {
+      "name": "D",
+      "timestamp": "50:28",
+      "text": "I don't think so."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:28",
+      "text": "I mean, that. That set was. They said they spent $150,000 just on that one set of his apartment."
+    },
+    {
+      "name": "B",
+      "timestamp": "50:35",
+      "text": "It doesn't seem that expensive now."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:36",
+      "text": "I mean, then it was."
+    },
+    {
+      "name": "B",
+      "timestamp": "50:38",
+      "text": "I just want to call out. I just want to call in that. In that set, the blocks of his apartment, like, the walls, like, are these weird shapes, like these weird, like, tiles, tile blocks, like these."
+    },
+    {
+      "name": "D",
+      "timestamp": "50:50",
+      "text": "Based on a Frank Lloyd."
+    },
+    {
+      "name": "C",
+      "timestamp": "50:52",
+      "text": "It's based on a Frank Lloyd Wright house. And I'll find my. My homie Nick Fisher wrote an article about it in an architectural magazine. So I'll. I'll find it and link it."
+    },
+    {
+      "name": "B",
+      "timestamp": "51:04",
+      "text": "Fascinated by those blocks."
+    },
+    {
+      "name": "C",
+      "timestamp": "51:05",
+      "text": "Incredible."
+    },
+    {
+      "name": "A",
+      "timestamp": "51:06",
+      "text": "They look like, you know, like sound diffusing blocks or something."
+    },
+    {
+      "name": "B",
+      "timestamp": "51:10",
+      "text": "Yeah. Acoustic tiles."
+    },
+    {
+      "name": "A",
+      "timestamp": "51:12",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "51:14",
+      "text": "It was Sid."
+    },
+    {
+      "name": "C",
+      "timestamp": "51:15",
+      "text": "So it was Sid Mead that designed the overall of his house. And so Sid, me, we should say, is. Is a futurist. And specifically he's a futurist who is a product designer. And his concept is design or his expertise is designing products that will be invented in the future. He's hired by corporations to help them to design that. And he was originally hired to design the cars, like the spinner car, which he did, and trash cars and JF Sebastian's truck."
+    },
+    {
+      "name": "D",
+      "timestamp": "51:42",
+      "text": "But as he was doing it, he would draw the car on the street."
+    },
+    {
+      "name": "C",
+      "timestamp": "51:46",
+      "text": "And in the city and they started getting these drawings and they were like, more do. More do house, do the apartment, do the buildings. And. And so they ended up pulling all of that stuff in, which I think is fantastic."
+    },
+    {
+      "name": "B",
+      "timestamp": "51:59",
+      "text": "Amazing. Love it."
+    },
+    {
+      "name": "D",
+      "timestamp": "52:00",
+      "text": "Can I just ask. This is a tiny detail, but as."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:03",
+      "text": "She leaves and he's drinking and he's. The score here is amazing. Vangelis is like this. The sad Rachel theme that's playing."
+    },
+    {
+      "name": "D",
+      "timestamp": "52:22",
+      "text": "And he looks at the photo of Rachel and her mother and it comes."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:24",
+      "text": "To life for a second."
+    },
+    {
+      "name": "B",
+      "timestamp": "52:26",
+      "text": "Yeah, I noticed that too. This time. I hadn't noticed that before. That must be a. That must be A final cut thing? No, he's like, all right, the photo is gonna be. No, it's always been in there."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:34",
+      "text": "I think it's always been there. I've always. At least for a long time. I've noticed that. But weird."
+    },
+    {
+      "name": "D",
+      "timestamp": "52:40",
+      "text": "All right, all right."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:41",
+      "text": "So how about pris and J.F."
+    },
+    {
+      "name": "B",
+      "timestamp": "52:44",
+      "text": "Well, this is. Now we're at the Bradbury building. So we should. We should talk about that."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:49",
+      "text": "Please. Have you been there?"
+    },
+    {
+      "name": "B",
+      "timestamp": "52:49",
+      "text": "I haven't been there. I had a friend who was just there, was shooting something there. But I want to go. We should take a field trip."
+    },
+    {
+      "name": "C",
+      "timestamp": "52:57",
+      "text": "I've been there. I went there with, you know. Blade Runner architecture specialist Nick Fisher, who I just referenced. Took us over to the Bradbury a couple of years ago. And it is gorgeous. Like, the building is amazing. I mean, it's pristine. It's not trashed the way that it looks the whole time. But that neighborhood also that tunnel that they're driving through where he's listening to Leon shooting Holden, that tunnel is also right there."
+    },
+    {
+      "name": "B",
+      "timestamp": "53:21",
+      "text": "Okay, interesting. Yeah. So it's like a very old building for L. A. Like it's 1890s or something like that. Like this. Which is just wild to think about a Los Angeles building from before the turn of the, you know, the. The 20th century."
+    },
+    {
+      "name": "A",
+      "timestamp": "53:35",
+      "text": "Was the building in disrepair when they shot there or did they. Disrepair?"
+    },
+    {
+      "name": "B",
+      "timestamp": "53:38",
+      "text": "No, they fucked it up."
+    },
+    {
+      "name": "D",
+      "timestamp": "53:40",
+      "text": "They got in every night at 6."
+    },
+    {
+      "name": "C",
+      "timestamp": "53:41",
+      "text": "O' clock and they had from 6 o' clock till 6am and they finally discovered that they could use bits of cork. They could basically tear up cork and throw it. And it looked like dirt and mu and debris and trash. But then they had to clean it out every morning between 5 and 6am and then get the hell out."
+    },
+    {
+      "name": "B",
+      "timestamp": "53:56",
+      "text": "Seems stressful."
+    },
+    {
+      "name": "A",
+      "timestamp": "53:57",
+      "text": "Looks amazing."
+    },
+    {
+      "name": "B",
+      "timestamp": "53:58",
+      "text": "Looks amazing."
+    },
+    {
+      "name": "C",
+      "timestamp": "53:58",
+      "text": "Yeah, amazing."
+    },
+    {
+      "name": "D",
+      "timestamp": "53:59",
+      "text": "So how about Pris? So she hides herself, you know, he."
+    },
+    {
+      "name": "C",
+      "timestamp": "54:02",
+      "text": "Shows up and she, you know, goes to run away. She actually that was an accidental. I always was thrown off by her smashing into his truck and putting her arm through the glass. That was not planned. She got cut up. She has scars to this day."
+    },
+    {
+      "name": "B",
+      "timestamp": "54:15",
+      "text": "Really?"
+    },
+    {
+      "name": "C",
+      "timestamp": "54:16",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "54:17",
+      "text": "That's wild. I didn't know that."
+    },
+    {
+      "name": "D",
+      "timestamp": "54:19",
+      "text": "She's terrifying every time they show the close up and like JF Isn't looking."
+    },
+    {
+      "name": "C",
+      "timestamp": "54:23",
+      "text": "At her and she's like, I'll murder you."
+    },
+    {
+      "name": "B",
+      "timestamp": "54:25",
+      "text": "Yeah. No, she's terrifying. And she gets scarier as it goes on because she gets. She just wears crazier and crazier makeup as the. As the movie goes on. And this wasn't like Daryl Hannah's first movie, but it's like, essentially her first movie. Like, she really hadn't done anything like this big before. Just great. She's terrifying."
+    },
+    {
+      "name": "D",
+      "timestamp": "54:44",
+      "text": "I also love. So JF is alone in this building."
+    },
+    {
+      "name": "C",
+      "timestamp": "54:48",
+      "text": "And they talk about no housing shortage, plenty of room for everybody."
+    },
+    {
+      "name": "D",
+      "timestamp": "54:52",
+      "text": "And this is an effortless exposition."
+    },
+    {
+      "name": "C",
+      "timestamp": "54:55",
+      "text": "And there's a little bit more that they tie back later. But basically the concept that everybody who's healthy can leave Earth if they want to. People are being seduced and pushed out, away from Earth. And that's left, like, the dregs of humanity to kind of hold things down on Earth."
+    },
+    {
+      "name": "A",
+      "timestamp": "55:12",
+      "text": "Seems kind of weird, though, that it's the dregs of humanity who are doing the kind of engineering for Tyrell Corporation. Like, why doesn't he live in the pyramid?"
+    },
+    {
+      "name": "B",
+      "timestamp": "55:21",
+      "text": "It's a good point. Maybe he just, like, you know, he doesn't want to. You know, he doesn't have enough room in the pyramid for all his little. His little friends."
+    },
+    {
+      "name": "A",
+      "timestamp": "55:30",
+      "text": "You know, he doesn't want to have a million neighbors."
+    },
+    {
+      "name": "B",
+      "timestamp": "55:32",
+      "text": "Yeah, exactly. The pyramid thing holding a million people sort of reminds me of, like, when they show those illustrations of, like, you could fit. You know, to solve global warming, we just need to shove everyone into a cube that can fit inside Central park or whatever."
+    },
+    {
+      "name": "C",
+      "timestamp": "55:48",
+      "text": "Right."
+    },
+    {
+      "name": "B",
+      "timestamp": "55:48",
+      "text": "I don't know if that's. I don't know if that's true, but Seems like a good idea."
+    },
+    {
+      "name": "C",
+      "timestamp": "55:52",
+      "text": "That was all the biomass of humanity could fit into a ball inside of Central Park."
+    },
+    {
+      "name": "B",
+      "timestamp": "55:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "55:58",
+      "text": "But you did have to blend everybody up. That's meatball, which is a problem."
+    },
+    {
+      "name": "C",
+      "timestamp": "56:03",
+      "text": "Although that does solve global warming. All right, so we're on the unicorn dream, so let's just get into it."
+    },
+    {
+      "name": "B",
+      "timestamp": "56:09",
+      "text": "Okay?"
+    },
+    {
+      "name": "C",
+      "timestamp": "56:10",
+      "text": "So, Cal, clearly the concept in the theatrical version, Gaff is making origami the whole time. He leaves a unicorn at the end of the film, you know, she won't live, but who does? And so Ridley thought."
+    },
+    {
+      "name": "B",
+      "timestamp": "56:26",
+      "text": "Justify yourself, Cal. Justify yourself."
+    },
+    {
+      "name": "D",
+      "timestamp": "56:29",
+      "text": "Ridley thought it was obvious that Deckard was a Replicant."
+    },
+    {
+      "name": "C",
+      "timestamp": "56:32",
+      "text": "But when it wasn't obvious to folks, he had already shot the unicorn dream sequence. And apparently, because he was doing that legend already, he, like, had horses."
+    },
+    {
+      "name": "B",
+      "timestamp": "56:43",
+      "text": "A unicorn. He had a unicorn."
+    },
+    {
+      "name": "C",
+      "timestamp": "56:45",
+      "text": "He had a unicorn. He's like, so let's get this shit in here."
+    },
+    {
+      "name": "A",
+      "timestamp": "56:48",
+      "text": "No, that's a. I mean, that's just, like, offcuts from that movie that he put in in the later edit. That's like."
+    },
+    {
+      "name": "B",
+      "timestamp": "56:53",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "56:54",
+      "text": "You know the original screenplay, right. The Hampton Fancher one doesn't have that part in. It's all stuff Ridley added after the movie was made. Yeah, yeah, right. But not even during the original production. Yeah, it's. It just feels shoehorned in there. Also, the fact that they didn't reshoot something specifically for that movie it's just like, huh, unicorns."
+    },
+    {
+      "name": "B",
+      "timestamp": "57:15",
+      "text": "I do think. I do think we have to admit that the unicorn just feels a little spliced in. Like, you're just, like. You're watching this movie. It's got a certain vibe. And then all of a sudden there's a unicorn in a forest. You're just like, okay, well, that's a. That's a different. There's literally no other frames of the movie that look like that."
+    },
+    {
+      "name": "C",
+      "timestamp": "57:32",
+      "text": "Like."
+    },
+    {
+      "name": "B",
+      "timestamp": "57:32",
+      "text": "Like zero."
+    },
+    {
+      "name": "A",
+      "timestamp": "57:33",
+      "text": "Yeah. It's, like, shot on different film stock. It looks completely different."
+    },
+    {
+      "name": "C",
+      "timestamp": "57:37",
+      "text": "Hold, wait, wait, hold on, hold on. There's a unicorn origami at the end of the movie."
+    },
+    {
+      "name": "A",
+      "timestamp": "57:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "57:42",
+      "text": "The reason for that is because there was the unicorn scene. So it's true that it was developed later in order to have this thing all be coherent. But it certainly was Ridley's intention even at the theatrical. He wanted to have that unicorn in there. So, I mean, to me, it's beyond."
+    },
+    {
+      "name": "D",
+      "timestamp": "57:59",
+      "text": "Disputable that the intention of the author."
+    },
+    {
+      "name": "C",
+      "timestamp": "58:02",
+      "text": "Did it is that Deckard is a replicant."
+    },
+    {
+      "name": "D",
+      "timestamp": "58:04",
+      "text": "I don't think you can watch this."
+    },
+    {
+      "name": "C",
+      "timestamp": "58:05",
+      "text": "Film and say, he's not a replicant."
+    },
+    {
+      "name": "B",
+      "timestamp": "58:07",
+      "text": "Right."
+    },
+    {
+      "name": "C",
+      "timestamp": "58:07",
+      "text": "You can say you don't like it."
+    },
+    {
+      "name": "A",
+      "timestamp": "58:09",
+      "text": "Well, I've watched it. I say he's not a replicant. If you take out the. You know, if you watch the original theatrical cut and has that, you know, is. Is Ridley on. On tape saying that prior to the release of the film, you know, that that was his intention because it seemed like a belief that he developed later."
+    },
+    {
+      "name": "B",
+      "timestamp": "58:25",
+      "text": "Oh, that's."
+    },
+    {
+      "name": "A",
+      "timestamp": "58:25",
+      "text": "And there was like, yeah, yeah, I'm going to change the movie to make it true."
+    },
+    {
+      "name": "B",
+      "timestamp": "58:29",
+      "text": "I like that now. I like the fact that, like, it was a different author. It was two Ridley's. There's Ridley prior and Ridley after now. And they had different author. The other thing, though, the other thing I'll say is that, like, first of all, the idea of Ridley as the author of this movie is a little thin. Just because, like, there's so many different. There's so many different elements of, like, what make this movie a classic. Like, the production design of this movie is as much like the star of this movie as anything else."
+    },
+    {
+      "name": "A",
+      "timestamp": "58:55",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "58:55",
+      "text": "You know, Sid Mead is as much like the author of this movie. Like, those are the. Like the question of whether or not replica. Like, Deckard is a replicant. And like, sort of the philosophical questions that. That Brings up aren't the most durable parts of this movie. Like, you know, like, they're. They're fun for nerds to argue about, but, like, it doesn't really matter in terms of, like, what makes this movie a classic. And so it kind of gets into, like, the same territory of, like, is it a dream or is it not a dream? And, you know, the movie doesn't. The movies doesn't get suit. Like, it maybe leans in one direction or another, but it intentionally leaves that opaque."
+    },
+    {
+      "name": "A",
+      "timestamp": "59:35",
+      "text": "Yeah, and I think that was the thing, right? In the original theatrical release, it was."
+    },
+    {
+      "name": "D",
+      "timestamp": "59:39",
+      "text": "Wait, you think it's. So you think it's opaque?"
+    },
+    {
+      "name": "A",
+      "timestamp": "59:41",
+      "text": "It was supposed to be ambiguous and not confirmed. And then after its release, Ridley was like, hey, you know what? No, definitely a replica. That doesn't make the movie better, it made it worse."
+    },
+    {
+      "name": "B",
+      "timestamp": "59:51",
+      "text": "Yeah, I think it's opaque. I think also, I mean, like, I think also the fact that we're. I mean, first of all, we're arguing about on a podcast in 2021. Second, like, there's 17 different cuts of the movie which all sort of advance more. Less strong versions of this. I think it's also a more interesting movie if the question is ambiguous than if they explicitly, at the end, put up a title card that's like, you know, and Deckard, comma, the replicant, comma, went off with his. You know, went off with Rachel, comma, the replicant, comma, to have their replicant babies."
+    },
+    {
+      "name": "A",
+      "timestamp": "60:25",
+      "text": "It's like the end of Brazil. Right? It's like, it's."
+    },
+    {
+      "name": "B",
+      "timestamp": "60:27",
+      "text": "Right."
+    },
+    {
+      "name": "A",
+      "timestamp": "60:28",
+      "text": "It was meant to be ambiguous. It's good when it's ambiguous and then it, like, you know, it doesn't. It certainly doesn't ruin the movie, but it's less of an impact when it's like, surprise. No, he definitely was all right."
+    },
+    {
+      "name": "C",
+      "timestamp": "60:40",
+      "text": "So I hear all of that. I want to say, first of all, for the record, the notion that Denny, when he did 2049, left it ambiguous, like, did not explicitly say that he was, I thought was a cool choice and it was respectful to the original theatrical."
+    },
+    {
+      "name": "B",
+      "timestamp": "60:56",
+      "text": "Right, right, right."
+    },
+    {
+      "name": "C",
+      "timestamp": "60:57",
+      "text": "And I think that's fine. At the end of the day, I love the idea. Like, I'm so tired of the concept of, like, what is, you know, you know, a real human versus a machine and, you know, what has the real values and whatever, what's a real life that deserves respect? The whole concept of this film is he's a replicant. Batty's a replicant, Rachel's a replicant. They're all alive and they all have feelings. And it's all about being caught in a machine that is leaving them living in fear. And it doesn't matter whether or not you were born a human or whether you were created as a biomechanoid. Feelings matter, and we should have more empathy for each other."
+    },
+    {
+      "name": "B",
+      "timestamp": "61:40",
+      "text": "Do you think we should change the name of this pod to Biomechanoid Pod? I think we talk about biomechanoids more than we talk about Dune on a weekly basis. And, like, it might open up. It might open up. We could talk about. Could we talk about the hit 90s TV sitcom Small Wonder then if we expanded to biomechanoids?"
+    },
+    {
+      "name": "C",
+      "timestamp": "62:01",
+      "text": "I don't think I."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:01",
+      "text": "You're not familiar with Small Wonder?"
+    },
+    {
+      "name": "A",
+      "timestamp": "62:03",
+      "text": "No."
+    },
+    {
+      "name": "F",
+      "timestamp": "62:03",
+      "text": "Wow."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:04",
+      "text": "I've heard of it, but what is it?"
+    },
+    {
+      "name": "B",
+      "timestamp": "62:05",
+      "text": "Well, it's a charming family sitcom in which father makes a robot daughter to. To play with his. To play with his son."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:14",
+      "text": "Dale says he's with you all the way, Jason."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:16",
+      "text": "Yeah, she's a small wonder."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:20",
+      "text": "All right."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:21",
+      "text": "We'll take it under advisement."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:23",
+      "text": "All right, so she's a small wonder. A child."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:29",
+      "text": "Like, we'll leave this. We'll."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:32",
+      "text": "We'll."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:32",
+      "text": "We'll leave this debate."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:33",
+      "text": "Maybe circle through the final part, but."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:35",
+      "text": "I think we'll circle back."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:36",
+      "text": "I think we hit it. I think we hit it pretty well."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:38",
+      "text": "So now we have a lot of detecting happening."
+    },
+    {
+      "name": "C",
+      "timestamp": "62:41",
+      "text": "So the scale leads to the geneticist. I love the idea of a geneticist woman in a street cart with an electron microscope. But she points him to the snake maker, Abdul bin Hassan."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:53",
+      "text": "He goes there. Him walking down the street and like ostriches."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:57",
+      "text": "The ostriches are great."
+    },
+    {
+      "name": "D",
+      "timestamp": "62:58",
+      "text": "Coming down."
+    },
+    {
+      "name": "B",
+      "timestamp": "62:58",
+      "text": "I would love to be just the ostrich handler in Blade Runner. I want to know who that guy is, what he's. If he's. If that was the highlight of his career."
+    },
+    {
+      "name": "C",
+      "timestamp": "63:05",
+      "text": "Fantastic. And so how about Taffy Lewis's club?"
+    },
+    {
+      "name": "B",
+      "timestamp": "63:10",
+      "text": "Taffy Lewis. I love the guy who plays Taffy Lewis. I love the drink that he gets that has, like, worms in it. I love the PA announcer who says, watch as she extracts the pleasures from the serpent. That's great. It's a great line read. Want to know whoever did that?"
+    },
+    {
+      "name": "C",
+      "timestamp": "63:26",
+      "text": "Wait, wait, wait, wait, wait. Snake Thatcher take the pleasures from the serpent. Who wants corrupted men?"
+    },
+    {
+      "name": "B",
+      "timestamp": "63:36",
+      "text": "Oh, is that the rest of the line?"
+    },
+    {
+      "name": "C",
+      "timestamp": "63:38",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "63:38",
+      "text": "Wow. This is where you get the real. The real biblical starting to come into the movie. Totally back to Harrison Ford, though, as a terrible actor. Yes."
+    },
+    {
+      "name": "D",
+      "timestamp": "63:48",
+      "text": "Undercover."
+    },
+    {
+      "name": "F",
+      "timestamp": "63:49",
+      "text": "This."
+    },
+    {
+      "name": "B",
+      "timestamp": "63:49",
+      "text": "This doesn't. This doesn't hold up, like. So he goes. He goes. He goes to talk to Joanna Cassidy. And he's got this idea that he's going to pose as a theater union rep. He's going to do this voice and it lasts for all about two lines. And then he just, like, can't keep it together and keep doing it. Like, well, what."
+    },
+    {
+      "name": "A",
+      "timestamp": "64:11",
+      "text": "Why does he do a voice at all?"
+    },
+    {
+      "name": "B",
+      "timestamp": "64:12",
+      "text": "Why does he do a voice at."
+    },
+    {
+      "name": "A",
+      "timestamp": "64:14",
+      "text": "All if he is either an actual detective who has a long career or he's like a super advanced robot detective who should be good at this, and instead he does a terrible voice and has no idea what he's gonna say next? It's hilarious."
+    },
+    {
+      "name": "B",
+      "timestamp": "64:29",
+      "text": "But, yeah, it's a little wild. It's a little wild."
+    },
+    {
+      "name": "C",
+      "timestamp": "64:33",
+      "text": "It is. And I think it's almost a moment of comic relief."
+    },
+    {
+      "name": "D",
+      "timestamp": "64:36",
+      "text": "But I do love when he says, well, you."
+    },
+    {
+      "name": "B",
+      "timestamp": "64:38",
+      "text": "You'd be surprised when a guy go."
+    },
+    {
+      "name": "C",
+      "timestamp": "64:40",
+      "text": "Through to get a glimpse of a beautiful. No, I wouldn't."
+    },
+    {
+      "name": "B",
+      "timestamp": "64:48",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "64:48",
+      "text": "To me says a lot about her character. Right. Like, she's specifically kick Murder Squad, but you could imagine she's also been subjected to being a pleasure model or whatever by whoever military people she was probably working for. I thought that was really, really powerful character moment. I love that."
+    },
+    {
+      "name": "B",
+      "timestamp": "65:07",
+      "text": "It's. It's a. It's like the only. Like Harrison Ford's terrible acting is exposed in all the times in which he actually has to act like someone. And like, either acting like he's trying to assuage Rachel's concerns or acting like he is. Like, he just doesn't have that gear. It's like clear that, like, he doesn't actually know running."
+    },
+    {
+      "name": "C",
+      "timestamp": "65:26",
+      "text": "Running, like jumping."
+    },
+    {
+      "name": "B",
+      "timestamp": "65:27",
+      "text": "Yeah, yeah, yeah. He's just. He's way better when he's just sort of moodily drinking. But I love it when he's doing that, so it all works for me."
+    },
+    {
+      "name": "C",
+      "timestamp": "65:35",
+      "text": "Still, the violence that she does on him is amazing."
+    },
+    {
+      "name": "B",
+      "timestamp": "65:39",
+      "text": "Yeah, she. He almost. She almost dies by his skinny little tie. I mean, like, how sad for him. Like, which again, like, sort of brings to the question is like, couldn't she kill him faster than like, sort of, you know, slowly choke him to death with a skinny tie?"
+    },
+    {
+      "name": "C",
+      "timestamp": "65:53",
+      "text": "He's a replicant, so he's more resilient."
+    },
+    {
+      "name": "B",
+      "timestamp": "65:56",
+      "text": "His. His throat is. His throat is reinforced. Yeah, maybe. But like, so this is one of the things that is added in the final cut is Zora's death is expanded and made more bloody in this. In this version, which I definitely noticed."
+    },
+    {
+      "name": "C",
+      "timestamp": "66:10",
+      "text": "Watching it this time, they also shot Joanna. They sh. They shot her head and digitally put her head onto the body. Right. Because the wig was so Bad."
+    },
+    {
+      "name": "B",
+      "timestamp": "66:21",
+      "text": "It was really bad in the original. And all the shots on the street and like that. Don't walk across now, cross now. Like all that is amazing. Like that's that all. All of that stuff is what makes this movie phenomenal. For sure. Yeah. But the scene of her running through the plate glass with the mannequins is the music. Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "66:43",
+      "text": "The snow."
+    },
+    {
+      "name": "B",
+      "timestamp": "66:44",
+      "text": "Yeah. The fake snow."
+    },
+    {
+      "name": "C",
+      "timestamp": "66:45",
+      "text": "And the heartbeat. Love it. One more kiss, dear. So we have this classic 40s song that plays while Deckard meets with Bryant."
+    },
+    {
+      "name": "B",
+      "timestamp": "67:00",
+      "text": "One More kiss."
+    },
+    {
+      "name": "C",
+      "timestamp": "67:07",
+      "text": "Which was composed by Vangelis. I love this song. It's so great. And then Bryant just looks at him, he says, gaff, you could learn from this guy. He's a goddamn one man slaughterhouse. And tells Decker that now he also has to kill Rachel."
+    },
+    {
+      "name": "B",
+      "timestamp": "67:20",
+      "text": "Right? That she's. He's back to four. Yeah. Cuz there's. Yeah, she went on it. Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "67:25",
+      "text": "So Leon gets him and begins beating the out of him. And to me, this is an important."
+    },
+    {
+      "name": "C",
+      "timestamp": "67:30",
+      "text": "Moment where he says it's painful to live in fear, isn't it? And time to die. So that is like this is to me the empathy building of these replicants who even though you fear and hate them, you can't help but feel for them."
+    },
+    {
+      "name": "B",
+      "timestamp": "67:44",
+      "text": "There's a weird cut that still exists in the final cut where he goes to pull his gun out on Leon and Leon slaps it away and then punches the car and some steam comes out and there's like a weird moment where the gun gets slapped away and like three frames of the shot are missing."
+    },
+    {
+      "name": "C",
+      "timestamp": "68:00",
+      "text": "Huh?"
+    },
+    {
+      "name": "B",
+      "timestamp": "68:01",
+      "text": "Like where it's. And it's like it just annoys the hell out of me. But love, love the love, Love him getting just the shit kicked out of him by Leon before he gets saved by, by Rachel."
+    },
+    {
+      "name": "C",
+      "timestamp": "68:12",
+      "text": "He is great at getting beat up."
+    },
+    {
+      "name": "B",
+      "timestamp": "68:14",
+      "text": "Yeah. That's another thing Harrison Ford's good at. He's really good at taking a punch. Like he's a guy you don't mind see getting the shit kicked out of him."
+    },
+    {
+      "name": "A",
+      "timestamp": "68:22",
+      "text": "He always looks exactly the same way when he's being punched. He does like the rubber lips thing where he goes. Yeah, that's a classic Harrison Post punch move."
+    },
+    {
+      "name": "B",
+      "timestamp": "68:31",
+      "text": "Yeah. He always looks like vaguely surprised, but like it's. It's not quite believable cuz he gets punched so much. Like. No, dude. Yeah, you're getting punched again."
+    },
+    {
+      "name": "C",
+      "timestamp": "68:39",
+      "text": "Again."
+    },
+    {
+      "name": "B",
+      "timestamp": "68:40",
+      "text": "Yeah, for sure."
+    },
+    {
+      "name": "D",
+      "timestamp": "68:42",
+      "text": "All right, well, we got to Slim's favorite scene in the film, which is the love scene."
+    },
+    {
+      "name": "B",
+      "timestamp": "68:47",
+      "text": "Oh, so, so romantic."
+    },
+    {
+      "name": "D",
+      "timestamp": "68:50",
+      "text": "So Rachel's like the mascara and just."
+    },
+    {
+      "name": "C",
+      "timestamp": "68:53",
+      "text": "The dark eyes are so intense. And she asks if he would come. Hunter, if she went north. And he said that he wouldn't, but that somebody would."
+    },
+    {
+      "name": "B",
+      "timestamp": "69:01",
+      "text": "Well, he doesn't say he wouldn't. He says no. He's like. His line reading on no is also amazing. He's like, did you follow? He's like, no. It's. It's like a whale song almost more than it is like an answer. I love that. I also love in this scene, he's. He's drinking from the shot glass again, which is previously established as my favorite, favorite thing Harrison Ford does. And some blood ends up. Oh, love that. Harrison Ford. Blood in the shot glass. Just give me that movie. Jesus."
+    },
+    {
+      "name": "C",
+      "timestamp": "69:30",
+      "text": "Her hair. All right, so now we got the hair coming down. The piano playing. This song's incredible."
+    },
+    {
+      "name": "B",
+      "timestamp": "69:49",
+      "text": "Is it?"
+    },
+    {
+      "name": "C",
+      "timestamp": "69:49",
+      "text": "Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "69:51",
+      "text": "All right, people listening."
+    },
+    {
+      "name": "C",
+      "timestamp": "69:52",
+      "text": "People listening. Judge for yourselves."
+    },
+    {
+      "name": "B",
+      "timestamp": "69:54",
+      "text": "Okay, we'll hear it now. Yeah, yeah. And she takes down her hair. So this is. This is a big moment for you, I guess, when she takes down her hair."
+    },
+    {
+      "name": "C",
+      "timestamp": "70:01",
+      "text": "It's a big deal."
+    },
+    {
+      "name": "D",
+      "timestamp": "70:04",
+      "text": "So. All right, so this is obviously a very difficult scene."
+    },
+    {
+      "name": "C",
+      "timestamp": "70:08",
+      "text": "So to me, it's this callback. They're doing this forties noir kind of homage and this notion of the tough guy romance and the kiss me and. And all that stuff that was very much in vogue in the past and does not hold up very well in 2021. Again, I also maintain that the idea that he doesn't really know how to do this stuff he's still working on figuring out what his emotions are because he is a replicant. So he has this idea of what he's supposed to say and what she's supposed to say and he's trying to sort of push her to do it. That's how I read the scene."
+    },
+    {
+      "name": "B",
+      "timestamp": "70:38",
+      "text": "It's not. It's not. There's. There's not a connection consent problem because it's two robots who don't have the right protocol buffers worked out yet. That's your. That's your head cannon for this scene."
+    },
+    {
+      "name": "A",
+      "timestamp": "70:49",
+      "text": "Okay, so it is."
+    },
+    {
+      "name": "D",
+      "timestamp": "70:50",
+      "text": "It literally is. It literally is."
+    },
+    {
+      "name": "B",
+      "timestamp": "70:52",
+      "text": "All right."
+    },
+    {
+      "name": "C",
+      "timestamp": "70:53",
+      "text": "Is that wrong?"
+    },
+    {
+      "name": "A",
+      "timestamp": "70:53",
+      "text": "No, I. I have a. I have a whole new theory is that after the theatrical release, Ridley Scott realized that Harrison's acting is real bad in a bunch of these scenes. Was like, oh, I know. He's a robot who doesn't have emotions. It's like, let's just. Just back that into it and it explains everything. That's the whole thing."
+    },
+    {
+      "name": "B",
+      "timestamp": "71:10",
+      "text": "That's good. I like that."
+    },
+    {
+      "name": "C",
+      "timestamp": "71:11",
+      "text": "That's. That's smart."
+    },
+    {
+      "name": "D",
+      "timestamp": "71:12",
+      "text": "All right, anything else, Jason, you need to hit on that scene or."
+    },
+    {
+      "name": "C",
+      "timestamp": "71:15",
+      "text": "We get it."
+    },
+    {
+      "name": "B",
+      "timestamp": "71:16",
+      "text": "I. It doesn't, like. I get that, like, he's sort of, you know, he puts hands on her or whatever. I. I mean, I think, like, I. Like, for me, actually, the moment that, like, he. That sort of sells that scene is when, like, he goes in and she, like, kind of recoils and he's like, no, no, no, no, no. He, like, he, like, wants her to understand. Like, he puts his hands up. He wants her to understand that he's trying to, like, make a connection here. I actually do think that's a good. A little good piece of business that Harrison Ford does. So I'll give him. I'll give him some props there. He's doing. He's doing real acting in that moment."
+    },
+    {
+      "name": "C",
+      "timestamp": "71:49",
+      "text": "They did shoot, like, a much more graphic scene and, you know, like, her. Her legs around him and nudity and all that kind of stuff. And in the end, they. They voted to keep that out, which I thought was. Was very smart."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:00",
+      "text": "Did she have the shoulder pads on in that scene or. No?"
+    },
+    {
+      "name": "C",
+      "timestamp": "72:03",
+      "text": "No. Okay."
+    },
+    {
+      "name": "A",
+      "timestamp": "72:03",
+      "text": "That's a kind of an odd choice for the era as well, to not keep it in."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:07",
+      "text": "Yeah, I agree."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:08",
+      "text": "Yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "72:08",
+      "text": "All right, so cutting back to prison."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:10",
+      "text": "JF her airbrushing, her eyes black. Just absolutely amazing. And Roy coming in. Gosh, you have a lot of nice toys."
+    },
+    {
+      "name": "D",
+      "timestamp": "72:19",
+      "text": "And when he does the googly eyes."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:21",
+      "text": "Like, Roy's being real goofy in this scene."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:23",
+      "text": "Yeah, it's pretty wild. He's true."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:25",
+      "text": "He's activated his charm. His charm slot. Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "72:29",
+      "text": "Charm module."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:30",
+      "text": "Yeah, his charm module got kicked in. He wants to. He wants to. He wants to go see the guy. So he's going to go do whatever he has to do."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:38",
+      "text": "Yes. So speaking of visiting God, Jason, have you ever played a game of chess remotely where you had a chessboard and you were, like, doing moves with somebody who wasn't there?"
+    },
+    {
+      "name": "B",
+      "timestamp": "72:47",
+      "text": "No, not a big chess guy, Cal."
+    },
+    {
+      "name": "D",
+      "timestamp": "72:50",
+      "text": "No, I guess it was a thing, Right? Like, there used to be, like, chess."
+    },
+    {
+      "name": "C",
+      "timestamp": "72:53",
+      "text": "In the newspaper and bridge and, like, people used to do that."
+    },
+    {
+      "name": "B",
+      "timestamp": "72:57",
+      "text": "Yeah. You play chess by mail. You could mail your move away to someone else. Yeah, it's a whole. It's a whole thing back before people had Chess.com."
+    },
+    {
+      "name": "C",
+      "timestamp": "73:04",
+      "text": "And now what do we do? Yeah. All right."
+    },
+    {
+      "name": "B",
+      "timestamp": "73:06",
+      "text": "Use apps. We use apps."
+    },
+    {
+      "name": "C",
+      "timestamp": "73:07",
+      "text": "Okay. Get your subscription to Chess Plus."
+    },
+    {
+      "name": "D",
+      "timestamp": "73:11",
+      "text": "All right, so we have the visit to Tyrell."
+    },
+    {
+      "name": "C",
+      "timestamp": "73:14",
+      "text": "Yeah, I love this scene. I love Tyrell."
+    },
+    {
+      "name": "D",
+      "timestamp": "73:17",
+      "text": "I love the fact that when he gets checkmated, he's like, oh, come up."
+    },
+    {
+      "name": "C",
+      "timestamp": "73:21",
+      "text": "Let'S talk about this."
+    },
+    {
+      "name": "B",
+      "timestamp": "73:22",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "73:22",
+      "text": "Like, he's going to get out of this move."
+    },
+    {
+      "name": "A",
+      "timestamp": "73:24",
+      "text": "I like that."
+    },
+    {
+      "name": "B",
+      "timestamp": "73:24",
+      "text": "Like, he wasn't going to invite him up like the dudes in the elevator, but, like, he was he going to do if he didn't like his move? Just send the elevator back down. Yeah. Seems weird. I love the robe that Tyrell is wearing, too. Like, that's like a. That's like a real. Like, if Kanye was doing bathrobes, like, I feel like that's what you would end up with. He's basically wearing, like, a quilted mattress top as a bathrobe. Like, he's wearing, like, a waterproof mattress pad, like, wrapped around him with a belt and, like, a collar. It looks great. He looks. He looks awesome."
+    },
+    {
+      "name": "A",
+      "timestamp": "73:57",
+      "text": "He's living his best life."
+    },
+    {
+      "name": "B",
+      "timestamp": "73:59",
+      "text": "I once ate breakfast. I'm going to tell you this important story. I once ate breakfast at the St. Regis Hotel in downtown San Francisco. And, like, a bunch of business people taking business breakfast meetings, which is why I was there. I was doing a, you know, business breakfast meeting as. As people like to do in San Francisco sometimes. And to an elderly couple comes in just in their bathrobes with flip flops to like it. To eat breakfast at the. At the. At the restaurant. Just like, just old guy chest hair out, like, you know, had come from a Schmitz and was just like, yeah, I'm going to come here and, like, have myself an omelette bar. Like, I don't give a hot damn. It was great. It really created a great atmosphere in the St. Regis."
+    },
+    {
+      "name": "C",
+      "timestamp": "74:40",
+      "text": "Good news."
+    },
+    {
+      "name": "B",
+      "timestamp": "74:41",
+      "text": "Please leave that story in when you do the edit."
+    },
+    {
+      "name": "C",
+      "timestamp": "74:44",
+      "text": "Of course. Two things that I want to call out."
+    },
+    {
+      "name": "D",
+      "timestamp": "74:46",
+      "text": "One, this was Roy Batty."
+    },
+    {
+      "name": "C",
+      "timestamp": "74:48",
+      "text": "This was. This was Rutger's first day. First scene was doing this scene wild. So they got right into it. They originally built a separate prosthetic head for him to squish, and they ended up deciding just to go with Joe Turkel's head and then just pumping blood out. So that was pretty cool."
+    },
+    {
+      "name": "B",
+      "timestamp": "75:08",
+      "text": "Geez. Well, they made that more. They made that more bloody in the. In the final cut. Like, they, like the eye gouging got extended in the final. In the final cut. I think they just had. Had it and they. But they, like, took it out for the theatrical because they're like, well, people don't want to see that. And, like, no, no, we're gonna put. Put more of that shit back in."
+    },
+    {
+      "name": "D",
+      "timestamp": "75:26",
+      "text": "So I love all of the bargaining that he's doing."
+    },
+    {
+      "name": "C",
+      "timestamp": "75:29",
+      "text": "And Tyrell explaining why they've tried Each thing and it doesn't work and it causes a mutation and the patient's dead before he got off the table. And we tried that too. And there's just nothing that can be done. And Tyrell really trying to kind of pull him in. But the thing that I'll call out."
+    },
+    {
+      "name": "D",
+      "timestamp": "75:43",
+      "text": "In the original script, he kills Tyrell."
+    },
+    {
+      "name": "C",
+      "timestamp": "75:46",
+      "text": "Tyrell, also a Replicant. And then he discovers that there's another Tyrell in stasis down below in the pyramid. And that's where he finds out the information that Deckard is also a Replicant. And that's how he's able to reference Deckard by name later on in the script."
+    },
+    {
+      "name": "B",
+      "timestamp": "76:02",
+      "text": "Incidentally though, if you're Tyrell and like your killer robot creation that you know is out like trying to like kill people to get into your corporation shows up in your bedroom and you' your mattress, quilt top robe. Like you're, you know, and the guy's just like, panic button. The. Well, like maybe you have a panic button. Maybe you. Instead of saying there's nothing I can do for you, you're just fud. You say like, let's go down to the lab. Let's go work on this. Like, try to."
+    },
+    {
+      "name": "A",
+      "timestamp": "76:28",
+      "text": "Yeah, I'll just put you under and fix it."
+    },
+    {
+      "name": "B",
+      "timestamp": "76:30",
+      "text": "Like, you know, like for. For a genius chess player. Like he really is just like, oh, no, sorry my guy, you're just fucked. I guess you'll just go back. You'll just leave now. No problem. No hard feelings."
+    },
+    {
+      "name": "C",
+      "timestamp": "76:45",
+      "text": "That's amazing."
+    },
+    {
+      "name": "A",
+      "timestamp": "76:47",
+      "text": "And he's a genius. But he didn't foresee this in any way. And build in any kind of fail safe that would stop him from being murdered."
+    },
+    {
+      "name": "C",
+      "timestamp": "76:53",
+      "text": "Right? Right."
+    },
+    {
+      "name": "D",
+      "timestamp": "76:55",
+      "text": "All right, so let's see. Deckard versus Priss."
+    },
+    {
+      "name": "C",
+      "timestamp": "76:59",
+      "text": "So now we're racing to the conclusion here. Deckard in the building, in the Bradbury Building. Gorgeous. Priss's eyes rolling back in her head. And then that slow pacing him walking across. There's a shot that is like a Renaissance painting with like all of the dolls and stuff and, and her."
+    },
+    {
+      "name": "B",
+      "timestamp": "77:16",
+      "text": "And there's light on her. Yeah, that looks. It looks amazing. Like the way that set is dressed looks phenomenal. And like, I guess it's a fair point that I think Dale raised in chat, which is like we talked about Pris being terrifying and like she's actually not a great fighter. Like her. Her fighting move is to like do like a floor routine for like the Olympics. Which, you know, there may be more. There may be more direct ways to kill a person than trying to attempt like some Simone Biles Shit. But I think just the way, like, the way she looks is awesome. Like, she just looks like she gets the fright wig and like, you know, which is also kind of a weird cut because her hair goes from being very normal to. She attacks him and the hair all goes, like, big on in, which I don't exactly know."
+    },
+    {
+      "name": "A",
+      "timestamp": "78:01",
+      "text": "So it's a very humid building."
+    },
+    {
+      "name": "B",
+      "timestamp": "78:03",
+      "text": "Exactly, yeah. As soon she starts fighting, the humidity kicks up."
+    },
+    {
+      "name": "D",
+      "timestamp": "78:07",
+      "text": "Well, she said that Harrison insisted that."
+    },
+    {
+      "name": "C",
+      "timestamp": "78:09",
+      "text": "She actually hit him and that she."
+    },
+    {
+      "name": "D",
+      "timestamp": "78:11",
+      "text": "Actually hold his nose when she holds."
+    },
+    {
+      "name": "C",
+      "timestamp": "78:14",
+      "text": "Him by the nose, that she actually did it and that, like, his nose was bleeding and, like, she was feeling."
+    },
+    {
+      "name": "D",
+      "timestamp": "78:19",
+      "text": "Terrible in the end."
+    },
+    {
+      "name": "C",
+      "timestamp": "78:20",
+      "text": "It was a guy that was in an outfit that had to do 15 back handsprings in order to do it."
+    },
+    {
+      "name": "B",
+      "timestamp": "78:27",
+      "text": "Interesting."
+    },
+    {
+      "name": "D",
+      "timestamp": "78:28",
+      "text": "But I did feel like in the."
+    },
+    {
+      "name": "C",
+      "timestamp": "78:29",
+      "text": "Final cut, the flopping was, like, too long."
+    },
+    {
+      "name": "B",
+      "timestamp": "78:33",
+      "text": "It's too much."
+    },
+    {
+      "name": "D",
+      "timestamp": "78:34",
+      "text": "19 seconds."
+    },
+    {
+      "name": "C",
+      "timestamp": "78:35",
+      "text": "Yeah, it's 19 seconds of pris flopping too much."
+    },
+    {
+      "name": "B",
+      "timestamp": "78:38",
+      "text": "I'm not surprised that the nostril pole is actual. Actual nostril because she's really clearly pretty much up in his brains right there. I do feel. I do feel from, like, I love this movie and I, like, this is, you know, an all star movie for me. I did feel the third act dragged a little bit when I was watching it this time. Like this. That, like, I love all the stuff with Roy at the end, but like, this, everything from when he goes to confront Tyrell through Tears in the Rain, which is obviously a standout. Like, it just felt like, I know where we're going. Can we just get there a little quicker? The pacing sort of bugged me a bit more, which I thought of because you said the thing about the thrashing. It just seems to slow down a little bit as we get closer to the end. I don't know if anyone else felt that way."
+    },
+    {
+      "name": "C",
+      "timestamp": "79:23",
+      "text": "Cal."
+    },
+    {
+      "name": "A",
+      "timestamp": "79:24",
+      "text": "Yeah, it does kind of the. Like that. That whole scene and maybe the Tyrell scene as well. But definitely the scene once they get back to the building is. It's just long. I wonder if it feels that way if you're watching it for the first time now or how much that's influenced by how good the rooftop scene is. And we're like, yeah, yeah, there's gonna be some punching. And Harrison will flap his jowls around and then eventually we'll get to the good bit at the end versus maybe it is just a little bit too long."
+    },
+    {
+      "name": "B",
+      "timestamp": "79:52",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "79:52",
+      "text": "And it just does drag."
+    },
+    {
+      "name": "C",
+      "timestamp": "79:54",
+      "text": "It is 30 minutes for the final from the time he goes in to be with Priscilla to The end of the film is 30 minutes. And in that respect, it's similar to Alien. Right? That of this long last kind of chasing, running around and all of that. So that, to me, there was a big reflection of Alien pacing in this, which was fun to discover. I'd never noticed that before until watching them back to back."
+    },
+    {
+      "name": "A",
+      "timestamp": "80:17",
+      "text": "Do you feel like it keeps the tension up that whole time or does it feel overly long?"
+    },
+    {
+      "name": "C",
+      "timestamp": "80:21",
+      "text": "I'm good with it. I don't have any problem with it. I love it this time."
+    },
+    {
+      "name": "B",
+      "timestamp": "80:25",
+      "text": "It felt long to me. I do think, now that you mentioned."
+    },
+    {
+      "name": "D",
+      "timestamp": "80:27",
+      "text": "The alien thing, it's two hours and two minutes."
+    },
+    {
+      "name": "C",
+      "timestamp": "80:29",
+      "text": "Like, it's not that long. Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "80:31",
+      "text": "I may just have no attention span anymore. But, like, the. The. The thing about Alien that I liked was that in sequence of Alien, like, he talks about in the commentary how they show her going all the way to the escape shuttle and then she has to go all the way back and then she has to go all the way back again. And they wanted to shorten that. And he's like, no, no, no. We got to show all the space she has to trust, traverse. And similarly, in his, like, sort of running from Roy, they spend a lot of time just establishing the physical space that they're working through. Like busting through walls and, like, kind of, you know, like, it's. It's. It really expands, like, the concept of what this. The set is that you're. That you're in. But I did feel it took a long time to get where we were going."
+    },
+    {
+      "name": "A",
+      "timestamp": "81:11",
+      "text": "When we have the rooftop scene is the implication that Roy had planned that for some amount of time or that, you know, like, he came to that conclusion at the end of half an hour of kind of running through the building."
+    },
+    {
+      "name": "D",
+      "timestamp": "81:22",
+      "text": "Oh, Ridley."
+    },
+    {
+      "name": "A",
+      "timestamp": "81:23",
+      "text": "Oh, Roy."
+    },
+    {
+      "name": "B",
+      "timestamp": "81:24",
+      "text": "I think. I think Roy just comes to the decision not to let him die."
+    },
+    {
+      "name": "A",
+      "timestamp": "81:28",
+      "text": "Like, right at the moment, I think."
+    },
+    {
+      "name": "B",
+      "timestamp": "81:30",
+      "text": "At the moment."
+    },
+    {
+      "name": "C",
+      "timestamp": "81:31",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "D",
+      "timestamp": "81:31",
+      "text": "Well, in the. In the. I think it is. It's very specifically."
+    },
+    {
+      "name": "C",
+      "timestamp": "81:34",
+      "text": "It's seeing him dangling and on the verge of death. Watching him in that. In that space and the fact that he fought. Again, if you have the idea that. That Roy knows that he's a Replicant because he had access to the Tyrell files."
+    },
+    {
+      "name": "D",
+      "timestamp": "81:51",
+      "text": "And he says to him, specifically, he says. He refers to him as a little."
+    },
+    {
+      "name": "C",
+      "timestamp": "81:55",
+      "text": "Man and says, aren't you the good man? Ironically, this is Roy kind of letting on that he knows what he is. So I think from that perspective, there's like, some. Some kinship there as well."
+    },
+    {
+      "name": "D",
+      "timestamp": "82:06",
+      "text": "But it also, for me, works even if he's not a replicant."
+    },
+    {
+      "name": "C",
+      "timestamp": "82:09",
+      "text": "It works for Roy as, like, why do I have to kill you? Like, I. I have lived and I've burned brightly."
+    },
+    {
+      "name": "A",
+      "timestamp": "82:15",
+      "text": "Yeah. To me, that's what that line's getting at. It's the, you know, that he might not be real, but he's had a full life and all of these memories and had all these unique experiences, and all Harrison Ford does is bum around in LA killing people. So not necessarily an, you know, implication that he knows he's Replicant, but just that he's lived."
+    },
+    {
+      "name": "B",
+      "timestamp": "82:37",
+      "text": "Obviously, what happens is that Harrison Ford's replicant beacon goes off when he's dangling from the building and that. And Roy hears it and he can't kill a fellow robot and so he picks him up."
+    },
+    {
+      "name": "D",
+      "timestamp": "82:49",
+      "text": "No, it's the look. It's the look in his eyes."
+    },
+    {
+      "name": "C",
+      "timestamp": "82:52",
+      "text": "It's not anything else than that. It is about human connection. And the fact that they're replicants does not make them not human. That's the key point. They are both Replicants and humans."
+    },
+    {
+      "name": "E",
+      "timestamp": "83:03",
+      "text": "I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched sea beams glitter in the dark near the 10 hours of gate. All those moments will be lost in time like tears in rain. Time to die."
+    },
+    {
+      "name": "A",
+      "timestamp": "83:56",
+      "text": "He wants Deckard to know that he had a life, that he had unique memories and that, you know, that his life was valuable. He realizes he's about to die and he wants to impart that."
+    },
+    {
+      "name": "B",
+      "timestamp": "84:06",
+      "text": "Right?"
+    },
+    {
+      "name": "C",
+      "timestamp": "84:07",
+      "text": "Absolutely."
+    },
+    {
+      "name": "D",
+      "timestamp": "84:08",
+      "text": "Absolutely."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:08",
+      "text": "Yeah."
+    },
+    {
+      "name": "F",
+      "timestamp": "84:09",
+      "text": "That."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:09",
+      "text": "That empathy there."
+    },
+    {
+      "name": "A",
+      "timestamp": "84:10",
+      "text": "Yeah. It's less that he decides not to kill him and more that he wants somebody to, you know, to talk, to remember him and to remember him. Yeah. His legacy."
+    },
+    {
+      "name": "B",
+      "timestamp": "84:19",
+      "text": "Yeah. Witness me."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:22",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "D",
+      "timestamp": "84:23",
+      "text": "So it was also his idea, Rutger's."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:25",
+      "text": "Idea, to have the dove. They shot it both with and without the dove. Rutger actually jumped across the buildings because the stuntman had crashed and, like, gotten injured."
+    },
+    {
+      "name": "B",
+      "timestamp": "84:36",
+      "text": "Wow."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:36",
+      "text": "And the buildings were actually on wheels."
+    },
+    {
+      "name": "D",
+      "timestamp": "84:39",
+      "text": "So they pulled them a little bit."
+    },
+    {
+      "name": "C",
+      "timestamp": "84:40",
+      "text": "Closer and then he jumped across in one perfect shot. And they were shooting. This is the last night of production on the film. And the producers, Bud Yorkin and whatever the other guy's name was, they were, like, dying to shut it down to try and save money. And as soon as the light was coming up for the day, they were excited because they couldn't shoot anymore. They literally cut the building into pieces and moved the building into a covered set area in a soundstage where they could then keep shooting. And that's when Rutger came up with that final Tannheiser gate and, and all those amazing pieces."
+    },
+    {
+      "name": "B",
+      "timestamp": "85:16",
+      "text": "Incredible. Yeah. Good job, Rucker. How really, really the MVP of this whole production."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:22",
+      "text": "Agree. Gaff says you've done a man's job, sir."
+    },
+    {
+      "name": "B",
+      "timestamp": "85:27",
+      "text": "Like, you take that as being like a big tell."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:29",
+      "text": "Very clearly."
+    },
+    {
+      "name": "B",
+      "timestamp": "85:30",
+      "text": "Okay."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:31",
+      "text": "All right."
+    },
+    {
+      "name": "D",
+      "timestamp": "85:31",
+      "text": "Anything else? I love the handheld shots of him going in and out of his apartment, finding Rachel in his apartment. Jason, do you always sleep with a."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:38",
+      "text": "Death shroud with a sheet over your face?"
+    },
+    {
+      "name": "B",
+      "timestamp": "85:41",
+      "text": "Like, yeah. I mean, that's just like how I was raised. So it's a tradition in my family is just be shrouded to sleep. Well, you know, shroud, shroud at night, sleep tight is what I was told."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:55",
+      "text": "Final thoughts on Blade Runner and."
+    },
+    {
+      "name": "D",
+      "timestamp": "85:57",
+      "text": "And rating."
+    },
+    {
+      "name": "C",
+      "timestamp": "85:58",
+      "text": "And rating out of 5 stars."
+    },
+    {
+      "name": "B",
+      "timestamp": "85:59",
+      "text": "Cal, as our guest."
+    },
+    {
+      "name": "A",
+      "timestamp": "86:01",
+      "text": "You know, it's an amazing, iconic movie and who knows what the kind of world of sci fi cinema would be without it. It's just like such a seminal work. It's a shame that it's been, you know, like so cruelly edited for all of these versions. One day we'll get the perfect cut, which makes sense. And he's no longer clearly a Replicant, but an amazing movie. And I think, you know, that that detail doesn't. Doesn't really matter in the end because we have that almost final scene with Roy Batty. Maybe the movie would be better without anything that happens after that. But the, like, the, the Gaff piece, that interaction is kind of needed to wrap it up. It's a. It's an amazing movie and it still holds up now, what, like 40 years later?"
+    },
+    {
+      "name": "B",
+      "timestamp": "86:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "86:44",
+      "text": "Four stars. Five stars out of five."
+    },
+    {
+      "name": "A",
+      "timestamp": "86:47",
+      "text": "Probably five out of five. It's a rare, rare movie."
+    },
+    {
+      "name": "B",
+      "timestamp": "86:51",
+      "text": "Boom."
+    },
+    {
+      "name": "C",
+      "timestamp": "86:52",
+      "text": "Five banger. Jason."
+    },
+    {
+      "name": "B",
+      "timestamp": "86:54",
+      "text": "Yeah, this is, I mean, this is a five star movie. I actually, as I was starting to watch it, I was thinking about, like, why isn't this movie on my like top four in letterbox? Like, this is clearly like, like a movie that's just more important to me than almost any other movie I could name. And it just, like there's, it's just like sort of baked into. You know, we made a lot of fun of it as we went along. Like certain choices that don't make sense, but it's just baked into what I have grown to love about movies generally. Like, it's like, was a waking for me that like, oh, like there's this, like you could spend your whole life just studying this one movie and it's just, you know, an eternal masterpiece for me. So I was glad to be able to watch it again for this podcast. And I like being able to see it any. Anytime I can."
+    },
+    {
+      "name": "C",
+      "timestamp": "87:39",
+      "text": "You're welcome. You're welcome."
+    },
+    {
+      "name": "B",
+      "timestamp": "87:40",
+      "text": "Thank you. Thank you."
+    },
+    {
+      "name": "C",
+      "timestamp": "87:41",
+      "text": "Five stars."
+    },
+    {
+      "name": "B",
+      "timestamp": "87:43",
+      "text": "Thank you for giving it to me."
+    },
+    {
+      "name": "D",
+      "timestamp": "87:44",
+      "text": "Five stars."
+    },
+    {
+      "name": "C",
+      "timestamp": "87:45",
+      "text": "This is a perfect 1010 movie. Even though some of the pacing is slow, I absolutely love it. It does everything. It does everything so well. And the marriage of cinematography and production design and music editing, it all, it's just. It's phenomenal."
+    },
+    {
+      "name": "D",
+      "timestamp": "88:03",
+      "text": "So a couple of quick pieces of trivia before we."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:05",
+      "text": "We finish off here. So, first one, this movie was DOA until Alan Ladd. Laddie stepped in and raised the 14 million to get this movie made. So I love it. Laddie."
+    },
+    {
+      "name": "D",
+      "timestamp": "88:18",
+      "text": "There's a documentary, I think, about him that."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:20",
+      "text": "That we may have to cover at some point on this pod, but just a hero of so many of our films."
+    },
+    {
+      "name": "D",
+      "timestamp": "88:26",
+      "text": "Other Deckards. So Hampton Fancher wrote this film for."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:30",
+      "text": "Robert Mitchum as Deckard."
+    },
+    {
+      "name": "B",
+      "timestamp": "88:32",
+      "text": "That's terrible."
+    },
+    {
+      "name": "D",
+      "timestamp": "88:34",
+      "text": "And he was like, Robert Mitchum was still young enough in 1981 to be."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:38",
+      "text": "Able to shoot this movie. Like, no, he was not."
+    },
+    {
+      "name": "B",
+      "timestamp": "88:41",
+      "text": "That's terrible. That's true. So that's real bad."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:45",
+      "text": "So Nick Nolte, Burt Reynolds, Al Pacino."
+    },
+    {
+      "name": "B",
+      "timestamp": "88:51",
+      "text": "Oh, my God, those are all terrible."
+    },
+    {
+      "name": "C",
+      "timestamp": "88:53",
+      "text": "Jason, Jason, give us a line read, please. Please give us any Pacino line."
+    },
+    {
+      "name": "B",
+      "timestamp": "88:59",
+      "text": "Okay. I mean, I just don't even know what that."
+    },
+    {
+      "name": "C",
+      "timestamp": "89:01",
+      "text": "What."
+    },
+    {
+      "name": "B",
+      "timestamp": "89:01",
+      "text": "I don't even know what that would look like. Can you imagine, like, just Al Pacino just, like, blowing through? Like, they don't advertise for what I do in the newspaper like that. Just, like, absolutely. Just fucking. Just blowing the walls off this movie. What a nightmare. What about Christopher Reeves as."
+    },
+    {
+      "name": "C",
+      "timestamp": "89:21",
+      "text": "Whoa."
+    },
+    {
+      "name": "B",
+      "timestamp": "89:23",
+      "text": "As. As. As Harris as Deckard? What do you think about that?"
+    },
+    {
+      "name": "C",
+      "timestamp": "89:27",
+      "text": "I mean, I think he's too. He is too good to be in this film. Are you kidding?"
+    },
+    {
+      "name": "B",
+      "timestamp": "89:31",
+      "text": "He's too good. He's too noble."
+    },
+    {
+      "name": "D",
+      "timestamp": "89:33",
+      "text": "Christopher Reeve. He's too noble. I thought about it today because somebody."
+    },
+    {
+      "name": "C",
+      "timestamp": "89:37",
+      "text": "Posted in the 70 millimeter discord. Somebody posted somewhere in Time, which is a movie that I loved, but he."
+    },
+    {
+      "name": "D",
+      "timestamp": "89:43",
+      "text": "Was so typecast as Superman, there was no way he could do what pretty much anything else. Too good."
+    },
+    {
+      "name": "B",
+      "timestamp": "89:49",
+      "text": "It'd be a good move. It'd be a good. I'd like to see it. Well, the."
+    },
+    {
+      "name": "C",
+      "timestamp": "89:52",
+      "text": "Almost."
+    },
+    {
+      "name": "B",
+      "timestamp": "89:52",
+      "text": "Well, you know who. Here, here. You know who would be good? Here's another good one. Jimmy Khan. Could have been Decker. That would have been. That would have been a good. That have been a good version of Blade Runner. Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:02",
+      "text": "Agree."
+    },
+    {
+      "name": "D",
+      "timestamp": "90:03",
+      "text": "Well, the all the closest. Almost cast so much so they spent."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:07",
+      "text": "Months with him and he was actually even beginning to be represented as Deckard."
+    },
+    {
+      "name": "D",
+      "timestamp": "90:11",
+      "text": "In the story storyboards."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:13",
+      "text": "Dustin Hoffman."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:14",
+      "text": "Oh, my God. Come on."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:16",
+      "text": "I don't think that works. Doesn't."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:19",
+      "text": "Terrible. All right."
+    },
+    {
+      "name": "A",
+      "timestamp": "90:20",
+      "text": "No, I think they. They ended up in a good place."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:22",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:23",
+      "text": "Agree. All right."
+    },
+    {
+      "name": "D",
+      "timestamp": "90:24",
+      "text": "So, Cal, who would Tilda Swinton play?"
+    },
+    {
+      "name": "A",
+      "timestamp": "90:29",
+      "text": "Roy Batty, I guess."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:30",
+      "text": "Oh, wow."
+    },
+    {
+      "name": "D",
+      "timestamp": "90:32",
+      "text": "Oh, my God."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:35",
+      "text": "Whoa."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:36",
+      "text": "Oh, my God."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:38",
+      "text": "Holy."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:39",
+      "text": "I gotta go lie down."
+    },
+    {
+      "name": "A",
+      "timestamp": "90:42",
+      "text": "You know, but if that position was taken, then I'm gonna guess Zora."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:46",
+      "text": "I'll be in my bunk."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:47",
+      "text": "Wow. Good night. Thank you, everybody. Good night."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:50",
+      "text": "That's pretty strong. I really never thought about Roy Batty. That's great. That's a great answer. I was gonna go with Terrell."
+    },
+    {
+      "name": "C",
+      "timestamp": "90:56",
+      "text": "Me too. Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "90:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "90:58",
+      "text": "I could easily imagine her in that robe, but now."
+    },
+    {
+      "name": "C",
+      "timestamp": "91:01",
+      "text": "Oh, my God, Roy."
+    },
+    {
+      "name": "B",
+      "timestamp": "91:03",
+      "text": "I don't know. I don't know if I can go on."
+    },
+    {
+      "name": "C",
+      "timestamp": "91:05",
+      "text": "No, no. That's it. That's it. All right, here we go."
+    },
+    {
+      "name": "D",
+      "timestamp": "91:15",
+      "text": "Let's get into some letters and some voicemail."
+    },
+    {
+      "name": "C",
+      "timestamp": "91:19",
+      "text": "Our first letter comes from Blake Paulson, and the subject line is music talk. Hello, Dune Pod. I enjoyed the music talk in your Batman episode and thought I should share a Dune nugget you might appreciate. I remember a discussion about Dune inspired music a while back and have another one for you. The second Track on Tools 2019 album is litany Contra Lapoor, which Google Translate says is French for litany against Fear. I learned just enough French in high school to suspect and confirm it. Also, that album makes me think of Fremen walking on sand, especially after seeing a video of people trying to dance along with it at Burning Man. It wasn't just the spice."
+    },
+    {
+      "name": "D",
+      "timestamp": "92:01",
+      "text": "Tool must know what they're doing, but."
+    },
+    {
+      "name": "C",
+      "timestamp": "92:03",
+      "text": "The rhythm comes across as kind of completely random. Enjoying the podcast, Blake?"
+    },
+    {
+      "name": "F",
+      "timestamp": "92:09",
+      "text": "That."
+    },
+    {
+      "name": "B",
+      "timestamp": "92:09",
+      "text": "That makes just complete sense. Like, if there ever was going to be like, I'm surprised that we haven't bumped into Tool sooner on this podcast because I just feel like Dune is like a bat signal for like math rock fans. Like that you're. You're definitely send it up of vibe when you're talking about a space warm movie. For sure. So that makes sense. That story checks out."
+    },
+    {
+      "name": "C",
+      "timestamp": "92:37",
+      "text": "Absolutely."
+    },
+    {
+      "name": "D",
+      "timestamp": "92:38",
+      "text": "Do we have any Tool fans? We have any Tool fans in the discord tonight."
+    },
+    {
+      "name": "C",
+      "timestamp": "92:41",
+      "text": "Like, has Anybody heard this 2019 litany against fear?"
+    },
+    {
+      "name": "B",
+      "timestamp": "92:44",
+      "text": "Any lateral eye out there, Give us."
+    },
+    {
+      "name": "C",
+      "timestamp": "92:47",
+      "text": "A shout out while we listen to our man Corey here. Here's our only voicemail for the night."
+    },
+    {
+      "name": "F",
+      "timestamp": "92:53",
+      "text": "H. Jason Doom Pod. What is up. I don't even know who the host is. It a surprise guest host with you guys for Blade Runner? Anyway, I love Blade Runner. That's probably no joy, but, yeah. So there's not really much for me, I guess, probably. To add to the Blade Runner conversation, I am maybe in the minority that I do like the voiceover a lot. I did, when I did my rewatch, though, I rewatched the quote unquote final cut, and it was gorgeous, and it's great, and I have no complaints about it at all. One thing I do want to talk about, I guess, is cyberpunk, right? Like Blade Runners, an early cyberpunk film. So in that vein of you guys covering cyberpunk films, I recommend Lawnmower Man. I also recommend Johnny Mnemonic, obviously, and Free Jack. You guys definitely need to get on these. And Jason even said we're pretty much turning this into a Gen X podcast at this point, so those movies just have to be covered. I think they were all just despised when they came out, but I honestly, truly believe they're worth a revisit. I'm no stranger to being accused of liking terrible movies, so take that with a grain of salt. Anyway, I did recently watch Lawnmower man, and it was, like, a gajillion times better than I thought it was. Those wackadoo VR sex scenes are out of this world. And, oh, yeah, I think I would love to hear you guys talk about that. But anyway, I'm sure I'm gonna totally love this episode, just like I did the alien one. So keep up the great work. All right, love you guys. Bye."
+    },
+    {
+      "name": "B",
+      "timestamp": "94:38",
+      "text": "It's kind of amazing that the sex scenes from Lawnmower man are still like, the killer app of VR, like, 40 years later. Like. Like, VR has made essentially no progress, like, since. Since that. And becoming more relevant to people's lives since. Since Lawnmower Man. But keep. Keep spending money on it. I'm sure it'll work. I'm sure it'll work out eventually. That's bleak."
+    },
+    {
+      "name": "C",
+      "timestamp": "95:00",
+      "text": "That is bleak."
+    },
+    {
+      "name": "B",
+      "timestamp": "95:01",
+      "text": "Great to hear from Corey. Always appreciate him writing, and I like that. So many people, including our guest Cal, and our voicemailer Corey, had these, you know, counter narrative takes on Blade Runner, like, you know, going basically all but saying that the theatrical Reese had it right. Ridley Scott, you're a hack. You should have listened to the producers. Put the happy ending back in. Put the voiceover back in. He's not a robot, you know. Yeah, let's do it."
+    },
+    {
+      "name": "A",
+      "timestamp": "95:29",
+      "text": "A decade ago, I would have said Ridley Scott's not a hack, but, you know, you know, time has. Time has disagreed with that. Maybe."
+    },
+    {
+      "name": "C",
+      "timestamp": "95:37",
+      "text": "Yeah. It's not been good recently. I'll just say that, you know, again, having just watched Prometheus and Covenant and Raised by Wolves, it's. It's not real good."
+    },
+    {
+      "name": "A",
+      "timestamp": "95:46",
+      "text": "Yeah. But, you know, Blade Runner has that amazing. The. The design, right? Like, the set design, the outfits, the world."
+    },
+    {
+      "name": "B",
+      "timestamp": "95:56",
+      "text": "That's what. That's what I ended up think, having done, like, just to provide a concluding thought on the Ridley Scott doubleheader. I think what Ridley Scott with Alien and Blade Runner really, it really shows is how much he benefited by having an amazing team around him of just, like, phenomenal artists and, like, Giger and, like, o', Bannon, all the folks who helped make Alien and like, Sid Mead and, like, you know, all the folks who help make, you know, Vangelis, all the folks who help make Blade Runner and, like, Ridley Scott, that. That's, like, why he's so high variance is like, if he doesn't have, like, all of those pieces, like, it really. He can really end up just making a schlocky movie that, like, is. Is unremarkable. He needs. He needs the full team to create that. To create that full world."
+    },
+    {
+      "name": "A",
+      "timestamp": "96:41",
+      "text": "Do you think it's also that his best movies were made at a time when people didn't believe that he could make great movies and so were pushing back on everything he did?"
+    },
+    {
+      "name": "B",
+      "timestamp": "96:49",
+      "text": "Yeah, maybe."
+    },
+    {
+      "name": "A",
+      "timestamp": "96:50",
+      "text": "You know, whereas now in the, like, 2010s, everyone says, do whatever you want. Ridley, you're a genius."
+    },
+    {
+      "name": "F",
+      "timestamp": "96:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "A",
+      "timestamp": "96:56",
+      "text": "Make this Alien prequel with a terrible story that makes no sense and the characters are awful."
+    },
+    {
+      "name": "B",
+      "timestamp": "97:01",
+      "text": "Yeah."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:01",
+      "text": "Yes."
+    },
+    {
+      "name": "D",
+      "timestamp": "97:02",
+      "text": "Cow. We're aligned."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:03",
+      "text": "We're aligned. We did it. We achieved it in the end."
+    },
+    {
+      "name": "B",
+      "timestamp": "97:05",
+      "text": "We came together."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:06",
+      "text": "Yes. Is the friends we made along the way. All right, Cal, what do you have to plug? What are you excited about? What's going on? Anything you're looking forward to?"
+    },
+    {
+      "name": "A",
+      "timestamp": "97:14",
+      "text": "I'm excited about eventually going to a cinema again and seeing a movie, you know, with the. On a big screen with other people."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:20",
+      "text": "Yes."
+    },
+    {
+      "name": "A",
+      "timestamp": "97:21",
+      "text": "You know, breathing their filthy germs on me. And it sounds like it's going to be in the San Francisco imax."
+    },
+    {
+      "name": "B",
+      "timestamp": "97:26",
+      "text": "It's going to be our germs."
+    },
+    {
+      "name": "A",
+      "timestamp": "97:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "B",
+      "timestamp": "97:27",
+      "text": "Yeah. It's going to be our germs."
+    },
+    {
+      "name": "A",
+      "timestamp": "97:28",
+      "text": "Beautiful. This is. It's been so long and it's such a, you know, you can definitely experience and enjoy cinema at home. Yes."
+    },
+    {
+      "name": "B",
+      "timestamp": "97:36",
+      "text": "Right."
+    },
+    {
+      "name": "A",
+      "timestamp": "97:36",
+      "text": "Like, you can watch it on your laptop in bed, and it still, you know, still have an incredible impact, but there's nothing like, you know, seeing it on a. On a gigantic screen surrounded by your friends."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:46",
+      "text": "Absolutely. Well, we are going to do that. And I will just say, folks, start hitting us up."
+    },
+    {
+      "name": "D",
+      "timestamp": "97:51",
+      "text": "Hit us up on Twitter, hit us."
+    },
+    {
+      "name": "C",
+      "timestamp": "97:53",
+      "text": "Up on Discord, hit us up on Instagram. Let us know if you are fired up about coming to see this movie with us on Preview night. Thursday, October 21 Dune Pod Premiere Super Spreader event."
+    },
+    {
+      "name": "B",
+      "timestamp": "98:09",
+      "text": "Come join us."
+    },
+    {
+      "name": "C",
+      "timestamp": "98:12",
+      "text": "It's time. Yeah, it's all been leading to this."
+    },
+    {
+      "name": "B",
+      "timestamp": "98:15",
+      "text": "You have to be vaxxed. You have to be vaxxed. And everyone's gonna be wearing masks."
+    },
+    {
+      "name": "D",
+      "timestamp": "98:23",
+      "text": "And that's it for this episode of Dune pod."
+    },
+    {
+      "name": "C",
+      "timestamp": "98:26",
+      "text": "I want to thank Jason and Captain for a controversial and fun conversation. Don't forget, next week, Twitter co founder."
+    },
+    {
+      "name": "D",
+      "timestamp": "98:34",
+      "text": "Biz Stone joins us to give up Jason's secrets and watch the most critically."
+    },
+    {
+      "name": "C",
+      "timestamp": "98:38",
+      "text": "Acclaimed film of the classic series, Star Trek, the Voyage Home."
+    },
+    {
+      "name": "D",
+      "timestamp": "98:44",
+      "text": "If you're enjoying this podcast, join our."
+    },
+    {
+      "name": "C",
+      "timestamp": "98:46",
+      "text": "Discord server where you can hang out with us whenever you want. A link is in the show notes. You can find our full movie set list on letterboxd. And if you want to support them by upgrading to pro or patron status, use promo code Dunepod at checkout to save 20%. Dune Pod is a tape deck podcast, John, a production of H Industries. Our artwork is by Catcher and our theme music was composed by Toby Forsman of Whip Song Music. The episode was produced and edited by me, H. Thanks for listening. We'll see everybody next week."
+    }
+  ]
+}

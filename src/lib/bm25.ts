@@ -65,6 +65,7 @@ const SYNONYM_MAP: Record<string, string[]> = {
   "eszterhas'": ['esther', 'ester'],
   'esterhaus': ['esther', 'ester'],
   "esterhaus'": ['esther', 'ester'],
+  'spicoli': ['pacoli', 'spagoli'],
 };
 
 /**

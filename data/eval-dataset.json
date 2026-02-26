@@ -3,62 +3,113 @@
     {
       "name": "Dingus voicemail routing (word not in transcripts)",
       "query": "in which episode is the word dingus used in a voicemail",
-      "tags": ["known-limitation", "transcript-content", "routing"],
-      "expectClassificationType": ["interpretive", "hybrid"],
+      "tags": [
+        "known-limitation",
+        "transcript-content",
+        "routing"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Paul Atriedeez Nutz Desus and Mero bit",
       "query": "what episode does Paul Atreides Nutz do his Desus and Mero bit",
-      "tags": ["voicemail", "transcript-content"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "expectTextInAnswer": ["Paul"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "voicemail",
+        "transcript-content"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "Paul"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "AKA caller voicemail",
       "query": "when did a caller say AKA a bunch of times",
-      "tags": ["voicemail", "transcript-content"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "voicemail",
+        "transcript-content"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Villeneuve Marin interview retrieval",
       "query": "what did Jason ask Villeneuve at the marin film festival",
-      "tags": ["transcript-content", "retrieval"],
+      "tags": [
+        "transcript-content",
+        "retrieval"
+      ],
       "expectSourceEpisode": "Villeneuve",
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Lead paint chips quote",
       "query": "which episode has someone saying lead paint chips were delicious",
-      "tags": ["transcript-content", "quote"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "transcript-content",
+        "quote"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
-
     {
       "name": "Jodorowsky cross-episode recall",
       "query": "earliest mentions of director Jodorowsky on the podcast",
-      "tags": ["cross-episode", "retrieval"],
-      "expectTextInAnswer": ["Jodorowsky"],
+      "tags": [
+        "cross-episode",
+        "retrieval"
+      ],
+      "expectTextInAnswer": [
+        "Jodorowsky"
+      ],
       "expectSourceEpisode": "Dune",
       "expectMinTranscriptSources": 3
     },
     {
       "name": "Bill Murray mentions",
       "query": "every time Bill Murray is mentioned or discussed",
-      "tags": ["cross-episode", "retrieval"],
-      "expectTextInAnswer": ["Murray"],
+      "tags": [
+        "cross-episode",
+        "retrieval"
+      ],
+      "expectTextInAnswer": [
+        "Murray"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Jaws episode discussion",
       "query": "what did the hosts think about Jaws",
-      "tags": ["single-episode", "opinion"],
+      "tags": [
+        "single-episode",
+        "opinion"
+      ],
       "expectEpisodeInAnswer": "Jaws",
       "expectSourceEpisode": "Jaws",
       "expectMinTranscriptSources": 3
@@ -66,433 +117,865 @@
     {
       "name": "Godfather legacy discussion",
       "query": "discussion about The Godfather and its legacy",
-      "tags": ["single-episode", "opinion"],
+      "tags": [
+        "single-episode",
+        "opinion"
+      ],
       "expectSourceEpisode": "Godfather",
       "expectMinTranscriptSources": 3
     },
     {
       "name": "Rosie Knight guest discussion",
       "query": "Rosie Knight talking about comics or superheroes",
-      "tags": ["guest", "retrieval"],
+      "tags": [
+        "guest",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Kev voicemail questions",
       "query": "Kev's voicemail questions to the hosts",
-      "tags": ["voicemail", "retrieval"],
+      "tags": [
+        "voicemail",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "birria discussing a movie",
       "query": "birria discussing a movie on the podcast",
-      "tags": ["voicemail", "retrieval"],
+      "tags": [
+        "voicemail",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Practical effects vs CGI",
       "query": "discussions about practical effects versus CGI",
-      "tags": ["thematic", "cross-episode"],
+      "tags": [
+        "thematic",
+        "cross-episode"
+      ],
       "expectMinTranscriptSources": 3
     },
     {
       "name": "Soundtrack and score mentions",
       "query": "when do the hosts talk about the soundtrack or musical score of a film",
-      "tags": ["thematic", "cross-episode"],
+      "tags": [
+        "thematic",
+        "cross-episode"
+      ],
       "expectMinTranscriptSources": 3
     },
     {
       "name": "Deakins Award mentions",
       "query": "Deakins Award",
-      "tags": ["transcript-content", "keyword"],
+      "tags": [
+        "transcript-content",
+        "keyword"
+      ],
       "expectMinTranscriptSources": 1
     },
-
     {
       "name": "Episode count (factual)",
       "query": "how many episodes are there",
-      "tags": ["factual", "metadata"],
-      "expectClassificationType": ["factual"]
+      "tags": [
+        "factual",
+        "metadata"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ]
     },
     {
       "name": "Guest lookup (factual)",
       "query": "which episodes had Proto as a guest",
-      "tags": ["factual", "metadata", "guest"],
-      "expectClassificationType": ["factual"],
+      "tags": [
+        "factual",
+        "metadata",
+        "guest"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
       "expectMinMetadataSources": 1
     },
     {
       "name": "Director filter (factual)",
       "query": "Tim Burton movies on the podcast",
-      "tags": ["factual", "metadata", "director"],
-      "expectClassificationType": ["factual"],
+      "tags": [
+        "factual",
+        "metadata",
+        "director"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
       "expectMinMetadataSources": 1
     },
     {
       "name": "Opinion is interpretive",
       "query": "what did the hosts think about the ending of Inception",
-      "tags": ["interpretive", "classifier"],
-      "expectClassificationType": ["interpretive"]
+      "tags": [
+        "interpretive",
+        "classifier"
+      ],
+      "expectClassificationType": [
+        "interpretive"
+      ]
     },
     {
       "name": "Reaction is interpretive",
       "query": "how did Jason react to the twist in The Prestige",
-      "tags": ["interpretive", "classifier"],
-      "expectClassificationType": ["interpretive"]
+      "tags": [
+        "interpretive",
+        "classifier"
+      ],
+      "expectClassificationType": [
+        "interpretive"
+      ]
     },
-
     {
       "name": "Latest episode (intent detection)",
       "query": "what was the latest episode",
-      "tags": ["intent", "metadata"],
-      "rejectTextInAnswer": ["no information"]
+      "tags": [
+        "intent",
+        "metadata"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "Current season (intent detection)",
       "query": "what season is the pod on now",
-      "tags": ["intent", "metadata"],
-      "rejectTextInAnswer": ["no information"]
+      "tags": [
+        "intent",
+        "metadata"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "Total episodes (intent detection)",
       "query": "how many total episodes has the podcast done",
-      "tags": ["intent", "metadata"],
-      "rejectTextInAnswer": ["no information"]
+      "tags": [
+        "intent",
+        "metadata"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
-
     {
       "name": "Episode lookup by number (intent detection)",
       "query": "what is episode 283",
-      "tags": ["intent", "metadata", "episode-lookup"],
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "tags": [
+        "intent",
+        "metadata",
+        "episode-lookup"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Episode lookup bare (intent detection)",
       "query": "episode 204",
-      "tags": ["intent", "metadata", "episode-lookup"],
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "tags": [
+        "intent",
+        "metadata",
+        "episode-lookup"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Episode details request (intent detection)",
       "query": "tell me about episode 150",
-      "tags": ["intent", "metadata", "episode-lookup"],
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "tags": [
+        "intent",
+        "metadata",
+        "episode-lookup"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
-
     {
       "name": "80s movies decade filter",
       "query": "which 80s movies did they enjoy the most",
-      "tags": ["hybrid", "decade"],
-      "expectClassificationType": ["hybrid", "interpretive"],
+      "tags": [
+        "hybrid",
+        "decade"
+      ],
+      "expectClassificationType": [
+        "hybrid",
+        "interpretive"
+      ],
       "expectMinSources": 2
     },
     {
       "name": "Challenger disaster retrieval",
       "query": "what have hosts said about the Challenger disaster?",
-      "tags": ["niche", "retrieval"],
+      "tags": [
+        "niche",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Kev voicemail about cinematography",
       "query": "Kev voicemail asking about cinematography",
-      "tags": ["voicemail", "transcript-content"],
+      "tags": [
+        "voicemail",
+        "transcript-content"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Broad query returns diverse episodes",
       "query": "funniest moments on the podcast",
-      "tags": ["broad", "retrieval"],
+      "tags": [
+        "broad",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 3,
       "expectMinDistinctTranscriptEpisodes": 3
     },
     {
       "name": "Rosie's job (transcript-only)",
       "query": "What does Rosie do for a living?",
-      "tags": ["transcript-only", "guest"],
+      "tags": [
+        "transcript-only",
+        "guest"
+      ],
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information"]
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "Luke Skywalker opinions",
       "query": "What do the hosts think about Luke Skywalker?",
-      "tags": ["opinion", "retrieval"],
-      "rejectTextInAnswer": ["no information"],
+      "tags": [
+        "opinion",
+        "retrieval"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Tilda casting (intent detection)",
       "query": "who would Tilda play in the next movie",
-      "tags": ["intent", "tilda"],
-      "rejectTextInAnswer": ["no information"]
+      "tags": [
+        "intent",
+        "tilda"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "MMM count (intent detection)",
       "query": "what was the latest MMM count",
-      "tags": ["intent", "metadata"],
-      "rejectTextInAnswer": ["no information"]
+      "tags": [
+        "intent",
+        "metadata"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "Director ranking discussion",
       "query": "hosts ranking or comparing movies by the same director",
-      "tags": ["thematic", "retrieval"],
+      "tags": [
+        "thematic",
+        "retrieval"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Factual fallback: Rushmore director",
       "query": "who directed Rushmore according to the hosts",
-      "tags": ["factual-fallback", "retrieval"],
+      "tags": [
+        "factual-fallback",
+        "retrieval"
+      ],
       "expectSourceEpisode": "Rushmore",
-      "rejectTextInAnswer": ["no information"]
+      "rejectTextInAnswer": [
+        "no information"
+      ]
     },
     {
       "name": "1980 movies from metadata (year filter)",
       "query": "list all movies reviewed by the pod that were made in 1980",
-      "tags": ["factual", "metadata", "year-filter"],
-      "expectClassificationType": ["factual"],
-      "expectTextInAnswer": ["Popeye", "Flash Gordon", "Altered States", "Empire Strikes Back"],
+      "tags": [
+        "factual",
+        "metadata",
+        "year-filter"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
+      "expectTextInAnswer": [
+        "Popeye",
+        "Flash Gordon",
+        "Altered States",
+        "Empire Strikes Back"
+      ],
       "expectMinMetadataSources": 4
     },
-
     {
       "name": "Haitch band history (transcript-search factual)",
       "query": "Did Haitch the host ever have a band? Did they ever open for another more famous act?",
-      "tags": ["transcript-factual", "biographical", "host"],
-      "rejectTextInAnswer": ["no information", "not mentioned"],
+      "tags": [
+        "transcript-factual",
+        "biographical",
+        "host"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "not mentioned"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "River Phoenix mentions (transcript-search factual)",
       "query": "In what context has the actor River Phoenix been mentioned on the podcast?",
-      "tags": ["transcript-factual", "cross-episode", "actor"],
-      "expectTextInAnswer": ["River Phoenix"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "transcript-factual",
+        "cross-episode",
+        "actor"
+      ],
+      "expectTextInAnswer": [
+        "River Phoenix"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "You hack catchphrase",
       "query": "when do the hosts say you hack on the podcast",
-      "tags": ["transcript-factual", "catchphrase", "cross-episode", "agent"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "transcript-factual",
+        "catchphrase",
+        "cross-episode",
+        "agent"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Truthsayer segment mentions",
       "query": "what does Truthsayer talk about in their voicemails",
-      "tags": ["transcript-factual", "voicemail", "cross-episode"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "transcript-factual",
+        "voicemail",
+        "cross-episode"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Most frequent voicemailers",
       "query": "who are the most frequent voicemailers or callers on the podcast",
-      "tags": ["transcript-factual", "aggregation", "voicemail", "agent"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "transcript-factual",
+        "aggregation",
+        "voicemail",
+        "agent"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "Who says yeah more (interpretive aggregation)",
       "query": "who says yeah more, jason or matt",
-      "tags": ["interpretive", "aggregation", "host-comparison", "agent"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "interpretive",
+        "aggregation",
+        "host-comparison",
+        "agent"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Targeted episode: Starman Hatch News segment",
       "query": "What was talked about in the Hatch News portion of the Starman episode",
-      "tags": ["targeted-episode", "single-episode"],
+      "tags": [
+        "targeted-episode",
+        "single-episode"
+      ],
       "expectSourceEpisode": "Starman",
       "expectMinTranscriptSources": 1,
-      "expectTextInAnswer": ["Starman"]
+      "expectTextInAnswer": [
+        "Starman"
+      ]
     },
     {
       "name": "Synonym expansion: voicemail/letter early era",
       "query": "What voicemails or listener messages did they get on the No Country for Old Men episode",
-      "tags": ["query-expansion", "synonym", "single-episode"],
+      "tags": [
+        "query-expansion",
+        "synonym",
+        "single-episode"
+      ],
       "expectSourceEpisode": "No Country for Old Men",
       "expectMinTranscriptSources": 1,
-      "expectTextInAnswer": ["No Country"]
+      "expectTextInAnswer": [
+        "No Country"
+      ]
     },
     {
       "name": "Full catalog suggestion (known limitation)",
       "query": "Review every movie the podcast has covered, then suggest 10 more films they should cover",
-      "tags": ["known-limitation", "full-catalog", "recommendation"],
-      "rejectTextInAnswer": ["no information"],
+      "tags": [
+        "known-limitation",
+        "full-catalog",
+        "recommendation"
+      ],
+      "rejectTextInAnswer": [
+        "no information"
+      ],
       "expectMinSources": 1
     },
     {
       "name": "Joe Eszterhas security guy anecdote linkage",
-      "query": "what was the deal with Joe Esterhaus’ security guy who later installed Haitch’s security system and what episode was that discussed?",
-      "tags": ["transcript-factual", "anecdote-linkage", "episode-attribution"],
-      "expectTextInAnswer": ["Showgirls"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "query": "what was the deal with Joe Esterhaus\u2019 security guy who later installed Haitch\u2019s security system and what episode was that discussed?",
+      "tags": [
+        "transcript-factual",
+        "anecdote-linkage",
+        "episode-attribution"
+      ],
+      "expectTextInAnswer": [
+        "Showgirls"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Jason fishing cross-episode aggregation",
       "query": "What does Jason think of fishing",
-      "tags": ["cross-episode", "aggregation", "persona", "agent"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "expectTextInAnswer": ["fishing"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "cross-episode",
+        "aggregation",
+        "persona",
+        "agent"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "fishing"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2
     },
     {
       "name": "Digital court jew episode attribution (single-episode non-movie)",
       "query": "What episode did Jason say he'd be the digital court jew for the new pope?",
-      "tags": ["single-episode", "transcript-factual", "episode-attribution", "non-movie"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "expectTextInAnswer": ["digital court jew"],
+      "tags": [
+        "single-episode",
+        "transcript-factual",
+        "episode-attribution",
+        "non-movie"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "digital court jew"
+      ],
       "expectSourceEpisode": "Running Man (2025) - LIVE",
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1,
       "expectMaxDistinctTranscriptEpisodes": 2
     },
     {
       "name": "Zelda multi-referent scope (ambiguous term)",
       "query": "Zelda",
-      "tags": ["ambiguous-term", "multi-referent", "synthesis", "cross-episode"],
-      "expectTextInAnswer": ["Zelda Rubinstein"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "ambiguous-term",
+        "multi-referent",
+        "synthesis",
+        "cross-episode"
+      ],
+      "expectTextInAnswer": [
+        "Zelda Rubinstein"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 3,
       "expectMinDistinctTranscriptEpisodes": 2
     },
-
     {
       "name": "Malcolm and Marie episode-scoped retrieval (FM-03)",
       "query": "What did the hosts say about self-perception and relationships in the Malcolm and Marie episode?",
-      "tags": ["episode-scoped", "retrieval", "FM-03", "prod-eval-2026-02"],
+      "tags": [
+        "episode-scoped",
+        "retrieval",
+        "FM-03",
+        "prod-eval-2026-02"
+      ],
       "expectSourceEpisode": "Malcolm and Marie",
-      "rejectTextInAnswer": ["no information", "don't have", "Station Eleven"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "Station Eleven"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Star Trek episode-scoped retrieval (FM-03)",
       "query": "What did the hosts discuss about Decker in the Star Trek episode?",
-      "tags": ["episode-scoped", "retrieval", "FM-03", "prod-eval-2026-02"],
+      "tags": [
+        "episode-scoped",
+        "retrieval",
+        "FM-03",
+        "prod-eval-2026-02"
+      ],
       "expectSourceEpisode": "Star Trek",
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "They Live one-liner episode-scoped retrieval (FM-03/FM-04)",
       "query": "What did Haitch say about the iconic one-liner from They Live?",
-      "tags": ["episode-scoped", "retrieval", "quote", "FM-03", "FM-04", "prod-eval-2026-02"],
+      "tags": [
+        "episode-scoped",
+        "retrieval",
+        "quote",
+        "FM-03",
+        "FM-04",
+        "prod-eval-2026-02"
+      ],
       "expectSourceEpisode": "They Live",
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Dune sleeves quote cross-episode (FM-06)",
       "query": "What did Jason mean when he said 'Never fuck with someone with sleeves in the Dune Universe'?",
-      "tags": ["cross-episode", "quote", "FM-06", "prod-eval-2026-02", "agent"],
-      "expectTextInAnswer": ["sleeve"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "cross-episode",
+        "quote",
+        "FM-06",
+        "prod-eval-2026-02",
+        "agent"
+      ],
+      "expectTextInAnswer": [
+        "sleeve"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 2
     },
     {
       "name": "The Mark American Movie reference (FM-13)",
       "query": "What did Jason mean when he said Haitch is 'the Mark' of the podcast?",
-      "tags": ["ambiguous-term", "synthesis", "FM-13", "prod-eval-2026-02", "known-limitation", "agent"],
+      "tags": [
+        "ambiguous-term",
+        "synthesis",
+        "FM-13",
+        "prod-eval-2026-02",
+        "known-limitation",
+        "agent"
+      ],
       "expectSourceEpisode": "American Movie",
-      "rejectTextInAnswer": ["no information", "don't have", "don't see any evidence"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "don't see any evidence"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Wachowskis directorial debut Bound (FM-14)",
       "query": "What did the hosts think about how the Wachowskis' directorial debut compared to other first-time filmmakers?",
-      "tags": ["implicit-knowledge", "synthesis", "FM-14", "prod-eval-2026-02"],
+      "tags": [
+        "implicit-knowledge",
+        "synthesis",
+        "FM-14",
+        "prod-eval-2026-02"
+      ],
       "expectSourceEpisode": "Bound",
-      "expectTextInAnswer": ["Bound"],
-      "rejectTextInAnswer": ["no information", "don't have", "do not contain"],
+      "expectTextInAnswer": [
+        "Bound"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "do not contain"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Villeneuve across Arrival and Sicario (FM-07 host identity)",
       "query": "What did the hosts think about Denis Villeneuve's filmmaking across Arrival and Sicario?",
-      "tags": ["cross-episode", "FM-07", "host-identity", "prod-eval-2026-02"],
+      "tags": [
+        "cross-episode",
+        "FM-07",
+        "host-identity",
+        "prod-eval-2026-02"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2,
-      "rejectTextInAnswer": ["host B", "host C", "host A", "no information"]
+      "rejectTextInAnswer": [
+        "host B",
+        "host C",
+        "host A",
+        "no information"
+      ]
     },
     {
       "name": "Andor Nemek manifesto speaker attribution (FM-07)",
       "query": "What did the hosts say about Nemek's manifesto spreading in Andor?",
-      "tags": ["episode-scoped", "FM-07", "attribution", "prod-eval-2026-02"],
+      "tags": [
+        "episode-scoped",
+        "FM-07",
+        "attribution",
+        "prod-eval-2026-02"
+      ],
       "expectSourceEpisode": "Andor",
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
-
     {
       "name": "Boilerplate suppression regression (end-of-episode)",
       "query": "What was discussed at the end of the Jaws episode?",
-      "tags": ["retrieval", "boilerplate-regression"],
+      "tags": [
+        "retrieval",
+        "boilerplate-regression"
+      ],
       "expectSourceEpisode": "Jaws",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "leave us a rating"]
+      "rejectTextInAnswer": [
+        "no information",
+        "leave us a rating"
+      ]
     },
     {
       "name": "Deterministic film fallback isolation (Legend)",
       "query": "What was the hosts' take on Legend?",
-      "tags": ["episode-scoped", "retrieval", "film-fallback-regression"],
+      "tags": [
+        "episode-scoped",
+        "retrieval",
+        "film-fallback-regression"
+      ],
       "expectSourceEpisode": "Legend",
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Host-scoped attribution (Haitch hot takes)",
       "query": "What are some of Haitch's hot takes or unpopular opinions?",
-      "tags": ["host-attribution", "synthesis", "cross-episode"],
-      "expectTextInAnswer": ["Haitch"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "tags": [
+        "host-attribution",
+        "synthesis",
+        "cross-episode"
+      ],
+      "expectTextInAnswer": [
+        "Haitch"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2
     },
     {
       "name": "Host-scoped opinion with guest present (Panic Room)",
       "query": "What did the hosts think about Panic Room?",
-      "tags": ["host-attribution", "synthesis", "FM-07", "phase-3c"],
+      "tags": [
+        "host-attribution",
+        "synthesis",
+        "FM-07",
+        "phase-3c"
+      ],
       "expectSourceEpisode": "Panic Room",
-      "expectTextInAnswer": ["Haitch", "Jason"],
-      "rejectTextInAnswer": ["no information", "don't have"],
+      "expectTextInAnswer": [
+        "Haitch",
+        "Jason"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ],
       "expectMinTranscriptSources": 1
     },
     {
       "name": "Preference-confidence hedging (favorite film)",
       "query": "What is the hosts' all-time favorite movie they've covered on the podcast?",
-      "tags": ["preference", "synthesis", "FM-11", "phase-3c"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "rejectTextInAnswer": ["no information", "don't have", "definitely their favorite", "without a doubt"],
+      "tags": [
+        "preference",
+        "synthesis",
+        "FM-11",
+        "phase-3c"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "definitely their favorite",
+        "without a doubt"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2
     },
     {
       "name": "Person-scoped personal query: Jason food preferences",
       "query": "Does Jason like BBQ?",
-      "tags": ["cross-cutting-personal", "retrieval", "FM-15", "speaker-boost", "agent"],
-      "expectClassificationType": ["interpretive", "hybrid"],
+      "tags": [
+        "cross-cutting-personal",
+        "retrieval",
+        "FM-15",
+        "speaker-boost",
+        "agent"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have", "does not contain"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "does not contain"
+      ]
     },
     {
       "name": "Cross-cutting personal query: hosts' favorite foods",
       "query": "What are some of the hosts' favorite foods?",
-      "tags": ["cross-cutting-personal", "retrieval", "FM-15", "synthesis-grounding", "agent"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "expectTextInAnswer": ["Velveeta"],
+      "tags": [
+        "cross-cutting-personal",
+        "retrieval",
+        "FM-15",
+        "synthesis-grounding",
+        "agent"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "Velveeta"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2,
-      "rejectTextInAnswer": ["no information", "don't have", "does not contain", "does not directly discuss"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "does not contain",
+        "does not directly discuss"
+      ]
     },
     {
       "name": "Creative catchphrase aggregation: Jason's recurring phrases",
       "query": "If Jason had a catchphrase based on the transcripts what would it be",
-      "tags": ["cross-episode", "aggregation", "persona", "FM-06", "FM-16", "agent"],
-      "expectClassificationType": ["interpretive", "hybrid"],
-      "expectTextInAnswer": ["you hack"],
+      "tags": [
+        "cross-episode",
+        "aggregation",
+        "persona",
+        "FM-06",
+        "FM-16",
+        "agent"
+      ],
+      "expectClassificationType": [
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "you hack"
+      ],
       "expectMinTranscriptSources": 2,
       "expectMinDistinctTranscriptEpisodes": 2,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
+    },
+    {
+      "name": "Character-name query: Spicoli and American Revolution (Fast Times)",
+      "query": "what did Jeff Spicoli say about the American Revolution?",
+      "tags": [
+        "episode-scoped",
+        "character-name",
+        "FM-17"
+      ],
+      "expectClassificationType": [
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "Mr. Hand",
+        "Spicoli"
+      ],
+      "expectMinTranscriptSources": 1,
+      "expectEpisodeInAnswer": [
+        "Fast Times at Ridgemont High"
+      ],
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     }
   ]
 }

@@ -213,6 +213,22 @@ For each reported bad query:
 - Relationship to other FMs: variant of FM-06 (cross-episode aggregation) where the keyword anchor actively misdirects retrieval away from distributed evidence. Also overlaps FM-11 (weak-evidence overclaim — treating a single movie-quote appreciation as a personal catchphrase).
 - Plan alignment: Phase 2d-2 concept-vs-instance query disambiguation (resolved).
 
+### FM-17: Character-Name Query Resolution Gap
+- Stage: Classification/Retrieval
+- Query type: queries referencing fictional character names (e.g., "What did Jeff Spicoli say about the American Revolution?")
+- Why hard now: `findFilmFromQuery()` only matches film titles in the query, not character names. Routing to the correct episode depends entirely on the LLM classifier's world knowledge. For well-known characters (Spicoli, Damone) Haiku succeeds, but for obscure characters (Mr. Ratner, Jefferson) it may not. Even when episode routing succeeds, within-episode retrieval struggles because character discussion may be a small island in a large chunk dominated by other topics.
+- Observed case: "what did Jeff Spicoli say about the American Revolution?" — Fast Times at Ridgemont High (1982).
+  - **Routing**: works. Haiku correctly sets `film: "Fast Times at Ridgemont High"`, `findFilmFromQuery()` returns null (no title in query), LLM value survives. Metadata film filter matches via substring. `targetEpisodeTitles` set correctly. Episode injection, 1.5x boost, and 3x diversification cap all fire.
+  - **Retrieval**: weak. The relevant content (66:05–66:37, 3 lines about Mr. Hand, Spicoli being flunked, and "American revolutionary motivation") is buried in chunk 10 (63:19–70:04, 1880 tokens) which is mostly about Phoebe Cates, the abortion subplot, and Phoebe's biographical details. BM25 indexes chunk 10 for `spicoli`(2), `american`(1), `revolutionary`(1), but competing chunks with more Spicoli mentions (chunks 5–7, 11–13) may outrank it. Embedding vector for the full chunk is semantically distant from "Spicoli American Revolution."
+  - **Whisper errors**: "Spicoli" is also transcribed as "Pacoli" and "Spagoli" in the same chunk. "Spicoli" does appear correctly elsewhere (other chunks), so BM25 still matches, but within-chunk term frequency is diluted.
+- Proposed mitigations:
+  1. **TMDB character-name enrichment** (Phase 5): extend `enrich-tmdb.ts` to extract `character` field from TMDB credits API alongside actor `name`. Add `findCharacterFromQuery()` deterministic routing — scan query for character names, map to episode. More reliable than LLM world knowledge, especially for obscure characters.
+  2. **BM25 Whisper synonym expansion**: add `pacoli`/`spagoli` → `spicoli` synonyms (like existing Eszterhas synonyms).
+  3. **Supplemental query generation**: classifier could generate targeted sub-queries (e.g., "Mr. Hand Spicoli class") to improve within-episode chunk retrieval.
+- Common miss: answer uses model world knowledge about the movie scene instead of surfacing the hosts' actual discussion. Or retrieves Spicoli-heavy chunks that discuss other topics.
+- User-visible symptom: answer describes what happens in the movie rather than what the hosts said about it.
+- Plan alignment: Phase 5 (metadata enrichment with character names), Phase 2d-2 (entity-aware retrieval).
+
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
 These are expected to be hard until dedicated handling is added:
@@ -223,6 +239,7 @@ These are expected to be hard until dedicated handling is added:
 - Queries needing negative proof (“never said X”, “no episodes with Y”) without full-scan safeguards. (Candidate for Phase B agent routing expansion.)
 - ~~Queries requiring world knowledge to connect descriptions to retrieved evidence (e.g., “directorial debut” → specific film title).~~ **Partially resolved** — director-debut resolution handles “directorial debut” patterns; other implicit knowledge gaps (e.g., cultural references) remain.
 - ~~Cross-cutting personal/lifestyle queries where evidence is incidental asides within film-focused chunks (e.g., food preferences, personal anecdotes, hobbies).~~ **Partially resolved** — personal-aside sub-chunking (FM-15) and catchphrase sub-chunking (FM-16) address known patterns. Novel personal topics without dedicated sub-chunks remain hard.
+- Queries referencing fictional character names rather than film titles (FM-17). Routing depends on LLM world knowledge; within-episode retrieval struggles when the relevant discussion is a small section of a large chunk dominated by other topics. TMDB character-name enrichment (planned Phase 5) will add deterministic character→film routing.
 
 ## Common Miss Patterns We Should Expect
 
