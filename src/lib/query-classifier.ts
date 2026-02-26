@@ -4,7 +4,7 @@ import {
   QueryFilters,
   ClassificationResult,
 } from '@/types/episode-metadata';
-import { findFilmFromQuery, findDebutFilmFromQuery } from './query-intent';
+import { findFilmFromQuery, findDebutFilmFromQuery, findDirectorFromQuery } from './query-intent';
 
 // Fallback heuristics - only used if LLM fails
 const FACTUAL_TRIGGERS = [
@@ -279,6 +279,19 @@ Respond with ONLY valid JSON:
     const debutFilm = findDebutFilmFromQuery(query);
     if (debutFilm) {
       filters.film = debutFilm;
+    }
+  }
+
+  // Fallback: deterministic director detection for retrieval scoping.
+  // When no film was detected, check if the query mentions a catalog director.
+  // Sets filters.director so queryEpisodes returns that director's episodes,
+  // populating targetEpisodeTitles for injection/boost/diversification.
+  // Example: "What is Jason's opinion of John Boorman" → director: "John Boorman"
+  //   → targetEpisodeTitles: ["Zardoz (1974)", "Excalibur (1981)"]
+  if (!detectedFilm && !filters.film && !filters.director) {
+    const detectedDirector = findDirectorFromQuery(query);
+    if (detectedDirector) {
+      filters.director = detectedDirector;
     }
   }
 

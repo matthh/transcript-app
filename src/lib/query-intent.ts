@@ -202,8 +202,9 @@ export function findDirectorFromQuery(query: string): string | null {
       if (!bestMatch || score > bestMatch.score) {
         bestMatch = { director, score };
       }
-    } else if (normalizedLast && normalizedLast.length >= 4 && normalizedQuery.includes(normalizedLast)) {
+    } else if (normalizedLast && normalizedLast.length >= 4 && new RegExp(`\\b${normalizedLast}\\b`).test(normalizedQuery)) {
       // Last name match — require ≥4 chars to avoid "Lee", "Bay", etc.
+      // Word boundary check prevents "shin" matching inside "fishing".
       const score = normalizedLast.length;
       if (!bestMatch || score > bestMatch.score) {
         bestMatch = { director, score };

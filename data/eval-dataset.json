@@ -1034,13 +1034,20 @@
         "Spicoli"
       ],
       "expectMinTranscriptSources": 1,
-      "expectEpisodeInAnswer": [
-        "Fast Times at Ridgemont High"
-      ],
+      "expectEpisodeInAnswer": "Fast Times at Ridgemont High",
       "rejectTextInAnswer": [
         "no information",
         "don't have"
       ]
+    },
+    {
+      "name": "Director-scoped retrieval: Boorman opinion (F4 director→film routing)",
+      "query": "What is Jason's opinion of John Boorman as a director",
+      "tags": ["interpretive", "director", "FM-03"],
+      "expectClassificationType": ["interpretive"],
+      "expectSourceEpisode": "Excalibur",
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have"]
     },
     {
       "name": "Counting with action verb: Haitch 'we'll get there' interruptions (agent routing gap)",

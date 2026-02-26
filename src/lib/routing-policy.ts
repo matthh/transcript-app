@@ -183,7 +183,7 @@ export function isAgentAutoDisabled(): boolean {
  */
 const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase A: counting/frequency with verb anchor
-  /\b(how many times|how often|every time)\b.*\b(say|said|mention|mentioned)\b/i,
+  /\b(how many times|how often|every time)\b.*\b(say|said|says|mention|mentioned|use|used|ask|asked|interrupt|interrupted|tell|told|bring up|brought up|call|called|repeat|repeated|reference|referenced)\b/i,
 
   // Phase B1: Speaker comparison — "who says X more"
   /\bwho\s+(say|says|said)\b.*\bmore\b/i,
