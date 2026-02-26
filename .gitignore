@@ -55,4 +55,9 @@ batch-transcribe-progress.json
 
 # MP3 audio files (too large for git)
 mp3s/
+
+# Search data (stored in Vercel Blob, too large for git)
+vector-store.json
+bm25-index.json
+
 .env*.local
