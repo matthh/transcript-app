@@ -232,6 +232,7 @@ const SPEAKER_NAME_MAP: Record<string, string[]> = {
   'animal mother': ['Animal Mother'],
   'mr java': ['Mr Java', 'Mr. Java'],
   'lizzen': ['Lizzen', 'lizzen'],
+  'ethan': ['Ethan', 'ethan', 'ETHAN'],
 };
 
 /**

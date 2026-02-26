@@ -65,6 +65,7 @@ const SYNONYM_MAP: Record<string, string[]> = {
   'birria': ['truthsayer', 'voicemail', 'segment'],
   'kev': ['voicemail', 'segment', 'question'],
   'corey': ['voicemail', 'segment'],
+  'ethan': ['voicemail', 'segment'],
 
   // Whisper transcription error synonyms (proper names misheard)
   'eszterhas': ['esther', 'ester'],

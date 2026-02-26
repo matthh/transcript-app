@@ -416,6 +416,11 @@ const SEGMENT_CONFIGS = [
     speakerNames: ['Lizzen', 'lizzen'],
     semanticPrefix: '[Recurring segment: Lizzen voicemail]',
   },
+  {
+    label: "Ethan's Voicemail",
+    speakerNames: ['Ethan', 'ethan', 'ETHAN'],
+    semanticPrefix: "[Recurring segment: Ethan's Voicemail]",
+  },
 ] as const;
 
 /**
