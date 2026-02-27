@@ -43,9 +43,11 @@ flowchart LR
   R -- "rag" --> E["Metadata filters"]
   R -- "rag" --> F["Hybrid retrieval"]
   E --> G["Episode metadata store"]
-  F --> H["Vector store (embeddings)"]
+  F --> H["Vector store (embeddings, 1536-dim)"]
+  F --> HT["Topic vectors (512-dim)"]
   F --> I["BM25 index (keywords)"]
   H --> L["Post-retrieval (dedup, rerank)"]
+  HT --> L
   I --> L
   G --> J["Answer synthesis"]
   L --> J
@@ -63,7 +65,8 @@ flowchart LR
 - **Metadata filters** — Structured filters (guest, film, season, etc.) used to narrow the episode list.
 - **Episode metadata store** — The structured episode database (titles, guests, reviewers, release dates, Kev’s question, summaries).
 - **Hybrid retrieval** — The transcript search step that combines semantic and keyword search.
-- **Vector store (embeddings)** — Meaning‑based search over transcript chunks.
+- **Vector store (embeddings, 1536-dim)** — Meaning‑based search over transcript chunks using full chunk text embeddings.
+- **Topic vectors (512-dim)** — Supplemental embedding search over LLM-generated topic summaries. Each standard chunk has a corresponding topic summary (2-4 sentences extracted by Haiku at ingest time) that captures personal anecdotes, tangential topics, and incidental mentions buried in film-focused chunks. Stored in a separate blob, loaded in parallel, fail-open. When a topic vector matches, the parent chunk is returned. Gated by `TOPIC_VECTORS_ENABLED` env var. See `docs/topic-extraction-design.md` for full design.
 - **BM25 index (keywords)** — Exact‑word search over transcript chunks, with synonym expansion for known clusters (food, music, preferences, catchphrase) and Whisper transcription error bridges (e.g., “Eszterhas” → “Esther”/”Ester”).
 - **Answer synthesis** — The response writer that blends metadata + transcripts into a readable answer.
 - **Response with citations** — The final output with sources and timestamps for verification.
@@ -163,16 +166,18 @@ If the question is factual or hybrid, metadata is searched using extracted filte
 #### B) Transcript search
 In the full pipeline, transcript search always runs (alongside metadata search), because even factual queries may need evidence from what was said.
 
-This is done in two ways:
-- **Semantic search** (meaning-based, using embeddings)
+This is done in three ways:
+- **Semantic search** (meaning-based, using 1536-dim embeddings of full chunk text)
+- **Topic vector search** (meaning-based, using 512-dim embeddings of LLM-generated topic summaries — surfaces chunks where personal/lifestyle content is buried in film-focused text)
 - **Keyword search** (exact words, using a BM25 index)
 
-These two are combined into a "hybrid" search so we don't miss relevant passages.
+These are combined into a "hybrid" search so we don't miss relevant passages. Topic vector results are resolved to their parent chunks, normalized, and merged with full-text embedding results before RRF fusion with BM25.
 
-The transcript corpus includes three types of chunks:
+The transcript corpus includes four types of chunks:
 - **Standard chunks** (~50 per episode): sequential transcript segments covering the full episode dialogue.
 - **Personal-aside chunks** (ID offset `_1000+`): small supplemental chunks (~200-400 tokens) extracted from food-preference and lifestyle discussions that would otherwise be buried in film-focused chunks.
 - **Catchphrase chunks** (ID offset `_2000+`): 3-turn sub-chunks around known recurring phrases (e.g., Jason's "you hack"), with semantic prefixes for embedding/BM25 matching.
+- **Segment chunks** (ID offset `_3000+`): dedicated sub-chunks for 6 recurring voicemailer segments (Truthsayer/Birria, Kev, Corey, Animal Mother, Mr Java, Lizzen), with semantic prefixes and speaker-boundary detection.
 
 **Metadata-informed boosting:** When the metadata search identifies specific episodes (e.g., the classifier extracted a film filter like "Starman"), the transcript search boosts chunks from those episodes. This ensures that if you ask about a specific episode's content, the relevant chunks rank higher even if other episodes have similar keywords. The boosting is gentle (1.5x score multiplier) so cross-episode mentions still surface, and targeted episodes also get a higher per-episode cap in the diversification step so more of their chunks make it into the final results.
 

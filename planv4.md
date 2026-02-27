@@ -190,16 +190,18 @@ Deliverables:
   - return rationale + closest matches when relaxation is used
 - Strengthen metadata-informed transcript boosting with safeguards for broad queries.
 
-**2d-3: Cross-cutting personal/lifestyle retrieval (FM-15)** ✅ SHIPPED (fully resolved in Phase 4+)
-- Problem: queries about personal topics (food preferences, hobbies, personal anecdotes) retrieve 1–2 tangential chunks because evidence is embedded within film-discussion chunks whose embedding vectors are dominated by the film topic.
-- Examples: "Does Jason like BBQ" → 1 Matrix chunk; "hosts' favorite foods" → Dune chunk about Fremen food.
+**2d-3: Cross-cutting personal/lifestyle retrieval (FM-15)** ✅ SHIPPED (fully resolved via topic extraction)
+- Problem: queries about personal topics (food preferences, hobbies, personal anecdotes, clothing, physical descriptions) retrieve 1–2 tangential chunks because evidence is embedded within film-discussion chunks whose embedding vectors are dominated by the film topic.
+- Examples: "Does Jason like BBQ" → 1 Matrix chunk; "hosts' favorite foods" → Dune chunk about Fremen food; "What kind of shorts does Haitch like" → no relevant results.
 - Shipped mitigations:
   1. **BM25 synonym expansion** (`src/lib/bm25.ts`): added food, music, and preference synonym clusters to `SYNONYM_MAP`. Feeds into both BM25 search and `extractQueryTerms()` keyword boosting.
   2. **Speaker-aware retrieval boost** (`src/lib/hybrid-retrieval.ts`): `extractTargetSpeakers()` does deterministic word-boundary matching against `SPEAKER_NAME_MAP`; `boostSpeakerMatches()` applies 1.3x boost to chunks where matched speaker appears in `metadata.speakers`. Placed in pipeline after keyword boost, before episode boost.
   3. **Personal-aside sub-chunking** (Phase 4+, `scripts/ingest.ts`): `extractPersonalAsides()` creates small supplemental chunks (~200-400 tokens) from food-preference discussions. 8 aside chunks across 5 episodes. Chunk IDs use `_1000+` offset. Velveeta "shells and cheese" now reliably surfaced.
-- Acceptance criteria:
+  4. **LLM topic extraction** (shipped 2026-02-26): Haiku extracts 2-4 sentence topic summaries from all 4,855 standard chunks at ingest time, capturing personal anecdotes, tangential topics, brands, physical descriptions, and lifestyle mentions regardless of category. Summaries embedded at 512-dim via Matryoshka representation learning (text-embedding-3-small `dimensions: 512`). Stored in separate blob (`topic-vectors.json`, 54 MB, 4,799 entries). At query time, topic vectors searched in parallel with full-text vectors; hits resolved to parent chunks with 0.85x score discount, min-max normalized, merged before RRF fusion. Content-hash cache for incremental re-extraction (~$5/full run, >95% cache hit on subsequent runs). Gated by `TOPIC_VECTORS_ENABLED` env var. Eval: 76/82 (0 regressions), 3 new FM-15 cases pass. Design doc: `docs/topic-extraction-design.md`.
+- Acceptance criteria: ✅ Met
   - "hosts' favorite foods" retrieves ≥2 chunks from ≥2 distinct episodes containing actual personal food discussion (not fictional food from shows).
   - Cross-cutting personal queries achieve ≥3 transcript sources on average across FM-15 eval slice.
+  - "physical descriptions of hosts" passes with topic vectors enabled, fails without (confirming feature value).
 
 Exit Criteria:
 - ✅ Episode-scoped queries retrieve chunks from the named episode in >=90% of cases on eval slice. (4/4 episode-scoped eval cases pass consistently.)
@@ -423,6 +425,7 @@ Exit Criteria:
 - M4.1 (Phase 6 — agent-grep hybrid search): agent search module + two-step routing gate + feature flags + telemetry + route integration + transcript bundling + eval tagging. ✅ Live on prod. Eval: 65/66 (FM-13 known-limitation flake). Novel counting/frequency queries produce rich cross-episode results.
 - M4.2 (Phase B — agent routing expansion): 7 new routing patterns (B1–B7) covering speaker comparison, windowed comparison, exhaustive listing, temporal ordering, frequency ranking, episode counting, multi-episode extraction. 4 new eval cases. ✅ Eval: 69/70 (Eszterhas known flake). Addresses 5 of 13 user feedback failures.
 - M4.3 (Segment sub-chunking): `extractSegmentChunks()` creates dedicated sub-chunks for 6 recurring voicemailer segments (Truthsayer/Birria, Kev, Corey, Animal Mother, Mr Java, Lizzen). Chunk IDs use `_3000+` offset. BM25 synonyms for segment names. 3 eval cases (2 updated FM-04 + 1 new). Fixes FM-04 segment-scoped retrieval failures.
+- M4.4 (Topic extraction): LLM topic extraction via Haiku for all 4,855 standard chunks. 512-dim embeddings in separate blob (`topic-vectors.json`, 54 MB, 4,799 entries). Topic-to-parent resolution with 0.85x score discount in `hybrid-retrieval.ts`. Content-hash cache for incremental re-extraction. `TOPIC_VECTORS_ENABLED` feature flag. 3 new FM-15 eval cases. ✅ Eval: 76/82 (0 regressions). Fully resolves FM-15 (personal/lifestyle retrieval gap) across all categories. Design doc: `docs/topic-extraction-design.md`.
 - M4.5 (end Phase 3): synthesis policy matrix and grounding checks shipped.
 - M5 (end Phase 4): CI quality gates active.
 - M6 (end Phase 5): metadata pipeline automated and validated.

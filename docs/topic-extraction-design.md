@@ -2,7 +2,7 @@
 
 **Author**: Claude (AI pair programmer)
 **Date**: 2026-02-26
-**Status**: Proposed
+**Status**: Shipped (2026-02-26)
 **Scope**: Add LLM-generated topic summaries as supplemental embedding vectors to improve retrieval of incidental personal/lifestyle content buried in film-dominated chunks
 
 ---
@@ -176,27 +176,21 @@ function resolveTopicChunks(results: RetrievalResult[], chunkMap: Map<string, St
 
 | Metric | Current | After Topic Extraction | Delta |
 |--------|---------|----------------------|-------|
-| Chunks in vector store | 6,242 | ~12,484 | +6,242 (~100%) |
-| Vector store file size | ~234 MB | ~468 MB | +234 MB |
-| Blob cold-start load time | ~2-3s | ~4-6s | +2-3s |
+| Chunks in vector store | 6,150 | 6,150 (unchanged) | 0 |
+| Topic vectors (separate blob) | 0 | 4,799 | +4,799 |
+| Vector store file size | ~234 MB | ~234 MB (unchanged) | 0 |
+| Topic vectors file size | 0 | ~54 MB | +54 MB |
+| Blob cold-start load time | ~2-3s | ~3-4s (parallel load) | +~1s |
 | BM25 index size | ~23 MB | ~23 MB (unchanged) | 0 |
-| Ingest time (embedding) | ~3 min | ~6 min | +3 min |
-| Ingest time (topic extraction) | 0 | ~5-6 min | +5-6 min |
-| Ingest cost (embedding) | ~$0.10 | ~$0.20 | +$0.10 |
-| Ingest cost (Haiku) | 0 | ~$5.00 | +$5.00 |
-| Per-query embedding search time | ~50ms | ~100ms | +50ms |
+| Ingest time (embedding) | ~3 min | ~3 min (unchanged) | 0 |
+| Ingest time (topic extraction) | 0 | ~15 min (4855 chunks) | +15 min |
+| Ingest cost (embedding, 512-dim) | 0 | ~$0.05 | +$0.05 |
+| Ingest cost (Haiku extraction) | 0 | ~$5.00 | +$5.00 |
+| Per-query topic search time | 0 | ~20-30ms (512-dim) | +20-30ms |
 
-### 3.1 Cold-Start Latency Concern
+### 3.1 Cold-Start Latency (Actual)
 
-The vector store doubling to ~468 MB is the primary concern. Current cold-start loads 234 MB from Vercel Blob in ~2-3 seconds. Doubling to ~468 MB could push cold starts to ~4-6 seconds.
-
-**Mitigations**:
-- **Lazy loading**: Load topic vectors only when needed (separate blob file), trading cold-start for first-query latency.
-- **Reduced embedding dimensions**: Topic summaries are short texts — could use a smaller embedding dimension if OpenAI supports it (text-embedding-3-small supports 512-dim via `dimensions` parameter, down from 1536). This would cut the topic vector size by ~67%, keeping total store at ~312 MB.
-- **Compression**: Topic summary text is shorter than full chunk text — the text field contributes less to file size. The embedding vectors dominate.
-- **Split storage**: Store topic embeddings in a separate blob file loaded in parallel. Fail open — if topic blob fails to load, retrieval falls back to full-text-only search (current behavior).
-
-**Recommended approach**: Use 512-dim embeddings for topic summaries + split storage. This keeps the main vector store at 234 MB (no cold-start regression) and adds a ~78 MB topic-vector blob loaded in parallel.
+Implemented the recommended approach: 512-dim embeddings + split storage. Main vector store stays at 234 MB, topic-vectors.json is 54 MB (smaller than estimated ~78 MB due to shorter summary texts). Both blobs load in parallel. Cold-start regression is ~1s, well within the 3s budget.
 
 ---
 
