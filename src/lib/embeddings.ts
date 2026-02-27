@@ -20,6 +20,32 @@ export async function generateEmbedding(text: string): Promise<number[]> {
   return response.data[0].embedding;
 }
 
+export async function generateEmbedding512(text: string): Promise<number[]> {
+  const openai = getOpenAI();
+  const response = await openai.embeddings.create({
+    model: 'text-embedding-3-small',
+    input: text,
+    dimensions: 512,
+  });
+  return response.data[0].embedding;
+}
+
+export async function generateEmbeddings512(texts: string[]): Promise<number[][]> {
+  const openai = getOpenAI();
+  const batchSize = 100;
+  const embeddings: number[][] = [];
+  for (let i = 0; i < texts.length; i += batchSize) {
+    const batch = texts.slice(i, i + batchSize);
+    const response = await openai.embeddings.create({
+      model: 'text-embedding-3-small',
+      input: batch,
+      dimensions: 512,
+    });
+    embeddings.push(...response.data.map((d) => d.embedding));
+  }
+  return embeddings;
+}
+
 export async function generateEmbeddings(texts: string[]): Promise<number[][]> {
   const openai = getOpenAI();
   const batchSize = 100;

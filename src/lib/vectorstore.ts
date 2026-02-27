@@ -12,6 +12,20 @@ export interface StoredChunk {
   };
 }
 
+export interface TopicChunk {
+  id: string;           // e.g., "episode_140_5_topic"
+  text: string;         // topic summary
+  embedding: number[];  // 512-dim
+  parentChunkId: string;
+  topicVersion: number;
+  metadata: {
+    episodeTitle: string;
+    speakers: string;
+    startTimestamp: string;
+    endTimestamp: string;
+  };
+}
+
 interface VectorStoreData {
   chunks: StoredChunk[];
 }
@@ -76,6 +90,47 @@ export async function loadVectorStoreAsync(): Promise<StoredChunk[]> {
   })();
 
   return loadPromise;
+}
+
+// --- Topic vector loading ---
+
+let cachedTopicVectors: TopicChunk[] | null = null;
+let topicLoadPromise: Promise<TopicChunk[]> | null = null;
+
+export async function loadTopicVectorsAsync(): Promise<TopicChunk[]> {
+  if (cachedTopicVectors !== null) return cachedTopicVectors;
+  if (topicLoadPromise !== null) return topicLoadPromise;
+
+  topicLoadPromise = (async () => {
+    try {
+      console.log('Loading topic vectors from Blob storage...');
+      const startTime = Date.now();
+      const blobs = await list({ prefix: `${SEARCH_DATA_PREFIX}topic-vectors.json` });
+      const match = blobs.blobs.find(b => b.pathname === `${SEARCH_DATA_PREFIX}topic-vectors.json`);
+
+      if (!match) {
+        console.warn('Topic vectors not found in Blob storage (feature disabled or not yet uploaded)');
+        cachedTopicVectors = [];
+        return cachedTopicVectors;
+      }
+
+      const response = await fetch(match.url);
+      if (!response.ok) throw new Error(`Failed to fetch topic vectors: ${response.status}`);
+
+      const data = await response.json();
+      cachedTopicVectors = data.chunks || [];
+      console.log(`Loaded ${cachedTopicVectors!.length} topic vectors in ${Date.now() - startTime}ms`);
+      return cachedTopicVectors!;
+    } catch (error) {
+      console.error('Error loading topic vectors:', error);
+      cachedTopicVectors = [];
+      return cachedTopicVectors;
+    } finally {
+      topicLoadPromise = null;
+    }
+  })();
+
+  return topicLoadPromise;
 }
 
 /**
@@ -171,6 +226,22 @@ export function searchSimilarFiltered(
   const scored = filtered.map((chunk) => ({
     chunk,
     score: cosineSimilarity(queryEmbedding, chunk.embedding),
+  }));
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, topK);
+}
+
+export function searchTopicVectors(
+  queryEmbedding512: number[],
+  topicChunks: TopicChunk[],
+  topK: number = 10
+): { topic: TopicChunk; score: number }[] {
+  if (topicChunks.length === 0) return [];
+
+  const scored = topicChunks.map(topic => ({
+    topic,
+    score: cosineSimilarity(queryEmbedding512, topic.embedding),
   }));
 
   scored.sort((a, b) => b.score - a.score);

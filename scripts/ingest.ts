@@ -4,6 +4,7 @@ import * as crypto from 'crypto';
 import OpenAI from 'openai';
 import * as dotenv from 'dotenv';
 import { list, put } from '@vercel/blob';
+import Anthropic from '@anthropic-ai/sdk';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
@@ -574,6 +575,200 @@ function extractSegmentChunks(transcript: Transcript): Chunk[] {
 }
 
 // ============================================
+// Topic Extraction (LLM-based topic summaries for supplemental vector search)
+// ============================================
+
+const TOPIC_CACHE_PATH = './topic-cache.json';
+const TOPIC_VERSION = 1;
+
+interface TopicCache {
+  version: number;
+  entries: Record<string, string>; // sha256(chunkText) -> topicSummary
+}
+
+function loadTopicCache(): TopicCache {
+  if (fs.existsSync(TOPIC_CACHE_PATH)) {
+    const raw = JSON.parse(fs.readFileSync(TOPIC_CACHE_PATH, 'utf-8'));
+    if (raw.version === TOPIC_VERSION) return raw;
+  }
+  return { version: TOPIC_VERSION, entries: {} };
+}
+
+function chunkContentHash(text: string): string {
+  return crypto.createHash('sha256').update(text).digest('hex');
+}
+
+const TOPIC_EXTRACTION_PROMPT = `Extract a concise topic summary of this podcast transcript excerpt.
+List ALL distinct topics discussed, including:
+- The main film/show being discussed
+- Any personal anecdotes, preferences, or lifestyle mentions by the hosts
+- Any tangential topics, digressions, or asides
+- Physical descriptions or characteristics mentioned about anyone
+- Specific brands, products, or items mentioned
+- Opinions, hot takes, or strong reactions
+
+Only include topics that occupy at least 2-3 lines of dialogue. Ignore single passing words.
+Format: A single paragraph, 2-4 sentences. Be specific — use names, brands, and details.
+Do NOT editorialize or interpret — just describe what's discussed.
+
+Transcript excerpt:
+`;
+
+async function extractTopicSummaries(
+  chunks: Chunk[],
+): Promise<Map<string, string>> {
+  // Filter to standard chunks only (skip sub-chunks with offset IDs)
+  const standardChunks = chunks.filter(c => {
+    const parts = c.id.split('_');
+    const lastNum = parseInt(parts[parts.length - 1], 10);
+    return !isNaN(lastNum) && lastNum < 1000;
+  });
+
+  console.log(`\nExtracting topic summaries for ${standardChunks.length} standard chunks...`);
+
+  const cache = loadTopicCache();
+  const results = new Map<string, string>();
+  const toExtract: Chunk[] = [];
+  let cacheHits = 0;
+
+  // Check cache
+  for (const chunk of standardChunks) {
+    const hash = chunkContentHash(chunk.text);
+    if (cache.entries[hash]) {
+      results.set(chunk.id, cache.entries[hash]);
+      cacheHits++;
+    } else {
+      toExtract.push(chunk);
+    }
+  }
+
+  console.log(`  Cache: ${cacheHits} hits, ${toExtract.length} to extract`);
+
+  if (toExtract.length === 0) return results;
+
+  // Extract in batches of 20 concurrent Haiku calls
+  const anthropic = new Anthropic();
+  const BATCH_SIZE = 20;
+  const CALL_TIMEOUT_MS = 30_000; // 30s per Haiku call
+  let successCount = 0;
+  let failCount = 0;
+  let batchesSinceLastSave = 0;
+
+  for (let i = 0; i < toExtract.length; i += BATCH_SIZE) {
+    const batch = toExtract.slice(i, i + BATCH_SIZE);
+    const promises = batch.map(async (chunk): Promise<{ chunkId: string; text: string; summary: string | null }> => {
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try {
+          const callPromise = anthropic.messages.create({
+            model: 'claude-haiku-4-5-20251001',
+            max_tokens: 150,
+            messages: [{ role: 'user', content: TOPIC_EXTRACTION_PROMPT + chunk.text }],
+          });
+          const timeoutPromise = new Promise<never>((_, reject) =>
+            setTimeout(() => reject(new Error('Haiku call timed out')), CALL_TIMEOUT_MS)
+          );
+          const response = await Promise.race([callPromise, timeoutPromise]);
+          const summary = response.content[0].type === 'text' ? response.content[0].text : '';
+          return { chunkId: chunk.id, text: chunk.text, summary };
+        } catch (err) {
+          if (attempt < 2) {
+            await new Promise(r => setTimeout(r, Math.pow(2, attempt + 1) * 1000));
+          } else {
+            return { chunkId: chunk.id, text: chunk.text, summary: null };
+          }
+        }
+      }
+      return { chunkId: chunk.id, text: chunk.text, summary: null };
+    });
+
+    const batchResults = await Promise.all(promises);
+    for (const r of batchResults) {
+      if (r.summary) {
+        results.set(r.chunkId, r.summary);
+        cache.entries[chunkContentHash(r.text)] = r.summary;
+        successCount++;
+      } else {
+        failCount++;
+      }
+    }
+
+    batchesSinceLastSave++;
+
+    if ((i / BATCH_SIZE) % 10 === 0) {
+      console.log(`  Progress: ${i + batch.length}/${toExtract.length} (${successCount} ok, ${failCount} failed)`);
+      // Save cache every 10 batches (200 chunks) for crash recovery
+      fs.writeFileSync(TOPIC_CACHE_PATH, JSON.stringify(cache));
+      batchesSinceLastSave = 0;
+    }
+  }
+
+  // Final cache save
+  fs.writeFileSync(TOPIC_CACHE_PATH, JSON.stringify(cache));
+  console.log(`  Topic extraction: ${successCount} success, ${failCount} failed, ${cacheHits} cached`);
+
+  // Fail-safe: abort if >5% failure rate
+  const failRate = failCount / (successCount + failCount);
+  if (failRate > 0.05) {
+    console.error(`  WARNING: ${(failRate * 100).toFixed(1)}% failure rate — topic blob will NOT be generated`);
+    return new Map(); // Empty map signals to caller to skip topic blob
+  }
+
+  return results;
+}
+
+async function generateEmbeddings512(texts: string[]): Promise<number[][]> {
+  const maxRetries = 5;
+  const embeddings: number[][] = [];
+
+  const safeBatch = texts.map((t) => {
+    if (t.length > MAX_EMBEDDING_CHARS) return t.slice(0, MAX_EMBEDDING_CHARS);
+    return t;
+  });
+
+  async function embedBatch(batch: string[], batchLabel: string): Promise<number[][]> {
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        const response = await openai.embeddings.create({
+          model: 'text-embedding-3-small',
+          input: batch,
+          dimensions: 512,
+        });
+        return response.data.map((d) => d.embedding);
+      } catch (err: unknown) {
+        const status = err instanceof Error && 'status' in err ? (err as { status: number }).status : 0;
+        if (status === 429 && attempt < maxRetries - 1) {
+          const backoff = Math.pow(2, attempt + 1) * 1000;
+          console.log(`  Rate limited on ${batchLabel}, retrying in ${backoff / 1000}s...`);
+          await new Promise((r) => setTimeout(r, backoff));
+        } else if (status === 400 && batch.length > 1) {
+          const mid = Math.ceil(batch.length / 2);
+          console.log(`  Bad request on ${batchLabel} (${batch.length} texts), splitting into halves...`);
+          const left = await embedBatch(batch.slice(0, mid), `${batchLabel}a`);
+          const right = await embedBatch(batch.slice(mid), `${batchLabel}b`);
+          return [...left, ...right];
+        } else {
+          throw err;
+        }
+      }
+    }
+    throw new Error(`Failed after ${maxRetries} retries on ${batchLabel}`);
+  }
+
+  const batchSize = 100;
+  for (let i = 0; i < safeBatch.length; i += batchSize) {
+    const batch = safeBatch.slice(i, i + batchSize);
+    const batchNum = Math.floor(i / batchSize) + 1;
+    const totalBatches = Math.ceil(safeBatch.length / batchSize);
+    console.log(`  Generating 512-dim embeddings for batch ${batchNum}/${totalBatches}...`);
+
+    const batchEmbeddings = await embedBatch(batch, `topic-batch-${batchNum}`);
+    embeddings.push(...batchEmbeddings);
+  }
+
+  return embeddings;
+}
+
+// ============================================
 
 // text-embedding-3-small max input is 8191 tokens (cl100k_base).
 // Individual chunks are within per-input limits, but batches of 100 can
@@ -884,6 +1079,36 @@ async function main() {
   console.log(`  BM25 index: ${Object.keys(bm25Index.invertedIndex).length} unique terms`);
   console.log(`  BM25 index saved to ${BM25_STORE_PATH}`);
 
+  // Generate topic summaries and 512-dim embeddings
+  if (!process.argv.includes('--skip-topics')) {
+    const topicSummaries = await extractTopicSummaries(allChunks);
+
+    if (topicSummaries.size > 0) {
+      const topicEntries = Array.from(topicSummaries.entries());
+      const topicTexts = topicEntries.map(([, summary]) => summary);
+      console.log(`\nGenerating 512-dim embeddings for ${topicTexts.length} topic summaries...`);
+      const topicEmbeddings = await generateEmbeddings512(topicTexts);
+
+      const topicChunks = topicEntries.map(([chunkId, summary], i) => {
+        const parentChunk = storedChunks.find(c => c.id === chunkId);
+        return {
+          id: `${chunkId}_topic`,
+          text: summary,
+          embedding: topicEmbeddings[i],
+          parentChunkId: chunkId,
+          topicVersion: TOPIC_VERSION,
+          metadata: parentChunk?.metadata ?? { episodeTitle: '', speakers: '', startTimestamp: '', endTimestamp: '' },
+        };
+      });
+
+      const topicBlobPath = path.join(process.cwd(), 'topic-vectors.json');
+      fs.writeFileSync(topicBlobPath, JSON.stringify({ chunks: topicChunks }));
+      console.log(`Topic vectors saved to ${topicBlobPath} (${topicChunks.length} entries)`);
+    }
+  } else {
+    console.log('\nSkipping topic extraction (--skip-topics flag)');
+  }
+
   console.log('\n✓ Ingestion complete!');
   console.log(`  Indexed ${allChunks.length} chunks from ${seenEpisodes.size} transcript(s).`);
   console.log(`  Vector store saved to ${STORE_PATH}`);
@@ -992,10 +1217,63 @@ async function dryRunSegments() {
   }
 }
 
+async function topicsOnly() {
+  console.log('Topics-only mode: extracting topic summaries from existing vector store...\n');
+
+  // Load existing vector store to get chunk data
+  if (!fs.existsSync(STORE_PATH)) {
+    console.error(`Error: ${STORE_PATH} not found. Run full ingest first.`);
+    process.exit(1);
+  }
+
+  const storeData = JSON.parse(fs.readFileSync(STORE_PATH, 'utf-8'));
+  const storedChunks: StoredChunk[] = storeData.chunks || [];
+  console.log(`Loaded ${storedChunks.length} chunks from ${STORE_PATH}`);
+
+  // Convert StoredChunks back to Chunk format for extractTopicSummaries
+  const allChunks: Chunk[] = storedChunks.map(sc => ({
+    id: sc.id,
+    text: sc.text,
+    episodeTitle: sc.metadata.episodeTitle,
+    speakers: sc.metadata.speakers.split(', '),
+    startTimestamp: sc.metadata.startTimestamp,
+    endTimestamp: sc.metadata.endTimestamp,
+  }));
+
+  const topicSummaries = await extractTopicSummaries(allChunks);
+
+  if (topicSummaries.size > 0) {
+    const topicEntries = Array.from(topicSummaries.entries());
+    const topicTexts = topicEntries.map(([, summary]) => summary);
+    console.log(`\nGenerating 512-dim embeddings for ${topicTexts.length} topic summaries...`);
+    const topicEmbeddings = await generateEmbeddings512(topicTexts);
+
+    const topicChunks = topicEntries.map(([chunkId, summary], i) => {
+      const parentChunk = storedChunks.find(c => c.id === chunkId);
+      return {
+        id: `${chunkId}_topic`,
+        text: summary,
+        embedding: topicEmbeddings[i],
+        parentChunkId: chunkId,
+        topicVersion: TOPIC_VERSION,
+        metadata: parentChunk?.metadata ?? { episodeTitle: '', speakers: '', startTimestamp: '', endTimestamp: '' },
+      };
+    });
+
+    const topicBlobPath = path.join(process.cwd(), 'topic-vectors.json');
+    fs.writeFileSync(topicBlobPath, JSON.stringify({ chunks: topicChunks }));
+    console.log(`\n✓ Topic vectors saved to ${topicBlobPath} (${topicChunks.length} entries)`);
+  } else {
+    console.log('\nNo topic summaries generated (check failure rate above).');
+  }
+}
+
 if (process.argv.includes('--dry-run-asides')) {
   dryRunAsides().catch(console.error);
 } else if (process.argv.includes('--dry-run-segments')) {
   dryRunSegments().catch(console.error);
+} else if (process.argv.includes('--topics-only')) {
+  topicsOnly().catch(console.error);
 } else {
   main().catch(console.error);
 }

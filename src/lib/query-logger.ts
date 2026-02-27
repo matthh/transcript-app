@@ -36,6 +36,10 @@ export interface QueryLogEntry {
     synthesis: number;
     total: number;
   };
+  // Topic vector telemetry
+  topicBlobLoaded?: boolean;
+  topicHitCount?: number;
+  topicOnlyHitCount?: number;
 }
 
 export function generateLogId(): string {

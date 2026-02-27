@@ -55,6 +55,24 @@ async function uploadSearchData() {
     console.log('Warning: bm25-index.json not found, skipping upload');
   }
 
+  // Upload topic vectors
+  const topicVectorsPath = path.join(process.cwd(), 'topic-vectors.json');
+  if (fs.existsSync(topicVectorsPath)) {
+    const topicData = fs.readFileSync(topicVectorsPath, 'utf-8');
+    const sizeInMB = (Buffer.byteLength(topicData, 'utf-8') / (1024 * 1024)).toFixed(2);
+    console.log(`Uploading topic-vectors.json (${sizeInMB} MB)...`);
+
+    const blob = await put(`${SEARCH_DATA_PREFIX}topic-vectors.json`, topicData, {
+      access: 'public',
+      contentType: 'application/json',
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    });
+    console.log(`  ✓ Uploaded to: ${blob.url}`);
+  } else {
+    console.log('Note: topic-vectors.json not found, skipping upload');
+  }
+
   console.log('\n✓ Search data upload complete!');
 }
 

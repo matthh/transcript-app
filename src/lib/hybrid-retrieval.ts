@@ -6,8 +6,8 @@
  * the 250MB serverless function size limit.
  */
 
-import { generateEmbedding } from './embeddings';
-import { loadVectorStoreAsync, searchSimilar, searchSimilarFiltered, StoredChunk, getChunkMap } from './vectorstore';
+import { generateEmbedding, generateEmbedding512 } from './embeddings';
+import { loadVectorStoreAsync, searchSimilar, searchSimilarFiltered, StoredChunk, getChunkMap, TopicChunk, loadTopicVectorsAsync, searchTopicVectors } from './vectorstore';
 import { searchBM25, expandQueryTokens } from './bm25';
 import { loadBM25IndexAsync, isBM25Loaded } from './bm25-loader';
 import { BM25Index } from './bm25';
@@ -19,6 +19,7 @@ export interface RetrievalResult {
   chunk: StoredChunk;
   score: number;
   source: 'embedding' | 'bm25' | 'both';
+  matchedVia?: 'fulltext' | 'topic' | 'both';
 }
 
 /**
@@ -594,6 +595,60 @@ function injectTargetedEpisodeChunks(
   return merged;
 }
 
+// --- Topic vector resolution ---
+
+const TOPIC_SCORE_DISCOUNT = 0.85;
+const TOPIC_VECTORS_ENABLED = process.env.TOPIC_VECTORS_ENABLED === 'true';
+
+function normalizeScores(results: { score: number }[]): void {
+  if (results.length === 0) return;
+  const min = Math.min(...results.map(r => r.score));
+  const max = Math.max(...results.map(r => r.score));
+  const range = max - min || 1;
+  for (const r of results) {
+    r.score = (r.score - min) / range;
+  }
+}
+
+function resolveTopicChunks(
+  embeddingResults: RetrievalResult[],
+  topicResults: { topic: TopicChunk; score: number }[],
+  chunkMap: Map<string, StoredChunk>,
+): RetrievalResult[] {
+  // Start with all embedding results, tagged as fulltext
+  const parentScores = new Map<string, RetrievalResult>();
+  for (const r of embeddingResults) {
+    parentScores.set(r.chunk.id, { ...r, matchedVia: 'fulltext' });
+  }
+
+  // Merge topic results (resolved to parent chunks)
+  for (const t of topicResults) {
+    const parentChunk = chunkMap.get(t.topic.parentChunkId);
+    if (!parentChunk) continue;
+
+    const discountedScore = t.score * TOPIC_SCORE_DISCOUNT;
+    const existing = parentScores.get(t.topic.parentChunkId);
+
+    if (existing) {
+      // Both paths matched — take max score, mark as 'both'
+      existing.matchedVia = 'both';
+      if (discountedScore > existing.score) {
+        existing.score = discountedScore;
+      }
+    } else {
+      // Topic-only match — add with discount
+      parentScores.set(t.topic.parentChunkId, {
+        chunk: parentChunk,
+        score: discountedScore,
+        source: 'embedding',
+        matchedVia: 'topic',
+      });
+    }
+  }
+
+  return Array.from(parentScores.values()).sort((a, b) => b.score - a.score);
+}
+
 /**
  * Perform hybrid retrieval combining embedding and BM25 search.
  * Loads data from Blob storage on first request.
@@ -643,6 +698,39 @@ export async function hybridRetrieval(
   const queryEmbedding = options?.precomputedEmbedding ?? await generateEmbedding(query);
   const embeddingResults = searchSimilar(queryEmbedding, chunks, wideEmbeddingK);
 
+  // Topic vector search (if enabled)
+  let resolvedEmbeddingResults: (typeof embeddingResults[number] & { matchedVia?: 'fulltext' | 'topic' | 'both' })[] =
+    embeddingResults.map(r => ({ ...r, matchedVia: 'fulltext' as const }));
+
+  if (TOPIC_VECTORS_ENABLED) {
+    const [topicChunks, queryEmbedding512] = await Promise.all([
+      loadTopicVectorsAsync(),
+      generateEmbedding512(query),
+    ]);
+
+    if (topicChunks.length > 0) {
+      const topicResults = searchTopicVectors(queryEmbedding512, topicChunks, wideEmbeddingK);
+      const chunkMap = getChunkMap(chunks);
+
+      // Normalize both result sets before merging
+      const normalizedEmbedding = embeddingResults.map(r => ({ ...r, score: r.score }));
+      const normalizedTopic = topicResults.map(r => ({ ...r, score: r.score }));
+      normalizeScores(normalizedEmbedding);
+      normalizeScores(normalizedTopic);
+
+      resolvedEmbeddingResults = resolveTopicChunks(
+        normalizedEmbedding.map(r => ({
+          chunk: r.chunk,
+          score: r.score,
+          source: 'embedding' as const,
+          matchedVia: 'fulltext' as const,
+        })),
+        normalizedTopic,
+        chunkMap,
+      );
+    }
+  }
+
   // Run BM25 search (if index is available)
   let bm25Results: { docId: string; score: number; docIndex: number }[] = [];
   if (bm25Index && bm25Index.numDocs > 0) {
@@ -650,7 +738,7 @@ export async function hybridRetrieval(
   }
 
   // Merge results using Reciprocal Rank Fusion
-  const fusedResults = reciprocalRankFusion(embeddingResults, bm25Results, chunks);
+  const fusedResults = reciprocalRankFusion(resolvedEmbeddingResults, bm25Results, chunks);
 
   // Merge supplemental query results if present
   let mergedResults = fusedResults;
@@ -780,8 +868,12 @@ export function isBM25Available(): boolean {
  * Pre-load search data (call on app startup or first request).
  */
 export async function preloadSearchData(): Promise<void> {
-  await Promise.all([
+  const loads: Promise<unknown>[] = [
     loadVectorStoreAsync(),
     loadBM25IndexAsync(),
-  ]);
+  ];
+  if (TOPIC_VECTORS_ENABLED) {
+    loads.push(loadTopicVectorsAsync());
+  }
+  await Promise.all(loads);
 }

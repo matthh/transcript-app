@@ -59,5 +59,7 @@ mp3s/
 # Search data (stored in Vercel Blob, too large for git)
 vector-store.json
 bm25-index.json
+topic-vectors.json
+topic-cache.json
 
 .env*.local

@@ -1115,6 +1115,29 @@
       "expectSourceEpisode": "Jaws",
       "expectMinTranscriptSources": 1,
       "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Personal lifestyle: Haitch shorts preference (FM-15 topic extraction)",
+      "query": "What kind of shorts does Haitch like",
+      "tags": ["factual", "personal", "FM-15", "topic-extraction"],
+      "expectClassificationType": ["factual", "interpretive"],
+      "expectTextInAnswer": ["shorts"],
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Personal lifestyle: Jason fishing opinion (FM-15 topic extraction)",
+      "query": "What does Jason think of fishing",
+      "tags": ["interpretive", "personal", "FM-15", "topic-extraction"],
+      "expectMinTranscriptSources": 2,
+      "rejectTextInAnswer": ["no information", "don't have"]
+    },
+    {
+      "name": "Personal lifestyle: host physical descriptions (FM-15 topic extraction)",
+      "query": "Describe what Jason and Haitch look like based on the podcast",
+      "tags": ["interpretive", "personal", "FM-15", "topic-extraction"],
+      "expectMinTranscriptSources": 2,
+      "rejectTextInAnswer": ["no information", "don't have"]
     }
   ]
 }
