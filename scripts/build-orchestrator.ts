@@ -14,7 +14,7 @@ if (isPreview || isLocal) {
   console.log('Build: skipping embeddings when transcripts are unchanged (override with SKIP_INGEST_IF_NO_NEW=0).');
 }
 
-run('npm', ['run', 'ingest']);
+run('npm', ['run', 'ingest', '--', '--skip-topics']);
 run('npm', ['run', 'upload-search-data']);
 // Note: bundle step removed. src/lib/metadata-data.ts is maintained directly
 // by sync-metadata.ts (via GitHub Action) and committed to git.
