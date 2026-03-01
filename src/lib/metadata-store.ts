@@ -367,7 +367,7 @@ export function searchNotableMoments(query: string, maxResults: number = 3): Epi
   for (const ep of episodes) {
     if (!ep.notableMoments || ep.notableMoments === 'N/A') continue;
     const momentsLower = ep.notableMoments.toLowerCase();
-    const matchCount = queryTokens.filter(t => momentsLower.includes(t)).length;
+    const matchCount = queryTokens.filter(t => new RegExp(`\\b${t}\\b`).test(momentsLower)).length;
     if (matchCount >= 2) {
       scored.push({ episode: ep, matches: matchCount });
     }
