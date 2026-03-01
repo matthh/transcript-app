@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getEpisodeByNumber, queryEpisodes } from '@/lib/metadata-store';
+import { getEpisodeByNumber, queryEpisodes, searchNotableMoments } from '@/lib/metadata-store';
 import { classifyQuery } from '@/lib/query-classifier';
 import { detectQueryIntent } from '@/lib/query-intent';
 import { buildMetadataAggregateResponse, collectTildaContext, getTildaEpisodePicks } from '@/lib/metadata-aggregates';
@@ -540,6 +540,19 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
               metadataHasMore = notableResult.hasMore;
               metadataSources = metadataEpisodes.map(episodeToMetadataSource);
             }
+          }
+        }
+        // Fallback: independent notableMoments keyword search
+        // Catches queries referencing podcast events/details that the classifier
+        // didn't extract as filters (e.g., "Has Haitch ever lost his voice to a witch")
+        if (metadataEpisodes.length === 0) {
+          const notableMomentsMatches = searchNotableMoments(query);
+          if (notableMomentsMatches.length > 0) {
+            metadataEpisodes = notableMomentsMatches;
+            metadataTotalCount = notableMomentsMatches.length;
+            metadataHasMore = false;
+            metadataSources = metadataEpisodes.map(episodeToMetadataSource);
+            console.log('Notable moments fallback:', notableMomentsMatches.map(e => e.film));
           }
         }
 

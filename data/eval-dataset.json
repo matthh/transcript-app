@@ -1289,8 +1289,12 @@
       "rejectTextInAnswer": [
         "no information",
         "don't have",
+        "do not have",
         "does not appear",
-        "does not contain"
+        "does not contain",
+        "does not discuss",
+        "not contain any",
+        "not enough information"
       ]
     }
   ]

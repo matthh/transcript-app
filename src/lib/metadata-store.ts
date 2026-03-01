@@ -338,6 +338,45 @@ export function getEpisodesByDecade(decade: number): EpisodeMetadata[] {
   );
 }
 
+/**
+ * Independent keyword search against notableMoments fields.
+ * Last-resort fallback when classifier doesn't extract filters
+ * (e.g., "Has Haitch ever lost his voice to a witch").
+ */
+export function searchNotableMoments(query: string, maxResults: number = 3): EpisodeMetadata[] {
+  const STOPWORDS = new Set([
+    'the','a','an','is','are','was','were','be','been','have','has','had',
+    'do','does','did','will','would','shall','should','may','might','can',
+    'could','about','after','all','also','and','any','at','but','by','for',
+    'from','get','he','her','him','his','how','if','in','into','it','its',
+    'just','let','like','me','more','most','my','no','not','now','of','on',
+    'or','other','our','out','over','she','so','some','than','that','their',
+    'them','then','there','they','this','to','too','up','us','very','we',
+    'were','what','when','where','which','who','why','with','you','your',
+    'ever','episode','episodes','podcast','pod','been','being',
+  ]);
+
+  const queryTokens = query.toLowerCase()
+    .split(/\W+/)
+    .filter(t => t.length >= 3 && !STOPWORDS.has(t));
+  if (queryTokens.length === 0) return [];
+
+  const episodes = loadEpisodeMetadata();
+  const scored: { episode: EpisodeMetadata; matches: number }[] = [];
+
+  for (const ep of episodes) {
+    if (!ep.notableMoments || ep.notableMoments === 'N/A') continue;
+    const momentsLower = ep.notableMoments.toLowerCase();
+    const matchCount = queryTokens.filter(t => momentsLower.includes(t)).length;
+    if (matchCount >= 2) {
+      scored.push({ episode: ep, matches: matchCount });
+    }
+  }
+
+  scored.sort((a, b) => b.matches - a.matches);
+  return scored.slice(0, maxResults).map(s => s.episode);
+}
+
 export function clearCache(): void {
   normalizedMetadata = null;
 }
