@@ -1043,101 +1043,255 @@
     {
       "name": "Segment-topic listing: truthsayer cocaine (FM-04/FM-06 segment sub-chunking)",
       "query": "Which Truthsayer segments have had to do with Cocaine?",
-      "tags": ["factual", "FM-04", "FM-06", "segment"],
-      "expectClassificationType": ["factual", "interpretive"],
-      "expectTextInAnswer": ["Jaws", "Quaid"],
+      "tags": [
+        "factual",
+        "FM-04",
+        "FM-06",
+        "segment"
+      ],
+      "expectClassificationType": [
+        "factual",
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "Jaws",
+        "Quaid"
+      ],
       "expectSourceEpisode": "Jaws",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Distinctive phrase existence: rollerskating monkey truthsayer (FM-04 segment sub-chunking)",
       "query": "is there a truthsayer or birria segment with a rollerskating monkey",
-      "tags": ["factual", "FM-04", "segment"],
-      "expectClassificationType": ["factual", "interpretive"],
-      "expectTextInAnswer": ["roller"],
+      "tags": [
+        "factual",
+        "FM-04",
+        "segment"
+      ],
+      "expectClassificationType": [
+        "factual",
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "roller"
+      ],
       "expectSourceEpisode": "Close Encounters",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "does not", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "does not",
+        "don't have"
+      ]
     },
     {
       "name": "Episode-scoped topic retrieval: Twitter in Galaxy Quest original (FM-04 best-of disambiguation)",
       "query": "what was said about Twitter in the Galaxy Quest episode, original version",
-      "tags": ["interpretive", "episode-scoped", "FM-04"],
-      "expectClassificationType": ["interpretive"],
-      "expectTextInAnswer": ["Twitter"],
+      "tags": [
+        "interpretive",
+        "episode-scoped",
+        "FM-04"
+      ],
+      "expectClassificationType": [
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "Twitter"
+      ],
       "expectSourceEpisode": "Galaxy Quest",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "no mentions", "not discussed", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "no mentions",
+        "not discussed",
+        "don't have"
+      ]
     },
     {
-      "name": "Director-scoped retrieval: Boorman opinion (F4 director→film routing)",
+      "name": "Director-scoped retrieval: Boorman opinion (F4 director\u2192film routing)",
       "query": "What is Jason's opinion of John Boorman as a director",
-      "tags": ["interpretive", "director", "FM-03"],
-      "expectClassificationType": ["interpretive"],
+      "tags": [
+        "interpretive",
+        "director",
+        "FM-03"
+      ],
+      "expectClassificationType": [
+        "interpretive"
+      ],
       "expectSourceEpisode": "Excalibur",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Counting with action verb: Haitch 'we'll get there' interruptions (agent routing gap)",
       "query": "how many times has Haitch interrupted a guest with the words 'we'll get there'",
-      "tags": ["factual", "agent", "counting", "FM-05"],
-      "expectClassificationType": ["factual", "interpretive"],
-      "expectTextInAnswer": ["we'll get there"],
+      "tags": [
+        "factual",
+        "agent",
+        "counting",
+        "FM-05"
+      ],
+      "expectClassificationType": [
+        "factual",
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "we'll get there"
+      ],
       "expectMinTranscriptSources": 2,
-      "rejectTextInAnswer": ["no instances", "did not find any", "no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no instances",
+        "did not find any",
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Director-film listing: Villeneuve (metadata fast-path)",
       "query": "what villeneuve movies have been episodes on the podcast",
-      "tags": ["factual", "metadata", "director", "FM-09"],
-      "expectClassificationType": ["factual"],
-      "expectTextInAnswer": ["Arrival", "Sicario", "Dune"],
+      "tags": [
+        "factual",
+        "metadata",
+        "director",
+        "FM-09"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
+      "expectTextInAnswer": [
+        "Arrival",
+        "Sicario",
+        "Dune"
+      ],
       "expectMinMetadataSources": 3,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Director-film listing: Carpenter (metadata fast-path)",
       "query": "which John Carpenter films has the pod covered",
-      "tags": ["factual", "metadata", "director"],
-      "expectClassificationType": ["factual"],
-      "expectTextInAnswer": ["They Live"],
+      "tags": [
+        "factual",
+        "metadata",
+        "director"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
+      "expectTextInAnswer": [
+        "They Live"
+      ],
       "expectMinMetadataSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Segment-scoped question: Kev's question about sequels in Jaws (FM-04 segment sub-chunking)",
       "query": "what was kev's question in the jaws episode",
-      "tags": ["factual", "segment", "FM-04"],
-      "expectClassificationType": ["factual"],
-      "expectTextInAnswer": ["sequel"],
+      "tags": [
+        "factual",
+        "segment",
+        "FM-04"
+      ],
+      "expectClassificationType": [
+        "factual"
+      ],
+      "expectTextInAnswer": [
+        "sequel"
+      ],
       "expectSourceEpisode": "Jaws",
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Personal lifestyle: Haitch shorts preference (FM-15 topic extraction)",
       "query": "What kind of shorts does Haitch like",
-      "tags": ["factual", "personal", "FM-15", "topic-extraction"],
-      "expectClassificationType": ["factual", "interpretive"],
-      "expectTextInAnswer": ["shorts"],
+      "tags": [
+        "factual",
+        "personal",
+        "FM-15",
+        "topic-extraction"
+      ],
+      "expectClassificationType": [
+        "factual",
+        "interpretive"
+      ],
+      "expectTextInAnswer": [
+        "shorts"
+      ],
       "expectMinTranscriptSources": 1,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Personal lifestyle: Jason fishing opinion (FM-15 topic extraction)",
       "query": "What does Jason think of fishing",
-      "tags": ["interpretive", "personal", "FM-15", "topic-extraction"],
+      "tags": [
+        "interpretive",
+        "personal",
+        "FM-15",
+        "topic-extraction"
+      ],
       "expectMinTranscriptSources": 2,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
     },
     {
       "name": "Personal lifestyle: host physical descriptions (FM-15 topic extraction)",
       "query": "Describe what Jason and Haitch look like based on the podcast",
-      "tags": ["interpretive", "personal", "FM-15", "topic-extraction"],
+      "tags": [
+        "interpretive",
+        "personal",
+        "FM-15",
+        "topic-extraction"
+      ],
       "expectMinTranscriptSources": 2,
-      "rejectTextInAnswer": ["no information", "don't have"]
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have"
+      ]
+    },
+    {
+      "name": "Episode identification by non-title detail: The Witch / Haitch lost voice (FM-18)",
+      "query": "Which episode of the pod featured The Witch when Haitch lost his voice",
+      "tags": [
+        "factual",
+        "episode-identification",
+        "FM-18"
+      ],
+      "expectClassificationType": [
+        "factual",
+        "interpretive",
+        "hybrid"
+      ],
+      "expectTextInAnswer": [
+        "voice"
+      ],
+      "expectSourceEpisode": "Watch Talk",
+      "expectMinTranscriptSources": 1,
+      "rejectTextInAnswer": [
+        "no information",
+        "don't have",
+        "does not appear",
+        "does not contain"
+      ]
     }
   ]
 }

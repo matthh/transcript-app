@@ -83,7 +83,8 @@ export function queryEpisodes(
   if (filters.film !== undefined) {
     const filmLower = filters.film.toLowerCase();
     filtered = filtered.filter((e) =>
-      e.film.toLowerCase().includes(filmLower)
+      e.film.toLowerCase().includes(filmLower) ||
+      (e.notableMoments && e.notableMoments.toLowerCase().includes(filmLower))
     );
     matchedFilters.push(`film:${filters.film}`);
   }
@@ -165,17 +166,6 @@ export function queryEpisodes(
     hasMore: offset + paginated.length < totalCount,
     matchedFilters,
   };
-}
-
-export function searchFilms(searchText: string): EpisodeMetadata[] {
-  const episodes = loadEpisodeMetadata();
-  const searchLower = searchText.toLowerCase();
-
-  return episodes.filter(
-    (e) =>
-      e.film.toLowerCase().includes(searchLower) ||
-      (e.notableMoments && e.notableMoments.toLowerCase().includes(searchLower))
-  );
 }
 
 export interface EpisodeStats {

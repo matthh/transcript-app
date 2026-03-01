@@ -511,7 +511,13 @@ export function diversifyByEpisode(
  * Metadata film field has "(1988)" but chunk episodeTitle may or may not.
  */
 function normalizeEpisodeTitle(t: string): string {
-  return t.replace(/\s*\(\d{4}\)/g, '').trim().toLowerCase();
+  return t
+    .replace(/\s*\(\d{4}\)/g, '')        // strip year suffixes
+    .replace(/^EMERGENCY EP\s*-\s*/i, '') // strip "EMERGENCY EP - "
+    .replace(/^BONUS:\s*/i, '')           // strip "BONUS: "
+    .replace(/^Best of Escape Hatch:\s*/i, '') // strip "Best of Escape Hatch: "
+    .trim()
+    .toLowerCase();
 }
 
 /**

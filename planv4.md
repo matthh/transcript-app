@@ -396,12 +396,20 @@ Deliverables:
   - Benefits: deterministic character→episode routing (more reliable than depending on LLM world knowledge for obscure characters like Mark Ratner, Jefferson, Brad Hamilton). Broadens the class of queries that get episode-scoped injection, 1.5x boost, and 3x diversification cap.
   - Risk: character name collisions across films (e.g., "Jack" appears in many movies). Mitigate with minimum name length threshold and prefer longer/unique matches, similar to `findFilmFromQuery()`'s scoring approach.
   - Companion fix: add BM25 Whisper synonyms for known character-name transcription errors (e.g., `pacoli`/`spagoli` → `spicoli`).
+- **Notable-moments and pod-first indexing** (FM-18):
+  - Problem: queries that identify episodes by non-title details (personal events, sidebar film discussions, running jokes) fail because `findFilmFromQuery()` only matches the episode's film title field. The `notableMoments` field often contains the answer but is never searched during retrieval.
+  - Example: "Which episode featured The Witch (when Haitch lost his voice)?" → ep 129 "Watch Talk". Notable moments says "Pod-First - The Witch! Haitch does not host due to illness" but the film field is "EMERGENCY EP - Watch Talk (2023)".
+  - Deliverables:
+    1. **Pod-first film extraction**: Parse `notableMoments` for "Pod-First - [film]" patterns and add as secondary searchable film titles for each episode. Wire into `findFilmFromQuery()` as a secondary match tier (lower priority than primary film title).
+    2. **Notable-moments text search**: Add `notableMoments`, `hFlex`, `jFlex` fields to a lightweight metadata text search that runs alongside transcript retrieval. Matches would contribute to episode scoping and injection, similar to how `targetEpisodeTitles` works today.
+  - Acceptance criteria: "Which episode featured The Witch (when Haitch lost his voice)" routes to ep 129 Watch Talk and returns answer referencing voice loss.
 
 Exit Criteria:
 - Measurable drop in false-positive and false-negative metadata matches.
 - Metadata freshness SLA: <7 days.
 - Validation failures block promotion.
 - Character-name queries for top-8 cast of enriched episodes route deterministically to the correct episode (new eval slice).
+- Episode-identification-by-detail queries (FM-18) match the correct episode when notable moments contain the referenced detail.
 
 ## Workstreams and Ownership
 - Routing + API consistency: backend search owner.

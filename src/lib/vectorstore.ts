@@ -216,7 +216,13 @@ export function searchSimilarFiltered(
 ): { chunk: StoredChunk; score: number }[] {
   // Normalize by stripping year suffixes — metadata film has "(1988)" but
   // chunk episodeTitle may or may not, so strip from both sides.
-  const normalize = (t: string) => t.replace(/\s*\(\d{4}\)/g, '').trim().toLowerCase();
+  const normalize = (t: string) => t
+    .replace(/\s*\(\d{4}\)/g, '')
+    .replace(/^EMERGENCY EP\s*-\s*/i, '')
+    .replace(/^BONUS:\s*/i, '')
+    .replace(/^Best of Escape Hatch:\s*/i, '')
+    .trim()
+    .toLowerCase();
   const titleSet = new Set(episodeTitles.map(normalize));
   const filtered = chunks.filter(c =>
     titleSet.has(normalize(c.metadata.episodeTitle))
