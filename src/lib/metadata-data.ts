@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 307 episodes - updated 2026-03-01
+// Auto-generated - do not edit - 309 episodes - updated 2026-03-02
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -13304,5 +13304,55 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "artworkLink": "",
     "letterboxdLink": "https://letterboxd.com/film/no-country-for-old-men/",
     "imdbLink": "https://www.imdb.com/title/tt0477348/?ref_=ext_shr_lnk"
+  },
+  {
+    "pod": "EH",
+    "season": 8,
+    "episode": 297,
+    "film": "The Cable Guy (1996)",
+    "filmYear": 1996,
+    "releaseDate": "3/1/2026",
+    "length": "1:42:31",
+    "reviewer": "birria",
+    "guest": "dale_a",
+    "mmmCount": 34,
+    "thatsGreatCount": 6,
+    "notableMoments": "Haith calls Escape Hatch an \"Industry-Defining Podcast\" \n- Talk about Close-Up Magic at weddings \n- Audio of Timothee Chalomet talking to Matthew McConaughey sbout a giant turd \n- Jason comes to the conclusion that the Mid Nineties are the best we are ever going to have it \n- Cable Guy is a tremendous critique of where Media writ large was heading \n- Tremendous 90s soundtrack \n- Haitch had more Do Not Disturb failures with his IPad \n- Discussion Jim Carey comedic bombast - Jason calls it borderline dangerous \n- Jason raises the question of whether Haitch has ever killed someone. \"I would not be completely shocked\"\n- Jason talks about his Claude Code setup\n- Letters - Animal Mother, Mr Java (Somebody to Love Jefferson Airplane parody), Truthsayer, Kev, Corey",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "If you could program a Cable channel, what would you put on there and why?",
+    "tildaH": "The old man singing American Woman",
+    "tildaJason": "Matthew Broderick's Mom",
+    "tildaGuest": "Stephen's Boss with the plugs",
+    "tildaCorey": "Matthew Broderick's character",
+    "showLink": "",
+    "artworkLink": "",
+    "letterboxdLink": "https://letterboxd.com/film/the-cable-guy/",
+    "imdbLink": "https://www.imdb.com/title/tt0115798/?ref_=ext_shr_lnk"
+  },
+  {
+    "pod": "EH",
+    "season": 8,
+    "episode": 298,
+    "film": "High Fidelity (2000)",
+    "filmYear": 2000,
+    "releaseDate": "3/8/2026",
+    "length": "",
+    "reviewer": "",
+    "guest": null,
+    "mmmCount": 0,
+    "thatsGreatCount": 0,
+    "notableMoments": "",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "N/A",
+    "tildaH": "N/A",
+    "tildaJason": "N/A",
+    "tildaGuest": null,
+    "tildaCorey": null,
+    "showLink": "",
+    "artworkLink": "",
+    "letterboxdLink": "",
+    "imdbLink": ""
   }
 ];
