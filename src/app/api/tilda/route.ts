@@ -83,14 +83,14 @@ function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
   );
 }
 
-async function generateTilda(film: string): Promise<{ tildaH: string; tildaJason: string }> {
+async function generateTilda(film: string): Promise<{ tildaH: string; tildaJason: string; tildaCorey: string }> {
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   const examples = FEW_SHOT_EXAMPLES.map(
     (ex) => `Film: ${ex.film}\nHaitch: ${ex.tildaH}\nJason: ${ex.tildaJason}`
   ).join('\n\n');
 
-  const prompt = `On the Escape Hatch Podcast, hosts Haitch and Jason answer the question: "Who would Tilda Swinton play in this film?" Their answers are always actual characters from the movie — sometimes unexpected choices, sometimes multiple options, sometimes with a brief quip. Study these real examples:
+  const prompt = `On the Escape Hatch Podcast, hosts Haitch, Jason, and Corey answer the question: "Who would Tilda Swinton play in this film?" Their answers are always actual characters from the movie — sometimes unexpected choices, sometimes multiple options, sometimes with a brief quip. Study these real examples:
 
 ${examples}
 
@@ -98,15 +98,16 @@ Now generate answers for: ${film}
 
 Rules:
 - Characters must actually appear in ${film}
-- Match their voice: Haitch tends toward unexpected or thematic choices, Jason sometimes agrees or picks alternatives
+- Match their voice: Haitch tends toward unexpected or thematic choices, Jason sometimes agrees or picks alternatives, Corey picks something different again
 - Keep it short — just the character name(s), optionally one short quip
-- Output exactly two lines:
+- Output exactly three lines:
 Haitch: [answer]
-Jason: [answer]`;
+Jason: [answer]
+Corey: [answer]`;
 
   const message = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
-    max_tokens: 128,
+    max_tokens: 160,
     messages: [{ role: 'user', content: prompt }],
   });
 
@@ -116,10 +117,12 @@ Jason: [answer]`;
   const lines = textBlock.text.trim().split('\n');
   const hLine = lines.find((l) => l.startsWith('Haitch:'));
   const jLine = lines.find((l) => l.startsWith('Jason:'));
+  const cLine = lines.find((l) => l.startsWith('Corey:'));
 
   return {
     tildaH: hLine ? hLine.replace(/^Haitch:\s*/, '').trim() : '?',
     tildaJason: jLine ? jLine.replace(/^Jason:\s*/, '').trim() : '?',
+    tildaCorey: cLine ? cLine.replace(/^Corey:\s*/, '').trim() : '?',
   };
 }
 
@@ -158,7 +161,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Generate with Claude
-  let generated: { tildaH: string; tildaJason: string };
+  let generated: { tildaH: string; tildaJason: string; tildaCorey: string };
   try {
     generated = await generateTilda(film);
   } catch (error) {
@@ -173,7 +176,7 @@ export async function GET(request: NextRequest) {
     tildaH: generated.tildaH,
     tildaJason: generated.tildaJason,
     tildaGuest: null,
-    tildaCorey: null,
+    tildaCorey: generated.tildaCorey,
     source: 'generated',
   };
   return NextResponse.json(response);
