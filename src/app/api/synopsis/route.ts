@@ -181,6 +181,27 @@ function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
   );
 }
 
+function stripMidBodyFilmName(synopsis: string, film: string): string {
+  // The film name must appear only at the very start and very end.
+  // Find the end of the opening sentence (first period or end of "{film} is ..." clause)
+  // and the start of the closing question ("or will"), then remove any film name in between.
+  const filmEscaped = film.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const filmRegex = new RegExp(filmEscaped, 'gi');
+
+  // Locate the opening sentence boundary and the closing question
+  const orWillIdx = synopsis.toLowerCase().lastIndexOf('or will');
+  if (orWillIdx === -1) return synopsis;
+
+  // Find where the first sentence ends (first '.' after opening)
+  const firstSentenceEnd = synopsis.indexOf('.');
+  if (firstSentenceEnd === -1 || firstSentenceEnd >= orWillIdx) return synopsis;
+
+  const body = synopsis.slice(firstSentenceEnd + 1, orWillIdx);
+  const cleanedBody = body.replace(filmRegex, 'the film');
+
+  return synopsis.slice(0, firstSentenceEnd + 1) + cleanedBody + synopsis.slice(orWillIdx);
+}
+
 async function generateSynopsis(film: string): Promise<string> {
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -195,9 +216,10 @@ ${examples}
 Now write a synopsis for: ${film}
 
 Style rules:
-- Open with "{Film} is [thematic statement]" — a poetic, thematic sentence about what the film is really about
-- Follow with 3-5 sentences summarizing the plot: who the protagonist is, what they want, what obstacles they face
-- The FINAL sentence must be a question that starts with "or will" and ends with the film title followed by a question mark — the film title must be the very last word(s) before the final "?" e.g. "or will [outcome]? ${film}?" — this is mandatory, never end on anything else
+- Open with "${film} is [thematic statement]" — the film title is the very first word(s)
+- Follow with 3-5 sentences summarizing the plot using character names and pronouns — DO NOT mention the film title again anywhere in the middle
+- The FINAL sentence must be a question starting with "or will" and ending with the film title as the very last word(s): e.g. "or will [outcome]? ${film}?" — this is mandatory
+- The film title "${film}" must appear ONLY at the start and at the end. Never in between.
 - Write in present tense, plain prose, no markdown
 - Match the voice: earnest, cinephile, slightly dramatic
 
@@ -223,6 +245,9 @@ Output only the synopsis text, nothing else.`;
   if (!endsWithFilm && synopsis.endsWith('?')) {
     synopsis = `${synopsis} ${film}?`;
   }
+
+  // Strip any mid-body film name occurrences (keep only first and last)
+  synopsis = stripMidBodyFilmName(synopsis, film);
 
   return synopsis;
 }
