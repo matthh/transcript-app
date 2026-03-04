@@ -152,13 +152,23 @@ function findMatchingEpisodes(filmQuery: string): EpisodeMetadata[] {
   const episodes = loadEpisodeMetadata();
   const queryLower = filmQuery.toLowerCase();
 
-  // Two-pass: exact match first, then includes
-  const exactMatches = episodes.filter((e) => e.film.toLowerCase() === queryLower);
-  if (exactMatches.length > 0) {
-    return sortDesc(exactMatches);
-  }
+  // Normalize both sides for matching (strip year suffixes etc.)
+  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
 
-  const partialMatches = episodes.filter((e) => e.film.toLowerCase().includes(queryLower));
+  // Pass 1: exact match on raw film name
+  const exactRaw = episodes.filter((e) => e.film.toLowerCase() === queryLower);
+  if (exactRaw.length > 0) return sortDesc(exactRaw);
+
+  // Pass 2: exact match on normalized film name (handles "Drive (2011)" → "Drive")
+  const exactNorm = episodes.filter(
+    (e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery
+  );
+  if (exactNorm.length > 0) return sortDesc(exactNorm);
+
+  // Pass 3: partial match on normalized film name
+  const partialMatches = episodes.filter((e) =>
+    normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)
+  );
   return sortDesc(partialMatches);
 }
 
