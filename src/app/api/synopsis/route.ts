@@ -29,21 +29,22 @@ const INTRO_SIGNALS = [
 ];
 
 // Real examples for few-shot prompting
+// Note: closing question must naturally incorporate the film title as the final word(s)
 const FEW_SHOT_EXAMPLES = [
-  {
-    film: 'Drive',
-    synopsis:
-      "Drive is a dangerous ride that asks whether you can chart your own course, get the girl, and hold on to your innocence as danger closes in all around you. Driver is a young car driving stuntman and mechanic who has allowed himself to get drawn into the seedy underworld of organized crime. He's highly sought after for his incredible skills as a wheel man and his steely, cool temperament under extreme pressure. Driver's world is upended when he meets Irene, an innocent mother with a young son. What seems to be a blossoming romance with Irene becomes complicated when her husband Standard returns from prison and immediately draws heat on to his family. In order to save Irene and her son, Driver will be forced into the heart of darkness as he goes head to head with the mafia. Will he have what it takes to defeat his enemies and emerge a free man, or will he be left as wreckage along the side of the road? Drive?",
-  },
   {
     film: 'Inception',
     synopsis:
-      "Inception is the search within ourselves for forgiveness and connection. Dom Cobb is an extractor using complex illegal technology devised by the government to kidnap and pull his targets into a dream where he can steal their secrets. But Cobb has a problem — when he and his wife Mal experimented with creating dreams within dreams, they found themselves lost in the limbo of their own subconscious, trapped together seemingly for decades, until Cobb forced them back up. Distraught and resorting to framing him for her own death, Mal now lives only in Cobb's dreams, and he is desperate to clear his name and return to his children in the real world. Taking on a dangerous heist for a powerful industrialist, Cobb will assemble a team of experts who construct a maze across interlocking dreams to place an idea deep in the subconscious of their target. But under desperate assault, as it becomes impossible to distinguish reality from collapsing dreams, can Cobb find his way through the labyrinth of his own mind, or will he be trapped by the guilt of his own inception?",
+      "Inception is the search within ourselves for forgiveness and connection. Dom Cobb is an extractor using complex illegal technology devised by the government to kidnap and pull his targets into a dream where he can steal their secrets. But Cobb has a problem — when he and his wife Mal experimented with creating dreams within dreams, they found themselves lost in the limbo of their own subconscious, trapped together seemingly for decades, until Cobb forced them back up. Distraught and resorting to framing him for her own death, Mal now lives only in Cobb's dreams, and he is desperate to clear his name and return to his children in the real world. Taking on a dangerous heist for a powerful industrialist, Cobb will assemble a team of experts who construct a maze across interlocking dreams to place an idea deep in the subconscious of their target. But under desperate assault, as it becomes impossible to distinguish reality from collapsing dreams, can Cobb find his way through the labyrinth of his own mind, or will he be trapped by the guilt of his own Inception?",
   },
   {
     film: '1917',
     synopsis:
       "1917 is a journey through darkness and death to honor the bonds of loyalty in the depths of the Great War. Over a century ago, Lance Corporals Tom Blake and Will Schofield are given an impossible mission: cross No Man's Land and venture deep into enemy territory to locate and warn two Allied battalions that are about to be lured into a deadly snare by a German feint. 1,600 lives are on the line, including Blake's own brother. With no time to consider, they set off on a treacherous course leading them across blasted landscapes, deadly underground tunnels, a nightmare hellscape of fire, and a literal river of the dead, confronting the ultimate sacrifice with every step. Can they stay true to their honor and complete their mission, or will it all be in vain as they draw their final breaths on an unmarked field in France in the spring of 1917?",
+  },
+  {
+    film: 'Sinners',
+    synopsis:
+      "Sinners is a reckoning with blood, music, and the devil's bargain at the heart of the American South. Twin brothers Smoke and Stack return to their Mississippi Delta hometown in 1932, hoping to leave their violent pasts behind and build something real by opening a juke joint for their community. But when they invite the wrong people through the door, a single night of music and celebration becomes a fight for survival against a darkness far older and hungrier than anything they have faced before. Can the bonds of family and the power of their music hold back what is coming for them, or will one night of joy be all they are allowed before being consumed as Sinners?",
   },
 ];
 
@@ -218,7 +219,7 @@ Now write a synopsis for: ${film}
 Style rules:
 - Open with "${film} is [thematic statement]" — the film title is the very first word(s)
 - Follow with 3-5 sentences summarizing the plot using character names and pronouns — DO NOT mention the film title again anywhere in the middle
-- The FINAL sentence must be a question starting with "or will" and ending with the film title as the very last word(s): e.g. "or will [outcome]? ${film}?" — this is mandatory
+- The FINAL sentence must be a single question starting with "or will" with the film title naturally woven in as the very last word(s) before ONE closing "?": e.g. "or will they be consumed as ${film}?" — do NOT use two question marks or append the title as a separate echo after the question
 - The film title "${film}" must appear ONLY at the start and at the end. Never in between.
 - Write in present tense, plain prose, no markdown
 - Match the voice: earnest, cinephile, slightly dramatic
@@ -238,12 +239,11 @@ Output only the synopsis text, nothing else.`;
 
   let synopsis = textBlock.text.trim();
 
-  // Safety net: if the synopsis doesn't end with the film title, append it
+  // Safety net: ensure the synopsis ends with the film title before the final "?"
   const filmLower = film.toLowerCase();
-  const synopsisLower = synopsis.toLowerCase();
-  const endsWithFilm = synopsisLower.endsWith(`${filmLower}?`) || synopsisLower.endsWith(`${filmLower}.`);
-  if (!endsWithFilm && synopsis.endsWith('?')) {
-    synopsis = `${synopsis} ${film}?`;
+  if (!synopsis.toLowerCase().endsWith(`${filmLower}?`)) {
+    // Strip any trailing punctuation and reattach with film title
+    synopsis = synopsis.replace(/[.!?]+$/, '') + ` ${film}?`;
   }
 
   // Strip any mid-body film name occurrences (keep only first and last)
