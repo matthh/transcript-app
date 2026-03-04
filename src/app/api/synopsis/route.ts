@@ -197,7 +197,7 @@ Now write a synopsis for: ${film}
 Style rules:
 - Open with "{Film} is [thematic statement]" — a poetic, thematic sentence about what the film is really about
 - Follow with 3-5 sentences summarizing the plot: who the protagonist is, what they want, what obstacles they face
-- End with a rhetorical question starting with "or will" that closes with the film title (e.g., "or will [outcome]? [Film]?")
+- The FINAL sentence must be a question that starts with "or will" and ends with the film title followed by a question mark — the film title must be the very last word(s) before the final "?" e.g. "or will [outcome]? ${film}?" — this is mandatory, never end on anything else
 - Write in present tense, plain prose, no markdown
 - Match the voice: earnest, cinephile, slightly dramatic
 
@@ -214,7 +214,17 @@ Output only the synopsis text, nothing else.`;
     throw new Error('No text in Claude response');
   }
 
-  return textBlock.text.trim();
+  let synopsis = textBlock.text.trim();
+
+  // Safety net: if the synopsis doesn't end with the film title, append it
+  const filmLower = film.toLowerCase();
+  const synopsisLower = synopsis.toLowerCase();
+  const endsWithFilm = synopsisLower.endsWith(`${filmLower}?`) || synopsisLower.endsWith(`${filmLower}.`);
+  if (!endsWithFilm && synopsis.endsWith('?')) {
+    synopsis = `${synopsis} ${film}?`;
+  }
+
+  return synopsis;
 }
 
 export async function GET(request: NextRequest) {
