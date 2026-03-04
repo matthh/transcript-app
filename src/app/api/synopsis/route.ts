@@ -48,10 +48,10 @@ const FEW_SHOT_EXAMPLES = [
 ];
 
 function normalizeFilmName(name: string): string {
-  // Strip year suffixes like "(1985)" and trailing labels like "FINAL"
   return name
-    .replace(/\s*\([^)]+\)/g, '')
-    .replace(/\bFINAL\b/gi, '')
+    .replace(/^Episode\s+\d+:\s*/i, '')  // strip "Episode 250: " prefix
+    .replace(/\s*\([^)]+\)/g, '')         // strip "(year)" suffixes
+    .replace(/\bFINAL\b/gi, '')           // strip "FINAL"
     .trim();
 }
 
