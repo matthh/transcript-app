@@ -83,7 +83,7 @@ function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
   );
 }
 
-async function generateTilda(film: string): Promise<{ tildaH: string; tildaJason: string; tildaCorey: string }> {
+async function generateTilda(film: string): Promise<{ tildaH: string | null; tildaJason: string | null; tildaCorey: string | null }> {
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   const examples = FEW_SHOT_EXAMPLES.map(
@@ -119,10 +119,14 @@ Corey: [answer]`;
   const jLine = lines.find((l) => l.startsWith('Jason:'));
   const cLine = lines.find((l) => l.startsWith('Corey:'));
 
+  if (!hLine && !jLine && !cLine) {
+    throw new Error(`Could not generate Tilda answers for "${film}" — the film may not have suitable fictional characters`);
+  }
+
   return {
-    tildaH: hLine ? hLine.replace(/^Haitch:\s*/, '').trim() : '?',
-    tildaJason: jLine ? jLine.replace(/^Jason:\s*/, '').trim() : '?',
-    tildaCorey: cLine ? cLine.replace(/^Corey:\s*/, '').trim() : '?',
+    tildaH: hLine ? hLine.replace(/^Haitch:\s*/, '').trim() : null,
+    tildaJason: jLine ? jLine.replace(/^Jason:\s*/, '').trim() : null,
+    tildaCorey: cLine ? cLine.replace(/^Corey:\s*/, '').trim() : null,
   };
 }
 
@@ -161,7 +165,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Generate with Claude
-  let generated: { tildaH: string; tildaJason: string; tildaCorey: string };
+  let generated: { tildaH: string | null; tildaJason: string | null; tildaCorey: string | null };
   try {
     generated = await generateTilda(film);
   } catch (error) {
