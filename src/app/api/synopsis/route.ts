@@ -68,7 +68,7 @@ function extractSynopsis(transcript: Transcript): { text: string; timestamp: str
   const cleanName = normalizeFilmName(transcript.episode_name);
   const searchMarker = cleanName.toLowerCase() + ' is';
 
-  const dialogues = transcript.dialogues.slice(0, 250);
+  const dialogues = transcript.dialogues;
 
   for (let i = 0; i < dialogues.length; i++) {
     const entry = dialogues[i];
