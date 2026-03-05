@@ -59,15 +59,34 @@ function sortKey(e: EpisodeMetadata): number {
 // suppress unused warning
 void sortKey;
 
+async function fetchTmdbOverview(film: string): Promise<string | null> {
+  const apiKey = process.env.TMDB_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const params = new URLSearchParams({ api_key: apiKey, query: film });
+    const res = await fetch(`https://api.themoviedb.org/3/search/movie?${params}`);
+    if (!res.ok) return null;
+    const data = (await res.json()) as { results?: { overview?: string }[] };
+    return data.results?.[0]?.overview ?? null;
+  } catch {
+    return null;
+  }
+}
+
 async function generateKevQuestion(film: string): Promise<string> {
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const [client, tmdbOverview] = await Promise.all([
+    Promise.resolve(new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })),
+    fetchTmdbOverview(film),
+  ]);
 
   const examples = FEW_SHOT_EXAMPLES.map((q) => `- ${q}`).join('\n');
+
+  const filmContext = tmdbOverview ? `\nFilm context: ${tmdbOverview}\n` : '';
 
   const prompt = `"Kev" is a loyal listener of the Escape Hatch Podcast who submits a quirky question each week for the hosts to answer. His questions are personal, sometimes pop-culture adjacent, often a little absurd, and frequently end with "and why?" Study these real examples:
 
 ${examples}
-
+${filmContext}
 Now write ONE Kev-style question inspired by the themes or era of the film: ${film}
 
 Rules:
