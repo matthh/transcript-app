@@ -83,17 +83,50 @@ function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
   );
 }
 
+async function fetchTmdbCast(film: string): Promise<string | null> {
+  const apiKey = process.env.TMDB_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const searchParams = new URLSearchParams({ api_key: apiKey, query: film });
+    const searchRes = await fetch(`https://api.themoviedb.org/3/search/movie?${searchParams}`);
+    if (!searchRes.ok) return null;
+    const searchData = (await searchRes.json()) as { results?: { id: number }[] };
+    const movieId = searchData.results?.[0]?.id;
+    if (!movieId) return null;
+
+    const creditsRes = await fetch(
+      `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`
+    );
+    if (!creditsRes.ok) return null;
+    const creditsData = (await creditsRes.json()) as {
+      cast?: { name: string; character: string }[];
+    };
+    const top = (creditsData.cast ?? []).slice(0, 12);
+    if (top.length === 0) return null;
+    return top.map((c) => `${c.character} (played by ${c.name})`).join(', ');
+  } catch {
+    return null;
+  }
+}
+
 async function generateTilda(film: string): Promise<{ tildaH: string | null; tildaJason: string | null; tildaCorey: string | null }> {
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const [client, castInfo] = await Promise.all([
+    Promise.resolve(new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })),
+    fetchTmdbCast(film),
+  ]);
 
   const examples = FEW_SHOT_EXAMPLES.map(
     (ex) => `Film: ${ex.film}\nHaitch: ${ex.tildaH}\nJason: ${ex.tildaJason}`
   ).join('\n\n');
 
+  const castSection = castInfo
+    ? `\nCharacters in ${film}: ${castInfo}\n`
+    : '';
+
   const prompt = `On the Escape Hatch Podcast, hosts Haitch, Jason, and Corey answer the question: "Who would Tilda Swinton play in this film?" Their answers are always actual characters from the movie — sometimes unexpected choices, sometimes multiple options, sometimes with a brief quip. Study these real examples:
 
 ${examples}
-
+${castSection}
 Now generate answers for: ${film}
 
 Rules:
