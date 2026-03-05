@@ -203,17 +203,38 @@ function stripMidBodyFilmName(synopsis: string, film: string): string {
   return synopsis.slice(0, firstSentenceEnd + 1) + cleanedBody + synopsis.slice(orWillIdx);
 }
 
+async function fetchTmdbOverview(film: string): Promise<string | null> {
+  const apiKey = process.env.TMDB_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const params = new URLSearchParams({ api_key: apiKey, query: film });
+    const res = await fetch(`https://api.themoviedb.org/3/search/movie?${params}`);
+    if (!res.ok) return null;
+    const data = (await res.json()) as { results?: { overview?: string }[] };
+    return data.results?.[0]?.overview ?? null;
+  } catch {
+    return null;
+  }
+}
+
 async function generateSynopsis(film: string): Promise<string> {
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const [client, tmdbOverview] = await Promise.all([
+    Promise.resolve(new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })),
+    fetchTmdbOverview(film),
+  ]);
 
   const examples = FEW_SHOT_EXAMPLES.map(
     (ex) => `Film: ${ex.film}\nSynopsis: ${ex.synopsis}`
   ).join('\n\n');
 
+  const plotSection = tmdbOverview
+    ? `\nReal plot summary to use as grounding (DO NOT copy verbatim — rewrite in Haitch's style):\n${tmdbOverview}\n`
+    : '';
+
   const prompt = `You are writing a podcast intro synopsis in the exact style of "Haitch" from the Escape Hatch Podcast. Study these real examples carefully:
 
 ${examples}
-
+${plotSection}
 Now write a synopsis for: ${film}
 
 Style rules:
