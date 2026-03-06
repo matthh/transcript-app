@@ -278,6 +278,41 @@ function ReviewForm({ auth }: { auth: string }) {
     showToast('All data cleared', 'warn');
   }
 
+  // ── Match Patreon + Spotify for auto-fill ──
+  async function matchEpisodeSources(filmName: string) {
+    try {
+      const res = await fetch(
+        `/api/podreview/match-episode?q=${encodeURIComponent(filmName)}`,
+        { headers: { Authorization: `Bearer ${auth}` } }
+      );
+      const data = await res.json();
+      const matched: string[] = [];
+
+      if (data.spotify) {
+        updateLength(data.spotify.duration);
+        updateArtworkLink(data.spotify.artworkUrl);
+        matched.push(`Spotify: ${data.spotify.title}`);
+        // Use Spotify release date if no Patreon date
+        if (!data.patreon) {
+          updateReleaseDate(data.spotify.releaseDate);
+        }
+      }
+
+      if (data.patreon) {
+        updateShowLink(data.patreon.showLink);
+        // Format Patreon date (ISO → M/D/YYYY)
+        const d = new Date(data.patreon.publishedAt);
+        const dateStr = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+        updateReleaseDate(dateStr);
+        matched.push(`Patreon: ${data.patreon.title}`);
+      }
+
+      if (matched.length > 0) {
+        showToast(`Matched: ${matched.join(', ')}`, undefined, 3500);
+      }
+    } catch {}
+  }
+
   async function selectTmdbResult(result: TMDBResult) {
     const filmName = result.year ? `${result.title} (${result.year})` : result.title;
     setFilm(filmName);
@@ -287,23 +322,26 @@ function ReviewForm({ auth }: { auth: string }) {
     setSelectedTmdbId(result.id);
     resetCountersAndNotes();
 
-    // Fetch details for IMDB/Letterboxd links
-    try {
-      const res = await fetch('/api/podreview/tmdb-search', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({ tmdbId: result.id }),
-      });
-      const details = await res.json();
-      if (details.imdbLink) {
-        setImdbLink(details.imdbLink);
-        store('pr_imdbLink', details.imdbLink);
-      }
-      if (details.letterboxdLink) {
-        setLetterboxdLink(details.letterboxdLink);
-        store('pr_letterboxdLink', details.letterboxdLink);
-      }
-    } catch {}
+    // Fetch TMDB details and match episode sources in parallel
+    const tmdbPromise = fetch('/api/podreview/tmdb-search', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({ tmdbId: result.id }),
+    }).then(r => r.json()).catch(() => null);
+
+    const matchPromise = matchEpisodeSources(filmName);
+
+    const details = await tmdbPromise;
+    if (details?.imdbLink) {
+      setImdbLink(details.imdbLink);
+      store('pr_imdbLink', details.imdbLink);
+    }
+    if (details?.letterboxdLink) {
+      setLetterboxdLink(details.letterboxdLink);
+      store('pr_letterboxdLink', details.letterboxdLink);
+    }
+
+    await matchPromise;
   }
 
   function useCustomFilmName() {
@@ -314,6 +352,7 @@ function ReviewForm({ auth }: { auth: string }) {
       setShowTmdbDropdown(false);
       setSelectedTmdbId(null);
       resetCountersAndNotes();
+      matchEpisodeSources(name);
       showToast('Using custom film name');
     }
   }
