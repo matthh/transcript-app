@@ -2,7 +2,9 @@ name: Warmup
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    # Every 5 minutes, 8am–midnight Pacific (UTC-7: 15:00–07:00 UTC)
+    - cron: "*/5 15-23 * * *"
+    - cron: "*/5 0-6 * * *"
 
 jobs:
   warmup:
