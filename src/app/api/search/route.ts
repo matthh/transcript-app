@@ -31,6 +31,7 @@ import {
   shouldUseQuickSynthesis,
   resolveSearchStrategy,
   recordAgentResult,
+  AGENT_SEARCH_MODEL,
 } from '@/lib/routing-policy';
 import { runAgentSearch } from '@/lib/agent-search';
 
@@ -138,7 +139,6 @@ export async function POST(request: NextRequest) {
 
       // Tilda intent: collect data and synthesize with LLM
       if (intent.type === 'metadata_tilda') {
-        let tildaHandled = false;
         const episodeNumber = extractEpisodeNumberFromQuery(query);
         if (episodeNumber !== null) {
           const episodeResult = getTildaEpisodePicks(episodeNumber);
@@ -193,7 +193,7 @@ export async function POST(request: NextRequest) {
           }
         }
 
-        if (!tildaHandled) {
+        {
           const tildaResult = collectTildaContext();
           if (!tildaResult) {
             console.log('Tilda context fast-path failed, falling through to full pipeline');
@@ -393,7 +393,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           latencyMs: totalMs,
           path: 'agent_search',
           intent: { type: intent.type, confidence: intent.confidence },
-          synthesisModel: 'claude-sonnet-4-20250514',
+          synthesisModel: AGENT_SEARCH_MODEL,
           depth,
           routingPath: 'agent_search',
           searchStrategy: 'agent',
@@ -538,14 +538,19 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         endTimestamp: r.chunk.metadata.endTimestamp,
       }));
 
-      transcriptSources = retrievalResults.map((r) => ({
-        episodeTitle: r.chunk.metadata.episodeTitle,
-        speakers: r.chunk.metadata.speakers,
-        startTimestamp: r.chunk.metadata.startTimestamp,
-        endTimestamp: r.chunk.metadata.endTimestamp,
-        text: r.chunk.text,
-        score: r.score,
-      }));
+      transcriptSources = retrievalResults.map((r) => {
+        const epMatch = r.chunk.id.match(/episode_(\d+)/i);
+        const episodeNumber = epMatch ? parseInt(epMatch[1], 10) : undefined;
+        return {
+          episodeTitle: r.chunk.metadata.episodeTitle,
+          episodeNumber,
+          speakers: r.chunk.metadata.speakers,
+          startTimestamp: r.chunk.metadata.startTimestamp,
+          endTimestamp: r.chunk.metadata.endTimestamp,
+          text: r.chunk.text,
+          score: r.score,
+        };
+      });
     }
 
     console.log(`Found ${transcriptChunks.length} transcript passages`);

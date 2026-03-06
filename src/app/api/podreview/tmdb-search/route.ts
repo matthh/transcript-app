@@ -1,12 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
-
-function checkAuth(request: NextRequest): boolean {
-  const auth = request.headers.get('authorization');
-  if (!auth?.startsWith('Bearer ')) return false;
-  return auth.slice(7) === process.env.PODREVIEW_PASSWORD;
-}
 
 export async function GET(request: NextRequest) {
   if (!checkAuth(request)) {

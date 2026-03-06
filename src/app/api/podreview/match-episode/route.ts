@@ -1,13 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const PATREON_CAMPAIGN_ID = '10527831';
 const SPOTIFY_SHOW_ID = '6qd41W3ueh2NLdKu9Xwt5G';
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
-function checkAuth(request: NextRequest): boolean {
-  const auth = request.headers.get('authorization');
-  if (!auth?.startsWith('Bearer ')) return false;
-  return auth.slice(7) === process.env.PODREVIEW_PASSWORD;
+interface SpotifyEpisode {
+  name: string;
+  duration_ms: number;
+  release_date: string;
+  images: Array<{ url: string; width: number; height: number }>;
+  external_urls: { spotify: string };
 }
+
+interface PatreonPost {
+  id: string;
+  title: string;
+  published_at: string;
+  url: string;
+}
+
+let spotifyCache: { episodes: SpotifyEpisode[]; ts: number } | null = null;
+let patreonCache: { posts: PatreonPost[]; ts: number } | null = null;
 
 // ── Spotify helpers ──
 
@@ -26,25 +40,15 @@ async function getSpotifyToken(): Promise<string | null> {
   return data.access_token || null;
 }
 
-interface SpotifyEpisode {
-  name: string;
-  duration_ms: number;
-  release_date: string;
-  images: Array<{ url: string; width: number; height: number }>;
-  external_urls: { spotify: string };
-}
+async function fetchSpotifyEpisodes(token: string): Promise<SpotifyEpisode[]> {
+  if (spotifyCache && Date.now() - spotifyCache.ts < CACHE_TTL) {
+    return spotifyCache.episodes;
+  }
 
-async function searchSpotifyEpisodes(
-  token: string,
-  query: string
-): Promise<SpotifyEpisode[]> {
-  // Fetch recent episodes and match by title
-  // Spotify show episodes endpoint returns in reverse chronological order
   const allEpisodes: SpotifyEpisode[] = [];
   let offset = 0;
   const limit = 50;
 
-  // Fetch up to 200 episodes (4 pages) to have a good matching pool
   while (offset < 200) {
     const res = await fetch(
       `https://api.spotify.com/v1/shows/${SPOTIFY_SHOW_ID}/episodes?limit=${limit}&offset=${offset}`,
@@ -59,19 +63,17 @@ async function searchSpotifyEpisodes(
     offset += limit;
   }
 
+  spotifyCache = { episodes: allEpisodes, ts: Date.now() };
   return allEpisodes;
 }
 
 // ── Patreon helpers ──
 
-interface PatreonPost {
-  id: string;
-  title: string;
-  published_at: string;
-  url: string;
-}
-
 async function fetchPatreonPosts(): Promise<PatreonPost[]> {
+  if (patreonCache && Date.now() - patreonCache.ts < CACHE_TTL) {
+    return patreonCache.posts;
+  }
+
   const token = process.env.PATREON_CREATOR_TOKEN;
   if (!token) return [];
 
@@ -97,6 +99,7 @@ async function fetchPatreonPosts(): Promise<PatreonPost[]> {
     nextUrl = data.links?.next || null;
   }
 
+  patreonCache = { posts: allPosts, ts: Date.now() };
   return allPosts;
 }
 
@@ -179,7 +182,7 @@ export async function GET(request: NextRequest) {
 
   // ── Match Spotify ──
   if (spotifyToken) {
-    const episodes = await searchSpotifyEpisodes(spotifyToken, query);
+    const episodes = await fetchSpotifyEpisodes(spotifyToken);
     let bestScore = 0.5; // minimum threshold
     let bestEp: SpotifyEpisode | null = null;
 

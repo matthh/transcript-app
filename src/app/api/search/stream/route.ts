@@ -31,6 +31,7 @@ import {
   shouldUseQuickSynthesis,
   resolveSearchStrategy,
   recordAgentResult,
+  AGENT_SEARCH_MODEL,
 } from '@/lib/routing-policy';
 import { runAgentSearch } from '@/lib/agent-search';
 
@@ -459,7 +460,7 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
               latencyMs: totalMs,
               path: 'agent_search',
               intent: { type: intent.type, confidence: intent.confidence },
-              synthesisModel: 'claude-sonnet-4-20250514',
+              synthesisModel: AGENT_SEARCH_MODEL,
               depth,
               routingPath: 'agent_search',
               searchStrategy: 'agent',

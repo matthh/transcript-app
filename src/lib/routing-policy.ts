@@ -121,8 +121,11 @@ export interface AgentFeatureFlags {
   disableOnErrorRate: number;
 }
 
+let cachedFlags: AgentFeatureFlags | null = null;
+
 export function getAgentFeatureFlags(): AgentFeatureFlags {
-  return {
+  if (cachedFlags) return cachedFlags;
+  cachedFlags = {
     enabled: process.env.AGENT_SEARCH_ENABLED === 'true',
     percentRollout: Math.min(100, Math.max(0,
       parseInt(process.env.AGENT_SEARCH_PERCENT_ROLLOUT ?? '100', 10) || 100
@@ -132,6 +135,7 @@ export function getAgentFeatureFlags(): AgentFeatureFlags {
       : [],
     disableOnErrorRate: parseFloat(process.env.AGENT_SEARCH_DISABLE_ON_ERROR_RATE ?? '0.2') || 0.2,
   };
+  return cachedFlags;
 }
 
 // In-memory error rate tracking for auto-disable

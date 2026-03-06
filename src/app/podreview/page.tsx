@@ -256,7 +256,7 @@ function ReviewForm({ auth }: { auth: string }) {
     setTildaCorey(''); store('podreview_tildacorey', '');
   }
 
-  function resetAll() {
+  function clearAllFields() {
     setEditingEpisodeId(null);
     setFilm(''); store('pr_film', '');
     setTmdbQuery('');
@@ -274,6 +274,10 @@ function ReviewForm({ auth }: { auth: string }) {
     setImdbLink(''); store('pr_imdbLink', '');
     setSelectedTmdbId(null);
     resetCountersAndNotes();
+  }
+
+  function resetAll() {
+    clearAllFields();
     setShowResetConfirm(false);
     showToast('All data cleared', 'warn');
   }
@@ -399,33 +403,7 @@ function ReviewForm({ auth }: { auth: string }) {
   }
 
   function startNewEpisode() {
-    setEditingEpisodeId(null);
-    const next = String(nextEpisode);
-    // Clear all fields
-    setFilm(''); store('pr_film', '');
-    setTmdbQuery('');
-    const s = String(latestSeason);
-    setSeason(s); store('pr_season', s);
-    setEpisode(next); store('pr_episode', next);
-    setReleaseDate(''); store('pr_releaseDate', '');
-    setLength(''); store('pr_length', '');
-    setReviewer(''); store('pr_reviewer', '');
-    setGuest(''); store('pr_guest', '');
-    setShowLink(''); store('pr_showLink', '');
-    setArtworkLink(''); store('pr_artworkLink', '');
-    setLetterboxdLink(''); store('pr_letterboxdLink', '');
-    setImdbLink(''); store('pr_imdbLink', '');
-    setMmmCount(0); store('podreview_mmm', '0');
-    setTgCount(0); store('podreview_tg', '0');
-    setNotableMoments(''); store('podreview_notable', '');
-    setHFlex(''); store('podreview_hflex', '');
-    setJFlex(''); store('podreview_jflex', '');
-    setKevsQuestion(''); store('podreview_kevq', '');
-    setTildaH(''); store('podreview_tildah', '');
-    setTildaJ(''); store('podreview_tildaj', '');
-    setTildaGuest(''); store('podreview_tildaguest', '');
-    setTildaCorey(''); store('podreview_tildacorey', '');
-    setSelectedTmdbId(null);
+    clearAllFields();
     showToast('Ready for new episode');
   }
 

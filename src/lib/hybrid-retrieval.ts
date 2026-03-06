@@ -90,6 +90,7 @@ function reciprocalRankFusion(
   chunks: StoredChunk[],
   k: number = 60 // RRF constant
 ): RetrievalResult[] {
+  const chunkById = getChunkMap(chunks);
   const scores: Map<string, { score: number; chunk: StoredChunk; sources: Set<string> }> = new Map();
 
   // Add embedding results
@@ -120,8 +121,7 @@ function reciprocalRankFusion(
       existing.score += rrfScore;
       existing.sources.add('bm25');
     } else {
-      // Find the chunk by ID
-      const chunk = chunks.find((c) => c.id === id);
+      const chunk = chunkById.get(id);
       if (chunk) {
         scores.set(id, {
           score: rrfScore,
@@ -172,11 +172,10 @@ export function extractQueryTerms(query: string): string[] {
  * Helps surface chunks with direct keyword matches above semantically
  * similar but irrelevant chunks from the same episode.
  */
-function boostKeywordMatches(
+function boostKeywordMatchesWithTerms(
   results: RetrievalResult[],
-  query: string
+  terms: string[]
 ): RetrievalResult[] {
-  const terms = extractQueryTerms(query);
   if (terms.length === 0) return results;
 
   return results
@@ -812,8 +811,11 @@ export async function hybridRetrieval(
   const targetEpisodeTitles = options?.targetEpisodeTitles ?? [];
   const injectedResults = injectTargetedEpisodeChunks(mergedResults, chunks, queryEmbedding, targetEpisodeTitles);
 
+  // Pre-compute query terms once for keyword boost, diversification, and adjacent expansion
+  const queryTerms = extractQueryTerms(query);
+
   // Boost chunks containing exact query keywords so they survive deduplication
-  const boostedResults = boostKeywordMatches(injectedResults, query);
+  const boostedResults = boostKeywordMatchesWithTerms(injectedResults, queryTerms);
 
   // Boost chunks where a target speaker is active (person-scoped queries)
   const speakerBoosted = boostSpeakerMatches(boostedResults, query);
@@ -829,7 +831,6 @@ export async function hybridRetrieval(
 
   // Diversify: cap chunks per episode so results span more episodes
   const maxPerEpisode = 2;
-  const queryTerms = extractQueryTerms(query);
   const diversified = diversifyByEpisode(deduplicated, finalK, maxPerEpisode, queryTerms, targetEpisodeTitles);
 
   // Expand with adjacent chunks for keyword-matching results

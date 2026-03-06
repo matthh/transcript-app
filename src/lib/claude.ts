@@ -5,6 +5,7 @@ import {
   ClassificationResult,
 } from '@/types/episode-metadata';
 import { formatEpisodeDescriptor } from './episode-format';
+import { DEEP_SYNTHESIS_MODEL } from './routing-policy';
 
 /**
  * Normalize speaker names before they reach synthesis prompts.
@@ -53,7 +54,7 @@ ${chunk.text}
     .join('\n\n');
 
   const message = await getAnthropic().messages.create({
-    model: 'claude-sonnet-4-20250514',
+    model: DEEP_SYNTHESIS_MODEL,
     max_tokens: 2048,  // Increased from 1024 for longer interpretive answers
     messages: [
       {
@@ -235,7 +236,7 @@ ${formatTranscriptContext(transcriptChunks)}`);
 
   const systemPrompt = buildSystemPrompt(classification.type, sourceDescription, Boolean(countSummary));
   const maxTokens = tuning?.maxTokens ?? getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
-  const model = tuning?.model ?? 'claude-sonnet-4-20250514';
+  const model = tuning?.model ?? DEEP_SYNTHESIS_MODEL;
 
   const message = await getAnthropic().messages.create({
     model,
@@ -380,7 +381,7 @@ ${formatTranscriptContext(transcriptChunks)}`);
 
   const systemPrompt = buildSystemPrompt(classification.type, sourceDescription, Boolean(countSummary));
   const maxTokens = tuning?.maxTokens ?? getAdaptiveMaxTokens(classification.type, metadataEpisodes.length);
-  const model = tuning?.model ?? 'claude-sonnet-4-20250514';
+  const model = tuning?.model ?? DEEP_SYNTHESIS_MODEL;
 
   const stream = getAnthropic().messages.stream({
     model,

@@ -1,10 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-function checkAuth(request: NextRequest): boolean {
-  const auth = request.headers.get('authorization');
-  if (!auth?.startsWith('Bearer ')) return false;
-  return auth.slice(7) === process.env.PODREVIEW_PASSWORD;
-}
+import { checkAuth } from '@/lib/podreview-auth';
 
 export async function POST(request: NextRequest) {
   if (!checkAuth(request)) {

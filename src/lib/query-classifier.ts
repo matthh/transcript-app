@@ -1,10 +1,10 @@
-import Anthropic from '@anthropic-ai/sdk';
 import {
   QueryType,
   QueryFilters,
   ClassificationResult,
 } from '@/types/episode-metadata';
 import { findFilmFromQuery, findDebutFilmFromQuery, findDirectorFromQuery } from './query-intent';
+import { getAnthropic } from './claude';
 
 // Fallback heuristics - only used if LLM fails
 const FACTUAL_TRIGGERS = [
@@ -98,11 +98,7 @@ export async function classifyQuery(query: string): Promise<ClassificationResult
  * LLM-based classification - classifies query type AND extracts filters in one call.
  */
 async function classifyWithLLM(query: string): Promise<ClassificationResult> {
-  const anthropic = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
-  });
-
-  const message = await anthropic.messages.create({
+  const message = await getAnthropic().messages.create({
     model: 'claude-haiku-4-5-20251001',
     max_tokens: 384,
     messages: [
