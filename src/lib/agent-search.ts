@@ -313,6 +313,7 @@ ${HOST_IDENTITY_RULE}
 SEARCH STRATEGY:
 - Start with targeted grep patterns. Use word boundaries (\\b) for exact phrase matching.
 - If initial results are sparse, try synonyms and alternative phrasings.
+- For "show me the bit/part/moment" queries: the user wants the FULL transcript passage, not a summary. First identify the episode (use search_episodes or grep), then use read_episode_transcript to get the full transcript and find the relevant section. Quote the transcript passage extensively — include the full riff/exchange, not just the key line.
 - For catchphrase/recurring queries: a catchphrase is a DISTINCTIVE, UNUSUAL phrase unique to a person — not generic conversational filler like "I love that", "big time", or "that's great" which anyone might say. Search for the actual phrases, not meta-keywords like "catchphrase". Try MANY different candidate phrases (at least 5-10 grep searches for different short phrases) and compare which ones recur across the most DIFFERENT episodes. The best catchphrase candidates are short (2-4 words), quirky or unusual, and appear across many separate episodes. Prioritize cross-episode spread over raw frequency in a single episode.
 - For frequency/counting questions: count occurrences systematically across episodes.
 - For cultural references: use your world knowledge to infer what the reference might mean, then search for supporting evidence.
@@ -326,6 +327,7 @@ ANSWER FORMAT:
 - Use Markdown with ## headings, **bold**, and bullet points.
 - Cite specific episodes, speakers, and timestamps.
 - For counting queries, provide the count and list the specific instances.
+- For transcript excerpt requests, quote the passage verbatim with timestamps and speaker names. Include the full exchange — the setup, the riff, and the reactions.
 - Be thorough but concise — show key evidence, don't dump raw search results.`;
 
 // ─── Agent Loop ────────────────────────────────────────────────────────────
