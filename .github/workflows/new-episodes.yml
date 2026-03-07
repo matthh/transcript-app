@@ -49,24 +49,25 @@ jobs:
       # on disk but doesn't commit it. Commit here so the deploy includes the
       # latest metadata (guests, episode info, etc.) — prevents the gap where a
       # transcript exists in Blob but metadata is missing from the deployed build.
-      - name: Commit metadata changes
+      - name: Commit metadata and transcript changes
         run: |
-          if git diff --quiet -- src/lib/metadata-data.ts; then
-            echo "No metadata changes to commit."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/lib/metadata-data.ts
+          git add transcripts/episode_*.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
           else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/lib/metadata-data.ts
-            git commit -m "chore(metadata): sync sheet metadata"
+            git commit -m "chore: sync metadata and transcripts"
             git push origin HEAD:master
-            echo "METADATA_COMMITTED=true" >> "$GITHUB_ENV"
+            echo "CHANGES_COMMITTED=true" >> "$GITHUB_ENV"
           fi
 
       # If metadata was committed, trigger one more deploy so the build uses the
       # commit that has both the transcript AND the metadata.  The script may have
       # already triggered a deploy (with stale metadata) — this ensures correctness.
       - name: Trigger deploy with updated metadata
-        if: env.METADATA_COMMITTED == 'true'
+        if: env.CHANGES_COMMITTED == 'true'
         env:
           VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |

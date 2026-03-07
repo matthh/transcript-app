@@ -353,6 +353,29 @@ async function main() {
     }
   }
 
+  // Step 4b: Download newly transcribed episodes to transcripts/ for git commit
+  const transcribed = episodes.filter(e => e.transcribed);
+  if (transcribed.length > 0) {
+    const transcriptsDir = path.resolve(__dirname, '..', 'transcripts');
+    if (!fs.existsSync(transcriptsDir)) fs.mkdirSync(transcriptsDir, { recursive: true });
+    try {
+      const { loadTranscript } = await import('../src/lib/blob-storage');
+      for (const ep of transcribed) {
+        const epNum = typeof ep.episode === 'number' ? ep.episode : parseInt(String(ep.episode), 10);
+        if (Number.isNaN(epNum)) continue;
+        const transcript = await loadTranscript(epNum);
+        if (transcript) {
+          const outPath = path.join(transcriptsDir, `episode_${ep.episode}.json`);
+          fs.writeFileSync(outPath, JSON.stringify(transcript, null, 2));
+          log(`Saved transcript to ${outPath}`);
+        }
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      log(`Warning: could not download transcripts from Blob: ${msg}`);
+    }
+  }
+
   // Step 5: Report
   writeReport(generateReport(episodes, false));
 
