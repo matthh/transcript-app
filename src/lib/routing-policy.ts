@@ -182,6 +182,9 @@ export function isAgentAutoDisabled(): boolean {
  *   B6: Episode counting with topic verb — "how many episodes mention/discuss X"
  *   B7: Multi-episode entity extraction — "in [episode] and N episodes prior/before/after"
  *
+ * Phase C: transcript excerpt retrieval (Mar 2026).
+ *   C1: "give/show/find me the bit/part/section/moment" — user wants raw transcript passage
+ *
  * Catchphrase/recurring-phrase patterns remain deferred — RAG handles via sub-chunks.
  * Metadata-only listing queries (e.g., "list all movies reviewed") stay on RAG (no utterance verb).
  */
@@ -209,6 +212,9 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
 
   // Phase B7: Multi-episode entity extraction — "in [episode] and N episodes prior/before/after"
   /\b\d+\s*(episode|ep)s?\s*(prior|before|after|earlier|later)\b/i,
+
+  // Phase C1: Transcript excerpt — "give/show/find/pull up the [X] bit/part/section/moment/riff/rant"
+  /\b(give|show|find|pull up|get)\b.*\bthe\b.{0,40}\b(bit|part|section|moment|riff|rant|scene|exchange|conversation|excerpt|passage)\b.*\b(where|when|about|from)\b/i,
 ];
 
 /**
@@ -224,6 +230,7 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
  * Phase A patterns: counting/frequency with verb anchor.
  * Phase B patterns: speaker comparison, windowed comparison, exhaustive listing,
  *   temporal ordering, frequency ranking, episode counting, multi-episode extraction.
+ * Phase C patterns: transcript excerpt retrieval ("show me the bit where...").
  *
  * Queries that stay on RAG (no pattern match):
  * - Personal queries ("Does Jason like BBQ?") — RAG sub-chunks
