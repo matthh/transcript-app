@@ -18,6 +18,7 @@ interface SpeakerMapperProps {
   onMappingComplete: (mappedDialogues: DialogueEntry[]) => void;
   onCancel: () => void;
   guestName?: string | null;
+  episodeName?: string | null;
 }
 
 interface HistoryEntry {
@@ -83,6 +84,7 @@ export default function SpeakerMapper({
   onMappingComplete,
   onCancel,
   guestName,
+  episodeName,
 }: SpeakerMapperProps) {
   // State
   const [dialogues, setDialogues] = useState<DialogueEntry[]>(initialDialogues);
@@ -114,6 +116,9 @@ export default function SpeakerMapper({
   const [highlightSamples, setHighlightSamples] = useState<boolean>(() =>
     readStored<boolean>(HIGHLIGHT_SAMPLES_KEY, true)
   );
+  // Sample detection state
+  const [detectingSamples, setDetectingSamples] = useState(false);
+  const [detectedSampleCount, setDetectedSampleCount] = useState<number | null>(null);
   // Undo/redo history
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
@@ -427,6 +432,32 @@ export default function SpeakerMapper({
 
   const canUndo = historyIndex >= 0;
   const canRedo = historyIndex < history.length - 1;
+
+  // Detect movie samples via LLM
+  const detectSamples = useCallback(async () => {
+    if (!episodeName || detectingSamples) return;
+    setDetectingSamples(true);
+    setDetectedSampleCount(null);
+    try {
+      const resp = await fetch('/api/detect-samples', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dialogues, episodeName }),
+      });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      const indices: number[] = data.sampleIndices ?? [];
+      if (indices.length > 0) {
+        applySpeakerToIndices(indices, 'Movie Sample', `Auto-detect ${indices.length} sample(s)`);
+      }
+      setDetectedSampleCount(indices.length);
+    } catch (err) {
+      console.error('Sample detection failed:', err);
+      setDetectedSampleCount(-1);
+    } finally {
+      setDetectingSamples(false);
+    }
+  }, [episodeName, detectingSamples, dialogues, applySpeakerToIndices]);
 
   // Enter mapping mode for a label
   const enterMappingMode = useCallback((label: string) => {
@@ -894,6 +925,29 @@ export default function SpeakerMapper({
             />
             Highlight samples (m)
           </label>
+
+          {episodeName && (
+            <button
+              type="button"
+              onClick={detectSamples}
+              disabled={detectingSamples}
+              className={`px-3 py-1 text-sm rounded border ${
+                detectingSamples
+                  ? 'bg-gray-100 text-gray-400 cursor-wait'
+                  : 'bg-purple-50 text-purple-700 border-purple-300 hover:bg-purple-100'
+              }`}
+            >
+              {detectingSamples
+                ? 'Detecting...'
+                : detectedSampleCount === null
+                  ? 'Detect Samples'
+                  : detectedSampleCount === -1
+                    ? 'Detect Samples (error)'
+                    : detectedSampleCount === 0
+                      ? 'No samples found'
+                      : `${detectedSampleCount} sample(s) labeled`}
+            </button>
+          )}
 
           <div className="flex items-center gap-2">
             <label className="text-sm text-gray-600">Range:</label>

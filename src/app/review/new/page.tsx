@@ -526,6 +526,7 @@ function NewEpisodeContent() {
           onMappingComplete={handleMappingComplete}
           onCancel={handleMappingCancel}
           guestName={guestName}
+          episodeName={episodeName}
         />
       )}
 

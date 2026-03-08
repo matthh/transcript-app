@@ -321,6 +321,7 @@ export default function EditorPage() {
             onMappingComplete={handleMappingComplete}
             onCancel={handleMappingCancel}
             guestName={guestName}
+            episodeName={transcriptMeta?.episode_name}
           />
         ) : (
           <TranscriptEditor
