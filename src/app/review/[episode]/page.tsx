@@ -188,7 +188,7 @@ export default function EditorPage() {
 
   const handleReset = async () => {
     const confirmed = window.confirm(
-      `Reset Episode ${transcriptMeta?.episode_number}?\n\nThis will delete the transcript and return you to the review list. You'll need to re-transcribe this episode.`
+      `Reset Episode ${transcriptMeta?.episode_number}?\n\nThis will restore the original unmapped speaker labels. You can re-map speakers afterward.`
     );
     if (!confirmed) return;
 
@@ -198,7 +198,13 @@ export default function EditorPage() {
         method: 'DELETE',
       });
       if (!response.ok) throw new Error('Failed to reset episode');
-      router.push('/review');
+      const data = await response.json();
+      if (data.action === 'restored_raw') {
+        // Reload the restored raw transcript
+        window.location.reload();
+      } else {
+        router.push('/review');
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to reset');
       setResetting(false);
@@ -309,6 +315,18 @@ export default function EditorPage() {
               className="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition-colors"
             >
               Re-map Speakers
+            </button>
+          </div>
+        )}
+
+        {/* Always show Edit Speakers button when not already in mapping mode */}
+        {!mappingMode && !hasUnmappedSpeakers && (
+          <div className="mb-4">
+            <button
+              onClick={() => setMappingMode(true)}
+              className="px-4 py-2 text-sm bg-gray-100 text-gray-700 rounded border hover:bg-gray-200 transition-colors"
+            >
+              Edit Speakers
             </button>
           </div>
         )}

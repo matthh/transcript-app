@@ -6,6 +6,7 @@ import {
   loadTranscript as loadBlobTranscript,
   saveTranscript as saveBlobTranscript,
   deleteTranscript as deleteBlobTranscript,
+  loadRawTranscript,
 } from '@/lib/blob-storage';
 
 function parseEpisodeNumber(episode: string): number {
@@ -100,10 +101,32 @@ export async function DELETE(
     return NextResponse.json({ error: 'Invalid episode number' }, { status: 400 });
   }
 
+  // Try to restore from raw (unmapped) transcript
+  const rawTranscript = await loadRawTranscript(episodeNumber);
+  if (rawTranscript) {
+    // Overwrite the mapped transcript with the raw one
+    await saveBlobTranscript(rawTranscript);
+
+    // Also overwrite filesystem if writable (local dev)
+    const filePath = path.join(process.cwd(), 'transcripts', `episode_${episodeNumber}.json`);
+    try {
+      fs.writeFileSync(filePath, JSON.stringify(rawTranscript, null, 2), 'utf-8');
+    } catch {
+      // Read-only filesystem (production) — fine, Blob is the source of truth
+    }
+
+    return NextResponse.json({
+      success: true,
+      episode: episodeNumber,
+      action: 'restored_raw',
+      speakers: Array.from(new Set(rawTranscript.dialogues.map(d => d.name))),
+    });
+  }
+
+  // No raw transcript available — fall back to full delete
   const deleted: string[] = [];
   const errors: string[] = [];
 
-  // Try to delete from filesystem
   const filePath = path.join(process.cwd(), 'transcripts', `episode_${episodeNumber}.json`);
   if (fs.existsSync(filePath)) {
     try {
@@ -114,7 +137,6 @@ export async function DELETE(
     }
   }
 
-  // Try to delete from Blob storage
   try {
     const success = await deleteBlobTranscript(episodeNumber);
     if (success) {
@@ -134,6 +156,7 @@ export async function DELETE(
   return NextResponse.json({
     success: true,
     episode: episodeNumber,
+    action: 'deleted',
     deleted,
     errors: errors.length > 0 ? errors : undefined,
   });

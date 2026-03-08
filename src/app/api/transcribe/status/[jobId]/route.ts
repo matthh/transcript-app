@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { AssemblyAI } from 'assemblyai';
-import { loadTranscriptionJob, saveTranscriptionJob, saveTranscript } from '@/lib/blob-storage';
+import { loadTranscriptionJob, saveTranscriptionJob, saveTranscript, saveRawTranscript } from '@/lib/blob-storage';
 import type { Transcript, DialogueEntry } from '@/types/transcript';
 
 const client = new AssemblyAI({
@@ -77,7 +77,8 @@ export async function GET(
         dialogues,
       };
 
-      // Save transcript to Blob storage
+      // Save raw + mapped transcript to Blob storage
+      await saveRawTranscript(transcript);
       await saveTranscript(transcript);
 
       // Update job status

@@ -2,6 +2,7 @@ import { put, list, del, head } from '@vercel/blob';
 import type { Transcript, TranscriptMetadata } from '@/types/transcript';
 
 const TRANSCRIPT_PREFIX = 'transcripts/';
+const RAW_TRANSCRIPT_PREFIX = 'transcripts/raw/';
 const AUDIO_PREFIX = 'audio/';
 
 export interface BlobTranscriptInfo {
@@ -67,6 +68,50 @@ export async function loadTranscript(
     if (!response.ok) {
       return null;
     }
+
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Save the raw (unmapped) transcript to Blob — called once at transcription time.
+ * Will not overwrite if a raw copy already exists.
+ */
+export async function saveRawTranscript(transcript: Transcript): Promise<string | null> {
+  const pathname = `${RAW_TRANSCRIPT_PREFIX}episode_${transcript.episode_number}.json`;
+
+  try {
+    const existing = await head(pathname);
+    if (existing) return null; // raw already saved, don't overwrite
+  } catch {
+    // doesn't exist yet — save it
+  }
+
+  const blob = await put(pathname, JSON.stringify(transcript, null, 2), {
+    access: 'public',
+    contentType: 'application/json',
+    addRandomSuffix: false,
+    allowOverwrite: false,
+  });
+
+  return blob.url;
+}
+
+/**
+ * Load the raw (unmapped) transcript from Blob storage
+ */
+export async function loadRawTranscript(episodeNumber: number): Promise<Transcript | null> {
+  const pathname = `${RAW_TRANSCRIPT_PREFIX}episode_${episodeNumber}.json`;
+
+  try {
+    const blobs = await list({ prefix: pathname });
+    const match = blobs.blobs.find(b => b.pathname === pathname);
+    if (!match) return null;
+
+    const response = await fetch(match.url, { cache: 'no-store' });
+    if (!response.ok) return null;
 
     return await response.json();
   } catch {

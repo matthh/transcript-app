@@ -277,7 +277,8 @@ async function pollTranscription(jobId: string): Promise<{ status: string; trans
 }
 
 async function saveTranscriptToBlob(transcript: Transcript): Promise<void> {
-  const { saveTranscript } = await import('../src/lib/blob-storage');
+  const { saveTranscript, saveRawTranscript } = await import('../src/lib/blob-storage');
+  await saveRawTranscript(transcript);
   await saveTranscript(transcript);
 }
 
