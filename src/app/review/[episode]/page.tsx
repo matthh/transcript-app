@@ -455,6 +455,7 @@ export default function EditorPage() {
             dialogues={dialogues}
             onApply={handleCleanupApply}
             onCancel={handleCleanupCancel}
+            onSeekTo={audioControls.seekToTimestamp}
           />
         ) : mappingMode ? (
           <SpeakerMapper

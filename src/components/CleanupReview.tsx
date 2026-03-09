@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import type { DialogueEntry } from '@/types/transcript';
 import type { CleanupChange } from '@/app/api/cleanup-transcript/route';
 
@@ -14,6 +14,7 @@ interface CleanupReviewProps {
   dialogues: DialogueEntry[];
   onApply: (accepted: CleanupChange[], decisions: CleanupDecision[]) => void;
   onCancel: () => void;
+  onSeekTo?: (timestamp: string) => void;
 }
 
 const TYPE_LABELS: Record<string, { label: string; color: string; bg: string }> = {
@@ -23,8 +24,10 @@ const TYPE_LABELS: Record<string, { label: string; color: string; bg: string }> 
   voicemailer: { label: 'Voicemailer', color: 'text-green-700', bg: 'bg-green-50 border-green-200' },
 };
 
-export default function CleanupReview({ changes, dialogues, onApply, onCancel }: CleanupReviewProps) {
+export default function CleanupReview({ changes, dialogues, onApply, onCancel, onSeekTo }: CleanupReviewProps) {
   const [selected, setSelected] = useState<Set<number>>(() => new Set(changes.map((_, i) => i)));
+  // Track user edits to newValue — keyed by change index
+  const [edits, setEdits] = useState<Record<number, string>>({});
 
   const grouped = useMemo(() => {
     const groups: Record<string, { change: CleanupChange; idx: number }[]> = {};
@@ -54,10 +57,25 @@ export default function CleanupReview({ changes, dialogues, onApply, onCancel }:
     });
   };
 
+  const updateEdit = useCallback((idx: number, value: string) => {
+    setEdits(prev => ({ ...prev, [idx]: value }));
+  }, []);
+
+  const getEffectiveChange = useCallback((idx: number): CleanupChange => {
+    const change = changes[idx];
+    if (idx in edits) {
+      return { ...change, newValue: edits[idx] };
+    }
+    return change;
+  }, [changes, edits]);
+
   const handleApply = () => {
-    const accepted = changes.filter((_, i) => selected.has(i));
-    const decisions: CleanupDecision[] = changes.map((change, i) => ({
-      change,
+    const accepted = changes
+      .map((_, i) => i)
+      .filter(i => selected.has(i))
+      .map(i => getEffectiveChange(i));
+    const decisions: CleanupDecision[] = changes.map((_, i) => ({
+      change: getEffectiveChange(i),
       accepted: selected.has(i),
     }));
     onApply(accepted, decisions);
@@ -124,10 +142,14 @@ export default function CleanupReview({ changes, dialogues, onApply, onCancel }:
               <div className="space-y-2 ml-7">
                 {items.map(({ change, idx }) => {
                   const d = dialogues[change.index];
+                  const editedValue = idx in edits ? edits[idx] : null;
+                  const displayNewValue = editedValue ?? change.newValue;
+                  const isEdited = editedValue !== null && editedValue !== change.newValue;
+
                   return (
-                    <label
+                    <div
                       key={idx}
-                      className={`flex items-start gap-3 p-3 rounded border cursor-pointer ${
+                      className={`flex items-start gap-3 p-3 rounded border ${
                         selected.has(idx) ? meta.bg : 'bg-white border-gray-200 opacity-60'
                       }`}
                     >
@@ -139,14 +161,33 @@ export default function CleanupReview({ changes, dialogues, onApply, onCancel }:
                       />
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 text-xs text-gray-500 mb-1">
+                          {onSeekTo && d?.timestamp && (
+                            <button
+                              type="button"
+                              onClick={() => onSeekTo(d.timestamp)}
+                              className="hover:text-blue-600 transition-colors"
+                              title="Play from this timestamp"
+                            >
+                              &#9654;
+                            </button>
+                          )}
                           <span className="font-mono">{d?.timestamp}</span>
                           <span>#{change.index}</span>
+                          {isEdited && (
+                            <span className="text-amber-600 font-medium">edited</span>
+                          )}
                         </div>
                         {change.field === 'name' ? (
                           <div className="text-sm">
                             <span className="line-through text-red-600">{change.oldValue}</span>
-                            <span className="mx-2 text-gray-400">→</span>
-                            <span className="font-medium text-green-700">{change.newValue}</span>
+                            <span className="mx-2 text-gray-400">&rarr;</span>
+                            <input
+                              type="text"
+                              value={displayNewValue}
+                              onChange={e => updateEdit(idx, e.target.value)}
+                              className="font-medium text-green-700 bg-transparent border-b border-dashed border-green-300 focus:border-green-600 outline-none px-1"
+                              style={{ width: `${Math.max(displayNewValue.length + 2, 8)}ch` }}
+                            />
                             <span className="text-gray-500 ml-2">
                               &ldquo;{d?.text.slice(0, 80)}{(d?.text.length ?? 0) > 80 ? '...' : ''}&rdquo;
                             </span>
@@ -154,12 +195,17 @@ export default function CleanupReview({ changes, dialogues, onApply, onCancel }:
                         ) : (
                           <div className="text-sm space-y-1">
                             <div className="line-through text-red-600 break-words">{change.oldValue}</div>
-                            <div className="font-medium text-green-700 break-words">{change.newValue}</div>
+                            <textarea
+                              value={displayNewValue}
+                              onChange={e => updateEdit(idx, e.target.value)}
+                              rows={Math.min(3, Math.ceil(displayNewValue.length / 80))}
+                              className="w-full font-medium text-green-700 bg-transparent border border-dashed border-green-300 focus:border-green-600 outline-none rounded px-2 py-1 resize-y"
+                            />
                           </div>
                         )}
                         <p className="text-xs text-gray-500 mt-1">{change.reason}</p>
                       </div>
-                    </label>
+                    </div>
                   );
                 })}
               </div>
