@@ -275,8 +275,8 @@ function getAdaptiveMaxTokens(
   queryType: 'factual' | 'interpretive' | 'hybrid',
   metadataCount: number
 ): number {
-  // Base tokens for interpretive analysis
-  let tokens = 1024;
+  // Base tokens: interpretive needs room for cross-episode synthesis
+  let tokens = queryType === 'interpretive' ? 2048 : 1024;
 
   // Factual queries need room for episode lists
   if (queryType === 'factual') {
