@@ -56,10 +56,13 @@ ERROR TYPES TO LOOK FOR:
 RULES:
 - Only flag changes you're confident about (>80% sure)
 - For spelling, only fix proper nouns — don't fix casual speech, slang, or grammar
-- For speaker misattribution, you need strong evidence (signature phrases, self-identification)
-- For voicemailer detection, look for segment boundaries — voicemailers usually have a block of consecutive turns
+- CRITICAL: The newValue MUST be different from oldValue. Do NOT propose a change where the text is identical. If the text is already correct, skip it.
+- For speaker misattribution, you need VERY strong evidence — only flag when a host's known signature phrase appears on the wrong speaker. Do NOT guess based on conversational flow or who "should" be speaking next.
+- For voicemailer detection, look for segment boundaries — voicemailers usually have a block of 3+ consecutive turns with a distinct voice/style. Hosts frequently go off-topic (tech, personal life, sports, food) — this is normal host behavior, NOT a voicemail. Only flag voicemailer when the speaker explicitly identifies themselves or has an obviously different speaking persona.
+- For sample detection, only flag when there is clear evidence (host cues like "play the clip", content from the reviewed film, or interview audio). Do NOT flag a guest's normal discussion as a sample just because the topic shifts.
 - Include a brief reason for each change
 - Do NOT flag turns already labeled "Sounder/FX" or "Movie Sample"
+- For spelling corrections, you MUST be certain of the correct spelling. If unsure, skip it. Wrong corrections are worse than leaving ASR errors.
 
 Dialogue turns (index | speaker | timestamp | text):
 ${dialogues.map(d => `${d.index} | ${d.name} | ${d.timestamp} | ${d.text}`).join('\n')}
@@ -144,7 +147,8 @@ export async function POST(request: NextRequest) {
                   change.index >= 0 &&
                   change.index < dialogues.length &&
                   ['sample', 'spelling', 'speaker', 'voicemailer'].includes(change.type) &&
-                  ['name', 'text'].includes(change.field)
+                  ['name', 'text'].includes(change.field) &&
+                  change.oldValue !== change.newValue // Filter no-op changes
                 ) {
                   if (!allChanges.some(c => c.index === change.index && c.field === change.field)) {
                     allChanges.push(change);
