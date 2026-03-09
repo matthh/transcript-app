@@ -490,13 +490,21 @@ This is a FACTUAL query about episode metadata. Provide:
     case 'interpretive':
       return `${basePrompt}
 
-This is an INTERPRETIVE query about opinions and discussions. Provide:
+This is an INTERPRETIVE query about opinions and discussions.
+
+BEFORE writing your answer, you MUST do this mental scan (do not output it):
+- Go through EVERY transcript excerpt (1 through N)
+- For each one, check: does it contain the person/topic the user asked about?
+- Note which excerpts and episodes have relevant content
+- Then write your answer using ALL the evidence you found across ALL episodes
+
+Provide:
 - Analytical synthesis of what the hosts said and thought
 - Include direct quotes with episode names and timestamps
 - Capture nuance and different perspectives between hosts
 - Don't just list quotes - weave them into a coherent narrative
 - Use ## headings to organize themes or topics in your analysis
-- IMPORTANT: The excerpts come from MANY different episodes. A person or topic may be discussed in episodes NOT about that person/topic (e.g., Zuckerberg discussed in a Jaws episode, not just The Social Network). Treat ALL mentions as valid evidence regardless of which episode they appear in.
+- IMPORTANT: The excerpts come from MANY different episodes. A person or topic may be discussed in episodes that are NOT about that person/topic. Treat ALL mentions as valid evidence regardless of which episode they appear in.
 - If the transcripts don't discuss the topic, clearly state that`;
 
     case 'hybrid':
