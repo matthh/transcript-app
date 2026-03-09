@@ -66,16 +66,16 @@ async function callReranker(
     return `[${i + 1}] Episode: ${title} | ${text}`;
   });
 
-  const prompt = `Given this search query, rank the transcript excerpts by relevance.
-Return a JSON array of excerpt numbers, most relevant first.
-Include ALL excerpts in your ranking — only omit an excerpt if it has zero connection to ANY topic in the query.
+  const prompt = `Given this search query, rank ALL transcript excerpts by relevance.
+Return a JSON array containing ALL excerpt numbers, ordered from most relevant to least relevant.
+You MUST include every number from 1 to ${results.length} in your array — do not omit any.
 
 Query: "${query}"
 
 Excerpts:
 ${excerpts.join('\n')}
 
-Respond with ONLY a JSON array of numbers, e.g. [3, 1, 5, 2]`;
+Respond with ONLY a JSON array of ALL numbers, e.g. [3, 1, 5, 2, 4]`;
 
   const message = await getAnthropic().messages.create({
     model: QUICK_SYNTHESIS.model,
@@ -116,16 +116,13 @@ Respond with ONLY a JSON array of numbers, e.g. [3, 1, 5, 2]`;
     return results;
   }
 
-  // Minimum retention: keep at least half of the original results.
-  // If the reranker was too aggressive, backfill with top original results.
-  const minRetain = Math.ceil(results.length / 2);
-  if (reordered.length < minRetain) {
-    for (const r of results) {
-      if (reordered.length >= minRetain) break;
-      const idx = results.indexOf(r);
-      if (!used.has(idx)) {
-        reordered.push(r);
-        used.add(idx);
+  // If the reranker omitted some results despite being told not to,
+  // append them at the end in their original order
+  if (reordered.length < results.length) {
+    for (let i = 0; i < results.length; i++) {
+      if (!used.has(i)) {
+        reordered.push(results[i]);
+        used.add(i);
       }
     }
   }
