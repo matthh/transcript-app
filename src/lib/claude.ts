@@ -496,6 +496,7 @@ This is an INTERPRETIVE query about opinions and discussions. Provide:
 - Capture nuance and different perspectives between hosts
 - Don't just list quotes - weave them into a coherent narrative
 - Use ## headings to organize themes or topics in your analysis
+- IMPORTANT: The excerpts come from MANY different episodes. A person or topic may be discussed in episodes NOT about that person/topic (e.g., Zuckerberg discussed in a Jaws episode, not just The Social Network). Treat ALL mentions as valid evidence regardless of which episode they appear in.
 - If the transcripts don't discuss the topic, clearly state that`;
 
     case 'hybrid':
