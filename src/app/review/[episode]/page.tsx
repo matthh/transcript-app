@@ -10,6 +10,7 @@ import AudioPlayer from '@/components/AudioPlayer';
 import TranscriptEditor from '@/components/TranscriptEditor';
 import SpeakerMapper from '@/components/SpeakerMapper';
 import CleanupReview from '@/components/CleanupReview';
+import type { CleanupDecision } from '@/components/CleanupReview';
 import type { CleanupChange } from '@/app/api/cleanup-transcript/route';
 
 export default function EditorPage() {
@@ -245,9 +246,9 @@ export default function EditorPage() {
     }
   };
 
-  const handleCleanupApply = useCallback((changes: CleanupChange[]) => {
+  const handleCleanupApply = useCallback((accepted: CleanupChange[], decisions: CleanupDecision[]) => {
     const updated = [...dialogues];
-    for (const change of changes) {
+    for (const change of accepted) {
       if (change.index < 0 || change.index >= updated.length) continue;
       const d = { ...updated[change.index] };
       if (change.field === 'name') {
@@ -260,7 +261,18 @@ export default function EditorPage() {
     setDialogues(updated);
     setHasUnsavedChanges(true);
     setCleanupChanges(null);
-  }, [dialogues, setDialogues]);
+
+    // Log decisions asynchronously
+    fetch('/api/cleanup-feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        episodeNumber: transcriptMeta?.episode_number,
+        episodeName: transcriptMeta?.episode_name,
+        decisions,
+      }),
+    }).catch(() => { /* non-blocking */ });
+  }, [dialogues, setDialogues, transcriptMeta]);
 
   const handleCleanupCancel = useCallback(() => {
     setCleanupChanges(null);

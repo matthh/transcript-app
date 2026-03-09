@@ -4,10 +4,15 @@ import { useState, useMemo } from 'react';
 import type { DialogueEntry } from '@/types/transcript';
 import type { CleanupChange } from '@/app/api/cleanup-transcript/route';
 
+export interface CleanupDecision {
+  change: CleanupChange;
+  accepted: boolean;
+}
+
 interface CleanupReviewProps {
   changes: CleanupChange[];
   dialogues: DialogueEntry[];
-  onApply: (changes: CleanupChange[]) => void;
+  onApply: (accepted: CleanupChange[], decisions: CleanupDecision[]) => void;
   onCancel: () => void;
 }
 
@@ -51,7 +56,11 @@ export default function CleanupReview({ changes, dialogues, onApply, onCancel }:
 
   const handleApply = () => {
     const accepted = changes.filter((_, i) => selected.has(i));
-    onApply(accepted);
+    const decisions: CleanupDecision[] = changes.map((change, i) => ({
+      change,
+      accepted: selected.has(i),
+    }));
+    onApply(accepted, decisions);
   };
 
   const typeOrder = ['sample', 'voicemailer', 'speaker', 'spelling'];
