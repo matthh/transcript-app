@@ -68,7 +68,7 @@ async function callReranker(
 
   const prompt = `Given this search query, rank the transcript excerpts by relevance.
 Return a JSON array of excerpt numbers, most relevant first.
-Omit any excerpts clearly irrelevant to the query.
+Include ALL excerpts in your ranking — only omit an excerpt if it has zero connection to ANY topic in the query.
 
 Query: "${query}"
 
@@ -114,6 +114,20 @@ Respond with ONLY a JSON array of numbers, e.g. [3, 1, 5, 2]`;
   // If LLM returned nothing useful, fall back to original results
   if (reordered.length === 0) {
     return results;
+  }
+
+  // Minimum retention: keep at least half of the original results.
+  // If the reranker was too aggressive, backfill with top original results.
+  const minRetain = Math.ceil(results.length / 2);
+  if (reordered.length < minRetain) {
+    for (const r of results) {
+      if (reordered.length >= minRetain) break;
+      const idx = results.indexOf(r);
+      if (!used.has(idx)) {
+        reordered.push(r);
+        used.add(idx);
+      }
+    }
   }
 
   // Assign descending scores so downstream ordering is preserved
