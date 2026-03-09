@@ -9,6 +9,8 @@ import { useUndoRedo } from '@/hooks/useUndoRedo';
 import AudioPlayer from '@/components/AudioPlayer';
 import TranscriptEditor from '@/components/TranscriptEditor';
 import SpeakerMapper from '@/components/SpeakerMapper';
+import CleanupReview from '@/components/CleanupReview';
+import type { CleanupChange } from '@/app/api/cleanup-transcript/route';
 
 export default function EditorPage() {
   const { episode } = useParams<{ episode: string }>();
@@ -35,6 +37,8 @@ export default function EditorPage() {
   const [resetting, setResetting] = useState(false);
   const [mappingMode, setMappingMode] = useState(false);
   const [guestName, setGuestName] = useState<string | null>(null);
+  const [cleaningUp, setCleaningUp] = useState(false);
+  const [cleanupChanges, setCleanupChanges] = useState<CleanupChange[] | null>(null);
 
   const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(dialogues);
 
@@ -211,6 +215,57 @@ export default function EditorPage() {
     }
   };
 
+  const handleCleanup = async () => {
+    if (!transcriptMeta || cleaningUp) return;
+    setCleaningUp(true);
+    setError(null);
+    try {
+      const resp = await fetch('/api/cleanup-transcript', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dialogues,
+          episodeName: transcriptMeta.episode_name,
+          guestName,
+        }),
+      });
+      if (!resp.ok) throw new Error(`Cleanup failed: ${resp.status}`);
+      const data = await resp.json();
+      const changes: CleanupChange[] = data.changes ?? [];
+      if (changes.length === 0) {
+        setCleanupChanges(null);
+        setError('No issues found — transcript looks clean!');
+      } else {
+        setCleanupChanges(changes);
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Cleanup failed');
+    } finally {
+      setCleaningUp(false);
+    }
+  };
+
+  const handleCleanupApply = useCallback((changes: CleanupChange[]) => {
+    const updated = [...dialogues];
+    for (const change of changes) {
+      if (change.index < 0 || change.index >= updated.length) continue;
+      const d = { ...updated[change.index] };
+      if (change.field === 'name') {
+        d.name = change.newValue;
+      } else if (change.field === 'text') {
+        d.text = change.newValue;
+      }
+      updated[change.index] = d;
+    }
+    setDialogues(updated);
+    setHasUnsavedChanges(true);
+    setCleanupChanges(null);
+  }, [dialogues, setDialogues]);
+
+  const handleCleanupCancel = useCallback(() => {
+    setCleanupChanges(null);
+  }, []);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 's') {
@@ -319,20 +374,40 @@ export default function EditorPage() {
           </div>
         )}
 
-        {/* Always show Edit Speakers button when not already in mapping mode */}
-        {!mappingMode && !hasUnmappedSpeakers && (
-          <div className="mb-4">
+        {/* Action buttons when not in mapping or cleanup mode */}
+        {!mappingMode && !cleanupChanges && (
+          <div className="mb-4 flex items-center gap-3">
+            {!hasUnmappedSpeakers && (
+              <button
+                onClick={() => setMappingMode(true)}
+                className="px-4 py-2 text-sm bg-gray-100 text-gray-700 rounded border hover:bg-gray-200 transition-colors"
+              >
+                Edit Speakers
+              </button>
+            )}
             <button
-              onClick={() => setMappingMode(true)}
-              className="px-4 py-2 text-sm bg-gray-100 text-gray-700 rounded border hover:bg-gray-200 transition-colors"
+              onClick={handleCleanup}
+              disabled={cleaningUp}
+              className={`px-4 py-2 text-sm rounded border transition-colors ${
+                cleaningUp
+                  ? 'bg-gray-100 text-gray-400 cursor-wait'
+                  : 'bg-purple-50 text-purple-700 border-purple-300 hover:bg-purple-100'
+              }`}
             >
-              Edit Speakers
+              {cleaningUp ? 'Analyzing...' : 'Clean Up'}
             </button>
           </div>
         )}
 
-        {/* Show SpeakerMapper when in mapping mode, otherwise show TranscriptEditor */}
-        {mappingMode ? (
+        {/* Show cleanup review when changes are proposed */}
+        {cleanupChanges ? (
+          <CleanupReview
+            changes={cleanupChanges}
+            dialogues={dialogues}
+            onApply={handleCleanupApply}
+            onCancel={handleCleanupCancel}
+          />
+        ) : mappingMode ? (
           <SpeakerMapper
             dialogues={dialogues}
             audioUrl={audioUrl}
@@ -357,7 +432,7 @@ export default function EditorPage() {
         )}
       </div>
 
-      {!mappingMode && (
+      {!mappingMode && !cleanupChanges && (
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg">
           <div className="max-w-4xl mx-auto flex items-center justify-between">
             <span className="text-sm text-gray-600">
