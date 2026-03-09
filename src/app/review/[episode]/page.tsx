@@ -39,6 +39,7 @@ export default function EditorPage() {
   const [mappingMode, setMappingMode] = useState(false);
   const [guestName, setGuestName] = useState<string | null>(null);
   const [cleaningUp, setCleaningUp] = useState(false);
+  const [cleanupProgress, setCleanupProgress] = useState<{ batch: number; totalBatches: number; found: number } | null>(null);
   const [cleanupChanges, setCleanupChanges] = useState<CleanupChange[] | null>(null);
 
   const { state: audioState, controls: audioControls, setAudioRef } = useAudioSync(dialogues);
@@ -219,6 +220,7 @@ export default function EditorPage() {
   const handleCleanup = async () => {
     if (!transcriptMeta || cleaningUp) return;
     setCleaningUp(true);
+    setCleanupProgress(null);
     setError(null);
     try {
       const resp = await fetch('/api/cleanup-transcript', {
@@ -231,18 +233,49 @@ export default function EditorPage() {
         }),
       });
       if (!resp.ok) throw new Error(`Cleanup failed: ${resp.status}`);
-      const data = await resp.json();
-      const changes: CleanupChange[] = data.changes ?? [];
-      if (changes.length === 0) {
-        setCleanupChanges(null);
-        setError('No issues found — transcript looks clean!');
-      } else {
-        setCleanupChanges(changes);
+
+      const reader = resp.body?.getReader();
+      if (!reader) throw new Error('No response body');
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          try {
+            const event = JSON.parse(line);
+            if (event.type === 'progress') {
+              setCleanupProgress({ batch: event.batch, totalBatches: event.totalBatches, found: event.found });
+            } else if (event.type === 'result') {
+              const changes: CleanupChange[] = event.changes ?? [];
+              if (changes.length === 0) {
+                setCleanupChanges(null);
+                setError('No issues found — transcript looks clean!');
+              } else {
+                setCleanupChanges(changes);
+              }
+            } else if (event.type === 'error') {
+              throw new Error(event.error);
+            }
+          } catch (e) {
+            if (e instanceof SyntaxError) continue;
+            throw e;
+          }
+        }
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Cleanup failed');
     } finally {
       setCleaningUp(false);
+      setCleanupProgress(null);
     }
   };
 
@@ -406,7 +439,11 @@ export default function EditorPage() {
                   : 'bg-purple-50 text-purple-700 border-purple-300 hover:bg-purple-100'
               }`}
             >
-              {cleaningUp ? 'Analyzing...' : 'Clean Up'}
+              {cleaningUp && cleanupProgress
+                ? `Batch ${cleanupProgress.batch}/${cleanupProgress.totalBatches} · ${cleanupProgress.found} found`
+                : cleaningUp
+                  ? 'Starting...'
+                  : 'Clean Up'}
             </button>
           </div>
         )}

@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import type { DialogueEntry } from '@/types/transcript';
 
@@ -78,87 +78,108 @@ JSON array:`;
 }
 
 export async function POST(request: NextRequest) {
-  try {
-    const body = await request.json();
-    const { dialogues, episodeName, guestName } = body as {
-      dialogues: DialogueEntry[];
-      episodeName: string;
-      guestName?: string | null;
-    };
+  const body = await request.json();
+  const { dialogues, episodeName, guestName } = body as {
+    dialogues: DialogueEntry[];
+    episodeName: string;
+    guestName?: string | null;
+  };
 
-    if (!dialogues?.length || !episodeName) {
-      return NextResponse.json(
-        { error: 'Missing dialogues or episodeName' },
-        { status: 400 },
-      );
-    }
+  if (!dialogues?.length || !episodeName) {
+    return new Response(JSON.stringify({ error: 'Missing dialogues or episodeName' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
 
-    const knownSpeakers = Array.from(
-      new Set(
-        dialogues
-          .map(d => d.name)
-          .filter(n => n && !/^(Speaker\s*)?[A-Z]$/i.test(n)),
-      ),
-    );
+  const knownSpeakers = Array.from(
+    new Set(
+      dialogues
+        .map(d => d.name)
+        .filter(n => n && !/^(Speaker\s*)?[A-Z]$/i.test(n)),
+    ),
+  );
 
-    const allChanges: CleanupChange[] = [];
+  const totalBatches = Math.ceil(dialogues.length / (BATCH_SIZE - CONTEXT_OVERLAP));
+  const encoder = new TextEncoder();
 
-    for (let start = 0; start < dialogues.length; start += BATCH_SIZE - CONTEXT_OVERLAP) {
-      const end = Math.min(start + BATCH_SIZE, dialogues.length);
-      const batch = dialogues.slice(start, end).map((d, i) => ({
-        index: start + i,
-        name: d.name,
-        timestamp: d.timestamp,
-        text: d.text,
-      }));
+  const stream = new ReadableStream({
+    async start(controller) {
+      const allChanges: CleanupChange[] = [];
+      let batchNum = 0;
 
-      const prompt = buildPrompt(episodeName, knownSpeakers, guestName ?? null, batch);
-
-      const message = await anthropic.messages.create({
-        model: 'claude-haiku-4-5-20251001',
-        max_tokens: 4096,
-        messages: [{ role: 'user', content: prompt }],
-      });
-
-      const text = message.content[0]?.type === 'text' ? message.content[0].text : '';
       try {
-        const match = text.match(/\[[\s\S]*\]/);
-        if (match) {
-          const changes = JSON.parse(match[0]) as CleanupChange[];
-          for (const change of changes) {
-            if (
-              typeof change.index === 'number' &&
-              change.index >= 0 &&
-              change.index < dialogues.length &&
-              ['sample', 'spelling', 'speaker', 'voicemailer'].includes(change.type) &&
-              ['name', 'text'].includes(change.field)
-            ) {
-              // Deduplicate (overlap region)
-              if (!allChanges.some(c => c.index === change.index && c.field === change.field)) {
-                allChanges.push(change);
+        for (let start = 0; start < dialogues.length; start += BATCH_SIZE - CONTEXT_OVERLAP) {
+          const end = Math.min(start + BATCH_SIZE, dialogues.length);
+          batchNum++;
+
+          // Send progress event
+          controller.enqueue(encoder.encode(
+            JSON.stringify({ type: 'progress', batch: batchNum, totalBatches, found: allChanges.length }) + '\n'
+          ));
+
+          const batch = dialogues.slice(start, end).map((d, i) => ({
+            index: start + i,
+            name: d.name,
+            timestamp: d.timestamp,
+            text: d.text,
+          }));
+
+          const prompt = buildPrompt(episodeName, knownSpeakers, guestName ?? null, batch);
+
+          const message = await anthropic.messages.create({
+            model: 'claude-haiku-4-5-20251001',
+            max_tokens: 4096,
+            messages: [{ role: 'user', content: prompt }],
+          });
+
+          const text = message.content[0]?.type === 'text' ? message.content[0].text : '';
+          try {
+            const match = text.match(/\[[\s\S]*\]/);
+            if (match) {
+              const changes = JSON.parse(match[0]) as CleanupChange[];
+              for (const change of changes) {
+                if (
+                  typeof change.index === 'number' &&
+                  change.index >= 0 &&
+                  change.index < dialogues.length &&
+                  ['sample', 'spelling', 'speaker', 'voicemailer'].includes(change.type) &&
+                  ['name', 'text'].includes(change.field)
+                ) {
+                  if (!allChanges.some(c => c.index === change.index && c.field === change.field)) {
+                    allChanges.push(change);
+                  }
+                }
               }
             }
+          } catch {
+            console.warn('Failed to parse cleanup response:', text.slice(0, 200));
           }
+
+          if (end >= dialogues.length) break;
         }
-      } catch {
-        console.warn('Failed to parse cleanup response:', text.slice(0, 200));
+
+        allChanges.sort((a, b) => a.index - b.index);
+
+        // Send final result
+        controller.enqueue(encoder.encode(
+          JSON.stringify({ type: 'result', changes: allChanges, total: dialogues.length }) + '\n'
+        ));
+      } catch (err) {
+        console.error('Cleanup error:', err);
+        controller.enqueue(encoder.encode(
+          JSON.stringify({ type: 'error', error: 'Cleanup analysis failed' }) + '\n'
+        ));
       }
 
-      if (end >= dialogues.length) break;
-    }
+      controller.close();
+    },
+  });
 
-    // Sort by index for display
-    allChanges.sort((a, b) => a.index - b.index);
-
-    return NextResponse.json({
-      changes: allChanges,
-      total: dialogues.length,
-    });
-  } catch (err) {
-    console.error('Cleanup error:', err);
-    return NextResponse.json(
-      { error: 'Cleanup analysis failed' },
-      { status: 500 },
-    );
-  }
+  return new Response(stream, {
+    headers: {
+      'Content-Type': 'application/x-ndjson',
+      'Cache-Control': 'no-cache',
+    },
+  });
 }
