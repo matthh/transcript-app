@@ -573,9 +573,12 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       console.log('Auto-deep: transcript-search factual query, using full chunks');
     }
 
+    // Cap synthesis context: quick uses few chunks, deep caps at 15
+    // to avoid overwhelming the model with too much context
+    const DEEP_SYNTHESIS_MAX_CHUNKS = 15;
     const synthesisChunks = useQuickSynthesis
       ? transcriptChunks.slice(0, QUICK_SYNTHESIS.maxChunks)
-      : transcriptChunks;
+      : transcriptChunks.slice(0, DEEP_SYNTHESIS_MAX_CHUNKS);
 
     const synthesisTuning = useQuickSynthesis
       ? { model: QUICK_SYNTHESIS.model, maxTokens: QUICK_SYNTHESIS.maxTokens }
