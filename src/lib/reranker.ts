@@ -80,6 +80,7 @@ Respond with ONLY a JSON array of ALL numbers, e.g. [3, 1, 5, 2, 4]`;
   const message = await getAnthropic().messages.create({
     model: QUICK_SYNTHESIS.model,
     max_tokens: 512,
+    temperature: 0,
     messages: [{ role: 'user', content: prompt }],
   });
 
