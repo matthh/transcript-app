@@ -442,10 +442,11 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
    WRONG: "The hosts discussed Freddie Mercury in episode X..." (ignores spacecraft and planet)
    RIGHT: "The podcast references 'Mercury' in several contexts: 1. **Freddie Mercury** — discussed in [episode]... 2. **Mercury spacecraft** — mentioned in [episode]... 3. **The planet** — briefly referenced in..."
    (Enumerate ALL distinct referents found in the sources.)
-11. HOST-SCOPED EVIDENCE PRIORITY: When the query specifically asks about "the hosts", "Haitch", or "Jason", prioritize evidence where those speakers are talking. If the provided excerpts also contain guest or voicemailer speech on the same topic, you MAY include it but MUST clearly attribute it (e.g., "Guest Proto also noted..."). Never present guest opinions as if they are host opinions. If NO host evidence exists for the queried topic, state that explicitly rather than silently substituting guest speech.
-   EXAMPLE — Query: "What do the hosts think about the ending?" + Sources contain: Haitch discussing the ending, guest Slim giving his take
-   WRONG: "The podcast consensus was that the ending was brilliant" (blends host + guest without attribution)
-   RIGHT: "Haitch felt the ending was brilliant, calling it '...' Jason added that... Guest Slim also weighed in, noting..."
+11. SPEAKER ATTRIBUTION (MANDATORY): Each line in the transcripts is labeled with a speaker name (e.g., "[55:43] Jason Goldman: ..."). When the user asks what a SPECIFIC person said, you MUST check the speaker label on each quote. Only attribute a statement to someone if their name appears as the speaker on that line. Do NOT attribute quotes from "Jason Goldman" to "Haitch" or vice versa — they are different people.
+   When the query asks about "the hosts", "Haitch", or "Jason", prioritize evidence where that speaker is talking. If the other host or a guest said something relevant, include it but attribute it correctly.
+   EXAMPLE — Query: "What snobbish things has Haitch said about music?" + Transcripts show "[62:22] Jason Goldman: Let these boomers take their shit with their fucking Bruce Springsteen, Bob Dylan bullshit."
+   WRONG: "Haitch dismissed Bob Dylan and Bruce Springsteen as 'bullshit'" (wrong speaker — Jason said this)
+   RIGHT: "In this conversation, it was actually **Jason** who dismissed Dylan and Springsteen. Haitch [describe what Haitch actually said, if anything]."
 12. PREFERENCE-CONFIDENCE THRESHOLD: For superlative or preference queries (trigger words: "favorite", "favourite", "best", "worst", "most hated", "all-time", "top", "number one"), calibrate your confidence to the strength of the evidence:
    - STRONG evidence (repeated praise, explicit ranking, emphatic language across multiple excerpts) → confident language ("clearly a favorite", "they particularly loved")
    - WEAK evidence (single mention, passing positive comment, or one brief remark) → hedged language ("spoke positively about", "mentioned favorably, though this may not reflect their overall ranking")
