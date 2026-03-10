@@ -786,6 +786,7 @@ function ReviewForm({ auth }: { auth: string }) {
             onInc={() => incCounter(mmmCount, setMmmCount, 'podreview_mmm')}
             onDec={() => decCounter(mmmCount, setMmmCount, 'podreview_mmm')}
             onReset={() => resetCounter(setMmmCount, 'podreview_mmm')}
+            onSet={n => { setMmmCount(n); store('podreview_mmm', String(n)); }}
           />
           <Counter
             label="TG"
@@ -793,6 +794,7 @@ function ReviewForm({ auth }: { auth: string }) {
             onInc={() => incCounter(tgCount, setTgCount, 'podreview_tg')}
             onDec={() => decCounter(tgCount, setTgCount, 'podreview_tg')}
             onReset={() => resetCounter(setTgCount, 'podreview_tg')}
+            onSet={n => { setTgCount(n); store('podreview_tg', String(n)); }}
           />
         </div>
 
@@ -848,8 +850,8 @@ function Field({ label, value, onChange, placeholder, small }: {
   );
 }
 
-function Counter({ label, count, onInc, onDec, onReset }: {
-  label: string; count: number; onInc: () => void; onDec: () => void; onReset: () => void;
+function Counter({ label, count, onInc, onDec, onReset, onSet }: {
+  label: string; count: number; onInc: () => void; onDec: () => void; onReset: () => void; onSet: (n: number) => void;
 }) {
   return (
     <div style={styles.card}>
@@ -859,7 +861,16 @@ function Counter({ label, count, onInc, onDec, onReset }: {
       </div>
       <div style={styles.cardC}>
         <div style={styles.counterLayout}>
-          <div style={styles.count}>{count}</div>
+          <input
+            type="number"
+            value={count}
+            onChange={e => {
+              const v = parseInt(e.target.value);
+              onSet(isNaN(v) ? 0 : Math.max(0, v));
+            }}
+            style={styles.countInput}
+            min={0}
+          />
           <div style={styles.counterBtns}>
             <button onClick={onDec} style={styles.btnDec}>-</button>
             <button onClick={onInc} style={styles.btnInc}>+</button>
@@ -970,6 +981,12 @@ const styles: Record<string, React.CSSProperties> = {
   },
   count: {
     fontSize: 64, fontWeight: 800, letterSpacing: '.02em', lineHeight: 1, minWidth: 60,
+  },
+  countInput: {
+    fontSize: 48, fontWeight: 800, lineHeight: 1, minWidth: 60, width: 80,
+    background: 'transparent', color: '#e6edf3', border: 'none', borderBottom: '2px solid #273043',
+    textAlign: 'center' as const, fontFamily: 'inherit', outline: 'none',
+    appearance: 'textfield' as const, MozAppearance: 'textfield' as const,
   },
   counterBtns: { display: 'flex', gap: 10, alignItems: 'center' },
   btnPrimary: {
