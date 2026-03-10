@@ -122,7 +122,6 @@ This is a movie podcast search. Classify the INTENT:
 Extract filters if present (leave out if not mentioned):
 - guest: Person who appeared as a guest (e.g., "Proto", "Tommy Vietor")
 - film: Film/movie title (e.g., "Dune", "The Goonies", "close encounters")
-- reviewer: Specific host name if mentioned
 - decade: Base year for decade references (1980 for "80s", "the eighties")
 - yearRange: {min, max} for specific years or ranges ("made in 1980" → {min: 1980, max: 1980}, "from 1985 to 1995" → {min: 1985, max: 1995})
 - season: Season number
@@ -211,9 +210,7 @@ Respond with ONLY valid JSON:
     if (parsed.filters.film && typeof parsed.filters.film === 'string') {
       filters.film = parsed.filters.film;
     }
-    if (parsed.filters.reviewer && typeof parsed.filters.reviewer === 'string') {
-      filters.reviewer = parsed.filters.reviewer;
-    }
+    // Note: reviewer filter removed — it refers to PDC sheet data entry, not transcript speakers
     if (parsed.filters.decade && typeof parsed.filters.decade === 'number') {
       filters.decade = parsed.filters.decade;
     }

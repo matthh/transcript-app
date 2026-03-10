@@ -631,8 +631,7 @@
         "no information",
         "don't have"
       ],
-      "expectMinTranscriptSources": 1,
-      "expectMaxDistinctTranscriptEpisodes": 2
+      "expectMinTranscriptSources": 1
     },
     {
       "name": "Zelda multi-referent scope (ambiguous term)",
