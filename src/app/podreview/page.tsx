@@ -512,16 +512,16 @@ function ReviewForm({ auth }: { auth: string }) {
     }
   }
 
-  // ── Download CSV ──
-  function downloadCSV() {
-    const csvHeaders = [
-      'Pod', 'Season', 'Ep', 'Film', 'Release_Date', 'Length', 'Length_minutes',
-      'Reviewer', 'Guest', 'MMM_Count', 'Thats_Great_Count', 'Notable_Moments',
-      'H_Flex', 'J_Flex', 'Kevs_Question', 'TildaH', 'TildaJason', 'TildaGuest',
-      'TildaCorey', 'Chuckle_Hut_Favorites', 'Show_Link', 'Artwork_Link',
-      'Letterboxd_Link', 'IMDB_Link',
-    ];
-    const csvValues = [
+  // ── Copy Output ──
+  function copyOutput() {
+    function escapeCSV(val: string): string {
+      if (val.includes(',') || val.includes('"') || val.includes('\n') || val.includes('\r')) {
+        return '"' + val.replace(/"/g, '""') + '"';
+      }
+      return val;
+    }
+
+    const values = [
       'EH',
       season,
       episode,
@@ -548,28 +548,11 @@ function ReviewForm({ auth }: { auth: string }) {
       imdbLink,
     ];
 
-    function escapeCSV(val: string): string {
-      if (val.includes(',') || val.includes('"') || val.includes('\n') || val.includes('\r')) {
-        return '"' + val.replace(/"/g, '""') + '"';
-      }
-      return val;
-    }
-
-    const headerRow = csvHeaders.map(escapeCSV).join(',');
-    const dataRow = csvValues.map(escapeCSV).join(',');
-    const csvContent = headerRow + '\n' + dataRow + '\n';
-
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    const filename = film
-      ? `podreview-${film.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-')}.csv`
-      : 'podreview.csv';
-    a.href = url;
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(url);
-    showToast('CSV downloaded');
+    const csv = values.map(escapeCSV).join(',');
+    navigator.clipboard.writeText(csv).then(
+      () => showToast('Copied to clipboard'),
+      () => showToast('Copy failed', 'error')
+    );
   }
 
   // ── Episode picker ──
@@ -617,8 +600,8 @@ function ReviewForm({ auth }: { auth: string }) {
             <button onClick={handleSubmit} disabled={submitting} style={styles.btnPrimary}>
               {submitting ? 'Submitting...' : editingEpisodeId ? 'Update Episode' : 'Submit New'}
             </button>
-            <button onClick={downloadCSV} style={styles.btnSecondary}>
-              Download CSV
+            <button onClick={copyOutput} style={styles.btnSecondary}>
+              Copy Output
             </button>
             <button onClick={() => setShowResetConfirm(true)} style={styles.btnDanger}>
               Reset All
