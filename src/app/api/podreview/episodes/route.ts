@@ -34,7 +34,19 @@ export async function GET(request: NextRequest) {
     return ep.season > max ? ep.season : max;
   }, 0);
 
-  return NextResponse.json({ episodes, nextEpisode: maxEpisode + 1, latestSeason });
+  // Build unique guest list for autocomplete
+  const guestSet = new Set<string>();
+  for (const ep of episodeMetadata) {
+    if (ep.guest) {
+      for (const g of ep.guest.split(/\s*\/\s*/)) {
+        const trimmed = g.trim();
+        if (trimmed) guestSet.add(trimmed);
+      }
+    }
+  }
+  const allGuests = Array.from(guestSet).sort();
+
+  return NextResponse.json({ episodes, nextEpisode: maxEpisode + 1, latestSeason, allGuests });
 }
 
 // Load full data for a specific episode

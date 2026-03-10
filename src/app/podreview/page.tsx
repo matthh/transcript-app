@@ -187,6 +187,9 @@ function ReviewForm({ auth }: { auth: string }) {
     toastTimer.current = setTimeout(() => setToast(null), duration);
   }
 
+  // ── All known guests for autocomplete ──
+  const [allGuests, setAllGuests] = useState<string[]>([]);
+
   // ── Load episode list on mount ──
   useEffect(() => {
     fetch('/api/podreview/episodes', { headers: { Authorization: `Bearer ${auth}` } })
@@ -195,6 +198,7 @@ function ReviewForm({ auth }: { auth: string }) {
         setEpisodes(data.episodes || []);
         setNextEpisode(data.nextEpisode || 0);
         setLatestSeason(data.latestSeason || 0);
+        setAllGuests(data.allGuests || []);
         // Set defaults if not already set
         if (!load('pr_episode')) {
           const next = String(data.nextEpisode || '');
@@ -756,8 +760,8 @@ function ReviewForm({ auth }: { auth: string }) {
             </div>
             <div style={styles.fieldGrid}>
               <Field label="Reviewer" value={reviewer} onChange={updateReviewer} />
-              <Field label="Guest" value={guest} onChange={updateGuest} placeholder="Optional" />
             </div>
+            <GuestInput value={guest} onChange={updateGuest} suggestions={allGuests} />
             <div style={styles.fieldGrid}>
               <Field label="Length (H:MM:SS)" value={length} onChange={updateLength}
                 placeholder="e.g. 2:07:25" />
@@ -846,6 +850,126 @@ function Field({ label, value, onChange, placeholder, small }: {
         placeholder={placeholder || ''}
         style={styles.input}
       />
+    </div>
+  );
+}
+
+function GuestInput({ value, onChange, suggestions }: {
+  value: string; onChange: (v: string) => void; suggestions: string[];
+}) {
+  const [inputVal, setInputVal] = useState('');
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [highlightIdx, setHighlightIdx] = useState(-1);
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Parse " / "-separated string into array of chips
+  const chips = value ? value.split(/\s*\/\s*/).filter(Boolean) : [];
+
+  function setChips(newChips: string[]) {
+    onChange(newChips.join(' / '));
+  }
+
+  function addGuest(name: string) {
+    const trimmed = name.trim();
+    if (!trimmed) return;
+    if (chips.some(c => c.toLowerCase() === trimmed.toLowerCase())) return;
+    setChips([...chips, trimmed]);
+    setInputVal('');
+    setShowSuggestions(false);
+    setHighlightIdx(-1);
+    inputRef.current?.focus();
+  }
+
+  function removeGuest(idx: number) {
+    setChips(chips.filter((_, i) => i !== idx));
+  }
+
+  const filtered = inputVal.trim().length > 0
+    ? suggestions.filter(s =>
+        s.toLowerCase().includes(inputVal.toLowerCase()) &&
+        !chips.some(c => c.toLowerCase() === s.toLowerCase())
+      )
+    : [];
+
+  // Close on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) {
+        setShowSuggestions(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (highlightIdx >= 0 && highlightIdx < filtered.length) {
+        addGuest(filtered[highlightIdx]);
+      } else if (inputVal.trim()) {
+        addGuest(inputVal);
+      }
+    } else if (e.key === 'Backspace' && !inputVal && chips.length > 0) {
+      removeGuest(chips.length - 1);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setHighlightIdx(i => Math.min(i + 1, filtered.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setHighlightIdx(i => Math.max(i - 1, 0));
+    } else if (e.key === 'Escape') {
+      setShowSuggestions(false);
+    }
+  }
+
+  return (
+    <div ref={wrapRef} style={{ position: 'relative' }}>
+      <label style={styles.fieldLabel}>Guest</label>
+      <div
+        style={styles.chipWrap}
+        onClick={() => inputRef.current?.focus()}
+      >
+        {chips.map((c, i) => (
+          <span key={i} style={styles.chip}>
+            {c}
+            <button
+              onClick={e => { e.stopPropagation(); removeGuest(i); }}
+              style={styles.chipX}
+              aria-label={`Remove ${c}`}
+            >&times;</button>
+          </span>
+        ))}
+        <input
+          ref={inputRef}
+          type="text"
+          value={inputVal}
+          onChange={e => {
+            setInputVal(e.target.value);
+            setShowSuggestions(true);
+            setHighlightIdx(-1);
+          }}
+          onFocus={() => { if (filtered.length > 0) setShowSuggestions(true); }}
+          onKeyDown={handleKeyDown}
+          placeholder={chips.length === 0 ? 'Type guest name...' : ''}
+          style={styles.chipInput}
+        />
+      </div>
+      {showSuggestions && filtered.length > 0 && (
+        <div style={styles.suggestionList}>
+          {filtered.slice(0, 8).map((s, i) => (
+            <button
+              key={s}
+              onMouseDown={e => { e.preventDefault(); addGuest(s); }}
+              style={{
+                ...styles.suggestionItem,
+                ...(i === highlightIdx ? styles.suggestionItemActive : {}),
+              }}
+            >{s}</button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -1086,6 +1210,43 @@ const styles: Record<string, React.CSSProperties> = {
     background: '#0d1627', border: '1px solid #334155', borderRadius: 18,
     padding: '28px 32px', maxWidth: 320, width: '90%', textAlign: 'center' as const,
     boxShadow: '0 20px 60px rgba(0,0,0,.6)',
+  },
+  chipWrap: {
+    display: 'flex', flexWrap: 'wrap' as const, gap: 6,
+    alignItems: 'center',
+    background: '#0f1726', border: '1px solid #273043', borderRadius: 10,
+    padding: '6px 10px', minHeight: 40, cursor: 'text',
+  },
+  chip: {
+    display: 'inline-flex', alignItems: 'center', gap: 4,
+    background: '#1e3a5f', border: '1px solid #3b82f6', borderRadius: 6,
+    padding: '3px 8px', fontSize: 13, fontWeight: 500, color: '#93c5fd',
+    whiteSpace: 'nowrap' as const,
+  },
+  chipX: {
+    appearance: 'none' as const, background: 'none', border: 'none',
+    color: '#6b9bd2', cursor: 'pointer', fontSize: 15, fontWeight: 700,
+    padding: '0 0 0 2px', lineHeight: 1,
+  },
+  chipInput: {
+    flex: 1, minWidth: 80, background: 'transparent', border: 'none',
+    color: '#e6edf3', fontSize: 14, fontFamily: 'inherit', outline: 'none',
+    padding: '4px 0',
+  },
+  suggestionList: {
+    position: 'absolute' as const, top: '100%', left: 0, right: 0,
+    background: '#0d1627', border: '1px solid #1f2a3a', borderRadius: 10,
+    boxShadow: '0 8px 24px rgba(0,0,0,.5)', zIndex: 100,
+    maxHeight: 200, overflowY: 'auto' as const, marginTop: 4,
+  },
+  suggestionItem: {
+    display: 'block', width: '100%', padding: '8px 14px',
+    background: 'transparent', border: 'none', borderBottom: '1px solid #1b2533',
+    color: '#e6edf3', cursor: 'pointer', textAlign: 'left' as const,
+    fontFamily: 'inherit', fontSize: 13,
+  },
+  suggestionItemActive: {
+    background: '#1e3a5f',
   },
   errorText: { color: '#ef4444', fontSize: 13 },
   editingBadge: {
