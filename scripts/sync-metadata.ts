@@ -463,8 +463,16 @@ function mergeWithExisting(
         tildaJason: sheetEp.tildaJason !== 'N/A' ? sheetEp.tildaJason : existingEp.tildaJason,
         tildaGuest: sheetEp.tildaGuest || existingEp.tildaGuest,
         tildaCorey: sheetEp.tildaCorey || existingEp.tildaCorey,
-        // Update reviewer if sheet has it
+        // Update reviewer/guest if sheet has them
         reviewer: sheetEp.reviewer || existingEp.reviewer,
+        guest: sheetEp.guest ?? existingEp.guest,
+        // Update links and length from sheet if present
+        releaseDate: sheetEp.releaseDate || existingEp.releaseDate,
+        length: sheetEp.length || existingEp.length,
+        showLink: sheetEp.showLink || existingEp.showLink,
+        artworkLink: sheetEp.artworkLink || existingEp.artworkLink,
+        letterboxdLink: sheetEp.letterboxdLink || existingEp.letterboxdLink,
+        imdbLink: sheetEp.imdbLink || existingEp.imdbLink,
       };
 
       // Check if anything actually changed
@@ -476,7 +484,14 @@ function mergeWithExisting(
         updated.jFlex !== existingEp.jFlex ||
         updated.tildaH !== existingEp.tildaH ||
         updated.tildaJason !== existingEp.tildaJason ||
-        updated.reviewer !== existingEp.reviewer;
+        updated.reviewer !== existingEp.reviewer ||
+        updated.guest !== existingEp.guest ||
+        updated.releaseDate !== existingEp.releaseDate ||
+        updated.length !== existingEp.length ||
+        updated.showLink !== existingEp.showLink ||
+        updated.artworkLink !== existingEp.artworkLink ||
+        updated.letterboxdLink !== existingEp.letterboxdLink ||
+        updated.imdbLink !== existingEp.imdbLink;
 
       if (changed) {
         updatedCount++;
