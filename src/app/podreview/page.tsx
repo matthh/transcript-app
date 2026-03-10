@@ -632,9 +632,6 @@ function ReviewForm({ auth }: { auth: string }) {
         <div style={styles.top}>
           <h1 style={styles.h1}>PodReview</h1>
           <div style={styles.actions}>
-            <button onClick={handleSubmit} disabled={submitting} style={styles.btnPrimary}>
-              {submitting ? 'Submitting...' : editingEpisodeId ? 'Update Episode' : 'Submit New'}
-            </button>
             <button onClick={copyOutput} style={styles.btnSecondary}>
               Copy Output
             </button>
@@ -811,6 +808,16 @@ function ReviewForm({ auth }: { auth: string }) {
           <TextArea label="Tilda J" value={tildaJ} onChange={updateTildaJ} maxLength={200} />
           <TextArea label="Tilda Guest" value={tildaGuest} onChange={updateTildaGuest} maxLength={200} />
           <TextArea label="Tilda Corey" value={tildaCorey} onChange={updateTildaCorey} maxLength={200} />
+        </div>
+
+        {/* Bottom actions */}
+        <div style={{ display: 'flex', gap: 10, marginTop: 24, justifyContent: 'center' }}>
+          <button onClick={handleSubmit} disabled={submitting} style={{ ...styles.btnPrimary, padding: '12px 28px', fontSize: 15 }}>
+            {submitting ? 'Submitting...' : editingEpisodeId ? 'Update Episode' : 'Submit New'}
+          </button>
+          <button onClick={copyOutput} style={{ ...styles.btnSecondary, padding: '12px 20px' }}>
+            Copy Output
+          </button>
         </div>
 
         <footer style={styles.footer}>
