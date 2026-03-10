@@ -283,7 +283,8 @@ function ReviewForm({ auth }: { auth: string }) {
   }
 
   // ── Match Patreon + Spotify for auto-fill ──
-  async function matchEpisodeSources(filmName: string) {
+  // If onlyFillEmpty is true, only set fields that are currently empty
+  async function matchEpisodeSources(filmName: string, onlyFillEmpty = false) {
     try {
       const res = await fetch(
         `/api/podreview/match-episode?q=${encodeURIComponent(filmName)}`,
@@ -293,21 +294,21 @@ function ReviewForm({ auth }: { auth: string }) {
       const matched: string[] = [];
 
       if (data.spotify) {
-        updateLength(data.spotify.duration);
-        updateArtworkLink(data.spotify.artworkUrl);
+        if (!onlyFillEmpty || !length) updateLength(data.spotify.duration);
+        if (!onlyFillEmpty || !artworkLink) updateArtworkLink(data.spotify.artworkUrl);
         matched.push(`Spotify: ${data.spotify.title}`);
         // Use Spotify release date if no Patreon date
-        if (!data.patreon) {
+        if (!data.patreon && (!onlyFillEmpty || !releaseDate)) {
           updateReleaseDate(data.spotify.releaseDate);
         }
       }
 
       if (data.patreon) {
-        updateShowLink(data.patreon.showLink);
+        if (!onlyFillEmpty || !showLink) updateShowLink(data.patreon.showLink);
         // Format Patreon date (ISO → M/D/YYYY)
         const d = new Date(data.patreon.publishedAt);
         const dateStr = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
-        updateReleaseDate(dateStr);
+        if (!onlyFillEmpty || !releaseDate) updateReleaseDate(dateStr);
         matched.push(`Patreon: ${data.patreon.title}`);
       }
 
@@ -375,6 +376,7 @@ function ReviewForm({ auth }: { auth: string }) {
         setEditingEpisodeId(String(ep.episode));
         setFilm(ep.film || ''); store('pr_film', ep.film || '');
         setTmdbQuery(ep.film || '');
+        if (ep.tmdbId) setSelectedTmdbId(ep.tmdbId);
         setSeason(String(ep.season ?? 0)); store('pr_season', String(ep.season ?? 0));
         setEpisode(String(ep.episode)); store('pr_episode', String(ep.episode));
         setReleaseDate(ep.releaseDate || ''); store('pr_releaseDate', ep.releaseDate || '');
@@ -396,6 +398,39 @@ function ReviewForm({ auth }: { auth: string }) {
         setTildaGuest(ep.tildaGuest || ''); store('podreview_tildaguest', ep.tildaGuest || '');
         setTildaCorey(ep.tildaCorey || ''); store('podreview_tildacorey', ep.tildaCorey || '');
         showToast(`Loaded episode ${ep.episode}: ${ep.film}`);
+
+        // Auto-fill missing fields from external sources
+        const missingMedia = !ep.length || !ep.artworkLink || !ep.showLink;
+        const missingLinks = !ep.letterboxdLink || !ep.imdbLink;
+
+        if (ep.film && (missingMedia || missingLinks)) {
+          const promises: Promise<void>[] = [];
+
+          if (missingMedia) {
+            promises.push(matchEpisodeSources(ep.film, true));
+          }
+
+          if (missingLinks && ep.tmdbId) {
+            promises.push(
+              fetch('/api/podreview/tmdb-search', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ tmdbId: ep.tmdbId }),
+              }).then(r => r.json()).then(details => {
+                if (details?.imdbLink && !ep.imdbLink) {
+                  setImdbLink(details.imdbLink);
+                  store('pr_imdbLink', details.imdbLink);
+                }
+                if (details?.letterboxdLink && !ep.letterboxdLink) {
+                  setLetterboxdLink(details.letterboxdLink);
+                  store('pr_letterboxdLink', details.letterboxdLink);
+                }
+              }).catch(() => {})
+            );
+          }
+
+          await Promise.all(promises);
+        }
       }
     } catch {
       showToast('Failed to load episode', 'error');
