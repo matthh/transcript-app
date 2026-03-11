@@ -315,6 +315,84 @@ export function getEpisodeByFilm(filmName: string): EpisodeMetadata | null {
   );
 }
 
+/** Strip year suffixes, "Episode NNN:" prefixes, and "FINAL" from a film name. */
+export function normalizeFilmName(name: string): string {
+  return name
+    .replace(/^Episode\s+\d+:\s*/i, '')
+    .replace(/\s*\([^)]+\)/g, '')
+    .replace(/\bFINAL\b/gi, '')
+    .trim();
+}
+
+function levenshtein(a: string, b: string): number {
+  const m = a.length, n = b.length;
+  const dp: number[] = Array.from({ length: n + 1 }, (_, i) => i);
+  for (let i = 1; i <= m; i++) {
+    let prev = dp[0];
+    dp[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const tmp = dp[j];
+      dp[j] = a[i - 1] === b[j - 1] ? prev : 1 + Math.min(prev, dp[j], dp[j - 1]);
+      prev = tmp;
+    }
+  }
+  return dp[n];
+}
+
+function sortDescByEpisode(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
+  return [...episodes].sort(
+    (a, b) =>
+      b.season * 1000 + episodeSortKey(b.episode) -
+      (a.season * 1000 + episodeSortKey(a.episode))
+  );
+}
+
+/**
+ * Find episodes matching a film query.
+ * Matching passes (in order):
+ *   1. Exact match on raw film name
+ *   2. Exact match on normalized film name (strips year, Episode NNN:, FINAL)
+ *   3. Partial match on normalized film name
+ *   4. Fuzzy match using Levenshtein distance (handles typos)
+ * Returns results sorted most-recent first.
+ */
+export function findEpisodesByFilm(filmQuery: string): EpisodeMetadata[] {
+  const episodes = loadEpisodeMetadata();
+  const queryLower = filmQuery.toLowerCase();
+  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
+
+  const exactRaw = episodes.filter((e) => e.film.toLowerCase() === queryLower);
+  if (exactRaw.length > 0) return sortDescByEpisode(exactRaw);
+
+  const exactNorm = episodes.filter(
+    (e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery
+  );
+  if (exactNorm.length > 0) return sortDescByEpisode(exactNorm);
+
+  const partial = episodes.filter((e) =>
+    normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)
+  );
+  if (partial.length > 0) return sortDescByEpisode(partial);
+
+  // Fuzzy fallback: find closest match by Levenshtein distance
+  const maxDist = Math.max(2, Math.floor(normalizedQuery.length / 8));
+  let bestDist = Infinity;
+  let bestMatches: EpisodeMetadata[] = [];
+  for (const e of episodes) {
+    const normFilm = normalizeFilmName(e.film).toLowerCase();
+    const dist = levenshtein(normalizedQuery, normFilm);
+    if (dist < bestDist) {
+      bestDist = dist;
+      bestMatches = [e];
+    } else if (dist === bestDist) {
+      bestMatches.push(e);
+    }
+  }
+  if (bestDist <= maxDist) return sortDescByEpisode(bestMatches);
+
+  return [];
+}
+
 export function getEpisodesByGuest(guestName: string): EpisodeMetadata[] {
   const episodes = loadEpisodeMetadata();
   const guestLower = guestName.toLowerCase();

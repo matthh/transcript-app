@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { loadEpisodeMetadata } from '@/lib/metadata-store';
-import type { EpisodeMetadata } from '@/types/episode-metadata';
+import { findEpisodesByFilm } from '@/lib/metadata-store';
 
 export type StatsResponse = {
   film: string;
@@ -15,29 +14,8 @@ export type StatsResponse = {
   showLink: string | null;
 };
 
-function normalizeFilmName(name: string): string {
-  return name
-    .replace(/^Episode\s+\d+:\s*/i, '')
-    .replace(/\s*\([^)]+\)/g, '')
-    .replace(/\bFINAL\b/gi, '')
-    .trim();
-}
-
 function isBlank(v: string | null | undefined): boolean {
   return !v || v.trim() === '' || v.trim().toUpperCase() === 'N/A';
-}
-
-function findMatchingEpisode(filmQuery: string): EpisodeMetadata | null {
-  const episodes = loadEpisodeMetadata();
-  const queryLower = filmQuery.toLowerCase();
-  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
-
-  return (
-    episodes.find((e) => e.film.toLowerCase() === queryLower) ||
-    episodes.find((e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery) ||
-    episodes.find((e) => normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)) ||
-    null
-  );
 }
 
 export async function GET(request: NextRequest) {
@@ -48,7 +26,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing required parameter: film' }, { status: 400 });
   }
 
-  const episode = findMatchingEpisode(film);
+  const episode = findEpisodesByFilm(film)[0] ?? null;
 
   if (!episode) {
     return NextResponse.json(

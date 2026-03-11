@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
-import { loadEpisodeMetadata } from '@/lib/metadata-store';
-import { episodeSortKey } from '@/lib/episode-format';
-import type { EpisodeMetadata } from '@/types/episode-metadata';
+import { findEpisodesByFilm } from '@/lib/metadata-store';
 
 export type TildaResponse = {
   film: string;
@@ -39,14 +37,6 @@ const FEW_SHOT_EXAMPLES = [
   },
 ];
 
-function normalizeFilmName(name: string): string {
-  return name
-    .replace(/^Episode\s+\d+:\s*/i, '')
-    .replace(/\s*\([^)]+\)/g, '')
-    .replace(/\bFINAL\b/gi, '')
-    .trim();
-}
-
 function isBlank(val: string | null | undefined): boolean {
   return !val || val.trim() === '' || val.trim().toUpperCase() === 'N/A';
 }
@@ -55,33 +45,6 @@ function nullIfBlank(val: string | null | undefined): string | null {
   return isBlank(val) ? null : (val as string).trim();
 }
 
-function findMatchingEpisodes(filmQuery: string): EpisodeMetadata[] {
-  const episodes = loadEpisodeMetadata();
-  const queryLower = filmQuery.toLowerCase();
-  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
-
-  const exactRaw = episodes.filter((e) => e.film.toLowerCase() === queryLower);
-  if (exactRaw.length > 0) return sortDesc(exactRaw);
-
-  const exactNorm = episodes.filter(
-    (e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery
-  );
-  if (exactNorm.length > 0) return sortDesc(exactNorm);
-
-  const partial = episodes.filter((e) =>
-    normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)
-  );
-  return sortDesc(partial);
-}
-
-function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
-  return [...episodes].sort(
-    (a, b) =>
-      b.season * 1000 +
-      episodeSortKey(b.episode) -
-      (a.season * 1000 + episodeSortKey(a.episode))
-  );
-}
 
 async function fetchTmdbCast(film: string): Promise<string | null> {
   const apiKey = process.env.TMDB_API_KEY;
@@ -171,8 +134,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing required parameter: film' }, { status: 400 });
   }
 
-  const matches = findMatchingEpisodes(film);
-  const episode = matches[0] ?? null;
+  const episode = findEpisodesByFilm(film)[0] ?? null;
   const epNum = episode && typeof episode.episode === 'number' ? episode.episode : null;
 
   // If we have a matched episode with real tilda answers, return them

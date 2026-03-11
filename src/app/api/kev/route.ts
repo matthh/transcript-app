@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
-import { loadEpisodeMetadata } from '@/lib/metadata-store';
-import { episodeSortKey } from '@/lib/episode-format';
-import type { EpisodeMetadata } from '@/types/episode-metadata';
+import { findEpisodesByFilm } from '@/lib/metadata-store';
 
 export type KevResponse = {
   film: string;
@@ -32,32 +30,6 @@ const FEW_SHOT_EXAMPLES = [
   'TRON Legacy is one of the most underrated movies ever, in my opinion. What is a movie that you champion?',
 ];
 
-function normalizeFilmName(name: string): string {
-  return name
-    .replace(/^Episode\s+\d+:\s*/i, '')
-    .replace(/\s*\([^)]+\)/g, '')
-    .replace(/\bFINAL\b/gi, '')
-    .trim();
-}
-
-function findMatchingEpisode(filmQuery: string): EpisodeMetadata | null {
-  const episodes = loadEpisodeMetadata();
-  const queryLower = filmQuery.toLowerCase();
-  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
-
-  return (
-    episodes.find((e) => e.film.toLowerCase() === queryLower) ||
-    episodes.find((e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery) ||
-    episodes.find((e) => normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)) ||
-    null
-  );
-}
-
-function sortKey(e: EpisodeMetadata): number {
-  return e.season * 1000 + episodeSortKey(e.episode);
-}
-// suppress unused warning
-void sortKey;
 
 async function fetchTmdbOverview(film: string): Promise<string | null> {
   const apiKey = process.env.TMDB_API_KEY;
@@ -114,7 +86,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing required parameter: film' }, { status: 400 });
   }
 
-  const episode = findMatchingEpisode(film);
+  const episode = findEpisodesByFilm(film)[0] ?? null;
   const epNum = episode && typeof episode.episode === 'number' ? episode.episode : null;
 
   if (episode && isRealQuestion(episode.kevsQuestion)) {

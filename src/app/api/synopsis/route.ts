@@ -3,10 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { Transcript } from '@/types/transcript';
-import { loadEpisodeMetadata } from '@/lib/metadata-store';
+import { findEpisodesByFilm, normalizeFilmName } from '@/lib/metadata-store';
 import { loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
-import { episodeSortKey } from '@/lib/episode-format';
-import type { EpisodeMetadata } from '@/types/episode-metadata';
 
 export type SynopsisResponse = {
   film: string;
@@ -48,13 +46,6 @@ const FEW_SHOT_EXAMPLES = [
   },
 ];
 
-function normalizeFilmName(name: string): string {
-  return name
-    .replace(/^Episode\s+\d+:\s*/i, '')  // strip "Episode 250: " prefix
-    .replace(/\s*\([^)]+\)/g, '')         // strip "(year)" suffixes
-    .replace(/\bFINAL\b/gi, '')           // strip "FINAL"
-    .trim();
-}
 
 function isHaitch(speakerName: string): boolean {
   return HAITCH_NAMES.has(speakerName.toLowerCase().trim());
@@ -149,38 +140,6 @@ async function loadTranscript(epNum: number): Promise<Transcript | null> {
   }
 }
 
-function findMatchingEpisodes(filmQuery: string): EpisodeMetadata[] {
-  const episodes = loadEpisodeMetadata();
-  const queryLower = filmQuery.toLowerCase();
-
-  // Normalize both sides for matching (strip year suffixes etc.)
-  const normalizedQuery = normalizeFilmName(filmQuery).toLowerCase();
-
-  // Pass 1: exact match on raw film name
-  const exactRaw = episodes.filter((e) => e.film.toLowerCase() === queryLower);
-  if (exactRaw.length > 0) return sortDesc(exactRaw);
-
-  // Pass 2: exact match on normalized film name (handles "Drive (2011)" → "Drive")
-  const exactNorm = episodes.filter(
-    (e) => normalizeFilmName(e.film).toLowerCase() === normalizedQuery
-  );
-  if (exactNorm.length > 0) return sortDesc(exactNorm);
-
-  // Pass 3: partial match on normalized film name
-  const partialMatches = episodes.filter((e) =>
-    normalizeFilmName(e.film).toLowerCase().includes(normalizedQuery)
-  );
-  return sortDesc(partialMatches);
-}
-
-function sortDesc(episodes: EpisodeMetadata[]): EpisodeMetadata[] {
-  return [...episodes].sort(
-    (a, b) =>
-      b.season * 1000 +
-      episodeSortKey(b.episode) -
-      (a.season * 1000 + episodeSortKey(a.episode))
-  );
-}
 
 function stripMidBodyFilmName(synopsis: string, film: string): string {
   // The film name must appear only at the very start and very end.
@@ -281,7 +240,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing required parameter: film' }, { status: 400 });
   }
 
-  const matchedEpisodes = findMatchingEpisodes(film);
+  const matchedEpisodes = findEpisodesByFilm(film);
 
   // Try to extract synopsis from each matched episode (most recent first)
   for (const episode of matchedEpisodes) {
