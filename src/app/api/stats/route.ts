@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { findEpisodesByFilm } from '@/lib/metadata-store';
+import { findEpisodesByFilm, loadEpisodeMetadata } from '@/lib/metadata-store';
 
 export type StatsResponse = {
   film: string;
@@ -21,18 +21,30 @@ function isBlank(v: string | null | undefined): boolean {
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const film = searchParams.get('film')?.trim() ?? '';
+  const episodeParam = searchParams.get('episode')?.trim() ?? '';
 
-  if (!film) {
-    return NextResponse.json({ error: 'Missing required parameter: film' }, { status: 400 });
+  if (!film && !episodeParam) {
+    return NextResponse.json({ error: 'Missing required parameter: film or episode' }, { status: 400 });
   }
 
-  const episode = findEpisodesByFilm(film)[0] ?? null;
-
-  if (!episode) {
-    return NextResponse.json(
-      { error: `No episode found for film "${film}"` },
-      { status: 404 }
-    );
+  let episode = null;
+  if (episodeParam) {
+    const epNum = Number(episodeParam);
+    if (!Number.isInteger(epNum) || epNum <= 0) {
+      return NextResponse.json({ error: `Invalid episode number "${episodeParam}"` }, { status: 400 });
+    }
+    episode = loadEpisodeMetadata().find((e) => e.episode === epNum) ?? null;
+    if (!episode) {
+      return NextResponse.json({ error: `No episode found for episode #${epNum}` }, { status: 404 });
+    }
+  } else {
+    episode = findEpisodesByFilm(film)[0] ?? null;
+    if (!episode) {
+      return NextResponse.json(
+        { error: `No episode found for film "${film}"` },
+        { status: 404 }
+      );
+    }
   }
 
   const response: StatsResponse = {
