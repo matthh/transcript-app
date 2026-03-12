@@ -455,20 +455,13 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
    WRONG: "Jason's favorite movie is Jaws — he spoke very highly of it." (upgrades a single positive mention to "favorite")
    RIGHT: "Jason spoke enthusiastically about **Jaws**, calling it '...' He also praised **Arrival** in multiple episodes. Based on the available excerpts, these are among his most-discussed favorites, though the podcast may not have a single definitive ranking."
 
-13. CITATION FORMAT (MANDATORY): When referencing information from a transcript excerpt, ALWAYS cite the episode name in **bold** with the timestamp. The episode name comes from the "Episode:" line in each excerpt. The timestamp comes from the "Timestamp:" line. Users see citations as interactive links, so consistent bolding is critical.
-   WRONG: "Jason mentioned his dad owned a video store in the Point Blank episode around 18:00."
-   WRONG: "In Excerpt 3, Jason mentioned his dad owned a video store."
-   WRONG: "Jason mentioned his dad owned a video store (Transcript 5)."
-   RIGHT: "In the **Point Blank** episode (around 18:00), Jason mentioned his dad owned a video store."
-   RIGHT: "Jason mentioned his dad owned a video store (**Point Blank**, ~18:00)."
-   Every film or episode title in your answer MUST be wrapped in **bold**. No exceptions.
-
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
-- Use **bold** for all film and episode titles — no exceptions
+- Use **bold** for emphasis and film/episode titles — ALWAYS bold episode titles when citing them (e.g., "in the **Empire Strikes Back** episode")
 - Use bullet points for lists
 - Use "quotation marks" for inline quotes, NOT > characters
-- Only use > for standalone block quotes on their own line`;
+- Only use > for standalone block quotes on their own line
+- Do NOT reference internal source labels like "(Excerpt 3)" or "[Transcript 5]" or "(Source 2)" — users cannot see these. Instead cite by **bolded episode name** and timestamp (e.g., "in the **Empire Strikes Back** episode around 45:00").`;
 
   // Check if we're using transcripts as a fallback for factual queries
   const isTranscriptFallback = sourceDescription.includes('transcript') && queryType === 'factual';
