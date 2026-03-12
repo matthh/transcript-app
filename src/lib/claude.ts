@@ -460,7 +460,8 @@ IMPORTANT: Format your response using proper Markdown:
 - Use **bold** for emphasis and film titles
 - Use bullet points for lists
 - Use "quotation marks" for inline quotes, NOT > characters
-- Only use > for standalone block quotes on their own line`;
+- Only use > for standalone block quotes on their own line
+- Do NOT reference internal source labels like "(Transcript 3)" or "[Transcript 5]" — users cannot see these. Instead cite by episode name and timestamp (e.g., "in the Empire Strikes Back episode around 45:00").`;
 
   // Check if we're using transcripts as a fallback for factual queries
   const isTranscriptFallback = sourceDescription.includes('transcript') && queryType === 'factual';
