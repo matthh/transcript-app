@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { formatEpisodeLabel } from '@/lib/episode-format';
+import { CitableMarkdown } from '@/components/CitableMarkdown';
 import { FeedbackForm } from '@/components/FeedbackForm';
 
 interface TranscriptSource {
@@ -585,9 +586,7 @@ function AnswerCard({ result, query, onDeepen, deepening, deepStreamingText }: {
               : 'prose prose-slate prose-headings:text-gray-900 max-w-none'
           }
         >
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {result.answer}
-          </ReactMarkdown>
+          <CitableMarkdown content={result.answer} sources={result.sources?.transcripts ?? []} />
         </article>
         {isMetadataIntentOnly && metadataSummary && (
           <div className="mt-4 pt-4 border-t border-[#dadce0]">

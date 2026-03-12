@@ -147,7 +147,7 @@ export default async function SharePage({ params }: PageProps) {
             "{share.query}"
           </h1>
 
-          <MarkdownContent content={share.answer} />
+          <MarkdownContent content={share.answer} sources={share.sources?.transcripts} />
           <DeepenShare query={share.query} />
           {(() => {
             const episodeLine = formatEpisodeLine(share);
