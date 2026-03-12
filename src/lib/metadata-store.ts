@@ -375,7 +375,7 @@ export function findEpisodesByFilm(filmQuery: string): EpisodeMetadata[] {
   if (partial.length > 0) return sortDescByEpisode(partial);
 
   // Fuzzy fallback: find closest match by Levenshtein distance
-  const maxDist = Math.max(2, Math.floor(normalizedQuery.length / 8));
+  const maxDist = Math.max(1, Math.floor(normalizedQuery.length / 8));
   let bestDist = Infinity;
   let bestMatches: EpisodeMetadata[] = [];
   for (const e of episodes) {
