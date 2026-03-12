@@ -287,6 +287,45 @@ function CitationButton({
   );
 }
 
+/**
+ * Pre-process markdown to wrap unformatted episode titles in **bold**
+ * so the strong override can catch them. Only wraps titles that aren't
+ * already inside bold/italic markers.
+ */
+function ensureTitlesBolded(content: string, sources: TranscriptSource[]): string {
+  // Dedupe and sort by length descending so longer titles match first
+  const titles = [...new Set(sources.map((s) => s.episodeTitle))].sort(
+    (a, b) => b.length - a.length
+  );
+  if (titles.length === 0) return content;
+
+  let result = content;
+  for (const title of titles) {
+    const normalized = normalizeTitle(title);
+    if (normalized.length < 4) continue;
+
+    // Also try without leading "The " for matching
+    const variants = [title];
+    const stripped = title.replace(/^The\s+/i, '');
+    if (stripped !== title) variants.push(stripped);
+    // Also try normalized (no year suffix) if different
+    const noYear = title.replace(/\s*\(\d{4}\)/g, '').trim();
+    if (noYear !== title) variants.push(noYear);
+    const noYearStripped = stripped.replace(/\s*\(\d{4}\)/g, '').trim();
+    if (noYearStripped !== stripped && noYearStripped !== noYear) variants.push(noYearStripped);
+
+    for (const variant of variants) {
+      if (variant.length < 4) continue;
+      // Match the title when NOT already inside ** or *
+      // Negative lookbehind for * and negative lookahead for *
+      const escaped = variant.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const re = new RegExp(`(?<!\\*|\\w)${escaped}(?!\\*|\\w)`, 'gi');
+      result = result.replace(re, `**${variant}**`);
+    }
+  }
+  return result;
+}
+
 export function CitableMarkdown({
   content,
   sources,
@@ -294,6 +333,8 @@ export function CitableMarkdown({
   content: string;
   sources: TranscriptSource[];
 }) {
+  const processed = ensureTitlesBolded(content, sources);
+
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
@@ -324,7 +365,7 @@ export function CitableMarkdown({
         },
       }}
     >
-      {content}
+      {processed}
     </ReactMarkdown>
   );
 }
