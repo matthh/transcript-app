@@ -43,7 +43,7 @@ export async function answerQuestion(
 ): Promise<string> {
   const context = chunks
     .map((chunk, i) => {
-      return `[Source ${i + 1}]
+      return `--- Excerpt ${i + 1} ---
 Episode: ${chunk.episodeTitle}
 Speakers: ${normalizeSpeakers(chunk.speakers).join(', ')}
 Timestamp: ${chunk.startTimestamp} - ${chunk.endTimestamp}
@@ -88,7 +88,7 @@ function formatTranscriptContext(chunks: TranscriptChunk[]): string {
 
   return chunks
     .map((chunk, i) => {
-      return `[Transcript ${i + 1}]
+      return `--- Excerpt ${i + 1} ---
 Episode: ${chunk.episodeTitle}
 Speakers: ${normalizeSpeakers(chunk.speakers).join(', ')}
 Timestamp: ${chunk.startTimestamp} - ${chunk.endTimestamp}
@@ -461,7 +461,7 @@ IMPORTANT: Format your response using proper Markdown:
 - Use bullet points for lists
 - Use "quotation marks" for inline quotes, NOT > characters
 - Only use > for standalone block quotes on their own line
-- Do NOT reference internal source labels like "(Transcript 3)" or "[Transcript 5]" — users cannot see these. Instead cite by episode name and timestamp (e.g., "in the Empire Strikes Back episode around 45:00").`;
+- Do NOT reference internal source labels like "(Excerpt 3)" or "[Transcript 5]" or "(Source 2)" — users cannot see these. Instead cite by **bolded episode name** and timestamp (e.g., "in the **Empire Strikes Back** episode around 45:00").`;
 
   // Check if we're using transcripts as a fallback for factual queries
   const isTranscriptFallback = sourceDescription.includes('transcript') && queryType === 'factual';
