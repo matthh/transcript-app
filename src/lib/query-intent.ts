@@ -114,7 +114,15 @@ export function findFilmFromQuery(query: string): string | null {
 
   const wordCount = bestMatch.normalized.split(' ').length;
   if (bestMatch.normalized.length <= 3 && wordCount < 2) {
-    return null;
+    // Short single-word titles (e.g., "Her", "Elf") are ambiguous as substrings.
+    // Only accept if the query uses the pattern "the <title> episode/movie/film"
+    // which signals the user means a title, not a common word.
+    const titlePattern = new RegExp(
+      `\\bthe\\s+${bestMatch.normalized}\\s+(episode|movie|film)\\b`, 'i'
+    );
+    if (!titlePattern.test(normalizedQuery)) {
+      return null;
+    }
   }
 
   return bestMatch.film;
