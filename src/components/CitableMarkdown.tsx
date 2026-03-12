@@ -310,6 +310,18 @@ export function CitableMarkdown({
             </CitationButton>
           );
         },
+        em: ({ children }) => {
+          const text = extractPlainText(children);
+          const matched = matchSourcesToTitle(text, sources);
+          if (matched.length === 0) {
+            return <em>{children}</em>;
+          }
+          return (
+            <CitationButton sources={matched}>
+              {children}
+            </CitationButton>
+          );
+        },
       }}
     >
       {content}

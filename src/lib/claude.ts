@@ -457,7 +457,7 @@ CRITICAL GROUNDING RULES - YOU MUST FOLLOW THESE:
 
 IMPORTANT: Format your response using proper Markdown:
 - Use ## for section headings (e.g., "## Overview")
-- Use **bold** for emphasis and film titles
+- Use **bold** for emphasis and film/episode titles — ALWAYS bold episode titles when citing them (e.g., "in the **Empire Strikes Back** episode")
 - Use bullet points for lists
 - Use "quotation marks" for inline quotes, NOT > characters
 - Only use > for standalone block quotes on their own line
