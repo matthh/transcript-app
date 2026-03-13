@@ -13,6 +13,7 @@ import { generateEmbedding, generateEmbeddings } from '@/lib/embeddings';
 import { hybridRetrieval, isBM25Available, getAdaptiveK } from '@/lib/hybrid-retrieval';
 import { rerankChunks } from '@/lib/reranker';
 import { logQuery, generateLogId } from '@/lib/query-logger';
+import { classifyUseCase } from '@/lib/use-case-classifier';
 import { formatEpisodeLabel } from '@/lib/episode-format';
 import { TranscriptChunk } from '@/types/transcript';
 import {
@@ -148,6 +149,11 @@ export async function POST(request: NextRequest) {
                 intent: { type: intent.type, confidence: intent.confidence },
                 depth,
                 routingPath: 'metadata_fast_path',
+                useCase: classifyUseCase({
+                  query,
+                  intentType: intent.type,
+                  routingPath: 'metadata_fast_path',
+                }),
               }, queryId).catch(() => {});
               fastPathHandled = true;
             }
@@ -206,6 +212,11 @@ export async function POST(request: NextRequest) {
                   intent: { type: intent.type, confidence: intent.confidence },
                   depth,
                   routingPath: 'metadata_fast_path',
+                  useCase: classifyUseCase({
+                    query,
+                    intentType: intent.type,
+                    routingPath: 'metadata_fast_path',
+                  }),
                 }, queryId).catch(() => {});
                 fastPathHandled = true;
               }
@@ -253,6 +264,11 @@ export async function POST(request: NextRequest) {
                     intent: { type: intent.type, confidence: intent.confidence },
                     depth,
                     routingPath: 'metadata_fast_path',
+                    useCase: classifyUseCase({
+                      query,
+                      intentType: intent.type,
+                      routingPath: 'metadata_fast_path',
+                    }),
                   }, queryId).catch(() => {});
                   fastPathHandled = true;
                 } else {
@@ -314,6 +330,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
                     synthesisModel: tildaModel,
                     depth,
                     routingPath: 'metadata_fast_path',
+                    useCase: classifyUseCase({
+                      query,
+                      intentType: intent.type,
+                      routingPath: 'metadata_fast_path',
+                    }),
                   }, queryId).catch(() => {});
                   fastPathHandled = true;
                 }
@@ -360,6 +381,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
                 intent: { type: intent.type, confidence: intent.confidence },
                 depth,
                 routingPath: 'metadata_fast_path',
+                useCase: classifyUseCase({
+                  query,
+                  intentType: intent.type,
+                  routingPath: 'metadata_fast_path',
+                }),
               }, queryId).catch(() => {});
               fastPathHandled = true;
             }
@@ -473,6 +499,14 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
                 synthesis: 0, // synthesis is inline with agent loop
                 total: totalMs,
               },
+              useCase: classifyUseCase({
+                query,
+                classificationType: classification.type,
+                filters: { ...classification.filters },
+                intentType: intent.type,
+                routingPath: 'agent_search',
+                searchStrategy: 'agent',
+              }),
             }, queryId).catch(() => {});
             return;
           } catch (agentError) {
@@ -761,6 +795,13 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           synthesisModel,
           depth,
           routingPath: 'full_pipeline',
+          useCase: classifyUseCase({
+            query,
+            classificationType: classification.type,
+            filters: { ...classification.filters },
+            intentType: intent.type,
+            routingPath: 'full_pipeline',
+          }),
         }, queryId).catch(() => {/* already logged in logQuery */});
       } catch (error) {
         console.error('Search error:', error);
