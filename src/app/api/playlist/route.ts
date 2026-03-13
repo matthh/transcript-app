@@ -121,10 +121,15 @@ export async function GET(request: NextRequest) {
   }
 
   // Look up metadata for filmYear and episodeNumber
+  // Prefer exact title match over loose substring match
   let filmYear: number | null = null;
   const metaResult = queryEpisodes({ film });
   if (metaResult.episodes.length > 0) {
-    const ep = metaResult.episodes[0];
+    const normalizedQuery = normalizeEpisodeTitle(film);
+    const exactMatch = metaResult.episodes.find(
+      e => normalizeEpisodeTitle(e.film) === normalizedQuery
+    );
+    const ep = exactMatch ?? metaResult.episodes[0];
     filmYear = ep.filmYear;
     if (episodeNumber === null) episodeNumber = ep.episode as number;
     canonicalFilm = ep.film;
