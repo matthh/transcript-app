@@ -578,6 +578,195 @@ function extractSegmentChunks(transcript: Transcript): Chunk[] {
 // Topic Extraction (LLM-based topic summaries for supplemental vector search)
 // ============================================
 
+// ============================================
+// Song Mention Extraction (for /pdc-playlist)
+// ============================================
+
+const PLAYLIST_CACHE_PATH = './playlist-cache.json';
+const PLAYLIST_DATA_PATH = './playlist-data.json';
+const PLAYLIST_VERSION = 1;
+
+interface SongMention {
+  song: string;
+  artist: string;
+  context: string;
+  quote: string;
+  timestamp: string;
+}
+
+interface PlaylistCache {
+  version: number;
+  entries: Record<string, SongMention[]>; // sha256(transcriptText) -> songs
+}
+
+interface PlaylistData {
+  episodes: Record<string, { episodeNumber: number | null; songs: SongMention[] }>;
+}
+
+function loadPlaylistCache(): PlaylistCache {
+  if (fs.existsSync(PLAYLIST_CACHE_PATH)) {
+    const raw = JSON.parse(fs.readFileSync(PLAYLIST_CACHE_PATH, 'utf-8'));
+    if (raw.version === PLAYLIST_VERSION) return raw;
+  }
+  return { version: PLAYLIST_VERSION, entries: {} };
+}
+
+const SONG_EXTRACTION_PROMPT = `You are analyzing a podcast transcript where hosts discuss a film. Extract ONLY songs and artists that are explicitly named by the hosts. Do NOT include:
+- Vague references like "that synth track" or "the score"
+- Songs that are only implied or hummed
+- Background music or score cues unless explicitly named
+
+Return a JSON array of objects with these fields:
+- "song": The song title as named
+- "artist": The artist or band name
+- "context": A brief 5-10 word description of why it was mentioned
+- "quote": A short direct quote (under 100 chars) where the song was named
+- "timestamp": The exact timestamp from the [HH:MM:SS] prefix of the dialogue turn where the song was mentioned. Use the timestamp as-is from the transcript, e.g. "0:24:30"
+
+If no songs are explicitly named, return an empty array: []
+
+IMPORTANT: Return ONLY the JSON array, no other text. No markdown fences.
+
+Transcript:
+`;
+
+async function extractSongMentions(
+  transcripts: { name: string; transcript: Transcript }[]
+): Promise<PlaylistData> {
+  console.log(`\nExtracting song mentions from ${transcripts.length} transcripts...`);
+
+  const cache = loadPlaylistCache();
+  const playlistData: PlaylistData = { episodes: {} };
+  const toExtract: { name: string; transcript: Transcript; hash: string }[] = [];
+  let cacheHits = 0;
+
+  // Check cache
+  for (const { name, transcript } of transcripts) {
+    const dialogueText = transcript.dialogues.map(d => `[${d.timestamp}] ${d.name}: ${d.text}`).join('\n');
+    const hash = crypto.createHash('sha256').update(dialogueText).digest('hex');
+
+    if (cache.entries[hash] !== undefined) {
+      const songs = cache.entries[hash];
+      if (songs.length > 0) {
+        const baseTitle = getBaseFilmTitle(transcript.episode_name);
+        if (!playlistData.episodes[baseTitle]) {
+          playlistData.episodes[baseTitle] = {
+            episodeNumber: transcript.episode_number ?? null,
+            songs: [],
+          };
+        }
+        playlistData.episodes[baseTitle].songs.push(...songs);
+      }
+      cacheHits++;
+    } else {
+      toExtract.push({ name, transcript, hash });
+    }
+  }
+
+  console.log(`  Cache: ${cacheHits} hits, ${toExtract.length} to extract`);
+
+  if (toExtract.length > 0) {
+    const anthropic = new Anthropic();
+    const BATCH_SIZE = 10;
+    const CALL_TIMEOUT_MS = 60_000;
+    let successCount = 0;
+    let failCount = 0;
+
+    for (let i = 0; i < toExtract.length; i += BATCH_SIZE) {
+      const batch = toExtract.slice(i, i + BATCH_SIZE);
+      const promises = batch.map(async ({ name, transcript, hash }) => {
+        const dialogueText = transcript.dialogues
+          .map(d => `[${d.timestamp}] ${d.name}: ${d.text}`)
+          .join('\n');
+
+        for (let attempt = 0; attempt < 3; attempt++) {
+          try {
+            const callPromise = anthropic.messages.create({
+              model: 'claude-haiku-4-5-20251001',
+              max_tokens: 2048,
+              messages: [{ role: 'user', content: SONG_EXTRACTION_PROMPT + dialogueText }],
+            });
+            const timeoutPromise = new Promise<never>((_, reject) =>
+              setTimeout(() => reject(new Error('Haiku call timed out')), CALL_TIMEOUT_MS)
+            );
+            const response = await Promise.race([callPromise, timeoutPromise]);
+            const text = response.content[0].type === 'text' ? response.content[0].text : '[]';
+
+            // Parse JSON response
+            const jsonMatch = text.match(/\[[\s\S]*\]/);
+            const songs: SongMention[] = jsonMatch ? JSON.parse(jsonMatch[0]) : [];
+            return { name, transcript, hash, songs };
+          } catch (err) {
+            if (attempt < 2) {
+              await new Promise(r => setTimeout(r, Math.pow(2, attempt + 1) * 1000));
+            } else {
+              console.warn(`  Failed to extract songs from ${name}:`, err);
+              return { name, transcript, hash, songs: null as SongMention[] | null };
+            }
+          }
+        }
+        return { name, transcript, hash, songs: null as SongMention[] | null };
+      });
+
+      const batchResults = await Promise.all(promises);
+      for (const r of batchResults) {
+        if (r.songs !== null) {
+          cache.entries[r.hash] = r.songs;
+          if (r.songs.length > 0) {
+            const baseTitle = getBaseFilmTitle(r.transcript.episode_name);
+            if (!playlistData.episodes[baseTitle]) {
+              playlistData.episodes[baseTitle] = {
+                episodeNumber: r.transcript.episode_number ?? null,
+                songs: [],
+              };
+            }
+            playlistData.episodes[baseTitle].songs.push(...r.songs);
+          }
+          successCount++;
+        } else {
+          failCount++;
+        }
+      }
+
+      // Progress + incremental cache save
+      if ((i / BATCH_SIZE) % 5 === 0 || i + BATCH_SIZE >= toExtract.length) {
+        console.log(`  Progress: ${Math.min(i + BATCH_SIZE, toExtract.length)}/${toExtract.length} (${successCount} ok, ${failCount} failed)`);
+        fs.writeFileSync(PLAYLIST_CACHE_PATH, JSON.stringify(cache));
+      }
+    }
+
+    // Final cache save
+    fs.writeFileSync(PLAYLIST_CACHE_PATH, JSON.stringify(cache));
+    console.log(`  Song extraction: ${successCount} success, ${failCount} failed, ${cacheHits} cached`);
+  }
+
+  // Deduplicate songs within each episode
+  for (const key of Object.keys(playlistData.episodes)) {
+    const ep = playlistData.episodes[key];
+    const seen = new Set<string>();
+    ep.songs = ep.songs.filter(s => {
+      const id = `${s.song.toLowerCase()}|${s.artist.toLowerCase()}`;
+      if (seen.has(id)) return false;
+      seen.add(id);
+      return true;
+    });
+  }
+
+  const totalSongs = Object.values(playlistData.episodes).reduce((sum, ep) => sum + ep.songs.length, 0);
+  console.log(`  Total: ${totalSongs} songs across ${Object.keys(playlistData.episodes).length} episodes`);
+
+  return playlistData;
+}
+
+/** Strip "Part N" suffix to combine multi-part episodes under base film title */
+function getBaseFilmTitle(episodeName: string): string {
+  return episodeName.replace(/\s+Part\s+\d+$/i, '').trim();
+}
+
+// ============================================
+// Topic Extraction
+// ============================================
+
 const TOPIC_CACHE_PATH = './topic-cache.json';
 const TOPIC_VERSION = 1;
 
@@ -1109,6 +1298,35 @@ async function main() {
     console.log('\nSkipping topic extraction (--skip-topics flag)');
   }
 
+  // Extract song mentions for playlist feature
+  if (!process.argv.includes('--skip-playlist')) {
+    const allTranscripts: { name: string; transcript: Transcript }[] = [];
+
+    // Collect all transcripts (filesystem + blob)
+    if (fs.existsSync(TRANSCRIPTS_DIR)) {
+      const files = fs.readdirSync(TRANSCRIPTS_DIR).filter((f) => f.endsWith('.json'));
+      for (const file of files) {
+        const filePath = path.join(TRANSCRIPTS_DIR, file);
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const transcript: Transcript = JSON.parse(content);
+        allTranscripts.push({ name: file, transcript });
+      }
+    }
+    const blobTs = await loadBlobTranscripts();
+    const seenNames = new Set(allTranscripts.map(t => t.transcript.episode_name));
+    for (const bt of blobTs) {
+      if (!seenNames.has(bt.transcript.episode_name)) {
+        allTranscripts.push(bt);
+      }
+    }
+
+    const playlistData = await extractSongMentions(allTranscripts);
+    fs.writeFileSync(PLAYLIST_DATA_PATH, JSON.stringify(playlistData, null, 2));
+    console.log(`Playlist data saved to ${PLAYLIST_DATA_PATH}`);
+  } else {
+    console.log('\nSkipping playlist extraction (--skip-playlist flag)');
+  }
+
   console.log('\n✓ Ingestion complete!');
   console.log(`  Indexed ${allChunks.length} chunks from ${seenEpisodes.size} transcript(s).`);
   console.log(`  Vector store saved to ${STORE_PATH}`);
@@ -1268,12 +1486,45 @@ async function topicsOnly() {
   }
 }
 
+async function playlistOnly() {
+  console.log('Playlist-only mode: extracting song mentions from transcripts...\n');
+
+  const allTranscripts: { name: string; transcript: Transcript }[] = [];
+
+  if (fs.existsSync(TRANSCRIPTS_DIR)) {
+    const files = fs.readdirSync(TRANSCRIPTS_DIR).filter((f) => f.endsWith('.json'));
+    console.log(`Found ${files.length} transcript file(s) in filesystem.`);
+    for (const file of files) {
+      const filePath = path.join(TRANSCRIPTS_DIR, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      const transcript: Transcript = JSON.parse(content);
+      allTranscripts.push({ name: file, transcript });
+    }
+  }
+
+  const blobTs = await loadBlobTranscripts();
+  const seenNames = new Set(allTranscripts.map(t => t.transcript.episode_name));
+  for (const bt of blobTs) {
+    if (!seenNames.has(bt.transcript.episode_name)) {
+      allTranscripts.push(bt);
+    }
+  }
+
+  console.log(`Total: ${allTranscripts.length} transcripts to process.`);
+
+  const playlistData = await extractSongMentions(allTranscripts);
+  fs.writeFileSync(PLAYLIST_DATA_PATH, JSON.stringify(playlistData, null, 2));
+  console.log(`\n✓ Playlist data saved to ${PLAYLIST_DATA_PATH}`);
+}
+
 if (process.argv.includes('--dry-run-asides')) {
   dryRunAsides().catch(console.error);
 } else if (process.argv.includes('--dry-run-segments')) {
   dryRunSegments().catch(console.error);
 } else if (process.argv.includes('--topics-only')) {
   topicsOnly().catch(console.error);
+} else if (process.argv.includes('--playlist-only')) {
+  playlistOnly().catch(console.error);
 } else {
   main().catch(console.error);
 }

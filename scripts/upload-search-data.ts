@@ -73,6 +73,24 @@ async function uploadSearchData() {
     console.log('Note: topic-vectors.json not found, skipping upload');
   }
 
+  // Upload playlist data
+  const playlistDataPath = path.join(process.cwd(), 'playlist-data.json');
+  if (fs.existsSync(playlistDataPath)) {
+    const playlistData = fs.readFileSync(playlistDataPath, 'utf-8');
+    const sizeInMB = (Buffer.byteLength(playlistData, 'utf-8') / (1024 * 1024)).toFixed(2);
+    console.log(`Uploading playlist-data.json (${sizeInMB} MB)...`);
+
+    const blob = await put(`${SEARCH_DATA_PREFIX}playlist-data.json`, playlistData, {
+      access: 'public',
+      contentType: 'application/json',
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    });
+    console.log(`  ✓ Uploaded to: ${blob.url}`);
+  } else {
+    console.log('Note: playlist-data.json not found, skipping upload');
+  }
+
   console.log('\n✓ Search data upload complete!');
 }
 
