@@ -81,7 +81,14 @@ export default function AnalyticsPage() {
       );
       if (!res.ok) throw new Error('Failed to fetch analytics data');
       const data = await res.json();
-      setDistribution(data.useCases ?? []);
+      setDistribution(
+        (data.distribution ?? []).map((d: { useCase: string; label: string; count: number; percent: number }) => ({
+          code: d.useCase,
+          label: d.label,
+          count: d.count,
+          percentage: d.percent,
+        }))
+      );
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error');
     } finally {
