@@ -44,9 +44,13 @@ Last updated: 2026-03-12
 - "What did the hosts discuss about Decker in the Star Trek episode?"
 - "What did Haitch say about the iconic one-liner from They Live?"
 - "What did the hosts think about Panic Room?"
+- "What is the hosts' all-time favorite movie?" (preference — requires hedged synthesis)
+- "which 80s movies did they enjoy the most" (preference + decade filter)
+
+**Note**: Preference/judgment queries (favorites, rankings) are a subtype here. Synthesis must hedge when evidence is partial — Rule #12 (preference-confidence threshold) applies.
 
 **Pipeline path**: Classifier extracts film → `targetEpisodeTitles` → episode-scoped injection + boost + diversification cap → deep synthesis (Sonnet).
-**Eval cases**: Jaws discussion, Godfather legacy, Malcolm and Marie, Star Trek/Decker, They Live one-liner, Panic Room, Legend, Boilerplate suppression (Jaws end)
+**Eval cases**: Jaws discussion, Godfather legacy, Malcolm and Marie, Star Trek/Decker, They Live one-liner, Panic Room, Legend, Boilerplate suppression (Jaws end), Preference-confidence hedging (favorite film), 80s movies enjoyment
 
 ---
 
@@ -67,7 +71,7 @@ Last updated: 2026-03-12
 - "when do the hosts talk about the soundtrack or musical score"
 - "funniest moments on the podcast"
 **Pipeline path**: Interpretive/hybrid classification → full retrieval pipeline → diversification ensures multiple episodes represented → deep synthesis.
-**Eval cases**: Practical effects vs CGI, Soundtrack mentions, Broad/funniest moments
+**Eval cases**: Practical effects vs CGI, Soundtrack mentions, Broad/funniest moments, Challenger disaster
 
 ---
 
@@ -146,7 +150,7 @@ Last updated: 2026-03-12
 ---
 
 ### UC-11: Quote & Specific Phrase Lookup
-**What**: User is looking for a specific quote, phrase, or word used in the podcast.
+**What**: User is looking for a specific quote, phrase, or word used in the podcast. Answers should include full, verbatim quotations from the transcript — not paraphrases or summaries. Users asking about quotes want to see the actual words.
 **Patterns**:
 - "which episode has someone saying lead paint chips were delicious"
 - "in which episode is the word dingus used in a voicemail"
@@ -155,22 +159,11 @@ Last updated: 2026-03-12
 - "What did Jason say about being the digital court jew for the new pope?"
 
 **Pipeline path**: Interpretive classification → BM25 keyword matching (with Whisper synonym expansion for ASR errors) → adjacent chunk expansion → reranking → keyword-centered excerpt extraction.
-**Eval cases**: Lead paint chips, Dingus voicemail, AKA caller, Eszterhas security guy, Digital court jew, Paul Atreides Nutz, Dune sleeves quote, The Mark/American Movie
+**Eval cases**: Lead paint chips, Dingus voicemail, AKA caller, Eszterhas security guy, Digital court jew, Paul Atreides Nutz, Dune sleeves quote, The Mark/American Movie, Deakins Award
 
 ---
 
-### UC-12: Preference & Judgment Queries
-**What**: User asks about favorites, rankings, or evaluative judgments that require hedged synthesis.
-**Patterns**:
-- "What is the hosts' all-time favorite movie?"
-- "which 80s movies did they enjoy the most"
-
-**Pipeline path**: Hybrid/interpretive classification → cross-episode retrieval → synthesis with Rule #12 (preference-confidence threshold). Must hedge when evidence is partial.
-**Eval cases**: Preference-confidence hedging (favorite film), 80s movies enjoyment
-
----
-
-### UC-13: Factual Fallback (World-Knowledge Bridging)
+### UC-12: Factual Fallback (World-Knowledge Bridging)
 **What**: User asks a factual question about a film (e.g., who directed it) in the context of what the hosts said. Requires connecting world knowledge to transcript content.
 **Patterns**:
 - "who directed Rushmore according to the hosts"
@@ -181,7 +174,7 @@ Last updated: 2026-03-12
 
 ---
 
-### UC-14: Guest-Scoped Queries
+### UC-13: Guest-Scoped Queries
 **What**: User asks about a specific guest's appearance or what they discussed.
 **Patterns**:
 - "Rosie Knight talking about comics or superheroes"
@@ -193,7 +186,7 @@ Last updated: 2026-03-12
 
 ---
 
-### UC-15: Podcast Meta Queries
+### UC-14: Podcast Meta Queries
 **What**: User asks about podcast-level concepts: Tilda casting, recommendations, full catalog.
 **Patterns**:
 - "who would Tilda play in the next movie"
@@ -201,17 +194,6 @@ Last updated: 2026-03-12
 
 **Pipeline path**: Tilda → metadata `tildaH`/`tildaJason`/`tildaGuest` fields. Full catalog → known limitation (too broad for RAG).
 **Eval cases**: Tilda casting, Full catalog suggestion (known limitation)
-
----
-
-### UC-16: Niche / Long-Tail Retrieval
-**What**: User asks about a specific topic that isn't a major theme but does appear in transcripts.
-**Patterns**:
-- "what have hosts said about the Challenger disaster?"
-- "Deakins Award"
-
-**Pipeline path**: Standard retrieval pipeline. May require strong BM25 keyword matching for rare terms. Niche topics are high-risk for false negatives.
-**Eval cases**: Challenger disaster, Deakins Award
 
 ---
 
@@ -248,7 +230,7 @@ When evaluating a proposed change or bug fix:
 
 | Rank | Use Case | Rationale |
 |------|----------|-----------|
-| 1 | **UC-3: Single-Episode Opinion** | Core use case — "what did they think about X?" is the most common query pattern |
+| 1 | **UC-3: Single-Episode Opinion** | Core use case — "what did they think about X?" is the most common query pattern. Includes preference/judgment queries. |
 | 2 | **UC-1: Episode Lookup** | Foundational — users need to find episodes reliably |
 | 3 | **UC-2: Metadata Listing** | High-frequency, must be fast and accurate |
 | 4 | **UC-4: Host-Scoped Attribution** | Differentiator — users care who said what |
@@ -259,8 +241,6 @@ When evaluating a proposed change or bug fix:
 | 9 | **UC-6: Cross-Episode Entity / Exhaustive Tracking** | Valuable but tolerates partial answers |
 | 10 | **UC-10: Catchphrase & Recurring Patterns** | Fun, community-driven |
 | 11 | **UC-9: Counting & Frequency (Agent)** | Impressive when it works, but niche |
-| 12 | **UC-12: Preference & Judgment** | Important but inherently hedged |
-| 13 | **UC-14: Guest-Scoped** | Moderate frequency |
-| 14 | **UC-13: Factual Fallback** | Edge case, mostly handled |
-| 15 | **UC-16: Niche / Long-Tail** | Low frequency, hard to optimize broadly |
-| 16 | **UC-15: Podcast Meta** | Rare, partially out of scope |
+| 12 | **UC-13: Guest-Scoped** | Moderate frequency |
+| 13 | **UC-12: Factual Fallback** | Edge case, mostly handled |
+| 14 | **UC-14: Podcast Meta** | Rare, partially out of scope |
