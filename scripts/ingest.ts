@@ -584,7 +584,7 @@ function extractSegmentChunks(transcript: Transcript): Chunk[] {
 
 const PLAYLIST_CACHE_PATH = './playlist-cache.json';
 const PLAYLIST_DATA_PATH = './playlist-data.json';
-const PLAYLIST_VERSION = 1;
+const PLAYLIST_VERSION = 2;
 
 interface SongMention {
   song: string;
@@ -619,7 +619,7 @@ const SONG_EXTRACTION_PROMPT = `You are analyzing a podcast transcript where hos
 Return a JSON array of objects with these fields:
 - "song": The song title as named
 - "artist": The artist or band name
-- "context": A brief 5-10 word description of why it was mentioned
+- "context": A brief 5-15 word description of why the HOSTS discussed this song in conversation (e.g. "debating whether the needle drop was too on-the-nose", "Haitch raving about the soundtrack choice"). Focus on what the hosts said about it, NOT what happens in the film scene.
 - "quote": A short direct quote (under 100 chars) where the song was named
 - "timestamp": The exact timestamp from the [HH:MM:SS] prefix of the dialogue turn where the song was mentioned. Use the timestamp as-is from the transcript, e.g. "0:24:30"
 
