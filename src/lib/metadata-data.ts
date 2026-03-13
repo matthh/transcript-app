@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 309 episodes - updated 2026-03-12
+// Auto-generated - do not edit - 309 episodes - updated 2026-03-13
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -233,7 +233,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cast": [
       "Armie Hammer",
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Michael Stuhlbarg",
       "Amira Casar",
       "Esther Garrel",
@@ -524,7 +524,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Francesca Annis",
       "Patrick Stewart",
       "Linda Hunt",
-      "Jos\u00e9 Ferrer",
+      "José Ferrer",
       "Freddie Jones",
       "Brad Dourif",
       "Richard Jordan"
@@ -573,7 +573,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Florence Pugh",
       "Eliza Scanlen",
       "Laura Dern",
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Tracy Letts",
       "Bob Odenkirk"
     ]
@@ -687,7 +687,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cast": [
       "Jake Gyllenhaal",
-      "M\u00e9lanie Laurent",
+      "Mélanie Laurent",
       "Sarah Gadon",
       "Isabella Rossellini",
       "Joshua Peace",
@@ -980,7 +980,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Laurie Metcalf",
       "Tracy Letts",
       "Lucas Hedges",
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Beanie Feldstein",
       "Lois Smith",
       "Stephen McKinley Henderson"
@@ -1167,13 +1167,13 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "War"
     ],
     "directors": [
-      "David Mich\u00f4d"
+      "David Michôd"
     ],
     "cinematographers": [
       "Adam Arkapaw"
     ],
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Joel Edgerton",
       "Sean Harris",
       "Tom Glynn-Carney",
@@ -1222,7 +1222,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cast": [
       "Maxim Gaudette",
-      "S\u00e9bastien Huberdeau",
+      "Sébastien Huberdeau",
       "Karine Vanasse",
       "Evelyne Brochu",
       "Martin Watier",
@@ -1393,7 +1393,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Robert De Niro",
       "Jean Reno",
       "Natascha McElhone",
-      "Stellan Skarsg\u00e5rd",
+      "Stellan Skarsgård",
       "Skipp Sudduth",
       "Jonathan Pryce",
       "Sean Bean",
@@ -1493,7 +1493,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Javier Bardem",
       "Ralph Fiennes",
       "Naomie Harris",
-      "B\u00e9r\u00e9nice Marlohe",
+      "Bérénice Marlohe",
       "Albert Finney",
       "Ben Whishaw"
     ]
@@ -1676,7 +1676,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Sam Levinson"
     ],
     "cinematographers": [
-      "Marcell R\u00e9v"
+      "Marcell Rév"
     ],
     "cast": [
       "John David Washington",
@@ -1975,7 +1975,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "pod": "DP",
     "season": 3,
     "episode": 46,
-    "film": "Nausicaa\u0308 of the Valley of the Wind (1984)",
+    "film": "Nausicaä of the Valley of the Wind (1984)",
     "filmYear": 1984,
     "releaseDate": "6/6/2021",
     "length": "1:13:50",
@@ -2008,7 +2008,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "cast": [
       "Sumi Shimamoto",
       "Ichiro Nagai",
-      "Gor\u014d Naya",
+      "Gorō Naya",
       "Yoji Matsuda",
       "Yoshiko Sakakibara",
       "Iemasa Kayumi",
@@ -2126,17 +2126,17 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Denis Villeneuve"
     ],
     "cinematographers": [
-      "Andr\u00e9 Turpin"
+      "André Turpin"
     ],
     "cast": [
       "Lubna Azabal",
-      "M\u00e9lissa D\u00e9sormeaux-Poulin",
+      "Mélissa Désormeaux-Poulin",
       "Maxim Gaudette",
-      "R\u00e9my Girard",
+      "Rémy Girard",
       "Allen Altman",
       "Abdelghafour Elaaziz",
       "Dominique Briand",
-      "Fr\u00e9d\u00e9ric Paquet"
+      "Frédéric Paquet"
     ]
   },
   {
@@ -2226,7 +2226,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Matt Damon",
       "Robin Williams",
       "Ben Affleck",
-      "Stellan Skarsg\u00e5rd",
+      "Stellan Skarsgård",
       "Minnie Driver",
       "Casey Affleck",
       "Cole Hauser",
@@ -2370,7 +2370,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "thatsGreatCount": 6,
     "notableMoments": "Jason asks what the percentage of the synopses end with \"...or are they doomed to [movie title]\"",
     "hFlex": "N/A",
-    "jFlex": "Jason knows the guy that took the picture of Alex Skarsg\u00e5rd \"exploring the South Pole\"",
+    "jFlex": "Jason knows the guy that took the picture of Alex Skarsgård \"exploring the South Pole\"",
     "kevsQuestion": "N/A",
     "tildaH": "Rutledge ",
     "tildaJason": "Rutledge ",
@@ -2966,11 +2966,11 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Greig Fraser"
     ],
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Rebecca Ferguson",
       "Oscar Isaac",
       "Jason Momoa",
-      "Stellan Skarsg\u00e5rd",
+      "Stellan Skarsgård",
       "Stephen McKinley Henderson",
       "Josh Brolin",
       "Javier Bardem"
@@ -3178,7 +3178,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Science Fiction"
     ],
     "directors": [
-      "Alfonso Cuar\u00f3n"
+      "Alfonso Cuarón"
     ],
     "cinematographers": [
       "Emmanuel Lubezki"
@@ -3285,7 +3285,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Omar Sharif",
       "Anthony Quinn",
       "Jack Hawkins",
-      "Jos\u00e9 Ferrer",
+      "José Ferrer",
       "Anthony Quayle",
       "Claude Rains"
     ]
@@ -3523,9 +3523,9 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Benicio del Toro",
       "Adrien Brody",
       "Tilda Swinton",
-      "L\u00e9a Seydoux",
+      "Léa Seydoux",
       "Frances McDormand",
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Lyna Khoudri",
       "Jeffrey Wright"
     ]
@@ -3564,7 +3564,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Ivan Reitman"
     ],
     "cinematographers": [
-      "L\u00e1szl\u00f3 Kov\u00e1cs"
+      "László Kovács"
     ],
     "cast": [
       "Bill Murray",
@@ -3975,7 +3975,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "James Foley"
     ],
     "cinematographers": [
-      "Juan Ruiz Anch\u00eda"
+      "Juan Ruiz Anchía"
     ],
     "cast": [
       "Al Pacino",
@@ -4863,7 +4863,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Robert Longo"
     ],
     "cinematographers": [
-      "Fran\u00e7ois Protat"
+      "François Protat"
     ],
     "cast": [
       "Keanu Reeves",
@@ -5099,10 +5099,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Drama"
     ],
     "directors": [
-      "Gaspar No\u00e9"
+      "Gaspar Noé"
     ],
     "cinematographers": [
-      "Beno\u00eet Debie"
+      "Benoît Debie"
     ],
     "cast": [
       "Sofia Boutella",
@@ -5112,7 +5112,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Claude-Emmanuelle Gajan-Maull",
       "Giselle Palmer",
       "Taylor Kastle",
-      "Thea Carla Sch\u00f8tt"
+      "Thea Carla Schøtt"
     ]
   },
   {
@@ -5516,7 +5516,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Dean Parisot"
     ],
     "cinematographers": [
-      "Jerzy Zieli\u0144ski"
+      "Jerzy Zieliński"
     ],
     "cast": [
       "Tim Allen",
@@ -5689,10 +5689,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cast": [
       "Taylor Russell",
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Mark Rylance",
       "Anna Cobb",
-      "Andr\u00e9 Holland",
+      "André Holland",
       "David Gordon Green",
       "Michael Stuhlbarg",
       "Jessica Harper"
@@ -5922,7 +5922,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Penny Marshall"
     ],
     "cinematographers": [
-      "Miroslav Ond\u0159\u00ed\u010dek"
+      "Miroslav Ondříček"
     ],
     "cast": [
       "Tom Hanks",
@@ -6000,7 +6000,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "cast": [
       "Daniel Craig",
       "Christoph Waltz",
-      "L\u00e9a Seydoux",
+      "Léa Seydoux",
       "Ralph Fiennes",
       "Monica Bellucci",
       "Ben Whishaw",
@@ -6291,7 +6291,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "cast": [
       "Arnold Schwarzenegger",
       "Richard Dawson",
-      "Mar\u00eda Conchita Alonso",
+      "María Conchita Alonso",
       "Yaphet Kotto",
       "Jim Brown",
       "Jesse Ventura",
@@ -6484,7 +6484,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cast": [
       "Richard Dreyfuss",
-      "Fran\u00e7ois Truffaut",
+      "François Truffaut",
       "Teri Garr",
       "Melinda Dillon",
       "Bob Balaban",
@@ -7137,7 +7137,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Harrison Ford",
       "Tommy Lee Jones",
       "Joe Pantoliano",
-      "Jeroen Krabb\u00e9",
+      "Jeroen Krabbé",
       "Daniel Roebuck",
       "L. Scott Caldwell",
       "Tom Wood",
@@ -7296,7 +7296,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Chris Sarandon",
       "Christopher Guest",
       "Wallace Shawn",
-      "Andr\u00e9 Roussimoff",
+      "André Roussimoff",
       "Fred Savage"
     ]
   },
@@ -7660,7 +7660,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Wes Studi",
       "Eric Schweig",
       "Steven Waddington",
-      "Maurice Ro\u00ebves"
+      "Maurice Roëves"
     ]
   },
   {
@@ -7939,7 +7939,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "William Friedkin"
     ],
     "cinematographers": [
-      "Robby M\u00fcller"
+      "Robby Müller"
     ],
     "cast": [
       "William Petersen",
@@ -7996,7 +7996,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Hugh Keays-Byrne",
       "Josh Helman",
       "Nathan Jones",
-      "Zo\u00eb Kravitz",
+      "Zoë Kravitz",
       "Rosie Huntington-Whiteley"
     ]
   },
@@ -8044,7 +8044,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Christopher Plummer",
       "Willem Dafoe",
       "Chiwetel Ejiofor",
-      "Carlos Andr\u00e9s G\u00f3mez",
+      "Carlos Andrés Gómez",
       "Kim Director"
     ]
   },
@@ -8089,7 +8089,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Shameik Moore",
       "Hailee Steinfeld",
       "Brian Tyree Henry",
-      "Luna Lauren V\u00e9lez",
+      "Luna Lauren Vélez",
       "Jake Johnson",
       "Oscar Isaac",
       "Jason Schwartzman",
@@ -8690,7 +8690,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Jennifer Morrison",
       "Frank Grillo",
       "Kevin Dunn",
-      "Maximiliano Hern\u00e1ndez",
+      "Maximiliano Hernández",
       "Bryan Callen",
       "Sam Sheridan",
       "Fernando Chien"
@@ -8730,7 +8730,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Danny Boyle"
     ],
     "cinematographers": [
-      "Alwin H. K\u00fcchler"
+      "Alwin H. Küchler"
     ],
     "cast": [
       "Cillian Murphy",
@@ -8780,7 +8780,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Greig Fraser"
     ],
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Zendaya",
       "Rebecca Ferguson",
       "Javier Bardem",
@@ -8907,7 +8907,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Ellen Burstyn",
       "Mark Margolis",
       "Stephen McHattie",
-      "Fernando Hern\u00e1ndez",
+      "Fernando Hernández",
       "Cliff Curtis",
       "Sean Patrick Thomas",
       "Donna Murphy",
@@ -9251,7 +9251,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "John Goodman",
       "Susan Sarandon",
       "Matthew Fox",
-      "Benno F\u00fcrmann",
+      "Benno Fürmann",
       "Hiroyuki Sanada",
       "Rain"
     ]
@@ -9343,12 +9343,12 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Asakazu Nakai"
     ],
     "cast": [
-      "Toshir\u014d Mifune",
+      "Toshirō Mifune",
       "Takashi Shimura",
       "Yoshio Inaba",
       "Seiji Miyaguchi",
       "Minoru Chiaki",
-      "Daisuke Kat\u014d",
+      "Daisuke Katō",
       "Isao Kimura",
       "Keiko Tsushima"
     ]
@@ -9681,7 +9681,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Walter Matthau",
       "Robert Shaw",
       "Martin Balsam",
-      "H\u00e9ctor Elizondo",
+      "Héctor Elizondo",
       "Earl Hindman",
       "James Broderick",
       "Dick O'Neill",
@@ -9844,7 +9844,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Corey",
     "mmmCount": 37,
     "thatsGreatCount": 5,
-    "notableMoments": "JELL-/\u014c/TINOUS CUBE joins discord, MoodyBlue MyWinnipegExperience and angephalange join the Discord! \n- Corey's wife calls in for his voicemail segment, she has her own sounder!",
+    "notableMoments": "JELL-/Ō/TINOUS CUBE joins discord, MoodyBlue MyWinnipegExperience and angephalange join the Discord! \n- Corey's wife calls in for his voicemail segment, she has her own sounder!",
     "hFlex": "Haitch's nickname in college was RDJ",
     "jFlex": "N/A",
     "kevsQuestion": "What's something that you live that's stood the test of time?",
@@ -9983,7 +9983,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "8/25/2024",
     "length": "2:21:53",
     "reviewer": "birria",
-    "guest": "ctcher / \u2060Ian de Borja\u2060",
+    "guest": "ctcher / ⁠Ian de Borja⁠",
     "mmmCount": 36,
     "thatsGreatCount": 7,
     "notableMoments": "Cinenauts Podcast reunion\n- Ian just went on a Limp Bizkit adventure\n- Jason thinks Haitch is a Men's Rights Activist (related to Star Wars Acolyte getting cancelled)\n- Megalopolis Trailer talk\n- Good discussion about this time in tech\n- Lizzen voicemail and BogPod\n- Corey asks if Armie Hammer really ate someone -  to which Haitch replies \"Do your own research.\"",
@@ -10302,8 +10302,8 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Mahershala Ali",
       "Brian Tyree Henry",
       "Lily Tomlin",
-      "Luna Lauren V\u00e9lez",
-      "Zo\u00eb Kravitz"
+      "Luna Lauren Vélez",
+      "Zoë Kravitz"
     ]
   },
   {
@@ -11048,7 +11048,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Toby Jones",
       "Mark Strong",
       "Benedict Cumberbatch",
-      "Ciar\u00e1n Hinds"
+      "Ciarán Hinds"
     ]
   },
   {
@@ -11181,7 +11181,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Dean Parisot"
     ],
     "cinematographers": [
-      "Jerzy Zieli\u0144ski"
+      "Jerzy Zieliński"
     ],
     "cast": [
       "Tim Allen",
@@ -11333,7 +11333,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Fernando Rey",
       "Tony Lo Bianco",
       "Marcel Bozzuffi",
-      "Fr\u00e9d\u00e9ric de Pasquale",
+      "Frédéric de Pasquale",
       "Bill Hickman",
       "Ann Rebbot"
     ]
@@ -11397,7 +11397,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Alex Cox"
     ],
     "cinematographers": [
-      "Robby M\u00fcller"
+      "Robby Müller"
     ],
     "cast": [
       "Emilio Estevez",
@@ -11447,7 +11447,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Sara Beykpour",
     "mmmCount": 26,
     "thatsGreatCount": 9,
-    "notableMoments": "Good talk with Sara about starting your own company and project management at Google\n- Sara's news aggregator Particle sounds cool\n- Andor news - Trailer 2\n- More tennis meltdown talk from Haitch\n- 2nd Alfonso Cuar\u00f3n film covered with Sara (Children of Men)\n- The CG in this movie is incredible. Especially the zero-G stuff. The face-plates, breath steam, etc is all 100% CG\n- The Newtonian physics of Clooney's death don't make any sense at all (other than serving the narrative). \"There will be no sproing-ing\" - Jason. Sara - this is like Jack and Rose at the end of Titanic\n- Letters - Bog Pod (trapped in a cave), Mr Java (Bowie cover), Animal Mother, Truthsayer (Truthsayer #100!), Kev, Corey (with the ATB crew)",
+    "notableMoments": "Good talk with Sara about starting your own company and project management at Google\n- Sara's news aggregator Particle sounds cool\n- Andor news - Trailer 2\n- More tennis meltdown talk from Haitch\n- 2nd Alfonso Cuarón film covered with Sara (Children of Men)\n- The CG in this movie is incredible. Especially the zero-G stuff. The face-plates, breath steam, etc is all 100% CG\n- The Newtonian physics of Clooney's death don't make any sense at all (other than serving the narrative). \"There will be no sproing-ing\" - Jason. Sara - this is like Jack and Rose at the end of Titanic\n- Letters - Bog Pod (trapped in a cave), Mr Java (Bowie cover), Animal Mother, Truthsayer (Truthsayer #100!), Kev, Corey (with the ATB crew)",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "Would you rather be in deep space or the deep ocean?",
@@ -11467,7 +11467,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Drama"
     ],
     "directors": [
-      "Alfonso Cuar\u00f3n"
+      "Alfonso Cuarón"
     ],
     "cinematographers": [
       "Emmanuel Lubezki"
@@ -11931,16 +11931,16 @@ export const episodeMetadata: EpisodeMetadata[] = [
     ],
     "cinematographers": [
       "Asakazu Nakai",
-      "Takao Sait\u014d"
+      "Takao Saitō"
     ],
     "cast": [
-      "Toshir\u014d Mifune",
+      "Toshirō Mifune",
       "Tatsuya Nakadai",
-      "Ky\u014dko Kagawa",
+      "Kyōko Kagawa",
       "Tatsuya Mihashi",
       "Isao Kimura",
-      "Kenjir\u014d Ishiyama",
-      "Takeshi Kat\u014d",
+      "Kenjirō Ishiyama",
+      "Takeshi Katō",
       "Takashi Shimura"
     ]
   },
@@ -12002,7 +12002,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Dan McClellan",
     "mmmCount": 48,
     "thatsGreatCount": 14,
-    "notableMoments": "DISCLAIMER: Jason\u2019s takes expressed during this episode are bad and do not reflect the positions of Haitch Industries or its subsidiary divisions. Thank you.\n- Interesting conversation on Dan's work and current times\n- Richard Donner's 'Verisimilitude' \n- Brando 20 minuites of work netted him $14M - and he is great in this part\n- Christopher Reeve - Transcendent in this movie. The platonic ideal of Superman\n- Lex Luthor's lair is an incredible set, perfect for Gene Hackman's Lex\n- Jason's main gripes - The schmutzy difusion filter on the Kansas cinematography, Young Clark Kent doesn't work, the \"Can you read my mind?\" scene\n- Then when Dan is off  - Spicy Jason shows up - \"I think Krull is a better movie than Superman.\", It takes SO LONG to get to Superman stuff, the physics of catching a helicopter, flying backwards to turn back time is SO LAZY\n- The John Williams Score is maybe the best of his career\n - Letters - Mr Java (Gold Man comic, LISTEN sounder), BogPod, Animal Mother, Truthsayer, Curly Allie, Kev, Corey (out of order so Jason and Corey don't have the last word), Lizzen, Art (a love letter to S78)",
+    "notableMoments": "DISCLAIMER: Jason’s takes expressed during this episode are bad and do not reflect the positions of Haitch Industries or its subsidiary divisions. Thank you.\n- Interesting conversation on Dan's work and current times\n- Richard Donner's 'Verisimilitude' \n- Brando 20 minuites of work netted him $14M - and he is great in this part\n- Christopher Reeve - Transcendent in this movie. The platonic ideal of Superman\n- Lex Luthor's lair is an incredible set, perfect for Gene Hackman's Lex\n- Jason's main gripes - The schmutzy difusion filter on the Kansas cinematography, Young Clark Kent doesn't work, the \"Can you read my mind?\" scene\n- Then when Dan is off  - Spicy Jason shows up - \"I think Krull is a better movie than Superman.\", It takes SO LONG to get to Superman stuff, the physics of catching a helicopter, flying backwards to turn back time is SO LAZY\n- The John Williams Score is maybe the best of his career\n - Letters - Mr Java (Gold Man comic, LISTEN sounder), BogPod, Animal Mother, Truthsayer, Curly Allie, Kev, Corey (out of order so Jason and Corey don't have the last word), Lizzen, Art (a love letter to S78)",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "What would the custom Popcorn bucket for Superman '78 look like?",
@@ -12129,8 +12129,8 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Shima Iwashita",
       "Tetsuro Tamba",
       "Masao Mishima",
-      "Ichir\u014d Nakatani",
-      "Kei Sat\u014d",
+      "Ichirō Nakatani",
+      "Kei Satō",
       "Yoshio Inaba"
     ]
   },
@@ -12325,7 +12325,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Gunnel Fred",
       "Ellora Torchia",
       "Archie Madekwe",
-      "Henrik Norl\u00e9n"
+      "Henrik Norlén"
     ]
   },
   {
@@ -12419,7 +12419,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Joe Don Baker",
       "Judi Dench",
       "Robbie Coltrane",
-      "Tch\u00e9ky Karyo"
+      "Tchéky Karyo"
     ]
   },
   {
