@@ -40,6 +40,9 @@ export interface QueryLogEntry {
   topicBlobLoaded?: boolean;
   topicHitCount?: number;
   topicOnlyHitCount?: number;
+  // Use case classification
+  useCase?: string;      // Deterministic tag, set at log time
+  useCaseLLM?: string;   // LLM tag, set by batch classifier script
 }
 
 export function generateLogId(): string {
