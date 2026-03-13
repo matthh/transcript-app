@@ -34,6 +34,7 @@ import {
   AGENT_SEARCH_MODEL,
 } from '@/lib/routing-policy';
 import { runAgentSearch } from '@/lib/agent-search';
+import { classifyUseCase } from '@/lib/use-case-classifier';
 
 let loggedCacheStatus = false;
 
@@ -120,6 +121,11 @@ export async function POST(request: NextRequest) {
             intent: { type: intent.type, confidence: intent.confidence },
             depth,
             routingPath: 'metadata_fast_path',
+            useCase: classifyUseCase({
+              query,
+              intentType: intent.type,
+              routingPath: 'metadata_fast_path',
+            }),
           }, queryId).catch(() => {});
           return NextResponse.json({
             answer: nmAnswer,
@@ -181,6 +187,11 @@ export async function POST(request: NextRequest) {
               intent: { type: intent.type, confidence: intent.confidence },
               depth,
               routingPath: 'metadata_fast_path',
+              useCase: classifyUseCase({
+                query,
+                intentType: intent.type,
+                routingPath: 'metadata_fast_path',
+              }),
             }, queryId).catch(() => {});
             return NextResponse.json({
               answer,
@@ -222,6 +233,11 @@ export async function POST(request: NextRequest) {
                 intent: { type: intent.type, confidence: intent.confidence },
                 depth,
                 routingPath: 'metadata_fast_path',
+                useCase: classifyUseCase({
+                  query,
+                  intentType: intent.type,
+                  routingPath: 'metadata_fast_path',
+                }),
               }, queryId).catch(() => {});
               return NextResponse.json({
                 answer: earliestAnswer,
@@ -274,6 +290,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
               synthesisModel: tildaModel,
               depth,
               routingPath: 'metadata_fast_path',
+              useCase: classifyUseCase({
+                query,
+                intentType: intent.type,
+                routingPath: 'metadata_fast_path',
+              }),
             }, queryId).catch(() => {});
             return NextResponse.json({
               answer,
@@ -313,6 +334,11 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
           intent: { type: intent.type, confidence: intent.confidence },
           depth,
           routingPath: 'metadata_fast_path',
+          useCase: classifyUseCase({
+            query,
+            intentType: intent.type,
+            routingPath: 'metadata_fast_path',
+          }),
         }, queryId).catch(() => {});
         return NextResponse.json({
           answer: aggregate.answer,
@@ -406,6 +432,14 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
             synthesis: 0,
             total: totalMs,
           },
+          useCase: classifyUseCase({
+            query,
+            classificationType: classification.type,
+            filters: { ...classification.filters },
+            intentType: intent.type,
+            routingPath: 'agent_search',
+            searchStrategy: 'agent',
+          }),
         }, queryId).catch(() => {});
 
         return NextResponse.json({
@@ -624,6 +658,13 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
       synthesisModel,
       depth,
       routingPath: 'full_pipeline',
+      useCase: classifyUseCase({
+        query,
+        classificationType: classification.type,
+        filters: { ...classification.filters },
+        intentType: intent.type,
+        routingPath: 'full_pipeline',
+      }),
     }, queryId).catch(() => {});
     return NextResponse.json({
       answer,
