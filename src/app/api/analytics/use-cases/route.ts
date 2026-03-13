@@ -98,18 +98,32 @@ export async function GET(req: NextRequest) {
 
   const totalQueries = filtered.length;
 
-  const distribution: { useCase: string; label: string; count: number; percent: number }[] = [];
+  const distribution: { useCase: string; label: string; count: number; percent: number; rated: number; good: number; bad: number }[] = [];
+
+  // Count feedback per UC
+  const ratedCounts = new Map<string, { rated: number; good: number; bad: number }>();
+  for (const e of filtered) {
+    const uc = resolveUC(e);
+    if (!e.rating) continue;
+    const r = ratedCounts.get(uc) ?? { rated: 0, good: 0, bad: 0 };
+    r.rated++;
+    if (e.rating === 'good') r.good++;
+    if (e.rating === 'bad') r.bad++;
+    ratedCounts.set(uc, r);
+  }
 
   // Include all UC_LABELS keys that have counts, plus any uncategorised codes
   const allCodes = new Set([...Object.keys(UC_LABELS), ...counts.keys()]);
   for (const uc of allCodes) {
     const count = counts.get(uc) ?? 0;
     if (count === 0) continue;
+    const r = ratedCounts.get(uc) ?? { rated: 0, good: 0, bad: 0 };
     distribution.push({
       useCase: uc,
       label: UC_LABELS[uc] ?? (uc === 'unclassified' ? 'Unclassified' : uc),
       count,
       percent: totalQueries > 0 ? Math.round((count / totalQueries) * 1000) / 10 : 0,
+      ...r,
     });
   }
 
@@ -143,9 +157,16 @@ export async function GET(req: NextRequest) {
       .sort((a, b) => b.timestamp.localeCompare(a.timestamp));
   }
 
+  const totalRated = filtered.filter((e) => e.rating).length;
+  const totalGood = filtered.filter((e) => e.rating === 'good').length;
+  const totalBad = filtered.filter((e) => e.rating === 'bad').length;
+
   return NextResponse.json({
     distribution,
     totalQueries,
+    totalRated,
+    totalGood,
+    totalBad,
     period,
     ...(queries !== undefined && { queries }),
   });

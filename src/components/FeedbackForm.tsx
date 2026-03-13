@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 type QueryType = 'factual' | 'interpretive' | 'hybrid';
 
-export function FeedbackForm({ query, answer, queryType }: { query: string; answer: string; queryType: QueryType }) {
+export function FeedbackForm({ query, answer, queryType, queryLogId }: { query: string; answer: string; queryType: QueryType; queryLogId?: string }) {
   const [name, setName] = useState('');
   const [rating, setRating] = useState<'good' | 'bad' | null>(null);
   const [comment, setComment] = useState('');
@@ -30,6 +30,7 @@ export function FeedbackForm({ query, answer, queryType }: { query: string; answ
           rating,
           comment: comment.trim() || undefined,
           queryType,
+          queryLogId,
         }),
       });
 

@@ -9,6 +9,9 @@ interface UseCaseRow {
   label: string;
   count: number;
   percentage: number;
+  rated: number;
+  good: number;
+  bad: number;
 }
 
 interface QueryRow {
@@ -60,6 +63,7 @@ export default function AnalyticsPage() {
   const [weekStart, setWeekStart] = useState(() => getWeekStart(new Date()));
   const [allTime, setAllTime] = useState(false);
   const [distribution, setDistribution] = useState<UseCaseRow[] | null>(null);
+  const [feedbackTotals, setFeedbackTotals] = useState<{ rated: number; good: number; bad: number }>({ rated: 0, good: 0, bad: 0 });
   const [drilldown, setDrilldown] = useState<{
     code: string;
     label: string;
@@ -82,13 +86,21 @@ export default function AnalyticsPage() {
       if (!res.ok) throw new Error('Failed to fetch analytics data');
       const data = await res.json();
       setDistribution(
-        (data.distribution ?? []).map((d: { useCase: string; label: string; count: number; percent: number }) => ({
+        (data.distribution ?? []).map((d: { useCase: string; label: string; count: number; percent: number; rated: number; good: number; bad: number }) => ({
           code: d.useCase,
           label: d.label,
           count: d.count,
           percentage: d.percent,
+          rated: d.rated ?? 0,
+          good: d.good ?? 0,
+          bad: d.bad ?? 0,
         }))
       );
+      setFeedbackTotals({
+        rated: data.totalRated ?? 0,
+        good: data.totalGood ?? 0,
+        bad: data.totalBad ?? 0,
+      });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error');
     } finally {
@@ -191,6 +203,20 @@ export default function AnalyticsPage() {
           </div>
         )}
 
+        {/* Feedback summary */}
+        {!loading && !error && !drilldown && feedbackTotals.rated > 0 && (
+          <div className="flex items-center gap-4 mb-4 text-sm">
+            <span className="text-gray-500">{feedbackTotals.rated} rated:</span>
+            <span className="text-green-700 font-medium">{feedbackTotals.good} good</span>
+            <span className="text-red-700 font-medium">{feedbackTotals.bad} bad</span>
+            {feedbackTotals.rated > 0 && (
+              <span className="text-gray-400">
+                ({Math.round((feedbackTotals.good / feedbackTotals.rated) * 100)}% positive)
+              </span>
+            )}
+          </div>
+        )}
+
         {/* Distribution table */}
         {!loading && !error && !drilldown && distribution && (
           <>
@@ -207,6 +233,7 @@ export default function AnalyticsPage() {
                       <th className="px-4 py-3 font-medium">Label</th>
                       <th className="px-4 py-3 font-medium w-16 text-right">Count</th>
                       <th className="px-4 py-3 font-medium w-16 text-right">%</th>
+                      <th className="px-4 py-3 font-medium w-24 text-right">Feedback</th>
                       <th className="px-4 py-3 font-medium w-40">Distribution</th>
                     </tr>
                   </thead>
@@ -226,6 +253,17 @@ export default function AnalyticsPage() {
                         </td>
                         <td className="px-4 py-3 text-right text-gray-500">
                           {row.percentage.toFixed(1)}%
+                        </td>
+                        <td className="px-4 py-3 text-right text-xs">
+                          {row.rated > 0 ? (
+                            <span className="text-gray-500">
+                              <span className="text-green-600">{row.good}</span>
+                              {' / '}
+                              <span className="text-red-600">{row.bad}</span>
+                            </span>
+                          ) : (
+                            <span className="text-gray-300">&mdash;</span>
+                          )}
                         </td>
                         <td className="px-4 py-3">
                           <div className="w-full bg-gray-100 rounded-full h-2">

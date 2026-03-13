@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { put, list } from '@vercel/blob';
 import { Resend } from 'resend';
+import type { QueryLogEntry } from '@/lib/query-logger';
 
 interface FeedbackEntry {
   id: string;
@@ -13,6 +14,7 @@ interface FeedbackEntry {
   queryType?: string;
   source?: string;
   shareUrl?: string;
+  queryLogId?: string;
 }
 
 let resendClient: Resend | null = null;
@@ -32,7 +34,7 @@ const FEEDBACK_EMAIL = process.env.FEEDBACK_EMAIL || 'delivered@resend.dev';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, query, answer, rating, comment, queryType, source, shareUrl } = body;
+    const { name, query, answer, rating, comment, queryType, source, shareUrl, queryLogId } = body;
 
     if (!name || typeof name !== 'string' || name.trim() === '') {
       return NextResponse.json(
@@ -73,6 +75,7 @@ export async function POST(request: NextRequest) {
       queryType,
       source: source?.trim() || undefined,
       shareUrl: shareUrl?.trim() || undefined,
+      queryLogId: queryLogId || undefined,
     };
 
     // Log to console (always visible in Vercel function logs)
@@ -91,6 +94,37 @@ export async function POST(request: NextRequest) {
     } catch (blobError) {
       console.error('Failed to persist feedback to Blob:', blobError);
       // Don't fail the request if Blob write fails
+    }
+
+    // Write rating back to query log entry (fire-and-forget)
+    if (queryLogId && typeof queryLogId === 'string' && queryLogId.startsWith('ql_')) {
+      try {
+        // Derive month from the base36 timestamp in the ID: ql_{base36_ts}_{random}
+        const tsBase36 = queryLogId.split('_')[1];
+        const tsMs = parseInt(tsBase36, 36);
+        const logDate = new Date(tsMs);
+        const logMonth = `${logDate.getFullYear()}-${String(logDate.getMonth() + 1).padStart(2, '0')}`;
+        const logPathname = `query-log/${logMonth}/${queryLogId}.json`;
+
+        // Fetch, merge, re-upload
+        const logBlobs = await list({ prefix: logPathname });
+        if (logBlobs.blobs.length > 0) {
+          const logResp = await fetch(logBlobs.blobs[0].url, { cache: 'no-store' });
+          if (logResp.ok) {
+            const logEntry = (await logResp.json()) as QueryLogEntry;
+            logEntry.rating = rating;
+            if (comment?.trim()) logEntry.comment = comment.trim();
+            await put(logPathname, JSON.stringify(logEntry), {
+              access: 'public',
+              contentType: 'application/json',
+              addRandomSuffix: false,
+              allowOverwrite: true,
+            });
+          }
+        }
+      } catch (linkErr) {
+        console.error('Failed to link feedback to query log:', linkErr);
+      }
     }
 
     // Send email notification

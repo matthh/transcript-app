@@ -32,6 +32,7 @@ type QueryType = 'factual' | 'interpretive' | 'hybrid';
 interface SearchResponse {
   answer: string;
   queryType: QueryType;
+  queryId?: string;
   canDeepen?: boolean;
   metadata?: {
     totalCount: number;
@@ -406,7 +407,7 @@ export default function Home() {
               </div>
             )}
 
-            <FeedbackForm query={searchedQuery} answer={result.answer} queryType={result.queryType} />
+            <FeedbackForm query={searchedQuery} answer={result.answer} queryType={result.queryType} queryLogId={result.queryId} />
           </div>
         )}
 
