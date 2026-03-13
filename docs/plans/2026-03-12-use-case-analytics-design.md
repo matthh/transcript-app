@@ -55,7 +55,7 @@ useCaseLLM?: string;   // LLM tag, set by batch script
 ### 4. API Endpoint (`GET /api/analytics/use-cases`)
 
 Query params:
-- `month` — optional, defaults to current month. Use `all` for all time.
+- `week` — optional, ISO week start date (e.g., `2026-03-10` for the week of Mar 10). Defaults to current week. Use `all` for all time.
 - `useCase` — optional, filter to specific UC for drill-down.
 
 Response shape:
@@ -65,10 +65,12 @@ Response shape:
     { "useCase": "UC-3", "label": "Single-Episode Opinion", "count": 142, "percent": 34.2 }
   ],
   "totalQueries": 415,
-  "period": "2026-03",
+  "period": "2026-03-10/2026-03-16",
   "queries": []
 }
 ```
+
+Note: Logs are stored by month in Blob (`query-log/2026-03/`). The API reads the relevant month blob(s) and filters by date range client-side. A week spanning two months (e.g., Mar 30 – Apr 5) reads both months.
 
 `queries` array populated only when `useCase` param is set (drill-down mode). Each entry: `{ id, query, useCase, timestamp, rating, routingPath }`.
 
@@ -78,7 +80,7 @@ Use case resolution: prefer `useCaseLLM` when present, fall back to `useCase`.
 
 Uses existing app styling. Components:
 
-- **Month selector** — dropdown, defaults to current month, includes "All time"
+- **Week selector** — dropdown or date picker, defaults to current week, includes "All time"
 - **Distribution table** — UC label, count, percentage, bar visualization
 - **Drill-down** — click a UC row to expand/navigate to query list for that UC
 - **Query list** — query text, timestamp, rating badge, routing path. Sorted by recency.
