@@ -228,19 +228,19 @@ When evaluating a proposed change or bug fix:
 
 > Rank these categories by importance to guide where investment should go and which regressions are least acceptable.
 
-| Rank | Use Case | Rationale |
-|------|----------|-----------|
-| 1 | **UC-3: Single-Episode Opinion** | Core use case — "what did they think about X?" is the most common query pattern. Includes preference/judgment queries. |
-| 2 | **UC-1: Episode Lookup** | Foundational — users need to find episodes reliably |
-| 3 | **UC-2: Metadata Listing** | High-frequency, must be fast and accurate |
-| 4 | **UC-4: Host-Scoped Attribution** | Differentiator — users care who said what |
-| 5 | **UC-11: Quote & Phrase Lookup** | High-value "find that moment" queries |
-| 6 | **UC-8: Voicemail, Letter & Segment** | Important to the podcast's community identity |
-| 7 | **UC-7: Personal / Lifestyle** | Fans love these — "does Jason like BBQ" type queries |
-| 8 | **UC-5: Cross-Episode Thematic** | Valuable but harder to get right |
-| 9 | **UC-6: Cross-Episode Entity / Exhaustive Tracking** | Valuable but tolerates partial answers |
-| 10 | **UC-10: Catchphrase & Recurring Patterns** | Fun, community-driven |
-| 11 | **UC-9: Counting & Frequency (Agent)** | Impressive when it works, but niche |
-| 12 | **UC-13: Guest-Scoped** | Moderate frequency |
-| 13 | **UC-12: Factual Fallback** | Edge case, mostly handled |
-| 14 | **UC-14: Podcast Meta** | Rare, partially out of scope |
+| Tier | Rank | Use Case | Rationale |
+|------|------|----------|-----------|
+| **Must nail** | 1 | **UC-3: Single-Episode Opinion** | Core use case — "what did they think about X?" is the most common query pattern. Includes preference/judgment queries. |
+| | 2 | **UC-11: Quote & Phrase Lookup** | High-value "find that moment" queries — this is what makes the product feel magical |
+| | 3 | **UC-4: Host-Scoped Attribution** | Differentiator — users care who said what |
+| | 4 | **UC-5: Cross-Episode Thematic** | Key for discovery — surfacing patterns across the podcast |
+| **Important** | 5 | **UC-8: Voicemail, Letter & Segment** | Important to the podcast's community identity |
+| | 6 | **UC-7: Personal / Lifestyle** | Fans love these — "does Jason like BBQ" type queries |
+| | 7 | **UC-6: Cross-Episode Entity / Exhaustive Tracking** | Valuable but tolerates partial answers |
+| | 8 | **UC-10: Catchphrase & Recurring Patterns** | Fun, community-driven |
+| **Nice to have** | 9 | **UC-1: Episode Lookup** | Useful but users can browse the episode list |
+| | 10 | **UC-2: Metadata Listing** | Useful but not why users come to the search tool |
+| | 11 | **UC-9: Counting & Frequency (Agent)** | Impressive when it works, but niche |
+| | 12 | **UC-13: Guest-Scoped** | Moderate frequency |
+| | 13 | **UC-12: Factual Fallback** | Edge case, mostly handled |
+| | 14 | **UC-14: Podcast Meta** | Rare, partially out of scope |
