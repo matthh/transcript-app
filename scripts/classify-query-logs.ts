@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
 import { list, put } from '@vercel/blob';
 import Anthropic from '@anthropic-ai/sdk';
 import { UC_LABELS } from '../src/lib/use-case-classifier';
