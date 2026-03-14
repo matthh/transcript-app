@@ -103,14 +103,26 @@ export async function searchSoundtrack(
       return null;
     }
 
-    // Find best match: prefer albums with "soundtrack" in name, then exact film title match
+    // Find best match: prefer albums starting with film title, with "soundtrack" in name,
+    // and released near the film year
     const titleLower = filmTitle.toLowerCase();
-    const scored = albums.map((album: { name: string; album_type: string }) => {
+    const scored = albums.map((album: { name: string; album_type: string; release_date?: string }) => {
       const nameLower = album.name.toLowerCase();
       let score = 0;
       if (nameLower.includes('soundtrack') || nameLower.includes('original motion picture')) score += 3;
-      if (nameLower.includes(titleLower)) score += 2;
+      // Strong boost for album name starting with the film title (avoids partial substring matches)
+      if (nameLower.startsWith(titleLower)) score += 4;
+      else if (nameLower.includes(titleLower)) score += 1;
       if (album.album_type === 'compilation') score += 1;
+      // Boost albums released within a few years of the film
+      if (filmYear && album.release_date) {
+        const albumYear = parseInt(album.release_date.substring(0, 4), 10);
+        if (!isNaN(albumYear)) {
+          const yearDiff = Math.abs(albumYear - filmYear);
+          if (yearDiff <= 2) score += 3;
+          else if (yearDiff <= 10) score += 1;
+        }
+      }
       return { album, score };
     });
     scored.sort((a: { score: number }, b: { score: number }) => b.score - a.score);
