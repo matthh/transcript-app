@@ -86,8 +86,8 @@ Last updated: 2026-03-12
 - "who are the people who leave voicemails in Midsommar and the 4 episodes prior"
 
 **Pipeline path**: Two paths depending on query structure:
-- **RAG** (no agent pattern match): "every time Bill Murray is mentioned", "River Phoenix", "director ranking" — standard retrieval pipeline with diversification to surface multiple episodes.
-- **Agent** (pattern match triggers): "earliest mentions of Jodorowsky" (B4: temporal ordering), "list all props talked about buying" (B3: exhaustive listing + utterance verb), "voicemailers in Midsommar and 4 episodes prior" (B7: multi-episode extraction).
+- **RAG** (no agent pattern match): "every time Bill Murray is mentioned", "director ranking" — standard retrieval pipeline with diversification to surface multiple episodes.
+- **Agent** (pattern match triggers): "earliest mentions of Jodorowsky" (B4: temporal ordering), "list all props talked about buying" (B3: exhaustive listing + utterance verb), "voicemailers in Midsommar and 4 episodes prior" (B7: multi-episode extraction), "in what context has River Phoenix been mentioned" (B8: mention context), "was Magic the Gathering ever mentioned" (B8: existence check).
 **Eval cases**: Bill Murray mentions, River Phoenix, Jodorowsky cross-episode, Director ranking, Props listing, Midsommar voicemailers
 
 ---
@@ -158,8 +158,10 @@ Last updated: 2026-03-12
 - "what was the deal with Joe Eszterhas' security guy"
 - "What did Jason say about being the digital court jew for the new pope?"
 
-**Pipeline path**: Interpretive classification → BM25 keyword matching (with Whisper synonym expansion for ASR errors) → adjacent chunk expansion → reranking → keyword-centered excerpt extraction.
-**Eval cases**: Lead paint chips, Dingus voicemail, AKA caller, Eszterhas security guy, Digital court jew, Paul Atreides Nutz, Dune sleeves quote, The Mark/American Movie, Deakins Award
+**Pipeline path**: Two paths:
+- **RAG**: BM25 keyword matching (with Whisper synonym expansion for ASR errors) → adjacent chunk expansion → reranking → keyword-centered excerpt extraction.
+- **Agent** (B10 pattern match): "which episode did Jason say X" → agent grep for verbatim phrase across all transcripts.
+**Eval cases**: Lead paint chips, Dingus voicemail, AKA caller, Eszterhas security guy, Digital court jew, Paul Atreides Nutz, Dune sleeves quote, The Mark/American Movie, Deakins Award, Wonka fucks (B10)
 
 ---
 

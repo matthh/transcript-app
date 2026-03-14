@@ -131,7 +131,9 @@ For each reported bad query:
   - B6 (episode counting — “how many episodes mention/discuss”): covers episode-level counting
   - B7 (multi-episode entity extraction — “N episodes prior/before/after”): covers F13 (“voicemails in Midsommar and 4 episodes prior”)
   - B1/B2 also help (see FM-05)
-- **B3 routing gap — “what are all” variant**: B3 pattern only matches `(list|name) + (all|every)` + utterance verb. Queries using “what are all the things that have been called/described as X” bypass agent routing because: (1) “what are all” is not in the trigger set, (2) “called” is a passive verb not in the utterance verb set. Example: “What are all the things that have been called 'absolute bangers'” — 130 episodes contain “banger” but RAG only surfaces ~10, producing an incomplete answer. Fix: widen B3 trigger set to include `(what are|what were|find)` and verb set to include `(called|described|referred to|labeled)`.
+- **B3 routing gap — “what are all” variant** (FIXED): B3 widened to include `(what are|what were|find)` triggers and passive verbs `(called|described|referred to|labeled)`.
+- **B8 (shipped)**: Cross-episode mention context — “in what context has X been mentioned/discussed”, “was X ever mentioned”, “are there any mentions of X”. Routes entity-tracking existence queries to agent for exhaustive transcript search.
+- **B10 (shipped)**: Episode/segment quote finder — “which episode/segment did X say Y”. Routes verbatim phrase-finding queries to agent grep.
 - Residual risk: queries without utterance verbs (e.g., “what villeneuve movies have been episodes”) stay on RAG — these are metadata-answerable. Persona aggregation (“What does Jason think of fishing”) stays on RAG — handled by sub-chunks and supplemental queries.
 
 ### FM-07: Role Attribution Error (Host vs Guest vs Voicemailer) — PARTIALLY MITIGATED

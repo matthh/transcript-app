@@ -295,6 +295,12 @@ Phase B shipped deliverables (agent routing gate expansion):
 - Eval results: 70 cases, 69/70 pass (Eszterhas known flake, not a regression). All 7 agent-phase-b cases pass. All existing agent cases confirmed passing under new routing. 0 regressions.
 - User feedback failures addressed: F1 (props listing), F5 (windowed comparison), F7 (repeated phrases), F11 (earliest Jodorowsky), F13 (multi-episode voicemailers). Remaining unaddressed: F2–F4, F6, F8–F10, F12 (require other fixes: metadata aggregation, director routing, personal sub-chunk expansion).
 
+Phase B+ routing expansion (B3 widening, B8, B10):
+- ✅ **B3 widened**: Added `(what are|what were|find)` triggers and passive verbs `(called|described|referred to|labeled)`. Fixes "What are all the things called absolute bangers" routing.
+- ✅ **B8: Cross-episode mention context**: 3 patterns — "in what context has X been mentioned", "was X ever mentioned", "are there any mentions of X". Routes entity existence/context queries (River Phoenix, Magic the Gathering, Ethan Steel) to agent for exhaustive search.
+- ✅ **B10: Episode/segment quote finder**: "which episode/segment did X say/mention Y". Routes verbatim quote-finding queries (Wonka fucks, Dark Crystal, Kev humming) to agent grep.
+- 3 new eval cases: absolute bangers (B3), River Phoenix (B8), Wonka fucks (B10). Eval dataset: 84 → 86 cases. 10/10 agent-phase-b cases pass.
+
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
 - Align quick/deep behavior and `canDeepen` semantics across endpoints.

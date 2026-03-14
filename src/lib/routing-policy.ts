@@ -213,6 +213,15 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase B7: Multi-episode entity extraction — "in [episode] and N episodes prior/before/after"
   /\b\d+\s*(episode|ep)s?\s*(prior|before|after|earlier|later)\b/i,
 
+  // Phase B8: Cross-episode mention context — "in what context has X been mentioned/discussed"
+  // Also catches "was X ever mentioned", "has X ever been discussed", "are there any mentions of X"
+  /\b(in what context|where|when)\b.*\b(has|have|was|were|is)\b.*\b(mentioned|discussed|referenced|brought up|talked about|come up)\b/i,
+  /\b(was|were|has|have|is)\b.*\bever\b.*\b(mentioned|discussed|referenced|brought up|talked about|come up)\b/i,
+  /\bare there any\s+(mentions?|discussions?|references?)\s+of\b/i,
+
+  // Phase B10: Episode/segment quote finder — "which episode/segment did X say/mention Y"
+  /\b(which|what|in which)\s+(episode|segment|ep)\b.*\b(did|does|do)\s+\w+\s+(say|said|mention|hum|sing|quote|ask|yell|scream|call)\b/i,
+
   // Phase C1: Transcript excerpt — "give/show/find/pull up the [X] bit/part/section/moment/riff/rant"
   /\b(give|show|find|pull up|get)\b.*\bthe\b.{0,40}\b(bit|part|section|moment|riff|rant|scene|exchange|conversation|excerpt|passage)\b.*\b(where|when|about|from)\b/i,
 ];

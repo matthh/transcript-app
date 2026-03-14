@@ -1309,6 +1309,32 @@
         "banger"
       ],
       "expectMinDistinctTranscriptEpisodes": 15
+    },
+    {
+      "name": "Cross-episode mention context — River Phoenix (B8)",
+      "query": "In what context has the actor River Phoenix been mentioned on the podcast?",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "cross-episode"
+      ],
+      "expectTextInAnswer": [
+        "River Phoenix"
+      ],
+      "expectMinDistinctTranscriptEpisodes": 2
+    },
+    {
+      "name": "Episode quote finder — Wonka fucks (B10)",
+      "query": "In which episode does Jason say: \"I hope this Wonka fucks.\"",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "quote-lookup"
+      ],
+      "expectTextInAnswer": [
+        "Wonka"
+      ],
+      "expectMinTranscriptSources": 1
     }
   ]
 }
