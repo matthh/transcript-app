@@ -264,6 +264,19 @@ For each reported bad query:
 - User-visible symptom: answer describes what happens in the movie rather than what the hosts said about it.
 - Plan alignment: Phase 5 (metadata enrichment with character names), Phase 2d-2 (entity-aware retrieval).
 
+### FM-19: Agent Synthesis Chain-of-Thought Leakage
+- Stage: Synthesis (agent path)
+- Query type: any query routed to agent search
+- Why hard now: the agent model (Sonnet) generates its final answer as a text response after tool-use iterations. Occasionally the model includes internal planning/reasoning language (e.g., "Perfect! Now I have a comprehensive view... Let me organize this for the user.") in its output. The agent answer is passed directly to the user without post-processing.
+- Common miss: answer contains meta-commentary like "Let me organize this information", "Now I have all the data", "Perfect!", or other chain-of-thought fragments that reveal the model is talking to itself rather than the user.
+- User-visible symptom: answer reads as if the AI is narrating its thought process rather than presenting information directly. Breaks immersion and feels unpolished.
+- Example: "What are all the times the Hoffman Process has been mentioned" → agent answer included "Perfect! Now I have a comprehensive view of all the Hoffman Process mentions. Let me organize this information for the user." before the actual organized answer.
+- Non-deterministic: reproductions of the same query may not exhibit the issue (model-level stochasticity).
+- Proposed mitigations:
+  1. **Agent system prompt hardening**: Add explicit instruction to `AGENT_SYSTEM_PROMPT` telling the model to never include internal reasoning, planning, or meta-commentary in its answer. "Write your answer directly for the user — do not narrate your thought process."
+  2. **Post-processing strip**: Regex-based cleanup of the agent answer before streaming to the user — strip lines matching patterns like "Let me organize", "Perfect!", "Now I have", "I'll present this" etc. Defense-in-depth for when the prompt instruction fails.
+- Plan alignment: Phase 6 (agent search quality hardening).
+
 ## Query Classes That Are Intrinsically Hard In Current Architecture
 
 These are expected to be hard until dedicated handling is added:

@@ -301,6 +301,11 @@ Phase B+ routing expansion (B3 widening, B8, B10):
 - ✅ **B10: Episode/segment quote finder**: "which episode/segment did X say/mention Y". Routes verbatim quote-finding queries (Wonka fucks, Dark Crystal, Kev humming) to agent grep.
 - 3 new eval cases: absolute bangers (B3), River Phoenix (B8), Wonka fucks (B10). Eval dataset: 84 → 86 cases. 10/10 agent-phase-b cases pass.
 
+Agent synthesis quality hardening (FM-19):
+- ✅ **Agent system prompt anti-CoT instruction**: Added explicit instruction to `AGENT_SYSTEM_PROMPT` in `agent-search.ts` forbidding internal reasoning/planning language in answers: "Write your answer directly for the user. Never include internal reasoning, planning, or meta-commentary."
+- ~~Post-processing strip~~: Rejected — regex-based stripping risks hitting legitimate answer content (e.g., podcast quotes containing "Let me" or "Perfect"). Prompt instruction is sufficient and follows the same pattern as synthesis grounding rules.
+- Acceptance criteria: FM-19 eval case passes consistently. No agent answer contains meta-commentary patterns.
+
 Remaining deliverables:
 - ~~Formalize synthesis policy matrix by query class~~ **Shipped in Phase 3c** — JSDoc in `routing-policy.ts` documents all 5 query class combinations.
 - Align quick/deep behavior and `canDeepen` semantics across endpoints.

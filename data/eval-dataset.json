@@ -1335,6 +1335,26 @@
         "Wonka"
       ],
       "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Agent chain-of-thought leakage — Hoffman Process (FM-19)",
+      "query": "What are all the times the Hoffman Process has been mentioned",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "synthesis-quality"
+      ],
+      "expectTextInAnswer": [
+        "Hoffman Process"
+      ],
+      "rejectTextInAnswer": [
+        "Let me organize",
+        "for the user",
+        "Now I have a comprehensive",
+        "Perfect! Now"
+      ],
+      "expectMinTranscriptSources": 3,
+      "expectMinDistinctTranscriptEpisodes": 3
     }
   ]
 }
