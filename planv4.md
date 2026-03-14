@@ -283,7 +283,7 @@ Phase B shipped deliverables (agent routing gate expansion):
 - ✅ **Expanded routing patterns** (`src/lib/routing-policy.ts`): Renamed `AGENT_PHASE_A_PATTERNS` → `AGENT_ROUTING_PATTERNS`. Added 7 new regex patterns (B1–B7) covering broader aggregation query classes identified from user feedback analysis (11 of 13 negative feedback entries involved FM-06 cross-episode aggregation):
   - B1: Speaker comparison ("who says X more") — routes "who says yeah more, jason or matt"
   - B2: Windowed comparison ("first/last N episodes" + comparison word) — routes "Has Haitch said 'we'll get there' more in the last 100 episodes"
-  - B3: Exhaustive listing ("list/name all/every" + utterance verb) — routes "List all the props...talked about buying"
+  - B3: Exhaustive listing ("list/name all/every" + utterance verb) — routes "List all the props...talked about buying". **Gap**: "what are all the things called X" bypasses B3 — needs wider trigger set + passive verbs (called/described/referred to).
   - B4: Temporal ordering ("earliest/first mention of") — routes "earliest mentions of Jodorowsky"
   - B5: Frequency ranking ("most frequent/common/repeated" + noun) — routes "most oft-repeated terms or phrases"
   - B6: Episode counting ("how many episodes" + topic verb) — routes "how many episodes mention Kubrick"

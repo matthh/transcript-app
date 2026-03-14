@@ -1295,6 +1295,20 @@
         "couldn't find",
         "could not find"
       ]
+    },
+    {
+      "name": "Exhaustive phrase search — absolute bangers (B3 routing gap)",
+      "query": "What are all the things that have been called \"absolute bangers\"",
+      "tags": [
+        "agent",
+        "agent-phase-b",
+        "cross-episode",
+        "exhaustive"
+      ],
+      "expectTextInAnswer": [
+        "banger"
+      ],
+      "expectMinDistinctTranscriptEpisodes": 15
     }
   ]
 }

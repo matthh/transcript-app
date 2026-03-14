@@ -198,8 +198,8 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase B2: Windowed comparison — "first/last N episodes" with comparison word
   /\b(first|last)\s+\d+\s*(episode|ep)s?\b.*\b(more|less|most|often|first|last)\b/i,
 
-  // Phase B3: Exhaustive listing — "list/name all/every" + utterance verb
-  /\b(list|name)\s+(all|every)\b.*\b(talked|discussed|mentioned|said|brought up)\b/i,
+  // Phase B3: Exhaustive listing — "list/name/what are all/every" + utterance or passive verb
+  /\b(list|name|what are|what were|find)\b.{0,20}\b(all|every)\b.*\b(talked|discussed|mentioned|said|brought up|called|described|referred to|labeled)\b/i,
 
   // Phase B4: Earliest/first mention — temporal ordering
   /\b(earliest|first)\s+(mention|time|instance|reference|discussion)s?\s+(of|that)\b/i,
