@@ -189,8 +189,8 @@ export async function POST(request: NextRequest) {
         if (newVal === undefined) continue;
         // Don't overwrite with blank
         if (newVal === '' || newVal === null) continue;
-        const oldVal = String(updatedRow[colIdx] || '');
-        if (oldVal !== newVal) {
+        const oldVal = String(updatedRow[colIdx] || '').trim();
+        if (oldVal !== newVal.trim()) {
           updatedRow[colIdx] = newVal;
           changedFields.push(key);
         }
@@ -209,7 +209,7 @@ export async function POST(request: NextRequest) {
       await sheets.spreadsheets.values.update({
         spreadsheetId: SHEET_ID,
         range: `'${SHEET_TAB}'!A${sheetRowNum}`,
-        valueInputOption: 'RAW',
+        valueInputOption: 'USER_ENTERED',
         requestBody: { values: [updatedRow] },
       });
 
@@ -230,7 +230,7 @@ export async function POST(request: NextRequest) {
       await sheets.spreadsheets.values.append({
         spreadsheetId: SHEET_ID,
         range: `'${SHEET_TAB}'!A1`,
-        valueInputOption: 'RAW',
+        valueInputOption: 'USER_ENTERED',
         insertDataOption: 'INSERT_ROWS',
         requestBody: { values: [newRow] },
       });
