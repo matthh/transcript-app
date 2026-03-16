@@ -713,13 +713,6 @@ function ReviewForm({ auth }: { auth: string }) {
             <button onClick={copyOutput} style={styles.btnSecondary}>
               Copy Output
             </button>
-            <button
-              onClick={() => setShowPdcConfirm(true)}
-              disabled={pdcUpdating}
-              style={styles.btnPrimary}
-            >
-              {pdcUpdating ? 'Updating...' : 'Update PDC'}
-            </button>
             <button onClick={() => setShowResetConfirm(true)} style={styles.btnDanger}>
               Reset All
             </button>
@@ -899,8 +892,12 @@ function ReviewForm({ auth }: { auth: string }) {
 
         {/* Bottom actions */}
         <div style={{ display: 'flex', gap: 10, marginTop: 24, justifyContent: 'center' }}>
-          <button onClick={handleSubmit} disabled={submitting} style={{ ...styles.btnPrimary, padding: '12px 28px', fontSize: 15 }}>
-            {submitting ? 'Submitting...' : editingEpisodeId ? 'Update Episode' : 'Submit New'}
+          <button
+            onClick={() => setShowPdcConfirm(true)}
+            disabled={pdcUpdating}
+            style={{ ...styles.btnPrimary, padding: '12px 28px', fontSize: 15 }}
+          >
+            {pdcUpdating ? 'Updating...' : 'Update PDC'}
           </button>
           <button onClick={copyOutput} style={{ ...styles.btnSecondary, padding: '12px 20px' }}>
             Copy Output

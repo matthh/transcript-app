@@ -93,8 +93,10 @@ export async function POST(request: NextRequest) {
 
   const auth = getAuth();
   if (!auth) {
+    const hasJson = !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY_JSON;
+    const hasFile = !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE;
     return NextResponse.json(
-      { error: 'Google Sheets credentials not configured' },
+      { error: `Google Sheets credentials not configured (JSON: ${hasJson}, FILE: ${hasFile})` },
       { status: 500 }
     );
   }
