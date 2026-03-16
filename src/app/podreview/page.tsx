@@ -180,6 +180,8 @@ function ReviewForm({ auth }: { auth: string }) {
   // ── Submission & Reset ──
   const [submitting, setSubmitting] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [showPdcConfirm, setShowPdcConfirm] = useState(false);
+  const [pdcUpdating, setPdcUpdating] = useState(false);
 
   function showToast(msg: string, type?: string, duration = 2500) {
     setToast({ msg, type });
@@ -594,6 +596,60 @@ function ReviewForm({ auth }: { auth: string }) {
     );
   }
 
+  // ── Update PDC ──
+  async function updatePdc() {
+    if (!film.trim()) { showToast('Film name is required', 'error'); return; }
+    if (!episode) { showToast('Episode number is required', 'error'); return; }
+    if (!reviewer.trim()) { showToast('Reviewer name is required', 'error'); return; }
+
+    setPdcUpdating(true);
+    setShowPdcConfirm(false);
+    try {
+      const payload = {
+        pod: 'EH',
+        season: Number(season),
+        episode: /^\d+$/.test(episode) ? Number(episode) : episode,
+        film,
+        releaseDate,
+        length,
+        lengthMinutes: length ? parseLength(length) : '',
+        reviewer,
+        guest: guest || null,
+        mmmCount,
+        thatsGreatCount: tgCount,
+        notableMoments,
+        hFlex: hFlex || 'N/A',
+        jFlex: jFlex || 'N/A',
+        kevsQuestion: kevsQuestion || 'N/A',
+        tildaH: tildaH || 'N/A',
+        tildaJason: tildaJ || 'N/A',
+        tildaGuest: tildaGuest || null,
+        tildaCorey: tildaCorey || null,
+        showLink,
+        artworkLink,
+        letterboxdLink,
+        imdbLink,
+      };
+
+      const res = await fetch('/api/podreview/update-pdc', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      const result = await res.json();
+      if (res.ok) {
+        showToast(result.message || 'Sheet updated');
+      } else {
+        showToast(result.error || 'Update failed', 'error', 4000);
+      }
+    } catch {
+      showToast('Connection error', 'error');
+    } finally {
+      setPdcUpdating(false);
+    }
+  }
+
   // ── Episode picker ──
   const [showEpisodePicker, setShowEpisodePicker] = useState(false);
   const [episodeFilter, setEpisodeFilter] = useState('');
@@ -613,6 +669,24 @@ function ReviewForm({ auth }: { auth: string }) {
           ...(toast.type === 'warn' ? styles.toastWarn : {}),
         }}>
           {toast.msg}
+        </div>
+      )}
+
+      {/* PDC confirm overlay */}
+      {showPdcConfirm && (
+        <div style={styles.overlay} onClick={() => setShowPdcConfirm(false)}>
+          <div style={styles.confirmBox} onClick={e => e.stopPropagation()}>
+            <p style={{ margin: '0 0 6px', fontSize: 16, fontWeight: 700, color: '#e6edf3' }}>
+              Update PDC Sheet?
+            </p>
+            <p style={{ margin: '0 0 20px', fontSize: 14, lineHeight: 1.5, color: '#9aa7b5' }}>
+              This will {editingEpisodeId ? 'update' : 'insert'} episode <strong style={{ color: '#e6edf3' }}>{episode || '?'}</strong> in the <em>podreview test</em> sheet.
+            </p>
+            <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
+              <button onClick={() => setShowPdcConfirm(false)} style={styles.btnSecondary}>Cancel</button>
+              <button onClick={updatePdc} style={styles.btnPrimary}>Yes, Update</button>
+            </div>
+          </div>
         </div>
       )}
 
@@ -638,6 +712,13 @@ function ReviewForm({ auth }: { auth: string }) {
           <div style={styles.actions}>
             <button onClick={copyOutput} style={styles.btnSecondary}>
               Copy Output
+            </button>
+            <button
+              onClick={() => setShowPdcConfirm(true)}
+              disabled={pdcUpdating}
+              style={styles.btnPrimary}
+            >
+              {pdcUpdating ? 'Updating...' : 'Update PDC'}
             </button>
             <button onClick={() => setShowResetConfirm(true)} style={styles.btnDanger}>
               Reset All
