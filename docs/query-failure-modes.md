@@ -290,6 +290,16 @@ These are expected to be hard until dedicated handling is added:
 - Queries referencing fictional character names rather than film titles (FM-17). Routing depends on LLM world knowledge; within-episode retrieval struggles when the relevant discussion is a small section of a large chunk dominated by other topics. TMDB character-name enrichment (planned Phase 5) will add deterministic character→film routing.
 - Episode identification by non-title details (FM-18). Queries that reference an episode by a personal event, sidebar film ("pod-first"), or running joke rather than the canonical film title. `findFilmFromQuery()` can't route to the correct episode because the detail isn't in the film field. Notable-moments indexing (planned Phase 5) will help.
 
+### FM-20: Uningest Episode — Cross-Episode Evidence Contamination
+- Stage: Retrieval (ingest gap)
+- Query type: episode-scoped factual/interpretive where the target episode was never ingested
+- Why hard now: new episodes may be added to metadata (via `sync-metadata.ts`) before being ingested into the vector store + BM25 index. The episode appears in the episode list and metadata, but has zero chunks. Queries scoped to that episode pull semantically similar chunks from *other* episodes (often with the same guest), and synthesis confidently attributes cross-episode evidence to the requested episode.
+- Common miss: user asks "what did [guest] say about [topic] on the [film] episode" → retrieval finds guest discussing similar topic on a different episode → synthesis presents it as if it came from the target episode.
+- User-visible symptom: detailed, confident answer with fabricated attribution — content is real but from the wrong episode. Particularly dangerous because the answer *sounds* correct.
+- Example: "what did ben rhodes say about cuba on the argo episode" → pulls Cuba stories from Her, Casablanca, Three Days of the Condor episodes (all Ben Rhodes guest appearances) and attributes them to Argo.
+- Fix: (1) re-ingest after new episode transcription, (2) retrieval should detect when zero chunks match the target episode and surface that gap instead of backfilling with cross-episode evidence, (3) synthesis should not attribute cross-episode evidence to a specific requested episode.
+- Status: **Open**. Episode 299 (Argo) has 0 chunks in vector store despite having 800 dialogue turns in transcript (all speaker `?`).
+
 ## Common Miss Patterns We Should Expect
 
 - False negatives from insufficient retrieval coverage.

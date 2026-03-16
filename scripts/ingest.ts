@@ -1517,6 +1517,135 @@ async function playlistOnly() {
   console.log(`\n✓ Playlist data saved to ${PLAYLIST_DATA_PATH}`);
 }
 
+function getEpisodeArg(): number | null {
+  const idx = process.argv.indexOf('--episode');
+  if (idx === -1) return null;
+  const val = process.argv[idx + 1];
+  if (!val || isNaN(Number(val))) {
+    console.error('Usage: --episode <number>  (e.g. --episode 299)');
+    process.exit(1);
+  }
+  return Number(val);
+}
+
+async function singleEpisodeIngest(episodeNum: number) {
+  const fileName = `episode_${episodeNum}.json`;
+  const filePath = path.join(TRANSCRIPTS_DIR, fileName);
+
+  if (!fs.existsSync(filePath)) {
+    console.error(`Transcript not found: ${filePath}`);
+    process.exit(1);
+  }
+
+  if (!fs.existsSync(STORE_PATH) || !fs.existsSync(BM25_STORE_PATH)) {
+    console.error(`Existing vector-store.json and bm25-index.json required. Run full ingest first.`);
+    process.exit(1);
+  }
+
+  // Load transcript
+  const transcript: Transcript = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  const epTitle = transcript.episode_name;
+  console.log(`Single-episode ingest: ${epTitle} (episode ${episodeNum})\n`);
+
+  // Chunk the episode
+  const newChunks = chunkTranscript(transcript);
+  const asides = extractPersonalAsides(transcript);
+  const catchphrases = extractCatchphraseChunks(transcript);
+  const segments = extractSegmentChunks(transcript);
+  const allNewChunks = [...newChunks, ...asides, ...catchphrases, ...segments];
+  const suppCount = asides.length + catchphrases.length + segments.length;
+  const subMsg = suppCount > 0
+    ? ` + ${asides.length} aside(s) + ${catchphrases.length} catchphrase(s) + ${segments.length} segment(s)` : '';
+  console.log(`Created ${newChunks.length} chunks${subMsg} from ${transcript.dialogues?.length || 0} dialogue entries.`);
+
+  // Load existing stores
+  console.log('\nLoading existing vector store...');
+  const storeData = JSON.parse(fs.readFileSync(STORE_PATH, 'utf-8'));
+  const existingChunks: StoredChunk[] = storeData.chunks || [];
+  const oldCount = existingChunks.length;
+
+  // Remove old chunks for this episode (match by episodeTitle in metadata)
+  const kept = existingChunks.filter(c => c.metadata.episodeTitle !== epTitle);
+  const removed = oldCount - kept.length;
+  console.log(`Removed ${removed} existing chunk(s) for "${epTitle}".`);
+
+  // Generate embeddings for new chunks only
+  console.log(`\nGenerating embeddings for ${allNewChunks.length} new chunk(s)...`);
+  const embeddings = await generateEmbeddings(allNewChunks.map(c => c.text));
+
+  const newStoredChunks: StoredChunk[] = allNewChunks.map((chunk, i) => ({
+    id: chunk.id,
+    text: chunk.text,
+    embedding: embeddings[i],
+    metadata: {
+      episodeTitle: chunk.episodeTitle,
+      speakers: chunk.speakers.join(', '),
+      startTimestamp: chunk.startTimestamp,
+      endTimestamp: chunk.endTimestamp,
+    },
+  }));
+
+  // Merge
+  const merged = [...kept, ...newStoredChunks];
+  console.log(`\nMerged: ${kept.length} existing + ${newStoredChunks.length} new = ${merged.length} total chunks.`);
+
+  // Save vector store
+  fs.writeFileSync(STORE_PATH, JSON.stringify({ chunks: merged }));
+  console.log(`Vector store saved to ${STORE_PATH}`);
+
+  // Rebuild BM25 from all docs
+  console.log('\nRebuilding BM25 index...');
+  const bm25Documents: BM25Document[] = merged.map(chunk => ({
+    id: chunk.id,
+    text: chunk.text,
+    metadata: chunk.metadata,
+  }));
+  const bm25Index = buildBM25Index(bm25Documents);
+  fs.writeFileSync(BM25_STORE_PATH, JSON.stringify(bm25Index));
+  console.log(`BM25 index saved (${Object.keys(bm25Index.invertedIndex).length} unique terms).`);
+
+  // Update topic vectors if they exist
+  if (!process.argv.includes('--skip-topics')) {
+    const topicPath = path.join(process.cwd(), 'topic-vectors.json');
+    if (fs.existsSync(topicPath)) {
+      console.log('\nUpdating topic vectors...');
+      const topicData = JSON.parse(fs.readFileSync(topicPath, 'utf-8'));
+      const existingTopics = (topicData.chunks || []).filter(
+        (t: { metadata: { episodeTitle: string } }) => t.metadata.episodeTitle !== epTitle
+      );
+
+      // Generate topics for new standard chunks only (not asides/catchphrases/segments)
+      const topicSummaries = await extractTopicSummaries(newChunks);
+      if (topicSummaries.size > 0) {
+        const topicEntries = Array.from(topicSummaries.entries());
+        const topicTexts = topicEntries.map(([, summary]) => summary);
+        console.log(`Generating 512-dim embeddings for ${topicTexts.length} topic summaries...`);
+        const topicEmbeddings = await generateEmbeddings512(topicTexts);
+
+        const newTopicChunks = topicEntries.map(([chunkId, summary], i) => {
+          const parentChunk = newStoredChunks.find(c => c.id === chunkId);
+          return {
+            id: `${chunkId}_topic`,
+            text: summary,
+            embedding: topicEmbeddings[i],
+            parentChunkId: chunkId,
+            topicVersion: TOPIC_VERSION,
+            metadata: parentChunk?.metadata ?? { episodeTitle: '', speakers: '', startTimestamp: '', endTimestamp: '' },
+          };
+        });
+
+        const mergedTopics = [...existingTopics, ...newTopicChunks];
+        fs.writeFileSync(topicPath, JSON.stringify({ chunks: mergedTopics }));
+        console.log(`Topic vectors updated: ${mergedTopics.length} total (${newTopicChunks.length} new).`);
+      }
+    }
+  }
+
+  console.log(`\n✓ Single-episode ingest complete for "${epTitle}".`);
+}
+
+const episodeArg = getEpisodeArg();
+
 if (process.argv.includes('--dry-run-asides')) {
   dryRunAsides().catch(console.error);
 } else if (process.argv.includes('--dry-run-segments')) {
@@ -1525,6 +1654,8 @@ if (process.argv.includes('--dry-run-asides')) {
   topicsOnly().catch(console.error);
 } else if (process.argv.includes('--playlist-only')) {
   playlistOnly().catch(console.error);
+} else if (episodeArg !== null) {
+  singleEpisodeIngest(episodeArg).catch(console.error);
 } else {
   main().catch(console.error);
 }

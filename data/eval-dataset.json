@@ -1297,7 +1297,7 @@
       ]
     },
     {
-      "name": "Exhaustive phrase search — absolute bangers (B3 routing gap)",
+      "name": "Exhaustive phrase search \u2014 absolute bangers (B3 routing gap)",
       "query": "What are all the things that have been called \"absolute bangers\"",
       "tags": [
         "agent",
@@ -1311,7 +1311,7 @@
       "expectMinDistinctTranscriptEpisodes": 15
     },
     {
-      "name": "Cross-episode mention context — River Phoenix (B8)",
+      "name": "Cross-episode mention context \u2014 River Phoenix (B8)",
       "query": "In what context has the actor River Phoenix been mentioned on the podcast?",
       "tags": [
         "agent",
@@ -1324,7 +1324,7 @@
       "expectMinDistinctTranscriptEpisodes": 2
     },
     {
-      "name": "Episode quote finder — Wonka fucks (B10)",
+      "name": "Episode quote finder \u2014 Wonka fucks (B10)",
       "query": "In which episode does Jason say: \"I hope this Wonka fucks.\"",
       "tags": [
         "agent",
@@ -1337,7 +1337,7 @@
       "expectMinTranscriptSources": 1
     },
     {
-      "name": "Agent chain-of-thought leakage — Hoffman Process (FM-19)",
+      "name": "Agent chain-of-thought leakage \u2014 Hoffman Process (FM-19)",
       "query": "What are all the times the Hoffman Process has been mentioned",
       "tags": [
         "agent",
@@ -1355,6 +1355,23 @@
       ],
       "expectMinTranscriptSources": 3,
       "expectMinDistinctTranscriptEpisodes": 3
+    },
+    {
+      "name": "Cross-episode contamination: Ben Rhodes Cuba on Argo (FM-20)",
+      "query": "what did ben rhodes say about cuba on the argo episode",
+      "tags": [
+        "interpretive",
+        "guest",
+        "episode-scoped",
+        "FM-20"
+      ],
+      "expectSourceEpisode": "Argo",
+      "rejectTextInAnswer": [
+        "Jimmy Buffett",
+        "Margaritaville",
+        "Tampa Bay Rays"
+      ],
+      "expectMinTranscriptSources": 1
     }
   ]
 }
