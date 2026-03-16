@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 309 episodes - updated 2026-03-16
+// Auto-generated - do not edit - 310 episodes - updated 2026-03-16
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -13931,5 +13931,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Joan Cusack",
       "Tim Robbins"
     ]
+  },
+  {
+    "pod": "EH",
+    "season": 8,
+    "episode": 299,
+    "film": "Argo (2012)",
+    "filmYear": 2012,
+    "releaseDate": "3/15/2026",
+    "length": "2:21:21",
+    "reviewer": "birria",
+    "guest": "Ben Rhodes",
+    "mmmCount": 37,
+    "thatsGreatCount": 21,
+    "notableMoments": "Opens with talk about the Iran war - Ben is the perfect guest to talk about how crazy and illegal this war is. Plus disheartening discussion about what comes next with China, Russia, North Korea, Cuba\n- Ben's 6th appearance on the pod\n- Talk about Timothee Chalomet's chances at the Oscars\n- Dune 3 trailer coming - attached to theatrical release of Project Hail Mary\n- Haitch's son Sam discovered Mottley Crue, Jason's kids are listening to Axolotl in the Ocean\n- Ben talks about the CIA's relationship to Hollywood - CIA is really good at getting Hollywood to tell their side of the story (over Military and Government)\n- Ben talks about the CIA's relationship to Hollywood - CIA is really good at getting Hollywood to tell their side of the story (over Military and Government)\n- Letters - Bog Pod, Lizzen, Animal Mother, Mr Java with a Shakespeare parody, Truthsayer, Kev, Corey",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "What's a plan you had that you didn't think would work, but everything worked out? ",
+    "tildaH": "Haitch couldn't top Jason's pick of the Ayatollah",
+    "tildaJason": "Ayatollah Khomeni",
+    "tildaGuest": "Bryan Cranston CIA character",
+    "tildaCorey": "Bryan Cranston CIA character",
+    "showLink": "",
+    "artworkLink": "",
+    "letterboxdLink": "",
+    "imdbLink": ""
   }
 ];
