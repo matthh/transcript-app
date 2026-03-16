@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ['chromadb'],
+  serverExternalPackages: ['chromadb', 'googleapis'],
   outputFileTracingIncludes: {
     '/api/search': ['./data/**/*', './transcripts/**/*'],
     '/api/search/stream': ['./data/**/*', './transcripts/**/*'],
