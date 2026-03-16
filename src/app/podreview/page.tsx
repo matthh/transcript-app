@@ -589,8 +589,8 @@ function ReviewForm({ auth }: { auth: string }) {
       imdbLink,
     ];
 
-    const csv = values.map(escapeCSV).join(',');
-    navigator.clipboard.writeText(csv).then(
+    const tsv = values.join('\t');
+    navigator.clipboard.writeText(tsv).then(
       () => showToast('Copied to clipboard'),
       () => showToast('Copy failed', 'error')
     );
