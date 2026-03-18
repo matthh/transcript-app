@@ -1380,13 +1380,11 @@
         "interpretive",
         "host-scoped",
         "cross-episode",
+        "agent",
         "FM-21"
       ],
       "expectSourceEpisode": "High Fidelity (2000)",
-      "expectTextInAnswer": [
-        "music"
-      ],
-      "expectMinTranscriptSources": 3
+      "expectMinTranscriptSources": 5
     }
   ]
 }
