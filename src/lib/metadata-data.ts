@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 310 episodes - updated 2026-03-17
+// Auto-generated - do not edit - 310 episodes - updated 2026-03-18
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -13895,7 +13895,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Brian Schneider",
     "mmmCount": 43,
     "thatsGreatCount": 12,
-    "notableMoments": "Brian is the former Magic the Gathering Lead Game Designer - he talks about the process of building a game, and the crossroads between Magic and Poker\n- Tom and Zendaya got married in Tiburon\n- Brian likes Nick Hornby's overarching premise that \"People aren's perfect\"\n- Jason - This feels like the last pre-9-11 movie - There is an abundance and stability in this movie (economic and social) that hasn't existed since 9-11.\n- Haitch talks about opening up foor Green Day again\n- Haitch - this is a Gen X classic\n- Haitch - this is a Gen X classic\n- Soundtrack talk - Jason doesn't think the soundtrack is all that, considering the importance of Gen X music in the film. Too much 70s Boomer music, not enough Punk and New Wave.\n- Jack Black is 1000 Watts in this movie\n- Letters - Bog Pod, Animal Mother, Mr Java (Greg Kihn Band - Jeopardy parody), Truthsayer, Kev, Corey",
+    "notableMoments": "Brian is the former Magic the Gathering Lead Game Designer - he talks about the process of building a game, and the crossroads between Magic and Poker\n- Tom and Zendaya got married in Tiburon\n- Brian likes Nick Hornby's overarching premise that \"People aren's perfect\"\n- Jason - This feels like the last pre-9-11 movie - There is an abundance and stability in this movie (economic and social) that hasn't existed since 9-11.\n- Haitch talks about opening up foor Green Day again\n- Haitch - this is a Gen X classic\n- Soundtrack talk - Jason doesn't think the soundtrack is all that, considering the importance of Gen X music in the film. Too much 70s Boomer music, not enough Punk and New Wave.\n- Jack Black is 1000 Watts in this movie\n- Letters - Bog Pod, Animal Mother, Mr Java (Greg Kihn Band - Jeopardy parody), Truthsayer, Kev, Corey",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "What physical media do you miss the most?",
