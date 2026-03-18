@@ -290,6 +290,23 @@ These are expected to be hard until dedicated handling is added:
 - Queries referencing fictional character names rather than film titles (FM-17). Routing depends on LLM world knowledge; within-episode retrieval struggles when the relevant discussion is a small section of a large chunk dominated by other topics. TMDB character-name enrichment (planned Phase 5) will add deterministic character→film routing.
 - Episode identification by non-title details (FM-18). Queries that reference an episode by a personal event, sidebar film ("pod-first"), or running joke rather than the canonical film title. `findFilmFromQuery()` can't route to the correct episode because the detail isn't in the film field. Notable-moments indexing (planned Phase 5) will help.
 
+### FM-21: Host-Scoped Topic Search Missing Specific Episodes (Agent Routing Gap)
+- Stage: Routing + Retrieval
+- Query type: "what does [host] say about [topic]" — cross-episode host-scoped opinion queries where the user expects exhaustive coverage across all episodes, but RAG anchors on the most literal/dominant interpretation of the topic keyword.
+- Why hard now: RAG retrieval anchors on embedding similarity for the topic keyword (e.g., "the English") and surfaces chunks where that topic is most prominent (e.g., Last of the Mohicans, The King — both about British history). Chunks from episodes where the topic appears briefly in a different context (e.g., High Fidelity: "Do English people know about music the way we do?") are outranked because the embedding vector is dominated by the episode's primary subject (record collecting, music). No agent routing pattern matches "what does X say about Y" — it falls through to RAG's interpretive path.
+- Common miss: answer covers 2-3 episodes with the most literal/dominant treatment of the topic keyword, but misses episodes where the host made a distinctive offhand remark about the topic in a different context.
+- User-visible symptom: answer feels incomplete — user knows the host said something specific about the topic in another episode, but it's not included. Answer anchors on one narrow interpretation of the topic instead of surveying all contexts.
+- Example: "What does Haitch say about the English" → RAG returns Last of the Mohicans and The King (historical English/British themes) but misses High Fidelity turn 180: "Do English people know about music the way we do?" — a distinctive comment about English culture in a music context. High Fidelity doesn't appear in results at all.
+- Contributing factors:
+  1. **No agent routing**: "what does X say about Y" doesn't match any existing `AGENT_ROUTING_PATTERNS`. Agent grep would find all instances of "English" in Haitch's dialogue across all transcripts.
+  2. **Embedding dominance**: High Fidelity chunk containing the quote is dominated by record store / music collecting discussion — embedding similarity to "about the English" is weak.
+  3. **No episode scoping**: query doesn't reference High Fidelity, so no `findFilmFromQuery()` or `targetEpisodeTitles` injection fires.
+- Proposed mitigations:
+  1. **New agent routing pattern B11**: Match "what does/did [host] say about [topic]" and "what has [host] said about [topic]" patterns → route to agent for exhaustive grep across all transcripts. Pattern: `/\bwhat\s+(does|did|has)\s+\w+\s+(say|said|think|thought)\s+(about|of|on)\b/i`. This is a high-volume pattern in UC-4 analytics ("what has jason said about his dad", "what has jason said about running south by south lawn", etc.).
+  2. **Hybrid approach**: Run both RAG and agent in parallel for these queries, merge results. Agent provides exhaustive coverage, RAG provides synthesis context.
+- Related queries from analytics that share this pattern: "what has jason said about his dad", "has jason ever talked about acting on stage", "has jason talked about his daughter and tsunamis", "what has jason said about running south by south lawn at the white house".
+- Plan alignment: Phase B+ (agent routing expansion).
+
 ### FM-20: Uningest Episode — Cross-Episode Evidence Contamination
 - Stage: Retrieval (ingest gap)
 - Query type: episode-scoped factual/interpretive where the target episode was never ingested

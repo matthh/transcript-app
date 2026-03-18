@@ -1372,6 +1372,21 @@
         "Tampa Bay Rays"
       ],
       "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Host-scoped topic search: Haitch on the English across episodes (FM-21)",
+      "query": "What does Haitch say about the English",
+      "tags": [
+        "interpretive",
+        "host-scoped",
+        "cross-episode",
+        "FM-21"
+      ],
+      "expectSourceEpisode": "High Fidelity (2000)",
+      "expectTextInAnswer": [
+        "music"
+      ],
+      "expectMinTranscriptSources": 3
     }
   ]
 }

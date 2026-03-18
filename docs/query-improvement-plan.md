@@ -69,6 +69,21 @@ Success criteria: each query returns the expected metadata or transcript answer 
 - Interpretive/entity questions trigger transcript search even when filters are empty.
 - “Latest/current/total/max” questions return deterministic metadata answers.
 
+## Phase B+ Expansion: Agent Routing for Host-Scoped Topic Queries (FM-21)
+
+### Problem
+"What does [host] say about [topic]" queries go through RAG interpretive path, which anchors on the most literal/dominant interpretation of the topic keyword. Misses episodes where the host made distinctive offhand remarks in a different context (e.g., "What does Haitch say about the English" → misses High Fidelity "Do English people know about music" quote).
+
+### Deliverable: B11 Agent Routing Pattern
+- Add new `AGENT_ROUTING_PATTERNS` entry matching "what does/did/has [host] say/said/think/thought about [topic]" patterns.
+- Pattern: `/\bwhat\s+(does|did|has)\s+\w+\s+(say|said|think|thought)\s+(about|of|on)\b/i`
+- High-volume: UC-4 analytics shows frequent "what has jason said about X" queries.
+- Acceptance criteria:
+  - "What does Haitch say about the English" returns High Fidelity source with music context.
+  - "What has jason said about his dad" routes to agent and returns cross-episode results.
+  - No regression on existing UC-3 single-episode queries that happen to contain "say about" (e.g., "what did Haitch say about the iconic one-liner from They Live" should still work — may need episode-scoped exception).
+- Risk: over-routing UC-3 queries to agent. May need to exclude queries where `findFilmFromQuery()` detects a specific episode, limiting agent routing to genuinely cross-episode queries.
+
 ## Performance Regression
 - `npm run perf:queries` runs a latency harness against `/api/search`.
 - Set `PERF_BASE_URL` to target prod/staging.

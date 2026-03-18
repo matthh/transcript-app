@@ -432,7 +432,9 @@ Answer based on the Tilda casting data above. Be specific, cite examples from th
         });
 
         // ── Agent Search Branch ──────────────────────────────────────
-        const searchStrategy = resolveSearchStrategy(query, classification.searchStrategy);
+        const searchStrategy = resolveSearchStrategy(query, classification.searchStrategy, {
+          detectedFilm: classification.filters?.film || null,
+        });
         if (searchStrategy === 'agent') {
           console.log('Agent search activated for query:', query);
           send('progress', { stage: 'agent_search', message: 'Deep searching...' });

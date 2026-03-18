@@ -188,6 +188,10 @@ export function isAgentAutoDisabled(): boolean {
  * Catchphrase/recurring-phrase patterns remain deferred — RAG handles via sub-chunks.
  * Metadata-only listing queries (e.g., "list all movies reviewed") stay on RAG (no utterance verb).
  */
+
+/** B11 pattern — defined separately for film-gate identity check in resolveSearchStrategy */
+const B11_HOST_TOPIC_PATTERN = /\bwhat\s+(does|did|has|have)\s+\w+\s+(say|said|says|think|thought|thinks)\s+(about|of|on)\b/i;
+
 const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase A: counting/frequency with verb anchor
   /\b(how many times|how often|every time)\b.*\b(say|said|says|mention|mentioned|use|used|ask|asked|interrupt|interrupted|tell|told|bring up|brought up|call|called|repeat|repeated|reference|referenced)\b/i,
@@ -222,6 +226,12 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase B10: Episode/segment quote finder — "which episode/segment did X say/mention Y"
   /\b(which|what|in which)\s+(episode|segment|ep)\b.*\b(did|does|do)\s+\w+\s+(say|said|mention|hum|sing|quote|ask|yell|scream|call)\b/i,
 
+  // Phase B11: Host-scoped topic search — "what does/did/has [host] say/said/think about [topic]"
+  // Cross-episode exhaustive search for what a host said about a topic.
+  // Gated by detectedFilm in resolveSearchStrategy — if a specific film is detected, stay on RAG
+  // (episode-scoped UC-3 queries like "what did Haitch say about They Live" should use RAG).
+  B11_HOST_TOPIC_PATTERN,
+
   // Phase C1: Transcript excerpt — "give/show/find/pull up the [X] bit/part/section/moment/riff/rant"
   /\b(give|show|find|pull up|get)\b.*\bthe\b.{0,40}\b(bit|part|section|moment|riff|rant|scene|exchange|conversation|excerpt|passage)\b.*\b(where|when|about|from)\b/i,
 ];
@@ -238,7 +248,8 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
  *
  * Phase A patterns: counting/frequency with verb anchor.
  * Phase B patterns: speaker comparison, windowed comparison, exhaustive listing,
- *   temporal ordering, frequency ranking, episode counting, multi-episode extraction.
+ *   temporal ordering, frequency ranking, episode counting, multi-episode extraction,
+ *   host-scoped topic search (B11).
  * Phase C patterns: transcript excerpt retrieval ("show me the bit where...").
  *
  * Queries that stay on RAG (no pattern match):
@@ -246,12 +257,15 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
  * - Catchphrase queries ("If Jason had a catchphrase") — RAG sub-chunks
  * - Metadata-only listings ("list all movies reviewed") — no utterance verb
  * - Single-episode opinion queries — standard retrieval
+ * - B11 matches with a detected film → episode-scoped, stay on RAG
  *
  * Otherwise returns 'rag'.
  */
+
 export function resolveSearchStrategy(
   query: string,
   classifierSuggestion?: SearchStrategy,
+  options?: { detectedFilm?: string | null },
 ): SearchStrategy {
   const flags = getAgentFeatureFlags();
 
@@ -262,11 +276,20 @@ export function resolveSearchStrategy(
   const matchesPattern = AGENT_ROUTING_PATTERNS.some(p => p.test(query));
   if (!matchesPattern) return 'rag';
 
-  // Gate 3: Classifier must have suggested agent, OR pattern is a force-override
+  // Gate 3: B11 film-detection gate — if the only matching pattern is B11
+  // and a specific film was detected, stay on RAG (episode-scoped UC-3 query).
+  if (options?.detectedFilm) {
+    const matchesNonB11 = AGENT_ROUTING_PATTERNS.some(p => p !== B11_HOST_TOPIC_PATTERN && p.test(query));
+    if (!matchesNonB11 && B11_HOST_TOPIC_PATTERN.test(query)) {
+      return 'rag';
+    }
+  }
+
+  // Gate 4: Classifier must have suggested agent, OR pattern is a force-override
   // (Phase A patterns are force-overrides — they're narrow enough to be trusted)
   // So if the pattern matched, we proceed even without classifier agreement.
 
-  // Gate 4: Rollout percentage
+  // Gate 5: Rollout percentage
   if (flags.percentRollout < 100) {
     const roll = Math.random() * 100;
     if (roll >= flags.percentRollout) return 'rag';
