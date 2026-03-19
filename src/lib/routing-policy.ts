@@ -204,6 +204,8 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
 
   // Phase B3: Exhaustive listing — "list/name/what are all/every" + utterance or passive verb
   /\b(list|name|what are|what were|find)\b.{0,20}\b(all|every)\b.*\b(talked|discussed|mentioned|said|brought up|called|described|referred to|labeled)\b/i,
+  // Phase B3b: Exhaustive listing with noun form — "what are all the mentions/references/discussions of X"
+  /\b(list|what are|what were|find)\b.{0,20}\b(all|every)\b.{0,20}\b(mentions?|references?|discussions?|instances?|times?|occurrences?)\s+(of|about|to|where|when)\b/i,
 
   // Phase B4: Earliest/first mention — temporal ordering
   /\b(earliest|first)\s+(mention|time|instance|reference|discussion)s?\s+(of|that)\b/i,

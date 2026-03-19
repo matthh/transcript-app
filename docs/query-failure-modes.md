@@ -132,6 +132,7 @@ For each reported bad query:
   - B7 (multi-episode entity extraction — “N episodes prior/before/after”): covers F13 (“voicemails in Midsommar and 4 episodes prior”)
   - B1/B2 also help (see FM-05)
 - **B3 routing gap — “what are all” variant** (FIXED): B3 widened to include `(what are|what were|find)` triggers and passive verbs `(called|described|referred to|labeled)`.
+- **B3b routing gap — noun forms** (FIXED): B3 only matched verb forms ("what are all ... mentioned/discussed") but missed noun forms ("what are all the mentions/references of X"). Added B3b pattern for noun-form exhaustive listing. Example: "what are all the mentions of the podcast The Watch" was classified as `factual` and sent to metadata fast-path (found nothing). Now routes to agent.
 - **B8 (shipped)**: Cross-episode mention context — “in what context has X been mentioned/discussed”, “was X ever mentioned”, “are there any mentions of X”. Routes entity-tracking existence queries to agent for exhaustive transcript search.
 - **B10 (shipped)**: Episode/segment quote finder — “which episode/segment did X say Y”. Routes verbatim phrase-finding queries to agent grep.
 - Residual risk: queries without utterance verbs (e.g., “what villeneuve movies have been episodes”) stay on RAG — these are metadata-answerable. Persona aggregation (“What does Jason think of fishing”) stays on RAG — handled by sub-chunks and supplemental queries.

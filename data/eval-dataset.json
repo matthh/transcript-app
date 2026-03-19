@@ -1385,6 +1385,21 @@
       ],
       "expectSourceEpisode": "High Fidelity (2000)",
       "expectMinTranscriptSources": 5
+    },
+    {
+      "name": "Exhaustive noun-form listing: all mentions of The Watch (B3b routing gap)",
+      "query": "what are all the mentions of the podcast The Watch",
+      "tags": [
+        "agent",
+        "cross-episode",
+        "FM-06"
+      ],
+      "rejectTextInAnswer": [
+        "don't have information",
+        "No matching episodes",
+        "no references"
+      ],
+      "expectMinTranscriptSources": 1
     }
   ]
 }
