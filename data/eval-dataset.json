@@ -1400,6 +1400,46 @@
         "no references"
       ],
       "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Host-scoped existence: has jason talked about tsunamis (B12)",
+      "query": "has jason talked about his daughter and tsunamis",
+      "tags": [
+        "agent",
+        "host-scoped",
+        "cross-episode"
+      ],
+      "rejectTextInAnswer": [
+        "don't have information",
+        "no mentions",
+        "No matching episodes"
+      ],
+      "expectMinTranscriptSources": 1
+    },
+    {
+      "name": "Persona aggregation: pretentious things Jason said (B13)",
+      "query": "What are some pretentious things Jason has said",
+      "tags": [
+        "agent",
+        "host-scoped",
+        "cross-episode"
+      ],
+      "rejectTextInAnswer": [
+        "don't have information",
+        "No matching episodes"
+      ],
+      "expectMinTranscriptSources": 3
+    },
+    {
+      "name": "Exhaustive verb-form listing: all times Haitch commented on English (B3c)",
+      "query": "What are all the times Haitch has commented on English people",
+      "tags": [
+        "agent",
+        "cross-episode",
+        "FM-21"
+      ],
+      "expectSourceEpisode": "High Fidelity (2000)",
+      "expectMinTranscriptSources": 3
     }
   ]
 }

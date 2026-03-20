@@ -190,7 +190,13 @@ export function isAgentAutoDisabled(): boolean {
  */
 
 /** B11 pattern — defined separately for film-gate identity check in resolveSearchStrategy */
-const B11_HOST_TOPIC_PATTERN = /\bwhat\s+(does|did|has|have)\s+\w+\s+(say|said|says|think|thought|thinks)\s+(about|of|on)\b/i;
+const B11_HOST_TOPIC_PATTERN = /\bwhat\s+(does|did|has|have)\s+\w+\s+(say|said|says|think|thought|thinks|talk|talks|talked)\s+(about|of|on)\b/i;
+
+/** B12 pattern — "has X talked/spoken about Y" existence queries. Film-gated like B11. */
+const B12_HAS_TALKED_PATTERN = /\bhas\s+\w+\s+(ever\s+)?(talked|spoken|said anything|commented)\s+(about|on|regarding)\b/i;
+
+/** B13 pattern — "what are some [adj] things X has said/done" persona aggregation */
+const B13_WHAT_ARE_SOME_PATTERN = /\bwhat are some\b.*\b(things?|stuff|examples?|quotes?)\b.*\b(said|done|mentioned|stated)\b/i;
 
 const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase A: counting/frequency with verb anchor
@@ -206,6 +212,8 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
   /\b(list|name|what are|what were|find)\b.{0,20}\b(all|every)\b.*\b(talked|discussed|mentioned|said|brought up|called|described|referred to|labeled)\b/i,
   // Phase B3b: Exhaustive listing with noun form — "what are all the mentions/references/discussions of X"
   /\b(list|what are|what were|find)\b.{0,20}\b(all|every)\b.{0,20}\b(mentions?|references?|discussions?|instances?|times?|occurrences?)\s+(of|about|to|where|when)\b/i,
+  // Phase B3c: Exhaustive listing — "all the times X has [verb]" (verb after "times" instead of noun preposition)
+  /\b(what are|list|find)\b.{0,20}\b(all|every)\b.{0,40}\b(times?)\b.*\b(has|have)\s+\w*\s*(commented|complained|talked|said|mentioned|brought up|discussed|referred|joked|ranted)\b/i,
 
   // Phase B4: Earliest/first mention — temporal ordering
   /\b(earliest|first)\s+(mention|time|instance|reference|discussion)s?\s+(of|that)\b/i,
@@ -228,11 +236,18 @@ const AGENT_ROUTING_PATTERNS: RegExp[] = [
   // Phase B10: Episode/segment quote finder — "which episode/segment did X say/mention Y"
   /\b(which|what|in which)\s+(episode|segment|ep)\b.*\b(did|does|do)\s+\w+\s+(say|said|mention|hum|sing|quote|ask|yell|scream|call)\b/i,
 
-  // Phase B11: Host-scoped topic search — "what does/did/has [host] say/said/think about [topic]"
+  // Phase B11: Host-scoped topic search — "what does/did/has [host] say/said/think/talk about [topic]"
   // Cross-episode exhaustive search for what a host said about a topic.
   // Gated by detectedFilm in resolveSearchStrategy — if a specific film is detected, stay on RAG
   // (episode-scoped UC-3 queries like "what did Haitch say about They Live" should use RAG).
   B11_HOST_TOPIC_PATTERN,
+
+  // Phase B12: Existence/search — "has X talked/spoken/commented about Y"
+  // Film-gated like B11 — episode-scoped variants stay on RAG.
+  B12_HAS_TALKED_PATTERN,
+
+  // Phase B13: Persona aggregation — "what are some [adj] things X has said/done"
+  B13_WHAT_ARE_SOME_PATTERN,
 
   // Phase C1: Transcript excerpt — "give/show/find/pull up the [X] bit/part/section/moment/riff/rant"
   /\b(give|show|find|pull up|get)\b.*\bthe\b.{0,40}\b(bit|part|section|moment|riff|rant|scene|exchange|conversation|excerpt|passage)\b.*\b(where|when|about|from)\b/i,
@@ -278,12 +293,17 @@ export function resolveSearchStrategy(
   const matchesPattern = AGENT_ROUTING_PATTERNS.some(p => p.test(query));
   if (!matchesPattern) return 'rag';
 
-  // Gate 3: B11 film-detection gate — if the only matching pattern is B11
-  // and a specific film was detected, stay on RAG (episode-scoped UC-3 query).
+  // Gate 3: Film-detection gate for cross-episode patterns (B11, B12).
+  // If a specific film was detected and the only matching patterns are film-gated,
+  // stay on RAG (episode-scoped query like "what did Haitch say about They Live").
+  const FILM_GATED_PATTERNS = [B11_HOST_TOPIC_PATTERN, B12_HAS_TALKED_PATTERN];
   if (options?.detectedFilm) {
-    const matchesNonB11 = AGENT_ROUTING_PATTERNS.some(p => p !== B11_HOST_TOPIC_PATTERN && p.test(query));
-    if (!matchesNonB11 && B11_HOST_TOPIC_PATTERN.test(query)) {
-      return 'rag';
+    const matchesNonGated = AGENT_ROUTING_PATTERNS.some(p =>
+      !FILM_GATED_PATTERNS.includes(p) && p.test(query)
+    );
+    if (!matchesNonGated) {
+      const matchesGated = FILM_GATED_PATTERNS.some(p => p.test(query));
+      if (matchesGated) return 'rag';
     }
   }
 

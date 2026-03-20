@@ -306,6 +306,7 @@ These are expected to be hard until dedicated handling is added:
   1. **New agent routing pattern B11**: Match "what does/did [host] say about [topic]" and "what has [host] said about [topic]" patterns → route to agent for exhaustive grep across all transcripts. Pattern: `/\bwhat\s+(does|did|has)\s+\w+\s+(say|said|think|thought)\s+(about|of|on)\b/i`. This is a high-volume pattern in UC-4 analytics ("what has jason said about his dad", "what has jason said about running south by south lawn", etc.).
   2. **Hybrid approach**: Run both RAG and agent in parallel for these queries, merge results. Agent provides exhaustive coverage, RAG provides synthesis context.
 - Related queries from analytics that share this pattern: "what has jason said about his dad", "has jason ever talked about acting on stage", "has jason talked about his daughter and tsunamis", "what has jason said about running south by south lawn at the white house".
+- **Expanded routing (shipped)**: B11 expanded to include `talk/talks/talked`. B12 added for "has X talked/spoken/commented about Y" existence queries (film-gated). B13 added for "what are some [adj] things X has said" persona aggregation. B3c added for "all the times X has [verb]" exhaustive listing with verb after "times".
 - Plan alignment: Phase B+ (agent routing expansion).
 
 ### FM-20: Uningest Episode — Cross-Episode Evidence Contamination
