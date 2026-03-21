@@ -22,7 +22,6 @@ export async function GET(
   const { episode } = await params;
   const episodeNumber = parseEpisodeNumber(episode);
 
-  // Try Blob first (has latest edits from speaker mapping / sample detection)
   if (episodeNumber > 0) {
     try {
       const blobTranscript = await loadBlobTranscript(episodeNumber);
@@ -34,20 +33,8 @@ export async function GET(
         });
       }
     } catch {
-      // Blob storage not available — fall through to filesystem
+      // Blob storage not available
     }
-  }
-
-  // Fall back to filesystem (bundled transcripts from git)
-  const filePath = path.join(process.cwd(), 'transcripts', `${episode}.json`);
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const transcript: Transcript = JSON.parse(content);
-    return NextResponse.json(transcript, {
-      headers: {
-        'Cache-Control': 'no-store, must-revalidate',
-      },
-    });
   }
 
   return NextResponse.json({ error: 'Transcript not found' }, { status: 404 });

@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import { unstable_noStore as noStore } from 'next/cache';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
 import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
@@ -137,31 +135,6 @@ export async function GET() {
 
   // Load all transcripts with their info
   const transcripts: TranscriptInfo[] = [];
-  const transcriptsDir = path.join(process.cwd(), 'transcripts');
-
-  // Load filesystem transcripts
-  try {
-    if (fs.existsSync(transcriptsDir)) {
-      const files = fs.readdirSync(transcriptsDir).filter(f => f.endsWith('.json'));
-      for (const filename of files) {
-        try {
-          const filePath = path.join(transcriptsDir, filename);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Transcript;
-          transcripts.push({
-            filename: filename.replace('.json', ''),
-            episodeNumber: content.episode_number,
-            episodeName: content.episode_name || '',
-            source: 'filesystem',
-            needsReview: hasUnmappedSpeakers(content),
-          });
-        } catch {
-          // Skip unparseable files
-        }
-      }
-    }
-  } catch {
-    // Directory doesn't exist
-  }
 
   // Load blob transcripts
   try {

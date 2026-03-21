@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { Transcript } from '@/types/transcript';
 import { findEpisodesByFilm, normalizeFilmName } from '@/lib/metadata-store';
@@ -123,16 +121,6 @@ function trimAtOrWill(text: string): string {
 }
 
 async function loadTranscript(epNum: number): Promise<Transcript | null> {
-  const filePath = path.join(process.cwd(), 'transcripts', `episode_${epNum}.json`);
-  if (fs.existsSync(filePath)) {
-    try {
-      const content = fs.readFileSync(filePath, 'utf-8');
-      return JSON.parse(content) as Transcript;
-    } catch {
-      // Fall through to blob
-    }
-  }
-
   try {
     return await loadBlobTranscript(epNum);
   } catch {

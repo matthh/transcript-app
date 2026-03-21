@@ -1,8 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { readFileSync, readdirSync } from 'fs';
-import { join } from 'path';
 import { getAnthropic, HOST_IDENTITY_RULE } from './claude';
 import { queryEpisodes, loadEpisodeMetadata } from './metadata-store';
+import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from './blob-storage';
 import { TranscriptSource, EpisodeMetadata } from '@/types/episode-metadata';
 import { Transcript, DialogueEntry } from '@/types/transcript';
 import {
@@ -38,44 +37,55 @@ interface GrepMatch {
 
 // ─── Transcript Loading ────────────────────────────────────────────────────
 
-const TRANSCRIPTS_DIR = join(process.cwd(), 'transcripts');
-
 let transcriptCache: Map<number, Transcript> | null = null;
+let cacheLoadPromise: Promise<Map<number, Transcript>> | null = null;
 
-function loadAllTranscripts(): Map<number, Transcript> {
+async function loadAllTranscripts(): Promise<Map<number, Transcript>> {
   if (transcriptCache) return transcriptCache;
+  if (cacheLoadPromise) return cacheLoadPromise;
 
-  transcriptCache = new Map();
-  try {
-    const files = readdirSync(TRANSCRIPTS_DIR)
-      .filter(f => f.startsWith('episode_') && f.endsWith('.json'))
-      .sort();
-
-    for (const file of files) {
-      const data = JSON.parse(readFileSync(join(TRANSCRIPTS_DIR, file), 'utf-8')) as Transcript;
-      transcriptCache.set(data.episode_number, data);
+  cacheLoadPromise = (async () => {
+    const cache = new Map<number, Transcript>();
+    try {
+      const blobList = await listBlobTranscripts();
+      const results = await Promise.all(
+        blobList.map(async (blob) => {
+          try {
+            const transcript = await loadBlobTranscript(blob.episodeNumber);
+            return transcript;
+          } catch {
+            return null;
+          }
+        })
+      );
+      for (const transcript of results) {
+        if (transcript) {
+          cache.set(transcript.episode_number, transcript);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to load transcripts from blob storage:', err);
     }
-  } catch (err) {
-    console.error('Failed to load transcripts from filesystem:', err);
-    // Blob fallback would go here in the future
-  }
+    transcriptCache = cache;
+    return cache;
+  })();
 
-  return transcriptCache;
+  return cacheLoadPromise;
 }
 
-function getTranscript(episodeNumber: number): Transcript | null {
-  const transcripts = loadAllTranscripts();
+async function getTranscript(episodeNumber: number): Promise<Transcript | null> {
+  const transcripts = await loadAllTranscripts();
   return transcripts.get(episodeNumber) ?? null;
 }
 
 // ─── Tool Implementations ──────────────────────────────────────────────────
 
-function grepTranscripts(
+async function grepTranscripts(
   pattern: string,
   speakerFilter?: string,
   maxResults?: number,
-): GrepMatch[] {
-  const transcripts = loadAllTranscripts();
+): Promise<GrepMatch[]> {
+  const transcripts = await loadAllTranscripts();
   const matches: GrepMatch[] = [];
   const max = maxResults ?? 50;
 
@@ -116,8 +126,8 @@ function grepTranscripts(
   return matches;
 }
 
-function readEpisodeTranscript(episodeNumber: number): string | null {
-  const transcript = getTranscript(episodeNumber);
+async function readEpisodeTranscript(episodeNumber: number): Promise<string | null> {
+  const transcript = await getTranscript(episodeNumber);
   if (!transcript) return null;
 
   return transcript.dialogues
@@ -228,15 +238,15 @@ const AGENT_TOOLS: Anthropic.Tool[] = [
 
 // ─── Tool Execution ────────────────────────────────────────────────────────
 
-function executeToolCall(
+async function executeToolCall(
   toolName: string,
   toolInput: Record<string, unknown>,
-): { result: string; sources: TranscriptSource[] } {
+): Promise<{ result: string; sources: TranscriptSource[] }> {
   const sources: TranscriptSource[] = [];
 
   switch (toolName) {
     case 'grep_transcripts': {
-      const matches = grepTranscripts(
+      const matches = await grepTranscripts(
         toolInput.pattern as string,
         toolInput.speaker_filter as string | undefined,
         Math.min((toolInput.max_results as number) ?? 50, 200),
@@ -267,7 +277,7 @@ function executeToolCall(
 
     case 'read_episode_transcript': {
       const epNum = toolInput.episode_number as number;
-      const text = readEpisodeTranscript(epNum);
+      const text = await readEpisodeTranscript(epNum);
       if (!text) {
         return { result: `Episode ${epNum} not found.`, sources: [] };
       }
@@ -429,7 +439,7 @@ export async function runAgentSearch(
       onProgress?.(`Using ${toolUse.name}...`);
 
       try {
-        const { result, sources } = executeToolCall(
+        const { result, sources } = await executeToolCall(
           toolUse.name,
           toolUse.input as Record<string, unknown>,
         );
