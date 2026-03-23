@@ -13955,7 +13955,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/argo-2012-153108151",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1773594372574-f2f2f686972a2.jpg",
     "letterboxdLink": "https://letterboxd.com/film/argo/",
-    "imdbLink": "https://www.imdb.com/title/tt1024648/?ref_=ext_shr_lnk"
+    "imdbLink": "https://www.imdb.com/title/tt1024648/?ref_=ext_shr_lnk",
+    "tmdbId": 68734,
+    "tmdbPosterPath": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "directors": [
+      "Ben Affleck"
+    ],
+    "cinematographers": [
+      "Rodrigo Prieto"
+    ],
+    "cast": [
+      "Ben Affleck",
+      "Bryan Cranston",
+      "Alan Arkin",
+      "John Goodman",
+      "Victor Garber",
+      "Tate Donovan",
+      "Clea DuVall",
+      "Scoot McNairy"
+    ]
   },
   {
     "pod": "EH",
@@ -13980,6 +14002,28 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/episode-300-1980-153509299",
     "artworkLink": "",
     "letterboxdLink": "https://letterboxd.com/film/the-shining/",
-    "imdbLink": "https://www.imdb.com/title/tt0081505/"
+    "imdbLink": "https://www.imdb.com/title/tt0081505/",
+    "tmdbId": 694,
+    "tmdbPosterPath": "/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "directors": [
+      "Stanley Kubrick"
+    ],
+    "cinematographers": [
+      "John Alcott"
+    ],
+    "cast": [
+      "Jack Nicholson",
+      "Shelley Duvall",
+      "Danny Lloyd",
+      "Scatman Crothers",
+      "Barry Nelson",
+      "Philip Stone",
+      "Joe Turkel",
+      "Anne Jackson"
+    ]
   }
 ];
