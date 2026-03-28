@@ -181,6 +181,8 @@ export default function EditorPage() {
     try {
       const response = await fetch('/api/rebuild', {
         method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ episode }),
       });
       if (!response.ok) throw new Error('Failed to trigger rebuild');
       setPublishStatus('success');
@@ -489,7 +491,7 @@ export default function EditorPage() {
               {hasUnsavedChanges ? (
                 <span className="text-orange-600 font-medium">Unsaved changes</span>
               ) : publishStatus === 'success' ? (
-                <span className="text-green-600 font-medium">Rebuild triggered! Changes will be searchable after deploy.</span>
+                <span className="text-green-600 font-medium">Ingest triggered! Episode will be searchable in a few minutes.</span>
               ) : (
                 'All changes saved'
               )}

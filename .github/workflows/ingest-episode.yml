@@ -1,0 +1,60 @@
+name: Ingest Episode
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode number to ingest into search index"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Download existing search index
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: node --import tsx ./scripts/download-search-data.ts
+
+      # Fetch the latest transcript from Blob (may have speaker mapping
+      # edits that aren't in git yet).
+      - name: Download transcript from Blob
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: node --import tsx ./scripts/download-blob-transcript.ts ${{ inputs.episode }}
+
+      - name: Ingest episode ${{ inputs.episode }}
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node --import tsx ./scripts/ingest.ts --episode ${{ inputs.episode }}
+
+      - name: Upload updated search index
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: node --import tsx ./scripts/upload-search-data.ts
+
+      - name: Trigger deploy
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            curl -sf -X POST "$VERCEL_DEPLOY_HOOK_URL" || echo "Deploy hook trigger failed (non-fatal)"
+            echo "Triggered Vercel deploy."
+          fi
