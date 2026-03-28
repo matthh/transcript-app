@@ -61,5 +61,6 @@ vector-store.json
 bm25-index.json
 topic-vectors.json
 topic-cache.json
+transcribed-episodes.txt
 
 .env*.local

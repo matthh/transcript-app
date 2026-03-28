@@ -36,7 +36,6 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY_JSON }}
           ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
-          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
           INCLUDE_BACKFILL: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_backfill || 'false' }}
         run: |
           if [ "$INCLUDE_BACKFILL" = "true" ]; then
@@ -45,10 +44,27 @@ jobs:
             node --import tsx ./scripts/check-new-episodes.ts --verbose
           fi
 
-      # The script runs sync-metadata internally, which updates metadata-data.ts
-      # on disk but doesn't commit it. Commit here so the deploy includes the
-      # latest metadata (guests, episode info, etc.) — prevents the gap where a
-      # transcript exists in Blob but metadata is missing from the deployed build.
+      # Run incremental search index ingest for any newly transcribed episodes.
+      # Downloads existing index from Blob, merges new chunks, uploads back.
+      - name: Incremental search ingest
+        if: hashFiles('transcribed-episodes.txt') != ''
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "Downloading existing search index from Blob..."
+          node --import tsx ./scripts/download-search-data.ts
+
+          while IFS= read -r ep; do
+            echo "Ingesting episode $ep..."
+            node --import tsx ./scripts/ingest.ts --episode "$ep"
+          done < transcribed-episodes.txt
+
+          echo "Uploading updated search index to Blob..."
+          node --import tsx ./scripts/upload-search-data.ts
+
+      # Commit metadata and transcripts so the deploy includes them.
       - name: Commit metadata and transcript changes
         run: |
           git config user.name "github-actions[bot]"
@@ -63,15 +79,14 @@ jobs:
             echo "CHANGES_COMMITTED=true" >> "$GITHUB_ENV"
           fi
 
-      # If metadata was committed, trigger one more deploy so the build uses the
-      # commit that has both the transcript AND the metadata.  The script may have
-      # already triggered a deploy (with stale metadata) — this ensures correctness.
-      - name: Trigger deploy with updated metadata
+      # Deploy so the build picks up the new metadata + the updated search
+      # index that was just uploaded to Blob.
+      - name: Trigger deploy
         if: env.CHANGES_COMMITTED == 'true'
         env:
           VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
           if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
             curl -sf -X POST "$VERCEL_DEPLOY_HOOK_URL" || echo "Deploy hook trigger failed (non-fatal)"
-            echo "Triggered Vercel deploy with updated metadata."
+            echo "Triggered Vercel deploy."
           fi
