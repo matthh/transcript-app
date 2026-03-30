@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { unstable_noStore as noStore } from 'next/cache';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
-import { listBlobTranscripts, loadTranscript as loadBlobTranscript } from '@/lib/blob-storage';
+import { listBlobTranscripts } from '@/lib/blob-storage';
 import type { EpisodeMetadata } from '@/types/episode-metadata';
 import type { Transcript } from '@/types/transcript';
 import { type EpisodeId, episodeSortKey, isBonusEpisode } from '@/lib/episode-format';
@@ -136,24 +136,28 @@ export async function GET() {
   // Load all transcripts with their info
   const transcripts: TranscriptInfo[] = [];
 
-  // Load blob transcripts
+  // Load blob transcripts — fetch directly via URL from list (avoids N+1 re-listing)
   try {
     const blobList = await listBlobTranscripts();
-    for (const blob of blobList) {
+    const fetches = blobList.map(async (blob) => {
       try {
-        const transcript = await loadBlobTranscript(blob.episodeNumber);
-        if (transcript) {
-          transcripts.push({
-            filename: `episode_${blob.episodeNumber}`,
-            episodeNumber: transcript.episode_number,
-            episodeName: transcript.episode_name || '',
-            source: 'blob',
-            needsReview: hasUnmappedSpeakers(transcript),
-          });
-        }
+        const response = await fetch(blob.url, { cache: 'no-store' });
+        if (!response.ok) return null;
+        const transcript = await response.json() as Transcript;
+        return {
+          filename: `episode_${blob.episodeNumber}`,
+          episodeNumber: transcript.episode_number,
+          episodeName: transcript.episode_name || '',
+          source: 'blob' as const,
+          needsReview: hasUnmappedSpeakers(transcript),
+        };
       } catch {
-        // Skip
+        return null;
       }
+    });
+    const results = await Promise.all(fetches);
+    for (const r of results) {
+      if (r) transcripts.push(r);
     }
   } catch {
     // Blob storage not available

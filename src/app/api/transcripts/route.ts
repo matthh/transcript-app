@@ -32,7 +32,7 @@ export async function GET() {
   }
 
   // Sort by episode number
-  transcripts.sort((a, b) => a.episode_number - b.episode_number);
+  transcripts.sort((a, b) => Number(a.episode_number) - Number(b.episode_number));
 
   return NextResponse.json(transcripts);
 }

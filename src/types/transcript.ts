@@ -12,7 +12,7 @@ export interface Transcript {
 
 export interface TranscriptMetadata {
   filename: string;
-  episode_number: number;
+  episode_number: number | string;
   episode_name: string;
   dialogueCount: number;
   hasAudio: boolean;

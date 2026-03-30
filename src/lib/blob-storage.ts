@@ -8,7 +8,7 @@ const AUDIO_PREFIX = 'audio/';
 export interface BlobTranscriptInfo {
   url: string;
   pathname: string;
-  episodeNumber: number;
+  episodeNumber: number | string;
   uploadedAt: Date;
 }
 
@@ -51,7 +51,7 @@ export async function saveTranscript(
  * Load a transcript from Vercel Blob storage
  */
 export async function loadTranscript(
-  episodeNumber: number
+  episodeNumber: number | string
 ): Promise<Transcript | null> {
   const pathname = `${TRANSCRIPT_PREFIX}episode_${episodeNumber}.json`;
 
@@ -136,7 +136,7 @@ export async function transcriptExists(episodeNumber: number): Promise<boolean> 
 /**
  * Check if audio exists in Blob storage
  */
-export async function audioExists(episodeNumber: number): Promise<boolean> {
+export async function audioExists(episodeNumber: number | string): Promise<boolean> {
   const pathname = `${AUDIO_PREFIX}episode_${episodeNumber}.mp3`;
 
   try {
@@ -168,11 +168,12 @@ export async function listBlobTranscripts(): Promise<BlobTranscriptInfo[]> {
   const blobs = await list({ prefix: TRANSCRIPT_PREFIX });
 
   return blobs.blobs
-    .filter(blob => blob.pathname.endsWith('.json'))
+    .filter(blob => blob.pathname.endsWith('.json') && !blob.pathname.startsWith(RAW_TRANSCRIPT_PREFIX))
     .map(blob => {
-      // Extract episode number from pathname like "transcripts/episode_123.json"
-      const match = blob.pathname.match(/episode_(\d+)\.json$/);
-      const episodeNumber = match ? parseInt(match[1], 10) : 0;
+      // Extract episode ID from pathname like "transcripts/episode_123.json" or "transcripts/episode_49b1.json"
+      const match = blob.pathname.match(/episode_([\w]+)\.json$/);
+      const raw = match ? match[1] : '0';
+      const episodeNumber: number | string = /^\d+$/.test(raw) ? parseInt(raw, 10) : raw;
 
       return {
         url: blob.url,
@@ -181,13 +182,17 @@ export async function listBlobTranscripts(): Promise<BlobTranscriptInfo[]> {
         uploadedAt: new Date(blob.uploadedAt),
       };
     })
-    .sort((a, b) => a.episodeNumber - b.episodeNumber);
+    .sort((a, b) => {
+      const aNum = typeof a.episodeNumber === 'number' ? a.episodeNumber : parseInt(String(a.episodeNumber));
+      const bNum = typeof b.episodeNumber === 'number' ? b.episodeNumber : parseInt(String(b.episodeNumber));
+      return aNum - bNum;
+    });
 }
 
 /**
  * Delete a transcript from Blob storage
  */
-export async function deleteTranscript(episodeNumber: number): Promise<boolean> {
+export async function deleteTranscript(episodeNumber: number | string): Promise<boolean> {
   const pathname = `${TRANSCRIPT_PREFIX}episode_${episodeNumber}.json`;
 
   try {
