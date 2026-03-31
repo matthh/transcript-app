@@ -684,7 +684,7 @@ function ReviewForm({ auth }: { auth: string }) {
               Update PDC Sheet?
             </p>
             <p style={{ margin: '0 0 20px', fontSize: 14, lineHeight: 1.5, color: '#9aa7b5' }}>
-              This will {editingEpisodeId ? 'update' : 'insert'} episode <strong style={{ color: '#e6edf3' }}>{episode || '?'}</strong> in the <em>podreview test</em> sheet.
+              This will {editingEpisodeId ? 'update' : 'insert'} episode <strong style={{ color: '#e6edf3' }}>{episode || '?'}</strong> in the <em>Pod Data Review</em> sheet.
             </p>
             <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
               <button onClick={() => setShowPdcConfirm(false)} style={styles.btnSecondary}>Cancel</button>
