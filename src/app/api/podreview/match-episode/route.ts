@@ -19,6 +19,20 @@ interface PatreonPost {
   url: string;
 }
 
+// Cache the show's artwork URL so we can detect when an episode just has the fallback image
+let showArtworkUrl: string | null = null;
+
+async function getShowArtworkUrl(token: string): Promise<string | null> {
+  if (showArtworkUrl) return showArtworkUrl;
+  const res = await fetch(`https://api.spotify.com/v1/shows/${SPOTIFY_SHOW_ID}?fields=images`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return null;
+  const data = await res.json();
+  showArtworkUrl = data.images?.[0]?.url || null;
+  return showArtworkUrl;
+}
+
 // ── Spotify: use search API for fast lookup ──
 
 async function getSpotifyToken(): Promise<string | null> {
@@ -194,12 +208,20 @@ export async function GET(request: NextRequest) {
   if (spotifyToken) {
     const ep = await searchSpotifyEpisode(spotifyToken, query);
     if (ep) {
+      // Skip artwork if it's just the show's generic cover (no episode-specific art yet)
+      let artworkUrl = ep.images?.[0]?.url || '';
+      if (artworkUrl) {
+        const showArt = await getShowArtworkUrl(spotifyToken);
+        if (showArt && artworkUrl === showArt) {
+          artworkUrl = '';
+        }
+      }
       result.spotify = {
         title: ep.name,
         duration: formatDuration(ep.duration_ms),
         durationMinutes: formatDurationMinutes(ep.duration_ms),
         releaseDate: ep.release_date,
-        artworkUrl: ep.images?.[0]?.url || '',
+        artworkUrl,
         spotifyUrl: ep.external_urls?.spotify || '',
       };
     }
