@@ -12,7 +12,8 @@ import { loadTranscript } from '../src/lib/blob-storage';
 
 dotenv.config({ path: '.env.local' });
 
-const episodeNum = parseInt(process.argv[2], 10);
+const raw = (process.argv[2] || '').replace(/^episode_/, '');
+const episodeNum = parseInt(raw, 10);
 if (!episodeNum || isNaN(episodeNum)) {
   console.error('Usage: npx tsx scripts/download-blob-transcript.ts <episode_number>');
   process.exit(1);
