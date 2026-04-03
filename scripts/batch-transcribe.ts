@@ -21,8 +21,8 @@ import { EpisodeId, episodeSortKey } from '../src/lib/episode-format';
 
 dotenv.config({ path: '.env.local' });
 
-// Import lexicon for word boosting
-import { getWordBoostList } from '../src/lib/lexicon';
+// Import lexicon for keyterms prompt
+import { getKeytermsPrompt } from '../src/lib/lexicon';
 
 const MP3_DIR = './mp3s';
 const PROGRESS_FILE = './batch-transcribe-progress.json';
@@ -230,19 +230,20 @@ async function uploadAudioToBlob(filePath: string, episodeNumber: EpisodeId): Pr
 }
 
 async function startTranscription(audioUrl: string, episodeNumber: EpisodeId, episodeName: string): Promise<string> {
-  const wordBoostList = getWordBoostList(500);
+  const keytermsPrompt = getKeytermsPrompt();
 
   console.log(`    Speaker range: ${minSpeakers}–${maxSpeakers}`);
+  console.log(`    Keyterms prompt: ${keytermsPrompt.length} chars`);
   const transcriptResponse = await client.transcripts.submit({
     audio_url: audioUrl,
+    speech_models: ['universal-3-pro', 'universal-2'],
     speaker_labels: true,
     speaker_options: {
       min_speakers_expected: minSpeakers,
       max_speakers_expected: maxSpeakers,
     },
-    word_boost: wordBoostList,
-    boost_param: 'high',
-  });
+    keyterms_prompt: [keytermsPrompt],
+  } as Record<string, unknown> as Parameters<typeof client.transcripts.submit>[0]);
 
   return transcriptResponse.id;
 }

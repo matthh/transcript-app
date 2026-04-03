@@ -6,8 +6,8 @@ import * as dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
 
-// Import lexicon functions for word boosting
-import { getWordBoostList } from '../src/lib/lexicon';
+// Import lexicon functions for keyterms prompt
+import { getKeytermsPrompt } from '../src/lib/lexicon';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
@@ -78,31 +78,29 @@ async function promptForSpeakerMapping(
 async function transcribeFile(
   filePath: string,
   speakerMapping?: Map<string, string>,
-  wordBoostList?: string[]
 ): Promise<{ transcript: TranscriptOutput; detectedSpeakers: string[] }> {
   const filename = path.basename(filePath);
   console.log(`\nTranscribing: ${filename}`);
   console.log('  Uploading and processing (this may take a few minutes)...');
 
+  // Build keyterms prompt for Universal-3 Pro
+  const keytermsPrompt = getKeytermsPrompt();
+
   // Build transcription config
-  const transcriptConfig: Parameters<typeof client.transcripts.transcribe>[0] = {
+  const transcriptConfig: Record<string, unknown> = {
     audio: filePath,
+    speech_models: ['universal-3-pro', 'universal-2'],
     speaker_labels: true,
     speaker_options: {
       min_speakers_expected: minSpeakers,
       max_speakers_expected: maxSpeakers,
     },
+    keyterms_prompt: [keytermsPrompt],
   };
   console.log(`  Speaker range: ${minSpeakers}–${maxSpeakers}`);
+  console.log(`  Keyterms prompt: ${keytermsPrompt.length} chars`);
 
-  // Add word boosting if enabled
-  if (wordBoostList && wordBoostList.length > 0) {
-    transcriptConfig.word_boost = wordBoostList;
-    transcriptConfig.boost_param = 'high';
-    console.log(`  Word boost: ${wordBoostList.length} terms (boost=high)`);
-  }
-
-  const transcript = await client.transcripts.transcribe(transcriptConfig);
+  const transcript = await client.transcripts.transcribe(transcriptConfig as Parameters<typeof client.transcripts.transcribe>[0]);
 
   if (transcript.status === 'error') {
     throw new Error(`Transcription failed: ${transcript.error}`);
@@ -145,20 +143,8 @@ async function main() {
     process.exit(1);
   }
 
-  // Load word boost list (unless disabled)
-  let wordBoostList: string[] | undefined;
-  if (!noBoost) {
-    try {
-      wordBoostList = getWordBoostList(maxBoostTerms);
-      console.log(`Loaded ${wordBoostList.length} terms for word boosting.`);
-      console.log(`  (Use --no-boost to disable, --max-boost=N to limit terms)\n`);
-    } catch (err) {
-      console.warn('Warning: Could not load lexicon for word boosting:', err);
-      console.warn('Continuing without word boost.\n');
-    }
-  } else {
-    console.log('Word boosting disabled (--no-boost flag).\n');
-  }
+  // Keyterms prompt is built inside transcribeFile() via getKeytermsPrompt()
+  console.log('Using AssemblyAI Universal-3 Pro with keyterms prompt.\n');
 
   // Check for MP3 directory
   if (!fs.existsSync(MP3_DIR)) {
@@ -203,7 +189,7 @@ async function main() {
     console.log('\nFirst, I\'ll transcribe one file to detect speakers...');
 
     const firstFile = path.join(MP3_DIR, mp3Files[0]);
-    const { transcript, detectedSpeakers } = await transcribeFile(firstFile, undefined, wordBoostList);
+    const { transcript, detectedSpeakers } = await transcribeFile(firstFile);
 
     globalSpeakerMapping = await promptForSpeakerMapping(detectedSpeakers, rl);
 
@@ -236,7 +222,7 @@ async function main() {
     const filePath = path.join(MP3_DIR, file);
 
     try {
-      const { transcript } = await transcribeFile(filePath, globalSpeakerMapping, wordBoostList);
+      const { transcript } = await transcribeFile(filePath, globalSpeakerMapping);
 
       const outputPath = path.join(OUTPUT_DIR, `${path.basename(file, '.mp3')}.json`);
       fs.writeFileSync(outputPath, JSON.stringify(transcript, null, 2));

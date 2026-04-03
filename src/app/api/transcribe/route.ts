@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { AssemblyAI } from 'assemblyai';
 import { saveTranscriptionJob } from '@/lib/blob-storage';
-import { getWordBoostList } from '@/lib/lexicon';
+import { getKeytermsPrompt } from '@/lib/lexicon';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
@@ -55,23 +55,22 @@ export async function POST(request: NextRequest) {
       : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
     const webhookUrl = `${baseUrl}/api/transcribe/webhook`;
 
-    // Load word boost vocabulary for better transcription accuracy
-    const wordBoost = getWordBoostList(500);
-    console.log(`Using word boost with ${wordBoost.length} terms`);
+    // Build keyterms prompt for Universal-3 Pro
+    const keytermsPrompt = getKeytermsPrompt();
+    console.log(`Using keyterms prompt (${keytermsPrompt.length} chars)`);
 
-    // Start transcription with AssemblyAI
+    // Start transcription with AssemblyAI Universal-3 Pro
     const transcriptResponse = await client.transcripts.submit({
       audio_url: audioUrl,
+      speech_models: ['universal-3-pro', 'universal-2'],
       speaker_labels: true,
       speaker_options: {
         min_speakers_expected: 6,
         max_speakers_expected: 10,
       },
       webhook_url: webhookUrl,
-      // Vocabulary boosting for podcast-specific terms
-      word_boost: wordBoost,
-      boost_param: 'high',  // Strong boosting for domain-specific vocabulary
-    });
+      keyterms_prompt: [keytermsPrompt],
+    } as Record<string, unknown> as Parameters<typeof client.transcripts.submit>[0]);
 
     const jobId = transcriptResponse.id;
 

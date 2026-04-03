@@ -106,6 +106,25 @@ export function getWordBoostList(maxTerms: number = 500): string[] {
 }
 
 /**
+ * Build a keyterms_prompt for AssemblyAI Universal-3 Pro.
+ * Describes the audio context in plain English so the model
+ * can apply domain knowledge without a flat word-boost list.
+ */
+export function getKeytermsPrompt(): string {
+  const lexiconTerms = loadLexiconFromFile().slice(0, 100);
+
+  return [
+    'Podcast about movies called "Escape Hatch".',
+    'Hosts: Jason Goldman, Matt Haitch (called "Haitch"), Proto, Slim.',
+    'Recurring voicemailers/callers: Truthsayer (also called Birria), Kev, Corey, Animal Mother, Mr Java, Lizzen, Ethan, Rosie, Hex.',
+    'Recurring segments: Tapedeck, Dune Pod, Tilda Swinton Award, H Flex, J Flex, Chuckle Hut.',
+    'Common catchphrases: "mmm", "that\'s great", "you hack".',
+    `Key names and terms that appear frequently: ${[...CORE_VOCABULARY.slice(10), ...lexiconTerms].join(', ')}.`,
+    'Director names to spell correctly: Denis Villeneuve, Timothée Chalamet, Saoirse Ronan, Joe Eszterhas, John Boorman.',
+  ].join(' ');
+}
+
+/**
  * Get custom spelling corrections for common transcription errors.
  * Format: { from: incorrectSpelling, to: correctSpelling }
  */
