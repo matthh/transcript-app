@@ -14049,6 +14049,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/project-hail-154040116",
     "artworkLink": "https://i.scdn.co/image/ab6765630000ba8a9e5af9e92f39588c942b0855",
     "letterboxdLink": "https://letterboxd.com/film/project-hail-mary/",
-    "imdbLink": "https://www.imdb.com/title/tt12042730/"
+    "imdbLink": "https://www.imdb.com/title/tt12042730/",
+    "tmdbId": 687163,
+    "tmdbPosterPath": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "directors": [
+      "Phil Lord",
+      "Christopher Miller"
+    ],
+    "cinematographers": [
+      "Greig Fraser"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "James Ortiz",
+      "Sandra Hüller",
+      "Lionel Boyce",
+      "Milana Vayntrub",
+      "Ken Leung",
+      "Priya Kansara",
+      "Mia Soteriou"
+    ]
   }
 ];
