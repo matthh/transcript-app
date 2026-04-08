@@ -95,10 +95,10 @@ async function transcribeFile(
       min_speakers_expected: minSpeakers,
       max_speakers_expected: maxSpeakers,
     },
-    keyterms_prompt: [keytermsPrompt],
+    keyterms_prompt: keytermsPrompt,
   };
   console.log(`  Speaker range: ${minSpeakers}–${maxSpeakers}`);
-  console.log(`  Keyterms prompt: ${keytermsPrompt.length} chars`);
+  console.log(`  Keyterms prompt: ${keytermsPrompt.length} terms`);
 
   const transcript = await client.transcripts.transcribe(transcriptConfig as Parameters<typeof client.transcripts.transcribe>[0]);
 

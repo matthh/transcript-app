@@ -106,22 +106,53 @@ export function getWordBoostList(maxTerms: number = 500): string[] {
 }
 
 /**
- * Build a keyterms_prompt for AssemblyAI Universal-3 Pro.
- * Describes the audio context in plain English so the model
- * can apply domain knowledge without a flat word-boost list.
+ * Build a keyterms_prompt list for AssemblyAI Universal-3 Pro.
+ * Returns an array of short phrases (each ≤15 words) — names, terms,
+ * and recurring segments the model should recognize.
  */
-export function getKeytermsPrompt(): string {
-  const lexiconTerms = loadLexiconFromFile().slice(0, 100);
+export function getKeytermsPrompt(): string[] {
+  const lexiconTerms = loadLexiconFromFile();
 
-  return [
-    'Podcast about movies called "Escape Hatch".',
-    'Hosts: Jason Goldman, Matt Haitch (called "Haitch"), Proto, Slim.',
-    'Recurring voicemailers/callers: Truthsayer (also called Birria), Kev, Corey, Animal Mother, Mr Java, Lizzen, Ethan, Rosie, Hex.',
-    'Recurring segments: Tapedeck, Dune Pod, Tilda Swinton Award, H Flex, J Flex, Chuckle Hut.',
-    'Common catchphrases: "mmm", "that\'s great", "you hack".',
-    `Key names and terms that appear frequently: ${[...CORE_VOCABULARY.slice(10), ...lexiconTerms].join(', ')}.`,
-    'Director names to spell correctly: Denis Villeneuve, Timothée Chalamet, Saoirse Ronan, Joe Eszterhas, John Boorman.',
-  ].join(' ');
+  // Podcast-specific context terms
+  const contextTerms = [
+    'Escape Hatch podcast',
+    'Jason Goldman',
+    'Matt Haitch',
+    'Haitch',
+    'Proto',
+    'Slim',
+    'Truthsayer',
+    'birria',
+    'Kev',
+    'Corey',
+    'Animal Mother',
+    'Mr Java',
+    'Lizzen',
+    'Ethan',
+    'Rosie',
+    'Hex',
+    'Tapedeck',
+    'Dune Pod',
+    'Tilda Swinton Award',
+    'H Flex',
+    'J Flex',
+    'Chuckle Hut',
+    'Denis Villeneuve',
+    'Timothée Chalamet',
+    'Saoirse Ronan',
+    'Joe Eszterhas',
+    'John Boorman',
+  ];
+
+  // Combine with lexicon terms, dedupe, cap each at 15 words
+  const all = new Set<string>();
+  for (const term of contextTerms) all.add(term);
+  for (const term of lexiconTerms) {
+    if (term.split(/\s+/).length <= 15) all.add(term);
+  }
+
+  // AssemblyAI recommends ≤50 keyterms for best results
+  return Array.from(all).slice(0, 50);
 }
 
 /**

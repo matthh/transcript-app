@@ -233,7 +233,7 @@ async function startTranscription(audioUrl: string, episodeNumber: EpisodeId, ep
   const keytermsPrompt = getKeytermsPrompt();
 
   console.log(`    Speaker range: ${minSpeakers}–${maxSpeakers}`);
-  console.log(`    Keyterms prompt: ${keytermsPrompt.length} chars`);
+  console.log(`    Keyterms prompt: ${keytermsPrompt.length} terms`);
   const transcriptResponse = await client.transcripts.submit({
     audio_url: audioUrl,
     speech_models: ['universal-3-pro', 'universal-2'],
@@ -242,7 +242,7 @@ async function startTranscription(audioUrl: string, episodeNumber: EpisodeId, ep
       min_speakers_expected: minSpeakers,
       max_speakers_expected: maxSpeakers,
     },
-    keyterms_prompt: [keytermsPrompt],
+    keyterms_prompt: keytermsPrompt,
   } as Record<string, unknown> as Parameters<typeof client.transcripts.submit>[0]);
 
   return transcriptResponse.id;

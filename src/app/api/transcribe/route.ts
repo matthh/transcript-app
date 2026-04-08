@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
 
     // Build keyterms prompt for Universal-3 Pro
     const keytermsPrompt = getKeytermsPrompt();
-    console.log(`Using keyterms prompt (${keytermsPrompt.length} chars)`);
+    console.log(`Using keyterms prompt (${keytermsPrompt.length} terms)`);
 
     // Start transcription with AssemblyAI Universal-3 Pro
     const transcriptResponse = await client.transcripts.submit({
@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
         max_speakers_expected: 10,
       },
       webhook_url: webhookUrl,
-      keyterms_prompt: [keytermsPrompt],
+      keyterms_prompt: keytermsPrompt,
     } as Record<string, unknown> as Parameters<typeof client.transcripts.submit>[0]);
 
     const jobId = transcriptResponse.id;
