@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const SHEET_ID = '1RbtWP966CxA57PatyMcbJ6_ylg9tmCvDSLNxjmQ4bvk';
-const SHEET_TAB = 'Pod Data Review';
+const SHEET_TAB = 'Pod Data Detail';
 
 // Column keys in the order the form sends them
 const COLUMN_KEYS = [
