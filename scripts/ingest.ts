@@ -1520,12 +1520,12 @@ async function playlistOnly() {
 function getEpisodeArg(): number | null {
   const idx = process.argv.indexOf('--episode');
   if (idx === -1) return null;
-  const val = process.argv[idx + 1];
-  if (!val || isNaN(Number(val))) {
+  const raw = (process.argv[idx + 1] || '').replace(/^episode_/, '');
+  if (!raw || isNaN(Number(raw))) {
     console.error('Usage: --episode <number>  (e.g. --episode 299)');
     process.exit(1);
   }
-  return Number(val);
+  return Number(raw);
 }
 
 async function singleEpisodeIngest(episodeNum: number) {
