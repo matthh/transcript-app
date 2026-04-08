@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 312 episodes - updated 2026-04-08
+// Auto-generated - do not edit - 313 episodes - updated 2026-04-08
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -13895,14 +13895,14 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Brian Schneider",
     "mmmCount": 43,
     "thatsGreatCount": 12,
-    "notableMoments": "Brian is the former Magic the Gathering Lead Game Designer - he talks about the process of building a game, and the crossroads between Magic and Poker\n- Tom and Zendaya got married in Tiburon\n- Brian likes Nick Hornby's overarching premise that \"People aren's perfect\"\n- Jason - This feels like the last pre-9-11 movie - There is an abundance and stability in this movie (economic and social) that hasn't existed since 9-11. \n- Haitch talks about opening up foor Green Day again\n- Haitch - this is a Gen X classic\n- Soundtrack talk - Jason doesn't think the soundtrack is all that, considering the importance of Gen X music in the film. Too much 70s Boomer music, not enough Punk and New Wave. \n- Jack Black is 1000 Watts in this movie\n- Letters - Bog Pod, Animal Mother, Mr Java (Greg Kihn Band - Jeopardy parody), Truthsayer, Kev, Corey",
+    "notableMoments": "Brian is the former Magic the Gathering Lead Game Designer - he talks about the process of building a game, and the crossroads between Magic and Poker\n- Tom and Zendaya got married in Tiburon\n- Brian likes Nick Hornby's overarching premise that \"People aren's perfect\"\n- Jason - This feels like the last pre-9-11 movie - There is an abundance and stability in this movie (economic and social) that hasn't existed since 9-11.\n- Haitch talks about opening up foor Green Day again\n- Haitch - this is a Gen X classic\n- Soundtrack talk - Jason doesn't think the soundtrack is all that, considering the importance of Gen X music in the film. Too much 70s Boomer music, not enough Punk and New Wave.\n- Jack Black is 1000 Watts in this movie\n- Letters - Bog Pod, Animal Mother, Mr Java (Greg Kihn Band - Jeopardy parody), Truthsayer, Kev, Corey",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "What physical media do you miss the most?",
     "tildaH": "Ian",
     "tildaJason": "Lisa Bonet",
     "tildaGuest": "Laura",
-    "tildaCorey": "Corey forgot to do Tilda this week",
+    "tildaCorey": "Corey forgot to do Tilda",
     "showLink": "https://www.patreon.com/posts/high-fidelity-152422927",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1772840465358-d577f73c71ef6.jpg",
     "letterboxdLink": "https://letterboxd.com/film/high-fidelity/",
@@ -13947,7 +13947,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "notableMoments": "Opens with talk about the Iran war - Ben is the perfect guest to talk about how crazy and illegal this war is. Plus disheartening discussion about what comes next with China, Russia, North Korea, Cuba\n- Ben's 6th appearance on the pod\n- Talk about Timothee Chalomet's chances at the Oscars\n- Dune 3 trailer coming - attached to theatrical release of Project Hail Mary\n- Haitch's son Sam discovered Mottley Crue, Jason's kids are listening to Axolotl in the Ocean\n- Ben talks about the CIA's relationship to Hollywood - CIA is really good at getting Hollywood to tell their side of the story (over Military and Government)\n- Ben talks about the CIA's relationship to Hollywood - CIA is really good at getting Hollywood to tell their side of the story (over Military and Government)\n- Letters - Bog Pod, Lizzen, Animal Mother, Mr Java with a Shakespeare parody, Truthsayer, Kev, Corey",
     "hFlex": "N/A",
     "jFlex": "N/A",
-    "kevsQuestion": "What's a plan you had that you didn't think would work, but everything worked out ",
+    "kevsQuestion": "What's a plan you had that you didn't think would work, but everything worked out? ",
     "tildaH": "Haitch couldn't top Jason's pick of the Ayatollah",
     "tildaJason": "Ayatollah Khomeni",
     "tildaGuest": "Bryan Cranston CIA character",
@@ -13986,7 +13986,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "film": "The Shining (1980)",
     "filmYear": 1980,
     "releaseDate": "3/17/2026",
-    "length": "1:50:17",
+    "length": "2:57:11",
     "reviewer": "birria",
     "guest": "Ryan Condal / Dave Mandel",
     "mmmCount": 65,
@@ -14000,7 +14000,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "tildaGuest": "Dave - Scatman Crothers or the woman in the bathtub or Tony\nRyan - The Grady Twins",
     "tildaCorey": "Lloyd",
     "showLink": "https://www.patreon.com/posts/episode-300-1980-153509299",
-    "artworkLink": "https://i.scdn.co/image/ab6765630000ba8a1629fcd8d4941377a11a56ab",
+    "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1774013001047-35e2c4a54b8de.jpg",
     "letterboxdLink": "https://letterboxd.com/film/the-shining/",
     "imdbLink": "https://www.imdb.com/title/tt0081505/",
     "tmdbId": 694,
@@ -14038,7 +14038,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Van Lathan",
     "mmmCount": 48,
     "thatsGreatCount": 14,
-    "notableMoments": "First appearance for Van on the show, and he's a top-tier guest.\n- Van - Lord and Miller are now creatives who have the \"Seal of Approval\" - you know they are going to try to do something interesting\n- Van compares Ryan Gosling to Kobe Bryant - he took the long path to greatness\n- The Sign of the Times Karaoke song - this scene just freaking works. Great discussion of Sandra Huller and her performance\n- Every Space Movie Trope is in this movie, and it's a miracle that everything works\n- Some discussion of the 3rd act being clunky, leads into a discussion of Perfect movies vs Great movies (for Perfect - Van mentions The Matrix and No Country for Old Men. Jason brings up Jaws and Empire Strikes Back)\n- Van fakes Jason out by making a joke claim that he want to Princeton\n- Greg Frasier (cinematographer) good discussion of his innovative work\n- Funny discussion on the new Beatles movies which Greg is shooting\n- Rocky is a great character - fully realized with design, puppetry, performance by James Ortiz, and effects\n- Great talk about going to see movies at the theater. \n- Letters - Lizzen, Mr Java collab with Animal Mother ( parody), Truthsayer, Kev, Corey",
+    "notableMoments": "First appearance for Van on the show, and he's a top-tier guest.\n- Van - Lord and Miller are now creatives who have the \"Seal of Approval\" - you know they are going to try to do something interesting\n- Van compares Ryan Gosling to Kobe Bryant - he took the long path to greatness\n- The Sign of the Times Karaoke song - this scene just freaking works. Great discussion of Sandra Huller and her performance\n- Every Space Movie Trope is in this movie, and it's a miracle that everything works\n- Some discussion of the 3rd act being clunky, leads into a discussion of Perfect movies vs Great movies (for Perfect - Van mentions The Matrix and No Country for Old Men. Jason brings up Jaws and Empire Strikes Back)\n- Van fakes Jason out by making a joke claim that he want to Princeton\n- Greg Frasier (cinematographer) good discussion of his innovative work\n- Funny discussion on the new Beatles movies which Greg is shooting\n- Rocky is a great character - fully realized with design, puppetry, performance by James Ortiz, and effects\n- Great talk about going to see movies at the theater. \n- Letters - Lizzen, Mr Java collab with Animal Mother (Aerosmith Amazing parody), Truthsayer, Kev, Corey",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "What is the last song you'd sing at Karaoke if the world was coming to an end? What is your \"Farewell to Earth?\"",
@@ -14047,7 +14047,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "tildaGuest": "Eva Stratt (the mission head)",
     "tildaCorey": "Corey didn't watch the movie, and didn't give a Tilda",
     "showLink": "https://www.patreon.com/posts/project-hail-154040116",
-    "artworkLink": "https://i.scdn.co/image/ab6765630000ba8a9e5af9e92f39588c942b0855",
+    "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1774569695417-aa94f8388b804.jpg",
     "letterboxdLink": "https://letterboxd.com/film/project-hail-mary/",
     "imdbLink": "https://www.imdb.com/title/tt12042730/",
     "tmdbId": 687163,
@@ -14073,5 +14073,30 @@ export const episodeMetadata: EpisodeMetadata[] = [
       "Priya Kansara",
       "Mia Soteriou"
     ]
+  },
+  {
+    "pod": "EH",
+    "season": 9,
+    "episode": 302,
+    "film": "Hard Boiled (1992)",
+    "filmYear": 1992,
+    "releaseDate": "4/5/2026",
+    "length": "1:26:57",
+    "reviewer": "birria",
+    "guest": "Devindra Hardawar",
+    "mmmCount": 29,
+    "thatsGreatCount": 9,
+    "notableMoments": "Haitch is getting 2 dogs.\n- Talk about Vibe Coding - Devindra is not doing any. Jason has built Transcript Bot. \n- Devindra on Chow Yun Fat - there is nobody cooler than this guy. Effortless Charisma\n- Devindra - Allen needed a cooler name - \"Tequila and Allen\" just doesn't work\n- Tony Leung - terrific in this movie. Easy to see the guy he will become in Wong Kar-Wai movies in the future\n- Jason - \"Tarantino You Hack!\"\n- Mad Dog - Phillip Chung-Fung Kwok - was not in the movie. They created the part when they saw what he could do. \n- Devindra - The John Woo operatic violence style is so iconic\n- Haitch has never seen Bloodsport\n- The Hospital One-Shot scene is iconic\n- Jason's doctor told him \"You are borderline critically fat\"\n- Letters - Truthsayer, Kev, Corey",
+    "hFlex": "N/A",
+    "jFlex": "N/A",
+    "kevsQuestion": "What is your wildest babysitting story?",
+    "tildaH": "Uncle Hoi",
+    "tildaJason": "One of the babies",
+    "tildaGuest": "Mad Dog",
+    "tildaCorey": "Mad Dog",
+    "showLink": "https://www.patreon.com/posts/hard-boiled-1992-154681106",
+    "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1775220366732-727340fa2860c.jpg",
+    "letterboxdLink": "https://letterboxd.com/film/hard-boiled/",
+    "imdbLink": "https://www.imdb.com/title/tt0104684/"
   }
 ];
