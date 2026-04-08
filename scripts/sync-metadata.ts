@@ -230,7 +230,13 @@ async function fetchWithServiceAccount(): Promise<string[][] | null> {
   let bestScore = -1;
 
   // Canonical tab name — always prefer this if it exists and has valid data.
-  const PREFERRED_TAB = 'Pod Data Review';
+  // Match case-insensitively and allow minor variations.
+  const isPreferredTab = (t: string) => {
+    const norm = t.toLowerCase().replace(/\s+/g, ' ').trim();
+    return norm === 'pod data review' || norm === 'poddatareview';
+  };
+
+  console.log(`  Available tabs: ${sheetProps.map(p => `"${p?.title}"`).join(', ')}`);
 
   for (const props of sheetProps) {
     const title = props?.title || '';
@@ -259,9 +265,11 @@ async function fetchWithServiceAccount(): Promise<string[][] | null> {
     score += Math.min(values.length, 500) / 500;
 
     // Massive bonus for the canonical tab so it always wins when valid.
-    if (title === PREFERRED_TAB && hasFilm && hasEpisode) {
+    if (isPreferredTab(title) && hasFilm && hasEpisode) {
       score += 1000;
     }
+
+    console.log(`  Tab "${title}": ${values.length} rows, score=${score.toFixed(2)} (film=${hasFilm}, ep=${hasEpisode})`);
 
     if (score > bestScore) {
       bestScore = score;
