@@ -229,6 +229,9 @@ async function fetchWithServiceAccount(): Promise<string[][] | null> {
   let bestTitle = '';
   let bestScore = -1;
 
+  // Canonical tab name — always prefer this if it exists and has valid data.
+  const PREFERRED_TAB = 'Pod Data Review';
+
   for (const props of sheetProps) {
     const title = props?.title || '';
     if (!title) continue;
@@ -254,6 +257,11 @@ async function fetchWithServiceAccount(): Promise<string[][] | null> {
     if (hasSeason) score += 1;
     if (hasReleaseDate) score += 1;
     score += Math.min(values.length, 500) / 500;
+
+    // Massive bonus for the canonical tab so it always wins when valid.
+    if (title === PREFERRED_TAB && hasFilm && hasEpisode) {
+      score += 1000;
+    }
 
     if (score > bestScore) {
       bestScore = score;
