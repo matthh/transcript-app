@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 313 episodes - updated 2026-04-10
+// Auto-generated - do not edit - 313 episodes - updated 2026-04-11
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -1409,7 +1409,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "3/14/2021",
     "length": "1:55:24",
     "reviewer": "Pat",
-    "guest": "Charles Forsman / Dale_A",
+    "guest": "Charles Forsman / dale_a",
     "mmmCount": 35,
     "thatsGreatCount": 0,
     "notableMoments": "- Jason notices that H works the title of the film into the end of every synopsis\n- Jason promises to wear a pencil mustache if the episode gets 10000 listens; \n- origin of the original Corey sounder? \n- Pod-First - the Dune Pod Discord is conceived!",
@@ -4307,10 +4307,10 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "5/15/2022",
     "length": "1:27:40",
     "reviewer": "Space Monkey",
-    "guest": "Dale_A",
+    "guest": "dale_a",
     "mmmCount": 25,
     "thatsGreatCount": 2,
-    "notableMoments": "Jason sings the theme song from 3-2-1- Contact\n- Dale_A sings the Screech song from Saved By The Bell Hawaiian Style",
+    "notableMoments": "Jason sings the theme song from 3-2-1- Contact\n- dale_a sings the Screech song from Saved By The Bell Hawaiian Style",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "Has a performance ever ruined a movie for you?",
@@ -6260,7 +6260,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "3/5/2023",
     "length": "1:42:21",
     "reviewer": "Terence",
-    "guest": "Dale_A / Jonesy Loves Beer",
+    "guest": "dale_a / Jonesy Loves Beer",
     "mmmCount": 23,
     "thatsGreatCount": 3,
     "notableMoments": "Art - John Entwistle/If Tilda plays Prof Sub Zero, that'll be her second time replacing an Asian character",
@@ -6269,7 +6269,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "kevsQuestion": "Haitch - Have you seen Fargo or not?\nFor Dale and Jason - What game shows did you watch growing up?\n",
     "tildaH": "Weiss",
     "tildaJason": "Professor Sub-Zero",
-    "tildaGuest": "Mick Fleetwood - Jonesy and Dale_A",
+    "tildaGuest": "Mick Fleetwood - Jonesy and dale_a",
     "tildaCorey": "Dawson",
     "showLink": "https://open.spotify.com/episode/4Hc9O1TgVEg3NIyBJuXLUO?si=x88L9d7DQd6I5Z6TtYFCYQ",
     "artworkLink": "https://d2a9bkgsuxmqe2.cloudfront.net/production/podcast_uploaded_episode400/5864738/5864738-1677776053348-bfabd8ad7dd1d.jpg",
@@ -8370,7 +8370,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "12/24/2023",
     "length": "2:07:18",
     "reviewer": "Space Monkey",
-    "guest": "Dale_A",
+    "guest": "dale_a",
     "mmmCount": 41,
     "thatsGreatCount": 5,
     "notableMoments": "N/A",
@@ -12431,7 +12431,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "8/10/2025",
     "length": "1:36:10",
     "reviewer": "birria",
-    "guest": "Devindra Hardawar.",
+    "guest": "Devindra Hardawar",
     "mmmCount": 43,
     "thatsGreatCount": 11,
     "notableMoments": "Devindra - Talks about the state of genre films in 2025 - Great year for Horror (Weapons), Comic Films (Superman) coming back, Comedy too (Naked Gun)\n- Jesus Christ Superstar revival discussion - \"This is the best stage musical in the history of the world.\" says Jason\n- Apex Shaky-Cam movie\n- Berlin fight scene is the best in the series - intimate, fast, well scripted, the Magazine, and ends with a literal bang\n- Car chase scene is iconic - everything works. We don't make chase scenes like this any more\n- The score carries a ton of the weight of the film \n- Jason - The Jason Bourne movies are exemplary of The Make Gaze - reminding us of what male competence looks like\n- Joan Allen as Landy is great. Kicking ass and being competent.\n- Tony Gilroy writing for Brian Cox - Chef's kiss\n- The Fridge-ing of Franka Potente is regrettable\n- Karl Urban as Kirill was cast perfectly\n- Duleck's Division - \"She's standing right next to you\" - the movie folds in half around that scene\n- Letters - Haitch's re-designer Luke vm about JCSS, Lizzen, Animal Mother, Truthsayer, Mr Java (Mr Tambourine Man parody), Corey (didn't watch), Kev",
