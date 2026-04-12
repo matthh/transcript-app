@@ -63,7 +63,4 @@ topic-vectors.json
 topic-cache.json
 transcribed-episodes.txt
 
-# Transcripts (stored in Vercel Blob, too large for git)
-transcripts/
-
 .env*.local

@@ -1,0 +1,5596 @@
+{
+  "episode_number": 274,
+  "episode_name": "BONUS: Emergency - One Battle After Another (2025)",
+  "dialogues": [
+    {
+      "name": "Sounder/FX",
+      "timestamp": "0:01",
+      "text": "This, this."
+    },
+    {
+      "name": "Sounder/FX",
+      "timestamp": "0:02",
+      "text": "This is a tape deck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:18",
+      "text": "Hey, everybody, it's H. And welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined, as always, by my co host, Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "I will say, like, I sort of, like, just want to be destroyed by Isaac Choettner."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:32",
+      "text": "Like, I just like to find out, like, sort of the hypocrisy that my."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:34",
+      "text": "Life is built on."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:35",
+      "text": "And it's the return of the host of the podcast channels, Peter Kafka."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "0:41",
+      "text": "I am not as enamored with PTA as some film bros are."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:46",
+      "text": "On this very special emergency bonus episode, we cover Paul Thomas Anderson's new magnum opus, One battle after Another. If you're enjoying the show, we need your help."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:57",
+      "text": "Take a minute to leave us a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:58",
+      "text": "Five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. And now, without further adune, one battle after another. Okay, in honor of the physical prowess of Sean Penn, can we just start with Jim selfies?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:29",
+      "text": "And you guys appear to be anti gym selfies. Is that the situation?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:33",
+      "text": "Because I like. Why not share with the world what we got going on?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:38",
+      "text": "What we got going on? I mean, that's a. That's, That's a justification for a number."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:42",
+      "text": "Of different kinds of selfies, if that is your standard. Well, that's a good point. So I don't know if that's really. I don't know if that's really the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "1:48",
+      "text": "Did the gym stuff start after you pivoted to video or is this always."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "1:52",
+      "text": "Been an obsession for you?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:56",
+      "text": "I mean, Jason's got. Jason's posting more."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:58",
+      "text": "More pictures of himself in the Engineers channel than I do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:01",
+      "text": "That's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:02",
+      "text": "That's just because I have an obligation."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:03",
+      "text": "Contractually to post some. To post some saucy videos. So some saucy photos for our subscribers. Trying to get the only fans going here."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "2:13",
+      "text": "It's like the Riyadh Comedy Festival. They also require some. Some exactly social posts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:18",
+      "text": "The chappelle handprint one was tough."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "2:21",
+      "text": "That was."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:22",
+      "text": "That was a tough one."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "2:24",
+      "text": "My feed, my. My feed is full of those. They all seem to be coming from the Saudi minister in charge of culture."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "2:30",
+      "text": "So he presumably thinks they're great. And they all look like hostage videos. It's wild."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:34",
+      "text": "There was one that was like, I saw a Post today that Tim Dillon was supposed to go and he. And he, he didn't end up going because he made a joke about it is like look like you know, it's like whatever, they've got slaves."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:48",
+      "text": "But like, you know, that's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:50",
+      "text": "That doesn't mean I shouldn't get paid. And the Saudis were like, that joke wasn't funny. You' not coming. It's like, oh yeah, no, it turns out the absolute monarchy of Saudi Arabia is not free speech maximalist and is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:02",
+      "text": "Not going to support your edgelord humor. So."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "3:04",
+      "text": "And also Tim Dylan has joined the resistance."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "3:06",
+      "text": "So welcome Tim."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:07",
+      "text": "Yeah, we're. We want. It's a big tent."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:09",
+      "text": "It's a big tent."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:10",
+      "text": "We're welcome."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "3:10",
+      "text": "Anyone? Well, there's a debate about how big the tent. I know we get."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:13",
+      "text": "Should we, should we start with Ezra versus Taasi Coates as the, the topper for this? Because I think it's highly relevant."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "3:19",
+      "text": "It is relevant."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "3:20",
+      "text": "It is the movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:21",
+      "text": "We want to discuss the moment."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:22",
+      "text": "The moment when Todd has he coats."
+    },
+    {
+      "name": "Ta-Nehisi Coates",
+      "timestamp": "3:24",
+      "text": "Was like, you know, I think all of that is understandable, but I guess was silence not an option?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:30",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:30",
+      "text": "Yeah, he bought he bodied as. I mean like from a debate. As a debater, I will tell you that Ezra got fucking bodied in this podcast. But I think it is, I think it is primarily because it took them a while to define the terms as is. There's a separate. There are separate projects between what is politically expedient and what is and what."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:52",
+      "text": "And what is like morally correct."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:55",
+      "text": "And it took a while for them."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:57",
+      "text": "To like define what things that a politician would do versus things that not a politician would do in the context of the moment that we're in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:06",
+      "text": "But Ezra got pretty bodied in this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:08",
+      "text": "In this, in this podcast is my, my review."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "4:12",
+      "text": "I thought it was just a pretty reasonable conversation between two smart people about what is to be done and they."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "4:18",
+      "text": "Both conclude they don't really know and they're going to keep doing what they're doing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:22",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "4:22",
+      "text": "And that kind of sums up where we're."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:25",
+      "text": "If you want to have a not if you want to go with a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:27",
+      "text": "Non hot take version of who won a debate, then I guess that's fair."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:31",
+      "text": "But like I think, I think the problem from. I will tell you if you were scoring this from a debate standpoint, the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:36",
+      "text": "Problem that Ezra ends up in is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:39",
+      "text": "That Ta Nehisi Coates ends up with an unimpeachable moral argument."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:44",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:44",
+      "text": "Right in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:44",
+      "text": "In the debate."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:46",
+      "text": "And it becomes very difficult to come back with like, you know. Yes. Like if we don't have power."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:52",
+      "text": "We can't do these things."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:53",
+      "text": "It's like, you know. Absolutely. And yet we. There should, you know, that there are."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:58",
+      "text": "Certain lines that we cannot cross. And that is like, you know, and that is the ultimate. That is the ultimate truth."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "5:04",
+      "text": "I mean, I don't know. I mean, I'm more inclined to Ezra thinking than Ta Nehisi thinking, but in general, I thought that the, you know, Ezra's argument about. About."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "5:13",
+      "text": "About Roe v. Wade and where we are and how Obama came to power as a normie opposing gay marriage, even though he probably didn't oppose gay marriage, seemed like pretty good arguments that I don't think."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "5:27",
+      "text": "I don't think. Don he see."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "5:28",
+      "text": "Refutes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:29",
+      "text": "No, I don't think he refutes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:30",
+      "text": "We do have to be practical about."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:31",
+      "text": "It, and we have to be pragmatic and take these reasonable positions."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:35",
+      "text": "But you also."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:36",
+      "text": "You don't have to buy into the framing mechanism that the right has. Right. Like, we're not trying to win those voters. We're trying to win everybody else. That there are so many more of them. So I think that's the. And this actually ties to the Sarah McBride interview with Ezra as well."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:52",
+      "text": "Of like, we got to get the normies."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:54",
+      "text": "That's what this is all about. And some of those people are more moderate than we might like."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:00",
+      "text": "Yeah, some of those people have. Have ideologies or beliefs that would make."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:03",
+      "text": "Sarah McBride and Ezra and I think a lot of people listening to this podcast very upset. But you want their vote. So, yeah, I think."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:10",
+      "text": "I think the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:11",
+      "text": "I think no one's debating that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:12",
+      "text": "I think the place where Coates kind of shines through."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:16",
+      "text": "Is that what you. What you would do in the context of electoral politics is one thing, but."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:23",
+      "text": "The ultimate guiding star for what kind what both."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:27",
+      "text": "What kind of nation we want to be and what we want to do as people has to be something that is above and beyond that, by the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:33",
+      "text": "Way, that the right has been doing for decades. Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:36",
+      "text": "They've been having their own internecine purity."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:39",
+      "text": "Contest, but they also just inexorably have won power and got what they wanted all along."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:44",
+      "text": "Yeah, yeah, that's true."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:45",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:45",
+      "text": "That's true. And have become more and more. Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:48",
+      "text": "I mean, my biggest process, my biggest."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "6:50",
+      "text": "Take is, is the commentary in my feeds primarily on. Well, on all of them, honestly. Like, it's all. It's all incredibly negative. Like, Ezra is an idiot and he doesn't know what he's talking about. And. And he keeps asking Ta Nehisi how we should win political power. And that's not the point. I'm like, well, no, that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "7:07",
+      "text": "That is the point of his question."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "7:09",
+      "text": "Yeah, yeah. And. And again, Twitter isn't real life, but sometimes it's closer."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "7:14",
+      "text": "Quite, Quite discouraging to see the left."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "7:17",
+      "text": "Commentariat not get the point of the discussion. In my. In my mind, I think."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:22",
+      "text": "Yeah, I mean, I do. I think I get the point of the discussion. And, like, I share the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:28",
+      "text": "Obviously, the political goals. I think the issue is that you have to find a way to talk about those in a way that is consistent with your values. I also think that people in politics or political observers sometimes believe that there's, like, sort of one simple trick or like, you know, one, like, you know, one bank shot that enables you to kind of, like, persuade, even though it maybe is like, moving the positions."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:56",
+      "text": "And what we've seen, again, to your."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:57",
+      "text": "Argument of what's worked from the right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:59",
+      "text": "Is that the ideological kind of maneuvering, like, there was an entire postmortem on."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:05",
+      "text": "What Republicans needed to do after the Romney loss, and it was moderate on immigration and moderate with minority voters."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:13",
+      "text": "And they did the opposite. Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:14",
+      "text": "They did the opposite of that and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:15",
+      "text": "Been rewarded with eternal power."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:18",
+      "text": "Because the truth, particularly with national politics, particularly with presidentials, is that the personality."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:23",
+      "text": "And charisma of the candidate very much matters."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:26",
+      "text": "And that if you have the right candidate and you have the right moment."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:29",
+      "text": "You have the ability to move the country in a way that maybe seemed impossible based on just polling in the numbers. And I think that's really important."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "8:39",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "8:39",
+      "text": "The right didn't defeat Roe v. Wade."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "8:41",
+      "text": "Because Roe v. Wade is unpopular."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:43",
+      "text": "Exactly. Correct."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:44",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:44",
+      "text": "Correct."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:44",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:45",
+      "text": "But I think it's. I think it is worth following up on what Coats said, which was, like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:49",
+      "text": "If Biden had run, like, imagine a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:52",
+      "text": "World where Biden, like, just says, I'm a caretaker. Like, now we have a primary and."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:56",
+      "text": "We have a big fight, you know, and somebody emerges really strong and young and vital and engaged and ready to go."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:03",
+      "text": "Donald Trump probably gets his ass handed."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:05",
+      "text": "To him in 2024."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:07",
+      "text": "I do think that. I do think the bigger point, it's, It's. It's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:09",
+      "text": "I'm not sure that's actually true given the state of the economy in, in 2024, to be perfectly honest."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:15",
+      "text": "But the. I, I do think that the point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:18",
+      "text": "That Coats makes more narrow victory, whatever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:20",
+      "text": "I do, I think. I think it's still a loss."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:22",
+      "text": "I think it's possible. I think 2024 probably wasn't winnable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:25",
+      "text": "I do. And that's where I really agree with Coats. The thing. I agree mostly with him. The thing that I thought was like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:30",
+      "text": "The most shining truth of that entire episode was, was sometimes you just lose."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:34",
+      "text": "We lose."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:35",
+      "text": "Sometimes you lose."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:36",
+      "text": "And sometimes you lose generationally and sometimes you lose for a while. That doesn't change what truth is and that doesn't change what justice is. And it's important to keep that in mind."
+    },
+    {
+      "name": "Ta-Nehisi Coates",
+      "timestamp": "9:46",
+      "text": "The privilege that I draw out of this, the honor that I draw out of this is not that things will necessarily be better in my lifetime, but that I will make the contribution that I am supposed to make."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:58",
+      "text": "And our part."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:59",
+      "text": "Yeah. And I think to transition to our purpose here today. I think that is. I think that is what is very interesting and going to be very interesting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:08",
+      "text": "About the way in which this movie, one battle after another, kind of permeates."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:14",
+      "text": "The public discourse, particularly when it comes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:17",
+      "text": "To award season, is that people are."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:19",
+      "text": "Going to be trying to read this movie as political satire, as like, oh, this is about the righteousness of leftist."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:29",
+      "text": "Revolutionary politics in the context of white nationalism."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:33",
+      "text": "Whereas I think what this movie is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:36",
+      "text": "Actually about is a father trying to get his daughter back. And is. It is. It is not actually."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:44",
+      "text": "It is a political."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:45",
+      "text": "Without being a political satire. And it requires a deeper investigation of what the human condition is than just whose side are you on in this political dispute?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:58",
+      "text": "So I think that's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:59",
+      "text": "That's what I think is interesting about this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:01",
+      "text": "Let me start by saying put a pin in that for one second. Your favorite thing for me to say. So I just want to call out and thank Peter for getting us together. This is our like second emergency bonus episode. Crisis oriented. Because you picked us last year after civil war."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:20",
+      "text": "Crisis oriented."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:21",
+      "text": "We got to get on and talk about this. And so this definitely is a nice piece on that. But Peter, welcome back to the pod and thanks for. Thanks for assembling us."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "11:28",
+      "text": "I'm glad to chart the. The."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "11:31",
+      "text": "The decline of our republic with these podcasts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:34",
+      "text": "Each episode becomes."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "11:36",
+      "text": "It is literally the least I can do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:38",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:39",
+      "text": "Before one last piece of business before."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:41",
+      "text": "We get into this movie. Have you finished? Andor. Are you. Are you now set. Interesting. And are you clear on it being the greatest piece of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:48",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:48",
+      "text": "How did it end up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:49",
+      "text": "How did it end up in your appreciation?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "11:51",
+      "text": "Oh, I. I owe you guys a tremendous debt for Andor Philippe. It was tremendous. It was tremendous, entertaining television first and foremost."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:02",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:03",
+      "text": "The politics is a great second bit. It was great to watch with my now 17 year old kid. We both really enjoyed it and we enjoyed it as an adventure, as a politics. He's the Right age to think about fascism and rebellion and what it means and what it doesn't. That was all great. It's not the greatest TV show of all time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:25",
+      "text": "What is the greatest TV show of all time, Peter?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:27",
+      "text": "Well, it's still got to be the Wire episode."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:31",
+      "text": "Wire Season 1 through 4 is the most. Is the best. Best written, most entertaining, most serious conversation."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:40",
+      "text": "But whatever. Andor's fucking great. There's no point."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:42",
+      "text": "There's no reason to diminish it. I think one of your guests recently was bringing up the idea that you guys are. Are of andor has wrecked your brains for television. Maybe."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "12:52",
+      "text": "Maybe I'm confusing with a different podcast. But. But like no Alien Earth. Great show. Great. Lots of flaws, but hard to enjoy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:02",
+      "text": "Hard to fully enjoy."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:04",
+      "text": "I still enjoyed it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:05",
+      "text": "It's just that we're not. I don't expect every show to be the Wire. I don't expect every show to be Andor. And that's fine. We have. We can contain multitudes, but it was great. I'm. I'm glad that it's two and done."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:17",
+      "text": "That we're not going to go anywhere near it. We started to watch Rogue One and I'm sure we'll finish it, but it's on the same."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:26",
+      "text": "The process that is the real thing. The real thing that Andor has ruined is last television as a whole. Although there's a bit of that for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:32",
+      "text": "Me and it's more Star wars where I'm just like. I'm not like fucking Mandalorian and Grogu, man. Like, how, how hype am I going to be for the fucking baby puppet."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:40",
+      "text": "But I was."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:41",
+      "text": "I was already there. I was already Star War."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:43",
+      "text": "I was. I was a kid when Star wars came out."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:45",
+      "text": "Meant a lot to me as an adult. I just, it's. I have a little bit of nostalgia for it, but I don't. It's not important to me in the way that it is for other peers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "13:56",
+      "text": "So Ander was just a great delight. Like, oh yeah, we can just dispense with all the Star wars that you don't care about. And, and it. By the way, like, you guys were able to like, understand what was it BBY4 means? Is that my."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "14:08",
+      "text": "Before the battle and I, I did. I mean, I eventually got to it, but like, none of, none of that stuff meant anything to me."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "14:15",
+      "text": "I just got to enjoy it as, as pleasure and politics."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:18",
+      "text": "Secondarily, just when that guy bangs the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:20",
+      "text": "Hammer is like your whole body resonates. You're ready to go."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "14:23",
+      "text": "I just still shout one Way out all the time. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:26",
+      "text": "There we go. All right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:30",
+      "text": "Are you guys ready to get into this movie?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:33",
+      "text": "Let's go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:33",
+      "text": "Let's do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:34",
+      "text": "All right, here we go. One battle after another is the dark reflection of who this country is in this fraught moment of political history."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:44",
+      "text": "Once upon a time, Bob was a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:46",
+      "text": "Rocket man known as Ghetto Pat, responsible for blowing things up as a core member of the infamous paramilitary resistance group the French 75. But when his wife, the devastatingly gorgeous and fierce leader Perfidia Beverly Hills, disappears after being compromised and impregnated by the sadistic military agent Colonel Stephen J. Lockjaw, Bob is left to raise their daughter Willa alone. Sixteen years later, Lockjaw uses the unlimited."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:14",
+      "text": "Resources of the US Military to kidnap."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:16",
+      "text": "Willa, intent on erasing any trace of her existence before it jeopardizes his admittance to the ultra exclusive white supremacist group, the Christmas Adventurers Club. Can Bob find his daughter before time runs out and create the change that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:32",
+      "text": "Will allow us all to learn to."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:34",
+      "text": "Stop fighting each other? Or are we doomed to keep waging one battle after another?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "15:48",
+      "text": "Let's go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:49",
+      "text": "Let's go. Are we all. Are we all on the first viewing of this? Anyone seen this movie twice? Yeah, I. I almost bought tickets today."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:56",
+      "text": "To go see it again."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:57",
+      "text": "It's. I would start, like, sort of, I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:59",
+      "text": "Guess, with that preface, which is that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:02",
+      "text": "I feel this is a movie I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:04",
+      "text": "Have to see a second time to really kind of fully get it all."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:08",
+      "text": "Like, I have certainly consumed a lot of content about the movie because it's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:13",
+      "text": "A movie, I think rewards attention."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:15",
+      "text": "But it was while I was watching."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:17",
+      "text": "And I was like, okay, I'm not the guy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:20",
+      "text": "It was like, I had, like, the last time that was true for me was like, washing over you was like Oppenheimer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:25",
+      "text": "I was like, okay, like, the structure is so complicated. I'm not gonna fully get how this is all being put together."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:31",
+      "text": "And I think the complexity with one battle after another is there is so much. There are so many plot elements and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:39",
+      "text": "Both in terms of tertiary characters and things that they're doing that it's very difficult to appreciate, like, how all of that ties together in one viewing. So with that caveat, though, I am very excited to talk about the movie today."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:53",
+      "text": "So I just want to do quick. I mean, I guess all of us."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:56",
+      "text": "Have come to this movie right now. What's your history, Peter with pta? What has he meant to you?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:03",
+      "text": "I am not as enamored with PTA as some film bros are."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:08",
+      "text": "And in fact, I've skipped a lot of the middle of the canon I saw."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:13",
+      "text": "Is it still called Hard Aid?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:15",
+      "text": "I know it's had multiple names. Whatever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:17",
+      "text": "Sydney is canonical."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:18",
+      "text": "Sydney is the film bro. Is the film bro version."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:21",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:21",
+      "text": "So I saw that like maybe like."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:24",
+      "text": "At a film festival at the University of Minnesota."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:27",
+      "text": "Like it was hard film bro."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:28",
+      "text": "Now, Peter."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:31",
+      "text": "No, that's how if you wanted to see anything, basically you had to go."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:36",
+      "text": "Seek it out like that. This is before the Internet and I."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:41",
+      "text": "Definitely like Boogie Nights, but it, it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:43",
+      "text": "Also read to me like, oh, this is someone who's, who's loves Martin Scorsese and is doing Scorsese stuff and, and."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:49",
+      "text": "Other stuff I've checked out on."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "17:51",
+      "text": "And I liked licorice pizza. I came back to him then and understood that sort of a trifle, but I'm definitely up for engaging with him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:58",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:59",
+      "text": "I, I, I sort of put Paul Thomas Anderson like above Quentin Tarantino and below Christopher Nolan in terms of the, and the Cohen's. For me, like my sort of, like my sort of like, you know, like my s tier of filmmakers is obviously."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:13",
+      "text": "Like, you know, it's like Kubrick, Spielberg."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:16",
+      "text": "The Cohen's like, like, you know, and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:19",
+      "text": "Like Christopher Nolan and then you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:22",
+      "text": "And like probably and you know, Denis."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:23",
+      "text": "Villeneuve in there as well."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:25",
+      "text": "And then I'm like pta. Really, really love. I, you know, almost every movie he's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:30",
+      "text": "Done is like a go see it opening weekend. Boogie Nights was like a huge fucking hit because it came out when I was in college and like, you know, it was a movie I've seen a million times on DVD and listen to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:40",
+      "text": "The commentary, you know, like is like, you know, Phantom thread is not a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:45",
+      "text": "Movie I've revisited but really appreciated."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:47",
+      "text": "There Will Be Blood is definitely one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:49",
+      "text": "Where I was like, this is a masterpiece. Like, this is like, you know, one of the greatest movies ever made."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:54",
+      "text": "I've never rewatched it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "18:55",
+      "text": "I have also never rewatched it. I've watched rewatch it on Tik Tok."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:59",
+      "text": "Yeah, yeah, I've watched that one a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:02",
+      "text": "Bunch for whatever reason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:03",
+      "text": "But like I still have not seen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:04",
+      "text": "Licorice pizza, for example."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:06",
+      "text": "Like, and I liked and we did. You know, guests can go listen to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:10",
+      "text": "Our Inherent Vice episode where it's like, this is a fun movie, but it's not a masterpiece."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:14",
+      "text": "And the Master also really interesting. But like, you know, there's some, there's some limitations there. So I would say I'm, I'm pretty in the, I'm pretty in like I'm here for Paul Thomas Anderson."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:25",
+      "text": "And I'm excited."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:26",
+      "text": "I was excited this movie was coming out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:27",
+      "text": "I was shocked at how both good it was and also how, like, just."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:33",
+      "text": "Dominant this movie is in the cultural discussion. Like right now we're doing this pod. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:38",
+      "text": "So. So I discovered. I was in Minneapolis, I think, when."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:41",
+      "text": "Boogie Nights came out, going to the University of Minnesota and then went back and revisited Sydney. Like, I. To me, the Boogie Nights was like the second coming. And then when I moved to California, I moved back. And then Magnolia came out. Like, to me, Magnolia was the greatest of his films and the most powerful and meaning."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:58",
+      "text": "Then I kind of fell off after There Will Be Blood."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:02",
+      "text": "Like the Master. I didn't watch Inheritance Vice. I didn't watch Phantom Thread. I didn't watch. And I finally went back and watched them and liked them all to different levels."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:09",
+      "text": "Licorice pizza felt like very much. It was like the Wes Anderson kind."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:13",
+      "text": "Of Darjeeling express phase of his career when, like, it's like he's doing his thing and it looks really beautiful and it's interesting, but it's not emotionally, really coherent for me or is resonant."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "20:23",
+      "text": "It's a hangout. It's a hangout movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:24",
+      "text": "Yeah, totally. Totally."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:27",
+      "text": "And so it was really fun to."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:28",
+      "text": "Be in this and having the. He is right back and doing something extraordinary, extremely powerful."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:34",
+      "text": "So I just want to do some quick behind the scenes. So, Jason, what's the deal? Like, why is he. I haven't consumed a ton of the behind the scenes stuff. What's his story with Pynchon?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:42",
+      "text": "You know, Inherent Vice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:43",
+      "text": "He's an auteur, but he's adapting Pynchon's."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:47",
+      "text": "Book for Inherent Vice this. He tried to adapt Vineland and then was really struggling, so he kind of set it aside. He wrote a bunch of stuff and then kind of mixed them together and still gives the credit for it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:58",
+      "text": "But what's the deal with Pynchon?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:00",
+      "text": "And, you know, he loves pinching. I mean, like, he's clearly. He's a. He, like PTA is a huge pension fan. I don't think it's. I think in particular, I think it's not surprising that he would be a fan of postmodern literature. Like, I think in particular, the fact that postmodernist literature, like, exists in the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:21",
+      "text": "Pop culture zeitgeist, like, it's in conversation with other forms of culture and, you know, whether that's, you know, rock and roll music or movies generally, like, it is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:31",
+      "text": "It is in dialogue with the culture."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:33",
+      "text": "In which it finds itself and is elusive to it and his movies, you know, like, his movies like, obviously have that element, that postmodern element to it. So it's not surprising he would be a fan of, Of. Of that genre of literature in particular."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:48",
+      "text": "And this is also like, this is also like Hunter S. Thompson and Thompson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:53",
+      "text": "Tom Robbins, or like less those and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:56",
+      "text": "More like, more David Foster, Wallace, Bartholomew."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:59",
+      "text": "Like those, you know, like, like that, like. Like real, you know, like store, like stories where there's very convoluted plots, lots."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:07",
+      "text": "Of characters with lots of weird names."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:10",
+      "text": "Like, you know, a lot of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:11",
+      "text": "A lot of interaction with real world culture. An awareness of literature, an awareness that it is, you know, that it's a meta. The awareness of fiction, metafiction, playing with those concepts, all of those things. I think. I think, yeah. So, like, like, he's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:27",
+      "text": "He's in that. He's. He's interested in those. He's interested in that dialogue in his movie making."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:34",
+      "text": "He's. He's just as particularly a big pension fan. And yeah, like, Inherent Vice is a. As a straight adaptation and this is like an. Inspired by like a repurposing of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:45",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:46",
+      "text": "Of Vineland, but both in terms of the actual plot and the setting and set of. Of that story."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:53",
+      "text": "So this was initially set up to."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:54",
+      "text": "Star Regina Hall, Viggo Mortensen and Joaquin obviously retiring from Inherent Vice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:00",
+      "text": "Warner Brothers green lights it with $115 million budget."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:03",
+      "text": "Leo getting his $20 million paycheck, even."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:07",
+      "text": "Though PTA's highest grossing movie, There Will."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:10",
+      "text": "Be Blood, gross $76 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:13",
+      "text": "Yeah, so."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:14",
+      "text": "So do you want to. I mean, we can go ahead and."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:16",
+      "text": "Talk about it now. The budget's estimated ultimately to be $175 million."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:21",
+      "text": "And there was a great discussion on."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:24",
+      "text": "The Midnight Boys, who were kind of in their feelings a bit over the notion that Ryan COOgler is given $90 million to do sinners creates a huge, huge success."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:35",
+      "text": "And yet people are still saying, well, it should have made more money."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:38",
+      "text": "It was 90 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:39",
+      "text": "Why did he have this deal?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:40",
+      "text": "Yeah, how did he get that?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:41",
+      "text": "That's, like, really bad. And here it felt like for PTA, they're like, here's $175 million."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:46",
+      "text": "Like, we hope it works, but if it doesn't, that's fine because you're pta."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:49",
+      "text": "Well, I mean, Peter, how does that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:51",
+      "text": "How does that work from a. I."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "23:54",
+      "text": "Mean, I. I'm glad I'm only getting."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "23:56",
+      "text": "To this now and that it wasn't in my head before I saw the movie. I wish I knew even less about the movie before I saw it. Because it definitely has skewed how I thought about it. If I just went straight cold, I think I would have enjoyed this movie a lot more because I think the hype undermined it. My pleasure for it, and I did enjoy it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:13",
+      "text": "This is Ryan Coogler treated differently than."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:15",
+      "text": "Paul Thomas Anderson by Warner Brothers executives. Maybe, I don't know."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:19",
+      "text": "But he also. His deal is not the same as PTA's deal. He has ownership of that movie. It's a potentially big fucking deal."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:26",
+      "text": "And to just say that they're equal isn't."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:29",
+      "text": "My big question about the budget is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:31",
+      "text": "I don't know where that 140 million is on the screen."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:34",
+      "text": "It's not the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:35",
+      "text": "I don't mean it in any way a criticism of the movie. I just don't understand how you put that much money in. I frankly am shocked that. That Leo got his 20 million for that. It seems like when you work with pta, you automatically understand this is not going to be a giant movie. You take less to make the movie work. And even when you factor in his. His budget, his salary, I just can't imagine how."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "24:59",
+      "text": "Is that what Denis spent on Dune?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:01",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:02",
+      "text": "Something in the 65."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:03",
+      "text": "It's something."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "25:04",
+      "text": "It doesn't. It doesn't look like those are made on the same P. L. At all."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:08",
+      "text": "Yeah, I. I never understand. Sort of. I like the piano."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:12",
+      "text": "Movies are always a bit surprising to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:13",
+      "text": "Me of what costs. What. I mean, it is worth saying that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:16",
+      "text": "There'S a huge cost associated with how they shot this movie because they shot in large format and they had to do all of these chase sequences with cameras that are incredibly big, incredibly heavy and incredibly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:28",
+      "text": "Oh, wow, Interesting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:30",
+      "text": "And so like, you know, if you look at sort of the rigs they."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:33",
+      "text": "Built for these VistaVision cameras, it's nuts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:37",
+      "text": "And they."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "25:38",
+      "text": "That all seems like a PTA problem."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "25:39",
+      "text": "Not an US problem or not a Warner."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:41",
+      "text": "No, no, no."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:42",
+      "text": "It's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:42",
+      "text": "It is, but it's. It is. I mean, that's where the money goes though. Like, I mean like that. That costs a lot of money. And so I. The other thing, I think just from."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:49",
+      "text": "A business standpoint that's different about this movie than."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:53",
+      "text": "Than sinners is Leonardo DiCaprio like. I mean, like Leonardo DiCaprio like for any of his off screen faults is that guy like he can open a mov. Is been doing that for four decades and he is, I think, tremendous in this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:11",
+      "text": "I think it's an amazing performance. It's certainly going to be nominated for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:14",
+      "text": "For best actor this year and I think it's Just, you know, he's a, he's a guy that. It's like we're in this weird port of movies right now where people are trying to figure out what you need."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:25",
+      "text": "To do to get people to come to the theater."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:26",
+      "text": "One of which are these large format."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:29",
+      "text": "Special format presentations of movies which Coogler also did a great job hyping up first sinners and you know, did a really great job explaining why it was important to go to the theater for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:38",
+      "text": "And the other reason is because there's, you know, there's like two movie stars left and this movie, you know, this movie has one of them and like, you know, and Leo is out there doing press for this movie, like pushing this movie. They're working hard in a way that he has never done in his career. Like he's doing tick tocks on Chase."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:58",
+      "text": "Infinity's account on Tik Tok to like."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:00",
+      "text": "Get people because they know this is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:03",
+      "text": "Not a mainstream movie, like as much."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:05",
+      "text": "And we can qualify the cultural discussion."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:07",
+      "text": "And it, you know, it's, it's Paul Thomas Anderson's biggest opening. It's a small movie definitely that has."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:13",
+      "text": "Action components and stuff."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:14",
+      "text": "And I think again, they probably have done themselves a disservice by marketing it as an action movie. I get why they would do that. But I think anyone who doesn't know what they're getting and walks in is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:24",
+      "text": "Good a three hour movie. Especially when the first hour, the first."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:29",
+      "text": "Hour is like sort of a meditation on."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:31",
+      "text": "Yeah, and there's action, but there's a lot of him lying on the couch getting high. Like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:35",
+      "text": "But the cinema score has been an."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:37",
+      "text": "A, like, so like, I, I would, I would worry about that. But apparently people are."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:41",
+      "text": "People do like it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:42",
+      "text": "I think this is the weekend where."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "27:43",
+      "text": "Every PTA fan went, yeah, and we'll see the rest."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:47",
+      "text": "We'll see what. It'll be interesting to see what the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:48",
+      "text": "Second week fall off is for sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:50",
+      "text": "My, my final thesis on this is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:51",
+      "text": "That part of this is a shot across the bow for Warner Brothers at Universal to like, just trying to send up a flare for Nolan to be like, hey, bro, come on back, man. We will. We'll give you the money. We'll give you the freedom."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:03",
+      "text": "I don't know if they need Nolan. Like, I mean like, Warner Brothers is like, you know, Warner Brothers is doing amazing Warner Brothers film."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:10",
+      "text": "They've had a great run. But by the way that, you know."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:13",
+      "text": "This happens with studios and networks, right? They suck and then they have a great run and no one can really explain why. And anyone who does is likely full of."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:20",
+      "text": "And there's a very high likelihood that Warner Brothers does not exist in a."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:26",
+      "text": "Couple years as a standalone entity. Entity. Right. That the Ellisons will buy Warner Brothers Discovery or some version of it and they will mush the two of those things together."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:36",
+      "text": "And that seems like it's overall a net bad to have fewer studios."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:40",
+      "text": "We don't know how it's going to pan out. But the idea that you know there's any. That any like the studio wrangling is all sort of beside the point. When it's the handful of men who are buying the studios, that's what's relevant."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:52",
+      "text": "Do you like the idea of Tim."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:53",
+      "text": "Apple riding into the rescue and buying out Warner Brothers?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:58",
+      "text": "What would he be?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "28:59",
+      "text": "Why is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:00",
+      "text": "No. I mean I don't care."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:01",
+      "text": "Like why do I care if Apple."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:03",
+      "text": "To keep it as a. To. To keep it as an independent studio."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:06",
+      "text": "Yeah, just keep it away from Ellison. Like keep it from being that. That much mushed in with that mushed in."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:11",
+      "text": "I guess."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:12",
+      "text": "And then by the way, the reason the Ellison's David and Larry want to buy Warner Brothers as one company is because they know that Tim Apple and everybody else does not want to buy a bunch of cable TV networks. They would happily look at Warner Brothers and as a standalone company. Which is Jaslov's big plan."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:32",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:33",
+      "text": "So as soon as he splits those."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:34",
+      "text": "Then there's automatically a bidding war for that, for those, for."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:38",
+      "text": "For the good."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:39",
+      "text": "The good co. And the. The Allisons are saying well we'll just take the entire thing. And that logic is pretty unassailable from a shareholder."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:48",
+      "text": "From."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "29:48",
+      "text": "From a Warner Brothers Discovery shareholder perspective."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:51",
+      "text": "For sure. For sure. It's just a pisser. It's. It's a pisser to happen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:56",
+      "text": "So. So budget $175 million worldwide first weekend."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:01",
+      "text": "$48 million. 22 and a half in the US so it's a good. It's a good start."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:06",
+      "text": "Also releasing September of 2025. Jason Demon Slayer. Kanetsu. No Yaiba. The Movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:14",
+      "text": "Infinity Castle."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:15",
+      "text": "Downton Abbey."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:16",
+      "text": "The Grand Finale."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:18",
+      "text": "The Conjuring Last Rites."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:20",
+      "text": "The Long Walk."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:21",
+      "text": "Gabby's Dollhouse."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:23",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:23",
+      "text": "Oh yeah. Gabby's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:24",
+      "text": "Gabby's doll house. Same weekend baby."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:26",
+      "text": "Did you see it?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:27",
+      "text": "No, but I probably will."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:29",
+      "text": "Oh God."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:29",
+      "text": "Gabby's very big with a 4 year old."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:32",
+      "text": "I know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:32",
+      "text": "It took me."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:33",
+      "text": "Sam got out of Gabby like last year just got out of Gabby. So it was a long run there. Weapons and the Hamilton re release."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:42",
+      "text": "Yeah, we don't."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:43",
+      "text": "This is like. It's just."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:44",
+      "text": "I don't Know what we're doing anymore. It's a confusing time for culture."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:50",
+      "text": "That's why we're here."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "30:50",
+      "text": "Weapons is September."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:52",
+      "text": "This is this month."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "30:52",
+      "text": "Yeah, yeah. Weapons is great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "30:56",
+      "text": "Also wonders."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:56",
+      "text": "I need to see it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:57",
+      "text": "Yeah, I really want to see it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:59",
+      "text": "All right, Peter, where do you want."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:00",
+      "text": "To start your first point?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:03",
+      "text": "We can keep going the meta discussion."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:04",
+      "text": "Which is, like I said, I caught just enough. I saw the trailer, the original trailer, and got a sense of what it was. I got just a whiff of. This is the biggest, best movie of the year. And I wish I hadn't seen it. I wish I'd gone into it that much colder because I don't think that hype helps the movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:26",
+      "text": "But I also loved beyond that love."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:28",
+      "text": "Knowing nothing about it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:30",
+      "text": "I assumed, given again, just the trailer."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:32",
+      "text": "And pension, that this was going to be. I knew that roughly this was about sort of lefty ish radicals. And then there's a time jump and then there's a daughter."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:44",
+      "text": "And I just assumed there was going to be like enormous doses of paranoia."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:47",
+      "text": "And hallucination in this and that very."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:51",
+      "text": "Clearly things you were going to see."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "31:53",
+      "text": "On camera were not actually happening. And it was part of your job in the audience to figure out what's real and what isn't and why does it all matter?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "32:01",
+      "text": "And I kept thinking that throughout the movie and even up until like the very last scene, I'm like, did all of that just actually happen? Are we meant to take all of that at face value? And I. I haven't seen or heard."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "32:14",
+      "text": "Any discussion of that being the case."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "32:17",
+      "text": "That we're supposed to question that. But I just assumed, given the themes of this movie and the ideas, that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "32:24",
+      "text": "Clearly people would be having paranoid delusions across the spectrum. And it's really surprising to me that it's meant to be, it's told as a straight story."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:35",
+      "text": "Yeah, I think they sort of move the paranoia to the audience as opposed to the characters. Because, like, when, like there's this sequence that happens."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:45",
+      "text": "I think this is a very interesting point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:47",
+      "text": "Like paranoia is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:49",
+      "text": "And shadowy forces working against the characters is a key element of this genre."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:57",
+      "text": "I think one of the things that's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:59",
+      "text": "Interesting that's going on is I definitely had the reaction when, from the time when Bob Ferguson's compound is stormed to the time in which he falls off."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:10",
+      "text": "The roof, there's kind of like a 40 minute, 30 minute sequence of just relentless. Of just relentless chase, like through buildings up on route."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:22",
+      "text": "Like it's relentless chase, but also like, oh, this, this, this looks like a normal nurse but actually, she's part of the rebellion."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:29",
+      "text": "She's part of. Right, she's part of. Exactly."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:31",
+      "text": "Like, that can't all be true."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:32",
+      "text": "Or the Christmas Adventurers Club scene."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:34",
+      "text": "Is that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:35",
+      "text": "Is that in the same sequence?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:37",
+      "text": "Where the guy goes into a house and then underground and through this tunnel into a secret other."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "33:41",
+      "text": "Like, that can't all be real."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:43",
+      "text": "And so I think. And because you, as the audience are kind of figuring out at this time how much of the real world that I know is this. And it's so. It's so evocative of the present moment."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:54",
+      "text": "I mean, the movie starts off with."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:56",
+      "text": "The storming of a migrant detention center that, like, there's. I think, for me, I was having the same question, which is like, is this all really happening? Is this, like a real thing that's really happening? And you're sort of, like, it puts you in the role that the protagonist."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:11",
+      "text": "In these stories is often in, which."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:13",
+      "text": "Is like, how much of this is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:14",
+      "text": "How much of this is actually real? Is this really happened to me or not?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:17",
+      "text": "I think that's in some ways, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:19",
+      "text": "Kind of a more interesting locus for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:21",
+      "text": "That thematic necessity of this literature than it is kind of putting it in the. In the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "34:27",
+      "text": "I am glad that it wasn't, oh."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "34:29",
+      "text": "It was all a dream, or this was all in Leo's head, or."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "34:32",
+      "text": "Or all."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "34:32",
+      "text": "You know, he's been in an insane asylum the whole time. Any version of that we have that movie, it's called."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:37",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:38",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "34:38",
+      "text": "Yeah, we have a million versions of that movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:41",
+      "text": "I. I definitely."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:42",
+      "text": "It's funny you mentioned just what. When. When walking in the sub basement to get to the Christmas Adventurers Club. I was like, wait a minute. What is going on here? Like, this is huge. How. How can this possibly be this big? Yeah, but I thought. I thought that was really fun. Or even the idea of, like, that somebody staffing the emergency line 247 for 16 years and they're still there."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "35:07",
+      "text": "Well, the Soros money goes far, is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "35:09",
+      "text": "What I can say."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:09",
+      "text": "Yeah, exactly. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:11",
+      "text": "Thank you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:13",
+      "text": "Jason, I want to follow up on what you just said. For me, I was not prepared at all for how."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:17",
+      "text": "Now, this is. So. Yeah. My first note was ICE Detention Camp. I was just like, what the. It was just really striking to see this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:27",
+      "text": "And the notion that immigration, like, literally."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:29",
+      "text": "We just did Casablanca last week or two weeks ago, and so we're thinking about that. And I loved the idea of the contrast of the military and the actual immigrants that are here and the pains that PTA went through the whole thing to show these are families. These are like, just."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:51",
+      "text": "Just like normal people trying to live their lives."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:55",
+      "text": "They are trying to just be here and work. I just kept being struck by, like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:59",
+      "text": "It'S such a clear example of, why."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:01",
+      "text": "The fuck are we doing any of this? Why are we persecuting people who are just trying to live and be a part of our society? And I loved how, for me, this came through Sensei. This came through Benicio. And in the midst of how he's running this underground railroad, and even when the shit is hitting the fan and they have to get people out and the cops are going to be here any minute, he's introducing everybody."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:24",
+      "text": "He's taking time to say, buenos noches. He's like, you know, just like, making the. The connections and making sure that everyone feels seen and heard and. And supported. And I just. I thought that that, to me, was."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:34",
+      "text": "Very deeply moving, especially in this moment. I really appreciated that for what it was."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:40",
+      "text": "You know, this. This touches on what I guess I'll."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:42",
+      "text": "Make as my first point, which is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:44",
+      "text": "We talk a lot about, on this pod, the dichotomy between having, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:49",
+      "text": "The Kubrick approach of every sequence in the movie is in a file cabinet versus the Marvel Cinematic Universe approach of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:55",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:55",
+      "text": "We'll figure out what the movie was when we're in, when we call people back for reshoots."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:01",
+      "text": "This was a movie on one hand, where he'd been working on this as early as, like, 1999."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:05",
+      "text": "Allegedly, he'd been writing versions of this. Paul Thompson."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:08",
+      "text": "Holy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:09",
+      "text": "He'd been working on it for a very long time."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "37:10",
+      "text": "Time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:10",
+      "text": "So there's elements of which that are, you know, obviously, in no way he would have known the kind of political reality we're in. Even when he started shooting this movie, couldn't have really known the political reality he would be releasing it into, particularly with the discussion on political violence and then two."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:29",
+      "text": "But then also, apparently a lot of the stuff with the. Like, you know, with the migrant workers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:38",
+      "text": "With immigrants and, like, you know, particularly the stuff that's in sensei's apartment."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:43",
+      "text": "The stuff with the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:44",
+      "text": "The hospital workers who are instrumental in freeing him."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:48",
+      "text": "Apparently, according to interviews, a lot of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:50",
+      "text": "That stuff was Benicio del Toro showing up on the movie, like, 30 days late because he was shooting a previous movie and bringing a lot of those ideas to set."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:58",
+      "text": "Now, I don't know what I haven't seen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:00",
+      "text": "Obviously, the drafts of the screenplays of what was, you know, what was written was not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:04",
+      "text": "But, like, both. Both, like Leo and PTA have said."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:09",
+      "text": "That there were significant, you know, Changes there. Once Benicio showed up on set, which I think is very interesting and you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:17",
+      "text": "Know, to the larger kind of movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:20",
+      "text": "Making aspect, there was a lot that was being figured out in this movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:24",
+      "text": "As they went along, which is remarkable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:27",
+      "text": "Because it is so fudgeing complicated."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:29",
+      "text": "Like if you even just think about like all of the elements of what's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:33",
+      "text": "Being put on screen as they go through Sensei's apartment, it's incredibly complicated. But yeah, apparently this was a figure it out as you go type situation."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:44",
+      "text": "Jesus."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:45",
+      "text": "No."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:47",
+      "text": "How does this strike you as a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:49",
+      "text": "Kind of vision of the future as we look at this in this like it, it feels like a throwback to the 60s, right. And that's why when Vineland was written, Pynchon was looking back to the 60s and the weatherman and Black Panther and you know, kind of like domestic violence happen. You know, this, this does feel like this is just looming."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "39:10",
+      "text": "No, I mean, to me it feels."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "39:11",
+      "text": "Like this is what."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "39:15",
+      "text": "I think more."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "39:16",
+      "text": "On the right people imagine leftist agitator groups are doing because they, because there is a template for it. We did. I was just googling. I went to Wisconsin and a big part of the Wisconsin legacy is they blew up what they thought was a ROTC building and killed a researcher there. This is like 1970, 71. And sort of the, it's the end of that. Near the end of that wave of, of armed rebellion on the, on the left and sort of, you know, a shameful incident and, and, and had to sort of grapple with that forever. But I don't think there is any analog to that happening right on the left. It's what the right imagines they're doing. I mean, I mean, I don't know if it's sad, but I mean the violence we have now is the violence we have. Right. Which is individual self radicalizing on the Internet. And in a lot of ways it's scarier no matter what your ideology is. I don't know why I said that that way. Because you can't stop it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "40:14",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "40:14",
+      "text": "It's just out there in the ether. There's no, there's no thing to choke off."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:19",
+      "text": "Yeah, I think, I think this kind of goes back to the point I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:22",
+      "text": "Made up top, which is that it's a mistake."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:23",
+      "text": "Mistake to read this movie as political."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:25",
+      "text": "Satire about the current moment in like in too close of a read."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:29",
+      "text": "And now it's like, oh, okay, like, you know, we have political violence in our culture. Like what are we supposed to take."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:35",
+      "text": "Away about like right wing political violence versus left wing political Violence. And like, the actors behind that, the type of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:42",
+      "text": "To double click on Peter's point, the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:44",
+      "text": "Specific type of revolutionary politics that are being shown from the left in this movie are ones that just simply don't exist. They're, you know, black generation movements and Weather Underground and. And things like that. And there. Those. Those movements just don't actually exist."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:58",
+      "text": "It's instead, I think, again, the fundamental project of the movie is how do you have, like, how are you a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:06",
+      "text": "Good father to a daughter in a. You know, in time when, you know you've lost, you know, like, the mom's no longer around in a time when there is tremendous strife in the body."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:18",
+      "text": "Politic and it's less about, like, sort of taking a lesson of, and here's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:24",
+      "text": "The revolution that you should be fighting, or here's the right political response to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:28",
+      "text": "That and more like, what does it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:30",
+      "text": "Mean to be human in this moment?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:31",
+      "text": "Which is why I think the movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:33",
+      "text": "Is so trans, why I think the movie is going to be masterpiece that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:37",
+      "text": "We look back on, because it will. It touches on these questions of, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:41",
+      "text": "What does it mean to be human? And what does it mean to try to seek family? And what does it mean to try to seek truth in a time. Incredible dislocation."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:48",
+      "text": "The nature of the dislocation bears a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:50",
+      "text": "Resemblance to some of the elements of what we have right now, but it's. That's not the lens upon which to measure the current moment."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:58",
+      "text": "That's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "41:59",
+      "text": "Yeah, I mean, like, you know, the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "42:01",
+      "text": "The Christmas Adventurers Club is, we're led to believe, like, a weird offshoot that does or doesn't have government approval."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "42:09",
+      "text": "But it's done in secret."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "42:11",
+      "text": "Right, Right. And we don't do that in secret. We have Donald Trump."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:15",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "42:15",
+      "text": "And Steven Miller."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:17",
+      "text": "We have white nationalist rallies, like, explicitly. Like, we don't. We don't need to. We don't. No one needs a meet in an underground bunker. They don't say Hail Saint Nick. But, like, you know, we have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:26",
+      "text": "We have Christian nationalist rallies already without that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:30",
+      "text": "And so I think, yeah, it is. It is not. It is not a straight line to either. The other thing is that, like, you know, Lockjaw as like, this avatar of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:41",
+      "text": "Of evil in some regards."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:42",
+      "text": "Like, you know, he's kind of like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:43",
+      "text": "A Sugar character from no Country. He's like sort of this relentless, relentless maleficent. But he's more complicated than Sugar."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:50",
+      "text": "Like, he had, like, he is a more human character than just like a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:54",
+      "text": "Coen Brothers avatar of evil character. Whether it's Sugar or the biker from Raising Arizona."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:58",
+      "text": "Like, He's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "42:59",
+      "text": "But the Christmas Adventurers Club is the Christmas cartoony Nazi Cohens."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:05",
+      "text": "Yes, it is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:06",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:06",
+      "text": "Yeah, for sure. But like the, the degree, like that's where it breaks with the. That's where it breaks with it being."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:12",
+      "text": "Strange Love, for example, is that like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:14",
+      "text": "You know, strange like, like Ripper and like Strange Love himself. Like, those are not characters that have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:20",
+      "text": "Human dimensions, interior lives, complicated motivations, where."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:25",
+      "text": "They want to be part of a white nationalist movement, are awarded the Nathan."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:29",
+      "text": "Bedford Force Medal of Honor at one scene. Who, you know. But that was a little throwaway is Bedford."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:34",
+      "text": "He gets a Bedford Force Medal of Honor."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:36",
+      "text": "Nathan Bedford Force is the of kind Confederate general who also founded the kkk."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:40",
+      "text": "And, and like pick that up."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "43:43",
+      "text": "Thank you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:44",
+      "text": "Yeah. And yet also like, you know, has a thing for black women. Like, you know, like, you know, like is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:49",
+      "text": "Is seduced by a black woman and has a mixed race daughter and like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:52",
+      "text": "You know, like, so it's like which."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "43:53",
+      "text": "A lot of clan guys. Most."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:55",
+      "text": "Of course, 100. I'm just saying it's like we don't. You don't get that in. You don't get that in A Strange Love or something that is more of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:02",
+      "text": "A straight political satire."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:04",
+      "text": "Because the ultimate level that this movie is most concerned with is the human."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:09",
+      "text": "Lives of the characters in it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:10",
+      "text": "And yes, there are, but it does."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:13",
+      "text": "So the, the. The Nazis are Nazis."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:15",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:16",
+      "text": "And Sean Penn is a Nazi."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:18",
+      "text": "That's a little more textured or interesting or you're not sure how it's going to."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:21",
+      "text": "You don't know how it's going to."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:22",
+      "text": "Play out with him and his daughter until the end. Right. And then it's shocking when it does. But you're still. It still sort of might go a couple different places. The lefty folks are the ones that all have shading in character."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:35",
+      "text": "And one way to explain that is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:37",
+      "text": "Well, that's the characters Paul Thomas Anderson's interested in. He's ultimately talking about a man and his daughter. And that makes sense."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:43",
+      "text": "I mean it does suggest though that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:46",
+      "text": "He'S more sympathetic and I think it's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:49",
+      "text": "I guess he's sympathetic to the anti Nazi cause."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:51",
+      "text": "No shit."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:52",
+      "text": "But he's stacked it as. These are the interesting characters."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "44:55",
+      "text": "These are the cardboard cutters notes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:57",
+      "text": "I, I agree that there is a sympathetic element. I do think it's worth pointing out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:00",
+      "text": "Though that there is a critique of the left in this as well."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "45:04",
+      "text": "Of course, of course."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:05",
+      "text": "But it's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "45:05",
+      "text": "But that, but that just assumes like that's something worth critiquing."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "45:08",
+      "text": "Whereas on the right it's These are just Nazis. They're literal Nazis."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:12",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "45:12",
+      "text": "And we don't need to discuss why they feel that way or what their methods are. They're just bad."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:16",
+      "text": "Yeah, totally. Yeah, totally."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:19",
+      "text": "I do like the fact that I'm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:21",
+      "text": "Once again just like civil war, taking the. The. The more straight ahead and, you know, literal analysis of this. And. And Jason, I do appreciate, because of how shitty things are right now, that notion of trying to anchor it more in the. The human element and just the feelings."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:37",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:38",
+      "text": "And the. The reminder that this is just part of where we are right now as we're going through it and that this is not how it back."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:46",
+      "text": "It brings me back to the Ta Nehisi Coates of which is like, there's like, you know, sometimes you lose and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:52",
+      "text": "Like the question is, is like, you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:54",
+      "text": "Know, what does it mean to be."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:54",
+      "text": "Human and what does it mean to respect the human humanity and others."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:57",
+      "text": "Like, one point on this that I would, you know, to kind of bring."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:00",
+      "text": "It to, you know, back to the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:02",
+      "text": "Movie is, you know, Stavros Halkis had this brought back his letterbox to review this movie. And his. His line. His letterbox is one line letterbox review is Star wars, but the Jedis are hot black girls. Which I think is. Which I think is worth. I think is a really fucking genius take on this movie. It's also worth noting that Leonardo DiCaprio in movies has said this movie is like Star Wars. Like, there's a. There's a. There's a Yoda in this movie that we're trying to rescue the princess. There's a weird paternity thing going on. Like. Like, I think like the Star wars of it is actually really relevant. And you know, like, there is. There is like sort of a. There is something like more universal about like the type of."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "46:47",
+      "text": "Does that make perfidia Darth Vader?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "46:49",
+      "text": "I don't."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:49",
+      "text": "I think it makes perfidy like sort of. I think per video is kind of. I think. I think Lockjaw is Darth Vader. But she. But yes, like, she's like Shmi or Pod made like the absent mother."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:59",
+      "text": "The absent mother who isn't there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:01",
+      "text": "In terms of one other point, I'll just."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:03",
+      "text": "While we're in the movie illusions point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:05",
+      "text": "Perfidy at Beverly Hills. Amazing name. Perfidia means betrayal, which makes sense for."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:15",
+      "text": "A character who betrays is a rat in this movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:19",
+      "text": "It's also the name of the song that plays in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:23",
+      "text": "You know, it's originally Spanish language song."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:25",
+      "text": "That plays in Spanish at one point in the movie. That song. That song also plays in Casablanca. And also in Casablanca is the French."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:34",
+      "text": "70 fives that they order, right? They order from Rick's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:38",
+      "text": "The allusions to Casablanca as like, you know, as the illusion to Battle of Algiers. These sort of like, you know, classic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:46",
+      "text": "Revolutionary, like, how do you survive in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:48",
+      "text": "The underground tales, I think, are another kind of like, intertextual thing. And this is where. This is where Paul Thomas Anderson really."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:55",
+      "text": "Is, I think, like sort of the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:57",
+      "text": "Genius version of Quentin Tarantino. Like the Thinking man's Quentin Tarantino. Because there's also a bunch. There's also a bunch in this that's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:04",
+      "text": "Like a Terminator 2 reference with, like, the way that Lockjaw walks and like, the way that he gets out the of. Of the fire."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:09",
+      "text": "So there's all of these. There's all of these levels of just intertextual play that he's engaging in in the context of this broader philosophical project. But it's those anchors to like, remember this is a movie and this is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:24",
+      "text": "The project of what movies do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:25",
+      "text": "It's about trying to get the dad."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:27",
+      "text": "Back to his daughter."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:27",
+      "text": "That is the kind of kind of North Star of how you kind of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:31",
+      "text": "Make sense of some of the other stuff, in my view."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:34",
+      "text": "You."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:36",
+      "text": "I love it. I love it. Peter, what's your next thought?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "48:40",
+      "text": "Oh, we've crammed."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "48:41",
+      "text": "We jammed a lot of them in."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "48:42",
+      "text": "But I'll stay on the. The."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "48:43",
+      "text": "The meta component. So the idea that this being a big movie or swamping the culture, like, I haven't Google trended it or done any kind of analysis, but like, I think swamping the culture."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:53",
+      "text": "Right?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "48:53",
+      "text": "That's. We're talking about people who listen to or make ringer podcasts or. Or in Paul Thomas letterbox fans."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:00",
+      "text": "Right? Yeah. So not nothing but immediate, you know, but not."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:02",
+      "text": "Not huge."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:04",
+      "text": "I am shocked."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:05",
+      "text": "And especially after seeing it, someone had told. Give me a slight heads up about sort of how timely this is and referencing Charlie Kirk before I went in."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:14",
+      "text": "I'm shocked. This is not fodder in. In conservative media."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:20",
+      "text": "Fox News."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:21",
+      "text": "Yeah, I. Before I got on, I Googled."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:24",
+      "text": "There's A lone fox news.com article written by a contributor doing all the things you would expect. Like, this quote glorifies leftist radicalism, et cetera."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:33",
+      "text": "And I cannot figure out why they haven't gone out. I mean, it's got to be as simple as."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:38",
+      "text": "It's just not on. It's not on Miller or Donald Trump's radar."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:42",
+      "text": "But It's. It's Leonardo DiCaprio who is one of."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:46",
+      "text": "The best known actors in the world and is also a well known liberal actor. You'd think that would ping their radar. And you'd certainly think that, you know, they shoot cops and it's black women."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "49:57",
+      "text": "With guns and any of that. I mean, it seems like it's intentionally designed to be provocative."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:02",
+      "text": "And they."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:03",
+      "text": "I can't believe they're not taking the bait."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:06",
+      "text": "I mean, this is the same presidency where they."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:08",
+      "text": "The president published a totally fake AI video about a QAnon conspiracy on Saturday night."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:15",
+      "text": "Med beds."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:15",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:16",
+      "text": "So they're, you know, they're busy with other things, Peter."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:18",
+      "text": "They're busy building the meds, they're building the med beds."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:21",
+      "text": "And so not all of them are playing Star Trek."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:24",
+      "text": "I never clicked on that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:25",
+      "text": "Like a Star Trek. Total QAnon. We actually spent some time in the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:28",
+      "text": "Discord tracing back the history of med beds in science fiction."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:32",
+      "text": "Seem great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:33",
+      "text": "Back to Tanks might be one of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:36",
+      "text": "The earliest versions, but yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:38",
+      "text": "So anyway, there's, there's. They're not getting. This is. I think, you know, I don't think."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:42",
+      "text": "Warner Brothers would like to have the president targeting them. I'm sure they would not. I'm sure Dazlav would not."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "50:49",
+      "text": "On the other hand, you'd kind of think they want some of the Frisian here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:53",
+      "text": "Here's what's going to happen, Peter."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:54",
+      "text": "Here's a bold prediction."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:56",
+      "text": "This movie is going to fucking get nominated for every fucking thing in the world. Paul Thomas Anderson is over life at the Oscars. This very well could be the one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:06",
+      "text": "He didn't get a writing. He's not gotten a writing over life."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:10",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:11",
+      "text": "This very well. I think the numbers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:13",
+      "text": "11 times he's been nominated for various ones."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:18",
+      "text": "I think that once award season starts in earnest and it's like, oh, liberal."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:24",
+      "text": "Hollywood and leftists are rewarding this movie of political violence. That is when the cannons will be trained on this one."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:30",
+      "text": "The only other thing I can think is that is no."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:33",
+      "text": "And again, it's got to be wrong is that the Ellison are like, lay off this because we want to buy Warner Brothers."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:37",
+      "text": "But they don't."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:37",
+      "text": "That doesn't work that way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:39",
+      "text": "No, it doesn't work that way."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:40",
+      "text": "Doesn't work that way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:41",
+      "text": "No. I think, I think they're not. I just think they're not."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:44",
+      "text": "I think they're not just busy sending."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "51:46",
+      "text": "Troops to Portland and Chicago."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:47",
+      "text": "Yeah. One interesting thing while we're talking about the meta of it all, one interesting thing I heard."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:52",
+      "text": "I forget where I heard this. It was another podcast because I've listened."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:55",
+      "text": "To like 17 about it, but it Is interesting. I think it was, it might have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:59",
+      "text": "Been the big picture. It might have been a Sean fantasy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:01",
+      "text": "Point where they, they did not market."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:05",
+      "text": "This movie to black audiences, even though that this is a black liberation movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:10",
+      "text": "That is very much about like the life of, of, of black women who."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:15",
+      "text": "Are in struggle in the society in which they live."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:19",
+      "text": "This movie also like, you know, per, like there's a lot been talked about."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:22",
+      "text": "In terms of Paul Thomas Anderson. His partner is Maya Rudolph. He has, you know, he has mixed race children and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:27",
+      "text": "Maya Rudolph. Yeah, there's this interview where she gave where my. Rudolph lost her mother young and talks."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:32",
+      "text": "About how her dad didn't know how to do her hair when she was growing up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:38",
+      "text": "And like that this, this becomes a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:40",
+      "text": "Thing that Leonardo DiCaprio just says explicitly in the movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:43",
+      "text": "My favorite version of this. There was someone on Twitter who pulled."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:46",
+      "text": "Up a tweet that she had written in 2018 where it was like after."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:49",
+      "text": "Phantom Thread kind of came out and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:51",
+      "text": "Romped and was just like, it was."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:52",
+      "text": "Just like, Paul Thomas Anderson, why haven't you ever made a movie with black."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:56",
+      "text": "People given that you're married to a black woman, have three children?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:59",
+      "text": "And then she pulled that one up like, see, he listened to me. And so like there's like, there's like an element where like this is like a deeply personal movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "53:08",
+      "text": "I definitely thought about Maya Rudolph while."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "53:10",
+      "text": "I was watching the movie and apparently he's cast one of his daughters as one of the nuns."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:14",
+      "text": "She's one of the nuns and she was, she had a bit. The same daughter had a bit roll."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:17",
+      "text": "In licorice pizza as well."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:18",
+      "text": "I didn't know in the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:19",
+      "text": "Those ha. Girls are there for sure, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:22",
+      "text": "Girls. The, the Maya Rudolph also apparently was the inspiration for Phantom Thread because Paul Thomas Anderson legitimately thought that maybe she was poisoning him because like he worked so much and like, you know, maybe she was like that was that, that was, that was like another, another bit."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:40",
+      "text": "Of, of real life intruding into art."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:43",
+      "text": "So like I think it's interesting like the way in which they marketed this movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:47",
+      "text": "Like there is a degree to which."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:49",
+      "text": "Like there's, there's an audience that. And now I think they're doing a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:52",
+      "text": "Lot of that on social by bringing out like all three of the black, you know, the black women leads like talking about this movie and doing a lot of marketing for this movie and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:01",
+      "text": "They'Re, you know, like all of them."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:02",
+      "text": "Are going to get nominated. So it's like, it's going to be."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:06",
+      "text": "Like as this movie, you know, kind."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:08",
+      "text": "Of moves along in its marketing cycle. It'll be interesting to see sort of how they talk about it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:14",
+      "text": "But yes, that goes back to the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:15",
+      "text": "It's Star wars, but for hot black girls."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:18",
+      "text": "I love that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:19",
+      "text": "Yeah, you brought up Perfidia. So I just want to get into the music because it is such an important part and it's something that PTA like. I've listened to the Boogie Night soundtrack approximately a million times and the Magnolia soundtrack, all the Amy man stuff and the super stuff that's on there. He just, he knows how to work it in there. So starting with Perfidia, we have Dirty Work by Steely Dan."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:45",
+      "text": "Sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:45",
+      "text": "While she's doing that. While she's doing the. The Kung Fu segment is so great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:51",
+      "text": "Soldier Boy by the Shirels."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:54",
+      "text": "The Ready or not by the Jackson 5."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:10",
+      "text": "That's strong."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:11",
+      "text": "I've never heard that song before. I've only heard the Lauryn Hill version."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:26",
+      "text": "Now that I escape sleep. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:29",
+      "text": "And so that was incredible. Then you've got American Girl for the credits to start."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:35",
+      "text": "I think the credit needle drop is a big part of why this movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:39",
+      "text": "Has such a strong, like, kind of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:41",
+      "text": "Audience response is because you, you leave."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:43",
+      "text": "The movie feeling triumphant, like you've, like you've won something."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:49",
+      "text": "Which I think is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:50",
+      "text": "Difficult to do in the context of this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:52",
+      "text": "But for those people who stick to past American Girl, you have Gil Scott."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:57",
+      "text": "Heron's the Revolution Will Not Be Televised."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:00",
+      "text": "Which is alluded to in the movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:02",
+      "text": "Repeatedly and which I didn't get. I, I, my, my local non Alamo."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:08",
+      "text": "Is an Alamo, like, theater, and they have the same sort of, like, we're gonna show you reels of stuff in advance, and a lot of it was Gil Scott Heron."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:15",
+      "text": "I definitely recommend that anyone's listening to."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:17",
+      "text": "This, Go check out the Spotify playlist."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:19",
+      "text": "Because there's a bunch of stuff that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:21",
+      "text": "I either didn't, didn't pick up on or couldn't identify. And Spotify is super helpful. But yeah, all the boomer music I love for sure."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:29",
+      "text": "I mean, American Girl is so good, it's almost too good to end on."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:35",
+      "text": "Because it's so upbeat and such a great song, and it kind of blows away your taste buds."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:40",
+      "text": "Right?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:40",
+      "text": "Like, it's just, like, all pleasure."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "56:44",
+      "text": "But great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:44",
+      "text": "But she's the one running out the door to go. To go help save America."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:48",
+      "text": "Like, I love it. I love that, that message for Willa at the end."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:52",
+      "text": "This is, like, a good time. This note on, like, the soundtrack is a good time to bring up another."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:56",
+      "text": "One of my favorite tweets about this movie comes from Kate Wagner who said."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:00",
+      "text": "In my opinion, one thing that makes One Battle After Another successful film is its reconciliation of postmodern irony with sincerity."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:07",
+      "text": "Towards the world rather than disdain from it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:09",
+      "text": "And I think this is a really."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:11",
+      "text": "Good one line description of the triumph."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:14",
+      "text": "Of this movie because postmodern irony is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:16",
+      "text": "Intrinsically part of the project here. Like that. We've already talked about sort of the roots of the literature that this movie comes from. It's going to be in dialog with other, other media."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:27",
+      "text": "Inherently, in being in dialog with media, you run the risk of just sort of like taking an artifact like American Girl and like inverting it and looking."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:35",
+      "text": "At it as just like, oh, isn't it funny that the song turns you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:37",
+      "text": "On or whatever, as opposed to being, as opposed to using it as a song that legitimately makes your heart race."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:44",
+      "text": "At the end of a movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:45",
+      "text": "This is like one of the razor's edge tricks that this movie does. While it is like both deathly serious."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:51",
+      "text": "And yet has these laugh out loud moments within it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:54",
+      "text": "And it has like, it's in dialogue with the culture in which we find ourselves, but it doesn't, it doesn't give."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:00",
+      "text": "In to the innate kind of cynicism."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:02",
+      "text": "Nothing, nothing really matters that is so."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:06",
+      "text": "Endemic about this moment."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "58:08",
+      "text": "And really, it treats all the characters, even the Nazi cutouts, seriously."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:13",
+      "text": "Yes."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "58:14",
+      "text": "That they mean what they say, they."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "58:16",
+      "text": "Believe what they believe they are. They may be buffoons, they may be inept across the board, maybe deeply flawed, but they are all you are. And go back to what we were talking at the beginning, right? They. You are supposed to take them at face value."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:30",
+      "text": "Yeah, yeah, yeah, totally. The last thing I want to say on the music is just Johnny Greenwood, you know, the lead guitarist from Radiohead. This is their sixth team up since There Will Be Blood. It was deeply upsetting for whole portions of the movie. Like it's so like the percussion and, and the piano stuff when it does the big, like with the, with the, the violins and stuff. They did it twice. It's just like, I don't know, really, really amazing and kind of like blew me back in the chair."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:04",
+      "text": "Has he done non Johnny Greenwood stuff since There Will Be Blood? Or is it."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:08",
+      "text": "Does he do everyone now?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:11",
+      "text": "Let's see."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:12",
+      "text": "Johnny. Johnny did There Will Be Blood. The master, Inherent Vice. He also did. You Were Never Really Here, which I haven't seen."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:19",
+      "text": "Did he do Phantom Thread?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:20",
+      "text": "He did Phantom Thread. Power of the Dog. Licorice pizza."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:24",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:24",
+      "text": "So."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:25",
+      "text": "So yeah, it just announces."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:26",
+      "text": "And again, I already said I've missed a bunch of them. But that just announces you are watching a Paul Thomas Anderson movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "59:32",
+      "text": "When you hear that Johnny Rewood score, like, this is part of the thing, the cinematic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:37",
+      "text": "Interestingly, like, the cinematographer basically has no credits. Like, he took, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:41",
+      "text": "He."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:41",
+      "text": "Like, he took someone who's, like, shot."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:42",
+      "text": "Like, one movie or something like that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:44",
+      "text": "Like, yeah, Michael."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:45",
+      "text": "Michael Bauman, he'd done a. He'd done, like, almost nothing. Does licorice pizza, this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:50",
+      "text": "And then he's also shooting Tony, which is apparently an Anthony Bourdain movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:55",
+      "text": "There's. There's a degree to which this is just like a tremendous, tremendous flex from pta. Because pta, who, like, particularly for the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:04",
+      "text": "Last few movies is like, here's some."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:06",
+      "text": "Scenes of people talking, like in, you know, beautifully lit, beautifully composed, but here's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:11",
+      "text": "Some scenes of people talking."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:12",
+      "text": "And then Paul Thomas is like, oh, we do in fucking action. Okay. Like, here's 35 minutes of just Running Gun. And then what is inarguably one of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:25",
+      "text": "The great car chases that has been filmed ever, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:30",
+      "text": "I mean, like, it is. It is just from a cinematic standpoint, you're just like, watching it at the end and you're just like, okay, I'm seeing. Seeing something I haven't seen before. Like, this is. This is a wild bit of moviemaking at the end. And to do that with a. Like. I was like, who did he get for this? Is like, who's, like. Who's like his DP for like, you know, this. Deacons is like, who. Who did he get for this? And it's like, Joe from the camera department or whatever. I mean, no offense to Michael Baumbach or whatever, but, like. Yeah, like, shout out to that guy. But, like, I mean, come on."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "61:02",
+      "text": "Said, I got this."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "61:03",
+      "text": "You can have credit for it. That's great."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "61:05",
+      "text": "You'll get paid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:06",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:06",
+      "text": "He was a gaffer who came up."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:08",
+      "text": "Going back to, you know, the Doom generation, and then he ended up doing a bunch of camera stuff on Iron man and Iron Man 2. Nightcrawler."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:16",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:16",
+      "text": "Worked on Inherent Vice, so he sort of really made his way up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:20",
+      "text": "Yeah. Which they all do. It's just like now it's like that, you know, the cinematographer. This movie is going to be in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:25",
+      "text": "Conversation with, like, the cinematographers, anybody."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:27",
+      "text": "The years. Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "61:28",
+      "text": "So it's like Dune and Dune and French Connection. Duel and French Connection and all the great charts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:34",
+      "text": "Yeah, yeah, yeah. Just crazy that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:37",
+      "text": "That whole highway, the roller coaster aspects of the highway. It was crazy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:43",
+      "text": "There's crazy distortion. Where in imax, when you see it full frame. Like your part of the shot is through the window glass is like through the windscreen. So there's like the distortion of like you were looking out like through the bottom of like the glass of the. Of the windshield. But you've still got like the full frame."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:00",
+      "text": "Did you see it at the Metreon?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:02",
+      "text": "I saw it at Daily City."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:03",
+      "text": "So I didn't even see it in real imax. I just saw it in IMAX form. I saw it in fake IMAX because real IMAX was sold out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:09",
+      "text": "There's there. One of the things that PTA has said about Vista Vision that's interesting is that it allows you to do these incredibly long, like incredibly long, like cinematic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:18",
+      "text": "You know, vista scenes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:19",
+      "text": "But it also allows you to get tremendously close. And a lot of like the really interesting filmmaking in this is like, you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:26",
+      "text": "Know, Regina Hall's face in low light. Like, you know, like with an incredibly short lens."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:31",
+      "text": "Like, like all of that is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:32",
+      "text": "All of that is really. All of that's really interesting too."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:35",
+      "text": "So anyway, the, the chase scene is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:38",
+      "text": "One of the reasons I really want to go back and re see it because the only real memory I have of it, I know the general contours is the shocking end."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:46",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:47",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:47",
+      "text": "Where she ditches the car. And that is just such. I mean you could have a pretty shitty movie and if you have that scene."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:53",
+      "text": "Yeah, that's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:54",
+      "text": "That's worth watching."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:55",
+      "text": "And so I definitely want to go."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "62:56",
+      "text": "And I definitely had a bit of a hard time tracking all three cars at one point."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "63:02",
+      "text": "And I want to figure out if that's my problem or one of the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "63:06",
+      "text": "Greatest living directors problems. But I didn't quite follow it the way I would like to, but I."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "63:11",
+      "text": "Think I will the second time around."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:12",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:12",
+      "text": "Also just the action in general was, was really amazing. I loved the shots of when they were running across the roof and the skater. The skater boys are like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:23",
+      "text": "Yeah. And it's like there's. It's silhouette shots."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:25",
+      "text": "Deaconessque. Like that was so gorgeous."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:29",
+      "text": "Or even just the moment. It's not flashy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:32",
+      "text": "The moment when the bounty hunter decides he's gonna save her is so awesome. And you know, the fact that it happens unfolding off screen and her kind of getting the cuffs off just really."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "63:43",
+      "text": "That was very coensy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:45",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:46",
+      "text": "Do you guys want to just quickly talk any. Any other cast related things we need to. We need to hit?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:52",
+      "text": "The only other casting things I was going to bring up is how good like the secondary, like the supporting actors in this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:58",
+      "text": "James Raiderman as Danvers, the Guy doing the interviews."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:02",
+      "text": "Talk about this, Talk about where they found this guy. Peter, you're the one who went and researched."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:07",
+      "text": "Yeah, he is. He is a former military officer, Homeland Security, decades of experience."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:13",
+      "text": "If you. You Google hard and long enough, you will find him, like getting a 2024 job, like at a local Kansas City."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:21",
+      "text": "School district or something. That's just what this guy does. And apparently he was on a Showtime reality show about bad behavior, but he's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:30",
+      "text": "Got to have some other backstory."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:33",
+      "text": "But he is not a working actor. He's a guy who scares people in."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "64:37",
+      "text": "Interrogations for a living. So good for them to find him."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:40",
+      "text": "Where did they find this guy? How did they find that? Who could say? The tracker guy was on Last of Mohicans, I think was like one of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:47",
+      "text": "His, like, most recent credits."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:50",
+      "text": "You know, Jim Downey as one of the Christmas adventurers. Like, Jim Downey, who's like one of the most famous SNL writers of all time. The only reason people know his face now is because he's the Jeff Epstein the financier meme. And yet somehow is in, like. It somehow has like, this, like, amazing part in this movie. I don't know how you think, to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:12",
+      "text": "Cast Jim Downey in this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:14",
+      "text": "And then like, you know, Benito, obviously not an unknown in any case, but Benizio is just unreal how good he is. And like, you know, people have, like, really memified the moment where he gets pulled over. His last small beers, of course, A couple of small beers and it does."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:30",
+      "text": "Just jump off the screen. You're just like, I'm seeing a guy on screen. Like, this is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:34",
+      "text": "This is cinema, baby."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "65:36",
+      "text": "Like, which is kind of. I mean, I haven't seen everything he's done. Just everything he's done. You're like, he's great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:43",
+      "text": "He's good. It's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:45",
+      "text": "It's great."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "65:46",
+      "text": "He's in a very. Not very mediocre, but ambitious Netflix movie where he's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "65:54",
+      "text": "He's doing a beaten down cop. It's. It's came out a couple years ago. I can't remember the name of it. Just look up his name."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "65:59",
+      "text": "100% worth watching. Oh, because he's in it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:03",
+      "text": "I never did watch the Second Sicario, obviously."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:06",
+      "text": "Day of the Sword auto goaded. Yeah, Another one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:10",
+      "text": "Another one that's in here. One of the revolutionaries in the French."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:13",
+      "text": "75 is jungle pussy. And that's like, She's a rapper."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:17",
+      "text": "It's her real name. I was like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:19",
+      "text": "I was like, I know her. Where do I know her from? And here's where I Know her from. In 2016 in New York City. Rhizome does this event called Seven on Seven, where they get a pairing of two people. Seven pairings of two people."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:34",
+      "text": "And they do."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:35",
+      "text": "They have, like 72 hours to prepare to do art together at a live event in Brooklyn, as you would expect. And one of the pairings was Jungle Pussy and New York."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:48",
+      "text": "I don't know if she's still there, but at the time, New York Times."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:50",
+      "text": "Cultural critic Jenna Wortham. And they, they did, they did. They did a thing together that was great. The reason I went to it at all, though, was my friend Paul Ford did a, like a. A completely written out, like, performed piece with the performance artist and art and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:11",
+      "text": "Director and actor Miranda July."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:13",
+      "text": "Oh, yeah. And it was tremendous. So anyway, shout out to Paul Ford."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:19",
+      "text": "Shout out to Miranda July. Shout out Jungle Pussy. Shout out Rhizome."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "67:22",
+      "text": "Casting is great."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "67:22",
+      "text": "This is the guy who brought us. I mean, didn't."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "67:24",
+      "text": "I mean, he's not responsible for. For Philip Seymour Hoffman, but, like, yeah, when you cast Philip Seymour Hoffman in your first indie low budget movie, like, you're onto something. You know what you're doing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:33",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:35",
+      "text": "John C. Reilly. It's funny. Used to be like a PTA guy."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "67:39",
+      "text": "Like a big PC movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:41",
+      "text": "And then I saw a thing with. I saw a thing like, with John C. Right. I don't know if it was related."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:46",
+      "text": "To this movie or someone's like, all right, you're not in this one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:48",
+      "text": "He's like, no. He's like, you know, at some point I said to Paul Thomas Anderson is like, you know, you don't have to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:53",
+      "text": "Just keep putting me in your movies because we're friends."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:55",
+      "text": "Like, you should only really include me."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:56",
+      "text": "If, like, you really want me."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:57",
+      "text": "And he never included me again. So never say that. Never."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:05",
+      "text": "Don't ever do that to yourself."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:07",
+      "text": "Don't say that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:07",
+      "text": "Paul Thomas Anderson apparently is a big weirdo when it comes to casting. Like, he, like, like the story of him casting everyone who talked about, how did you end up doing this? It's like Leonardo DiCaprio is like, yeah, I went out to dinner with him in, like, 2018. And like, we had a conversation. It seemed like maybe we were talking about something, but then he just went away. And then two years later, we talked about it again. And then we had another dinner. And, like, Regina hall lives next door to Paul Thomas Anderson. And, like, he came over to her house, like, look at her garden. And she realized, like, in the middle of the conversation that she was going from showing her garden to her neighbor Paul, to having a, like, work meeting with the director, Paul Thomas Sanders. She was like, oh, oh, okay. Like, you know, it was like a whole other thing. So he's just apparently a big weirdo when it comes to casting, but gets these fucking amazing, you know, just is amazing at it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:58",
+      "text": "Just amazing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:59",
+      "text": "Incredible. Incredible."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:01",
+      "text": "Peter, anything we missed or anything else."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:03",
+      "text": "You want to make sure we hit?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:05",
+      "text": "Just back to the end. Yeah, the end suggests that the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:09",
+      "text": "A couple things that I'm. Even though I just said we're supposed to take it all at face value, it suggests that the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:14",
+      "text": "That Leonardo DiCaprio's character, who was explaining."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:17",
+      "text": "How to build and turn on and hide bombs and is a mechanics expert, does not know how to take a selfie on an iPhone."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:27",
+      "text": "And that more importantly, that he's never had a phone."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:30",
+      "text": "Peter."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:31",
+      "text": "He's never had a cell phone."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:33",
+      "text": "I know, but they're, you know, they're intuitive."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:34",
+      "text": "Okay."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:35",
+      "text": "And."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:35",
+      "text": "But more important, that his daughter has now joined the resistance and suggests that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:40",
+      "text": "This is a good thing and we're supposed to feel good about it. Again, back to that needle drop and partly my personality that I. Whenever I see something on screen, I'm."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:49",
+      "text": "Like, is that really what they mean? But I also like, is that really what they mean? I mean, I, I love that they're connected. I love that she now has freedom."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:57",
+      "text": "But with, you know, some kind of restraint."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "69:58",
+      "text": "It's very good parenting. But I don't know that I'd want one."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:02",
+      "text": "Want my daughter to go chase after the, the. The new protests in Oakland or wherever she's going. Sacramento."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:07",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:08",
+      "text": "But too, like is like, it's. We're supposed. It suggests that this is a good thing, period."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:13",
+      "text": "She's doing the right thing."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:16",
+      "text": "And I guess we're supposed to take that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:19",
+      "text": "I go back to the. I think the Ta Nansi Coates in Ezra interview kind of fixes this all for me because he's like, you're engaged with the struggle that, you know, will outlive you and you make progress where."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:33",
+      "text": "You can for as long as you can, and you know that your progeny will have to carry it forward."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:37",
+      "text": "It's like, you know, ancestors of my, you know, ancestors in my family struggled."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:42",
+      "text": "Their entire life and never saw."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:44",
+      "text": "The elimination of chattel slavery, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:46",
+      "text": "And they died in darkness and they died not knowing and any victory. But you have faith in the longer term generation."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:54",
+      "text": "And, And I guess this is."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "70:56",
+      "text": "And I haven't read the pension. I guess this is consistent with the book. Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:00",
+      "text": "The."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:00",
+      "text": "The radicals from 20 years before are Living in the present tense and the knowledge that they have lost."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:06",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:06",
+      "text": "That everything they wanted to do did not work."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:08",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:09",
+      "text": "And that many of them, the ones who aren't dead or in jail, just quit or bailed out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:14",
+      "text": "Right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:14",
+      "text": "Like the nuns who are now just professional weed growers. Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:18",
+      "text": "And so, and so again, like, it's like if that was. If. If we were supposed to sit with."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:23",
+      "text": "That, that would be an interesting movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:25",
+      "text": "And instead the movie the. Ends with, now we're picking the fight."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:30",
+      "text": "Back up again and the struggle continues."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "71:31",
+      "text": "Which is a different idea, I think."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:34",
+      "text": "I think it's just. I think the. I think the different idea is like, yes, that this, the struggle will continue. I think that is. It is an. I think. And to your point earlier, it's not as though this movie does not have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:45",
+      "text": "An opinion about which side of the struggle is the virtuous one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:49",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:49",
+      "text": "So it is not fatalistic in regard to that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:52",
+      "text": "I think the place in which you end up in the weeds and it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:55",
+      "text": "Becomes self defeating is that this is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:57",
+      "text": "Not a movie that is actually asking."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:59",
+      "text": "Questions about what are the right tactics of the struggle."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:02",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:03",
+      "text": "And what are the right political or."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:05",
+      "text": "Like, you know, revolution tactics of the struggle."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:07",
+      "text": "Like that is defined by the reality of this movie, which actually, as we."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:12",
+      "text": "Talked about, doesn't resemble the reality of our time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:14",
+      "text": "And it is like that is the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:15",
+      "text": "Lever on which this movie will be attacked from the right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:18",
+      "text": "Because like, it is, it is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:20",
+      "text": "It is going to conflate that point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:21",
+      "text": "Either willing willingly or unwittingly, but like the, the broader point, which is like, yes, because he has gotten, you know, because they have been reunited and they have a deeper understanding and she has."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:33",
+      "text": "A true understanding of who she is because her."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:35",
+      "text": "It's actually her mother's voice who kind."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:38",
+      "text": "Of concludes her story. Like she is able to engage in."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:41",
+      "text": "The world that was beautiful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:42",
+      "text": "Virtuously. That's in a way, in a way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:45",
+      "text": "That she wasn't able to before. And she's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:47",
+      "text": "No, you know, and I think, I think that is the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:50",
+      "text": "That is the takeaway of the sort of the revolutionary struggle of the movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "72:54",
+      "text": "Look at you being good at podcasts, Peter."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:58",
+      "text": "Who would Tilda Swinton play?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:02",
+      "text": "It's a tough one."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:03",
+      "text": "She's got to be one of the Christmas adventurers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:05",
+      "text": "Exactly. That's the only choice."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:08",
+      "text": "She'd be a good."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:08",
+      "text": "Tony Goldman."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:09",
+      "text": "Yeah, Tony Goldwyn."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:10",
+      "text": "And Tony Goldman is so good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:14",
+      "text": "Being."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:14",
+      "text": "That kind of like hyper competent white guy. Who was he?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:19",
+      "text": "The one leading the interview?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:21",
+      "text": "He was. He's the one from Scandal, which is another Bit of like, you know, narrative. Frison. Because, like, he has like a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:28",
+      "text": "You know, he has like a multi."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:29",
+      "text": "He has."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:30",
+      "text": "He's dating a black woman in that. And as like the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:32",
+      "text": "In the role that he is most famous for. He's also the bad guy in Ghost."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:36",
+      "text": "Which is amazing because he doesn't seem like he should be that old."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:40",
+      "text": "I like that. I like her for like, the old guy, like the admiral of the 7th Fleet in the Christmas adventure scene who's like that. That character actor. I forget his name, but, like, he was like, in a wet. He was like a senator. He was a senator or governor in a West Wing arc for a while. He's like, been in a ton of Back in the Day. I like him for that."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "73:57",
+      "text": "Is he the one who's comatose until the end of the interview?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "74:00",
+      "text": "Goes. Make it clean."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:01",
+      "text": "Yeah, yeah, make it clean. You could eat off of it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:03",
+      "text": "Yeah, that whole thing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:06",
+      "text": "I was going to say the sensei, just to see her kind of like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:09",
+      "text": "Can'T get rid of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:11",
+      "text": "It's true."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:12",
+      "text": "Ocean waves, Bob."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "74:13",
+      "text": "It also dramatically changes the movie if it's a white lady."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:16",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:18",
+      "text": "Fair enough. Fair enough."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "74:19",
+      "text": "Like, it just. It's just different."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:21",
+      "text": "It's just different."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:21",
+      "text": "Different ocean waves, Bob."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:23",
+      "text": "I hope. I hope he gets. I. Of all the awards I'd like. I like Paul Thomas Anderson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:27",
+      "text": "Get an Oscar out of this. Either directing or Best Picture."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:30",
+      "text": "Benicio."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:30",
+      "text": "And I'd like Benicio to get an."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:32",
+      "text": "Oscar out of this. I think it's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:33",
+      "text": "I think it is. I agree."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:34",
+      "text": "It is a performance that levitates off the screen. It's so good. So I'd love."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:38",
+      "text": "I'd love to see that 100."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:40",
+      "text": "But also shout out to Chase Infinity. Like this kid who's done like, you know, shout out to her for Greg Utanus's Presumed Innocent. Like, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:48",
+      "text": "Yeah, that's great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:48",
+      "text": "This is essentially her first movie and she has got to, like, contend with being. Contend with Leo and contend with Sean Penn, who also is remarkable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:58",
+      "text": "Is like one of the best performances of his career, too."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:00",
+      "text": "The Benicia movie is Reptile, by the way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:03",
+      "text": "Oh, right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:03",
+      "text": "Okay."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:04",
+      "text": "But, yeah, I was."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:04",
+      "text": "I think I was saying to you."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:06",
+      "text": "Guys, I was sure."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:07",
+      "text": "And I Googled immediately after the movie."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:09",
+      "text": "Like, well, she's got to be Chase Infinity."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:11",
+      "text": "Has to be someone's daughter."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:12",
+      "text": "Yeah, right."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:13",
+      "text": "Because we're trained now that that's just what we have in. In our culture."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:17",
+      "text": "And according to Wikipedia, she's just a woman who decided to make a go."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:22",
+      "text": "Of it in the arts and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:24",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:24",
+      "text": "Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:26",
+      "text": "Wow. You love to See it. Love to see it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:29",
+      "text": "Peter, what do you have to plug, my friend?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:32",
+      "text": "Making content, Watching the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:34",
+      "text": "The Fate of the Republic."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:36",
+      "text": "That's what I'm doing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:38",
+      "text": "Channels with Peter Kafka, available wherever you get."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:42",
+      "text": "Sure."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:42",
+      "text": "You can listen to."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:43",
+      "text": "You can listen to that. I think I'm gonna be in the."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:45",
+      "text": "Show called Escape Hatch."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:47",
+      "text": "Yeah."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:47",
+      "text": "A couple weeks."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:49",
+      "text": "I wanted to talk about a sexual."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:52",
+      "text": "Romp, but you guys are. No, you know. No. You guys are afraid of sex."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:55",
+      "text": "I understand."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:56",
+      "text": "Oh, that's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "75:57",
+      "text": "We're gonna do something else."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:58",
+      "text": "Yeah. Okay. That was Jason's call, not mine."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "76:01",
+      "text": "I don't know if that's. I don't know if we're announcing that yet or not, but that's."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "76:03",
+      "text": "That's up to you."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "76:04",
+      "text": "I'm just your faithful servant."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:05",
+      "text": "Right. We cannot wait to see you again in the future. Hopefully we won't need too many other bonus episodes like this. Like, it's great to do it, but it makes me nervous."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:14",
+      "text": "It's always bad news when we have a bonus episode."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:17",
+      "text": "Stuff is going."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:18",
+      "text": "Jason, what do you have to plug, my friend?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:19",
+      "text": "I mean, shout out to all the other folks in the content. Minds making pods out of this movie. Like, there's really people. Like, the big picture had Leo and Paul Thomas Anderson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:26",
+      "text": "I have actually even finished that interview yet."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:28",
+      "text": "But, like, I love the fact that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:30",
+      "text": "They'Re out there talking about the movie. Like, that's really exciting. And they're talking about, like, why they're."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:36",
+      "text": "You know, they're. They're really talking about, like, sort of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:38",
+      "text": "The project of the movie, which I think is interesting. And they did."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:40",
+      "text": "They."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:41",
+      "text": "You know, the big picture folks loved it and really kind of slathered it up in a way that I thought was enjoyable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:46",
+      "text": "And, you know, there's a great New Yorker review of the movie that I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:49",
+      "text": "Found was really instructive and helpful and talked about some of the strange love parallels that we talked about on this pod. The Manila Dargis review is great in New York Times."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:58",
+      "text": "Like, there's. There's been a lot of really interesting criticisms. Like, Peter's right. Like, culturally, this, like, it feels like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:04",
+      "text": "A bombshell because, like, everyone we listen to and read, like, is really into it. And the size of that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:09",
+      "text": "The size of that audience cannot, it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:11",
+      "text": "Turns out, win a national election."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:13",
+      "text": "However, like, it is exciting when it feels like, you know, there's a monocultural."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:19",
+      "text": "Moment that everyone is really into, and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:22",
+      "text": "It'S for something that is this good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:25",
+      "text": "That that invites this much discussion and is worthy of having this much discussion."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:30",
+      "text": "So I feel like this one is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:32",
+      "text": "Definitely Chotiner's jam, don't you think?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:34",
+      "text": "Shout out to. Shout out to Choettner. I mean, I like, I like, I know Cass Sunstein because of his time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:40",
+      "text": "In the Obama administration and Cast Unseen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:44",
+      "text": "Is like a legitimate savant when it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:47",
+      "text": "Comes to how the government functions and is absolutely brilliant."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:52",
+      "text": "However, my man got housed by my making the classic blunder of not denouncing Henry Kissinger's war crimes and instead saying."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:01",
+      "text": "That he helped him, he was nice to him when he released the Star wars book."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:04",
+      "text": "Was. Sorry, was this a Chotiner."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:08",
+      "text": "Sunstein?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:10",
+      "text": "That feels like the old thing about 60 Minutes. Like if they show up at your front door, like, that's not because you're."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:15",
+      "text": "Doing a great job."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:16",
+      "text": "Jason is telling me not."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:18",
+      "text": "I'm trying to get, I want him on the pod."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:20",
+      "text": "Matt's reaction to this was, let's try to get Isaac Chotner. I was like, bro, do you want the podcast to end?"
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:27",
+      "text": "No, no, I think that's fine. I just think if he calls you up and says, I'd like to sit."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:31",
+      "text": "For an interview, like it's like."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:32",
+      "text": "Or like the old, the Old Daily."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "78:35",
+      "text": "Show where they part, the joke would be they're making fun of. The person doesn't know they're being made fun of. Like interview."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:41",
+      "text": "Yeah, it's such. It's because they think like they are smart enough to like, they're smart enough."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:46",
+      "text": "To deal with the fact that they."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:48",
+      "text": "Have easily explodable views and it's really always just easily explodable views on either A, Henry Kissinger or B, the Warren God. Like it is literally those two things. If you do not have easily explodable views on A, Henry Kissinger or B, the war in Gaza, you might actually be okay. Like I will say, like I sort of like just want to be destroyed by Isaac Choettner."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:09",
+      "text": "Like I'd just like to find out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:10",
+      "text": "Like sort of the hypothesis hypocrisy that my life is built on. So if he calls, if he calls, I'm answering."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "79:17",
+      "text": "Maybe for Christmas we arrange, we arrange."
+    },
+    {
+      "name": "Peter Kafka",
+      "timestamp": "79:19",
+      "text": "A little cameo for you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:20",
+      "text": "Yeah, there we go. There we go. And that's it for this episode of Escape Patch. I want to thank Jason and Peter for an amazing conversation. Next week we're joined by the one and only New York Times contributor Jamel Boone. We we finally tackle Paul Verhoeven's sci fi societal satire masterpiece, Robocop. If you're enjoying the show, we need your help."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:47",
+      "text": "Take a minute to leave us a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:49",
+      "text": "Five star rating and review. Wherever you listen to your podcast or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. Escape Hatch is a Tape deck podcast, John A production of H Industries. Our artwork is by Catcher and our theme music was composed by Scott Fritz and who's the Boss Music. The episode was edited and produced by me. H. Thanks for listening. We'll see everybody next week."
+    },
+    {
+      "name": "Ta-Nehisi Coates",
+      "timestamp": "80:25",
+      "text": "Was silence not an option?"
+    }
+  ]
+}

@@ -1,0 +1,1716 @@
+{
+    "episode_number": 86,
+    "episode_name": "Buckaroo Banzai",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody. It's Haitch and welcome to the latest installment of Dune Ood. Your one-stop shop to enjoy the new Dune movies. This week, I'm joined as always by my cohost, Jason,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Which is vintage dated the finest French pants ."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by industrial light and magic visual effects, editor, Laura like David."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "All right. We're low on budget. How are we going to make these like high-tech sci-fi goggles, let's get some bubble wrap."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We finally tackle that classic staple from 1980 for the adventures of Buckaroo bonsai across the eighth dimension. If you enjoyed the show, we need your help. Leave us a five star rating and review wherever you listen to your podcasts, or be sure to hit so you never miss an episode. We also have a discord server where you can hang out with us when ever you want link is in the show notes. And now without further, do you Buckaroo Bonzai. [Dune Pod theme fades out]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Lorelei you're back."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "I'm excited. I'm so excited. I can't, yeah, it's good to see you guys."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "How are you? It's been great. We had you here last time for the thing, John Carpenter."
+        },
+        {
+            "name": "LORELEI I",
+            "timestamp": "",
+            "text": "know. And I was thinking we got a drawing carpenter link going on here with Buckaroo Banzai. Really? So, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, I, I don't know about this. So you're going to tell me about this, uh, in, in just a few minutes. So how, how was the holidays? How was the new year? How's everything been over"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "there? Oh, everything's I mean, whatever, you know, I'm parenting surviving the apocalypse,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "but you had a TV show. And this"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "is accurate. This is true. And it turned out, okay. So this is the first time that I've done a TV show and it's, it's interesting. And it's, it's different because the volume is so much, there's so much more volume in such a compressed period of time. But the thing that I really liked about it was that when a movie comes out, you're so excited and that the movie comes out and then you hear about it for like two weeks. Right, right, right. But then a TV show comes out and then the dialogue's going for a good chunk of while. Um, and I have a terrible thing where I can't remember like what episode came out and"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "what"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "people are talking about. So for folks who don't know Laura Lorelei, your title is visual effects editor, is that correct?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's your"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "light and magic at ILM. And she worked on the book of Boba fat, which came up too much a claim. And you talked about it being in the, in the dialogue or there being a discourse around it. And the effects in specific were a big part of the dialogue because, because of the, the Luke Skywalker, a fact, and"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "thought"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it was. Unreal how good the Luke Skywalker looked. I mean, I love Lou Skywalker at the end of the Mandalorian as well, but like the, whatever y'all figured out in between the two seasons it's essentially, it's essentially perfect. Like it's essentially, like, you just can't tell that it's CG at this point, it's like past the uncanny valley to like art is like mark Hamill's ghost just in a genie bottle somewhere. And that's how they do this. Like, it is unreal. Like what, how, how was that? How did that"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "work? If we catch a little bit of Mark Campbell spirit, cause he's still alive, right. Bottle"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that, and then he put it into the computer. Yeah. That's how we do."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "It was funny. Cause like when I first started working on the show, I sorta came in midstream during production on Boba Fett. And, uh, that was one of the first things I saw. And I was like, I can't talk to anybody about this. This is like the worst. Like, and I'm, I, I had to keep it bottled up the entire time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow. And"
+        },
+        {
+            "name": "LORELEI I",
+            "timestamp": "",
+            "text": "just waited. I'm so glad that you guys liked"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it. It was really, really phenomenal. And a lot of dune parallels going on this season, right. There were a lot of references, uh, with spice and the Guild and a lot of spice going on. A lot of desert go in general. Like it just, it really drove home. You know, kind of, um, impactful, I think dune was on Georgia psyche back in the original day, uh, with tattooing Laura,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you, you mentioned that this is the first TV show you worked on. You know, one theory I've been playing with as a result of book of Boba Fett is I just feel star wars is really good as TV. Like I feel like, you know, I feel like I might prefer. As a TV format at this point to a movie format, just because like you get more of it, there's not like it's not like, sort of all invested in one movie that comes out like every 10 years or whatever. Like, you know, you're able to explore these corners of the star wars universe. Maybe it wouldn't be appropriate to like focus on in a feature film or if you did, it would feel like sort of a side quest that really didn't tie into the story that you cared about. Because everything that the stakes are so high in, like telling something in the Skywalker saga or whatever, I don't know. How did you feel someone who's like, you know, obviously being an ILM was like star wars is just in your, in your bones. How did you feel about the translation of, uh, overall star wars to TV versus firstly, you know, I"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "like it. I have to admit this is embarrassing, but I haven't watched clone wars, um, which she's, you know, such a heavy influence to"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "all of this."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "And Filoni, he really knows how to structure this stuff. So that it's a cereal. And I mean, I know, you know, star wars originally, like new hope was based upon like, you know, the old steer littles and doing all that. But I think it's really, it's really cool that we're able to expand this because there's so much world building that's already been built. And like, you know, like when I, in Mandela, when the Tuscan spoke sign language, I was like, really that's amazing, you know, and like that you can go into these little details and just dive right into it. And there's just so much. Um, I'm working on a, I'm working on something new now and it's, it's cool to see, you know, the world building continue. So, um,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "what a tease like the, the, I mean, like, I think like for me as a fan, like the fandom obviously is cares so much about it. The fandom can be a little too much with star wars, but like the nice thing about TV is like, if there's a detail or some part of it that you're not like super attached to, it's like, okay, like, it's just like, was like in an episode of television, it wasn't like, you know, sort of the movie that you camped out for, like, you know, based your whole identity on like, waiting to go see like, and like similar, like when something like when, and like, it also allows for you to do moments like the Luke Skywalker moment. To me. I mean, the Luke Skywalker moments are the most exciting things that has happened in star wars. I am, since I can remember, like that, that, that to me is the, is the pinnacle. Uh, so I don't know. I just, I'm just so excited that you worked on it. I thought it turned out great and big fan."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "So I'm so excited. You guys liked it. Like it's, it's interesting. One thing that I sort of felt amongst the people I knew was that the star wars fans, I knew that are adults that sort of watched it just on their own. Weren't really into it so much that the star wars fans that I know that watched it with their kids really loved it. And I thought that was really interesting. I thought, I thought that they felt that this was a really good sort of entry period for them being able to introduce it to their kids and like it being a relatively."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Yeah, I got, I got in trouble for having exposed Sam to all I think, well, I think we've watched now seven out of nine and I didn't think it made sense to keep going with last Jedi and, uh, and rise. Um, so I've stopped at that point, but. Because my daughter, who's 25 now. Like she was in her like a toddler chair at 10 months watching star wars and doing Darth Vader impressions and stuff. Um, and so I thought that was okay to do again for Sam, but then I discovered that you're not necessarily supposed to show your two year old PG 13 movies. So I've been more holding off from doing those and I've held off as he's Sam is like pointing a flashlight in from outside the house. That was great. Um, so, so yeah, so I'm holding off right now on star wars. And speaking of, you know, just came from watching Batman, which was shot by Mondo DP, Greg Fraser from season one, um, who pioneered the volume on Mandalorian and then took it to. Crazy apex level on the Batman, those shots of them, of the entire skyline. Um, like in like 240 degrees just looks spectacular. Um, but not a movie for kids, not a movie that I can share with my son for, for very many years. So I'm trying to be like a little more appropriate."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "My mom likes to tell me all the time that the first movie she took me to, I don't, I think this is because they couldn't hire babysitters. Like we didn't have a lot of money growing up, but the first movie my folks took me to, when I was a kid, it was jaws."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "was going to say jaws. That was going to be my guess. That's incredible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wow. That's a, that's aggressive,"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "not afraid of the water. So."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That movie fucked me up for sure. Like, I did not want to go in the ocean for, and I'm in from Daytona beach, Florida. So I was like, yeah, better up in"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "St. Louis, Missouri. And I thought that there was sharks in the pool. Like I thought the shark had like snuck into the swimming pool and was going to get me there because of that movie. So don't,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "you got to really watch it. All right. Well, speaking of our childhoods, uh, we are going to get back into it, uh, and we are so happy. Lorelei, thank you for joining us. We're so excited to have you here and we will be tackling that classic staple, the adventures of Buckaroo Banzai across the eighth dimension. Yeah."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Oh, wait, I got to show you, wait, hold on."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, here we go. Do it. Yes. Let the record reflect that she has a Buckaroo, Banzai, headband as seen in the film."
+        },
+        {
+            "name": "LORELEI A",
+            "timestamp": "",
+            "text": "good friend of mine got from me. He got it off of eBay. It was apparently one of the headbands that they issued in the press kits from an actual, like genuine collectors item"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "thing. I don't want to do it. I can't put it up there again so I can take a picture of it."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Like Peter Levin knows. Right? Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's incredible. That was great. So we will be getting into Buckaroo Banzai in just a few minutes before we do next week. Jason, next weekend."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes next week on dune pod. Yeah, go. You go for it. You do it well. So you're the producer. I'm not, I mean, I know what it is. I know what the answer"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is, but I took a lot of shit last week because I was talking about poker and the fact that I had gotten into poker from watching Bravo networks, celebrity poker, uh, TV show, as opposed to apparently the correct answer is rounders. Um, there's the, look, your answer"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is just you, you didn't actually get into poker for that reason. Like you're you just don't actually know why you got into poker there. The reality is that the poker room in America was caused by two separate events thing. One was the release of wound rounders and thing. Two was Chris moneymaker winning the world series of poker main event, who is that? He's he's like, he was like a guy who's just like an everyday guy won the world series of poker main event, but it was broadcast on ESPN. And because it was broadcast on ESPN and had all of this viewership and those two things drove the first poker boom, which created all of these other shows that got about this is like, this is like the scene. And like the devil wears Prada where like, you know, Meryl Streep is saying like, you know, like, you know, you think you don't care about fashion and you know, you're you think you just picked up some blue sweater, but that color blue isn't Azure, it's not turquoise. It's so Rulien and it started like, this is the same thing. You don't actually even know why you watch that poker show on Bravo. It's because of Brian Koppelman riding around."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. All right. Very good. Well, speaking of Brian Koppelman, I apologize to him on Twitter for not having watched rounders and invited him to come on the pod to speak rounders or any movie of his choice. And he was so gracious that he took us up on that offer and he will be joining us. I mean, amazing. You talk about a smart guy. This guy is the producer, not only right or rounders the producer of Showtime's billions and super pumped, the new, uh, Uber story,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "um, written our good friend and dune pod guest. Mike Isaac. Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Who will be back in just a few weeks, uh, to rejoin us. Um, but Koppelman is coming on to talk about our first David Mamet, Glen Gary, Glen Ross."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We've talked about quite a bit on this pod, actually. Um, we. It's come. Yeah, there's a lot of sway has let it do to words that that movie's come up a bunch. Uh, it was a movie that, uh, Brian suggested, uh, because of Mamet's influence on his own writing. Uh, I'm really excited, uh, to tackle it. So"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "me too, I haven't seen it in a long time. So that is next week on dune pod, Glen, Gary, Glen Ross. All right. How about if we get into some do news, would you like to know more first up on do news Oscar, watch"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oscar watch they're coming. Yes. Are they? Yeah, the Huskers are coming. Some of them you'll see on TV. Some of them, you won't, people are pissed."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "am not that heated about it. I'm not, I'm not worried about that piece. As long as we get the respect,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm not heated about it. Cause I don't really like, I'm not, I'm not an academy person. Like I'm not like, you know, in the movie business, if my, if I were in the entertainment business and they were pulling this kind of bullshit with. Like prestige event, I would be heated and I would be, I would be talking to people about it. It is ridiculous. What they're doing also Disney did some shit. Did you see how Disney like, uh, managed to pull? One of the things Disney did was they managed to pull the short film, short animated film out of the telecast and have it be one of the, not telecast presented one first time in 28 years, they haven't been nominated for the short film. They're like, all right. Yeah. We're not nominated. Don't put that shit on screen. And then they got him. It was like, all right. I guess"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's, what's wild."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It seems to me like maybe Hollywood is in a meritocracy. I don't know. I'm just getting that vibe."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. It's not just about celebrating the achievements. Uh, there's more to, well, speaking of the Oscar, watch our dear friend, uh, and former guest on dune pod, Patrice. Vermette the production designer for dune 2021. He wants. The art director's Guild award for best production design. Nice for dune. That's amazing. Yeah, that's really cool."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I feel good about that one."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think we're going to get that one."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "hope so. That is the one I think for me, that bowl, if the bull sculpture doesn't get the respect, um, you know, like that that's got to happen. So stay tuned. Uh, this is more good news, uh, and we will keep going. All right. We have a couple of quick pieces of dune gaming news. Gale force nine is out with a new dune game. These guys that, uh, redid the original Avalon Avalon hill. Then they did a streamlined version of that last year with movie artwork. And then now they're doing dune rakus Dawn of the Freeman, which is basically a new board game, like a thousand years ago, where you play from him. Okay. That sounds cool. Resource management, tribe battles. I like it. Okay. That resource management. Yeah. Yeah. We don't get enough of"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "a space accountant."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Uh, second piece is dune Imperium. They, we said last week they were doing their announcement. They have made their announcements. Agents of dune is a new box set. If you want to play the RPG, it's everything you need in one box. And basically it's a, what if where your house gets a rakus from the emperor shut on the fourth and it's up to you to see if you can do better than, uh, the tradies did. Okay. That's great."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Cool. That is cool. I like that"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "idea. Yeah. It's an interesting one. Instead of being in the background of other stuff, just like be forefront, um, for the overall struggle. So agents of dune coming soon, can I play. It's a great question,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "man. The huts seem to really have it going on."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean, that's basically Leo the second, right? He's the God emperor is basically kind of is a hut. He's kind of hot, like,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "wow."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, all right, Jason, that is the last piece of hard due news that I have. Do you have any that you want to call out?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, those are good pieces. I appreciate you bringing those to our attention. Okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Very good. Let us take a moment to welcome some new discord friends. We have joining us this week kinds. Peace Mars, mark. After dark grim reefer may hold roll. Jack Terry built a spin, Dak and salty dog salty dog. We welcome you. And we thank you for joining. Yeah. Reefer is a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "great name. Grim regroup. Great. Grim reefer. Yeah. The grim Reaper is a great name. It's been a good, it's been a good week of discord, even in our time, without an episode, uh, the discord was still keeping it real. So I'm excited. I'm excited to have more folks in it. Nice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, and lastly, we have our featured review, so G H J 1511 said the best. I listened to a few podcasts, but yours is on my must list. Weekly loved all the pre dune pods. And now I'm digging your blow by blow on classically culty and amazing movies. Thanks. And keep it coming. You keep listening. We'll keep coming."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Um, there was a good, um, and then, oh, well, yeah, we can't, this will be, this episode will have already been out, but we're watching crawl in a discord, uh, on Wednesday night, which I'm very excited about. Uh, I love the glaze. The real glove must be out there somewhere. And I just wonder who has it. And I wonder if it's secured."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's probably probably Ryan condo. I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "don't know. I gotta, we gotta, still go look for it. We gotta go on the holy quest for the glove."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "All right. We will ping him and find out. Alright, uh, Jason, do you have a profit for this week? I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "don't have a profit for this week, but keep shouting us out. We'll find another profit soon."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We love you, uh, at wherever here. All right. Well then without further ado, what do you say you guys want to get into this? Let's do. Alright, here we go. Buckaroo Banzai is what happens when we push the boundaries of science and the natural world. And those boundaries pushed back born in the 1950s to American and Japanese physicist. Buckaroo Banzai is a polymath, a brilliant neurosurgeon martial arts expert, test pilot, advanced particle physicist, and leader of those hard rocking scientists. The Hong Kong Cavaliers. When he flies a rocket powered car and breaches, the eight dimension using an oscillation over thruster, he inadvertently gets earth caught up in an intergalactic civil war between the black and red lecturers from planet 10. Now the evil red lecturer is led by John warfin, John O'Connor and John big latte will stop at nothing to capture the over thruster and use it to return to planet 10 can our team of heroes, rawhide Reno, New Jersey, perfect Tommy, and the mysterious beauty penny saved the world. You bet their sweet ass, they will. And they'll look good doing it alongside the greatest hero the world has ever known Buckaroo Banzai."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wow. That's such a, such a strong, it's really a strong reading. I feel, I appreciate also like how committed you were to the seriousness of the subject matter."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was great. It demands it. I do feel like if I were to do one of those, uh, sentence diagram, uh, it would be like that shot from French dispatch. Like I write very, very long run-on sentences, but"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that's okay. I all, I mean it parses, I knew exactly what you were talking about."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Very good."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "You're able to describe Buckaroo Banzai and a good"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "long sentence. That's right. That's right. Well, so Lorelei, you start like, what is your history with Buckaroo by. Oh, my"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "God Booker bot, you know, I was, I saw it when it came out. Like I, me and my, like when I was 12, I saw it with my like nerdy girlfriends. And we went to the theater during the summer of 1984, uh, in LA. So I grew up in the valley. And so we were, I was thankful that we were able to get one of the screenings because buck rubans, I didn't really get that widely released initially. Um, but I remember my, my friend was like, there's this really weird movie out and we have to go see it. And we went to go see it and it just blew us away. And it was my first introduction to, you know, the Renaissance man, like being able to like a scientist that could be a rock star that could be a neurosurgeon that, you know, racist jet cars. And it was amazing. It was great. It was awesome. I love this movie so much."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's incredible. And Jason."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "saw this movie in high school, I was going through sort of an absurdist phase. And like, there was, uh, like we had, you know, we were just deep into like a dark star and like waiting for Godot, uh, and like, you know, and just generally like absurdist comedy, uh, for government that wasn't out yet. Cause as a long time ago. Okay. And yeah, and, uh, you know, like Rosencrantz and Guildenstern are dead. Who's afraid of Virginia Wolf, all of that stuff. And like the Buckaroo Banzai is kind of like the tail end of that kind of is really kind of, I think a part of that legacy. Um, and we watch it. I remember, I remember seeing in high school. And like, you know, someone was like, oh yeah, this is a weird one. It's like, sort of in this wheelhouse. I was like, this is maybe too weird for me. Like, I feel like this was like, it wasn't that far removed from when it came out. But is it really stood out as being like one of the more deeply weird movies I'd ever. Mm."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I saw this, I was 14 years old. I have talked at length many times on this podcast about the fact that my life, the entire course of my life was changed by going to gymnastics camp in 1984. And this was while I was at gymnastics camp, there was a break. I was there for two weeks. And in between those two weeks, we had a, like an offsite trip for the kids that were there for the whole time. And we went and saw Buckaroo Banzai. And there might've been like other movies that like, you could choose which movie you wanted to go see or whatever. But I just remember walking in and being completely blown away and like resonating so well as a super nerd. Um, and just absolutely loving what was going on. And then the cognitive dissonance around that and, you know, fighting all these jocks who were much better than me at gymnastics. So that was my exposure."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Wow. Was it the first time that, that it showed a cool nerd? Like I'm trying to think of,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "oh yeah. It's a good call. Yeah."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know. Good question. I mean, you had Kurt, Russell was like the computer wore sneakers or whatever. He was like kind of cool and Disney movie. All right. Fair."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, no, that's a good call. I think you're right. And it like, sort of establishes, I mean, like with actually Jeff Goldbloom himself and establishes him that like that Jeff Goldbloom archetype of like, you know, like the, the guy who's going to be like a sexy mathematician fighting dinosaurs."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Right. Well, so, so let's talk just quickly behind the scenes. So we have, the director is WD Richter, who wrote invasion of the body snatchers and big trouble in little China, the carpenter. Oh yeah, yeah. That's right. And then the writer of this was, uh, uh, another Dartmouth, uh, uh, grad who he didn't know in school, but Earl Mac Rauch. And so he had basically written and he was friends with WD, had read one of his books and invited him to come out to LA. So he came out there and he started writing these ideas of this character, Buckaroo, Banzai. And his first draft was called find the jet car said the president, uh, Buckaroo, Banzai, thriller, um, Eddie had another draft that was called the strange case of Mr. Uh, the strange case of Mr. Cigars about a huge robot and a box of Adolf Hitler. Cigars."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. So he was on a different, he was on some different tip, like he was, you know? Yeah. I see what he is. I see what he's up to. You can kind of, you can catch the vibe of what he was, uh, what he was on. All right. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Good for him. Yeah. Well, and they just kept writing. He kept writing drafts, but not finishing them. And they kind of put them in a drawer and then you read another one and then put it in a drawer. And after years they finally got a deal. Um, they got financing and they went out and they made this insane. Good for them. Nice job. Well, let's go ahead. Let's go ahead and get into this. So from the opening shot, this score because it's such a"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "great sport. It"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is a good score. So good. The score is incredible. This is Michael Boddicker who among other things worked on a little film called dune 2021."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There must be like a $800 Mondo LP pressing this soundtrack."
+        },
+        {
+            "name": "LORELEI I",
+            "timestamp": "",
+            "text": "heard that. One of the reasons why the score wasn't really released was because it got stuck in like contracts like Noah. And that's, that's a big reason why Buckaroo bonds. I just can't ever get off the ground. It's like, no one can do. Yeah, the lawyers aren't happy with it. You know, they, they don't know. Who's really"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "owned the right wounds. What, yeah, that happens with a lot of older stuff. Like they didn't, they didn't set up the rights for, for the, for it to be transferred to other media later. Bummer. But it's available on streaming, which suggests like they figured out something for, for its distribution."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. But like, I mean, if we could figure out getting Spider-Man into Marvel movies, we should be able to figure out fricking Buckaroo by. Yeah. Yeah. I'd like to, I'd like to see that done."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. I think they probably assume that the payoff for getting Spider-Man into Marvel was a little bit higher and maybe more people were incentive to work on it. As a result,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm picturing the lawyer. He's like walking into the office and he's got the Buckaroo Banzai files under his, uh, you know, he's pushing the tray and he just like walks in and he sees Spiderman on the board and walks out. And he's like, this"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is like, to your point, this is like a hundred percent original IP. Like some guy was just like, I've got an idea. He's a neuroscientist rock and roll. Particle physicist"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "go,"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "go, well, you know, Kevin Smith was going to do an Amazon series with him and, and the reason why he couldn't do that, actually the thing that I read was that he found out that Richter and Roush weren't involved in the rights to it. So then he pulled out of it."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think MGM was suing them or something. I was just like, it's all. Yeah, it's messy. Well, we will at least appreciate what we got out of this. And it's like a completely insane setup. Like this opening shot where they're like, they're getting a rocket car ready, and then they cut to Buckaroo and he's doing brain surgery while talking to Jeff Goldbloom um, it's just like"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "wild. Yeah. It's super wild. It's it's it's immediately it's again, one of those things where like you immediately sort of are being told what you're in. And it's going to be,"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "yeah, it's a good, I think, I feel like it's a good introduction to who his character is right there. Like, okay, now we're racing, you know, jet cars on the salt flats. Now we're during neurosurgery on an Eskimo, like there's this whole thing going on. Right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That was amazing. That detail, that, that line is by Clancy brown. And I just had to say like, he was a hunk."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Quincy looked good. I was like, shit, man. Yeah. Yeah. Clancy. I mean, it's kind of amazing, like that Clancy was in the Highlander and then also, maybe is a Highlander. Seems like he looks good. He's kinda just been doing his stuff for awhile. It's a little."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, well, so, uh, Buckaroo comes over, you know, he finishes the surgery, he comes over, he gets sat. He gets into the car, just the sound of the oscillation, over thruster, getting into position and like all of the, the very physical buttons and things, and then putting on the Japanese headband. But Laurel, I, once he takes off and the is driving at speed, the reflection on his visor is like one of the coolest looking shots where you can see like the, the road or whatever ahead of him. Just gorgeous. Yeah. Yeah."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "I, I, you know, it's, it's funny. Cause like, so, so much of this, there's some of it that looks really great. And some of it that looks so cheesy, like as far as the special effects goes, but it all works. Like I'm, I'm happy to take in all of it is absolutely being real."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. It works that way for sure. he goes so fast. He turns on the over thruster. He aligns his lasers and he drives through a mountain and he finds himself inside the eighth dimension. So. Well, give us a breakdown on the eight dimension."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean the eight dimension is obviously a very well-known concept in physics. It comes after the seventh and before the ninth. Uh, and it's, it's the one that allows you to go through a mountain that's that's its key characteristic. So it was well portrayed. It was that scientifically accurate portrayal of the eighth dimension in this movie. One thing"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "I'd like to add about the eighth dimension is Alan Howarth. Apparently this is his section, I guess, because he did the sound design for the eighth dimension. So I'm guessing that this is the part."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. What else has he done?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "He's John Carpenter, synth guy. So stuff with John Carpenter. He did the sound effects for a star Trek, the movie for the enterprise. He's he's done a lot of sound design stuff."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "just know that he did the warp engines. So like whenever it will go into warp speed, that was his deal. Yeah. But he's, he's definitely John carpenter's dude."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. Amazing. Well, so Buckaroo makes it through when he comes back out, he finds there's a slime sphere of some kind that's living, that's attached to the bottom of the car. Um, but we do a hard cut from there to Dr. Lazaretto slash John warfin, who is in an asylum and watching a press conference about Buckaroo having broken into the eighth dimension. So this is our introduction to John Lithgow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, who's doing the most that's ever been done. I mean, he is going for it. And this movie, he must've been tired at the end of the day. He must have been burning like 10,000 calories a day working on this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Richter said he was on set for two weeks and they just let him go there. Like we there's no, there's no point holding him back. And apparently his accent was from, there was a, a tailor on the lot. It was Italian and Lithgow was like, you're my dialect coach"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "now Roberto terminally. And he literally had Roberto record all of his lines of dialogue. And then he spent two weeks practicing so that he could get it down exactly the way Roberto did it. And then he showed up and told Richter, that's what he was doing. So I've"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "made a choice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Uh, but he is very, you know, to very good effect immediately. So when he sees his, uh, the orderly, you know, who that early was. Who's the orderly that's that's Mike Aaron trout from uh,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "oh yeah. Aaron trout from, yeah, from breaking"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "bad. Yeah. Jonathan Banks, a young child with banks. Um, and he mocks him when he says, oh, I don't need it tomorrow. I'm going home with my own roster."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's terrific, doc. I'll make sure you get an early wake up. Uh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "hold on. You can the monkey boy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. Amazing. I love"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "the production design. In his room and this really shows you like, just how packed everything is. Cause like in every frame of Buckaroo, Banzai, there's, there's always just something to look at. And there's always some really amazing, like the last supper what's that doing in there, like these great things. And then there's like a hierarchy of all of the, all of the guys, all the Johns at Yoyodyne that you can see in the background. Right,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right, right. Uh, amazing. Amazing. So he kills poor Mike, Aaron trout and he escapes, uh, and we go on and we check out the Hong Kong Cavaliers live. So first of all, these are new Brunswick, own new Brunswick's. Oh, Hong Kong capital yours. This may"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "be, I was, we were talking about this during it, within the, with the chuckle hut. This may be one of the most important New Jersey movies ever made before Kevin Smith, before Kevin Smith enters the picture. This may be the most significant New Jersey movie because it's like all a hundred percent like New Jersey, like local, like central Jersey, like locations, uh, and, uh, and places it's very strange"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "character named"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "New Jersey."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly, exactly. Like they really commit"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "at well. And John Parker says the situation is explosive and the president, the president goes like a race war. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "exactly. Yeah. There's, there's something going on there, but this club, this club in New Jersey is amazing. This, this, this dance club, it's, it's awesome. Immaculate vibes at the new Brunswick Danceteria"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "artery. I think that's what it was."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. He's very serious about what he's doing, but, so I love this area. They're basically doing some, you know, like blues hammer style, straight ahead, rock blues. Yeah. But then Buckaroo, tears out, you know, a great guitar solo and he's just like treading it up and going for it. And then all of a sudden he flips and he does a trumpet solo. This is Peter Weller playing this is, he plays trumpet. Yes. He plays trumpet and guitar. The"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "little tiny trumpet. That was his instrument"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "out of his pocket. Like, wait a minute, wait a minute. Wait. That shit was wild."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Yes. Peter Weller. Pelase a tiny, a pint, a tiny"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "trunk is a Piccolo trumpet. What is it? Or a Coronet or some. Um, also as,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "as hex or as commander, excuse reminding us in chat, uh, Peter Weller is also available on cameo."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "if you like hire him on cameo, he will remind you and whoever you're recording the video for asking them for the video for that, he is, uh, he has a PhD and wants to be addressed as Dr. Weller, Peter Weller,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "but it's this stallion painting, right? It's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "like, it's an art or something. He's a deeply weird dude. I did. The trumpet is next level. Like that's, that's beyond. He was like,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's strange. I love it. I can't get over it. Yeah. Well from, from wild to Wilder, he stops because, um, he can tell that someone is not having fun and he wants to see who is crying. And it is penny pretty played by a very young Ellen Barkin."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Um, one of our most celebrated actresses here doing something questionable."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is my, that is my question. So Lorelei, why don't you start with your take on Ellen bargains performance here?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Uh, what that she's just like, like in the middle of the club, that was weird. That was super weird."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "She gets out a gun and puts a gun to her head. I do want to be intense."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "One of my favorite jokes in the whole movie is it's not even a joke is, is when he calls her the wrong name. Uh, instead of calling her penny, he calls her like whatever, Peggy and she's like, whatever, it's fine. Like, she's like, she's like, so like far gone at that point that she's like her, she got my name wrong. I don't fucking care anymore. That to me is just so funny. Uh, I mean, this, I think is probably the best. This is the best scene in the, in the, in the movie, because like, first of all, I think the music is fun. The bar looks cool. Like people are dancing weird. It just like everything about Peter is playing the fucking Piccolo trumpet. I guess that's phenomenal. You've got Ellen Barkin doing a lot. Uh, and then you've got, you know, no matter where you go there you are. We don't have to be mean because remember no matter where you go. Like, so it's, it's really the most essential aspect of the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "movie at this point. Yeah. So, oh, well I was going to say the fact that he, he, you know, uh, people in the crowd are making fun of her. And so the fact that he is establishing empathy and reaching out to her, um, I think it's, I think it's really cool."
+        },
+        {
+            "name": "LORELEI I",
+            "timestamp": "",
+            "text": "was just going to say that a Richter says that in this scene, the scene was, uh, the DP was Jordan worth, who was on blade runner. And Richter is like, he says, he says, there's, there's this one shot where she she's drinking the whiskey. And then like this line of spittle comes out and it's like perfectly lit. And you wouldn't get that if it wasn't for like this absolutely amazing DP."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my gosh. But then he."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "The backstory"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "was Cronin worth was fired and replaced mid shoot by Fred Kona camp. Oh, there's a salaryman midway. Yeah. There's some story, uh, that happened. I think, um, you know, he couldn't, uh, Kronenbourg worth, couldn't get it done for whatever reason. So this"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "definitely feels like a movie where people quit in the middle and others had, and other people had to continue it. Like this was a movie that like had to be, you know, worked on in"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "shifts. Well, it's, it's interesting. Cause when w like listening to the interviews with the Richter, there was a studio head, this guy, David , who was a con man, like, like down to the core of con man who, um, gave them a bunch of grief. And I think that, that might've been related to it. And he's actually, we'll get to the scene later, but he's, he's related to the water. Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah, yeah, exactly. It's and they actually said at one point they felt like it was like Paul talking about Jessica is like, he is my enemy. He is trying to destroy this movie. Um, and, and we're going to defeat him that line"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "about Paul and Jessica likes stands out to you as like a, as like something that's like broadly applicable in many situations in life. I feel like you bring it up like once a week, just for, in, in some contexts, like, you know, it's very similar to, you know, this voicemail reminds me of when Paul Kevin's questions reminds me"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "of when Sam, Sam, I know you don't want to eat those waffles, but you know, when Paul said"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "those waffles are your enemy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, so now we go to the bond side tour bus. I just want to say, I love the fact that, uh, Buckaroo has a full like samurai, you know, geek and stuff. And his Hattori Hanzo swords, you know, up on the wall, like. Absolutely. Awesome. Yeah. This is where we have this notion of, um, reconnecting with penny and the fact that she reminds him, of somebody who he says was he knew a long time ago, who was the queen of the Netherlands. Okay. That's a weird line. It's a great line. And perfect. Perfect. Tommy seems so distrustful. Is he like looking out for Buckaroo? Is he just insecure and doesn't want like somebody pretty to come be the focus of things?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Oh, that's a good question. I don't know. I mean, he must be, he must, if they all seemed all the Hong Kong Cavaliers seem pretty freaked out that she showed up. Right. Like, because obviously Buckaroo went through a lot of shit when Peggy died and I'm sure that they don't want to have to like deal with that again. So I suspect he's just like, oh no, this could all go horribly, horribly wrong."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm looking out for Buckaroo. Yeah. Yeah. I like it. Well, so Jason talked to me about this press."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Very authentic press conference makes a lot of sense clearly. Well-staffed um, you know, it seems a little, it seems a little loose. It's a little it's, it's a little loose. Uh, it's not as buttoned up as the press conference in, uh, contact in contact where Jodie foster thought she was going up. Uh, even though no one had told her that she just felt that it was her time to go brief the Jim's ready press briefing room. Yeah, it was great. It was really good."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "did love the a, this has the awesome line."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It really leaned into that one too. Uh, mother, what is it? What is he doing right now? Do we think, what does Peter Weller like? He he's just, I mean, what is Peter Waller's he"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "does he,"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "where does he live? He's got his PhD in art history and he does."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Did you work on, uh, the second star Trek, Lorelei tremor, our friend, Tim worked on that too. So he was like the Admiral on that one. And he was kind of like the heavy and that, which was really cool. He was the guy who was like, we got to do whatever it takes to protect the Federation, even if it includes killing everyone. And by the"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "second star Trek, I thought you meant like, you know, the wrath of Khan. And I was like, Lord realized that I'd been in Oregon for that long. Right. I mean, like"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it's"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "my"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "immortality. Yeah. Um, well, so now we have, uh, we have the motorcycle chase, um, and we have this whole thing of the hunters shooting down the black electroids ship and John Parker, uh, getting. We do have this one great shot."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "love, they find a that the hunters who shut down the ship find a comic book, uh, Buckaroo Banzai, number one, uh, which was drawn by Michael Kaluta, who is, uh, uh, one of the Kings. Um, so I really, I really dug that, but this notion that in trouble trying to get back, uh, professor had Kita perfect. Tommy sends out the call, coding"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "calling all"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "blue blazer regulars in the garden state."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "This"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "is scooter Lindley, Blazey, regular"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "41 and a half."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Amazing shit. Blazer regulars, man. Hey,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "they just got like a half. Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's cute. But I mean like one thing I want to talk about it is cute. The kids cute that, first of all, they have a paramilitary organization like this rock and roll band slash neuroscientists has, uh, you know, just, uh, some kind of provisional army,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "uh, attached to it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And they themselves are all very heavily armed at all times. Right. This is like the, the level of armaments in this movie is quite high. Uh, and like somewhat like a historically, like, I just don't feel like I don't feel there were as many. I don't feel like I don't feel like at the time. It at the time, it would've seemed absurd for there to be that many guns, uh, as opposed to now, or reasons like, oh yeah, like probably they just went to Walmart and brought, bought them guns."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think this is close on the heels of red Dawn. So we were maybe feeling like it was a good time to be armed, at least in Florida, this, this was not surprising. Oh, yeah, that's"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "terrible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. I mean, I guess that is like the, I get it. It was interesting watching this movie as well. Like, you know, during the unfolding of the war. Uh, 'cause it like, it is like also clearly like a cold war with Russia, paranoia. Like, which is like, there was this thread, there's this thread on Twitter, I'm a millennial or I'm a Zoomer or whatever. And I didn't live through the first cold war. Like, what am I? This is making me really nervous. This whole idea of like re like gen X-ers, like, how did you deal with being a kid or how'd you deal with being young? And like, you know, like thinking that nuclear Holocaust was always going to happen. And I think, like, I think like this movie offers a clue, which was like, by the time that like the cold war got to when we were kids, like in the eighties and had been going on for so long. And we grew up with the idea that like nuclear annihilation was had like long been this present threat that it had reached this like absurdist level, uh, and like the way in which people dealt with it, even like entertainment for kids was just to make it kind of, there was just an element of the absurd to it. Um, from the beginning, obviously, you know, you can trace that back to Dr. Strangelove, whatever, but I think that had become, I think that had become like, sort of the, one of the dominant cultural reactions to the mutually assured destruction of, of."
+        },
+        {
+            "name": "LORELEI W",
+            "timestamp": "",
+            "text": "w when was day after? I can't remember."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Cause I remember that right. Or after like, it was rocked me up, like that was"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "3 82 or something because I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "rewatched that like 10 or 15 years ago, maybe I hadn't seen it since it's not good. It's not great. It's not a great movie. Um, also"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "John Lithgow. Oh yeah. In the day"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "after, but it's just a shot. It's just a shot of the woman, like doing the laundry outside and the muscle's taken off over the cornfields or whatever, that, that shit was fucked up."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "remember the day after we"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "had to like talk about it in history"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "class"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and it was like, it was like a cultural moment."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Camera's over. We had like 20 families come over from the church and watch it both nights."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. They captured that really well in like a ladder season of the Americans, uh, like where everyone watched it, they w they watched it together. It's a really good, it's a really good. Uh, episode of television and an excellent series, I would recommend it. Well, I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "guess it's a good thing in since sense, Republican presidents seemed to take their cues from television. It was good that, that, you know, uh, Reagan saw it and was like, well, this seems bad. This is maybe we should go to Reykjavik. See what was the workout? Exactly. Um, all right, so now we go back to the Bonzai headquarters. Like I like this building. I like the setup, the compound. I like the fact that there's groupies outside, uh, who are all excited, New Jersey. Uh, Jeff Goldbloom is at the piano and he's trying out, he's like working out the Buckaroo Banzai theme song. Um, which I thought was amazing. That was like a really nice little detail. There is this like the first"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Goldbloom is this like, Goldbloom essentially the body"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "snatchers before the assistant Richter met up with them?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Oh yeah. He's great in that, by the way. We should probably do that. They did that on 70 millimeter. It's a 1978 film set in San Francisco. So it's amazing to look at San Francisco at that point."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Um, the street from my house actually. Oh really? That it opens down the street from my house. So I'm always like, oh, that's where the creepy priest was on the swing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, what's weird is it's the date that I moved to San Francisco is closer to that film than to today. Uh, right. Cause I moved here in 92. So it was only 14 years after that. Jeff"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Goldbloom had done the big chill the year before Buckaroo. Oh yeah. Which feels like an agent fuck up somehow. Like if you've got"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "John Lithgow out the world, according to Garp the year. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Which is a big, yeah. That's a big role. A big swing on that one big swing on that one. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, we do have all of the John, uh, all the John names as they're trying to figure out what's going on with these guys. John Yaya,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "maybe not John Nolan. John. O'Connor no way Jose."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "John"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Small berries. It's a joke. John Small berries is amazing"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "classic. Um, we do also get the shout out that the aliens showed up in 1938 and they use Orson Welles, who, the guy from the wine commercial."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love that a pomace on shut out vintage dated like the finest friendship,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "uh, the ranch champagne. It has always been celebrated for its excellence. Ah, thank you. Oh man. So what about this hologram, Laurel? I do you have one of these holograms and the goggles? Uh, the goggles. How"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "much do I love the goggles with the bubble wrap? That's amazing. That just seems like such a genius moment by the prop master to be like, all right, we're low on budget. How are we going to make these like high-tech scifi novels. Let's get some bubble wrap. Nailed"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it. It's amazing."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "From what I understand about the hologram, it was, uh, she was, she was lit and then they added some compositing lighting in front of her. But from what I understand, the, uh, the dress that she was wearing was actually made a metal. So she couldn't really move in it too much. So that's why she's like pretty"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "stationary in it. Great performance, John, what was her name? Yeah, really funny. Really funny. Well, so then I do, so this is to me, like one of the best lines of dialogue in a film. Um, but it is something that really enforces everything that is amazing about this movie. So, um, Buckaroo says we got to go hit Yoyodyne. We got to take him out and perfect. Tommy says,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "no, we keep it intimate. Call the Kolodny brothers called the rugs, suckers, my guns,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "the Kolodny brothers and the rug suckers. Like what the fuck? And the rug suckers do show up later in the van. And it has a rug soccer's logo on it, which is very"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "cool. And the rug sector is almost sounds like something that would be an inherent vice. That almost sounds like, yeah, it sounds like we straight into like a, uh, a pension vertical"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "connection. Oh, what have you heard about? So apparently Yoyodyne comes from a pension novel really? And then, and then, so, uh, in a book later, I don't know which novel it is. Pinching then makes a reference to ."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, holy shit. So"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "there's connections. I must've known that. I, I must've like somehow, like, as most that I'm glad you remember that that was a great poll. Good job, Laura."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So we have penny, the, the development where she's like, what are you watching me?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, I can figure you've had an identical twin sister."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm married. That's over now."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And she's gone. And that's about all there is to say"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "about that. And that's all there is to say about that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's so great. That's why. That's it. That's all you need to know. We're not going to get into"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it. What do we think happened to penny or to Peggy?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Uh, I believe she got killed by Hanoi Shawn, like"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "his parents."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Yeah. Yeah. Yeah. I think that, that was a whole, I, I can't remember. I never read the novelization, which is supposed to be from the point of view of Reno that Mack Roush had written and it's, it apparently gives like a really big backstory. And now I want to go back and read it because there's a lot more information in"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that audible get on it. Yeah. Do it. Or someone else non, non, uh, manana manana, not monopolistic. All right. So we have, the electrodes are assaulting and we've got a lot of running around and chasing and shooting rawhide bites it, uh, but we do have this scene that Lorelei was referring to earlier where New Jersey ass. Hey, why is that watermelon? Uh, and Reno says, I'll tell you later. So Laura, like give the story."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "So apparently it's a brown M and M thing. Like the studio head, David Begelman, but was giving them so much grief throughout all the production. And actually he hated the fact hated the fact that Buckaroo wore red glasses. Cause he was like, don't wear red glasses. So cool. And, and, and he said, you know, I'm not going to let you continue this movie. If you have them wear red glasses. And Richter said, no, I only have him in three scenes wearing the glasses. And the third scene, he Bigelman was like, I'm Begelman was like, I'm going to shut this down because like, you can't have him worth glasses. And he said, no, no, no, this is the third scene. That's it. That's going to be it. So they let him continue. But then they decided Richter and his team decided that, okay, we're going to come up with some totally random scene. And if we can get it past. Begelman then we're in the clear, cause he's not paying attention. And so they put in the watermelon seed, knowing that it had nothing to do with any other scene. And nobody said anything about it. So they're like, all right, we're in the clear we can do whatever we want. So here we go."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He apparently was beaten down. By that point, he'd been like a total Dick to them for so long. And then he basically had no more notes for the end of the, through the end of the film. Uh, which yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. What's your, I'm trying to give notes on this fucking thing. It's like, come on man. Try to pull this back in and especially to like to push your chips in on the no red glasses, like the glasses were great. And one of the more normal things about the movie,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "right? Pick your battles, David. Um, so Jason, what about this decision? Everything about the post."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Uh, I mean, you know, look, we all have back problems. We all need to like engage in some kind of, you know, suspension therapy, uh, to feel better. Uh,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "do you think this is just like a budget thing? They're like we do not have the budget to build the oval office. So my"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "favorite part of the whole thing is that Yakov Smirnoff is the national security advisor in"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this cold war allegory. It's amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But that, that part, that part, that's a great"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "choice. I took the name cause he said he's like my national security advance are smeared off and I wrote it down and then I looked and saw that it was actually Yakov, Smirnoff. And I was like, yeah, it makes less sense. Oh my God, it's amazing. Y'all"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "got screwed off reunited with John Lithgow from there"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "at 10, 2010. Amazing. We"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "are definitely the podcast that is discussed 2010 the most, despite never having done an episode on it. It will be the last episode we ever do."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That was"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "in 1984"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "too. Wasn't it?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly. Yeah, it's right. It's right in this wheelhouse. Don't say it. Amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Aren't really wants a art is dying for 2010. Like that, that is, he wants to make contact. All right. So we have just another great line. So low Lazaretto calls, Buckaroo calling him out. And uh, you know, he says, may I pass along my congratulations dimensionally? I'm sure. And they miss"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "and they, it sounds like they did some sort of sound design to his voice when he did that. Like, it just sounded so. Something happened to his voice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They're beautiful. Yeah. It was great. It was beautiful. Um, so, so basically this all comes to a head. Now we have the full-on assault on, uh, on Yoyodyne, the president, uh, signs, the declaration of war, the short form. Yeah. And"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "they really linger on that prop for a while. Like they, they went through the effort to like, they went through the effort to show the prop and like, they're going to make sure that you see every little tech, you know, he reads it off like, okay. Short from, yes, it was apparently"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "like a last minute, uh, ad by the property master Richter loved it so much. Like th this is the thing that I really love about the movie is that like, everyone just brought their, a game, like everyone from the sound design to the property master to like, well, maybe not special effects, but like everyone was able to contribute stuff. And it was, so it just turns out to be so amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really good. Really good. We do have a John warfare Braveheart moment. Where are we going? When are we going? Real. I love that shit, man. So, so now we just have a big shootout that is happening all over Yoyodyne, the design on the interior, the production design work on the interior, the ship itself, the shuttle that those guys are in, all of that, um, you know, warfare, um, ship that he drives, he pilots with his toes. Like it's just like, it's all classic, so great. Yeah. And then. And then we have a very kind of fast resolution, you know, Buckaroo and, and John Parker get up there and they blow up orphans ship. Uh, and that is it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This is where I'm saying about, it felt like they had sort of run out like someone quit. Like they were like, well, they're just like add to that debt and like, you know,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "and SQL."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Yeah, we'll do it. We'll cover it in the SQL."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And the score is so great as he is coming down in the parachute. Um, and then I love this. So he's going to come check on penny who, um, who is dead and he walks onto the tour bus and, uh, his guys are well, I wasn't calling about is everything okay with the alien space, cloth and blend of tenders. And you just go ahead and destroy Russia. Tell him your son one and no one to, which was yes to destroy Russia or a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "number two."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Like awesome. Like somebody's really fucking funny dialogue, man."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. It is really funny. It's it's funny. And like there's sort of two levels. It's funny on its face. And then like the delivery of it is also like, just be the delivery of it is also another level of absurdity. Cause it's sort of bad. Uh it's it's a, it's a weird movie. It's a funny."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um, so penny comes back to life. Uh, she, you know, when he gives her the kiss and he is shocked because he had the shock on him from the, from the aliens, and now we go to credits. And so this blew my mind because it said, watch. Yeah, Buckaroo Banzai against the world crime league coming soon. So the idea of pre announcing your sequel to your film before it happened was genius. Absolutely genius. And then the music comes and we have the walking. Describe it, please. Just the aqueduct. Yes. This is LA aqueduct, right?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Oh, well the one interesting thing about the aqueduct scene at the end is that, so this was the, one of the gifts that Begelman gave him was he was just like, you know, you should just end this like a music video and I'll give you the money so that you can do it. And then that's how they were able to end it in like, such an amazing way, which I really, I love that. I think it's so great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The music is out and you can tell they're all very carefully walking to the beat. Jason, you know what song it was?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, I actually don't know a scientist. So the song"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "wasn't done at the time, uh, by the, by the guy doing the score. So they actually used uptown girl collegial."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, it makes sense. It buys like,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "so you have this iconic, uh, this iconic scene of them walking around, uh, altogether as a squad, which of course was Amash in life aquatic. Um, where you have teams Zissou at the end. And we have Goldbloom walking in both movies."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, wow. Yeah. Ladies and gentlemen, Jeff, Goldbloom using his feet. It's happening."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The budget on this film was $12 million. It made $6 million at the box office. That was mine. Yeah, it was an open on 236 screens. It faced stiff competition from star Trek, three, the search for Spock, Indiana Jones and the temple of doom and Ghostbusters."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This movie can't cost $12 million to make. That's just too much. That's a, that's a critical error. You can't, you can't put $12 million in 19 80, 83, 80 $4 into those movies. It's like, there's no way you're going to get it back. There's this movie you need to make for like $3 million, $12 million is so much money."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "can't believe they spent all that in"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this story. It was 12 million. I don't know what, I don't know what Jedi was, but this was not that far after that. So Jason, your final rating and review for Buckaroo Banzai. Is it better than Ghostbuster?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "enjoy this movie. Uh, I think there's a lot to love in it. Uh, Peter Weller's fun, Alan bargains fun. The fact that he actually plays the trumpet, maybe increases at a whole half star for me, to be honest, I didn't know that I'm still stuck on that. I do think someone in discord when we were watching, it said like, the idea of this movie is a little bit better than the movie itself. Like I really do love. So like, you know, no matter where you go there you are is like, you know, I think a really important line in cinema history. Yeah. And I think the, I think the movie around it, um, for me, it just like, it sort of just becomes like a little too goofy at some point. I just like, all right, like, yeah, anything's possible because it's all super goofy, but I still like it. I'm going to give it three and a half stars. Um, it's not my favorite movie of all time, but I did enjoy watching it and I enjoyed discussing it with you find people."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice, nice Lorelei."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Well, okay. So here's, I have Booker bonds. I, as much as I love it is a little problematic for me as an adult me like 12 year old, 13 year old me gives it five stars, but. Adult me right now. And I'm really bothered that Peter Weller is playing in half Asian, half white dude. Like it just really, it, it really gets me because you have to understand like me as a kid, the only representation that I saw as an Asian kid of seeing any Asian without an accent was George decay or frickin Jack Soo from Barney Miller. Like that was it. Right. And so for me to watch this movie and think, yeah, sure. That dude can be half Asian. Eh, there's just something that doesn't sit very well with me. So as much as I'd like to give it a five star, I think. I think I'd like to see this movie redone with someone that's actually half Asian. And so I'm going to, I have to knock it down a star just for"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that. That's very fair. That is very,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "that was a comment too, in the discord, when we were watching, it was like, it was a tough decade for, for Asian representation and film like that, the early eighties, uh, like everything with like, you know, from like the Japanese paranoia to, um, you know, all of the, all of the various yellow face stuff. It was a, it was a tough time. Yeah."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Super tough. But you know, things are getting better. It's good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Uh, well, no, I appreciate it. I'm glad you, I'm glad you brought that perspective, uh, because I had not thought about that. Um, and so that, that's a real, that's a real deal. I, it, for me, Jason, I think you, I think you also have, have called out really valid points."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "still love this movie. I am lost in the nostalgia fog. Um, and I think. You don't often have films that are so original and so creative and you just see someone just completely breaking out of anything that's ever been done. Um, so for me, this is a four-star film. Um, I had not revisited many years and I was really glad to just watch it. And I was smiling the whole time, uh, through, so I really loved, I really loved it. Hundred"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "percent innocent."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, we know who Tilda Swinton won't play Lorelei, but who would you cast? Who would Tilda Swinton play, uh, for you for Buckaroo Banzai? You know, I, I,"
+        },
+        {
+            "name": "LORELEI I",
+            "timestamp": "",
+            "text": "feel like Hong Kong Cavaliers needs a needs a lady in there cause it's all dudes. Right? So I, I was thinking perfect time."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So good. Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Love it. I'm going with New Jersey. You know, I want to see her as the neurosurgeon and then also like in the red cowboy outfit, uh, that would be amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do I would do Lithgow big bootay I would, I would do another version. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "In the dark. That is a great line. All about it. alright, here we go. With letters. We have two letters. First one. Hey,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "dune pod"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Kev here. Um, with your weekly calves question. I absolutely love this movie. I think it's absolutely off the wall. Of course, Jeff Goldbloom as a brain surgeon named New Jersey, uh, the music. Buckaroo Banzai and the band is, is totally hilarious. Um, I haven't watched it yet for this show, but I'm really excited to revisit it. The last time I tried to revisit it was at a point where, uh, my father had been very ill. Um, and we were watching a lot of movies in that time. The two movies that he asked to turn off were this and Jurassic world fallen kingdom, which isn't great. So my question to you is what is your favorite movie that you showed somebody and you're, and they just hated it. Like, oh, I love this so much. You have to see this. And it just bounces right off them. A second place, I think is the time I tried to show my friends, Crispin Glover's Clowney, clown, clown music, video, real heads, no coil, know what I'm talking about. And that just went terribly to love you guys. Thank you very much. Happy belated birthday to H and I hope you're doing well. Jason. I hope that poison Oak clears up soon and more like on your recent work on Boba Fett, you know, um, just when I think my expectations have been met by you guys at ILM, I am once again, blown away. So thank you for that"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "question. Where's our sounder."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ah, let's see. Let me get it here. Once again. Calves questions"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "where the podcast,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "this is a very simple answer. So, um, our dear friends over at 70 millimeter podcast, uh, decided that they were going to review dune. Um, and I thought that I was sharing something magical and wonderful with them. Um, we, we had a whole, uh, problem night, so, uh, average review of three and three and a quarter or something like that. Uh, so that was tough. I'll count that as bouncing off episode 91 of 70 millimeter, which everyone should have. Lorelei. Excellent."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Uh, I was just thinking about my, uh, my housemate in college. We were so excited to show her new hope and we're like, whoa, like it was a, it was a whole gang of us. Right. We'll show you new hope. And she fell asleep in the middle of the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "shit. And then she woke up at the end. She was like, I just didn't like it. And I was just like, ah, I'm so sorry, but"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "you're wrong. Oh my God. Yeah. That's tough. It's hard. It's hard. If like, somebody doesn't want to, like, they won't put their phone away or they're not actually watching or they're sleeping like that. That's a hard one. What do you do, Jason? What's the, what's the answer there. If"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "someone falls asleep or is on their phone and you put their hand in a cup of warm water, so they pee themselves, get them, you"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "get them right back. Alright. Jason, what was your, uh, your bounce off?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Uh, I think I, I, I'm not a hundred percent confident in that. So I feel a little trepidatious saying it, but I believe I tried to show, uh, Brazil. Oh, I Def, I, I, there's a number of people I've tried to show Brazil too, and it's just not worked for them. Uh, which at one point in time, it was my favorite movie. I think I tried to watch it with crystal and she was not super into it. Uh, and I definitely tried to watch it with my friend, Ian, uh, when we were having a movie, when we used to do a movie night, once a week over, uh, at my place when we worked together and yeah, Abby and, and Sarah. Yeah, exactly. And, and yeah, it was just like, it is one of those movies that like, it's another absurdist movie. So if you don't vibe with it, uh, it's just not going to work for you. And it's just going to seem stupid. So."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hmm. All right. Thank you for asking about once again. Amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Thank you, Kevin Kevin, for asking about the poison Oak. I am now off the prednisone, uh, which has been great grateful to be off of steroids that has caused a dip in my energy levels. Uh, and it's also meant that my skin feels newly papery thin, uh, which I don't"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "particularly enjoy. It might just be that you've been playing Elden ring, like 12 hours a day."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're going to get to that. We're going to get to Elden ring on, uh, when we, when we do our, what do we want to talk about? What do we"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "want to promote? Okay. Very good. Very good. All right. Our final voicemail dune pod. Hey, it is Corey in Austin, Texas calling about the adventures of Buckaroo Bonzai and the blob blah-blah-blah dimension. Look, I've tried to get into this movie for years. It seems like it should be right up my alley. I don't know, I've tried to watch it and I've never made it more than halfway through for years until today. I watched it for you guys waiting for me, but you know, for the, uh, there is a whole lot happening, but there's nothing going on in this movie."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "just, it's not for me. I don't know why it seems people are totally enamored with this picture, but I can't unlock it. I can't find what it is, is great casting. I love Peter Weller. I love Christopher Lloyd. I love, uh, Goldbloom. I, I, it just doesn't work for me. Yeah. Like don't love is what's that guy's name like perfect Tony or perfect. Maybe that's what it is. I don't like this band. I don't, they think they're cool. Are they cool? They seem like a bunch of fucking nerds. They're cool. Are really trying to play. Hi anyway. Now my favorite Peter Weller movie, that would actually be naked lunch, followed by Robocop. Yeah, who would tell the fit and play? I, you know, it would be a cool role for her. It was that it wasn't like a general who was kind of losing his shit. And that would be cool to see her as a, like a general there, but I don't know. Sorry, wait, what's next crawl. I love crawl."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "do. We lose Cory forever. Is this the last time he's calling it? I've never heard him. No, no, no. We're fire despondent."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, no, no, we're fine. We're fine."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "This relates back to Kevin's question."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. This is the"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "movie. Exactly. We'll sort it all out in Austin. Uh, next week. That's right. You're"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "going to meet, you're going to be able to pull them back in, in person."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. By the way. Did you decide to come to Austin?"
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "am"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "not coming to Austin. You kidding me? I'm not coming to us. Okay. Like that. Let me just float that. It was like, oh yeah, I'm gonna leave you here with both the kids so I can go like have barbecue and enjoy that one key piece of casting. We did not call it. And, uh, this movie is president Widmark. Yeah. Uh, you know who plays what president Woodmark no, Ronald Lacey, do you know who Ronald Lacey is? No. Ronald Lacey plays taught in Indiana Jones and the Raiders of the lost Ark, the Nazi who gets the medallion."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Smelts."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Whoa, what? Oh, wow."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Damn. Yeah, him and Perkins and that, and that impressive workings. Amazing Lorelei, what do you have to plug that you are legally allowed to plug?"
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Oh, I wish I could tuck I'm I'm back in this. Like, I wish I could tell you what I'm working on, but they won't let me, but, uh, I I'm working on a new Lucasfilm series, so it's going to come out at some point, but my band, the album, the album has come out. So a society of rockets on earth is the name of our album. And we've gotten some good reviews in the UK. So hopefully some nice reviews in the U S yeah."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "just want you to this global media landscape is complicated, so you never know where you're gonna resonate."
+        },
+        {
+            "name": "LORELEI",
+            "timestamp": "",
+            "text": "Yeah. Yeah. I think it'll, it's, it's exciting. I look forward to. Touring Europe, if we can."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Great. Yeah. Yeah, absolutely. All right, Jason, how about you? What do you have to plug my friend?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "am here to plug Elden ring video game available on multiple platforms from, from software, uh, the makers of the souls games. Uh, it is noted as being an incredibly punishing, uh, game in which you'll just be like traipsing around and then a giant bear will pop up and just one hit you and you'll be dead. Uh, and I am not the sort of person who likes these kinds of games. We talked a lot, a lot about this in discord, leading up to its release because I do not need to be frustrated in my leisure time. I get enough frustration, uh, in my non leisure time. And I'm so I've never played any of the dark souls games, but this game is dope. Um, and it's really fun and I play a major and I can show. Fucking star pieces out of my hands. And melt faces with my staff of Glint shard. It's great. I like this game."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. I'm pretty impressed. You're definitely putting in the work on it. If nothing. Yeah. I've dedicated myself to something. I'm going to give you some assignments on this podcast."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think just to help out, you could try what happens and that's it for this episode. I want to thank Jason and Lorelei for an amazing conversation. Next week, join us with a writer and executive producer of Showtime's billions, super pumped, and a classic nineties poker film rounders Brian Koppelman. Brian joins us to talk about one of the best written and acted films of all time. David Mamet, Glen Gary, Glen Ross. If you're enjoying the show, be sure to hit that farmer subscribe button. So you never miss an episode. We also have a discord server where you can hang out with us with every you want link. Dune pod is a tape deck podcast. John, uh, production of H industries. Our artwork is by catcher and our theme music was composed by Toby Forsman of clips. Aren't music transcripts provided by Sophie shin. The episode was edited by Megan Hayward and edited audio and produced by me. H thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

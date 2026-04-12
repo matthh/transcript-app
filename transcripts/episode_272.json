@@ -1,0 +1,3511 @@
+{
+  "episode_number": 272,
+  "episode_name": "Casablanca (1942)",
+  "dialogues": [
+    {
+      "name": "Sounder/FX",
+      "timestamp": "0:01",
+      "text": "This, this, this is a tape deck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:18",
+      "text": "Hey, everybody, it's H. And welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined, as always, by my co host, Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "Yeah, we're in our Glow up era, right before the collapse of everything, right before we get labeled as a terrorist."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:35",
+      "text": "And it's the return of the co host of Pod Save the World, Ben Rhodes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "0:40",
+      "text": "And so here's a take that I've had for like 20 years about this movie that I was always, like, planning to write something about it, but I'll just drop the take on Pod instead."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:50",
+      "text": "We go there. One of the biggest of the big of all time, Casablanca. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us, because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. And now, without further adieune, Casablanca. Okay, so Ben, last Wednesday, before events unfolded in Utah, I was just, just waking up and looking at my newsfeed and it was like, as a world o Holy dude. We got freaking Russia testing Poland, we got Israeli strikes in Qatar. Like, what is. What is going on right now? Like, where do we start?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:50",
+      "text": "Don't sleep on the Discord election in Nepal. That's the. That's the best one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:55",
+      "text": "Oh, good point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:57",
+      "text": "Yeah. Most relevant for us."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "1:59",
+      "text": "So we have a segment on Pod Save the World that I actually don't even feel the need to do anymore, which is called World War Watch. And the premise of World War Watch is twofold, that there are three theaters, right? And this is relevant to what the movie we're talking about today. But there are three theaters that featured prominently in the previous two World Wars. One is in, you know, the fault line that runs through Eastern Europe. One is the fault line that runs through the Middle east and North Africa. And the third is the fault line that runs through East Asia. We'd say that's Taiwan today. And you have to watch for two things. The escalation of the two current wars and also the potential for the third one in Asia. The two current ones, we had major escalatory actions in the last week because Israel striking Qatar is not just a huge escalation against Qatar. It's because Qatar is part of what we call the Gulf Cooperation Council. It's actually an organization of all the Gulf Arab states, includes Saudi Arabia, the uae. They. They see an Israeli strike on one of theirs, even one that they've had tensions with, like Qatar, as. As a warning sign that anybody in the Middle east could get bombed by Israel. And, you know, that's not conjecture, given that, like, five or six countries have. So that. That was a big deal. And then we saw these Russian drones going to Poland, which is obviously the."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "3:20",
+      "text": "The."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "3:20",
+      "text": "The first time we've seen NATO jets scrambled to shoot down something Russian. Now, granted, these are kind of rudimentary drones, but, you know, kind of gets your attention. Right? So, yeah, that. I mean, it's amazing that the news cycle is such. And obviously we had a pretty, you know, extraordinary event last week with the killing of Charlie Kirk. But that. Those are kind of marginal stories."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:41",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "3:42",
+      "text": "Just tells us how crazy the times are that we live in."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:45",
+      "text": "And still the fallout from the. The strike in Venezuela. Right. And in open water."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "3:50",
+      "text": "That's right. We got us, you know, warships, like, off the coast of Venezuela. We got, as Jason said, we got some crazy protest movements. Gen Z in Nepal, like, electing a new prime minister on discord after burning down the, you know, presidential palace. And we got Indonesian flash protests happening. I mean, it does feel like something's moving out there, and we'll see where it goes. We may. We may all need letters of transit just to shadow the big."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:17",
+      "text": "The big takeaway for me out of this movie, which is a reaction I frequently have, is like, let's just check and see where the passports are."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "4:23",
+      "text": "Yeah. Make sure we have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:24",
+      "text": "Good. Although there's a. There's a bill in the House right now that will give the Secretary of State sole discretion to revoke passports from American citizens based on if he believes that they're a member of a terrorist group. Which is, you know, basically, if you criticize Israel. And so that's cool. That's a good. That's a good standard to be looking in the face of. I don't have another passport, so."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "4:48",
+      "text": "Yeah. And I fully trust Marco Rubio to be judicious and partial in the application of justice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:55",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:55",
+      "text": "Yeah. And there's an appeal process, but it's only to Marco Rubio. To him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:01",
+      "text": "Well, Ben, would you. When you go on a mission, as he is today in Jerusalem, and, you know, to help push forward brokering a ceasefire, and you just say, we don't think there's any chance of a ceasefire. Like, is that how you typically carry diplomacy? Is that how it works?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:16",
+      "text": "Show up to the ceasefire talks. Like there's no ceasefire ever happening."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "5:20",
+      "text": "Yeah, I mean, it's pretty extraordinary that, that Trump came in lamenting all this chaos in the world. Right. And."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:27",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "5:29",
+      "text": "And saying he was going to bring peace. And like, the two wars that everybody was thinking of, obviously were the war in Gaza and the war in Ukraine. Both of those have gotten demonstrably, if not exponentially worse since Trump came in."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:42",
+      "text": "Yeah, right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "5:42",
+      "text": "Totally meaningless series of summits with Putin and then Zelensky and the Europeans leading to nothing but further escalation. And then this kind of very short ceasefire that felt like a kind of inauguration gift to Trump. And now like Israel's preparing, like the mass ethnic cleansing of Gaza, you know, and, and yet what Trump's solution to that is, is to find some small conflicts that Americans are not familiar with, declare that he solved them when he actually hasn't, and asked for the Nobel Peace Prize. So it's an interesting approach. We should have tried that in government, I guess."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:16",
+      "text": "This is a very low level point, Ben, but we haven't had you here in a while. Like, I will say one thing that stood out to me on the whole Ukraine front was when after the Anchorage summit, the rolling out of the red carpet by US Service members, etc, like the entirety of the European alliance agreed to show up in D.C. like on like 48 hours notice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:42",
+      "text": "That was like the Avengers. Like, that was cool."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:44",
+      "text": "Yeah, well, I'm just like, from a pure NSC logistics perspective, that's strikes me as completely insane. Like, I don't actually know how, I don't know that. I don't know when that would have ever happened, that you would have that many heads of state showing up with that little notice to the White House. It just feels like a real like, you know, put on your big boy pants for work kind of situation. If you were in charge of work running that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:09",
+      "text": "Fortunately, Marco Rubio was also nsa, so, you know."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "7:14",
+      "text": "Yeah, I mean, I, I think as, as, you know, Jason, because you were in meetings with me, I was responsible for helping to plan these visits. Yeah. And the thing is, normally you would spend weeks, if not months, preparing for them because in part you'd be preparing like this coming out of agenda."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:30",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "7:31",
+      "text": "And, and this just shows how episodic and ad hoc everything is. Like, you know, let's jump on a plane. But it also tells you is that they got wind of the fact that Trump was giving away the store to Alaska. And so they're the ones that jumped on a plane and were like, we got to basically Go as the Avengers and just throw our bodies in front of train that is about to hit Zelensky, you know, and it seems like they succeeded in stopping Trump from essentially taking Putin's terms and making them his own. Right? But it didn't succeed in bringing any peace, obviously. So it just shows you everybody's just trying to live to fight another day in this Trump era."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:05",
+      "text": "They got an Italian. They got an Italian to leave, you know, in the middle of August, which is like a pretty. A pretty striking bit of. A pretty striking bit of business if you've ever visited that country."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "8:18",
+      "text": "But, yeah, well, they need her there, though. They need Giorgia Meloni, the Italian Prime Minister, because she's the only, like, Trump adjacent, you know, person among them. You know, she's a mar. A lago."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:27",
+      "text": "Yes. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:28",
+      "text": "So, but he does seem to, like, every couple of weeks, he does seem to jerk the wheel and go like, hey, you know, Vladimir, come on, stop doing this. Or like, Netanyahu, you gotta figure this out. So is there any actual lever for him, do you think that that does drive a meaningful piece? Is it just, you know, just like, every couple of weeks, it's just going to happen? He'll throw his hands up a little bit, but not meaningfully push it, or are there consequences that would cause him to actually make an action?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "8:57",
+      "text": "I was going to say, like, on Israel, the same thing. And I said the same thing about Joe Biden. If the US Turned off the spigot and said, you know, hey, we're not going to give you any more weapons or assistance until this stops, I think it would stop, you know, and so he's just choosing not to do that. And the same way that Joe Biden chose not to do that, he's choosing not to exert any leverage. And absent that leverage, there's no reason to believe that Netanyahu and this Israeli government will stop, because it's part of their agenda, not just to, you know, depopulate Gaza potentially, but probably to annex the West Bank. I'd be looking for that as the next shoe to drop. And then on Ukraine, it's a little more complicated. But the thing is, he hasn't even tried, you know, like, Right. To. To put any leverage on Putin. I mean, there's, you know, there's a variety of things. There's obviously more weapons you could provide to Ukraine. There's also, like, $300 billion in frozen Russian assets that a lot of people think the US And Europe should just work to give that money to the Ukrainians to Buy weapons. And so that's kind of an available option. It takes some kind of creativity. It also sets maybe an alarming precedent of freezing assets and giving it to another country. So I wouldn't suggest doing it lightly, but there are other ways to tap into that money. And then, of course, there's sanctions and stuff. But I don't think that matters to Putin. I think he's learned how to live with that. So I'm sympathetic that particularly on Ukraine, it's a harder problem to solve. I do think that he's not trying to solve it in a serious way. I mean, he just seems to think if I sit down with Putin, we can work this out. And that, you know, grossly, I don't see underestimates it. Just to. To use the George Bush ism for us, you know, late Gen X or early millennials. Misunderestimates Putin."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:44",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "10:45",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:45",
+      "text": "Misunderstimates, Vladimir. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:49",
+      "text": "Just to keep our eye on the ball, anything you need to say about China right now as. As we're. We're doing it, they had a bad, bad economic quarter, apparently."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "10:55",
+      "text": "Like, I'm just struck, guys, I mean, you guys have tech backgrounds. I think most Americans don't appreciate the extent to which Trump is giving away the store to China in these trade negotiations. So basically, as I see it, we put a bunch of tariffs on them, then they threaten to withhold critical minerals, which are important to basically everything. And now all of a sudden, China can buy Nvidia chips, and export controls on AI are going out the window. And so, yeah, they had a bad quarter, but I mean, they're investing, you know, they're betting their future on AI, quantum computing, clean energy, you know, in these high tech industries. And Trump has actually been much softer on China than Biden was on that stuff, which is what they care the most about. So if anything, the Chinese have done pretty well. They're also sitting there, you know, as the alternative to America."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:49",
+      "text": "Right, right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "11:49",
+      "text": "I think the Chinese argument is like, hey, you may not like us that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:52",
+      "text": "Much, but these guys are crazy."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "11:54",
+      "text": "But these guys are nuts. And at least we're predictable. You know, what the terms are with us. And so I think they're poised to pick up, you know, the Indians, you know, are cozying up to them because they've got tariffs. The Brazilians are closing up to them. I think pretty soon the Europeans will start to do so. So I think the Chinese are. They're doing just fine."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:10",
+      "text": "Sitting pretty."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "12:11",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:12",
+      "text": "It's a good tour of the world."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "12:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:14",
+      "text": "Good tour of the world. And you know, we'll be pulling parallels all day today as we get into our movie, which we will be covering in just a few minutes, which is the 1940 classic, truly one of the Goats. Ingrid Bergman and Humphrey Bogart in Casablanca. Holy shit. Holy shit. Before we get into that, Jason. Next week we are joined by the co host of the Austin Danger podcast, the other co host, Mackenzie Wilkes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:43",
+      "text": "That's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:43",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:44",
+      "text": "We haven't seen her in a minute."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:45",
+      "text": "Yeah, she did Showgirls with us and she did David Lynch's Mulholland Drive."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "12:53",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:53",
+      "text": "Our David lynch correspondent."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "12:55",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:56",
+      "text": "Which was itself an homage to the movie that we will be covering. Another, we're keeping the Turner Classic Movie fans busy as we tackle Sunset Boulevard."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:07",
+      "text": "That's a good one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "13:07",
+      "text": "Killer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:08",
+      "text": "I've never seen it. I've never seen it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:10",
+      "text": "It's really good. Yeah, it's pretty strong."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:14",
+      "text": "I can't wait. And then for those keeping track, one week after that we landed Jamel Bowie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:21",
+      "text": "Yeah, we got Jamel Bouie coming on the pod. He's been doing great work out there this week, this past week. Incred, Incredible, amazing tiktoks, amazing outfits. God bless Jamal."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:32",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "13:34",
+      "text": "You're crushing guys."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:36",
+      "text": "Yeah, we got, we got. We're in our Glow up era. Right before the collapse of everything."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "13:40",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:40",
+      "text": "Right before we get labels."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "13:43",
+      "text": "At least we're making some content."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:44",
+      "text": "Get labeled a terrorist organization and then."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:48",
+      "text": "But I love it. He's coming out for robocop, baby."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:50",
+      "text": "Yeah, that's a great one. It's a great one for him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:53",
+      "text": "Yeah, I'll buy that for a dollar. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:55",
+      "text": "Yeah, that's a great one. Another timeless movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:58",
+      "text": "Very exciting, very timely as well. Some quick hatch news."
+    },
+    {
+      "name": "Sounder/FX",
+      "timestamp": "14:04",
+      "text": "Would you like to know more Hatch news?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:06",
+      "text": "Has anyone seen this Long Walk movie? Has anyone seen this yet?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:10",
+      "text": "Speaking of Hatch news, I have not seen it. I don't think it did very well at the box office. It's low budget."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:15",
+      "text": "The people I know who've seen it loved it. And that one guy from industry is in it. I love him as an actor and I love the story it's based on. It's like one of my favorite."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:23",
+      "text": "Do you know this one, Ben?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "14:25",
+      "text": "No, I don't."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:25",
+      "text": "It's a Stephen King short. It's one of the Bachman books, I believe."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "14:29",
+      "text": "Oh, okay. I did see. Yes, I saw. I'm see it, but I saw."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:32",
+      "text": "It's like they all, you know, you like. They're in some. It's some. They're in some kind of contest where they have to keep Walking. If they stop walking, they get killed. And it looks good. It looks pretty gritty and, like, the bad guy. The reactions from people who have seen it online have been like, this fucked me up in, like, the best way. So I would really love to get to go see it. I don't know when that's going to happen for me, though."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:56",
+      "text": "I, I, I did see there was a screening where they had treadmills set up and you had to walk the whole time. Three miles an hour."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:03",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:04",
+      "text": "And if you stopped, you had to leave the screening."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:06",
+      "text": "That's great. I love that. It's a good gimmick. Anyway, I'd like to hear from. If someone wants to send us a note and maybe someone's already posted in Discord. But I'd like to see. I'd like to hear from someone who's gone to see this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:16",
+      "text": "Let us know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:17",
+      "text": "It seems good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:18",
+      "text": "Ben, are you watching Alien Earth?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:20",
+      "text": "Oh, yeah. Are you watching Alien Earth, Ben?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "15:22",
+      "text": "I'm not watching Alien Earth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:24",
+      "text": "It's good. Did you watch the TV show Fargo? Of course."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "15:27",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:27",
+      "text": "It's the same guy. It's Noah the good Holly, and it is excellent. It's a prequel to the Alien movies. It's very faithful to the style and tone of the original Alien, but does something like original and fun and terrifying. I've not seen this week's episode, so no spoilers."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:48",
+      "text": "H. Oh, you haven't? Okay. All right. After episode five, which was kind of like a bottle Alien movie in the middle of the season, they come back to Earth and do their thing. So you'll enjoy that. And apparently the final two episodes airing tomorrow night and next week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:01",
+      "text": "Oh, this is it. We're already at the end."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:02",
+      "text": "There's two more. There's two more. And supposedly they're completely bananas."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:06",
+      "text": "So I'm excited to see this. It's really good. I recommend it as, like, a piece of, you know, dystopian science fiction."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "16:13",
+      "text": "I've been. The nerdy thing I've been doing is when that New York Times Top 100 Movies list came out. Let's talk about that. Yeah, I've just been plugging the holes in the scene."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:24",
+      "text": "What stood out for you? What have you done?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "16:27",
+      "text": "So the last three that I've done, one of them is embarrassing. I had never seen a rival wow. Which has some, like, distinct echoes to, like, large language models and language in general. Then I had not seen Melancholia, which I have to admit, I actually. I don't know if enjoy is the right word, but I Actually really, really hit."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:51",
+      "text": "It's a tough film. It's a tough one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "16:53",
+      "text": "It's a tough film. It's not an easy watch."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:55",
+      "text": "I haven't seen that one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "16:56",
+      "text": "But it's worth it, I think for the last shot, essentially. And then one of the best documentaries I've ever seen in my life. The act of Killing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:05",
+      "text": "Never seen this."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "17:06",
+      "text": "This is a bonkers movie that I recommend to people. This guy somehow managed, you know, in Indonesia. This will sound dark, but it's so good that it's like, you know, trans watching transcends. There was a. Basically a genocide in that. Genocide, but certainly mass killing of hundreds of thousands of people in political violence after a coup back in the 50s. US government may have had something to do with the coup, but. And this guy goes and finds some of the people that were involved in the killing and he, he acts like he's making a movie about it and he gets them to act out recreations of like what they did like. And to give you a sense of what this is, Werner Herzog is one of the executive producers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:52",
+      "text": "Makes a rat."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "17:53",
+      "text": "And so it's this kind of like, you know, just bizarre, brilliant. Unlike any piece of art you've ever seen. Right. So I'm working my way through that list. I'm in a film mood more than a TV that's great these days."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:05",
+      "text": "You know, Errol Morris, also an executive producer on that."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "18:08",
+      "text": "Errol Morse too. I mean, Herzog and Errol Moore talk about the Avengers. That's like the documentary. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:14",
+      "text": "If you're going to make a documentary, that's the one. And it's. If you're making a documentary and it involves those two, it definitely is about humans doing some fucked up shit to each other. That is not going to be a."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "18:23",
+      "text": "Depravity of human beings."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:24",
+      "text": "It's not going to be like a child beat cancer or something like that. Like it's going to be. It's going to be people."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "18:29",
+      "text": "It's not a happy ending, but, you know, you feel smarter and more in touch with the universe. Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:34",
+      "text": "There you go."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:35",
+      "text": "There you go. Amazing, amazing. Let's welcome quickly some new Discord members, Ariel and Irish Potato."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:43",
+      "text": "Welcome. Hello."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "18:45",
+      "text": "This bird's been doing great. Potato."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:46",
+      "text": "Welcome. All right, are you guys ready to get into this movie?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:54",
+      "text": "Let's talk about it. Let's talk about it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:56",
+      "text": "All right, here we go."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "18:57",
+      "text": "You must remember this. A kiss is just a kiss."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:03",
+      "text": "Casablanca is the dark purgatory where our moral worth will be tested. And we must choose a side in the fight. Deep in the early days of World War II's 1942. Rick Blaine is the dashing yet aloof owner of Rick's Cafe, a cosmopolitan underground watering hole and gambling den located in Morocco frequented by the elite of the desperate refugees who have made their way here in hopes of escaping the war by securing a visa to fly to Lisbon and then on to America. Rick's past as a gun runner and resistance fighter against fascist forces has been pushed aside by the heartbreak he experienced when his romantic pursuits with the gorgeous Ilsa Lunde were cut off when she disappeared the day Paris fell to the Nazis. Two years later, when Ilse walks into his gin joint alongside her husband, famed resistance leader Victor Laszlo, Rick will be forced to make an impossible choice. Prioritize his own happiness by daring to rekindle his affair with Ilse or the fate of the free world by sacrificing his love energy that Ilse and her globally important husband can get on their plane and forever leave behind Casablanca."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:17",
+      "text": "The world will always welcome lovers as time goes by."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "20:29",
+      "text": "I'm just. I'll go there and say, like, I think some people may. If you have not rewatched us in a while."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:35",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "20:35",
+      "text": "And you do think of it as just like a Humphrey Bogart Ingrid Bergman."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:39",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "20:40",
+      "text": "If you think of it as a Humphrey Bogart Ingrid Bergman romance, this is one of the best political movies of all time. This is one of the best war movies of all time. This is a hilarious movie. It is extraordinarily and eerily contemporary. So it's far more than just. We always had Paris, you know, it's just. It. It just totally cracks in the rewatch."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:04",
+      "text": "Yes. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:05",
+      "text": "I mean, I think Ben's point is right. Which is that, like, this is the oldest movie I think we've ever done on the pod. 1942. We've never. I think by a decade, this is the oldest movie. We've never done a movie in the 40s before. I think I was talking to my trainer this morning and he was like, asking, what's on the pod this week? I was like, oh, Casablanca. He's like, what's that? And I was like, wow, okay. And so I think for."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:26",
+      "text": "And like the trainer who said, what's Alien?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:28",
+      "text": "He also doesn't know Alien, which is fine. And apologies if you're listening to this at some point. It doesn't matter. You don't need to know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:34",
+      "text": "It's great. You don't have to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:35",
+      "text": "Well, you're welcome."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "21:36",
+      "text": "Better, by the way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:37",
+      "text": "Exactly. Like delight. To Ben's point. How wonderful would it Be to go into Casablanca basically knowing nothing about this movie. Maybe we even have like some conceptions that's like black and white movie from the 40s, like obviously filmed on a backstage on a backlot and soundstage at Warner Brothers. Maybe like, you sort of are just like, like, you know, this isn't like, you know, my thing, but to find a movie that is like so alive and speaks to now so, so like loudly, I think you'd be pleasantly surprised. So for anyone in a discord, anyone else who's like, seeing this in. In for the first time, like, I'm super jealous. Super jealous."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:18",
+      "text": "Nice, nice. Well, let me just ask Ben, what is your history with Casablanca? When did you first see it? And. And what was the initial impression?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "22:28",
+      "text": "So this. In my household, where I grew up, we love movies and there are certain movies that were just on all the time. And actually I remember my mother had a tradition. Every year, like, I would do the dishes with her after, like Thanksgiving, we'd watch Casablanca. But I probably watched it multiple times on Thanksgiving. Yeah. Wow. And it was just. I don't know why, it was just this kind of thing where it was always on in the holidays when we were like, you know, cleaning up after having people over. And I knew this movie pretty much by heart probably by the time I was like 22 years old. And then I watched it, like, less over the years, but I go back to it every few years and my relationship with it changed over time because at first, and like, what people will see is it is incredibly funny. Right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:25",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "23:26",
+      "text": "So I mean, we can go through some of the lines here, but look, literally, like, maybe no funnier line ever than Claude Rains walking outside and smoking a cigarette with Humphrey Bogart at this bar that's in the middle of this no man's land. And, you know, asks him, like, what."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "23:42",
+      "text": "What, what, what in heaven's name brought you to Casablanca? My health. I came to Casablanca for the waters. The waters? What waters? We're in the desert. I was misinformed."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "23:55",
+      "text": "Just the dead pandemic. It's funny in my family, it's just there are all these lines like this that we could quote to each other. So it was like one of those movies, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:03",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "24:04",
+      "text": "But my relationship to really change as I got into politics because it is a deeply, deeply political movie. Yeah, it is a deeply anti fascist movie. It is from the height of 1942. We didn't know who was going to win the war. And so it's an interesting document of like, what it was kind of like, to. The Germans are actually winning when this movie comes out. And so they're the kind of big, swaggering bad guys in the movie. And you're not sure if the underdogs and the Americans are gonna pull this thing out. And so as I think I worked in government and I worked in national security, I just started bringing more of a political lens to the movie. And I think what's so interesting in my history of this. Cause I go back to it periodically, is that as the times change, like, your consumption of the movie changes, you know, and, and I had not watched it in a, in a, in a minute here. It's probably been, you know, at least a couple years since I'd seen it. And I, I mean, we'll get, get to this. And I have some hot takes on this too. But, you know, watching it now, where it's just individuals trying to figure out how to make choices and stay alive in an age of creeping authoritarianism, I was like, this movie is completely different. And the love story between Bogart and Bergman, while still epic and timeless, is like a secondary story. It's like the B story of the movie. I mean, like, to basically this story of, like, how do we keep the resistance going when the fascists are winning? And, and so that, that's my, My relationship is. Is this kind of almost family connection to the movie and knowing it inside out. But even though you know it inside out, it's still just different based on the changing times."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:52",
+      "text": "New levels. New levels, yes. Jason, how about you?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:56",
+      "text": "I mean, I definitely knew the references to Casablanca before I'd seen Casablanca. Like, I probably didn't see Casablanca until I was like, 17 or something like that. But from, you know, like the movie Airplane, the Muppets, like, there's all these played against Sam. Yeah, exactly, against Sam. Like, all these, like, sort of, you know, references. Like, Like, I knew that, you know, this is the beginning of beautiful friendship. I knew, like, you know, he was looking at you, kid. I knew all those lines even though I hadn't ever seen the movie. And so when I finally saw the movie and, like, how it all fit together, I was like, oh, this is a, this is a banger. Yeah, it's really, really good. Yeah. So I just, I, I, I loved it. It's, It's a movie I've seen, you know, probably 10 times, like, over, you know, 40 years or 30 years or something like that. And it's, you know, every time. I, I definitely. I'm still in the phase with this one where I learn New things. And like, the big thing that stuck out to me on this one, on this rewatch was the point that Ben alluded to, which is like, the time this movie was made, it was in production in the mid. In the middle of 1942. We'll get into the whole production of it. But it's in the middle of 1942, comes out in January 43, which means, like, it is before any turning point in any theater of war. Like, the Allies have invited invaded North Africa. The Stalingrad hasn't happened. The Battle of Midway hasn't happened. The Germans are just winning the war. The idea that France might, like the end of this war, might be with a settlement where the German, where the Third Reich continues to exist and just owns France, is entirely viable. Like, that is an entirely plausible. That's on the table, as is like the destruction of Britain. Like, it is unclear how far this is going to go at this point. So to make a movie like, with those as the stakes as this is going on, it stood out to me as like, the most. Most remarkable thing about it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:45",
+      "text": "I had a very similar trajectory for you. Like, I. Actually, the same thing is it's always in the culture. And then I finally saw it, I think, in college as part of the film program that I was in and was like, holy shit, this is just really amazing. And loved it. But it is not something that I've revisited very often. So I don't think I had seen this movie in probably 15 or 20 years. And you just always have this notion of things were quaint back then or things were simple back then or whatever. And then you see it and it's like these guys, they had it going on. Like, they had it all going on. And the confidence and the swagger and the humor and just the way it all works was. Was really fantastic. So some quick behind the scenes. This was based on Murray Burnett and Joan Allison's unproduced play. Great name. Everybody comes to Rick's a good name."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:34",
+      "text": "It's a good name."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "28:35",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:35",
+      "text": "Yeah, it is a good name."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "28:37",
+      "text": "They."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:38",
+      "text": "So they based it on a trip they took in 1938, where in the south of France, they went to a nightclub that had a mult clientele, many exiles and refugees, and kind of the prototype of Sam. So that had the impact on them. And then Warner Brothers bought the rights in 1942 for $20,000, which is 320,000 in 20, $23. Jason, this is the most ever paid for an unproduced play."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:04",
+      "text": "They liked it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:04",
+      "text": "And this is kind of Like a wild time. Like Hollywood. I was looking at, you know, like the director or the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:09",
+      "text": "The."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:10",
+      "text": "The composers, IMDb. They're doing like five movies a year."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:15",
+      "text": "They're doing. They're doing. They're Doing 150. The studio is doing 150 movies a year. Like, they're just cranking movies. It is the absolute peak of the, like, the factory system. Like, movies are made in the way that we would soon be making, like, warships and planes. Like, it was just like. Like, it is the industrialization of entertainment. And they've got everyone under contract. Like, you know, they've got the actors, the writers, the cinematographers. Like, everyone is owned by the stud. And it's just. You're doing these things for us now. And next week you're doing this next thing. It's a. It was a completely different model to, you know, anything that we've grown up with in our lives. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:56",
+      "text": "And maybe under David Ellison, a new model that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:59",
+      "text": "Yes, it will be the new. The new Oracle model will be this. When they. This and like, Bar Bari Weiss will be the head of the entertainment division."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "30:07",
+      "text": "The studio."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:08",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:09",
+      "text": "I mean, it is really scary, like, if they combine Paramount with Warner Brothers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:13",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:14",
+      "text": "That is a huge percentage of the media industry further owned by the Right. That is not a great thing."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "30:22",
+      "text": "No, it's not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:24",
+      "text": "No, it's bad. It's bad. It's."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:27",
+      "text": "Why?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:27",
+      "text": "And it's not just that. It's not just like, gonna own CBS and, like, have cbs, like, news run by Barry Weiss. But, like, also it's Trump threatening to take away the licensing from ABC and NBC. So it's like, not just, like, you know, it's not just a tre. Fighting the right in, like, some. In. In like, some of the bigger media brands in the world. It's also threatening to remove licensing from anyone who's not part of that regime. So that's good, too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:53",
+      "text": "That's bleak."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "30:54",
+      "text": "Yeah. And cbs. CBS and CNN under the same editorial control that we know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:01",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "31:01",
+      "text": "Like, leads up to basically Trump. Right? Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:04",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "31:04",
+      "text": "So, I mean, people should be watching that. That's not nothing. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:08",
+      "text": "Yeah. Definitely not. So. So this was. The script was written by the Epstein brothers, who they initially left Warner Brothers to work on Frank Capra's why We Fight."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "31:18",
+      "text": "Yeah. Causes and events leading up to our entry into the war. Well, what are the causes? Why are we Americans on the march? Is it because of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:34",
+      "text": "So interesting. Why We Fight actually was a net positive piece. Right. Like, that helped to, you know, Rick. Rick makes the call out that, you know, they're asleep all across America. Why We Fight was part of that, right? Part of waking people back up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:48",
+      "text": "Yeah. I mean, this is in the, I mean this is obviously in the post Pearl harbor time frame. So like there's a, you know, there's a different, like we're, we're, you know, we're in like a, we're in a, A different kind of, you know, fate of, of American, you know, like, there's no pretending that it's just like, okay, there's complete isolationism is going to work out for us and we're just going to be neutral in this thing. But like, I think, like, you know, we're in the period where it's okay, well, what kind of commitment is this going to take? And where are we sending our kids to go fight? And how many of them are, you know, like, how many of them are going to die doing it? So it's, it's the beginning of a completely unended, like a conflict with no, you know, with no ended sight, like, of un. Of unclear scope and like, unclear, Unclear cost."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:30",
+      "text": "But when you look at the messages in why We Fight and you compare that to like the ICE Twitter account or whatever, like, it's not, it's not great."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:40",
+      "text": "The ice. The ICE Twitter account has some pretty clear historical analogs in the time period, but they're not the other side of the other side."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "32:47",
+      "text": "Yeah, yeah, that, that was more Major Strasser's reason for fighting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:53",
+      "text": "Exactly. So then Michael Curtiz comes on and they had some challeng with him, but ultimately said the screenwriters, more corn than the state of Kansas and Iowa combined. But when corn works, there's nothing better. So ultimately they felt they had a fruitful relationship. They did have some trouble with the Production Code administration, which was Hollywood's self censorship body."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:16",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:16",
+      "text": "They did not like the suggestion that Captain Renault was extorting sexual favors from visa applicants. Yeah. Or the notion that Rick and Ilsa had slept together. And apparently at the time it was literally illegal to have a woman leave her husband for another man. Like you were not allowed to include that in a, in a movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:35",
+      "text": "Sure. Makes sense. Which is, it's, it's, it's, it's morally, it's evil. Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "33:40",
+      "text": "Well, this is the thing is what, this is why this movie holds up better than why we fight though. Because sure, in the end, the American is the good guy and there's some corniness. But, but like Rick is profoundly an antihero. I mean, he's a drunk, he's kind of a Dick, he runs this pretty sketchy bar that, you know, clearly all kinds of nefarious business is taking place there. You know, Captain Reno, who you can't help but like, is also like a monster."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:12",
+      "text": "Totally reprehensible."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "34:14",
+      "text": "Yeah, totally reprehensible. He's kind of redeems himself at the very end of the movie, which we'll get to. So this is like the thing that, like one of the several things that jumps out to me when I go back to this again and again is that like even, okay, Victor Laszlo, for instance. And I've got a take on him later, but you know, he's the resistance hero. You're not really supposed to like him. Like, he's kind of wooden and I mean, you're rooting for him obviously. But like, this is a movie that sides with like ambiguous, sketchy guys like Humphrey Bogart and Claude Rings, you know, and lives in this kind of. You know, it's not surprising me that the origin story of this movie was in like a bar in the south of France. Right. And it's America as like the underdog, anti hero, not America as the kind of brightened up, you know, Jimmy Stewart of it all. And that, that to me is I think, what makes it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:11",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "35:12",
+      "text": "Interesting. It's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:12",
+      "text": "That's, that's really good. And it also, because like, it, it also like Rick's background in like sort of fighting the fascists in Spain and like, you know, running gun. Like, it's, it's got like a gunner. Yeah, yeah, he's, it's got this like sort of Hemingway ask like, quality to it. Like, and like, so it's like the Hemingway like, you know, justifications for World War II, which is that you want to retake Paris so that you can retake the bar. Yeah, as as opposed to like the, as opposed to the Jimmy Stewart like, you know, justifications for World War II. That's good. That's really good. I like that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:45",
+      "text": "Yeah. I mean this is to me. Let's just start with Rick, right? Like, let's take, let's, let's, let's dig into this, into this further, right? Like he is both simultaneously the coolest in history. Like. Yeah, so, so smooth and so, so good looking and just like really just funny and thoughtful and everyone is basically worshiping him and everybody's trying to figure him out. You've got Renault and Ferrari and everybody's asking questions and trying to figure out his deal."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "36:11",
+      "text": "Louis, whatever gave you the impression that I might be interested in helping Laszlo escape? Because, my dear Ricky, I Suspect that under that cynical shell, you're at heart a sentimentalist. Oh, laugh if you will, but I happen to be familiar with the record. Let me point out just two items. In 1935, you ran guns to Ethiopia. In 1936, you fought in Spain on the loyalist side and got well paid for it on both occasions. The winning side would have paid you much better, Mary."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:41",
+      "text": "Yeah, but even, like, showing him the. It's so effortless the way they do this. Like, I didn't catch it till the second time I was watching it. I was like, why was he rejecting this guy from coming into the bar and gamble? It's because the banker was from Deutsche bank, and he's like, I don't. I don't want that guy in here. So, I mean, I just. I. I love that. The way that they. And the way he takes care of the. The drunk. You know, Sasha sending her home, it's just, like, so good."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "37:06",
+      "text": "So this is my hot take, and this is the origin of why we're doing this on this podcast, because I did Tinker Taylor with you guys."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:13",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "37:13",
+      "text": "And at the end, you guys asked me what the best spy movie of all time was. And so here's a take that I've had for, like, 20 years about this movie that I was always, like, planning to write something about it, but I'll just drop the take on the pod instead, which, again, is probably me reading into the text more than the intentionality of the text. But what if you watch this whole movie and Rick is a spy?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:36",
+      "text": "Right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "37:37",
+      "text": "Because what do we know about Rick? We know, as we've alluded to, that in 1935, he ran guns to Ethiopia."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:45",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "37:45",
+      "text": "Then we knew he fought against Franchise in Spain. Then he alludes to doing something in Paris that would get him on the list of the Nazis. And then we know that he decides instead of getting on a plane with the most attractive woman in the world who's in love with him, to put her on the plane with her boring Resistance hero husband and then going down and. And basically turning the French prefect of police into a resistance fighter and going down to fight in some resistance."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:18",
+      "text": "Yeah, he's going."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "38:20",
+      "text": "I mean, this guy. And this is pre CIA, so whether it was OSS or whatever else was going on back then, and even if this guy is certainly acting as if he's like an intelligence agent, he's making all the choices you would make and building all the relationships, he would. He knows everybody in town. He knows how to hide the letters of transit. He knows how to Kind of grease the police chief by letting him win it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:45",
+      "text": "Let."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "38:45",
+      "text": "He keeps the guy from the Deutsche bank out of his place. There is a reading of this movie where, like, wait a second. Now, the other reading of it, which is probably the truer one, is Jason's, which is this guy's like, the ultimate Hemingway character. He's just on the side of the underdogs and the drunks and. And he hates the Nazis. And every life decision this guy makes is. Is. Is informed by that kind of romanticism, you know, which is more appealing than him being a spy in a lot of ways."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "39:14",
+      "text": "And."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "39:15",
+      "text": "And, like, there's one thing that. That I noticed, like, early on when I was began rewatching this movie that I think encapsulates the entire dynamic to me of Rick in the film, which is the famous scene when Victor Lazlo leads the bar in singing the Marseillaise. And now to set the scene, it starts with."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:35",
+      "text": "Yeah, yeah, go ahead."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "39:36",
+      "text": "It starts with the. Like, Rick's upstairs with Laszlo. Lazlo's trying to get him to give him the letters of transit. Rick's like, ask your wife, you know, which is kind of a dick thing to say to a guy. Yeah. And then all of a sudden, we start to hear these Nazis, like, singing some, you know, shitty Nazi sort of down in the bar, right? And then Laszlo, like, charges up to the musicians, and. To me, like, one of the most interesting moments in the whole movie is Lazlo's gonna be the hero, right? He's gonna stand there and shake his fist and lead the whole crowd in singing the Marseillaise, which is, I hate to say it, the best national anthem in the world."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:24",
+      "text": "Best national anthem ever."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "40:25",
+      "text": "And you get goosebumps every time. You could see this movie a thousand times. You get goosebumps before any musician hits a note. They look at Rick, they look at Rick, and he nods. All of the Rick risk is with Rick. Like, his place is gonna get shut down. Nobody's gonna see him as a hero. He doesn't get to stand there and sing the song. And to me, that encapsulates why this man who's so flawed is also just wonderful. Because he's the guy who's like, you know what? Play the fucking Marseilles. This guy's gonna grandstand and he's gonna shake his fist and everybody's gonna buy him a drink after, and people literally walk up to him and slap him on the back. And the movie, the. He is subtle enough to, like, leave you to figure that out, you know, that Rick is the guy that's actually taken on the risk. And Rick is the guy that has a political agenda, not just Lazlo. And so whatever, whether he's a spy or romantic, to me that scene is like Rick's character, like, and it sets up the decision he makes to put Lazlo on the plane instead of getting on the plane himself, because when push comes to shove, he'll make the sacrifice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:29",
+      "text": "But it's also when he sees Ivana and she is crying and she's screaming, viva la France. It's so the power of resistance, the power of standing up together, that is a really amazing thing to see."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:44",
+      "text": "There's a lot that I want to spend time on here. First of all, I love Ben's idea that Rick is a spy. I think that's just like an all time fucking take on this movie. And there's a world in which he's a spy in the Hemingway version kind of work together, which is. Imagine that he was in Paris as, as either an agent or as a, you know, as like specifically like an."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "42:05",
+      "text": "Operator or an asset or something. Yeah, he's reporting back to the U.S."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:09",
+      "text": "He'S reporting back and, and like, he's supposed to be there, like, keeping an eye on who's going to support the Nazis if they come into Paris. Like, he's there because like, someone is worried about, like, you know, what's the status of like France in the rise of Nazism in Germany. He's reporting back, he's got some cover story. And that cover story is like, meant to be helpful to him to like infiltrate the under ends up with like the chief underground's wife, you know, coincidentally."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "42:33",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:34",
+      "text": "And that. And part of that cover story is that he can't return home to America. Right? Like, that's what. That's a thing that we know there's something in his fi. There's something that he's either saying or is like, you know, manufacturer is. He can't return home. Then the Nazis take Paris and all of a sudden he doesn't have a way out because, like, this cover, like this cover story has become so durable. He's like, you know, like the guy. His handler's gone or whatever it is, and so he ends up sor. Of like being disavowed or whatever and then having to live the COVID story that he was, you know, sort of, he was pretending to be a part of. And then he becomes like sort of the Hemingway version of the character. So I think there's like a. I."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "43:11",
+      "text": "Think there's by the way, Jason just happens to open up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:14",
+      "text": "Just happens in Casablanca where everybody hangs."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "43:20",
+      "text": "Out from like the black marketeers to like the gun runners. Like, like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:24",
+      "text": "And that will become like sort of a critical port. Like, will become like a critical place. Like when the Allies make an invasion of North Africa. Literally the month, literally the month that this movie is released. So like, I think there's something. I think, I think it all totally works. The other thing I just want to dwell on for a second is this scene, like the Marseilles scene. Since we've started talking about it, I watched this movie. I've watched this movie twice in preparation for the. One of it was I was sitting outside my kids ballet class on Franklin street street in San Francisco, which is not a particularly beautiful part of town. I was watching on my phone and I was just crying."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:05",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "44:07",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:08",
+      "text": "I've never watched the Marseilles scene of Casablanca and not cried. And like, certainly this wasn't going to be the week when I didn't cry."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:15",
+      "text": "Of course."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:15",
+      "text": "It is so good. The storyline of Yvonne, who like, loves Bog. Like her, she's a completely tertiary character. She loves Bogart. He's not. He's done with her. He sends her. Sasha takes her home."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:28",
+      "text": "The scene where she said, let me. Sorry, this, this line is so good. She's like, where were you last night?"
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "44:34",
+      "text": "Not so long ago, I don't remember."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:37",
+      "text": "Will I see you tonight?"
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "44:38",
+      "text": "I never make plans that far ahead."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "44:40",
+      "text": "I never make plans that far in advance. See, I know this whole movie by heart, guys. Yeah, just give me a cue. And I'm giving."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:45",
+      "text": "He's like, this is 1940s ghosting. Like, he's just like, like, this is IRL ghosting thing. So she ends up coming back with a Nazi, right? She gets in a fight. She gets in a fight with a French soldier, like part of the French, you know, the French government there is like, why, you know, he basically is like, you know, why are you like around with these, like these Nazi, like, you know, like, whatever, you know, whatever, you know, I'm gonna drink champagne with these Nazis. And then the Marseille has happened. She like openly is crying and like realizes like this higher thing, like this is through the lens of a tertiary character that in any other movie wouldn't matter. And it becomes like an emotional crux of like one of the most famous scenes of all time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:19",
+      "text": "Time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:20",
+      "text": "The only other thing I'll add to this, the thing about the Marseilles, it is the best national anthem of all. It is, it like, musically it's amazing. The lyrics are so hardcore. It's like the enemies are coming to like, like, you know, tear the throats out of your children. Like, it is like, is the, is the, is the import of the Marseilles and it's just so good. Everyone's so amped. I think it also is great because we only have been on like we did Red October, which has the second best national anthem of all time."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "45:53",
+      "text": "Yeah. Let's face it, we only do movies."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:59",
+      "text": "With Ben where an all time banger anthem will be on. That's important."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "46:02",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:03",
+      "text": "Yes. And the scene as well, that was La Mer also."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "46:06",
+      "text": "Oh, yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:07",
+      "text": "On taker. Oh, man, that's really funny. So my, my first big point that I want to get into is just this really feels pretty timely. So this notion even of Casablanca as the gateway to Lisbon in America. Like, Ben, wasn't it the case that the idea of passports and all, like passport control and all that stuff was relatively new around. Around that time frame?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "46:32",
+      "text": "100%. And so I think it's hard for us to conceptualize that, you know, for usually you didn't need passports, right. Like you could just travel freely and. And some of that started to change a little bit after World War I."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "46:45",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "46:47",
+      "text": "But this, I mean, there's so many things that are eerily timely. So just to set the scene in the movie itself, right, There's a sense that you have like Nazi occupied Europe where you're essentially, if you're there, you're stuck, like you're under the control of the Nazis. Who gets in and who gets out is up to you. As, you know, as someone who comes from like a, A Jewish background on my mother's side, obviously that like, if you weren't out at the right time, like you could have been totally. And, and frankly, you usually had to bribe your way out if you needed to get out after the Nazis were in charge. But there became these kind of way stations where, okay, you can get out of Europe, but that doesn't mean you can get in the United States. And like, we didn't always cover ourselves in glory here. Like we weren't letting everybody in. And so this idea that you needed."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:39",
+      "text": "Documentation, like we do today, now we're really open for asylum."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "47:44",
+      "text": "Well, now here's the thing, right? So like to bring it to current times, like one of the very first scenes in the movie is they are going around asking people for their papers."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:54",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "47:54",
+      "text": "And I'm sitting here talking to you guys in Los Angeles. I mean, there was ice raids a block and a half from me recently. And like, this is what is happening now in this country. It's like we have like federal governments asking people for their papers. This idea of papers that like people can just ask you for that is very current. This idea that there's not readily access to asylum. The whole idea of asylum, the principle that countries will take in politically persecuted individuals is a post World War II creation that was meant to deal with the problem in this movie. Right. That there are people that, whether they're Jewish or whether they're political, people like Laszlo need safe havens. Like that is being destroyed now because the United States is the leader of that system. And we're out of it now. We're basically said there's no such thing is asylum anymore. And then you, you know, factor in obviously the rising kind of right wing authoritarianism which is the adversary in this movie. So this question of, like, individual security, individual papers, individual freedom of movement in a time of authoritarianism is what this movie is about. And I mean, we're not in World War II, but like, those things are very contemporary all of a sudden. Yeah. You know, in a way that. That they have not been for most of my life watching this movie. And I found that kind of chilling. Even as someone who's seen this so many times. That papers line really hit me this time. And they end up shooting the guy, by the way, for not having the right papers."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:21",
+      "text": "It's also the idea of everything is really formal. Right. So Strasser knows that Laszlo's there, he's talking to him, but he can't arrest him because that's not how it's supposed to work. There are all these rules in place that protects, protect. That protect citizens. And then it's very evident that's just. They're just gonna wave that kill them."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "49:39",
+      "text": "Yeah, they're just gonna kill more days."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:42",
+      "text": "Things are changing. Yeah. And so that. That notion that you think you have a system, you think you understand what's going on, and it turns out those protections are not necessarily gonna be there for you. And meanwhile, even while some people are being protected, they go to great pains to show the desperation of all the people that are around there. Like people hawking their jewelry, they're desperately trying to make it happen. Or the Russian or the Czechoslovak, Bulgarian, that Renaud takes advantage of the wife, and then she's wracked by guilt for what she's done. Like, that is so emotionally charged. And then for Rick to then go let his. Her husband win the money that he needs to get out, it's just like is so, so powerful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:23",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "50:23",
+      "text": "By the way, another great Rick moment because he's kind of a dick to her, right? He's like, you want my advice? Go back to Bulgaria. You're like, oh, man, that's an awful thing to say. But then he goes and just delivers them whatever, thousands of francs, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:36",
+      "text": "Yeah, yeah, yeah, it's. It is good. It's like, it's. You start to see Rick, who at the beginning, you know, multiple times says, I don't stick my neck out for anyone. He, like, he rescues the Bulgarians, he allows Lamar to be played, and then he just like completely nukes his entire situation."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "50:50",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:51",
+      "text": "For, you know, to go run some kind of resistance cell in Brazille with Claude Rains, which, whatever the. That looks like, it's going to be way less cool than running Rick's Cafe American, I'll tell you that."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:03",
+      "text": "By the way, though, like, good sequel, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:05",
+      "text": "Yeah, great sequel. Why don't we watch a movie where."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:10",
+      "text": "There'S one thing that I would take from our current shitty entertainment landscape? It's. It's actually this movie needs a sequel."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:18",
+      "text": "They would have, they should have delivered on the sequel."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:20",
+      "text": "I totally would watch those guys."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:21",
+      "text": "Yeah. Be there like when, like, Rommel's getting run out of North Africa. It would have been great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:26",
+      "text": "Be a little more uplifting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:28",
+      "text": "Well, there's Passage to Marseille, which I think Bogart and Reigns made with Cortese, but I think it's not a direct sequel. But I've not seen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:35",
+      "text": "Seen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:35",
+      "text": "I've not seen that."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:36",
+      "text": "I've not seen that actually. So maybe, actually maybe I'm wrong."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:38",
+      "text": "I haven't seen either."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:39",
+      "text": "I don't think it's. I don't think it's a. I don't think it's a pure sequel, but definitely interesting. What's your next point?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:45",
+      "text": "All right, so my next point is this Laszlo one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:47",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "51:47",
+      "text": "Because I've thought a lot about this over the years. What do we think of Victor Laszlo? Because what's interesting about this movie is in the current timeline too, is we need Victor Lazlos. Right. The world needs Victor Laszlo. This guy is completely principled, completely uncompromising, willing to be like tortured in a concentration camp."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:10",
+      "text": "And he's a Navalny. Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:13",
+      "text": "But he's also kind of like one dimensional. Like he's just this guy who says the most predictable resistancey stuff. He's clearly not like, he may. He seems to love Ingrid Bergman, but I don't think he's setting anything on fire there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:29",
+      "text": "It's not super passionate."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:31",
+      "text": "It's not super passionate."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:32",
+      "text": "It."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:32",
+      "text": "And he's just kind of totally single minded."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:34",
+      "text": "It is pure love with her though. Like, when he asks her, he knows something's going on with Rick. Is there anything you want to tell me? And she says no. And he's like, he's like, I love you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:43",
+      "text": "Like, yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:43",
+      "text": "He's like, I got. Yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:45",
+      "text": "He clearly loves her. But like, it's not smoldering."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:48",
+      "text": "It's like a teacher. It's like teacher students married to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:51",
+      "text": "He's married to Ingrid Bergman. Like, if you're married to Ingrid Bergman, it should be smoldering. Like, it should be like unrelenting."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:59",
+      "text": "And."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "52:59",
+      "text": "But what I think is interesting about. Yeah, but that's true. I mean, by the way, like, like unbelievable. We should talk for a second. I mean, we might as well. Let's talk about the two of them, actually."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:07",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "53:08",
+      "text": "Because."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:08",
+      "text": "Yes, please."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "53:09",
+      "text": "The. The other. So like, just to, to look at them as a couple, they come in, right? She immediately like, you know, recognizes Sam. By the way, later we should talk about some of the problematic elements of this film. Right. But, but, but, but, but Sam is like, pulls up the piano and she asked him to play, you know, some of the old songs. And she's like, you know, play as Time Goes By. One of the greatest, greatest uses of the song in history. And it. A song bangs. I mean, it's not my kind of music."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:43",
+      "text": "But."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "53:44",
+      "text": "But the face shot of her."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "53:46",
+      "text": "While he is playing that song. If you can watch. It's just her face in black and white so we don't have to see like anything else. You are completely smitten. I mean, you're just like the amount of things that are happening in her face. It's not just that she's beautiful, she's an incredible actress. She's crying, she's reliving a love affair, she's feeling the impossibility of the circumstance. And he's just sitting there meeting with some resistance guy, like, hey, can I meet you at the bar? And I'm like, hey, man, you might want to pay attention to your wife over here. Seems like she's having a moment, you know, like, so he simultaneously loves her, but is kind of clueless to like this inner life that she has that is clearly like coming out in her face as Sam is playing this song. And then there's this kind of just interesting dynamic over time where, you know, ultimately, I think one of the points the movie's making is that, yeah, we need Victor Laszlos. This guy's got to get to the US because we need a resistance symbol. He knows where all the resistance leaders are. Presumably he hasn't given up the names under torture. That's gonna be useful information. The allies. Okay, but we also need, like, Ricks. We need guys that, like, do the dirty work, you know, like, Rick's the kind of guy. Laszlo could never find the letters of transit. You know, like, Rick is the kind of guy that facilitates. I mean, it's actually not a bad metaphor for what we need today. Like, the online resistance posters, you know, like, who are, like, uncompromising or often can be a little boring, you know, y. Sometimes you need someone who's got a, like, a little more gray area to them, you know, to. To. To fight fascism. You know, this brings us back, of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:31",
+      "text": "Course, to the sacred text of Andor, which is like, you need. You need Cassie and Andor. Like, you need people who are Han Solo and Luke. Exactly."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "55:40",
+      "text": "You need the solo."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:41",
+      "text": "You need the scoundrels. And you also need, like, you know, you also need Mon Mothma. Like, you need, like, the person who's going to give the huge speech in the senate it. That denounces fascism for what it is, and then she gets scurried away by the scoundrel, and then they retcon it so that it's not done by the scoundrel at all because it wouldn't be politically acceptable. Like, you need. You need all of that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:03",
+      "text": "Quick, quick aside. I restarted Andor this week, and it might be better."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:08",
+      "text": "So. Good shout out to Dan Gilroy won an Emmy last night for writing welcome to the Rebellion."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:14",
+      "text": "Should have been a lot more, but, yeah, we'll take."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:16",
+      "text": "We'll take what we yet."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:17",
+      "text": "So. So, yeah, for me, this idea of the love triangle here is super important. So we talked about Victor and Ilsa, and. And I just love that he refused to abandon her when he had the chance to do it. And he also, you know, was to, you know, make sure and bring her along the way. But the other triangle that I want to talk about for a second is Victor and Rick. And this notion of, you know, Rick initially is very, you know, not super understanding with him. Ask your wife. But this notion, when he asks, him and Laszlo basically call."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "56:48",
+      "text": "Don't you sometimes wonder if it's worth all this? I mean, what you're fighting for? You might as well question why we breathe. If we stop breathing, we'll die. If we stop fighting our enemies, the world will die. What of it? It'll be out of its misery. You know how you sound, Mr. Blaine? Like a man who's trying to convince himself of something he doesn't believe in his heart. Each of us has a destiny for good or for evil. I get the point. I wonder if you do. I wonder if you know that you're trying to escape from yourself, that you'll never succeed."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:22",
+      "text": "So this is that inspirational wake up call that Rick needs in order to, you know, really take the next step down the road."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:31",
+      "text": "Yep. This leads. This leads well into my second point, which is this was a. This movie was like a product of a lot of happy accidents. Like, they, you know, they. They. We've talked a lot about on this pod. Our objection to the way that IP cinema is produced nowadays, where they kind of announce the name and the cast and they figure it out as they go along. And there's a lot of discovering things on the journey. And we're like, you know, there should just be more Kubricks who have a giant file cabinet of everything that will happen at every moment of the film. And then it's just like, now we're gonna go make this. This movie stands as sort of a counter to that, which is. Is they didn't know what the ending of the movie was until they got there. And they f. You know, it was like one of those things where they really found it as they go. And they gave, like, crazy direction to both Bogey and Bacall, Bogey and Bergman, to how they should act. Their scenes were. Because they didn't know if Bergman would end up with Laszlo or with Rick. And so they were telling her, like, you just gotta kind of play it down the middle. You really love both of them. And we'll figure out where we are at the end. And Bogey was, like, in a terrible mood. Like, was grumpy, like, throughout this whole shoot because they, like, kept changing things on it and they wouldn't. There was no ending to the movie. And they, like, kind of figured it out, like, as a team. At the end was like, okay, I think. I think she's getting on the plane with him and you're staying behind. Which is crazy. I mean, like, that's just crazy that, like, they didn't know that in advance. Because I don't know what this movie is about if it's not about sacrifice and selflessness. And I don't see how the movie works. Works in any other configuration. Like, it doesn't work if, like, Laszlo just gets on the plane and, like, Bogey and Bergman go to Fudgeing Brazzaville. Like, that doesn't work."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "59:20",
+      "text": "She's not gonna yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:21",
+      "text": "And, like, it doesn't work if. Like, it doesn't work if Laszlo is, like, left for the Nazis and, like, Bogey and Bergman get on the plane."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:29",
+      "text": "Like, it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:30",
+      "text": "Like, it doesn't work if, like, what, Bogey just gets on the plane and leaves the other two behind. Like, none of the other permutations work. So it's pretty crazy that they couldn't figure that one out in advance."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "59:41",
+      "text": "Well, to connect to the thing you were just saying about the triangle, you know, I. I was a little hard on Laszlo, but. Because I do admire him, obviously, but I just, you know. And he's played well, by the way. I mean, because I think he's supposed to be played straight. But he makes that comment to Rick when they. When he. When he, you know, when it's clear what he's doing and that he's sending them off on the plane, he says, welcome back to the fight. This side, I know our. This time, I know our side will win. What's interesting about that is it's the completion of the triangle in the sense that Lazlo knows what's going on. He even knows that she went to see him last night and something went down last night."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:21",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "60:22",
+      "text": "But he kind of gets that, okay, they're in love, it's war, Everything's complicated. But this guy is really stepping up here. But it's also a metaphor for America getting in the war, right? This time I know our side will win, right? Like, the Europeans were gonna lose. Rick joining the fight is kind of like the Americans ending up and kicking in. Like, Rick is kind of the metaphor for America in this. But I think that the movie's supposed to do, guys, right, is we're all supposed to wonder, right? Like, would we have gotten on the plane, you know, if we were Rick, would we have done the same thing? Or, you know, what's more important, love or war? Like, you know. You know, and that, to me, is why it's so timeless and why the ending was probably suddenly they had to figure out at the end. It may have been obvious when they made the choice, but, like, it's meant to make you think that from that moment when she comes to see him at the bar, you know, and then you basically have the action sequence till the end. You're thinking to yourself, shit, what would I do? Like, would I get on the plane with. In with Ingrid Bergman? Or would I, like, go to the desert with Claude Rains? You know?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:24",
+      "text": "Yeah, but."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:25",
+      "text": "So here's what I'm trying to. Here's what I'm trying to understand, right, this idea. So we look at Rick, he's been the underdog guy. He's stepping in, he's saving people that he has no business saving because there is this intrinsic good in him. And we. I look at that and I'm like, what a hero. And then I. Presumably other people are looking in that and say, well, America first. Who cares about that? You know, like, why should we get involved? Why should that be a problem? Like, why. Why isn't this something that resonates? Why isn't this idea of we can be a force for good, we can help people more than just ourselves? Like, there's this nihilistic idea of there's not enough to go around, so we got to grab ours, I guess is. Is the other side's take, but it just doesn't make sense to me. This is what America exceptionalism is supposed to be."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "62:11",
+      "text": "Well, it's so interesting you say that because one of the things I noticed last night, like, Jason, I tear Europe during the Marseillaise, this movie. There's no American flag. There's no, like, they don't sing the American national anthem. There's actually very few Americans in the movie, right? It's two, right? I mean, other than salmon."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:30",
+      "text": "Salmon, Rick."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "62:31",
+      "text": "So you've got a Czechoslovakian resistance hero. You've got Ingrid Bergman, who's Swedish, passing as Norwegian. Then you got a lot of French people, right? A lot of French people on all sides. You got Vichy collaborators and then people singing the Marseillaise. You've got, you know, a cast of characters from across Europe who are refugees. You've got Moroccans who are just like, trying to get by, like Ferrari. And yet it's pretty clear, like, who the people are we're rooting for in the movie. To your point, the values proposition is like, we're on the side of these people. We're on the side of the Czechoslovakian and the French resistance people and the refugees who just want a better life."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "63:11",
+      "text": "Life."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "63:11",
+      "text": "You don't need American patriotism banging you over the head. You don't need flag waving or flyovers or like, you know, American cowboys. You've got a shady American saloon keeper, maybe spy, and you got a black piano player. And those are our Americans. And, and, and, and to your point, though, I. It's like a patriotic movie, you know, because. Because it's about, like, anti fascist fascism, you know, it's a deeply, deeply anti fascist movie. And that's what America is. It. America chooses to throw in its lot and to sacrifice the beginning yeah, for the beginning."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:47",
+      "text": "Anti fascist. That's what we started."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:49",
+      "text": "Yeah. And, like, a lot of the people who worked on the movie. Like, a lot of people who worked on the movie were themselves like European refugees who were like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:56",
+      "text": "Really?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:57",
+      "text": "There's, There's a lot of. There's a lot. You know, there's Jews who wrote the movie. There's a lot of. There's a lot of Hungarian refugees, like, in the movie. Like, there's a lot of people who were like. The idea of. Of having to, like. Of what's being portrayed in the movie, of trying to flee from, like, the Nazi takeover of Europe was not an academic or a remote or an abstract idea. And that was. Yeah, again, like, all of those people were Americans working on that movie. Yeah, it's. It's. It is a deeply anti fascist movie and I assume will be banned soon for that reason."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:29",
+      "text": "I really liked Carl. Right. The mater d who was German. Right. That was his deal. He was. He was somebody who had fled. Fled Germany or Austria or something to get away from the Nazis, essentially."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "64:41",
+      "text": "Yes, Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:42",
+      "text": "I assume Carl's Jewish. My, he's good."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "64:44",
+      "text": "He's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:45",
+      "text": "Carl runs the books. I think Carl's a Jew."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "64:48",
+      "text": "And I say this as, as I say this with, like, a deep admiration. Like, seems like he's gay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:53",
+      "text": "Yeah, there's."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "64:54",
+      "text": "There's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:55",
+      "text": "There's definitely some. There's definitely some. Like. Well, first of all, like, anytime Peter Laurie, like, Peter Lori is kind of like one of like the, like the, the. The standout, like, sort of. There's all this stuff, like, if you go like, you know, like, you. We refer to the celluloid closet a lot on here, but there's, you know, like, to get away from, like, the motion picture code of how to display homosexuality. There's all kinds of stuff that's just like, you know, like. Yeah, it's, you know, we'll put that in. They're probably gay. Yeah, I think that's right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "65:21",
+      "text": "Well, I, this leads me to what, My, My. My third take, if that's okay, which is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:25",
+      "text": "Yeah, yeah, go for it."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "65:26",
+      "text": "Unbelievable secondary characters. And I'll say this as someone who, like, has taken a pass at script writing. Ugarte, the creepy human trafficker who's in it for a price. Major Strasser, like, the Nazi who's like. And even the guy who's major stressor's wingman who's like, could you imagine us in New York? You know, like, are you one of."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "65:54",
+      "text": "Those people who cannot imagine the Germans and their beloved parents? Paris, not particularly My beloved Paris. Can you imagine us in London? When you get there, ask me. Diplomatist. How about New York? Well, there are certain sections of New York, Major, that I wouldn't advise you to try to invade."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "66:13",
+      "text": "Yeah, yeah, yeah, exactly. Senior Ferrari, who also turns out to be a good guy, right? He says, you know, he's the one who tells him that Rick has the letters of transit. He's like, I, I know this won't profit me. And he, you know, he says he'll pay. Sam. Sam, right. I mean, one of the all timers in terms of a secondary character. I mean, you know, I'd like nothing more than to get drunk with Sam. Well, yeah, I'd probably like to be with Ingrid Bergman too, but like, if I'm not getting drunk with Sam is the second best. Carl and Sasha, the, the bar people even. There's a great line with the Italians, like getting lectured by the German. And he's like, if, if he gets a word in, it'll be in major Italian video Victory. Which says everything about the American view of Italian fascists, that they're just these kind of like secondary losers. You know, the beautiful Bulgarian woman who approaches. I mean, every single secondary character, they somehow, in the shortest iota of dialogue, you know, manage to completely nail these people. And then the chief secondary characters, you know, a little more than that. Claude Rains, like the most likable creep, like maybe that's ever been on film. I mean, he's lecherous, corrupt prefect of police in quasi Vichy France. And you're like, you can't help but like the guy, you know, showing him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:36",
+      "text": "Straighten his tie. As the woman is about to come in for the visa business right after he's. It's been clearly established that he just, you know, had Ugarte killed."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:46",
+      "text": "Was very intense. But then they, then they shade him, right? So he is talking to Strasser and Strasser's slandering Rick."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "67:53",
+      "text": "You give him credit for too much cleverness. My impression was that he's just another blundering American. We mustn't underestimate American blundering. I was with them when they blundered into Berlin in 1918."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:03",
+      "text": "They bumbled into. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:04",
+      "text": "Slam."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:05",
+      "text": "Yeah, that's a fun one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:07",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "68:07",
+      "text": "Well, and he gets off the, you know, I mean, there's so many just unbelievable one liners in this, but, yeah, maybe none is aged better than. I'm shocked, shocked to find that there's gambling. You're winning, sir. Oh, thank you very much."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:20",
+      "text": "Yeah, that one, that one is timeless. That One is that is like one of, like the. Like one of the oldest, most still broadly applicable memes is. I'm shocked to find people use that all the time to point out hypocrisy online still."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "68:34",
+      "text": "And one last thing about Claude Rains is my point earlier about how Rick had to give the nod for the Marcias to play Claude Rains kind of had to let that plane go away."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "68:44",
+      "text": "Claude Rains really wanted to stop that plane. He probably could have. Now he calls Major Strasser and brings him to the airport. But I mean, then he has his moment when everybody drives up and the plane's taken off and the whole. All the police are there. He could have been like, just take this guy away and. And he's like, round up the usual suspects. Like, that's him giving the nod to play the Marcias. Like. So there's these kind of interesting decisions made by characters that on the surface are immoral, you know, but they make. They're drawn to the anti fascist cause, you know. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:14",
+      "text": "Is that a German wine that he's drinking at the end that he's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:18",
+      "text": "Vichy water? It's Vichy water."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:20",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:21",
+      "text": "It's. It's bubbly water from Vichy France. Like the government. The Nazi Allied government in France."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:26",
+      "text": "Got it."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "69:27",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:27",
+      "text": "It's like when there's always like, you know, I was like, I'm, you know, I'm neutral. Like. Like, it depends on which way the wind blows. Right now the wind is blowing from Vichy, which is like where the Nazis were running the. Where the French Nazis were running France."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:39",
+      "text": "Got it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:39",
+      "text": "After. After the takeover."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:41",
+      "text": "Got it. What's your next point, Jason?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:43",
+      "text": "My last point is much less high futin than our discussion thus far, but this is really peak hat cinema. And tremendous hats. Like, tremendous hat. Like, and not just the hats, but like, the overall, like, costuming is amazing. Like. Like bogeys. White tux, dude."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:02",
+      "text": "The white tux."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "70:03",
+      "text": "The outfit that. The outfit that Ingrid Bergman's wearing in the marketplace where the guy's trying to sell. Sell her the lace, this, like, you know, almost Marshall cut vest that she's wearing. The hats that they're wearing, you know, at the end, she's got these amazing, very severe hats that like sort of do this incredible white, you know, really hard shadows on her face. It's just. It's a. It's some remarkable costuming in this movie. And that's like an I. You know, I watched this documentary that Steven Spielberg was in about Casablanca, and it's just like every. You know, it's like this. This is like the studio era, showing why it was so good. It's just like every department was great like that. You know, they had this amazing cinematography who shot like 150 movies a year, but, like, knew, like, where to, like, how to get the light to look amazing, knew how to move the camera in these interesting ways. Spielberg pointed out this thing that I didn't know. I didn't know while watching it, which is before they begin the flashback on Bogey. Yeah, he's drunk. He's had the kind of argument in his office. The camera pushes in. It's like a dolly or it's a, you know, it's. It's a dolly or a crane shot in. The camera pushes in. It stops for a few seconds, and then it continues to push in. And Spielberg. This is why Spielberg's such a genius. He says a lesser director would have had that as just one continuous motion. It would have been like, oh, we're going to dolly in on Bogart as we go into the flash flashback. But instead, this cinematographer knew I'm going to stop halfway to. As if to ask, do I really want to remember what I'm about to remember? To give like. Like, sort of give. Like to have the camera echo the character's internal state of be. Like, do I really want to go through and remember this painful memory of what it was like to be in love and then out of. And then abandoned in Paris? I was like, God damn. Steven Spielberg really, really teaches me. Really, really, really, really knows of a lot lot."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:53",
+      "text": "All right, so two things. Two things. So first of all, he says to Sam, I thought you playing."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "71:59",
+      "text": "Oh, just a little something on my own. Oh, stop it. You know what I want to hear. No, don't. You played it for her, you played for me. Well, I don't think I can remember. If she can stand it, I can play it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:12",
+      "text": "Yes, boss, I can stand it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:14",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:15",
+      "text": "And so, like, that's amazing. And then going into this. So then second piece, the DP is Arthur Edison, who shot All Quiet on the Western Front, which was in 1930. So that was not long after World War I. Shot a little movie called Frankenstein, the Invisible Man, Mutiny on the Bounty, the Maltese Falcon, and Casablanca."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:39",
+      "text": "Yeah, this guy's a baller. He's a baller."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:41",
+      "text": "This guy's."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:41",
+      "text": "This guy."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "72:42",
+      "text": "This guy can cook."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:43",
+      "text": "And there's amazing shots like Spielberg, this documentary, which was like, why? Like, I don't know. It's like if you look for Casablanca documentary, Spielberg's in it bunch. And there's all these scenes where the camera moves, like, really interesting. Like, kind of sets up these perfect shots of, like, you know, they move in between, like, where there's all these panel. You know, all these, like, all these window paneling and all this stuff. And they catches the characters in exactly the right spot. And like, it's the opening."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:04",
+      "text": "The opening shot of Ricks coming in. It's a oner with Sam playing the music is absolutely like Goodfellas."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "73:11",
+      "text": "This is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:11",
+      "text": "This is the thing and Spielberg talks about. He's like, you're not aware of the camera. It's not like a. It's on a showy camera movie that you're aware of. And this is a thing like, just to continue to fucking glaze. Steven Spielberg here. Like, you know, a couple weeks ago I went to go see Jaws in IMAX because it was out for the 50th. Yeah, the oner of. The oner on the ferry. The ferry where he gets on the ferry and it's the. All the town fathers talking about, you know, he's going out there to stop the. The Boy Scouts from doing their mile swim. And he's like, you know, it's like you. You say, you know, you said barracuda. People say, what?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:45",
+      "text": "Huh?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:46",
+      "text": "You say, shark. Like, that whole scene is a oner. It's a Warner. Where they get on a fucking boat, do a loop around a bay, and then come back. It's a Warner. It's one shot. It is as impressive as, like the Copa scene in Goodfellas, like the great Warners that people always think about. But it doesn't call attention to itself in that way. It doesn't like. It doesn't. It doesn't announce itself as that kind of shot. And that's the kind of filmmaking that's in. This is. Well, which is sets, by the way."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "74:16",
+      "text": "Rick's is. Rick's is. I mean, the way it moves around, you feel like you're hanging out at Ricks."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:21",
+      "text": "Yeah, totally."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "74:22",
+      "text": "And it feels like a place I'd want to hang out. I mean, there's Sam playing music, there's the bar, there's the roulette tables. And that was very cool, too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:30",
+      "text": "The idea of. I felt like they were able to use Sam to do musical numbers like you would do in a play, right? You have these. These musical bits that become these kind of relief from the action of what's going on. Or even, like. I love using the musical number of who's Got Trouble? We Got Trouble for Rick to stash the transit papers. It's like such a cool Move like. The guy is smooth as hell."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "74:53",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:55",
+      "text": "Amazing. The other shot that I wanted to call out was the shadow shot when Rick is getting the money from the safe. Just."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:01",
+      "text": "Just gorgeous. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:02",
+      "text": "Absolutely gorgeous. Let me see. I got just a couple of other things that I want to make sure we hit just like this. This thing is so iconic. So many lines that are there. Of all the gin joints in the T and all the world."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:16",
+      "text": "So I wrote in my last rewatch, I wrote down some of these lines."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:21",
+      "text": "Okay."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:21",
+      "text": "And we've covered some of them. But just think about how much he's entered the firmament. You know, Round up the usual suspects."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:28",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:28",
+      "text": "Yep."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:29",
+      "text": "I stick my neck out for no one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:30",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:31",
+      "text": "Of all the gin joints in all the towns in all the world, she walks into mine."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:34",
+      "text": "Yep."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:35",
+      "text": "Then the kind of nasty cutting one to her. I've heard a lot of stories in my time. They went along with the sound of a tinny piano playing in the parlor downstairs."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:42",
+      "text": "Mr."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:42",
+      "text": "I met a man once."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:44",
+      "text": "Then I'm shocked. Shocked to find there's gambling going on here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:47",
+      "text": "There's."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:48",
+      "text": "We'll always have Paris."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:50",
+      "text": "We'll always have Paris."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "75:52",
+      "text": "The problems of three little people don't amount to a hill of beans in this crazy world."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:56",
+      "text": "This is incredible. This entire final scene with Rick and Elsa is unbelievable."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "76:01",
+      "text": "Yeah. Inside of us, we both know you belong with Victor. You're part of his work, the thing that keeps him going. If that plane leaves the ground and you're not with him, you'll regret it. Maybe not today, maybe not tomorrow, but soon and for the rest of your life. But what about us? We'll always have Paris. We didn't have. We. We lost it. Until you came to Casablanca. We got it back last night when I said I would never leave you. And you never will. I've got a job to do, too. Where I'm going, you can't follow. What I've got to do, you can't be any part of. Hilsa. I'm no good at being noble. But it doesn't take much to see that the problems of three little people don't amount to a hill of beans in this crazy world. Someday you'll understand that. Now, now. Here's looking at you, kid."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "76:54",
+      "text": "And then I think this is the beginning of a beautiful friendship. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:57",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:58",
+      "text": "We talked about."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "76:59",
+      "text": "Ben."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:59",
+      "text": "You talked about, like, the. The waters. What waters were in the desert. I was misinformed. Is like, one of the funniest. Like my actual. Like my actual. I think this is the funniest line in the movie is. I remember every detail. The Germans wore gray. You wore blue. Like, that is. That's a. That's a banger. Like, that is a great."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "77:15",
+      "text": "And if it was Ingrid Bergman, you would think the same thing. Yeah, Like. Like, yeah, you would remember the blue dress."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:20",
+      "text": "It's so funny. And she's like, yes, I'll take it out when they march out again."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:23",
+      "text": "It's like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:24",
+      "text": "She's like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:25",
+      "text": "She's like, I put up that dress."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:26",
+      "text": "Rick, with your funny jokes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "77:31",
+      "text": "Let's see."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:32",
+      "text": "I think we got most of my point for my honorable mentions. There was a German cut. So Warner Brothers released a heavily edited version of Casablanca in West Germany in 1952. All scenes with Nazis were removed along with most references to World War II. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:48",
+      "text": "W. Well, they were in, like, they were in peak. They were in, like, peak denazification then. Right? Like, so they were like."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "77:53",
+      "text": "But we were like, appealing to the West Germans to join our side in the Cold War, so we went easy on them, you know?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:57",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:58",
+      "text": "But I love this Victor Laszlo as a Norwegian atomic physicist."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:02",
+      "text": "Yeah, sure. Pretty non. Resistance fight. My last. Last point I would make about this movie and its timelessness is because of the last week that we've had as a country, there's a movement move that the right is trying to pull right now, which is to say that by calling someone a fascist, you are inherently inciting violence against them. I think this is like a really slippery bit of sophistry that we need to push back on you. It is important that we label acts of authoritarianism and fascism, whether incipient or active as such, and be very plain about what is happening happening, while still saying that there's no place for political violence in. In our country that you cannot."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "78:49",
+      "text": "You can."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:50",
+      "text": "We cannot, like, sort of just blithely accept this. Oh, yeah, like calling things authoritarian or a threat to democracy or fascist is intrinsically political violence. Like, that is. That's just simply. That that's simply silencing opposition to an authoritarian, authoritarian takeover. So. And I think, like. I think, like, you know, know, it was kind of a pretty present theme for me because even without, like, Even without, like, invoking the Nazis as Nazis and the most horrific acts of the Nazis, the things. The agre. Which again, for Americans in this time, like, we didn't know the extent of the Holocaust in 1942. Right. Like, you know, like the. A lot of the mass killing actually hadn't begun at this point. Right. Like you didn't know about the word genocide hadn't been Invented, like they didn't know about, like, a lot of the, the horrors that were actually either going to happen or it still has some, like all of the, all of the Nazi Nazisms that kind of come to mind. The aggression and authoritarianism of the. The Reich at this time was what people were reacting to. And that's still like, you know, and like those, like, those labels that, like, ethos, like that idea still is unfortunately fairly alive and well in the world. So I think that's, I think that's. I, I just think from a rhetorical standpoint, we can't, like, accept the sophistry that's being offered by the other side on that one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "80:11",
+      "text": "Yeah. And they moved there pretty quickly. You know, like, it was interesting very quickly how Trump went there, you know, while, like, they, you know, in saying that, like, you know, they've compared us to Nazis or something when. Which is actually not true. I mean."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:25",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "80:26",
+      "text": "But. But you're right. Then it spread, if you look at Steve Miller, to like, like, they call us authoritarian or fascist and."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:32",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "80:32",
+      "text": "And it's like, in a way that's meant to engender self censorship."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:38",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "80:39",
+      "text": "And not to tie everything to, I mean, I do think the beating heart of this movie to anybody who hasn't watched it yet or is going to rewatch it after this podcast, it. Is that Marseille?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:50",
+      "text": "Yeah, 100%."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "80:52",
+      "text": "That's the heart of the whole thing. And that's him saying, no, I'm not going to not play this song because these people don't like it, you know, like, because these people, you know, don't want me to do it. I refuse to make that compromise. Yep. And that sets up everything else Rick does, as we said. And. And yeah, if you can't name what's happening around you."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "81:12",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "81:14",
+      "text": "When they're masked agents, like, sweeping people up off the street and they're checking people, people's papers in the military checkpoints, in D.C. checkpoints."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "81:23",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "81:23",
+      "text": "Yeah. So, I mean, if you can't name that, then the whole ball game is over. Then you're not playing the Marseilles, then Victor Laszlo is not getting on the plane."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:31",
+      "text": "Right."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "81:31",
+      "text": "These people, we should say, are all refugees that are hanging out of bricks. You know, they wouldn't get into the United States under the policies we have now. Never mind. Even if they're not Nazis, they certainly wouldn't be letting the refugees in. America first was literally the name of the movement in the United States at this time that was designed to keep the United States out of the war. And that was was outwardly friendly to the Germans. You know, Charles Lindbergh, who led the movement, had been given like an award by Hitler personally. Right. So this was like an active debate in America leading up to the war. So you're right, you're right to call it out."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:08",
+      "text": "We do wake up, though, right? Like, I mean, we've done it. We've proven time and time again we, we do wake up. I think we don't back to. Back to andor Jason, but like at our home heart, it. Sometimes it takes longer than we want it to, but we. Yeah, but we need to see it again."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:24",
+      "text": "Unfortunately, it's unclear if it's 1932 or 1942. I think, you know, it's, it's the."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "82:30",
+      "text": "Most critical question in our lives, guys. And I think about this all the time. Is it 1932? Is it 1935? Is it 1938? Is it 1940? You know, it's somewhere on that spectrum. There's no question in my mind about that because it gets down to that question of like, am I going to need letters of transit? You know, I mean, like, literally, you know, I think about, like, is it wise to stay here? I've got kids, you know, like. And so this whole question of mobility that we started with is relevant here too. I'd say. One other thing I do, I don't mean, I don't want to overdo this. I don't want to sound too, you know, scoldy. It's more just that this is of the times. It is kind of interesting. You know, you've got Sam as the black character, and he's a wonderful character, but he's fairly two to dimensional. Dimensional, you know. Now Rick does kind of, you know, there's that kind of creepy. They try to buy Sam, he's like, I don't sell people, I don't sell human beings, you know, but. And then even for our. I mean, this is happening in an Arab country. There's not a lot of Arabs in the movie, you know. Right, right. And they probably have their own feelings about the French, you know. But, but I will say that to, to, to put a positive light on it. Two guys who know the score at all times are Sam and Ferrari. Right, right. The, the one Moroccan and the one black character. Like, nobody needs to like, get them anywhere. They know exactly what's going on, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:56",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "83:57",
+      "text": "So it, it, like, it's, it's. Yeah, it's a very white movie. It's very white European movie, American. But they do have, they, they they do have this occasional knowing gaze essentially from. From Sam and Ferrari, which, which I do appreciate. I mean, I will say Blue Parrot seems kind of underrated to me. It seems like a pretty cool place to hang out too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:21",
+      "text": "You could definitely spruce it up a little bit. Just."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "84:25",
+      "text": "I will say though, as I made the same point about Tinker Taylor and maybe this I'm revealing as Jason knows my past as a heavy smoker. But another great smoking movie. I mean there's some great smoking."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:38",
+      "text": "I also used to smoke in college and, and I. There was never a time while watching this movie where I didn't want a cigarette. I was just like, this looks awesome. And even though, like, even though like Bogart looks like is 42 in this movie and he looks like he might be 62, like because his face has."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "84:54",
+      "text": "Been least believable thing is that he's 37, which is what they said."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:57",
+      "text": "37. That was funny."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "84:58",
+      "text": "He's 37."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:59",
+      "text": "He's. He's actually 42 though. Like Bogart is actually 42 and he actually looks like 58."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "85:05",
+      "text": "Like. Yeah, he looks too old for a good birdman."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:08",
+      "text": "Real age by the way. Smoking. Smoking. Also revealing the watch. So what's the. What do we need to get Watch talk."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:17",
+      "text": "There's some dispute this watch hasn't been definitively sourced. They don't know for sure what it is. It is maybe believed to be it is some tonneau cased watch. Possibly a Longines is like sort of the best guess. But he looks, he looks cool."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:33",
+      "text": "Wearing dynamite."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:34",
+      "text": "He looks great wearing night. Shout out to him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:37",
+      "text": "Watch talk."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "85:38",
+      "text": "Good, good, good drinking movie too, by the way."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:40",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "85:41",
+      "text": "Champagne cocktails, drinking whiskey."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:44",
+      "text": "When they first sit down though. When they first sit down, when Laszlo and Bergman sit down that he asked for two Cointreaus, I'm like just cointro straight. Like that's drink."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "85:52",
+      "text": "They just drink like, you know, and there's some like he gets drunk that one night she comes over because he's had an entire bottle of whiskey by himself. But these guys are drinking enormous quantities of alcohol and seem to be totally fine with it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:07",
+      "text": "They're fine. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:10",
+      "text": "Well, speaking of fine, Ben, who would Tilda Swinton play?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:15",
+      "text": "Oh, good question."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "86:16",
+      "text": "Oh shit. I mean, Major Strasser's probably not a big enough character. Although Tilda's always a great villain. I think this may seem like a strange call, but I kind of think she could do the Claude Rains character."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:30",
+      "text": "That's what I was gonna say."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "86:31",
+      "text": "Cause she's kind of gray space, like ambiguous. She can be very funny. If she to be right, like for sure. I think she. I think she's. I think she's the Claw Reigns character."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:40",
+      "text": "I think. I think it would be great. The other one, I. That was exactly what first came to mind. The second one that came to mind for me was the croupier Roulette who's like another like kind of fun, like secondary character who's just like, you know, like, how are we doing? And it was like a thousand francs less than I thought. But what could you do? Whatever."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "86:56",
+      "text": "And he's like when they lose some money, he needs a pad. He's like, I'm so sorry. I don't know how this happened exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:02",
+      "text": "Yeah, it's so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:04",
+      "text": "I was going to say Laszlo. I think it'd be interesting for her."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "87:07",
+      "text": "Good one."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "87:08",
+      "text": "Interesting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:09",
+      "text": "That would be good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:09",
+      "text": "She could put a cool spin on that. But let's do her. Sasha. I love the delivery of the line when Rick tells him to take the Yelena or whatever home."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "87:17",
+      "text": "What a fool I was to fall for a man. Like. So go with us, Sasha and be sure she gets home. Yes, boss. And come right back. Yes, boss."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:24",
+      "text": "Yes, boss."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:25",
+      "text": "Yeah, can't date with Yelena or whatever. That's not good."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "87:32",
+      "text": "One thing I want to say to you guys is we've done now I've done four pods that I think tend to be eerily followed. I know by what's happening in the world. So we did her."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:43",
+      "text": "We got to do something good soon."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "87:44",
+      "text": "We did her like before the AI boom and the AI companionship thing became a real problem. And three days we did condor too. Can we trust the government? That's right. So then we condor. Can we trust the government? Can we trust what they say? Like maybe everything's like a conspiracy theory. October, now we've got the Russians sending shit into Poland. Tinker Taylor is just kind of evergreen always, right. And now this, which has got the anti fascism haunt. So I don't know, we just kind of keep circling what's happening with these. Almost unintentionally most of the time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:22",
+      "text": "I was going to suggest. So with Tommy, we've only done movies that start with G O. We did the Goonies and the Godfather. And I was going to suggest maybe you come back with Tommy to do Godzilla minus one, which I think we could pretty safely cover without expecting something to come out of that. I don't know if you've seen that, but it is a really amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:43",
+      "text": "We need to do something that's got like a good outcome though for us. We. I was Thinking more like Rocky 4."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "88:51",
+      "text": "Rocky 4 would be good, actually."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:52",
+      "text": "Rocky 4 would be great."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "88:54",
+      "text": "Godzilla movies were another staple in my childhood."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:57",
+      "text": "Oh, really?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:58",
+      "text": "Have you seen minus one? Have you seen that one?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:00",
+      "text": "Which one is that one? I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:01",
+      "text": "It's the one that came out like two years ago."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:03",
+      "text": "Two years ago."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:03",
+      "text": "No, no, I saw all the classics."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:06",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:07",
+      "text": "Which are just unbelievable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:09",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:10",
+      "text": "And. And strangely of the atomic age. Right. That's how Godzilla was born. I need to see minus one. I'll get it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:16",
+      "text": "People love it. I've not seen it, but it's like beloved even by non Godzilla fans."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:21",
+      "text": "It's an incredible, like scathing indictment of the emperor and the way the, the Japanese population was created during the war in the after effect of the war. So it's, it's quite a powerful, quite a powerful film. Oh, what do you have to plug, Ben?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:36",
+      "text": "I. I mean, I just got Pod Save the World, you know, and I'm gonna. I've just finished a book."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:42",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:43",
+      "text": "But I do not have like a. Like a. It has yet to be like announced with pub date and stuff. But I'll tease the fact that that. Yeah, yeah, next time for sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:53",
+      "text": "Is it hard writing books right now with like stuff moving at the velocity that is moving?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "89:57",
+      "text": "Incredibly so. This book took me, me twice as long. This is my third book and this book took me twice as long as the last two. And part of that's because there's a lot of histories. I do more research. But like the bigger reason, frankly, is just the velocity of I just get pulled off of it, you know, so it was a struggle. It's hard to focus on anything in this environment, you know, Just try, just."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:17",
+      "text": "Try and keep going, man."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "90:18",
+      "text": "That's how it's trying to keep it above water."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:19",
+      "text": "Yeah, that's it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:21",
+      "text": "That's it. Well, we will see you. We will see you again in the future, man."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "90:24",
+      "text": "All right. Good to see you. You guys."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:30",
+      "text": "All right? Ben has flown the coupe. What an episode. Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:34",
+      "text": "Great episode. A great episode. Will be an all time classic."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:38",
+      "text": "Yes. Yes. Love it. Are you ready to do some quick voicemails?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:43",
+      "text": "Let's go."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:46",
+      "text": "You're still reacting to this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:48",
+      "text": "Yeah, it's bad. The news is bad right now. This is really bad. That's. I just. I read a tweet. I read a Matthew Maddie Iglesia Street. It was like the libs paranoid. Trump wants to use this as a pretext to crush all political opposition to administration officials. The plan is to use this as a pretext to crush all opposition political activity. It's like. Yeah, I mean, they're just like, they're explicitly telling them, they're saying it, that that's what they're going to do. So. Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:11",
+      "text": "Seems like a. Seems like a bad thing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:13",
+      "text": "It's going good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:14",
+      "text": "Let's try and hang. Let's try and hang in. Let's let our community lift all of our."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:19",
+      "text": "Let's lift our spirits. Spirits."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:20",
+      "text": "And let's start with this one, baby."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:24",
+      "text": "This is Lizzen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:26",
+      "text": "Let's go."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:28",
+      "text": "Hi, friends, this is Lizzen."
+    },
+    {
+      "name": "Lizzen",
+      "timestamp": "91:32",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:32",
+      "text": "Casablanca. Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:34",
+      "text": "Ben Rhodes."
+    },
+    {
+      "name": "Lizzen",
+      "timestamp": "91:35",
+      "text": "Yes."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:37",
+      "text": "Okay, hot take."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:38",
+      "text": "While it is true that Ilsa does not have agency, she does not get to choose. She is punished for her desire and."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:46",
+      "text": "She is infantilized, it is also true."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:50",
+      "text": "That it is 1941. Love fight Nazis."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "91:55",
+      "text": "We have work to do. Let's go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:59",
+      "text": "Xoxo Lizzen. Love you, Lizzen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:02",
+      "text": "Hell yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:03",
+      "text": "Lizzen was out there wearing the escape hatch merch in Texas trying to get."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:06",
+      "text": "The good word out for us, making it happen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:09",
+      "text": "We appreciate you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:11",
+      "text": "This is our other new strategy is just driving around in the car with the shirt and just see who. See who gets picked up. I love that. For me, it just, just her performance was so powerful. I love her love and the fact that she honestly loves two men completely and. And is torn. Is torn between. Even though she doesn't get to make the final call. Really, really beautiful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:37",
+      "text": "It was great. It was great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:39",
+      "text": "Thank you, Lizzen. Here is our next voicemail."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "92:44",
+      "text": "This is your brother, Animal Mother."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:49",
+      "text": "All right, here we go."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "92:52",
+      "text": "It's a topsy turvy world and maybe."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "92:56",
+      "text": "The problems of two people don't amount."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "92:57",
+      "text": "To a hill of beans."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:58",
+      "text": "But yeah, this is our hill and these are our beans."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "93:04",
+      "text": "Hello, animal friends and animal lovers. I hereby argue that a hill of beans was worth quite a lot more than the problems of three people. Imagine, if you will, a 10ft tall hill of cans, each can containing 9oz ounces of beans. With an even slope of 45 degrees all around, you will have a volume of approximately 227 cubic feet, or about 112,000 cans of beans."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:33",
+      "text": "Okay."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "93:34",
+      "text": "Based on price lists from 1943, a can of beans averaged 14 cents. So under farm market value, our hill went for 15,600 US dollars, which is 292,300 of today's bucks. Now, a hustler like Rick would know that due to the severe scarcity in wartime Europe, black market food had significant markups privateer. So a hill of beans price would be as high as the seller's scruples allowed him to charge I picture Rick and Captain Renault's beautiful friendship as merciless beanie blinders bankrolling lockers Stones one being stuck at a time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:22",
+      "text": "That's great. That's a beautiful dream."
+    },
+    {
+      "name": "Animal Mother",
+      "timestamp": "94:24",
+      "text": "This is a great movie. Nazis now and forever. Thank you all. See you at the nightclub. And keep the beans, you filthy animals."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:39",
+      "text": "That should be in a textbook book."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:41",
+      "text": "It's pretty good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:42",
+      "text": "It's a good word problem."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:43",
+      "text": "It's pretty good. I like it. It's a good like Google interview question."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:47",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:48",
+      "text": "I like it. Exactly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:50",
+      "text": "That's nice. Thank you so much, Animal Mother. Here is our next voicemail, Mr. Jabba. All right, here we go, Jabba."
+    },
+    {
+      "name": "Mr Java",
+      "timestamp": "95:11",
+      "text": "Where the smoke is swirling round the bar. You can hide out here with refugees. As the Nazi army starts to Marchablanca. Every night that chief is hanging round. Well he likes free drinks and talking sweet. And always watching the parade."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "95:37",
+      "text": "We know there's a war going on."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "95:40",
+      "text": "It's the second world war, don't you know. And when we say how you bo you're doing fine. Casa Blanca. Casablanca."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:05",
+      "text": "All right, let's talk about fashion. Let's say that you're gonna be in Rick's bar. Tell me what your outfit is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:13",
+      "text": "Tell me about your watch, what classy cocktail you're gonna order."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:19",
+      "text": "I don't condone smoking, but you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:21",
+      "text": "Hey yo, tell me what kind of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:25",
+      "text": "Cigarette you might like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:26",
+      "text": "I guess."
+    },
+    {
+      "name": "Mr Java",
+      "timestamp": "96:27",
+      "text": "Woo."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:29",
+      "text": "You're doing fine."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:30",
+      "text": "Casablanca. Casablanca. C A S A B M A N C. Amazing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:42",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:43",
+      "text": "Pretty, pretty amazing. And like behind the scenes like they only, you know, like we only everyone forgot that this was a Monday episode."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:52",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:52",
+      "text": "And so Mr. Java was like oh, let me get right on this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:56",
+      "text": "So."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:57",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:57",
+      "text": "And got right on it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:59",
+      "text": "Impressive. Impressive. I would just be it like cloning Rick for sure. I would just be just totally biting his style and it probably coming off as Ugarte."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:11",
+      "text": "I. I would wear a black tux, not a white tux cuz I'm worried about staining. I would definitely wear like a black tox bow tie. Just traditional. Not doing anything fancy. See, I would do a gold hobnail, Patek Philippe Calatrava because that's a great. That is a tuxedo watch, black band, gold buckle and patent leather shoes. I would be smoking unfiltered, you know, whatever they had at the time. Camels, red apples. Yeah. And I would be drinking a vodka martini."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:55",
+      "text": "Nice."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:55",
+      "text": "That's what I. That's what I got. I can't, I can't drink. I can't really drink anym at all anymore. But I would, I would drink a martini if I was there, for sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:04",
+      "text": "Did you like Inglourious Basterds?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:06",
+      "text": "Yeah, I did."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:08",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:08",
+      "text": "I did."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:09",
+      "text": "I've never rewatched it. I saw it in theaters."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:11",
+      "text": "I've never rewatched it either. I've watched it once and I enjoyed it. And I think Fassbend Wonder's particularly great in it. I think I get what's going. I get the idea of it. And, like, I'm, I'm okay with it. I like the execution of it more than I like the idea of it, I guess."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:28",
+      "text": "Yeah, I, I, I want to revisit it just because I bought the 4K so that I could revisit it but have not had a chance to make it happen. But I'm just picturing. I think Brad is in a. Is in a white tuxedo as well."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:39",
+      "text": "Brad's in a white tuxedo."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "98:41",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:41",
+      "text": "Looking gorlami."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:43",
+      "text": "Looking good there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:44",
+      "text": "Gorlami. Gore Lami."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:47",
+      "text": "Yes. All right, here is our next voicemail. Thank you, Java, so much."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "98:59",
+      "text": "All right, here we go."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "99:00",
+      "text": "Hey, y'."
+    },
+    {
+      "name": "birria",
+      "timestamp": "99:01",
+      "text": "All."
+    },
+    {
+      "name": "birria",
+      "timestamp": "99:01",
+      "text": "Beria here for Casablanca. What a movie. You know, of all of the people in this movie, I've probably always been most fascinated with Peter Lord. Laurie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "99:09",
+      "text": "Yeah."
+    },
+    {
+      "name": "birria",
+      "timestamp": "99:09",
+      "text": "Doesn't have many lines in Casablanca, but his presence lingers like a shadow across the entire film. Which is fitting because for much of his career, Laurie specialized in being the unnerving little dude in the corner who knows something you don't. Today's truthsayer. We're gonna go beyond Rick's Cafe and into the more obscure corners of this fascinating man's life. Three stories about Peter. Laurie. Your job is to sniff out the truth. Time for the truthsayer. Number one. As a young man in Vienna, he was a student of the famous psychoanalyst Sigmund Freud. Or is it number two? Laurie was the first on screen James Bond villain playing le Chiffre in 1954. Television version of Casino Royale. Or is it number three? According to Vincent Price, when he and Laurie went to view Bela Lugosi's body during Bella's funeral, Laurie whispered, whispered, do you think we should drive a stake through his heart just in case? Which of those shadowy tales is true?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "100:10",
+      "text": "I don't know. I like the second one the best."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "100:14",
+      "text": "I'm going for number three because I just saw a link of them drinking together in a movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "100:19",
+      "text": "The thing I'll say about Lori, if you like Lori in this, you get a lot more of him in Maltese Falcon. Another Bogart really Affair, which is a really, a really, really fun noir. Like the kind of V Noir I."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "100:34",
+      "text": "Wonder if we should have. Because the. The theme music from Stuff Dreams are Made Of. Right. Starts with the Maltese Falcon. So maybe we should have those guys on to do that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "100:43",
+      "text": "That'd be fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "100:44",
+      "text": "That'd be super fun."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "100:44",
+      "text": "Team up. We have done a good idea. Yeah, that seems. Yeah, that sounds great. I love that idea."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "100:50",
+      "text": "That'd be cool. All right, let's find out."
+    },
+    {
+      "name": "birria",
+      "timestamp": "100:52",
+      "text": "Were you able to spot the truth about Peter Lord? Well, regardless of what you picked, all three stories are true. Peter Laurie was fascinating, man. He was the visual inspiration for the original illustrations of Gomez Adams and the Addams Family in the New Yorker in 1938."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:09",
+      "text": "Wow."
+    },
+    {
+      "name": "birria",
+      "timestamp": "101:10",
+      "text": "He was the inspiration for the ghost mascot for the Booberry cereal. Tons of cartoons. That makes sense. Maybe most importantly, Wren from Brandon Stimpy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:21",
+      "text": "That makes sense."
+    },
+    {
+      "name": "birria",
+      "timestamp": "101:21",
+      "text": "And that's saying nothing about the time that Joseph Goebbels himself warned Peter to flee Germany. And that's the truth. Here ends the truthsayer."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "101:30",
+      "text": "That's the triple truth, Ruth."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:32",
+      "text": "That's pretty good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "101:33",
+      "text": "Damn, that is crazy. I meant to listen. So I'll have to go back and re listen to the cue and see if he says which of these are true as opposed to which one of these are true. To try and see if we can hack his notorious."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:47",
+      "text": "We gotta hack this system."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "101:50",
+      "text": "Okay, here is our next voicemail and it's from Kev."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "101:56",
+      "text": "Hey, gang."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:56",
+      "text": "Kev here."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "101:58",
+      "text": "Wow, what a interesting week. An interesting week. Excuse me, Casablanca. And then of course, coming up next week, my dear partner in podcasting and in many ways life, mackenzie is coming on for Sunset Boulevard. But let's talk Casablanca. We're getting to now the all time classics. We have drifted away from Dune into the canon."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "102:22",
+      "text": "Right?"
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "102:23",
+      "text": "All timer, Great movie. But one of the things I love the most about Casablanca is of course Rick's. As a restaurant, I am a big advocate for third spaces. I think they're super important. Now I would say more than ever the idea of the meatspace community that we've lost, that has given way to online communities that are great, but you need meats based communities community just as much. And everybody comes to Rick's. Kev's question, what was your third space or your favorite? I'll pick one. The Lake Grove Diner in Lake Grove, New York. Yeah, Big Greek diner on Long Island. I used to work at the movie theater until like 2, 3 o' clock in the morning. You know, when you do concessions, you close and then you Have a closing process where you clean everything up. And that usually takes about two hours. And we would go sit there and commiserate, right? Or we'd go after midnight movies, things like that. So I love a Greek diner. I love a late night diner. And yeah, third spaces are important. Peace and love. And I'll talk to you next week."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:25",
+      "text": "Once again, it's Kev's questions. You hear how he worked in Everybody Comes to Rick. That even got it in there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:33",
+      "text": "It was pretty strong. Kev's a professional."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:35",
+      "text": "He knows this is not a game."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:36",
+      "text": "This is not a game to Kev."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:38",
+      "text": "Kev is not playing a game. God damn. Damn. No third spaces for you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:44",
+      "text": "Denny's was our high school hangout. Denny's at 270 and Olive in St. Louis, Missouri. I ate many a tuna melt there. That was the spot that we would go. We got kicked out of the Papa John's at Pagemill Road. So we had to go, you know, we had to go somewhere else and Denny's was the spot. I really appreciated having that as like a hangout because we go there all the time. And that's basically like what all my high school hangouts were like. Was just going to some place that served her terrible food. We went to TGI Fridays a bunch. We went to a local version of TGI Fridays called Culpeppers. Those were. Those were kind of all the spots where I would hang out. The arcade, like that was. But that was like for special occasions. That wasn't like a hangout. And by the time we could drive, we weren't going to the arcade as much. So it was a little bit different, I think. So. Yeah, those are mine. What do you got?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "104:35",
+      "text": "We definitely used to go to the boardwalk. That had a huge arcade in Daytona Beach. Like the big, big boardwalk tourist type spot with like mat football field size worth of video games and stuff. So that was like a very."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:47",
+      "text": "That's awesome."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "104:48",
+      "text": "That was a very common place for me to hang out kind of through my earlier teenage years. And when I was playing two man beach volleyball, you know, on the beach. On the regular."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:58",
+      "text": "With your shirt off?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "104:59",
+      "text": "With my shirt off, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:00",
+      "text": "Of course."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:01",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:02",
+      "text": "Jean shorts."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:03",
+      "text": "No, no, like performance shorts of some kind."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "105:06",
+      "text": "I don't know what they were probably."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:07",
+      "text": "For JCPenney or something. I don't know, but. Or later Benetton or, you know, Banana Republic. The cutting edge."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:14",
+      "text": "Nothing says hot and sex Benetton shorts on the beach."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:19",
+      "text": "But later, once I moved out here, like my early 20s, it was going to Finnegan's Wake I don't know if you're familiar with that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:26",
+      "text": "I don't know that. Where's that? That's on coal. Is that like right by my house? Is that what I'm saying?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:32",
+      "text": "Right by your house. Finnegan's wake. You've never been to Finnegan's Wake."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "105:35",
+      "text": "I was kidding."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:35",
+      "text": "I know. I know where it is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:36",
+      "text": "Okay. Keys are club."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:38",
+      "text": "Also, like that was a. I don't know if I've actually been to either of those. And both are walking distance from my home. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:44",
+      "text": "What the hell, man? We Finnegan's wake for the meetup."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:48",
+      "text": "Yeah, we'll come by."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:50",
+      "text": "Maybe we'll do that. Thank you so much, Kev. Here's our final voicemail."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "106:03",
+      "text": "Escape back. Hey, this is Corey calling from Austin, Texas about Casablanca. This is from 1942. It's kind of a big deal. It's a classic, right? Everybody loves this movie, hate this movie because they've never seen it and they don't ever want to see it because it's been parodied and referenced for their entire lives and they're so sick of all the bad Humphrey Bogart impersonations. And oh, just like you couldn't walk into the mall back in my day. There's a store called Deck the Walls and it was filled with like Marilyn Monroe crap, James Dean cross crap, Humphrey Bogart crap, like standies and weird neon lighted posters and just the worst. Anyway, I avoided Bogart movies for decades. I just recently started watching them. I had seen Casablanca actually before I went on like a little Bogart journey not too long ago. Turns out Bogart's great. I love him. This isn't my favorite role of his, but it's an awesome movie. He's great in it. You know, there's other movies that I think are better but you know, like a personal opinion, you know, I don't want to start any beefs on the voicemails or anything about Casablanca. That's for damn. Anyway, I don't know tell you how great it is. It's really awesome. It looks beautiful. The supporting cast is fucking phenomenal. And yeah man, it's really cool. Recommend watching it if you haven't seen it. Don't be turned off that it's a Humphrey Bogart movie and who would Tilda Swinton play? I'm going to stick her as Peter Laurie's character."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "107:31",
+      "text": "Yes."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "107:33",
+      "text": "Because he could do no wrong. But I think it'll be a good role for her. All right, thanks for doing this fucking banger classic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:40",
+      "text": "Oh good."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "107:40",
+      "text": "Next. Even more exciting. Let's see. See you next week."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "107:44",
+      "text": "Love y'."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "107:45",
+      "text": "All."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:45",
+      "text": "I was worried he was going to hate this movie for some reason."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:48",
+      "text": "I mean, I think Peter Laurie is definitely. Is definitely Cory's kink, I think."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:52",
+      "text": "Yeah, that's a good call."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:55",
+      "text": "He works. He works. We did it, Jason."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "107:58",
+      "text": "We did it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:59",
+      "text": "Thank God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:59",
+      "text": "The classics. We can do them."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "108:01",
+      "text": "We can do them. We've got many multiple. We got multiple gears."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:04",
+      "text": "We got a lot of gears. Good to see Ben."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "108:06",
+      "text": "Really great to see Ben. An all time great podcaster."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:09",
+      "text": "Really, really good. What do you have to plug, my friend?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "108:13",
+      "text": "I mean, maybe folks should go watch Barack Obama's speech after. You know, the Amazing Grace speech. Yeah, it feels like it might speak to you on this week. I'm gonna. I'm gonna plug that. That's what I got. Amazing grace, Amazing grace. Amazing grace how sweet the sound."
+    },
+    {
+      "name": "Barack Obama",
+      "timestamp": "108:52",
+      "text": "That."
+    },
+    {
+      "name": "Barack Obama",
+      "timestamp": "108:57",
+      "text": "A wretch like me. I."
+    },
+    {
+      "name": "Barack Obama",
+      "timestamp": "109:21",
+      "text": "Samantha Picnic found that grace."
+    },
+    {
+      "name": "Barack Obama",
+      "timestamp": "109:47",
+      "text": "Cynthia Hurd found that grace. Susie Jackson found that grace. Ethel Lance found that grace. The Payne Middleton doctor found that grace. Tiwanza Sanders found that grace. Daniel L. Simmons Sr. Found that grace. Sharonda Coleman Singleton found that grace. Myra Thompson found that grace. Through the example of their lives, they've now passed it on to us. May we find ourselves worthy of that precious and extraordinary gift. As long as our lives endure, may grace now lead them home. May God continue to shed his grace on the United States of America."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:46",
+      "text": "And that's it for this episode of Escape Patch. I want to thank Jason and Ben for an amazing conversation. Next week we're joined by the co host of the Austin Danger podcast, Kenzo. We tackle another Hollywood classic, Sunset Boulevard. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and review wherever you listen to your podcast or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. Escape Patch is a tape deck podcast, John a production of H Industries. Our artwork is by Katcher and our theme music was composed by Scott Fritz and who's the Boss Music. The episode was edited and produced by me H. Thanks for listening. We'll see everybody next week. Okay, I just realized I completely forgot."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "111:50",
+      "text": "To write the the synopsis. Casablanca is the story of love found in the desert."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "111:56",
+      "text": "Yeah, yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "111:57",
+      "text": "Where the waters have run dry. One man's passions will be re kindled. As he meets up with an old flame in the bar that he runs. I don't know. That's as far as I got."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "112:07",
+      "text": "That's pretty good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "112:07",
+      "text": "That's pretty good, right?"
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "112:08",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "112:09",
+      "text": "So. So. So one thing, one thing."
+    },
+    {
+      "name": "Ben Rhodes",
+      "timestamp": "112:11",
+      "text": "Just."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "112:11",
+      "text": "We're. I'm gonna do it in post, so let me just. Let me hit the end of the synopsis, and then you guys can react, and then we'll. And then we'll jump to what you just said and then go from there. But. So. Or will they Casablanca or will they Casablanca?"
+    }
+  ]
+}

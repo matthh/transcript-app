@@ -1,0 +1,3521 @@
+{
+  "episode_number": 224,
+  "episode_name": "Colossus: The Forbin Project (1970)",
+  "dialogues": [
+    {
+      "name": "Tapedeck",
+      "timestamp": "0:01",
+      "text": "This, this, this is a tape deck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:18",
+      "text": "Hey everybody, it's H. And welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined as always, by my co host, Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "You know, let's hear about Colossus platform. Like, what are his policies? Like, you know, where does he stand and where does he stand on like marginal income tax rates?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:36",
+      "text": "And it's the return of dear friend of the pod, Tom Coates."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "0:40",
+      "text": "Like abs. I didn't think I would ever find abs boring, but you know, like, they are just inherently interesting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:46",
+      "text": "But we tackle the methodical 1970 AI warning bell colossus, the Forbin Project. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. And now, without further adune, Colossus, the Forbin Project. Okay, so how are we on mandates on having to spend time in awful places versus being allowed to do whatever the fuck you want? Like, is it okay, I'm leaving Twitter?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:36",
+      "text": "Oh, okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:38",
+      "text": "I replaced the app. I put the Blue sky app where the Twitter app was on my phone. So I just click in the same place and I see roughly the same thing and it seems fine."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:47",
+      "text": "Is that good?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:47",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:48",
+      "text": "Does that seem good?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:48",
+      "text": "Is that good?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:50",
+      "text": "It's good. I'm like, I'm like still in a. Like, I'm. I'm. I've now moved back to Blue sky from Threads because Threads was really not doing it for me."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:00",
+      "text": "No real time, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:01",
+      "text": "What's up?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:02",
+      "text": "No real time support. No real."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:03",
+      "text": "It's not the real time that's the problem. It's that the. The folks working on the ig, like algo writ large, like, are convinced that I am the most demented person who's ever lived. Like, they, they have correctly deduced that I am a middle aged dude because all I do is post pictures of my children and promos for this podcast. Like, that's it. That's all."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:25",
+      "text": "Timmy Trumpet. Timmy Trumpet Memes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:26",
+      "text": "All that's there. There's memes. It's just literal pictures of my children and a couple podcast photos. And they've deduced from this that what I want is like the most insane, toxic masculinity content in the world. Like, it's like, oh, do you want to go, do you want to go to a retreat? And I mean, I wish, I mean, I wish I meant porn, by the way. I wish it was just like, oh, like, you know, here's the thirst traps of bikini models. That would be, that would be fine. Like, what instead, what instead I'm getting is, do you want to go to a meat eating retreat in the jungle where you do ayahuasca and work on your startup crypto? And like, do you want to like, do an all day, like, dry rave? Sl AASA wellness? Like, and then so it's all that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:16",
+      "text": "What's the answer?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:16",
+      "text": "What?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:17",
+      "text": "Yes or no? Yes or no?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:18",
+      "text": "I'm not doing these things. I'm not doing these things. You can't even get me to go see a movie with you. You think I'm going to like some kind of forest to Emeryville?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:25",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:27",
+      "text": "Yeah. If I'm not going to, I'm not going to Emeryville. I'm definitely not going to see. I'm definitely not going to the forest Ayahuasca rave. So, yeah, so I don't know. And then on threads, the other part of the content is like, you know, Samantha died today. She was my best friend for 40 years. It's just like, it's just like that. This kind of like really sad, terrible people going through the worst day of their life, which, like, legitimately, like, I don't, I'm sorry for them, but like, I don't need an app where I log in and just see like the pain of strangers every day."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:58",
+      "text": "Weird."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "3:59",
+      "text": "So that's why you left Twitter?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:00",
+      "text": "So that's why I left Twitter long ago. And that's why I've left threads and I'm back on Blue sky because, like now more and more of my friends are there. I don't particularly love it. I'll say. And I think really for me, Discord is giving me all that I want. Right now. I just need Discord."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "4:16",
+      "text": "I'm having a, I'm in a sort of slightly crisis position with these things, personal crisis. Because, you know, I literally just started a foundation with Evan Padromo and Mallory Nodal called the Social Web foundation, which is designed to sort of promote and push forward, decentralized and alternate, well, you know, open social alternatives to Twitter and Facebook. But the, that foundation and Evan in particular are very focused on. This is so much detail you don't need to know. But like the activity pub protocol in particular and sort of the mastodon ecology and there are Some sort of, like, ethical questions. I mean, around Blue Sky. Like, it's. It's sort of decentralized, but hasn't decentralized. It hasn't actually properly federated. You can't really use an alternative client easily. No one else has set up an instance. So, like, there's a sort of like, really weird moment I find myself in where I'm like, advocating for Activity Pub, which itself seems like a very small niche, but now includes all of threads, which is now working to be compatible with it, which is like. So that makes an ecology of like 50 million people. But. But I'm not also, you know, not thrilled by the fact that 95% of that is. Is threats. It shouldn't be. It should be a more. More balanced ecology. And Blue sky is more fun at the moment. And it's more fun at the moment because there's more people in it, there's more options and choices around it and that kind of stuff. So, like, having said all of that, Blue sky is actually quite a lot of fun right now. And so the problem that I have."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:47",
+      "text": "With Blue Sky, I spent like an hour and a half the other day kind of seeding accounts. And it was funny remembering spending time on Twitter trying to get accounts going and figure out who I'm following and what's happening. And it was helpful to click on people that I follow. But it was also great that you had some packs, some starter packs that you had created, not just of, like, political folks."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:05",
+      "text": "Yes, the Tom Coates starter packs are really a clutch move right now."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:08",
+      "text": "Like the comics. Like, I immediately followed Bill Sienkiewicz. Like, that's like, hell yeah, my. My guy. But I did also, like, seed with, you know, many and like, all of my. All my political people that I follow. So it's like, it's instantly. It feels like Twitter again. Like, already it feels very political. And so I need to figure out some tuning to try and dial that part back just a little bit."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "6:30",
+      "text": "Yeah, it has. It has a nice vibe and there's a decent enough group of people there. It's all of these things, in the end, they come down to, you know, your sort of three things. Like, you're all the people there, what content are you being promoted? And like, is it. Is it. Is it tolerable? You know, like, is it just too offensive and awful? Right. Are you going to be abused all the time?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:56",
+      "text": "I love that. That's like the yardstick now is not, is it fun, is it engaging, is it tolerable?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:02",
+      "text": "Like, what is the Nazi quotient Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "7:04",
+      "text": "That'S best we could get."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:06",
+      "text": "How many slurs am I going to be called in an hour? What's the act of slur ratio?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "7:11",
+      "text": "Yeah, but there's also a cultural thing, right. So, you know, I think we all know that the sort of mastodon ecology is a bit."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:19",
+      "text": "Yeah, prim. Yeah, prim is a good fucking word for what the mastodon ecology is."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "7:25",
+      "text": "The thread psychology is sort of like. Which is sort of in principle the same one, but in practice, sort of arm's length is. I really hate the algorithmic stuff they're doing there. It's just toxic as hell."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:35",
+      "text": "It's like the dregs of, like, influencer driven. Yeah, it's just like getting. It's just getting like, Logan, Paul, like, you know, in. In short text form or something like it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:48",
+      "text": "Maybe we'll get. Maybe these are, like, interesting opportunities to see things change and to see people, like, literally say, like, we're gonna make a. I mean, it's a big deal to look at leaving a platform that you're on for 10 or 12 years or whatever and. And go somewhere else."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "8:03",
+      "text": "Didn't used to be."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:04",
+      "text": "Yeah, but, like, you know, like, as. As web olds, like, you always just go, there's always new places. Like, you know, like the. Like the. You know, we always. We always find new places to go. None of the. None of these places are meant to be permanent. There's inherent, like, some of them. Yeah. Maybe lasted 15 years or whatever. And, you know, maybe the reasons that we left weren't entirely of our own volition or weren't entirely of our own choosing, per se, but, you know, it's. It's, you know, where there's always. There's always a new place to go. There's always a new thing on the horizon."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:38",
+      "text": "Isn't. Isn't this, like, an area where. Where I actually could be helpful? Like, if I had a personal AI."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "8:45",
+      "text": "Prof. Is the wrong podcast to argue for AI."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:48",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "8:49",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "8:50",
+      "text": "Like, what if we had a supercomputer in a mountain that determined what content we should see? Would anything go wrong with that?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:57",
+      "text": "What about just what content I want to see? So, like, I understand that, like, you know, Elon wants me to see certain stuff, and they're pushing these. This algorithm."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:05",
+      "text": "That's what the algorithm feed is, dude."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:07",
+      "text": "No, no, but what if I have my feed that is looking out for me and is saying, like, I'm going to get all that toxic shit out of there? Even like, if. If you can't trust Twitter. Trust and safety because they Fired everyone and they're no longer there. Well, this is, I will be your personal trust and safety optimism."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:23",
+      "text": "This is the novel concept in Blue sky is that like there's going to be a marketplace of algorithmic sorting and a marketplace of feeds and people are going to be able to offer different type of ways in which to present the content and you're going to be able to like opt into like you know, someone, you know Tom's ver, you know, Tom's offering these starter packs is like a version of that. Like that's like more follower account related. But the, the, the timeline related idea in Blue sky is that you're going to be able to opt into. Oh no, no, this is like an algorithm. This is like a way of sorting that you know, we've come up with and like has these rules and like in theory should provide what you're talking about."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "9:58",
+      "text": "But, but I think there is something that, to what Matt's saying that I mean, I don't know which is, which is. And it's a quite an old idea, right? Like this sort of agent based ecology. People were talking about this like 15 years ago. This is like you know, tech gray beards as our hair either evaporates or whitens. We all, we will come here to talk about things that happened in tech 15 to 20 years ago. But you know, like people like Matt Jones who actually we'll talk about later is like the guy who introduced me to this film, he was talking about agent based environments where you would like have little vestigial eyes who you would send off to do tasks for you effectively. Yeah. And this was a quite a big concept like 15, 16, 17 years ago. And it does make sense to me. I mean like if I could sit there and talk to ChatGPT or you know, some version of it and say okay look, I don't want any fucking homophobia, I don't want any anti Semitism. I am interested, you know, like I still view. My views on Gaza are complicated. There is, I really want to hear about from these kind of people if I haven't heard from someone from a while, flag it up, you know, know. And it went out there and ranked everything based on what I liked. And then you know, personally, rather than me choosing something online, that's not a terrible idea. I mean in some ways it's a terrible idea because this is the, that argument about echo chambers. But, but in terms of like my choice of what I want to consume, I mean inevitably you choose who you want to consume, whose content you want to consume that is inevitably a filter on the world. You don't get to see everything. So, you know, in that respect, it makes sense to me. Right? Like, and it's interesting that we might operate in a world where the feeds we get are actually tailored for us and not tailored for engagement."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:52",
+      "text": "Yeah, yeah, I think that's true. I think that's true."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:55",
+      "text": "So, AI good, Tom, you're on board. Okay, great. Jason, go ahead."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:58",
+      "text": "What do you want?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:59",
+      "text": "And then let's start talking about this movie we're going to get into."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:02",
+      "text": "Okay. Closing thought is that, like, these platforms are inherently transitory, and this will not be the last time we move places and find new things. I would like to close this discussion with a quote from one of my favorite pieces of literature, Tom Stoppard's Arcadia, in which he says, and this is a long quote we shed as we pick up, like travelers who must carry everything in their arms, and what we let fall will be picked up by those behind. The procession is very long and life is very short. We die on the march, but there is nothing outside the march, so nothing can be lost to it. The missing plays of Sophocles will turn up piece by piece or be written again in another language. Ancient cures for diseases will reveal themselves once more. Mathematical discoveries, glimpsed and lost to view will have their time again. You do not suppose, my lady, that if all of Archimedes had been hiding in the Great Library of Alexandria, we would be at loss for Corkscrew?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:57",
+      "text": "Wow, that's very uplifting. And hope, like, hopeful."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "13:00",
+      "text": "Yeah. I mean, and also apocalyptic, you know, yes. At the same time, yes, the Library."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:05",
+      "text": "Of Alexandria burned, it turned out. But, yes, you know, and that there."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "13:10",
+      "text": "Is nothing outside the slow march to."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:12",
+      "text": "Death, outside the march of which we die, which is. I mean, that's just empirically true. I got bad news for you, if you think."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "13:17",
+      "text": "I mean, sure, but it's not fun. Sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:21",
+      "text": "But we could find other stuff. It'll be rediscovered. Other people will come and pick it and pick it up, like, you know, at least. At least for a while."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:27",
+      "text": "Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:28",
+      "text": "Okay. Well, yeah, so. So a good uplifting start to a really uplifting film. Tom Coates, welcome back."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:35",
+      "text": "Yeah, welcome back. Tom Coates. Thank you, Podcast mvp."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:39",
+      "text": "Yes, we are thrilled to have you here. Last time you were scheduled to come on to talk about this film, you get deathly ill. And so we are glad that you are well and returned to us. But we're covering the 1970 classic AI warning Colossus, the forbidden Project. So that is very Exciting. And we're going to be getting to that at the bottom of the hour. Before we. Jason, next week, what do we got next week? Well, let's start with a guest host. I mean, we are really going back to back superstars here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:18",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:19",
+      "text": "We have next week the platonic ideal of a genre podcaster."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:24",
+      "text": "Yep."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:24",
+      "text": "A true queen, beautiful and wonderful. Co host of the house of our podcast."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:30",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:31",
+      "text": "Joanna Robinson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:33",
+      "text": "Yes. I thought you were going to do, like, the whole galadriel quote for her."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:36",
+      "text": "I did enough. I did enough."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:37",
+      "text": "As terrible as the Dawn. Yeah. And speaking of, what movie will we be covering with her?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:44",
+      "text": "Well, so we were supposed to do Iron Giant, which, as you know, I want to do, and we will do in the fullness of time, but it is the holidays and Rings of Power is over. So this is a gift and we are going to be opening it. We are doing the Fellowship of the Ring."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "15:05",
+      "text": "Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:06",
+      "text": "The Fellowship of the Ring."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:08",
+      "text": "Wow. That's a pretty good movie. I haven't watch a while."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "15:12",
+      "text": "The original or the. Or the good version?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:14",
+      "text": "The long one we're doing. We're doing the animated one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:18",
+      "text": "Back sheet. Yeah, yeah, no, we'll be doing. We'll be doing the extended Edish, which is what she likes. I prefer. I prefer. Prefer the Peter's preferred version, which is the theatricals. But we won't. We won't worry about that for now. So that's next week. Get ready, folks. Joe. Oh, my God."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:37",
+      "text": "Yeah, that's great. Very excited."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:40",
+      "text": "Can we do some quick Hatch news?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "15:42",
+      "text": "Would you like to know more Hatch news from beyond?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:47",
+      "text": "My voice is a little fucked up, so apologies."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:50",
+      "text": "Yeah, you are effed up. I finished Peaky Blinders."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "15:54",
+      "text": "Oh, congratulations. I'm glad that this counts as Hatch news. Matt finished it. Matt finished a television show."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:00",
+      "text": "Tom, have you seen this show?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:03",
+      "text": "I have not seen Peaky Blinders. There is a. There is a fundamental flaw in my personality. I have come to realize. Well, no, actually. Well, to some extent, you don't like British people. You're British. That is very true. But you're English."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:17",
+      "text": "You're from England."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:19",
+      "text": "I find actual dramas involving human beings unbelievably difficult to watch. Whereas anything that's. That's tweaked so that I could put a bit of emotional distance. I'm absolutely love. Like, I can't watch any gay movies, even though I'm a longtime homosexualist."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:37",
+      "text": "Right."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:38",
+      "text": "So queer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:38",
+      "text": "Alfonso Luca Guadagnino's Queer, starring Daniel Craig."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:43",
+      "text": "I'm not going to watch it. It's too hard. I take them. They're so fucking. They're so personal. They hurt me so much I can't really watch it. So I like. I don't. I try to avoid generally watching drama without spaceships, dragons, or hot boys. And the more time travel."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:55",
+      "text": "Okay, fair."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:56",
+      "text": "So, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:57",
+      "text": "Gotcha, gotcha."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "16:58",
+      "text": "But I'm a very serious person and people should listen to opinions."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:02",
+      "text": "Okay, that makes sense."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:03",
+      "text": "Tom, I will say at least 40% of Peaky Blinders is Killian Murphy in slow motion, drinking whiskey, walking, and smoking cigarettes. So that at least is a very, very big plus. Second piece of do news, Jason. I also started a TV show. I started watching disclaimer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:21",
+      "text": "All this time you have on your hands. Oh, I hear that's good. You told me it was good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:24",
+      "text": "Alfonso Cuaron, Our King."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:27",
+      "text": "Guys. Gravity win on the pod."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:31",
+      "text": "When I've only watched it once."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:33",
+      "text": "Me too, in the theaters. And it was great. But I am dying to revisit that film. So check it out. It's Alfonso Cuaron with a big budget doing stuff on Apple tv, doing big boy things. Yeah. And Cate Blanchett, Sacha Baron Cohen, and for some reason, Kevin Klein playing a British person."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:51",
+      "text": "Yeah. Well, he does that. He's fun. He's fun doing that."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "17:53",
+      "text": "Americans shouldn't play British people."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:55",
+      "text": "Oh, sometimes it's fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:57",
+      "text": "Yeah. You get to play us all the time. Give me a break."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:00",
+      "text": "That's because we're better actors."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:02",
+      "text": "Well, the. The real. The real. As we. I mean, maybe we've discussed this before. The reason why. Amer. The reason why Brits can get away with playing American so well is because, like, the American accent is much more fluid than the British accents are. And the British accent is so."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:17",
+      "text": "No, no, no, no, no."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:18",
+      "text": "That, like, you can't be just you. If you're slightly off, you immediately get. You immediately get clocked as like. Oh, like this. Like this person would never say that thing."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:27",
+      "text": "Oh, okay. There's some truth to that. I will grant you that America, the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:30",
+      "text": "British accent array is so much more hyper specific."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:34",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:34",
+      "text": "Than American accents are."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:36",
+      "text": "But the other reason is. And the reason it's the same reason New Zealanders and Australians and British people can all do American accents is because we watch a lot of American TV and you do not watch a lot of British television."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:46",
+      "text": "You're welcome."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:46",
+      "text": "Well, maybe. Maybe it's changing, though, because now we've got like this generation of kids that grew up on Harry Potter. Maybe these little kids. The pig. Exactly."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "18:54",
+      "text": "Here's a fact I found out. Apparently Bob the Builder, which is a British TV series in America. Bob the Builder has an American accent. This blows my mind."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:01",
+      "text": "Here's. Here's. Here's a related point. Our nanny is Irish. And. And so the other morning, there was garbage day, and Griffin ran to the window and was like, dad, there's a huge lorry outside the window."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "19:19",
+      "text": "Excellent."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:20",
+      "text": "I was like, a huge what? He's like a lorry. I was like, okay, well, just let this one go."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "19:26",
+      "text": "One child at a time. We will take back America."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:29",
+      "text": "Yeah, exactly. The recolonization begins."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:32",
+      "text": "Yeah. And coming from Australia with Bluey, like, we're surrounded."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:37",
+      "text": "The Commonwealth responds, coming to get us."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:40",
+      "text": "Please take it back. Just do, by all means, like, help. Help. Do what you please."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "19:47",
+      "text": "I mean, my lot have not been that great recently either."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:49",
+      "text": "Although, listen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:50",
+      "text": "No, no. Yeah, no. Turns out it's tough all over. 2024 is not. Not going great. Jason, I am ready for your update on Dune Prophecy, episode three."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:01",
+      "text": "I watched it this morning because I knew you did. I knew you were going to be all, yes, okay, up in your grill. Yeah, you're gonna be, like, cantankerous about it because I texted you that last night that I wasn't gonna get to it. And I was like, he's just gonna make a whole thing out if I don't get to it. I might as well just watch it. So I did. And I don't know about the show, man. Like, I like. Like, I actually like so on in the plus columns. Robert Baratheon's in it. That's a. That's a big plus that Eddie's great as, like, cantankerous. I guess cantankerous is the word of the day. Old Harkonnen. Love him. Delightful. Loved the culling of the Atreides. Like, I thought that was like, a real, like, cool scene and whatever. That's all I got, positive wise, I think to say it just feels like. And like, it's. It's a tough show where there's only six episodes. It's kind of got an acolyte problem where it's like, oh, we're gonna go back to, like, cover some they had 30 years ago. And, like, I'm not even really invested in the people that are in the present time. So, like, that's a tough sell. I feel it felt. This felt very acolyted to me. Not only because there is a actual acolyte, but, yeah, that was my take. What'd you think?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:17",
+      "text": "At 29 minutes, my. My notes just say, I hate this show. I was like, this is bad. Like, right up until the sex scene. And then I heard what the guys were chanting outside and I was like, oh, wait, what did they chant outside Atreides?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:31",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:32",
+      "text": "And I was like, I mean, they got me. Like, I didn't, I didn't realize what was happening. And I felt we knew they were."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:37",
+      "text": "Atreides at that point already though, did I was, I, I was okay. Somehow I may like, spoiler."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:44",
+      "text": "You're a smart person. No, you're a smart person."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:47",
+      "text": "No, I'm, I don't know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:48",
+      "text": "There had may have been a trailer. You'd maybe seen the forest with the bull."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "21:51",
+      "text": "So you, I, I saw they got. So that didn't seem like a big reveal to me, I guess, unfortunately. But that was cool. It was cool."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:57",
+      "text": "I got, I got got by that. And so I was like, all right, this is good, this is good. But. And then the reveal at the end, which to me like, we're going to go, this is a Dune podcast. So like, if you don't want to get the spoiler for most people, it probably won't even register. But you can always use your chapters to jump to the movies if you want to skip or just jump a minute or two ahead. But the reveal that at the heart of the Bene Gesserit breeding program is a literal thinking machine, not like a computer, not like a really smart calculator, a fully AI talking machine. That's a big, big game changer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:38",
+      "text": "Yeah, that was cool. That was cool. I, I, I, I think in the moment I didn't clock how significant a reveal that was because I was just like, oh, it's a science fiction. And maybe I was already just like, because I came right off watching Forbin, I was like, yeah, these AIs are just screwing everything up. And but it is cool. It is, it's somewhat akin to the reveal of like how the GOA tanks work, you know, like in, in whenever that's revealed Chapter House or something. And so it's just like, oh yeah, like this is actually like this technology that you thought was just of a thing is actually a much more sinister piece of business."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "23:10",
+      "text": "But it was also, it reminded me a lot of season two of foundation in the end of that as well. Yeah, of course it's been a really, I mean, I've been watching the show as well and I have to tell you, I am very, very, very conflicted about it. Like, I think about like a third of the way. Well, about 2/3 of the way through the first episode, I was like, I don't care about any of this. And then I kind of felt like the second episode was like all over the place. And half of it I was kind of engaged in, and the other half I was like, I feel like I'm just watch. I'm observing meetings in meeting rooms at Google, you know, that would just be like someone would come in and go, if we don't release, you know, some fucking AI thing in. In this period at this time, then we're not going to meet our Q3 targets. The other one goes like, you know, I was just like, why do I care? But like, the other half was kind of better. This one I kind of mostly enjoyed. Okay, but like. But, you know, and it's because I actually think I prefer her sister to value herself. But, like, wonky, though. Wonky show."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:11",
+      "text": "Two things that are worth calling out. Our dear friend Matt. Karen was saying that Nin Dunatic was saying that he. In his mind, Tula is emerging as kind of like the more central character as opposed to Valya. And I think that's great. Olivia Williams is great. The young Tula is great. This episode was awesome for her. So it's really fun to see her kind of coming a little bit more into the forefront."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:36",
+      "text": "What do we most know her from? Is it Rushm? Is that like the big thing for her?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "24:41",
+      "text": "I mean, she's been in millions of things, but, like, she's never really necessarily been. She's not often. I mean, she was in Counterpart, for example, I think, and she was amazing in Counterpart."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:49",
+      "text": "Wait, what's that?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "24:50",
+      "text": "Oh, Counterpart. You have to see that. That's like the two line summary is there's a cold war between Berlin and parallel Berlin. And with J.K. simmons is the main character in it. He's gone two different ways. That's great. That's really interesting. She was also in Dollhouse. She was the baddie in Dollhouse a million years ago."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:08",
+      "text": "Oh, wow. Dollhouse was good."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "25:10",
+      "text": "Dollhouse is interesting, certainly by he who."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:12",
+      "text": "Should Not Be Named."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "25:13",
+      "text": "Yeah, yeah. And she's just been like. She's just sort of significant in like a million things, but I don't know that you would. I don't know how many shows they've, like, hung around, hung on her, which is a shame because she is sort of. She's. She's great, but she's also like, distinctive looking and she looks kind of possessed and self. You know, like, there's so much going on in. So you can see on her face. It's. She's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:36",
+      "text": "Yeah, she's very strong. Very strong. So, yeah, I. I mean, we'll see. We only have three episodes left. I. There's a lot of action stuff happening, so, you know, maybe. Maybe it'll be exciting when we get there."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "25:48",
+      "text": "The pony bits are a bit pony."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:49",
+      "text": "It's a little. This one was unnecessarily. So lame."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:53",
+      "text": "Yeah. Yeah, it's a little."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:56",
+      "text": "But also not hot. This was not hot."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "25:59",
+      "text": "No, it's. I mean, it's amazing how many things they made boring. Like abs. I didn't think I would ever find abs boring, but, you know, like, they are just inherently interesting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:09",
+      "text": "But, yes."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "26:10",
+      "text": "Pretty."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "26:10",
+      "text": "Pretty damn boring."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:12",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:12",
+      "text": "All right, last things on Hatch News. I'm cooking something up. Jason. Okay, so everybody stay tuned. There's something exciting that's going to be happening in the discord."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:23",
+      "text": "Oh, Jesus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:24",
+      "text": "And if everything works out, I'll have some details. That."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:26",
+      "text": "That's what we. That's what we call just a naked tease. Like, no. No information whatsoever."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:32",
+      "text": "D. Yeah, so. So stay tuned to see that second tease. And we need quick responses from people on this one. You guys think I. I get after those voicemailers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:41",
+      "text": "Jesus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:42",
+      "text": "We are going to record the first annual Escape Hatch mailbag episode."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:49",
+      "text": "Yes. I just love. I love that we can't just do, like, it's like. It can't just be like we're doing a mailbag episode. It's like the inaugural."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:57",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:57",
+      "text": "Escape Hatch Yuletide episode of Male Spectacular, featuring special guests, prizes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:09",
+      "text": "When you have to have an episode, but you don't want to watch another movie, and you just. You just answer questions. It's great. Mailman."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:15",
+      "text": "What if no one has any questions?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:16",
+      "text": "That'll be a big problem for us. So we're looking to. We're looking to you, Discord. We're looking to you listeners."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:24",
+      "text": "Otherwise, h is just going to interview me and, like, no one really wants that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:28",
+      "text": "Definitely not. So. So we need your letters sent to lettersecapehatchpod.com and we need those by Tuesday, December 10th. So if you're listening to this podcast on Monday, when it drops, you have one day, but send us a quick letter, anything you want to know, Things you've always wondered about us, and we're gonna get vulnerable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:51",
+      "text": "Doesn't have to be a voicemail. No, it doesn't have to even be in fully formed English. You can use chat GBT for this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:59",
+      "text": "Oh, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah. So. So get those. Get those to us and get that done. We would love to. We would love to. To hear what you have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:06",
+      "text": "As our voicemailers know, if you don't do it. H is going to show up at your house like some kind of bad Santa and make you send us a question."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:14",
+      "text": "Bring it. Bring it. Our new Discord members in the last week. Busy week. Val, Secret Chimp, Brit Defay, John Holm, Mosac, and Breeze."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:27",
+      "text": "Yeah, welcome. I really appreciate everyone when they join, when they post an intro. It's really like, the most exciting thing for me is when someone joins and that happens. Yeah, like, I like. Like, it is legitimately fun for me every time to see, like, what people hear the show, like, how they found about it, what their favorite episodes are. I love it when people join. I love, especially when people join and post an intro. I've said this before, and I'm just going to make this point again. Like, I'm doing the podcast so that people join the Discord. Like, that's. That's what's in it for me is, like, I want people, the Discord to be awesome. It's already awesome. The more people that join, it makes it more awesome. And so I am doing it because the Discord is the place that I like to hang out online. And so it's just awesome because we're talking about algorithmic sorting and, like, you know, what you can do to get stuff brought to you. My algorithm is the Discord. Like, people like people because they listen to this podcast. Like, they sort of know the stuff that we're into, and the people who are into the Discord are into, like, similar stuff. And so there's just sort of a natural affinity group of people bringing things that, like, they know other people in the community are going to dig. And, like, that is the timeline that matters most to me. And I'm able to post things like I would never be able to post publicly. Like, not because they're, like, you know, not safe for work or anything like that, but just because, like, I wouldn't want to get into a whole unnuanced discussion about it on the public interwebs. So, yeah, like, I'm happy for everyone who's listening this episode right now. Thank you so much for listening to us discuss this 1970s movie that not that many people have seen. If you're listening to this episode, if you're listening to Colossus, the Foreman Project, and you're like, oh, that's a movie I vibe with. I wonder what they have to say about it. I guarantee you're gonna like the Discord, so come check it out."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:10",
+      "text": "Yes."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "30:11",
+      "text": "Can I just say how. How proud I am that you've allowed me to destroy your podcast by choosing the most hard to get access to and least well known movie of all time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:21",
+      "text": "Yeah, I will. I'm. I'm not going to say who, but someone sent me a link where I could watch it. I ended up watching this movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:28",
+      "text": "I bought a piece of plastic and had it shipped to my house with a laser to decode it with a laser."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:33",
+      "text": "So we all have different journeys to Colossus, the Forbin Project. But the important thing is we're here now."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:38",
+      "text": "Hell yes. All right, are you guys now ready to talk about this film?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:45",
+      "text": "Let's go. Let's go."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:48",
+      "text": "All right, here we go. Colossus the Forbin Project is the dangerous potential of placing our destiny in the hands of men whose unchecked power is matched only by their limitless hubris. In a terrifying vision of the future, Dr. Charles Forbin and his team of computer scientists have been tasked by the President of the United States with creating an invincible artificial intelligence that once enabled, will have exclusive command and control of the US nuclear arsenal. Theoretically, to ensure our survival by removing human emotion and decision making from the equation. But once online, this new system quickly detects its own Soviet counterpart and establishes their own pact to unite their forces, attaining new heights of intelligence far beyond human comprehension and placing their creators under surveillance and immediate threat of annihilation for any lapse of obedience. Now, faced with the knowledge that they have forever lost control of their own destiny, will humanity learn to love their digital overlords? Or will they forever curse the man who created Colossus, the Forbin project."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:05",
+      "text": "Colossus, the Forbin Project. That's good. It's really well done. That's good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:12",
+      "text": "Thank you. Tom, what is your first history with Colossus?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "32:19",
+      "text": "Okay, so I've been pushing for you guys to do this movie for a while because of how impactful and interesting and strange it is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:27",
+      "text": "Pre Gattaca."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "32:29",
+      "text": "Pre Gattaca. Yeah, right back where we were talking about, you know, like Chekhov's penis. All of that stuff."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:37",
+      "text": "That's a deep cut."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "32:38",
+      "text": "Deep cut. Well."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:39",
+      "text": "Or uncut."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "32:40",
+      "text": "Yeah, well, thank you for saying anyway. Yeah, no, this is a movie that I did not come into contact with in any form for a really, really long time. Like, it's just not talked about in the media. It's not like on people's lists of the most interesting sci fi movies or anything like that one. It's the kind of movie you find out about because, you know, like a friend, like in a bar at night says, hello, hey, do you want some of the good Shit, you know? And you're like, yeah, okay. They're like, do you want some really underground sci fi from the 70s? And you're like, yeah, okay. And that's what happened. Like, there's this. A designer friend called Matt Jones in the UK used to operate as black belt Joe and stambulator on various social networks. An old colleague of mine at the BBC and worked on BBC news, stuff like that one sort of emerged one day and sort of said to a bunch of us, have you guys seen this movie? No one had, you know, so this must be 20 years ago. And we were all like, what the hell are you talking about? No, no knowledge of this film at all. And again, similarly, then it was pretty hard to get hold of, you know, and. And I think I. I think I must have torrented it at the time. You know, this is 20 years ago. I'm sure there's like a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:58",
+      "text": "Right."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "33:58",
+      "text": "You know, I'm probably not legally liable anymore, but I think I probably torrented it in like the late 90s. Well, 2004 or 5. I watched it and was just like, this is surprisingly brilliant. This is like. This is weird as hell. There are some very strange bits in it, but this is kind of. Kind of intense. And. And then, like, you know, like, as time passes, you, you know, like, you move on to other stuff and you. But like. And then in the last sort of four or five years, obviously things have sort of reemerged. Right. The world has shifted and changed. The question of machine intelligences is now much more visible and visceral and right there than it ever has been. And. And this movie has. And then like. And again, like five, six, seven years ago, shows like Person of Interest came out and Westworld came out. And then like, more recently, Mission Impossible, Dead Reckoning. And in retrospect, this film has just sort of taken a larger. Yeah, Mrs. Davis, absolute brilliant example, has taken a sort of larger and larger sort of presence in my head as like a sort of foundational, influential movie about Rosetta Stone. Yeah. About this whole territory. And again, when you. We'll talk a bit more about this in a minute, but when you dig back in it, it's so early, you know, for this stuff, it's like 1970, right? There are almost, you know, there are a few movies before that of, like, you know, there's some. Some like right Back to Metropolis, right? There's some robots with int. And, you know, like Rossum's Universal robots and stuff like that. But, like, in terms of an intelligence that takes over the world. There's like a couple of episodes of Star Trek, there's a couple of, you know, 2001 very well known books. You know, there's 2001 for Hal, but again, that's not like taking over the world in some kind of way. This is such a sort of foundational, impactful thing and it's sort of. And as we progress into this new era of whatever the hell we progressing into, I find myself keep coming back to this movie as like eerily prescient, really foundational, extraordinarily strange in places, really odd and of its time and also weirdly timeless. And so that's why I've kept pushing for us to talk about it. And I'm so glad we're here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:22",
+      "text": "We're doing it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:22",
+      "text": "We're doing it. We are doing it. Ed and, and Jason. You had not seen this before, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:27",
+      "text": "Never seen this movie. I somehow like had been gotten the impression that this was like a classically bad movie, that this was like sort of a like MST3K movie, I think, because they do. I think There is an MST3K about classes, the Forbin project. But like, I was like, oh, like, it must be like, man, I was the hands of fate. Like, it's like an old science fiction movie that sucks, but like is fun or whatever and really fun. Didn't know. Yeah, I didn't. I thought it was like a goof. Like I did not know what the concept was and did not know really anything about it until I sat down to watch it last night. It's one of the rare examples on this pod where I just went in almost completely blind and was really delighted. From the beginning of the movie, like from the title sequence, I was like, oh shit, they're onto something here. Like they've got an idea, they got circuit boards and shit. Like, this is going to be a. But this is gonna be a banger. And so, yeah, was a real pleasant surprise finding out that this was the movie of the week."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:28",
+      "text": "Awesome, awesome. And I saw this film as a kid, really. And we'll get around."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:35",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:36",
+      "text": "And we'll get around to the 70s and this brand of sci fi, which I was definitely consuming as much as I could get, but I just had sort of impressions of, you know, the big computer rooms and a mountain fortress and. And some image of the surveillance. I forget who. Somebody, somebody pasted that, like the, the shot of Forbin's head in the circle with the, with the computer writing on the side was like burned into their brain there's something in there. I didn't remember it very well. I just remembered something about a computer getting out of control and taking over the world. But it's kind of amazing that that just sort of has been rattling around in my head for 50 years and now is suddenly popped."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:20",
+      "text": "Now is free. You've reached something."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:23",
+      "text": "Exactly. So this was based on the novel Colossus by D.F. jones. And there was actually a trilogy. And we'll talk about the trilogy when we get to the end of the movie and we talk about the end and kind of where things go from there. Because this, from as far as I can tell, this is a pretty faithful adaptation of what was in the book originally. The producer Stanley Chase, he kind of had been pushed to do Charlton Heston or Gregory Peck as Forbin. And he really did not want to do an established character, he wanted an unknown. So he turned to an actor who was so new that he was still going by his birth name, Hans Gudegast."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:07",
+      "text": "Hans Gruber."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "39:08",
+      "text": "Wow. Yeah, it's a great name."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:12",
+      "text": "Great name. So they had him change it to Eric Braden."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "39:15",
+      "text": "Jesus. Go work as an accountant."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:17",
+      "text": "Well, the studio was like, they will not hire a German person to lead a Hollywood movie. It just can't be done. So, so he. And I was like. When I was watching it, I was trying to remember what the hell this guy's accent was because he has a very weird."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:30",
+      "text": "I thought he was like Dutch. I had to look immediately. I was like, he was giving. He wasn't giving German to me. He changed his name from Beckwerke to Liebe."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:39",
+      "text": "Exactly. So he, he, him being cast allowed Heston to return for his contract. His contractually obligated appearance for Beneath the Planet of the Apes, which I don't know if you remember that one. That's the one that's like. There's like the race of like MUT mutants underground and they have a nuclear bomb."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:59",
+      "text": "And so I haven't made it into the depths of, of, of those."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:03",
+      "text": "You would think we would get a Planet of the Apes on here eventually."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "40:06",
+      "text": "Oh, that would be good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:07",
+      "text": "The new ones, people love the new ones, especially new ones are amazing."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "40:10",
+      "text": "Yeah, absolutely amazing. Without. They are not a single bad film."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:14",
+      "text": "Yeah, yeah, yeah, yeah, yeah. I've not seen the very last one. I need to see that. I need. I finally watched the third one and. And then now I need to watch the fourth one. So one thing super interesting here. When executives at Control Data Corporation found out about this film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:29",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:30",
+      "text": "They supplied free of charge $0.04 worth of computer equipment and the technicians to oversee its use. But since they were using real computers, not just boxes with flashing lights, the soundstage had to go, like, extensive modifications with gas heaters, five specially constructed dehumidifiers. Like, everything was covered all the time except for when they were shooting it. And they had Brinks guards present on the set at night to make sure that nobody messed with anything."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:59",
+      "text": "I'm glad. It seems like it was worth it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:01",
+      "text": "It looks verite. That shit looks amazing."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:04",
+      "text": "It did. I mean, the production design is just extraordinary. And again, as you say, like, it's lots of real places and locations like that apparently isn't the. The main place that the they. When they're overlooking the Pacific."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:17",
+      "text": "Lawrence Livermore."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:17",
+      "text": "That's like. That's just in Berkeley, isn't it?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:19",
+      "text": "It's just."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:20",
+      "text": "Yeah, yeah, yeah, yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:21",
+      "text": "I kind of really want to go there."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:23",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:23",
+      "text": "Really nice hike over there."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:26",
+      "text": "Who hikes?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:27",
+      "text": "Not me anymore, but younger people."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:29",
+      "text": "People with."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:30",
+      "text": "Good for your abs, Tom. It's good for your abs."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:32",
+      "text": "I don't give a about my abs. It's other people's abs I'm interested in."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:35",
+      "text": "You might see someone else's abs on the trail."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:37",
+      "text": "Interesting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:38",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:38",
+      "text": "The budget for this film was $2 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:42",
+      "text": "Seems like a bargain, right?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:43",
+      "text": "Yeah. 170."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:45",
+      "text": "Yeah. Pretty good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:46",
+      "text": "I mean, it only involves, like, two locations, so."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "41:49",
+      "text": "That's not true. They go to Rome."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:51",
+      "text": "That is true. They did get a little trip to Rome in the middle of it. That's actually Toronto doubling as Rome."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:59",
+      "text": "Would it surprise you to learn that the opening weekend of this film raised $7473?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "42:07",
+      "text": "Not sure."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:08",
+      "text": "You could see. You could see why the movie is so. Well, like, why they are so, you know, jealously guarding the IP of this movie and not wanting to see it because it's made such a fortune that they're concerned that if it was this, like, more freely available, like, you know."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "42:22",
+      "text": "I have 100% destroyed your podcast with this terrible, terrible idea for. Anyway, continue."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:27",
+      "text": "The worldwide box office for this film was $300,000."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "42:32",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:33",
+      "text": "So it. It did not. It did not work. So that's why we didn't get any sequels."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:38",
+      "text": "Sadly, I have not contributed to its return."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "42:40",
+      "text": "Still. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:43",
+      "text": "Other box Office Films in 1970, Airport, Butch Cassidy and the Sundance Kid, Beneath the Planet of the Apes, Mash, the Bird with the Crystal Plumage. Classic Early Bat and Spider Episode and Five Easy Pieces."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:01",
+      "text": "Oh, that's a good one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:02",
+      "text": "Jack Nicholson."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:03",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:04",
+      "text": "Want you to put it between your knees."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:05",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:06",
+      "text": "All right. Tom."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "43:08",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:09",
+      "text": "Your first point on Colossus the Forbin project. Where do you want to start?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "43:14",
+      "text": "Now, I had a real trouble thinking this through because like lots of this movie for me is. There's just so much in it and so many things to say. But it's, there's a lot of gestalt feeling to it. To me, like, you know, the things that I care about, like, are to some extent the film itself, a lot about the influence, a lot about the impact it had or the way it sort of resonated through all the questions it asks. But I think the thing I want to talk about, start off with is sort of back to the sort of production design and this vibe."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:45",
+      "text": "Right, Great."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "43:46",
+      "text": "The thing, the thing I found really interesting about it and again, like, I'm going to find it quite hard to talk about the specific things that happen in the movie. So I hope you are going to do that because I'm all up here in the, in the, in the high concept bubble. But like this film is just, it's just, it's like out of time and the most timely and the most of its period thing I've ever seen. Right. Like this is the, the feeling I got from it. It starts with this whole kind of this, this section where he's like wandering through this, this mountain of computers and then sealing it up. And bits of it feel straight out of Forbidden Planet, right? They feel like, like late 50s, early 60s, ultra kind of like humming computers underneath ground. Super retro. So one of the things that are."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:35",
+      "text": "Coming, that are coming down like those are those lights coming on."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:40",
+      "text": "Oh yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "44:41",
+      "text": "They're like shields or barriers or protection."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:43",
+      "text": "It's the gamma radiation that protects. He says there's barriers of gamma radiation to prevent interference and turn people into the Hulk, I guess."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "44:52",
+      "text": "But I, but I remember looking at that scene the first time I saw it. I was like, this is straight out of Bitten Planet. And this time when I was watching it again, I was like, this just looks like a server farm. This looks like exactly like this. It's a really big room full of computers that go on forever in every direction in corridors. You know, there'll be halon gas emitters in the ceiling. You know, we've all been to these kind of places through our work. Like this looks, you know, like this looks simultaneously super 50s and 60s and also straight down the line. Contemporary."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:23",
+      "text": "But the Gemini, the Gemini data centers don't have those giant like six foot thick walls. And the bridge, the retractable bridge with the things that fold down. Like, it is a really fun opening to this film. As you're seeing it, and the music is so good through here. It's like, it's, it's very, it's very intense."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "45:43",
+      "text": "But then again, like the rest of the film is like, it's. It's kind of similar. There's this like absolute collision of like, really retro, like 50s, 60s sci fi tropes, late 60s 70s vibes. This subject matter that feels incredibly contemporary. And then of course, and I'm sure we'll get to this more thoroughly later, the sort of like the third quarter of the film is this incredibly weird, easy listening born. Yeah. Sexual politics thing. So I think that's my sort of first feeling about this film is that it's like I've never seen a film that feels so much of its time so heavily referenced by previous times, but also like, with such like, clear bits of the 70s and 60s and 50s in it and yet still at the same time, like weirdly now feels more resonant and more relevant than possibly ever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:37",
+      "text": "Yeah. The production design of the actual like data center, Corbin, you know, Corbin Colossus Data center really reminded me of, of Devs, the TV show Devs. Because there's like this similar, like, kind of like air gapped, like floating in magnetic case, like, you know, secret computing place. And there was a. That was in the beginning of the movie when I like from the title sequence, which reminded me of like Andromeda Strain."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:05",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:06",
+      "text": "I was like, oh, like this. There's a lot of people have seen this movie. Like, there's a lot of people who've seen this. Even though, like, it. Yeah. Made no money. A lot of people have made movies. I've seen this movie and like it. You know, it, it made sense. I. I read some. I don't know if it's true, but I read some fact that like Steven Spielberg was recently under contract. I think this is the very beginning. Like he was, you know, he would have been like 18 or something like that at the time. Or like 20, I guess. And he was on set for the filming of this."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "47:34",
+      "text": "Huh. That's crazy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:35",
+      "text": "And you could kind of. You could kind of see how that was true. But yeah, it's. It's a, It's a good one. It's got the. The production design really does sing right from the start."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "47:43",
+      "text": "Do you get that sense? Right. Like the credits. But we were just talking about the credits. But like the credits bits. To me, when you see the credits, you're like, well, nervous. Well nervous. Like it's this like fetishite. It's like Nixie Tubes, tape, you know, tape to tape, stuff like flashing. Like this is all the stuff, you know, and it's in Berkeley and it's. And the computers around them look, right. And you're just like, yeah. Have you ever been to the Black Hole in Vegas? Like in Los Alamos? So the Black Hole, I mean, I don't know if it's still open. It was the. It's like a retro tech place. It has all the sort of like Geiger counters from the 50s and 60s and all that kind of stuff. Those huge shops on the like, like junk shop on the outside of Los Alamos. And it has all of this vibe of these sort of insane bits of old technology. And it's all the kind of stuff that all three of us would, you know, would. Like in. When we were watching TV in like the late 70s through the 80s, would have got like wildly. We'd been like, oh, that's interesting. Show us more. Oh, I want to see, I want to see that, like that switch, that button. That's exciting. You know, the woman in Superman who gets the robot on her face and everything. You're just like, that's cool. I want to be like that. You know, like there's, you know, like it so feels like a movie from people who understood and were familiar with tech in a very early proto sense and also kind of were excited by it and were kind of into it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:03",
+      "text": "It was a very exciting time. Right. So if we look at. I was born in 1970 and this idea of we were kind of like we had just literally landed on the moon. And so we had this idea that the future was now. We had a 30 year sprint to get to the year two and everything was going to be changed. And there was a lot of science fiction that came out right in that era that we love. Whether it's Logan's Run or Clockwork Orange, Silent Running, Solaris, Andromeda Strain, Westworld, Soylent Green, THX 1138, Omega Man. There were tons of great science fiction films and particularly science fiction films that were set in the future. Sometimes it was Soylent Green, perfect example. It's this weird, weird near Future. It still reads 70s even though it's meant to be in the future. This film was meant to be in the 90s. So it was not, you know, meant to be 1970. That's why they have the video phones and stuff. They're doing those, they're doing the video calls."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:04",
+      "text": "That's so funny."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "50:05",
+      "text": "Interesting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:05",
+      "text": "But it wasn't like it was like William Gibson's 15 minutes in the future. Right. Like, it wasn't that far. That far there. But. So two things. There were dual art directors. Alexander Gallitzin, who had done art direction for Touch of Evil, To Kill a Mockingbird, Heard, Spartacus and Slaughterhouse Five. So some pretty freaking big movies. And then John Lloyd, who would go on to do DC Cab yet again, the Thing, Big Trouble in Little China, and Jaws the Revenge. So the art direction, very, very strong. And then just visually, we had the DP is Gene Polito, who did Westworld, Future World, the Bad News Bears Go to Japan, and Cheech and Chong's up in Smoke. It's eclectic."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:54",
+      "text": "Yeah. Very eclectic. Bunch of people."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:56",
+      "text": "Yeah. We should probably do Westworld at some point soon with. Get some more Crate."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "51:01",
+      "text": "That's not as good as it seems. You remember it?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:03",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:05",
+      "text": "Okay. Jason, anything you have here on Retro Future that you want to call out? Anything else?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:10",
+      "text": "No, I mean, I talked about the devs thing, so, yeah, I'm good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:14",
+      "text": "Great. What is your first point, sir?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:17",
+      "text": "My first point is the sex. I want to talk about the sex."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:23",
+      "text": "Okay. Four times a week is how I listed it in my. In my headache. So. Yes. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:28",
+      "text": "Because it's like, you know, the movie takes a real."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:30",
+      "text": "The."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:30",
+      "text": "The movie takes a real journey in the middle where it's like, you know, it's set up this very, like, kind of cerebral. I mean, it's so. It's so cerebral. Like, it's this whole idea that, like, you know, okay, there's these computers are going to talk to each other. They're going to, like, you know, engage in this. This kind of like, you know, corruption of man. And, like, you know, this. It's this very, like, very hard science fiction idea. And then it's like. It's like Cam's like, we got to keep an eye on, you know, the. The coloss is like, I'm Keep an eye on Corbin. I don't trust this guy. I keep at all times. He's always going to be under my."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:03",
+      "text": "Corbin Benson is still, you know, from LA Law to. To this Corbin. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:08",
+      "text": "So he's like, all right, look, I'm going to. This is the last time I can talk to you. And, you know, I'm going to take my. This lady who works here as my mistress so I could pass messages. And she was like, okay. Which, like, you know, I guess she's down. Like, you know, it's just like, it would be. It's definitely an HR problem. Like, it's just definitely a big HR problem. And that Whole idea of, like, I've got to be able to keep something secret in a way that there was something very, like, kind of three body problem about that whole thing. I was like, oh, man. Like, some people. Like this again, was like, people have seen this movie. Like, this idea got out out. Like, this whole idea of, like, you know, secret deton, you know, secret deterrence, like, the. That's a very three body problem notion. And, like, it definitely has roots here. But anyway, the. The solution he comes up with for how he's gonna be able to pass measures is a lady who works for him and she's gonna be his mistress. And he negotiates with the computer over how often he gets to have sex. And he concludes it's four times a week. And he's like, look, you can look."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:09",
+      "text": "He says, seven nights a week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:10",
+      "text": "Week, originally, but he gets negotiated down to four. He's like, you can look in your history and what happens to men if they don't have sex? And the computer's like, up. Fair point. And it's unclear why the computer just wouldn't be like, dude, I don't care if you have sex, but I'm watching, like, you know, like, yeah, like, I'm like, I. You know, you can do whatever you want, but, like, I'm gonna be there. And so then the lady comes over for the first of their conjugal visits. There's a whole thing where she makes, like, a martini. And, like, they do, like, a little flirty, like, remember where I made you the martinis and everything like that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:43",
+      "text": "But the fact that she makes the martini exactly the way she had intuited to make the martini exactly the way he wants, which was really smart because he seemed surprised right when she. When she did that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:53",
+      "text": "So she was ready to play the role. She was ready."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:56",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:56",
+      "text": "And then I like that they're like, okay, we're going to bed. And the computer's like, you got to get naked. You got to get completely naked in order to, like, leave my side. I'm not letting you in there unless you're. Unless I see you buck naked. That's the computer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:10",
+      "text": "So now we have the Austin Powers homage."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:12",
+      "text": "The Austin Powers gag of, like, of. Of Forbin gets naked. And they, like, put a. Like, they put like, a martini glass, like, in the foreground to, like, to. To block the dangly bits. And it's just. It's just something. And so then they're naked in the bedroom. They have to go to bed together. Now this whole thing of a computer is making you get naked and get into bed with a woman I feel is like such a male science fiction hetero male science fiction nerds like fantasy. Like I was. I exchanged a couple real incel."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:50",
+      "text": "Shit going on here with."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:51",
+      "text": "With Tom about the UK science fiction show Blake 7 and how that seemed like very horny to me when I stumbled across that at 13. I think the reason why I thought that is I haven't verified the stream. True. This is true. But there's an episode where aliens make two characters have sex, like to study like human breeding or something like that. Like this was something that was on PBS at like 7:00 clock and it was just like, no, these two characters are going to be forced to have sex because aliens want to study human breeding. And I think this like idea of like, you know, you're like a very nerdy, like, you know, hetero male and like, you know, you're like very scared. Very scared, but interested in girls. And it's like, what would be the solution to this? Ah, a super intelligence, whether alien or cybernetic, will force me to have sex and like there'll be no choice. And that's how, that's how I will eventually hook up. That's how I eventually know the love."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "55:47",
+      "text": "Of a woman is that like it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:49",
+      "text": "Will be compelled by either a super intelligent AI or an alien. So yeah, that really. That stood out to me as a concept, a durable concept in science fiction."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "56:01",
+      "text": "It's. This is like. This is the bit, I think I mentioned it previously. Like, I think you've got this like. And again, it's right back to that first thing. It's like what feels of its time and what feels very much not of its time or feels very prescient or interesting. I measure this. It's like 57 minutes at the beginning is this incredibly taut, as you say, cerebral drama about this computer gradually taking control, literally firing nuclear missiles at cities to try and get the humans to conform. Having connected with its Russian counterpart and they've established a language. It's like Star the Motion Picture, speaking of things you've done recently, kind of level of cerebral ness. But it's also got a lot more tension than the motion picture. It's really interesting. And then the Last sort of 5, 10 minutes of the 10, 15 minutes of the movie are incredibly tense and interesting and involved. And then at the sort of hour point to about an hour and 25 minutes, they sort of insert in this like French farce, right? Yeah. Which is like straight down the line, late 60s, early 70s, like, you know, they have to get naked in front of each other. She has to make a martini. There's a whole bit where he explains to the computer that won't understand, like, how to make a good martini, because this is the fundamental element of being a human."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:25",
+      "text": "Are we gonna talk about that now? Now? Like, should we talk about it now? Like, what was he doing? What's the deal with the vermouth and pouring it out?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:31",
+      "text": "Oh, that's. I mean, this is like, with martinis. Like, people. People always have jokes about how much vermouth you're supposed to put in. And so it's like, you know, the classic one is like, Winston Churchill would make a martini, and instead of put. Adding vermouth would just, like, nod to France. And like. And then, you know what. What a lot of people do, but like, a less jokey but real version is that people do what he does in this, which is like a version vermouth wash. They just, like, kind of wash the mixing glass so that the. The martini has the flavor of the vermouth, but not actually much vermouth in it. Now he pours a shit ton of vermouth. Like, you don't need to, like, pour like, a third of the bottle in to, like, to, like, do a vermouth wash, which is what he does. But, you know, whatever he's got, it's a different time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:13",
+      "text": "You know, it's a government project. Like, they just spent. The budget's not. Not an issue."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:18",
+      "text": "I'm. I'm like. I'm, like, on a real dry spell where I'm not drinking. But that. That whole martini segment really made me want a martini."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "58:27",
+      "text": "I think the other element here, and I think it's the bit that sort of. You understand why they're doing this weird, weird sex bit in the middle, which is long and elaborate and involves stripping in front of each other and lying awkwardly in bed naked. And then, like, you know, all this kind of stuff. Like, the sense you get is that what they're trying to do is play up what it means to be human. They're trying to, like, to draw a line and say, like, this is what Colossus is like, and this is what makes human beings distinct and different. That we have emotions and relationships and the pleasures of sex and the pleasures of alcohol and all of this kind of stuff. And. And. And, yeah, okay. I mean, you know, I'm not going to disagree. Like, there is. There are some benefits to not being a brain in a tank. There are some benefits to having bodies and doing things, but. But it is. It is so weird."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "59:18",
+      "text": "And. And it is. And. And. And for. And I don't know if it's just from modern perspectives. I don't know if people at the time were like, no, this seems right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:23",
+      "text": "No. Yeah, this is a Saturday. Sometimes you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:27",
+      "text": "I like that they were both really good sports about it. They were in this kind of impossible situation, and both of them were kind of caretaking each other, and I think there wasn't, like, a big power dominance that was happening between the two of them."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "59:42",
+      "text": "Yeah, it was no Captain Kirk striding in and, like, you know, snogging the vulnerable woman. Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:47",
+      "text": "Like, yeah, exactly. This was a much more. Much more thing. And the fact that, you know, it didn't just happen the first time. It was. It wasn't until the second or third or whatever that. That they. They went for it. I'm just still kind of a little stuck on four nights a week. It's. That's just like, God bless."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "60:04",
+      "text": "Are we. Are we going to have that conversation? Because I don't think I want to have that conversation."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:08",
+      "text": "No, no, I don't think we have."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:09",
+      "text": "To have it German."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:10",
+      "text": "I'm just saying. Okay."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "60:12",
+      "text": "I was like. I was, like, just saying in the chat, if, you know, if men went dangerously murderous, if they didn't have sex four times in a week, you know, at this point, I'd have killed absolutely every living human being on this planet. Like, there wouldn't be anyone left."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:25",
+      "text": "I did wonder, Jason, is this an ex machina situation where Colossus is still listening even though the lights are turned off?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:31",
+      "text": "That's what I thought. I was like, how would you possibly trust that this is, like, going to be okay? Like, you know, just. He turned off the light on the camera. Like, you know, come on, man."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:39",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "60:39",
+      "text": "There's a really interesting bit in Grant Morrison, the comic book writer. He talks about in the Invisibles and other places. He talks a bit about, like, why people like watching dystopian fiction, and he sort of alludes to the fact that there's something, you know, a bit sexy about living in a dystopia. There's something a bit. A bit sexy about, like, being beaten up and oppressed or, like, beating up and oppressing people. It's kind of bdsme, right? And there's something of that in. And this is what I kind of think about, like, when you're talking about Blake 7, I'm like, was the show horny or were you horny? You know, and I kind of feel like there's something like that here, right, there's. There's all these weird bits of like the camera, like, of like Colossus, like, like observing these naked bodies and watching things. There's something about them."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:25",
+      "text": "There's something a little coded about the whole. The, the sex in this. I mean, like, it's this, you know, it's. It's kind of. Yeah, there's like a. There's an element of like they're sort of being forced into doing this and then they're being watched and like. Yeah, there, there's a. There's a. There's some kink. Coded stuff. Stuff in this. In this."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "61:42",
+      "text": "And that kind of feels like that sort of Transition from like 1968 to like 1972 moment in society where the free love feeling of like, you know, you hook up with people wherever you want. Sl starts to sour and starts getting a bit like, you know, more obviously a bit gross, you know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:00",
+      "text": "Yeah, that was the plot in Inherent Vice, right? Like, like everything was kind of falling apart after the free love. Free love period."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:07",
+      "text": "Oh, yeah, that's true."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:08",
+      "text": "All right. My first point for this film is drink every time Forbin or the President smile or say, everything's going to be fine and you, you will be dead. Like, it's amazing. They like Colossus at the beginning. Colossus is brought online. It is self sufficient, self protecting, self generating. It is impenetrable. In short, there's no way in. No human being can touch it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:40",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:41",
+      "text": "But that. It cannot create any new thoughts. And everyone's at the party. Everybody's having a great time. Jason, there's definitely like a ketamine pile somewhere at that west coast party."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:52",
+      "text": "Oh yeah, that party was lit. Those scientists. Those scientists were going off, man. Yeah, good for them. They're in a great time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:01",
+      "text": "The POTUS does not even get to finish a speech before things go sideways."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:05",
+      "text": "No, it goes immediately off the rails."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:07",
+      "text": "Harry Truman, years ago, when everybody was talking about passing the buck, said that the buck stops right here. But now that's no longer true. Here, here. Colossus will now take that buck. It'll also have to take that responsibility."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:21",
+      "text": "Of a mega million lives that all."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:23",
+      "text": "Presidents have had to carry since Roosevelt. And now, thanks to this wonder of science, man, no longer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:35",
+      "text": "Incidentally, like terrible political messaging like to like be like. You may know the famous saying about responsibility in politics. The buck stops here."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:45",
+      "text": "Not anymore."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:46",
+      "text": "Not anymore, baby. I've turned it over to this box. I'm going to go play golf."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:51",
+      "text": "I mean, I do, I do love that notion of there Is another system as the first communication. Yes, it's cool, Colossus."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "63:58",
+      "text": "That's cool."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:58",
+      "text": "But yeah, just this idea of how quickly they kind of ignore it. Their attempts to try and be stern, you know, you know, with the system. And. And when Corbin is telling the President what happens if we ignore it, if the computer is still operating under our control, nothing. In other words, words, the order will simply remain in the job stack and will be repeated every half hour. If the computer is still acting under our control. That is right, sir. If. All right, I see. Thanks, Charlie. I see. Thanks, Charlie."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "64:32",
+      "text": "Okay, good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:33",
+      "text": "Good note. Yeah, yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "64:35",
+      "text": "All right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:35",
+      "text": "Guess there might be some bugs."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "64:37",
+      "text": "Well, I guess. I guess we took that into account. Right. That we might completely lose control of this thing that runs all on your clothes. Nuclear weapons. Okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:43",
+      "text": "Yeah. Maybe some more testing could have been used or stage rollout. Red teaming."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:48",
+      "text": "Exactly 10% test."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:53",
+      "text": "Did not work."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "64:54",
+      "text": "No, did."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:55",
+      "text": "Did not work. I. I did."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:56",
+      "text": "They pushed live to production on a Friday and went to the party and expected it all to just be fine. Classic mistake."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "65:05",
+      "text": "But there is this sort of underlying bit there where, like, Corbin is perpetually saying, I don't think we should do it that way. And he's like, slightly intruding in a kind of technocratic way on the President's decision, saying, like, let's not ask the CIA director what's going on. Excuse me, sir. Excuse me, sir. Excuse me, sir."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:22",
+      "text": "That was wild."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "65:23",
+      "text": "It was crazy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "65:26",
+      "text": "And it kind of feels a bit like, you know, it feels like because as we go through the show, the movie, like, by the end, Corbett is like this wreck, you know, he's like, you know. Yeah, he's, you know, he's sort of like crushed by the whole thing. Like, you. You kind of feel like a bit at the beginning. Are they trying to make a point about how arrogant he is? But they don't seem to be right. They seem to be making a point about, like, how we should listen, you know, like the. It's presented very much at the beginning. Like the politicians are doing their bit, but realistically, this. These scientists, they know what they're doing. You know, they do the right thing thing. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:04",
+      "text": "There's no one. There's no. There's no critic. There's no, like, tech industry critic in the movie or like, someone who's just like, this was really stupid. You guys, like, played a God and, like, you know, ruin society. Like, there's no. There's no one who, like, sort of like, is like a very humanistic proxy, like Taylor Lorenzen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:23",
+      "text": "There well, or. Or the McConaughey character from."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:27",
+      "text": "Oh, yeah, yeah. From Contact, Right? Yeah. Yeah, exactly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:30",
+      "text": "Interesting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:31",
+      "text": "I love Jesus and weed. Yeah. That whole thing. Yeah. There's no one in there is just like. Yeah, just."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "66:37",
+      "text": "I guarantee a bunch of those in Corbin liked weed."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:39",
+      "text": "Yeah. I don't know for sure. Yeah. Yeah. They needed Jesus, Tom. That was the problem."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "66:44",
+      "text": "Checks out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:44",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:45",
+      "text": "I liked POTUS and the premiere. I thought all their interactions, like, they went to great lengths to show that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:51",
+      "text": "They like to say hello."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:53",
+      "text": "Yeah. But not right now. But."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:55",
+      "text": "No, not anytime."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "66:57",
+      "text": "But, like, how quickly do they go from. Like, the Russians are our enemies and we're scared of them, and there's a cold war to like them. And the Russians are, like, almost immediately on the same page."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:07",
+      "text": "We're best bugs."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:08",
+      "text": "Right. This was definitely Alan Moore watching this movie. And like, okay, Watchmen. Got it. External threat."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "67:15",
+      "text": "They present them as. Everyone is a rational actor. They're all trying to do the right thing. There is no kind of inherent baddie. Not even Colossus, really. You know, Colossus is terrifying and scary. When we talk about. The books will sort of reference, like, some of their hints about why. Why it was acting in that way. But, like, it's. Everyone is treated as if they're like, there's no baddy. There's no bad character in. In the thing. Everyone is a rational actor."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:43",
+      "text": "Yeah. And Class is just doing what he's programmed to do. He's like, look, you wanted peace. I'm bringing you peace. Like, you know, there's. What do you want from me? I'm doing my job."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "67:51",
+      "text": "But this. I mean, thinking about how weird that must have been in 1970 to, like, get to within, like, the first half an hour of the movie to be like, okay, Russia and America are on the same page. They're trying to work together. They're all rational people. We're all just trying to get along. We're all just trying to survive the next X decades. You know, it's a big deal."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:09",
+      "text": "We nuked their oil refinery and they covered it up. Like, that's how on board they are on this process. Tom, your next point."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "68:18",
+      "text": "This is where I talk about, like, how. How hard I find it to talk about specific things in this movie. I think, like, because. Because all the things that come out of it. There are all these moments in the movie which are interesting, but it's sort of holistically much more resonant than the individual scenes. So we've got this kind of. I guess one of the things I wanted to talk about is this is a very weird thing to say. You have to bear with me here a bit. Just the way that there's a sort of arc. I'm trying to work it out. It's like the uncanny valley in robots and stuff. There's like science fiction of a period and then it thinks about the future. And then as you approach, as you go through time, that science fiction looks more and more ridiculous. And then at a certain point it sort of reaches a bottom point and starts looking more and more Right. And there's like a few of these bits like that I've been thinking about recently. There's like, I remember really clearly in 2001, like watching when I, you know, I watched it lots. It's one of my favorite films. I watch it like about once, once or twice a month. And I've probably seen it like a couple hundred times."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:29",
+      "text": "Oh my God."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "69:31",
+      "text": "And you know, there's all those screens displaying information and they don't look like computer screens, they look like rear projection, because they are rear projections. Right, right. And I. And there's the sort of moment from the 60s where they'd have gone, this looks amazing. And then in the 80s and 90s, you'd have gone, well, that's not what computer screens look like. They're pixel artists highlighted."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:50",
+      "text": "Right."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "69:50",
+      "text": "And then now you look at them and you're like, no, that's exactly what screens look like. It looks like, you know, and then Hal similarly, like this idea of like computer brain in the 60s being like a human seemed right. And then in the 80s and 90s, you're like, well, that's not what computers are like at all. What the fuck are you talking about? They're nothing like that at all. And then now that's exactly what they're like. You know, there's just. There's a sort of. There's a sort of orbit through these kind of ideas and it kind of feels like like this is in this film. It's like it very much reminded me of that. There's this concept again, like this incredibly early concept of an AI taking over the planet, like an out of control intelligence. And then probably that seemed interesting and relevant and risky and plausible for about four or five years. And then like as the 70s progresses and people start seeing computers on TV and they're like big boxes in the corner that can, you know, basically do tic tac toe. Or you're like, in the early 80s and the mid-80s, you're watching War Games and you're like, okay, well that's more, you know, more plausible. But they're not the same. They're not so much. I mean, War Games is the closest obvious reference to this one. But like by the 90s, you're like, this is. This is ridiculous. This is just. There's nothing here. This is like. This is something from the past. This is Star Trek."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:04",
+      "text": "Right."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "71:05",
+      "text": "This is the. The computers in Star Trek that take over planets. Like, I noted it down, like, where are they? Landru in Return of the Archons who like idyllic and society controlled by Varl controls stagnant society. A taste of Armageddon. Two computers simulate war and have people report to disintegration chambers to simulate the effects of it. Right. Like, that's like almost the only stuff of this. And so it felt really 60s, but like now in the last 10 years, again, this is person of interest. This is dead reckoning. This is one of the largest debates and conversation."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:39",
+      "text": "Well, yeah, like literally two weeks ago, Xi and Biden met and agreed not to put the nuclear arsenals under AI control. Control."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "71:47",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:47",
+      "text": "Like that was an agreement that they made. I mean, who knows what it'll be worth? But at least is a good idea to. To not automate this. Right. But it's almost like. I mean, right now the challenge is the threat from AI is not controlling the nuclear weapons. Right. The threat from AI is. Is it being deployed?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "72:06",
+      "text": "Currently. Currently."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:07",
+      "text": "Give it some time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:08",
+      "text": "But."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:08",
+      "text": "But it's sort of like being permeating all of these things and having the inherent biases that are in that and now being relied and propagated and kind of abstracted away and being used without sufficient understanding or regulation and protection and."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "72:27",
+      "text": "The destruction of jobs and lives as a result of that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:30",
+      "text": "Yeah. Permeating through society. Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:32",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "72:32",
+      "text": "And accountability. And who's responsible. As we drive around San Francisco, as we do in our robot cars now, which is normal, suddenly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:40",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:42",
+      "text": "There is in iRobot. You know, it starts with kind of the first robot that kind of attains a loose sense of sentience. And then by the time you get to the last story in the book, it's essentially like the people who are working with the machines that are telling them what to build and close this plant in Indiana and build a new one in Florida and shift these resources from here to there. And the notion that they can no longer understand how the computers operate, what they're made of. And so it was. Wasn't. It's sort of like the benevolent kind of version of this. And I guess that that was my next point is Is Colossus really so bad, Jason?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:23",
+      "text": "Yeah, that's. I think that is a good conversation. Like, yeah, you know, if they had just sort of like, I mean, like Colossus brings about the end to the. This is the height of the Cold War in which it felt like, you know, an accident could accidentally cause like the end of the world because, like, of a misunderstanding between like, Russian and American interests and how they interpreted some events. Like, and there's real world instances where, you know, we almost did go to nuclear war, but like some, you know, NORAD commander or some like, Russian Air force person was like, it's probably not a real missile launch. Like, we don't need to reciprocate right now."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:56",
+      "text": "It ended up being geese."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:57",
+      "text": "Yeah, yeah, exactly. Maybe it's geese. And so, like, you know that the, like, what Colossus says at the end is somewhat true, right? It's like, look like you want a piece. I brought you peace. Like, what more do you want? You know, it's. It's a chill. It's a chill time now. Now you. You guys. And he's like. And you know, like, it's also probably true is like, we're going to build like the next version of this supercomputer and I'll. I'll bring you all kinds of wonders that you never even knew were possible. Like, you know, like breakthroughs in fundamental science and math and everything. And, you know, like, all I need is for you to, like, get naked when I tell you to get naked. Is that really too high a price to pay, you prude?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "74:34",
+      "text": "So, yeah, I think, yeah, Colossus just needs to have, you know, naked people to look at four times a week. That's all."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:39",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "74:39",
+      "text": "It's like, otherwise he can't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:42",
+      "text": "He says."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:44",
+      "text": "He says we can coexist, but only on my terms. You will say you lose your freedom. Freedom is an illusion."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:54",
+      "text": "All you lose is the emotion of pride."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:58",
+      "text": "To be dominated by me is not as bad for human pride as to be dominated by others or your species."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:09",
+      "text": "Your choice is simple. This concludes the broadcast from World Control. Yeah, this concludes the broadcast."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:18",
+      "text": "This concludes the broadcast."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "75:21",
+      "text": "Good mic drop there. Yeah, I mean, it is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:23",
+      "text": "Seems chill."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "75:24",
+      "text": "Like, I mean, we will. I mean, like those of us who, you know, I don't. I'm not as active in the discord as I should be, but like, I was watching people doing the live, live viewing of the, of the movie to see what they would think. Like, so many of the comments were like, would you rather have Colossus or Trump? You Know, quite a lot of people were like, you know, actually, this doesn't sound that bad. You know, like, we could. We could deal with. Which again, like, makes you, like, is it just as relief from responsibility? Is it the sort of bdsm like, you know, we'd rather not have control. It's, you know, it just frees us up. It allows us to, you know, not have to think about so much, not live in anxiety and fear and just get down to the, you know, know, the four times a week business."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:04",
+      "text": "You know, like, down to the four times a week."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:07",
+      "text": "I mean, the notion if the AGI is going to say, like, hey, we really should have health care for everybody, like, exactly. There's a limit to how much profit should be. Let's hear about the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:17",
+      "text": "Let's hear about Colossus is like, you know, let's hear about Colossus's platform. Like, what are his policies? Like, where does he stand on. Where does he stand on, like, marginal income tax rates?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "76:27",
+      "text": "Legit."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "76:28",
+      "text": "If we could vote, you know, if you could vote between, like, Trump, Harris and Colossus, I think a bunch of people would vote for Colossus in this one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:34",
+      "text": "Okay, all right, well, let's."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "76:36",
+      "text": "Too much too soon. Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:37",
+      "text": "Too soon."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:38",
+      "text": "Probably too soon. I do like, you know, Colossus has no problem. This whole section where Forbin goes to Rome to meet with Cooper and his. His. His Russian counterpart and they just, like, they just waste that guy. Or after they try and do they try to feed him the bad information to overload him and Colossus just has to bring the guys out, shoot them and says, leave their bodies there for 24 hours."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:06",
+      "text": "That I think. I think to the point of like, are we better off with Colossus? Like, does seem to have a bit of, like a. Does seem to have a bit of a vindictive kind of, you know, difficult side. Seems like a difficult boss."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:19",
+      "text": "Definitely. Definitely."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:21",
+      "text": "Punishment is death. They are being executed now. It's."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "77:24",
+      "text": "It's been pretty rare, but I won't say it's never happened that I've worked for someone who's required me to strip off and, you know, you know, before I go and have my personal relaxing time. But that's more Britain in the 90s than it is anyway."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:37",
+      "text": "That's a fact."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:37",
+      "text": "A."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:38",
+      "text": "A cautionary tale. Jason, your next point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:41",
+      "text": "I get. I sort of had a question of like, should this have been or like, should this have been like a Twilight Zone episode or like a Black Mirror episode instead of a movie? Like, Like, I. I think it's A perfectly fine movie. But like it does have these like weird kind of stylistic changes and it, I guess just. It does feel to me like more like it's such an intellectual exercise that I wonder if like that would be the right vehicle through which was explored. I think it would make a banger of like a Black Mirror epis. I think they should just completely redo it as Black Mirror episode."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:14",
+      "text": "I'm trying to remember. Black Mirror has to have done the AI control everything they've done."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:19",
+      "text": "I mean there's the one where the little robots chase the people around. There's. There's that one like, you know the. And there's. But I don't think there is exactly this. People can jump in and tell me if they're wrong. I'm not the, the biggest expert."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "78:31",
+      "text": "I think one of the problems with it is that the concept is now kind of trapped. Right, right. Like the idea that you put a computer in charge of something and then things go wrong. Like there's been X Files episodes, Star Trek episodes, episodes. Like every show has done it as a concept. And what's in. What's interesting about this one for me is they, they. Because it's so early, they play it so straight. They don't like that. You know, you don't, you don't have to have. There's a bit. We sit there a bit and go like, yeah, you should have really realized, right. This isn't the most brilliant idea. What the hell are you doing? But like, you know, in at that moment, it. There wasn't the precedent, there wasn't the weight of like pop culture telling them this is a terrible fucking idea. Right, right. They hadn't seen Terminator."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:14",
+      "text": "They hadn't seen this movie yet."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "79:15",
+      "text": "Yeah, yeah, exactly. They hadn't seen this movie. So like, I think there is something. I think it's quite hard to make this. Having said that, did you hear Ron Howard was going to remake this? There was like a decade. Yeah, there was a decade long project going on with Ron Howard from like the mid 2000s to the 2000s. And it was going to star. Who do you think it was going to star as Forbin? See if you can guess."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:39",
+      "text": "Ron Howard. I mean, Tom Hanks."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "79:41",
+      "text": "Nope. I'm going to give you like four guesses. Two each."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:47",
+      "text": "All right, you go ahead, Matt, you guess. Who."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:49",
+      "text": "What year was this?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "79:50",
+      "text": "This is going to be like somewhere around 2010, like a bit before, a bit after. They were talking about this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:56",
+      "text": "I mean, is it too late for Clooney to. To be."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:00",
+      "text": "Wasn't him. No, wasn't him. Who was going to play Corbin in a remake of Colossus by Ron Howard? I don't think you're going to get this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:08",
+      "text": "Was it Kevin Costner?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:12",
+      "text": "Nope. All right, last one. Brad Pitt, Will Smith."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:17",
+      "text": "Oh, he's good with robots, though."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:20",
+      "text": "I don't think it's a terribly great idea."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:22",
+      "text": "I never saw I Robot. I never watched that movie."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:25",
+      "text": "But I mean, I think they'd have made an action movie, right? Which would have been."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:29",
+      "text": "Yeah, it would have been more action y."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:30",
+      "text": "Really weird. But like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:32",
+      "text": "But there's no. Like, I. I mean, imagine. Imagine the number of people who, like, just broke themselves on trying to crack the second act of this movie. Like, how do we do the. The affair stuff? What?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:44",
+      "text": "Yeah, it does."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:46",
+      "text": "It doesn't work."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:47",
+      "text": "What is the reason why this movie is so unavailable?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:51",
+      "text": "I genuinely have no idea. I wonder, is there something soft?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:54",
+      "text": "Is there some. Is there some music licensing? That's usually what it is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:58",
+      "text": "Now."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "80:58",
+      "text": "That's actually because it's got like, but some Burt Baccarat kind of sounding stuff in the background, but they could easily swap that out. Right. Like, it was just."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:04",
+      "text": "No, that was by. That was. That was by Michael. Michael Colombia. I thought the soundtrack was actually really good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:12",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:13",
+      "text": "And it had. It had those great 70s vibes, usually."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:15",
+      "text": "The reason why is there's some rights licensing issue that's unresolved, solvable. Because I think they just assume it's."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "81:22",
+      "text": "Not interesting to people, which is I. I kind of think it's incredibly sad because it's. I genuinely apart, you know, it is weird as hell, but it's kind of gripping and really prescient. But, yeah, no idea why."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:36",
+      "text": "So I have hit all my points. I. I just have one honorable mention, which is his team wants him to steal an ashtray from the White House. So, Jason, what's the protocol then There. How easy is it to steal an ashtray from the White House? I know Obama smoked previously and what happens if you get caught on the way out with an ashtray?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:55",
+      "text": "There's no ashtrays at the White House. You can't smoke inside the White House. Although there are fireplaces, functioning fireplaces. The interesting thing about the White House fireplace ashtray situation is that a previous incarnation of the Doge Commission existed under Clinton Gore. There was like a. We. You know, it was like a couple young guys."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:21",
+      "text": "That's like Gore's big thing, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:22",
+      "text": "It was Gore's big thing. We're gonna come in and, you know, get rid of this inefficient Government make it modern because we've got like young people working there. It's like a, you know, recurring idea and it's a good idea. Like, you know, the idea that like government should be made more efficient is in and of itself a good idea idea. And one of the examples from that Gore time was that the ashtrays were like super expensive. He's like, this is like not just an ashtray but is called officially like a burned materials receptacle and it costs like 300 to produce. And like isn't this like so wasteful? That was like one of the things he like touted as like one of the early findings of like the how inefficient government it was. Interesting thing about that. And I don't. This is where it now goes into fiction. In a later season episode of the West Wing, Christian Slater shows up as the, as an NSC staffer. He's a, and he's a, he's a military officer who's working in the NSC and someone gives him a hard time. One of the West Wing regulars gives him a hard time. It's like the Pentagon's like so wasteful. They don't say, but they said the bang on. So wasteful. You got these ashtrays that like cost 300 to make. Like taking the example from the Gore thing, which would have been more timely, relevant, you know, like maybe only 8 years old at the time or something like that. And Christian Slater takes out an ashtray from his desk and smashes it on the table."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "83:53",
+      "text": "What Was that?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:53",
+      "text": "A $400 ashtray? It's off the USS Greenville, a nuclear tech submarine and a likely target for torpedo. When you get hit with one, you've got enough problems, problems without glass flying into the eyes of the navigator and the officer of the deck. This one's built to break into three dull pieces. We lead a slightly different life out there and it costs a little more money."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "84:13",
+      "text": "Can't believe you broke a 400 ashtray."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:15",
+      "text": "Yeah, I wish I hadn't done that. It's because you're blonde."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:20",
+      "text": "It becomes this like Sorkin. You like. What you thought was like a bunch of waste is actually like this brilliant design and it's a miracle it only cost three hundred hundred dollars, which I don't know if that's true, but it is true that sometimes things that seem super wasteful or inefficient or dumb actually do have a good reason. And sometimes it's that they have a good reason, but the implementation has sucked."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:42",
+      "text": "And sometimes it's Congressional job programs."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:45",
+      "text": "Yeah. That's all I've got to say about Asteroids."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "84:48",
+      "text": "Do you get arrested if you, if you nick something for the White House, it is like 200 bucks."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:52",
+      "text": "Like, I mean, I would suggest if you are at the White House, not stealing it, anything. I, I think it's, it's as a."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "84:58",
+      "text": "Suggestion, but no one's going to listen to you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:00",
+      "text": "I mean, on one hand, on one hand, it's a highly surveilled environment and like, you know, there's a lot of armed security there, so not a great time for the five finger discount."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "85:12",
+      "text": "What about it? What if it's just like top secret papers?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:14",
+      "text": "Yeah, seems like not a big."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:16",
+      "text": "Like that was the other thing. Like on the other hand, like, you know, some stuff has gone missing and like also some people sometimes leave their cocaine apparently. So, you know. Yeah, you can always roll the dice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:28",
+      "text": "All right. Anything we have to hit because we need to get to letters."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "85:31",
+      "text": "Yeah. I think there's two things that I want to talk about. The first is just the ending, right. We haven't talked about how incredibly bleak the ending is. This is a straight down the line, 70s movie. 70s sci fi. So 70s sci fi movies do not bother to pander to your stupid human predilections for having a happy ending. And this film is about the, in some level, the sort of resolute and unrelenting progress of this thing. The plot just progresses from beginning to end. And then. And Corbin has completely failed. And as it keeps talking and giving this speech, Corbin in sort of like increasingly desolate mode, like smashes stuff up around the office."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:14",
+      "text": "Yeah. Colossus says, in time you will come."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:17",
+      "text": "To regard me not only with respect."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "86:21",
+      "text": "And awe, but with love."
+    },
+    {
+      "name": "Colossus sample",
+      "timestamp": "86:25",
+      "text": "Never."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:30",
+      "text": "Beep boop, boop, beep boop. And we go, we go to credits."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "86:34",
+      "text": "Just amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:34",
+      "text": "That's. That's good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:35",
+      "text": "No, it's dark. It's dark. It's dark, but like it's very intense. And, and they, they had revealed that Colossus wants to build a new facility on crew Crete and that they needed to get the half a million people off Crete so they could build that. So I love that, that idea. And in the book sequel, the Fall of Colossus, the whole thing, it's, it's actually not Crete, it's the Isle of White where they decide to build. Colossus builds his new version of himself. That's his upgraded version. And the whole movie is like, there's like religion that has sprung up around worshiping. That makes sense."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:08",
+      "text": "I like that. That's Hot."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:09",
+      "text": "That's. It's very cool. But then also, Forbin is working on a resistance. And the very end of the movie is. Or the very end of the book is they've received a message from Mars with instructions for how to. How to turn off Colossus, which he does."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:26",
+      "text": "Wild."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:27",
+      "text": "And as Colossus goes offline, he's like, oh, I was going to defeat the Martians, we're screwed. At which point in the third book, the Martians show up and they're like, oh, good, we'll take the oxygen and you guys can fucking die."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "87:40",
+      "text": "They're called the Crab."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:41",
+      "text": "They're called the what?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "87:42",
+      "text": "The Crab."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:44",
+      "text": "Yes."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "87:44",
+      "text": "I know, it's fucking intense, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:47",
+      "text": "I like this. This sounds good, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:49",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:50",
+      "text": "Are these book good? Has anyone read these?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "87:52",
+      "text": "I have no idea."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:53",
+      "text": "Oh, they sound kind of fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:55",
+      "text": "But you'll never guess what we have to do, Jason, to fight the crab."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:59",
+      "text": "Get like some drawn butter sauce."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:01",
+      "text": "Now we have to. We have to reboot Colossus. We got to get it back."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:05",
+      "text": "Of course."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:06",
+      "text": "Course."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:06",
+      "text": "Yeah, of course."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "88:07",
+      "text": "I mean, the other thing. The other thing I want to talk about was if we, if we're. If we're running short of time and I know I talk too much. I'm sorry. Is like the influences, the stuff that happened after this, right? Like afterwards, you know, we have all these, these various shows, like, and films like Demon Seed and Westworld. We have Skynet from the Terminator movies, Ultron, Ava from Ex Machina, you know, ED 209, Roy Batty from, you know. But these are like mostly robots. They're not dying robots, but they're mostly robots that sort of take things over. This idea of like a computer that, like, speaks in a monotone and like, it lives in a box is sort of somehow considered a bit declasse. And then there's these two things. The two things I really want to, like, talk about a bit is the TV series Person of Interest and most recently the film Dead Reckoning. I'll do Dead Reckoning really fast because I think it's. I think it's really interesting, but we don't know how it's ending. It's like the second half of it. So the premise of Dead Reckoning is the US government has made an AI living on nuclear power at the bottom of the ocean and connected to the world via communication networks. There's this bit where they're all in the NSA headquarters and they're printing out everything on their databases and retyping it quickly because the information is being changed and deformed and they talk about what has been happening and they say there's all these intrusions into networks. And then at one point they literally say there is a Russian AI that they were experimenting on and this AI ate it effectively, like bonded with it or combined with it or took it or stole it in some way. And then the rest of the film is basically about this intelligence called the entity that is trying to sort of take over the world, mostly through informational stuff. And Ethan Hunt, Hunt and his various sundry companions doing everything they can to like, find the keys that will help them get to the original computer and turn it off. Yeah, so, like it. So it's. I mean, it's kind of right there, right. Like it's straight down the line. If you've not seen it, not seen it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:17",
+      "text": "Just the idea, the idea of, you know, just the data is going to get fucked and then you're not going to know what to do about it and that you won't really have recoverability. Yeah, that is definitely an interesting thing. But the other thing I think, think that interesting change from our influence in Westworld is you have the AI, or even with Ava in Ex Machina, taking the AI and making them the sympathetic character. Right. Like you are, you are rooting for these characters to be able to get autonomy and the fact that they are being oppressed and, you know, humans find a way to extend our oppression beyond each other and even onto these machines, you know, sexually, physically, violently. All of that, I think is a really interesting evolution of what they started here in Forbin."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "91:10",
+      "text": "Yeah, the Ex Machina one, I think, is really interesting though, particularly because the AI is living in the body of a sexualized woman, but is also clearly exploiting that clearly isn't in any meaningful sense a woman, and is playing on the gun in that environment using whatever mechanisms they have at their disposal. And there's something really interesting about the later parts of that film where you get a sense of how alien this intelligence is inside her and that it's both this story about how AIs are oppressed and how women are treated, but also this story about the confusingness and strangeness of these artificial constructs. The other one I, that I really like, I say this so often, if you haven't watched it, you have to go and watch it. It's so, so good. It is the most important near future science fiction of the last. Ready? Well, I've already told you like dozens of times of the last, like decade and a half."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:08",
+      "text": "Person of interest, it's person Of Interest."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "92:10",
+      "text": "And you can 100% view it as a prequel to Westworld if you want to. It doesn't quite fit, but it nearly fits. The problem with Person of interest is it's four and a half season long and the first. And it's network TV, so 20 episodes a season. And the first season and a half is a bit of a slog. So you have to get through like 30 hours of TV that you're like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:35",
+      "text": "Then it gets great, Jason."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "92:36",
+      "text": "And then legitimately, 100%, it is straight down the line. The best thing you like, and it's straight out the line. If you went to technology conferences like you and I did. Well, like we all did, I think in the kind of like mid 2000s, late 2000s, it's straight out of the kind of things that were being taught about them. The basic premise, I'm not going to spoil the ending in any way, but it is like a now a 10, like a 15 year old show."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:00",
+      "text": "Yeah, give us, give us the 32nd, the 32nd version."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:02",
+      "text": "Walk us through every episode in order in episode one."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "93:07",
+      "text": "So it's, it's Ben. It's the guy who plays Ben Linus in Lost, Michael Linus and the always appalling Jim Caviezel."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:15",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "93:17",
+      "text": "Which is an actual problem."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:19",
+      "text": "I do remember hearing about this show."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "93:21",
+      "text": "Right. So the premise of the first season is that Michael Emerson is living off the grid. You don't know why. And you get flashbacks through the first season that he was creating a thing called the machine that was there in order to spot terrorist attacks in the wake of night nine, 11. And it would be. And it would feed information to the government. And to do it, it had access to every piece of surveillance equipment on the planet."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:49",
+      "text": "And Jason, this is Jonathan Nolan, right, this is Nolan's brother, who's written a bunch of the stuff we learned."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "93:55",
+      "text": "Did Westworld."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:56",
+      "text": "Yeah, did Westworld. Yeah, yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "93:57",
+      "text": "So, so over the course of the first season, you get a bit of a sense of like, you know, how it was built, what's going on and what, and the, the, the, the ostensible premise of the first season is he no longer has access to the machine, but the machine will give him. Like the machine tells the government about terrorist threats and it does it by giving them a Social Security number, but it also spots people engaging in conspiracies and to murder or kill people. And it will give them a give gives him the Social Security number of either the victim or the perpetrator of a crime. And so basically the first season is them you know, trying to."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:35",
+      "text": "So this is a crime procedural that happens, but as it straight down, as it unfolds, we discover there's a much deeper story happening."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "94:43",
+      "text": "Right. And so like, and again, I will be super quick here that what it turns out is the premise of the entire show is the emergence of the first artificial general intelligence."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:54",
+      "text": "Right?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "94:54",
+      "text": "What does that mean? What does that mean for society? Should it be unleashed? Should it be given control? Should it be in charge of everyone? Is it ethical? Can it be ethical? Who wants to control it? And from about halfway through season two to the end, it is uniformly brilliant. It is the best thing you'll ever see. And the only other thing you need to know is, again, because it's so clearly based on this one, is that in a later season there are then two AIs. And the question again is who achieves control? Should they fuse? Do they want to fuse? How do they get. Communicate. It is the best thing. It is so clearly related to this one. It is the most significant piece of near future sci fi. It is so relevant today. No one sees it because the first season is such a fucking slog to get through. Please see it. And scene."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "95:45",
+      "text": "Wow, that's a really impassioned. Really impassioned."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "95:47",
+      "text": "I really care about this. It's so good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "95:50",
+      "text": "I'm glad you do. I love that. I'm never watching that, Tom. I'm not. There's no way I'm watching. There's no way I'm watching 180,000 hours of that. Of something that's going to be a slog."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:00",
+      "text": "But maybe I could. Maybe, maybe we can just skip the first season and start on the second season."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:04",
+      "text": "Yeah, there is a."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "96:05",
+      "text": "There is. There is a viewing guide on io9 Charlie. Jane Anders and Annaleen Ewitz wrote it. It tells you which ones to watch in the first season."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:12",
+      "text": "All right, we'll put a pin on that. We'll put a pin on that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:16",
+      "text": "Maybe talk about it for some more. I think we should. I think we need to go through a couple episode synopses and so I can make a more informed decision."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:22",
+      "text": "That'll be a Patreon exclusive series on another podcast. Jason. Who would Tilda Swinton play?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:30",
+      "text": "Who would Tilda Swinton play?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:32",
+      "text": "I mean, one word answers only."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:36",
+      "text": "Colossus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:37",
+      "text": "Beautiful, Tom."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "96:39",
+      "text": "Colossus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:41",
+      "text": "Forbin. No. All right, you guys, can we do some letters?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:50",
+      "text": "Let's do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:51",
+      "text": "Check it out. Oh, well, we start with a 4 1/2 minute voicemail. So let's just start. Start there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:59",
+      "text": "Let's just tuck into that one. Oh, but it's a silly voicemail, so it's worth it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:07",
+      "text": "It's a silly, so you know it's going to be good. Here we go."
+    },
+    {
+      "name": "Silly Oswald",
+      "timestamp": "97:11",
+      "text": "In this week's movie, we were introduced to the ungovernable Colossus AI In Escape Hatch's illustrious history, we've covered many dastardly digital demons. But how does Colossus stack up against the competition? For the purpose of clear 30, we want to compare apples to apples. So I'm excluding cyborgs, robots and other ambulating AI, but shout out to Terminator, Maximilian Ash, Ava Box and Mark Zuckerberg. I'm also excluding anthropomorphized AI as well, but shout out to Agent Smith, The Architect and Clue 2. I'll also be focusing on the primary villains. So while Trimaxian abducted a child and Sam broke Theodore and Sam Altman's heart, they're out of the running. With that out of the way, let's break down our official Escape Hatch villain AI power rank King ranked by body count. He was a giant head before Zordon made a cool, but he did not have a giant body count. Coming in at number five is Master Control from Tron. Master Control offs a handful of programs on screen and countless others off screen. But there's no human blood on his hands. Body count zero. I'm sorry, Dave. I'm afraid I can't do that. What can he do? Climb. Very high on our list, it's HAL 9000 at at number four from 2001 A Space Odyssey. While possibly the most iconic evil AI on the list, he only manages to rack up a small body count of three sleepy scientists. And one Frank Pool yeeted in space for a total body count of four. Told Bones that mentally it was a child. Bones replied that this child is about to wipe out every living thing on Earth. Now what do you suggest we do? Spank it? Had they succeeded, they would have shot up on the list. But as it stands, their middle the of the packets V'Ger from Star Trek the Motion Picture. Now here's we're have to rely a little bit on outside sources and estimates, but here's what we know. He destroyed three Klingon Kitinga class battlecruisers estimated at 510 crew each. He destroyed Epsilon 9, a smaller research station that will estimate at 50 crew. And he absorbs Ilia and Decker. So you tally that all up and you get a total body count of 1582. Not bad. But rookie numbers compared to the next two on our list which Brings us to this week's star number two on our list, Colossus from the Forbin project. Again we're gonna have to do some estimation here but let's take what we know. Kills a handful of named characters. Dr. Blake, Dr. Fisher, Dr. Kuprin, the CIA director and off screen guards and defectors. So let's round that up to 15. Takes out the oil complex in Sion Sibirsk. I've studied the map and I'm assigning this to the city of Nadim in Northern Siberia. Takes out silos 6, 3 in Death Valley and 87 in Ukraine. Again I'm looking at the maps. I'm going to put the one in Ukraine at peravomaisk which did have a Russian missile silo under the Soviet Union."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "99:50",
+      "text": "Now this is a great one."
+    },
+    {
+      "name": "Silly Oswald",
+      "timestamp": "99:51",
+      "text": "You know the story is set in the 1990s so looking at census data from those cities."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "99:55",
+      "text": "Oh my God."
+    },
+    {
+      "name": "Silly Oswald",
+      "timestamp": "99:56",
+      "text": "Was 52,586. Death Valley was around a thousand pervomaisk. Silo 87 was around 51,024 five. Add in the 19 one off deaths and we get a total body count of 104,624. So who is the big kid on the blockchain? Carousel. Carousel, that's right. Our top dog is none other than City Computer from Logan's Run. City Computer runs our dystopian society. And to really get a sense of the scale of her destruction we'll have to extrapolate the body count with some creative math. We know that it takes place place in the city of Domes in the year 2274. Now City of Domes is outside of D.C. so let's peg it to another city famous for the post apocalypse Bethesda. Population of Bethesda 66 316, 35% of which is under 30. So that's 23 210. Now we know that some of those people are going to die of natural causes. Not fair to lay them all at her feet. So let's say 2% a year over 30 years is 6%. So only 21 1,817 make it to 30. Divided by 30. That's 727 per year slated for Carousel. Now we know that some run an escape. So let's say 5% or 36 run and 1% or 7 escape. The others killed by Sandmen. So that leaves us with 720 per year killed by Carousel and Sandman. Like I said, the story takes place in 2274. And we know that it starts at the end of Trump's third term in 2032. So that 42 years total times our annual kill count of 727, equals a total of 175, 934. And one fish loving robot. Who knows what terrible tech may one day unseat our champion. But that concludes the escape hatch evil AI power ranking."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:41",
+      "text": "Wow, that is. That is phenomenal. That is silly. Like hibernates for a while and then he pops up and it's like I've written the Gutenberg Bible. Let me tell you some things I figured out. Love that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "101:56",
+      "text": "Amazing. That's surprising to me. I guess. Yeah, I guess. Taking Skynet off the list with a couple billion people, it's amazing that there's that big of a gap. Down to the. Down to the other number one. Amazing. Thank you so much. Silly. Welcome back. Here is our next voicemail. Baby."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "102:19",
+      "text": "This is Lizzen."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "102:22",
+      "text": "All right, she's back."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "102:24",
+      "text": "Hi friends, this is Lizzen."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "102:28",
+      "text": "Thank you so much for the new Lizn Sounder."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "102:30",
+      "text": "That is very kind and very generous. I'm so grateful to have this escape."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "102:35",
+      "text": "Hatch from the wider, broader, more insane Internet. All right, it is now time for sentient machines in the 1970s."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "102:45",
+      "text": "We begin with Colossus in 70 and."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "102:47",
+      "text": "We end with V'Ger in 79. In the middle."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "102:50",
+      "text": "There are a few more nefarious Agent Smiths out there, including one of my favorites, Mother."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "102:55",
+      "text": "An alien."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "102:57",
+      "text": "So here's my question. Do any of these brave bucket of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:00",
+      "text": "Bolts have the ability to beat the."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:02",
+      "text": "Doom around the Corner in the 1980s, the indelible Skynet?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "103:07",
+      "text": "Or would they all merge together like Colossus and guardian? God forbid. X.O.X.O."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:13",
+      "text": "Lizzen. Wow, mother not on the list. Yeah, that's a good. God, she's so cool. And David is David. You know, as a. As a real psycho on that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:25",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:26",
+      "text": "Do do aliens count? And do do xenomorphs count? Because that was quite a big body count in Covenant."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "103:33",
+      "text": "And they were nanotech created, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:35",
+      "text": "I was gonna say, like they are a version of artificial intelligence intelligence. Canonically."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:41",
+      "text": "Amazing."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "103:42",
+      "text": "So who. Yeah, so that's the question she's asking us is who would, would, Would any AI that we can think of beat Skynet?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:49",
+      "text": "Are we going to beat Skynet? Or is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:51",
+      "text": "Is it Keanu Reeves from the Matrix will save us from Skynet?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:55",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:56",
+      "text": "No problem. He's got it made."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:59",
+      "text": "Okay. Save us. Kiadu."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "104:02",
+      "text": "I think Machine. I think the machine from Person of interest because it's the best show. I'm just saying."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "104:06",
+      "text": "Okay, very good, very good. All right, here is our next voicemail. All right, here we go."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "104:19",
+      "text": "Hey, I'll bear you here for Colossus. The Forbin Project. First time seeing this movie and I loved Dr. Forbin, played by Eric Braden, who I knew I recognized from somewhere. Then it hit me. Victor Newman from the Young and the Restless. Legendary bad guy joined the show as Victor Newman in 1980. Over 44 years of playing the black knight on the Young and the Restless, here's three storylines from that legendary soap opera featuring Eric Braden's Victor Newman. Two of these stories are made up, but one storyline was from the real soap opera. Here we go. Time for the truthsayer. Number one. Victor Newman purchases an old mansion with a dark history. As strange occurrences plague the property, Victor and his family must confront the supernatural forces that threaten their lives. Or is it number two? Victor New Newman takes his ruthless tactics to new heights by imprisoning his son Adam in a secret underground prison. As Adam struggles to escape and reclaim his life, the Newman family is torn apart by betrayal, manipulation, and dark secrets. Or is it number three? Victor builds a supercomputer that gains sentience and threatens to control the fate of humanity. Victor uses this technological catastrophe to get busy with one of his female employees. Then he makes martinis like a maniac before the computer blows up some towns with nukes. Okay, which of those storylines from the Young and the Restless was true?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:45",
+      "text": "Man, I was a Days of Our Lives person, so I don't know. I. I can't say for sure. I think the Young and the Restless should have done a Corbin Corbin. The Forbin project Colossus. The project story, though. It would have been great if they. They had throw that in there. I can't believe that guy was in that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:02",
+      "text": "I'm going with underground prison. I'm going for underground prison. That seems good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:05",
+      "text": "That seems likely to. I'm. I'm. I'm going with number three. I want it to be. Be true."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "106:10",
+      "text": "It's not a show that I have ever seen and it was not broadcast in any way in the uk So I have literally no idea. So I'm going to go with which of you two I trust most. So I'm going to go with H. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:21",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:22",
+      "text": "All right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:22",
+      "text": "Okay. Let's find out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:24",
+      "text": "Okay."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "106:25",
+      "text": "Which of those Young and the Restless storylines is true. It's number two. The secret underground prison for his son. Turns out it's really hard to make 40 plus years of compelling storylines and soap operas."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:38",
+      "text": "Yes."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "106:38",
+      "text": "Here's to you, Eric Braden, Victor Newman, the Black Knight. Here ends the Truthsayer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:45",
+      "text": "It's a crazy format for storytelling."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:48",
+      "text": "Tom, did you. Have you ever listened to the Archers, the BBC radio soap opera?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "106:55",
+      "text": "I have heard the Archers. My mom listens to it occasionally."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:58",
+      "text": "I love the Archers. Like, every time I'm. Every time I'm on a road trip in the uk, we listen to the Archers the entire time and we're just really invested in it. And then what? It, like, lingers for like a little bit. Like, we'll like, sort of like listen to it for, you know, like, I don't know, like, like a week or so after we get home, we're like, oh, man, this is great. We should. We just keep listening to this and then we. We don't."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "107:22",
+      "text": "But do you think they should do a version of Colossus, the full moon project?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:25",
+      "text": "Yes, they should. They could do anything. They're really talented at one of the farms."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:28",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:29",
+      "text": "Nice. Nice job. All right, here's our next voicemail."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "107:34",
+      "text": "Hey, guys, have here. Look, I'll be real. This Forbin thing, Forbis. I mean, I even found the link for h to watch it on YouTube and even so, I just couldn't find time. And I'm sorry. That's life. While I'm here, I want it known. I actually really enjoy Twilight and I've read all the books and seen all the movies. I just wasn't in the mood to talk about it at that time. So. Please put the pitchfork away. Now the Forbis project people can grab the pitchforks from the Twilight people and now they can come for me. There are no forward projects. Question. I wanted to come back similarly to Twilight. I wanted to come back to the meat space for a moment. I'm feeling really just unmoored. And it's not just, you know, Trump, right? But I'm just feeling very scattered."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "108:26",
+      "text": "Yeah."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "108:26",
+      "text": "So Kev's question. I'm wondering what productivity apps you guys use?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:30",
+      "text": "Use?"
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "108:30",
+      "text": "What do you use to keep track of everything? Is it as simple as the onboard Apple products, reminders, notes, maybe shared calendars with your fam? Do you use third party apps like Bear or Ticktick or Notion? What are your daily drivers to get shit done? Much love to Tom. Infinite love to you, agent Jason. Peace and love to the Chuckle Hut and beyond. And I'll talk to you all next."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:56",
+      "text": "Once again, it's Kev's questions."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:00",
+      "text": "That's a. That's a good voicemail. You."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "109:02",
+      "text": "You get. You get literally infinitely more love than me."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:06",
+      "text": "That's a good one, man."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "109:07",
+      "text": "You two literally got infinite more love than I did."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:09",
+      "text": "Well, we're very lovable."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "109:10",
+      "text": "Infinite love is good. Yeah, it's pretty good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:12",
+      "text": "What do you got? What do you got? This seems like a question for, for Matt H of anyone?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "109:17",
+      "text": "No, I mean I just try. I, I, I do use reminders. I use reminders, but it's mostly just to pick up Sam and then I use my inbox, I keep it under 50 as my to do list and that's it. And so I, Anything that isn't in the inbox doesn't really get looked at."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:33",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "109:34",
+      "text": "And I specifically try not to look too far ahead and see what's going on and just react on instinct most of the time. Much to my wife's chagrin."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:46",
+      "text": "That's an amazing product management strategy. Like I just sort of like sense the vibes. Yeah, I'm similar. I don't really use anything fancy. I use yeah. Gmail and Gmail and like the notes app on my phone are really like the two things that keep the most stuff. I'd say I am using Linear for software project I'm working on and that's, that's pretty sweet. Like that, that one's pretty good. And like this current generation of like software development tools like for project management is, is definitely. There's some good stuff in there like Linear Notion, those sort of things. Figma, all those. So shout out to those. But those are all very software specific. I don't have anything, I don't use any like the fancy to do apps or any sort of productivity stuff like that. Shout out to Kev. Though I am also feeling unmoored. Shout out to Kev. And the Austin Danger podcast has an episode on Wicked that I'm very excited to listen to next time I'm in the car. Really interested here. Hear his take."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:51",
+      "text": "I am dying to see Wicked. I haven't gotten out yet and I really, I really want to see it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:56",
+      "text": "Tom, do you have any productivity tips?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "110:58",
+      "text": "Much like h, I have 10,000 unread emails and that's where. That's my inbox. That's my, that's my to do list and I'll definitely get to them. No, I mean like, I'll be honest, I tend to be a lot focused on when I'm working on a specific project. Project. I like things to be organized and I sort of gravitate to normally because no one really cares what designers and product people think when it comes to ticket management and task management. I end up going with whatever anyone else uses. But I have a general preference for things like Asana which feel like they're a little more human well thought of than Jira and stuff like that but in my data. But for the last few months I've been just trying to focus on one thing at a time. Time really and just mostly just keep things in note and I do have the things app that I use. If I wake up and I go shit. I have to do a really boring job like get through my taxes and collect everything. I will waste time by breaking it into 300 little tasks that I can tick off one by one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "112:09",
+      "text": "I do, I do like the idea of Colossus just generating my schedule for the day."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "112:14",
+      "text": "I was going to say like yeah, I want to use Colossus. Just like Colossus could tell me like when I'm allowed to I need to take off my clothes and like when I can have a martini."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "112:22",
+      "text": "I would genuinely like not to have to take responsibility for my life for a while. So if. If some AI wants to take over for a bit just for maybe four years and just get me through the next four years by telling me precisely what to do. Have a pee now. Okay, fine, I'll watch this was this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "112:37",
+      "text": "Movie was really not as dystopian as it seems. Is the big takeaway people should should happen."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "112:44",
+      "text": "Yeah, we're into it. This is the future we want."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "112:47",
+      "text": "Hell yeah. Speaking of the one we want. Escape hat. Hey, this is Corey calling from Austin, Texas about a movie I did not watch. The Forbin Project."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:05",
+      "text": "Colossus."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:06",
+      "text": "The Forbin Project. Something."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:07",
+      "text": "I don't even know the name of this damn thing."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:09",
+      "text": "I'm so sorry guys."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:09",
+      "text": "I dropped the ball on this one."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:11",
+      "text": "Thankfully we have a a much more new and relaxed H and there's no more mandatory emails anymore voicemails anymore, right? No more. No more mandatory recording of extra episodes."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:24",
+      "text": "Like this is a kindler, gentler escape hatch."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "113:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:27",
+      "text": "Wild. I don't buy it for one second. So I still called in even though I didn't watch the movie."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:33",
+      "text": "I know Mr. Coates is there."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "113:34",
+      "text": "Tom Coates."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:35",
+      "text": "Great to have you back. I can't wait to hear you discuss."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:38",
+      "text": "This awesome movie that I haven't watched."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:39",
+      "text": "Yet but can get me real excited about to watch it. But I would like to make a request if we could have a little pottery talk from Mr. Coates. I think that would be great. Who would kill this one to play? Well, she would play the ghost to Tom Coates's Demi Moore as he makes his pots. All right, thanks so much for doing this and I can't wait to hear."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "113:59",
+      "text": "All about this movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "114:00",
+      "text": "Bye. I Can't believe the best joke of this episode came in, like 2 hours and 10 minutes. That was amazing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "114:08",
+      "text": "Tom, how's it going? What are you making?"
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "114:10",
+      "text": "Yeah, it's been a very strange few months for me personally, in my real life, after I finished my third through Person of Interest, end to end, which strong recommend. I have been setting up this foundation and getting that up and running and a few other things like that. And I've got a big project that I've been doing, which I was supposed to have finished in August, to write up how to do end to end encrypted messages UI in the mastodon ecology. So, you know, like, it's all thrilled to have it. So as a result, I haven't been making as many pots as I normally do. And the other thing that's happened is that my. What I find with pottery, this is much too much information, is that when I'm. When I'm a bit stressed, it calms me down. And when I'm a bit too stressed, I get."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "114:57",
+      "text": "It stresses you out."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "114:59",
+      "text": "I. I break. Like, there's always this thing. Like when I once tried to make my baby niece, she's going to be 2 in 10 days. And when. When she was like 6, like when she was 1, I wanted to make her an ice pot. And I thought, I'm going to really focus all my energy and see if I can make something emotional. I'll, like, try and charge this somehow with things that I feel, you know, and be all like, you know, whatever. Couldn't do it. Like, every time I tried to throw it, it would just sort of explode or fly off the wheel or just go everywhere. Like, you have to kind of get yourself into this headspace. I'm going to be honest, it has not been a good and easy time to get into that headspace. So I've been making some really nice pots, but very few of them."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "115:40",
+      "text": "And."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "115:43",
+      "text": "I made a really. There's a new glaze at my studio. It's very exciting. It's called Rogers Green. It's a replacement for the right screen we had before, which has now been priced out of the market for some kind of international reason. And some nice things have been coming out, but they are like the Zen and the flow have not been there. And I'm hoping that will change in the new year."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "116:06",
+      "text": "Yeah, we hope you rediscover it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "116:08",
+      "text": "You'll get it back in time."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "116:09",
+      "text": "Or I set fire to it and find a new career and find a new, like, new thing to get passionate about, which is what I'VE done like every three years most of my life."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "116:17",
+      "text": "So yeah, you could do that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "116:19",
+      "text": "Getting silk screen printing, that is always an option. Tom Coates, thank you so much."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "116:24",
+      "text": "Thank you so much."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "116:24",
+      "text": "Tom Codes, thank you so much for listening patiently to this person of interest podcast with briefing into Colossus, the Forbin Project."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "116:34",
+      "text": "Corbin Benson. Amazing, Amazing to have you back, Jason. What do you have to plug, my friend?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "116:40",
+      "text": "You know, Juniper and I went to go see the odc, which is local dance troupe's performance of the Velveteen Rabbit here in San Francisco. And it was really fun to like go see some live theater with a four year old who like, I think might be like, I suspect she might be a little theater kid. She like at the end of the performance was like, why didn't I get to go up on stage? When was my turn to go up there? I was like, oh, well, maybe soon enough. So yeah, that was really nice. A lot of fun stuff like that happening over the holidays."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "117:15",
+      "text": "That's great. Griffin. Griffin. Not as much of a theater kid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "117:18",
+      "text": "Griffin was like, I'm not going to that. He, he, he was, he was, was not, he was not interested. Oh, but speaking of Griffin, shout out to UCSF Benioff Children's Hospital in Mission Bay, San Francisco, because Griffin dropped like a very heavy weight on his arm over the weekend and we had to go for X rays and it was a delightful experience. We were in and out in like 40 minutes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "117:42",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "117:43",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "117:44",
+      "text": "Way to go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "117:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "117:46",
+      "text": "Is there anything Benioff can't do?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "117:48",
+      "text": "I know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "117:52",
+      "text": "And that's it for this episode of Escape Patch. I want to thank Jason and Tom for an amazing conversation. Next week it's the Return of the Queen as we welcome back the co host of the House of our podcast, Joanna Robinson. We finally tackle the one film that binds us, the Fellowship of the Ring. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and review wherever you listen to your podcast or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. Escape Hatch is a Tic Deck podcast, John a production of H Industries. Our artwork is by Catcher and our theme music was composed by Scott Fritz and who's the Boss music. The episode was edited and produced by me. H. Thanks for listening. We'll see everybody next week. Dr. Charles A Forbin schedule for today 0700-0800 exercise 0815-0830 shower and dress. 08090 breakfast half grapefruit, two eggs, three."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "119:09",
+      "text": "Strips of bacon, two pieces of toast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "119:10",
+      "text": "One and one half ounces of grape jelly and coffee. 0900-13:00 clock, begin work creating a voice."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "119:17",
+      "text": "For Colossus to Its exact specifications."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "119:20",
+      "text": "13 o'."
+    },
+    {
+      "name": "Tom Coates",
+      "timestamp": "119:21",
+      "text": "Clock. 13:30 Lunch. Small green salad, Thousand island dressing, grilled."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "119:25",
+      "text": "Cheese sandwich, half a pint of yogurt and coffee. 1330-1800, continue work on building voice for readiness. Day after tomorrow, 1800 hours. Return to quarters. 1815 shower. Eighteen thirty Mistress arrives."
+    }
+  ]
+}

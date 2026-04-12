@@ -1,0 +1,1831 @@
+{
+    "episode_number": 24,
+    "episode_name": "Drive",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod, your one stop shop to get ready for the new dune movie. This week, I'm joined as always by my co host Jason,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "this is what we will make a movie about driving in Los Angeles. And Gosling says yes, and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:27",
+            "text": "by the CTO of slack, Cal Henderson,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "0:30",
+            "text": "this movie has several scenes in which people very awkwardly sit a little bit from a glass of water. On"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:36",
+            "text": "this episode, we discuss an early role for Duke Leto himself, Oscar Isaac in a 2011 crime thriller drive. We discuss how sympathetic villains are just how hunky Ryan Gosling is and the dangers of listening to REO Speedwagon while under the influence, if you're enjoying the show, we need your help. Please leave us a five star rating and review wherever you listen to your podcasts as it really helps new listeners find the show. And now, without further ado, Drive. So, Cal, there's been a lot of discussion about your speed reading or speed listening."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15",
+            "text": "Please justify yours. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17",
+            "text": "walk us through how this works. Exactly. And what kind of content are you listening and what's your experience been?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:23",
+            "text": "So you know, this is for audiobooks, less. So for podcasts, and I think it's because when you talk to somebody live in real life, they talk much, much faster than somebody reading a book. And when I started listening to audiobooks, I listened to them on the regular speed and then found the speed setting. And it was, you know, like, revelatory, and gradually just cranked it up to now I listen to books at like three and a half, right? Which is, depending on the narrator that easy versus, you know, kind of can get difficult if the narrator has particular accent or, you know, it's a lot of complex words. So I listen to a ton of science fiction, some some good, some bad, pretty much any science fiction I'll listen to on audiobook and some other genres, like a lot of you know, kind of post apocalyptic disaster porn type stuff, although that's less attractive this year. than ever before."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:14",
+            "text": "Yeah, that's what else what else is in your what's in your science fiction, like kind of Hall of Fame? Book wise."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:20",
+            "text": "What about what about Vernor Venge?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "2:22",
+            "text": "I thought it was Vinci. But I don't know why I why I think your finger"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:26",
+            "text": "Yeah, I it's not Vinge. I know that. Yeah. But he's, he's a big he's a big hero for both Jason and I."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:33",
+            "text": "We love the Vonage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:37",
+            "text": "Yeah, all right."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "2:38",
+            "text": "We're gonna take a Paul I have I've definitely read all of his books, or I think everything that he's published, so I tend to like when I find an author, I like I've just listened to everything they've written. And then yeah, like, whenever they write anything, you read it. I think probably my favorite book by him is rainbows end, which is not a super popular one in general. I love it. It's just such a like, pedestrian view of the near future. And that kind of William Gibson way of just totally believable near future."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:09",
+            "text": "I think about all I think about all the time the the rainbows in like the concept of like dueling IP realities. Like there was like, people were just like, completely subsumed into, like a Harry Potter or like, you know, whatever, Dr. Seuss or Disney reality and just like, like, believing it to the exclusion of other realities. I like that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:30",
+            "text": "I think that was pretty. That was pretty heavily lifted in Ready Player One, right? They had that? Yeah, yeah, Oasis, all the different kinds of characters. But the idea of having a consensus reality that we agree, collectively, we're watching but then also, each of us having the ability to go to our own and do our own thing. Also, the idea of having search results being custom tailored. And this was way back when you know, search was like the biggest thing and the only real major thing on the internet. But the idea of your job is just to curate a feed for people and see how popular you can get doing that. That was fascinating."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "4:04",
+            "text": "Yeah, and that seems, at the time seemed science fiction. And now that just seems non scalable. But fascinating. Like that's going to be the province of the rich as you have somebody curating your feed, and everybody else is stuck with the algorithms. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:20",
+            "text": "that's right. Yeah. He's a good he's a good predictor of that guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:23",
+            "text": "Definitely. Well, I want to say Cal Henderson. Welcome to dune pod. "
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "4:27",
+            "text": "Thank you so much for having me. It's exciting to be here. You know, I think we talked about this back when we met a couple of months back about how you didn't play either of the dune video games from the 90s. I didn't but Jason or Jason. Yeah, they were some there was some good Amiga gaming action, especially the second one which really kind of was the groundbreaking in like the RTS category like yeah, pave the way for command and conquer"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:54",
+            "text": "it define the RTS category. Yeah. Yeah. The first one is very is very like genre defining and the second one I mean, and the first one is like a complete friggin Mel the wet wild shit. Like they just they just went with it. There's some good oral history about like the making of that game really? Yeah. Because there's there's a, there's a lot of weird stuff. Well, I think we're going to cover the games at some point, right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:17",
+            "text": "We are eventually but maybe we should try and like track down the designer or like somebody associated with Yeah, get him to come on that would be super cool. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:24",
+            "text": "Basically there's like an interesting, like product development story behind that game because they will get the right details. But basically they got they're like, no, no, no, we're doing another thing now. They're like, Okay, we'll just put that was game two. That's"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "5:38",
+            "text": "why it ends up is like two weird game modes that you switch between the two completely different games completely"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:43",
+            "text": "different. Yeah, that's pretty good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:45",
+            "text": "I never actually watched Robotech or Macross or whatever, whatever that anime is, but it was one where they took two different animes and shoved them together. So the story Oh, yeah. Any sense? Yeah. Yeah. Well, cow, we're stoked to have you here. You actually picked this film off of, you know, a whole set of options that we had. But cow really wanted to come on to talk about Nicholas Winding Refn Drive 2011 starring Ryan Gosling and a young Oscar Isaac,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "6:14",
+            "text": "when you, you know, sent me a list of films. I wasn't. I wasn't super aware of the context. And now it's super obvious why it is because it's Oscar Isaac is you know, yes. Is Yeah. This was before he was famous, right? Oh, yeah. Because this is before he did any of the Star Wars stuff. Yeah, this is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:32",
+            "text": "before. This was before Inside Llewyn Davis. This is like two years before he broke. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "6:38",
+            "text": "And he's fantastic in this movie. But it's also like a super all star cast in really weird roles. Totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:45",
+            "text": "So we'll get we'll get into that at the bottom of the hour here. Drive. Great, great film and a great discussion coming up on that. Next week on Dune pod is the season two finale. Wow. So we are welcoming Tim O'Reilly, who is coming on to dune pod to discuss his 1979 biography. Frank Herbert. Yeah, relevant."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:09",
+            "text": "Very relevant. It's very exciting. I've been looking forward to this for a while. Like Tim O'Reilly was like a personal friend of Frank Herbert's and consider him a mentor. And I'm really excited to hear about his experience with with the man who created the whole thing. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:23",
+            "text": "Yeah it's fascinating. I'm reading the book. Now, I will actually, for the last probably four weeks, we have included a link to the book, it is available exclusively on Tim O'Reilly's website. It's available for free because it's out of print. So you just have to go to the website and literally pull it up on your iPad and read it or on your computer. But it's definitely worth reading for incredible insights about dune and interviews with Frank, sitting down. So that is next week. And after the season two finale, you know, we're gonna be going on to a brief hiatus. Jason's gonna be on paternity leave. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:59",
+            "text": "Yeah, we're now two weeks away today from the birth of our second child. Oh my gosh. So like, hopefully, hopefully, that all that schedule holds and we are able to record during next week."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:14",
+            "text": "But yeah, I'm picturing you with the cell phone like, oh, you know, in the, in the side and trying to find the or, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:22",
+            "text": "I don't know, man. We'll see how it goes. So yeah, I'm gonna fall into a black hole and fall into a pit. And like, it's, you know, the second one, you kind of know, you know, obviously, like, you don't know what it's like having two kids but you know, about like, the sort of the first two months or just being like, fucking brutal. And so you just ate I just remember, like, the advice I gave all my, like, my, my expecting dads was like, it's like, one long day, that just never ends. You just keep doing the same day over and over. And there's like, no breaks and no horizon. And like, that's already been what 2020 is, like, so I'm not really sure. Not really sure how it's gonna go. It's gonna be great. As early. Great. I'm looking forward to it. As"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "9:02",
+            "text": "somebody in the two child category, it's definitely not easy to add a second one. But, you know, you you really kind of know what misery to expect. So I feel like that's much better."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:15",
+            "text": "Yeah, I think that's right. And like, you're also I think, also, I just have, like, less, I can already tell him like, less anxious about things like, you know, the, like, you know, like, particularly around the birth, like, you just don't know anything about bringing a baby home or any, you know, like, do I know how to like, change the diapers or like, put them in the car seat or whatever. It's like, alright, well, that stuff. At least I know. So. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:34",
+            "text": "I mean, I'm also in the two child category. There was just a 22 year gap between them. So that kind of Yeah, it's not quite"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "9:43",
+            "text": "made it easier. That's a good amount of spacing. You know, give yourself some breathing room. Yeah, that's the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:48",
+            "text": "way to do it. Except I would be dead. I don't have 22 years to give on the other side."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:57",
+            "text": "All right. Well, so let's, you know, let's Just get into some dune news. Would you like to know more? This Week in Arizona? This is maybe why it's taking longer to count the votes. But there was a test screening of Denis Villeneuve's Dune 2021. Yes, this has apparently been confirmed. There was at least one source. It hasn't been confirmed. The second source but secrets of Dune has a video that's posted. We'll include a link to that so people can check that out. I have not watched it because I'm nervous about spoilers from watching it. But apparently, there was thunderous applause at the end of the screening. And the running time was estimated to be two hours and 10 minutes. Hmm, Jason, your take on that?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:46",
+            "text": "My previous estimate of the running time was two hours and 20 minutes, so I feel pretty good. I feel pretty good about that. Nice. And yeah, it seemed like it was positive which is great. And like I think the VFX aren't even done. Which is like hard to do in a movie where there's giant fucking worms I bet"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:02",
+            "text": "the VFX is mostly done right like since they were planning to ship in a month I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:07",
+            "text": "guess so but like I I started listening to the secrets of dune video and then I also just like got scared about like hearing too much of it. And I heard I heard some part that the some of the VFX was not was not done yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:20",
+            "text": "so very excited about that and getting and getting that one step closer and cool to hear some confirmation well I'm sure we'll see additional tests in the future."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:29",
+            "text": "Yeah, looks good. Alright, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:31",
+            "text": "cow give us your history with dune again. There's no There's no litmus test here. We're not into gatekeeping on Dune we have people who have a lot of experience and people with none so what about what about you? What's your experience with it?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "11:42",
+            "text": "I think I was probably first exposed through the video games in the 90s No, not really being super aware of it. I'm not sure at what point I watched the movie for the first time that would have been a long time ago. Yeah, the the lynch movie that would have been you know quite a long time ago. And then I read the books when I was young ish and then read them again sorry, I said the books I read the first book and the second book and then you know like not gonna I'm not gonna go crazy here the there's a quality drop off I feel so I don't know I don't know if that's if that's controversial."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:21",
+            "text": "A there's a lot of question about how good you know the books are that some people think actually even books four five and six are like the best ones in this series which is crazy to me no one says that they're getting there in pro Are you quoting protolexus? No, no, I'm quoting the dune discord like there are people who like fight to the death for you know God Emperor of Dune is like the holy the holy red"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:42",
+            "text": "cal, that's how serious Matt is. He goes he goes and he's making friends in the in the dune discord on our behalf to spread the word about Dune pod."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:50",
+            "text": "It's a good group. Yeah. And it's been it's been a lot of fun getting to know people in there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:54",
+            "text": "How's your friend beef swelling, beef swelling is doing good. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:56",
+            "text": "were just talking about you know, the finale of Children of Dune and that the twist that came at the very end of that relative to possession and some of those some of those details, so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:09",
+            "text": "shout out to you beefswelling."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:10",
+            "text": "I will say cal discord has this really cool feature where you can do spoiler tags in posts. So yes, it blocks out some of the text we really need. That is Slack. So feature request,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:21",
+            "text": "there's got to be a plug in for that in Slack. There's got to be a work"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "13:24",
+            "text": "based spoilers. It's what do you feel like you work baseball?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:29",
+            "text": "It's like you find out what your your bonus is? Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "13:34",
+            "text": "I'm inviting you to this meeting, but I'm not gonna tell you what it's about."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:38",
+            "text": "Yeah, exactly. That's right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:45",
+            "text": "All right. You guys ready to get down to business? Yeah, yeah, let's do it. All right, here we go. Drive is a dangerous ride that asks whether you can chart your own course get the girl and hold on to your innocence as danger closes in all around you. Driver is a young car driving stuntman and mechanic who has allowed himself to get drawn into the seedy underworld of organized crime. He's highly sought after for his incredible skills as a wheel man, and his steely, cool temperament under extreme pressure. Drivers world is up ended when he meets Irene, an innocent mother with a young son. What seems to be a blossoming romance with Irene becomes complicated when her husband standard returns from prison and immediately draws heat on to his family. In order to save Irene and her son, driver will be forced into the heart of darkness as he goes head to head with the mafia. Will he have what it takes to defeat his enemies and emerge a free man or will he be left as wreckage along the side of the road? Drive?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "14:57",
+            "text": "Great is that introduction like an official description of the movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:02",
+            "text": "No, this is that's Haitch that's, that's Haitch."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "15:05",
+            "text": "So one of the weird things about this movie is when you read the synopsis, you think it's going to be like a Fast and the Furious kind of movie. It's like a heist movie or driver with Jason Statham. It's not that and it's nothing like that at all. In fact, there's not really much driving in it. Right now. You probably see more time with him just like waiting at stoplights and kind of hanging out in his car than you do any kind of chase scenes. You know, there's what, like 10 minutes of chasing maybe in the entire movie,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:35",
+            "text": "maybe? Yeah, yeah, maybe there's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:37",
+            "text": "three there's three chases. There's basically three main chases. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "15:41",
+            "text": "And that quick and brutal. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:43",
+            "text": "similar to like Sicario people thought Sicario was going to be like this fine action movie like bad boys. And all of a sudden it was not that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:51",
+            "text": "or Crazy, Stupid Love with Ryan Gosling, which people thought was gonna be like a rom com"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "15:54",
+            "text": "that's actually exists actually an amazing movie. As"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:57",
+            "text": "an amazing movie. Yeah, it's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:00",
+            "text": "Before we get into it, just just briefly, let me just list out the cast and crew and then and then we'll start to walk through the plot of the film here but so we have Nicolas Winding Refn Was this his first major film?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:11",
+            "text": "He was already kind of, I guess it's his first major film, but like he was a hot director to work with for previous stuff. I think that the Valhalla movie, The Viking movie that got like, good attention and distribution, and so yeah, and he was like, it was there. I get when we get into it, basically. Yeah. Like, Gosling went to him to try to convince him that he to work together. And like, you know, it was like, Yeah, I really want to work together. And so he was the one that was being pursued for a number of different things."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:44",
+            "text": "Got it. Got it. So we have Gosling, who obviously has had a really long career going back to the notebook as his original kind of breakout. But but this was the beginning of a really different phase of his career much more serious and powerful one. Carey Mulligan, who's great Oscar Isaac, we already talked about. We have Bryan Cranston, Albert Brooks. We'll get into amazing Ron Pearlman. kind of ridiculous and over the top as always, Christina Hendricks. This was right after madmen was blown up. And Cliff Martinez on the score and Newton Thomas Segal on cinematography. So that's the crew."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "17:20",
+            "text": "So this movie came out, I think, maybe the same week or maybe like within a week of contagion? If you remember that movie from"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:30",
+            "text": "interesting Soderbergh. Right. Yeah. Which"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "17:33",
+            "text": "is, obviously a pretty relevant movie for the last year. But also was a another movie. That where the description of it, you thought it was going to be a zombie movie, like it's going to be action and people are running, and there's going to be like, you know, people dying all over the place. And it turned out to be a lot of like people hanging out in the houses or doing press conferences and being sad. And so it was just like a year for movies with descriptions that sounded like they're going to be action. And then we're actually kind of slow. Like, you know, suspenseful interesting pieces of cinema? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:09",
+            "text": "it was almost like more of like a thriller than it was like. Actual zombie movie. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:14",
+            "text": "I've not I've not seen it. I definitely would like to check that film out. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:18",
+            "text": "it's great. I don't know if you want to if it's if it's the best time to watch"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:20",
+            "text": "the vaccine. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "18:22",
+            "text": "Don't watch it this year. Yeah, don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:24",
+            "text": "watch it this year. Jude Law is great in that too."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:26",
+            "text": "Yes. All right. So so just right out of the gate, I want to say that font and the pink, like just on the credit. It's not the full credits. It's like the partial intro credits. I was like, Holy shit, they just immediately put me in a vibe. But that intro song took an o'clock by the chromatics. That song rules."
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "18:48",
+            "text": "There's 100,000 streets in the city. You don't need to know the round. Give me a time and a place. I give you a five minute window. Anything happens in that five minutes, and I'm yours? No matter what. Anything happens a minute either side of that. And you're on your own. Do you understand?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:12",
+            "text": "I love the way he delivers that. Yeah."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "19:15",
+            "text": "It's such a great kind of opening line. But also you don't see him delivering it. So you're not sure is he like, is he actually saying that right now? Or is it like from another time? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:26",
+            "text": "it sort of sounded like you're like, Okay, we're dealing with a man with code. Yes, we're dealing with like, a code guy. That's the guy with code a coder. Some sort."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "19:35",
+            "text": "Definitely apprehensive when I when I got to that bit in the cinema, when uh, what do you say cinema or theater in this country"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:41",
+            "text": "theater. Cinema works fine."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "19:43",
+            "text": "So I was definitely apprehensive when I got to that bit in the cinema. Because they had that kind of amazing, you know, visuals on the intro. And then it's like, oh, is this going to be super? Super actually, you know, is he going to be a Jason Statham type character? You know, Oh, don't contact me again on this phone. And who knew what was going to happen? I don't know. It's a super. Yeah, super confusing intro."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:09",
+            "text": "It definitely sets up it sets a tone, which I like. And then we cut from there straight to the garage with Shannon play by Bryan Cranston. Jason you talk about this a lot but the just like how economical The storytelling is. Right? So he he says, Cranston says I got you the Chevy Impala just what you liked the most popular car in America but I put 300 horses in there for you. So it's sort of like seating what's going to happen at the end and sort of tipping that hand but all of it that the highest the tension of waiting for the guys to come out and then the actual multiple stage chess you know, of the of the chasing was just fantastic."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:50",
+            "text": "Yep, it was a it was it was really good as a great as a great intro. And, like, establishes that he's just like the super capable guy who's ready to like, you know, he's ready to drive."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:02",
+            "text": "And he's so cool, right? Like he just like pulls over and turns off the lights. And he just said for a minute and then I was like when he turned and I'm like wait a bit he turned towards the cop. What is he doing and now he's right behind the cop following him Yeah, and he's gonna bust off in the other direction. That was great and him timing it such that as the game ends he pulls into the Staples Center garage and boom there's no way that he can be caught in a crowd yeah"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:27",
+            "text": "it's amazing because you like it's he he's watching the game he's watching the Raptors as the Clippers right yeah, he's watching the Raptors clippers game like in the in in his room and that just is in the background like throughout like the whole thing and he turns up the volume to like know where he is it's so great like it's just it's it's really well done love it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:48",
+            "text": "will catch your call that last week that the Raptors were in the game and so I was watching it and I just saw it said Toronto LA and then in the end when he got out and he put on this la hat and it was just like a like a nondescript la logo and I was like oh wait a minute. This is like the Los Angeles nobodies or whatever this is like a fake team and then I heard no it is the clippers. I just don't recognize their logo. Apparently. An old clippers logo. Yeah, no shade on the clippers. Sorry, guys. Alright, so then it goes into the credits and of course we have night call"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:28",
+            "text": "night Call, man The soundtrack is good in this movie. This is like a soundtrack I listened to a lot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:33",
+            "text": "Yeah. But this was like a moment in like on the internet. This song was everywhere. Everybody was listening to it. French hip hop and all of that. Synth, whatever. 80s synth sound that was just phenomenal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:46",
+            "text": "Yeah, I think that's the whole, the whole soundtrack really had a moment. I think that maybe even outpaced the movie a little bit."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "22:52",
+            "text": "It's a very like a the whole synth score. Very 80s feel, but it's not like stylistically an 80s movie. Right? It's more like a 70s kind of movie. But with like, more more modern cinematography, but the soundtrack is amazing. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:10",
+            "text": "I think you're I think that's a good point. Like it is actually, you know, with the neon titles and the cynthy soundtrack is like meant to, is like definitely of a different era than like the actual more bullet Steve McQueen. Like style influences on the movie. Right? It seems like it's definitely it. Definitely. He went for it. I mean, so I guess it's a good time to talk about like the director. And like how much he describes himself as a fetish filmmaker, when you like read interviews with him. Like that's like he routinely describes himself that way. He's there's a lot of good details about Refn, and he's just a bit of a nut. It has to be said like he's a he's a wild dude. And by fetish filmmaker, he means that he wants to put on the screen. Like the things that he like fetish sizes and like wants to see. And so and so it comes out in weird ways, because he talks about he's like, I don't have a fetish for cars, but I have a fetish for the Fetish that people have for cars. And like, and then like, but really what it means for him ultimately is like sex and violence. He has a fetish for very, like, over the top violence. Yeah. And yeah, and like the close relationship that that has with with sexuality. And so yeah, there's some there's some really good stuff from him. There's some really good stuff from him in this and the whole story. I guess. Maybe it's like a good time to share it too. I mentioned before that dazzling went to him to try to work together and he brought a script. And Refn was like, is Danish and was visiting LA and arrived with the flu. And he like flew to LA with the flu, which like, you know, in the COVID times, I was like how irresponsible you flew on a plane with the flu. And then he got hopped up on anti flu medicine and read the script but couldn't remember in it because he was in his words as high as a kite and had a super high fever. And Ryan Gosling was like, let's have dinner and he was like, Okay, and so he went out to dinner with the flu and the super high fever. And, like, the dinner didn't go very well, like because Ryan Gosling was asking questions about the script, and he like, couldn't remember what was in the script. And he was like, High on flu medicine. And then he asked Gosling to drive him home to Santa Monica, which is like 45 minutes from where they're having dinner. And and like, they didn't have anything. It was like an awkward silent conversation. And so Gosling turned on the radio and REO Speedwagon was playing. And for some reason, this made Refn like miss his family, at home and in Denmark, and he just started crying. What the hell yes, to REO Speedwagon because he was like high on flu medicine"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:54",
+            "text": "and I Can't Fight This Feeling anymore."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:59",
+            "text": "And like he like says, he says, the guy's like and like you're with tears streaming down is fever, racked phase, listening to REO Speedwagon. This is what we will make a movie about driving in Los Angeles. And Gosling says yes. And like Yeah, and like, it's just wild shit, man. Like, he's like, every interview with him is just like, God, this guy's a fucking looney tune. But obviously, like, deeply creative and a good filmmaker, so you know, what can you do? That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:34",
+            "text": "is a crazy ass story, dude,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:36",
+            "text": "that is it's a good story. It's pretty good. It's pretty good. It's in a featurette on Drive. So you can fact check me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:41",
+            "text": "Amazing. Alright, well, so. So driver, you know, gets home. And it's interesting the first time that he kind of meets Irene, they don't interact at all, they just walk past each other. And there's a great shot where you see her and it's like a nice little breadcrumb there. And then literally, in the next scene, they're in the elevator together, they go up there on the same floor. So there's a little bit of connectivity happening there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:03",
+            "text": "This is when he has the jacket on, right? Yeah, he has the he now has the scorpion jacket on. Yeah, yeah. When he like meets her for the first time, which what like had a whole moment, at the time the movie came out, like the scorpion jacket was like, it was like a big was a big thing. I have to say. Like Ryan Gosling is like, kind of my platonic ideal of like a cool guy. And it was so like, relieving, like, just from my insecurities perspective, watching this movie with my wife, because she was like, so not in debt, like it still is all thing. He's like, he's like, he shows up in that jacket. I'm like, oh, man, that was like a cool thing. And she's like, What the fuck is he? Wow, the scurvy jacket doesn't do it for you. And then like the next scene is in the grocery store with Irene and he's wearing like that really? dark denim denim jacket? Yeah, the denim jacket. And she's like, I hate denim shirts and guys and jean jackets. Right? Fuck you right guys? Do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:59",
+            "text": "that jacket was hot. What do you like? It's made Levi jacket that they made for him for the movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:06",
+            "text": "Yeah, he also has a mocked up Patek Phillipe watch on, which is not a real watch, but it's also cool. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "28:13",
+            "text": "through throughout the whole movie. He he wears two outfits, but like switches between them. I was trying to figure out is there a is he like, have one side of his personality when he's wearing the scorpion jacket and one side where he's wearing his jean jacket."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:27",
+            "text": "This is a good point. Because one of the things that Ryan Gosling talks about when he talked about playing this movie is that he viewed the character he was playing as a werewolf. Hmm, that's the that's what that's what he said. And he said, he basically said like, he's one person by day and one person by night that this the character he's playing is like this two sided person. And Winding Refn when he talks about the movie, and he talks about like the structure of the movie, he talks about the inspiration of grimm fairy tales on the movie, the grim fairy tales of the biggest inspiration for the movie, he said, because there always is a quote, were always rooted in reality. And even though it's a heightened reality, it was always essentially a love story about good and evil. And like so like this, this notion of a kind of an archetypal story, a guy trying to save the girl and who is who has to become the monster in order to do so is essentially the whole movie and that's why it kind of has this like super earnest vibe to it. Everything on everything in this movie is like super on the nose."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:36",
+            "text": "Interesting. Well, yeah, keep keep reminding me that as we as we make our way Yeah, I hadn't thought about the day versus night angle, which is interesting. So we get a little bit of the motive for me a little bit of the core motivation of of driver when he goes to work, and it's this great shot where he's in a cop uniform, and you don't know anything about him yet, but you're like, oh, maybe he's a cop, but it's only for like one second. You realize he's on a set. But it's instantly made clear that they don't give a shit about him at all. And he is perfectly the shot that conveys that is there's the actor who is playing the role that he's the stunt double for. And people are like fawning over him doing all of his makeup and stuff. And then, you know, drivers sitting there, he has to do all his own makeup himself. Nobody cares. Nobody's helping. And then this guy comes in jams a contract in his face"
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "30:28",
+            "text": "to the Minister. He's before he put you on camera. She just signed this contract that just basically releases liability to the company in case you died, maimed or seriously injured."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:38",
+            "text": "Right? If you die, it's a real name. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:44",
+            "text": "That was awesome. Yeah, so good."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "30:47",
+            "text": "And it really starts to introduce the character of Shannon as well, right with Bryan Cranston. Of it's like, he's his, he's his manager, and he's pushing things on him, but he's taking a big cut and, you know, maybe he's taking advantage of him. But also, he's kind of not a very sophisticated person right now. Shannon character. Yeah, he"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:06",
+            "text": "seems like someone you can kind of tell that he's gonna get worked. I was really I was surprised both Brian seen Bryan Cranston and Oscar Isaac in this movie. I was like, holy shit. Yeah. Like these guys really went on to do difference like they they really broke out after after because this is like this is it's not pre it's not pre Breaking Bad for Bryan Cranston. It's like the middle of Breaking Bad for Bryan Cranston, right."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "31:29",
+            "text": "Similar to Christina Hendricks. It's he's taking like a very small role in this film at a time when he's huge. And he's blowing up. So it's kind of interesting. How minor his character is. Josh"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:41",
+            "text": "Brolin talked about this about how there are these really intense boundaries, typically impermeable boundaries between TV and film, and our heart, like you can be huge on TV, but But Hollywood doesn't think about you that way, typically. And so it's hard to make that jump and so they had to take what they what they could, but made a lot out of it. I absolutely love the head fake. Since he is like the stunt handler. It's a great fake out where you immediately think Oh, Shannon, he must have gotten hurt doing a stunt. And now he can't be a stuntman anymore. Now he has to be like a handler, whatever. So like that was that was a nice, a nice twist there."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "32:19",
+            "text": "That's the first time we see him in the leg brace, right? Because in the exact scene when he's talking about the car, the Impala has ready. You don't see that because he doesn't move right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:27",
+            "text": "So so then we go to, to driver seeing Irene and Benicio in the supermarket. And driver initially avoids them, but ends up helping when he sees that our car's broken down. So Jason, I'm sure you have the story of the handheld shot here. But this was like one of two that I noticed that were like super handheld moments where most of the intersects to the film is not."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:50",
+            "text": "I didn't pick up on that. That's interesting. What's the other one?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:54",
+            "text": "The other one is at the end when she is knocking on his door, and he does not answer. Those are two great handheld shots. That"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:03",
+            "text": "so it's like, it's basically like the scenes that like kind of bookend his relationship with her like sort of indicating the like, unsteadiness of that sort of that. That's great. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:15",
+            "text": "he ends up you know, I think getting them home, driving them home, and, you know, helping, you know, unpack the groceries and whatnot. And so the chemistry is really awkward. And I noticed, he's like, super stilted, his performance. And then he just turns on that smile, and it's like, a million fucking amps. And you're like, Oh, my God fucking Gosling."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:40",
+            "text": "He says the kid. Hey, you want a toothpick? Yeah, I love that. That's very charming."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "33:46",
+            "text": "This movie has several scenes in which people very awkwardly sit a little bit from a glass of water. Right? Yeah. Yeah, I think it's supposed to show that the you know, poor at social interaction."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:58",
+            "text": "Right? Right. Interesting."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "34:01",
+            "text": "He's just so awkward in the way he accepts a glass of water. He doesn't say thank you says like, Okay, I totally"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:07",
+            "text": "noticed that too. And he does like a weird cheers with it. Like I actually I actually thought I was like, do we do that? Do humans do the water to humans? Like, cheers with like a glass of water when the other person has not? I don't think we do that. And it felt like a very like talismanic thing like, Oh, she's giving me water in her home. Okay, I will accept it. Yeah, and will cheer. Very weird. I"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "34:27",
+            "text": "think it's supposed to show that he's just very socially unsophisticated, and it really made me want to understand what his backstory was supposed to be before that this like, has he never interacted with a woman before? Right. And he just doesn't know what to do. Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:43",
+            "text": "But they don't go to like, this isn't like some autistic story or whatever. Like, it's not that thick. It's like it's a little bit here. It's awkward. He's not he's not good at dealing with people. And he mostly sticks to himself."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "34:54",
+            "text": "Yeah. And he had that moment in the parking lot too. As they're coming out of the grocery store. He goes just got up, puts his groceries on the herd. He looks over, he looks back, he kind of thinks about it. And he's like, alright, I'll go over and help. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:08",
+            "text": "yeah. Not his first choice or second choice."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:11",
+            "text": "Yeah, because he knows he's a werewolf. And he doesn't want to like expose her to his, you know? lycanthropy Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:18",
+            "text": "I will say relative to the werewolf, quick tangent. Listen to the night call. It starts with a werewolf sound right after the quarter goes into the payphone, there's a werewolf sound. Oh, and I was like, I definitely have heard this on Kanye West Life of Pablo and it's on wolves. And I asked Ian de Bourgh Ha, you know, our former guests on this show and host of cinenauts with ctcher now their new podcast cruising through the Criterion Collection. And I was like, dude, was that on wolves by Kanye and he's like now that's sia singing that intro turns out, it was a wolf sample that was used four and a half minutes into that song so now you know hip hop, backpacker ism, you know continues. Good. We go from there to Albert Brooks as Mr. Rose."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:37",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:38",
+            "text": "speak on it,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:39",
+            "text": "who? I love our books. I love our books. I'm just a big fan. He's a God. We've talked about before on this podcast, defending your life, which I love. He's of course great. And like, you know, taxi driver. He's just a great actor. It's interesting because Nicholas winning Raven, we talked about the casting of Albert Brooks as Bernie Rose said, you know, I'm not a particularly a Brooks fan. I mean, I like him. I haven't seen all of his movies. But I thought he'd be interesting in this movie. Like, this fucking guy is just amazing. Yeah, but just I think the idea of seeing Albert Brooks as a as a straight villain is amazing. Just a great a great choice."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "37:23",
+            "text": "Well, that's interesting. You see him as a straight villain. I see him as like a he's reticent to be evil, but feels like he has to throughout most of the film. Really? Compared to compared to Nino? You know, he doesn't he doesn't want to have to, you know, kill Shannon later in the movie. He's, he's forced his hand is forced by his idiot partner. Ah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:49",
+            "text": "I don't think I don't think he had too many proclivities. He definitely has a weird knife fetish. But I thought he was just sort of like for him. It's it's money, and he's going to do what he has to do. Like it's just it's business. not personal. Just business. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "38:07",
+            "text": "yeah, that's definitely the vibe. I got that. He regrets it a little bit. But he's gonna do it anyway."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:12",
+            "text": "That's right. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:14",
+            "text": "I mean, I think I mean, like, I think like the fact that he has like a, a bespoke murder accessory case of like, of stabbing weapons suggests that's a problem thinks something's a little little off with our guy."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "38:31",
+            "text": "It's clearly the most cared for artifact in his house as well, because you see a little panning shot of his house. And it's like, he has this beautiful jewel case. And he's lining up his his knives is he's done this before."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:44",
+            "text": "it's big, sweet, big Sweeney. Todd energy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:47",
+            "text": "That's right. Yeah. He's a former movie producer who basically has made a transition into crime and I love how he describes his movies as as trashed. But but one critic described it as European come the zero as a as praise. So basically, the core of the story here, Shannon, Bryan Cranston, Shannon wants 430 grand for a stock car and for driver to be able to drive it and the goal is to be able to make millions of dollars over time. And so Mr. Rose, Bernie is backing that process. We're also introduced to Ron Perlman, who is Nino, his partner and he's basically an enforcer. You know, what can I say about Ron Perlman one of his first lines is"
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "39:35",
+            "text": "now this is one motherfucking five s puts the mobiel mother fuckup."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:43",
+            "text": "So great, so great. I was like, great. He also Ron Perlman also has the best line in the history of the aliens franchise. Yeah. In alien because he's an alien. Resurrection isn't really a rise, resurrection. And here's the line. I am not the one with whom to fuck, I believe is his line in that movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:06",
+            "text": "That's because it was a French director. Yeah, that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:09",
+            "text": "was a Joss Whedon line, I believe. Anyway, so he's got that going for he's got that going for him. And he also created as Ron Perlman created his own character in this movie, like, basically, Raven didn't have like a take on like, what the what the character should be. And Ron Perlman was just like, I want to be in this movie. And let me tell you what my vision is, is I'm a Jew, who wants to be Italian? And then Refn was like, perfect printed. Yeah, but let's go. Love it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:41",
+            "text": "I thought that was great that that moment when that is revealed later, as his motivation and the chip that he has on his shoulder, I thought it's similar to pesci in Casino. Yeah. Which I finally saw this year. I'd never seen that before. Oh, wow. Yep. Yeah. Great. Great movie."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "40:57",
+            "text": "The character of Nino is just so over the top. Yes. It's like everything dialed up to 11 but some amazing outfits too."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:05",
+            "text": "Oh, yeah. For Yeah, for sure. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:08",
+            "text": "Good costumes on this movie overall"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:09",
+            "text": "very much. This was not like John Borman's wife. No,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:13",
+            "text": "John Borman's wife was not consulted on this is great. Do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:17",
+            "text": "you have a take on zardoz? Cow? I"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "41:19",
+            "text": "probably wouldn't wear that to work. Yes. Well, I guess this year you could, it would be fine. You"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:26",
+            "text": "could for sure. You could zoom in wearing the the red, the red diaper where?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:30",
+            "text": "Okay, is there gonna be like a Coinbase style slack post about not wearing loincloths to the office?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "41:38",
+            "text": "Watch watch this space. I guess. That's an incredible outfit. I assume it then inspired fifth element. Oh, yeah. Yeah, that's a good call. No. So it was it important foundational kind of movie costume ring for later generations? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:56",
+            "text": "Leeloo Dallas multipass. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:58",
+            "text": "it was a foundational movie for some coke dealer in Ireland. vacation home as well."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:06",
+            "text": "All right, so. So Irene shows up later at Shannon's shop to get her car fixed and Shannon offers for a driver to get them home. He drives them home. And he's like, do you want to see something? And he takes him for the drive like we're Greece was shot where they were like racing, greased lightning or whatever. But then they go to a creek somewhere like where is this creek? Where's this mythical Creek in LA?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:29",
+            "text": "Oh, it's the LA River. Come on."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "42:31",
+            "text": "It's at the end of the spillway. This is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:33",
+            "text": "an iconic location did not know that have not been there. It's I mean, it's used all the time. I mean, I think this is like there's a number of layers of which this movie like is a meta movie like the fact that he's in movie you know he's a stunt driver and movies and they you know they introduce him in a cop's outfit and it's a head fake and like like you know all the all the stuff there I think but this scene in the viaduct is as this like explicit in the LA river this explicit homage to like cinematic history in LA because like you know, Greece has shot their Terminator two yeah shot their Dark Knight Rises a shot there a bunch of other like famous like, driving scenes have been shot in the LA River. Yeah, what a great take though."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:21",
+            "text": "I can't believe you said Dark Knight Rises on this podcast. Why would a sucky ass movie?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:27",
+            "text": "Okay, well, look, I was born in darkness. Anyway. It"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:31",
+            "text": "was great. That location was awesome. And him driving and the music is the first time we get the song real"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:38",
+            "text": "hero by college and electric youth. So great. So great. It was talking about can we talk about the song for a second? Sure. I liked this song a lot. I liked that. It was like sort of a hit. A couple of things about the song. real hero by college and electric youth. Do you know what the song is actually about now? This song is a Ode to Sully Sullenberger, the pilot of the downed Hudson River. Yes, the last verse, the last verse of the song contains a lyric. Like if explicitly, like an Ode to Sully Sullenberger,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "44:34",
+            "text": "I assume the song was like 30 years old as well. I thought it was a proper 80s original."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:39",
+            "text": "It wasn't written for the movie. It's a proper movie. It's a proper song. I was like, Yeah, from that time it was it was from the time of the movie, but they found it for the scene. The other thing I love about it is it also contains the lyric. Your pursuits are called outstanding. You're emotionally complex, which is like so on the nose. I mean, Like to have a song about like a hero, that's called real hero and contain the lyric. You're emotionally complex. I mean, it's a lot. And I think I but I think what's going on here is it's the perfect complement for the tone of the movie because the movie itself is just very earnest like a movie is not this is not an ironic fucking movie. Like, this is a this is a fairy tale and like the things in this movie stand for something and it's a real, like, you know, Manichaean struggle between like the forces of view and the forces of evil and there's a hero here, and he's got a dark side, but he's gonna rescue the girl and like, that's it. Like, that's what this movie is, right? And it's just done to this like, you know, nth degree of technical, you know, skill. It's a genre movie, basically. But like done, you know, super well."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "45:48",
+            "text": "I think that scene when Irene comes into the shop, is also when I realized that he doesn't have a name, and he's not going to be referred to by name, right, because he'd been driver up till then. But Shannon always refers to him as boy, kid or"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:01",
+            "text": "Yeah, yeah, yeah. Yeah, that was awesome. I really liked that and their interactions as it as it starts to get a little deeper, I thought were fantastic. When they get back. And like, there, I just, this is where I wrote down the million watt smile that he has. And as she's standing there, you can literally see her breathing. And you can just feel like the waves of charisma like chorus ating over her and she's just like, Oh, my God. I'm in love when this man. And then they go for, you know, over a couple of scenes, they go on on a couple of drives, she puts her hand on his hand, you see the things are developing. And then she tells him that her husband is coming home soon. And I just love that shot it immediately they're at a stoplight. And it's just like read both stop warning like danger, like all of that told so effectively in that moment. So I thought that was really well done. Yep. All right. So Oscar is standard. So I just want to call out again catch her last week, said that Oscar was quote,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "47:08",
+            "text": "oh, he's just a piece of shit. He's just a piece of shit in that movie. Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:15",
+            "text": "I thought Oscar was was really I thought standard was a really interesting character. He's a complicated character. Yeah, so we have this welcome home party, and it's super awkward. But he says "
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "47:28",
+            "text": "we're here celebrating but it's it's a shameful thing that I did. I have a lot of making up to do to everyone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:41",
+            "text": "And then he toasts her so you can tell that he is serious about wanting second chances don't come easily or something. I just thought he was great in that scene."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:51",
+            "text": "Yeah, I think he's I think it's a nuanced performance. I think it also is crazy to see I was I thought he was unrecognizable in this like, he's like both smaller he's more live he like looks like his haircut like is the his whole appearance just feels completely different than than any other time. We've seen him since. But I think it's a great performance."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:14",
+            "text": "Her just staring at him across the party as he's as he's giving them toast or whatever was beautiful, tough one. And then we have you know, we cut to driver Home Alone sitting there. And I just want to call out the theme through most of the movies. Nobody has overhead lights in any of their places, like everything is just spotlights from like a couple of lamps that are around"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "48:35",
+            "text": "his house is implausibly dark, but he also never spent any time there apart from that scene when he's fixing the engine or whatever it is. It's like I guess I'm done. I'll go live in my car again. I can definitely believe that he sleeps in his car."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:51",
+            "text": "Yeah, yeah, it is weird. It doesn't like it's actually like You're like is this like he's is this like his like staging area for his heist? Or does he actually live here? Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:59",
+            "text": "So he comes out and he sees her sitting alone in the hallway. She is definitely bombed. They're talking. And that's when standard comes out. And immediately the tension is there and standards there with bunnies do you know the such a cute little kid and he's like so so you know, but he said tells me you've been hanging around a lot. Is that right? Is that right? And then says thank you and then says let mommy talk to her friend. The Menace is just immediately dripping out there. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:29",
+            "text": "it was it was a I mean, and it's but I mean, kind of a reasonable confrontation, to be honest. For sure. Your kid is just like, oh, this is Mama's new friend. And it's fucking Ryan Gosling. Like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:39",
+            "text": "and they're in the hallway during your welcome home party. Yeah, yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:44",
+            "text": "And he's got his fucking Scorpion jacket. And he's like, you know,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "49:47",
+            "text": "he's the coolest man alive."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:48",
+            "text": "He's the coolest man alive. Fuck that. There's gonna be questions. Yeah. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:53",
+            "text": "I do look, I do love this little interlude scene where he's like, Fuck this. I'm out and he goes to the diner and he gets recognized by this dirt bag, you know, criminal guy who said that he had driven him in Palm Springs last year. And he starts to pitch him, you know, I need a wheel man. And he just turns to him and says, how about this, shut your mouth, or I'll kick your teeth down your throat and shut it for you. The guy the guy says, nice seeing you again and just get the hell out of there. I think"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "50:23",
+            "text": "that's the first kind of time that we see that side of his character. Right? You know, because he's, he does the job at the beginning, but he's super calm and collected through it all. And you don't know if he's, he's going to be a violent kind of person. And that's like a turning point when you start to see the other side of him. He's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:39",
+            "text": "scary in that moment. I'm like, Whoa, that is there's some darkness swirling around on there. Alright, so he gets home and you see standards been beaten up, that his family has been threatened. And there's a great scene where standard calls out that you know, he had some protection money in prison, but 2000 turned into 10,020 1000 And basically, these guys wanted to pull off a heist, and they're threatening to kill the family. So I just I thought that was great. Both in terms of Oscars performance, and then Gosling's reaction. Oh, that"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "51:08",
+            "text": "was really good and a fantastic performance by by Benicio as well that Caden Laos"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:15",
+            "text": "he didn't know anything else unfortunately but he was great yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "51:19",
+            "text": "it was really fantastic and very believable interaction in that scene as well when when standards like lying there bleeding on the floor."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:28",
+            "text": "And when when beneath your hands him the bullet that tracksuit mafia gave him it's just like, whoa, you like Gosling is so pissed in that moment. You can just feel it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:39",
+            "text": "I do like that tracksuit. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:42",
+            "text": "Well, so speaking of so now it's time for a tracksuit mafia guy. So this guy is amazing. So the scene starts where are they? They're like an Echo Park or something. Echo Park. Yeah. So they're in Echo Park and you know drivers giving his regular five minute speech and you know, he's like, it's perfectly rehearsed and everything and he gets to the end of it and tracksuit mafia goes, you look like you're hard to work with."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:04",
+            "text": "Yeah. Mean It is probably true, right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:11",
+            "text": "Totally."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "52:11",
+            "text": "But cook that character. The the Albanian gangster is also like, he's always grinning as well. Like, you know, he's like an untrustworthy, but also a bit of a moron. And really comes across in that scene when drivers trying to be so serious. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:28",
+            "text": "James bibury. I'm trying to think what else I've seen him in, because I just thought he was awesome in that movie. Oh, he was on Daredevil. Okay. Oh, interesting, based on what makes sense a little bit, but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:40",
+            "text": "Ocean's eight I imagine not as a hero."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:43",
+            "text": "Probably not"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "52:44",
+            "text": "an uncredited role in National Treasure. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:47",
+            "text": "okay. So this also had though his his line of dialogue where he is describing, you know, he's going to pay Cristina's character this much, he's going to pay standard this much. And he's like, I'm not gonna pay you this much. He's writing it on his hand and he shows it to him. And it just says, fuck off. This was like, Jason, like, you know how many people I know in El Paso?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:10",
+            "text": "This many? Yeah, that's pretty good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:12",
+            "text": "All right. How about Christina Hendricks and her introduction here."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:15",
+            "text": "Just surprising to see Christina Hendricks and a movie. Like it's just, it's that was a that was a shock. I wasn't expecting to see her and I saw her name in the credits. I was like, really? Yeah. But she's great."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "53:26",
+            "text": "And she doesn't look like Christina Hendricks in this movie. But it's a great if brief performance, playing a very bleak, believable, very down to earth character. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:38",
+            "text": "yeah. Well, so I was talking to Jason about this earlier, like, just all of the archetypes of like crime movies, and the wheel man and the face. And you know, just like the people who have all these different roles, like I just love all those archetypes. And so it's really fun to see. See those kinds of characters brought to life. Shout"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:55",
+            "text": "out to the best ever. Christina Hendricks roll from Firefly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:00",
+            "text": "Oh my god. Yes. Outside the pawn shop. We're waiting as a standard goes in there with Christina and just the tension is so amazing. You don't go inside. You don't see what's happening. You're just sitting there watching his reaction and he's ready to go. She comes out with a big bag. She gets in standard comes out and he gets blasted from inside. Standard is dead. Super dead. And super dead. Yeah, hyper mega dead. Yeah. So so let's talk about this chase scene. Where do you guys where do you guys think about this?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "54:35",
+            "text": "It's really stylistically interesting in a way where it's not showing a lot of driving, he mostly just drives straight down the road and takes one corner. And it's a lot of kind of reaction shots of Christina in a way that you know, rather than showing the outside action, they show a lot of the interior of the car. And then this is the the scene that has the stupid backward driving piece, right? Why Yeah, why I Don't know why they put that in this movie, it doesn't really fit. Yeah. And they didn't need that they should have just cut out that 30 seconds when he does a Jason Statham, like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:07",
+            "text": "they didn't give any explanation of why it would be helpful in that moment other than looking very cool, which it does."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "55:13",
+            "text": "Yeah, it's that was the I think the thing that fits least stylistically in this whole movie is like, it's a bit too much driving for a movie called Drive."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:23",
+            "text": "Too much. But then, for me this, this, this film suffered just a little bit of we just watched Fallout, Mission Impossible Fallout two weeks ago. And so like that has such an unreal chase scene with all these practical stunts that are done. So it's kind of hard to compare that to this and have drive come out ahead. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "55:47",
+            "text": "but I really liked the crash part of it when you know, he overcomes the enemy. Because it's so pedestrian. It's not like a crit. There's no crazy big explosions. They just like hit the side a bit wrong. And you know, the car flips over. And that's the end. It's like, yeah, that's a little bit realistic. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:04",
+            "text": "So they had to a motel to kind of cool off. And they discover that it's not $40,000 that they've stolen. It's $1 million that they've stolen. He gets a little rough with her in this scene. Yeah. So that was that was a little intense. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:20",
+            "text": "I think like, this is like you start seeing the werewolf now like he really he you start getting the sign that this is a guy who's not at one and then this is where you start to realize this is a guy who's going to do some shit. Like he's not just you. He's not a he's not just gonna sit. He's not just a driver."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:38",
+            "text": "Interestingly, what he says though, is you just got a little boy's father killed. Yeah. So it's not even his own personal, you know, fear or anger or whatever. It's the fact that that, you know, Benicio now grows out without a father. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "56:52",
+            "text": "yeah, I feel like the implication was that if it wasn't for that, he would have just walked away and it would have been a job gone wrong and no big deal, but it was because of Irene and Benicio that he that he cares."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:03",
+            "text": "Mm hmm. So she calls for extraction. They send a kill team instead. I love the shot behind him. You see the shadows going and instantly know what's going to happen. I was not expecting Christina Hendricks had to get blown off. Yeah, that was very visceral. It's a"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "57:21",
+            "text": "lot more visual than I was expecting as well. You really see like chunks of head. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:27",
+            "text": "like the kind of the first really big, like, gory bit, right? Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "57:34",
+            "text": "standard got shot, but like there was no kind of brutal violence up to that point. And then it just suddenly turns it all the way up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:40",
+            "text": "Oh, yeah. Well, when he stabs the guy with a metal rod, and then she's the guy with the shot guy, but the metal rod in particular was very over the top."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "57:48",
+            "text": "You know, when when he pulls the curtain down, I'm sure he's gonna do the kind of movie classic and strangle him with the curtain and instead is just like no bucket right in the neck, like blood everywhere. And you see him then turn the corner with blood all over his face and you're like, Okay, now now he's the werewolf yah, yah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:05",
+            "text": "yah, yah, strong werewolf vibes. I will note also there's no score through any of that it's all just just the tension of the action that's happening. He has enough information that he got from her before she was killed. So he heads to the strip club to go take out cook and so he walks in there's tracksuit mafia hanging out with a bunch of strippers. This is the only seat with it's really well lit it's like very bright inside inside this room"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "58:33",
+            "text": "this scene is amazing because he walks in the door and you know it's a strip club but you don't see a strip club you see the kind of the backstage and there's the pulsing lights and the stripper just texting on her phone who like completely ignores him and it's like it doesn't glamorize it at all. You know any other you can imagine a different style of this movie would have been he walks through that strip is everywhere. It's like club"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:57",
+            "text": "and there's like strip club music playing. Yeah, I got this this reminded me a lot of Clockwork Orange the way this the way this looks like it reminds me of like, some combination of like the milk bar and like where the assault goes down like in the, in the artists, the novelists home, like there's just like these big exposed bulbs. And then I think the reason it reminded me of the milk bar is because all the women are essentially just statues in the scene like almost like naked speak, they don't move they don't react and there's lots of like kind of slow pans over them just kind of like coolly observing what's going on. Yeah, I found the scene really good."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "59:38",
+            "text": "I think you know what you expect when he you know, when he starts with the with the violence is that they would like run and scream and fall over each other. And instead they're just quiet and they're like this. This is the kind of thing that happens when you work at a strip club run by gangsters. Right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:53",
+            "text": "exactly. We have seen this like 100 times cooks only been here for three months. There's gonna be another cook next month. Keep your head down. And it's shatta that he does the hand shatter, which immediately just destabilizes cook. Like, there's no way for him to have anything. Any response at that point. He's just been completely incapacitated. Very effective. Yeah, he does put a nail on his forehead. And I was thinking, like, if I know"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:21",
+            "text": "he puts a bullet"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:00:22",
+            "text": "bullet, it's the bullet he gave."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:23",
+            "text": "The bullet that he gave to the bonito realize, like you remember you remember when he gave it to this boy? He's gonna, like, bring a nail the bullet into his forehead. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:32",
+            "text": "But if you like, can you really hit that bullet without hitting your fingers?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:35",
+            "text": "It's a good question."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:37",
+            "text": "That'd be tough."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:00:38",
+            "text": "It probably with a hammer like that. It's not going to set the bullet off. It's just going to nail it into his head and kill him as if it were a nail. Sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:44",
+            "text": "I'm just saying I would definitely hit my fingers. Like, I'm not I'm not"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:48",
+            "text": "stablished you're not Ryan Gosling. Yeah, like he's, he's, you know, repairing engine parts in his room. He knows his"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:00:55",
+            "text": "waist. He's handy with a hammer. You know, we see that laser handy with a hammer."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:59",
+            "text": "Yeah, he's got those. He's got those leather gloves that are very sensuous. We grip. Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:01:04",
+            "text": "there's quite a lot of kind of close ups with the squeaking of the gloves is the gloves of squeezing them on. You know, when he cracks his knuckles and squeaks the gloves. You know, it means business with"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:14",
+            "text": "the gloves squeaking. I think this is where you get into the Fetish like the Fetish filmmaking part of it. Like there's so much of that that's just like these little senual details of the movie that are like, you know, this blend of sexual and violent. Yeah, that like I think is what this that our guy Refn, Refn is really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:32",
+            "text": "well, so So he calls Nino and he basically is just saying, Look, let me give you the money. And you know, and leave the family alone. And Nino kind of can't believe that this isn't a setup. He assumes there's there's a big game happening. But as he's talking to Nino, that's where you get the shot of his his hands flexing in the glove on the hammer, and him being furious. And you see like a sweat coming down his face. So the intensity was was way up. So they don't show what happens to cook like he's dead, right? Like there's no way cook gets out of that alive. They"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:02",
+            "text": "don't show what happens to cook. That's a good point. I don't know what happens to him. I assume it doesn't go well for him. It's"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:02:10",
+            "text": "similar to a later death of the hands of the driver. They just don't show it but you assume it happened. Right? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:18",
+            "text": "He heads back. He does talk to Shannon and Shannon says, Hey, let me try and see if I can help. Let me look into this. And I'll talk to Bernie and see if I can help and Bernie talks to Nino who then sends his enforcer to go basically to go get driver. And so now we get to the elevator scene. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:40",
+            "text": "elevator scene, my God. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:43",
+            "text": "he offers her he offers Irene the money basically tells her what happens a standard and offers her the money and she slaps him in the face. Which I guess she's like, don't bring the heat on my family."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:02:55",
+            "text": "Well, he also really kind of changed changed his interaction with her at that point, because he's kind of frantic and desperate, you know, he's dropped all the kind of cool, silent. You know, he's just completely different mode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:08",
+            "text": "There are no smiles like from this point on for the rest of the movie. He never smiles. It's always just your simmering or afraid or whatever. But yeah, but he does say like, I could come with you. You know, you can have the money but I can come with you and take care of you. So they get on the elevator and there's Nino's hitman. So like Jason walk, just walk us through this shot, because I'm just in love with it. Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:32",
+            "text": "so it's interesting. A couple of things about this. First of all, this was a real problem in the script, apparently, like he didn't know where to shoot this scene, like the scene was not originally scripted as an elevator scene. It was like somewhere else in the movie. And the editor for the movie suggested to Raven where to put it. And then it took a lot of workshopping to, like figure out what he wanted to get done in here, which I think is really interesting that it was like the hardest puzzle to solve in the movie because it's shared the absolute kind of fulcrum of the movie. So basically, he correctly senses the guy that gets an elevator with him as trouble, the lights go down, he does this very delicate move where he puts his hand on her to like move him or her away from the bad guy and behind him, and then he turns his back to the bad guy in this moment of like real vulnerability to kiss her. And this is like where you get the grim fairytale vibes again, because it's you know, this magical kiss. But in this in what you know, they've talked about in the count in some of the feature ads is that this is really a kiss. He's kissing her goodbye. Like, you know, this is he's kissing her because he's going to have to transform into the monster now. In order to save her. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:00",
+            "text": "he had he had said, but before they got on the elevator, he said, I'm going to go someplace and I'm not going to be able to come back. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:06",
+            "text": "Yeah, man. So yeah, it's just it's just the whole it's the whole movie turns on this. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:13",
+            "text": "then he looks over, he sees the gun in the guy's holster or whatever. And he just goes to work on this guy and, you know, just kick kicks his head in until there's no more head left. Yep, for"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:05:27",
+            "text": "the first like, for the first couple of kicks and punches. She's just startled. And she's like always saving me and then her like, looks turned to terror as he just doesn't stop. And and as you know, his he completely transforms. Yeah, before they get in the elevator as he says, I'm going to have to go somewhere and I can't come back if it's meant physically or I'm going to have to become somebody else and I won't be able to come back from it. Yep. And that's that's how it feels. You know, he's now the different character and will will never see the original version of them again. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:59",
+            "text": "again. I think for me, this is like, this is his rage at them putting Venetia in the crosshairs then putting Irene in the crosshairs then killing standard. This is not so much about him personally, this is about what he's willing to do in order to protect them. So this is sort of like, right back in prisoners territory. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:19",
+            "text": "it is right back into prisoners territory. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:22",
+            "text": "it's a little lighter than prisoners, but but not too much. Yeah. So that was great. So we cut from there to Rose is super pissed at Nino as he finds out that he ripped off the mob. And this just has the only thing I want to call out here is Jason have we finally found a stabbing scene? That's worse than the Ex Machina stabbing scene? Yeah, I love this man as rose goes to work with a fork with first and then and then a chef's knife."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:48",
+            "text": "Yeah, man. He really he loves it. He's a stabby guy. This Bernie rose this this Bernie rose that cal thinks is an okay guy. Oh,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:06:56",
+            "text": "wait, that character the stabbing is cook. Right? Yeah. So he doesn't die. The the driver must not kill him. Oh, yeah. Good boy. Yeah, but he's, like in traction, so he must have. The driver definitely did more than just break his hand."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:10",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:07:11",
+            "text": "but left him alive."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:12",
+            "text": "Interesting. That's a good point."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:14",
+            "text": "We're still Crystal's comment during that scene was Wow, he got stabbed in the eye first just out of spite. It's like the fork. The fork is not really necessary. If you're gonna like also butcher knife. Of course."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:07:29",
+            "text": "I figured that was too. You know, you do that really quickly. So he doesn't know what's happening and can't react. But right, it would have been pretty much the same if you just got stabbed with a butcher knife. So I think it was just just to demonstrate to Nino what he was gonna have to do to clean up Nino's mess and what he was willing to do."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:46",
+            "text": "Yeah, either that or he just got caught up right. Once he stabbed him in the eye. He's like, alright, well, that's a good start. But now like, let's, let's see where this. Let's see where this takes us. So you do have this great scene where rose goes from there. Bernie goes from there to Shannon's garage. And Shan is literally carrying his his bag. And he's like going somewhere. And basically asked him to tell him where driver is which he doesn't do he lies and says that he's gone to Belize or something. And rose comes up and he just slices his whole arm open. And I love the moment where he says,"
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "1:08:20",
+            "text": "Dont worry. Don't worry. That's it. It's done. There's no pain. It's over. It's over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:27",
+            "text": "And it's all over."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:08:28",
+            "text": "Yeah. See, that's that's how I see him as a compassionate gangster. You know, he could have he could have hurt him. He didn't want to have to kill him. He was sort of"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:35",
+            "text": "his friend. He could have stick. Stuck a fork in his eye. Yeah. You know,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:08:38",
+            "text": "he was really very gentle, relatively speaking."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:41",
+            "text": "That's a fair point. Yeah, it's gnarly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:45",
+            "text": "So So driver shows up. There's a tender moment as he's sort of touching Shannon's face after he finds him dead. And then of course, it's revealed the million dollars is just in the trunk. So he grabs that and then we cut to outside dinos. And basically, he has gone to he's gone back to the set. And he's gotten this mask that he wore the bald head mask that he wore for the stunt. And so he's wearing that under the under the scorpion jacket. And he's just standing outside. I don't know what the song is that's playing. Yeah, I don't I don't make a note. But it's incredible. And just like as it keeps zooming in from inside the restaurant, as he's standing there, and you're getting closer and closer. You're just thinking he's gonna come in and destroy everything. Yeah. And I love how that played."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:09:37",
+            "text": "And the scene inside is also so like, so depressing. Like Nino is doubled up in laughter and there's laughter Yeah, bored looking stripper right in front of him who doesn't care? Let's see. Yeah, that's that's his life."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:51",
+            "text": "Totally."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:51",
+            "text": "I was I was wondering about I was like, what's going on? Like, I always anytime there's someone wearing a suit in a casual function, I owe it all was just trips my I always just trips my sensors I'm like, What is this event that you're having and like the front of your pizza parlor was strippers but you're wearing a suit to it just seems like I don't know. I don't know what what the invites look like for that event."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:13",
+            "text": "You know what maybe he had a plutonium thing later."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:16",
+            "text": "A little plutonium, a little plutonium event later to go. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:20",
+            "text": "so we don't have an explosion inside Nino's, but we do have Nino's leaving. And again, just a great shot of his face in the super crispy mask as he's sitting in the car waiting for them to go. And then he basically chases them down and and knocks their car off the small cliff. And then he's chasing down Nino who's running from him in the in the sand near the near the ocean? How about that lighting? From the light? Yeah, a lighthouse?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:49",
+            "text": "Mm hmm. Good lighthouse, actually,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:51",
+            "text": "did they talk to the cinematographer? Do you get into that in the featurettes or not?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:55",
+            "text": "No, he didn't make it into the he didn't make it into the it's funny to like Raven also had some line about the cinematographer. He's like in terms of photographers, you know, there's lots of photographers who are very good. And in Los Angeles, you have all the best crews and the one we worked with on this movie. I had liked some of his stuff. And so I was like, okay, cool. He's a lunatic. Yeah. Another fun fact about Nicolas Refn is that he is dyslexic and could not read until he was 13 years old. Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:33",
+            "text": "Interesting. So driver does call Irene and he leaves her voicemail st being around Benecio was the best thing that's ever happened to me, which is great. And then he calls Bernie and Bernie's like, we're the only chess pieces left, let's meet at the Great Wall restaurant."
+        },
+        {
+            "name": "Drive Sample",
+            "timestamp": "1:11:49",
+            "text": "Here's what I'm prepared to offer. You will give me the money, the girl is safe. Forever, nobody knows about. She's often that I can't offer you the same. So this is what I would suggest. We conclude our deal will shake hands. You start the rest of your life. Any dreams you have or plans or hopes for your future? Think you're gonna have to put that on hold. For the rest of your life, you're gonna be looking over your shoulder. I'm just telling you this because I want you to know the truth. You're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:31",
+            "text": "gonna have to put those on hold"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:12:33",
+            "text": "indefinitely. It's yeah, it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:35",
+            "text": "a it's a very good. It's a very, you know, straightforward pitch."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:40",
+            "text": "Super matter of fact, like just so well delivered. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:45",
+            "text": "love Albert Brooks. He's so good. He's so good doing the scene. Yeah, I mean, he's this great, amazing. I want to have Chinese food with Albert Brooks. That's my that's my new celebrity fantasy. I just want to have some crab Rangoon."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:12:56",
+            "text": "Nice. But the the power dynamic in the scene is strange because Albert Brooks doesn't hold all the cards. He's just Yeah, threatening personally to murder Irene and Benicio right driver has all the money. Yes. And has all the power in this situation. So it was interesting to see how it developed from that point onwards. And I don't know to what extent driver had the plan of you know, it seemed clear he was going to try and kill him immediately. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:23",
+            "text": "I don't think he hadn't quite figured out right like driver had it partially figured out. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:27",
+            "text": "like I like that they intercut between the dinner like that they've cut up the time in the scene. Yeah, like Yeah, he's telling him you're not going to make it and then they don't even bother like sort of doing the walk to the car or anything like that. They're just straight ahead to like, yeah, it's not gonna, it's not gonna work out for this guy"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:43",
+            "text": "totally. But they go outside driver opens the trunk and turns around and gets stabbed, you know, hard in the stomach, and then brings down the knife to cut Bernie that shot like it's such a strange choice to show the shadow of them as they're struggling and Bernie dies and then driver stands up. It's such a weird shot."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:14:07",
+            "text": "I don't know if you noticed in the shadow after they've been stabbed. Drivers hair is all kind of fucked up in the shadow. And it's like, yeah, that's realistic as he grabbed him. I don't know. It just popped out to me that there they were, you know, putting so much attention on the shadows and the shadows were not beautiful shadows. They were very raw."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:27",
+            "text": "Totally Yeah, I just love that and the fact that you see driver kind of stand up after it's over. And then he's slumped back and and then you have him you know, you have the shot where the music is playing and you think like maybe he's dead. And then Nope, he blinks. That's just a long weird shot to have it be that that that stretched out. There"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:49",
+            "text": "reminded me the end of Blade Runner 2049 Another movie in which Ryan Gosling also has a gut wound and is slowly dying but maybe not"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:14:59",
+            "text": "enough. One of my favorite genres of movie, it turns out, get gut gut. Specifically Ryan Gosling gut wounds, perhaps he's dying."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:08",
+            "text": "Yeah, it's a great genre."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:12",
+            "text": "So driver leaves the money behind with a dead body. And that's his way of telling the East Coast mob like we are out of this shit. We don't have anything to do with it. Not that there was anything to tie it back to them. In any case back to those folks but or I guess maybe the girls at the strip club or whatever, could could identify and re give a description. But so I thought that was smart. And then we go to that the handheld shot of Irene knocking on the door, no answer. And then we have driver driving at night. Credits."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:48",
+            "text": "It's great. It's a great movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:50",
+            "text": "So they say where he was driving at that point. Was he like outside of LA at that point?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:54",
+            "text": "I don't know. They didn't say I didn't. I can tell. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:58",
+            "text": "had a sense. He was heading north. Also like in Blade Runner, not"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:16:01",
+            "text": "not to Belize."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:04",
+            "text": "That's right. What a great movie"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:07",
+            "text": "is a really good movie."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:16:09",
+            "text": "I think it's a an underrated movie. And I saw this one in the cinema back when it came out. And it didn't have a huge audience at the time. I think it was, I can imagine it's the kind of it's very slow and takes its time to get going. And people could find it boring. Right? I could see people tuning out halfway through and not being feeling like you're going into an action movie. And then instead you get this kind of slow kind of dream like, you know, emotional movie with, like, brief moments of hyper violence. But mostly"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:47",
+            "text": "it's an hour 35. Like it's a tight, it's actually a really tight film."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:16:52",
+            "text": "Yeah, and it's the I don't know if controversial opinion is the length film should be. It's fantastic. We agree running time. Okay. Two out who has two hours to see a film in 2020."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:03",
+            "text": "None of you have kids."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:04",
+            "text": "All right. Final thoughts and what do we learn about dune? 2021"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:11",
+            "text": "my final thought is a quote from Nicolas Refn, that I will read. I think I believe it comes from Indiewire interview. Whenever I'm looking for something fucking weird. You just share it on this podcast. I just search for it. Because they've always got the weirdest shit. Okay. He says, I met Jodorowski four years ago in Paris. And that was pretty groovy. I mean, we knew that Refn. Refn was a Jodorowsky homeboy, because that makes I mean, he's, he was in university has done but I met here at Jodorowsky four years ago in Paris. And that was pretty groovy. And I went to his house for a Tarot reading and dinner. And I remember my question was, should I do Dr. And he gave me a Tarot reading. And he said, You will travel with this movie. So I took that as a yes. And then we became quite close friends. I've always admired his work, mostly because if you're ever in creative doubt, or feel, you're getting a bit too secure. Just watch a Jodorowsky movie. What's interesting about him is that he goes against all kinds of conventions of what filmmaking is supposed to be. Then he christened me his spiritual son some years ago, it was kind of bizarre. And quote, amazing. Yeah. But I think I mean, in general, I was just like, it's interesting. Like this movie super violent. It didn't like bug me as much as other super violent movies do sometimes. Because it's like so stylized. And this guy's was real lunatic in a good way. And I haven't seen any of his subsequent movies. They're all super fucking weird. I know. And he made like that TV show. That's like a billion hours long and super violent. And I didn't watch that either. But God bless him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:50",
+            "text": "I do want to watch that. I do want to watch that show. Too"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:53",
+            "text": "old to die young, too old to die young. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:56",
+            "text": "too old to die young, right? That's actually written and produced by Ed Brubaker who's one of the best crime genre comic writers out there. He famously teamed up with Shawn Phillips for a bunch of different series, including criminal, as well as sleeper which is my personal favorite comic of the 21st century."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:11",
+            "text": "Did you see Did you watch? Only God forgives? No other Ryan Gosling? I haven't seen it either. No, no."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:20",
+            "text": "Cal final thoughts and anything that makes you think for doing 2021 including Oscar Isaac."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:19:26",
+            "text": "I was definitely gonna say Oscar Isaac. In my mind. I'd forgotten that he played this role in Drive. You know, because he's gotten so big sense and I definitely saw him as you know, as Poe Dameron maybe as Nathan Bateman and Ex Machina maybe as Apocalypse and the terrible X Men movie, but he is just fantastic and drive as a completely different character. And like a difficult complex character. That is just so well played that maybe he's going to be fantastic and doing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:59",
+            "text": "well. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:01",
+            "text": "yeah, I definitely see him. You know, there's aspects of this of being in trouble being in danger and knowing that you don't have any choice but to walk into the trap and hope that you can make your way out of it. Assemble the best team that you can like that's definitely aspects that we can apply to dune and Leto. I just really like their elements when I was watching this just thinking about how there's these quiet moments and where, where it's just sort of like tension building and then explosive action. Denis does that really well. It's one of his strongest suits. So that made me really excited to to see how that would play out. All right, cow, we have one final bit of business for this film. Who would Tilda Swinton play? If you had to recast Tilda Swinton in any role in Drive? What would it be?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:20:53",
+            "text": "Oh, I think Oh, it's a for me. It's a toss up between Bernie rose and Blanche. Like, do we have her be like the kind of brutal gangster maybe with a little bit of heart or, or Christina Hendricks character and probably ought to go Bernie rose. I think it would be a very different film, but that would be fantastic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:17",
+            "text": "Nice."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:19",
+            "text": "100% agree. I would love to see tilda swinton in an Albert Brooks roll. I think that would be great. I would love to see till this one as a mob boss like a mob. Dude. Generally"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:28",
+            "text": "last week it was detected or two weeks ago. I was detective and now it's now it's my boss. I like it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:33",
+            "text": "I just wish there was a tilde this one movie every week that I could watch Well, I would"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:36",
+            "text": "definitely cast her as benecio in this. Her sitting on the couch watching this shark cartoon or whatever. I want a toothpick All right, that brings us to letters. We have voicemail. And you'll never guess who it's from."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:01",
+            "text": "I bet it's from Texas."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:02",
+            "text": "It is from Texas. Here we go."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:22:05",
+            "text": "Hi, Cory. Oh man, the Ladybird and yalls discussion about it got me thinking about high school course. And speaking of denim, trench coats and drama class. So I was in drama one. And they needed help for the drama force, set design and everything. One of the students came in, who was in drama for to ask, who would help and drama one and I saw like the hottest, most aloof chick ever. And he was wearing a denim trench coat, puffy denim trench coat. Anyway, I was totally smitten. And she ended up becoming my girlfriend and my first wife. Wow. And then. But anyway, we smoked lots of clove cigarettes together. And I tried to impress her. And I on that first day, and I still got an entire can of red paint on the set. So it was a terrible first impression that I worked. Anyway, great episode labor drive in today's episode, I guess, thinking about in the future. Ryan Gosling is hot to stick in this movie in the out of control. So I really really fell in love with him. And I also love him and only God forgive, which I highly recommend, even though it's not for everyone. Anyway, very Listen, you guys seen the clips of? That's great. Cory."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:38",
+            "text": "We love you. Thank you so much."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:40",
+            "text": "It's good to hear the Corey lies. Only God forgives. I'm gonna watch it now. I've heard mixed things. But I mean, it's got Ryan Gosling as directed by this lunatic. So it seems good. Every"
+        },
+        {
+            "name": "Speaker 1",
+            "timestamp": "1:23:51",
+            "text": "time I see that Ryan Gosling is in a movie. I think that I am not gonna like him. And then every time I love him, so it's like, yeah, first man. Blade Runner. 2049. Lala Land. The Nice Guys. Did you see that movie? Shane Black?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:24:06",
+            "text": "No. Yeah. With Russell Crowe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:09",
+            "text": "With Russell Crowe. Yes. Jason. You got to watch it. Okay. Terrific movie. It's a great 70s Kind of like, crime crime movie in the 70s. Very, very much on that. Super good. And then obviously, I have to see Crazy Stupid Love. Yeah. Cow. What? Like, what do you want to plug? Tell us about exciting new features that are coming up or, you know, what? What do you got going on? What do you got going on that you're excited about right now? Oh,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:24:35",
+            "text": "it's hard to be excited about anything in the world on the on the on the fourth of November as we're still don't really know what's happening in America."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:44",
+            "text": "Or what happens on the fifth tomorrow?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:47",
+            "text": "Well, we burn effigies."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:24:49",
+            "text": "Well, I mean, my wedding anniversary, but I feel like probably the more important thing is the election in the US."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:55",
+            "text": "You know, and so you got married, is it you got married and Guy Fawkes Day."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:24:59",
+            "text": "Yeah. And this is fantastic because then I can't forget because there's growing up. It's remember remember the fifth of November which hardly Yeah, the Gunpowder Plot"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:11",
+            "text": "we also have V for Vendetta. I was gonna say Do you watch V for Vendetta with Rebecca every time every year?"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:25:16",
+            "text": "I watched that movie in the cinema. I have not watched it since I don't remember it being very good. But Stephen Fry. I think it's very good. Stephen"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:25",
+            "text": "Fry is in it. And also Chris, what's his name? Super atheist. Oh,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:25:31",
+            "text": "prep. Now. Oh, that's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:37",
+            "text": "Chris Pratt. Super Christian"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:25:38",
+            "text": "now. Oh, yes. Sorry. Noted. Atheists. Oh, Chris Hutchins."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:42",
+            "text": "Chris Hutchins is in V for Vendetta. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:44",
+            "text": "Yeah, he plays. He's like the radio guy. He's like the voice of Britain. Oh,"
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:25:48",
+            "text": "weird."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:49",
+            "text": "Did you know that tilda swinton has a voiceover role and uncut gems."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:53",
+            "text": "Wow. What wrong? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:55",
+            "text": "She's like, like an Auction Manager or something? Like I think she's on the phone or something."
+        },
+        {
+            "name": "uncut gems sample",
+            "timestamp": "1:25:59",
+            "text": "Can I speak with him? I'm sorry. I'm gonna have to have you over. I brought you to. Yes, this is fucking outrageous. Okay, you need to calm yourself down. I don't want to."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:26:10",
+            "text": "It's weird to me. After watching. After watching drive on Netflix told me I should watch uncut gems. So I don't know what Netflix"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:18",
+            "text": "uncut gems is very good. Yeah. Let me ask this question. Do you like having a panic attack?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:24",
+            "text": "Yeah, it's very relaxed. If"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:26",
+            "text": "so, you're gonna love this movie."
+        },
+        {
+            "name": "Cal Henderson",
+            "timestamp": "1:26:28",
+            "text": "Interesting. Okay, I feel like I'm all panicked out this year. So maybe it'll just be a very, very chill watch."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:38",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and cow for a really fun conversation. Next week. Join us for the dune pod season two finale, as we welcome Tim O'Reilly to discuss his 1979 biography. Frank Herbert. This will be an amazing chance to hear from someone who knew Frank Well and gained fabulous insights into the books. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries. The episode was produced and edited by me H. Our artwork is by capture and our theme music was composed by Toby Foresman of whipsaw music. Thanks for listening. see everybody next week."
+        }
+    ]
+}

@@ -1,0 +1,1681 @@
+{
+    "episode_number": 73,
+    "episode_name": "Lawrence of Arabia",
+    "dialogues": [
+        {
+            "name": "Tapedeck",
+            "timestamp": "0:02",
+            "text": "This is a tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:15",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod, your one stop shop to enjoy the new dune movies. This week I'm joined as always by my co host Jason,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:25",
+            "text": "if some bro in a meeting is just dropping the mystic Lee's like red flag emojis and by"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:31",
+            "text": "the host of the Recode media podcast, Peter Kafka. Occasionally"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "0:35",
+            "text": "I talk to a director and if I really want to just see their soul die, I'll tell them that I watched all or part of their epic on my phone,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:42",
+            "text": "we talk one of the most epic movies ever made. David Lean's 1962 masterpiece, Lawrence of Arabia. If you're enjoying the show, we need your help. Leave us a five star rating and a review wherever you listen to your podcasts. And be sure to hit that follow or subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. A link is in the show notes. And now without further ado, June, Lawrence of Arabia where do we want to start? Do we want to start with the Twitter news? Or do we want to start with a quick get back recap? Oh, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24",
+            "text": "I mean, we got to start with the earliest possible news, which is that the Beatles broke up in 1970. I don't know if anyone knew that. They also were plagued by internal disruptions and leadership challenges over time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36",
+            "text": "You've been watching Peter."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:38",
+            "text": "I watched all eight hours. That was what I did. Yeah, hanging out my family over Thanksgiving. I snuck away to various rooms and I watched the entire thing on my phone, which is how I swore I would not watch it. But I actually I feel not bad about it because you have good headphones. And it's kind of a it's kind of a ramble. Like there's a lot of them sitting around waiting for someone to show up or someone to fix a mic stand so you don't feel like it's the worst experience if you just happen to be doing something else for a second. Three of"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:06",
+            "text": "the eight and a half hours is Glyn can we record is the tape ready? Glenn? How about now we'd like to record"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "2:13",
+            "text": "that now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:14",
+            "text": "This Yeah, it's great. It's such a vibe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:17",
+            "text": "It's just amazing. The number of obstacles they threw in front of themselves to do that. I just I loved it. And what an incredible just an incredible document. Jason, you described it as watching the crucifixion endeavours. Yeah, it's just like that notion of uncovering, especially the secret microphone scene with John and Paul, while"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "2:36",
+            "text": "you always been"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "2:43",
+            "text": "it's absolutely 100 don't believe"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:48",
+            "text": "it's a crazy document. It does feel like someone on earth this time capsule where somehow they had like 4k, like super faithful footage of some event that you figured was just last time. But in fact, like they are just sitting on it for 50 years because it is an"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "3:04",
+            "text": "edited document speaking as someone who edits things, and they talked about using machine learning to like pull some of the audio out. But also I mean, like, you know, presumably, Paul has a voice and the way this looks and sounds and what it covers and sodas Yoko. And I thought about that a lot. When was sort of what do we see? What are we not seeing? And I'd love to see all 100 hours I met wouldn't want Yeah, exactly. But I'd love to see an alternate cut to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:30",
+            "text": "Yeah, exactly. was pretty amazing. It's it's quite inspirational to see some of the greatest artists who have ever lived executing on that, you know, on that level was was really really amazing. So highly recommended. If anybody is listening and hasn't watched that documentary yet. Check that out. Get back on Disney plus. All right. Well, today for this very special episode, we will be covering David Lean's 1962 masterpiece, the previous greatest desert epic masterpiece up until you know earlier this year, Lawrence of Arabia."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:06",
+            "text": "Yeah. How's it feel to lose the crown? David Lean to some giant worms should have thought of that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:13",
+            "text": "Or we're very thrilled to have joining us today the host of the Recode media podcast Peter Kafka. Yay."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "4:19",
+            "text": "Welcome. Thank you for having me. This is a delight. It's an exciting end of the year for me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:25",
+            "text": "Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:25",
+            "text": "it's a good December activity. If it wasn't for your busy news day, it would be perfect."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "4:29",
+            "text": "We want to reference what will be two week old news in a podcast go for it. Tell us the new shirt news masks. So I spent the morning reacting and chasing after the story that Jack Dorsey who up until today was the CEO of Twitter has stepped down and replaced by his CTO, who I reasonably reasonably confident that most people who use Twitter and most people who follow Twitter and write about or have never heard of. So we're spending the morning trying to figure out who this person is. Who is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:58",
+            "text": "this who is this guy? Got"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:00",
+            "text": "it? Well, I'm just getting up to date because I just finished reading Nick builtins hatching Twitter. So I'm almost caught up to 10 years but"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "5:09",
+            "text": "Mike will have some new content for you soon that references that book. I guarantee that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:15",
+            "text": "Very good. Very good. Well, we're excited to have you here and and to get into this conversation on Lawrence of Arabia. Before we do that just next week on Dune pod. So we have returning guests, Brian Mosley, who was last year, what did he do? Excalibur. Right. Hmm. We have Brian Mosley, and we have catcher returning for his sixth or seventh appearance. And we are going to be tackling this is a big one. Speaking of epic films, I don't know whether we're going to call it a masterpiece yet, but we are going with that book. housekeys. Cloud Atlas. Yeah, you see now when Peter beautiful, but"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "5:57",
+            "text": "no, I've been told never to watch it. But maybe during some downtime, I will. Have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:03",
+            "text": "you read the book. Watch it on your phone. It's an expanse of epic throughout time. Perfect."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "6:06",
+            "text": "Occasionally, I'll talk to a director and if I really want to hurt just see their soul die. I'll tell them that I watched all are part of their epic on my phone. Oh, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:17",
+            "text": "that I really enjoyed. I watch it one time in the theater and was really blown away. And the book is really, really fantastic. Highly recommend. Both versions are so that is next week. Well, let's go ahead and get into some do news. Would you like to know more? Jason, you want to go first? You want me to start News?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:38",
+            "text": "Coming back to IMAX. We knew it was coming to regal IMAX also coming to AMC IMAX. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:42",
+            "text": "By the time you are listening to this episode, it will be back in IMAX so quickly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:46",
+            "text": "I can I met tickets. Go buy your tickets."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:48",
+            "text": "Peter, where are you based?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "6:49",
+            "text": "I'm in New York where I did not see it on IMAX. But I saw it and whatever AMC regal calls, they're as good as IMAX thing. Yeah, the camera when it was called"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:57",
+            "text": "was good. It'd be back on HBO Max in January, I think mid mid late January and will be available for sale digital and whatnot starting in December, and in January. And there's various supersets coming, we'll send the links out for that. The other piece of news that I had was that we got the shooting script this week, sent to us by one of our athletic, keen warriors, and it's actually pretty generally available on Twitter now. Jason, do you have any any thoughts about that? I haven't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:24",
+            "text": "had a chance to fully read it yet. You know, we read the previous script and talked about the 2018 draft script. So yeah, I don't have any I don't have any big ideas on it. Can"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:32",
+            "text": "you take away I also have not read it. But the key takeaway is that there is no dinner scene. And it's basically exactly the movie as we see it. There's a couple of things that are changed here and there. But this is essentially the nail in the coffin of any extended edition talk. They're just there isn't wasn't a never will be, which is fine. You know, we've got a couple of deleted scenes, and we'll be real happy. All right. Well, Peter, do you have a history with dune?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "7:58",
+            "text": "With dune? Yeah, I what's funny, I think I do. I think that I saw the original in the theater, when I only have a vague memory of it. Sting floating around and metallic underwear. And I was the right age to enjoy it. But it did not hit me and I had the book and it sat on my bookshelf forever. So I have to read it. I've had to reorder it from Amazon. Okay, now my 13 year old son wants to read it. So he may get it first. Awesome. I was trepidatious I assumed that the reason I hadn't read it is because it wasn't good. And that it was bloated. And then it was something that you know, hardcore nerds loved and, and I started reading flipping through the first few pages. It's quite readable. Yeah. As all of you listen to this podcast now. Sorry, I'm just coming to it late. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:42",
+            "text": "I think at the time, it probably had more of like an impenetrable weirdness to it. But now that like I, what I always say is like, look, Game of Thrones was like the last big monoculture moment. And that is a story with a trillion characters. And it's super intricate and super weird. And there's magic and different religions and, and people were totally able to follow along. And it wasn't a really big problem for them. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "9:03",
+            "text": "and the revelation I had when watching the movie for the first time. I've seen it twice now was oh, this is the text for 20 movies and 20 stories that I've seen. And so a lot of this is familiar, even if you've never read the book, and obviously that contributes the appeal. And I think it's gonna make the book that much more accessible to me and my kids."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:23",
+            "text": "Awesome. Very good. Well, that's That's great. All right, well, shall we get into this?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:32",
+            "text": "Oh my god, what a task."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:33",
+            "text": "Are You Ready?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:35",
+            "text": "Ready? Go for it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:36",
+            "text": "All right, here we go. Lawrence of Arabia is an epic struggle against empire and uncaring nature and ourselves. Te Lawrence, an archaeologist and low level British officer in Cairo during the First World War is tasked with traveling deep into the desert to locate and evaluate Prince Faisal. elope. A warrior leading his tribes resistance against their Ottoman Turk overlords. Lawrence will go far beyond his mandate, uniting the many warring local tribes and turning them into a deadly military force. Along the way, he will be driven to his breaking point and beyond, both committing and suffering horrific acts in the name of conquest. He will fight to hold his newly forged tribe together, helping them stand up to two great empires and earn his place in the pantheon of history. As Lawrence of Arabia"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:42",
+            "text": "good synopsis good synopsis"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:45",
+            "text": "epic synopsis for an epic tale, there is a lot going on to try and get into it when you get into Sheriff ah, Lee, and you know, like all these other out and all these other amazing characters that are in there, there's a lot happening in this film."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:57",
+            "text": "I mean, it's a four hour movie. So there better be there better be a fair amount of things going on."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "11:02",
+            "text": "I will, I will say it's a little less than four hours because that runtime includes the the intermission, right, so I watched the Apple TV version again this weekend. And that includes like an actual intermission where nothing is happening except for the school or so. So it's slightly less intimidating, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:17",
+            "text": "it sounds and the four minute and 16 second black screen orchestra opening overture, same as in 2001. That we had a couple of weeks ago ring back the overture. Yeah, that's what we need. It was a dune overture four minutes. Do you have a history Peter with do"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "11:34",
+            "text": "and that's why I picked it. I mean, I'm very trepidatious about taking this one on for a bunch of reasons, but I have history with it. I first watched this in junior high courtesy. Oh my god, Mr. HERZIG was our high school history teacher got pushed into junior high. And so He cleverly realized he could spend a week having us watch Lawrence of Arabia. I think we also watch Bridge over the River Kwai. And then we'd write essays about it. And then again, I had him in high school and what and then got to watch it again and write essays about it, then. And then I think in college, I saw one of the reboots with extended footage when I was back on 70 millimeter. So yeah, I've been I've been grappling with this one for a long time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:11",
+            "text": "Jason, how about you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:12",
+            "text": "I saw this movie in high school, like on VHS for sure. Which is kind of wild to think about because it left an impression at that. Even at that time, where I was like, Oh, shit, this is like a real situation, this movie and like to see it on what was assuredly a 20 inch CRT and on VHS is not really how you should watch. I mean, you can watch whatever you want, but you're gonna miss some stuff. And then like watching again, like for the pod and seeing in 4k, I was like, this is just this. This is a really good movie. This is a film people should know about this Lawrence of Arabia. So yeah, I've seen it a few times, including I've seen it projected once in 70 millimeter at the Castro, I think. Yeah, so it's a real triumph."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:00",
+            "text": "What I realized part of the reason why get back in my mind was this notion of watching these really long films where you just soak in this world for three or four hours, you really become immersed in it in a way that that's intense. And I generally, I like films that I didn't want to do and cut that was three hours or four hours, I wanted something that was two hours I wanted to be you know, hit hard and fast and go for it. But there definitely is something amazing when you ride with a character for that long and you really just get caught up in it so so incredibly powerful. So David Lean, obviously a master director, who had done many films including bridge of the required before that with with Alec Guinness. We also had Freddie Young as the DP who went on to do Dr. Chicago with him and You Only Live Twice. But the thing that struck me in watching the credits is introducing Peter O'Toole. Yeah, which is insane. You'd basically"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:57",
+            "text": "done nothing. It was a stage actor and like was cast with that he was a third choice to play T Lawrence after Marlon Brando and then Albert Finney so right he was not he was not the draw for the movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:11",
+            "text": "It sounded like it got close with Vinnie. Right"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:12",
+            "text": "very close. They did tests and everything at Marlon Brando was more of like a notional thing. And they were like, hey, what do you think it was like? Yeah, like but like, it's an Albert Finney. They it's a lot of desert move and terrible. That would have been terrible. I mean, I don't know how you can do it without a British accent. So I don't know if that's I don't know if that's gonna be Marlins thing. But then Albert Finney they did tasks and the whole thing and he bailed on it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:36",
+            "text": "Well, why don't we just go ahead and get into it and you know, we will we will discover this together. So starting with the idea of this motorcycle ride in the present day and the 40s or whatever. It's just a wild choice and the overhead shot of him like repairing the motorcycle and getting it ready and then taking off he's cleaning it."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "14:56",
+            "text": "I noticed for the first time I met her on that As the main thing he's doing when he's definitely he goes back to get a rag to wipe it down. And once you've seen it, and then you're seeing that scene for the first time, like, oh, well, the here's a whole lot of foreshadowing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:09",
+            "text": "Right? Yeah, exactly. But the choice of establishing right out of the gate that he's going to be alive in some way, you could say it undercuts, or it just gives us a sense of invincibility. Knowing that this is where he's gonna die. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:22",
+            "text": "Like It's sort of just puts the audience like kind of, I think on what the hell's going on footing from the beginning, because like you, the audience would have been familiar, at least a British audience would have been familiar with T Lawrence, they would have known how he died. Like he was a hugely famous figure. And that was true even in 1962. So it wasn't like a huge spoiler to you, Lauren survives the war. But like to start the movie that's called Lawrence of Arabia in like the English countryside with a motorcycle, and it's kind of this weird overhead angle kind of gives you this view of like, what are we getting into exactly here? Because none of this seems very Arabia ish. So I think it's I think it's a very curious, a very curious start."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "16:03",
+            "text": "Do you guys, when you watch the death scene, do you think that that is an accident? Or do you think he is being purposely reckless or even trying to kill himself because I've heard that theory in the past, and it's kind of stuck in my head when I rewatched. This time, like, oh, he just had an"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:20",
+            "text": "accident. And they definitely thought reckless to me, like he seemed caught up in the moment of the speed and really enjoying it. But I think he did have this lingering sense of invincibility that got the best of him."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:33",
+            "text": "I think it's both and I think it's an accent I don't think he like it was an intentional suicide, he went out to go crash his car and or something. But I think that he has a bit of a death wish, after the end of the movie. And like, the reality is that T Lawrence lived a very unhappy life after the end of the war. And, you know, he basically doesn't know how to live outside of the context of what he's done before. And so I think he is is riding recklessly and the movie kind of overemphasize, like, how reckless This is, like it's very fast and shaky. And I my first note, as I was taking notes on the movie is like he's going too fast."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:13",
+            "text": "Well, so he is buried then at at the cathedrals at St. Paul's. St. Paul's. Okay, very good, beautiful cathedral. But so part of the theme in this film is about this notion of the man and myth and the legend and how he affected people. And I love this idea of introducing Brighton Allenby, Bentley, the guy who I shook his hand in Damascus. Like just all of that and like Brighton, who, when I went back to rewatch it to pull clips, and I had forgotten that he was in this beginning portion. He's like, You know what the greatest man I've ever known or something like that. Like he's such a dick in the beginning and then turns into such a such a thoughtful guy. He's such"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:54",
+            "text": "a fan. Big fanboy of T. Lawrence by the end. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:58",
+            "text": "I thought that was super effective."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "18:00",
+            "text": "Yeah. And also introducing the idea that there's going to be revisionism This is a myth. Right. You know, you spent any time on the Wikipedia, there's all sorts of divergences from from reality. And there's debates about what's real and what's not. And they're setting that up early on, like there are going to be different perspectives on this, then you're going to see a story. But it's a story, huh? It's not the story."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:20",
+            "text": "Yeah. And I didn't spend a ton of time on the Wikipedia. So I invite both of you to interject as are things that you think are significant or really important that were diversions Well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:30",
+            "text": "obviously the most significant thing is that this is our return to St. Paul's Cathedral for the first time since Mission Impossible fallout. So that's a that's an important echo."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:39",
+            "text": "Okay, that's good to know. Very good. So we have the Smash cut at the mention of you know that he knew him and I think it was Cairo Yeah. Bentley saying that he worked for him in in Cairo and so you have that smash CUT TO HIM painting the maps. And just the whole thing with the the match trick? Oh,"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "18:58",
+            "text": "damn, well, us suddenly it hurts. Well, what's the trick then? The trick, William Potter is not minding that it hurts."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:09",
+            "text": "Which Jay, you called out that was reused in Prometheus. Right? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:13",
+            "text": "that's a that's a line that Fassbender does an amazing Auteuil impression of from the beginning and this introduction to T Lorenz like Oh, tools T Lawrence is just some real good shit, man. I mean, like, this is indelible, like in a movie that has, it's very difficult to like, just take a step back. It's difficult to talk about Lawrence of Arabia, because it is arguably the best film ever made. It is a remarkably well covered movie. And so there's like a lot of throat clearing that you have to do before you kind of get even get into the movie. But like, if you knew nothing, and you just saw Peter O'Toole show up on screen it was like, you know, Michael, George Hartley. We do not like this room. Like you'd be like, This guy is fascinating. What what is he on about us? You know, the trick is not minding that it hurts. You're like, Oh, tell me more you giant weirdo. Like you really are drawn in immediate"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "20:07",
+            "text": "and he's disliked by everyone, everyone. No one likes it like so. Yeah, not as bosses but not as peers. They're all just like this guy's a weirdo. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:15",
+            "text": "obviously Dryden, who is from the Arabic Bureau, which I guess is like, what, like some foreign service?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:21",
+            "text": "It's no, it's like, it's like the British civil intelligence service. What is that? Am I Am I sick? My six? Yeah, it would have been later but yeah, I gotta get"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:31",
+            "text": "my numbers. Right. Well, so So Dryden is trying to get Lawrence tasked over to his bureau. And basically, there's, there's the main World War, one that is unfolding. And one of the fronts is the Ottoman Empire and the Turks. And so there's a question of whether the Bedouin forces that are operating in essentially Syria, right, Syria, Jordan area, Syria, Jordan, what is today Syria, Jordan, Faisal"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:58",
+            "text": "becomes king of Syria after this ends,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "21:01",
+            "text": "and then eventually Iraq. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:03",
+            "text": "So there's this question of how much the British should be investing and what they want to do. And so they pull in Lawrence into the midst of this, and there is this great line and there's this very feisty debate between Bentley who clearly does not like Lawrence and you know, says I don't know if you're an idiot, or you know, just just rude but Lawrence says,"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "21:24",
+            "text": "I kind of fiddle but I can make a great state from a little city. Mr. Cleese."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:31",
+            "text": "Some bro in a meeting is just dropping the missing please hit like red flag emojis. And this"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "21:37",
+            "text": "is this is after he's gone into the officers mess and disrupted a billiards game. Just pure asshole move. He just takes a ball and just follow the entire game and like, and then turn over"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:47",
+            "text": "the drink cart. Yeah. He's clearly like, he's so twitchy and weird, like at the beginning of the movie, it's just"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "21:53",
+            "text": "not fair. Like he's gonna lead the Arab Revolt"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:57",
+            "text": "sucks. And the other thing is like Peter O'Toole is like six foot two, but like T. Lawrence's like, was five foot two. He was like a really, he couldn't get into the army. On Wikipedia. Yeah, he's like he was he tried enlisting. He could not get into the Army because he was too short. He actually ended up being a lieutenant left handed in the in the British Army because he was the only person who knew this region, and he was briefing generals on it and they were just like, Okay, fine. You're coming with us. Like he was he never he never actually successfully signed up for the arm and the first time around. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "22:28",
+            "text": "his behavior indicates that He's a weirdo. His CD indicates that He's a weirdo who has affectations. He's a weird he'd be a weird guy in any setting in the desert in the army in the office. You would not want to hang with him just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:41",
+            "text": "a bit more about how deeply weird he is going into the war like when we meet him like so he was really into like castles and middle middle evil history like growing up in England. So he at like 17 like took this huge like biking tour of Scotland to go visit castles he was like No, these castles are dope I'm gonna go do this through throughout Europe, because I tracked all throughout Europe by zone checking out castles. And then he was like, oh, like I hear there's some good medieval stuff in like the Middle East. I'm gonna go there and see the stuff and be like, alright, well, if you're gonna go it's 1910 like if you're gonna go there, you're gonna need like, tons of servants. It's there's no tourists apparatus. There's no you know, trip finder for you. No trans Jordan at that point, right? And so he he's like, No, I'm just gonna go walk it and just like went and like walked 1000 Miles like across across these lands, like learning about its history, learning language, learning the culture. And that's why he ends up in this position is because he's the only one who's done that and has this sort of knowledge of the area. It's it's very, very deeply weird. Who is going into the story? It's amazing. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "23:45",
+            "text": "and for someone, someone who's dashing for much of the movie and dashing for much of his cinematic career just to see him sort of like, it's hard to describe almost Pee Wee Herman ish. Just not comfortable in his own body writing into stuff until he gets the desert that he sort of has command over stuff. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:03",
+            "text": "totally, totally. Well, so he he meets with Dryden on his way out and basically says this is going to be fun."
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "24:11",
+            "text": "Under two kinds of creatures made fun of a desert, Bedouins and gods and you're neither take it from me. For ordinary men. It's a burning fiery furnace. No driving. It's going to be fun. It is recognized that you have a funny sense of fun."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:32",
+            "text": "And we have the match cut the match cut, blowing out the match and the cut to the sunrise like what a shot. He"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "24:40",
+            "text": "also says right prior to that there's only two kinds of people who have fun a desert Bedouins and gods and you're neither which sets up like pretty much the whole movie thematically. Are you right? Who are you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:50",
+            "text": "Exactly. Who"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "24:51",
+            "text": "do you think you are?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:52",
+            "text": "Yeah, no, that is that is the central question is like who does he think he is? Like? I'd love to know what it was like to see that match cut and then the sequences that follow the match cut in the theater. This is sort of the same conversation with first time 2001. Yeah, where you're just like an audience and like, you're just like, oh, I want to go to the picture shows. And like you see, and you see this, like these vistas of the desert that in 2021, having seen like Villanova's Dune, and the same locations, Wadi Rum, like on IMAX like a technology that could not have been imagined in 1962. These scenes on my very small television still look fun, not like the I was just like, How is this even possible? How do they have this much distance to the horizon? And this much scope of what they're covering to see that for the first time in the theater must have just been religious? Like it must have been absolutely the"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "25:47",
+            "text": "right there's no I mean, I'm sure there are special effects, but there's no there's no, there's no green screen, right? Like, you know that what you're seeing is what you're seeing more or less. Yeah, and by the way, if you haven't seen this movie, and you're and you're watching Lawrence for the first time, but you've seen Denis Villeneuve movies and you've seen Dune, you're like, oh, okay, I get why this movie is connected to both dune and Denis Villeneuve, like, Yeah, this is this is the scene that burned and Denis Villeneuve is brain when he saw it. 200 Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:15",
+            "text": "and a couple of our friends were lucky enough to watch Lawrence of Arabia with Danny in Toronto a couple of weeks ago. And he literally sat in the theater with them and watched it, he brought it to tiff because it's his favorite movie. So you can understand how, you know, beyond just those images, that connection to Dune, since he was 13. It's all tied up together. But the first thing that struck me about this desert because I remember Jason, you had told me up front that that it was filmed in Wadi ROM, but the desert looks completely different, like portions of the desert are very verdant, like there's green, covering as far as you can go. Or like those weird rocks that are there are lots of scrub and bushes and stuff that they must have had to just find areas where none of that was there or had to paint it out. So that was the first thing that struck me as they moved to other areas somewhere were totally barren. But I was just shocked at how verdant The desert was there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:10",
+            "text": "Yeah, I mean, that's a cool, I don't know all the locations they use in the movie. Wadi Rum is one of them, but it's certainly not the only one. You know, because like Villanova talked as well about having to go to UAE because he couldn't get the sand dunes that he wanted in Jordan. They can only get the rocks there. So I know they use a number of different locations and, and Lawrence of Arabia as well. But I mean, that's the amazing thing about this project is that you get to see it is among other things, this amazing travelogue of what the desert look like, at that time because they they really went there like they there's no there's no painting shit like they went there and just there's one process shot in this movie that's like, you know, a fake shot. And aside from that, like they really just went out there and found these locations. I"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "27:54",
+            "text": "think it's mostly Jordan and then Spain, I think for like, aka busta. Yeah, an octopus. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:01",
+            "text": "Well, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:02",
+            "text": "now we have our first introduction to the bamboo. And to me, this is sort of like definitely a Fremen analog. You can imagine Herbert being strongly influenced here. But immediately Lawrence is like he's pulling a pole move, like I'll drink when you do you know, he's riding the camels, he's eating the gross better food and then the guy offers a more and he eats more. He is gonna get embedded he's gonna do what it takes to be part of this 2021"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "28:28",
+            "text": "thought but I'm like the better food I bet his great I bet I bet it's better than what Lawrence eats what Cairo or at home"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:36",
+            "text": "whatever the British like Mrs. of 1914 or whatever. Brought it not good is probably food isn't great at home, it's not going to travel well to Egypt. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:45",
+            "text": "so we have him and Thomas writing around, they're starting to get to know each other. And now we get to one of the greatest shots in the film, which is the Hadith well, so they're getting water after reading through the desert, they're standing there and you see out into the far far distance of a mirage and slowly emerging out of that Mirage we have Alisha, if"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:10",
+            "text": "I got a couple things. I got a couple of things on this. I mean, first of all, this is one of the most amazing introductions of any character in in the history film. I think it also speaks to why the movie needs to be as long as it is because this shot you know kind of goes on for a very long time like his intro is a very long time. So that's like that's like the artistry of it is amazing technically. So this movie was shot on Super panda vision 70 millimeter and if you look at like what those cameras look like at the time, it looks like a tank like I mean the camera is out it looks like someone's holding like a surface to air missile battery like it's an absolutely gigantic camera and they were overheating in the desert in the film was going on. So they had to build all these like special cooling contraptions for them. The lens they were using a 450 millimeter lens to get that shot from the desert so super super super long, a mile and a half away from where the camera was they had Jeeps running back and forth in the desert just blowing up dust. And then they had a heating element under the camera itself to help create the Mirage effect. They also then painted lines in the desert out to like where, you know Sharif was coming in from so that the AI would fall would track for his arrival and they put"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:25",
+            "text": "it on the sand or did they paint it on the sand on the strip of sand dude,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:29",
+            "text": "they went out and painted lines on the sand like it was absolutely wild and anytime it would get screwed up anytime they did anything in the desert screwed up. They've literally stood over there to go erase all the footprints from the friggin desert. They gotta get rid of all the tracks they got left by the camels and the jeeps and everything else."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:46",
+            "text": "So just get that in post."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:49",
+            "text": "A dude with a fucking custom made desert sweeper. There's a guy on the making of documentary on YouTube was like I invented many utensils for erasing sand. I had one that was a brush. I had one that was a broom with a brush attached. I was like, Oh, God. Tough like, that's anyways, it's amazing. You can talk about this one scene for three hours."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:11",
+            "text": "Yeah, Peter, any any key things that popped out to you?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "31:15",
+            "text": "No, no. I mean, I've seen that scene a million times in the first time. If you don't go in with any warning like what? You literally can't understand what's happening for a while. This time rewatching him like all right. So his bedroom tribesmen sees someone approaching he knows he's not supposed to be at the well. He writes a really long time to run and get that gun. I was a little confused about that. Like, what was his thought and plan but I'm not gonna give David Lean a lot of notes, but I was curious about that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:44",
+            "text": "I imagine he's probably just frozen, right? Like and he's got a handgun versus probably rifles in for"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "31:49",
+            "text": "a very long time. Yeah, last second. He bolts and goes for the gun. Like I don't know what his other thought was. Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:54",
+            "text": "Yeah. Well, and it is interesting because he had said toughest when they arrived at the Hiraeth while he's like to hurry 30 people that there are real problems between the different tribes. You know, they they do not respect each other. Sherif Ali shoots topclass and kills him what a shot from Camelback at distance. And then basically Lawrence is really pissed. And he says Shefali"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "32:18",
+            "text": "so long as the atoms fight tribe against tribe, so long will they be a little people, a silly people greevey barbarous and cruel as you are. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:30",
+            "text": "that's kind of a critical piece of him castigating from his outsider perspective, not wholly unfairly, the notion that they are not a force to be reckoned with, unless they can put aside their own internal divisions. It's a"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "32:46",
+            "text": "critical line in the movie, it gets repeated multiple times. They go back and forth on it, it is one of those lines that was meant to be uncomfortable in 1962. Watching it because a lot of it is about the British versus the you know, how the British are treating, you know, a group of people they like to subjugate. And whether those people are barbarians, whether they're noble, whether they're more elevated, it goes back and forth, and a 2021 identity politics lens is even more complex for three white guys to talk about on a podcast. It's one of the reason trepidations about it. By the way, this is the first this is the scene where he meets the only major Arab actor, right? In the movie, everyone else who's playing an Arab is doing it in some kind of black or brown face. So it's a tricky one. But what's really fascinating about the movie, one of the things about fascinating one of the reasons you can assign junior high school kids to write essays about it, is that it it grapples with this stuff and doesn't necessarily come to an answer."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:49",
+            "text": "I like your note that Sharif is the only Arab character that was cast in this and that he was the fourth choice for for the for this part for Ali, where they like tried to German and three French dudes before before they got to Omar Sharif, who was amazing in the movie,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:06",
+            "text": "and he was a well known actor in Egypt at the time and flew over to audition because he was a huge fan of David Lean's. What a performance by Omar Sharif in this movie. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:19",
+            "text": "my only other note on the scene is that if I was Lawrence, I would not be telling Sharif like I would not just be like, you know, alright, well, I don't have my gun and I don't have my compass. And why don't you ask yourself? Like I would probably have been tried to negotiate something at that point. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:35",
+            "text": "All right. Well, so he ends up he does get his compass back. And so he is on his way to Wadi Sophora, which is a day away and he rides and he does make it he gets to these rock valleys. These valleys are incredible, beautiful vistas and him singing his you know, I'm the man who broke the bank at Monte Carlo or whatever, just awesome. But we do get the introduction of Colonel Brighton who's a real Hold tight as, but he is trying to instill discipline and, and sort of good sound tactics as well as strategy into Faisal, who is not listening. So we're very quickly introduced to Faisal, who is yelling at his people that they should be fighting airplanes from horseback, and just not dealing well with this modern, mechanized army. That's the fundamental problem that is faced by these folks."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:26",
+            "text": "Faisal played by Allegan, as in brownface. Not know one of the details that would age well, of this movie, he apparently met with Omar Sharif and just took his accent to it was just like, Ah, I like the way you talk. We're gonna run with that for for this movie. And"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "35:41",
+            "text": "then the plane scene is, again, those are real planes dropping fake bombs, but you know, the other one of those scenes you like, it's amazing. And I was like, Oh, this is this is the savages unable to grapple with modernity. And he kind of went swatching because they really look very foolish. They look like yeah, or from another time. They're anachronisms. Yeah. And this, again, is one of the big themes of the movie, which they go right back to all the way through to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:05",
+            "text": "the end of the film. Yeah, absolutely. Absolutely. So so they're going to fall back, they have a meeting, and this is where we have Brighton and, and Lawrence in Faisal, his tent. And brightness told Lawrence just to keep his mouth shot, and not to say anything. But you have this beautiful moment where there's a Koran reading,"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "36:24",
+            "text": "I'm not a cilium, the brightness, or the noonday brightness, by the light will in darkness, the Lord has not forsaken thee, neither has he been displeased. And surely the future will be better for the from the past. And in the end, so your Lord be bound to yesterday. And that will be satisfied."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:46",
+            "text": "And Lawrence finishes that line there. And it's that real establishment of him as invested in the culture and, and caring about what's there. And to me, this is just a great scene where he stays after to talk to Faisal, and Faisal has no illusions on this."
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "37:03",
+            "text": "I have a great hunger for desolate places I feel the hunger for maybe, then you must deny it to them. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "37:12",
+            "text": "I love that. And Faisal, who looked, you know, seen earlier totally out of his depth, you know, no clue what's going on, reveals here that he's knows absolutely what's going on. He doesn't know how to fight airplanes. But he absolutely understands who the British are. He understands the dynamic between Lawrence and his superior. And it's also one of many scenes in this movie of three or four guys sitting in a room talking, which does not sound like a big sell. But it's riveting. You think of epics as big vistas. And that's what this movie is, as well. But these long scenes of guys talking and grappling with big themes. And there's a lot going on. I'm obviously I'm bored. And I'm doing this podcast, but I think it's super riveting. And it's also"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:53",
+            "text": "a lovely room. Like it's a gorgeous tent that's like creaking in the desert wind, like I love I love everything about their environment as well. There's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:01",
+            "text": "also a moment that's very important to me, where Faisal has the sense that Lawrence is looking down on him in"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "38:08",
+            "text": "the atom city of Cordova with two miles of public lighting in the streets when London was a village. Yes,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "38:15",
+            "text": "yeah. Nine years. Yes. Yeah. And he's and he's saying, like, you know, you're kind of fetishizing us, by the way, like, I kind of see you too. I kind of see that you think we're this exotic people, and you're more into us than your English people. But that's kind of bullshit too. Or I'm aware of that game as well. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:32",
+            "text": "Yeah. They're doing a lot here to kind of like him in some of the some of like, the where this movie could have gone or were like, certainly interpretations of of T Lauren Scott, which is like, Oh, this like, you know, romantic warrior who went to the desert and understood this, like, you know, exotic people, yatta yatta yatta. And instead saying, like, wow, these are like a real folks with like, their own sort of agency in and designs and they kind of know what he's up to as well. It's not, it's not purely like they're like, oh, this Messiah has come to deliver us Arabia. And"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "39:03",
+            "text": "this did remind me of the dune scene, right? Where, yeah, I'm gonna get all the characters wrong, but the guy shows up and spits on the floor. Right? And he goes, No, I understand what you guys want. What do I get to exchange goods and services on equal terms? Hmm, totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:19",
+            "text": "So trying to figure out what to do and how to really change the game. This is great. Let's take a three minute scene of Lauren's just sitting outside overnight and the two boys are watching him and and he finally realizes the move is to get to aka buy land, but that requires crossing the impossible the net food desert. And he convinces Ali to well Ali volunteers to come with him with 50 men from Faisal, who says that they can ride in his name. Although we asked him Is that who your what you're really doing, which I think is important. But they head off and so this is beautiful segment of just crossing the desert and how punishing the desert is the score here is really terrific, and throughout the film, but I just love that I was surprised was 20 days with no water. Right. But Lawrence still shaves like what was your take on that? That's power move. Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:13",
+            "text": "And he's vain. Like, like Lawrence is vain, like, you know, he thinks very highly of himself and his ego, then his own sense of his own image is one of his strengths and one of his flaws."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "40:25",
+            "text": "Then also, there's rules that don't apply to other people. Right? I'm gonna use the water it's important to me. And, you know, you savages can can just be dirty."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:34",
+            "text": "I made this note like where they like Lawrence was because like, he basically gets reprimanded for falling asleep on the camel. And like, ShareFile he's like, no, no, you can't do that. He's like, Alright, fine, I will never happen again. And he's like, I'll take and then from then he's like, I'll take the first watch. I'm ready to go right now let's keep going. And he's like, he's like the OG sort of rise and grind, bro like who's just like, I will not be outworked like, no matter what I was like, I will not be outworked in this fucking desert, like, I am going to do it. And like, this is one of like, again, like the rise and grind things kind of a joke. But he does have that characteristic of like endurance athletes who are just like, able to absorb a tremendous amount of suffering, and in some way, sort of get off on that or like, or seek out that kind of challenge. And there's a whole, you know, pretty well trod path of folks who pursue those kinds of pursuits and link them to other whether it be business or exploratory type pursuits because they've they view that as like the same sort of lesson and, and I think the and the movie ends up examining that pretty closely and Lawrence's character because he ends up believing that he's invulnerable and can't really be heard. And this turns out"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "41:45",
+            "text": "is performative, right? He's he's doing it in front of other people. I mean, even sure he would do some of this on his own it's also where he picks up his first two acolytes the kids right and he's you know, son these kids back then they will take up and then they say, you know, these aren't that you should get servants. These aren't servants, they're worshipers. So again, just underline it from the get go. Hmm,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:04",
+            "text": "I am curious Peter when you're doing you know endurance, athleticism, what's your what's your preferred sport? There"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "42:12",
+            "text": "are 20 minutes on a peloton and then I call it a day"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:17",
+            "text": "I mean, this I mean this pie every day for breakfast right right now it's really it's hard after like day four you start feeling it?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:24",
+            "text": "That's right. So they so they crossed the anvil. You know Sherif Ali"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "42:29",
+            "text": "Danville so great yeah, Jesus"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:33",
+            "text": "either we get there we're gonna die. But they managed to get there only to discover that gassim didn't make it he fell off his camel at some point. And this is the other important thing. So they said that gassim is going to die it is written God"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "42:46",
+            "text": "seems tighten these come moments. It is written, nothing is written."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:52",
+            "text": "And then as they're pushing he says I shall be at aka ba it is written in here. So that self manifesting destiny and he goes back he gets a seems like a four minute scene of Kasim walking taking his gear off like like Finn and in Force Awakens taken off his Stormtrooper gear"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:10",
+            "text": "in a big fan of the force awakens us all huge. Yeah. But he gets"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:15",
+            "text": "there he gets Kasim brings him back, and I love him riding back in the music, swelling and data, you know, cheering and you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:24",
+            "text": "yeah, this this shot, I guess. I mean, which is amazing. They're like a billion miles away to get this whole shot. And I think I think it was a mistake, like the idea of of him riding past Lorenz and then turning around, it was like, they didn't know that that wasn't intended, it was supposed to stop before them. But then the camel can't stop that fast. And so we have to, like turn around and then come back. But they managed to have like, all framed up, like have this huge, you know, I mean, this is just like one of those things that technically like they cannot paint out any mistakes, there's no fix it and post so like, if they fuck it up, they gotta go back and get the guy with the special brooms and sweep up all the footprints and reset this whole shot and it's out in the middle of the desert in the middle of the day. It's a billion degrees. The cameras are melting. Like it's it. It's just crazy. Like when they say they don't make them like this anymore. It is impossible to imagine them being made like this anymore, because it is just too physically difficult. There's no way that anyone would go to the difficulty of making it this way anymore."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "44:24",
+            "text": "There's a line later described in Wikipedia describing one of the later scenes where you know, lean he's it's Lebanese and Moroccan soldiers to play the part of the Turks and he says he only got a limited time of with the soldiers because they were they were cranky. Michael Kors. They're cranky, you haven't seen in the desert. You're taking these out hours and days to set out together. These guys aren't sitting around for that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:46",
+            "text": "No amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:48",
+            "text": "So he gets there he collapses when he makes his way back and Ollie burns his clothes, and then outfits in desert fashion. Although Oh, specifically, Ali is in all black and he is in this very luminous all white, but he definitely takes to it very quickly and he also pretty"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:08",
+            "text": "and his new robe. He just"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "45:10",
+            "text": "gets a new rose and he gets a new name. Yeah, new name"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:12",
+            "text": "Oliver and a knife. He gets all kinds of it's a whole it's a very mythic quest upgrade. Yeah, yeah, exactly. levels up,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "45:20",
+            "text": "and then they all have a giggle at him. Yeah. So he's like, all in he's like, I love it. And again, it's again, over the top. Like, he's, he's changing identities. He's changing clothes. But the better. We're like, well, you're you still look like a goofball. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:34",
+            "text": "that's it. And he and as soon as he runs into out of a tie, and they immediately know that he's English, like, no one has any doubts, like who this guy is, like, he didn't, he's not fooling it. And he's like, disappointed that they know immediately who he is."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:45",
+            "text": "Yeah, well, so I love Anthony Quinn. I love his performance. I understand the problematic nature of it. But I think what he what he brings to it, the energy and the fire and the passion is so strong to me. And Lawrence just immediately goes to work, they go to dinner, and he goes to work. And it's the same thing that actually then gets used against him by his generals, where it's this combination of truth and flattery, to kind of leverage you into the direction that you want it to go. And I just thought that was super strong."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:20",
+            "text": "Yeah, it's really good. I think the only problem without ABA, Thai I enjoy the performance only problem is compared to like Ali or Faisal, out of out of a tie is much more just kind of raw ID and not really like check like and so there was a there was lawsuits after this movie, be buy out to advertise family because that's a real person. Because they did not like that his portrayal is as this kind of like, you know, desert pirate who like, you know, is just sort of easily manipulated by Lawrence and then like, is motivated by the money that's an Occupy town,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "46:56",
+            "text": "right, like brella with a hole in it. And he's his broken clock that he got."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:02",
+            "text": "Exactly he doesn't know how to fix a clock. So he shakes it like there's a lot of like, there's a lot of just like, oh, this is like a silly savage stuff, as opposed to like Faisal and i Lee who are who are more nuanced characters Alia ends up becoming essentially the moral core of the movie. Sure, but I think out of Avatar and certainly the family about Avatar was not stoked on what they did there. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:25",
+            "text": "I feel like he is caught like he is struggling to change in the face of the realities on the ground. And and he has not able to make that change, essentially. So in that, in that sense to me, he's a tragic figure. Hmm,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "47:37",
+            "text": "yeah, he's he's pretty comfortable. He's like, I know what I'm doing. Yeah, the gold, Amanda getting gold, my people after skimming some off the top for myself, that's, that's my role. It's what I'm good at, I'm not going to adopt the new ways I don't need to, I'm old. So good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:51",
+            "text": "He also says he wants the honorable, he wants honorable attributes or whatever, right? Like later when they go after the horses. So it's like, it's not just money in his mind. He has a way of thinking about it as being tied to his honor and who's doing so the tribes are united, and they're ready to invade aka BA, but then one of the members of the Hiraeth kills one of appetize men. And so Lawrence volunteers to solve the problem, he will execute that person, because he has no tribe, only to discover that it is gaseum, who he saved. And I just that that whole sequence was was wonderful. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:28",
+            "text": "felt very Dooney to me, this whole thing, like the the idea that this is like a culture in which there are blood debts, and like that's just the way it's going to be also the tribe of ow to advertise the habitat, which is pretty close to through for how it Yeah, like this, this just feels like one of those, Paul in the desert, trying to figure out the ways of the Fremen type situations and then realizing because he's an outsider, he has a special role that he can play. He can still obey their cultural traditions, but be outside of them at the same time. And that gives him some cultural power here that's, you know, unique to him, which is where you do get into like some of the white savior stuff because it's like, like, it is only it is only Lawrence, it is only Paul who can do these things because they are from the outside broader culture like like Ali Sherif Ali, despite being brilliant, arguably more honorable person than Lawrence can't go to the British generals, and you know, and tell them that they've taken occupy in a later scene, because like, you know, he won't be believed. And so he has this line about how, you know, Lawrence, you'll take off your funny clothes, and you'll joke about these, like, funny people like that is true. And that is the reality of the movie. The movie is aware of it, but it's still the reality of the movie."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "49:41",
+            "text": "You're going to tell stories of our ignorance and barbarity. Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:44",
+            "text": "That's, I mean, that's a really good line to be in the movie. Like it's so aware of what's going on here. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:51",
+            "text": "they do sweep through, aka BA and they just toast they absolutely toast the Turks there. And they ride through and the looting intensifies destroying the communications gear, you know, like various problems. And you do have Lawrence and Ollie in the water right by at the ocean and talking there but but Lawrence says he has to go back to Cairo and he says that, you know, when he and the two boys are riding our cross he says Lord, can we rest? He says I told you no rest until they know I have Cairo. Yeah, so that's, that's a critical turning point in my mind, like he has now like, this is my fucking game that I'm running here. And I'm the one doing it. Yeah, he"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "50:34",
+            "text": "goes through we did it. I did it. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:37",
+            "text": "that's how Matt talks about the dune box office. Matt, Matt also went from WIDA I made the box office for him. The one other note we should just make is about the siege of Occupy which is like they actually did build this town in Spain. They're like alright, like we need a we need DACA so we're just gonna build that on a riverbed in Spain and then we're going to find this place where we can put a cannon facing towards the sea but the camera up there and do it in one fucking shot like as I was whole army pours through the whole time I mean, like again would never be done again could not could not be done it"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "51:11",
+            "text": "my son wanted to rest the TV from yet from yesterday when I was watching him like because he wanted to get on the Xbox. Just wait just wait and watch this amazing battle scene. So we watch it. Yes. Yeah. All right. Well, it's not that epic. I'm like, those are all real horses. Those are real people. Those are hundreds of horses charging across the desert and I guess camels to like leaping Yeah, man like that's a real thing that's happening they just shrugs"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:34",
+            "text": "Oh tool fell off during the same I fell off like yeah, he fell off the camera, which was like a really big concern because they're at the front. Then they've got 1000 dudes on literally 1000 dudes on horses coming in behind them and so he fell off at the front but luckily the camel was like, Alright, I'm gonna protect and protect you. Yeah, so it's notes and chat and chat. She's very pro camel and apparently the camels are very pro Peter O'Toole. So"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "52:00",
+            "text": "it's a very early Sidra tool was very anti camel hated writing him was super comfortable had like got some piece of Roberta put under them and yeah, I got on the set gave him a special name called like guy who runs on rubber cedars like, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:12",
+            "text": "he had a special he got a special rubber camel Merkin have some kind of wow, yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:17",
+            "text": "camel riding in this movie is unbelievable. Just like he and Ollie. I was watching a scene this morning. Just the two of them trotting and talking and doing their thing and it's like it's nothing. And they're literally riding camels to the desert."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:31",
+            "text": "This is an add on to where they could not have gotten the no animals or were harmed in the production. That's film because animals were fucking harmed like they threw like some horses off a train. And like a whole a whole bunch of stuff. I'm not sure what the total body count was, but it was it was not a few camels."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:48",
+            "text": "Speaking about account and I know this has now been tweeted many times by many people but you know a constant looming threat for death in my childhood growing up in media consumption gambling. Quicksand Yeah, so download goes down to the quicksand but did you guys you experienced that Peter as well like quicksand was What's your history with no immediate immediate like it was every movie was constantly quicksand people being"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "53:14",
+            "text": "a lot of like, like old Tarzan reruns like things you'd see on TV it seemed like that was a frequent death was a quick set up but this is a very very hard one to watch obviously yeah"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:30",
+            "text": "I looked this up because I might come up and apparently you can't you that's not real. You went down quicksand that way like quick you don't get you don't get pulled under we need a geophysicist or whatever we can insert for a special science segment at this point, but reach out. Apparently, apparently a it doesn't really work that way."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:50",
+            "text": "So the production designer John box, who did Dr. Zhivago did a man for all seasons and then went on to do both rollerball and sorcerer two films we will be doing on this podcast in the future. He built a box under the sand and then was in the box under the sand and grabbed the kids legs and basically at the right time just pulled him down and he said it was extremely claustrophobic and terrifying. Being in the box. Yeah. Under the pressure. Thanks"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:18",
+            "text": "so bad. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:20",
+            "text": "So they get back to Cairo. So what where was that filmed?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "54:25",
+            "text": "The Cairo I don't know where the Cairo stuff was filmed stuff is in Spain."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:29",
+            "text": "The palm trees are like when they first get back there and just like there's a street and cars are driving but just palm trees going as far as you can go and like all the painted tile inside. The headquarters and stuff was so gorgeous. But he shows up. He takes Faraj to the officer's club. Everybody's freaking out as you know they're they're drinking the lemonade. But he does talk to is it Brighton that comes down who see somebody somebody meets them down or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:56",
+            "text": "some down there. I think it's right now. Yeah. It probably is because it's like Brian Allen being Dryden who are there in the scene. Yeah, they"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:03",
+            "text": "ended up going back up. But I love his line. He"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "55:05",
+            "text": "says, a lot of killing one way or another,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "55:07",
+            "text": "that scene in the mess. I mean, because this is right near the intermission, but you could end the movie there in some ways, right? He's like, it is even just thinking about it. Now he just gets sort of swelled up because they are so beaten down, they've come straight out of the desert. The officers don't want either of them there. Even once they figure out that Lauren says one of them, they're like, well, let's get rid of your Waag. Here, we don't want him. And he tells them he's taken aka and they don't believe him. And it's, you know, in a standard movie, like that's kind of the end like he shows he shows the Brits what he and the Arabs can do. No"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "55:44",
+            "text": "one will Arabia's for the Arabs now. That's what I've told them anyway. But"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "55:51",
+            "text": "then they get to the den Anwar of that scene where they explained that none of this is actually going to happen. But the officers best scene is really stirring. And often when you see a scene like that in the movie, it's not stirring it's meant to be, but here, they really pull it off. Totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:03",
+            "text": "And I thought, even just like the lemonade, and the concept of the enjoyment that you would get from that after having that kind of journey. This reminds me of like, it's one of the things that Lord of the Rings does so well, in terms of an epic journey. They have these really hard days where they're on the run and they're sleeping in bushes, or they're out in the forest or whatever. And then they get somewhere and they have a hot meal and they you know, have have incredible food or whatever, and they really savor that and it it causes you to really enjoy that. And that is one thing where I think dude could have done more of more living these little uplifting moments more let me get Danny on the fire daddy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:39",
+            "text": "Just Just a note for part two. Loose the ADA Limone Superplay."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "56:46",
+            "text": "Missy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:48",
+            "text": "So. So last year. That's sorry, before we get to the intermission, just there's the architecture of the headquarters and there's the spinning shot where it kind of spins around and then and then shows or if you just want to, it's like a flex shot."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "57:02",
+            "text": "He's riding the whirlwind is the last line right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:06",
+            "text": "Yeah. End of Lawrence of Arabia, part one, come back in one year."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:12",
+            "text": "That's right. There's more. So that intermission is great. And then now we come back really strong in my mind for part two, with the introduction of the newspaperman, Bentley, and him interviewing Faisal, who is consolidating power and he sees through his bullshit completely. And I just love it,"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "57:31",
+            "text": "you are looking for a figure who will draw your country towards war. All right. Yeah. Auden's is your man"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:39",
+            "text": "and we have the Smash cut to the train."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "57:43",
+            "text": "It's a bit it's one it's really good exposition about everything that's been happening during the admission really smart and it's, you know, they're clearly doing expository dialogue, but it doesn't feel Latin. And again, Faisal is really smart. And he calls the journalists on his bullshit and journalists Alright well let's let's talk turkey. You want your story told I badly want a story to tell it's very transactional. Both sides know what as opposed to Lawrence who is often confused about what he's doing or gets caught up on tells different stories like Bentley knows exactly what he's doing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:14",
+            "text": "Yeah. And he has a good is a good back and forth with FISA, where he's like, I like I like it where he teaches Faisal slim customer advisors like, Oh, I like that. It's a good that's a good line,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "58:24",
+            "text": "you are looking for a figure who will draw your country towards war. Like it's very like, yep, that's what I want to do. That's where I want to sell papers, my job here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:34",
+            "text": "That's amazing. And it's important that Faisal has moved to Cairo, right? He's like, I gotta get where the action is going to be. And especially if if Lawrence and advisors are going to be helping drive stuff on the ground. That frees him up to do that there. So what about the train attach to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:52",
+            "text": "the fucking kill the train, they kill the train, like I my note was I like I was watching the scene. I was like, how did they kill a trend? They killed the train. That's what they did. They ran a train off the tracks, like banked it up. So went off the tracks. Then they had to pull the train back onto the tracks and do it again. fucking crazy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:09",
+            "text": "What multiple takes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:10",
+            "text": "Yeah, they didn't warn once. She's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:14",
+            "text": "incredible. And it just keeps going the shot keeps going. You know, and the sound and the intensity there. But then Lawrence, you know, climbs up on the on the train and gets shot. He"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "59:26",
+            "text": "kind of untrained does Messiah stuff and his white robes and his waving and everyone's like, I'm your God, basically."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:32",
+            "text": "Yeah, I'm into it. But then this is this this invulnerability where the shooter is badly badly wounded and he's just taking shots at him and he just stands out and let some fire shots and then out comes and kills the guy with the saber. And Bentley goes"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "59:45",
+            "text": "ever seen a man killed with a sword? Well, I don't you take a picture which my dad just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:52",
+            "text": "like I like how like American II American Bentley is like he's like a really like he's a real cowboy. He's a Fun is a fun one."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:00:01",
+            "text": "He's deeply cynical. And Lawrence is delusional and they like spell that out because Lawrence and Lincoln only kill me with a golden bullet. And he's like half joking, but half not. And this is also a scene where they go back and forth and are the Bedouins like, really, really good fighters and really smarter. They clowns who are, you know, looting broken umbrellas and trinkets, and they they're running off as soon as they get their trinkets. And they go back and forth. And but there's a discussion about that. Right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:27",
+            "text": "Right, which is hugely important, right? The notion of the army starting to melt away even after successes that they have had, and"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:00:35",
+            "text": "this is also the only kind of fighting they can do to right, they don't have artillery, or I have like to like, I don't know what they'd be called, but basically Humvees Gatling guns, yeah, yeah. And, and that's it. So they can do they can do do guerrilla attack guerrilla attacks, but that's it unintentionally. That's all all the British won out of them. It"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:54",
+            "text": "is also like they're showing kind of this notion of the bloodthirsty nests, right? Like they just continue unloading bullets in there until Lawrence freaks out and, you know, trying to get them to stop. So I understand what they're doing. But this is this is definitely a trope what they're pushing in here. So what about the detonator accident with Faraj a tough one guy for a second watch what happens it's like as like, it's not the explosive but there's like"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:01:18",
+            "text": "it's the ignition it's the nitroglycerin that's gonna set off the bomb. Yeah, that's enough"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:23",
+            "text": "to it's enough to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:25",
+            "text": "suggest Yes, that's not good. You don't want that you don't want that go down nice"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:01:28",
+            "text": "your chest Lawrence has been like really uncomfortable earlier on killing people. Right? He's totally chill with with his one of his last trusted aide fullblown and then having to execute him, or didn't have to get to put him out of his misery."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:41",
+            "text": "At least he did a better job than he did with gassim. Because gesi me had to shoot like seven times, which apparently is real, I guess. And Lawrence's book, he says like his hands are shaking so much that he like, didn't quite get it on the first three bullets. Wow. Yeah. Tough one. Yeah. And this this, this happened to this this death of Faraj. It wasn't a detonator, but like he was wounded by the Turks and some attack and then Lawrence had to kill him. So that also really happened. That's rough. So so he continues to head rough. He continues to head north, and you can see everything's kind of fraying and falling apart. And Ollie presses him and says Ollie will not leave, no matter what happens. Give them something"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:02:22",
+            "text": "to do that can be done. But you know, no, they must move mountains for you. They must walk on water. That's right. That's right. Who are you to know what can be done? If we've done what you thought could be done, we'd be back in the nvao now and know where whatever I asked them to do can be done that's all they know that if you do you think I'm just anybody?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:02:48",
+            "text": "Do you? But at this point, he's got like a couple dozen guys in a cage. That's it. Right? So it's so maybe you are delusional dude, you have like a dozen weirdos around you like what do you what are you thinking?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:59",
+            "text": "You're a boy hiding in a hole on the ground? Yeah, so now we go to dry. And so like somebody told me what was the plan here?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:08",
+            "text": "Wasn't a good plan. It was a bad plan. It falls apart immediately. He was like, your white guy."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:03:17",
+            "text": "He says I just want to work I want I want to his whole point is I want to be there before the was before the British get to Jerusalem. Yeah. So just to say he's done it. It's completely pointless. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:27",
+            "text": "So he is very quickly captured. And he is interrogated by the Emperor shut down the fourth. Yeah. Young man in his Yeah, I'm so I mean, this is just an intense scene. I"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:03:44",
+            "text": "have been in the raw now for three and a half years. If they posted me to the Dark Side of the Moon, I could not be more isolated. You haven't the least idea what I'm talking about."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:58",
+            "text": "And the sexual subtext of what is going on, including and especially the close up shot of should yeah, it's just like, it's really"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:04:09",
+            "text": "flameless flesh and, ya know, it's it's, it's pretty much foreground there. There's not that much. So yeah, it's just taxed. That's right. There is a debate about whether this happened. So Lawrence says it happens but the Some historians say this entire visit could be fabricated. Yeah. What"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:24",
+            "text": "would be the like, what's the theory of the fabrication? Like why would a piece on a messiah trip? Why would he fabricate you know, being sexually assaulted?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:04:32",
+            "text": "I think the theory is right. This is supposed to his his turning point when at least in this in the movie right when he decides, oh, hey, I can't actually do this. I'm actually not a messiah. That's why the story's important, right? I'm just actually a white guy screwing around in Arabia. But I don't know why Lawrence would go tell that story."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:48",
+            "text": "Yeah. What and what like, the guy did not recognize that it was Lawrence like that was kind of weird that he's like a wanted man. He's captured but they don't figure it out. That that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:59",
+            "text": "isn't He's weird he's captured and tortures and in his book he says that he basically broke so I don't know what he couldn't have told them at that point. But still they they let him go"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:05:10",
+            "text": "yeah I mean the British describe Cairo was a backwater but Dara does not seem like a cool hang and it's probably not sending their best to Dara. The Turks the Turks don't come off well, they're they they're all speaking in English by the way and that tortures Yeah, except Okay, so I don't understand that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:27",
+            "text": "well, that could be like that could be like a Hunt for Red October situation like like Lauren spoke like all the relevant languages. So like he he may all just be in Turkish or Arabic or, you know, some some intermediate language. I love the look that the guy holding his hands gives us a flam. Like, that's like a real Whoo, I wouldn't cut that when you feel Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:05:50",
+            "text": "it's totally nightmarish. He's disappointed when he doesn't wince the first"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:53",
+            "text": "when he doesn't wins. Yeah, totally amazing. And the second time it gets a little flickers like, you're gonna like this. You're gonna like this. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:00",
+            "text": "yeah. And then the emperor is like his shirts on button. These"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:03",
+            "text": "a couple of things about the Emperor about Jose. He said, This is one of his, if not his favorite, one of his favorite performances of all time, Jose for thinks this is like the best work he's ever done. And it was like, again, to the point that this is tax on subjects like the sexual assault is, is meant to be. It's meant to be that like, the direction that lien gave to Ferreira, where he appears in the doorway coughing is that the coughing should like increase as like an orgasm. And so it's like the the coughing is meant to itself be like a sexual excitement."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:06:38",
+            "text": "So I remember when they when they did one of the revivals, the ones that I would have seen in 1989 that they I remember reading that they had like added back parts of the scene to make the subtext more more tax write, Googling yesterday, it seems like this was all in the movie to begin with, which again, has to be sorted out for 62. Totally"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:57",
+            "text": "difficult because like the canonical version of Lorenz Arabia basically didn't exist until 1989. Because like they had like the super long version, but then it immediately started getting cut down. And so it wasn't until they went back and did the restoration in the 80s. This was not a Steven right. Well, like I mean, like Liam was still lean was still alive, like so what they what they did was they had to rerecord audio for the, because they basically found a negative of the film, but it didn't have any of the sound. So Peter O'Toole went into and did ADR, like in for the 89 restoration. So like a big chunk of the dialogue in the movie is not the original audio that would have been projected, it's re recorded with the actors. Holy cow, according their lines. Yeah, because they it was the only like, pristine print they had of the long version. And the audio just didn't exist for that. So the restoration is was this very extensive re putting together of the movie. And before that the versions that existed were all these weird, like cut down versions because it was so long,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:02",
+            "text": "huh? That's amazing. So he is totally spent, Ollie nourishes him back, you know, to help but he cruises back to Jerusalem. And it's kinda like tail between his legs when he arrives. He's like running up to the house. He"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:08:17",
+            "text": "tells me I'm done. Yeah, I'm done. Yeah, out of this. I'm a white guy. That's my skin. I'm not an Arab. I can't I just gotta gotta get out of here. Huh?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:26",
+            "text": "And the guy is meanwhile back in Jerusalem are talking about hey, we just built a squash court. Jolly good"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:31",
+            "text": "about the squash court. Jolly good about the squash court has one of the status lines in the movie. They also gave him like a uniform that was like too big for him. So he looks like just like he doesn't fit and he's got that weird walk again. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:44",
+            "text": "But now we can see the you know, Faisal can see the goal line and he is pushing back against Dryden and Allenby about this US French treaty to split Arabia. And it's pretty amazing. He says Lawrence is pushing back against Dryden. And this scene is amazing"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:09:04",
+            "text": "that I'm going to be honored among fief. But there's none in politicians, and let's have no displays of indignation. You may not have known to certainly had suspicions. If we've told lies, you've told half lies. And a man who tells lies like me, merely hides the truth. But a man who knows half lies, has forgotten where he put it. The truth is, I'm an ordinary man. You might have told me that tracking."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:09:35",
+            "text": "So Lawrence comes back to quit, he goes back to resign. And they're like, No, you can't. And he's been raped and broken and he's bleeding at the back of his uniform. The blood is visible. And he's done. He's like, I just want to go home. I'm done. And basically the next scene he's back,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:52",
+            "text": "which this time he pulls him back in right? But"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:09:56",
+            "text": "it does not seem convincing at all on this watch. I agree. That's it. Really quick turn from like, I'm destroyed husk of a man to I guess I'm gonna go back and lead a group of brigands."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:06",
+            "text": "I completely agree, I think I think if this movie has flaws, it's just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:10",
+            "text": "have three stars that movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:14",
+            "text": "If this movie as long as it's in the second half, and it's, it's around how the movie shows, Lauren's going from, I'm done to I'm back. And they basically just kind of do that move too many times. Because every time he meets again, with the generals, he's like, he's like, I'm done. I'm going home. And they're like, Well, what have you went back? And he's like, that's crazy. He's like, but what have you done, and he's like, Okay, I'm going back. And myopically, what it's meant to be is that they're appealing to his ego. And it's like, you're the only one that can do this. And that's like his Achilles heel is that he believes he is unique and special. And like, you know, he's the only one who can do this. It works every time on him. But by the third time that they do it, you're sort of just like, I don't know, like, it seems like you've done enough"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:10:52",
+            "text": "this time around. And I was really thinking about it. I guess he thinks he's due because they've let him into the British French plan to carve up Arabia. Right. And I think that he thinks if he can get the Arabs to Damascus, that can that can FOIL the plan. So he's doing it on behalf of the Arabs. But again, it's a pretty quick turn. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:11",
+            "text": "that's fair. So on the road to Damascus, and it's now a race against Allenby and British forces to see who can get there first. But Lawrence arrives with his FedExing. So he now has his personal honor guard, but they're all murderers, and just killers and the worst of the worst, which is an interesting choice, as opposed to Paul kind of taking the best of the best of the Fremen and elevating them up to to be finicky. And we have kind of the crux of the moment here, where you have a village that has been pillaged by the Turks. And this is the first and only time we have any women or children in the film. They're just dead. You know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:50",
+            "text": "there's some women who cheer them on the way and some"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:11:52",
+            "text": "you lating. That's right. And there's a couple of Redcross nurses who show up at the end, and that is women, otherwise"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:59",
+            "text": "not not a high score on the Bechtel test for this now"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:03",
+            "text": "and that is true, but that's rough to see that village. And so Lawrence seeing this just breaks and says no. Yeah, and we essentially have the jihad, you know, the looming Jihad from Doom, and they just tear through and Lawrence is just losing it on the battlefield."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:23",
+            "text": "Just killing looking for people to kill looking for people to kill with a pistol. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:12:28",
+            "text": "he's into it. And he moves on to the dagger. Yeah, when that doesn't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:31",
+            "text": "work. Yeah. And the shot"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:32",
+            "text": "of him. Right and kind of crazed holding the dagger breathing heavy is so intense, but we have Bentley and Ollie who come up upon him and are really disgusted doesn't"
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:12:43",
+            "text": "surprise you Mr. Bentley? Surely you know the Arabs are a barbarous people barbarous and cruel. Who but they who but they this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:55",
+            "text": "part is weird to me because Bentley says oh, you rotten man. Let me take your rotten bloody picture for the rotten bloody newspapers. But in the intro at the beginning, he is like, really praising Lauren. So is it maybe like, just like his perspective changed over time? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:10",
+            "text": "I think Bentley's seen too much. I mean, this is a you know, killing of unarmed people. Like this is a real war crime that's being committed here. And so I think that kind of changes his perspective on the dynamic. It's also not"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:13:25",
+            "text": "a glamorous story you can sell to American pay. Yes. Doesn't really stop him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:29",
+            "text": "He does have the picture, though. Right? He does take the picture. And I think that's the picture. I guess maybe it's later Faisal has that picture of him that he takes there, but I'm just thinking, by the time it's, it's his funeral. 20 years later, 30 years later, whatever. He's still praising Lawrence and saying that he's one of the greatest men he's ever known,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:13:48",
+            "text": "again for a war crime."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:50",
+            "text": "Well, I mean, I think I think particularly like when Bentley's praising him at his funeral, like, I think it's because Bentley's fame is tied up with T. Lawrence's fame, it's impossible for him to critique Lauren's publicly, like he's the one that helped make him famous. So he's like, yeah, he's an absolute amazing warrior, a poet, a visionary. All these things like, you know, and I was my honor to introduce them to the world, but like, privately, the guy was a fucking nut, right? I mean, that's like sort of the guy. No, that's the subtext."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:18",
+            "text": "And this is where this is where in my mind, Ali really steals the movie like, Sharif in this scene is incredible. And then in the next scene, as they you have, it's great. You don't show the taking Damascus, they were like too many camels. Too many too many horses. We're just we're gonna be there, but I love it. Allenby arrives. And Lawrence has already kind of set up, you know, control with this Arab nationalists Council. But this is where you see the kind of infighting and the mistrust for technology. They're definitely landed on fairly thick,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:14:48",
+            "text": "very thick. I mean, this is where you know, if you you leave the movie going, yep. And that's why the herbs can never amount to anything. Exactly,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:54",
+            "text": "exactly. This This makes this this makes I think a bit too strongly the imperialist colonial case of like, you know, why is like well actually it was you know well you know it was all well and good for the British to leave when they did like it's important that they were there in the first place because look at these are wise. Yeah Sri Lanka would never have electricity and India would never have had plumbing if not for, you know, the benevolence of the British Empire. Like that's, that's not good. That's not a great take. I do like Allenby knowing that this is what's going to happen and just sort of like reading his fly fishing books or whatever, and just waiting for things to inevitably fall apart. I think Allenby ends up being a pretty interesting character and all this but yeah, it does lay it on a bit thick because that the the Arabs are just uncomfortable. Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:39",
+            "text": "And so most of them abandon the city Ali says he is going to stay to learn politics tried very hard to give us the masks. It's what I came for. And then it would be something Yes. Much but Ali's crying right as he walks out and is talking to outta I just love it. So yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:05",
+            "text": "Sharif is amazing in this really amazing in this performance. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:10",
+            "text": "Lawrence leaves he's promoted to Colonel. Back in Cairo, Faisal says Godspeed."
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:16:14",
+            "text": "There's nothing further here. For a warrior. We drive bargains, old men's work. Young men make wars and the virtues of war are the virtues of young men, courage and hope for the future. Then old men make the peace and the vices of peace are the vices of old men mistrust and caution. It must be so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:44",
+            "text": "and he cuts the deal that he's going to be able to keep the Arab flag up although they're going to accept the consultants from the British."
+        },
+        {
+            "name": "Lawrence of Arabia sample",
+            "timestamp": "1:16:50",
+            "text": "It seems weird to have a British waterworks with another flag on it. Do you think it was worth it? Man,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:58",
+            "text": "my business tense Thank god. Yeah. And then the British and the French govern you know the Middle East and nothing bad ever happens again. The end happy ending? all worked out. Fine."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:10",
+            "text": "Oh, intense. You do have the last shot of Lawrence riding in a Jeep on his way out of the desert and looking longingly at the people on Camelback as they're riding out into the desert."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:21",
+            "text": "Yeah, that guy. Motorcycle sweetspot and the motorcycles."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:26",
+            "text": "Yeah. Nice. Nice. Final thoughts, Peter, and your rating for Lawrence of Arabia?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:17:35",
+            "text": "I mean, I have to say five stars, right? No, it's it's it's great. Don't watch it on your phone. Yeah, get big screen, get good sound, find time to watch it. It's not a bad movie to stop and pause periodically and do some Googling to compare historical figures. But it's incredibly rewarding. And again, like you can't, it's impossible to imagine this movie being made today for all the reasons we've elucidated here. So just for that reason alone, but it's a great movie, it's totally entertaining five stars."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:03",
+            "text": "Mm hmm. JASON Yeah. To me, like when people talking about the greatest movies of all time, to me, this movie is more important to me than like something like The Godfather, which I think is amazing. You know, to me, this is like it just the technical brilliance of what movies can be. And to achieve that on a level that is on equal today. And in the in the doing of it, like tell a completely compelling story that is, as you say, is like is interesting and you're swept up in and you want to know what happens and the performances are great, but to just to show what is possible with the medium of moviemaking and to have that still be fresh and relevant. You know, 60 years later, makes it a one of the finest movies ever made. Without question. It's a five star movie, undoubtably"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:56",
+            "text": "Agree, agree with everything, just say the power of all of the political subterfuge and all of the awareness with the inherent unfairness of empire and, and Concord and the desire to be free and the idea of wanting to to establish that and bring that and all that that is fraught with with that enterprise. It just it has deep meaning and is incredibly just a beautiful journey to take on. So yeah, I am also five stars on Lawrence of Arabia unsurprisingly. Peter, who would tell this winter in play in Lawrence of Arabia, everyone else stays the same. You can cast one roll and we know she can play man no problem. She's done it before"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:19:40",
+            "text": "it says it's a slam dunk. She should be Lawrence."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:45",
+            "text": "That's really good."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:19:46",
+            "text": "I mean, she's perfect for it. I mean, because there's some line about about Lawrence is already like a little a feat for this. And if it was any closer to me, Florida and Arabia, so he's, it's right there. There's a whole band about it. You know whether he was gay or not perfect? Yeah, it's it's a no brainer."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:04",
+            "text": "Did not see that one coming. Wow that is that is amazing. What about you Jason?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:09",
+            "text": "I kind of want to see her even though it's not possible for very good reasons but the King Faisal tilde would be would be something like it would be it would be interesting we shouldn't do it for very good reasons for the same reason that like you know her casting is the Ancient One was also problematic this would be more problematic than that yes a real person who was Arab and not you know, a cartoon character I will I will go I will second the Lawrence I think it's fantastic nice"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:39",
+            "text": "I'm gonna go with a much safer but I think would be a really really powerful one it was just Bentley. I would love to see her driving that from the outside and helping to shape the narrative around him I think would be really great All right, well, let's get into letters our letter is from Jim Kolbe subject line Children of Men. Hey Dune pod have written in in a while but haven't missed an app even caught some live? Yes. I love children of men. It was an instant classic. When I saw it in college, I loved seeing sci fi get the otter treatment. Alfonso is great coming off of pushing Harry Potter out of the kids section and into the young adults eat tu mama tambien deals me. I know you'll talk about the great acting set design and those wonders you kidding me? Hard to replace anyone in the cast because they were pretty great. But I think tilde plays every soldier in the apartment complex. Not sure they have the budget to replace all the faces but it'd be worth it to see an army of tilde is in silent awe awaiting to massacre anyone who isn't a baby."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:48",
+            "text": "Oh, it's like an Agent Smith situation. I like that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:52",
+            "text": "I really wrote in to say I watched the Children of Dune mini series on hoopla. It's an app associated with local libraries around the states just got to have a library card to use it totally free. I know that's not like a mass market. But libraries are awesome. And they have tons of new resources. Anyway, keep up the good work and cheers, Jim from Philly. How about that shout out to libraries."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:13",
+            "text": "That's a good shout out pro library. I'm very pro library too."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:17",
+            "text": "Alright, here we go. Here's our voicemail."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:22:20",
+            "text": "Bot Hey, it's Cory from Austin, Texas calm and about Lawrence of Arabia. And actually was trying to remember if I've already called in about this movie, or not. Schedules all wonky and I'm all thrown off and not knowing if I left a message is like way ahead of time anyway. Doesn't matter. Large Arabia. Amazing movie, of course, had never seen it. So once again, you guys are really getting a bunch of movies. That's awesome. It was gorgeous. It was great. It was entertaining. I sadly could not watch it in one sitting. So I had to break it up on a couple. But it was great. I loved it. I didn't do too much research I wanted to but I wanted to hear your thoughts first before I started digging around and looking stuff up about it. Like historical accuracy and all that kind of stuff. I did find a really funny quote from his younger brother. He said for the New York Times that the film is a psychological recipe. Take an ounce of narcissism, a pound of exhibitionism, a pint of statism, a gallon of blood left and a sprinkle of other aberrations and stir well. Man, if that is not like the greatest description of a movie. I don't know what it is. I would totally sell me on it. All right. That's it. You guys are great. Love you guys. And I'll talk to you or yeah, I'll leave again soon. Bye. Korea"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:36",
+            "text": "doesn't even know when we're recording because it's we're on such a messed up schedule. But he still doesn't miss he still gets his voicemails in. He's a legend,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:23:44",
+            "text": "by the way. That quote is is a criticism of the movie. Yeah, yeah. But yeah, it's not a criticism of the movie. It's great. Exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:51",
+            "text": "Peter,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:52",
+            "text": "what do you have to plug?"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:23:53",
+            "text": "I don't know. I make podcasts periodically. Recode. I record media I talked to I talked to famous people, people who run companies, people who are write about companies we talk about media and tech companies like Twitter periodically. I've made a couple of long form pods one about Apple one about Netflix, you can get all those by searching for my name or land of the giants. In the before times I hosted conferences, but who knows if we're gonna do those again, and in January, I've got something that I worked on on whatever it CNN streaming service is going to be called. Oh, that's another sort of like looked back at it at big companies in tech. So you can consume all of those and most of them are free, except for the scene Amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:38",
+            "text": "Amazing, but mostly, I'm"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:24:39",
+            "text": "delighted to be on this podcast. I found you guys through Jason Concepcion. And I've been going down to dune rabbit hole and I love this podcast and I love going through your back catalogue and God bless you guys for cranking this out week after week and this is just will go on and definitely"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:53",
+            "text": "yes, I and so one of us dies or you know like and get back style one of us cool Right, because he doesn't like God today. Other one. Yeah,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:25:02",
+            "text": "I would like to come back for the GET BACK pod by the way. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:06",
+            "text": "And I think we're gonna have a long and fruitful pairing at least a decade. So that that's it was at minimum will beat the Beatles. How about that Chase? Do you imagine"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:14",
+            "text": "if like, if in order to do this podcast, I was like crystal has to also just be in here. Like next. Now we get other course lay you know like just like listening like you're listening in like Hey, we should take I mean I very much I'm sympathetic to the argument that Yoko is an unfairly maligned figure in history because also misogyny, and racism, like racism, all those good reasons. Totally seems fair and legit. I think more should be said about that, however. And Dave points out in chat that Linda was also in the room, she wasn't sitting next to Paul the entire time. Correct. She wasn't just literally she didn't go to like all of the meetings, like when they were trying to figure out like how to like, you know, get the band back together, and like, refused to talk to other people and was like, a voice box for Paul or whatever like that, like the yoga was doing a very different job in that relationship. And it seems a bit weird."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:26:17",
+            "text": "The best part is when Linda's daughter shows up, and then watches Yoko perform by screaming into the mic. And then she says, and then she does a Yoko screaming into the mic and everyone's quiet. It seems"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:32",
+            "text": "like the relationship was a little funky. And like, I can imagine that being difficult in our creative context for the rest of the band."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:26:40",
+            "text": "They they make a point in this edit of heavy only discussion, and maybe it's the only audio maybe it's the only footage of the only discussion of Yoko is Paul said, I think it's fine Yoko's hanging out because it makes John happy. And who knows if there's other footage. I'm also just shocked at how sober everyone is."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:57",
+            "text": "Yeah, well, I like to be 69 Oh, no, Lennon was addicted to heroin at this time, like right so but they but they seem to be very with it again."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:27:05",
+            "text": "It's Jason,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:06",
+            "text": "you said that I was like I didn't I didn't get that. I just saw this. He looked"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:11",
+            "text": "credible. enterable he looks terrible. He gets better once they moved to Apple studios but the beginning of the Twickenham stuff like he's essentially in a nod he's like a perennially laid and like looks like he's not eating and looks just like a power is over him. And yeah, this was like this was directly during the time when he was addicted to heroin. And Paul's pretty clearly high on cocaine,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:27:33",
+            "text": "but they do a very nice job of excise they do 1969 They do kind of hard to do."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:38",
+            "text": "There's a funny gift that I saw yesterday of where it's like when you forget that you're making a documentary and it's like a scene of John reaching into his coat is his beautiful fur coat pocket and going to pull something out and then he looks right at the camera and puts it back in puts it back"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:53",
+            "text": "in the pot is like fast. No, not that."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:27:58",
+            "text": "Also the you know the premise of the movies we have to do this this quickly because we're going to lose Ringo."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:04",
+            "text": "Yeah, because he's gotta go"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:28:08",
+            "text": "done movie with Peter Sellers is also totally Oh my God."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:11",
+            "text": "Oh, Peter Sellers. Another favorite part is like Peter Sellers shows up and is just like, I thought it would be chilled to hang with the Beatles. Y'all are too fucking weird. I am out like Peter Sellars, one of the most brilliant like improvisational comics of all time. It's just like, No, no, no, no, no, no,"
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:28:28",
+            "text": "not it's not a fun."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:28",
+            "text": "This is not a chill vibe. I am out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:30",
+            "text": "That is rough. That is definitely rough. Like I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:34",
+            "text": "will be leaving. I dealt with Stanley Kubrick will not be dealing with this. Thank you very much."
+        },
+        {
+            "name": "Peter Kafka",
+            "timestamp": "1:28:41",
+            "text": "Peter Sellars, a very weird guy. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:43",
+            "text": "of course. Of course."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:44",
+            "text": "A lot of weirdos in the 60s. And that's it for this episode. I want to thank Jason and Peter for an amazing conversation. Next week, we're joined by Brian Mosley and catcher to talk another epic film that work housekeys Cloud Atlas streaming now on Netflix. If you're enjoying the show, be sure to hit that follow or subscribe button so you never miss an episode. We also have a Discord server where you can hang out with us whenever you want. A link is in the show notes. Dune pod is a tip tech podcast John, a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Foresman of whipsawing music transcripts provided by Sophie shin. The episode was edited by Maria passing ham of edit audio and produced by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

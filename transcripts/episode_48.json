@@ -1,0 +1,2311 @@
+{
+  "episode_number": 48,
+  "episode_name": "Heretics of Dune",
+  "dialogues": [
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hey everybody, it's Haitch and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie. This week, I'm joined as always by my co-host, Jason."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Just as a co-host of a Dune podcast, it sort of makes you question the choices you've made that have led you to here."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And by spiritual advisor, Protolexus."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "His wife's like reading over his shoulder and is like, \"Frank, you can't put this in a book!\" and he's like, \"Listen! I'm gonna sell millions of copies no matter what I put in this book. Alright?\" and that's what he did."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "On this episode, we discuss the penultimate book in the series, Heretics of Dune. We cover profit as a motive for creating art, the return to actual world building in the series, and what the actual [bleep] was going on with the inclusion of literal sex duels in his book. And now, without further a-Dune, Heretics of Dune. [Dune Pod theme song fades out]"
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "mean, this is it. This is the end of 70mm Month Strikes Back. What's your assessment? How did we do? How did it go?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, I mean, you had the poddaddy on. [Haitch laughs] So instant classic, instant win for the Dune Pod community."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Do you feel pressure stepping into the daddy shoes?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Those shoes are way too big for me. I won't even pretend to be able to accomplish what what the poddaddy did on here. So you know, I'm - to use a baseball analogy, you know, he he hits clean up. And I'm, you know, the the fifth hole, who was kind of just the wannabe cleanup hitter who never really got there. And I'm okay with that."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Did you play baseball in your youth? Or did you play church softball?"
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "played baseball. I retired at the age of 14. I think I peaked there. So I just got out."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What position?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, in my heyday, when I was about 12, 13, I was a pitcher."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Whaaat?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Are you left handed?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, I was right handed. But I was I was pretty big for my age. So I was tall and lanky and intimidating on the mound, and I through probably the fastest in the league. So kids were scared of me. But then once I got like, the next year, the talent got much better. And then I was like a first baseman, and then I was like, alright, I'm out. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "If I can't run the show, I'm out of here."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah. Well, that's what's great about baseball, right? If you pitch you are the star of the game."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, for sure."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "And it's hard to go down from there."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And if you're like a left handed little leaguer in particular, there's just like, there's a moat there's like, at least a year where no one can hit you. Like because no one can hit left handed pitching when they're like 11 or whatever."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, when there was a left handed pitcher, I was like, what's the point? [Haitch laughs] My brain couldn't handle what I was seeing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason, are you like, are you shaping Griffin to be left handed for his career?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, exactly. I tie his arm behind, he's right hand dominant. So I just tie that behind his back and make him figure it out. I specialized in firefly catching in the outfield. I was not an athletic child. So I don't have high hopes for my children. But Crystal's athletic. You never know. They might just be okay."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh, awesome."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "You never know."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Nice."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, well, we are so excited. This is our 48th episode of Dune Pod. And we are thrilled to have the original spiritual advisor Protolexus rejoining us to talk about book five in Herbert's septology, Heretics of Dune."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The big one."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Let's do it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Did you feel it like looming out there, Proto, like, like as a psychic weight over the last like month or two? Or is it you just sort of like you exist in a flow state?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, honestly, I couldn't remember when I finished this book. I couldn't remember if it was February of 2020. Or February of this year."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It was this year, I think."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, it was this year as I thought about it, because I was like, that doesn't make any sense. It wouldn't have been last year. But you know, the whole 2020 is just like a black hole of time. Like we all lost a year, that it's it's confusing my memory as to when things happened. By yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You took a big break after God Emperor, you're like, I'm just gonna set this down for a little bit and see what happens."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, I think it took me maybe I think I read the first four in maybe like eight months, and then it took me eight months to read Heretics. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's amazing. And four was your favorite, right? So you were coming off a high."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Nooo."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, well, two was my favorite."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh two's your favourite. Right."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah. Um, and then you know, three was good. And then four. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, well, we'll get into five in the bottom of the hour here, Heretics of Dune. Coming up. Just a quick shout out next week on Dune Pod Episode 49. The Dune Pod season three finale. Dun-dun-duunn!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Amazing. That's amazing it's the season finale."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Ctcher. Denis Villeneuve. His final work in Canada, before coming to the states. Incendies."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Excuse me?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yep. His final work made with pure maple syrup."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "I'm really excited about this one. This is like a, it's a story, it's a generational tale of like loss and trauma. And it's actually set in the Middle East. So you have Denis in the desert back in 2010. So it's gonna be really wild to check this out. Incendies is available for rent on all major platforms. After that, we have the Dune Pod summer vacation, so we're going to be off for two weeks. Jason, where are you going? What are you doing?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "We actually are traveling, surprisingly. It's we're taking our first trip. Next, we're going to like, we're not going far, we're going to Carneros. And then we're going to Bend, Oregon for a little bit after that. So our first family trip, I think it will be stressful. [Haitch laughs] Just because we've never gone with both of them."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "How old is Juniper Jane now?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Juniper Jane's six months, will be seven months on day after tomorrow."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Proto, what about you? What's the Protolexus household, what are the vacation plans?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "It's far too early in the summer to have plans. So, we'll see."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Around August it all comes into shape?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, it makes sense. Well, I'm going to Miami and the Keys. I'm from Florida for 22 years but have never been to the Keys. So excited to go there for a family reunion."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, amazing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah and hang out with both my brothers who are big Dune Pod listeners. So there'll be a lot of debates going on there. But while we're gone, never fear. We have episodes that we'll be dropping during the season three/four hiatus. Wargames and Good Will Hunting."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They're both, we've recorded both of them already. And so they are really good episodes. Like they are great, great guests. Great movies. Great discussion. I'm glad that we have something to fill the gap while we're away."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yes, it's gonna be awesome. And then we return for Episode 50, Veronica Belmont in one of Proto's favorite movies for the Dune Pod season four premiere, Time Bandits."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Ohh!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "An amazing, amazing choice."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Can somebody in chat bring up Proto's review of Time Bandits, and we'll see if we can work that in there?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "It's a classic two star movie. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wow, two stars? Had you not seen it as a kid? Did you watch it just fresh?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Okay, that makes sense."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No nostalgia. I mean, there's some great, there's some really hilarious moments in that movie. And it's worth talking about."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, but it's a mess. It's a mess though. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, well, that is that is next week on Dune Pod and next month on Dune Pod. So there's a lot of stuff going on. And we're starting to book our guests for season four. There's a lot of killer movies that we're going to do, including some Ridley Scott revisiting that we just booked. So super stoked for that. Well, shall we get into some Dune News? [Dune sound bite plays] Would you like to know more?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Dunuh, dunuh, dunuh, Dune News."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason Momoa took his kids to see Dune."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, did they like it?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, apparently, he talked about it for 27 seconds on Fallon the other night."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, okay. That's a good update."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's it. That's all I got. We know he's stoked on it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's 90 days until Dune. That's another piece of news. And then the other, the other piece of news is the industry news that the In The Heights did not meet the box office expectations that some people had set. But it's a very complicated story. Because part one of the complication is that some people blame this because it was streaming. And so that feeds into my pet theory that they shouldn't release Dune streaming."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Which that got debunked because it did lower on box office and did lower on streaming. So it wasn't like -"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know if that's, let's not call it debunked. HAITCHOkay."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Like we don't, we don't know that. We don't know what it, but the theories that are also that they move in parallel. But yeah, the other thing, though, is that like the expectations were probably just too high for it. That like musicals actually just don't, don't do the kind of numbers that people had planned for it. But yeah, so we don't know. We don't know anything. We hope it all works out for Dune."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Proto, your review of In the Heights and Lin Manuel Miranda? [Proto laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Cancel Lin Manuel Miranda on this podcast."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, I have no plans of watching In the Heights, don't really have any interest in it. So... there you have it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The end. You recently watched Westside Story right? For the first time."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "think it was my second time. But my first time was so long ago that it doesn't really count. Yeah, so I did rewatch it. And yeah, I know there's the remake of that coming out soon, Steven Spielberg and I have no plans of watching that either. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "What's your favorite musica, Proto?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "My favorite musical, probably Fantastic. Mr. Fox."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Interesting."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "There's some songs in there."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Never seen that. JASONThe one with George Clooney?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, I mean, it's not technically a musical. It has a soundtrack. You know?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Alright."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You guys watch Coco over there? At the Protolexus household?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, I've seen it. It's okay."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Doesn't care. Doesn't care."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, moving on. Shut it down. Shut it down. [interim sound bite plays]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay, I don't think we can put this off any longer."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Alright. Good lord."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Here we go. Heretics of Dune is a struggle for power in the shattered remains of the Empire. God-Emperor, leader the second, the tyrant, son of Emperor Paul Muad'Dib Atreides reigned over the known universe of millions of worlds for almost 4000 years, enforcing harsh rule to stir yearnings for expansion deep in the souls of humanity. Now, almost 2000 years after he was killed by Siona Atreides and Duncan Idaho, humanity has reacted. As the Bene Gesserit, Bene Tleilaxu, Fremen Priesthood and Ixians wrestle for control, the vanguard of the people of the scattering, who spent those 1000s of years in the deep recesses of space return with dangerous new mindsets and capabilities. Now it falls to a new Duncan Idaho and his mentor, the venerable military commander Miles Teg, caught in the beegees machinations to tap their own abilities in this fight. Will they be able to stand up to this incoming threat? Or will they be swept away and lost in the annals of history as the Heretics of Dune?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wooowww! Chat was on edge not knowing if you're gonna, they didn't know if the rule was that you also did the title of the book for when we do books. You know, you ended it with the title, but you pulled it out."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You know it."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "You can't be stopped."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Woof! Amazing, amazing delivery. [Haitch laughs] When you read it like that, it sounds pretty good. Like the summary sounds pretty good. And like this is like sort of the issue with this book, is that there's actually a really good book in there somewhere and it starts it also starts off stronger than it it peters out. And that like, and I do mean, Peter. And that, and that just sort of makes the experience of Heretics that much more frustrating."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hmm. Agree."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Should we talk a little bit about sort of where this book fits in, like the Herbert, or the Herbertotology of it all? Like, you know, sort of, like, you know, the writing of it and whatnot."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "At the time, it came out in 1981. He wrote in 1980. And it was largely while his wife was dying of cancer. And they were in Hawaii. And apparently hate like, this is interesting to me from from Brian Herbert's introduction. He had like, leverage the farm in order to buy this like epic estate in Hawaii. And so he was kind of in a money pinch. So he had to get something written. So yeah, okay, that makes a lot more sense now."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. And it was like, it was like, his wife was very sick, his wife had cancer, and he was like, taking care of her. And, yeah, they were building this house out in Hana on Maui. Which if you know Maui, is a very, is the most remote remote part of Maui. And this is in the early 80s. Right. And so this is really like the end of the road of civilization, basically, at this time. Yeah, the first draft of the book was like, 250,000 words or something, it was like this massive, sprawling thing. And he got it down to what is still a very long book. But I think it kind of, I think, like a lot of that context is important to understand that he just kind of ran into plot problems here. The other thing I think to note is that Heretics was meant to be book one of a of the second trilogy of Dune, like it was gonna be Heretics, Chapter House and then the third book, which he never wrote, but ended up becoming two books written by Brian Herbert. And so this was meant to like kind of start this new trilogy. And again, I think he just kind of bit off more than he could deliver in this in this project."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Visionary. He was thinking like, I'm gonna finish this house on Maui, and then I may get a place on Kauai."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, he was ready."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And then after that, who knows?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, no plan. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's a bit of a mess. I gotta say. So just at the top level, to me, this is definitely an improvement after God Emperor, which was the ultimate low point because it's not really a book like God Emperor is basically just a bunch of Leto ranting at people who don't understand what he's doing. He's swept away all opposition, and he controls absolutely everything. So there's literally no threat to him."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "There's no tension. Yeah, yeah, that's right."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Here, we have this great return to like this world building and all of these complex factions, and you have action and things that actually happen. So I mean, I guess this is the first question I had for myself while I was reading this, like, am I just like a shallow, vapid sci fi fan who like wants all this action stuff? Or is this really just bullshit? The stuff that's weighing this book down? And God Emperor same thing?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yes."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, I, I think you're right. Because listen, this book. To me, you have to compare this to the first Dune book, right? We're at a time where all the characters are new. Right? Maybe except for Duncan Idaho, but you can argue that he's basically a new character, because it's a new Ghola as well. So we don't know any of these characters. And by the end of this book, I don't feel like I, I still know any of them. Whereas you read the first Dune book, you know, he, he introduces these cool, interesting characters. The whole book has a cool arc to it. With introducing them, there's a conflict, our heroes in distress. He has, uh, you know, you know, gains new powers, and then he has like, victory in the end. This book to me, when I was thinking about it, to me, it feels like the pilot episode to a TV series. Like this book ends and to me, nothing of consequence has happened. Not to, like, you know, talk about the whole thing, but at a high level. I just ended and I was like, like, why? Why did this book exist? Like, what is here?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "In fairness and spoilers for folks who haven't read Heretics or Chapterhouse: Dune, the book ends with Dune being destroyed. [sound bite of explosion] So that has some consequence, I would argue that has some consequences for the series. But I do agree with you that in general, this, this feels like all set up and no real closer."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Well, and that kind of goes to your point, though, about like, is it that you want the action in these stories or like yeah, and like that's like some sort of character flaw. Like, it's like all of the action in like, it seems almost like a gimmick that all of the action in this book happens off screen. Like, you know, both the attack on Arrakis ends up being mostly off screen, like, a lot of the, like, a lot of the big attacks end up happening off screen. And yet we end up like, sort of spending a really long time, like going out on a date. Like there's a lot of restaurants scenes. [Haitch & Proto laugh] For some reason in this book, and like a lot of description of like, what it means to go to a restaurant in the year like 50,000 or whatever. And it's just like, I don't know, it doesn't seem that interesting. So I think that like, I mean, I respect the idea of like, you know, I'm not going to give you sort of the big action pieces some of that's going to happen, but it feels like he's almost doing as a gimmick at some point in this book."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Agree. Alright. Well, let's get into this and let's start walking through this book. And then we can we can dissect it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, let's do it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So it opens up, fundamentally, you have a brand new Duncan Idaho, this Ghola there have been hundreds or 1000s. We don't know how many over the over the years, but this is a Bene Gesserit it program that is running on the planet Gammu. It is later revealed that the planet Gammu is actually Giedi Prime, the former homeworld of the Harkonnens. And so you have a 12 year old Duncan Idaho who was being raised and trained by the Bene Gesserit but you immediately are introduced it the woman who is running it, the Reverend Mother Schwangyu. She's against this program. And so we have a schism within the Bene Gesserit between forces that this woman is part of, this Reverend Mother and the Reverend Mother Superior Taraza, who is the head of the entire order. And so the looming threat is some combination of the Tleilaxu, who were the ones who create the Gholas for the Bene Gesserits and potentially for other people, they also have faced dancers who can pretend to be other people. And you have the beginnings of people returning from the Scattering noticeably the Honored Matres who appear to be like an offshoot of Bene Gesserit that went out into the Scattering."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, and I mean, that's like one of the cool things about this book from the beginning is that you get all of this perspective of these factions, particularly the Bene Gesserit that have long been very interesting as a Dune reader, and you're now in the middle of like, sort of their internal politics and like sort of your, you know, the Bene Gesserit are at our point of view character in a way that they've not been before. And so you're just getting a lot more, like, you know, not just world building, but like, you know, narrative perspective, from parts of the world that are of interest to you. And so all of that's pretty cool. That stuff kind of is immediately the first couple of chapters were like, alright, this is gonna be like, I had sort of forgotten like, how demented the book becomes. [Haitch laughs] It had been a while since I read it last? And I was like, Oh, yeah, like, this one's a banger, it's gonna be great. And then it ends up being a literal banger. So. [Haitch & Proto laugh]"
+    },
+    {
+      "name": "PROTO A",
+      "timestamp": "",
+      "text": "lot of bangings to happen."
+    },
+    {
+      "name": "JASON A",
+      "timestamp": "",
+      "text": "lot of bangings happen, unfortunately."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "do have a confession to make the first 100 pages of this. I couldn't tell any of the Bene Gesserit characters apart. Whatever, like they have different names. But they have different, they have interactions together. And I just couldn't keep straight what the heck was going on, the beginning of this book. It wasn't until maybe halfway or more, that I began, like, oh, okay, this character, you know, is different than this one. I was kind of just like reading and like, whatever. I can't keep this straight. There just wasn't enough separation of them. I don't know. Did you guys have that confusion reading this?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No, I think that's definitely fair. And you have your two main Bene Gesserit characters are Dar and Tar. And so that in itself has a little bit of complication. And they seem to be in lockstep working together on things until suddenly they're not right. And that comes upon later on. So yeah, I can definitely feel that. I really like the the notion of getting more into the Bene. And you're right, we had Jessica as a point of view character, but she wasn't, she'd kind of broken faith with the Bene Gesserit in Dune. So this is the first time the Tyrants gone. The Atreides are gone. And it's basically the Bene Gesserit are the people left to root for. Although it's questionable over time, whether or not that's something that we're going to want to do. They did call out I thought an interesting detail. So Dar has had 19 children for the Bene Gesserit, two of whom the Bene Gesserit killed just to make sure they didn't become Kwisatz Haderachs inappropriately"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They drifted a little too close."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's kind of intense."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's just what they do, man, that is just what they fucking do."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "They've been working for millennia."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They were working for millennia on this shit. They're not, they're just part of, they're just cogs in an overall plan."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Get your mother's love out of here."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "As is the Duncan's."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "15 millennia to be to be exact. So then we have the introduction of Miles Tag, the retired Bashar, so he is the commander, former commander of all Bene Gesserit forces. He's the hero of 1000 campaigns. And he is selected by by Taraza to instruct Duncan, and he's an old man, right? But he's super proud. But he's definitely committed to the Bene Gesserit. And so I really like this idea that he is stepping in and taking the ownership. So you immediately have him as a father figure who you really respect."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, he's good. There's also just a lot of good like, little building details in this like, you know, like one of the things they introduce is like Chairdogs pretty early, which like they they don't, they don't like sort of explain but like you eventually come to realize is that an actual like organic, like huge, like organic piece of furniture that is you know, conforms itself to your needs. I guess. I like that. I like that we get Chairdogs is like a new concept in this in this book there."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "They're no Digit mills."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They're better than Digit mills."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright. So that we also have the introduction of the of Waff, who is the Tleilaxu leader. And so we spent a lot of time with Waff."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Again, it's awesome because the Tleilaxu have long been, like you even know less about the Tleilaxu. And you know, they've been in the book for, since the beginning, become much more prominent in book two than in book one. They've long been like, sort of this mysterious force. And all of a sudden, you're like, brought right into this big conspiracy, which is that, you know, they're they're Muslim basically, it's the big secret of the Tleilaxu. But you get brought into their whole worldview. And it's dope, it's really cool to like, be able to see their home planet and how they run their shit. And all that stuff I thought was great. Now it does have the classic, the classic Dune problem, which is that it's revealed that the Tleilaxu who have secretly been Sufis, and no one knows about this, and they've kept it from the universe. And they've, you know, they've got this big secret and a big master plan, and no one knows about it. They've been super sneaky. And they've been reincarnated themselves as Gholas and no one knows any of their shit. And then like, you know, within like, 100 pages, Bene Gesserit are like, oh, they're doing this thing, obviously. Like, you know, the big, the big secret, the big secret thing that like no one ever could possibly know is very quickly, just completely transparent to the people who have like super powers of perception, obviously."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "And those Reverend Mothers just go on to manhandle Waff for the rest of the book. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Manhandle them. Yeah, like they really, the Tleilaxu likes turns out they do not match up well against the Bene Gesserit."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Well, I want to come back around on that in a moment later but so we also have the introduction of Sheeana and Sheeana is the chosen one, she's a young girl on Arrakis and she, Shaitan, one of the sandworms who they the Fremen priests worship because all of them have a pearl of Leto the second it of his consciousness embedded in there somewhere. Oh sandworm killed her family, but then it wouldn't kill her and she got on it. And she wrote it. And so she ended up being taken to the priests, and I think Keen, formerly Arrakeen, and so she becomes, she's like the new promised child. But so to me, this is a perfect example of what a shallow reflection of the first Dune is. She's like this petulant, annoying painted ass kid who you just immediately dislike."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, she does not have the depth of Paul and neither does Duncan really either. Like neither of the, neither of the special children end up being people that you particularly are stoked about."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "And, and to me, there's no payoff with her plotline in this book. Yeah. Like, it just doesn't really go anywhere. And by the end of it, you're, you know, you're kind of well, like, you know, what, what's the point of this character? And in the grand scheme of things, these characters make sense, and it comes together, but it's, it doesn't feel satisfying as you're reading it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No, I agree."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Her one job is to get the worm on the ship, like, you know, it's like she had she has one job. It's like, you know, \"Psst. Wormy. Get on the boat.\""
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So I do want to call out some changes to the status quo that are really awesome in my mind. And the first is that spice production has shifted. It's no longer reliant on the worms. Now the Bene Tleilax in their -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Axolotl."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The axolotl tanks, they are able to produce, suddenly they're able to produce Melange."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "We did it. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's kind of a big deal!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It seems basically like he was just no longer interested in this one Spice being controlled in this one place. And so like, both blew up that concept, and then blew up that place."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The Tleilax, who have seriously upped their game, now they have faced dancers, who can also in addition to looking like anybody, they can imprint anyone's memories just by touching them. And so we'll see how that develops."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "But that again, that again, is a thing where it's like, they're like the new face dancers that can imitate anyone and no one and they're so good. Like, you can't possibly detect them. And like literally everyone detects them. Like they're completely detected by like everyone. [Haitch & Proto & Jason laugh] Like no one is fooled."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, every time like there's a one of the, you know, characters or the factions is the forefront. It's like, they're unstoppable.But then as soon as another one's introduced, well, we can stop what they're doing! And like Herbert just like, kind of keeps going in that loop, whoever is like, in the forefront of like, you know, whoever perspective you're in, is, has the upper hand until, you know, we're at the Bene Gesserit have the upper hand. And now they, you know, they have a trump card for that."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "do like, it is, he is actually from a narrative perspective, he is like being dishonest to the audience. He's like, he has a trump card that he's going to play when we can, we won't spoil it yet. But like, where our character is going to have a major change. And the whole book is going to like, holy shit, what's happening, but I like how that develops and how he sort of like hints about it, but doesn't have it fully come out."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "will say, though, that like, what continues to be my favorite thing that Herbert does in this book, as he continues to evolve the technology and introducing just cool new science fiction concepts. Like, like you said, just the Tleilaxu, you know, you know, figuring out the Spice production and the Ixians, you know, figuring out how to fold space, you know, those developments like to me, like you would think those are concrete things in Dune that would never change. Yeah, these are foundational when you read the first book, but yeah, he's just like, you know, throwing that out the window and being like, Well, no, I can completely change the game here. And that makes it fresh and exciting."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's true. I agree with that."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Totally. So we have speaking of our invincible Waff, an absolute badass. So he meets with an Honored Matres, who has come back so it's our first introduction to them, and it's very clear that they're kind of they're an offshoot of the BG of some kind, the HM instead of the BG, but they're these powerful women who have these incredibly trained bodies. So you have this huge duel of words and logic and Honored Matres is really super hottie and very annoying. And then all of a sudden Waff just like, kills her instantly and replaces her whole crew face dancers. Yeah. And so it's like, wait, I thought these Honored Matres were like super badass."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They're not bad asses. No. Waff got the drop. He had his sleeve darts. Never fuck with someone who's got sleeves in the Dune universe, anytime they've got sleeves, it's curtains for you."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's right."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "But you only meet with people if they are like wearing a tank top or you know, like very short sleeve shirt, like something like where it only goes like that the - basically you need to see their like upper bicep, like at least to be safe."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No tanks, no meetings. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No tanks, no meetings. That's the rule. And you'd be Emperor within a year because no one could take you home without sleeves."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So then we have you know, this shift, it jumps forward a couple of years. So Duncan is 15 now, and he is sensing a stranger inside him. He's having some lightweight visions and trying to figure out kind of what's going on. Schwangyu is more vocal in her opposition against him. We also have Lucilla from the Bene Gesserit who is there to sexually imprint on Duncan Idaho."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "First to be a mother figure and then sexually imprint."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "As one does. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The plot as we understand it, is that Duncan is meant for for Sheeana.And so he's supposed to be imprinted with Lucilla but then he can go get with Sheeana right?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "See, this is one of those like kind of needlessly complicated sort of plots of theirs. Like I don't know why they just don't explain, I just want them to explain what they need. Like look, like there's like a magic girl on the on the worm planet. And like, you know, you're Duncan Idaho, super chiller, why don't you help us out and help everyone out? And you know, talk to the doctor the special worm lady. Like instead of like having this weird, fuck your mom situation. [Haitch laugh] Like which like if your plan involves that like just come up with a better plan, like try anything else!"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "This is the way they've always done it. Okay? [Jason & Proto laugh]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, it's traditional."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "15 millennia."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Of mom fucking, yeah, it's rough. It's not great. Don't love it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, so Miles Teg, the Bashar the older commander is summoned to an Ixian highlighter to meet with the Mother Superior Taraza. And they have a chance to catch up and basically, you know, discuss planning and whatnot. But then suddenly, it's revealed there's this invincible scattering soldier who's there his loyal to the Honored Matre. And he's like, there's no stopping the Honored Matres, they're impossible and you can't possibly, you know, beat us. And then Miles is like, I already like, we've already taken care of this. We've got ships, you're completely surrounded and will blast you out of space and everyone you ever knew, unless you'd let us off, and they get out."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, they work out a situation. And again, it just sort of reinforce it's again, one of the narrative problems of the book because Honored Matre is supposed to be big, super scary, but Waff takes him out easy. And then the Benny just get the upper hand super easy. So it's like, I don't know. I'm not really sure. I'm not really sure that they've set them up as scary as they're supposed to be."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "My next note, this one was interesting to me was Taraza in talking with Dar this concept of the key log."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The key log!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Do you remember this concept?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "My notes for some reason says \"key logs and mutual orgasm.\" [Jason & Haitch laugh] So I don't know what that is."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So the concept was that when in the Days of Yore when lumber men were sending fallen timber rushing down the river to the central mill sites, you would have a log jam and all the logs would get all jammed. And you would have the key logger who could come down who would find the one log that when you got that one free, the entire thing would free up. Is that real?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's real. That's a real thing."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "It's got to be real."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wow!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's a real thing. I've heard that before."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "What a sick job, just hanging out in the lodge until they need you to get the one log."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"Proto, come on!\" \"Ah, wait a minute.\" [Proto laughs]"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "You guys can't do anything unless I find that log so you can wait."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, yeah, that's right. So according to Taraza, the tyrant was both the log jam and the key log. So okay, guys, everybody got that?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yep. Get it. Write that down."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Miles thinking about the importance of the Atreides genes and the importance of eyes and seduction. I don't know."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Good note. Glad you glad you brought that up. [Haitch & Jason laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay, there's, oh, here we go. \"You could drown in the right kind of eyes he had learned. Sink right into them and be unaware of what was being done to you until penis was firmly grasped within vagina. He had noted Lucilla his eyes immediately.\" Okay?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Thank you, Frank."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So this is why, this is what I wrote this down, I was like, fuck this book."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "I'm glad you brought this up. Because it is a harrowing foreshadow of the sexy times to come in the latter half of the book, and I do mean to come. And the the issue in general, with Herbert, as shown in this passage and the beef swelling of Days of Yore is that he writes about sex in both a weird way. And this very kind of clinical way. Like it's, it's not in any way erotic. It's just, it's very, like scientific or like, it's very, like dry. And so it just makes it seem like this detached, observational, kind of clinical, sexy talk. That's just, maybe it's meant to be concerning, but I just end up feeling concerned. That's my take on this on the penis grasp in vagine."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "It's like a medieval professor who moonlights as a mortician like writing erotic fiction. [Haitch laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. Digging up bodies to write erotic fiction. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, that's amazing. So we cut from there to the attack on Rakis. So we have the priests that have been raising Sheeana and her being super annoying all the time. The priests are constantly arguing between them about what to do and what's the right thing, what would the Prophet want or whatever."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "All of this is super tedious shit. The everything, everything with Sheeana and the priest is just like you if you guys are clearly busters and don't matter, and are going to just get worked by the Bene Gesserit, whatever the, no matter what the pecking order is, if the Honored Matres are actually better than the BG, you guys are clearly just fucking terrible compared to everyone."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Not effective."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "So, just shut up with your religious faith. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And they get cut to shreds. Right? So the Honored Matre attack and the Rakis priests are just getting wasted and the BG show up and they tear the place apart. And they exert control. And at that point, Dar, who has arrived on Rakis, she takes control of Sheeana and begins grooming her and training her as Reverend Mother. The initial steps."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Of course."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "On Gammu you have the attack by face dancers to try and kill Duncan. And so right, Duncan is completely badass. He's like flipping all around and doing these amazing moves and cutting people down. Lucilla is really tough. And then Miles is a complete badass as well."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's like an important concept, which is that so like this book takes place 15 years after, 1500 years after the death of the Emperor and 5000 years since the first Dune. And the idea is that since Duncan Idaho existed 5000 years ago, humans have evolved super fast reflexes, they've continued to evolve. And so that Tleilaxu when he was being bred in though axolotl tanks have to implant him with these contemporary really fast reflexes."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, it was specifically in God Emperor, it's established that the Duncan that we're following in God-Emperor doesn't have those jgenes, right. And I think Leto had played around. Sometimes he gave them, sometimes he didn't. And so there was this like, embarrassing moment where Duncan tries to be a badass in God-Emperor and he just gets smacked down by Moneo, the old like, lame ass. But he he's an Atreides so he has crazy reflexes."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's right."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So did you like this part, Proto, like all of Miles, Lucilla and Teg being on the run being hunted hiding in the no-ship?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, I think it was at this point when they got into the Harkonnen no-globe, which was kind of a cool idea, like this thing that was hidden and no one knew about for, you know, 1000s of years. But I think it was far enough in the book that I began to realize that nothing that I really cared about was going to happen. Like, I think I was looking at the page count. And I was like, there this is, this is the story. There isn't anything else. And it was kind of like a bummer, because I was like, wow, I'm where I think I was, you know, it's more than halfway and just thinking like, oh, this, this isn't going to get any better. And I think that's where I was at."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Fair assessment. So Jason, Taraza meets Waff."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "like this scene."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The unstoppable, like the darts, like the unstoppable badass."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Waff is a total badass, gets completely wrecked by Taraza within like five minutes. [Haitch laughs] She knows he's got the darts. She knows like there he she immediately figures out that like he's secret Sufi. She figures out all of his secret shit right away. But I do like this scene because it's like, it's it is very chess matchy like they're trying to like feel each other out. And it's like classic like kind of Herbert Dune of like, you know, they're using lots of clues about like, how he pronounces things that she's using Missionaria Protectiva stuff to like figure out his religious. So I think this is like one of the stronger scenes in the book to me. I like it."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "can't remember what did the Bene Gesserit, did they implant stuff into the Tleilaxu? Into their religion with the -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Missionaria Protectiva?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "don't think so."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't think so. They just know so much about religion that they're like, oh, these guys must be secret Sufis and so we know all about that. So we can just like fuckin talk that Sufi shit. And though, believe we're part of their plan."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, that stuff was incredibly cool. Like the way she was able to, you know, she knew what she needed to do to communicate with him to kind of for him to be like, oh, you know, my deal? And we're the same? And for him to just kind of drop his guard. I think the way that Herbert unfolded that was really cool. That was a great part of the story."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And so Taraza, the Mother Superior, the leader of all the Bene Gesserit, after completely dominating him, sends him to Dune to go meet with Odrade, to Darwi Odrade there. We have a little bit more of Miles running around with Duncan and Lucilla in the end, then training in the no-globe. And then we have Odrade meeting with Waff and Waff is you know, again, maybe he's a badass or maybe not. She breaks his arms. He tries to sleeve bullshit with her. And she breaks both of his arms. Just kicks his ass. [Jason laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Don't try your sleeve bullshit with me! [Proto laughs] Break both of your arms!"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "You wore sleeves!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's I mean, that's what happens, if you wear sleeves. Either one or two things gonna happen. Someone's gonna end up dead or end up with broken arms in your sleeves. No tank, no meeting."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, so then they get picked up, Darwi Odrade takes Waff and Sheeana out into the desert. And we cut back to the no-globe and Lucilla sizing up the reawakened Duncan."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. Lucilla is kind of off her game, she's not stoked about like Duncan's now aware, now like adult Duncan, and like, you know, now our job is going to be impossible because she can't be do her. She's really bummed because her like, you know, motherfucking plan is just out the window."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh, I have a quote. I have a quote."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, go for it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"And she thought yes, yes, that young body must flow hot with the juices of procreation. Indeed the hormonal igniters are all intact and susceptible to arousing.\""
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "This is like what I'm talking about! Like, it's just who says that?!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "The hormonal igniters."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The hormonal igniters?! Like that and like the young juices like it really, it's like one of those cartoons where like, aliens are describing like, you know, going to the dentist or something like that. You know, it's just like, it's just doesn't make, it's just not how humans talk. And it just makes me really, I don't know, it makes me uncomfortable. I don't like it. And one thing that's in here that I do like in the no-globe, is like it's a Harkonnen no-globe, which like fucking wigs out Duncan because he hates the Harkonnens and there's all this Harkonnen artifacts of their like, you know, rich, degenerate life. And I like first of all, just the idea that like, Oh, it's this place that's like the Harkonnens were in, but it's been untouched for centuries or millennia and like, it's got all this old shit in there. I like that idea. That's cool. I like that and that's like, kind of a theme in the book of them, like discovering old artifacts of the Dune history that we know from the first book. That's cool. The one thing, one of the gross things that's in there is like the Harkonnens have like a fuck clock, like a clock that like when the hands move together, like you know, there's like two fingers copulate."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Whaaat?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's like a thing that's described."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "don't remember that."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "You'll have to pull the quote. I can't right now. I was looking for 'fuck clock' on my Amazon Cloud reader. [Proto laughs] It's not pulling it up. But I assure you that it's in there and I will find the reference later. But my only note on that is that fuck clocks are real. Like that's like a real thing that like weird rich gross dudes have is like watches that have -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What?!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, like, like there are watches that cost like 10s of 1000s, $100,000 that like when like, you can hit a button and like two fingers will copulate on them. That's a real thing that exists!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wow!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Real Harkonnens live among us. Fuck clocks. That's my note."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hashtag fuck clock."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wait. \"It was another antique, a round face with two analog hands, a digital second counter. The two hands were praya peon. Naked human figures a large male with an enormous phallus and a smaller female with legs spread wide. Each time the two clock hands met, the male appeared to enter the female.\" This is my favorite part. [Jason laughs] \"Gross. Teg agreed.\" [Haitch laughs] It's all right, sir. Anyway, glad we got that covered."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "I'm DMing you now, Jason. [Jason & Haitch laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Noted watch enthusiast, Protolexus."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "am now."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, this is actually an awesome scene coming up here. So we have Odrade, Waff and Sheeana are out in the desert riding a worm, and it actually takes them to this old, you know, desolate, destroyed area, which there's an entrance that they get into and it turns out that this is Sietch Tabr. So I love you know, they crossed an area they figured out was the Idaho river they got to Sietch Tabr, like these are the places where Stilgar ruled, where Paul Muad'Dib built the Fedaykin, like it's steeped in history there. And Odrade ends up going underground and she falls into a hidden area and she sees there's like, she's in this big room, and she can't make out, there appears to be like a reading an artwork up on the ceiling that's faded over 1000s of years. And so she taps her other memory of Reverend Mothers who were alive that period of time, 1000s of years ago, when she's able to she's able to simultaneously overlay her other memory with her real time view so that she can see what it looked like 1000s of years ago. Tat is like for me one of the top moments in the entire Dune series, just that concept was very cool."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It is very cool. I like that. I also like that this is this whole section basically becomes like Odrade Tomb Raider. Like it's like, you know, like it's like Odrade like out there like you know, like with the staff like getting the light shining through to figure out where where the where the secret cache of the lost souls are or whatever. So it like it, it lives at least is like an adventure-y part of the book where like a main character is like, oh shit, I might die out here. I don't know what's gonna happen."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And the inscription from Leto reads \"The Bene Gesserit will die like anybody. With whom do you ally?\" So foreshadowing. We have Duncan Lucilla and Teg make a break for it. They're surrounded, they're under heavy attack. Miles, he's just a badass. He's like lays gunning everybody taking all these people out, they get separated and they begin to go on the run. Alright. So you know..."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh no. Here we go."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Now we have -"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "can tell by your tone."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "So Lucilla, so first of all, he splits all three characters up, right, Miles, Lucilla and Duncan. So that each of them has to run to different restaurants and do different shit. So Lucilla she has to, she has to pretend that she is a some sort of Honored Matre sex expert and they have to watch out, they have to avoid the sex priests from the Seeking, also called the Scattering. They may be tested. Very good. Sarafa said. May I presume you could administer vaginal pulsing? I can. From any position? I can control any muscle in my body.\" Okay, this is where my notes said \"fuck this book\". \"Agility you say? I can control genital temperature. I know and can arouse the 51 excitation points.\" 51?!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "51?! [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"51! Lucilla snapped and the Sequencing plus the combination number 2008. Furthermore, in combination with a 205 sexual positions! 205?! Sarafa was clearly startled. Surely you don't mean more actually, if you count minor variations. I am an imprinter, which means I have mastered that 300 steps of orgasmic amplification.\" [Jason laughs] Woooof!"
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "mean, I'm ready."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah man. I mean, first of all, I just want to shout out Haitch for that delivery, which was brave. And also though his anime. \"Wo-oahh!\" Like was very accurate. \"9000?!\" Yeah, is very, very accurate."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "What the hell?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't know, man, a guy in a really dope house in Maui. Woke up one morning. His routine was he would wake up, he would exercise with an extra bike and a rowing machine. He would have a light breakfast. Go up to the second floor. This dope house he was building on five acres in Hana in Maui and, end of the earth. I mean, you cannot imagine a more remote location. And he would write about the 200 vaginal amplifications that he, I mean, it's just hard. Just it's fucking wild. It's fucking wild what was going on."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, imagine his wife's like reading over his shoulder and is like \"Frank, Frank, you can't put this in a book!\" And he's like, \"Listen! I'm gonna sell millions of copies no matter what I put in this book! I can put whatever I want. They're gonna read it. Alright?\" [Haitch & Jason laugh] That's what he did."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh my god. Thank you, Frank. Thank you, Frank."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "She apparently, in the introduction, Brian Herbert says that she just thought every book that he wrote got better that the last, she was just like, you're killing it, just crushing it, Frank, I love what you're doing."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "God bless."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, have someone who believes in you like that. [Proto laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, so now we cut to, you know, the best part of this book, in my opinion. So we have the torture and rebirth of Miles Teg. So we have a whole thing where he is captured by an Honored Matre and their forces and whatnot, and they start torturing him. And they're basically building a mental map probe of his brain so that they can go back and try and figure out his thoughts. But he's been guarded with sheer, I like this concept of there's a drug that they can take that makes it so you can't read their memories, even if they're dead, or with mind probes. But they're like torturing him, they're gonna attach stuff to his body parts and whatnot. And all of a sudden, he just like snaps, and he can move at like the flash, like, with them, just breathing. And like in a blink of an eye, he's able to undo all of his things, he starts karate chopping people and their heads are exploding. And he like kills 30 people inside this building in four seconds of real time, and escapes."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "There's a couple of Dune things going on here. One is the idea that in crisis, you can activate like this wild gene advance in humankind and like, all of a sudden, they develop like, new powers, which is like a weirdly, like kind of like a, like a lamarckian evolutionary theory. It's like, you know, like, the giraffe, like, has a long neck because like, the leaves were above is like, you know, it's not really how anything works. But like, it's, you know, what Herberts going with? And then you know, and it's analogous, like, what happened to Paul and, you know, becoming a mentor, you know, his mental awareness, you know, coming on Monday, he fled to the desert. You know, the other thing that's in here is that you that Herbert likes to do is like, oh, humans have these dope powers of perception or physical ability, or whatever. But what if it was even doper than that, like, he likes, like, sort of by turning the knob to 11. Because like, we've already established with Duncan Idaho can move faster than, you know, than humans can expect. And now, it's like Teg can move even faster than that. So there's like, there's a couple different classic Herbertian moves here."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, it feels a little bit like jumping the shark where what he's capable of is like, you know, this feels that out of a comic book. But, you know, we did just read about 51 levels of vaginal pulsing, you know, a few pages ago. So it's like, I know, I can go with this. This is cool."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "thought it was dope. I definitely - and all of him is kind of going on the run in suddenly he has prescients. So he is seeing second vision. So he can tell whether something, you know, like he he goes to a farmhouse on the run to get some soup, and he has the revelation that he's not going to be poisoned, he can see that, that it's safe for him to do that. And he runs into some people and he can figure out, you know, these guys are actually dangerous and allows himself to kind of be captured in order to figure out what's going on. I thought all of that was cool, including, he's inspected when he's captured. He's inspected by there's a doctor and he has the Imperial tattoo of the Imperial conditioning. But it's not black. It's an orange tattoo. So I like that and that the Reverend Mothers had orange eyes instead of blue eyes."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "This is like a weird thing, though, in this book, which is like, one of the things that happened is like, you know, the people have returned from the Scattering and the Honored Matres are back and the weird soup doctors are back and like the there's weird Tleilaxu that came back and all these like, kind of bizarro universe, people came back. But it's like, they just start popping up in places. Like it's like, it's like, sort of like a weird, like, you know, Invasion of the Body Snatchers type situation or something like, you know, they just like, they just like, kind of like pop up like, oh, like, yeah, there's one of those guys here. He's from this, he must be from the Scattering. It's like, where the fuck to the - I mean, like, you know, there wasn't like, you didn't come in a ship or you didn't like, you know, what's the, you know, like, you're just all of a sudden here, like hanging out like your back? It just seemed weird to me. Like that seemed weird."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, yes, totally! And like, no one cares?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No one cares."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "They're just like walking around in society, like everywhere."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Having the same soup as the people who didn't go out on the Scattering. Yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's interesting, Miles actually says that he realizes that the folks have been back for 100 years on Gammu. Because there's all these signs of wealth, that's the big thing. There's all this new money coming in from the Scattering. And so I think that's actually interesting, that to me, is like Herbert operating on these giant timescales to say that for 100 years, they've been there waiting and watching and making a decision about how to make an action. That actually is cool in my mind."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "wish that Herbert spent more time just explaining what was going on in the Scattering because I find that incredibly interesting. And I would love if he just gave like 10 pages. I don't know, of just like a peek into what his ideas were around, you know the people out there. Because he hints at it, but he never really goes in depth. And it was like so tantalizing just that you know that these people who are gone for so long and then they come back with just this completely different, you know, viewpoint perspective and different goals, then yeah, I love it. But you, there was just wasn't enough there."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You do have this moment where dar has completely dominated Waff in every way. And it's like embarrassing, like how, like Waff, every move. It's that anime stutter as he is like completely outflanked every time. And then all of a sudden Dar like rolls over and it's like, we'll give you the breeding records, we'll breed with your people, we'll do whatever you want. Just give us access to the axolotl tanks. And then she basically goes and she cuts the deal and goes to Taraza and has to sell it and Tar, like there's nothing she can do. Like they've basically accepted second fiddle status to the Tleilaxu. And I'm like, what the fuck? Why? Why did this just happen?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah. It seems weird."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Do you remember that?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, I remember that as well. And yeah, feeling like this this doesn't feel like it fits with the earlier parts of the book. But I do like it because it I think up into this point, you feel like you're should be rooting for the Bene Gesserit. But then something like this where they're not continuing to be in a position of power. Kind of makes it feel like oh, maybe you know, maybe these aren't the good guys. Once again, there isn't a good guy. There isn't a hero in the Dune story. There's just these different factions who have ups and downs and rises with power."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, good, good point. Two other details just on the run on Gammu. You have the dealer, the alleyway dealer with the hyperbong. I like that idea. Yeah, and good branding. Yes, you step into the alley you get super high and then and then walk out and then wait."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The hyperbong is amazing."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah. And then we have our first Futar sighting which is a human cat hybrid thing, which we'll get more of next book."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, yeah, I blacked that out. Do we already, did we skip past the fact that Burzmali and Lucilla have to have sex so that they don't get detected?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Sure. We did. We tried."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That happens like and then they go out on like a weird date. Like where they're like going to like a restaurant or whatever. It's like, there's more scenes of restaurants in this book. And like, we've never we've literally never seen a restaurant in any Dune book. And all of a sudden it's like, oh, like what's on the menu? Let me tell you about our specials. Like you know, it's like all this weird shit."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You know, Frank finally heard everyone saying they love the dinner scene in Dune so much. And he's like, I'll give you dinner scenes."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Crystal's like a third of the way through her read now of the first Dune book and she liked the dinner the dinner scene stood out for her too. It's a really good scene."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "The Burzmali and Lucilla scene, they talked about like Lucilla is like, you know, we need to smash if this is going to work. And this is going to be the best sex that you've ever had in your life and you're not ready for it. And Herbert just like cuts out anything that happened with that. I'm like, well, you know, Herbert, you've been preparing me for this moment! And there's nothing here!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It does say that like she turns around and he's taken his clothes off and he's standing there fully erect. [Proto laughs]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, that's the curtain draw."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "He's ready to go."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "He's a soldier, he's just ready to do his job. [Jason laughs]"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "If I must."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's right. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "We have you know the Rakis showdown here and so this is where we have Tuek, who is the face dancer."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Who doesn't even know he's a face dancer."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "He doesn't know he's a face dancer and Waff is like trying to command and to obey and then he looks like a complete idiot again. And so Tar basically, they make the deal. And he says to her, Waff says to her, \"but there is a thing from them [the Honored Matres] that your words reveal you do not know. I seal our bargain by telling you this. They can magnify the sensations of orgasmic platform. Transmitting this thoughts transmitting this throughout a male body. They elicit the total sexual involvement of the male multiple orgasmic waves are created and may be continued by the female for an extended period. Total involvement! Taraza did not try to hide her astonishment.\" [Jason laughs] So this is the Reverend Mother Superior, the head of the BG, the most composed people, you know, most composed person in the universe. And she's freaking out over this. It's like come on."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Like I didn't know they could fuck like that. [Proto laughs] Yeah, it's a little -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And then they make two faced dancers fuck so that they can watch them. And they're all like, holy shit."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And they make two faced dancers back so they can watch them and then and Sheeana watches, and they note that she was like super into it and so that they're gonna have to like send the male Bene Gesserit proctors to her to like, sort out her situation, like because of this. It's fucking wild! Everything that happens at this point is wild. Now, this is just to kind of pull it up a level because it could hardly get worse at this point."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Now, it's good. It's about to get, it's about to get worse. [Jason laughs] But go ahead, please try."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Before it gets worse. One of the interesting things in, and this is in the introduction as well, when because Brian Herbert writes about like, his mother getting sick, and how big of an influence she was. And he says, one of the things he loves about this book, Heretics, is that the women characters become more strong and more central in the story than they have been before and that he thinks his mom was like, you know, Mom, like was, in some ways a model for Jessica. And but, you know, he felt that it was later that the characters really kind of came into their strength. And there's like, an element of truth to that, in that the Bene Gesserit point of view character, Taraza, more fully fleshed, like kind of main characters of the story than other women characters, than any other women characters have been in any Dune book. And so there's something there, but then it ultimately kind of becomes this weird, sexual psychodrama of like, oh, women have this -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Power."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "These women have this just fucking magic vaginas that can enslave men and what are we going to - that's like a, that's an existential threat to the whole species. And it's like, okay, I don't know what you're trying to work through here. But it seems, it seems like it should be done in private. [Proto laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Proto, anything before we go deeper?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, let's go deeper. [Jason laughs]"
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "need more, I need more hypno bong first before we go deeper."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Duncan is captured by Marbella who is an Honored Matre and he wakes up and she is, she is getting, she is sexing him. And so my notes, just in all caps SEX DUEL. So first of all, the Tleilaxu, we've been wondering what was their secret program with the Duncan's? Well, one is that they had condition that the Tleilaxu who they knew about the Honored Matres super secret sex powers. So they conditioned him to be able to fight against it. But also as they are having sex, Duncan, he gets the memories of every Duncan Ghola who has ever existed. [Jason laughs] This is not explained in any way, like maybe they got cells -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "She just fucks in it into him, like this, this power."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, this is the red capsules that you drop that quote into a Slack somewhere or into Discord somewhere."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, the red sausages."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, so here we go. My notes just say batshit ridiculous. \"Duncan hummed softly and touched her moving with an agility that shocked Marbella. He should not be this responsive, not this way. His right hand fluttered against the lips of her vagina, while his left hand caressed the base of her spine, at the same time his mouth move gently over her nose, down to her lips down to the crease of her left armpit.\""
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The armpit is really where, yeah, the armpits amazing, that's a great detail."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay, so at this point, Marbella has like 10 orgasms and Duncan wins the duel."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, yeah, that's what happens man. I mean there's no way around it what, the climax if you will, to this book is that we've known for a while that Duncan has a secret, his secret is that there's a master fucker inside of him that when unleashed will sex so strong and so well that not only can he overcome the super sexing powers of the Honored Matres, but it will awaken within him a generational consciousness. Like this is the equivalent of Paul's taking of the water of life, the becoming of the Kwisatz Haderach in the first book, but instead of it being this spiritual journey into like the you know, into allowing him to access the female eternal energy you know, within it is instead what is described as \"a flame engulfed his mind, hidden places within him came alive and he saw red capsules like a string of gleaming sausages passing before his eyes. He was an engorged capsule excitement flaring through his awareness. Those capsules, he knew them. They were himself.\" So his awakening, he in his awake, his sexual awakening he's boned so well that he becomes a sausage. That's what happens in this book."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "The boner has awakened. [Jason & Haitch laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Father!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Alright, that's the end of the episode. We can't do anymore!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No, that's as bad as it gets. Now we'll start to reclaim, make our way out of it."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The boner has awakened!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Miles meets the supreme Honored Matre, badass, who is like, there's no way you can mess with us and she has her badass Bashar, and all those guys. And Miles wastes them all, he just kills them all. And then goes on the run. He gets some of his old soldiers. I love all of the Atreides loyalty to him and his guys are immediately ready to die at his behalf. And they basically assault steal a no-globe and head for Arrakis. At the same time the Honored Matres attack Dar-es-Balat. And this is where Tar who is the Reverend the Supreme Reverend Mother, like she just has her legs cut off. With a lace gun."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It is rough for her."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's intense!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, it's again, it's kind of like, well, what like, all their planetary defenses were just shit or like they just there was no defenses like these folks just ran right up and like, cut off her legs. Like just and it happens like very suddenly. And like towards the end of the book."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You like that Proto?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "That's the thing that like you were saying that it's not really a trustworthy narrator in this, because like nothing's off the table in terms of what any of these people can do at any point. You think oh, you know the then they've gone to Arrakis now, they have defenses in place that will protect them from another attack. Nope. You know, they're just gonna come here and slice her in half. We're gonna that worked. Kind of like the stuff with Waff, it's just like it's like immediately thrown out the window as soon as Herbert wants to."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Right, as soon as it becomes inconvenient. Yeah."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Well, we do have Dar manages to get to Tar as she's dying, gets her memories and says I'm the Mother Superior now. I thought that was pretty badass. I liked Dar. And so then we have basically him on Rakis, he gets, they get the sandworm. Sheeana has her chance to get the worm to get on the ship. He does. And everybody gets on except for Miles who's like I'll stay back here and hold things off. This is weird. So they know that the Honored Matres are going to sterilize Rakis and this, in fact was the entire plan for Taraza the whole time. She was baiting. Here we go. Tar's full plan. \"I thought you deserved an explanation of the Mother Superiors design. It was aimed at the destruction of Rakis you see, what she really wanted was the elimination of almost all the worms. Great Gods below why? They were an inocular force holding us in bondage. The pearls of the tyrants awareness magnified that hold. He didn't predict events, he created them. Duncan pointed towards the rear of the ship. But what about that one? It's just one worm now. By the time it reaches sufficient numbers to be on influence, once more, humankind will have gone its own way beyond him. We;ll be too numerous by then doing too many different things on our own. No single force will rule all of our futures completely. Never again.\" Dun, dun, dun. So that's the, that's the plot basically."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's the point."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Purge Leto."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, purge Leto, purge his final influence over everyone."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's kind of cool."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, I guess, it just feels like completely not what the book was about, up until, like, you know, this is another classic Herbert thing, where it's like, you know, the golden path, like, the idea that Leto too adopts like this amalgamated identity of like an ancient Egyptian pharaoh in order to, you know, integrate his past lives and become a God-Emperor is like just sort of explained in the last few pages of the book. It's like yeah, that's what this is. You didn't know that's what this is about? That's what's going on. So and like you've I've been through too much trauma in the book at this point with the fucking, you know, like, I had to read a sentence that was like \"the hard slap of his ejaculate\" like a like something or another in the in the sex duel. It's like, look, you can't hit me with that. And then expect me to be around for your whatever situation at the end."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "agree."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Tough one."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah. And I, you know, I've read this entire book, and we're talking about it now. I totally forgot that Arakis was destroyed. [Jason & Haitch laugh]"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "did too. I totally did too. I 100% forgot that Arrakis was destroyed."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Haitch when you said that it was like, oh, right, that's, that happened. Because it's just you know, it comes at so late where when I think of this book, I don't think of that. I think of everything that happened before."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, totally. Well, it's funny because I would as I was, you know, we were reading at the same time last year at the beginning of the pandemic, just blazing through the books, I was buying the audio books, and I went ahead and bought four, five and six as I was, I think, as I was reading Children or something. And I clicked on Chapterhouse to download the book and the first sentence on Chapterhouse is \"Dune has been destroyed.\" And I was like, shit, wait, I forgot. Or I hadn't, I had never read that far."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "actually, I had a spoiler to happen to me. Before I finished this book. I was on the Dune subreddit. And I was just reading some thread. And there was a comment in there that said Taraza died in this book. And it was completely like, out of context. And it was I was like, oh my gosh, that you know, and I was like, at the beginning of the book, and I was like, Oh, well, I guess I know she dies at some point."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Way to go fucking subreddit. Use the spoiler tags for God's sake!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It is interesting that we're working pretty hard. Like I so I catch so much shit in that subreddit because I'm one of the only people who are like, scratching my head constantly on God-Emperor, Heretics and Chapterhouse. Like most people, those are their favorite books."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Okay, alright. Interesting."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "don't understand. I don't understand why."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Like we're making fun of the sex parts a lot. And like there's a there's an element of that that's just like juvenile but like, it's just it's worth just reiterating this point, which is that there's a way to include sex in a book without it being as fucking weird and awkward as this is. Like, it's not as though like sex in a book is bad or like unhelpful to the plot. It's that this like, very strange, like, pseudo scientific, like, Slim at some joke in the discord that was like, I think every adult nerd learns about making love from the Dune books, and it does have this like, kind of, like sex nerd, like obsessive quality about is like, \"I have studied the 200 methods of amplification\" or whatever. And it's just like, oh, my God, man, it's just yeah, it's just very uncomfortable."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Well, yeah, and even some of the concepts. I mean, they're kind of cool, in a way, like, well, isn't one of the points is that these Honored Matres, they can, when they do this, they can they like, enslave the men, you know, under their will."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's the concept."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah. Which is, which is kind of cool. But yeah, you do think of a nerd sitting there. \"What if a woman could give me such good sex that I'm slave!\""
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Yeah, exactly. Exactly. Yeah, \"What if I could learn the counters to the awesome sexing then I would be the sexomancer.\" [Proto laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "That's weird, man. It's weird. It's funny to think back too, if we go back to Dune, you know, the very first book, it is just such a staggering work of literature. So well written. It's so tight, it's so much substance and nuance and, and thoughtful elements. And so that's that, I think, is the part where just like, in reflection, I think this doesn't hold up in the same way."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "And we talked about this at some point, too, which is that like, just as a co-host of a Dune podcast, it sort of makes you like question you the choices you've made that have led you to here. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It's fine. We're almost, we're almost done. So Proto, have you read Chapterhouse yet?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, I'll be starting that soon."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah, I know."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The Jews show up in that one. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Oh, yeah. Right out of the gate. That's right. Holy shit."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Space Jews."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Whoo!"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "They've been lying in wait for 15,000 years?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Correct."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "They've been lying in wait. Correct. Correct."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yep. I got very nervous when that scene came on."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "get very nervous when there's secret Jews. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Did not see that one coming. Proto, who would Tilda Swinton play?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Oh."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "In Heretics of Dune."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Oh, man, I'd love to see her as Waff."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "was gonna say Waff!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Wow."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "It's gotta be Waff."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yes!"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Unanimous choice for Waff. I agree 100%. That's greawt."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "love it. That is fantastic. [interim sound bite tplayts]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Guys, we did it. We did it. We're still alive. Technically."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "feel so like tender now. Like I feel like we've really been through something. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You feel like a sausage?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Ugh."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, here, let's get some letters. What do you say?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh please, anything wholesome."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, first one is from Bryce Kelly."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Is it going to be a lot of people making fun of me for the weed up your butt thing though? Because I don't know if I can take that right now."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "don't know. I haven't looked so."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Alright. Well, I guess we just have to go through this together."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Okay, Bryce Kelly, from Singapore."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The Lion City!"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "\"Oh, Owen, I watched the first episode of Loki last night and started cracking up over the review from last week's discussion on Inherent Vice as it also features Owen Wilson. I won't talk about that show other than to say as Owen is basically always playing Owen Wilson as cast by Wes Anderson and then playing a character in some movie. It reminded me of Al \"great ass!\" Pacino.\" [Jason laughs] Did you watch Loki, proto?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "No, I haven't."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "haven't watched it either."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Are you into the MCU?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Sometimes. I mean, I don't really have a strong interest in watching the Loki, maybe just to see what it what it looks like. Maybe watch some of it. But it's not you know, it's not really my my shtick."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Cup of tea?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "watched the first episode and I thought it was pretty fun. It's really beautiful. There's a lot of, the MCU I think right now is definitely stuck in like the Pixar vibe, where they're like everything is about these deep existential feelings that everyone is working through, whether it's Wandavision, Falcon and the Winter Soldier or Loki. So it's definitely not just like punch them up and do that kind of thing. Bryce, thank you, as always for the correspondence there."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's great."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Alright, we have one more. We have one more letter. Here we go. [voicemail plays]"
+    },
+    {
+      "name": "VOICEMAIL",
+      "timestamp": "",
+      "text": "[sensual music plays] Dear Dune Pod forum, I've listened to Dune Pod for years and for years, and I've heard a lot of people call in and say, I can't believe this happened to me. But now I'm calling in to say that it actually happened to me. And I can't believe it happened to me! See, I was just a Ghola of Duncan Idaho, inventor named Lucilla, who was sent to meet me to maybe find me to the sisterhood with her sexual talent. Anyway, you get the gist of that. Some of those younger listeners may not get the reference form. But anyway, so you guys are covering the sexy time version of Dune. Didn't know that Dune went down this path. Oh, sorry. My dog is excited about this barking in the background. The erotic Adventures of Frank Herbert. I'm assuming his writing his erotic writing, like somewhere between like the maybe you guys talked about it. I'll see where I should go to and investigate further Frank's erotica. Alright, have a good one. Alright, you guys. I'm really looking forward to the episode. [voicemail ends]"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That was great. That was great. That made it all worth it to be honest."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Dear Dune Pod forum."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Oh, and I can say having read the Brian Herbert prequel series that his son has some have similar fascinations with sexual encounters in his books."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Imagine having to inherit your dad's like erotica, having to be like, well, I guess I gotta pick this up."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "It was an important theme."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "My 16 year old self was surprised at some of the descriptions and those books."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh no."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "God, those were the prequels?"
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "don't think we're doing those."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Those are the ones that were set, that was like Duncan and Leto and, and all those folks right before?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah, you get like us here the origin of those characters of like Gurney Halleck and how they come to be."
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "will say I definitely have had my first kind of stirrings of like I would love to read stories about a young Duncan. And young Leto like that sounds like that would be really cool."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah. And I, I know that the Ix play a pretty strong element of the of those books, which was cool. Yeah, of course, at the time, I didn't know, I think my only reference was actually I think now I think about I might have started playing it because I played the realtime strategy. I think it's called Dune: Emperor of Dune. It had a weird title. But yeah, yeah, you know, it just expands on the universe in cool ways."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Awesome. Well, listen, thank you so much Corey, as always, for writing in."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Great letter. This is the end of our, this is the end of the journey for tonight on this. We have one more book left. Chapterhouse. This will be our final book that we're covering on the show which is exciting."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "When is that? How long do we have to read that?"
+    },
+    {
+      "name": "HAITCH I",
+      "timestamp": "",
+      "text": "don't know, as far out as possible. I think it's like September or something. So I don't know."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "We should do a movie with Proto sometime though and not just these books that have become increasingly -"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Woowww, Proto, what would you want to come talk about?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "You know what I would love to come talk about a Terrence Malick flick, maybe The Thin Red Line?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh, great. Great. Love it. Book it."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Hans did the score for that. That's definitely in the wheelhouse for sure."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "love Thin Red Line."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Dune adjacent."
+    },
+    {
+      "name": "JASON I",
+      "timestamp": "",
+      "text": "mean, it's it's a difficult watch, but it's a, it's a really good movie."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Never seen it. I want to check it out. Proto, give us a plug. What do you got? What are you excited about?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Oh, 70mm, as I'm sure you know, is in the middle of Indiana Junes."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yes!"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "So I just watched the Last Crusade."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Me too."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "What a picture."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "How about that River Phoenix opening?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Oh, man."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh my god. Oh my god."
+    },
+    {
+      "name": "PROTO A",
+      "timestamp": "",
+      "text": "treasure."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No."
+    },
+    {
+      "name": "PROTO I",
+      "timestamp": "",
+      "text": "wish I could have met him."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No. [Jason laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Wait a minute. Wait a minute. Wait a minute, here. Can I just -"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh my god. I was like, there's no way this is gonna happen this week."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "No, I didn't think I didn't think about it. But this just occurred to me right now. I was gonna send you guys a voicemail for tomorrow. Can I just do it here?"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Sure, beb."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's weird."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "I'm doing it here. I'm the producer. Alright, here we go."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Oh my god. It's like three levels of self indulgent now. [voicemail plays]"
+    },
+    {
+      "name": "VOICEMAIL",
+      "timestamp": "",
+      "text": "The year was 1989. I was 19, a film major at University of Florida in Gainesville and had recently formed a progressive funk band called Henrietta's Lovers. I was working at Falafel King when in walks two members of the popular local band, Aleka's Attic. Josh McKay and River Phoenix. River, pretty sure he was a vegan, was riding high from his triumph as young Indiana Jones in that summer's Last Crusade and a sensation in Gainesville."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "The internet is failing I think. That's the only good, that's the only good thing about this is that Matt's internet in Tahoe didn't want to hear this."
+    },
+    {
+      "name": "VOICEMAIL I",
+      "timestamp": "",
+      "text": "saw Aleka's Attic play many times and was so inspired by River's guitar rig and a Fender Stratocaster double miked through a Fender reverb and a JC 120 jazz chorus, I ended up by a similar rig. Years later, River graciously agreed to lend a song to a local band fundraiser album I put together called Gainesville Can't Dance. And to play the concert I convinced the University of Florida to fund at the bandshell for about 1000 people where my band got to play the penultimate set going on right before River's band headlined. Good times. We lost the true talent before his time, but I'm grateful he preserved in film forever. His haircut and Last Crusade will never be matched. Haitch out. [voicemail ends]"
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yes."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It's amazing that your internet cut out during a big chunk of that as like even like your ISP was like no, too much. [Proto & Haitch laugh]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Well, you'll just have to hear the final version to see what happened. Alright, Last Crusade. So you guys are doing you guys doing Last Crusade and then next s Crystal Skull."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Crystal Skull."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Jason, your take?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "That's the one with the refrigerator right?"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Yeah."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "It seems like a bad movie. It seems like a movie that's bad and shouldn't have been made."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "We'll see."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Stay tuned. [Haitch laughs]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "You guys, thank you so much for joining. That was a good time."
+    },
+    {
+      "name": "PROTO",
+      "timestamp": "",
+      "text": "Thanks for having me."
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "Ohhh, good, Lord. Good luck with this edit my friend."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Ooooff. Anything you want struck from the record?"
+    },
+    {
+      "name": "JASON",
+      "timestamp": "",
+      "text": "No, no, it's fine. I mean, the whole thing, the whole thing, strike the whole thing. [Jason laughs] Someone send in the cops and seize the tapes."
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "Exactly. [Dune Pod theme song fades in]"
+    },
+    {
+      "name": "MATT HAITCH",
+      "timestamp": "",
+      "text": "And that's it for this episode of Dune Pod. I want to thank Jason and Proto for an amazing conversation. Next week, the Dune Pod season three finale. We cover Denis Villeneuve's gripping 2010 drama on war, loss and reconciliation, Incendies. Do not miss this. If you're enjoying this podcast, join our Discord server where you can join live recordings and hang out with us whenever you want. A link is in the show notes. You can find our full movie setlist on Letterboxd and if you want to support them by upgrading to Pro or Patron status, use promo code DunePod at checkout to save 20%. Dune Pod is a TAPEDECK Podcast jawn, a production of Haitch industries. Our artwork is by ctcher and our theme music was composed Toby Forsman of Whipsong music. The episode was produced and edited by me, Haitch. Thanks for listening. We'll see everybody next week for the finale. [Dune Pod theme song ramps up, plays alone, ends]"
+    }
+  ]
+}

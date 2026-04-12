@@ -1,0 +1,3121 @@
+{
+  "episode_number": 302,
+  "episode_name": "Hard Boiled (1992)",
+  "dialogues": [
+    {
+      "name": "Sounder/FX",
+      "timestamp": "0:02",
+      "text": "This is a Tapedeck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:14",
+      "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined as always by my co-host Jason Goldman."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "That was my first point, which was just sort of like, Quentin Tarantino, you hack."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:33",
+      "text": "And it's the return of the co-host of the Filmcast, Devindra Hardawar."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "0:38",
+      "text": "Yeah, maybe every time you go out on an investigation, dozens of people shouldn't die, basically. I don't know if Tequila's a great cop, actually."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:47",
+      "text": "We tackle John Woo's final Hong Kong masterpiece, Hard Boiled. If you're enjoying the show, we need your help. Take a minute to leave us a 5-star rating and a review wherever you listen to your podcast, or just tell your friends about us, because it really It does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want, and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. And now, without further adoon, Hard Boiled. Guys, you can look in livestream chat to find out what is about to be taking over my life."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "1:28",
+      "text": "Oh, wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:29",
+      "text": "Oh."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "1:29",
+      "text": "That's lovely."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:30",
+      "text": "Is it both of them?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:32",
+      "text": "So originally we were getting a hypoallergenic cockapoo, my first time ever with a cockapoo. But, and we found, we found a beautiful one that we were getting, avocado. And then we ended up having a chocolate chips adoptee fall through. So we are able to get both. And so we're flying down to Santa Barbara to pick them up. And I'm just assuming my life is wrecked. This is why we're not going anywhere next week for spring break."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:04",
+      "text": "No, definitely. That's great. Are they related?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:07",
+      "text": "Siblings."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:08",
+      "text": "Aw."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:09",
+      "text": "Are they sisters?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:11",
+      "text": "Brother and sister. Chocolate Chip is a boy. That's great."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:14",
+      "text": "That's how I ended up with 2 extra cats. They were bonded."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:16",
+      "text": "Is that right? Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:17",
+      "text": "Yeah. Just couldn't separate them. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:20",
+      "text": "Oh my gosh. Are you a cat person, not dog person?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:22",
+      "text": "I'm a cat person, but my son is very intrigued by dogs and he's just turned 4. So in a couple of years when he can help, We'll, we'll probably get a dog."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:32",
+      "text": "Yeah, there you go."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:33",
+      "text": "Get to work. Get to work."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:35",
+      "text": "This is why cats are better. Cats just chill all day. Yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:39",
+      "text": "So whatever, uh, I don't want any more living creatures in my life at all."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:44",
+      "text": "You're like, full up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:45",
+      "text": "Yeah, we're full. We got enough right now."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:48",
+      "text": "Well, I had enough conversations in a row where people told me that having two dogs is better than having one dog. It's easier than having one dog. And then I've now had three since making the commitment."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "2:58",
+      "text": "That's insane."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:59",
+      "text": "We've had three 3 people in a row say, \"Ooh, good luck.\" So we'll see."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:05",
+      "text": "Yeah, I don't know about that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:07",
+      "text": "Oh good, Mo in our Discord agrees, says 2 dogs are way easier. So I'm gonna hold on to that."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "3:11",
+      "text": "It's just more poop, more poop and more toddler energy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:14",
+      "text": "I don't know. Yeah, it seems aggressively crazy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:18",
+      "text": "Stay tuned. Well, Devendra, what are you vibe coding? It's been a while since we've seen you."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "3:24",
+      "text": "Nothing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:24",
+      "text": "I can't remember what our last app is, but what have you been up to?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "3:29",
+      "text": "Uh, you know, uh, we're, we're trucking along on the Filmcast, uh, doing, reviewing a whole bunch of stuff at Engadget. I'm really intrigued. Like I was a part of the whole MacBook Neo news cycle, which is a fascinating product. So like I've been reporting on that. I went to New York for that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:45",
+      "text": "And it's like a really big iPhone basically. That's how they figured out what they're doing."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "3:50",
+      "text": "It's an amazing $600 computer. It is. I look at that thing and I'm like, what the hell are you PC manufacturers doing? Like, it is, it is, it just makes them all look so bad. So that is an amazing little device."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:02",
+      "text": "Wasn't there, Jason, there was something about like people were running LLMs on them and like, or on the, on the smaller laptops or something?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "4:10",
+      "text": "You could do it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:11",
+      "text": "Yeah. I mean, like, like if you wanted it to be your cloud computer, you totally could because cloud doesn't, cloud is a thin client. Like it doesn't require anything. So you could totally have it be your little cloud coding machine."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "4:23",
+      "text": "But at that point, get a Mac mini. Like that's, yeah, it's the Mac mini price and it's more powerful, far more powerful than the little Neo."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:30",
+      "text": "Yeah. Mm-hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "4:31",
+      "text": "Well, so you have, but you have not had a use yet for Claude Code. You are not doing any vibe coding to vendor. We've been obsessed. We've been obsessed about it."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "4:38",
+      "text": "I'm not doing the vibe coding. I'm, you know, we report on a lot of AI stuff and I'm mainly on the, I occasionally use it for like podcast stuff, but it's not even, it's not even LLM stuff. It's like, I really, I use Descript a lot, descript.com. I think it was like the similar things."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "4:54",
+      "text": "Descript's good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "4:55",
+      "text": "Their transcribing is great and that helps my job a lot, but it is not like content creation the way LLMs are. And I don't do my coding, so maybe I'll play around with it at some point. I don't have a personal LLM. I'm not on that bandwagon yet. I actually just got done with a good interview with the director of the AI doc, Daniel Rohrer. He directed that movie. Yeah. That's a, it's a pretty great movie. Not like deep if you've been following the industry, but he got to talk to a lot of people and we had a really good chat. So that's on the Engadget podcast. Too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:27",
+      "text": "Yeah, I was, I was surprised at how many people showed up for that documentary. Yeah, like, I, I'm very interested to know how they produce that to get that amount of participation."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "5:37",
+      "text": "I think it's he won an Oscar, right? So he is an Oscar-winning documentarian calling these folks up to, to come and talk. And that's how you get Sam Altman, that's how you get Dario Amodei and everybody there. Even Elon Musk said he was going to show up and just never did, but He said he was going to."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "5:54",
+      "text": "Yeah, right."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "5:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:56",
+      "text": "Shocking. I can't— I can't believe Elon broke a promise. It seems like that's Elon Musk, the Rocketeer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:06",
+      "text": "Anyway, very surprising. Jason, do you want to plug your AI policy proposal website that you created this week?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:13",
+      "text": "And no, it's not for— that's just for me. That's not for— that's not for everyone. Like, I mean, I will just say, like, generally, I, like, I find, like, I just use the— I use Claude all day long right now. Like, not necessarily even for vibe coding. Like, I actually, like, the chat is, like, good enough to produce interesting artifacts that you can share. Um, but, like, yeah, I'm continuing. Well, if you join our Discord, you can come and query our transcript bot, um, to find out what we said about anything. Uh, you can go to search.escapehatchpod.com. To also play with that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:48",
+      "text": "It's pretty impressive to venture."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "6:50",
+      "text": "Pretty fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "6:50",
+      "text": "We've got— we have every, you know, all 300 episodes fully indexed. So you can ask any question about any appearance. You can ask, you know, what cinematographers have we talked about the most or like whatever. And it's fully indexed."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "7:04",
+      "text": "Yeah. As like your own personal database. That is cool. That's certainly an amazing thing. Like we've been doing the FilmCast since 2008 and I would love to just have I forget what we've talked about. I forget all sorts of stuff. So that's the sort of thing where it's great. I'm worried. I'm still worried about the like content theft of all of these LLMs. Yes, I don't, I don't drive them daily. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:25",
+      "text": "Fair, fair."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:26",
+      "text": "That's totally fair. I think I do think like for most of the, most of the coding stuff, like for me it's just solving specific stuff. I'm not like, I don't have any belief that like the code or the software that's been written is useful to anyone else but me. It's just like, oh no, this was like some problem that I had that like now I can tackle because, um, the LLM will produce like a website that's usable for me, which I think is, is fun."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "7:53",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:54",
+      "text": "Hmm."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "7:54",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:55",
+      "text": "Hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:56",
+      "text": "Well, what about, what about just on hardware? Are do, how are you feeling on the vibes on this iPhone Fold? Do you think this is gonna be like a big transformative game changer thing?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "8:06",
+      "text": "I don't, you know, the, what was the latest rumors? Like I saw the stuff coming from Mark Gurman. It's Apple doing the thing, doing what they do, right? They follow years late everybody else. And, um, I think the big thing is they may be able to do it without a crease. And I don't know if like that alone will sell people, but I do think the iPhone user base, like people are looking at those Samsung Galaxy Folds and being like, I would, I would like some of that. Um, and I, I was super skeptical of those things when they first appeared because they were trash. Like they were breaking, they, they weren't super stable. The apps weren't really built for this foldable interface. And now that the tech's matured and has durability, um, I'm more intrigued. I'm more intrigued for sure. My iPhone, like I don't have an iPad. I keep looking at iPads. I'm like, I should get one, but no, I have my iPhone on me all day. If I want to watch something when I'm tired in bed, like I hold my iPhone up to my face and that is a very nice screen. Um, you know, with good OLED capabilities and I can see it without putting on my glasses. So it's a great way to watch The Pit after I put the kids to bed, you know."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:07",
+      "text": "Love The Pit."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "9:09",
+      "text": "Love it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:10",
+      "text": "So it's so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:13",
+      "text": "It continues to deliver. Yeah, it's definitely, definitely great."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "9:16",
+      "text": "Yeah. Mm-hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:17",
+      "text": "How many episodes are like— we're on episode 12, I think. I don't know."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "9:20",
+      "text": "We're getting towards the end. We're getting towards the top of the season. Yeah. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:24",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "9:25",
+      "text": "Almost like old school TV shows, basically."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "9:28",
+      "text": "Yeah, yeah, yeah, yeah, yeah. I mean, it's so crazy, that whole concept of how we used to have 26 or 22 episodes and there was literally just like a 4-month break and that was it. It was bad."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "9:39",
+      "text": "Yeah. We wonder why Aaron Sorkin went insane. Yeah, because it was basically him writing all of The West Wing. Like, there were, there were other writers, but he was doing all the teleplays. So it's like, yeah, he went insane. It's no wonder."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:50",
+      "text": "This is just one of, one of the many things that we've lost in the creative switch from cocaine to ketamine, uh, is like people are just like too busy dissociating. And communing with like the eldritch spirits of the universe and—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "10:04",
+      "text": "Dissociating and, yeah, I don't know, destroying democracy in the process."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:08",
+      "text": "Yes, exactly."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "10:09",
+      "text": "I wish they were just writing SNL scripts, you know, doing SNL."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:13",
+      "text": "Crank out some scripts."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "10:16",
+      "text": "That's our societal fix. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:18",
+      "text": "More cocaine."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:19",
+      "text": "Hey, we are so stoked to have you here, Devindra."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:48",
+      "text": "My God."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "10:49",
+      "text": "My God. How many of the greatest movies of all time can Chow Yun Fat be in? Just, this dude just rocks them. Yeah. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:57",
+      "text": "Yeah. This is a very good question. So we'll be getting to that in just a few minutes at the bottom of the hour. Before we do, Jason, Next week on Escape Hatch podcast, baby, this one is a long time coming. Oh yeah, this is basically like, it's, it's basically like CR month over on Escape Hatch because we are finally tackling one of the '80s classics of all time. Robert De Niro, Charles Grodin, Joey Pants, Yaphet Kotto, Midnight Run."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:27",
+      "text": "Oh my God. Yeah, that's great."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "11:29",
+      "text": "I'm excited."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:30",
+      "text": "You've never seen this movie?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:31",
+      "text": "I've never seen it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:32",
+      "text": "I can't wait."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "11:33",
+      "text": "You're in for a treat. What a blast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:34",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:35",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "11:35",
+      "text": "Yeah. Yeah. Just so much fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:37",
+      "text": "This movie is incredible. So cannot wait for folks to check that out. And joining us to cover this from The New York Times, the GOAT, Dave Itzkoff is finally here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "11:49",
+      "text": "The GOAT! He's back."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "11:51",
+      "text": "Nice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "11:53",
+      "text": "Really stoked. Really stoked. He was kind enough to take a bump so we could get Ben in here to talk about Iran when the war was breaking out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:01",
+      "text": "He got bumped by the war. Not so much. Not just Ben, but by war. He was a wartime casualty."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:08",
+      "text": "Correct."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:08",
+      "text": "Correct."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:09",
+      "text": "That was a very chill thing. So we're stoked to finally get him. Time to get him back. Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "12:14",
+      "text": "All right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:14",
+      "text": "Can we do some quick Hatch news?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "12:16",
+      "text": "Would you like to know more?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:18",
+      "text": "Hatch news from beyond."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:20",
+      "text": "I only have one item, and that is that Project Hail Mary's hold week after week, they were down only 32%."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:28",
+      "text": "Pretty remarkable."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:29",
+      "text": "That is insane."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "12:30",
+      "text": "Pretty remarkable shit from our folks. Yeah, that's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:34",
+      "text": "How'd you like this one, Devindra?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "12:37",
+      "text": "It's a perfect movie, as close to a perfect movie as there can be. Of course, of course, as we are, you know, I don't know, in the spotlight, like just absorbing the glow of this movie, Andy Weir has to say things. Shut up, Andy Weir, let us enjoy the movie. Stop talking, Andy Weir."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "12:55",
+      "text": "Dissing Star Trek."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "12:56",
+      "text": "Yeah, I don't read his books. I don't read his books. It takes Drew Goddard to like humanize his characters for me to really be interested. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:03",
+      "text": "Uh, I was having a conversation with somebody who was like pissed that there was a bunch of the science removed. Something about like solar panels covering Saudi Arabia and nukes being exploded, and then they blew up Antarctica in the books."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "13:16",
+      "text": "Um, there's a whole thing, there's a whole jail thing for the, uh, the woman in charge of the save the Earth plan. Yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:22",
+      "text": "Which is alluded to at the end. There's like an Easter egg where like she's like, where Strott like has like this like prison tat on her neck from when she was— from when she was imprisoned after the events that she led and supposedly broke out."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "13:38",
+      "text": "Yeah. Really? Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:40",
+      "text": "What? What?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "13:40",
+      "text": "She looks hardcore at the end of the movie. She looks like, oh, what is she going through?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:44",
+      "text": "Because she basically becomes like a world dictator and like, you know, there's this— there's this big courtroom scene in the book where she basically like she has all these like extra legal authorities to like accomplish anything. And then when it seems like the mission doesn't work, they're like, okay, you were the one responsible for all this. You're going to jail."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "14:02",
+      "text": "And so lots of people die too because of the things she did. So, yeah, you know. Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:06",
+      "text": "Damn."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:07",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "14:07",
+      "text": "Trying to save the world over here."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:08",
+      "text": "Maybe I'll read this book."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:09",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "14:10",
+      "text": "Break a few eggs. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:11",
+      "text": "So it did remind me a bit of that. Reminded me of the Wallfacer project from Dark Forest. And so made me want to— I just downloaded again the audiobook for the third one, which I never finished. So I got to pick that back up and read that third book before the next season comes out. On Netflix. Well, we're stoked. Project Hail Mary, way to go. More bold sci-fi takes with good stories and good characters. Yeah, I do want to just take a second to welcome a new patron. Oh wow, amazing. Will G joined us this week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:46",
+      "text": "Welcome, welcome, Will G. We appreciate you. You can join our Patreon, our Engineers channel on Discord, which sends alerts to my phone. Response time may be impaired in the next week or so when I'm with my family. But in general, it works out great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:05",
+      "text": "Yes, do it. Come join us. Let's have a good time. Yeah, come join us. All right. Are you guys ready to talk about this friggin movie?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "15:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "15:18",
+      "text": "All right, here we go. Hard Boiled is The lines we walk up to and must sometimes cross over to stop the forces of evil. Inspector Tequila, Yuan Ho Yan, is a loose cannon leading a dangerous investigation into gun runners operating across Asia out of Hong Kong. After the death of his partner in the latest raid, Tequila is more determined than ever to take down the rival triad organizations led by Uncle Hoi, and the bloodthirsty upstart Johnny. During his quest, he will come face to face and gun to gun with Alan, Uncle Hoy's trusted lieutenant, who himself is being drawn into Johnny's orbit to betray his boss. But Alan has a secret. He's actually a deep undercover cop struggling with the countless murders he's been forced to carry out in the pursuit of his mission. In the end, Tequila and Alan will walk into the fire together, take on all comers, and teach these criminals that they don't stand a chance when they face two cops who aren't just tough, they're hard-boiled. Oh, that's good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:34",
+      "text": "That's one of your better— that's one of your better synopses. Very good. Let's be honest, you've been phoning it in for a while. That one you really showed some stuff with."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:43",
+      "text": "Yes. All right. Good. I will take it. Devendra, what was your first experience with Hard Boiled?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "16:51",
+      "text": "Oh man. What was my first? It must have been like mid-'90s on a crummy VHS tape, like third or fourth generation, like the way we used to have to access these things."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:02",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "17:02",
+      "text": "It was really tough. So I had friends, you know, from all over. I had a whole bunch of Vietnamese friends and they would like lend me the movies that they enjoyed. And that's kind of how I stumbled into this one. But it was It was rough. Like the movie, it was hard to see anything. The subtitles were nonexistent. Like they were, there were subtitles, but it was all like broken English and not great stuff. So I watched it just to enjoy these movies. And for me, it was like, this was my first exposure to Chow Yun Fat and just his, his effortless charisma. Like there is nobody cooler than this guy. He is the coolest person in cinema. Very cool. And he's just so cool. He is so cool that he can—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:43",
+      "text": "I will make the case that in this movie there's maybe one other person who is cooler."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "17:47",
+      "text": "Mad Dog? Mad Dog is cool as hell. Mad Dog, you lean over on an open flame and light your cigarette."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:54",
+      "text": "That's fucking amazing shit. That's—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "17:56",
+      "text": "I love him. I love the action in this movie where they're like, they're just setting people on fire. They're just blowing people up. Like, there's no safety here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:04",
+      "text": "Oh, no doubt."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "18:06",
+      "text": "Yeah. Yeah, but that was my first thing. Like, it's early, early gen VHS, and I bought it on DVD. I've bought it on Blu-ray. Like, this famously, the only way to see this movie on Blu-ray was if you bought the PlayStation game Stranglehold. So it was like a part of that whole thing, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "18:21",
+      "text": "The sequel, right?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "18:22",
+      "text": "Interesting. Yeah, right. Yeah, I have the Arrow Video, whatever they're calling Arrow Studios, 4K. Looks incredible. I have never seen this movie look so good. Um, it still sounds iffy because they can't really do much with the audio track, right? It is a mono DTS track, so it's the cleanest version of the source track. But I remember, I think the DVD or something, they like pumped up and made, made bad sound effects for the movie too. I guess it's better to have the source track, but yeah, you know, I wish it was better."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "18:51",
+      "text": "It's sort of like the old like Beatles mono records or something like that. It's like, this is how it was intended."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "18:56",
+      "text": "This is how it was intended. I just talked about Excalibur. Excalibur is a great film, but also bad sound design, and they just remastered that, so now I have to rewatch that version."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:05",
+      "text": "Jason is a huge fan of Excalibur."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:09",
+      "text": "I don't love it, but Matt, it's like the most important movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "19:13",
+      "text": "5 stars. 5 stars. All right, Jason, what about you? What was your first?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "19:17",
+      "text": "Like, I think as I alluded to last week, that I saw this movie, um, when I was incredibly stoned in college on a like bad VHS copy. And like, it's the only time like I seen— and we were just going through like a big— someone like amongst us, it was like one of those things like back in the early internet, like pre-times, when one guy was the only one who had ever heard of John Woo, or what, you know, it's just like, there's this guy John Woo, he makes movies in, in Hong Kong, have you seen this shit? And I was like, no. And we watched it one night, I was like, holy shit, like, I don't even know this is possible in a movie. Um, and I had not revisited it since then, so my memories of it were incredible. Wow, foggy. Um, and so this was essentially like my first watch of the movie for all intents and purposes. Like, I was I was not comparing it to some sort of pristine prior watch."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:07",
+      "text": "Okay. All right. Fair enough. So I saw this also, I think in '94 or maybe early '95, before— right before I moved from California to Minnesota to go get my computer science degree. And I think what happened was after Pulp Fiction and maybe what year was True Romance? Is that '94? Or is it '95?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "20:28",
+      "text": "Yeah, '93."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:30",
+      "text": "'93. Okay, so I had seen that obviously, and I remember, you know, you have all the pointing guns at each other, right? And I had heard rumblings that Quentin was influenced by this guy John Woo, and Quentin at that point had done Rolling Thunder and was like distributing Chungking Express and stuff. So I was just kind of interested and aware of this other cinema stuff that was happening. And so I tracked this down and watched it. We watched the subtitle— or sorry, we watched the dubbed version, American dubbed version."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "20:59",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:00",
+      "text": "This is my office."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "21:01",
+      "text": "Show me some respect."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "21:02",
+      "text": "This may be your goddamn office, Tequila. The whole station's mine though, so you listen. This is a fucking order. You know, you're really just full of shit. There's the job. Okay. Which to me was like completely fun. I always do subtitles when I, when I watch foreign film, but it was really fun as an action movie to have these kind of really bad American subtitles going. But I just absolutely fell in love with it, watched it so many times on VHS, DVD, and I don't think I'd revisited probably in 8 years, maybe. But it was really great to get back around on it. So just some quick behind the scenes. This was conceived in response to criticism that Woo had had that all of his earlier work was romanticizing criminals. So we have A Better Tomorrow, A Better Tomorrow II, we have The Killer. These are all starring Chow Yun-Fat as the coolest motherfucker of all time. Yeah, just absolutely wasting people. And so they had the idea of having a police-centered film instead and basically like, you know, a Hong Kong version of Dirty Harry. And this idea, there was apparently this really tough police officer that Woo was inspired by who was also an avid drummer."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "22:18",
+      "text": "Hmm."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:19",
+      "text": "Makes sense."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "22:21",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:21",
+      "text": "That's where you get that connection. So this I had never heard before. This is nuts. Originally, Tony Leung's character was the bad guy, was a psychopath who was poisoning baby food."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "22:34",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:35",
+      "text": "The whole concept is that Tequila and Madam, they were the team who were working together, and Madam was going to be played by Michelle Yeoh."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:45",
+      "text": "Of course, man. That would have been something. That would have been something."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "22:49",
+      "text": "Yes, man."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "22:50",
+      "text": "1992 Michelle Yeoh."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:52",
+      "text": "Holy crap."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "22:52",
+      "text": "Supercop era. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:54",
+      "text": "Good Lord. Yeah, exactly. And so, so she had had a long relationship with Terence Chang, who was the producer on this film. And he basically, he did a little tiny bit of market research and surprisingly, people are not interested and are also actively disgusted by the idea of poisoning babies."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:10",
+      "text": "No, that's not—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "23:13",
+      "text": "He did."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:14",
+      "text": "What was the market research for that, I wonder?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:16",
+      "text": "Good question."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "23:17",
+      "text": "They walked outside and just shouted, Does anyone see a movie about poisoning babies?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:24",
+      "text": "Crazy shit. So they basically shut the film down and they rewrote the story. They took Tony Leung's character and they made him an undercover police officer. And then basically Madame's role then became much more, you know, reduced. And so that was the change to go to Teresa."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "23:41",
+      "text": "Michelle Yeoh was like, I cannot kick any butt in this movie. Why am I in it?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:45",
+      "text": "Yeah, yeah, yeah, exactly, exactly. So filmed in 123 days, this film was originally meant to be less stylish and more gritty and a thriller, but ended up—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "23:57",
+      "text": "can't help himself. Come on."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:59",
+      "text": "No, this is gonna be gritty."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "24:02",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:03",
+      "text": "But he did try and work as lean as possible, including things like all the characters had their voices dubbed by their own actors as opposed to bringing in Cantonese actors, which was the tradition."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:14",
+      "text": "Oh, right, right."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "24:14",
+      "text": "Mm-hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:15",
+      "text": "So that was an example there. Budget on this film, $4.5 million worldwide, $72 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:25",
+      "text": "That's great. Good for him."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "24:27",
+      "text": "Amazing. Good for him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:28",
+      "text": "That's a huge hit. That is a huge, huge international hit."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "24:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:33",
+      "text": "Amazing."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "24:33",
+      "text": "This, I'm rewatching this movie, I'm like, they never remade this because you can't. You can't even attempt to. You cannot adapt this to another culture. You cannot try to remake. Like, I think Johnny To was going to do a remake with Chow Yun-Fat. Fat in like the mid, the early 2000s, they just gave up on the idea. Like, you just can't. It is so untouchable, this movie. And it's also interesting how the seeds of Infernal Affairs are in this movie too, because you've got Tony Leung, you've got Anthony Wong, you've got the sort of like undercover intrigue too. So you can easily draw a line between this and getting to the pure drama of Infernal Affairs, which is an incredible film."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:12",
+      "text": "I've actually never seen that. I want to see that."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "25:14",
+      "text": "Oh boy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:14",
+      "text": "Oh, that one's, that one's real fucking good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "25:16",
+      "text": "That one, that one is so good. Martin Scorsese was like, Pulp Fiction is like, make this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:24",
+      "text": "I was thinking the other day of Internal Affairs, which is Garcia and, uh, Richard Gere, and that movie is awesome as well. That is a—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:32",
+      "text": "oh yeah, that one's really good too. That's a really good paranoid thriller."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:35",
+      "text": "Gere is the bad guy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:36",
+      "text": "Yeah, we should do that one. Why did you just spoil the movie? Um, yeah, I don't think that's a spoiler."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:42",
+      "text": "I don't think that's a spoiler. I— so I mean, before we get started, like, I, I think we'll just— I want to just start here and just say, let's just reflect for a few minutes on John Woo, right? So he started, you know, back at like in the '70s making shorts and, and films, comes up hard with Better Tomorrow, Better Tomorrow 2, The Killer, Bullet in the Head, Once a Thief, then Hard Boiled. So this, this, I think we can say, or at least I will say, I believe this is the best is as good as it gets, uh, unfortunately, because from here you have Hard Target with Van Damme, Broken Arrow."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "26:19",
+      "text": "We will not besmirch Hard Target over here. We will not besmirch Broken Arrow or Face/Off."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:26",
+      "text": "We have Face/Off, we have Mission: Impossible 2, Windtalkers, Paycheck, Red Cliff, Silent Night."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "26:32",
+      "text": "That's the real downside. Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:34",
+      "text": "And Gambino. So, so please defend, defend Hard Target and, uh, And Broken Arrow."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "26:41",
+      "text": "Not, not a perfect film, but Van Damme is so— it's just so silly. It's so ridiculous. Like, I love Hard Target."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:49",
+      "text": "Doesn't he punch a rattlesnake? Does that—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "26:51",
+      "text": "yep. Yeah, he does. Yeah, he does. Somebody— there's a bow and arrow that leads to a building exploding in that one. That's a lot of fun. Broken Arrow I can take or leave, but Face/Off is a, is a '90s action classic as well. Like, just fully unhinged. John Woo being like, okay, what can I do in terms of like pure insanity for an American action movie? And then Mission Impossible 2, much reviled, but a film I enjoy quite a bit because it is beautiful. It is insane in so many ways. Like there are Woo-isms in Mission Impossible 2 that I find just really, really compelling and that nobody else would do. So, you know, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:29",
+      "text": "Plus that cover, that cover by Limp Bizkit cover."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "27:33",
+      "text": "Oh yeah. That is available at your karaoke place of choice. Tell me how I know. Tell me how I know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:43",
+      "text": "Oh my God. Well, let me just ask one more question because I— so I, I have established a track record, you could ask our transcriber, uh, of like, I am for the serious— it can, it can have humor, but I'm for the unironic, um, action stuff. So I am strongly in the Terminator is better than T2. So what's your— where do you land on that?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "28:06",
+      "text": "For Terminator specifically, or just broadly? I think it depends."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:09",
+      "text": "Terminator versus T2, like, which one?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "28:12",
+      "text": "This is a tough one because I grew up with T2. Like, I grew up, I was born in 1984. By the time I was like watching stuff on TV, T2 was the thing playing over and over again, and Terminator was the one I had to go back and discover. Yeah, I think not until it was on DVD, so that was like late '90s. I, so much of my life revolved around Terminator 2, specific scenes, specific sound effects. In that movie are just like in my brain. Like the, uh, when the semi-truck blows up after the chase, like that specific, uh-huh, those things. So like, I like The Terminator quite a bit, especially because it's such a low-budget thing. Like, I like it academically, um, but I like movies that also kick ass, and Terminator 2 kicks far more ass. Sorry."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:54",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:55",
+      "text": "Okay, I agree. I agree. Terminator 2 over Terminator 1. A more refined version."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:02",
+      "text": "Okay, I disagree, but I, but I respect, I respect it. It is a part of an age thing. It is the difference of having seen Terminator in '84, '85, you know, as a 15-year-old kid and, and be able to appreciate it."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "29:16",
+      "text": "This is not the first time I've heard this, by the way. Like, my friends who, who ran thegeeksofdoom.com, like, on the film cast, when we were talking about Terminator 2 way back when, like, they presented this idea and it shocked me because I thought it was universally agreed that Terminator 2 was better than Terminator 1. But no, apparently people prefer Terminator 1. Yeah, I get it. I get old boomers."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:38",
+      "text": "I also, I also take Alien over Aliens, although like to me Aliens is a perfect movie. Yeah, I think Alien is—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "29:45",
+      "text": "they're just so different. Those are two completely different spins on that, that genre."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "29:49",
+      "text": "Yeah, I did think it was funny. I had to ask Claude this morning whether the, the roses with the gun inside in Hard Boiled, whether that was an homage to Terminator 2 or whether Terminator 2 was homaging it. And apparently it's neither."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "30:04",
+      "text": "Interesting. It's in the ether. The genius of these cinematic action directors, they were like, this is a brilliant idea, we'll do it at the same time. Basically."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:14",
+      "text": "It's in the ether, but also apparently both of them were influenced directly or indirectly by Stanley Kubrick. Oh yeah, who used that in The Killing."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "30:23",
+      "text": "The Killing, yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:26",
+      "text": "And then Pacino also in Dog Day Afternoon in '75."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "30:30",
+      "text": "That was like a paper bag, and he also like fumbled it or something, but yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:34",
+      "text": "All right, where do you want to start, Devindra?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "30:40",
+      "text": "My first point, having just rewatching this movie, it does make me sad that Alan did not get a cooler name. It cannot just be Tequila and Alan. Yeah, this should be Tequila and Sting. Tequila and I don't know, just give him a better name. Like he's a cool dude. It's Tony Leung with those Tony Leung eyes. Just him like that scene where he has to kill the mob boss that he actually likes and he's friends with and he's holding back the tears and he's like, okay, he's going to walk away. No, he kills everybody. He just kills everybody."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:12",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:13",
+      "text": "I put that in my notes. You know, it's David Lynch. His eyes, his eyes, so intense."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:18",
+      "text": "Classic Alan shit."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "31:19",
+      "text": "Classic Alan shit. That's so Alan. But yeah, he is the strongest eye actor."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:26",
+      "text": "I think you can feel the pain, right?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "31:28",
+      "text": "And he—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:28",
+      "text": "and you see him in that moment, you can see him push through the sadness into the rage in order to drive himself to be able to turn around and kill all those guys because that's what he has to do to get in with John."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "31:40",
+      "text": "He didn't have to do that. I feel like it's a little much, Alan. Chill out, Alan. They're letting him go. He just went a little too far."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:47",
+      "text": "Animal Mother suggests Tequila and Chaser in the chat. Oh, good name for the sidekick."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "31:52",
+      "text": "You know, there's so many good combos. Tequila and whiskey. Tequila and lime. Oh, nice. But I feel like that would have been like, first of all, you have to accept that there is a cop named Tequila and he's also kind of a rogue cop who never listens to the captain. So this is a world where that exists. Give Alan a better name. That's all. That's my main takeaway."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:11",
+      "text": "I agree."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "32:11",
+      "text": "Give him a better name."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:12",
+      "text": "Well, I saw— I'll piggyback on that. Like to me, my note is, is Jesus Christ, Alan is the coolest motherfucker alive. Sure, his introduction with his Alfa Romeo Duetta Spider was like a 1968 or something. This is exactly the car that my dad had. You love this car in medium cobalt blue as opposed to this beautiful red, but goddamn, that car looks good. And the music playing as, as he's driving, he's so fucking cool."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:41",
+      "text": "He's so cool."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "32:42",
+      "text": "He is so cool. He's driving to the library. That's how cool he is. He's driving to the library like, oh man, look at this guy. He's not pulling up at the club. He's going to the library."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:51",
+      "text": "I bet he's got some overdue fees."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "32:54",
+      "text": "Yeah, he's never gonna pay him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:56",
+      "text": "But yeah, that's right. But so just so, so cool, all that, that development with him. And then I also love how we get the emotion, you know, we just talked about it in the payoff there after he kills Uncle Hoy, but he genuinely cares about— like, he is able to be in here but to still care about people and and try and help them as much as he absolutely can. And I just, I love that, that human nature of that."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "33:20",
+      "text": "He is, he's such a conflicted character. Tony Leung, one of my favorite actors."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:24",
+      "text": "Just, yeah, so good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "33:25",
+      "text": "This, this look, the eye acting in The Mood for Love, all the Wong Kar-wai stuff with him."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:30",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "33:30",
+      "text": "Um, if you guys haven't seen The Grandmaster, which was his like the martial arts thing, was Zhang Ziyi from like maybe a decade ago, was mid-2010s. Very few people saw it, but that movie ripped. It is so cool because it both balances Wong Kar-wai's kind of heightened aesthetic, but also it can just kick butt. So they do some really cool choreography and then very cool Wong Kar-wai slow-mo and aesthetics too. It's awesome. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:55",
+      "text": "I've never seen In the Mood for Love. I'm deeply disappointed to say. I'm embarrassed to say."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:00",
+      "text": "Oh, it's so good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "34:01",
+      "text": "It's so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:02",
+      "text": "I need to see it. Screaming on the boat is maybe a little on the nose, but I love the paper cranes and I love the symmetry of paper cranes for him. Playing jazz music for Chow Yun Fat."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "34:15",
+      "text": "This movie opens in a jazz club. It doesn't make any sense. No, it just— we're in a jazz club following Chow Yun Fat. He's in a jazz club. Then we go to a teahouse with birds. Yeah, just wild how this is all pretty wild."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:28",
+      "text": "So my notes say the greatest opening shot in history when he slams the drink down and then chugs it and then begins playing like you think we're about to have this big action shootout or something. And instead, no, it's him playing the oboe. It's so fucking cool."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "34:44",
+      "text": "And it's a very chill, relaxing song. You're kicking off your music, your movie with like, you know, afternoon jazz scotch or a jazz and, uh, you know, whiskey or something. And it is, it's so weird. It's so slow for what the movie actually is, but I guess it's kind of melancholic too. And the movie balances that, you know, there, there is a sense of loss amid all this action. There's a lot drama here too. So it is Woo doing more than he did before when it came to like the severity of the action, but also like the heightened drama as well. He was a bit of a soap opera director before, and I feel like he's doing more of that now too, plus bigger action."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:23",
+      "text": "Yeah, his— that song that they set up there at the beginning in the jazz club, that has brought back back after the teahouse when the superintendent is walking through the morgue. And so it's this great payoff to bring that, that theme back, um, and to continue to use that through the throughout the movie portions. Do you guys want it? Should we just go to Chow Yun Fat? Should we?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:45",
+      "text": "While sure we're here, why delay?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "35:48",
+      "text": "Why delay?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:50",
+      "text": "So Jason, your, your impressions, you know, then and yeah, then and over time."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:54",
+      "text": "it's funny because I think like sort of thinking of it primarily as like in Crouching Tiger Hidden Dragon"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "36:10",
+      "text": "Yeah. Um, like Crouching Tiger is actually the atypical role for him, right? Sort of quiet, somber guy. He is— he is tequila."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:18",
+      "text": "Yeah, yeah. And so like to see him to be so like bombastic, so like over the top, like very like American cowboy in a lot of ways. Really was like, uh, really was a thrill, a delight. And yeah, just completely charismatic and just so fun to watch. And like, can like do all the action stuff and slide down the banister, you know, double-fisted, but also like just, you know, like look, uh, you know, just do all the scenes where all he has to do is like look in the camera. Um, really amazing shit."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:49",
+      "text": "Charisma of 1 million on that guy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "36:51",
+      "text": "Real high charisma, that guy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "36:53",
+      "text": "Charisma Really amazing. So, so he, Chow Yun Fat, apparently was a little frustrated after, after the changes with he and Madam kind of driving things and, and then her role getting subsumed. He was sort of left feeling like Alan had this incredible character depth and Tequila didn't really have very much. And so it was Chow's idea to ask John Woo to put in a mentor character."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:19",
+      "text": "Interesting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:19",
+      "text": "The jazz, the jazz player. And his idea for— this is fucking genius."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "37:24",
+      "text": "Genius."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:25",
+      "text": "Chow asked Woo to cast himself as that role"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "37:32",
+      "text": "It's brilliant. It's so brilliant. And he is so good. Like, when he walks in too, like, he walks in like, oh, that guy does not look like all the other extras. Like, he is a guy carrying himself differently because, yeah, this is my project. This is—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:44",
+      "text": "yeah, yeah, Wu looks amazing. Like, he looks like a badass too. Yeah, yeah, he is. Yeah, looks, looks really, really good. So I, I just— I loved it. I love Tequila as, you know, the, the incredible detective active, able to find that library book in like 2 minutes. Like, that was pretty—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:01",
+      "text": "yeah, he's great. He's really good at his job."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "38:05",
+      "text": "Yeah, I mean, it's also like, it's a, it's a book-shaped line in the blood. I wonder, I wonder what that is. What are we surrounded by? I don't know. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:18",
+      "text": "Uh, yeah, so good, good stuff there."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:22",
+      "text": "I—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:23",
+      "text": "so before we get into the action, which I assume we'll spend a good chunk of time, I just want to say what's really struck me this time is how the undercover mystery is the heart of the movie. They are very carefully protecting the fact that Allan is undercover. They're giving lots of hints all over the place, and there's all this misdirection that is happening. I absolutely love the white roses and the song lyrics as the cipher to unlock the communication, with Madam singing. And then, you know, the inspector, you know, typing in the codes. Like, so cool."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:00",
+      "text": "It is cool."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "39:00",
+      "text": "It's— surely we could find a better system though. Like, if they're not sure of the, uh, they're not sure of the intonation of the notes and everything, I feel like it's easy to get hacked there, or at least easy to get miscommunicated."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:12",
+      "text": "Definitely, definitely a cipher that like requires having like perfect pitch or whatever feels a little dangerous."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:19",
+      "text": "That definitely seemed dangerous to me. Yeah. But I thought that was just so cool. And then when we finally get around to all of the, the fact that both of these guys have been on, you know, have dealt with the repercussions of the lives they have. Both of them have killed cops."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:37",
+      "text": "In the line of action, and that becoming a bonding thing that really helps them."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "39:42",
+      "text": "I just thought that was so weird, by the way. It's so weird that that is the bonding."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:46",
+      "text": "I was like, oh, I know what that's like."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "39:48",
+      "text": "I know what that's like. Yeah, you killed a buddy too. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:52",
+      "text": "What could you do?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "39:54",
+      "text": "What can you do?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "39:55",
+      "text": "Maybe you should try— maybe you shouldn't shoot so many people."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "39:58",
+      "text": "Yeah, maybe every, every time you go out on an investigation, dozens of people shouldn't die, basically. I don't know if Tequila's a great cop, actually, now that I think about it. He doesn't listen to orders."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:09",
+      "text": "A lot of, a lot of consequences."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "40:11",
+      "text": "A lot of consequences for this guy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:12",
+      "text": "His boss has to explain to him at some point that there's like rules of procedure, that like, he was like, listen, like, you know, people are presumed innocent. You can't just go and arrest people. Like, there's lots of rules here, remember?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:23",
+      "text": "We need witnesses. We need, you know, we need testimony."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "40:27",
+      "text": "Yeah, he's killing all the witnesses. Uh, there is the line in this movie though, uh, what, give a man a gun and, uh, yeah, what was it, uh, he thinks he's a hero. Give him two, he thinks he's God. Yeah, that defines the philosophy basically, really, because it's all, it's all aesthetics. Like, it is the aesthetics of gunfighting and everything. Nobody reloads. Nobody's ever doing anything like realistic. Sick. Um, it's an opera, and I love how people could be—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:54",
+      "text": "people could be shot like 28 times and still live. Like, it's not like— I think that the idea of it as an opera is actually pretty— is pretty important. Yeah, like the notion that this is like not meant to be anything, it's meant to be a sensation and not—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "41:08",
+      "text": "this is Swan Lake or something too. Like, this is a big, big performance, big choreography, trying to tell an emotional story. So yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:16",
+      "text": "Well, I didn't— so I was not aware that there was a genre for this. This is called the heroic bloodshed genre, invented by Hong Kong action cinema, revolving around stylized action sequences and dramatic themes such as brotherhood, duty, honor, redemption, and violence."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "41:34",
+      "text": "This is Tarantino's whole deal."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:36",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "41:37",
+      "text": "He kind of lifted this entirely. Yeah. Hmm."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:40",
+      "text": "you had carte blanche"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "41:58",
+      "text": "Correct. Yeah, it's the same as Kill Bill, which we also love."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:01",
+      "text": "Totally."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "42:01",
+      "text": "Sort of."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:02",
+      "text": "Yeah, a very direct— I mean, Kill Bill probably even more of a, of a rip-off job."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "42:07",
+      "text": "the entire bloody affair on filmcast"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:26",
+      "text": "Did you go down and watch it at Vista?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "42:29",
+      "text": "No, not the Vista, I mean Atlanta. That's a much longer trek for me."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:35",
+      "text": "I went to the Vista because it was not playing in San Francisco, so I flew down. At the time, we had no idea that it was about to be released."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "42:41",
+      "text": "East."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:42",
+      "text": "And so they were screening Quentin's personal print that he flew to Cannes. Yeah, so that he was— the French subtitles with the French subtitles. Yeah, it was really wild."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "42:51",
+      "text": "That's, that's super cool. But it— yeah, that's fully restored. I'm conflicted about Quentin Tarantino because like, clearly, yes, he lifts a lot of ideas, he takes direct references from folks like Woo, like so many other folks, but also he has the chops. Like, I look at Kill Bill and I'm like, goddamn. We were just not ready to shower this thing with awards. I thought Uma Thurman should have been like Oscar-nominated for that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:14",
+      "text": "Yeah, for sure."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "43:15",
+      "text": "There's just so much there. So it's like, I cannot call him a hack. I do think he should shut up though, because he's also somebody who probably talks too much and he's very annoying on podcasts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:24",
+      "text": "Yeah, that is certainly fair. He picked a fight with Paul Dano, for God's sakes."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "43:30",
+      "text": "Don't do that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:31",
+      "text": "Don't do that. Yeah, everyone loves Paul Dano."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:33",
+      "text": "And Matthew Lillard, who's great on Daredevil: Born Again."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "43:37",
+      "text": "He is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:38",
+      "text": "He's making his way."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "43:39",
+      "text": "I'd pick a fight with like '90s-era Matthew Lillard. That guy, yeah, he was coasting so hard."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:44",
+      "text": "Yeah, Wing Commander, Wing Commander."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "43:46",
+      "text": "Scream, scream."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:48",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:50",
+      "text": "Philip Kwok"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "44:23",
+      "text": "You can't— what a legend. What a legend this man is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:27",
+      "text": "Yeah, so I didn't know his name was Mad Dog. I just kept writing The Terminator. The Terminator. Like, this guy is— I mean, he's got even jacket. He's got like the green army jacket like Arnold has in the first Terminator. Mad Dog was not in the script. They invented him on set when Woo just saw him and was like, dude, we need you in this movie. You're now the bad guy."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "44:48",
+      "text": "That's how it works. Like when they would choreograph things, right, but he would also walk into the set and walk into the location, be like, okay, what can we do here? And I think the stairway, the stairway shootout thing was kind of one of those inspirations. Like, okay, he needs to get down from up there to down here pretty quickly and people are shooting at him. What can he do? Oh, he has two guns and he could just slide down the banister a little bit and, you know, history is born, basically."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:13",
+      "text": "That's crazy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:13",
+      "text": "I didn't get to see how they did that. Was he like wired up or was he running down or whatever?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "45:18",
+      "text": "No, he was just like walking. He wasn't like sliding fully, but he was like walking and letting the weight of the stair, you know, the stair just take him down a little bit. So it just looks super smooth. Yeah. Yeah, it's not a full slide."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:30",
+      "text": "I would have gone over the railing in a second. Like, there's no way. Like, concentrating, shooting, looking cool."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "45:35",
+      "text": "You're not—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:35",
+      "text": "you're not Chow Yun Fat."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "45:36",
+      "text": "You're doing so much. You're doing so much there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:39",
+      "text": "Yeah, there's a lot of things that he could do that you can't do."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "45:42",
+      "text": "That's—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:43",
+      "text": "that's definitely true."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:45",
+      "text": "It's interesting, like, the degree to which, like, so much of the stuff was— like, the fact that Mad Dog was an on-set invention is crazy. Like, the— like, like, it does go back to one of our recurrent themes on on this podcast, which is like, how much do you have to have a plan and versus how much can you improv? And like, yeah, the lesson is really like, you could improv a lot if you're very good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "46:04",
+      "text": "Like, if you're very good, if you're among the best, you could get away with a lot. It's like jazz. Yeah, like they set it up in this movie, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:12",
+      "text": "Yeah, exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:12",
+      "text": "Sean Fennessey/Stephen Spielberg"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "46:47",
+      "text": "Whatever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:48",
+      "text": "But he also says he's like, a lot of stuff is like just me. Like, he basically describes it as like me having a conversation with my like meditative self. Um, like, you know, like, like allowing things— like, you know, basically he's like, it doesn't work if I try to too rationally engage my brain. Like, I have to like detach my rational brain and like sort of like, you know, allow like the spirit to move me, basically. Um, and I was like, Jesus Christ, that's fucking crazy."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "47:15",
+      "text": "Because like, just creativity, baby."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:17",
+      "text": "Yeah, like it's just that, you know, that ties into another thing I was listening to that not just Jason Goldman reviews the podcast he listened to as an episode of the podcast, but I was listening to Jack Clark, who's one of the Anthropic co-founders on the Plain English podcast with Derek Thompson. And they were talking about like whether or not AGI has been achieved with Claude. And one of the things that like, and Jack says no, because like Claude and the agents don't have like creative lateral thinking yet. They don't have like the ability to do discovery in the way that like humans do. He posits maybe one of the reasons that's true is because so much creative thinking historically comes from when people are embodied, like they're out walking, they're going for a hike, or they're sitting under an apple tree, or they're away from the actual intellectual work of thinking and instead going out and trying to discover you know, making themselves open to the universe and new experiences. And maybe AIs, you know, as we've created them so far, just aren't able to do that, which I think is—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "48:22",
+      "text": "until they inhabit robots. That's the plan, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:24",
+      "text": "They embody the shit out of them. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "48:30",
+      "text": "And that's how you get the, uh, what was it, the second revolution from The Matrix or whatever? Yeah, that's how that happens. Yeah, that's how we're getting there. Oh boy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:37",
+      "text": "Um, yeah, get in line, problems we have to solve."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:41",
+      "text": "Don't fuck the robots, everyone."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:44",
+      "text": "One."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:44",
+      "text": "Don't fuck the robots."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "48:45",
+      "text": "That may actually be the key to world peace though. Like, listen, if everybody was busy doing that and not, um, making useless wars, just, you know, there's a lot of things. VR could have been that too. Like, throw, throw a VR headset on the president, make him think he's in power, and just like run the country around him. That all could have been great. So many, so many things we could have done."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:04",
+      "text": "Devindra"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "49:08",
+      "text": "The, uh, that thing was useless. Like, that thing was fundamentally useless. Um, I only— I visited once and it was stupid target activation, but they did do the Horizon Workrooms thing. And for that one, like, I was in, I was in a workroom session with Zuckerberg sitting right next to me virtually. And that's kind of a weird experience. And I feel like most people just never really got into it because you need to do VR for work and nobody wants to do that. But it was, it was kind of crazy. And also in the video feed of that whole meeting, my avatar looks crazy because it wasn't doing like, um, it wasn't doing motion tracking properly. So it showed like the failure of his own, um, his own platform, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:51",
+      "text": "That sucks because then you look, then you look dumb, your avatar looks dumb, or my avatar looks silly, but whatever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:56",
+      "text": "I just think it's incredible that Facebook like spent $80 billion on the metaverse, renamed the company after the metaverse, and now is basically like, psych, not the thing."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "50:05",
+      "text": "The thing I keep saying is these people have no idea what the fuck they're doing. Like, do you not think these are some business geniuses out there? Zuckerberg got lucky, the OpenAI people got Got really lucky."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:15",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "50:16",
+      "text": "Yeah. So I agree. Yeah, that's—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:19",
+      "text": "I agree."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:19",
+      "text": "They at least invented some really, really, really transformative technology within the last 20 years."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "50:24",
+      "text": "Did they invent it or did they stumble into it and have no idea what to do with it? Basically, like the whole Sora thing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:31",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:32",
+      "text": "A lot of the times too, like the real genius or like the real move is like figuring out how to parlay attention into market capitalization. Like figuring out like how you've got like something that's working and how do you like, How do you like generate enough attention for it such that it like increases your share price and like, you know, increases your market share? Which like Zuckerberg was very good at."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "50:55",
+      "text": "And so Sam Altman can do that too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:57",
+      "text": "And Sam Altman can do that. Elon can do that. Like that is actually the skill that those folks have. And I think Elon, as we talked about before, like Elon's real skill is having superhuman tolerance for risk. Like really being willing to like just sort of do stuff that like is, if not on the line, over the line, like, you know, on the bounds of legality, but like willing to do crazy things."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:19",
+      "text": "Put people in fast-moving cars and just say we're ready to go?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:24",
+      "text": "Yeah, no, to be clear, the risks are not— the downside of the risks are not purely his to bear. Like, they are advertised across the population writ large."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:34",
+      "text": "Oh boy. Yeah. All right. How do I get us back here? Hard boil."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:39",
+      "text": "I could do my second point if you want."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:42",
+      "text": "Well, is there anything else we need to say about the— just that we started on the tea house and I just want to hit a little bit more of that, the action stuff here. So like, I mean, the, the—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "51:50",
+      "text": "for me, the highlight of this movie, the hospital thing is fantastic, but I love the warehouse sequence because you build and build to it. And by the first hour, it's just like sheer insanity, like sheer insanity. And Mad Dog going around like doing so much. And that, that scene made me realize like, what were the safety measures back then? Because people are jumping into a car that is exploding As they jump into it, not as they jump out of it. So it's like, I don't know what's going on over there, but certainly not the same safety standards as even that were in the West or in America. But even back then, movies made in the US also had really lax safety measures. It's not like— I think back to like the '70s and stuff, like The French Connection's chase, right? So bad. So illegal. So like dangerous to shoot. And they did it and you could never do that again. But yeah, it just brings to mind like how different the standards are depending on the time and place where these things are made."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:44",
+      "text": "Yeah, it's just the levels, the levels are so huge of what they're doing here. Mad Dog sliding the motorcycle, flipping and coming up shooting with the submachine gun. Tequila jumping over a motorcycle to shoot another motorcycle. The size of the explosion of that motorcycle And the other one that immediately comes thereafter flying through the air."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "53:08",
+      "text": "Maybe try shooting at him if you're just riding your motorcycle at him because he's just blowing up your motorcycles. That's all he's doing. But that Mad Dog move, like, that is so iconic. The sliding of the bike like that. Everybody's repeating the Akira slide, which is cool. The Akira slide is very cool. But he does an Akira slide into like a 180 turn into oozing everybody in front of him. Like, yeah, let's repeat that a little bit. Somebody reference that, please. Please."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:33",
+      "text": "I agree."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "53:33",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:34",
+      "text": "Hell yes. Just absolutely, absolutely amazing. And even when he tosses the grenades in where the two guards or the two guys are in there, the explosion that goes off, Philip Kwok, he's like ducking his head, but he's right there in that explosion. Or I had the explosions at the end at the hospital when Tequila is getting out of there. These explosions are so massive and he's just like running and they're blowing up. Up. It's, it's crazy."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "54:04",
+      "text": "It's, it's wild. It is just wild. I don't, I don't want to think about how dangerous it was because I also, at this point in, in my life, I'm not— I don't think like I have any tolerance for people making unsafe, uh, film sets. Like in this day and age, we have so many measures to do it. If freaking, um, if, uh, the Mad Max guy, if the Mad Max director can make Fury Road without— yeah, without hurting anybody and do it safely and focus on safely, anything should be possible. Possible given the way that movie looks."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:33",
+      "text": "Yeah, yeah, it's just like the difference is like Mad Max's budget was probably what, like $120 million versus like $4 million?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:40",
+      "text": "Uh, yeah, that's fair."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:44",
+      "text": "One of my points I guess I'll do here, which is sort of related to this, like Hong Kong seemed in the '90s seemed fucking wild. It seemed pretty loose, seemed like you could kind of just do whatever for a minute there, which I liked. It had like a real sort of like— and I guess I read something like part of this movie was, you know, yeah, he wanted to respond to like the glory, the, you know, the valorization of violence critique. But also he was like bummed that like society in Hong Kong was so violent at this time. There was so much like violence. And it does just seem like they were really kind of out there doing something for a minute. And then like, like, it was crazy pre-takeover. They were really kind of going for it. Um, would have been, would have been fun. Would have been fun to see."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "55:26",
+      "text": "Fun is a word. Fun is a word to use."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:28",
+      "text": "Speaking of that, like, apparently the tea house— the crew found the tea house was going to be torn down. And so they actually shot that scene for a week before the script was even written. So they didn't even know what they were—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "55:40",
+      "text": "That's what you want to find. You want to find the thing that's going to be destroyed so you can destroy it. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "55:45",
+      "text": "Yeah, exactly. And they shot in a week with interruptions from local triads in the area who were asking for protection money. As well as residents complaining about the noise."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "55:56",
+      "text": "It's a tough one when the real triad shows up."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:00",
+      "text": "I want to get into the hospital, but anything, Devindra, any other point you want to do before we go there?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "56:08",
+      "text": "I mean, there's great action, there's a shootout on the boat that is— that's just a lot of fun, and it's kind of a bonding moment. Like, I love— what I love about Woo is like, he is at heart a soap opera maker. He is somebody telling these great dramatic stories. That's something I really love about A Better Tomorrow, especially A Better Tomorrow What? Because because that one is very much a low-key drama about gangsters, but also about brotherhood among those gangsters. And that's also the first time I believe Chow Yun Fat picked up two guns at the same time. It was just because he was doing his thing. He's like scouting the locations. Like, I got a hallway here. I've got this like sliding door into a thing where we're going to shoot all these people. We're going to hide some guns here. What happens if you have more than one gun? Maybe you'll use them both at the same time. So that sort of thing is just super, super cool. That movie rules. I love his operatic nature. Like, Woo can go overboard. Like Mission: Impossible 2 certainly goes overboard, but that's just my sensibility. Sometimes I appreciate that aesthetic and he leans into it so hard and it's like him and Michael Mann, two action directors that focus on emotion and relationships and especially like—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:14",
+      "text": "That's good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "57:14",
+      "text": "It's men. It's men bonding with other men, which is not something we see very much too. So it's a very bro-heavy sensibility. But it's bros in a soap opera protecting bros and trying to do good in the world, and I can't help but appreciate that. Yeah, bros icing bros. Bros."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:30",
+      "text": "I just want to shout out Terrence in the Discord, who is our number one John Woo fan in our community, was saying the pre-handover angst was a huge part of this movie as well. Yeah, this discussion— Tequila asks if he wants to move overseas. Uncle Hoy is asked by Alan whether he wants to go to Hawaii. So I mean, this was a very, uh, you know, a very real time, right? Yeah, '97 was the handover, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:56",
+      "text": "Yeah, yeah, '97, '99, I forget, but yeah, late, late '90s. It was right then."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:01",
+      "text": "And then, and then obviously it is kind of horrific how Hong Kong has been taken over by, uh, the mainland, and you know, all of their independence has, has been quashed. So I, I would be curious to see what, what what, you know, Woo's take is on, on where things have landed now. This is a real—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "58:20",
+      "text": "I think, I think he's even talked about it, but like, after things kind of went south for him in the US, like, he made some real clunkers. Yeah, what was the, uh, the Ben Affleck one? Good God, Paycheck. Paycheck. Paycheck. Never seen it. Um, just like, you can tell when he's—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:36",
+      "text": "Philip K. Dick and John Woo, like, my head was exploding. This has got to be amazing."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "58:40",
+      "text": "There are a lot of bad Philip K. Dick adaptations. Temptations, let me tell you. But yeah, he had to go back to China to be like, okay, I'm gonna do my big epic. And I think that involved playing nice with China. So right, he makes Red Cliff, he makes his other movies."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:51",
+      "text": "Oh wow."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "58:52",
+      "text": "And that's how he gets back into it. Yeah, yeah. He just recently had like, um, he did a remake of The Killer that's on Peacock that is not terrible. It's not bad actually. It's set in France and it's just kind of like with a female lead. It is watchable. It is watchable in the way it's like, oh man, it's good to see him back in action doing his But yeah, you guys are talking about—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:09",
+      "text": "generic. I watched the trailer for it and I was like, this looks like a Peacock movie."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "59:14",
+      "text": "It looks like a Peacock— like his style, I think, doesn't translate as well to like digitally shot video, which is a shame. And I hope he gets a chance to make it like a big thing. But you guys were talking about Hong Kong in the '80s and '90s. What do you feel about— how do you feel about Bloodsport? Because for me, that was the movie where I was like, what is this place? What is this kind of seedy place where so many things are happening? It's like a city on the water. Yeah, island. Like, yeah. Yeah. I love Bloodsport. Love Bloodsport. So yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:43",
+      "text": "So I've never seen Bloodsport."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:45",
+      "text": "And it's—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:45",
+      "text": "Oh my God. It's crazy, right?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:47",
+      "text": "It's coming to the box office."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "59:48",
+      "text": "How is that possible? Wait a minute."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:49",
+      "text": "It's very strange."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:51",
+      "text": "Our dear friend Dave Callaham, who wrote Across the Spider-Verse and has been writing and managing on Beyond the Spider-Verse, is coming back to do it. But those guys are just in the trenches right now. So he'll be back this summer."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "60:05",
+      "text": "Well, I'm sure. I just watched Across the Spider-Verse with my kids. And every second of that movie, you're like, how the hell? Was this made? How do you animate this? How do you storyboard and ideate any of this? But anyway, Bloodsport, amazing film. It was on every single day in the '90s, literally every day. I don't know how you escaped it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:23",
+      "text": "Seriously, it was like an FCC requirement. There had to be a channel showing Bloodsport at least once a day."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "60:28",
+      "text": "I remember they would sometimes show Bloodsport back to back. They would just keep showing it because that's all the people wanted to see."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "60:34",
+      "text": "I think by the time that was happening, I was already like in college or beyond college working like with a—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "60:40",
+      "text": "That's a great college movie. Great drunken frat movie. Come on."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:43",
+      "text": "It's crazy. The things about it, the things Matt freely confesses to on this podcast without, you know, having to be tortured is crazy."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "60:52",
+      "text": "Yeah. Also, like, the Hard Target slander in here. Do you guys have good Van Damme feelings? Because at his peak, dude was really cooking. Like, he was no Seagal. He was cooking in ways—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:04",
+      "text": "Never seen Timecop? Never."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "61:06",
+      "text": "Timecop is good. Good. Timecop is real good. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:09",
+      "text": "Kickboxer?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:11",
+      "text": "No."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:11",
+      "text": "Oh God, I'm quitting the pod. Yeah, I'm quitting the pod until these crimes are atoned for."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "61:17",
+      "text": "So many crimes. Street Fighter? Come on. No, not a good movie, but he's a, he's a lot of fun. He's like coked up and barely in that movie."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:25",
+      "text": "Raul Julia."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "61:26",
+      "text": "Raul Julia is incredible in Street Fighter."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:30",
+      "text": "Okay, I'll have to, I'll have to check it out again."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:32",
+      "text": "You got to do something, for God's sake. Do something with your All right, let's get to the hospital, please, please. All Matt wants to talk about."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:41",
+      "text": "So I thought this was amazing. I looked at the timestamp. I think it was like 64 minutes into the movie. Yeah, we are, we are arriving at the hospital and we're basically gonna be here for the rest of the movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:51",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "61:52",
+      "text": "Mm-hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:53",
+      "text": "They shot for 40 days in a former Coca-Cola bottling factory."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:59",
+      "text": "Oh, I love that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:00",
+      "text": "For extended periods, the cast and crew stayed in the hospital which was boarded up around the outside so that they could do nighttime scenes. So apparently the crew was getting very kind of like losing track of time and getting like super burned out. So much so that they had the idea, what if we just do this one scene as a oner? We'll just do the whole hallway sequence."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "62:29",
+      "text": "Good luck."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:30",
+      "text": "This is such an insane idea that they film the scene with them going down the hallway, shootout, shootout, shootout, shootout, then go into the elevator and keep filming so that the crew can clean up the hallway, reset the squibs, get everything going, and then emerge from the hallway to continue the scene."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "62:48",
+      "text": "Yeah, the elevator's not going anywhere. Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:51",
+      "text": "No, this has never been done. Nothing like this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:54",
+      "text": "Because why would you ever do it again?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:58",
+      "text": "Insane shit. Like, this is Mount Rushmore of film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:02",
+      "text": "They basically turned it into some sort of like performance art piece of like, how quickly, how much can we traumatize like the, the production crew on this movie?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:11",
+      "text": "Nuts. Absolutely. There's, there's this, and then there's the car scene in Children of Men as is the most ambitious oners in history."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:19",
+      "text": "I think it's pretty crazy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:21",
+      "text": "Just, just really—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "63:22",
+      "text": "I mean, they're entire films. They're filmed as oners. Come on, come on. Yeah. Have you ever seen Russian Ark?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "63:46",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "63:46",
+      "text": "I mean, obviously we love 1917 as well, you know. Yeah, stunning, stunning storytelling. But just absolutely amazing. I love the secret vault set where it's like suddenly they're like on a sci-fi looking, you know just the amazing set. And it felt like when they go off in that direction, I had flashbacks to the first time I was playing Portal. And when you get to the mission where you kind of go off-grid, yeah, suddenly kind of like free-range behind the scenes, like my brain exploded. I just couldn't— that was such a moment in video game history for me, for all time. That was, that was one of the greatest moments. But just hilarious, all them going completely nuts with the rocket launchers blowing up everybody trying to escape. I thought was is like, why are they mowing down all the patients? Um, and this is where Mad Dog is going to draw his line, I thought was really funny."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:38",
+      "text": "Like, why, why do the babies have to be involved? They finally got their baby endangerment in the movie."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "64:43",
+      "text": "It makes a great poster though. It makes a tremendous poster. Like, this poster like haunted me through the '90s and everybody through the '90s. I knew what it was about, but people would often ask me, what the hell is that movie on shelf with a guy with a gun and the baby."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:57",
+      "text": "And the baby is so wild."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "64:58",
+      "text": "And a baby."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:00",
+      "text": "So starting with the scene where Madam is looking at the babies, Jason, that was giving, um, Station Eleven episode 9 vibes to me."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:08",
+      "text": "I like that. I like that as a reference."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:11",
+      "text": "That was really sweet. But by the time we get to the baby repelling, um, the, the, the chain of custody on these babies to parents, I thought it was gonna be quite questionable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:22",
+      "text": "They need like the— they're gonna need the like the LoJack system."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "65:26",
+      "text": "Is this Baby, get it, take it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:28",
+      "text": "It's tough."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "65:29",
+      "text": "I mean, that's your problem, right? Your problem is your baby hasn't been blown up in the hospital. Now it's just in a pile of babies, so it's a much easier problem to solve, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:37",
+      "text": "Fair."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "65:38",
+      "text": "This whole thing reminds me of the forgotten Clive Owen movie Shoot 'Em Up, which was—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:42",
+      "text": "I've never seen this."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "65:43",
+      "text": "A lot of fun. 2007, Paul Giamatti is the villain. Insane movie. Like, this is like, um, it was directed by somebody who clearly watched a lot of John Woo stuff and was just like, let's do a, like, basically a cranked up version of what John Woo did. Um, the movie itself is bonkers, but there's a lot of saving the baby stuff in here too. So I think they directly got that. Yeah, I love Clive Owen. He deserved a better career."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:07",
+      "text": "He deserved a better career. I'm not exactly sure what happened, you know."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "66:11",
+      "text": "Yeah, it's, it's tough. Like, if you want to be the Bond, right, and you don't get to be Bond, then all of a sudden your prospects are more limited. And hey, at least we got Children of Men. Children of Men, one of the greatest movies ever made."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:22",
+      "text": "Yeah, you know, he had this— the recurring— he had William Peterson's agent. Same."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "66:27",
+      "text": "Yeah, he was great in that recent TV series A Murder at the End of the World, which I'd recommend to you guys. That's on—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:34",
+      "text": "I didn't see that either."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "66:35",
+      "text": "It's fantastic."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:36",
+      "text": "I didn't watch The Knick either. I'd like to watch that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:38",
+      "text": "Oh, The Knick is good."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "66:39",
+      "text": "So would highly recommend The Nurse or the Nick, and then watch The Nurse."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:01",
+      "text": "Yeah."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:02",
+      "text": "Also good actor, like Clive Owen. Clive Owen, Tony Leung, and Chow Yun-Fat in the movie. Like actors with eyes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:07",
+      "text": "With—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:07",
+      "text": "exactly, through their eyes. Well, that's what I was thinking. I was like, if you were to remake this movie like contemporaneously, like in the 2000s, if someone was trying to do it like in the 2000s, like, oh, this movie did— let's do it in— yeah, with American act— you know, with Western actors."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:19",
+      "text": "They never tried to bring it to America. America. Like, that never happened from what I saw. So yeah, it was Johnny To doing it in Hong Kong. But yeah, Clive Owen would be the guy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:27",
+      "text": "Clive Owen would be the guy, right?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:29",
+      "text": "Yeah. Hmm."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:31",
+      "text": "I—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:31",
+      "text": "yeah, yeah, love him so much. Clive Owen and, uh, what's-his-face from The Diplomat, that would be my choices."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:36",
+      "text": "Oh yeah, Rufus Sewell."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "67:38",
+      "text": "Rufus Sewell. Eyes, eyes, act with your eyes. He is so good too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:42",
+      "text": "Interesting. Uh, all I have left, um, is, uh, for main points is just the score, and it's by jazz musician Michael Gibbs."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:33",
+      "text": "My last point was like, we talked about the Tarantino ripping off this movie, but like, I do feel this movie is homaging Blade Runner pretty strong with like the, the jazz as well as just the neon, the neon of the city and the cranes, the paper cranes."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "68:48",
+      "text": "The paper cranes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:50",
+      "text": "Oh yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:51",
+      "text": "And the, and the slow-mo, like, you know, the slowing, like the slow-mo with jazz in an action scene to me is just always Blade Runner."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "69:00",
+      "text": "And also like the Blade Runner, like that's LA trying to ape a city like Hong Kong, right? Like it really, right, right. That's what it was. So yeah, totally feel that. Oh man, has he, he needs to do like a good sci-fi Wu's probably— that would be great projects. But yeah, that would be great. I don't know if he has the juice anymore. Like, like, I would, I would put money on Ang Lee doing something good and interesting again. I talked to Ang Lee around like when he did the Will Smith movie. Yeah, and he is just so ready to try new things. I don't know if John Woo is. I think John Woo is like, hey, can I remake The Killer for cheap? Like, he'll do it. It's competent, and that's all we're getting."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:34",
+      "text": "Yeah, yeah, yeah, yeah, that is fair. That's fair. The only honorable mention I have that we didn't already hit was The Superintendent Is Pissed. Pissed. I love the idea of the angry chief. Just transcends all cultures."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "69:49",
+      "text": "Uh, and make sure you have a— that's a fucking order— with a glass wall, right? And every time you start shouting, all your colleagues just approach behind you to see the show. It's amazing. Every single time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:02",
+      "text": "Really funny. Devendra, anything we gotta hit?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "70:05",
+      "text": "Great movie. Like, uh, watching it now, I, I was thinking like, wow, they really laid out the building blocks of what would become Infernal Affairs. And I think that is— I see that connection even more clearly now here. Like, Anthony Wong is in this movie as like the bad guy, the mobster Wong, but he is, he is the police chief in Infernal Affairs. So, huh, some incredible, incredible work there. And then Tony Leung, that's Tony Leung in more, more mournful— there's less, there's very little action in that movie. They're really like slow-burn shootouts or something. But it's really sad-eyed Tony Leung, even, even more hardcore. Huh. Tony Leung versus Andy Lau, who is typically like a comedic actor too. So a comedic actor doing, doing a serious drama. That movie rules. That movie is so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:50",
+      "text": "Yeah, I'll have to put it on the list. I've got currently sitting in the queue, I've got 28 Years Later: The Bone Temple."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "70:57",
+      "text": "Very good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:58",
+      "text": "And Peaky Blinders: The Immortal Man. Star Trek: Lower Decks, which I'm dying to watch. Get some Killian back in my life."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "71:05",
+      "text": "I was never, never a fan of that series, but I hear it's good. I hear it's fun."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:09",
+      "text": "Yeah, the series is very good, and I can't wait to get on this. All right, well then, that brings us to who would Tilda Swinton play? This is a bit of a tough one here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:19",
+      "text": "This is a tougher one."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "71:20",
+      "text": "This is not tough at all. She would play Mad Dog, and she would play the hell out of Mad Dog. She would play the hell out of Mad Dog."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:27",
+      "text": "All right, come on."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:27",
+      "text": "That is fair."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "71:28",
+      "text": "I just imagine it. She would do so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:31",
+      "text": "Yeah, nice, nice. Very cool leaning over and lighting her cigarette."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:35",
+      "text": "Yeah, she would be great doing it. She should find an excuse to do that anyway."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "71:39",
+      "text": "Mm-hmm. More people should just do that in more movies. I feel like the John Wick movies keep trying to like ape certain elements of Hard Boiled, and I love them. But also, ever since they did the frickin' bulletproof suits in that series, which was movie 2, I think, I was like, I don't It is. You guys can't have it all. You cannot have it all. You have to have some element, some level of reality here for me to take this action seriously. Yeah. That's funny. They're still fun though."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:07",
+      "text": "Yeah. I've just watched, we had Derek Kolstad, the creator, on a couple of months ago. And so I watched 1 and 2. And so I need to now move on to 3 and 4."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "72:17",
+      "text": "3 and 4 are very good. Yeah. 4 is incredible. And then they would, it's their deep pulls of bringing folks like, what's his face from Only the Strong? Wrong. Uh, he was on Iron Chef too, but yeah. And Mark Dacascos, an actor I love, love him so much. He was also on Iron Chef America and From Brotherhood to Wolf and Warrior, right? I think so, wasn't he?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:40",
+      "text": "No, really good, really good. Um, Jason, your, your cast?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:45",
+      "text": "D.H. Tilda is one of the babies."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:48",
+      "text": "Uh, yeah, I'll take her as Uncle Oh, that was my real pick. Yeah, yeah, yeah, yeah, yeah. We did it, you guys!"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:03",
+      "text": "I can't believe we did it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:04",
+      "text": "We did it."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "73:04",
+      "text": "Incredible, incredible. Well, you gotta pick it when more movies get their like long-awaited 4K remasters. That is the ideal time to go back and revisit them, basically."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:14",
+      "text": "Really, really good. Can we do some quick letters?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "73:17",
+      "text": "Sure."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:17",
+      "text": "Here, okay, here we go. Here is our first letter."
+    },
+    {
+      "name": "Sounder/FX",
+      "timestamp": "73:27",
+      "text": "Truthsayer!"
+    },
+    {
+      "name": "birria",
+      "timestamp": "73:27",
+      "text": "Hey y'all, birria here. Came back from New York last night for spring break and, uh, I came down with something, so— oh no, I was all hopped up on NyQuil when I wrote this, so excuse me if it goes astray. John Woo, let's talk about his signature style. Not the double handguns, the slow-motion doves exploding into frame like feathery punctuation marks. So for today's Truthsayer, Truthsayer. 3 facts about mourning doves. 2 are rotten eggs, 1 is hard-boiled truth. Time for the Truthsayer. Number 1: Mourning doves can see markings left by other animals using their ability to see some light in the ultraviolet spectrum, allowing them to avoid perches recently touched by predators. Or is it number 2: Mourning doves can't sweat to regulate heat during hot weather, they just pant like a dog. Or is it number 3: Doves navigate urban environments by detecting low-frequency electromagnetic hums from city electrical grids using power lines as directional cues. So which one of those dove facts is true?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:32",
+      "text": "I like the EMF dove idea."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:35",
+      "text": "I do too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:36",
+      "text": "Sure. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:37",
+      "text": "Devindra, what do you think?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "74:38",
+      "text": "I'm down with that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:39",
+      "text": "I also appreciate birria doing this even when he's under the weather."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:45",
+      "text": "Really sick."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:46",
+      "text": "Real, real, real man. Bench. And he, he did the podcast Data Central update as well. So he's really out there working for us, keeping it, keeping it real."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:55",
+      "text": "Uh, thank you. Here we go. Let's hear the answer."
+    },
+    {
+      "name": "birria",
+      "timestamp": "74:58",
+      "text": "All right, John Woo and the doves, did you find the truth? It's number 2. Morning doves don't sweat. Just like all birds, wow, they cool themselves by panting, rapid open-beak breathing to shed excess heat. I mean, you try catching your breath while being forced to cinematically flap through gunfire in super slow Momo. Here ends the Truthsayer."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:19",
+      "text": "Now that he says it like that, that does make sense."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:22",
+      "text": "I did think, um, some of the moments here felt like he perfected by the time he got to Face/Off, right? So like the Somewhere Over the Rainbow scene."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "75:32",
+      "text": "Yep, yep."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:33",
+      "text": "Just iconic, uh, and, and really fun. Although you have to be willing to put a young child into danger in order to, in order to make that work. Thank you so much, birria. Here is our Voicemail."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "75:48",
+      "text": "Hey gang, it's Kev here. Wow, big week this week. We are back with Devindra Hardawar and back with John Woo with Hard Boiled."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:24",
+      "text": "Oh my God."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "76:24",
+      "text": "So Kev's question, I want to hear your wildest babysitting stories, whether adventures with your own kids or someone else's. What is the off the top of your head the craziest thing that has happened while you are in the charge of a child. Is that the phrase? I don't know. That sounds really bad, but we're doing it. We're doing it. Peace and love to all, and I'll talk to you all very soon. Oh, also, fuck Harry Potter and J.K. Rowling."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "76:55",
+      "text": "Who the fuck?"
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "76:56",
+      "text": "And it looks like shit, too. Who the fuck? I'm sorry. Even if you could ignore the politics, that show looks like total ass, and I'm not afraid to say it."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "77:03",
+      "text": "It. All right, peace and love."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "77:04",
+      "text": "I'll talk to you all very soon."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:07",
+      "text": "Once again, yes, Kev's Questions."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "77:10",
+      "text": "I love the city soundscape there. Just bring me back."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:13",
+      "text": "Really good. He, he has a, you know, he is a—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "77:15",
+      "text": "love it—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:15",
+      "text": "now a real podcaster. He's got a nice setup for his multiple podcasts that he does. Larry— what is it? Laurie Strode Trap House and, uh, and obviously the Austin Danger podcast. But he loves to do it on the street. Yeah, to keep it, to keep it real."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "77:31",
+      "text": "Keep it real. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:32",
+      "text": "Do you have a babysitting story, Devindra?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "77:35",
+      "text": "Not specifically. Like, I don't know, the things have not, thankfully, have not been that crazy with my kids. I used to have to take care of my younger brother quite a bit too. Had to like take care of like younger family members. Like, um, probably, probably the time I was definitely like, um, I was probably like 10 or something and my younger brother's 5 years younger than me. He stuck a crayon up his nose and it went all the way up."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:59",
+      "text": "Oh, and like Homer Simpson style."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "78:02",
+      "text": "I don't know what we're doing here. It was like, I think it broke off and it was just the point of the crayon, but it went all the way up. I was like, okay, I don't know what we're doing here. So, um, they took him to the doctor, couldn't, couldn't really get it out. Um, a couple of years later, he sneezes and it comes flying out."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:17",
+      "text": "What?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "78:17",
+      "text": "So, wow. It can happen."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:20",
+      "text": "It really just rested up there."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "78:21",
+      "text": "It just stayed up there."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:22",
+      "text": "His IQ shot up. By, by 20 points. Holy—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "78:25",
+      "text": "it's rattling if you shake your head. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "78:28",
+      "text": "Wow, that is, that is crazy. Jason, how about you?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:32",
+      "text": "I mean, one time I was looking after my younger brother and we were playing, you know, uh, sock hockey on those, on the freshly cleaned floor, and I did put his head through, uh, the wall, uh, which feels appropriate for this week's movie. Um, and luckily he missed the stud and it just like went straight through through the drywall. And Jesus, but we were like, wow. And now my son Griffin fucking loves hearing that story. He thinks that story. So yeah, I guess this is part of your—"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:02",
+      "text": "like, you were, you were bigger and stronger than a lot of kids. You were like kind of like a tall, gangly—"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:07",
+      "text": "I mean, but my brother was even bigger than me. I mean, maybe not at the time, but he is now. And, uh, yeah, you know, listen, things happen. Things happen."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "79:16",
+      "text": "Yeah. Also, why are our houses made out of like cardboard? Exactly. The concept of drywall is still wild to me when I see how other countries build their buildings. Yeah. Oh yeah, good point."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:29",
+      "text": "Good point. Thank you so much, Kev. Here is our final voicemail."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "79:40",
+      "text": "Yeah."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "79:42",
+      "text": "Hey, this is Corey calling from Austin, Texas about John Woo's action masterpiece from 1992, Hard Boiled. Jesus Christ, this movie is fucking bonkers. Like, I remembered it was bonkers, but I didn't remember remember like how bonkers it really is. This movie is just pretty much non-stop action set pieces, and then when it's not the action parts, it's still fucking entertaining as fuck. Like, jazz club, the saxophones, the drinks, and the— just everything about this movie is fucking awesome. It's super cool. I mean, like most Gen Xers, I probably heard about Woo through Tarantino, maybe some references in like some niche kind of like movie magazines I was reading at the time. But definitely by the time Tarantino was on the scene and really doing a lot of interviews and just talking about all his influences, it was on. And, you know, we had like lots of cool little video stores here in Austin, Texas where you could find these movies. Movies. Um, then I also knew some other dudes that were like way into like videotape trading and shit like that. So I got my hands on some of these and they were just like, you know, this one and Better Tomorrow and The Killer, like they're just mind-blowingly awesome. So fucking good. Yeah, there's a lot of bullets, like so many fucking bullets in this movie, it's crazy. Uh, I'm so happy we're doing this. What a weird— it seems kind of like a weird deviation but not really for us. So I'm, I'm stoked though. I can't wait for you guys to talk about it. Uh, who would Tilda Swinton play? Fucking Mad Dog, am I right? I mean, you know, by the end, there you go, you got the blood coming out. Like, oh, what a role. Okay, uh, yeah, man, I'm looking forward to this. All right, talk to y'all next week."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:24",
+      "text": "Bye."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:25",
+      "text": "Yeah, I knew this one was going to be good for Corey. This one felt like a real Corey, a Corey wheelhouse movie. Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:33",
+      "text": "I, I mean, I still have a desire ultimately to do True Romance. I don't know if it, if it will work work, but that's like, I just, it can be problematic in portions of it."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "81:44",
+      "text": "I don't think that movie aged well. I never loved it, and it's harder to watch now. It's harder to love now. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:50",
+      "text": "Devindra"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "82:07",
+      "text": "Thank you guys."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:08",
+      "text": "Thank you so much."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "82:09",
+      "text": "Hard Boiled"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:13",
+      "text": "Really, really good. Folks should check out— we did, uh, we've done the Bourne movies with you, and obviously Crouching Tiger. Maybe that's— we need a— Jason, we need a best of episode, um, soon. So maybe we'll release Crouching Tiger."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:25",
+      "text": "That'd be a good one. It was a great— it was a best of."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "82:28",
+      "text": "Mm-hmm."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:29",
+      "text": "Devindra"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "82:33",
+      "text": "Yeah, uh, you can find me on Blue Sky at @devendraonbluesky. I talk about movies and TV at The Film Cast, thefilmcast.com, and I write about technology at The Ed and Gadget. I Escape Hatch podcast too. I've got some movie-related interviews coming up. Just interviewed the director of the AI doc, which is a pretty good documentary. And also I'm going to interview the director of Exit 8."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:55",
+      "text": "Hmm."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "82:55",
+      "text": "So that is an adaptation of the indie game. It's a Japanese film. I just saw it. It's incredible. So, huh, for that too. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:03",
+      "text": "Awesome."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:04",
+      "text": "Great."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "83:04",
+      "text": "Awesome."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:05",
+      "text": "Great. We'll look for those. Jason Goldman, what do you have to plug, my friend? Friend."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:10",
+      "text": "What do I have to plug this week?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:12",
+      "text": "Um, let's see, I guess, uh, international travel with, with kids."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "83:18",
+      "text": "Oh boy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:18",
+      "text": "Yeah, I don't know if that's a plug yet. We'll, we'll see how the results come back. We'll see how the results come back on that one. I don't know, I, uh, I got a body scan this week, like one of those like DEXA scans where you lie on a table and they, they do that, and it was very fast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:32",
+      "text": "This is like, this is like weight related and yeah, like structural makeup."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:37",
+      "text": "Yeah, like, you know, what your visceral fat count is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:40",
+      "text": "How'd you do?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:41",
+      "text": "My doc— I sent it to my doc and he wrote back. He said, you are borderline critically fat. I was like, all right."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "83:48",
+      "text": "What?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:49",
+      "text": "You're like, you should have seen me 3 years ago."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:52",
+      "text": "Like, critically fat. So I've been telling my wife that she's married to someone who's critically fat."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:59",
+      "text": "My doctor said the same thing to me like 4 years ago. She was like, the only thing you have to do is lose weight, get to work. And I was like, okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:07",
+      "text": "Fine."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:08",
+      "text": "Mine is not so much the absolute overweight, it's just like sort of where it's— anyway, it's gonna be fine, or I'm not worried about it. We're gonna— everything's good, everything's going according to plan."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:17",
+      "text": "It is fine, but dude, I'm wearing the Oura Ring, I've got the Apple Watch, I'm working out twice a week in the gym, I'm doing tennis and pickleball, I'm doing Pilates, and I'm only drinking 3 or 4 nights a week. Like, I go to bed at 9:30 at night. What the fuck do you want from me?"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "84:31",
+      "text": "Yeah, uh, the— there's no stopping it. There's that— like, once I hit 40, it was like my body just started falling apart. Like, oh, it does just happen. Yeah, it's It's like clockwork."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:39",
+      "text": "It's all 56. This is some bullshit, man."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:42",
+      "text": "This is awful."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "84:44",
+      "text": "Are you guys lifting weights? Because I'm reading more and more that it's really the strength training."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:49",
+      "text": "It is the strength training."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "84:50",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:50",
+      "text": "Devindra"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "84:52",
+      "text": "That's right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:52",
+      "text": "It's the core. Your back is the most important thing. And so that's—"
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "84:56",
+      "text": "I need— yes, I need to fix my back and also reduce my gut. Those are my goals. Okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:02",
+      "text": "Don't get critically fat."
+    },
+    {
+      "name": "Devindra Hardawar",
+      "timestamp": "85:05",
+      "text": "Yeah. I don't need a dex machine to tell me that. Me that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:09",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:12",
+      "text": "Devindra"
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "86:17",
+      "text": "There's a crayon in my brain? But I've had thousands of head X-rays. How come no one ever noticed it before? Oh, I can answer that. You see, whenever I pick up an X-ray, I always hold it like this. My thumb must have covered up the crayon every time. I'll throw myself out."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "86:36",
+      "text": "Mr. Simpson, this could be responsible for your subnormal intelligence."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "86:40",
+      "text": "Hey, I came here to be drugged, electrocuted, and probed, not insulted."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "86:44",
+      "text": "We could remove the crayon for you. It could vastly increase your brain power, or it could possibly kill you."
+    },
+    {
+      "name": "Movie Sample",
+      "timestamp": "86:51",
+      "text": "Increase my killing power, eh?"
+    }
+  ]
+}

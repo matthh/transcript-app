@@ -1,0 +1,2016 @@
+{
+    "episode_number": 23,
+    "episode_name": "Lady Bird",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod, your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "Back in my day prince paul made an album with Dan the Automator called handsome boy modeling school. Now I got a colonoscopy,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:26",
+            "text": "and by the host of the hit new podcast Cinenauts, catcher"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "0:30",
+            "text": "from the word go, I knew I would be directing and from the word go I had no passion to find a teammate because I was not interested in collaborating"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:41",
+            "text": "On this episode, we returned to Timmy in his first pairing with Saoirse Ronan in Greta Gerwig ladybird, we discussed the power of an auteur director's singular vision, the challenges of family dynamics and take a trip down memory lane to revisit our high school theater experiences. If you're enjoying the show, we need your help. Be cool like listener James 19 644 And leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, ladybird. Have you perused the setlist?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19",
+            "text": "I haven't seen the setlist actually is it on this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21",
+            "text": "letterbox right so we scroll up to the top here you can see everything that we've done so we're on oh great lady bird right now then drive next week. That's the last movie for this season. Lady Hawk obviously reserved for Meredith but so on Sunday Greta showman Ronin obviously that'll be when you're when you're back from from paternity leave but Doctor sleep Rebecca Ferguson interstellar Timothy shallow may Skyfall, Roger Deakins and Sam Mendez, the king, Timmy, tenant."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:54",
+            "text": "Who Polytechnique? You guys watching Polytechnique?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:56",
+            "text": "Yes, we're watching Polytechnique, we"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:58",
+            "text": "have to do that."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:58",
+            "text": "Oh, can I come on for that? "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:59",
+            "text": "You're Canadian on for this, "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:01",
+            "text": "please. Okay, great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:03",
+            "text": "You have automatic you have automatic rights to that that's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:06",
+            "text": "I saw this movie like way, way back in the day. And totally absolutely fell in love with it and always remembered it. And then when Denis Villeneuve started like getting traction, and he started hearing his name here or there, I would like read his name. And I'm like, Is that the same guy that did Polytechnique, and they would never mention that movie. I love that movie. It's really powerful. That's whole story is fucking terrifying."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:27",
+            "text": "Well catcher. Welcome back to the podcast."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:31",
+            "text": "Thank God."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:32",
+            "text": "Thanks for having me back. Finally, I'm excited to see your guys's faces."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:36",
+            "text": "Yeah, it feels like it's been a long it's been a long time. How's it been? How you doing? What's going on? How's Canada?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:42",
+            "text": "Canada's getting colder, as you can see that my flannel is on?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:47",
+            "text": "Is that mandated? Is there like legal when you're"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:50",
+            "text": "born you get one. And it has this very cool material. It stretches as you get older. So you always have a flannel? It's like a security blanket. You just always have it no matter where you're born when you're born in one. Yeah. That's what they wrap you in. You don't like Superman. It's like same idea. You get a flannel?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:07",
+            "text": "Yeah, the amniotic fluid is maple syrup. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:12",
+            "text": "exactly. Did you guys don't know that's how they make maple syrup."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:15",
+            "text": "That's how Yeah, they birth a Canadian."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:19",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:20",
+            "text": "C sections. Sections performed by Beaver just gnawing out the baby."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:27",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:28",
+            "text": "I've definitely gotten that we are"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:30",
+            "text": "the home of David Cronenberg. So it would make sense that there would be babies in the trees or something."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:35",
+            "text": "I don't know man. i What's that? What's the Cronenberg? I've seen what's like existence? Yeah, no, not for me."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:45",
+            "text": "Dead Zone. Dead Zone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:46",
+            "text": "He did dead zone."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:47",
+            "text": "I thought he did dead zone. Maybe I'm wrong."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:50",
+            "text": "I love dead zone."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:52",
+            "text": "I'm looking at that right now. Do"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:53",
+            "text": "just really loves orifices he does just that is for sure. It's just like a little uncomfortable watching someone make a career out of their like fetish kink. Yeah, it's just like I mean like Do your thing like that's fine but like you know,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "4:07",
+            "text": "dead zone is David Cronenberg."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:09",
+            "text": "Wow,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "4:10",
+            "text": "the ice is gonna break is the was the most quoted line in all of college during all of my college run with my friend really? The ice is gonna break we said that all the time. So you haven't seen that either. Did what about the missiles or fly not as funny Have you heard his voice when he says that please hit this is where he will cut in the clip from dead zone. Oh yeah, here. The ice is gonna break. The ice is gonna break is the is the funniest. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:47",
+            "text": "like this. We just make we just like name things that like he has to go get used to episode. This goes and gets the Zapruder film the original one Okay"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "5:04",
+            "text": "this frame number 12. That's the that's the one you want to look"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:07",
+            "text": "back into the left. Alright, so tonight's episode catcher is back and we will be talking about Timothee Chalamet. A ever heard of him, sir Sharon in teaming up for their very first time for Greta Gerwig in her 2017 film, Lady Bird. So that is just around the corner and we're very excited to talk about that. Next week on Dune pod we will be joined by Chief Technology Officer of slack and noted 3x speed reader on his audiobooks Jesus. Cal Henderson. Cal is joining us to discuss Nicholas winding ravens drive starring Ryan Gosling, Carey Mulligan and a young Oscar Isaac. I don't even remember him at all in this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:58",
+            "text": "I don't either."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "5:59",
+            "text": "Oh, he's just a piece of shit. Okay, he's just a piece of shit in that movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:03",
+            "text": "That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:04",
+            "text": "Cool. I haven't seen it since since it came out. So I'm very excited to watch that it is available on Netflix for anybody that wants to stream it. You can stream it there. Otherwise it's available for rent all over."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:15",
+            "text": "And of course the director was in Yoda. Ruskies dune as a tax credits. Good tion ce o multiple connections in Gaza guzzling Of course. Noted Canadian."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "6:26",
+            "text": "That's right. The flannels,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:29",
+            "text": "born born in flannel. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:31",
+            "text": "Well, let's get into do news."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "6:34",
+            "text": "Would you like to know more? Do news."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:38",
+            "text": "So I just have two two pieces of news here. The first one is that the new dune board game dune Imperium has been described as being quick and merciless by the verge. So pre orders open tomorrow, so they'll be available. By the time you have heard this, they open up on the 29th. But for the verge has a great review and links to be able to purchase it you can get it from your friendly local game store or ordering it directly from direwolf. And they have the kind of core version and then they also have an expansion that has like really nice plastic miniatures that you can use to upgrade the game. I could"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "7:18",
+            "text": "have a miniature Timothy. Yeah, yes. I mean, you sleep"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:22",
+            "text": "with them under your pillow. Oh, that's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "7:24",
+            "text": "part of the cupboard. I'm gonna put them in the cupboard."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:28",
+            "text": "And then it will become real. Yeah. The Timothy in the cupboard. Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:35",
+            "text": "Alright, the second piece of doom news comes to us from at dune novels. And they were reporting that the dune graphic novel comes out next month, and apparently is number one on the Abrams book list for its category. So people are excited. They're ordering the graphic novel. Again, they're doing this. So Brian, Herbert and KJ are doing this series adaptation. They're doing it as three graphic novels, one for each of the three books of Dune, I have a related"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:04",
+            "text": "piece of noon new lease about that, which is that this week also saw the release of issue number one of Dune house a tradies. Yes. Also written by Brian Herbert and KJ, and I am holding it in my hands was"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "8:22",
+            "text": "a fabric cover. This is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:24",
+            "text": "I think it's a leak cover. Yeah, yeah, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:26",
+            "text": "JAYLEE JAYLEE."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "8:28",
+            "text": "Yeah. Oh, nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:29",
+            "text": "I love I love Jaitley like the cover is gorgeous. You too. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:32",
+            "text": "It's a great cover. And it takes place in like when Duke Leto The first is a child basically. So it's like a pre cool. Yeah. So anyway, I'm buying these shirts now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:50",
+            "text": "All right, you guys ready to get down to business,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "8:52",
+            "text": "sir."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:54",
+            "text": "All right. I feel like this feels so light. After I just as I was running around. It was such a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:59",
+            "text": "delight. It was such a delight to watch this movie after watching prisoners."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "9:05",
+            "text": "I can only imagine. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:07",
+            "text": "was just I was like, Oh, thank God, I was really I spent a lot of time thinking about it was like, I think I'm just at a phase in my life where I am not able to watch a movie like prisoners and like I can appreciate it, but I cannot enjoy it. Whereas in previous a previous like five years ago would have felt that way."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:25",
+            "text": "Well, I did find that on the second and third viewings back to back over two days, it became a lot less disturbing and a lot more like I know this and I'm just sort of focusing on the details. So that was my that was my armor. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:36",
+            "text": "But like the flip side is that you've been like psychologically conditioned to accept permanently damaged or now now you're part of like the torture state."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:44",
+            "text": "I mean, I have been drawing mazes all day every day. Exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:47",
+            "text": "Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "9:48",
+            "text": "What is that on the back wall there? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:50",
+            "text": "and his hairs like slicked back so it looks like that's right, like especially sinister and weird tonight. Oh, like"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "9:56",
+            "text": "Jake Jelena. Yeah, his hair is incredibly greasy. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:01",
+            "text": "yeah, that's his thing. That's he was gonna get some Zodiac knuckle tats and it's gonna be curtains for all you watch out San Anselmo"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:10",
+            "text": "coming atcha ladybird is a journey to figure out where you're going by understanding where you've been. Christine Lady Bird McPherson is a 17 year old who dreams of running as fast and as far away as she can for her youth as a poor kid on the wrong side of the tracks in Sacramento, California. Her mother, a constant opponent in a battle of wills, is a long suffering nurse who has made every sacrifice to improve her kids lives, but doesn't miss an opportunity to tell them. ladybirds searches for love acceptance and joy with their classmates at Sacred Heart Catholic, she tries joining the theater crew with her best friend Julie learns that relationships with boys can be more complicated than she thought and ultimately learns the value of real friends who care more about her than just being cool. Will Lady Bird achieve her ambition to attend college in New York? And will she finally appreciate that her city and her family have made her who she truly is? ladybird?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:23",
+            "text": "was good. That was good summary."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "11:25",
+            "text": "I do this. Is it important that she gets to New York or just that she didn't leave that she gets out? She just wants to go anywhere else, right. I think it's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:34",
+            "text": "like New York is like, you know, it's full of people who are cool. And like, you're in a cool shit. And like, you know, that's like sort of how it's portrayed. And so I think that's like kind of what New York's is standing for."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "11:46",
+            "text": "Make sense?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:47",
+            "text": "So just talking cast and crew here for a second. So we have Greta Gerwig. writing and directing. This was her first film that she wrote and directed, she wrote, co wrote Francis Ha, with Noah Bombeck. Who directed that film, I'd forgotten that I for some reason, I thought that she had directed that but so this is her first time as a director, Sasha Laurie Metcalf as her mom bless her. Timothy beanie Feldstein is phenomenal. In this film, and then Steven McKinley Henderson, this is our first SMH officially on the show."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:23",
+            "text": "It's a real all star cast. And of course, yeah, we're honored to be rejoined with by catcher, the world's premier podcast shall emesis to talk about weed."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "12:35",
+            "text": "At least I think we talked about this last time I was on I don't know how I got. I got pigeonholed into this thing where I'm like the spokesperson for Timothee Chalamet. I'm fine to do it. I just like of all the people I like, would have found myself being the championship for in a public forum. Yeah, he's probably at third on that list. And he's number"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:59",
+            "text": "number one now, baby."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:00",
+            "text": "But number one now in my heart. Yeah. Well, I think so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:03",
+            "text": "you were here for call me by your name. And then you were here for Little Women. So both Timmy and Greta, in the midst of that. So that's, that's a nice combo to want to get you back. So the first shot is is Lady Bird and her mom in bed. Just their faces are facing each other asleep because they're"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:21",
+            "text": "mirror opposites of themselves. You see?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:23",
+            "text": "That's good. That's good. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:25",
+            "text": "say Mr. Say, Mr."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:27",
+            "text": "I mean, that's really that's all I have to say. Isn't that like, nailed it? No, but the through line through that or not the through line through the movie. But the thing that I always like I took away from this film is like, yeah, they are so similar. That's why they always get on each other's nerves. You know, I've always had friends. I've had friends. Like, I had specifically two friends of mine that never got along. And I always thought that was funny because they were so similar to each other. And I think that's always the case. Right? It's like when you have two of the same people hitting up against each other, you sort of get that friction."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:59",
+            "text": "Yeah, so they they're arguing, you know, right out of the gate. They're arguing about going to college and Ladybird wants to go anywhere but here and her mom is basically you know, putting pressure on you know, her not performing well enough and it being difficult. You"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "14:16",
+            "text": "should just go to City College, you know, with your work ethic, just go to City College and then to jail and then back to City College. And then maybe you'd learn to pull yourself up and not expect everybody to every"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:26",
+            "text": "Lady Bird then unbuckles her seatbelt and jumps out of the car."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:31",
+            "text": "Yeah, it's amazing. It's just an amazing start to the movie. Like the jumping out of the car is just the movie just like charm the pants off of me all over again like watching watching it again. I was just like, Oh, I just love this. I love what everything that's happening. It's great because the other thing about that is is that scene starts off with his very tender sweet moment of they're listening to the audiobook and they're like, yeah, like they're both crying. I mean, it's like emotional moment. And then it goes from like zero to 9000 in like the pay In such as very economical, like, you know, just they immediately set each other off. And it's just this waltz of pain where like they just end up, you know, eating each other. I love that I absolutely love that there was a thing I got really into this movie as I was rewatching it and there's a thing in the director's commentary about where she says Greta Gerwig says that a lot of the scenes, the escalation, the scenes, and this isn't an exact quote, but it's basically like, where ladybirds doing this combination of like teenager solipsism, like selfishness, and then it it like hinges on some moment of like profundity or real human decency, because like being a teenager is that moment when you realize that like other people matter, and other people exist, but you're still a teenager, so you're still like selfish and can't really, you're not really fully able to clue into that. And I think the movie lives in that space, like so well. And that's like, what all these escalations like are kind of about is where she just kind of, they just activate that in each other. So I love I think that the whole movie gets established in that first, that first fight between them, and I love it. That"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "16:07",
+            "text": "scene, just the tension that gets built up that the only way that we can release that tension, and she's got to let herself out of the movie. I love that idea. Because I think so many times, I mean, I've experienced at least a handful of times where I've been like, kinda wish I could just get out of this car right now. And you sort of have that image in your mind. Like, yeah, and I go and it just like, it's so it feels so rewarding. And so like soothing to head, and the way that it's shot, the way that they do it, it's in the cut is perfect."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:40",
+            "text": "So so I love it from the moment she jumps out, like the music kicks in as John Bryan soundtrack, and it's just like super playful and really fun. And then it cuts to that Catholic school. And they're in the midst of like doing their, their daily performance or whatever. So I just love how that kind of was all set and an introduction to her life there. And the fact that she's super jaded."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "17:01",
+            "text": "Just quickly, Jason, you will watch or listen to the director's commentary. Yeah, like what's, I always I was really interested in it. Like if she gets into how much of this is like autobiographical, like, I know, none of it happened to her, but it's like, but inspired or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:16",
+            "text": "Yeah, the line she uses. The line she uses is like, yeah, like, it's something like none of its real. But all of its true. I think like, yeah, so it's like, it's like, none of it is like is is exactly autobiographical, but it's, it's about it's very much inspired by her life and growing up in Sacramento. And she went to Bernard instead of NYU. So it's like, you know, there's like there's and she loves Sacramento still and she wanted to make a movie that was like a love letter to her hometown. So it's it's a lot of that, like, she's I think she I think she would say that, like she herself was much more of like, was not as rebellious as Lady Bird. The character is. Okay, cool. It's a really good commentary for what it's worth. She does it with the cinematographer. Cool. Oh, perfect. And like, so they get into the end, they get into a lot like sort of the technical details of how they got the look of the film, which I think is very, is very distinct. And it's really good. I highly recommend it."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "18:14",
+            "text": "Okay, cool. No. And I that's it's interesting that like, the mother daughter relationship was the thing for her because to me, like, I'm obviously not a daughter, but I have a really close relationship with my mom. And we wouldn't have it out lesser like this, but we definitely have had it out like this, you know, and it's like it. It touched something very personal for me when I was watching this, like cod, I know this, like, back and forth relationship. I don't think we would go that long without talking. Like, that would be easy, but like, but that sort of like understanding each other to the point of knowing exactly what to do to sort of like, get the other one to provoke the other one. Exactly. Yeah, I'm very good at that. It's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:55",
+            "text": "funny, because like, I was watching this movie with Krystal and she loves us, me watch it again. And at one point, her brother, my brother in law came over to the house and he has like kind of the same relationship you're talking about with his mom with their mom and like he saw a kid not seeing this movie. So for just like two minutes, he's like, Oh, that's just fucking mom right there. Like yeah, it was just like had that like say? Like that same like, kind of like, you know, instinct like kind of instinctual response. So where is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:22",
+            "text": "this your nephews? Is this your nephews dad? Yeah, it was when Sauron was over. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:26",
+            "text": "this is yeah, this is like, my nephew was over as he's 10 years old. And he watched the movie with us, actually."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:33",
+            "text": "Did you tell him what we're doing? We're doing the pot like, this is pod prep."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:36",
+            "text": "This is this for podcasting. Yeah, I told him that I was funny talking to my nephew. He was asking about like, what our first job he's trying to understand like what crystals first job was ever in what my first job was ever and he asked me he's like, so what you know, what was your first job was like, Oh, I got worked in on software store or regional software store. And he's like, what's a software store? It's like, oh, well, like you know, back in the day you used to have go into a physical location to like buy apps basically. And he's like, okay, all right. And he's like, Well, and then one is like, well, like later i Then I worked on blogs. He's like, What are blogs? I was like, Get out."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "20:15",
+            "text": "Leave my own. Blogs should not be the old person thing. Yeah. So scary."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:21",
+            "text": "Yeah, it happened. It happened while we were there. All right, so we cut from from Sister Sara to just mom driving around Sacramento."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "20:32",
+            "text": "I'll see you tomorrow. Or I mean later. Thank you. Okay. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:36",
+            "text": "it's so gorgeous. The song that's playing is this eve of partying by John Hartford, which is just a gorgeous song. But just the shots of her driving. It's just spectacular. Yeah, and it makes Sacramento look incredible. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:51",
+            "text": "I like that part. I like that part very much as well. There was like in the in one of the feature ads she says like that those scenes of like them just showing the houses. One of the inspirations she had was Halloween, the movie Home, like sort of like just showing these like suburban, like sort in these suburban scenes. Actually, all the inspirations she listed were really interesting. The first one was like the 400 blows like classic like New Age film. How Halloween Pretty in Pink, which like, is like kind of the most obvious one because it's like a heist story and like she wears like a pink dress to the prom, like to the prom or the Thanksgiving as a as an homage. But there's no tacky there's no ducky. Well, I mean, there's kind of a ducky because like, what's his face the boyfriend is sort of the first boyfriend sort of the ducky Pretty in Pink Grey Gardens as sort of like a portrait of a mother daughter relationship where they have like the same fight over and over again. Which I thought was really good. Say anything,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:53",
+            "text": "which is obviously say anything is very obviously checked here. Yeah, yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:57",
+            "text": "And she says like, basically the scene where Lady Bird goes and gets her what Jules is the girl is his or her friend from math class, where she goes and gets her back. Like, that's like the boombox scene. And then like American Graffiti, because that's like a classic Northern California. I need to rewatch that. George American Graffiti is only one of those I haven't seen actually. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:18",
+            "text": "It's a great movie. So I love the all the interaction on the house. It's a really busy house. You have her brother Miguel is living there. And Shelly his girlfriend, they're both kind of like all, you know, face piercings and stuff, and they're pretty cool. But there's lots of battles. ladybird and mom are fighting and just the dialogue is awesome. The gallon Shelly are talking about how they're going to be vegan. And she says you wear leather jackets. They're like, Yeah, but they're vintage. So so it's fine. Yeah. And then importantly, ladybird, later asked dad if he will help her get into college without telling mom and he agrees to help. And she gets out of the car as hand in my pocket by Alana's Morissette plays and the volume goes up and she walks into school, and it's just like, kind of a classic kind of classic moment."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:09",
+            "text": "So this is an interesting theory. I was I was working on or watching this because the movie set in 2002. Like that's the you know, that's the year that movie set and it's like, specifically a post 911 Iraqi war is going on fall of 2002. Movie. And yet, all of the music that is checked in it is pretty much seven years younger. Like is 1995 is like my The reason I noticed it is because I was like oh no, this isn't like it's my high school music not like 2002 music. And so it's like Atlanta is more set, which is 95 The Bone Thugs and harmony meet me at the crossroad which is 95. Crash crashed into me, Dave Massey van which is 96. And so like all of the big musical moments are like, like this specific two year period, Greta is actually of the right age for it to be 2002 Is would have been her high school year, basically. So I have this theory, which is I could not confirm based on any information found on the internet, which was that Greta Gerwig is a younger sibling. And I feel sometimes what happens is, is that people fall in love with the music that their older siblings liked and that part's really important. That becomes the important music to her. And so my my belief is that the reason she put those songs in the movie even though they're like seven years off is because those are like older sibling songs, or which like I don't have an older sibling but like my my version of that is like I like new orders my favorite band even though they're like seven years older than is appropriate for for me to to really have them as my favorite band. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:51",
+            "text": "have two older brothers, both of whom are now hardcore dude, pod aficionados. My brother Rennie is currently listening to the do and audiobooks and he, like, pings me every other day like, oh my god, so and so you know, you know, Duke Leto just got taken out what's going to happen. But they were the ones who introduced me to you too. They were the ones who raised me to REM right. So completely changed and opened up all my horizons. Reid also introduced me to Swamp Thing You know, he also turned me on to great comics and that kind of stuff. So it's handy to have an older brother. Yep."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "25:28",
+            "text": "Can I make a counter suggestion?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:30",
+            "text": "Sure. Yeah. Go for sibling suck."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "25:33",
+            "text": "Yeah. Well, I'm an older sibling. So yeah, down to all the younger siblings. They're the worst. Yeah, see? So, no, but I was trying to understand, it would make sense that she would want to use music that she feels connected to, right. But then the idea that they overly sort of disgust on Lebanon's this sort of like loss of innocence situation wrapped her like that sort of metaphor of like, she's now coming, that, you know, she's growing up, she's losing that little bit of innocence. So that sort of, like, of the future generation that was sort of like the moment of, um, when, you know, America's loss of in, you know, what I mean, like, that sort of thing. I don't know if that, if that tracks or not."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:20",
+            "text": "I like that theory, too. I really liked the way in general that they handle 911 In this movie, like it's so I kind of just have the atmosphere as opposed to like, there's there's really a lot of it that's kind of just done on unremarked upon almost, it's just like, yeah, that's just in the background. I think it's, I think that part of it's really well done. The"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:40",
+            "text": "Iraq wars is more is more in the foreground, even than 911. Right. There's like, there's the initial shot shows, you know, yeah. Never, never forget on the wall, while they're saying that the national"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "26:50",
+            "text": "debt cycle stems out from that with, you know, the action that that all that stuff stems from,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:55",
+            "text": "I think that's right, but they're all watching television. They're all watching the Iraq War as it unfolds. And actually, what I love about the movie is you go through Thanksgiving, Christmas, New Years, and then you get into the new year. So the Iraq war started in March of 2003. So they sort of telegraphed that, that there's potential conflict looming, and then it's literally Matt Lauer talking about, you know, how impressive it is to see the military force in full action. And of course, we haven't, you know, we haven't seen Abu Ghraib you know, a trillion dollars and a couple 100,000 civilians taken out in the midst of this. So it's pretty powerful to see that from that context. Alright, so we get into the theater audition. So she, she shows us so she Angela's are there. Steven McKinley. Henderson is the father who is also the theatre teacher. And there's a great scene where he asks her about her name."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "27:55",
+            "text": "Okay, Christine, ladybird, is that you're given a Yeah, was it in quote? Well, I gave it to myself. It's given to me by me. Okay. Take it away. ladybird. Everybody says dumped everybody says Don't everybody says don't do it isn't right. Don't did it. Everybody says Don't everybody says don't do everybody says don't walk on the class."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:18",
+            "text": "It was amazing. Like the amount of energy that she put into that was hilarious. Yeah. I love"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:24",
+            "text": "everything about the music, like everything about the theater musical scenes are just fucking gold to me. I cherish them."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "28:31",
+            "text": "Everyone auditioning is perfect. Yes. Yeah. Everyone auditioning is perfect. Yeah, you don't want to pick any of them. None of them. You want to pay. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:38",
+            "text": "that's right. It's great. It's really good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:40",
+            "text": "Really good. And so so the performance is there great. And then after seeing them performing and tools, in particular gives a really great performance. And so she is immediately smitten by this young man named Danny so I do want to ask a question. I mean, I guess I can answer myself based on the timeframe but why is his collar so big? Like his shirt is huge, and his collar is just massive mayhem"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:03",
+            "text": "in fashion."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:05",
+            "text": "What the hell was different than it was a different time."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:07",
+            "text": "I watched The Larry Sanders Show recently which is like 9495 or something to 2000 It is so painful. How bad that wardrobes were in the 90s your high school days. Congratulations."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:21",
+            "text": "I just wore a trenchcoat to high school every day. It wasn't like a problem for me. I wasn't aware of the larger fashion trends at the time. I'd still be fashionable just racking my fucking denim trench coat or whatever the fuck it was."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:34",
+            "text": "Denim trench coat. That has to be a thing that gets me"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:38",
+            "text": "a denim trench coat that would be pretty Canadian. Yeah. No, it was it was like a London Fog like you know tan of course. But I also I did have some pretty good denim jackets as well."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:49",
+            "text": "Never had a denim jacket."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:51",
+            "text": "double denim."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:52",
+            "text": "It's not too late."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:53",
+            "text": "I'm desperately searching. Yeah, both for a leather jacket and a denim jacket."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:59",
+            "text": "So makers vintage. Yeah. So Steven McKinley Henderson is so great in this. So he's like he's teaching improv games. They're like having fun doing like Zip Zap type stuff. And then he's like, this next game is called the first one to cry wins. And he just started, he just falls apart and then apologizes. And it immediately cuts. I love this other girl. I don't know what her name is. But she says,"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "30:27",
+            "text": "I heard that before he became a priest. He was married and had a son at tn who died at 17 of a drug overdose, which maybe was a suicide but my mom says same difference if you're careless with your life. Oh, that's her. Gotta go. Hi, guys."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "30:46",
+            "text": "There's so much just great little moments of dialogue in this movie. Amazing. Yeah. Yeah, just like honest, real things people would say like, away from, you know, when you're with someone safe. You say these things. That"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:59",
+            "text": "scene on the theater scene where they're doing the theater games. So Steven McKinley Henderson is was like a what taught at Juilliard. And this was the one scene that was improv in the whole movie, like the rest of the movie is like very scripted. And this was one where she just basically told him like, yeah, I want you to do theater games with these kids. And they just filmed like, what they got and like, like, you know, the kids were stoked to be doing theater games with him. And like, it was apparently just fucking magic the whole time. And like, it seems,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:34",
+            "text": "it seems like it was great. So that's awesome. That's awesome. So in any high school environment, you orient around homecoming in the fall and prom in the spring. So so we have the homecoming dance. And she's like, really excited and genuinely having fun. She's wearing kind of like a country western, like maybe a Sadie Hawkins type deal. But she goes up and she invites Danny to dance. And he you know, he says heylia and they're dancing and I love sister Sarah says six inches for the Holy Spirit. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:05",
+            "text": "the classic classics, you and I know that as a Jewish boy from the Midwest, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:11",
+            "text": "just remember slow dancing to countless whispers or, you know, save a prayer for the morning after by Duran Duran and, you know, desperately trying to get through that dance."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:20",
+            "text": "It was great, man, what a what a great, they do such a great job capturing high school, I feel that like the set and setting of the movie I feel really works for me. So I guess maybe this is a good point to talk a little bit about the cinematography, because like one of the things that they were going for was there's this line that they that's shows up in the director's commentary and a bunch of the other featurettes where they did that she wanted it to feel like a memory. And so they were going for this very specific kind of nostalgia and like the cinematographer talks about how and this is in a bunch of places that were like, when he first started talking to her, she'd made this jet, Greta Gerwig made this gesture where she's like, I want it to feel like this. And she stretched out her hand where it's like at a distance at a remove. And and when they were working on the pre production of the movie, they were printing out like photocopies of various inspirations from like yearbooks, and stuff like that. And that ended up informing the way that the movie looks because they wanted the film, like the film grain to have this kind of printed look is what she talks about, and what they talk about working on with their colorist. Obviously, the movie was shot digitally, but like they they talk about like sort of in both the lenses they selected and the color timing that they did trying to give it this grain that makes it look like it's a a color photocopy or something that was like printed onto paper."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "33:46",
+            "text": "Yeah, I heard she had wanted to shoot 16 millimeter but couldn't it was too expensive for Yeah, of course, because shooting on film would be so expensive. But yeah, or that's interesting that she wanted to sort of have that look of like, yeah, that age sort of Yeah, like broken down. I like that. That's interesting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:02",
+            "text": "It reminds me of we talked about this with Greg Fraser on Rogue One. He's like, I want it to look like Star Wars, A New Hope, but not like what it actually look like what it what"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:13",
+            "text": "we were like, I think that's right. I think it's so interesting. And I think we've discovered this in a couple of movies that we talked about now about like how, how much like the the the cinematography Yes. But also like the the way the grain and like the color timing, and all these like smaller decisions are like not smaller, but like other decisions after the movie shot, like really can inform you on a subconscious level how you feel about the movie. And it's really, it's really good. We can put in the show notes, but there's a really good indie wire article interview with the cinematographer where he talks about sort of all the color timing things that they did and like how, how, like, how they, you know, certain scenes are meant to be like, kind of keyed more towards like a magenta tone and some are more, you know, more more cyan and like, you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:56",
+            "text": "it's ready to get those scenes in just a second. Yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:58",
+            "text": "Bring it to one Just second,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:00",
+            "text": "why do you love so they have their first kiss, and just her so happy and just like running down the street and then screaming in the middle of the street. Like that's, that's like a classic teenage moment that just rings. So true. Yeah, and riding riding that wave home. She's so excited. And you know, Dad has just told mom that he's been fired. And, you know, mom is feeling all of this pressure. Now everything's on her back, she has to make it work. And then she wants Lady Bird to clean her room at you know, whatever, midnight or something. And basically says that leaving her things like trash, makes people who could hire her dad, less likely to do it. Right. And there's a moment where you know, under this pressure, Lady Bird says to her, don't you wish your mom hadn't gotten angry? Or you know, had just not made a big deal about it. And mom says, my mother was an abusive alcoholic,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "35:57",
+            "text": "and I closed the door on her. So, so good. I've had I've had that conversation with my mom a million times. Wow. Like what you didn't just your mom that you? Didn't you hate it when your mom did this? Why are you doing it to me like, oh, the million times I've"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:11",
+            "text": "had that. I think this is what the movie does so well that I really appreciate it on the second viewing which is like it observes these relationship dynamics without doing too much like it's very economical in terms of how it what it observes about them without like making it without veering into either side, like one like making like a Hallmark movie where it's like, just about like, sort of the psycho logical traumas and stuff like that and the other. On the other side. It's not just like signposting for no reason, I think I think it just does a really good job. Like, you know, you get that, like her mom has this nest of anxieties about status, and like how her family is perceived. And like yet they show her being this incredibly warm person to like, you know, everyone in her life. And she's just like, her anxieties are specifically triggered by her daughter. Because like, that's like the reflection of her. It's just gotta be better than it is. I just loved. I just love that. I think it's also the case, like, this is also where you kind of get into some of the interesting class stuff in the movie, which is like, you know, her mom, and like her mom feels like they are just barely surviving and very poor. Because they're like, sort of solidly middle class in a upper middle class neighborhood,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:28",
+            "text": "right ladybird wants to buy a magazine ad because she wants to read it at home. And she's like, that's for rich people. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:35",
+            "text": "exactly. So she's just very conscious of like, being like, you know, in this in this relation, in this in this status, I really relate to this like, because like I grew up, I grew up in an upper middle class neighborhood where we were like, sort of the solidly middle class. We were in this, like, the solidly middle class development. And so just, there's like, nothing like kind of more American than sort of feeling poor than you actually are. Just because you're you have richer neighbors like you're not actually poor, but like your neighbors are or are richer than you are. And I think they just captured capture that whole thing. So well. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:09",
+            "text": "might have just got your, your your entry quote for the week. So that is true. So speaking at the magenta shots, this Danny and her dancing in the garden, I just I get so it's so dark, but their skin looks beautiful. And I just love I love those together. Yeah. Yeah. She says, you know, you can touch my boobs, right? You can touch."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:38",
+            "text": "And he says, I respect you too much to touch your boobs."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:42",
+            "text": "She says if you had boobs, I wouldn't touch them either. And then he says, I love you. And she says, I love you. So that seat is great. And then they cut to the next morning where she's describing it to Jules. And she says it's normal to not touch a penis."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:00",
+            "text": "It's great. Yeah, this is really great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:03",
+            "text": "So she then goes on to steal the math book, which we're not even going to bother getting into. But I do want to just ask one question. Did anybody else think there was going to be a huge shoe that was going to drop relative to jewels and the math teacher?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "39:17",
+            "text": "The jewels is the friend right? Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:19",
+            "text": "Yeah. Beanie. Beanie Feldstein?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:21",
+            "text": "Um, like that. Like that. Like she was gonna like, the things were gonna go on with them. something untoward was gonna happen. something"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:28",
+            "text": "untoward. Yeah, I thought like they were they were like, establishing her infatuation so strongly, and he seemed like a really, really nice guy. And I just had a feeling that the wheels were gonna come off and something terrible was gonna happen and it was gonna be melodramatic, and I was relieved that it didn't."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "39:42",
+            "text": "Oh, no, I always got that feeling of like, Oh, she's she's barking up the wrong tree like this is not going to she she's young and in love with this teacher and he's just being nice. And I kind of liked the idea that mate, that they're doing it sort of from her perspective as opposed to his or like even the nicest smile which is just him being polite from her perspective takes on this sort of more like romantic feeling. And like, I love that that whole thing comes down when he shows up to the, to the this with this with his pregnant wife and gives her six seconds of talking and then they immediately have to leave. And you know, there was like a discussion beforehand where it was like he keeps bringing up to his wife that this little girl keeps hitting on him and he's trying his best to let her down gently. And you know, that's like a pretty conversation to like, we're gonna go and watch the performance. And then we're out of here. We're going home."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:33",
+            "text": "I just like to Matt's question of like, Did I ever suspect that something was gonna happen? No. Because like, I felt like on such say safe ground with this manager last week. Okay, exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:43",
+            "text": "I'm tainted. Now. See,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:44",
+            "text": "I told you I told you. You watch that movie too many fucking times. And now you think people are coming to take the kids like"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "40:53",
+            "text": "every van every van that he sees now driving through every RV"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:57",
+            "text": "now hold on. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:58",
+            "text": "gotta go see if Sam's okay. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:59",
+            "text": "every every RV has some chinless weirdo inside of it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:04",
+            "text": "It's either it's either Paul or David. But just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:07",
+            "text": "Yeah. Yeah. Alright, so."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:11",
+            "text": "So then we had to dress shopping for Thanksgiving. So she's gonna go to Danny's grandmother's house. And this house is ladybirds favorite house in Sacramento. They had sort of walked by it. And I just love everything inside the house, the Reagan poster, which is amazing. The kids they get stoned after that, and they go to a party and there's a band playing. And I just love this bit where ladybird as the music's playing says, if Danny and I get married, and his grandmother died, I'd inherit the house. Right? And she's like, Wait, what about his parents? Oh, yeah, we'd have killed his parents and his older brothers too."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "41:51",
+            "text": "But yeah, don't worry. We got this. Yeah. It's so great."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:55",
+            "text": "And then Timmy, and then Timmy man."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "41:59",
+            "text": "Of course. He's a bassist. Of course. He's a brooding coarsest. Of course, I because I really, I knew he was in it. And I was like, but I didn't really remember his character that much. So it was kind of like watching it from the beginning. I'm like, Oh, he's one of those. He's like, he's a cool bass guy, which I played bass. So I felt I felt a kinship there. Yeah, and I was like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:19",
+            "text": "I saw this before call me by your name, so I had no like, made no impression on me. I did not remember him at all. I did not have any. I was like, what uh, who did you play?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:28",
+            "text": "I also did not I did not remember him from from this movie either. But I love that catcher. So spiritually aligned with Timothy But they both play bass. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "42:37",
+            "text": "But then he immediately turns into the worst human being"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:43",
+            "text": "just a teenage kid."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "42:44",
+            "text": "I know. I know. I know. I just because he reminds me probably too much of myself. I think"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:50",
+            "text": "there's a couple fun facts about Timothy since he's been introduced. One is the band The band is called love falls in new fucking love."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "43:02",
+            "text": "Correct sir? Pronunciation? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:03",
+            "text": "no false new grade French. He has a great French exploitation. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:08",
+            "text": "yeah. Well, he speaks fluent French. So yeah, that's that's just one of Timothy's fun things. The other is that apparently when Greta Gerwig had Timothy. addition, she told him that she wanted him to grow out as hair because you want them to be like floppy haired in the movie. And like so this is the start of floppy hair. Timothee Chalamet. And like in the commentary, she says like I take credit for that fact that he was me. The fact that he has rode floppy haired to this incredible incredible success is is my accomplishment."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "43:44",
+            "text": "This only continues to prove that she was completely snubbed by not getting a director nomination she clearly understands strong vision strong"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:52",
+            "text": "it's ridiculous. Yeah, totally. I mean also like not to get in the Alaska but this is the year I mean, she got snowed in for a little women but this is the year that she she got fucked by the fish fucking movie. Like no, like this was the year that fucking philia was like, you know, on the agenda fuck that noise It's the feeling of I don't know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:14",
+            "text": "I'll tip my hand like I definitely think between ladybird and Little Women like it's not a question like like Little Women is a far far better film and like a masterpiece by by Greta and it makes me sick that she didn't get nominated and she didn't win. So"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "44:32",
+            "text": "it makes me fucking sick. Parasite one though. So yeah, you know, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:36",
+            "text": "think she I think I prefer Lady Bird as a movie. As we've discussed before, we don't need to revisit sore points. But the the thing that I do, I do think and listening to the commentary for this is like Greta Gerwig is a fucking amazing filmmaker. Like theory. Her theory of cinema is like, she like just and she, you know, there's lots of stuff. There's lots of featurettes of her onset and lots of talking about like division would be like, the way in which she describes what she was trying to do in this movie, especially since it's our first movie is just so precise and like so like clear that it's really fun to just hear her talking about movies. I'm just excited, she's doing more shit. And she's had so much success, watching"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "45:17",
+            "text": "her make such strong decisions. It's like maybe they didn't work for me every single time. But knowing that she like there was a sense that she'd like, really knew what she wanted and was going out and getting it and that, to me is sort of what made me feel so much better about it. The second time around was being like, okay, it's your first movie. This is a lot you're sort of taking on and I think she does such a great job and it just makes me even more and more excited for like whatever else she will be making."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "45:45",
+            "text": "Yeah. Agreed. All right, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:48",
+            "text": "coming back from the party. Still slightly stoned, she ends up smoking clothes with Shelley so can we just talk about clothes and everybody's Yeah, it's for them like"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "45:57",
+            "text": "and Shelley and the greatest character Shelley? That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:59",
+            "text": "such a great that's such a like the clothes thing is just so perfect of like, you know, have some sort of rite of passage of of being an alternative teenager and smoking and smoking clothes. Who amongst us has not has not encountered that moment in life? Oh, in"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "46:16",
+            "text": "low Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:16",
+            "text": "I'm all in AI. Clothes."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "46:18",
+            "text": "But I remember the moment."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:20",
+            "text": "Oh, yeah, dude, we were smoking to jar crumbs. And I figured what the other brand was, but like that, that that was definitely end of high school. And then and then in college for the first two years, for sure. Clubs. Clubs were big."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:34",
+            "text": "I remember I remember I my clothes experience was I went to Spring Fling my freshman year. I went to spring spring at Rutgers University in New Jersey, and the farside was playing. Oh, my God went, which was dope. And we went to some party and like someone gave me a clove and I was like, I almost died. Yeah, exactly. What"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "46:55",
+            "text": "what are they? I mean, obviously, there's cigarettes. I've gotten that far. What like, what they have something. They have something like Menthols, but not menthol."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:04",
+            "text": "They're really sweet. And they have their flavored their flavored cigarettes, but they're they're very, very strong. They're Indonesian. So like, there's all sorts of problems like they don't have the regulations around like not spraying DDT and other toxic chemicals on them. Okay,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:21",
+            "text": "I know they're particularly bad for you, but they do taste delicious. Yeah, delicious death."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:26",
+            "text": "So there's the other moment here is Shelley, the greatest character that catcher loves for us? Great. She does say that she says that her mom has a really big heart. Yeah, and that she had really accepted her in taking her into the family. And I thought that was a beautiful moment. That you know, it's a it's a crack in the armor for ladybird to be able to identify more with her mom,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "47:48",
+            "text": "I just think it's cool, because so often, you don't really you forget the sort of roles of fit like you like inside a family, either sort of roles that sort of get doled out and everyone sort of at some point finds a rhythm. And so you sort of have all these emotions, especially when you're so young, and you haven't moved out and haven't had a chance to like step away from it, that you sort of, oh, you have these sort of specific ideas about who these people are that you live with. And you you don't realize that they're human beings, you know, you just think of them as your parents and your brothers and your sisters. And it's cool that you have this character come in and sort of like show her have this like perspective shift, right? She has, yeah, exactly. She is she's seen, she gets to see it from an outside perspective, and to bring that in and give her that opportunity to be like, Oh, I'm not I haven't even really thought about that. Like, I love that that keeps coming up the idea that like she's not thinking about other people. It's like, oh, yeah, I have to think about other people. She's starting to learn all these things that she's not been doing. It's cool. All right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:45",
+            "text": "so we cut from there to the performance of Merrily We Roll Along so I know nothing about Sondheim. I've watched a decent really not all of them. Now, I don't know anything about Sondheim I've never seen into the woods. I've never seen any of his style."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:59",
+            "text": "That seems like a that just seems like a real gap in who I would understand you to be as a person. I guess. I find that hard done. It feels like almost like an act. I feel like this is put on and you're gonna be like, actually, you"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "49:13",
+            "text": "seem to know you seem to know the titles, which I don't even know. I looked them up. Okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:19",
+            "text": "Also, it was on a poster in the background and said merrily, we roll along. But I love after the performance is over. There's this great shot of Steven McKinley. Henderson sitting there. Edie Edie this is it's actually Jules after talking to the teacher and his wife. She's sort of like standing there and she looks over and there's the hair is the father and he says"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "49:41",
+            "text": "that he didn't understand. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:44",
+            "text": "so bummed so there's a couple things there so Merrily We Roll Along was a big Sondheim flop there was only 16 performances of it and it was like it was revived much later. And like so the they didn't get it is like is it as like It actually, like sort of a real commentary on like that people didn't understand it when it was when it was performed. And it's also sort of sport it's meant to set up the fact that this character that he's playing is going to have this breakdown like this depressive episode. The other thing about this is like this, so there's only the the musical is only shown for like one minute during during the movie, but they shot like, they didn't shoot the whole musical but like, they staged the whole musical and they they like did like there's a feature at where they have like a 10 minute version of it. And like they did they brought in like, like a theater director who was like who had worked on Glee and like they like they like did blocking they did lighting like really went for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:47",
+            "text": "and he's amazing when she like snaps and then like the lights start coming on in the background. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:52",
+            "text": "yeah, they really go for it. I feel like a special affinity for theater kids because like I was not a theater kid but like the debate team and like the theater kids were like sort of CO travelers you know, they were always like kind of you know, their cousins basically in the same social strata the same yeah exactly like the same like very much like you couldn't you know the the cohorts like had we had to align in order to protect ourselves right and and so I really I really respected and like the the sort of the basically the frat that I was in in college like was was just theater kids and debate debate kids and band kids. Oh my God. And so like it was a I have like a special love for for theater kids even though I wasn't one and I just think they do such a great job of like, capturing that vibe of we're putting on a play and it's like the most important thing we've ever done and like there's also something about with theater kids like Sondheim is like talismanic like it's like the most important person in the whole world. And I think they just capture that so they just do that so well."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "51:54",
+            "text": "See I was a theater kid."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:56",
+            "text": "Okay, great. So you got it. This was like your truth so"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "52:00",
+            "text": "so when he when he turns and he's gives that he's so sad it's like they'll never they'll never get it and I was just like I had sort of the the main prof at our school he was an English teacher who ran he didn't run it there was a couple other teacher but he was basically his department when the after school sort of drama thing. And that like that just sent me right back like at the end of our you know, four months prepping and it's over and it's like him drinking wine and he's just so it's so it's it's over and he just went through this whole thing and he No one will really appreciate his vision as much as as much as as much as they deserve to you know, dad was like, That's Mr. Sign Yeah, I miss I miss Mr. Simon so much. He was so busy."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:48",
+            "text": "That's great. I'm glad you share that since we're since we're sharing high school memories that theater kids I actually could have been a theater kid you should have I should have been in my brother was and so it was like a it was in the genes. But in junior high, here's what happened. I was working on the junior high musical as like, backstage. I was like doing like the light headset off. Heads outlet. Yeah, lighting stuff, and which I love doing. And we were doing rehearsal. And like something was like something was wrong with the lighting. And like the theater teacher was trying to correct it. And I like spoke over her and like, countermanded her order and was like, no, like, actually, like, do this, that or the other thing. And like she turned to me, like, was so mad and was just like, there's only one director on this play. And I was just like, well, then I quit the whole business."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "53:51",
+            "text": "That's amazing. Oh, my God."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:54",
+            "text": "That pretty much killed it for me, but I wish it could have been me. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:57",
+            "text": "you're gonna be either you're gonna be like Scott, his nephew in Star Trek to that, you know, he stated his post when the cadets ran now she's like, Get out of here, kid."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "54:07",
+            "text": "That's funny. I have a counterpoint to that. Okay, go out. So I saw I started basically step forward, like three years. So I started in grade nine. And then when you get to your four, that's when you're the they pick a few of the people who have sort of stayed on and carry the torch for all the years and they get to direct their own place. So what they do is drop by and direct it. Yeah, exactly. So you they team up to students. You know, you get like, there's three performances, sorry, three shows. And so there's like six of us, right? So two directors per whatever. And from the word go, I knew I would be directing and from the word go, I had no passion to find a teammate because I was not interested in collaborating, collaborating. So everyone, everyone teams, someone that they liked, and I got teamed up with a guy that no one liked. Like, he was just like the weird kid. And I was like, that's fine. I definitely not even here. Exactly. So we did 1984"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:11",
+            "text": "Oh my god, what version, which was"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "55:15",
+            "text": "crazy. So I did the movie. I basically like rip the script from the movie and brought it in and cry. We got no sets. We had no sets we just had to black risers and everyone was in jumpsuits. Uh huh. And each set would be designed by rearranging those two sharp risers. Yeah, risers or whatever. Lunchtime was like they'd be sitting on them. When he's tortured. We put them together, you know, and he's like, fucking awesome. opened with like, out of tune. Violin screeching door like things open people chanting. It was awesome. Nobody understood it not not a single person understood. But one day during rehearsals,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:57",
+            "text": "catch her sitting in the hallway. They didn't understand that"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "56:00",
+            "text": "they didn't understand it. Maybe that's what it was. I felt myself more than Mr. Simons. But it was like this guy was directing with decided that he was gonna like speak up and make a note. After like, three months, we had not set a thing. And he turned to me and he goes, I think it would be really cool if we use the mute the music from Amadeus, like that. I had just seen it that weekend. And I turned to him and I go, absolutely not. And then I just turned away from him. And that was the last time we we spoke about the play. That was the first time and the last time we ever spoke about the play. That was it. It was just always my plate from the word go. I'd never thought considered him once. And that was the only time he said something and I was like, stop now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:42",
+            "text": "Where is he now?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:44",
+            "text": "He's Denis Villeneuve."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "56:50",
+            "text": "Exactly. Here I am. God is amazing. Yeah, no, that's I always thought that was funny because it's 1980. So not my character, but that was like, This is what I'm doing. Okay, this is my play. God, I love it. Sorry. I'm sorry. I did that. TJ All"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:07",
+            "text": "right. So from the highs from the highest performing Sondheim you know, the whole cast is out there at like a bar or something or, or some sort of like a restaurant or whatever. And there's this great long shot of ladybird as she goes from one bathroom into the guys bathroom because the line is too long of the women's. And she finds Danny making out with another boy in the bathroom. And just her reaction as she walks out is incredible. Oh my god. And then it cuts from that to her and Jules like laying on the hood of their car. Listening to crash into me. And the two of them just laying there singing crash into me and just feeling all the feels was so great."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "58:01",
+            "text": "Okay, I have a feeling of like, IoT, or like, watching it like, it didn't land in a genuine way. But does that did that song land genuine for you? Like I hate"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:16",
+            "text": "Timmy. I hate that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:16",
+            "text": "I hate that song. Oh, yeah. It's also worth noting that that scene, the scene where she crosses into the bathroom, and then finds him kissing the other boy. That's the only handheld shot in the whole movie. Yep, everything else is everything else is is on a tripod. They don't use steadicam. They say why? They wanted I mean, it was part of part of what the reason they had to do it they for that movie, I think for that scene was both like, you know, sort of the emotional climax like the surprise of it. But also they wanted to do the specific crossing from the bathroom from one bathroom to the other and there's just they couldn't Yeah, they couldn't do the track. And then the reason why everything else is like sort of the cameras stationary, you know, is or is on a track is on a dolly is because they want it was to reinforce kind of the nostalgia element of it where it's like everything kind of like has this composed, very considered. Look where it's as opposed to something that's like kind of caught on the run. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:20",
+            "text": "just giving me flashbacks to your description of call me by your name and the fact that it was all shot on 35 millimeter. Yeah, give it that sort of timeless vacation feel. Yeah, that has been the most interesting thing of this podcast, I think is the level of getting into deeper and deeper into the cinematography and the construction of films and how these things work. And especially, you know, getting to watch Danny in movie after movie and Danny and Roger just to see masterclasses of how to do this stuff. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "59:52",
+            "text": "I remember hearing reading somewhere. It's like nothing is ever in a movie frame that hasn't been considered like Yeah, they're taking time to compose each shot. Now, you might have someone who's a little bit less relaxed about it or whatever. But there's everything is there for a reason. And I always found that so interesting. I'm such a visual person as it is that like I love just watching what's happening and how they're, what color choices they're making, why they're choosing to wear this material, why they're choosing that stuff is always so because you have to make the decision. So the decision is coming from somewhere. Yep. You know, at the end of the day. All"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:24",
+            "text": "right, so. So then we have ladybird working at the coffee shop. And so this is our first real introduction of Timmy. He is, of course, reading Howard Zinn's A People's History of the United States, which is a great book, by the way, if you haven't read it, it's absolutely fantastic. She"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:42",
+            "text": "comes on really like money."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:46",
+            "text": "So he comes up and she shakes his hand and he says, that's weird. You shake hands. And they talk a little bit more. And he ends by saying, maybe I'll see you at the dues. And so we go from there to"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:00:59",
+            "text": "the worst. Yeah, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:01",
+            "text": "a total waste of time. I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:01:02",
+            "text": "hate it. It's the worst. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:03",
+            "text": "So seeing that Kyle, is Jenna, the popular girls friend, she decides ladybird, decides that she is going to make inroads with Jenna. And so she kind of pushes jewels aside, which is a beautiful thing to kind of show how that how that can happen. And then, you know, basically, she's referencing hanging with Kyle and go into the deuce. And Jenna says, Yeah, let's do sit up. And then when they get there to the dues, it's a parking lot. And ladybird says, this"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:01:36",
+            "text": "is the deuce. Yeah, it's a parking lot. Yeah. We were in one parking lot. To another parking lot."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:01:46",
+            "text": "That's the most teenagers thing ever. Were also you have nowhere else to go. You just hanging out in parking lots. Yeah, there's,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:52",
+            "text": "there's a good line in the, in the commentary where the timeout, the cinematographer is talking about how cinematic he finds parking lots in high schools, like that, like both of those. And that like Greta Gerwig, talks about how there's something about parking lots in particular that are so like kind of post, like, you know, late capitalism or like, a certain like, kind of like development in the United States, because it's just like, there's these, it's just so much space is given over to parking lots, like there's just so much acreage given over to cars and like we're, you know, in the space that cars take up, that like you creates these new landscapes that are, you know, are very distinct. It's great. They do a great job."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:36",
+            "text": "So they have some great chemistry in that discussion. You know, she talks about having, she like, basically bombed the nerve, the sister Sarah's car. What you do is very baller very anarchist. Yeah, fuck him. Don't worry. I'm not gonna snitch on you. Well, I hope not because I'd fucking kill your family."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:02:58",
+            "text": "Sorry, that was an exaggeration. It's okay. My dad has cancer. So I guess guys doing that for us. Oh, oh, sorry. He's just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:10",
+            "text": "pretty awesome. Yeah, so then we cut to their to her getting her college admissions. She only gets into Davis, and she's super bummed. I'm not going to a school that's famous for its agricultural program."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:22",
+            "text": "This is also where this is also where she like, makes fun of her brother for getting into Berkeley because he's Latino. Yeah, he's like, he's like, I didn't put down my race. I'm sure they couldn't tell me go."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:03:38",
+            "text": "Amazing. The family dynamic. I'm like, I'm such a fan of family dynamics in movies. Like I just love anytime you can just see a family doing being authentically family in their own way. The dad is amazing. He's my dad. That's my dad. Really? No, but like, he might as well that might as well be my dad. He's just like, you know, he's, he knows how to manage big personalities. And that is to keep his personality down. And it's like, and it's like, it's there's a little bit of sadness to that because you know, there's part of you gets this feeling like he has more in him than he's allowed that he allows himself to, to give off, but I love I love him so much. Terrific."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:24",
+            "text": "So So ladybird, goes to Jenna's party. And she sees Timmy there. He's out back smoking. And this is where we have the description about, he's trying as much as possible not to participate in our economy, which is a direct callback to say anything. But they kiss and, you know, she says that she's a virgin, and he says, me too."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:04:45",
+            "text": "Does he say me too, because I didn't. He does."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:47",
+            "text": "He does. He says, he says me too. But then they don't they just make up but then they don't actually have sex. And so she she goes back and she's kind of in the in the bathroom. Room and her mom walks in on her and she asks, you know, kind of in like one of the first vulnerable moments, she says, You know, when is a good time to have sex. And the mom is like maybe college and kind of a little awkward. So like, that's just like an intense moment of have some real talk on both sides to kind of try and figure that out. So we cut from that to Lady Bird getting suspended over the abortion assembly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:25",
+            "text": "Yes, the abortion scene what she says if your mother having an abortion, we wouldn't have to sit through this."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:32",
+            "text": "Fire. Well, the reveal by the woman speaking that that woman was my mother and the whole audience. Oh, yeah, that gasp I mean, I remember we had, you know, like Christian groups that would come in and like, they would do like dance moves, and like gymnastics moves and that kind of stuff. And then they would get together and preach and tell a story or whatever. And every, we'd all be moved and recommit ourselves to Jesus Christ. So good times."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:06:04",
+            "text": "Sounds terrible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:05",
+            "text": "So it's a big fight when she gets suspended. And she basically says to her mom, give me a number. And she says, you know, tell me how much it cost to raise me and I will be back. So we've all been there right now. It's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:06:18",
+            "text": "so good. I mean, it's just like, in the heat of the moment, you'll say anything, and it's like, and, and it's funny, because like, labor is just beginning to grasp what what she's even talking about. Like, she has no real context for what she's saying. And she's just hurling these horrendous words at her mom and her parents. And it's just like, that, she would say, that's such a prick thing, like teenager thing to say, like, give me a number. Like, yeah, like, it's like a quantifiable number that I can just like, write down for you. Right? Yeah. Parent use like, yeah, like you don't know anything about"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:49",
+            "text": "the escalation of going from like, instead of like, you know, that's not reasonable to like, I doubt you'll ever be able to afford whatever the number is, is, you know, when that fights pretty steady, yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:07:00",
+            "text": "My mom's never laid that out. And I probably should have deserved having that line thrown at me at least a couple times. Also, also when the argument is like, it's not yet quite started, but it's bubbling. And they sort of come into the room. And then the way that she like, grabs the dad, it's like, what are you doing right now? Nothing. And it's just like, he's playing solitaire. Yeah, that's all it is. And it's like he's now been, he's like, I need backup. And he's like, Oh, I guess I'm playing backup now. And it's like, he just turns around. And I'm just like, Oh, I've seen this. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:31",
+            "text": "dad's dad. Oh, my God. So she's got to get out of there. And so she heads over to Kyle's place. And so, you know, this is them, watch. This is where they're literally watching the coverage of the Iraq War, and then immediately cuts to them having sex. He does not make it very long. And then she gets a nosebleed. And I just thought that was I thought that was a great scene, both the tenderness and the immediate betrayal that she had to deal with just"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:08:03",
+            "text": "gets up to read that book. I was just like, Oh, my God, that's brutal. She's just like, No, he has no idea obviously, because he's so self centered. What's going on? And like what he's done in his defense? Oh, yes. This I'd like to see go for it. Ah, good luck. In his"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:20",
+            "text": "defense, he did have on his wall, a poster for catalogs that have been produced by LP, the greatest independent hip hop album of the year. 1999. So that's it. Rip cannibal ox like that was incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:37",
+            "text": "That's a good, it's a good it's a good album, and is like a more contemporary music choice for the time as opposed to the older sibling theory discussed earlier."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:46",
+            "text": "I mean, that goes a long way to establishing some street cred for for Kyle. Yes,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:51",
+            "text": "it does. That's but it's also like, I mean, like in 2002, like backpacker hip hop was at its peak in Northern California, because he also had all the anticon music happening locally. There's a big Sacramento hip hop scene. So plus"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:06",
+            "text": "del plus Automator. Cool, Keith, like it was all it was all happening. It's all happening."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:11",
+            "text": "We want to have a whole sub podcast on backpacker hip hop from the early 2000s in Northern California. This episode will not be getting shorter."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:23",
+            "text": "I do want to give a shout out one of my favorite podcasts I'm listening to right now is what had happened was what had happened was the pub the principal Prince Paul interviewed by iron Mike Eagle, and it's a great album covering Prince Paul's incredible entire catalogue has a lot of great music in there and a lot of great stories, so people should check that out. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:42",
+            "text": "is like some real old dudes talking about old school right? The prince poem in an album with Dan the Automator core handsome boy modeling school."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:53",
+            "text": "Anyway, it doesn't sound cool when you say it like that. A"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:57",
+            "text": "couple of things. Now I got a colonoscopy A couple of things to say. I know I know. Space do two pistols, but they were right. Okay, a couple of things about the sex scene, please. One is I love the lines. You're so dexterous with that. Or he she's she complimented them on putting on a condom. Yeah, that's just phenomenal, too is. I didn't pick up on this until the commentary. But she goes to have sex with Timothy after having the fight with what's her face the popular girl. And the end. The girl says I hate because she finds out she didn't live at the houses sheds. She lived. And the girl says I hate dishonesty. Well, can we still be friends? And the girl says, Well, if you're still dating Kyle, then I guess I'll see you around. And then she's like, Fuck, I gotta go. I gotta go seal the deal with Kyle."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:54",
+            "text": "I mean, seal the deal anyways. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:57",
+            "text": "but like that's like in the commentaries specifically set up as like, this is meant to be causal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:02",
+            "text": "So it's more mercenary. damn interesting."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:11:07",
+            "text": "There's so much greatness in this movie. And I love it so much. And there's just so many weird sort of little moments and pacing things. That is really the thing that like, brings it down. For me the most, it just, it doesn't feel like obviously like as cohesively made as like Little Women feels, it just feels but the more little tidbits like that I get, I'm seeing sort of the larger picture of what's going on. And I love that there's so much thought and care that every every scene has. And it's just makes me sad that I don't love it more."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:39",
+            "text": "Hmm. Hang in there. Okay."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:11:41",
+            "text": "I'm here."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:42",
+            "text": "I think I think you're not old enough. I think like you're not old enough to,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:47",
+            "text": "like, get into what year did you graduate in high school?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:11:50",
+            "text": "2005"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:53",
+            "text": "says you're almost contemporary with this movie. Yeah. All right. So."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:58",
+            "text": "So she leaves Kyle's house, it's kind of sad. She sees Kyle's dad has passed out in his chair in the living room as she walks out. And she's just super sad. And there's a great moment where her mom instantly just comforts her. You"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:12:10",
+            "text": "want to do our favorite Sunday activity, I don't have a second shift."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:24",
+            "text": "And suggest that they do their favorite Sunday activity, which is drive the streets of Sacramento and go to open houses. So I just want to call out the soundtrack by John Bryan here. He was the producer on Fiona Apple's title, he also produced Kanye is late registration. His sort of like, his hallmark is like all of these strings and all these really beautiful, complicated arrangements. Apparently,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:52",
+            "text": "apparently, she the movie was done. And then they, they'd she thought she would never get him to be the composer of the soundtrack. And like, so they went, they went to him like sort of on like a as I hope in a prototype thing and got him to do it. So"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:13:08",
+            "text": "yeah, let me just back to that scene, like, I just love so much when they get to have those moments where they get to be loving with each other. Because like, there's obviously so many moments in the movie where they're fighting. And it just makes those moments where she comforts her like just so much more enjoyable. And you just you just feel so much warmth and like she just gets to be the mom and she just gets to be the daughter. And there's none of this other like mental politics going on. It's just them getting to like, embrace, giving themselves the opportunity to embrace their relationship. And I just think it's it's so nice. I just, you know, because you spent I remember specifically, right before going into high school, I turned to my mom and I was like, listen, I just don't think we're gonna get along for the next few years. But don't like don't worry. I'll come out on the other side, and then we'll be friends again. And that's like, really what happened. And, and it's just like, reminds me of those times where it's like, you've just been such a shitty person to the parent your parents, and it's just like, it doesn't matter how badly you treat them. Like, yeah, through your parents, you know that she's gonna love you no matter what. Yeah, I love that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:18",
+            "text": "She ends up getting wait listed for one East Coast school, they very specifically don't show the name and let you know where it is. But it's something in New York, which is exciting. I also love this moment where she's talking to sister Sarah who read her essay. And she says you clearly love Sacramento. You write about it so affectionately and with such care. And she says something like maybe it's just attention to detail. And sister Sarah says that's the same thing. Yeah. That scene is just really really beautiful and is kind of that's like hammering in the nail of kind of the key the key story that will develop through here shopping with her mom They kind of have it out,"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:15:01",
+            "text": "I wish that you liked me. Of course, I love you. To you like me I want you to be the very best version of yourself that you can. What if this is the best version."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:22",
+            "text": "And again, it's like so economical. Like, it's such a complicated relationship that's like done in just such few, like the writing is so good like, and I do think this is like, the thing like, despite my previous Little Women, slander, like that's so good about Little Women, is how economical Greta Gerwig is with the script there. And like all the stuff that's like, not from the book, like or that's like, adapted from the book, that's just like little moments that she just is able to do with four lines of dialogue, it's a real, it's a real gift that she's able to do that. To do that much in our writing. I will"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:56",
+            "text": "say, as somebody who has had a high school student, as a child, it's really hard, there were times where I was desperately just trying to pull out, like, if you could please go to school, do your homework, and get at least a C or a B average, like, everything will be fine, I will be out of your shit and I will not be messing with you. And like having to like have the arguments and pull it out was very, was very challenging. And I'm very thrilled that my daughter, you know, kind of figuring everything out, went to UC Santa Cruz and you know, just has has really gotten everything you know, on the rails and is living up to her potential, which is so amazing. And that's what you want, right? You want your kid to be excited, and motivated and inspired. And it feels like there's just a disconnect sometimes. That is hard to pull that out. Why can't you just want that?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:16:54",
+            "text": "Yeah, because there's so many more vitally important things going on right now. Like whether or not I should kiss the boat, you know what I mean? Like that it's there, your priorities are so out of whack at that time, because it's like, everything else is being taken care of for you. And so you have all this sort of free time to worry about everything else that's going on."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:14",
+            "text": "Jason How's Griffin living up to or letting you down in terms of your ex"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:18",
+            "text": "I was I was just gonna say like 22 months like my struggle right now is like today trying to keep them out of the ball pit that the dog had should and so we had more specific concerns, hygienic concerns. Yeah. In fairness to him and fairness to Griffin, he did a really good job of noticing that the dog had shit in the ball pit and was like looking at the balls and was like, green ball."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:17:42",
+            "text": "Dirty. Phoebe did it."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:17:45",
+            "text": "That's perfect."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:46",
+            "text": "I was like what and Phoebe did it. Oh, dirty. And we were like What do you mean? And we look in and just like shit all over the balls, right?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:17:55",
+            "text": "You're halfway there. You're halfway there. Yeah, and it's dress it? Yeah, amazing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:58",
+            "text": "Sam was like making songs at dinner and singing them like freestyling songs with at almost three years old. I was like, Alright, this is this is working. Prom Night. Who doesn't love prom night. Kyle shows up and he fucking honks from outside for her to come inside. And ladybirds. Dad is like you're not actually going to go get in a car with a guy who honks Are you? And of course she is. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:18:24",
+            "text": "Doesn't her brother say like even you don't deserve that?"
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:18:26",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:18:27",
+            "text": "Oh my god. Oh, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:29",
+            "text": "And so she goes outside Kyle is a total dick. Jenna is."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:34",
+            "text": "She's like a beast suck these people sucks. They're terrible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:37",
+            "text": "And so when crash enemy comes on the radio, and Kyle says I fucking hate the song. She just like puts her foot down. I love it. And then she asked to go to Julie's place where they mend fences and they go to prom. They have an incredible time, the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:52",
+            "text": "theme for the prom, they sort of a target that none talks about previously, the themes that were selected, and the one they selected was eternal flame. And I loved that like they selected eternal flame and then like, what eternal flame, of course, ends up looking like is just hell. I could turn looking like the pits of hell, which is a great a great prom theme for Catholic High School. And like apparently the Greta Gerwig had the whole cast or the whole crew dress in prom. Where what's nice is yeah, when they shot the prom sequences, which is really"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:19:29",
+            "text": "sweet. That's just smart directing. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:32",
+            "text": "yeah, she seems fun. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:34",
+            "text": "I remember Edgar Wright. When he did baby driver they did that long shot they open that that not the chase scene but the the long shot with him dancing and all that stuff. They did that on the first day. And that's like part of Edgar's concept is like you do the hardest possible thing on the first day. And once you do that, everybody's like, Well, fuck we can do literally anything. That's interesting at this point. no sperm. So this other shot is probably one of the best shots in the movie to me the bridge at sunrise. That shot is just gorgeous. Yeah, I do love Lady Bird describing having sex with Kyle and she says, I really prefer dry humping. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:20:16",
+            "text": "Yeah, makes total sense to me is like such a guys have not a clue what we're doing. Not a clue. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:26",
+            "text": "she goes through graduation. And then they have graduation dinner. It's like really fun. The whole family is all together. They're really celebrating and having a good time, until Danny asks about the waitlist. And at this point, mom is just like irrevocably hurt. And just all the scenes of ladybird just like, I'm so sorry, you know, and her mom just won't talk to her. That's the worst when you're in that position, where you have literally just turned your family off, all the way and I'm somebody who dropped out of college my dad cut me off, was not willing to support me at all. I had to just like completely reboot, which ended with me moving from Florida to California and like fixing my whole life. But it's terrible when you have broken that trust, and things are in a shambles."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:21:16",
+            "text": "And even ladybird, like she there's that sequence where she's just like, why don't you talk to me? Like, I know, I'm this. I know, I'm that. And she's like, just laying out all of her flaws. And I think it's kind of interesting, though, because she is doing that. But she doesn't. Actually not she doesn't. I don't think she really agrees with what she's even saying. Like, she doesn't believe those things. Like she's saying all these things that she knows her mom wants to hear. And she's given to her. And it's she's beginning to sort of understand her fail her failures or her her faults, I'm not failures. Everyone's like got these sort of like faults or whatever. And she's sort of just become coming to terms with them. But in that moment, she still doesn't get it. And I love that. Her mom was just like, I'm not doing No, no, I'm not gonna play this game with you. I'm not on to hurt. This is not just like a game where you can get off scot free. Like you're hurting people. And it's not fair. Yeah. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:09",
+            "text": "she gets into a New York School. And so it's airport time."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:22:14",
+            "text": "Thank you for driving. You're welcome. You're not coming? You can't walk up to the Gates anymore, anyway. Yeah, but I'm going to college. Well, data walk into security. Parking is too expensive."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:32",
+            "text": "Oh, it's just heartbreaking. Her mom will come inside, we'll talk you know, won't really talk to her. And the moment where Laurie Metcalf drives off, and it's just a shot of her face as she's driving around and coming back up is just, I don't know. It's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:22:51",
+            "text": "gut wrenching. It's gut wrenching. Yeah, yeah. It's like, you're just watching. You see, it's like, she really gonna do this. She's doing it. She's, she's, she's, she's regretting it and just the fact that desperation, that desperation of like, Okay, move and like, Where, where is the worst place you can be where you need to move desperately and quickly, but like an airport, you know, like trying? Yeah, exactly. It's like impossible. Like, you that's gonna take you forever to get there. And she's just so the desperation and the regret is just off the charts. And that you don't get them reunited by the end of this movie is great. Like, I it kills me. It's quite a strong choice that I couldn't believe that she makes but it's like, Oh, my God, this is it. This is the last time they see each other in person. That's, that's sadness."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:47",
+            "text": "Yeah, but the dad, the dad says she'll be back. And I think that's, I think that's a strong like, he is the rock of the family in that moment. It's his turn. Yeah, it's his turn to help carry that load."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:23:58",
+            "text": "Why do you think they don't have that results? Like, from a story perspective? Like, why? Why not have the moment? Like they? I mean, I guess they do from a distance? Why not have it in person? The Goodwill because she gets the letters and no, right. But why choose the letter as the method from which they reconciles. It takes time. It takes"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:18",
+            "text": "time, right? Like it's not, it's not just going to be one thing, and suddenly it's going to be fixed. She's going to have to go have experiences in New York. She's going to have to live her life before they can before they can get to a true reconciliation. Yeah. I buy it. And I do love. I do love that. There's the cut from the dad saying that and you have all like you're feeling all that intensity of the mom. Lady Bird is upset when her mom leaves, but it immediately cuts to the plane taking off on the runway and you see Sacramento's starting like the journey has begun and I am leaving this shit behind. And so you you get all of that excitement. But she's definitely coming in hot to New York City. What Jason What was your take on that party?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:06",
+            "text": "I like the party. I like the I like the fact that she likes sort of I like that she identifies herself as Christine. I like the whole line about like, you don't believe in God but like you call yourself by a name that like someone else gave you like, I like I like I like I love the way she shows up in New York. And it's just like, yeah, comes in guns blazing basically arrives as a different person. There's also a part of it, that's like, one of the things like just touching briefly back on the airport scene, like they, they talk about, like how the relationship between the, the movie is really a romance. It's like a romance. But the two characters are the mom and the daughter. And it's about like that relationship. And like that airport scene is a classic romantic scene of like someone rushing to the airport to like, catch their lover and like they're gone. Either it works or it doesn't. Yeah. And like, I think that kind of feeds into why she can't go back to her mom. And like, why the New York scene kind of has that feel to it. Which is, you know, like, she's like, she's starting a new relationship. Like she's like, over that other relationship. And like, she's like, looking for love, like a new like, there's a new romance. There's also some details about the cinematography there were like they, they use the different like, sort of feel for for New York to both make it look cooler, but also like crisper and you lose some of like the, you lose some of like the papery feel of the Sacramento scenes. And it becomes a little bit more like ink here. And like, you know, higher contrast in"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:34",
+            "text": "the shot when she's in the hospital after she gets alcohol poisoning. Yeah, well,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:38",
+            "text": "that's really high count. Yeah, that's like really bright. Yeah, really bright,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:26:41",
+            "text": "but gorgeous woman with a kid when she's staring back at the kid with the mom. Yeah. Oh, that's so good. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:47",
+            "text": "So so she's, she's kind of trying to adjust in, you know, to this new life of being there. And she ends up walking by and hearing a church. And she goes into this church, and I just, I love this, the music that comes up the choir singing and in spite of herself, like as jaded as she tries to be, or whatever, she is instantly moved by that. And her she still has all of her makeup like her, her mascara is completely rundown. And she just already looks like this intense New York person that is living life and having these experiences. So I, I love that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:37",
+            "text": "I need to I mean, so this is like part of the movie that I really identify with, even though I'm neither from Sacramento, nor am I Catholic, but like the, the part of the movie, which is like she really felt like she talked there's a part where they say Sacramento is basically the midwest of California. And like I'm from the Midwest, and like, I also like grew up somewhere I always wanted to get away from and yet, like, you know, at some point you have to reconcile with like, you know, you're from where you're from, and like your home is where your home is your home. And like, you know, ultimately this movie is a real love letter to Sacramento and her home and she she you know, that's like where the movie ends is talking about driving through Sacramento. How beautiful it is. And I don't think I've actually reached that point in my life about like St. Louis like I don't actually I don't have that love for where I'm from maybe in time I'll get there but the church for her being that trigger they talked about in the commentary is like church for her feels like home. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:28:38",
+            "text": "so so much is conveyed just with the shot switch, like as a cuts and it's like the church and you're like, she's going home like that. You get that in one frame or one shot. You're just like, oh, okay, she's, she's, she's grasping it. She's going to her comfy place. She's realizing that it's a comfy place. Like she didn't even realize she had a comfy place until right, right until it's there. And it's like, okay, it's the hug I needed. Because my mom's not there. That little boy with the little bandage on his eye, right like that. At least he's got his mom with him. She's not she's on her own. And the next place she goes to she finds herself in that church. It's like, oh, yeah, that's that's the love that she needs that she doesn't have right now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:25",
+            "text": "She gets out our phone, and she says she calls home and she gets the answering machine says, hi mom and dad. It's me, Christine. The name you gave me. It's a good one. Did you feel emotional the first time you drove in Sacramento. I did. All those bends and stores I've known my whole life."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:29:45",
+            "text": "And I wanted to tell you I love you. Thank you. I'm Thank you"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:04",
+            "text": "cut to black. Yeah, it's so great. It's a great ending. And like, they also talked about how like the last of cut happens, right? As she inhales,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:14",
+            "text": "I was waiting for a smile or something like, it's not there. There's no resolution."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:18",
+            "text": "So she says, like, the ending of this movie was written like wholecloth. She said, like, I had this, the end of the movie from the beginning, I knew exactly where it's going to end, it never changed. And which I think is amazing. I mean, she's, I mean, Greta Gerwig, like a very talented filmmaker, amazing writer. Like, I mean, just like to have that kind of vision of the type of movie she wants to make is just phenomenal. And she says, like, you know, I was she was going to inhale. And we're going to cut there, because on the exhale, she's on to some other part of her life like this is now like, she's like, that's another story. And I'm not telling that story. Imagine"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:55",
+            "text": "Christine in college in New York City. Yeah. Just like the the adventures that she that she had like Greta, by the time by 2007 and 2008. She was writing screenplays. And Francis ha was 2012. She's written like a major American Independent Film like she was tearing it up in New York City. Yeah. I love that idea."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:21",
+            "text": "Yeah. Again, like I'm just thinking about like a movie like this. And like how crystal clear it is. It's like one person who pulled together a bunch of collaborators to instantiate this vision of what she wanted to do. Greta Gerwig talks in another feature at about how in French like the name for directors realize a tour, like the Realizer of like the movie, which he likes a lot better than directing, because you're like, trying to like you're the person that's in charge of realizing of instantiating this like vision, and just like how clear that is in a movie like this. Right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:53",
+            "text": "All right, so final thoughts. And what did we learn about dune? 2021? I'm, I'm going first."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:32:03",
+            "text": "Thank god, somebody can. Number one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:07",
+            "text": "Sir Sharon in must play a Lea in dune Messiah, period."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:15",
+            "text": "It's great. I'm for it. Sir Sharon and as Alia good casting Very good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:19",
+            "text": "She would be incredible. That's the third film in the whatever however Sapt ology or whatever. But yeah, I would love to see Sasha and Timmy get back together as brother and sister. That would be phenomenal. Strong,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:34",
+            "text": "strongly supported. Seconded. Motion carried, Denny, you must do it according to Robert's Rules of Order."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:42",
+            "text": "Exactly. Secondly, I thought Timmy here gave us an incredible sneak peek of Paul Maud'dib in doing Messiah. Yeah, just shitty trying to disengage, you know, like, things aren't going very well. And he's like, really cool. And trying to be a little aloof."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:00",
+            "text": "That's great."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:33:01",
+            "text": "I was thinking that I was like, because that's when you like, he stops. I mean, having not read it only listened to your podcast. That's sort of like when Paul loses his shine as being perfect. Sort of in that movie. Right. And that in that total, so it's like, I was like, oh, yeah, right, because he's so shit. I hate to like, Kyle, his character's name is Kyle in this movie. Kyle. Yeah, Kyle's the worst. I hate him. He's the worst. And so I was like, Oh, I think that's in the book. When he becomes like, he loves that sounds like that's perfect. He's ready to go. He's got all angles."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:31",
+            "text": "Yeah. All right. That's my take. This is a four banger for me. I really, like I love this film. I think it's real. I think it's really great. It cannot touch Little Women in my mind, which was like Greta operating on an entirely different level. But I think the craftsmanship and the acting and the script are all beautiful in this film, and I absolutely love it. Great. Catch her. Go"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:33:56",
+            "text": "catch her. Okay, so out of five. This is definitely Forestar for me. And I think it's actually kind of interesting. He said just earlier, but I when we were, I asked you about like, why that doesn't get resolved with her mom right away. And he said, well, because it's gonna take time. And I think the one thing that really bugs me about this movie is a little bit of the pacing and sort of like the way that we move through these moments. And I get the idea. We're going through memories and you sort of you forget the filler, but I feel like the momentum of certain things, just feels off sometimes. Not to keep carrying it to Little Women because it's like, she's allowed to make a movie and make a second movie and let those two things live apart. But I just think she learned so much in the process of making this movie, where she controls her storytelling a lot more in Little Women. Everything feels just a little bit tighter in this movie. Everything feels a little bit looser. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:53",
+            "text": "bet it's the personal I bet it's the personal nature of you know the fact that this is so I autobiographical for her So, all right, so catch her. So we need you to cry as you always do. You know what, it's so fun. Talk about it with your mom. Like, let's let's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:11",
+            "text": "Jason, I love this movie more than when I saw in the theater like this and maybe it's just because of like, you know, stage of life stuff, like expecting a second kid and like, having watched a child torture movie last week. And like, and like also, this movie is like an hour and a half, which I just think is a great length for love. Great length for a movie. And so yeah, like, for me this like sort of made it like, Oh, this is now actually like one of my favorite movies like this is like, this is just I just loved I loved like sort of nerding out on all this stuff. That's like how it looks and like why it feels the way it does. And there's it's just really a it's really a movie that feels very special to me. And I like made me really appreciate how talented a filmmaker Greta is for all the reasons we've already discussed. In terms of Dune. Yeah, I don't know. I mean, I think Timothy, I do wish like I would love to see, I would love to see Greta Gerwig. Again, like, it's kind of going back to the mission impossible thing. I'm like, give Greta Gerwig $200 million. Let's see what happens. Like let's see what you know, let's let her do dune Messiah. Exactly. Like let's see what she can do with like something. Just let her whatever I mean, if she wants to, like, you know, let her give her but just give her all the rope. And just you know what she's working on"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:25",
+            "text": "right now. Barbie, right? Yeah, seriously."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:36:28",
+            "text": "Now, isn't this the history of Barbie? Or is it like, no, no, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:33",
+            "text": "a Barbie in the real world or in the Barbie world or whatever? I think it's I think it's starring Margot Robbie. Yeah, Margot Robbie. And I'm sure they're gonna do something crazy and amazing. But yeah, I had the same reaction. I was like, this is"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:36:47",
+            "text": "okay. So this is like when they announced Okay, so Barry Jenkins, Director of moonlight and if Beale Street could talk has found his way into the top spot of like, favorite directors is to movies move me in ways that I haven't felt in movies in a long time. And I just love him so much. And I'm just always excited to see what he's doing next. Because his vision is so strong. So a similar way."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:14",
+            "text": "So it's a perfect fit for him to direct Lion"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:37:17",
+            "text": "King. So my brain exploded out of the front of my face. And I was like, How is that a thing that's happening right now. And just to hear him talk about it and what he wants to do. And I was just like, okay, cool. But this is kind of blew my mind. I don't understand it. But let's go with it. But that's sort of what you're saying. Which is like, give them give these people these skilled directors an opportunity to do something interesting. And it might actually be awesome. And now I'm like, Well, maybe the Barbie movie is my most anticipated film of 2023 I don't know."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:45",
+            "text": "I guess that ties into the Danny thing which is like if in dune 2021 which is like if Dune is successful. If this movie is successful, Danny Villanova will have carved out like a new corner. He will have like, you know, establish like a new beachhead, where it's like established IP. It's a franchise. He's not going to come back though. He's not going to finish it. He I guess that's probably true. It's I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:08",
+            "text": "don't I don't think he'll finish. I think it will be some other young visionary director and it'd be like, let me pass it on to your establish the book and the look and all that stuff. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:18",
+            "text": "All right. Fair enough. Fine. Nothing good will happen. But"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:38:23",
+            "text": "see, isn't that what you isn't one of those affiliates you really want Jason?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:27",
+            "text": "Think about the feelings. Think about the feelings when Danny got get got handed Blade Runner. 2049. And we're like, Who's this guy? Yeah, maybe I saw Sicario. But you know, like we didn't know"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:37",
+            "text": "we'll give it give it to Gregor give dune Messiah part one two to get an"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:42",
+            "text": "amen to that. No, no. Only only believe me you only need 112 Messiah. Yeah. All right. So so let us please bring this home. Catch her who would Tilda Swinton play in"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:38:54",
+            "text": "this is the greatest segment of all podcasting. I can't wait till this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:59",
+            "text": "not on. Delta is not on Twitter, but she is going to be on the show. When it's gonna happen. She is coming. Um,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:39:06",
+            "text": "okay. So I've got two. Oh, great. I'm sorry, but one would be the mom. Yeah, I think I just think she could just play that strength like and the fact that the mom is a little bit more crass than I think you sort of expect a mom to be in a sort of coming of age maybe. I think that she could sort of own that with a little bit of a mean face. Like she could give that look, you know? And then not her then Shelley."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:29",
+            "text": "Oh my god."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:39:30",
+            "text": "She just doesn't have to say anything. She just gonna give the look love Shelley. I do. She's so because it's like, they give her such like a hard exterior. But you know, I've known enough challies Fo Goths to know like how squishy they are on the inside. And that when she has that moment with the clothes, cigarette or whatever, and it's just like Saturday at that machinist. And I just love that and I think she could give that scene perfection."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:53",
+            "text": "Jason I would ever as the older nun"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:56",
+            "text": "like I just thought that yes, I just thought that now i'd sister say Are officers there?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:00",
+            "text": "I think she'd be great in that. I like I like to, as we've discussed before, I like Tilda Swinton and some ah, yeah. And so I think I think that would be good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:09",
+            "text": "I think there is only one correct answer and that is that tells us Winton would play Winston Smith in catchers production."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:40:22",
+            "text": "Yes, yes. That would be amazing. Oh, God, what I could have what I would have done to get to live only if only you'd had children have loved my soundtrack. I promise you that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:35",
+            "text": "She was no fucking Amadeus. That's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:40:39",
+            "text": "definitely was never ever not one time gonna be that. Never not one time. Oh my god."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:52",
+            "text": "Letters. It's time for letters."
+        },
+        {
+            "name": "Lady Bird sample",
+            "timestamp": "1:40:55",
+            "text": "Great. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:59",
+            "text": "We have no letters. We have one voicemail. Great. As always, I just want to just throw down the gauntlet to every Dune pod listener who is not named Corey. God bless me like Cory, who is bringing us a letter every single week. Bringing that voicemail. That's a heavy burden for him to carry. But he does it because he loves you. And he loves us."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:41:24",
+            "text": "Thank you, Cory."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:25",
+            "text": "Let me cue up Cory."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:41:26",
+            "text": "Here we go. Jump on. It's Cory from Austin. What another exceptional episode prisoners found a great I've never seen it. I'm just like you Jason. I had no clue about his earlier career in these movies. And I really need to buckle down and start watching them prison. Yeah, I'm gonna watch this weekend. I have to see it. I almost wish I didn't spoil it by listening to the pod but it was a really great pod. And yeah, so awesome. The other thing is, ballasts it songs. I don't know, maybe you should perform some that might not be a bad idea. I think we should have maybe a section of every pod of maybe you doing a little number or something. And the other thing is, you know, John Hall, I almost want to start casting him in every movie. You guys are here to along with the grace Tilda Swinton of course, but alright, just a quick one today. Thanks for everything. And I will be tuning in next episode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:42:35",
+            "text": "Nice,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:42:36",
+            "text": "Cory, which is my episode. Welcome. Yeah, I hope."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:42",
+            "text": "Thank God for Cory as always interesting. You can totally imagine Jake Gyllenhaal and the Timothy role and Ladybird. That would be that'd be a no brainer. And Cory also, I believe, right on DM sent us the The deleted scene from Lynch's dune of Gurney playing the bow set. Yeah. Which is amazing. It's rough. It's amazing. It's like it's like a two minute scene of Gurney playing the bow set for liegt kinds and the tradies and Lido. And like the set and it's basically I don't know what stop. I don't know, Matt. You're more of a music nerd than I am. Like, I think it's like sort of like a Fleetwood Mac vibe. Like he's he's kind of like playing like some Blue Eyed Soul basically. I don't know. See this? See, he's like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:33",
+            "text": "that is like some Fleetwood Mac like, you know, Bernie's like writing songs about him. And Jessica, while you know while Leto is sitting over on the side. Exactly, exactly. Yeah. Duncan's on the side. God. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:46",
+            "text": "It's rough. It was a rough scene."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:48",
+            "text": "What is happening? All right, catch her? What do you have to plug what's what's going on?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:43:54",
+            "text": "There's not much going on right now in my life. No. What is exciting, I'm on a new mission. I was watching Criterion Collection videos on YouTube. Yeah. And they do this cool thing where they let X directors or actors go into like a room where they have all of their blu rays and DVDs just on the shelf. And they're allowed to go through and take whatever they want. So it's fun to see like this the turmoil and like, how much do I take given I'm a director and get paid, how like how gluttonous should I be? And they had a Barry Jenkins episode. And he is picked a couple of movies that I love that are a little bit little more obscure that most people don't talk about one of them being fat girl, amazing film Lion King. Yeah, right. And so I am now on a quest where I'm going to be going out of my way to watch every movie that he mentioned. Cool. So I have a new film mission. That was great. Yeah, I'm very excited about that. Nice. It's good to have a mission. Hmm, definitely good to have goals. You know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:02",
+            "text": "I've been so tempted to try and start watching more movies. I spend all my time editing podcasts. And I'm trying to figure out how to spend less time editing podcasts and more time watching movies."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:18",
+            "text": "Well you signed up because he pocket like now you're now you're hosting to pack your podcast. Yeah, your pocket your podcast business has expanded double, double that's 100%"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:45:28",
+            "text": "is on the rise."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:31",
+            "text": "Ah, industries is happening. That's right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:33",
+            "text": "Yeah, revenues. revenues have not scaled with ever there's no revenue."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:39",
+            "text": "All right, I think we did. It was a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:41",
+            "text": "short one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:42",
+            "text": "I thought, I really thought this was gonna be a short one. I didn't"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:45:46",
+            "text": "do and then something right at the beginning. I was like, something's happening right now. We had we had"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:45:53",
+            "text": "like a 20 minute digression about things that happened in high school theater class."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:57",
+            "text": "It's fine. It's fine. It's all it's all good. Most"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:46:00",
+            "text": "of this will not be the edit that he puts out will just none of none of it will be about the movie. It'll just be about us and theaters. Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:46:11",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and catcher for a really fun conversation. Next week, we climb behind the wheel for 2013 Drive featuring a young Oscar Isaac. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries and the episode was produced and edited by me Ah, our artwork is by catcher and our theme music was composed by Toby Foresman of Woodstock Music. Thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

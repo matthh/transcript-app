@@ -1,0 +1,1231 @@
+{
+    "episode_number": 16,
+    "episode_name": "Enemy",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host Jason."
+        },
+        {
+            "name": "proto",
+            "timestamp": "0:18",
+            "text": "I know I like I don't like I don't dislike this movie. I think this movie is fine"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:25",
+            "text": "And by co host of the 70 millimeter podcast, my old pal slim"
+        },
+        {
+            "name": "slim",
+            "timestamp": "0:30",
+            "text": "the face haitch just made was like the most sensual thing I've ever seen. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:34",
+            "text": "On this episode we discussed Denis Villeneuve's 2013 Surreal Jake Gyllenhaal thriller, Enemy. We discuss ambiguity and film storytelling the deeper meaning of Jungian theory and declare that we are not here to spiders. If you're listening to the show, we need your help. Be like new listeners Gen dai EGB and Lil Benny boy and leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, enemy as one of the all time great living podcast producers and tech consultants, you know like what do you think are the five things that are wrong with dunepod's Audio recording so far?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:20",
+            "text": "Is the show is starting now versus the free show?"
+        },
+        {
+            "name": "proto",
+            "timestamp": "1:24",
+            "text": "Yeah, this is it. It's just like come and shit on Dune pad. Specifically matt's production. Tell us what Matt did wrong for the last 20 episodes."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:34",
+            "text": "He has done a great job so far. In my opinion. I've been working I've been working hard. You know, when he listens? I mean, once you cut down that editing time by about 90% Then you're gonna start flying."
+        },
+        {
+            "name": "proto",
+            "timestamp": "1:46",
+            "text": "Yeah, I know. We need them shorter and like tonight's gonna be a challenge too, because we've got a lot of dune news on that's right half obviously,"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:56",
+            "text": "to suit let's see, ah, math, if it's a two hour raw edit. That's about 18 hours of editing haitch right now. If any other editor heard that they probably fall out of their chair. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:08",
+            "text": "no, I have a problem. But I realized actually, I realized this week while I was in like our 14 of euphoria. I actually really like editing. Like it's a fun. It's a fun part of the process."
+        },
+        {
+            "name": "slim",
+            "timestamp": "2:18",
+            "text": "So that's the main thing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:20",
+            "text": "I'm enjoying it too much. Well, slim. Welcome to dune pod."
+        },
+        {
+            "name": "slim",
+            "timestamp": "2:25",
+            "text": "Thank you. It's an honor to be here. Finally. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:27",
+            "text": "We're super stoked to have you here. Slim, the host and the creator of many, many different podcasts, but the most recent of which is 70 millimeter, which started in January. Yeah, this year. Not too not too long ago. Yes. It was incredible that no one had ever done a movie podcast before. But you guys broke new ground."
+        },
+        {
+            "name": "slim",
+            "timestamp": "2:47",
+            "text": "We saw a space that needed to be filled. And we saw an opportunity to innovate. Yes. And we made that happen and things are going pretty well. We're pretty pumped. It's fun to talk about movies as you probably you guys probably know every week as I listen to talk about watch movies. It's fun. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:06",
+            "text": "you guys are a little more hardcore on letterboxed and rating. And, and but it's it's been really great listening to your podcast and of course, our listeners on Dune pod know your partner in crime protolexus, who's been on our podcast many times one of the cofounders of the original Dune pod. And then so we are discussing tonight Denis Villeneuve's enemy 2013 film starring Jake Gyllenhaal and Jake Gyllenhaal. But next week, 70 millimeter month continues as we have your third living host of 70 millimeter famous Star Wars artist Danny Haas."
+        },
+        {
+            "name": "slim",
+            "timestamp": "3:47",
+            "text": "I directly correlate all popularity for 70 millimeter to Danny's art. And we've tried to lean in as much as possible to the artwork he makes for those episodes. So there it's beautiful art. Yeah, we just started a print shop because we ended up getting a lot of requests for people to buy the art. I saw that that's awesome. Not to toot our own horn, but I don't think a lot of podcasts do custom episode artwork, let alone the art he produces. So we're pretty lucky that he has the time and desire so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:13",
+            "text": "the movie Danny's coming on to do is Rogue One A Star Wars Story, which is shot by Greg Fraser, who is the director of photography on Dune as well as the new Batman film."
+        },
+        {
+            "name": "slim",
+            "timestamp": "4:28",
+            "text": "Next to last Jedi probably the best look yeah, IMO. Yeah. Star Wars movie. Yeah,"
+        },
+        {
+            "name": "proto",
+            "timestamp": "4:33",
+            "text": "I think that's right. It's the same thing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:36",
+            "text": "So yeah, so we're very excited for that for next week."
+        },
+        {
+            "name": "proto",
+            "timestamp": "4:39",
+            "text": "He's also the one co host who doesn't have a like handle like he's unless Danny Haas has a handle for something else. Like I like I remember on the first dune pod with proto lexus and haitch. They were like, so what's your what do you what do you go by and I was like, my name is Jason But what do you prefer Jason Goldman or something else is like, I don't have like, I don't have like a cyberpunk podcast handle"
+        },
+        {
+            "name": "slim",
+            "timestamp": "5:07",
+            "text": "it. When I first started podcasting, that was always something that I kind of also leaned into, which was like, nicknames or something to remember someone by. And I think that might be coming from like my pro wrestling fan hood background where everyone kind of had a thing smart. And it was like, ingrained in you that you remembered that person. And that's just something that always stuck with me. And in any kind of like podcast production that I've done. For better or worse."
+        },
+        {
+            "name": "proto",
+            "timestamp": "5:31",
+            "text": "That's great. That's smart. I've never had any nicknames at all, except for my first or last name. But I did I was given a cyberpunk nickname in my early 20s by a friend of mine who called me double density, which is not my favorite"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:46",
+            "text": "sound like five and a quarter inch floppy double density discs."
+        },
+        {
+            "name": "proto",
+            "timestamp": "5:50",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "slim",
+            "timestamp": "5:51",
+            "text": "That is some nerdy ass right there."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:53",
+            "text": "That was a time that was just before slim was born."
+        },
+        {
+            "name": "slim",
+            "timestamp": "5:58",
+            "text": "I remember floppies I'm not that young. Okay, I use floppy drives. I remember buying a CD burner for my Hewlett Packard pavilion. Tower."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:05",
+            "text": "Oh, yeah, I used to sell those. Oh, wow. At Whole Earth access copying"
+        },
+        {
+            "name": "slim",
+            "timestamp": "6:10",
+            "text": "DVDs copying CDs. That was a that was a crazy time. Without"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:16",
+            "text": "any further ado, let's get into dune news. Would you like to know more? Yeah. Today"
+        },
+        {
+            "name": "proto",
+            "timestamp": "6:23",
+            "text": "was kind of a big one. So much June is I know. So let's just go ahead"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:27",
+            "text": "and start with the official trailer cold takes. We now have had many hours and we have recorded our reaction podcast which got released about two hours ago. So if you're listening to this next Wednesday, go back and listen to that for the hot takes. But let's start with slim. What was your take on the trailer? What did you think?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "6:48",
+            "text": "I think it looks really good. I'm not a I've never read the dune books. I have watched the dune movie, the original."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:58",
+            "text": "You were like really? You're"
+        },
+        {
+            "name": "proto",
+            "timestamp": "6:59",
+            "text": "not a fan. You're not a fan."
+        },
+        {
+            "name": "slim",
+            "timestamp": "7:02",
+            "text": "We like stars. On my letterbox."
+        },
+        {
+            "name": "proto",
+            "timestamp": "7:06",
+            "text": "There's a lot of Kyle MacLachlan slander on that pot there was"
+        },
+        {
+            "name": "slim",
+            "timestamp": "7:11",
+            "text": "so I that's that's my dune lore outside of listening to this podcast. I don't have any kind of emotional connection outside of Timothy shall amaze, riveting dynamic performance and Little Women, which I think got some unneeded negativity during that episode."
+        },
+        {
+            "name": "proto",
+            "timestamp": "7:29",
+            "text": "And we're getting into it."
+        },
+        {
+            "name": "slim",
+            "timestamp": "7:32",
+            "text": "But the trailer looks good. I'm excited to watch it. My only hot take is that I'm sort of worried in today's climate, that it's just going to be a total bust for Denis and friends. I mean, it's gonna make a lot of money. And coming up this year in like two months. So I"
+        },
+        {
+            "name": "proto",
+            "timestamp": "7:48",
+            "text": "can't it's I think this is a good subject of discussion, which is like, the business concerns and the marketing concerns of this movie. Which like, I got pinged by a bunch of friend friends of mine who are like, you know, not doing frat fans, but like, No, I am right. Okay, I saw the trailer. I have no idea what this is about. But I like that it's got a lot of stars in it. Like there's a lot of people in this movie. I know who resonated the most like which stars really hit. So like, it was funny. My friend Cody texted me and was like, he's like, you know, this movie. Like, what I saw the trailer I have no idea what this movie is about. But it reminded me of that Patton Oswald skit, and Parks and Rec, where he's goes on he does the Star Wars filibuster. And he's just like, you know, he's just like layup is we don't know where she is. But she's being chased by Bobba Fett and then a portal opens and the X jet comm that X Men twin jet comes through. And they're battling the TIE Fighter through"
+        },
+        {
+            "name": "Patton Oswald sample",
+            "timestamp": "8:42",
+            "text": "the X men's Quinjet. That's right. What we did was back on Earth, we showed him gathering up all the heroes, but we didn't see him gearing up the exponential. Oh my goodness. Now Wolverine is going to be there now Cyclops gonna be there. So the Quinjet comes through. Luke gets in his X Wing to go out and meet them. And they engage in this awesome Star battle. And it looks like the Quinjet actually is going to shoot Luke down. And suddenly this volley of lasers comes in. And what comes flying in is we think it's gonna be it. We think it's gonna be the Millennium Falcon, just like in Episode Four when he comes in and saves him during the Battle of Yavin. But no, it is slave one that tried Boba Fett shit."
+        },
+        {
+            "name": "proto",
+            "timestamp": "9:23",
+            "text": "He's like, all I know, is that like Aquaman and Santos are in this movie. So that seems kind of cool. So yeah, there's just like, it has like, it has like big stars. And I think that's what people took got. And the other the other takes I heard from non are lesser fans is like, Oh, it feels like a young adult story. Like it's like two, you know, it's like two kids who are trying to be together against all odds or something. I was like, Oh, I don't know. I don't know if that's it. But I think it's I think how they marketed this movie is gonna be a real challenge because I don't think people from the trailer will get what Dune is actually about. And so I don't know if that will will drive interest they might just have to drive it on the star path. Our that does feel like it's gotta be star power alone"
+        },
+        {
+            "name": "slim",
+            "timestamp": "10:03",
+            "text": "at this point. I mean, if anyone read a set of brief synopsis on the movie itself, they might be more turned off than the trailer. So I'm wondering what they'll reveal in the trailer. And you know, it's dicey, dicey play for them, unfortunately,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:19",
+            "text": "I feel like it's it's two things, there's complexity in the work is the first piece. And then the second is just to COVID. The backdrop of that, right. And so I was making the case in the slack today, as we were discussing this, if you're Warner Brothers, you have one of the all time premier pieces of intellectual property, like this is the best thing ever. You started working on it three years ago, it really sucks that there's a global pandemic that's happening. And the and the box office is not going to be as big as it might have been. The question is, what do they do about it? Right,"
+        },
+        {
+            "name": "proto",
+            "timestamp": "10:52",
+            "text": "right, I think they shouldn't just do the standard thing, I think they should take a risk with, like how they distribute this movie, because I just don't think it's box office is going to justify the cost that goes into it. And I very much want them to be able to justify the cost of making the second one. Otherwise, it's gonna be one of the great movie disappointments of all time. And so like, by creative I mean, you know, this movie I don't I have, like an entrenched fan base, like find something to sell to that fan base, that is a premium experience that they will pay for, like, find some way to like, give like, you know, make charge people 30 $40 to see this movie like at the same time it comes down theatrical release and you get like something for doing it. I don't think solely relying on the box office during a pandemic is a sound strategy because people are not going to be going to the movies in December. Yeah, I"
+        },
+        {
+            "name": "slim",
+            "timestamp": "11:48",
+            "text": "would. Because I always relate this back to his blade runner to performance like people love that but like barely anyone enough people came to see that and like a three hour sequel to Blade Runner so they think they like Miss judged the amount of people that were excited to pay money to see that. So I wonder if the same thing is gonna happen like that's why there's so many notable stars in this. I would love for them to just be like bait just bail on theatrical put it like, put it on. Yeah, whatever happens a warner brothers who said Yeah, Matt. Yeah, like put it on HBO max or something like make it in app purchase? I don't care."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:23",
+            "text": "So we're seeing Yeah, we're seeing right now. That was the studios trying both right. So Disney doing Mulan on 70 millimeter tomorrow night. They did it exclusively as a rental for 30 bucks. Tenet is exclusively theatrical and did 20 million in the US last weekend. 73 million globally so far against a $200 million budget. I think the answer is you do both. You put it out theatrically and you sell it on day one for 30 bucks or whatever. And you just you try a hybrid? We"
+        },
+        {
+            "name": "slim",
+            "timestamp": "12:53",
+            "text": "were talking in the earlier and part Alexis. He thought this movie was coming out next December. So it's not it's like it's right around the corner. I feel like the Box Office Outlook for this movie is so bleak, unfortunately. And they have like like you said the second movie riding on the on this movie. You know the performance of this movie. Monetary wise. I don't know. Can we?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:15",
+            "text": "Can we get a GoFundMe going for Warner Brothers? When they need it?"
+        },
+        {
+            "name": "proto",
+            "timestamp": "13:19",
+            "text": "We need $200 million. Please help please help my studio. It's sick. Please clap."
+        },
+        {
+            "name": "slim",
+            "timestamp": "13:28",
+            "text": "Someone help Warner Brothers, please. All right."
+        },
+        {
+            "name": "proto",
+            "timestamp": "13:30",
+            "text": "I don't know man. I they should I would just like Warner Brothers. I know you listen to this podcast, legendary. I know your big dream pod listeners. Try something creative. Don't just like say Well, let's see what happens in the box office. It's not gonna work. Like you can't just count on this theatrical. Like you can't just count on the theatrical release of this film. You"
+        },
+        {
+            "name": "slim",
+            "timestamp": "13:48",
+            "text": "could get Timothy on this podcast if they're gonna think about getting creative marketing wise. There Yeah. How could do not get someone from the cast of Dune on this won't do it"
+        },
+        {
+            "name": "proto",
+            "timestamp": "13:57",
+            "text": "for free. Like we don't have to be paid by Warner Brothers or legendary we'll just we'll tell people Yeah, that there's a lot of money in it. That we got paid like right $500,000 To do we got"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:08",
+            "text": "a big audience. There are a lot of people listening to dune pod that you know are ready to get ready to get queued up so call us all right, well, listen, shall we? Shall we get down to business? Yes. All right. Enemy is a battle against our own nature and the choice between security versus excitement. Adam Bell is a mild mannered history professor with a beautiful girlfriend. Though he seems listless and exhausted by his repetitive existence. Adams life changes when he notices that an actor in a film he's watching looks exactly like him. Shocked and sad. Garrett Adam locates and approaches Anthony, his seeming doppelganger. Although they look and sound identical, Anthony is charming, funny and explosive. While Adam is shy, afraid and weak. Adam unravels as he has drawn deeper into Anthony's life. And as Anthony begins taking over his will Adam find his own independence, or will he be trapped as just a reflection of his own? Enemy?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "15:32",
+            "text": "One an intro."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:32",
+            "text": "There we go. That's great."
+        },
+        {
+            "name": "proto",
+            "timestamp": "15:35",
+            "text": "That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:36",
+            "text": "I so slim. You had seen this film before?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "15:39",
+            "text": "Never, never this and prisoners are in my denis blind spot. I think Hugh Jackman's have not not seen it. I think I might have been Roger de pushed away from it. Just because I heard there's some sketchy subject matter in prisoners. Yes. About maybe about kids or something. So I put that to the end of my watch list. Maybe. So this was this was 100% My first viewing of this movie, I knew nothing about it going in. Same"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:07",
+            "text": "Yeah, I watched it a couple of years ago, and found it like, fascinating and also just completely confusing and ambiguous. So it was fun to come back and revisit it for a second time and I will be interested to get your takes on it. So just quickly cast and crew we have Denis obviously and Jake who they work together on prisoners. I was really bummed actually that Jake is not in dune I thought he would have been a perfect Thufir Hawat. Or or Duncan Idaho. I would have loved to see Jake, ."
+        },
+        {
+            "name": "proto",
+            "timestamp": "16:36",
+            "text": "Maybe he'll be Feyd"
+        },
+        {
+            "name": "slim",
+            "timestamp": "16:41",
+            "text": "the face he has made was the most sensual thing I've ever seen. "
+        },
+        {
+            "name": "proto",
+            "timestamp": "16:45",
+            "text": "Yeah he was thinking of that mermaid bikini scene."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:49",
+            "text": "It was also featuring production designed by Patrice Vermette, who worked with him on this and arrival and Sicario and dune. So a lot of connective tissue tissue there so this film starts out it's a very so we'll just you know will attempt not to spoil right out of the gate to the extent it's possible for us to understand."
+        },
+        {
+            "name": "proto",
+            "timestamp": "17:11",
+            "text": "The guy fucks a spider."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:14",
+            "text": "good start but it starts with a voicemail from from his mother saying that she's worried about him and asking about his apartment. How can you live like that? And he's just sitting in his car. Then you have this quick shot of Helen pregnant sitting on the bed. And then we go to the quote, chaos is order yet undeciphered. So"
+        },
+        {
+            "name": "proto",
+            "timestamp": "17:38",
+            "text": "the quotes like from the book, but the the the the book that the movie is based on? I think like having I think is about a little Rossellini's voice is pretty immediately recognizable. To anyone who's seeing a Canadian arthouse film, probably. And I think when you hear the first spoken dialogue in the film, being Isabella Rossellini, followed by naked woman, followed by a quote from a book in another language, you're kind of being given a pretty clear sign of what you're in for here. I mean, Isabella Rossellini in and of itself was kind of like okay, like there's gonna be some fucking like, you know, psychological, Jungian shit happening in this movie. And, you know, let's live let's get ready."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:26",
+            "text": "So we go from there to this incredible shot of this private club. And we have Anthony walking down the hallway. And he just immediately looks smooth. So we saw we saw Adam from behind the car shot we saw his maybe his eyes and the reflection but then very quickly, we see Anthony who is just a suave motherfucker in this, you know, all black suit. And he walks in turns a key that he that he pulls out to go into this room that is just filled with a bunch of creepos watching this sex show. You know, slim, what was your instant reaction?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "19:03",
+            "text": "I don't know what I was getting into with this movie. I was just what is going on? What is this sex club? What am I going to be watching for the next 90 minutes. And then a spider gets revealed and likely stepped on by some scantily clad nude woman in high heels. And I was like, What is going on in this movie right now?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:23",
+            "text": "Was your wife sitting next to you? Or she was"
+        },
+        {
+            "name": "slim",
+            "timestamp": "19:27",
+            "text": "I think I did not watch this after work. I might have had this on maybe the late stages of the day. So I started it so I didn't have to worry about my son running in Right, right. Yeah, I didn't. I didn't know what was going on. And that was kind of sort of my vibe. Probably for the first half, three quarters. This doesn't feel like a Denis movie to me. Like in my opinion. This is like this is right before Sicario and then you kind of get to see some more Denis flair, I guess which a lot of it is due to Deakins. Yeah. But this was like hard for me to get into it first, like, this doesn't remind me of any of his movies that I've seen before. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:06",
+            "text": "It was definitely confusing, right. So it throws you off balance. And I do agree it's it has some elements of the grounding in terms of some of the visual aspects of it. But But I agree, it definitely is a much more kind of theoretical and surreal film as opposed to the others that he that he's made. "
+        },
+        {
+            "name": "proto",
+            "timestamp": "20:23",
+            "text": "To me, it was just like, oh, like, this isn't going to be Sicario or, you know, Arrival. This isn't going to have that kind of naturalistic filmmaking that you see in those like in terms of the story or the way it's put together. This is going to be much more of a lynchian movie. Where it all Bailey Yeah, it's very like that was immediate. I was like, it's blue velvet and Mulholland Drive. Like where it's it's immediately the surrealistic themes. And this like everything slightly uncanny. But also what year was it? Seven? Did they ever say? So I was wondering that too, because he goes to the DVD store and like, it's like not streaming and I kind of just chalked that up to I kind of just chalked that up to like it was like late. Like he didn't have a streaming. He didn't have Netflix yet or something."
+        },
+        {
+            "name": "slim",
+            "timestamp": "21:11",
+            "text": "Right. It all it also looked like he went into a VHS shop. Yeah. Like when he was walking through the aisles. It looked like a retro VHS, but it just almost made me feel like it wasn't retro, because when he watches the movie, he plays it on his laptop, and it looked like it was like 1998, Windows XP or some bogus something like that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:31",
+            "text": "It was like a mission Mission Impossible. You know, custom interface on our pan and plane. Well, again,"
+        },
+        {
+            "name": "proto",
+            "timestamp": "21:37",
+            "text": "like all the parts of it that felt slightly off like slightly, like kind of just like, you know, surreal or kind of tilted out of reality a little bit like to me was like the immediate clue of like, okay, this is like a surrealistic psychological movie in which like, the things that are happening are not literal. And like so the other reference besides Lynch is Eyes Wide Shut for me where I'm like, okay, like, you know, this is like this is Kubrick built this whole set of New York to make it look like New York, but like, the set doesn't work geographically. There's these weird tricks in it, because it's supposed to be a dream New York, it's not real New York. And so it's inherently dealing with the subconscious, like, you know, the subconscious ideas, which then to me was like, kind of like the way into the whole movie. Because anytime a dude is making a movie with subconscious, young in themes, it's always about adultery. It's always about like, wanting to flog someone outside of your marriage, that is, like, legitimately, like, the The one exception to that is Mulholland Drive, where it's the protagonist is a woman, but like the, like, in general, like whether it's, you know, like a, whether it's, you know, Eyes Wide Shut, or whatever it's about, like the constraints of kind of marital morality and how they feel binding to the dude making the movie. Yeah, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:51",
+            "text": "we kind of hit this, I just want to quickly cover you know, it's established, I think it's important, Adam kind of has this life where he's teaching classes, he's a history, Professor,"
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "23:02",
+            "text": "control, all about control. Every dictatorship has one obsession. And that's it. How do they do that? Lower education. They limit culture, censor information. They censor any means of individual expression. And it's important to remember this, that this is a pattern that repeats itself throughout history."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:34",
+            "text": "And it does quickly to your to your point Jason, it establishes you know, he he teaches he goes home, his girlfriend Mary who is beautiful comes over, they have dinner, they have sexy times and then the day seems to repeat again. It's the same lecture about control when it was great to have that this is a pattern that repeats itself to say that again is the second time with extra weight and then same dinner same business and it's it's really triggered when one of the other professors in the lounge suggest that he watch a movie called Where there's a will there's a way I"
+        },
+        {
+            "name": "proto",
+            "timestamp": "24:10",
+            "text": "love the the close up of Jake Gyllenhaal. Right before that Professor suggests the film there's a really tight shot of Jake Gyllenhaal kind of looking, you know, on we laden or something, but like it's, uh, he really is doing a lot with just his face. And"
+        },
+        {
+            "name": "slim",
+            "timestamp": "24:26",
+            "text": "even like, before that scene, his apartment is one of the most Ely lit apartment apartments. I would be having headaches constantly having dinner with this man as as his girlfriend, get some lights in that apartment, please god yeah, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:39",
+            "text": "a Wayfair what's going on? Around the Horn. So So Adam, he rents it. He goes to the to the DVD store, he gets it and then he watches it. And they sort of cut to the movie being over and him closing it and he hasn't had any reaction like nothing. Nothing happened there. Except that when he goes to bed he ends up getting aggressive with Mary kind of tries to wake her up and hook up. And she does not like that. And she tells him to stop and then she leaves. And you immediately have this smash cut where we're inside the movie."
+        },
+        {
+            "name": "slim",
+            "timestamp": "25:12",
+            "text": "And that was a weird scene. I didn't know what was going on. It felt like I was kind of like, it took me a while to realize that this is a dream sequence or is this, you know, because he's in the movie, like in the dream, you might think it's a dream where he's like putting himself in the movie, but he's actually watching it. I think at that time, or maybe it was a dream and then he rewatch it right after he sees"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:34",
+            "text": "himself like they show him as the bellhop and then he wakes up. And then he goes out and he grabs his laptop."
+        },
+        {
+            "name": "slim",
+            "timestamp": "25:41",
+            "text": "And he rewinds a DVD around the audio that DVD twirling around in that disk drive. The audio on this movie was actually really, really fantastic. I don't know what it was but him in his car, him opening the door to his car. They'd spent a lot of time in the sound design of this movie, and it really paid off. But yeah, him seeing himself in the movie was was really cool. Like, where do you even start if you see like, you know, presumably a twin have some kind of view in a movie. I thought that was pretty cool."
+        },
+        {
+            "name": "proto",
+            "timestamp": "26:11",
+            "text": "And notably, he holds up a photograph of himself against like the image of the bellhop in, in the movie and the photographs like torn in half. Like it looks like a photo you'd have if you'd broken up with someone. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:24",
+            "text": "wonder if that will come back into play later. Yeah, and maybe"
+        },
+        {
+            "name": "proto",
+            "timestamp": "26:27",
+            "text": "it maybe it will."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:30",
+            "text": "That shot there when he's standing in his apartment. And he's kind of freaking out. He's scared to look at the laptop and to find out more. And there it's a total deacons shot. And I think this is just after prisoners when Danny worked with deacons."
+        },
+        {
+            "name": "slim",
+            "timestamp": "26:47",
+            "text": "Yeah, there was some some I like I said earlier, it's a very dark movie. Like if your TV or your monitor doesn't really pop those colors you're in for a long viewing. Yeah, I had that problem. But the way that they did use the, the way that they did use the light I thought was was pretty well done. And it's a very yellow movie. The palette using this film is continuous throughout the entire thing. Totally."
+        },
+        {
+            "name": "proto",
+            "timestamp": "27:09",
+            "text": "One thing we forgot to mention is in the video store, the song that's playing is called the cheater. And it's about guy who can't control himself from sleeping around. Kiss you. Nice want to know what this movie is? Yeah. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:23",
+            "text": "Adam starts to freak out. He can barely work. He's like having a hard time concentrating. And he decides to go to the casting agency. So this is one of the one of those awesome shots of the city on the way there. And I definitely felt like it was a proto 2049 shot in terms of the look of it. And he basically gets in. He's recognized by the security guard there who calls him Anthony. And He bluffed his way and basically picks up Daniels mail and finds out that hits his name and his address. What do you think about that him with the sunglasses? You know shopping for the sunglasses? And then and then doing the"
+        },
+        {
+            "name": "slim",
+            "timestamp": "28:01",
+            "text": "slap him around a few times? Yeah, I just felt like he was going to be arrested at any moment during this entire scheme. Like he couldn't have been a worse liar. Yes, things in any scene."
+        },
+        {
+            "name": "proto",
+            "timestamp": "28:10",
+            "text": "I love what he's like, like, yeah, maybe six months or longer."
+        },
+        {
+            "name": "slim",
+            "timestamp": "28:17",
+            "text": "It's I mean, Jake did a great job as playing two characters. You know, like this kind of bumbling, anxious, zilch, who has never done anything like wrong in his life just plays by the book. Like he did amazing at that. And it really hit me kind of later in the movie when there's, you know, they're showing it together or vice versa button. He"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:36",
+            "text": "did great. Totally. So I do have a note at this point. He goes to the apartment complex, which is like a super nice apartment complex for Anthony's place. And I just have a note that says, Can we talk about Jake's beard for a minute? Hmm, like that is lush. It's"
+        },
+        {
+            "name": "slim",
+            "timestamp": "28:51",
+            "text": "a thick beard almost makes him look like he's out of shape. Because I guess I'm used to seeing him as Mysterio. Recently. Yeah. Like it made him look like he really put on weight. But it's probably wasn't even the case at all. No."
+        },
+        {
+            "name": "proto",
+            "timestamp": "29:01",
+            "text": "All right. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:02",
+            "text": "Adam calls Anthony and his wife Helen picks up the phone. And yeah, he is like, super awkward, as you describe slave, like could not be more of a buffoon in the midst of this. And she immediately thinks that it is Anthony calling. And she's kind of really playful with him and she thinks he's doing a joke. But there is this moment where it turns and she immediately gets freaked out. And, you know, she says, Who is this? And he just hangs up."
+        },
+        {
+            "name": "slim",
+            "timestamp": "29:33",
+            "text": "Yeah, Helen was Helen was great in this movie. Helen was fantastic. The phone call scene the scene where she eventually goes to confront him at his school. Yeah, look at him. And then later in the movie, man, she was fantastic. She arrives"
+        },
+        {
+            "name": "proto",
+            "timestamp": "29:47",
+            "text": "at dawn. She's from she's Canadian. Really great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:50",
+            "text": "So Adam calls back and Anthony answers and I love this moment, Adam. The first thing he says is this is Anthony. And then he says this is Anthony. Claire, isn't it as a question mark, but it works completely as the double entendre for the question mark there. And so that's, that's where you have, you know, Anthony hangs up on him that calls him back. He says, This is crazy. Your voice sounds just like mine. He says he's sorry. And then we switch over to Anthony's side of the conversation for the end of that and him and hanging up and then telling Helen that this guy sounded like a stalker."
+        },
+        {
+            "name": "slim",
+            "timestamp": "30:25",
+            "text": "Yeah, you kind of like are introduced to the Anthony character, because he had some, you know, infidelity. And she thinks that it wasn't a stalker. She thinks it was maybe someone's husband. You're lying to me."
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "30:38",
+            "text": "You're acting crazy. I'm not crazy. Who was on the phone? I told you. It was a man who's on the phone. Are you seeing her? Helen? I don't want to get into this. Are you seeing her again? Do you need to get some money? Let's go get some money. And I don't want to get any. It was a man. What do you think it was a jealous husband? Yeah. I don't want to get into this."
+        },
+        {
+            "name": "slim",
+            "timestamp": "31:06",
+            "text": "And it kind of just shows you that their relationship is like pretty like I guess like near Shambles or hasn't really fully healed yet. And there's a he like, runs to the bedroom. And I guess writes down his information to call him back. Right. So he's still hiding something from her. Even though he was telling the truth about the stalker, he's still hiding something he wants to connect with this crazy, alleged stalker that might be his twin."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:30",
+            "text": "Right? And this is kind of where like, none of the characters reactions to like discovering this, like, double situation. Really make sense. If this movie was literal, like if this movie was taking place in reality, and like, you know, like, if you discovered, like you had a double, would you like do this whole weird, like, kind of detective thing? Probably not. You know, it's not 100% wrong, but it's off. And I think is like a sort of a clue, again, that we're operating in a subconscious realm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:01",
+            "text": "I think that I think that makes sense. So Anthony calls Adam at school. And Adam says, That's so strange. I had a feeling that you'd call. And Anthony wants to meet him outside the hotel. And then from there, we have Helen, who had looked into Anthony's pockets and found the name, she goes to school and finds Adam. So I just put a call out the soundtrack here by Danny Bensi. And sonder durians. It was so grating the strings and bassoons or oboes. I never know the difference between those. But it was really jarring."
+        },
+        {
+            "name": "slim",
+            "timestamp": "32:46",
+            "text": "There are several aspects of this movie that start to become very unsettling. I think it's like the halfway point and in multiple ways, the music kind of continues that trend for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:58",
+            "text": "I was getting a Johan Johansson vibe. Yeah. So it made sense to me to go from this over to Sicario."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:05",
+            "text": "That's a cartoon, right? Well, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:08",
+            "text": "So that scene we referenced it before is really beautiful with Helen and Adam on the bench. And he's like super exhausted and kind of goofy. And he's nice to her. But she looks really nervous and uncomfortable the whole time. But I just love that interaction and for her. This is obviously like a freakout scene, right? Yeah, I"
+        },
+        {
+            "name": "slim",
+            "timestamp": "33:26",
+            "text": "thought his profile I thought his the way he was talking to her was kind of strange, because you don't really see Adam, the character being like outwardly communicative to anyone. And I guess maybe that kind of plays into the way he reacts to females, and later in the movie, as metaphorical. But like he's really open with her as a stranger. On the on the park bench in between classes. You do"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:49",
+            "text": "have this great detail. As soon as he gets up to walk away, she immediately picks up her phone and calls Anthony. And it's time just perfectly just as he walks around the corner, Anthony answers the phone. So you have no information gleaned in that moment."
+        },
+        {
+            "name": "slim",
+            "timestamp": "34:04",
+            "text": "Yeah, you're still at this point. You're still kind of wondering if this is legit. Like is it? Are they two different people? Is it in his mind? Is it in both their minds? Is it one person leading a double life and they're like, you know, split personalities or something? I feel like it's still kind of nebulous at this point. Definitely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:21",
+            "text": "So back home Anthony seems totally oblivious. He's like he's gone for a run. And he's talking about you know, like beating some some young pup that was that was trailing him. And you know, out on his run, and he says, Why did you call me earlier which was interesting. Do you call me for a reason? And we also have the reference to organic blueberries. For shakes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:44",
+            "text": "Anthony likes blueberries key fact."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:47",
+            "text": "Yeah, so slim. What is your position on organic blueberry shakes as part of a training regimen."
+        },
+        {
+            "name": "slim",
+            "timestamp": "34:53",
+            "text": "I like to mix in strawberries and blueberries into my yogurt shakes with milk I wouldn't freak out about it like Anthony did when he found out that there was no blueberries like a total psychopath. Yeah. Like this guy is zero. She needs to get the hell out of there. Yeah, ASAP Helen, this guy is nothing but trouble. She's a little bit too forgiving. Probably. Yeah. But yeah, this guy's a nut. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:16",
+            "text": "well, she asked him he you know, he's like, what's wrong?"
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "35:20",
+            "text": "He had the same place looks exactly like you we mean exactly like me. What's happening I really don't know what you're talking about. I think you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:04",
+            "text": "so for her, she's kind of trapped, right? She's pregnant and married. And kind of at his at his command, but it flips directly from there to the hallway shot. So back in the original hallway, with the naked woman walking down the hallway, upside down with a spider face. Don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:25",
+            "text": "spider face. Yeah, spider face."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:29",
+            "text": "And then Adam wakes up. And then Anthony wakes up. They show both of them waking up from that dream, which I thought was cool."
+        },
+        {
+            "name": "slim",
+            "timestamp": "36:35",
+            "text": "Yeah, there's still some vague story stuff happening at this point, like the spider appearances, references to the spider and then a woman is walking from that club with a literal head of a spider, very on the nose that something's about to happen, or there's something happening. Yep."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:53",
+            "text": "So Adam meets Anthony at the hotel, I loved having a No Country for Old Men. Shadow shot. Oh my gosh. That was That was awesome, as well spotted. But then you have this great moment. So this is the first time you see the two of them on screen and the sort of revelation you have the shot of Adam. And he kind of laughs and he says I told you. And as Anthony comes in the body language of these two human beings could not possibly be more different. And I think that slim to what you were saying earlier. Like, that's the genius of Jake in this role. Why do"
+        },
+        {
+            "name": "slim",
+            "timestamp": "37:25",
+            "text": "you think he asked him to see his hands at the onset of that meeting?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:30",
+            "text": "My older brother's hands look identical to my hands. Like we have the same hands that my dad had. So that's an easy way to identify. I think that's my take."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:40",
+            "text": "I thought it was maybe he was looking to see if he'd had the wedding ring that later is the thing that identifies Anthony as Anthony. Interesting."
+        },
+        {
+            "name": "slim",
+            "timestamp": "37:49",
+            "text": "Yeah, total not."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:52",
+            "text": "So he references the fact that he has a scar Adam, or Anthony shows his scar out and panics and he takes off and you have the great shot of Anthony and the motorcycle pulling up aside and then hauling ass away. And then he comes home and he tells Helen that guy won't bother them again. And then you have this great panning shot where it turns the corner into Anthony in the bathroom. And he's like holding his face and he's definitely really shaken. Which I thought was I thought was really cool."
+        },
+        {
+            "name": "slim",
+            "timestamp": "38:23",
+            "text": "So when he's looking at his chest, and he sees the scar that he refused to show, Anthony, is it on the same side? Or is the perspective different because of the mirror?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:33",
+            "text": "I think it's the same side. I think they have the exact same scar. Yeah, I think some of like the same side of their bodies. Interesting. I read I read some posts about the scars that was like, like one like kind of, you know, dream interpretation of the scar is like you know, it's basically the what the character's name is Adam and like, you know, Adam's rib was a source of creating life. Sure, sure. Why not throw that in there?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:59",
+            "text": "Yeah. All right, I can see where this is going."
+        },
+        {
+            "name": "slim",
+            "timestamp": "39:02",
+            "text": "He says sure. Like, obvious like yeah, I got that right away. I don't know why he had to google that. No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:07",
+            "text": "no, no, not that not that No, no, I could sense from from from Jason's has effervescence I can see where his rating of this of this film is."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:17",
+            "text": "No, I like I don't I don't dislike this movie. I think this movie is great. Fine."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:25",
+            "text": "So So Anthony begins to take things to the next level. So he stalks Adam. But then he sees Mary and he's like oh, forget this Adam. Dude like that guy's a nobody What about this Mary? This scene is so like first of all, there's a shot of him leaning on the motorcycle with the helmet"
+        },
+        {
+            "name": "slim",
+            "timestamp": "39:44",
+            "text": "amazing shot. Yes fantastic. Yeah, what aspect"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:47",
+            "text": "ratio or lens or whatever it was gorgeous and actually did it twice the two times that he comes there but him like checking her legs out on the bus, like a total creepo like what is what is going on? Yeah,"
+        },
+        {
+            "name": "slim",
+            "timestamp": "40:00",
+            "text": "right off, right. As soon as he was following her, I knew like, Oh, God, he's going to impersonate Adam, somehow, some way. And he is going to have relations with this woman without her knowledge. And I was just like, so skeeved out for probably the rest of this movie just waiting for that to happen. And it slowly unfolds and does happen."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:24",
+            "text": "So meanwhile, Adam goes to see his mother. So Isabella is there, she says that he has a good job that he loves strawberries was blueberries, or sorry, blueberries. She she talks about him having a great apartment. Yeah. Which I thought was weird, because she left the message the first time saying, How can you live like that? Yeah. And then the second time says that, and then she finally says, quit these fantasies of being a third rate actor. Yeah. Love it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:50",
+            "text": "This is my favorite scene in the movie. So she's talking to Anthony. She's talking? Well, I mean, this is where I think the this is where I think we get into the fact that this is not on the level, like, you know, like the you can choose, you can pick a path about what you think the reality is, that this is all a dream, or that they're the same character. And you know, he's a character having a split personality crisis. Like, there's different there's, you can make a case for any of those. But I don't think you can make a case once you have Isabella Rossellini saying, so"
+        },
+        {
+            "name": "slim",
+            "timestamp": "41:19",
+            "text": "like, what was that scene? Then she referenced? She talks to him as if she's talking to Anthony, right? At this point, do you think it's just, you know, in his head, and that this isn't really happening, like, what's your, what's your view at this moment in the movies?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:32",
+            "text": "Great question. Like I was gonna, I was gonna say, as you were laying out, I don't think I can even say what the options are for what is actually happening here. You"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:41",
+            "text": "mean, overall, or like when we're watching"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:42",
+            "text": "overall? Sure. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:44",
+            "text": "I think okay. So I think, well, there's a couple of different theories. I particularly like, I will shout out Chris Stockman, who made a like 30 minute video on enemy, which I found pretty good. And the theory that he lays out is that like, the reality of the movie is not an open to interpretation. There's one interpretation of the movie. And that is, is that the character Anthony, the guy who's married, the guy who's got the baby on the way is having identity crisis, because he feels trapped by marriage and the impending baby. And he like is like he is inventing this way out of that reality. And like, so when the character shows up in the Isabella Rossellini scene, it starts to kind of like fray. Because there's not actually there's not actually two characters, there's only one character and so you're getting aspects of both the fact that he actually likes blueberries, the fact that he has a good job as a as a university professor, like you're not getting just like kind of one. You're not You're you're you're breaking down the barriers between the two. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:45",
+            "text": "are you asserting in this case, then that Anthony actually does work at the University as a professor? I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:52",
+            "text": "think it's, I think he's actually a failed actor."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:56",
+            "text": "He has like three credits over like seven years, right? Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:59",
+            "text": "he's, he's a fail. Like, he's neither reality is 100%. He's not actually like the university professor. And he's not actually this actor. He's got like, the dope apartment, like he's a failed actor who like is trying to figure out what to do about the fact that he feels trapped by his pregnant wife."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:15",
+            "text": "You know, what I bet Helen has money can be"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:18",
+            "text": "that's why he has the apartment. No, but it's like, it's not none of it's none of it's on the level. Like it doesn't like there's no, there's no clean answer to like the, you know, like, what is the underlying what is the reality? Because we're not in a real realm. Yeah."
+        },
+        {
+            "name": "slim",
+            "timestamp": "43:33",
+            "text": "Like, I know, we haven't really talked about the final aspects of the movie, but the vibe overall, even before this is like, I'm wondering if I'm not really going to get a real finite answer as to what's happening here. Like, this is, like you said, a surrealist? Like, there's not a ton of movies, mainstream movies that really do this. Like, this is 2013. Yeah, and I can't remember a movie that I've watched recently. That didn't give you like answers. You know, like at the end, you know, like, well, is that it?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:06",
+            "text": "Denis did say, on deacons podcast that he basically that his kid was telling them telling him that he needs to make a sequel to enemy so that he can explain what the eff was going on. An enemy says it made no sense. So we have this great shot coming off of him meeting his mom, we have the spider in the distance walking and then this Yeah, of Toronto, and then you know, above the skyscrapers, like that's just an amazing image. It kind of reminds me in some ways of Simon Stellan Hogg who does Tales from the loop on Amazon and just great sci fi and kind of very surreal imagery,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:48",
+            "text": "so that that spider is like a explicit reference to a piece of art, which is a sculpture by Louise Bourgeois. It's a sculpture called Malmo which is mother, obviously, and it is in it's in Kent. There's one in Canada. There's one somewhere in Ontario, but like there's a bunch of these. I saw one in the south of France, like you do. And it's, it's a really dope sculpture. Like it has it's, it's this really cool large scale spider. But and I was talking to Crystal about this right before we started recording. I was like, what was your reaction to that spider? Like when you saw when we saw that sculpture? And what she said was something like, you know, it was both alluring and frightening. Which I think is both correct. And like a like a key to what's going on with the spiders overall."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:42",
+            "text": "God I just I love how unreal it is. So then we cut to Anthony during his practicing his line delivery as an actor. Did you fuck my wife?"
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "45:52",
+            "text": "Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:54",
+            "text": "Yeah, smashing, smashing the mirror but I think you know, when he cracks and he just kind of like, he breaks character or and he kind of, he's rubbing his hands together and laugh and he's like, yeah, yeah, that's it now now we got it. So he goes to Adams apartment walks in. Did"
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "46:13",
+            "text": "you fuck my wife? This is crazy. So answer the question, man. Answer my fucking question. And then I believe you're fucking crazy. fucking crazy. I'm fucking crazy. I am fucking crazy. You brought my wife into this man. So I'm gonna bring your girlfriend into the picture as well. You want me out of your life, this is what's going to happen. First, you're gonna give me your clothes in your car. I'm gonna take your girlfriend on a little romantic getaway and bring it back home tomorrow. And then I'm gonna come back here and I'm gonna bring back all your stuff and I'm going to disappear from your life forever, then we will be even."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:06",
+            "text": "And he basically Anthony totally dominates him is doesn't actually physically hit him or anything. But he just leaves. You see him getting dressed and taking off the wedding ring and driving away with Mary and then you have Adam just sitting in the chair just really responded."
+        },
+        {
+            "name": "slim",
+            "timestamp": "47:21",
+            "text": "Well, how does that even work? Like? Just saying no, due to your presumed fake real double? Taking your girlfriend out for a weekend? Like what is wrong with you? You dope just to say no, I don't think we're gonna do that. Actually. Yeah, you should leave now. Maybe I will call the cops."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:40",
+            "text": "Like none of it makes none of it makes sense. If it was reality, right, but it does make sense if like Anthony is this like, version of his, like sexual identity that feels trapped and like is like looking for someone else to hook up with. And so he's like, okay, like, you know, like, this is this is how I'm going to get out of this. This I'm gonna get out of this thing. And like, you know, and the version of him that's too weak to say no, like, was it happen?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:01",
+            "text": "So So I guess in that respect, then Adam, at that point, going to Helens, he's, you know, he's going to get his, but you do have Adam getting back up in there changing into Anthony's clothes being kind of bored. He finds the picture, he sees that the picture is not ripped. And it's Helen there. So you have I guess this is an attempt basically, for Anthony to integrate the idea of Adam as being a more thoughtful like, he's asking her does she need anything? Is there anything he can get her and kind of trying to be sweeter to her?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:32",
+            "text": "Yeah, it's, it's the version of him. It's that's the Adam and that is the version of himself that's trying to make it work. Like that's trying to, like, you know, make the domestic life work with the responsibilities that he has. So"
+        },
+        {
+            "name": "slim",
+            "timestamp": "48:46",
+            "text": "at this point, when he's kind of play acting, as Anthony with Helen. And she asks, they're like, in bed together, and she asked him how school was right. You know, how was your day? It's like, she knows"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:59",
+            "text": "she knows what's up. She knows. Yeah, she knows what's up that there's that like, he's like, again, I don't think it's meant to be like she's like, figured out that he's not like there's a level which she knows that it's like actually Adam and not Anthony, but like there's also the level which is like there's this bleeding reality where it's like he actually is not the he is actually not the Anthony character that wants to act out and like leave her and he has this Adam nice character who's like trying to figure out how to make it work."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:26",
+            "text": "That's right. She can see like he's that part of that part of him. That is good. That she wants to be there. And so you have Anthony and Mary, getting busy on the weekend. She notices the tan line from his wedding ring and she freaks out and they have a fight and are heading back to the city. Adam back on the on the couch is crying and Helen is comforting him he's saying that he's sorry. And I guess this is maybe for all the past infidelities that he's done. But she basically says she wants him to stay. And so I guess to the extent that this is the idea of him as the good, you know, instincts that makes perfect sense that they're doing that. So as they are on the couch, Mary and Anthony fight. And you know, she says he's not a man, and he freaks out. You know, I'm not a man. I'm not a man. And then they crash hard. That crash scene was amazing. Yeah, it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:26",
+            "text": "was a good crash. The shot of it was fantastic, scary, and it ends with like a close up of a spiderweb crack on the windshield."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:33",
+            "text": "Yeah. So now we have the final shot of the film here. So this is Adam. He opens the envelope, and he sees this key that is in there, and he realizes that's the key to get into the sex club. And he immediately knows and Helen's, like in the other room, like forgot to tell you that your mother called the domestic shit is on. You know, like Laurie and Amy at the end of Little Women."
+        },
+        {
+            "name": "Enemy sample",
+            "timestamp": "51:01",
+            "text": "How did you plan on doing something tonight? Because I think I have to go out"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:19",
+            "text": "she doesn't answer and he walks into the room. And there is this giant fucking spider. But it's terrified and back against the quarter all the way backing as far possible as it can and he just sort of sighs and looks at her credits. Yeah,"
+        },
+        {
+            "name": "slim",
+            "timestamp": "51:43",
+            "text": "credit movie ends right there."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:45",
+            "text": "Yeah. Until I laughed so hard."
+        },
+        {
+            "name": "slim",
+            "timestamp": "51:50",
+            "text": "Very, very strange ending like, Well, my first feeling I didn't know what the hell was going on. I was like, what did the spider represent fear? Is this like a really just kind of in your face metaphor for him being intimate with women. And now as we're kind of discussing it, it does make more sense that we're kind of like inside his psyche a little bit. And him kind of maybe allowing that self, the bad self of him of himself of like, pushing it away. And it almost felt like to me now that like, he's inching back towards it. It's almost like a man who has dissected his his various cells in therapy sessions, and is kind of now apparently in front of him, like the bad ones creeping back. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:33",
+            "text": "and right away. And I think there's a couple of reasons why we think that's true. One is like the movie tells us that like in his Adams lecture that like history repeats first as tragedy and then as farce and so like, we're kind of conditioned to believe that this cycle will be a cycle and we'll continue and then you know, to it's like he's given this key that like is you know, mental, like kind of unlock the same bad behaviors that happened before. Three like the key that like on the the key that unlocked the sex club, you know, is where he saw the woman almost stepping on the spider. And so the, you know, the recoiling of the spider is the spider being afraid of like, being stepped being squashed. You know, by by him. So, I think I think all of it's meant to kind of set up the, the idea that like, Yes, this is a psychological movie, about like, his patterns of, you know, having troubles with, you know, being attracted to but repelled by like, commitment and wanting to like crush that and then being locked in this pattern where it repeats i It's funny I didn't know how the movie ended when the spider showed up. I was like, oh yeah for sure. Giant Spider that checks out like i like i like i like it was just like this movie is definitely going to end with like, it's like the same thing is like Eyes Wide Shut like Eyes Wide Shut doesn't end with a giant spider. But like it does end with like Nicole Kidman being like, you know, we should fuck or whatever, you know, like, you know, and and it's just such like a, it's such like a dead drop, like an ending or you're just like, yep, credits. We're done here. Like, this is like, the end of this particular dream."
+        },
+        {
+            "name": "slim",
+            "timestamp": "54:09",
+            "text": "Ah, what did you think of the movie is your second viewing, you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:11",
+            "text": "know, so I love how beautiful this film is. And I enjoyed the performances so much that I was for me, it was really fun to be thrown off guard and to be really confused and trying to figure out like, what what is happening? I probably prefer films have a little bit more clarity and internal logic. But I enjoyed this as a dream state. And I guess I would say for me for doing 2020 I love seeing Denis being sort of aggressive visually, but still super grounded. And sort of even taking the unreality of the spider in the skyline but making it seem real and unreal at the same time. So blending that fantastical, so I'm very excited about that."
+        },
+        {
+            "name": "slim",
+            "timestamp": "54:59",
+            "text": "I can't think of Another mainstream movie that was just so nebulous."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:02",
+            "text": "Well, I mean, like, you know, like Inception like you know, famously like you know people are people debate about what really happens at the end of inception is like, another puzzle box movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:13",
+            "text": "Slim. What is your what is your letterbox? What's your letterbox then? Inception? Please?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "55:19",
+            "text": "I don't know. rewashed in seven sections a little bit more clear, though, like, you're allegedly going into people's dreams."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:26",
+            "text": "Yeah, I'm just saying like at the end of the movie, are you still in the dream or you're not?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "55:30",
+            "text": "Right, but I guess this one's a little less clear. Yeah, like, that's just one question. Like, oh, maybe the whole thing was a dream. But like this one is like, there's like five different ways you can interpret what the hell just happened on the screen for 90 minutes. Right. The one other"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:44",
+            "text": "thing the one other thing I'll say just about, like, you know, on the topic of like, what is this movie tell us about? Denis villeneuve his role in directing Dune is there's this quote, I found on the very reliable Wikipedia page of enemy of enemy, place where all good research begins. Where denis gave this quote, sometimes you have compulsions that you can't control coming from the some subconscious, they are the dictator inside ourselves. And like this is like, you know what Adam is? Like, why is that I'm talking about dictator insistent systems of control. And it's because like denis is answering the question with that quote. So, you know, it's about like, the dictators that compulsions and that's like, why there's these shots of like, even besides this specific spiders, there's the shots of webs and like the powerlines overhead, it's like, you know, him feeling trapped by these compulsions? The way I think that relates to Dune is that that is that is that there is a, you know, a subconscious level to the story of Dune, where Paul feels trapped by his pression visions and the systems of shareholder that are put up around him. And he's trying to avoid creating an authoritarian state himself, and, you know, ultimately is not successful. So I think I think these themes of that was a dune spoiler. Those are Yeah, he's a little bit of a spoiler. But these themes of compulsion leading to these themes of compulsion being expressed as authoritarianism could be something useful in the universe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:14",
+            "text": "That is a good take. That is a very good thing. All right, one final piece of business. So slim, who would Tilda Swinton play? Yes. In your version?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "57:29",
+            "text": "Let's see. I love the actress that played Helen, but I wouldn't mind share playing Helen in that in that role. Yeah, I think she probably you need a really strong actor in that in that role. And she could probably nail it. Jason,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:44",
+            "text": "I mean, obviously, the spider"
+        },
+        {
+            "name": "slim",
+            "timestamp": "57:49",
+            "text": "man walking over the city of Toronto."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:51",
+            "text": "Every time we do this segment, it's like the it's like not to do it as a trickshot joke, but like the trickshot is always just really compelling. Somehow. I think I think Helen is the correct choice. Probably"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:02",
+            "text": "nice. I like it. I like it all right. Well, that brings us to our letters and voicemail segment. So Jason, tell me about all the letters content that we have."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:26",
+            "text": "What do we got? Do you have any content?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:28",
+            "text": "I do. You don't you don't have to provide anything. It's totally, totally fine. I have voice I have voicemails, I've got good voicemails. So, all right, I'm gonna let you go. Okay. All right. So so we have appreciated the fact that a lot of folks rather than writing us letters have been taking are taking us up on our offer to send us voicemails. So let me let me bring you a couple of voicemails that we have received. Here is the first one. Hey,"
+        },
+        {
+            "name": "Run Mike D",
+            "timestamp": "58:55",
+            "text": "dude, Potter's longtime listener. first time caller. So after seeing the trailer, this is the most dude I've ever seen, I have to admit, was the trailer for this day and I've never actually saw the David Lynch movie. I planned on watching it soon to get spun up on Dune I've never read anything. Oddly, I haven't seen the movies or shows you guys talked about either. Do listen every week so that we understand. The game trailer, that new one. The ones coming out this year hopefully have me fully intrigued. I'm very excited. I'm a big fan of many of the people in the film Jason Momoa. Dyer Timothee Chalamet. I like the look of it, like the feel of it. As the kind of sci fi I want, fingers crossed. all goes well for them and that they can really sit in the theaters. How likely that's going to be or not in December, but I'm definitely on board. So keep making your doom that I can listen to and learn about things that I know nothing about. And eventually I will watch a game and feel like I know what's going on on this show. All right."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:17",
+            "text": "All right. So let's, that's a dope. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:19",
+            "text": "a great voicemail. That's, that's an inspiring voicemail. Because if someone's listening to this, that isn't a fan of anything that we're talking about. We must be doing something. I mean, we gotta be doing something, right. We gotta at least one one listener, who is like, I don't like any of this shit, but I'm still good for you. Thank God. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:38",
+            "text": "he didn't leave his name. But that was that a South Philly accent?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:00:43",
+            "text": "did sound like a South Philly. Oh, it's a friend and probably from underneath a blanket. It's in the dead of night so that their partner couldn't hear them leave. That's what it sounded like to me. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:52",
+            "text": "right. That sounded suspiciously like Run Mike D, who is the host of the will run for a podcast and a good friend of the show and a really good guy. So that's Mike, thank you for listening. Every week, I will give a shout out. Every week I listened to our good friends Charles Forsman and Dale Andrews. They have the podcast bat and spider at bat and spider pod.com. And they do kind of low rate horror movies that are just terrible. And I have seen I think, like one out of 21 of the films that they've done, but it just doesn't matter at all. It's just the best thing to listen to those two guys talk. So highly recommended. That's great. All right, we have one more one more voicemail. This voice I think we will also recognize,"
+        },
+        {
+            "name": "proto",
+            "timestamp": "1:01:42",
+            "text": "hey, Dune pod. This is proto Lexus wanted to call in and give my first impression of the new dune trailer. Happy dune trailer day. But first, let me just comment about this episode's feature presentation of enemy. remember seeing this really loving jake gyllenhaals performance? Content, underrated under the radar, low key, great actor once you say I love him in a Nightcrawler as well. Another very flick I do. The scene that stuck with me from this movie is where he and his wife meet outside of the classroom and they sit on the benches. And she doesn't or he doesn't recognize her. And then he walks behind the building and answers the phone. I thought that scene was amazing. And I think about that regularly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:43",
+            "text": "Can I just pause for a second? I like what is causing product I think about that Seadragon only"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:49",
+            "text": "what's what's causing production addiction in this voicemail either."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:55",
+            "text": "Slim, can we can we use this audio or do I need to have every record on his microphone? spiritual"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:02:59",
+            "text": "advisor does it again. That's right right away."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:02",
+            "text": "He's really putting some mustard on this voicemail."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:05",
+            "text": "Yeah. All right, continuing. Really"
+        },
+        {
+            "name": "proto",
+            "timestamp": "1:03:08",
+            "text": "great moment in that movie that stuck with me. But the dune trailer. I think my favorite part is the orinthopter sighting in there. It's always been one of my favorite parts of Dune period. And I think they really nailed it. I love the design. It looks like an insect. It has the flapping wings. So I love that aspect of it. The only thing I'm concerned about is you know, I don't know that like it looks kind of drab. You know, I know it's pretty close to what's in the book but I don't know man black and gray and tan and desert. Maybe a little bit more life is what this means we have to be so serious so but I think it looks great. I just wonder the person who knows nothing about dune they watch this trailer. Does this spark any interest in the series, you know that you don't really learn anything about what's going on? But I guess that's for the next trailer or the final trailer which will kind of have some more narrative to kind of stringing you along. Other than that, of course, I'm really excited. Slim, lovey dovey to wow,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:22",
+            "text": "God bless"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:04:24",
+            "text": "thee. That's right on about the potential drabness. I just realized that I mean, how long is this? We don't know what the runtime will be two hours maybe of just watching that kind of color scheme. I could probably get kind of grading"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:35",
+            "text": "let's make let's make proposals right now. I think it's going to be 245 cripes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:40",
+            "text": "I think it will be shorter. You do? Yeah."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:04:43",
+            "text": "How long was Blade Runner? Blade Runner was three hours. Yeah. Oh, God. And that looked that was nice to look at though. Yeah, the colors were popping in that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:51",
+            "text": "I think it's going to be closer. I think it will be 225"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:55",
+            "text": "I actually think 220 would be great. The one thing that struck me on enemy was I saw the runtime of 91 minutes and I was like hell yes. Yeah. I was excited about Sure. Yeah, that was that was very nice."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:05:07",
+            "text": "Well, what's the what's the rumored end point of the movie compared to the book? Wait."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:12",
+            "text": "I know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:14",
+            "text": "Oh, confirm Oh shit. I"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:05:16",
+            "text": "forgot through through through channels to confirm back channels. Yeah, I've"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:21",
+            "text": "got I've got our feydakeen warrior empire has alerted us to the truth."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:05:26",
+            "text": "Do you feel good about that? Does that influence your runtime then?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:29",
+            "text": "Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:30",
+            "text": "Oh, because you know, how many pages are in this script? Do you feel good about where it ends without saying where it ends?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:40",
+            "text": "Yeah, I feel very good about it. And if you think about it, the reason I feel very good should indicate to you where it ends."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:46",
+            "text": "Oh my gosh. Okay. All right. For those of you who've been listening carefully, there was a discussion about where Jason thought that the movie should end in episode one of doing prime remember that I remember that way back in the day. That is incredible. Well, slim, anything anything you want to plug?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:06:05",
+            "text": "Well, if you're enjoying dune pod, you might enjoy 70 millimeter. We each host picks a different movie every week pretty much and we go through it and we have fun together and and we just did Seven Samurai. Watch that for the first time on HBO Max. Above HBO Max. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:23",
+            "text": "Well, I do want to I do want to ask you about one other podcast that you host which is interview with a podcast vampire the Tom Cruise retrospective. So when is the Mission Impossible three episodes you guys have covered every movie in Tom's career up to Mission Impossible three when does that drop?"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:06:41",
+            "text": "That's a good question. Hopefully you'll include a link in the show notes for any Tom Cruise dune fans that want to listen to that podcast I don't know we it's been since may actually just looked it up. We haven't done an episode since May. And Mission Impossible three is the next one which is probably one of my top five top movies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:57",
+            "text": "JASON"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:06:58",
+            "text": "Oh my god Jason movie. What"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:00",
+            "text": "is going to make more money? Dune or Top Gun Maverick?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:06",
+            "text": "Probably Top Gun Maverick? I mean like the International on on Top Gun Maverick is just kind of banked money I"
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:07:13",
+            "text": "think I'm pretty sure the Chinese government paid for most of it. They did Maverick as well. Did"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:16",
+            "text": "you know Do you know the story about you know the story about how in the original Top Gun Tom Cruise's leather jacket has a patch for Taiwan yeah on it not gonna not gonna not gonna work in the in the reboot with the Chinese government kicking in so that has been changed to Thailand. Wow. Yeah."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:07:39",
+            "text": "Any any large set pieces? I feel like that have happened in Mission impossibles. You know, there's there's some coordination with the local governments happening. I think China has been a big backer of his movies for many years. And this is probably the largest notable event that kind of open people's eyes to it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:56",
+            "text": "What if Tom Cruise shows up in a surprise role in dune? What if he's like the what if like, what if like in like the series of like the second shot of the movie, it's like the space and guilds showing up to like, talk to the Emperor and it's just fucking Tom Cruise. I would lose my entire shit."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:08:12",
+            "text": "My pants would explode. It's him"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:14",
+            "text": "in the Tropic Thunder out what if?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:19",
+            "text": "What if Tom Cruise is the guild navigator and it's just like he's like in a crazy space warm prosthetic."
+        },
+        {
+            "name": "slim",
+            "timestamp": "1:08:25",
+            "text": "You only see it like in the credits. No one knows. No one knows about it. So the credits for Oh my god. That's a vintage Tom. Yeah, vintage Tom."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:36",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason for his insights and slim for his guidance always. Next week. Join us for a rousing discussion of Rogue One A Star Wars Story. If you're enjoying this podcast follow us at Dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries a member of the paper keg radio syndicate. The episode was produced and edited by me Ah, our artwork is by catcher and our theme music was composed by Toby Foresman of whip song music. Thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

@@ -1,0 +1,3291 @@
+{
+  "episode_number": 222,
+  "episode_name": "Dr. Strangelove: Or How I Learned to Stop Worrying and Start Loving the Bomb (1964)",
+  "dialogues": [
+    {
+      "name": "Tapedeck",
+      "timestamp": "0:01",
+      "text": "This, this, this is a tape deck podcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:18",
+      "text": "Hey everybody, it's H. And welcome to the latest installment of Escape Hatch, your portal into cinematic pocket universes. This week I'm joined as always, by my co host, Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "0:28",
+      "text": "Turns out my lot in life for the last 15 years or so has to be on the wrong side of losing coup. Like just over and over again."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:36",
+      "text": "And we welcome senior advisor at the MIT center for Constructive Communication, Glenn O. Brown."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "0:43",
+      "text": "Strangelove is one of a few Kubrick movies where one of the themes is it's too many dudes in one place."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "0:51",
+      "text": "We crack open the Kubrick vault and cover his cold war satirical masterpiece, Dr. Strangelove. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. Links are in the show notes. And now, without further adune, Dr. Strangelove. Alright, Glenn, I know what you want to talk about."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:26",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "1:27",
+      "text": "Oh my."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:28",
+      "text": "The same thing everyone else wants to talk about. What went wrong in the election? What are the key lessons for us to take from this and what are we going to do going from there? Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:39",
+      "text": "I thought this was going to be. I thought you were going to start off with Texas football."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:42",
+      "text": "Oh, shit. How about the Longhorns?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "1:44",
+      "text": "Dude, I think the Texas football might be the only thing I have less to say about than the election, actually. Oh, no, Jason, not for my feelings or anything. Just I don't know that I have much, much insight there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "1:57",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "1:57",
+      "text": "All right, why is that? Can you just briefly, why is that?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "2:01",
+      "text": "Why do I have little to say about Texas football?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:03",
+      "text": "Yes."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "2:04",
+      "text": "I'm just out of the loop lately. I am. I think between having little kids and I go through phases where I get really into sports and then I fade out completely and there's only so much time in the day and, and sports is not currently on the. On the map. Sometimes, sometimes soccer, but not that much. Not that much."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:23",
+      "text": "I've been thinking about picking up listening to a college football podcast. Like that's, that's how, that's how deep I'm getting."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:30",
+      "text": "You've been really getting into it."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "2:32",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:32",
+      "text": "It's only got another month left and then."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:34",
+      "text": "Or six years, then you're done. Finally."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:36",
+      "text": "You'll."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:36",
+      "text": "You'll be free."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:38",
+      "text": "I will be free. Exactly. Well, nice try on the dodge there, Jason. So this is our first time getting Back on the mics. Since hearing the results of the election, obviously we've been processing it a ton in politics, but I would love to hear from the two of you who are experts in this space."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "2:55",
+      "text": "Like, experts."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "2:56",
+      "text": "Where, where are you? How, how are you feeling? And how should people be thinking about where we are right now?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:02",
+      "text": "Do you want me to start, Glenn?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "3:04",
+      "text": "I think so. I mean, I thought this was called escape hatch, not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:07",
+      "text": "Yeah, exactly. Not pressure chamber. Yeah, Stress, Stress out. Sad talk."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "3:12",
+      "text": "Stress hatch."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "3:15",
+      "text": "The election went very poorly and I think like the first thing I would say is that I think now is a good time not to listen to so called experts because like, you know, a lot of people got this one wrong. Like not like super directionally, but you know, enough that we're going to have to do some real searching. I think it's a good time for listening. I think like in particular there's a lot of conclusions being drawn about how the way voters think or how some subgroup thinks that's like probably supported by scant data at this point. We'll get better data in time. Like exit polls are really noisy and shitty and like people are using a lot of like the conclusions of the election to kind of push a maximalist case for whatever their priors already were. And so I, I just think that's like kind of not a great environment for meaningful pundantry. Like there's, you know, so that's, that's thing one is you probably should just skip forward through this part of the podcast part we talked about. Strange love because I don't think we're going to have like tremendous insights based on anything. I, I think that like, I think, you know, one of the strands that like I would push back against, I guess is the whole like, you know, Democrats went too woke and this is why we lost the election. I think that's like a really difficult case to make because you've both got politicians like AOC who outperformed Harris like in her own district. And you've got, you know, some politicians are left of Harris that outperformed her own district. And I think it's also, I think it's also hard to say that like the Harris campaign in particular. Yeah, even Democrats nationally were running like a woke campaign that was like centering issues of like social justice, whereas they were, you know, she was in particular trying very hard not to talk about her own racial identity under any circumstances whatsoever."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "5:08",
+      "text": "Like her sex, like even that was like not a focus."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "5:12",
+      "text": "Yeah, I do think there's an interesting argument about the way in which Democrats both who political like political operatives, people in the consultancy class and high, high educated, high information donors sort of are out of step with broad enough electorate that needs to, that is necessary to assemble to win. Putting all of the like kind of this was a change year election and she actually did better than you know, like the, the, than the Tories in the UK or like, you know, the Japanese party, blah, blah. All this was a tough year for incumbents, which I think is true. I do think there's interesting argument about how Democrats are out of touch with Dem political Democrats, political operatives, consultants and like the high education, high educated, high information donors on which they rely are out of step with a broad enough electorate. And I think my read on that is less that has to do with like sort of the centrality of social issues than it does with one, the communication strategies that we use for reaching voters which are still in my view not haven't moved far enough fast enough to adapt, to adapt to the modern information economy. And then to like the other one. And this is just like the toughest pill to swallow. Like, like it wasn't like high information, high educated consultants and voters were demanding like the centrality of defund the police or trans rights issues during this, during this electoral cycle. The one thing that they were insisting on and that everyone thought was going to be a winning strategy was the centrality of the preservation of democracy. Which is why you saw like you know, sort of the Liz Cheney play and like all of these other things about you know, sort of saying the threat that Donald Trump posed to the, to the institutions of democracy. And that argument just lost like that argument we did put a lot of like, we did put a lot of like lead behind the pencil of. And voters were just not having it. It's not an issue of salience with enough of an electorate to win a national, to win a national election. And it maybe it was in 2020 when Trump's threat felt more, felt more present and maybe there was some hangover in that in the midterms of 2022 along with Dobbs, but in 2024 it was not. And I think like that's like a, I think that's like something we're gonna have to, we're gonna have to try to figure out because like, I think if you read like Ben Rhodes piece in the New York Times, like."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "7:42",
+      "text": "A."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "7:43",
+      "text": "Very cogent argument in my view about how democracy as you know, defending the defense of democracy as institution reads to a lot of voters as the defense of a corrupt institution. That doesn't do things for them. And so we're going to have to, we're going to wrestle with that one because we're definitely what we're going to get is not democracy in the next four years. So, yeah, those are my, those are my early unformed thoughts, which are probably worth nothing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "8:08",
+      "text": "All right, Glenn, you have the next six minutes."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "8:12",
+      "text": "Let's see. I will speak very slowly then. So first I would say I'm definitely not a politics expert. I've never worked directly in electoral politics other than as like a volunteer. I'd say I'm more like politics adjacent or like civics in some of the jobs I've had. So I am not going to have the answer on electoral politics stuff. I'd say what Jason said at the top resonates a lot with me, that it's probably as much a time for like listening and gathering data as anything else. And not the, there's definitely a tendency to kind of over conclude in a lot of this stuff before we really know it. Even like day over day in the last week, you get slightly different bits of data that kind of go like, okay, I see it wasn't that whatever the take was on Wednesday is not the take on Thursday or it's actually slightly more nuanced or it's actually slightly simpler. So I'm definitely a fan of the, of the let's, let's wait and let things kind of settle in and take in more data. I mean, one thing that's I think clear to me and I don't understand it is just the turnout."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:13",
+      "text": "Yeah, right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "9:14",
+      "text": "Like that, that, that part is, I both, like, that's clear, that's clearly a factor. And, and also like, I don't understand. There are a lot of things, there are a lot of confusing potential mentalities involved in this, in this situation that I can maybe understand or maybe in another life I might be able to get. I have a lot of trouble understanding people not voting. And so that's a hard one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "9:36",
+      "text": "That to me goes to the same point that I was making, which is just that like, participation in democratic processes is at an, is the belief in that as a worthwhile exercise. And yeah, a process that has integrity and virtue is at a nadir. And in, in, in the, the problem is, is that in the face of nihilism, in the face of electoral nihilism, like authoritarianism wins because, like, they're able to, they're going to be able to do all kinds of people would just be like, oh, well, I guess that's Just what happens. Yeah. And that's the problem, though."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:10",
+      "text": "How do you fix that one? Because, like, when people get more nihilistic, then that creates the vacuum for them to take more power."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "10:17",
+      "text": "And it gets harder, it gets harder for us to do that lift. Unless people find out that, oh, wow, grocery prices aren't going down, gas prices aren't going down. Like, things, things really aren't changing under this. Except there's more chaos. Which, which I don't like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "10:32",
+      "text": "Yeah, I don't, I don't think it's going to go well. I don't. It's not going to go well for the country. It's not going to go well for people. The things that they're going to prioritize, delivering on are not going to solve real problems for people. There will be some sort of, they'll definitely still be voters and probably a lot of them that feel like, oh, well, like it feels better even though, like the, the, you know, it's not. But like, you know, like, these are pretty incompetent people. And like, you know, I don't, and like, with less sort of guardrails and discipline than the first time around, I don't imagine expecting a better result on any vector. So. Yeah, that will not redound. Well, I, I, you know, and I think like, the, the posit, my positive sort of spin on things is that we managed to lose in a way that didn't provoke a democratic crisis in terms of like, you know, we didn't do a contingent election. There wasn't violence in the street. Like, you know, like, all the talk about, like, oh, the votes are, you know, the vote, you know, this, these are fraudulent votes, all that stuff, they just won. And that at least preserves the apparatus of democracy for another cycle where we can actually, you know, we can actually have another election. We haven't crossed the Rubicon of just suspending elections. So I think, I think, which, which was a very real possibility in my view. If the election had been closer and on our side, like, I think you would have, I mean, you know, Trump was saying, like, they had a deal with Mike, you know, with, with Johnson to like, throw it to the House and do a contingent election, like, that would have been. And it's very likely they would have just gotten away with that, that been irrecoverable, like, we would not, we would not be able to get back from that. So the good news is that we do get another shot and that it probably will go, you know, it's not good news, but it will go badly. And so we will likely do well in midterm elections for sure. Where again, we have, we're now in this inverted paradigm where low info, you know, low information voters, you know, the reason why, the reason why Ruben Gallego run in air in Arizona despite, you know, including running like one, one of the great campaigns that will be studied of this cycle for Democrats of like how this guy ran and what he did. He was great and he was running against a certified crazy person in Carrie Lake. But it's also the case that like not a certified crazy person, but like a, a, a someone who is not in touch with reality. You know, she still thinks she won. But like, you know, the other factor there is a bunch of voters went in, pulled the lever for Trump. Trump is Arizona and they just didn't fill out the Senate part of the ballot. There are, you know, tremendous undervotes for Trump voters. Yeah. And that's, that's part of the factor why we win. So we're now in this inverted dynamic."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "13:13",
+      "text": "Where he's not on the ballot and won't be on the ballot again."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "13:15",
+      "text": "Right. And low turnout, low information. And low turnout, high information Elections like we seemingly have an advantage now, you know, that's not sufficient. Like, that's not, you know, that's cold comfort. But, you know, it's, it means likely that like, you know, we'll have a good shot in 2022 of putting some brakes on things, but we have to survive until then. And you know, in the meantime, 2026. In the meantime you're going to, or 20. Yeah, 2026. In the meantime you're going to get, you know, political prosecutions and you know, enemies lists and mass deportations and you know, all kinds of, you're going to get all the terrible. There's, there's really people should, like I, there's already sort of this talk of like, maybe it's not going to be as bad or like, you know, things aren't as bad as you usually think they are. It's like, I don't know, people said that in 2016 and it was worse. Like, so I don't know what you're, I mean, I don't know what you're talking about. Like, it's going to be, it's going to be exceptional and like we should not, and we should not pretend that like, you know, it's always darkest before the dawn. Like, it's just going to be dark. It's going to be polar night for a very long time and like real, real People like that, you know, are going to be hurt and, like. Yeah, so that's. That's bad. That's bad for us."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "14:30",
+      "text": "All I could do is laugh right as you're saying that. It's just, like. It's. It's kind of stunning, and it's. It's on point for. For what we're doing today. But, okay, clearly you had some things to say on that, so I'm glad to get that on the record."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "14:42",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "14:43",
+      "text": "And, like. And, like, also, like, the. The fine. I guess the final thing I'll say is that things can change. I. I tend to. I tend to have, like, particularly when it comes to presidential elections. I think, like, presidential elections, you know, end up becoming this, like, very kind of primal X ray on the soul of the nation and, like, what people think. And, like, people don't vote on issues. They vote on, like, sort of, you know, sort of the person that they think is most stylistically, primally fit to. To lead the country. And so what that means is that you can get, like, these, you know, tremendously unexpected outcomes, like downside surprise, like Trump, but you can also get, like, you know, a Barack Obama coming from nowhere and, you know, becoming. Becoming the leader of the party in a relatively short time. So, like, there's definitely. That's not to say that, like, a charismatic leader or a great leader is a substitute for dealing with, like, the systemic, structural issues that need to be dealt with. Like, those definitely do. But, like, there's also the opportunity now for, like, a complete sea change in the Democratic Party, not just the candidates that were running at the national level, but also, like, the, you know, the consultants and, you know, the. The. The apparatus of people who've, like, sort of worked on these things. Like, I think. I think, like, the folks who ran the Harris campaign did a great job, and especially given the amount of time that they had. So that's no slight to them at all. But, like, you know, it'll be a time to try some new things, and that'll be. That'll be great, too. And I include myself in, like, the. You know, I never worked on a campaign, but, like, you know, like, I go back to my first point, which is I don't know shit. So people should definitely not ask me for what. For what they should do. That's where I will conclude I do not know anything."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "16:31",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:31",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:31",
+      "text": "Is that enough? Did you get enough? Are you good? Are we. Did we do it?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:35",
+      "text": "I think we got it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:35",
+      "text": "Okay, great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:36",
+      "text": "We don't need."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:36",
+      "text": "Do we need any more."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:38",
+      "text": "We don't even have an uncut this week. This is just. Everything is on the air."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:41",
+      "text": "Okay, great. Oh, there you go. Everyone gets it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:44",
+      "text": "All right, well that's, you know, that, that's, that's a nice backdrop for that. Glenn, you know, we're very excited to have you joining us. And, and the two of you overlapped very briefly at Twitter."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:56",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "16:56",
+      "text": "Is that correct?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:57",
+      "text": "By mere minutes. Minutes."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "16:59",
+      "text": "That's right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "16:59",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "17:00",
+      "text": "We overlapped at the lobby."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:02",
+      "text": "At the lobby. And then I got fired and that was basically it."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "17:07",
+      "text": "I was really looking forward to working with Jason again. We'd worked together before and I think I was literally walking in the building for my first day all bushy tailed and bright eyed. And Jason, I was walking out and I was like, man, what's going on?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:19",
+      "text": "What happened?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "17:20",
+      "text": "What's inside of there? What's inside that building I just agreed to, to, to walk into."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:25",
+      "text": "So yeah, turns out my lot in life for the last 15 years or so has to be in. Is just on the wrong side of losing coup. Like just over and over again, which is just not great. It's not what you want."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:41",
+      "text": "Could, could turn around anytime, man."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "17:42",
+      "text": "Yeah, no, I mean, look, I'm, I'm. My life is pretty good and like I feel pretty lucky that I've survived as well as I have. But yeah, wrong side. Wrong side of the argument. Multiple. Multiple times."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "17:54",
+      "text": "Now that's really funny. I hadn't thought about that other than this pod. So, so then Glenn. So Glenn, you are a senior advisor at the MIT center for Constructive Communication, which seems like, seems like something we would like to have in this world right now. So can you just tell us about what the center for Constructive Communication is all about and what's the focus?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "18:14",
+      "text": "Oh, sure. So it is a research applied research center at mit run and founded by a guy named Deb Roy, who I also met at Twitter originally. So a professor at MIT who is also an entrepreneur. And after selling a company to Twitter and working there for a while in the kind of first wave of social analytics, social listening, using machine learning to analyze large patterns of speech on social networks. That's what Deb's background came from. His second iteration of that topic was to think about how to apply equal amounts of kind of humanist expertise and what he calls like ancient wisdoms for every kind of ounce of machine learning or AI to analyze conversations, think about applying the same amount of weight on the humanist approaches to analyzing conversation via behavioral economics, sociology, et cetera. So that's what the center for Constructive Communication does. It has A bunch of different programs and areas of research oriented around trying to find what is the right role for human expertise in helping people communicate better, what is the right role for things like AI and how to find that right balance, which may or may not be useful for our conversation today on Dr. Strangelove with things like the Doomsday Machine coming up and other automated systems. So that's what that center does. And there's also a really interesting spinoff kindred spirit organization called Cortico, which is a 501C3 that is came spun out of the center for Constructive Communication that I also work with now. And that Cortico's. The best way I can think of describe Cortico is you have a population, like a student body, or you have a workforce, or you have a city or a neighborhood, and you know, you want to have a substantive conversation with that group of people. And the traditional ways of doing that would be like, all right, let's go to a town hall or, you know, if you say if you're management or if you're the mayor or if you're the CEO, whatever the case may be, let's do a town hall or let's do a survey, like pretty polar, extreme ways of talking to a large group of people, or let's listen to them speak online. And what Cortico does is break that down into small group conversations, kind of a network of small group conversations that are face to face in person, and then aggregates all those using AI use recording the actual conversations and create sort of a networked focus group view on the spree de corps, on what people are actually thinking, surfacing, consensus surfacing, patterns, et cetera. So it's a really interesting, really interesting organization. I'm happy to be part of it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "20:53",
+      "text": "That's awesome."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "20:54",
+      "text": "Yeah, it's super interesting. The. I mean, one of the things we, you know, the bot that Jason built that's taking all of our transcripts and then allowing us to, like mine for any question we have about anything we've ever said or how many times this has been referenced or whatever, or it's just an amazing. It's an amazing concept of when that data is available and searchable and these conversations are, you know, are readily accessible, what kind of insights you can get. But trying to figure out how to do that intelligently, I guess, is the secret sauce."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "21:23",
+      "text": "Totally. And I think a lot of it is like, you know, what is role appropriate for this technology? Like, what are the things it can do? Well, it can definitely do Associative thinking. Well, I think we've established like, you know, AI and models and stuff like that. It can do pattern recognition well, it can sort things well. But you can see this kind of mass, mass media, word on the street kind of confusion about like, well, then let's just automate everything. Let's just have, let's say I do reasoning. Let's have I make decisions. And it's like, yeah, that I'm not. Not so sure about that. Like, it, it helps to be really clear on what role we're assigning to the machines when we're bringing them in. It's not just man in the loop stuff, it's man in the loop where and doing what and at what time and what loop. So there's lots more like nuanced conversations, I think, to have about the role of automation stuff."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "22:15",
+      "text": "I'm also curious what's going to happen as the AI tools become mainstream. You know, look at the writing tools coming into iOS 18, right. Like when we have 10% or 20% of human communication all being kind of prompt based from, you know, what the machine thinks we want to say, you would imagine that will begin to dramatically alter what is said. Right. As people rely on just that for quick responses and that kind of things."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "22:43",
+      "text": "Totally. The other thing that's weird about the speaking of Jason's kind of point on participation on democracy earlier is that the user experience on a lot of stuff right now on the consumer AI is like you're either kind of just a straight up consumer or a kind of a data source. And there's not like a lot of, unlike, say, the first couple waves of the Internet or social media, there's not really a way to see yourself participating in shaping the thing unless you're pretty good at like building your own model or something like that. And there's also not a lot of like, collaboration, at least on the. In the current wave of tools. Right. So when I'm using a model, I'm not interacting with another human most of the time. For now."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:22",
+      "text": "Right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "23:22",
+      "text": "I hope that changes. I hope that's coming right around the corner that there's something where we're actually interacting with each other a little more in these spaces. Because that was a defining feature of first couple waves of the Internet."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "23:34",
+      "text": "Yep."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "23:36",
+      "text": "Collaboration good. Yeah, collaboration. Human collaboration good. Well, Glenn, we are thrilled to have you on the podcast. And I think Jason immediately said that we were going to be doing Kubrick and I can't remember, we bounced around with a couple options. Obviously, the Shining is huge. One that's hanging out there waiting for us to do it. I've been really wanting to get back around on Clockwork Orange, but at the end of the day, we decided before the election that we wanted to plumb the depths of the Cold War. And so we are tackling tonight the 1964 masterpiece of satire, Dr. Strangelove, or how I Learned to Stop Worrying and Start Loving the Bomb."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:22",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:23",
+      "text": "Boom. Yes. Very excited. And we will be getting to that in the bottom of the hour. Before we do Jason next week, what do we got? We're looking to the future, my friend."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:36",
+      "text": "Okay. We're done dwelling on the past."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:38",
+      "text": "Exactly. We are moving forward and we are going to reunite with some dear friends as we move into the 23rd century and tackle Star Trek the Motion Picture."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:50",
+      "text": "Oh, the Motion Picture. Wow. Okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:53",
+      "text": "This is our third Star Trek film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "24:56",
+      "text": "1, 2 and 4. We've done correct."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "24:59",
+      "text": "This will be exactly, exactly. So that's really. That's really exciting to take this movie. It's not perfect. We're gonna be doing the Director's Cut, which you said was streaming on Paramount plus right now. America's network."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:11",
+      "text": "It is."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:12",
+      "text": "Yeah. So folks should check that out. But yeah, we're gonna do the Director's Cut, which I've never actually watched, So I bought that 4k. I'll be popping that in the player. But check this out. Ryan Condal, dear friend of our sister podcast, the Stuff Dreams are Made of, introduced us to the co host of the inglorious treksperts podcast, Mark Altman."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:37",
+      "text": "Okay. Okay, great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:39",
+      "text": "This is a huge. Is a huge get for us. This is like one of the biggest Star Trek podcasts. He also did the 1982 documentary about. About geek movies and why 1982 is the best year in cinema. So, yeah, we're gonna have. We're gonna have some real fun."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:52",
+      "text": "We're gonna have a time."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "25:53",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "25:54",
+      "text": "So that is next week."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "25:55",
+      "text": "I want to spend the whole episode just talking about the transporter accident, which is, I think, like the most important. The most important scene in the history of Star Trek, if not all of science fiction with."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:07",
+      "text": "And then also just bones is drip in that scene."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:09",
+      "text": "Those two things."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:10",
+      "text": "Yeah. Okay, good. Can we do some hatch news real quick?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:14",
+      "text": "Would you like to know more hatch news from beyond? I feel we have a lot. I feel it's a busy week."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:21",
+      "text": "I only have one. You have. You have something you want to drop in?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:25",
+      "text": "No, no, you go ahead. You start."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:27",
+      "text": "We saw Dune Prophecy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:29",
+      "text": "That was the first thing. That was the first thing. We saw Dune Prophecy Part one at Alamo Drafthouse, who was doing a live screening of the first episode simulcast."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:38",
+      "text": "They had special cocktails on the menu. Yeah, I can't remember what they were."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:41",
+      "text": "But the Water of Life was one. It was blue. They had a special hummus. Yeah, yeah, it was good. It was great. What do we want? It's obviously not out yet, so we can't. We're not going to spoil the episode. Oh, yeah, Good point for anyone."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "26:54",
+      "text": "Apparently there was an embargo, but I didn't see anything. I didn't sign anything. So."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "26:59",
+      "text": "Yeah, I don't know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "27:00",
+      "text": "But yes. Spoiler. Spoiler free. Your fluid free reaction, your initial take."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "27:04",
+      "text": "I mean, I think it's. It's one where we. We've had a lot of trepidation about this show because we're like, ah, what's the source material like? Do you know? What is this adaptation gonna look like? Like, those sort of things. And I would say, like, I feel less trepidatious having seen the first episode. I still think they've sort of set themselves a pretty big challenge. Like, they are. They are playing in the Dune universe, like a lot of like of Denny's universe in particular. And so for Dune fans, like, things will feel familiar and there's tremendous actors in this show and they've obviously invested a lot of money. And it's very fun to see a show that's like a serious genre TV show in the style of, you know, the Expanse or something like that, but set in explicitly Denny's Dune universe with all of the like, kind of aesthetic trappings thereof. I think the story, like, you know, it depends, like, we'll see where we get with the story that they're trying to tell, which is going to be like a fairly complicated, you know, political intrigue story. And so I think I do have some concerns about just sort of how much story they've. They're biting off and how much exposition is required to kind of tell that. But I'm certainly going to be watching it and I guess that's. That's. That's relatively spoiler free at this point. That's what I would say."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:23",
+      "text": "What."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "28:24",
+      "text": "What did you think?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "28:25",
+      "text": "I. So I. There I. First of all, it looks gorgeous, looks great. And, and we were watching it on a big screen right in. In the Drafthouse. So it, it looks cinematic level quality of effects and sets and costumes and, and everything. And this is just like kind of an amazing time right now between this and. I've been watching Penguin, like the. The notion of having truly cinematic level quality being delivered on a weekly basis for a television show is just kind of amazing. So I definitely enjoyed that. I feel like. Is kind of like bouncing all over the place, and I don't feel like you're quite anchored enough to a lead character. So I think that'll be interesting to see whether or not they are able to kind of drill that home and give you. Give you a good place to hang so that you have the emotional connection that is required to go on the. On the broader journey of everything that's happening. I. I definitely second that notion of. It's just really fun to be playing in this sandbox and to. To see this stuff. It was fun to get, you know, the opening scene to give you some slices of stuff that we've want see for. For many years."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "29:32",
+      "text": "Yeah. There's in particular, like, the beginning of the. The beginning of the. I'm not gonna spoil it, but, like, the beginning of the show, like, kind of depicts some stuff that's like, you know, you're like, oh, okay. Like, we're seeing this thing that, like, you know, so there, There's. There's, you know, they're. You're getting to see some stuff that, like, you've always sort of known must have existed, but have never gotten to, like, you know, see with your own eyes. So that part is very fun, for sure. Agree."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:02",
+      "text": "Glenn, what is your history with Dune, by the way? Like, what's your background with the books, the movies, et cetera?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:08",
+      "text": "Wow. I definitely do not have your credentials in Bonafides for the Dune podcast."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:13",
+      "text": "No one does. No one does, Glenn."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:16",
+      "text": "Well, we've read six out of the 24 total books that are potentially available. So, like, our. Our credentials are suspect as well. But. But continue."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:24",
+      "text": "No, no, no. I would say my top cred point is that I saw Jodorowsky's Dune with Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:29",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:30",
+      "text": "In New York."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:31",
+      "text": "Yeah, that's right. We saw that together. Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:35",
+      "text": "And I cackled through the whole thing, which I don't know if that heightened or decreased Jason's enjoyment, but I remember laughing through the whole thing."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:42",
+      "text": "It was so funny."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:43",
+      "text": "Yeah. Glenn and I used to go see movies together."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:45",
+      "text": "Dang, that's amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "30:47",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:48",
+      "text": "Yeah. What a time. And did you ever read the book?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:52",
+      "text": "I read the first book."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:53",
+      "text": "Okay, that's good."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:53",
+      "text": "And I've seen the. I've seen the David lynch movie. I've seen the two new ones."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "30:58",
+      "text": "Great."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "30:59",
+      "text": "So. Yeah, but I haven't read past the first one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:02",
+      "text": "Okay, you don't have to. The first. The first one is great."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "31:06",
+      "text": "We like that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "31:07",
+      "text": "There we really like the first three, and we especially like the second one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "31:10",
+      "text": "But my barber is. Was like, I met him, and he's not always the guy who cuts my hair, but, like, he's. He, like, yesterday, someone else was cutting my hair, but he was in the chair next to me. And he last couple times has been working his way through the Dune books. Like, it came up in the first. It came up in the first time I ever got my haircut that he was reading Dude. Because it was, like, on his. It was on his. On his desk on the counter. And I was like, oh, you're reading Dune? And it was like, we've talked about this before. This, like, always this, like, awkward moment of, like, when do I, like. I was like, oh, do you like Dune? And, like, you know, is like, wind is, like, the answer to that. How do you appropriately sort of say, like, yes, I like Dune. I have hosted a podcast about Dune for four years and covered, like, every book and, you know, blah, blah, blah, blah. But anyway, he read Dune, and he was like, I loved it. I was like, yeah, okay. And then he read Messiah. He was like, this is great. Then he read Children Are Doing. He's like, I love it. And I was like, yeah, it's going great. I was like, yeah, you might want to stop there. And he's like, I don't know. There's more, though. I was like, there's more. There's definitely more. And then he. And I came back in yesterday, and he was like, I read God Emperor Dune. I was like, oh, how'd that go? He's like, that. I. I'm taking a break from Dune now."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:19",
+      "text": "I'm not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:20",
+      "text": "I was like, yeah, that's fair. That's fair. My guy. Like, no problem. I understand. It's not great, but, yeah, so, you know, there's. There's. It's getting out there. People are getting out there. And I got to recommend that he read. I got to recommend that he read Fire upon the Deep by Vernon Venga. So, wow. I was like, I guarantee you're gonna like this book, so I'm improving lives out there."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "32:44",
+      "text": "I love it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:45",
+      "text": "I have never reread Fire upon the Deep."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:48",
+      "text": "Oh, man."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:49",
+      "text": "Which I loved that book when it came out."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:52",
+      "text": "I've read it so many times. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "32:55",
+      "text": "Oh, really?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "32:56",
+      "text": "Oh, yeah. I've read it, like, three to four times, and, like, it's so good. It's."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:01",
+      "text": "It's the coolest freaking. It's definitely the coolest freaking world."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:04",
+      "text": "Yeah, it's the best. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:06",
+      "text": "I like that there's never any announcements about it being done. Like, everybody's like this. There's no chance, dude."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "33:13",
+      "text": "This."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:13",
+      "text": "Yeah, yeah. No, no one yet. You never know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:15",
+      "text": "Talking hive mind dogs. What?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "33:17",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:18",
+      "text": "Doable."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:18",
+      "text": "That was cg. I can get you a hive mind dog. I get you a hive mind dog."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:24",
+      "text": "Any other pieces, Jason, of DO News? Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:29",
+      "text": "What was the other thing? Shoot, now I'm not going to remember. We had."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "33:32",
+      "text": "We did cover the general Hatch news."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:34",
+      "text": "General hatch news, I guess. Oh, the same people that sold Prime One who sold the Timmy statue for Dune are selling a Fade Rautha statue."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "33:47",
+      "text": "No."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "33:49",
+      "text": "This winter. And same size. Third scale size. And so if I get that, I can make the two of them kiss. So I'm definitely getting it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:00",
+      "text": "Oh, my God, that's hilarious."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:01",
+      "text": "So I'm excited to spend my money on that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:04",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:04",
+      "text": "What else? Yeah, no, that was my other piece. That was the other piece. It's going great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:09",
+      "text": "All right, Glenn, what? Do you have any. Any Hatch news you have for us?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "34:12",
+      "text": "I'm gonna read the next Dune book, I guess, by the time of my next appearance. How's that?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:16",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:16",
+      "text": "That's great. All right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:17",
+      "text": "All right, Very good."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "34:18",
+      "text": "So like, two or three years from now. Sound good?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:20",
+      "text": "Okay, perfect."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:22",
+      "text": "We'll be here. We have to keep doing this forever, apparently."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:25",
+      "text": "Yeah, exactly. Exactly. Hey, let's just welcome some new Discord members really quick. TTT. 1, 2, 3, 4, 5. That seems like a bot. Piers Plowman, Pre Mortem and Dan."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:39",
+      "text": "Welcome, all."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:40",
+      "text": "Welcome."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:41",
+      "text": "It's going great. Discord's going great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:43",
+      "text": "Time to show up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:44",
+      "text": "It was nice to have Discord during all the trauma."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "34:47",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "34:48",
+      "text": "You know, it was a nice place for people to. To sort of commiserate with one another and. Yeah. You know, so we'll see how it goes."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "34:57",
+      "text": "I gotta. I'm changing my resolution for. I'm gonna get in the Discord group before I get. Because I'm behind on that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:04",
+      "text": "So are you in any Discords at all, Glenn?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "35:06",
+      "text": "It's been a while. I was in some. In the coldest part, so to speak, of the COVID and General, but I haven't been involved. I've kind of weaned a lot on my social media."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:19",
+      "text": "What was. What was one that you were in that was helpful?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "35:22",
+      "text": "Not worth talking about."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:24",
+      "text": "Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:25",
+      "text": "You don't have to out a man's Discord subscriptions. That's like too much. We don't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:29",
+      "text": "All right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:29",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "35:30",
+      "text": "They're private communities."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:31",
+      "text": "That's private."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:32",
+      "text": "It is a great. But it is a great place where we're Having these smaller conversations, you know, as opposed to the broader public Internet."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "35:38",
+      "text": "So it's super interesting and like, the whole governance model is super interesting. So I'm eager to get back in and learn some more."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:44",
+      "text": "Yeah, that's great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:45",
+      "text": "Cool. We run ours with a tight. With a tight fist. All right, are you guys ready to get into this movie?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "35:57",
+      "text": "Yep."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "35:57",
+      "text": "Oh, man, what a dream. Let's do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "35:59",
+      "text": "All right, here we go. Doctor Strangelove, or How I Learned to Stop Worrying and Start Loving the Bomb is the toll of living our lives under the threat of elimination every second of every day. At the peak of the Cold War, American and Soviet forces are at a constant state of high alert. Our nuclear armed bombers airborne, kept in check only by the knowledge of the careful controls put in place to prevent a reckless unprovoked attack from triggering mutually assured destruction. But when decorated United States Air Force Brigadier General Jack D. Ripper becomes obsessed about an international communist plot to poison the precious bodily fluids of ordinary Americans, he launches his squadrons to start World War three. Now it falls to the powerful men in the Pentagon's war room, led by General Buck Tergison and President Merkin Muffley, to decide whether they can prevent disaster or launch all the rest of our forces in a devastating and pointless expanded first strike. But when all else fails, they will turn to a natural Nazi scientist turned American hero to save the future of mankind from a secret Russian doomsday weapon. They will place all of our fates into the twisted hands of Dr. Strangelove."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "37:44",
+      "text": "On sunny day. That's good. That's good you got there. Yeah. Accurate, accurate, accurate."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:57",
+      "text": "All right, Glenn."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "37:59",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "37:59",
+      "text": "What is your first exposure to Dr. Strangelove?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "38:03",
+      "text": "I'm pretty sure it was in college at either the, like, University Cinema Art House or the Paramount in Austin. And I went with a couple of my brother's friends who were older and hipper and, you know, exposing me to things I needed to see, like Dr. Strangelove and taxi Driver and stuff like that. And I think I liked it. I recall liking it, but not liking it as much as I did about five years later when I binge watched it like probably 10, 15 times when I was in law school. So I count the real first exposure as seeing it when I was in law school and then really falling in love with it. So around there."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "38:41",
+      "text": "Nice, nice. And Jason, what about you?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "38:45",
+      "text": "You know, I. I went on like, you know, as we'll talk about and we talked about in the 2001 episode, like, Stanley Kubrick is probably the most important director for me. And so when I went through my initial kind of Kubrick, this guy seems good. I went back and, you know, just like, watched everything. And so I saw. Saw Strange Love probably in high school at some point. And I think it's one that, like, probably on the first watch, like, it didn't blow me away as much as, like, 2001 or Clockwork Orange. Like, ones I was like, oh, these are, like, really breaking my mind open. But obviously, as time has gone on, the significance of Strange Love in cinematic history is. Is pretty large. And you got. You kind of see how it's. It's. You see, it's. It's reverberations in a lot of places and other places that really matter to me. And we'll talk about that as well. And so it's become one that I'm like, oh, this is. This is. This is a banger. But, like, all of his movies are bangers. They're all great. He didn't make any duds. He made no clankers. He's one of the only undefeated directors. So. So, yeah, that's my history with Strangelove. Really, really like this movie. Really like Kubrick. I can't believe we've. This is only our second Kubrick movie. And we've. Yeah. I mean, Michael Mann movies and, like, what else? We gotta."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:07",
+      "text": "We gotta. We gotta pick our. We gotta pick our battles when we're ready. When we're ready to fight."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:11",
+      "text": "We're ready now. We need it now it's here when."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:13",
+      "text": "We needed it most, now more than ever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "40:16",
+      "text": "A light and dark places when all other lights go out. So."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "40:19",
+      "text": "Yes. So I, you know, I grew up with Kubrick for sure. My first kind of real exposure for Kubrick was watching 2001. One which would be on the air, right. Like, it would get broadcast every year, every couple years, trying to. As we described. And a lot of people experiences trying to stay up for the whole movie and always falling asleep. So it's kind of like always there in the background. And then once in the mid-70s, once we had a Beta. Like we had Clockwork Orange on the house. I saw that way too early. The Shining. I remember coming out and I think I. I think dad probably had Dr. Strangelove. But it didn't have, like, a specific strong impact. And so when I saw it when I was in college, that was the beginning of me really being completely obsessed with this film. And specifically, you know, all of the Ripper precious bodily fluids as we'll get to in a few minutes like that, that just. I Thought that was so funny. And, and, and Sterling Hayden's performance just kind of. Kind of blew me away. So I, I just. I. I love. I love this movie. And I haven't actually seen it in at least a decade. So it was really nice to. To come back around and experience it again. Again, some quick behind the scenes. So Kubrick started with nothing but a vague idea to make a thriller about a nuclear accident built on cold wheel, Cold War fear for survival. And so while doing the research, you know, this whole notion of the balance of terror between the nuclear powers was his focus. And he got turned on to Peter George's thriller novel Red Alert and immediately bought the rights. Either of you guys have read this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "41:58",
+      "text": "Book or don't know much?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "42:00",
+      "text": "Have not."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:01",
+      "text": "So this was originally. The book and the film were originally intended as a serious drama. So it was a very. It's kind of like the Harrowing. And ultimately there was the movie that came out that Kubrick ended up suing them and getting it delayed. Fail Safe with Peter Fonda, which came out that next year or later that year. Is that kind of like super serious dramatic version of that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:27",
+      "text": "That."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "42:29",
+      "text": "But as they were working on it, Kubrick said, my idea of doing it as a nightmare comedy came in the early weeks of working on the screenplay. I found that in trying to put meat on the bones and to imagine the scenes fully, one had to keep leaving out of it things which were either absurd or paradoxical in order to keep it from being funny. And these things seem to be close to the heart of the scenes in question. So that's just a wild idea to transform a project that dramatically."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:55",
+      "text": "Pretty crazy."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "42:56",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "42:57",
+      "text": "Especially because, like, never before or since does he do this kind of movie, right? Like, this is. This is a complete one of a kind for him. Right? Like, he makes. He makes movies that, like, you could sort of like the Cohens, you can in some ways consider genre pictures. Like, you know, he makes, like, sort of a noir movie. He makes, like, you know, you know, he makes a sword and sandals movie. He makes, like, you know, a science fiction movie. He makes. He makes movies that are, like, you know, that have, like, sort of established types. He never makes a comedy again. And it's. It's tonally, you know, with Pratt Falls and, like, goofy names and like, you know, all of the. All of the business. Like, it's really a one off for him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:39",
+      "text": "His movies in general also are not funny, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "43:42",
+      "text": "Like, not full of laughs."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "43:43",
+      "text": "Right?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "43:44",
+      "text": "Well, I'd say. Allow me to interject on that one. So I Maybe I'm twisted, but. And I think I read some. Some take somewhere at some point. Like you all, I'm a. I'm a. A Kubrick stand to the bone for sure that I forget who it was now. Had a theory that actually, in some way you could watch all of his movies as comedies. If you're twisted enough or if you see it from the right angle, you can definitely find the Shining is actually hilarious. It's terrifying, but it's also hilarious. And I think that can be true for a lot of his movies. However, I agree with you that it's an outlier with Strange Love. There's nothing that's zany or wacky about his other movies, except maybe some of the violence in Clockwork Orange is wacky. But there's nothing slapstick and."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:24",
+      "text": "But, but as opposed to, like, Star wars, which, like, has really funny elements in it. Right. Like, there's a lot. There's a lot of lines and deliveries that are really funny. I just, I mean, I remember laughing really hard at R. Lermey's performance at the beginning of Full Metal Jacket. That definitely brought. Brought me some laughs."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:40",
+      "text": "But in general, the most of that."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "44:43",
+      "text": "Movie is not a."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:45",
+      "text": "Not a big chuckler."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "44:46",
+      "text": "The second half is not hilarious."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "44:48",
+      "text": "Yeah, no, not."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "44:49",
+      "text": "Not so much. He ended up bringing in a satirist, Terry Southern, as the co writer in 62. And he helped do a polish on it to bring up some of the comedy stuff. And we'll talk about the performances as we get there and the things that he did to bring those up. This was filmed at Shepperton, and I can't remember was Shepperton where they did 2001. Jason."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:09",
+      "text": "I believe it was. I believe it was."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:12",
+      "text": "But here they only had three stages. They had the war room, they had the bomber, and they had the hotel slash Ripper's office. So this was a very, very controlled production. And in the end, the budget was only $1.8 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:27",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:27",
+      "text": "Worldwide, $9.2 million."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:30",
+      "text": "This one worked. Wow. This one worked. Yeah. You could tell it was cheap. I mean, you could tell it was, you know, there. There are, like, just these few set. Few sets, so. That makes sense."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:40",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:42",
+      "text": "I wonder how much of that was Peter Seller's money, huh?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:45",
+      "text": "That's."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "45:45",
+      "text": "Yeah, it's a good point."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:46",
+      "text": "Good question."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "45:47",
+      "text": "It's a good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:47",
+      "text": "That's a good question."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "45:48",
+      "text": "It kind of works. The limited set works, though, for, like, the cloistered hermetic dudes in a room."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:54",
+      "text": "Totally."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "45:55",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "45:55",
+      "text": "Yeah, totally. Other box office hits in 1964. What a time. Mary Poppins, My Fair lady, the Pink Panther. Speaking of Peter, Elvis does Viva Las Vegas, and then also Beckett, which I always loved."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "46:11",
+      "text": "Imagine, just like it's like the weekend at the movies and you're just signing between Mary Poppins and Dr. Strangelove. It's like, quite a time. Quite a time to be alive."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "46:21",
+      "text": "Quite a time. All right, Glenn, where do you want to start? With Dr. Strangelove. What's your first point?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "46:29",
+      "text": "Well, I mentioned a second ago, maybe because, in part because of the production constraints, but I also think that there's a theme here of Strangelove is one of a few Kubrick movies where one of the themes is it's too many dudes in one place. Too many dudes in a constrained environment and in a hermetic space. It's the sausage party problem where literally, like, I think four of his movies are. And I think all the war movies are just too many dudes. And so this movie has, I think, one female cast member. One. One. One woman character in the movie. She's in a bikini. I think in her appearance. She is. Which is on. On point. On theme for the. For the movie of too many dudes who are clearly repressed. And it's coming out in weird ways."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:14",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:14",
+      "text": "Like."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "47:15",
+      "text": "Like lust for weaponry, etc. But it's similar, like, to, you know, like, Paths of Glory is also a too many dudes in a confined space movie. It's. You're in a trench or you're in a tribunal or you're in a. Like, officer's quarters. And in that movie, like, I'm citing this one because I think it's a deliberate choice on Kubrick's part, not just, like, a relic of the times that there are limited female roles because the ones in, like, Paths of Glory is incredible. The end of Paths of Glory. Spoiler alert. If you haven't seen it, skip ahead."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:46",
+      "text": "No, no, no, no, no."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:47",
+      "text": "No spoilers. I haven't seen it yet."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "47:50",
+      "text": "Okay. Okay. Well, then do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:52",
+      "text": "Not spoiler."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "47:53",
+      "text": "Got it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "47:53",
+      "text": "Okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "47:53",
+      "text": "Okay."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "47:54",
+      "text": "So there's a key role there. And. And I would say same with. Same with. Have you seen Full Metal Jacket?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:00",
+      "text": "Yes."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "48:00",
+      "text": "Okay. You seen movies. There's a key."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:03",
+      "text": "There's a key female role in that, too. Yeah, that's very interesting."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "48:06",
+      "text": "Yeah, yeah, yeah. And it. And it's definitely too many dudes in a confined space."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:10",
+      "text": "Right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "48:10",
+      "text": "For the."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:11",
+      "text": "Right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "48:11",
+      "text": "Most of the movie. So. So anyway, that's the first thing I wanted to throw out there."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:14",
+      "text": "I like that. I like that a lot."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:16",
+      "text": "I love the secretary she's taking the phone call while he's in the bathroom. Him it decoded as Wing attack Plan."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:23",
+      "text": "R."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:25",
+      "text": "Tell him to call what's his name?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:28",
+      "text": "Base Commander Ripper."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:29",
+      "text": "I have to think of everything around the continent."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "48:31",
+      "text": "The general suggests you call General Ripper, the 843rd base commander. Oh, all communications are dead. Ball."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "48:40",
+      "text": "Tell him to do it himself. I love that. It's also somewhat implied that she has a relationship with the guy who's calling. Like, she kind of like you. She's, she's like, oh, hi. Like, you know, like, she, like, like she sort of like, has, like, there's something going on there. She plays it in, like, this very kind of, like, subtle way where it's like, oh, interesting. General's in the powder room right now. Like, it's, yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "49:00",
+      "text": "She, she twists the telephone wire in her finger."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:03",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "49:03",
+      "text": "Sort of like."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:04",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:05",
+      "text": "Nice."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:06",
+      "text": "Yeah. Whoever Colonel. Whoever, Colonel Puntridge, I think is the one that's calling is, there's something, there's something going on between her and her Colonel Punch, for sure. I love the end of that scene, too. The end of that scene is he says, you know, start your countdown, you know, and I'll be there. I'll be back before you can say blast off. And the scene has, like, kind of a, you know, abrupt cut, but it's him giving the punch line and then her blowing smoke in his face."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:31",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:31",
+      "text": "Like, there's kind of a contempt that she has for him."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "49:34",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "49:34",
+      "text": "But I, I love, I love that scene also for its, like, set design, I think. Like, this office slash, like, like, song, like spa that they're in is, like, so weird. It reminds me of, it reminds me of Clockwork Orange where you kind of get these rooms that exist without clear analog to rooms that humans have. Like, you're just like, what is this? It's, it's really interesting. Anyway, those are all my thoughts on that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:00",
+      "text": "I love Buck when he gets on the phone."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:03",
+      "text": "All right, tell you what you better do, buddy. You better give Elmo and Charlie a blast and bump everything up to condition."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:08",
+      "text": "Red and stand by the blower."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:09",
+      "text": "I can get back to you, Slap Belly. Yeah. Like, here's what we're going to do. Yeah, it's great. It's great. It's great. It's a. Every to every tonal choice in this movie is exactly perfect and could be completely terrible. Like, I, I, I think it's like, it's one of those things that we talk about a lot where there's a fine line between, this is genius. And this just didn't work at all. And like, like definitely like any one of these characters, any one of Peter's like Peter Sellers, Dr. Strangelove, any one of these characters that are like very broad should nothing. So that should not work. But it does because Stanley Kubrick is great."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "50:54",
+      "text": "Right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:55",
+      "text": "So yeah, what's. Is it my turn?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "50:58",
+      "text": "Yeah, go for it, dude. What's your first point?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "50:59",
+      "text": "I've already had several points. To me, this movie is the like. Like I. I sort of alluded to up front in the history of our history of this movie. Like for Kubrick was not my initial love, but like it's become one that really matters to me because this is really more than almost any other movie. The Venn diagram of the Cohen's and the Kubrick of together. Like you really see a lot of. You really see a lot of the Cohen's in this movie. Like Cohen's love absurdist humor. The Cohen's love dark comedy. Like this is the most dark comedy that Kubrick ever does. It's unsurprising for that reason that like Poe Ope shows up in Raising Arizona, like in the bathroom scene where they've escaped from prison. Like that's a graffiti that's on the wall. There's no way that's accidental for the Cohens."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "51:51",
+      "text": "I didn't know that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "51:52",
+      "text": "And so it's like I. I think like, I think like this like you know everything like from Major Kong putting on the cowboy hat when he opens the save. Like the sort of the adolescent humor of starting the movie. The airplanes docking. Like this sex scene between, you know, the air airplanes. Like the toe to toe with the Ruskis line. You can imagine a Cohen brothers character saying toe to toe with the Ruskis. Like that is 100. And then like I think burn after reading is like the closest like that, you know, is. Is a pretty close analog to, to the, to. To them doing like their version of. Of a strange love movie. Which we absolutely should do because it's going to be relevant once again. It was relevant. 2016 after readings time is back."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:40",
+      "text": "Yes, I'm ready."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:42",
+      "text": "Get ahead of the curve."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:43",
+      "text": "I'm ready."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "52:44",
+      "text": "So yeah, so all of those things are things that really stuck out to me on this re reach read. And like, because the Cohen and the Kubrick are like the most important directors to me, this movie has a special. A special place."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "52:58",
+      "text": "That's awesome. That's awesome. I love that. For me, I just want to start with just this film is gorgeous and just the style dripping off every frame of this Film. And my first note was, oh, my God, this font. Could not believe this font. So I had to go research it. It was designed by Pablo Farrow, who also designed the opening sequence with the orchestral music with the bombers refueling Jason that you were just talking about. And it's such. This incredible. He was a specialist at doing animations and doing opening sequences for films. He also did Thomas Crown Affair and a bunch of other stuff in addition to designing, you know, a bunch of logos and things. So, like, for instance, he worked on the first NBC Collar, Peacock, Bullet, opening sequence and credits Clockwork Orange. To live and die in la."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:56",
+      "text": "Amazing."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "53:57",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "53:57",
+      "text": "Amazing. We're still talking about that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "53:59",
+      "text": "Beetlejuice, Zardoz."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:02",
+      "text": "Wow. This guy."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:03",
+      "text": "And of course, listen to this. Stop Making Sense, right? That has the same beautiful hands, stretchy, fun."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:09",
+      "text": "That's a lot of sense. What a cool. What. That's a good find. This is a good. For good. I. I hate to hand it to you, but you got a good one here. Like, to find, like, define, like, the parallel between this and Stop Making Sense is very strong."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "54:21",
+      "text": "That's very."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:22",
+      "text": "Yeah, that's great. Yeah, that's really great. I. I noticed this too, when I was watching the movie. I was like, oh, it's like. It's actually fun to see Kubrick with a title sequence that's like. Yeah, a title sequence at all. Like, I mean, like, it's just like, you know, it's. It's. His later movies don't have that and, like, sort of like Woody Allen, he kind of settled on, like, kind of a font and kind of like a style for. For titles that was very kind of conservative and. And this one really has a lot of personality. And so I definitely was like, oh, it's like Kubrick doing, like, titles with a big personality. That's fun. That's great. What a legend that guy is. Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "54:57",
+      "text": "No doubt."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "54:58",
+      "text": "Good out for good. Good work. Good looking out for him. I bet he. I bet he has a story like most people who've worked with Kubrick. If you read the stories of people who work with Kubrick who have particularly, like, screenwriters, this is most true. But it's also true for, like, any of the, like, the creative type. Like, you know, so any of the sort of, like, not the, like, craftsmen, but, like, the. Any of the creative types. Types like, Kubrick has this reputation of just being, like, a brain vampire. Like, he would just, like, find someone and, like, just be like, I'm going to suck out every thought that you've had about this thing. And then Just use it with no attribution. Yeah. And, like, Arthur C. Clarke is famously one of the victims of this. And, like, so is. So is like, the guy. So is the screenwriter for, like, Eyes Wide Shut who wrote like, a whole book about this. And, like, Kubrick really just, like, would find people who, like, had a taste and had, like, a notion and just, like, just get the most out of. Yeah. Would feast. It's like, a very interesting dynamic in his professional relations."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:03",
+      "text": "Well, you're probably the most important person in terms of why this film looks so good, is the director of photography. So for the Deakins Award for Outstanding Excellence, Gilbert Taylor, after this, he did A Hard Day's Night. He directed the Omen. He directed a little film called Star wars. And then he went on and shot Operator. He was dp. Yeah, he was DP for Star wars. And then he also was pretty DP for Flash Gordon."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "56:33",
+      "text": "Nice."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:33",
+      "text": "That's pretty crazy. That's pretty good. I think it does always sort of need to be said whenever we talk about director of photography, cinematography with Kubra. And I don't mean this, like, obviously, this guy's a fucking legend."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "56:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "56:46",
+      "text": "I don't. And so I, you know, I'll. I'll. And. And the movie looks phenomenal. Particularly like. I think the lighting in the War Room is. Is. Is insane. But, like, Kubrick was such a photographer himself and, like, has, you know, background in photography and would operate the camera so much himself that, like, that, like, there's. There's very few technical directors who have as much kind of cinema, you know, cinematography in their DNA as Kubrick. And, like, had as much sort of say of, like, how the movie was going to look as well."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:14",
+      "text": "Listen, listen to this one. Listen to this one. Kubrick asked the production designer, Ken Adam to make the War Room out of concrete so that the DP Taylor could only use the onset hanging lights."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:28",
+      "text": "Okay."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "57:29",
+      "text": "And then had each lamp individually tested and carefully placed until he was happy. Until Kubrick was happy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "57:36",
+      "text": "Wow."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:37",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "57:37",
+      "text": "I love this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:38",
+      "text": "That's what you do."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "57:39",
+      "text": "I love this topic, each of the. Of the style of this movie because in my watching it again yesterday, for the first time in a while, despite having seen it a million times, I was. I was, you know, always. I was always thought of it as it's the dialogue movie, it's the joke movie, it's the pacing and the acting movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "57:55",
+      "text": "Right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "57:55",
+      "text": "And this time around, I think maybe the first time, I was. I was always like a. The Kubrick fan who loved the classic, like, hyper symmetrical, super slow Pushes super wide shots that become super tight. Like all the signature cinematography kind of tricks of his and the aesthetics, right. Of like there's that cold detached kind of thing from Clockwork Orange shining etc. And I always thought of this as kind of like the outlier. But then I watched it last night, I was like, wait, this looks awesome. I had actually never really appreciated. It's just different from all the others."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:24",
+      "text": "Y totally."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "58:24",
+      "text": "I think that's right. I definitely, I, I think that's a really good point and one that I had as well, which was like, I, you know, was like, oh. Like I've always thought this is like the talking movie with the jokes and like in watching it even like all these scenes in the war room and all the, like there's scenes of, of Mandrake having the conversations with Ripper. Like they, they, they, they are so perfectly framed every time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "58:48",
+      "text": "This, the scene where Ripper has his arm around him and he is, he just kind of like going off and Mandrake is trying to, desperately to keep it together and try and you know, figure out how he's going to get the codes out. It's just amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:01",
+      "text": "Real strong. Real, real strong."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "59:04",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:05",
+      "text": "I will also say, yeah, the close up shots of Hayden when he's smoking his cigarette."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:09",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:09",
+      "text": "Ripper smoking that. But then completely orthogonal to all of this is suddenly it kicks into this documentary style for all of the battle sequences, right?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:21",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:21",
+      "text": "And that stuff looks incredible. Like just so much so that I."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "59:25",
+      "text": "Was like, is this like the first time I saw it was like, is this like stock footage of like war? Like, where did, like how did they, where did they get this from? Yeah, yeah. It's not. It's Stanley Kubrick fighting, Fighting a war. Stanley Kubrick staging."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "59:39",
+      "text": "Yeah. My note said these shots look like they're straight out of Vietnam. Like it just red 60. So strong. Holy cow. Yeah, that was, that was really good last piece. I'll say. Just in terms of the style, I was so blown away by the B52 bomber set. Yeah, so. So they had no cooperation from the Pentagon in the making of the film. So the set designers, they reconstructed the airit aircraft cockpit to their best of their abilities using a B29 Superfortress and a single photo of the B52, which at the time was a state of the art and top secret off limits for everyone. And when the Air Force personnel came to take a look at it, they said it was absolutely correct, even to the little black box, which was the CRM. And it was so accurate that Kubrick was concerned whether Adam's team had carried out illegal research."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "60:28",
+      "text": "Yeah, that's right. That's right. One note on the CRM is that in Back to the Future, in the opening sequence of Back to the Future, where Marty McFly plugs into Doc's amp and knocks himself across the room, one of the little switches is the CRM is labeled CRM. It's like CRM 114 specifically, like, which again, like. Like, it's like when. When you start, like, sort of looking for it. Like, the significance of this film to some of the directors of some of the most, like, significant films is very high. And it's like something that people felt very comfortable just sort of like, paying homage to, which I appreciate."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:09",
+      "text": "That's so good. So good. All right, Glenn, your next point."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "61:14",
+      "text": "So it's impossible to pick a favorite character, obviously, in this because there's so many of them, and they're all so amazing this time around. And I think early on, when I first fell in love with the movie, too, I definitely have a special connection to. Something about Mandrake really grabs me. So I just want to spend a moment talking about Mandrake, please. There's a bunch of different aspects of it. One is that. So I noticed this time the movie opens on him, which was like, ah, that's interest. Interesting. And later on I was thinking, like, this is interesting because there's not really a. There's not really a protagonist to this movie. Right. Not a clear one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "61:46",
+      "text": "Right, Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "61:47",
+      "text": "So this is Peter Sellers. Just. Just for folks. Just so folks. This is Peter Sellers. He plays three roles in the film. One is a. Is a UK officer who is for some reason, attached to General Ripper. And then we. He plays President Muffley and he plays Dr. Strange."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "62:03",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:03",
+      "text": "Those are the three roles. So this is his British officer."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "62:07",
+      "text": "Thanks for the contact. You guys are podcast pros. That's really helpful."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:11",
+      "text": "Age can't help but produce. This is just what he does."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:13",
+      "text": "I don't want to lose anybody. I want to bring everybody along."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "62:16",
+      "text": "No, it's great. Yeah. So Mandrake, the RAF officer who reports to Ripper, apparently in some form or fashion. And he's kind of the straight man in the movie in a lot of ways. But he's also got some of the most hilarious lines."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:29",
+      "text": "Absolutely."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "62:30",
+      "text": "I mean, the most quotable over time that I would riff on with Friends for forever, like, you might call me a water man or the supposing a."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:36",
+      "text": "Bit of water has gone up, eh? And certainly one can never be too."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:40",
+      "text": "Sure about those sort of things. But you look at me now, do."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "62:42",
+      "text": "I look all rancid and clotted? You look at me, Jack. Eh? Okay."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "62:47",
+      "text": "And I drink a lot of water. You know, I'm what you might call a water man, Jack. That's what I am. I wrote that down on my quotable list. I 100% put down. I think the very first one is, you might call me a water man. Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "63:00",
+      "text": "I mean, he's got so many classic lines in there. And he's unfailingly polite and British under the worst circumstances. He's basically a prisoner. He kind of is the most normal person, you know, he's not insane like most of the other people in the movie, but he is, you know, and he also turns out to be like the person who gets closest to solving things. Right. He eventually, through Betty, through much suffering, including feeding Jack the bullets. Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:25",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "63:26",
+      "text": "Eventually does kind of figure out the recall code."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:29",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "63:29",
+      "text": "And. And, and then persuades to get the, The. The. The. The colonel who comes. Colonel Bat Guano, if that is his real name."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "63:37",
+      "text": "If that is your real name."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "63:38",
+      "text": "Eventually gets him to cooperate. And. And. But mostly it's just like for a straight man, he's got some amazing lines and there's little details too. Like when he's. He's with Sterling Hayden on the sofa and his kind of stress reactions are to just get smaller and smaller and he's folding the little piece of gum wrapper into smaller and smaller pieces and describing his experiences in World War II. Getting tortured and always unfailingly polite."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:02",
+      "text": "But those chaps, those chaps make such great cameras."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:05",
+      "text": "Bloody good cameras. I was on the. I was on the Rangoon Ichiban where away laying laying rail for the bloody Japanese choo choo. It's so funny. It's so funny. And like the part where he says where Jack's like. Like Jack's like the, The. The same sequence where Jack's like gonna go and shoot him himself. He says he's like. He's like, oh, yeah. A bit of water on the back of the neck, Jack. That'll. That'll do the trick. Like. No, what do you say? What do you say? You just give me the old code. Give me the codes. Oh, boy. Like the. Like it is. It's a money Python sketch in the middle of this. Otherwise I. The whole movie zany, but like it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:45",
+      "text": "He."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:45",
+      "text": "It's so good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "64:48",
+      "text": "My."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "64:48",
+      "text": "This kind of leads directly into my second note, which was like, this movie is fucking funny. This movie is very funny. Like the cinematography in the scene where at the beginning, when Mandrake or when, when Mandrake comes in and confronts Jack with the, with the radio. And it's this slow reveal of Mandrake realizing that Jack is nuts."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "65:13",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:14",
+      "text": "And like, you know, it's gone too far. Like, this is a loyalty test. And like, you know, know, like, you know, like there wouldn't be like terrestrial radio if we really had been attacked. And like, we, you know, we don't have a lot of time to recall the wing and so we better get on with that. And, and like, and Jack's just like giving him nothing. The whole scene is shot on Mandrake as a one shot on Mandrake until it reverses and you see Ripper shot from below smoking this ridiculous cigar. And it's just, it's really elegant. Like, it's a really elegant way of showing, like, where real power is in this dynamic."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "65:49",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "65:50",
+      "text": "And it's just, it's just great. I just love it. I love, love, love that whole, the way that whole thing is shot. I think it's so beautiful. And yeah, I think Mandrake might be my favorite character in the whole thing as well. He's so good. He's so funny. Without, you know, it's not the over the topness of Strange Love, which is, I mean, my most quotable line line from the, from the movie, the one that I always go back to. Greenhouses could maintain plant life. Animals could be bred and slaughtered. Animals could be bred and slaughtered. Like, that one to me is like 10 out of 10, no notes. But like, it is ridiculous. Like, I mean, it's a ridiculous line. And you know, Ed Sellers knows he's kind of going for it. It's one of the greatest movies ever made. This is a fantastic movie."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "66:37",
+      "text": "Yep. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:37",
+      "text": "Well, let's, let's, let's expand out and just hit Sellers while we're here."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:41",
+      "text": "All right, let's do it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:42",
+      "text": "So Columbia originally agreed to greenlit the film, but only if Peter Sellars would play four roles. And this was because Sellers."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "66:52",
+      "text": "What a weird thing. What a weird thing to insist on."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "66:56",
+      "text": "So I've never seen Lolita, but apparently in Lolita he plays one character who takes on multiple identities. Yeah. And they really like that idea. And so he was also meant to play Mage Major tj, King Kong. He was supposed to play the Slim Pickens role, but he was very loath to do a Southern accent."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:15",
+      "text": "Right."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:16",
+      "text": "Kubrick had somebody record, you know, a Southern person, record all of the lines. And then he sprained his ankle in the bomber set. And he's like, that's it. I'm out. I'm not."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:26",
+      "text": "I've got a gammy leg. Jack string in my leg. The string's gone."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "67:32",
+      "text": "Shot off. Shot off in the war."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:37",
+      "text": "Oh, man. Yes. So, I mean, thank God. Slim Pickens is amazing in this, right? Like, he does an incredible. He does an incredible job, and I have no idea what. What it would have been like, but I. I love his. President Muffley."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:50",
+      "text": "Yes, totally. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "67:52",
+      "text": "That whole thing. His phone call with the premier. Kiss off."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "67:56",
+      "text": "Well, I'll tell you what he did. He ordered his plane to attack your country. Well, let me finish, Dimitri. Let me finish, Dimitri. Well, listen, how do you think I feel about it? Can you imagine how I feel about it, Dimitri? Why do you think I'm calling you? Just to say hello. Of course I like to speak to you."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:25",
+      "text": "You."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:25",
+      "text": "Of course I like to say hello. Not now, but anytime, Dimitri. I'm just calling up to tell you something terrible has happened. It's a friendly call. Of course it's a friendly call. Yeah, well, of course it's a friendly call. If it wasn't a friendly call, well, you probably wouldn't have gotten it at all. And, like, he does this. This whole bit of business where he's finally. Where Dimitri's finally giving him the instructions to, like, who to call, like, the People's Civil Defense in Omsk or whatever."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "68:56",
+      "text": "And."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "68:56",
+      "text": "And. And he. And he does this thing where he goes, yes. Like, he does this, like, kind of. He, like he's about to say something. He interrupts himself. It's like, just like a weird little bit of business that Seller throws, that Sellers throws in, I don't know, like, genius. Genius. And he is really good in Lolita, too. I guess Lolita is also sort of a comedy. I guess Lolita is the other one that is like most comedy co Did. But anyway, great."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:28",
+      "text": "Really, really, really good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "69:30",
+      "text": "Where are we going now, Glenn?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "69:31",
+      "text": "Yeah, well, I know. We can go. We can go any direction. Glenn, what's your next point?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "69:35",
+      "text": "I wanted to talk a little bit about Terry Southern in this, even though he's not on screen. Yeah, please, just. It's also like a time capsule element of the movie. And you're coming about the title graphics guys and all the. All the people who. Who are in this movie who then, like, the network out towards other things they did is super interesting. And Southern just thought it was worth spending a beat on. And I think there's some debate about who wrote what. Right. So I think that, like, Kubrick heads are in Violent disagreement over that and et cetera, et cetera. So I'm not taking sides. But I think he's such an interesting character for a movie that's this satirical, this kind of like, early and just like his role in, in some of the. I gotta assume he contributed to the zaniness and the adolescent humor, etc. If you just think about some of the other stuff he did. So just for like, background, this larger than life guy, Terry Southern, who from, from Texas, actually, from like a little town south of Dallas, who ends up being like one of these guys who, you know, is in World War II and then comes back on the GI Bill and becomes an avant gardist. Like there's a few of these guys, right? And he's the one of, of them. And his version of it is to become like, you know, a satirist and, and he writes some extremely funny, irreverent, satirical, dirty things. And one of them was the, the Magic Christian, which I think is the book that got Kubrick's attention, which was kind of a hip, hip book in the late 50s, apparently."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "70:58",
+      "text": "And then there's a movie of. I, I watched the trailer for it as a movie. Peter Sellers and Ringo Starr as father and son, and it did not look good."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:07",
+      "text": "It is not that good. I highly recommend the book the Magic Christian. It has to do with a guy named Guy grand who's a billionaire who goes around making people do humiliating things for money and kind of really pushing the limits on what people will do for a buck."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:22",
+      "text": "Wow."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:23",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:23",
+      "text": "Damn. Jesus."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:24",
+      "text": "It's out there and it's very funny. But the movie, no, I would not recommend, except that it has, if I recall, Paul McCarty song, the Come and Get It. It comes from that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:36",
+      "text": "Yeah, yeah, okay. Yeah, yeah, yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:38",
+      "text": "But little trivia, not a Beatles trivia on Magic Christian too, is, you know, the, in the Peter Jackson documentary, the Get Back one. They're, they're shooting that, they're, they're recording that, I think on the same soundstage. And Magic Christian is happening next door."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:51",
+      "text": "Oh, wow."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:52",
+      "text": "Yeah. Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "71:52",
+      "text": "I'm pretty sure that's right."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "71:53",
+      "text": "Back and forth, I guess, I guess that's cool."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "71:56",
+      "text": "Crazy. I think that's right. I think that, like, there's some allusion to that in the documentary. I don't think they say what it is, but like, there's some illusion that Ringo's got other business going on. I, I, I have like, no knowledge of this Magic Christian situation."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "72:10",
+      "text": "Oh, it's, it's worth, the book is definitely worth checking out. And it is weirdly topical for 2024, obviously, but the movie maybe not. Yeah, no. So anyway, so Southern just feels like he's got some fingerprints on this movie. Even though it's in debate as to what. But some of the lines from, from, from major comics. Kong, you gotta figure, might have come from a guy who came up in the South. Oh, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "72:34",
+      "text": "Well, and it's interesting too, because. Well, first of all, like, I buck to me, George C. Scott in this movie is so funny and every bit of his delivery. But also there is incredible poetry in what he's saying. But it is necessary now to make a choice to choose between two admittedly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "72:55",
+      "text": "Regrettable, but never nevertheless distinguishable post war environments. One where you got 20 million people."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:01",
+      "text": "Killed and the other way you got."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:02",
+      "text": "150 million people killed. You're talking about mass murder, General, not war. Mr. President, I'm not saying we wouldn't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:09",
+      "text": "Get our hair must. But I do say no more than."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:13",
+      "text": "10 to 20 million kill tops, depending on the brakes. I'm not saying we're going to. We're not going to hear must. Yeah, that's. That's on my list of most quotable lines. He's, he. He fucking crushes that speech. And it's so ridiculous. Ridiculous. Like it's a completely ridiculous thing. And it's a lot of dialogue that he has to do too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:31",
+      "text": "A lot."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "73:32",
+      "text": "Yeah. So he's doing like, he's doing a lot. And it's in this like, very arch setting of the war room. And like, you know, he's got to do it to Peter Sellers, who's this like, tremendous comedic actor. And like, it's a high wire act that he has to pull off in this scene and in the war room in general."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "73:55",
+      "text": "And again, apparently in, in the research I was doing, they were saying that Kubrick would basically say, all right, we're going to do a warm up shot. Let's just do a take. Just go, just go big. Like, have fun with it. We're just, you know, I'm not going to use this. We're just, we're just, just for testing. And then he would often use those insane early takes. Yeah. And so Scott refused. Scott never wanted to work with him again after this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:16",
+      "text": "Oh, because he thought he, he got, he got tricked into, like, he thought he was."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "74:20",
+      "text": "Yeah, too, too vulnerable. But apparently he also kind of. Kubrick kind of kept him in line by playing chess. They played chess on set constantly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "74:28",
+      "text": "K. Famous chess player. Yeah, I mean, Kubrick, we talked about this on 2001. Tough collaborator, tough collaborator. Like, I mean, like, mix mixed verdicts. Like, there's. There's a lot of people who are like, look, he was really. He actually was really sweet. And, like, you know, he was. No one worked harder than him. And he didn't do. He never asked people to do anything that he wouldn't do. And, like, you know, blah, blah, blah, blah, blah. And he had a of. Lot of, like, he put a high prime. You know, he put a high stock in, like, personal courtesy and stuff like that. But, I mean, it's also the case that he was going to get what he wanted out of people. And, like, it was just. He was. He seemed somewhat, like, maniacally relentless about it. So tough one for those fans. But look, you're in the. You're in. You're in strange love. What do you want? I don't know what to tell you. Like, it worked out great. Like, sometimes that's what happens. It's a great movie. Our. Our target."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:17",
+      "text": "Well, it is. It is interesting, though, that apparently so Sellers specifically did a lot of ad libbing and apparently Kubrick incorporated all that back into the canonical screenplay, a practice known as retro scripting, which I had never heard of."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:34",
+      "text": "To be like, actually, I wrote this."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "75:38",
+      "text": "I don't know, who knows? But that's a wide. Speaking of attribution questions, that's a super interesting, interesting piece. Jason, your next point."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "75:49",
+      "text": "Let me see where we are, because we've covered a bunch of stuff. I mean, I would, I guess, like the timeliness of this movie we haven't maybe talked about. Yeah, there's obviously on, like, sort of the jokey surface level that, like, you know, the fluoridation of water is the, like, big thing that is the motivating force for Ripper. And of course, like, like, new health czar Robert F. Kennedy has promised on day one, have the Trump administration start scaling back the fluoridation of water and the nation's water supply."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:25",
+      "text": "All right, let's just. Let's just hear. Let's hear just a little bit about Ripper here, just for a second on the possible risks that we're talking about here. One second. Here we go."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:35",
+      "text": "Incredibly obvious, isn't it? A foreign substance is introduced into our precious bodily fluids without the knowledge of the individual. Yeah, Certainly without any choice. This is tough."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "76:54",
+      "text": "Oh, wait, what was this? This is from Henrietta's Lovers, the progressive funk band."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "76:59",
+      "text": "Oh, Jesus Christ in Gainesville. Oh, no, this is Matt's band."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:04",
+      "text": "Wow. Okay. We don't have to do more than that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:08",
+      "text": "Oh, my God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:10",
+      "text": "Well, I Can."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:11",
+      "text": "I can't believe you snuck in a Henrietta's Love."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:14",
+      "text": "You walked right into that one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:16",
+      "text": "I walked right in that. Henrietta's lover's trap. That's. Oh, man. So, yeah, I mean, it's interesting because obviously in the context of. In the context of 1963, this is like, about, you know, the. This is about, like, the threat of communist infiltration. And that's like, that paranoia is like, what is driving Ripper's like, fixation on fluoridated water. Now, that is slightly."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "77:47",
+      "text": "Somehow we. We ended up as the Democrats, as the last ones on the wall, carrying about, like, you know, potential, you know, global risks."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "77:54",
+      "text": "And like, this is. This is. It's. And so, like, this is not exactly. Even though it is the same issue, not exactly what I think is motivated your RFK's juniors, which is instead, like this, like, fundamental, you know, kind of distrust of. Of science and authority and like, you know, you know, like a elite consensus and whatnot. And like the. The desire to do your own research. But it's not. Not that. And one of the places in which it. One of the places in which it overlaps is he asked Mandrake, asked him, like, how did you become aware of this? He's like, well, yeah, I'll tell you, Mandrake, it was during the physical act of love."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "78:32",
+      "text": "Exactly."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:33",
+      "text": "And it's like this. It's this thing because, like, he either couldn't finish or couldn't get it up that he decided that the water was to blame."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "78:41",
+      "text": "Yep."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "78:43",
+      "text": "And that does kind of bring us back to present time because, like, so much of this, like, so much of this stuff, this, like, anti vax or, you know, like, this health. Woo woo stuff that's plaguing the country and will be a scourge on our children's health for the next four years and beyond on is like. Is also connected to this, like, this, like, desire for reclaimed masculinity and like, a sense that, like, you know, soy has made people impotent and like, everyone's low T and like, only, you know, high T individuals should be able to like, you know, make decisions for the country. Like, there is. There's something. There's something very familiar about for sure, loss of."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "79:18",
+      "text": "Loss of. Loss of essence and low T sound a whole lot alike."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:22",
+      "text": "Very similar. Yeah. So tough one for us."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:28",
+      "text": "But it was also tough like Ripper when he quotes Clemenceau before he goes off on this, right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:33",
+      "text": "He said war was too important to be left to the generals. When he said that 50 years ago, he Might have been."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:42",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "79:44",
+      "text": "But today, war is too important to be left to politicians. They have neither the time nor the training or the inclination for strategic thought."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "79:58",
+      "text": "Yeah, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "79:59",
+      "text": "Never more prescient than where we are right now."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:02",
+      "text": "Yeah, kind of. I mean, I will say, like, I will say, like, one of our issues. I mean, like, I. I think I find myself agreeing with Ripper in that instance. Right. Because, like, like, like, like, yeah, because, like, like, we've. We've one of the. One of the places where the wheels have not yet come off the coast. Heart is like the military is. Is like, you know, the senior leadership of the military, like, not being willing to go along with some of, like, the crazier things that were asked of them during the first Trump term. So, like, we'll see, you know, we'll see where we get. We'll see where we get next. But, like, it's. It does seem like. It does seem like it would be better to have anyone else in charge of that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "80:43",
+      "text": "I mean, it is fudgeing scary that, like, I believe that, you know, the executive should have quite a bit of power. The notion that we have to rely on military leaders to push back against incorrect instincts."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "80:59",
+      "text": "Yeah. Not follow lawful orders. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:02",
+      "text": "Yeah. That's a dangerous. That is a very dangerous place."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:07",
+      "text": "It's not great."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "81:07",
+      "text": "Yeah. And then. Then the icing on that is that is obviously the kind of core kind of plot device of the movie, or the core kind of lesson of it is that not only was there, you know, you left too much in the hands of the psychotic General Ripper, but then there's no way to claw it back because you've kind of automated authority after that in a bunch of different ways through the systems, but also obviously through the doomsday device, et cetera. But that's the extra nail in the coffin."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:37",
+      "text": "I mean, I did. So my bullet point here was the political implications. So, Jason, right on with you. And the first thing it made me think about was Annie Jacobson's Nuclear War A Strategy, which I read earlier this year."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "81:48",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "81:48",
+      "text": "Incredible book. People should definitely check it out. It's currently streaming on Spot Spotify Premium. So you can just listen to the book if you want to be terrified, and you should be. It's. It is really fascinating to hear how this works and the fact that there's really only about 26 minutes from start to finish to have any opportunity to. To change anything, and those chances are not good. So I would say, yeah, we. We still remain in that scary point, which, by the way, that is also Our six degrees of Dune."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:16",
+      "text": "Oh, six degrees."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:18",
+      "text": "There's no connection other than Denis has optioned Annie Jacobson's nuclear war as a possible movie."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:25",
+      "text": "Also brings us to Dulix Division, which happens exactly like literally the second of Dulix Division is the introduction of the fluoridation of water. Like that is like the, the reveal at the halfway point of this movie is that Ripper's whole motivating issue is his belief that the fluoridation of water is like, poisoning our children. So time."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "82:49",
+      "text": "Amazing."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "82:50",
+      "text": "I love the Dulux Division segment. It's one of my favorite upgrades about the, about the new version of the pod. It's like, it's not always, it's not always like, mean something, but looking at the halfway point in the movie is like a really fun kind of party trick, basically."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "83:06",
+      "text": "Yeah, very cool, very cool. I, I, the last point, I would say about just the political implications, the fact that the Air Force just immediately, you know, the, the regular soldiers just immediately go along. Right. You sure got to hand it to those commies, Gez. Those trucks really look like the real thing. I wonder how they got them. Well, just open up at 200 yards. Yeah, that's a scary notion of how people in general are willing to accept outlandish things."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "83:32",
+      "text": "Yeah, I mean, I think like the ultimate blame for that, the, the, the ultimate version of that argument is, you know, rest at the top, right? Because it's like the, the, the generals in the war room and the President and the Russians all accept this mutually assured destruction paradigm where something like the doomsday machine, like, seems like a logical response to, to, you know, escalation of, of nuclear conflict. But like, when you actually like kind of inspect it at all, you're like, wait a minute. This is a terrible, this is a terrible idea. We definitely shouldn't do that. And it's like, and it is, it's also like kind of in the, it reminded me of the three body problem a bit because there's the whole thing of like, you know, like the secret deterrent that can't be turned off in that as well. And it just turns out to not be a, turns out not to be a great strategy, even if you can convince yourself logically it's the way."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:23",
+      "text": "But strange love to the ambassador is."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:25",
+      "text": "That the whole point of the doomsday machine is lost if you keep it a secret."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:33",
+      "text": "Why didn't you tell the world, eh?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "84:36",
+      "text": "It was to be announced at the party congress on Monday. As you know, the Premier loves surprises."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:43",
+      "text": "Why did you tell the world, eh?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "84:45",
+      "text": "Yeah. Too funny. Let's see. Glenn, what is your next point?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:50",
+      "text": "I."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "84:50",
+      "text": "You know, I've been hogging points. I think I've got three. I could. I could go back to talking about any of the others. But, like, I mean, where else to go?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "84:56",
+      "text": "I've done three to my last sort of honorable mention."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "85:00",
+      "text": "Well, hold on. Let me go. Before we go to honorable mentions. Let me. I got. I got one or two left. Because you can always do more. What about just that, generally? Just the dramatic tension of this film. Right. You have the people. Let's talk about the guys on the bombers. Rip, James Earl Jones, who's there. And then. And Colonel King Kong. There is a lot of time in this film that is just them executing orders, turning switches, doing things like they're. They're sort of trapped in the machinery and the process of what they're doing. But it's quite an interesting narrative technique of. You have these people desperately trying to accomplish something that you and the audience desperately don't want them to accomplish. Yeah, it's just an interesting cognitive dissonance, I thought."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "85:43",
+      "text": "Yeah, totally. You're kind of. And it's like, you're sort of trained to root for the Americans, too. Like, even. And that kind of extends to the end, like, when Kong, like, does his ride down on the bike. Bomb. There's some part of you. There's. There's some part of me, at least, that's like, yeah, go fucking get him. Like, that's like a heroic act. Like, even though it's, like, absolutely not a heroic act. There's some part of you that's able to, like, say, all right. Like, he's willing to sacrifice himself and, like, do so joyfully to fulfill his mission. Like, that's like, you know. And do so as a cowboy. There's something, like, you know, very obviously American about. So. Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "86:21",
+      "text": "And around the same time, one of the things that grabbed me in this most recent viewing is so, like, James Earl Jones, who's trying to open the Bombay doors and having trouble. There's this kind of extended sequence where he's going through his checklist and."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:33",
+      "text": "For, like, two minutes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:34",
+      "text": "Yeah."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "86:34",
+      "text": "And the look on his face is this perfectly subtle terror where he's worried he's not gonna be able to do his job. And you're going, like, please don't. But he's just amazing in it. He had more lines in it than I remembered, actually. And he was really amazing, obviously, unsurprisingly. But that tension is a really good point."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "86:51",
+      "text": "H. Yeah, I dug that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "86:54",
+      "text": "Malfunction so he does this. All this, like, technical dialogue, but it's like he's like, somehow, like, kind of escalating the stakes. It's good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:04",
+      "text": "Yeah. And just generally the pacing of this is. Is kind of related in terms of the tension. The whole. You referenced it earlier, the whole two minutes of. Of Mandrake and Colonel Bat Guano as he's trying to make the collect call to the President or Y. Like, that is so funny. And he finally tells him, shoot, open the Coke machine. That's what the bullets are for. Holy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:30",
+      "text": "Yeah, that. That is. That is a real extended piece of absurd theater right there. Because he's like, you know, it's like. And it has this punchline of like, you'll have to answer the Coca Cola Company. Like, it's. It's. It's very, very funny."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "87:42",
+      "text": "As the water. As the Coke is spraying him in the face."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:44",
+      "text": "Yeah, yeah, yeah, exactly. Like, it's. Well, and this is. I guess I'll. I'll have to. This is one of my last points too, which is that there was. There were elements of physical. There are a lot of physical comedy in the movie. Like, there's a scene, Kev, I think, called out."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "87:59",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "87:59",
+      "text": "In chat, where. Where Buck falls over backwards being. Look at the big board. Like. And it's just this amazing fall. Like, he does this amazing fall that he doesn't even acknowledge doing, and the guy gets sprayed in the face. There was supposed to be. The end of the movie was supposed to be a pie fight that broke out in the war room. It was supposed to, like, really just kind of like, underline how unserious and adolescent these folks making these life or death decisions for the whole planet are. And one of the reasons the pie fight got scrapped was that Kennedy got assassinated."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "88:34",
+      "text": "Right."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "88:34",
+      "text": "And Kennedy gets assassinated November 63. And there's a line during the pie fight where they're like, the President's been hit. And they're like, all right, well, we're not going to. We're not going to put that. We're not going to put that in the movie. And like, just like that idea of, like, violence happening. And like, the other change that happens because of the Kennedy assassination is Major Kong says, you have a pretty good weekend in Vegas with that. And you could tell that the emergency kid, you could tell that's ADRD because his lips don't match. Because the original line was, you have a pretty good weekend in Dallas."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:03",
+      "text": "Yes."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:03",
+      "text": "And they're like, we're not talking about Dallas right now. In the fall of 63. So, yeah, like, those. Both of those things got JFK assassination."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:12",
+      "text": "Removed, but also the emergency kit having the Bible, Ruski language, the prophylactics, lipstick, nylons. So, so funny."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:22",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:22",
+      "text": "The actual. The actual first screening is like a test screening or an initial press screening or something, was the day JFK got assassinated."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:32",
+      "text": "Yeah. Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:33",
+      "text": "So they actually had to. They had to push back the release of the film into January. They're like, we can't do this right now."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "89:39",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:39",
+      "text": "And so they ADR'd it and then went for it."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "89:42",
+      "text": "Wow."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "89:43",
+      "text": "All right. Anything, Glenn, anything we've missed? Any honorable mentions or things that you want to make sure that we cover?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "89:49",
+      "text": "Well, I was just curious on your last point, like, do you all have an idea of. I only looked up, like, one article before this on the. How was the movie received, generally? Because it's so. You know, with the hindsight of 60 years, it's a little easier to watch than. Can you imagine watching this when it came out? And, like, there weren't a lot of movies that pushed the line, that were mainstream movies that are to this extent. I'm just curious if y' all have any idea, like, how it was received. Was it, you know, just over the top, irreverent for your average Joe? I'm curious."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:18",
+      "text": "I think it was received pretty well, actually."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "90:21",
+      "text": "Huh."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:21",
+      "text": "Strange Love is Kubrick's highest rated film on rotten tomatoes. 98% approved."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:25",
+      "text": "Rotten tomatoes loved it in 63. That's the answer."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:29",
+      "text": "Well, it was nominated for Best Picture, Best Director, Best Actor, and Best Adapted Screen Play did not win, but it was nominated for all those, and it won the BAFTA for Best Film from any source and Best Best British Film. Won both of those BAFTAs."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "90:45",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:46",
+      "text": "Yeah. Surprisingly, surprisingly good."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:48",
+      "text": "Killed it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "90:49",
+      "text": "Jason, anything you want to make sure we hit?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "90:51",
+      "text": "No, I. I've hit all my points. I'm really glad we did this one. I think we should do more Kubrick films. I think it's important, and I think we should do Burn after reading soon. Those are my notes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:01",
+      "text": "Okay. I will definitely."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:02",
+      "text": "Those are my. Those are the things I want one day."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:04",
+      "text": "I've never seen the Killing. I've never seen Paths of Glory. I've never seen Spartacus. I've never seen Lolita."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:11",
+      "text": "Jesus."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:12",
+      "text": "I've never seen Barry Lyndon."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "91:13",
+      "text": "Oh, my."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:14",
+      "text": "Jesus."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "91:14",
+      "text": "Oh, my."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:15",
+      "text": "Yeah, and I'd like to watch. I'd like to watch Eyes Wide Shut, so. So, Glenn, I think."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:20",
+      "text": "I think Barry. I think Barry Lyndon is probably the one I would recommend next, because I think it is very divisive."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "91:29",
+      "text": "Film."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:29",
+      "text": "Polarizing film. A lot of people don't like it. I think it is unquestionably one of the most important films ever made. Yeah, and. And like. Yeah, it's. It's a. It's a real triumph, particularly technically, that one."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "91:45",
+      "text": "It also seems to show up on a lot of, like, that's like a director's director movie that shows up on a lot of directors list as the number one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:50",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:51",
+      "text": "It's just that cinematography that people. People love it. All right, Glenn, who would Tilda Swinton play."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "91:56",
+      "text": "Play."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "91:57",
+      "text": "If you had to recast one role in this film with Tilta Swinton, who would it be?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "92:03",
+      "text": "My God, the President."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:07",
+      "text": "Yeah, that's good."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:10",
+      "text": "I love it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:10",
+      "text": "It's really strong."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "92:11",
+      "text": "I love it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:11",
+      "text": "I would probably do back guano. I think we could. I think we. We could pick that up a little bit. I think we could pet that one up a little bit. Like, that guy's fun, but like, it's sort of like the funniest part of. Is that he doesn't like, seem like. Like a. A guy at all. Like, he's. He doesn't seem like a military guy. He seems like he got lost in the. In the picture. And I think Tilda, I. I'm always looking to put Tilda in a uniform, but I think that one."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "92:34",
+      "text": "That's a good one. That's a good one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:36",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:36",
+      "text": "I mean, I'll just. I'll. I'll take the freebie and just say we'll just put her as sellers so she can. She can do all three."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:42",
+      "text": "Which she could do. Which she likes to do."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "92:44",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:44",
+      "text": "Nice."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "92:44",
+      "text": "I mean, I'd love to see her. A strange Love, I think would be. Would be awesome, but also her slapping her stomach as Bach."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "92:54",
+      "text": "One of the. One of the most. One of the most amazing last lines of any movie, sir. I have a plan."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:11",
+      "text": "All right, guys, can we do some letters and voicemail else really quick?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:16",
+      "text": "Let's do it. Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:17",
+      "text": "All right, here we go. First, we have a letter."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:21",
+      "text": "Hello."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:22",
+      "text": "Hey, bog pod. Hey, bog pod. Hello, bog pod. Hey, bog pod. Bog pod."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:26",
+      "text": "Bog pod."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:28",
+      "text": "Good. Whatever time it is. Escape hatch. I'm a bit under the weather, so it's a letter today. My doctor's a nice guy who offered me a few treatments, but he told me it might take a few days for me to get better. So instead I've hired a guy with no medical degree to come to my house and shoot me three times in the chest. I reckon that will fix things quicker. And Fox News agrees."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "93:48",
+      "text": "Yes."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "93:49",
+      "text": "Anyway, Dr. Strangelove is set in a fictionalized America where all of the important decisions are made by either the mentally unfit or straight up Nazis. Ah, yeah. Anyway, today's question is simple. Would you rather an administration run by the Central characters of Dr. Strangelove or one run by, well, the people who will be running it? Jokes aside, I hope you guys are doing all right. It's a bad time for your country and, by and large, the world, so take care of yourselves. Lots of love as always, Ethan."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:19",
+      "text": "Yeah, no, I'll take. I would take anything."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "94:22",
+      "text": "Yeah, Muffley seems pretty good."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "94:24",
+      "text": "Yes, totally. He's solid."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "94:25",
+      "text": "He seems fine. I'm sure his domestic agenda is great. Like, look, he might have made some mistakes on the international front that led to some, you know, pretty significant errors, but I'm sure he's got a banging economic plan. I would take almost anyone running the country, except for the crew that's going to run the country. I would literally take almost anyone. There's people who. I've been to a bad. Like, you know, there's people I've. I've been to a bad HOA meeting with that I would be like, but let's see what they could do with this. Let's see, like, give them. Give them the national security apparatus. Let them cook. They might do a better job. Like, yeah, there's people who fail to, like, you know, like, like, throw a good Thanksgiving. Who I would definitely put in charge of the country first. Like, these are the people we've got are the actual worst. And we will all suffer for it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "95:15",
+      "text": "Actual worst. I agree, but thank you."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "95:18",
+      "text": "Ethan, can we come live with you?"
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "95:20",
+      "text": "We'll see. All right, here is our next voicemail."
+    },
+    {
+      "name": "birria",
+      "timestamp": "95:32",
+      "text": "All right, barrier here. How's everybody doing? We all fending off existential dread. Oh, good, it's Dr. Strangelove. That'll help. You know, this is a classic, classic among classics. And Peter Sellers, just an enigma in the most endearing sense. Not only three roles in this film, but Inspector Clouseau, the Goon Show. My personal favorite. Being There. What a legacy. Here's three stories about the life and times of Peter Sellers. Two of these stories are false. One Stories Truths. Truthsayer Time. Number one, Peter Sellers made six Pink Panther movies, but turned down one script where Inspector Clouseau infiltrated a Nazi group in Paris. Or is it number two, Peter was friends with the Beast Beatles, who called him Mr. Kite. And yes, he was part of the inspiration for being for the benefit of Mr. Kite from Sgt."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:20",
+      "text": "Peppers."
+    },
+    {
+      "name": "birria",
+      "timestamp": "96:21",
+      "text": "Or is it number three, Peter Sellers was the first male to appear on the COVID of Playboy magazine. All right, which one of those stories about Peter Sellers is true?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:33",
+      "text": "Well, the second one, I think is not it, because we see Peter Sellers show up in. In Get Back and Get Back, this documentary we will talk about three times on this podcast. I'm not. Not about the Beatles. And it seems like they weren't particularly good friends when he shows up. Right. Like, it's kind of frosty. So I don't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "96:51",
+      "text": "It's like, it's just, like, really awkward. Right? It's really awkward."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:53",
+      "text": "He shows up and like, it's. It's not clear that it's working for anyone, that no one's getting what they want."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "96:58",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "96:58",
+      "text": "Peter Sellers being at get back and Mr. Kite was."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "97:02",
+      "text": "Is. I don't recall that part of it at all. That's. Mr. Kite's based on a circus poster. The lyric is so I think got him covered. So Southern. Southern was friends with the Beatles, though. He's on the COVID of sergeant Peppers, actually. It's one of his claims."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:16",
+      "text": "Jesus. Damn, that's impressive. So it's not that one. I don't know about the Playboy one. It feels like it could be that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:23",
+      "text": "God."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:24",
+      "text": "Feels like it could be that."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "97:25",
+      "text": "I don't know whether to want to see that or not. If it's true."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:30",
+      "text": "Well, I assume not. Naked."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "97:31",
+      "text": "I don't. I wouldn't assume anything."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:33",
+      "text": "I'm gonna go for number three."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:34",
+      "text": "That's the Playboy one."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:36",
+      "text": "That's the Playboy one. Let's see."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "97:37",
+      "text": "All right, well, I'm going. I'll go with that one, too."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "97:39",
+      "text": "All right, let's see here."
+    },
+    {
+      "name": "birria",
+      "timestamp": "97:40",
+      "text": "All right, which Peter seller story is true? Number three. Peter Sellers was the first man to appear on the COVID of Playboy magazine, April 1964. The issue featured Sellers dressed as a desert chic and a parody of Rudolph Valentino being adored by the sultry Karen Douglas. And yet you can go buy that on ebay right now. Looks like 39 bucks. All this Peter Sellers stuff makes me want to go back and watch those Pink Panther movies. That'll help me fend off existential dread. Here ends the truth."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "98:14",
+      "text": "I cannot tell you how many times I watched those Pink Panther movies. They were like, so, like, ingrained to growing up in the seventies. And they don't. They don't, I think, kind of hold up through the lens, you know, having his. His Asian man servant, Kato, I think. I think doesn't. Doesn't work quite right. But. Yeah. Loved, loved, love those. Thank you so much, Birya. Here is our next voicemail hey guys, Kev here."
+    },
+    {
+      "name": "kev voicemail",
+      "timestamp": "98:44",
+      "text": "Hey, you heard any good jokes lately? I've heard a few. While it's easy to despair, I just want people to know that hope is a radical act of resistance. And while we are entering a dark time for America in the darkest times, just keep in mind that escape hatch and the space here and this stupid voicemail mail. And you know, a lot of the fun we have in the Chuckle Hut is in its own way America too. And just know that if you're feeling afraid right now, for whatever this was worth, I will fight for you and show you the love that this country did not in that moment. And what a movie to kick off the next dark age of America. Dr. Strangelove. A movie about a bunch of incompetence waiting for total annihilation. I love the way that this movie movie just tick, tick, tick and you never know what's going to happen. I love George C. Scott. My God. I love the phone call Dimitri. I agree. It's great to be fine. That performance by Peter Sellers. All the performances by Peter Sellers. This is just one of the great masterpieces. A wild pick for this week. But okay. Kev's question. Are you guys preppers? You know, all this talk of nuclear annihilation had me think thinking about the bug out bag. Remember when the bug out bag was big in online communities? So do you guys have a bug out bag? Are you prepped for when idiots doom us? If that ever happens. Peace and love to everyone and I'll talk to you all very soon."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "100:15",
+      "text": "Once again, it's Kev's questions."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "100:19",
+      "text": "I really appreciate Kev saying all the stuff he said up top and, and it was very sweet and very heartfelt and we need more people like Kevin the world. And if we have more, we will make it through this. That was the I'm trying not to get for clumped. The, the thing I will say about prepping is that it is very popular among tech bro circles. Tech bros love to prep somewhat like I think as a hobby more than like an actual belief in the end of the world. And so I kind of reject it prepping as being too much of a thing that some of the worst are into. But I do have, I mean I do have like, you know, sort of like shelf stable food. I I and I have like, you know, like a, a bucket you can poop in in case, you know, the, the facilities don't work."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "101:22",
+      "text": "I mean we live in a place that has, that has earthquakes. So we kind of have to have some, some amount of Stuff."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "101:27",
+      "text": "Yeah, you have to have that. Exactly, exactly. And I. I am building a redoubt in central Oregon. So, you know, I guess there's some element of that. It's not particularly hardened, though. So. Yeah, I know I'm not. I'm not big into the prep life, but I guess, like, my bigger argument there is, like, there's a lot of talk, like, you know, that came up sort of. There's a lot of talk that's come up, like, it during the first Trump term and that, like, is sort of being renewed now of like, you know, are you going to leave the country? Like, you know, what are you going to do? And it's just, like, not clear to me that there's anywhere to go, like, if. If things, like, go. I mean, I also don't have a passport anywhere else, but, like, is that clear to me, like, if you. If things go really sideways, that there's going to be, like, some place that that's, like, really insulated from all that? You know, if there's a globe even. Even with putting aside Strangelovian scenarios of, you know, doomsday devices and, and war and global nuclear war, like, just like a broader financial collapse, like the United States, like, you know, like, we do some of the crazy shit he's talking about and we completely wreck the economy 2008 style. Like, where do you think is immune from that? Where do you think is immune from the fallout of effects of that? And people's like, you know, yeah, so anyway, I'm not super convinced there's anywhere to go. And also, I would like the country."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "102:48",
+      "text": "Back and we're leading the resistance from this podcast."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "102:51",
+      "text": "We're not talking about resistance this time. We're gonna have to rebrand. Like, the resistance is. The resistance is dead. We're not. We're not doing resistance, but we're gonna. We're not doing the same we did before. We're not wearing the pink hats. We're not, like, we're not doing the same stuff. We're gonna. We're going to think about it and we're going to come up with a better plan than the last time, because it turned out the last time's plan was not durable. So we're coming up with a better plan."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:14",
+      "text": "Could progressive funk be involved?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:17",
+      "text": "I mean, it seems like we have no choice but to be involved. Even when you don't think it's going to be involved, it's involved. So I think, you know, it's going to be involved."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:25",
+      "text": "Yeah. Glenn, Any, Any, any, any. Anything to add to that. Are. Are you going to Portugal? What's. What's your plan?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "103:30",
+      "text": "I mean, I'm not. I wouldn't call myself a prepper. I do. I do have a. I do have a survival kit packed with one miniature combination Russian phrase book and Bible. And nine packs of chewing gum, as it happens. And three lipsticks."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:44",
+      "text": "A lot of Wrigleys in this movie."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "103:46",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "103:47",
+      "text": "Good sponsorship for them. They could tell that this was gonna put them in the map."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "103:52",
+      "text": "All right, very good, Very good. Let's do. Let's do one final voicemail. And it's from Corey."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "104:07",
+      "text": "Sk."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "104:08",
+      "text": "Hey, this is Corey. I'm gonna try this again. Don't use my first message. It was way too randomly, way too long. I'm calling about Dr. Strangelove or how I learned Stop worrying and love the bomb."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:19",
+      "text": "I have."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "104:19",
+      "text": "How I hadn't watched this movie in about 25 years. I'd forgotten just how hilarious it was. Peter Sellers is killing it in this."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:28",
+      "text": "His."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "104:29",
+      "text": "His performance as the president is quite possibly my favorite character in here. Merkin Muffley is maybe one of the best character names ever."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:38",
+      "text": "Yeah. Strong."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "104:40",
+      "text": "Yeah. Dorsey Scott in the performance of him. Just like, so physical and just mugging. It's so unlike his other performances. It really stands out. King. It's got some anger issues. You should read some old interviews."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "104:59",
+      "text": "Oh, yeah."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "105:00",
+      "text": "About it. He's real proud of it."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:02",
+      "text": "Interesting."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "105:04",
+      "text": "Yeah."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "105:04",
+      "text": "Kubrick's a master. This thing looks great. Just still today, obviously. Yeah. I do also like that fluoridated water was what set this all off because that battle with the Florida. The water is out of control and it looks like we're getting right back into it with this new administration. Possibly. Awesome. Who would Tilda Swinton play in this amazing picture? I think, you know, you kind of edge towards, like, oh, maybe she should play all the Sellers roles, which would be pretty awesome. But I think I'm going to go for a little. Alexi."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "105:50",
+      "text": "Oh, nice. Oh, that's really good."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "105:52",
+      "text": "I think she. I'd like to see her all made up."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "105:54",
+      "text": "That's a good choice, Alexi."
+    },
+    {
+      "name": "Corey",
+      "timestamp": "105:55",
+      "text": "There. All right, that's it, you guys. Sorry for so long. Love you guys. Bye."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "105:59",
+      "text": "That is hilarious."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:00",
+      "text": "I love you, Cory."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "106:01",
+      "text": "That's a great one."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:01",
+      "text": "It's good to hear from Corey."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:02",
+      "text": "Corey is a dental hygienist, so he has a lot at stake in the fluoridation, you know, issue."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:07",
+      "text": "That's true. I hadn't thought about that."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:09",
+      "text": "Gotta keep that. Gotta keep that water. Gotta keep that."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:12",
+      "text": "I guess it would be good for Corey's business though, if, like, people got more cavities. So maybe it's like a boom time coming for Corey. Can we buy stock and Corey, it might be the one thing going up. Oh, God."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:21",
+      "text": "We will see. Glenn, what do you have to plug my friend?"
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "106:26",
+      "text": "Oh, no, just all my. I would plug my great family and friend relationships is what I'm going to plug. I'm just going to say I'm very grateful to know all the people I know, including y'."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:35",
+      "text": "All."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "106:35",
+      "text": "So thanks for having me."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:37",
+      "text": "That's very sweet."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "106:38",
+      "text": "Yeah."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "106:39",
+      "text": "Amazing to have you a under said she was just talking to you on Instagram today. She was very jealous that I was getting to have a conversation to hang with you. So she said, hey, she's awesome."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "106:48",
+      "text": "I got to say hi."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "106:50",
+      "text": "Yeah, we've, we've both known, we've both known a under for more time than you have. We've, we've been knowing your wife."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:00",
+      "text": "Yeah, it's true. It's true. But Glenn. So this is the first, the first of many appearances. So we'll sort out what's next on the Kubrick on the Kubrick vault."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:08",
+      "text": "Oh, I'm, I'm from Kubrick."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "107:10",
+      "text": "I'm honored. I'm honored. I really appreciate it."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:12",
+      "text": "Y'."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "107:12",
+      "text": "All. Love it. Love it. Jason, what do you have to plug my friend?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "107:16",
+      "text": "I have a couple things plug. I would first, I mentioned at the top the Ben RHS piece in the New York Times about what he learned with meeting with folks in pro the pro democracy space around the world around Trump. I think is is very good. It was a big hit in Discord and I really valued reading it. And that he was able to write so cogently and quickly about the scenario really speaks to the caliber of his intellectual, which is frustratingly broad. And so that's Ben I also wanted to plug. It was kind of a special holiday this week because it was the anniversary of the wreck of Edmunds Fitzgerald. I want to shout out our own chief emoji Officer Derek, who is very closely linked to the Edmunds Fitzgerald in both Discord username and spirit. And I hope that he had a good celebration of his. Of his special holiday. I was excited to see how well honored the holiday was. Felt like it was really, really something that people embraced, at least on TikTok."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:22",
+      "text": "People were looking for anything they could hold on to. Yeah, let's go. Oh, boy."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "108:32",
+      "text": "I mean, does anyone know where the love of God goes? Like, honestly, the time was a timeless message for us all."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "108:40",
+      "text": "Love it. And that's it for this episode of Escape patch. I want to thank Jason and Glenn for an amazing conversation. Next week we look to the future and reunite with dear friends as we tackle Star Trek the Motion Picture. We're joined by the co host of the Inglourious treksperts, Mark Altman. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating review wherever you'll see your podcast or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want and a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. Escape Hatch is a tip deck podcast, John A production of H Industries. Our artwork is by Catcher and our theme music was composed by Scott Fritz and who's the Boss Music. The episode episode was edited and produced by me. H. Thanks for listening. We'll see everybody next week. I gotta take my sweatshirt off, guys. I'm overheating."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "109:46",
+      "text": "Oh, always with the he's gotta get undressed part way during the episode. It's just, I don't know why. It used to be they had hey to have drinks, but now he's just getting naked."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "109:58",
+      "text": "Is this why y' all don't take do video?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:00",
+      "text": "It's one of the reasons."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "110:01",
+      "text": "Yeah."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:02",
+      "text": "We should do video."
+    },
+    {
+      "name": "Glenn Brown",
+      "timestamp": "110:03",
+      "text": "You should."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:04",
+      "text": "I know."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:04",
+      "text": "Oh, really?"
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:05",
+      "text": "We, we talk about it. We talk about it once a week. We should do video and we don't."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:09",
+      "text": "Do video and then we reject it again."
+    },
+    {
+      "name": "Jason Goldman",
+      "timestamp": "110:11",
+      "text": "I mean, I, I'm, I, I would like us to do video, but I'm not gonna, not gonna die on this hill."
+    },
+    {
+      "name": "Matt Haitch",
+      "timestamp": "110:18",
+      "text": "We'll talk about it again next week. Yeah, exactly."
+    }
+  ]
+}

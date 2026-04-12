@@ -1,0 +1,2331 @@
+{
+    "episode_number": 204,
+    "episode_name": "Being John Malkovich",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:02",
+            "text": "This is a tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:18",
+            "text": "everybody it's H and welcome to the latest installment of escape hatch your portal into cinematic pocket universes."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:25",
+            "text": "This week"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:25",
+            "text": "I'm joined as always by my co host, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:28",
+            "text": "I somehow have better skin than John Cusack in this movie, but just barely."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:33",
+            "text": "And it's the return of Emmy winning producer, Rob Schroeder."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "0:38",
+            "text": "I've pitched that so many damn times. But can we just add the chicken wings and get the views"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:42",
+            "text": "and indie film director, Ben"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:45",
+            "text": "Barnes."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "0:46",
+            "text": "It's Peter weirs. Terminator two,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:49",
+            "text": "we cover our second Spike Jones, John Being John Malkovich. If you're enjoying the show, we need your help. Take a minute and leave us a five star rating and a review wherever you listen to your podcasts or just telling your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks, links are in the show notes. And now without further ado, you own Being John Malkovich. You don't have to save your energy anymore. We're back, baby."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24",
+            "text": "We're back. Wow."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26",
+            "text": "I literally just landed from Copenhagen yesterday afternoon before and then sprinted to the Greek theater to see back live with the Berkeley symphony. In one of the most transcendent experiences of my life, then I slept briefly and then I'm here. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:53",
+            "text": "podcast is a continual exploration of the difference of having one young child versus two young child."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "2:01",
+            "text": "So you're who's one and who's two, because Robin is put down that dichotomy as well. Oh, really?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:07",
+            "text": "Matt's Matt's got one six year old and 124 year old 2727, the 27 year old doesn't require as much I was. And I have a six year old and I have a five year old and a three year old. Yeah,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "2:23",
+            "text": "I've got a seven year old just turned seven. And then that's it. And Rob, Rob, could it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:29",
+            "text": "to what is the seven year old entail? Right"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "2:31",
+            "text": "now? She it's weird. Movie wise. She's seen some stuff. So it's a nice variety. She's seen where's the friend's house? By? Yeah. And that was her first foreign film. And she watched her first documentary on Buster Keaton recently and watch the whole thing, which was Wow. But then she's also like, you know, what is what Spy Kids about or you know, she likes? Yeah, hocus pocus stuff. So it's a wide variety, but she loves entering it into letterboxed."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:57",
+            "text": "i Oh, that's cool. She does. She has she has her own letterbox."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "3:01",
+            "text": "She has my letterbox like a list of like movies. She's seen. Okay, I think it's 178 now and so she's like, in every time she adds, I mean, that's over the last four years, so it's not horrible, I think. But yeah, she's seen I think 178 movies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:15",
+            "text": "Oh my god. That's great. And Rob had Henry's just making movies now."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "3:19",
+            "text": "Yeah, he he loves horror movies, making them watching them. He loves He loves the theater. He's super into analog stuff. So he has a Walkman and VCR TV combo. Yeah, he can determine which films are better on VHS. He has a very good radar for"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:41",
+            "text": "that. Why?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "3:42",
+            "text": "What's a good example of a good VHS film?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "3:44",
+            "text": "A recent one is late night with the devil. I think that would be a great VHS title. But, but like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:51",
+            "text": "SS Malkin? Yep."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "3:53",
+            "text": "I feel like critters from the 80s Definitely better on VHS. Even that makes sense. Even some of the some of the horror climbers"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:02",
+            "text": "tremors probably to"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "4:04",
+            "text": "tremor he has that. He loves He loves the tremors series. But even something like Texas Chainsaw holds up real well. on VHS amazing,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:15",
+            "text": "amazing. And what about fate what is fancier she How old is she now?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "4:20",
+            "text": "Oh she says 777"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:24",
+            "text": "Okay also okay."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "4:25",
+            "text": "She likes singing and dance and cheerleading. Sanrio I think is is on on the last year she likes J"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:34",
+            "text": "House what like what's happened and for your for your summer? What did that what are the kids up to like? We've been on a quick hiatus here."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:40",
+            "text": "The kids are having a great time. They're in camp. They're in two different camps. And they just go and roll in the dirt all day essentially. And that's like, that's their favorite thing in the world to do. They love camp. They're very happy. They come home dirty and tired and it's been great. So yeah, they really liked it and yeah, I'm stoked for them. They've discovered that camp is way more fun than school. Really? Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:08",
+            "text": "Last Last year, Sam had that experience. He was doing all these outdoor camps, but they always descended into basically a militia situation. And he was describing, you know, military and what order he was in succession and who was the commander and where the machine gun nests were, there was a lot of command and control happening."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:26",
+            "text": "It's kind of interesting. I mean, like, you know, having a boy and a girl is like, a constant. And I guess maybe relevant for our movie today, like a constant struggle to like reconcile my very lefty notions about like, the non primacy of gender identity as like a fixed concept. But with the lived reality of like, you know, Juniper goes to camp and just plays family with like her other girlfriends there. And like, you know, it was like, today, we were all baby crows. And I was the baby girl. And there was a mama girl. And like, Griffin is like, yeah, similarly, like, you know, we declared war on fire. And like, you know, is that good? Like, I don't know, Griffin is a little more aloof, and so is less likely to get conscripted into these things. And well, they kind of only really, yeah, he doesn't. He's, he's not a joiner. He's not like, you know, sort of, he'll play with kids. You'll have fun. But now the big trick, the big trip for him right now is our 13 year old nephew is going to camp with him. Oh, wow. We get to ride the bus together. And so that's like, and like his, like the 13 year old nephew is like the coolest kid that Griffin has ever met. So his life is great. Yeah. Soren it's going right. It's going really great right now for graph. Cow Lee"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:43",
+            "text": "camp to bust that dream."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "6:46",
+            "text": "Mm hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:46",
+            "text": "really nailing it? Yep. I'm doing that 40 commute. 40 minute commute each way twice a day to drive them to drop them off."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:56",
+            "text": "I mean, I ended up spending, like I leave the house for the first time I wake up at 630. And the camp drop off cycle ends around 930. So I would say it's, you know, it's it's a significant undertaking. But, you know, they love it. It's going great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:14",
+            "text": "That's terrific. That's terrific. Well, Ben and Rob, the last time we saw you all was at the escape hatch, Dune, Part Two world premiere. I"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "7:23",
+            "text": "can't thank you enough for that anyway, by the way. Yeah. That's a good movie. Right. That was really fun to watch on IMAX. For sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:30",
+            "text": "Yeah, it's trash in the in the living room. It's just we"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "7:34",
+            "text": "have a projector in our living room. And we rewatched the first one right after your premiere, just to you know, because we hadn't seen it in a while. Yeah. And it on a very modest screen. It's still banks. It's still out house. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:47",
+            "text": "Rob, have you revisited part two?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "7:53",
+            "text": "I have not. I revisited part one like Ben I rewatched. Part one. But that was a great night. We had so much fun."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:02",
+            "text": "We watched part one and then I rewatch part two. Like it's just been. It's nice when you have something that you really like. And it turns out, it's good. Yes. We had a lot a lot. It's a lot of time worrying about that. We're currently experiencing that. Also, as Season Two house of the dragon is just crushing right now. Yeah. Yeah. Damn. Ryan Kondo. Come back back"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:26",
+            "text": "the right dragon. Yeah, shout out to our shout out to the homie Ryan Kondo for being on top of the world right now. We'd love to see we'd love to see the good ones do Jason"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:37",
+            "text": "for you calling team vaguer."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:38",
+            "text": "I know to pick the largest dragon."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:44",
+            "text": "Yeah, GMOs that mostly follow"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:47",
+            "text": "me for more pigs. Get my you get my money line. My money line picks for $5 Each in discord? Nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:56",
+            "text": "Nice. Well, what like Ben, what are you so you are a an indie film editor. Is that correct? Yeah."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "9:01",
+            "text": "I mean, Rob and I have done a lot of work together over the last 20 years. And in fact, a lot of it has been my directing. He's produced a lot of the stuff I've directed almost exclusively. And that's been a lot of short form stuff. And then my my living has been editing and it's it's kind of hopped around, you know, it's been featured docs, and then to, you know, unscripted TV, like, Doc style television, and then, you know, some commercial stuff. But the through line with me and Rob is that for the most part, I did a lot of work for his production company. I think the very first job he did for his production company was my first like, music video with a crew like maybe 2004. It was the same weekend. Wow. Who was that? That was a who was Fabius Beck, who's this amazing. Hip hop producer. Now it was in New York, but it was like, Yeah, indie hip hop was sort of my Avenue in I worked at amoeba right? And that's where Rob met me. Nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:56",
+            "text": "Nice. I mean, I obviously Indie hip hop a big theme on this podcast. I was very much in the in the Brooklyn, you know the definitive Jack's as well as the hieroglyphics clue that those were my, my main areas of interest Jason, who would you declare as your as your primary as my primary? Yeah, for indie hip hop,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:17",
+            "text": "I mean, I have to declare, like, sort of the nerdiest backpack or hip hop's of like the early 2000. Like, you know, like the East Bay zone. anticon."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "10:27",
+            "text": "My favorite label the best? Yeah, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:30",
+            "text": "I was. I would occasionally stock some of the members at the record stores in the East Bay, like just sort of like, wow, because they work there. They worked at the amoeba and Berkeley dose"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "10:42",
+            "text": "one did for sure. Does work there. Yeah. And so I like stock dose one through there."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:49",
+            "text": "When he would stop and see what he was, like, pick it up be like, just keep an eye reminiscence. I have, like an like, I don't really know if in my, like, kind of there's not really any other music that like kind of obsessed. I was like, as obsessed with as like, particularly dos one. In the early 2000s."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "11:09",
+            "text": "I did you love cloud dead? Yeah. I loved Yeah, I was I was I could not get enough of that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:15",
+            "text": "it was it was great. I loved all the side projects. Anything he anything he was doing. I was I was into even like his weird, like, noodling, like fucking bullshit. By himself, I thought was great. And like, it was definitely I mean, like, you know, if you look at it, it's this very abstract art that has this kind of through line between the various projects of the kind of themes that he's interested in the imagery that he plays with. And it was just like, it was one of those things that just rewarded close listens. And so you would, you could do as much as you want. He was like, the last time I remember, like, digging through liner notes on an album just be like, there's clues in here. I need to like figure out what the clues are. You know, Robin,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "11:57",
+            "text": "Robin, I went to the last, the last themselves show in LA before. Taxes accident. Yeah. And it was in Robben Island. I remember, we were just staring at each other half the time really, this is the bet one of the best shows we've ever been to remember those."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:14",
+            "text": "Yeah, I saw. I saw I saw them several times. I mean, because they were out here. So they would play like although they would just go play like some bullshit venue, like a bar basically. Like, you know, North Beach. And they played some slightly bigger shows. But yeah, I saw I saw them play a bunch of times and saw why play a bunch of times. I"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "12:34",
+            "text": "did. I did three music videos for why I love really? Yeah, I did. Skype for shoeing horses under Oh my god. These hands January 20. Something and then I did a live roof top performance of the values part two. Oh, my. Oh, eight. Yeah, I loved Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:52",
+            "text": "Awesome. Awesome. Amazing. I think probably one of the best shows I've ever seen was Buck 65 at Cafe du Nord in San Francisco. It was just him and like a basement with a turntable. And he was DJing himself as he rapped. And it was amazing. And he was lighting himself with like a construction line. And like DJ, he was good lighting himself with the construction. I DJ rapping doing that one was like a one man band. And he was flawless. Like it was a flawless no mistakes performance of like, essentially like his entire album."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "13:26",
+            "text": "I love that so much. Yeah, lace has"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:29",
+            "text": "been old, old backpacker, hip hop talk."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "13:31",
+            "text": "Stay on"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:35",
+            "text": "a podcast of our investments were accomplished. Like anyone's shot a why video? That's like, I don't know. It's like how a fan I'm sure you guys have met at one of these shows. Yeah, I spent a lot of time at these shows. Yeah, that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:47",
+            "text": "is incredible. So Rob, what year did you get to Gainesville?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "13:50",
+            "text": "I was there from 90 to 94. Okay, yeah, cuz I remember"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:54",
+            "text": "arriving in 88. And it was like between 80 and 89 We had three feet high and rising and Paul's boutique dropping and that was like, that was like the golden the golden age of that. You know, early first phase of hip hop,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:08",
+            "text": "which I love I just like I like discovered later after the fact and so I think yeah, and so I think for me, it's like sort of one of those things that like I like similarly like New Order if you ask me is my favorite band but like I didn't like wasn't listening to new order in the Hacienda and like the early 80s Like, right, I was like in grade school. I was sure you were I'm sure. Matt Matt was tripping on e and the Hacienda in Manchester, working on his scouse. But like, you know, I found out later and like love new orders. I listened to New Order way more than I listen to anticon now but like, you know, but there was a there's this moment in time where I was like, Oh, this is this is the future of hip hop. And it turned out it was not for a particularly wide audience but it felt like you were like catching something at the at the front of the wave. And it's probably the only time I"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "14:56",
+            "text": "couldn't agree more for me. I couldn't agree more. Yeah. I was, like you said was like the last time that you took that deep dive like I was in my 20s. But I felt like a teenager. But yeah, because I, I remember I would listen to cloud dead because they broke up right after they released their second album. And then now I was at some party where the head of Mosh was there and I would not stop talking about how how awesome that album was. And he was only depressed because he couldn't do anything. couldn't do any more. Do another one. There was no promo no shows, you know, it was just a thing. And each of the gay Yeah, yeah. Like, yeah, but. And he's like, can you please stop?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:32",
+            "text": "Yeah, I never trust myself to talk to any of those guys. Because I would just I was like, look like, I don't know what this conversation is gonna be. But it's gonna be really awkward for both of us. So I'm just gonna respectfully keep my distance. I really appreciate what you're doing. You'll see me here next week. Yeah, yeah, it's, there's no other there's no other musical time at which I can feel where I can say like, oh, I felt like I was like at the I was at the front end of something. Yeah. Everything else was always received much later. Couldn't agree more."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:04",
+            "text": "Amazing. Wow. Well, that is a fun little diversion into a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:08",
+            "text": "very specific, very specific niche. Like"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "16:11",
+            "text": "maybe I suggest though, because we discussed music videos. It might be a good segue. I don't know."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:15",
+            "text": "Yeah, exactly. Yeah, let's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:16",
+            "text": "do it. Exactly. And so we are covering tonight. We're so stoked to have you guys here. And we're taking down a big one. And this was part of this, this really speaking Golden Ages fall of 99. In cinema we'll get to in a second one of the greatest pound for pound. But we really wanted to get into something big and I can remember you guys were talking about what Boogie Nights are there will be blood I think were some of the some of the things that films that you guys have talked about which I definitely want to do all of those. But for some reason, I had a bee in my bonnet around doing our second Spike Jones, John, Being John Malkovich. So that is our episode that we are going to be getting to in the bottom of the hour. But before we do, Jason, next week on escape hatch, they said it couldn't be done. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:08",
+            "text": "they've said that for a while about this one. Yeah, this I it's it's not gonna happen even now. We've tried. It's been on though as we've we've had so many times."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:18",
+            "text": "This is it has become our Gattaca. In terms of three promises the third time I promised it to someone but we have finally coming back. Dear friend of the podcast, Greg your taneous, who is currently taking an insane victory lap on just rocking presumed innocence on on Apple TV plus with Jake Gyllenhaal green show. So we're stoked to have him come on and we will be talking Master and Commander the far side of the world."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:47",
+            "text": "Oh my God. And when did he want this? This was a movie he wanted. Right? That was his back. Right? Yeah. Many people have tried to claim it. Exactly. Exactly. I've"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:56",
+            "text": "never seen it. Rob. How are you with Master and Commander? Never seen it? Whoa,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "18:01",
+            "text": "it's Peter weirs Terminator to the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:05",
+            "text": "correct. Correct it's"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "18:07",
+            "text": "kind of lawless. It's just it's just that was a big budget. It's it's awesome. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:12",
+            "text": "Oh my god. Yeah, I cannot wait to see this film I've been really wanting to see for a long time. So this one fill in a big fill in a big gap. So next week, Master and Commander, the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:24",
+            "text": "far side of the world. Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:27",
+            "text": "Thank you. I can't wait to see how I'm gonna land that one in the synopsis."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:32",
+            "text": "Yeah, oceans are battlefields man. I don't know if you know that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:37",
+            "text": "Can we do some hatch news?"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "18:38",
+            "text": "Would you like to know more? News"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:40",
+            "text": "from there's a lot of news, we've got a lot to catch up on."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:47",
+            "text": "I only have one piece. But it's it's kind of a big one. And that is that it was just confirmed like 10 days ago. Just recently, that Denise next movie from legendary and Warner Brothers will be releasing in December of 26. Right?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "19:06",
+            "text": "Wonder what that could be? Right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:08",
+            "text": "That's all that's been confirmed, right? Is that his next movie from legendary and Warner Brothers will be releasing in December of 26. Allegedly the same date as Star Wars 10 right like that's like the that was like the other thing that was kind of in that announced Oh, that wasn't announcement. No, I assume that means that someone's going to blink. But yeah,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "19:29",
+            "text": "my money is on enemy part two. Yes, please."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "19:33",
+            "text": "Ship"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:34",
+            "text": "enemy part two. On Sundays, yeah. More Sundays"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:48",
+            "text": "Dolla dolla sign"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:51",
+            "text": "would be great. Okay, great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:54",
+            "text": "Let's speculate wildly for just a second. So we know he was working on Rendezvous with Rama. Ya know? The aircraft said he's working on some quote huge science fiction project which we thought might be Rama might be something else, or speculation that it might be the short story on a science fiction thing. Any Jacobson's incredible nuclear war, a scenario has also been optioned by legendary and Warner Brothers. And then obviously, there's June part three, so So what's your bet, go on record,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "20:22",
+            "text": "I'm gonna guess it's doing three. I'm gonna guess that they said, Look, man, like, we know you wanted to take a break. But like, we it's gonna take, you know, we want to lock up all these actors that are all going to be in Super demand. Strike with iron is hot. If we don't do it, if we don't try to get out in 2026, it's gonna be like 2028. And that means that like, there will be like four years in between, like part two and part three. And it's gonna be hard to like, you know, know, like, our investment feels like a little more shaky, that that's gonna be my guess. I'm just gonna guess that was like, sort of, like the conversation as opposed to Sure, bro. Like, you know, let's do whatever you want, like one for you. Like, you know, I just don't think that's as likely because I think they're gonna want to get I think that ain't nice. And it's just like, you know, he's talked about wanting to make part three, that's gonna be the last one. So I let's just finish this up. We'll turn the franchise over to everyone else. And like, you know, let's run it. That's my, that's my gut. But I wouldn't say I have high confidence in it. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:22",
+            "text": "So Rob, you know, you've directed features now, what's it like you walk in the studio, and they just say, we'll give you as much money as you want. We're gonna pay you more if you'll go sooner. Right? That's like you just backup the"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "21:33",
+            "text": "truck. And then yeah, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:35",
+            "text": "I brought my rivian loaded."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "21:39",
+            "text": "I mean, I bet he has a lot of saying that. He probably does want to do three. Uh huh. You know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:47",
+            "text": "I mean, he's been riding it right. So I mean, we know we know he wants to but it seems weird to me this idea of like, you can't actually take a break or step away from it. You can't get off the carousel."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "21:57",
+            "text": "I don't know. He probably can't if he wants to see your guys's new movie. I haven't seen it yet. He took a step off the carousel."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:06",
+            "text": "Oh, right. How do you make so many movies? How does he do it? Like every friggin year, he"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:10",
+            "text": "really cranks them out."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "22:11",
+            "text": "I mean, I think the hardest part of making movies is getting permission to make movies. So he has permission especially, you know, that's not a big movie that he made. And he included all of his friends that everyone likes. And he made it appealing to them because it's pretty far out fun stuff. And it was kind of a return to form he he worked I forget the guys name that he worked with the same screenwriter that he'd done a bunch of movies with, so it's reminiscent of Dogtooth and lobster and killing of a sacred deer and top"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:46",
+            "text": "law dog tooth is the one I haven't seen dog"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "22:49",
+            "text": "to the my favorite. I mean, no interest to this day, the top 10 movie for me. Wow. 20 If I'm being like, oh, wow"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:55",
+            "text": "on what's your what's your second favorite? Your Yorgos after a dog tooth?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "23:00",
+            "text": "Ah, I thought killing was amazing. I was I felt you were gonna say killing. Yeah, I mean, I feel like there's everything else is in the same. Like you could always argue it's like in the same like kind of tear. Yeah, like those are all. I mean, I haven't seen this earlier than Dogtooth movies, but I think that they all occupy the same level of quality doesn't Dogtooth is just something killing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:21",
+            "text": "has definitely killing is not my personal favorite movie, but it definitely has more edge. Then. The other ones which are kind of like have sort of there's there's elements, like kind of feel like it's a confection rather than like, it's trying to like claw your eyes out."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "23:39",
+            "text": "It surprised me. I remember not being as interested in the story or the movie. Yeah. And then by the end, I was I it affected me more. So I'm like, Yeah, you get points for that. Because everything else I think is more engrossing and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "23:51",
+            "text": "has are forever fade. Harkonnen. Very keogan. Yeah. So."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:56",
+            "text": "So I've never seen a Yorgos. And so I'm struggling to figure out. Yeah. And so I'm trying to figure out like, where to start dog tooth rally."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "24:05",
+            "text": "You know, it's weird. I would go on. Yeah, I would go in order. And really, the only other thing is, it's weird. And maybe you've already covered this, because I don't know if you've done the lobster or not. But now I heard and Rob told me if I'm mistaken. I heard that, like, Colin Farrell is the reason why everyone did this stilted delivery. Like he just showed up and did the delivery in lobster the way it was. It was his idea. And then Yorgos is like, yeah, yeah, that's great. And then everyone else was like, Oh, I guess I got to do that, too. So Ha, then and then that lasted through what the next two films until we"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "24:38",
+            "text": "Yeah, I mean, the delivery is great that he brings but it's also clearly in the script, like the way those characters talk and where they're coming from. Who's off? Yeah, it is like no filter, like they say what they feel and think yeah, in a way that normal people don't. Which is really fun place to go. When you watch one of those new Nice All right"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:00",
+            "text": "well let's let's let's put up let's put a pin in this for follow for follow up for follow up."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "25:04",
+            "text": "Like I said, we're getting into it. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:07",
+            "text": "yeah, definitely interested in in getting this this journey started. I have the lobster downloaded and I've always assumed that would be the first one that I would that I would start with. Seems really okay. All right, well, we will follow up offline. Joining us over the last two weeks new discord members H J. H and Ray collab land, and H H. XAFGHH. Yo hesp space Loon And Renee V. Q."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:37",
+            "text": "Thank you. Thank you for coming. It's been a great time in discord even during vacation. Welcome, everyone to come check us out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:46",
+            "text": "It's a good place to survive like the Biden meltdown and stuff like yeah, that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:50",
+            "text": "a good place to survive. That's gonna be a great place to survive project 2025 It's gonna be great. We're gonna just be we're gonna be hanging out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:58",
+            "text": "Is it? Will this be a resistance movement? organizing tool?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:02",
+            "text": "No, because I don't want to be sent to the barge right away. So you know, like, I want to try to secure a good berth on the Democratic operative prison barge. So we'll we'll we'll see. You"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:16",
+            "text": "don't want to be too high profile. You wouldn't be like just to sneak exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:19",
+            "text": "I was definitely don't want to announce on the internet that this is our plan. So. Okay, come join the discord. Prank call prank call."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:32",
+            "text": "All right, are you guys ready to get into this movie? Yes, sir. Yeah. All right, here we go. Being John Malkovich is the fateful collision between desire and creation. Craig and Lottie shorts are trapped in a loveless marriage, him devoted to a hopeless pursuit of a successful career in puppeteering, and her nurturing a menagerie of adopted exotic animals. But their lives are changed forever when Craig starts a new job on the seven and a half floor of Leicester Corp. There he meets the alluring and seductive Maxine and discovers a magical portal into the consciousness of a legendary New York actor for 15 minutes at a time. Thrilled at how this new experience makes them feel. Craig and Lottie become obsessed with winning the love of Maxine via their desperate struggle for control of their newfound unwilling vessel. In the end, they will learn that the only way they can embrace happiness and find their authentic selves is by letting go of Being John Malkovich."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:51",
+            "text": "Good summer."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "27:51",
+            "text": "Yeah, that was great. All right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:54",
+            "text": "Ben, what was your first experience with Being John Malkovich?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "27:59",
+            "text": "Well, I was in grad school, film school, because my undergrad didn't have a film school. I was in Miami, which is another little bonding thing between me and Robin we met in LA. And they had they were, it was a preview, because I think they were trying to cater this to college kids. I think their rollout plan was, hey, this is a nice, weird movie. Let's call it chance you're gonna dig this. So we have like a preview screening probably a few weeks before it came out. And it was in the auditorium, you know, on campus of UNM. And I was I already known who'd Spike Jones was, you know, all of his music videos. Some I think already knew that he'd done the breeders video and then of course, the sabotage, Beastie Boys video, and all the Weezer videos. I think, you know, it's true, right? Oh, yeah. And, and I think that he was the first music video director I was aware of by name. Anyway, I was I was I was excited. We all watched it. And you know, I remember almost almost being like, yeah, that checked all the boxes. I like enjoyed the shit out of it. But I also remember just being like, that's exactly what I'd hoped it would be. Because I think you were pitched the concept. I mean, people understood what it was the goofiness of it. But the thing I remember the most, honestly, is at the very end, when the I think Bjork is playing or maybe it's still the end, Carter Burwell music. And there's the girl in the swimming pool. Yeah, undergrad in front of me, turned to her friend. And she just was like, she said, What did I just watch? And I just remember being like, Yes, sister. Yeah, like whatever the movie was supposed to do. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:44",
+            "text": "break your brain."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:46",
+            "text": "Yeah, that's good. Nice. That's the LIFO. Nice. Rob habit. How about you? Oh,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "29:50",
+            "text": "I remember the build up to it. And I was living in San Francisco, I think and I remember anticipating it but cuz, you know, I knew Spike Jones to from all the music videos. And I remember like, I remember they were like all over San Francisco there were postcards like postcard racks where you get free postcards. Oh yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:12",
+            "text": "Bars. Yeah. Yeah. They had like the fuck was out about. It was like, it was like Instagram. Yeah. Yeah, that was a weird time. But you remember they had like they had postcards and it was like an ad on the back or something like that. Yeah, that was it. It was like it was free postcards. So it was like you take the app but you get like a"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "30:30",
+            "text": "picture and they were always in bars. It was always a restaurant and there was like a postcard rocky took what? And they had a great one. And it was it was the diagram of the of the tunnel of the Yeah, like the old timey? Yeah, the old timey vessel diagram. So I remember I took the whole stack I think it took them home and gave it to my friends and stuff. But it was I think similar to Ben I was really I anticipated it and then I loved it. And and then I became a big Charlie Kaufman fan."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:59",
+            "text": "Nice."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:00",
+            "text": "Yeah. All right, Jason,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:01",
+            "text": "how about you? What was your What was your first exposure? Yeah, so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:03",
+            "text": "I mean, like Spike Jones if you look at like the music videos that he did prior to making this movie, it's like an incredible run of like all that music that you know, as I'm sure everyone in this zoom just judging by the relative whiteness and Gray Hair Fitness, like was into and like, you know, so it's like the breeders like Fatboy Slim, like all these all those videos were so we're so huge in the 90s and the mid mid late 90s Tenacious D"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:29",
+            "text": "Wonderboy and yeah, Far Side Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:32",
+            "text": "I like as like a you know, as like, it came out like at the end of this movie came out at the end of my time in college. I was like the perfect kind of, you know, like, postmodern douchebag phase to like really be excited for coming out. Definitely saw it opening weekend. I think I saw it more than once. And yeah, I was like, was was very excited for this one didn't get the postcards didn't get the did not I wasn't in California yet. So they didn't have those"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:59",
+            "text": "in Jersey. And I was so I was here this was during the big sort of like the great critical path disillusionment period. So Rob and my buddy Pete who introduced us, we're both working at critical path. And you know, I had joined just before the IPO my strike price was 24, the stock was trading at like 150 And then suddenly was like dropping, dropping as the.com boom was, was falling apart."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:23",
+            "text": "I like that you remember your strike price for your your shares from like the 90s. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:27",
+            "text": "No, no, you got to hold on to that. So So I was doing a decent amount of sort of like getting stoned leaving the office and just kind of like shaking my head about how things were going to turn out. And I remember that fall, I'll just go ahead and and list it now. This is October of 99. And just I would go see these movies at the Metreon in the afternoon, Fight Club. American Beauty. Three Kings six cents bringing out the dead. You also had Star Wars Episode One Blair Witch American Pie Run Lola Run. Deep Blue Sea. Iron Giant Eyes Wide Shut. Princess mountain. Okay. And new rose Hotel, which I guess eventually we'll have to do but"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "33:12",
+            "text": "can I add one more to that Liz Lee South Park bigger, longer and uncut."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:16",
+            "text": "Oh, absolutely. Absolutely. My God. But yeah, just between Fight Club American Beauty and Being John Malkovich. It was like a huge fall. Crazy, crazy good. So the original idea for this film was very simple by Charlie Kaufman, a story about a man who falls in love with someone who is not his wife. And then fantastical elements started getting added in. And it was widely read and turned down by everyone. And so hoping to get a producer Kaufmann sent a copy to Francis Ford Coppola, which I guess if you have Francis Ford Coppola is number that's a good start. But he passed it on to his daughter's boyfriend, who is Spike Jones. And so spike teamed up with Michael Stipe and single cell pictures, and they pitched it to a ton of studios, including New Line Cinema. And I love this. Their Chairman Robert Shea, who originally I guess they were interested in he dropped the project. And there's the guy who greenlit Lord of the Rings. So you know, he will forever be a king. But his question was, why the fuck Isn't it called being Tom Cruise?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:27",
+            "text": "Right? That's a good question. It's a good question. Except for the fact do you think Tom would do it Thomas? Like he might have right like there's a word I mean, maybe not like in this time. It'd be interesting if you imagine the following 99 films schedule where Tom Cruise is both in Stanley Kubrick's last movie I swiped shot and and Spike Jones's postmodern fuck fast like weird movie like, you know. That'd be great. Oh my god, what a timeline that would have been"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "34:57",
+            "text": "what one really interesting thing or two that Spike Jones was at propaganda films, a production company that made a lot of those music videos. And I know they had a first look deal with Michael stipes Production Production Company and that kind of assisted, but the lineup at propaganda films is crazy. So it was Spike Jones, David Fincher Michael Bay, Antoine Fuqua, Mark Romanic Michelle Jones this Gore Verbinski Zack Snyder, Alex Proyas, and Dominic Cena."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "35:29",
+            "text": "What the fuck?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "35:30",
+            "text": "Those guys are all in the office. Yes. Hanging out at the cooler the water cooler."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:36",
+            "text": "A good bunch."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "35:37",
+            "text": "That's a good bunch. Yeah, those guys have made some movies."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:41",
+            "text": "Rob, where do you land on alien? Three?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "35:45",
+            "text": "I I feel like we haven't seen the best version of it. Maybe. But what I've seen i i liked it's obviously not real Fincher. You know, maybe he's he's done some other things that I liked better. But I'm in."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "36:05",
+            "text": "Robbie, you mentioned that list. And there's a few people on there that I think we were real excited about but and 99 people would have been like who? You know, retrospect, this movie is the coming out party. For the music video directors turn to feature directors. Yeah, Fincher does not really belong on this list because he was famous for his features. And when his features came out, no one said like then you heard Oh, he did the Vogue video. It wasn't that when he when Madonna's Vogue video came out or ever was like this. No one's had Oh, Fincher, it's another Fincher video. So his films were his acclaim. But if you're talking to Spike Jones, Mark Romanic Tarsem Singh, or Michel Gondry all these people had not made features yet. And or the features they made did not make them renown. And this This was the coming out party for that because then in the early 2000s, you've got the fall or mid mid 2000s. For the fall, you've got Eternal Sunshine, you've got one hour photo, you've got all these different feature films by music, video directors and Rob and I, and most any other aspiring filmmaker just immediately came to believe much like I think Tarantino in the early 90s was a goddess make my movie for a million dollars or $3,000. And all hit it big that everyone thought the path to legitimacy was I'll do some music videos. And and that's not really a career path. That works now save the Daniels. The Daniels are the last great last ones out. Yeah. That's because after out, they were famous for the music videos. And they Yes, there was still exactly pull that last chopper out of Saigon. For music, video directors, feature filmmakers acclaimed feature films,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:57",
+            "text": "basically because like music videos don't have the same cultural cachet that they had, right?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "38:03",
+            "text": "And the Daniels music videos were just so good that they drew attention. Because I think if it was just even, I think the level of creativity that let's say Mark Romanick or a some of the other people had in the 90s. Yeah, I don't know. It was just that, like Rob showed me their first video when it came out. And we both were just dumbfounded. The Manchester orchestra. It was the first thing they ever did. And it was like, Well, this is the best thing I've ever seen."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:30",
+            "text": "It's interesting. It's interesting, like the sort of death of the music video is cultural odd."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "38:34",
+            "text": "Oh my God, no one does anyone care?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:36",
+            "text": "It's so weird. Why? Why? And it feels like it's like, you know, we want to shorten it's a great time for short form video. Like, it's never been a better time for short form video. I don't entirely understand that. I mean, like it by that you would expect them like the next generation of avant garde filmmakers to be like, the, like Mr. Beast director or something like that, like the guy you know, the guys who are like doing like, there's going to be someone who pushes the form for like, you know, for social videos. And like, maybe though, maybe they'll have like a crazy idea for how how film evolves, I can see that I'd be down."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "39:14",
+            "text": "I mean, even 10 years ago, I watched so many more music videos than I do now. And I don't think it's just my age. You know, I feel like it used to be a currency of some sort that was fascinating. Like, Hey, did you see the new video by the band?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:26",
+            "text": "I mean, like the Kendrick video breaks through but like it's like such a cultural moment and the Taylor videos but it's like it's really got to be like something like that and but like even so like, I don't know who directed the Taylor Swift videos or the Kendrick video it's not"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "39:37",
+            "text": "like the Kendrick video guy. I don't remember his name he's he's known for it though. Because like all the okay all those old ones are look cool. Amazing. Yeah, yeah. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:45",
+            "text": "You would think like Spotify would do video stuff like directly embedded but I guess people maybe just don't want to look at their phones any more than they"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "39:53",
+            "text": "already are on Spotify gives you because I have to still deliver for some artists on this. You know, where it's like, you know, used to just It'll be like, I mean, Rob knows this because we would do this stuff together. But, you know, you'd export up, it was just a landscape version. And it was, you know, right, whatever it was, and it went to YouTube. Or sometimes it went on MTV. Like those why videos like the first one went on TV. And the second one MTV, like by that point, it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "40:15",
+            "text": "was just two years later, MTV don't care as much, right? They're only showing that one show like all day."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "40:19",
+            "text": "Exactly. And so, but now it's like, you have to deliver verticals, horizontal. And then for Spotify. It's an eight second loop of the video. So you get eight seconds of your video to loop on and that's all you get."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:31",
+            "text": "Yeah, that's it. You just got to choose the one shot you're like, This is it. You have to pick eight seconds"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "40:35",
+            "text": "of the video and loop it. And that's I mean, the line maybe? Yeah, it's a vine for Spotify. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:39",
+            "text": "Are you picking that? Are the artists picking that? Or how much? How much collaboration is there in that?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "40:43",
+            "text": "It depends. I mean, sometimes it's a label sometimes if it's, you know, if it's just me and the artists that working together, you know, I pick it in the artists approves kind of thing. But yeah, for the most part, they're just trying to figure out like, what's the best eight seconds to like, run in the background while someone's already playing your track? Hmm."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:57",
+            "text": "Wow. That's wild. Well, so So it is interesting. Kaufman said that he never had an idea for any other actor other than Malkovich. And he said, part of it was because he thought he was really enigmatic. But also because his name was fun to say. And he knew that it was gonna have to be said a lot. So I just hadn't thought about that. But that's pretty amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:24",
+            "text": "That's funny. Yeah. Wouldn't have worked as well. If it was like Tom Cruise, Tom Cruise. Yeah. Chris, Chris, Chris."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:30",
+            "text": "So So Spike Jones flew to Malkovich his place in France, to review the script with him, and Malkovich said he was half intrigued and half horrified when he read the script. I felt that he felt that quote, either the movie is a bomb, and it's got not only my name above the title, but my name in the title. So I'm fucked that way. Or it does well, and I'm just forever associated with the character."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "41:55",
+            "text": "Seems good. So it's a win win."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:57",
+            "text": "It is a win win. So well, yeah, I guess we can talk about Malkovich later when we when we get into it, but I do, let's just call out quickly. I mean, this is obviously a just completely radical idea for film and way out of left field. So written by Charlie Kaufman, who did this and then went on to do adaptation, Eternal Sunshine of the Spotless Mind. Schenectady, New York. Anomalisa, which he did with Dan Harmon. And I'm thinking of ending things, which I haven't seen. And then his latest thing is called Orion in the dark. So it's just a truly unique, consistently unique perspective on the world. That just feels different from just about anything else. 100% agree. Yeah. I don't know how you do that. But so Alright, well, let's get into it a budget $10 million worldwide Jason $32 million."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:50",
+            "text": "Let's, I mean, you know, look, that's that's a respectable amount for a movie of, I mean, how many people were gonna go see this truly, like, you know, this wasn't gonna be a $300 million movie. So it feels like it's in that range."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:04",
+            "text": "make good money. Good job, guys, are triumphs. So we start off with the orchestra tuning and we have the curtains. And I honestly would have been so long since I seen this film, that I'd forgotten that the puppetry was an important part. But right off the bat, this puppet work is stunning, stunning puppetry. What the hell yeah, how do you do like dancing moves? And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:30",
+            "text": "just later are like there's clearly a dude in a suit the last one right? Yeah, yeah, this one I think is just punch this one is just puppet I don't know I guess they got the world's finest puppet tears like you know spike. I mean, if there's anyone knows like, where you get a good Marionette list I'm gonna guess it's Spike Jones"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:52",
+            "text": "data the propaganda headquarters is like who's got your puppet guy? I got"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:55",
+            "text": "I got I got a couple of puppet guys. I got a backup in case the first guy foster"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "44:00",
+            "text": "Don't forget I think that that's also a really like, you know, propaganda making music videos. They're used to stuff they're used to subject matter that's despicable. And weird. Because music videos don't have to sustain your attention for two hours. That can be really weird. And sorry, I feel like what a better home for Charlie Kaufman script in a place that kind of like knows like, oh, yeah, this Yeah, again. I yeah, I got I got the best puppeteer. Oh, wait, give me marry that puppeteer? Because I got both."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:29",
+            "text": "And guerilla style, right. Guerrilla filmmaking Yeah, I bet they're doing a lot with relatively low budget moving quickly to execute those music videos. Yeah. So I just have to start by asking Jason Q Sachs look here very clearly doing a David Foster Wallace."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "44:46",
+            "text": "Oh, my"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:47",
+            "text": "God thought of that. There's no, there's there."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:52",
+            "text": "There is a shot with a bandana."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:54",
+            "text": "Yeah, it could be. It could be it certainly could be. Okay. Yeah, you're not entirely right. I hadn't thought about that before. It's kind of upsetting. I don't know."
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "45:06",
+            "text": "It's just bothersome."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:08",
+            "text": "I mean, I literally just watched the water thing for the first time at insistence. So my exposure to DFW is extremely small, but I just I just sort of saw that look. That's it. You got the commencement address. That's it. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:20",
+            "text": "got the I got the address. Exactly. It's good. It's good. It's with some of his best work. He looks like shit all the time. Yeah, no, he looks like it's cute. Zach looks terrible. Charlie."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "45:30",
+            "text": "Charlie Rose is a good one. For the Charlie Rose. One"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:32",
+            "text": "is amazing. The Charlie Rose one is maybe my favorite David Foster Wallace piece of media because he's clearly dying. The entire time. He's like, so pained and like, Charlie Rose, the best moment of that interview is when Charlie Rose asked him What do you think of the English Patient?"
+        },
+        {
+            "name": "David Foster Wallace interview",
+            "timestamp": "45:50",
+            "text": "Would you like movie? I do? Like, okay, me too. English Patient. You're seriously asking me for my illustrations."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:59",
+            "text": "And like, he like takes a big drink of water. And he means he's like, look like, you know, I'm big fan of the author. I didn't think it was his best work. You know, it's not my favorite one. But like, you know, I get Yeah, I mean, that's a it's a real movie. He like comes up with some like non answer answer and then try there was, but it's a masterpiece. And, and David Davis was just like, yes. And it's a masterpiece. And it's just like he, like his soul has been crushed. By this entire experience. It's, it's good moment, man."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:30",
+            "text": "Yeah, well, coming out of the dance moves. We have the bird alarm clock. So So Rob, how are you with pets? Like what is your take when you see like the idea of living in an apartment in New York City with a chimpanzee and birds and lizards?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "46:44",
+            "text": "Yeah, I could smell the place that no one acknowledged there was never acknowledged by the actors, but God plays must have reaped."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:54",
+            "text": "Oh my god. It's just it's just wild. And here we have Cameron Diaz. So where was she? Like? This was like, right after the mask, right? Mask is like five years. Before for how big? So how big was she at this"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "47:10",
+            "text": "point? Something About Mary just came out the previous year. So she was huge. Something About Mary was the highest grossing comedy of 98. And so she was probably extremely huge at the moment. Gotcha."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:20",
+            "text": "But her her transformation in this film. The makeup that they have the way they make her look like totally harebrained Genk tooth Yeah,"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "47:33",
+            "text": "it's just incredible."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "47:35",
+            "text": "She was not aware of it, apparently. Really, really. She didn't know she was going to be dressed up like that when she signed on."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:41",
+            "text": "That must have been a fun day and so we got this, but Well, let"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "47:47",
+            "text": "me ask you guys because I remember distinctly in the movie being like I've never seen people not made up in a major motion picture. But yes, yeah, they were glammed down, it was like noticeable."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:57",
+            "text": "It really stood out. It really stood out and like the next time in, which I thought of it is like her Yeah. Where I'm like, Oh, you've got like, you know why? You've got like, some very handsome actors, and they look like total fucking trash, like wearing like old people clothes and like flat hair. Yeah, so yeah, I taught 100% was just like everyone looks like absolute dogshit lit by fluorescence on this movie that some real choice. I don't"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "48:23",
+            "text": "know if there's any truth to this, but I had read that. Jimmy Garoppolo and Winona Ryder were also considered for the wow."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:33",
+            "text": "I feel it's that's the one thing that's one of the things I bumped on on the rewatch is like, I think she's really good in this movie. Cameron Diaz. I mean, I think she does a good job. I don't know I had a hard time like It's Kim. What Cameron Diaz, what is she doing like trying to polish like a schlub? Like in this movie, you know? Like it was just like I couldn't like, I couldn't like disentangle that. And if it had been one, no, no, that would have been some really inspired choice of of casting, I think particularly at that point in her career."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "49:03",
+            "text": "Just real quick to stay on the subject of alternate actors. I also read that for the role of Craig Schwartz, Sean Penn and Kevin Spacey."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:15",
+            "text": "Wow. Wow. And then Paul a pan of course, making his appearance and"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "49:21",
+            "text": "yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:24",
+            "text": "That's wild. I don't see Kevin Spacey at all, but, but definitely, I think Penn could have been it would have been great. I"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "49:31",
+            "text": "mean, the legend is that John Cusack just told his agent like, give me the weirdest most out there insane feature film script you have. And so that's how I let it his lap. And then he signed on immediately, but I have no idea what the order of operations was. And that's again, like IMDB trivia. I'm not sure where I read at first, that could"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:50",
+            "text": "never be wrong. But we do see the conflict immediately. There kind of not a lot of connection and she wants him to get a job. He's trying to make it as a puppeteer. or you know we see him doing his street show of the unrequited love or the requited love at a distance between the monk and and the woman and just the shot of this little girl watching and you know the hammer is gonna drop and the dad finally just punch him in the face. It's just awesome."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "50:22",
+            "text": "Again"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "50:25",
+            "text": "to this key so"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "50:28",
+            "text": "public here,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:29",
+            "text": "I'm a puppeteer. Jason did you have a feeling when you know when she was giving him a hard time about you know, your little puppeteer thing? Like did you? Do you feel like that that burden of of I'm a podcaster like I have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:41",
+            "text": "it is similar. Being a being a puppeteer, being a puppeteer and performing on the street, you're like Eloise, and have a lard, like sort of vaguely erotic puppet show. With no like, you know, with no audience and no hope is somewhat similar to being a Gen X. Movie. podcaster. Like the struggle is real. And I somehow have better skin than John Cusack in this movie, but just barely. I so that's a good, that's a good note. That's a really good note. A painful observation but true."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:15",
+            "text": "Ben and Rob, why don't you have a podcast? What's going on? What's it gonna take?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "51:23",
+            "text": "I believe Yeah, we're supposed to have like, we're gonna be government issued podcast and yeah, we're gonna have to have ours. Yeah, there"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:30",
+            "text": "you go. Yeah. So under under duress, he starts looking for jobs hitting the want ads. Jason, this was given me the opening of Hudsucker Proxy. Hmm. Yeah, with kind of like the job search. But, you know, the circles wanted a man with fast hands. And he heads over to Leicester Corp. And this is the introduction of going up and getting off on floor seven and a half. So I you know, obviously there were some images of this film before I saw it or whatever else but like this notion of how kind of like unsettling it is to see this floor having to crawl out with the elevator jammed open and the bell going off. And then just that unnatural notion of walking hunched over, but everyone else kind of pretending like it's it's totally normal. It's just bizarre. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:22",
+            "text": "feel this is like one of the lasting images are one of my last impressions of the movie even more so than like the Malkovich stuff is like anytime I'm on like a janky elevator I'm always like, Oh, I bet there's like a half floor in this building somewhere like it just like there's it really like that I did just that notion of this like liminal space like really? I think they do a great job I kind of just letting you know is like, this is the fucking movie you're gonna bout to watch you better get ready like this is there's seven and a half in this thing and you got to stoop over like your experience of watching the movie will be as though you are stooped over trying to make sense of these like free people who pretend they can understand you. It's"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "53:00",
+            "text": "my it's my favorite. Like, I think I my favorite, like introduction to a world ever. Was it again? That was Octavia Spencer before she was famous, right? And just as I remember, like the crowbar and everything, that whole conceit, being like, so cool. And so like, like, you know, you're in for something. I don't know. It's still most exciting thing to watch. And apparently, it happens. Exactly. It's seven and a half minutes into the movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:28",
+            "text": "Oh my god."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:29",
+            "text": "Holy shit."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "53:30",
+            "text": "Yeah, that's great. I just took the file and I believe if you don't use the opening credits, I believe it is seven and a half minutes when you actually get the seven and a half four. That's crazy. You also played"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "53:41",
+            "text": "the film in reverse. Oh, yeah."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "53:43",
+            "text": "It's really good reverse to"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:44",
+            "text": "interesting."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "53:47",
+            "text": "I'm just following Rob's improv."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:52",
+            "text": "Yeah, we listen to Isaiah if you listen to it backwards, John Malkovich like dozy like"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "53:57",
+            "text": "St. John. Yeah, John Malkovich enters you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:00",
+            "text": "And this is also where we get our introduction to Dr. Lester we also get the secretary who doesn't understand what you're saying. That was kind of a weird kind of a weird bit but but I love Dr. Lester this actor what else is this guy been in?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "54:14",
+            "text": "Is that awesome being I forget who was that Robbie?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "54:16",
+            "text": "I don't think that's his name. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:18",
+            "text": "Awesome. Been I'm just trying to think of what else I know him from The Hobbit as Bilbo Baggins holy shit a box without"
+        },
+        {
+            "name": "Hobbit sample",
+            "timestamp": "54:26",
+            "text": "hinges key or lid yet golden treasure inside is hid ah eggs is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:47",
+            "text": "the Russian animated"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:51",
+            "text": "the regular bass regular bass. Yeah, that's a good one. I just went back great. Yeah, but This orientation video that they showed this, this, you could definitely see that the spike elements coming through here. The notion that there's a little woman and the captain, you know, pledging his love to her and I shall make"
+        },
+        {
+            "name": "Being JM sample",
+            "timestamp": "55:14",
+            "text": "me wife and, and they should have build a floor for you, between between the seventh and the eighth and beyond building. So at least there'll be one place in God's green earth. You and your cursor can can live in please."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:29",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "55:32",
+            "text": "Lots of stories inside of stories going on with the puppet. Yeah, the puppetry and then this. Yeah."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "55:40",
+            "text": "It will become a Kaufmann trademark."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:42",
+            "text": "Hmm, yeah, nestling Roman doll style or whatever. Yeah, totally. But this is where we have our introduction to Catherine Keener. So as much as everybody else looks like shit. She looks incredible."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:56",
+            "text": "Yeah, I, I realized that I remembered her as being like, so beautiful, and so like, transcendent and like so fun in the movie, that I was really shocked on this, rewatch that she's the antagonist. I was like, I was like, Oh, she's in this movie. I"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "56:15",
+            "text": "love her. She's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:16",
+            "text": "so good in this one was like, Oh, she's bad. Like she's got a good purchase out of. I really, I completely had I had only in my memory of his movie going into this rewatch, I probably haven't seen it since like, 2000. My memory was that the Cusack character is the antagonist of the movie exclusively that like he is like the bad character in the movie. And that it was a story of like us figuring out that like, he sucks. And it's like, oh, like she's actually just the devil in this movie. So yeah, it was a real that was, that was an eye opening experience. I appreciate it learning that this time around."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:54",
+            "text": "I had the exact same experience. I remember seeing this film and being like, Who is this woman? I'm in love with her. She's amazing. And I don't think she like she kind of like broke out some and then the next thing that I saw her and I think was 40 Year Old Virgin. And then she went on to do a bunch of great stuff. I got love. Love her in this. Yeah."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "57:16",
+            "text": "I'd read something that that she had the script first before Spike Jones, and that she recommended him for the job, huh? That somehow she had gotten it from Kaufman. And she was she was the first basically the first attachment. Interesting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:32",
+            "text": "Not surprising. Do you ever have somebody show up and give you a script like that? Never. Your life would be easier if that? Wouldn't that be great. Catherine Keener called you and it was like"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "57:45",
+            "text": "there's also there's also a really funny commentary with Michel Gondry doing commentary for the film. And, and then Spike Jones comes on. And and Gondry is like you must have been in love with her. And he's like, No, I was just working with her. She's a friend of mine. And he's like, No, you are in love with her. And"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "58:06",
+            "text": "I will say like, almost everyone our age, like almost everyone our general age and time. That was who wouldn't fall in love with her? Yeah. And I had a very similar awakening. Where I'm like, I remember she was a little like, sassy, you know? Edgy. And then I'm like, she's the meanest She's awful."
+        },
+        {
+            "name": "Being JM sample",
+            "timestamp": "58:25",
+            "text": "I like you. I don't know what it is. I just my kids. What's your energy, your attitude? You know, the way you carry yourself? You're not a fag. Or you know, I am really attracted by naturally attracted to you. Christ. You are a fan. Okay, well, we can share recipes if you'd like darling. I love you. I love good. I want to fuck great now we're not a chance."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:51",
+            "text": "Yeah, I don't want anyone to treat me that bad. Like, I don't know what I was doing my 20s Yeah, I just want someone to like humiliate me in a bar and, like walk away nonstop."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "59:01",
+            "text": "I mean, again, though, John Cusack is a total piece of shit. So you're kind of exactly maybe Yeah, maybe. Yeah, even I don't I don't know. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:10",
+            "text": "yeah, well, yeah, he's immediately obsessed with her as we all were. And just that whole thing of him like trying to guess her name was really really funny. But then yeah, that that date and her complete disdain and him kind of retreating into his workshop where he has this very creepy moment with him you know with him and the two dolls while the mat while the the Lottie doll still sits off to the side and watches like there's some BS work and some shit out yeah or not. But ultimately, when he tries to kind of push something forward with her, she is not interested whatsoever. And he ultimately drops this file behind the cabinet and this is where we open and we find this door in the world. Is everything about this the tiny door, the sound design as he starts to move in the squishing sound as is getting into the more organic portion down the tunnel and then getting sucked into the Malkovich sort of consciousness like Rob talked to me about just like how this was framed and and how he kind of realized this I think it's"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:00:26",
+            "text": "really cool. I should not have listened to Gondry talk about this. Gondry is like I pictured it more vaginal and, and Spike pictured it more rectal?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:00:39",
+            "text": "Huh? See, I always felt like an ear canal. So now I'm like, oh, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:44",
+            "text": "I wasn't thinking of the or either of those. Oh, another orifice? Yeah."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:00:50",
+            "text": "I mean, it's a great device. And I think it works. Works really well. Just the way it is. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:56",
+            "text": "And Ben, once you're in there, the view through like, kind of framing it to give you the notion of the eye vision. And even just like the, the tricks they do, right, to be able to show Malkovich in the in the mirror and stuff. Really cool."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:01:12",
+            "text": "To resume for cool."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:01:13",
+            "text": "I mean, and also, I mean, the sound sound sound designs, terrific. Them the muffled. Yeah, because again, it's almost like enter the void level of like, what would be what would it be like? Because when you hear your own voice, it's muted. It's bassy, whatever. Like, it really does work. It catches"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:01:29",
+            "text": "his hair. You can hear him touch his hair and stuff like, great, huh?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:34",
+            "text": "How did they do that? They just like it looked like it like shooting from an angle or something like how do they?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:01:39",
+            "text": "He would he would just be no mirror I believe. Oh, really? Yeah, you just have no mirror. I again, I can't I don't have it pulled up. But the idea is that you just have no mirror and then you have the person who's doing the hands and arms and they just the camera looks up. And there's Malkovich standing on the other side of the open mirror frame. And he's doing his movements. And then you know, because it's got to match the right way. But again, I'd have to pull it up to tell you if that's exactly right. That's like"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:07",
+            "text": "the Terminator to Linda Hamilton. Twin move. Yeah,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:02:12",
+            "text": "that kind of thing. Exactly. But no, you know, you only need it like that, for the most part, unless you're going to see both faces. Mm hmm. You'd have the other actor and then you just take away the mirror that's very, or put a piece of glass or whatever if you need reflection."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:26",
+            "text": "Yeah, I just found this whole thing. very disorienting tried to get there. But then even just like little stuff like the cabbie misidentify um, aren't you that guy that you played that to jewel"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:38",
+            "text": "thief joke is a favorite. I like that I liked. I liked the recurring jewel thief. That's great."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:02:43",
+            "text": "It just"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:44",
+            "text": "strikes me as something that would happen to famous people all the time. I love that thing that you weren't in, right? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:50",
+            "text": "Well, there's a lot of good interviews with like, Daniel Radcliffe, about signing things for Elijah Wood. And like Elijah Wood, I think it said the same thing about Daniel, right? Like it happens all the time. Like there's like all the times almost coming out and being like, you know, absolutely loved you and you know, in The Lord of the Rings, movies or whatever, and it's just like, I'm sure it sounds good. Sam. Jack. Yeah. Laurence Fishburne, Laurence Fishburne. Yeah."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:03:14",
+            "text": "Now I want to do that to people to give them that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:17",
+            "text": "Yeah, yeah, it's great. You know that, you know, you've got to chill. Because like, you know, you gotta chill or like, a lot of the celebrities I've heard be interviewed about this. Like, we'll just be like, yeah, like, you know, like, I'll just sign it. Like, I'll just sign like, you know, not, you know, not Elijah would love Daniel Radcliffe or whatever. And like, you're like, yeah, like, I don't want to, like ruin someone's moment. Like they, they like, like, that's so nice. That seems like a really sweet thing to do. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:41",
+            "text": "I mean, speaking of celebrity interactions, Rob, I've been looking at actors on actors. The new season is out. Thanks. You know, obviously, you know, I saw you know, Artie J. And. And Jodie Foster and a lot of that came out but I will admit, a lot of the actors are like, way too cool. Like I don't know everybody this season."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:04:03",
+            "text": "We will you will."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:07",
+            "text": "You guys have actors on actors like this kind of goes back to our short form video conversation. Previously, you guys figured out something on like how to make this shit work on social because I see so many actors on actors, clips. It's crazy. How good that stuff travels."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:04:24",
+            "text": "It's a new a new phenomenon because we've done 10 years so 20 seasons, you know, Oscars and Emmys and only recently did it really get dialed in where it's getting views and showing up in algorithms and stuff. So I don't know if that's not me. I can't take credit for that."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:42",
+            "text": "And there aren't even chicken wings involved and still"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:04:48",
+            "text": "I've pitched that so many damn times like can we just add the chicken wings and get the views fucking food in here but the food and get the views thanks yeah, it's it's It's kind of catching, you know, people. Yeah, it's really, especially with actors, like actors love and yeah, actors love how"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:07",
+            "text": "you can tell that the actors like being on this show that they like that they are in a comfort zone that is different from what they are in in any other press junket situation, where like, a lot of them feel like hostage situation. I mean, particularly like the big dragons, where they're doing like 50 interviews in a day, like those are only good when they've gotten so deranged from being asked the same question that they go completely off script that like, but like these, and that's why people like, that is why people like hot ones, it's because it's like, oh, like, you know, like, they get deranged, because like they're eating all this fucking spicy food. You manage to do that without the capsaicin, which is the real achievement of your art. And it's like,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:05:53",
+            "text": "there was a cool moment this season because Joey King is on. We're the lucky ones. Yeah. And, you know, she's young, she's 20, early 20s. So, you know, she came on and and was like, I've been watching the show since I was a little kid. She was taking pictures of the sets, and I'm on actors on actor."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:14",
+            "text": "And you got Jennifer Aniston crying. That was like a big one, too. That was like, fucking heartbreaking. Oh, if people haven't seen that one, that was episode three. Good stuff. Good show."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:25",
+            "text": "Thank you. Emmy winning Emmy winning program. No. So So I love the notion that you get dropped out of the sky next to the New Jersey Turnpike. Yeah, and him going back to Maxine who rejects him again, but basically says that she wants to exploit this Malkovich thing might have"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:41",
+            "text": "chosen like the Port Authority, instead of the New Jersey Turnpike. Like just to make it slightly worse. What's Yeah, I mean, the Port Authority is essentially the worst place you could ever be, like, just dropped randomly in New York City. Like yeah, like, like, and like, I guess I'm defensive for the turnpike. Because I think the Turnpike is pretty cool. And like, there's nuts, you"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:04",
+            "text": "went to school in New Jersey, you're like, there's good things. Well, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:06",
+            "text": "mean, it's just amazing. Like, just like, from a infrastructure standpoint, there's so many cars, there's so big, versus like, you're like, like a bus terminal. Like on like, Manhattan's asshole. I feel would be maybe better. I guess I was thinking more vaginal, but that was just support, I guess, the rectal aspect of it, which is like you've been digested through and now you're shut out. And? Uh huh. Yeah, but love"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:34",
+            "text": "it, love it. When he tells Lottie about it. I like this notion that she immediately believes him. Like, she doesn't say you're crazy. She's like, I want to try it. And so she comes into the office, you know, meets Maxine and you her reaction, oh, she's pretty. She clearly sees that something is going on there. But that notion of once she's inside, while he's taking a shower, and this notion of her reaction to feeling that at first you think it's just like a general sensory thing. And then we begin to discover that it's something that is, is kind of much more dramatic than that. And her saying that she's realized that she's transsexual, like I had completely forgotten this aspect."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:17",
+            "text": "I did too. And I think this is one of the things that's most was most surprising about the movie on its rewatch, there's, there's some things that are like 90s isms that don't hold up well, like the extended R word joke. Like, we're just kind of like, that's not gonna work. But like the, but like this idea of gender fluidity and like, the idea of like, oh, yeah, like, I think I'm actually I think I'm actually a man is like, I don't think we had the vernacular for that in broad culture in like the, in the, in the in the 90s. And so he's playing with something probably not in the way that we would now. But they're gesturing at something that is very unexpected, I think. And like, and I think you end up viewing it quite differently looking. Looking back at the movie now."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:09:08",
+            "text": "I think Kaufman was doing something interesting, too, because it's very neat and clean. You know, you have this couple. Yeah, one of them's a puppeteer, the other ones transitioning. Yeah. And they get to go inside of a guy. Yeah. A famous guy. Yeah. Like that's such a neat and clean setup. Right? It almost plays plays like a fable. Yeah, you know, because that's, that's a bizarre coincidence, right? It's it's great for storytelling, but that's not how things work."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:34",
+            "text": "Yeah, it is like a fable. It is like the Baker and his wife and they get lost in the woods and like one becomes a troll or something like"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:09:41",
+            "text": "fables. Exactly, right. Yes. I think this whole movie is a fable. Yeah. Hmm. Because"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:09:46",
+            "text": "it doesn't, you know, wouldn't exist in nature that way. That's just it's so neat and clean for the store and for the and the morality and the, you know, themes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:56",
+            "text": "I think that's interesting. I guess I get hung up. I get hung up on like some of the more trappings of the movie with like the the stuff that ends up Jimmy meaning reading more Gilliam ask, which is like the I, I you know, like, Oh, you've got the speech in Panama but actually I'm deaf. Like that's like a very that like yeah I have like a hearing like problem. That's like a very Gilliam joke like there's someone who's in a nominal position of authority and they're incompetent but they're going to exercise their incompetence over you as like some sort of like postmodern play, versus like this idea that it is like the Billy Goats Gruff or something like that, like you know, and and it's like, it's much more of this like kind of very clean fable. So yeah, I think it's, I think it's I like it. I like thinking of it. I like thinking of it that way versus like, it's Brazil. Mm hmm. I"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:10:51",
+            "text": "think the fable part is like I don't know if there's a clear moral and that that's the only thing that doesn't lend itself to being a fable but the structure the vibe, the feeling, it feels like a much warmer like I think Twilight Zone and other fable sort of concept you'd like Neary things? You're you're getting the message almost more than you're getting the story. Yeah, and this this doesn't. This doesn't dive into that you're not really getting a message over the storehouse involved in the story. But like Rob says, it's really clean and really like archetypical in some ways, and so I feel he has a fable vibe"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:25",
+            "text": "it but it's like a German fable. It's basically like two kids go on an adventure on the woods and get eaten, like, you know, and powered by a winch, man. It's like, they didn't do anything wrong. Really like they were hungry. You know, they just wanted to like go pick berries. It wasn't like you're supposed to learn like don't ever go into the woods. It's just like, sometimes you'll go into the woods and get eaten by a witch. That's just how life works."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:52",
+            "text": "As well but also like don't tie up your spouse hogtied and dump them in a cage."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:59",
+            "text": "Unless they asked you to unless there's consent. Exactly,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:02",
+            "text": "exactly. I do want to just talk briefly about the style of this film. So let's just hit quickly, Director of Photography Lance accord and this is kind of amazing to me that the through line that Lance was able to hit so spike videos did this did adaptation and working with Sofia Lost in Translation Marie Antoinette back for where the wild things are. And most recently did the ET holiday reunion special which I did not see. But those are some incredibly well shot movies like to me I think Lost in Translation and probably my favorite of those visually. But what's your guys take on Lance?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:12:47",
+            "text": "Don't forget he actually a year before this. He did buffalo 66. And that's even more wild. Oh, wow. Cinematography. And that was I saw that. It's it's extremely fascinating. It's a very, very interesting movie. And again, the visual name of the lead. Vincent Gallo. Yeah, he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:04",
+            "text": "a bit. He's on the bad list right now. In the bits."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:13:12",
+            "text": "Notorious aihole. Knee I guess is what people sort of the vibe that people talk about, but I don't know. I mean, I've never met him. I freaked him out once. I had a short film that I had made. And he saw it because his assistant worked at me, but I worked at the LA amoeba. And as the system worked at amoeba, and or maybe former assistant, I don't know. But the whole point is, she showed it to him. And the only feedback I got was this dude's crazy. Yeah, is he crazier than me? And he was just really worried that I might be crazier than him. I was like a filmmaker so like, Well, I'm gonna get notes. I'm gonna get notes and that the only note was he was threatened my insanity I guess. But the fact of the point sorry, is that Lance Accords, cinematography, and I want to know what what like what robbed the I mean, I just remember at the time looking back, it does not look different. But at the time did Being John Malkovich look, as I remember, it looked profoundly different than any other movie I'd seen at a time watching again, I don't know if I picked up on a lot of it. But did you guys when you were watching it in 99 or whatever, go I've never seen a movie look like this. Because I remember the lighting was different. It was very natural. And people wouldn't be lit extremely well there was no like sculpting with light. It just felt very like fly on the wall. Did you guys experienced that? My"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:14:28",
+            "text": "also associated him with with film was shooting celluloid like he doesn't he never has had he's never had a digital look. I don't know if he's shoots digitally, but he's I always associated him with independent 16 millimeter filmmaking or 35 millimeter. But you know, he's really good with film texture. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:48",
+            "text": "I just think I've lost a translation. It's like it's so gorgeous, right? Like it's so it's lush. And so kind of like high tech looking. Versus this is the app absolute antithesis of that. Right? This is just like so grimy and just kind of dark and gritty to me."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:15:07",
+            "text": "I mean, he I also saw, like, this time around, I did see like there's some weird framing going on sometimes to like really like long shots where like the top of their heads are cut off, and it looks great. But you're like a cinematographer would not necessarily make those choices. There's a lot of like, really interesting. He's, I think he's a genius in a lot of ways, but in a way that doesn't seem very like Robert Richardson, you know, like, Oh, look at me, you know, there's there's not a lot of I'm not saying Robert Richardson said, you know, pick me but I'm just saying like it Robert Richardson makes things look really intensely beautiful. And I think Lance record makes things look very normal. Yeah, but also beautiful. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:48",
+            "text": "I think that's right. I think that's right. The other thing that I noticed here was that in this middle portion of the film Craig actually disappears and it really becomes like a lottery movie for a chunk of it and Maxine it's much more driven by the two of them I think, which I was surprised in watching at this point, yeah, we've got this this notion of Lottie actually influencing and establishing that maybe inside they can have an impact on Malkovich when they're on their butt so Lottie invites max over for dinner because now she is also into max so how about this challengers moment? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:28",
+            "text": "challengers moment, then dare you hack"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:31",
+            "text": "their way the two of them pounce on her? I thought was so funny. Oh, my god."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:16:38",
+            "text": "That was great. Really great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:40",
+            "text": "Really great. But this notion, Max says that she doesn't want Craig Craig."
+        },
+        {
+            "name": "Speaker 2",
+            "timestamp": "1:16:45",
+            "text": "I just I don't find you attractive. Lady. I'm smitten with you. I am but only when you're a Malkovich."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:54",
+            "text": "I like that. They both like sort of like I like this part of the movie because it resolves like the love triangle, very matter of factly. It's just like sort of this is what's going on."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:17:05",
+            "text": "Charlie Kaufman is this is where his because I think a lot of people can write a weird screenplay. I think this is where he shines because you the way you describe it is funny, but it's also complex. And yet we're following it just fine. You know what I mean? And I feel like Coplin is really good at keeping you right along with whatever is happening and not being confused and yet it's still really complex."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:17:27",
+            "text": "The film builds momentum here too. That's like you're really starting like the the dominoes are starting to fall. First."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:35",
+            "text": "Yeah, and so they set the date. You know when Lottie can be inside Malkovich and Maxine can be there set a time that and this was the first time I notes really mentioned Carter burr walls score here. It's just so intense and awesome. Obviously Carter we love he's done all of the Cohen films that are there also did Buffy the movie Wayne's World to Hamlet 2000 We talked about Jason, ALPA chinos, Simone. Oh, yeah. Al Pacino is AI movie from 2000."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:11",
+            "text": "How it was ahead of its time, obviously that was that was the only problem with that one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:15",
+            "text": "I watched the trailer and it looked at like an abomination. So I don't think we're going to do it. I can do it. Or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:22",
+            "text": "the man bruise man highlight what he did. Finally,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:18:26",
+            "text": "I didn't know that he needed"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:27",
+            "text": "Twilight. Twice. Coming soon to escape patch. It soon is this soon."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:33",
+            "text": "I gotta check. Yeah, it's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:34",
+            "text": "not Rosie. Rosie's coming back."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:36",
+            "text": "Oh my god. I gotta prepare. I gotta go on like a spiritual fast before we cover Twilight."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:44",
+            "text": "But this this whole indirect seduction scene is really great. But it definitely works. It's actually sexy. You know, with with her and Malkovich is quite good. But when Craig goes in kind of desperately to Maxine, you know that he's in love with her."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:19:00",
+            "text": "are you torturing me on purpose?"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:19:04",
+            "text": "I've fallen in love."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:19:05",
+            "text": "I don't think so. You know, I because I fall in love."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:19:11",
+            "text": "This what people have fallen in love look like? Well, you"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:19:14",
+            "text": "pick the unrequited variety."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:15",
+            "text": "It's very bad for the skin. Yeah, yeah, that's good wine. She's brutal. Yeah, she's she's, she does not like him. She's very upfront."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:26",
+            "text": "Definitely. So, you know, we have Malkovich kind of like struggling because he's now being taken over. Here we have Greg starting to realize that he can make a move and that he can talk. And so he turns as you would expect in 1999, to the greatest, best friend slash guru of how to survive Hollywood. Which is Charlie Sheen."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:19:50",
+            "text": "I love the Charlie Sheen's in this movie. Is this before before? Was it before? Yeah, it was before the fall."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:01",
+            "text": "But you can see it's happened you can see a starting Ouch"
+        },
+        {
+            "name": "Speaker 3",
+            "timestamp": "1:20:04",
+            "text": "that is hot. Maybe she's using you to channel some dead lesbian lover. Sounds like my kind of gal let me know when you're done with her. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:15",
+            "text": "Holy shit yeah, really, really great. But now we have kind of the infamous moment of the film and this is where John follows them back onto seven half floor and goes inside himself and we have Malkovich Malkovich. Malkovich Malkovich. What a scene. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:30",
+            "text": "Really good. Really good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:33",
+            "text": "Were they, they were wearing masks like people were wearing some masks. In addition, in addition to when"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:20:38",
+            "text": "you look at it, though, it's kind of crazy, because I think that I think that nowadays, we're used to being able to pause more, but there's total shots where they know where your eyes focused. And there's just bald people that clearly are not John Malkovich periphery."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:20:52",
+            "text": "Yeah, yeah, they would just do digital replacement. But instead, they're just like, we need some ball does."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:20:57",
+            "text": "Yeah, digital replacement would have been way too expensive in 1998, whenever this was shot, so like that a lot of times, it's just bald people. And then there's one or two digital spots. And then for the eye, it's weird how many people don't look like Malkovich in the shot, but you're not looking at that. Because you're looking at they know what your focus is. Smart. amalgam is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:24",
+            "text": "really funny, but he's an incredible sport for going for this, right, whether it's like, fully made up as a woman or the singing or the like he is really committed. Yeah,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:21:34",
+            "text": "I mean, this is the promise of the premise in a lot of ways, right? I mean, like, this is the high point of the bizarreness, you're not you're it really is like, kind of when you're thinking about the premise like how far could it go? This is it right? And it kind of really nailed it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:49",
+            "text": "Yeah, totally. I had a special soft touch here when Craig says he doesn't want to be a monster, but he leaves her locked up in the cage. And the only way for her to be rescued is by Elijah the chimpanzee. So taking the time to have Elijah's flashback."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:22:07",
+            "text": "Yeah, yeah. It's the most Spike Jones thing I can think of. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:12",
+            "text": "I was I was like dairy. I totally not remember that Elijah gets a flashback."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:21",
+            "text": "And the subtitles for Elijah, his parents talking to him. Oh, my God. Really, really funny. Let's see. So we have the revelation that, you know, Max is now into Malkovich as Craig. And my notes say she's the real villain. But then taking over Malkovich leaving lottery to go to Dr. Lester to try and get his help. And we have the revelation of the portal and you know, getting in by the 44th birthday. I don't know why are they waiting so long until the 44th birthday. Why"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:54",
+            "text": "now I just go early Iverson question. Now you're now you're arguing with Dream logic."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:23:02",
+            "text": "Rob, you were talking about convenience? This? Is this another part of your convenience that you find in the movie?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:23:08",
+            "text": "Maybe I mean, it would make sense that there's a maturity, you know, like a maturity date. Like it all adds up for me. But it was to kind of go along with the fable. It's written in such a way that there are a lot of it seems like there are a lot of conveniences that you have this couple that, you know. But it doesn't bother me. It just feels convenient."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:23:29",
+            "text": "Yeah, it doesn't it doesn't add up. Like why would you be trapped in a baby but like, sure, I mean, it feels like they they know what they're doing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:35",
+            "text": "I love the graphic of the baby with the jail, the person behind the bars. That was like such"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:23:41",
+            "text": "a good I was on the postcard. Oh, really?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:43",
+            "text": "Yeah. Oh, man, that makes sense. So so now we have you know, Craig is kind of relishing the fact that he is now in control of Malkovich, the, the dance of despair and disillusion is just amazing. But then we have him, you know, as Malkovich going in to see his agent who is the guy playing the agent. I've seen that guy before. I can't remember what I've seen him in, but really, really hilarious. This whole scene of just going in and telling your agent you're gonna be a puppeteer now, and he's Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:17",
+            "text": "he's in he's in kicking and screaming. And he's also in an episode of Buffy the Vampire Slayer. I believe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:27",
+            "text": "That's it. What's his name?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:28",
+            "text": "I don't know. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:29",
+            "text": "okay."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:30",
+            "text": "He's great in this and I love this. He's like, sure, sure. No"
+        },
+        {
+            "name": "Being JM sample",
+            "timestamp": "1:24:34",
+            "text": "problem of both your puppeteer. Just let me make a couple calls. Yeah, sure, man. No problem,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:43",
+            "text": "man. Yeah, very funny. So we jump eight months later, and this is where we have this revelation. So what do we take away by the fact that he is completely successful at turning the entire world into puppeteering? I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:57",
+            "text": "think this is where you kind of get into like the celeb already what is celebrity, like discourse in the movie, which is like people want to be John Malkovich because he's John Malkovich. And like, you know, and like, it's I don't think the movie is sort of explicitly saying, like, the movies aren't explicitly saying, like, you know, there's a bit of absurdity of like, as John Malkovich famous enough for like everyone to want to be John Malkovich. But like, I think we're just, you know, I think we kind of accept like, oh, you know, that being any kind of famous is compelling. And then once he decides he wants to be a puppeteer, it's like, yeah, like if you're John Malkovich, you can become a puppeteer. Like that's like our that's how this was how show business works. You can like, you know, you like celebrity, like Ben's reality too, as well is what I what I took what I took from it. I mean, the other bit, though, I guess, I would say is that this is a world. This is a universe in which it's established from the beginning that puppeteering has like an outsize kind of cultural cachet, because there's this other guy that he thinks is a hack who's doing like, you know, The Belle of Amherst. With like the 60s,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:26:03",
+            "text": "David Blaine of puppeteering. Exactly. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:07",
+            "text": "Criss Angel. Yeah, and that like, so like, there's something about like, okay, like, this is a world in which puppeteering while not like, as established in art still has some kind of cultural value. And so if John Malkovich were to do it, then yeah, you could get all these specials, and it would be this big runaway hit, is what I took. Yeah. And then also, it's just absurd. The"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:26:32",
+            "text": "audience when I saw it at night, and I kind of clearly remember the whole montage, or the special people were laughing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:38",
+            "text": "Yeah, the joke was Sean, Sean Penn was just awesome. Yeah, he's like, ready to go. And"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:26:45",
+            "text": "the whole, like, three and a half second, or I'm sorry, not even like third of a second have Brad Pitt on screen like, yeah, like, all that stuff's terrific. And people were laughing because again, I think it's just a silly premise. That, you know, they're they're stretching as far as they can go,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:00",
+            "text": "including the puppet committee, Harry Carey. I that was yeah, that was great. So, so getting to the finale, here, Lester kidnaps Max, but Craig refuses to leave. And so we end up with Lottie and Max, having a chase through Malkovich is unconscious. Yeah, Jason, it's your time. It's your time to call them out. Once again."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:23",
+            "text": "Christopher Nolan, you fucking hack. Yeah, it's true. It's true. This is basically it's like, you know, Christopher Nolan saw this, it was like, oh, X ray. That's gonna be like, let's imagine there's like a limbo and you have to confront your various mistakes from your previous part of your life. Yeah, I know. It's tragic. Amazing. It's tragic. At least he's still in from the best. Yes."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:27:45",
+            "text": "Did you guys see the parallels to Eternal Sunshine? It felt like a dry run. Yeah. Yeah. I didn't even think of that. Because obviously I didn't see it. Well, yeah. It turns out that wasn't out. But this time, I was like, Oh, my God. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:56",
+            "text": "the gravity reversing and like the whole like, yeah, you open that you open the floor, and it becomes a wall. That's definitely yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:02",
+            "text": "So I've never rewatched Eternal Sunshine, and I'm dying to do it. And back did tarantula last night. So it was fun to find to be in that space again. But it"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:28:13",
+            "text": "was playing recently at brain dead studios in LA, which shows a bunch of great movies. And I just invited some friends thinking this will be awesome. We'll go down there. Sold out. Why? Yeah."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:28:25",
+            "text": "I mean, on the list, it's like listed as either the first or second best movie of the decade, you know, like usually,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:28:32",
+            "text": "but I think, and it was a really young, like, everyone was 20 years old. Oh, wow. Like, like, I think it's kind of found a new audience. And that's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:41",
+            "text": "amazing. That's amazing. And I love the fact that you know, Gondry was just like saw saw this and like, give me Kaufman Pass and Pass him over. So let's see. Max decides that she actually reveals that Lottie was the parent when she got pregnant via Malkovich so they decided that they are going to co parent and we jumped forward seven years Craig has been totally left behind. Although he ends up stuck inside inside the baby and this is where we have seen again show I got machine knocking"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:20",
+            "text": "trends. Yeah, just love that. Do them now Alcatraz. But"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:25",
+            "text": "they're planning now to go into Italy. And so you know, and we see them kind of laughing in the sunshine. They've made it and they they get to be happy and he is kind of like trapped and miserable. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:38",
+            "text": "Yeah. I mean, was it I don't know if it would be that bad to be inside of a kid I don't know. Like it seems you get to start over and some you get to you know, you know, live again, I guess you don't have any control. You'd have to go through school alright. It's sucks if you only be a witness, yes. Yeah. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:54",
+            "text": "part yeah, not great. No, but Max really comes up you know, as as the most horrible person in movie, you know, she really comes out pretty well. Yeah, she's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:02",
+            "text": "a fine. Everyone just ended up where they were going."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:07",
+            "text": "They made it. And credits. Again with this beautiful these beautiful slow motion shots of swimming with Carter Burwell score playing out it's just it's such a gorgeous, such a gorgeous music Simon and has that kind of he loves a bell he loves like the big bell, whether it's in the Cohen stuff that he's doing, or what he does here, but then we go to that Bjork song to kind of close us out it's got to be like an extra superpower if you're the director, and you can be like, oh, yeah, by the way, I can call up why and haven't do a track on the, you know, on the on the credits or something like that. That's, that's pretty powerful."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:56",
+            "text": "That's a pretty strong move."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:30:57",
+            "text": "I mean, that's, I think that's the that's, like the Wes Anderson's of the world and the and the spike Jones's of the world. And I think you guys had mentioned something else earlier that was like that. But once you have a repertoire of actors, oh, the Yorgos Lanthimos is of the world you're gonna once you have a repertoire of actors that have money attached to them, if they attach themselves to a film, the financiers will say that person is worth $2 million of budget. Once you have a repertoire of actors that will be in your stuff, you get new you've required you've gotten required permission to make the movies you want to make. Yeah. And and you know, even I mean, nowadays, I think, Paul Thomas Anderson is on that level. But like, when you know that having it been still not the same thing as Paul was going on five years between making movies and Spike Jones has taken his time between movies, but you still can just be like, alright, I'd like you guys do these for people to be in it? And most likely, they'll say yes. And then yeah, you you you've now gotten the the made it the golden ticket that so many filmmakers desire. Yep. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:01",
+            "text": "I was there for spikes. Last movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:04",
+            "text": "3000 years ago, I was there. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:08",
+            "text": "now the Beastie Boys story, which he shot in Brooklyn. It was really fun because he was like the voice of God, as they were on stage doing their doing their thing, but Hmm. Well, that brings us to speaking of seeing someone who would tell to sweat and play. Ben if you need to recast one role in this film with Tilda Swinton who would it be?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:32:30",
+            "text": "I'm thinking the head of the institute."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:35",
+            "text": "Doctor last semester, Dr. Lester? No, it's"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:32:37",
+            "text": "good. Haha, it's good. I like it. It's good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:39",
+            "text": "I like it."
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:32:40",
+            "text": "I mean, being tilders. Yeah, I'm seeing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:44",
+            "text": "that's my choice. Yeah, I think that's why I think it's being told this one good call. I think they should just make that movie now. Just try it. Yeah."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:32:54",
+            "text": "Because again, tilde is an interesting enough word. You know, like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:57",
+            "text": "100%. Tell that Tilda"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:32:59",
+            "text": "Swinton, Swinton Swinton."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:06",
+            "text": "Amazing. Well, we did it guys, can we do some letters real quick? Let's do it. Oh, awesome. Just a couple quick voicemails. So here is our first voicemail"
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:33:22",
+            "text": "Hey y'all Barry here for the Being John Malkovich. Truth, sir. What a movie. Oh, my goodness, Catherine Keener, Cameron Diaz, punching above her weight, and John Cusack making choices, but today we're going to focus on the man. Here's three stories about the life of John Malkovich. Two of these are false. One of these stories is truth. Truth, say your time. Number one when he was a teenager, John was overweight, he decided to go on a diet and exercise regimen and lost 70 pounds by eating nothing but jello for four months. Or is it Story number two, John lost a reported $2.5 million on a real estate swindle in Boston in 2006. His attorneys were unable to reach any legal restitution, or is it Story number three, Malkovich loves Portugal just like H and keeps a sheep farm just outside of Lisbon. Which one of those three stories about Malkovich is true?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:20",
+            "text": "Did you see that? Definitely. Did you see the port? Did you see the sheep? Did you see the Malkovich farm of Malkovich estates?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:26",
+            "text": "We? I mean we saw sheep as we were driving down to the Algarve."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:32",
+            "text": "I'm going Portugal to IKEA. I think it's that one. Yeah, I think it's that one. I like love that. That would be tricky."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:39",
+            "text": "Rob. Rob, what"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:34:41",
+            "text": "do you think I'll go to real estate I guess. Okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:43",
+            "text": "All right. Beware Boston real estate market. Ben,"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:34:48",
+            "text": "that seems the most reasonable, which is seductive. I'm gonna go with it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:51",
+            "text": "Okay, all right. Let's see. Let's see who is right. All"
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:34:56",
+            "text": "right, which one of those Malkovich stories is true. John is part owner of a disco and Lisbon bought a sheep farm. John lost an undisclosed amount of money in the Bernie Madoff scam not a real estate Swindle. The true story is about losing 70 pounds as a teenager by eating nothing but jello for four months Malkovich Malkovich Malkovich Here ends the Malkovich."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:20",
+            "text": "Amazing Barry, I thank you. It's great to hear."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:23",
+            "text": "It's great to hear our voice Miller's again after a break. God"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:25",
+            "text": "has the audio setup. Sounds great. You got a new rig and it is dialed in. All right, thank you so much. Barea. Here is our next voicemail."
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "1:35:35",
+            "text": "Hey, guys, calf here. Yay. Wow, the time has finally come well. Well, this is kind of a weird one for you guys by Jones is Being John Malkovich. Yeah, I remember when my parents rented it. And we're talking now almost 25 years ago, and I understood none of it. I saw one shot of it. And then it was time for me to go to bed. I think it was just as things were getting sexy in the POV scene, which now as an adult, obviously is beautiful and strange. But as a child, I really didn't know what I was seeing. And I also want to note while we're talking here, this is not a freak beat movie by any means. Because of course, it was celebrated and beloved immediately. Mind blowing to think but if there's a freak beat Charlie Kaufman product, it's his book and kind of book so hostile, so negative. So spiraling that I had to put it down halfway through. So there's that Cavs question? The office in this film was almost seven and a half floor. The grammar of that is just a mindfuck. If you had half a floor in your home, what would you put it in? I love this. Thanks, guys. Peace and love. And I'll talk to you next week."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:50",
+            "text": "Once again, it's calves questions."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:54",
+            "text": "Oh my god. I would I mean, like I can think of so many things. Well, I put Legos like just all my Lego models. On the seventh floor, it would be great. I would just just my children like they're small, like, like they could go be in there for sure. Those are the first few things that came to mind. What about you? Ah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:16",
+            "text": "I probably get in more trouble. I put the podcast studio or just crawling"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:19",
+            "text": "there. I'd be like be easier to sound isolated. Right? Like you could pat it up really nice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:26",
+            "text": "Half a floor. Yeah, exactly. Exactly. How about you bet what would you put in"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:37:30",
+            "text": "that will be that you're starting to get my imagination going. Because if you could build just a soundstage where all the scenes would have to be sitting. You could do you could do a whole studio where it's mostly conversations or bedroom scenes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:44",
+            "text": "low overhead."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:45",
+            "text": "You could you could put in like a little like a like your like kind of acoustic lounge like go in there and listen to your vinyl like lying down and it'd be like, Oh, exactly. I feel like"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:37:56",
+            "text": "analog stuff would be great to have like, you know, you could go back in time a little bit and have a lot of books and videos"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:02",
+            "text": "to play that yes in there. Like an Atari setups. Um, that'd be great. Oh, God."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:09",
+            "text": "Let's go guys. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38:10",
+            "text": "didn't think about this earlier."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:38:11",
+            "text": "Let's go, Kev. Thank you. We love you. As always. Here is our final voicemail."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:38:26",
+            "text": "escape hatch. Hey, Cory from Austin, Texas, kicking his old goal what calling on the phone for 1999 Being John Malkovich transporting us back to a time where Spike Jones? Bjork, Charlie Kaufman are like real players, right? Holy shit. What a time to be alive. This movie is fan fucking tasket pastic. Excuse me. I literally just finished watching it and I hadn't watched this movie in decades. Maybe I've kind of forgotten about it. And I'll definitely be revisiting it more often. And also, I gotta get back into looking at Charlie Kaufman's other films. This movie just blew me away. I didn't remember how fantastic it really was. I also didn't remember that Orson being was in it. Who was the voice of the Bilbo Baggins in my book guy. Anyway, from the animated Hobbit you guys remember that? Right? A I know you do. Anyway, Being John Malkovich. Fantastic. Super great to see mouth of it. Really just going for it. He imagined reading this script about you. How wild so friggin crazy, man, Kevin keener. What a baby. Oh my God. Man, he's given us some like kind of dominate revise. I don't want to get too deep in my own subconscious. But I was all about this role. Anyway, who would Tilda Swinton play? There are many options here. I was just just racking my brain the whole way. I was just you know, could it be Elijah, could it be Catherine Keeners character could it be math of it? Could it be the tilde switch being Tilda Swinton now almost seems like the way to go right. But I think I would put her in the Charlie Sheen role even though I hate black but the Charlie Sheen three winning days. Yeah, I would love for tilde to have been Malkovich his confidant. Anyway, thanks so much for reminding me about this fucking gym. You guys are the best. Feels good to be back on the phone. I will be talking to you guys next week."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:36",
+            "text": "We love you, Cory. It's great to hear from Cory. Cory. I knew that I knew that Cory would have something to say about keener for sure. I knew we were gonna make it through though. That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:40:50",
+            "text": "Yeah, and his his vote for Elijah. That was the other one. I had room for for tilde. Amazing. Well, we did it you guys."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40:59",
+            "text": "What a great film. A lot of agreement. We"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:41:01",
+            "text": "think we well like we just love it. Yeah, I like it very much."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:41:06",
+            "text": "It was a seminal film in our in our histories. And I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:09",
+            "text": "learned a lot in the discussion because I thought about it helped me think about it in more than in a limited way than when I first saw it. When it came out. I think it's a movie that has more things to say as time has gone on. So let's get to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:25",
+            "text": "good good stuff. Good stuff. Ben. What do you have to plug buddy?"
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:41:29",
+            "text": "I don't have much to plug. I'm living in San Francisco with you guys now. Oh, wow. Welcome. Yeah, having a good time. I have a website. Ben barnes.net. Just has my work up there. And oh, yeah, I'm just busy plugging away editing and directing whenever I can. Beautiful."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:46",
+            "text": "We love it. Be"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:48",
+            "text": "careful with the coyotes. The Coyotes are out and about in San Francisco right now."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:41:53",
+            "text": "I live right by Golden Gate bow so and"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:55",
+            "text": "why it's crazy. Maybe we see the same guy live in coal Valley. I live like sort of. I'm gonna honk my horn and see exactly honk loud. Yeah, yeah, I live in coal Valley. So I'm not too far where the coyotes are,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:42:07",
+            "text": "but they're circling you. There they are."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:09",
+            "text": "So they house at night they fucking how I hear them like just vegging out there just it's crazy."
+        },
+        {
+            "name": "Ben Barnes",
+            "timestamp": "1:42:15",
+            "text": "Yeah, they kind of do like a little yellow yelping. That's pretty haunted. scary shit. Again, only one person. Only one person has been killed by a coyotes fine"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:24",
+            "text": "to lose some. No."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:42:28",
+            "text": "Rob, how about you, buddy? What do you have to plug down in LA?"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:42:31",
+            "text": "Man? I don't know. I don't have too much to plug. You still writing? I've been working with a friend of the show. Connor step Sheltie. Yeah, we've been we've been trying to get another one off the ground. So that's been real good. Hopefully I'll have something to report soon on that. But that's about it. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:42:51",
+            "text": "Amazing. Wow. We will look forward to your guys eminent return to the pod. We got a lot of good stuff to choose from, whether it's your ghosts or, or other things. There's, we're gonna get some good stuff done. Jason, what do you have to plug buddy? I'm playing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:06",
+            "text": "Val Haim once again, which is a game that came out three years ago. It's a survival game setting Nordic type world. And it's been it's been good. Are you winning? I mean, there's like, you know, it's a survival game. So you're just like gathering wood and building your fort and shit. Like, yeah,"
+        },
+        {
+            "name": "Rob Schroeder",
+            "timestamp": "1:43:25",
+            "text": "it's a PC PC game"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:43:27",
+            "text": "back to. So I'm enjoying that. And I'm still coding my Discord bots. With the assistance of a channel in our QA tester, Space Monkey. That's going that's going great. Some new improvements to the transcript bot have been have been launched recently. So if you come into our Discord, you can search. Now up to 170 episodes of escape hatch podcast history, we only have 43 episodes. 44 Once this one is finalized, left to left to transcribe. So we're closing in on a big milestone."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:06",
+            "text": "It's gotta be crazy when it's all complete. Like it's nuts. It should"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:44:10",
+            "text": "be in like, about a month from now. Probably one one more month. Yeah. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:16",
+            "text": "Amazing. Amazing. April is waiting to know when she can invest. So yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:44:21",
+            "text": "just keep I mean, we'll take"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:24",
+            "text": "when's the seed round and she"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:44:25",
+            "text": "just buys a more she should give some patrons subscriptions that people know, will not be good. We'll take"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:44:33",
+            "text": "that under advisement. All right. And that's it for this episode of escape hatch. I want to thank Jason, Rob and Ben for an amazing conversation. Next week, we're joined by Super Director Greg Yeah. taneous. We finally cover Master and Commander the far side of the world. For enjoying the show. We need your help. Take a minute to leave us a five star rating and review wherever you listen to your pod cast, we're just telling your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. Links are in the show notes, escape hatches and tip deck podcast John our production of H industries. Our artwork is by catcher when our theme music was composed by Scott Fritz and who's the boss of music. The episode was edited and produced by me Ah, thanks for listening. We'll see everybody next week"
+        },
+        {
+            "name": "David Foster Wallace interview",
+            "timestamp": "1:45:38",
+            "text": "you think the failure of Dune was good for his career? I because it made him understand a system that he didn't want to be part of what happened to lynch with dune and now I'm getting a lot of this from my research which was published up it's not like you know, Mr. Lynch, and I had coffee and he told me the stuff but Lynch's career for a while had a kind of Richard Rodriguez arc to it. Eraser head like El Mariachi, this enormous enormous ly cool independent film and, and it attracts the attention of people with money. The first one is Mel Brooks and Brooks hired him to do the Elephant Man and The Elephant Man is a fantastic, fantastic film. And it's lighting and atmospherics. Nothing else so anyway, because of that Dino de la Renta has hired him to do doing it. And now this is doing at the time is equivalent to what like Twister or the rock would be now this is enormous. This is this is a product, and there's all this money at stake and dune itself the novel I don't know if people read it anymore, but it's tremendously complicated science fiction novel anyway. So you don't need an hour long narrative of this, but Lynch does the thing and doesn't do it all that well. But what really happens is the money men come in and they cut like, I think 35 minutes out of the movie, and it renders the movie incoherent. I mean, literally incoherent. And it was a huge flop and I think Lynch ate the flop and decided that what he wanted to do is he wanted to rule over small films rather than serve large corporate ones. He was really one of the first we see a lot of them now the you know, Cinemax and fine line directors, these kind of independents who are doing stuff a little out of the mainstream but still getting national distribution as far as I can tell Lynch really Lynch really pioneered that that ground, he was really the first one to be doing small eccentric films that got a very wide release, with blue velvet being the best example. And this may be entirely false. I mean, I'm not a film scholar. But you like movies. I do like these. Okay, me too. English Patient"
+        }
+    ]
+}

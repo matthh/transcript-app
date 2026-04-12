@@ -1,0 +1,3156 @@
+{
+    "episode_number": 53,
+    "episode_name": "Source Code",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie or just talking about great movies if you don't care about Dune. This week, I'm joined as always by my co-host, Jason."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't need anything, don't worry, don't worry about it David Bowie's son, just do your movie. Let's just get the train where we're going here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by affordable housing advocate Ed Parillon."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Bing a search engine that will help you solve mysteries."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "On this episode we discussed Jake Gyllenhaal and Duncan Jones' mind bending time travel thriller Source Code. We cover a complex storytelling, fun coup stories, and completely disagree about what happened in this movie. If you're enjoying the show, check out our Discord server where you can hang out with us whenever you like. Or take a minute and leave us a five star rating and review wherever you listen to your podcasts. It really helps new listeners find the show. And now without further a-Dune... Source Code. [Dune Pod theme fades out] [voiceover plays] Dune pod is recorded in front of a live studio audience."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Of one. [Jason laughs] I wish I knew who it was. Riverside, get at us. Come on, we need to be able to see who is currently logged in. I don't want - I don't need their information. I don't need their email address. I just need their nickname."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We outnumber our audience three to one. And we must know who you are."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't like their chances there. They're in a lot of trouble. So Ed, where are you based? You're in San Francisco?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yes, I'm in San Francisco."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. And just give me a little bit of background. I don't have many details about what you are up to. So like start by just dropping some -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Tell us about your life, Ed!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, break it down for us, Ed."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "I'm a friend of Jason's from college from a long while back."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ahhhh, okay."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Woodrow Wilson on our debate panel presidents."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. Yes! [Jason laughs] A proud lineage."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, very proud lineage."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Debate crew represent!"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "And now I work in, in affordable housing. So I do affordable housing development here in the Bay Area."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Great. And how do you feel? So I'm in Marin County and all the cities and the county are trying to push back on the ABAG requirements. And my general opinion is that they should just bulldoze you know the opposition and we should just build all the affordable housing by 2030 as we're supposed to, is that correct? Am I basically right?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yes, that's right. [Jason laugh]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. Well, that's good. It was a short, it was a short podcast. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Welcome to the first episode of Transit Pod."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The issue of affordable housing in California is that we don't build housing. [Jason laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, we don't care for it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, we're not gonna do it."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "We're against it."
+        },
+        {
+            "name": "HAITCH A",
+            "timestamp": "",
+            "text": "bunch of namby pricks. So we got to, got to get off our asses and get that going. Well, that's awesome. Well Ed, any friend of Jason is a friend of ours. And so we're really happy to have you here, have you joining us. And so this is going to be kind of a wild one. We scheduled this one a long time ago. And it kind of snuck up on me. So last week, we talked about David Bowie in Labyrinth. So it only made sense that this week, we would go with his son Duncan Jones, who was fresh off his sleeper first movie sci-fi hit Moon. Like that one Jay?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "do like that one. It's a weird one. It's interesting, because this is like a much, like that was a very unconventional movie. And this one at least, is a little bit more conventional, I guess. So it almost doesn't feel like the same director. But I'm excited to be continuing in the Bowie family lineage."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That definitely feels right. That definitely feels right. So we are back for 2011's Jake Gyllenhaal, Michelle Moynahan, who I love. Source Code."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes! Okay. Alright, making sure I had it. Right. Okay, so Source Code. Yeah, so this is gonna be really awesome. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That is, in fact, the name of the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm still... I don't know about you, but I'm still sort of rebuilding from last week. Like it was such a high. Ed, you know, we had the IMAX premiere last week of the first 10 minutes of the movie."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Jason told me."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, so we were like losing it all last week, essentially."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Because we're going on this Bowie journey, does that mean we can like do Iman movie next week?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Star Trek VI: The Undiscovered Country?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Star Trek VI: The Undiscovered Country is a good -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Is a good option."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "You could just discuss the Remember the Time video."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ohhhhh! [Remember the Time plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Woooaah. Wow, wow. I love it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And that amazing, that amazing Twitter thread about it. Oh my god, that Twitter thread is one of the best things that ever happened. We'll link that in show notes."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't think I've seen that but bring it on."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ohhhh my god. It's really good."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It's amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. We will we will definitely do that. All right, well, so we'll be getting to that in the bottom of the hour. We're going to be getting into Source Code. But why don't we go ahead and jump into some Dune News. [sound bite plays] Would you like to know more?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, let's do it. I'm excited."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Slow news week."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, I've got one piece."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I've got one piece of news. Do you want me to jump in?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'll drop one just to start. So we're Venice official."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like you and me? We're going to Venice? [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Word is still out. I didn't ask for Venice tickets. Just for TIFF. But no, the movie is confirmed with 155 minute runtime for Venice premiere."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. Great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Which we already knew. We already knew all that. It just got confirmed."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great. That's awesome."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's it. That's all I have."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright, so it's my turn?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's your turn."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay, my piece of news, which I think is better than your piece of news. Not that it's a competition. I'm just saying that it's actually new as opposed to your piece of news which is technically more of an old."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This comes from Johnny Sobczak on Twitter. He says 'In just six days, the new DUNE trailer has gotten more views on WB's YouTube page than each of the most recent trailers for SPACE JASONM, THE SUICIDE SQUAD and THE MANY SAINTS OF NEWARK, all of which came out in June.' So yeah, the Dune trailer has gotten 12.6 million views, which is more than those other illustrious properties, which seems... which seems optimistic. It seems like the hype, the worm, the time of the worm is here."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "have a question. Ed. is Space Jam 2: Legacy illustrious? [Jason laughs]"
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "mean, LeBron's very illustrious."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Also, Zendaya is also in it. So."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, so we could watch it for this podcast. So that's news. That's real news. I have a question. Producer question for you, Matt."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you want to do corrections at this point in the episode or later?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's my next bullet point is a correction. So why don't you start?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'll start with my own. In the IMAX trailer reaction video. I improperly identified the judge in Night Court as Judge Reinhold. [Night Court theme plays] Where it is not in fact Judge Reinhold, it's Harry Anderson. Judge Reinhold's name just happens to have a Judge in it. But then you Matt -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wait, what is his name? What is Harry Anderson's name in Night Court?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Harry... Stone? Right? Just Stone."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Let's get it right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's get it right this time. We can't do three weeks of corrections on this. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, Harry T. Stone. I love it. He had to go with Harry."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay, great. Alright. So, but a correction on the correction is that you then said, Judge Reinhold isn't the judge from Night Court. Judge Reinhold is the guy from Breakfast Club. [Don't You (Forget About Me) by Simple Minds plays] In fact, Judge Reinhold is not in Breakfast Club either."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, that's Judd... Nelson."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's Judd Nelson. [Ed laughs] Not even a member of the Hollywood judiciary, just a Judd."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "True, true."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So that whole thing, which we then released as a clip just could not have been more incorrect. Yeah. So that's my correction. Now, would you, Matt, do you have anything you would like to admit to?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "do want to follow up and say like, I could imagine you after seeing Fast Times at Ridgemont High thinking that judge Reinhold would be a good haircut to have."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Uhhh... okay, great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, that's true. Yeah, he did. He did have a good hair."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. Very good. Alright. Well, Judge Reinhold no slander against you. It was Harry Anderson that Jason was thinking about. So I got a correction served up to me last week when talking about Labyrinth. I referenced Kevin from Time Bandits, the little kid and the fact that on his wall, there was a Warhammer 40k Space Marine image up on the wall that I saw as he was pushing it, it's not at all in focus. It's off to the side. It looked like a space marine to me. I called it out. And otakukeith called me on the carpet today to say that 40k wasn't invented for more than six years after Time Bandits was released."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Shameful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, it's definitely not 40k I did some research today with my gaming group and was not able to find anything definitive. So let me just ask -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wait, what do you mean you weren't able to find anything definitive? We know definitively it wasn't out at the time the movie was made."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, yeah. No, no, I was trying to figure out what it was definitively a reference to."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So the production designer does not appear to be on Twitter, nor does the art direction person. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's because they're all dead. The movie that was made 40 years ago."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Newt voice. [clip of Aliens plays]"
+        },
+        {
+            "name": "NEWT",
+            "timestamp": "",
+            "text": "They're dead. Alright? Can I go now? [clip of Aliens ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed, what's your favorite edition of the tactical science fiction miniatures game, war game, Warhammer 40,000?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It's really hard to choose. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you have a tabletop gaming history at all, Ed? You know, do you roll the dice for fun? [Ed laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "I... I, so, we're talking about board games? Like Settlers or?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, sure. Whatever. Whatever you want. Yeah."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Or role playing games?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, whatever."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "did a little bit of D&D in freshman year college because my neighbor who is a good friend, still to this day, and still as a dungeon master does, like Twitch streaming around it, was very into it. I tried it for a bit. It was okay. It wasn't, it wasn't my thing. Yeah, I'm more of a board game guy than a role playing guy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Got it. Is there an affordable housing addition to Catan?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Someone did put together a game called Bay Area Regional Planner that is a board game."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh boy."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "have yet to play it but it's in my house. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is like the Cones of -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Of Dunshire, yeah. [Jason & Ed laugh] The only winning move is not to play."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Would a depressed person make this?! [Jason & Haitch laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally. Alright. That's all the corrections I have. So Jason, no more corrections."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, I'm glad you finally owned up to it. I'm sorry that you have to resign from Dune Pod in disgrace."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was a great run."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It was a mediocre run. [Jason laughs] That's unfortunately come to an end."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We didn't make it to the movie but, you know, we got pretty close. [Ed laughs] Ed, anything you want to apologize for? [Jason laughs] Anything you've done wrong?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "In your personal life?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Not right now. I do appreciate, having gone to Catholic school for high school, I do appreciate bringing the kind of confession motif element into the proceedings."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Alright. Well, we do what we can. Well so let me just say last piece of business here in Dune News is to celebrate our new members in the Dune Pod Discord who joined this week. You can join at any time if you got to dunepod.com, you'll see a link to the Discord membership is free. You can hang out with us whenever you want. You can join our live recordings and you could just drop in we're like we're constantly dropping in movies and music and art and stuff. Some of it's related to Dune, some of it's related to just whatever. So it's just a fun place to chill. And this week we had idrinkyourmilkshake and nosoulno problem."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, those are names of people who joined?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, that's correct. And nosoulnoproblem jumped in and just started posting amazing artwork into our artwork channel."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Really good stuff he did."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Beautiful. So thank you know, nosoul, thanks for joining. Alright, Ed, what's your history with Dune if any?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Limited to none. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. Have you seen the Lynch movie or read the book? Or have you seen the trailer?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "No, I think I've seen the trailer but I haven't, I haven't read the book."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, fair enough."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Obviously, I haven't seen the movie. Or I guess it was the earlier movie, but yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you think you will camp out for the premiere of the Villeneuve movie? Do you want to join our tented camp? [Jason & Ed laugh] For the premiere of this movie?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, I have two small children who are -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So do I, Ed. So do I. [Jason laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "So it's tempting, is what I'm saying. [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Let's run away from our families together."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, Ed, can you can you instead just give us an example of like a favorite movie or a book? You know, the most recent book you've read just so we can sort of get a vibe on like, what's the kind of stuff that you're typically into?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "I'd say like sci-fi wise, you know, I've read a lot of Asimov especially all the Foundation books."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You know they're making a TV show of that?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "They are?!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, there's an Apple+ TV Foundation series coming soon."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Two months, I think. September."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah. This fall. Yeah."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Okay. I'm gonna have to, I'm gonna have to try that out. I don't know how that would work as a as a TV series. To be honest."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They're changing it a bit. They're messing with it a fair amount. Because like the books are so like, anthological."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What does that word mean?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like anthologies and like, you know, they're like self contained little nugget stories as opposed to like one like sweeping story and so they're, they're gonna follow one character for longer than the books do in order to make a season make sense. Sorry Ed, we cut you off."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, no, that's okay. I read The Hitchhiker's Guide books several times."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes!"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Watched the movie with Sam Rockwell and Mos Def and Morgan Freeman. Which I wanted to love much more than I actually did."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We all did."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "But I do love the books. You know, those are the main things that come to mind. Right now, I mostly watch a lot of TV. I don't have a lot of energy for book reading these days. With parenting, which I'm sure Jason can understand."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "feel you. I walk the dog and I listened to like 20 minutes of an audio book. And whatever I hear in that section is... that's reading."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, no, I did listen, so I was so upset by the Game of Thrones finale, that I decided that I would listen to all the audio books. Because I hadn't read the books before."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are you serious?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "No, I haven't read the books before the series."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Holy moly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, but that's a lot. That's a lot of audio book to read. That's a lot of content."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, well, I mean, well, I did it! I listened to all of them. [Ed & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Holy shit."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "knew that George RR Martin's books were extremely good at world building. So I figured maybe he will be able to wrap this up better than the show runners were able to."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nope."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "don't actually think he will finish this series at the rate things are going."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nope."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "But you know that hope springs eternal."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's just out there hanging out with the wolves. [Haitch laughs] He doesn't wanna write."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah. I mean, well, he's, he's, he's gonna be extremely wealthy at this point, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. He's old and wealthy. He just got married. He's hanging out with Wolves. Like, why is he gonna go to a room and write every day? It seems like a bummer."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's impressive. That's impressive to have knocked that out. I would love to get back to that. I started today, my re-listen of Chapterhouse Dune, which is the sixth book in the Dune series, the final one written by Frank Herbert. And for me, it's like especially challenging because I'm listening to it, as I'm like washing the dishes. But then I have to pause every two minutes to take down notes in the Notes app so that we can talk about it later, remember what the hell's going on. So it's a pretty challenging experience. I'm looking forward to reading something that is not this that I can just do for pure fun. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're so tired of Dune! [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That evil master. [interim sound bite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, well, listen, shall we go ahead and get into this?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's get into the Source Code. Let's dive in to the source. [music from Source Code plays] HAITCHAlright, here we go. Source Code is a race through time to save the lives that matter. Captain Colter Stevens is an Air Force pilot who wakes up on a train in a stranger's body. After eight confusing minutes, the train explodes, and he wakes up in an unknown location, finding himself an unwilling participant in a covert military science experiment. Colter will be forced to return to the train and relive those eight minutes over and over again, in a seemingly futile attempt to locate the bomb and the bomber and stop them before they can strike. Along the way, he will try to save himself and the other passengers on the train, including the beautiful Christina. Can Colter unravel the mystery and find a way to alter his past? Or is he doomed to repeat it in Source Code?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Can I ask a question about the intros? How often - if you went back and did a Ctrl F for doomed in your description, how often do you think like, you know, the description of the movie is doomed to dot dot dot title of movie? Is it 58% of the time?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Will she have the power to defeat the Goblin King and free herself and her brother or will they be lost for all time in the Labyrinth?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Could have been, could have been doomed. Could have been doomed right there. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. It's the model. It's the model."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. That's great. I love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Source Code. Alright, so when did you first see this movie Ed? What's your relationship with Source Code?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, I really Jake Gyllenhaal's work. The movie I had not seen until I watched it for this. I enjoyed it. It was enjoyable."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Was that all three of us? Have not seen this film?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You know, I thought I hadn't seen this movie. And then I was watching it and I was like, oh, this is the one where he doesn't have any arms or legs at some point. [Haitch laughs] I remembered that I had in fact seen it and like put like in some sort of, I wasn't really paying attention or something, you know, mode. So I consider this my first viewing of the movie."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "First deep viewing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I had been aware of this, you know, I was a huge fan of Moon. And then when this came out, I didn't see it and I consciously avoided getting spoiled on this movie. And like maintained that for now 10 years and managed to watch the film without getting spoiled. So I was kind of happy about that. I knew there was something about a train and something about time travel. But that was basically, that was basically it. So we have Jake Gyllenhaal again, Michelle Monaghan from both the Mission Impossible films where she's absolutely incredible -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Breakfast Club. [Haitch laughs] Night Court. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Anyways, Michelle Monaghan is great. I'm sure someone has IMDb pulled up and can help me out here, toss me a bone."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "She ends up marrying big eyebrow guy in the Mission Impossible universe."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, exactly!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Good for her and eyebrows."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Vera Farmiga, who she kind of like had a big moment a decade ago."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. What's she been in?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't - do you have IMDb while I'm talking?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't believe in it."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "You don't believe in IMDb?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thank you, Kev. She was in Up in the Air. That's the one I was thinking of with Clooney."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ohhh, with Clooney."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, that was a big deal."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. Good one."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Jeffrey Wright. Okay? Jeffrey Wright, pre-Westworld."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Pre-Westworld, but post-Angels in America."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, well, let's just get into this and kind of start walking through and see what we have. So we have the Chicago skyline as we have the credits. I do want to just paste briefly into the chat while we are getting started here. I found this crazy ass Source Code visual timeline. I'll put it in the chat over here as well."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "will say, I don't know, this didn't strike me as the most complicated time travel movie ever made."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's not, it's not. There's like -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like I don't know if I need a visual timeline. Like I think I got it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You really don't."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "got it in my, I got it right up here, buddy. I got my visual timeline stored in a big old cortex."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But it is a really beautiful visual timeline. So I'll leave it there and we'll do a link to it in the show notes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh it is very beautiful. Someone really put some effort in."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So the first note I have is a Jake wakes up on the train and even before he wakes up though you hear kind of sounds a battle, you hear helicopter sounds. And you hear - [clip of Source Code plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then he wakes up and he's kind of like freaked out trying to figure out what's going on the train and Christina is sitting there and calls him Shawn, but he says that he's not Shawn. He's Captain Colter Stevens. So what's your take kind of right out of the gate?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love Jake Gyllenhaal, always excited when he's on screen. Just generally. My first take was he goes into the bathroom and sees you know, he's like, why am I called Shawn and he goes into the bathroom and sees that it's a different person looking back at him in the mirror. And I would just be so pissed if I was as handsome as Jake Gyllenhaal, and some scrub was staring back at me in the bathroom mirror. [Haitch & Ed laugh[ I would be pissed. I'd be heated. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thank god the train blew up."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, just Just let me die. [Jason laughs] I can't live like this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The other thing that struck me is that there's so many details that are happening so quickly that I sort of was immediately put into mentats awareness mode. I was like, oh, that's an important detail. She spilled on his shoe. Those guys are arguing this is happening. So I immediately started trying to categorize every single thing and note every little detail of what was happening."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Did you know it was a -"
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "time loop movie?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It was sort of a groundhog day situation going into it?"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "knew there was something going on with some kind of time travel thing and so I just assumed that was gonna be happening the way that was unfolding."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a critical point, though, Ed, is that this is another Groundhog Day movie. We talked about that when we did Live. Die. Repeat slash Edge of Tomorrow. And like this joins like that little sub grouping with like Palm Springs and that other movie that I have never seen. There's some other one that's in that category, but there's like six of them now basically. Good. Like it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So for me, I will say, just spoilers. I this film suffered a little bit from the comparisons that I would now make to Oblivion and Edge of Tomorrow and Palm Springs. So from that perspective, I wish I'd seen it 10 years ago and been able to appreciate it on that basis."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's a simpler movie than those really, like what it's doing with the looping concept is simpler."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I agree. So Shawn, you know what, I'm gonna call him Colter for the rest of the episode. So Colter comes out of the bathroom. He runs into Christina, she tells him everything's gonna be okay. And the train explodes. Great explosion explosion, you know just great moment of like, what the hell? What the hell is going on? And he wakes up in Beleaguered Castle."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ed, did it hurt you to see a commuter train suffer harm?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It did. I have to say I was very, I'm very happy that I happen to choose a movie for the episode that was almost entirely taking place on public transit. [Haitch & Jason laugh] That was most exciting."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I was excited for you. When I was when the movie opens and there's all these like loving helicopter shots of a train. I was like, oh, wow, this is like Ed's softcore right here."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Absolutely. It was pretty exciting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed sitting up at the edge of the seat."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Loving shots of a commuter train traveling over swan filled water in the train."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "And yeah, a little bummed that they couldn't get, they couldn't get Metra to license, the actual name of the Chicago commuter rail system."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They had to come up with their own fake version of the train."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No CCR or whatever it was called."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "mean, I guess I could see why a commuter rail agency wouldn't want to participate in having one their trains being blown up, over and over and over."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Eight times. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What about the guy who asked the conductor? Can we make up this 10 minutes? Like, buddy, what do you think we're gonna - what do you think the train is gonna do here? Like what are you thinking we're gonna do?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hyperloop. [Haitch laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well people have been conditioned by airline pilots who make up this whole thing about how we're going to make up time in the air like, no, you've just built extra time into the schedule."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Yeah, the plane's not going faster for you. Nothing's going faster. [Ed & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he wakes up. He's in a cockpit of some kind. He's in the dark. He can hear voice coming over the radio, from an officer and he's very confused. She asked him to tell her her name, and he can't remember what it is. He doesn't think he's ever met her. And there's this great segment where she says - [clip of Source Code plays]"
+        },
+        {
+            "name": "GOODWIN",
+            "timestamp": "",
+            "text": "Memory Thread One. Listen to the following passage: \"Lily awoke in an evening dress and took off her cloak. In her hand were five playing cards. They were the queen of spades, four of clubs, nine of clubs, three of hearts, nine of hearts."
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "Is this a red flag exercise?"
+        },
+        {
+            "name": "GOODWIN",
+            "timestamp": "",
+            "text": "End of thread one. Thread two. The following is a recording of a Western screech owl. End of thread two. End of pattern. Acknowledge."
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "Acknowledge end of pattern. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then she asks him to, she basically quizzes him on that. And he passes with flying colors. And he's like, instantly into like execution mode, and is able to recall that her name is actually Goodwin. So this is the introduction of he sees her on his screen inside his all black cockpit. And she tells him that he has to go back in and be Shawn and find the bomb."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "like that sort of wake up sequence where he has to remember the cards in order. And then she's like, 'you will hear a screech owl' and like, this is what I need. I feel if someone would wake me up this way, like instead of my toddler just coming into my bedroom every morning and like banging on things. Instead it was like, here are five cards and here's a screech owl. I would be in a lot more coherent state from the beginning. [Ed laughs]"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think that screech owl got kind of a bad rap. Like that was not a screech in my mind."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, it sounded great. It was it was melodic, again, compared to a toddler. I'll give you a screech I'll show you. I'll tell you what a screech sounds like. [Haitch & Ed laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No doubt."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "You could ask Crystal to you know, have some sort of recall set up for you every morning."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Yeah. Okay. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "See how that goes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Add that to the list."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, Crystal, can you wake up early 10 minutes before me to like, ensure that I have calm and peaceful wake up? So he goes back and we have our second pass. And this time, he is a lot more active. He thinks this is a sim. So he's not kind of taking things super seriously. But he very quickly finds the bomb, but still is blown up."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The comedian has the line. I'm on my way to an asshole festival and you're headlining I think that's a good, that's a good insult. I want to use that someday. I don't really think I have the balls to like, bust that out on someone but pretty good. I'd like to, I'd like to believe I could."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he's back in the cockpit again. I love everything that's going on in the cockpit. I love Jake by himself in the dark, confused. There's fluid coming all over the place. And he's trying to figure out like when you know, what group is this with? Why is he here? What's the jurisdiction? [clip of Source Code plays]"
+        },
+        {
+            "name": "CAPTAIN COLTER I",
+            "timestamp": "",
+            "text": "want to talk to your commanding officer!"
+        },
+        {
+            "name": "GOODWIN",
+            "timestamp": "",
+            "text": "You can talk to him upon completion of your mission."
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "My mission is Afghanistan where my unit is. I flew two goddamn stories yesterday!"
+        },
+        {
+            "name": "GOODWIN",
+            "timestamp": "",
+            "text": "You've been with us for two months. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then she basically gives him this info dump, that there's a terrorist attack in the morning, and there's gonna be another one, there's calling cards. So he's got to get back in there and go figure out what's going on. So she sends him back in for his third pass."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Pass three. This is like the meet-cute pass. Like, this is like the rom com pass where like, he's like, okay, if I'm just gonna keep looping like, let's, let's talk to this lady across from me and see what's going on with her."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And they have a nice moment, actually. So it's cool. So first, he talks to the conductor. [clip of Source Code plays]"
+        },
+        {
+            "name": "CONDUCTOR",
+            "timestamp": "",
+            "text": "Ticket?"
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "How's everything doing?"
+        },
+        {
+            "name": "CONDUCTOR",
+            "timestamp": "",
+            "text": "It's good."
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "Anything out of the ordinary?"
+        },
+        {
+            "name": "CONDUCTOR",
+            "timestamp": "",
+            "text": "No..."
+        },
+        {
+            "name": "CAPTAIN COLTER I",
+            "timestamp": "",
+            "text": "meant behavior on the train? Anything? Anybody seems strange to you?"
+        },
+        {
+            "name": "CONDUCTOR",
+            "timestamp": "",
+            "text": "You're a little strange. [clip of Source Code plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But then he talks to her and she starts pointing to people, and she says, oh maybe it's a vast conspiracy, maybe all these people are working together and the conductor is controlling them. I was like, woah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Could be. We don't know what's going on."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "She's very perceptive."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And so then he says, did you see anybody else come out of the bathroom? Because he sees a guy come out of the bathroom? And she says, well, you came out of the bathroom. And he's like, I did? No I didn't? And she said, yes. And then he goes to his briefcase, and he finds his phone, but it's broken. So were you guys like this is all -"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "was suspicious. I was suspicious of him at that point, for sure. Yeah. Yeah."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah. That was a moment where I was, I was wondering if, if the looping back on itself would be especially meta."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. I started thinking like, are they putting him under this pressure to drive him to the point of doing something? Also had you guys noticed the guy that ultimately is the bomber, had you guys noticed him on on a couple of passes?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, I was too aware in this pass, pass three, of the guy that he ends up like going falling into the bathroom and like sort of racial profiling. Because that's, that's Cas Anvar, the actor is Cas Anvar who plays one of the main characters in The Expanse, or he did play one of the main characters from The Expanse until he got -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No spoilers."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well..."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Life spoilers."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Life spoilers. He was sexually assaulting people on the set and so he had to go."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What?! Oh my god. Okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he was a problem."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Toss him out an airlock."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But he's in this movie too, I guess. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. Wow. Alright. I did not know that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, Cas Anvar. No shout out to you, Cas Anvar."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So Colter kisses Christina to get her off the train. They follow that guy. He wrestles him thinking he's the wrong guy. But he's not. Or thinking he's the guy but he's not. The train explodes in the distance. And he falls onto the track and dies. I was confused the first time I watched this, because I thought he was like, pulled somehow like I felt like something yanked him back onto the tracks. And I was like, Is that part of how the source, you know how this system works? But on the second time, he just got kicked and fell down. That was brutal."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he had to die."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So then now he's back at Beleaguered Castle, but the cockpit is broken. So this is a weird segment because like something's wrong, he doesn't have power. He's freezing and he's gotta fix it. But then on the outside Rutledge and Goodwin aren't really able to help him."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And well, and then this is now the like, this is I think the first time we meet Jeffrey Wright as the like, head of this particular program."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Speak on it!"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love Jeffrey Right. I mean, he's just really great. I mean, like Angels in America is -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "In this? [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not in this, he's not particularly great. But like he's, I love Jeffrey Wright. Like he's, he's so good in Angels. I think he's pretty good in Westworld until like, I stopped caring about that show. He's just a, he's a real tremendous actor. He's not given a lot to do in this one. He's just kind of a one dimensional sort of driven mad scientist who doesn't care about the human cost of his experiment. So that's sort of a bummer for him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Kind of over the top too right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he's doing a lot he's also doing a crazy lean, like he's doing a crazy like kind of all of his like dialogue is given like with a big head forward position, which I think is a little weird, love Jeffrey Wright. Would have been a - you know what Jeffrey Wright would have been good as?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thufir Hawat?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "was gonna say Liet-Kynes. But yeah, would've been good in Dune in some role for sure."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I wonder if, I wonder if Jeff Wright was doing a Spalding Gray. To me, that was the vibe. I was getting some Swimming to Cambodia. [clip of Swimming to Cambodia plays]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's very specific."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Slightly demented. Yeah. I don't know why, that just popped in my head. I will say shout out to host of the Cinenauts show, Ian de Borja, on his show Movies That Changed My Life. He had Jeffrey Wright on."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh did he?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. And it's an unbelievable interview. It's really good one."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What's the movies that he says changed his life?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Apocalypse Now and Sid and Nancy. It's it's great. And he does, he talks a bunch about Batman because he's the new Commissioner Gordon."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, yeah, just a great voice. Jeffrey Wright. I love the cadence of his voice and like sort of like the... oh, Jeffrey Wright, if I mean, he's busy doing more important things. But if you do some audio books, that'd be delightful for me personally. Love him. God bless you. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So this is where this is where Rutledge explains the source code. [clip of Source Code plays]"
+        },
+        {
+            "name": "RUTLEDGE",
+            "timestamp": "",
+            "text": "When a light bulb is turned off, there's an afterglow lingering halo effect. Have you seen it?"
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "RUTLEDGE",
+            "timestamp": "",
+            "text": "Of course. The brain is like that. It's electromagnetic field remains charged just briefly, even after death. Circuits remain open. Now there's another peculiarity about the brain. It contains a short term memory track, that's approximately eight minutes long, like a convenience store security camera that only records the last portion of the day's activity on its hard track."
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "What happens after the eight minutes?"
+        },
+        {
+            "name": "RUTLEDGE",
+            "timestamp": "",
+            "text": "After? Nothing. You cease to exist on the train, you cannot exist inside the source code beyond eight minutes. Source code is not time travel. Rather, source code is time reassignment. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So Ed, what was your take there, you know, as this is, as this is unfolding your expectations and had how'd you like that description there?"
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "thought it was interesting, as it implied that he's not changing, you know, he's not actively changing timelines with any of the things that he does. Which is, which is an interesting, which is an interesting concept. The thing that, the broader issue I had with the mythology of this movie was that I thought it was a difficult, you know, granted, the actual plot of the movie is not very complicated. But the rules of the universe, I felt like perhaps didn't get as clear and explanation like that concept of time reassignment and what it, what it meant exactly wasn't 100% clear to me in a way that made me think this would have benefited from the world building that you could do in a book or a TV series, or even like a mini series or something like that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's a weird concept, like, okay, so we have this ability to connect one person's brain to another person's brain after they've died within those eight minutes. Like, how would you be able to find that person? How would you be able to connect to that person? What is the method of connection between those two people?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, like, that's never explained. Like, what are they, they using WiFi? [Haitch laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "How do they know this guy was on the train? They're like, oh, well, he's the most like well suited to you. Which I guess was so that he wouldn't be too surprised when he looked in the mirror?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Sure..."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "In the restroom? I wasn't entirely sure what that meant."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But like, also, like that guy is like, as the loops continue, that guy is more and more dead. Like he's dead. Because it's like, you know, they're continuing on to like, replay the thing. That part doesn't make sense. You know, it's funny, like I this part where they talk about the time race. I mean, they sort of like talk about the explanations, my brain just like, sort of refused to accept that information. I was like, this isn't, this isn't gonna help my appreciation of this movie. I'm just gonna continue. It's just gonna be loops. He wants to call his dad. That's what I'm getting out of that. So he just wants to call his dad."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Right. Exactly, exactly. So alright, so we, he's sent back in. And this is the first time that I really noted like, each time he goes back in, he sees these flashes of Christina. So that's obviously you know, you're getting like there's some kind of bigger, obvious connection there. We'll see where that goes. But on the fourth pass, she, Goodwin suggests he gets a gun, he goes for the gun, he gets caught. He gets knocked out and he has one minute left, you know, of his eight minutes. And there's this really nice moment with Christina where he says, what would you do if you only had a minute to live? And he says I would call my dad. And then he says - [clip of Source Code plays]"
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "Tell me everything's gonna be okay."
+        },
+        {
+            "name": "CHRISTINA",
+            "timestamp": "",
+            "text": "Everything's gonna be okay. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then you have this beautiful slow motion explosion shot of the two of them framed in front of you and the fire just coming down. That was gorgeous."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That was a sexy explosion."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I want to call out the cinematographer on this film. This is DP Don Burgess who did Contact."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, wow."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Five banger. Spider-Man. Castaway. And still working, did Aquaman just a few years ago, so that that was pretty impressive."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Pretty good DP they got for this for this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, and actually, it's just talking of talking quality. Also, editor, Paul Hirsch. You know, Paul?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Who's that?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He did this movie called -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not personally."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He did this movie called Star Wars."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, interesting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He also edited this film called Empire Strikes Back."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And Ferris Bueller's Day Off."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Is he still alive?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And Mission Impossible: Ghost Protocol!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay. Great. Great. Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, he was good. So it explodes. He's back in Beleaguered Castle. So now we have, he sees Christina's badge."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And then he's like, so I know - that's a clue. I've seen a clue now."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Does it feel like it's like, kind of dragged out through this process? Or what?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The badge thing?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, just the whole the whole time. It's like, it's only 93 minutes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I like that it was only 93 minutes. That's like, the golden, the golden dream is the 93 minute movie. I do, I do want to note, in this, and not only that, it's in this next loop. That right at 45 minutes, the exact midpoint of the movie is when he finds out that he's actually dead. You know, he that he you know, that's when he is what's his face, tells him on the train. Like I looked up that guy and I'm sorry, your helicopter buddy is dead. And so it's a very well structured 90 minute movie. So I give it a lot of, I give it a lot of credit for that. I didn't know if this part dragged. I did I guess I did like sorry. Once I started trying to explain things to me. I did like sort of glaze over a little bit, like I don't need anything, don't worry. Don't worry. Don't worry about it, David Bowie's son. Just do your movie. Let's just get the train where we're going here. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. He does have a moment there after she gives you she gives him the news that he died. It's actually cool. She starts glitching and her face starts to get kind of pixelated or whatever. And he goes back to arriving a beleaguered castle. He remembers being shot down, and then getting the first card sequence and the memory sequence and stuff. So that was kind of cool. I like that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that should have been his sign that something was amiss, too. Is that like she was using Bing on her phone."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ohhhh my God. [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The simulation has like, paid placement by Bing. [Ed laughs] You know that like something's off."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "did enjoy that. Speaking of things that did get licensed."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Bing is a search engine that will help you solve mysteries!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Are you stuck in a simulation? [Haitch & Ed laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he has a kind of confrontation with Rutledge as part of this part of this issue. And I would say one thing I liked here, he like he's trying to figure out why he's in the cockpit and what's going on. And there's the moment where he reconfigures the cockpit with his mind. It kind of like grows and gets big, like that was like a cool Neo moment."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "like that. It made me think of Time Bandits, where the wall pushes out. It's not Time Bandits though."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "like it. Now we're on the big, we're on the process where he's really getting pushed, and Rutledge is just sending him in. And we're not actually even showing the loops anymore. We're just sort of like showing right little snippets to say that it's happening over and over again. Again, this is where like Palm Springs, I think does this even better."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think it was like meant to be like, oh, like he's like sort of being tortured here or whatever. But like, I don't know, at this, you know, you're it didn't really land as well for me. You're just like, yep, I get it. He's in fast forward mode. Let's go."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mhmm. So he goes to the bomb, he grabs the phone that's connected to it. He uses it to call the number that had most recently called it. And it's Derek Frost. It's one of the guys that we saw as early as the first loop walking off the train and he had dropped his wallet. And so he goes and he gets him, Derek Frost has a has a van with the bomb. He shoots Christina, he shoots Colter and he gets away. And we have that kind of very generic - [clip of Source Code plays]"
+        },
+        {
+            "name": "DEREK FROST",
+            "timestamp": "",
+            "text": "Because the world is hell. But we have a chance to start over in the rubble. But first there has to be a rubble. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's like okay, guy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright, guy. Yeah, this would have been, that would have been a good roll. I think that actors maybe not the best for this particular part."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. Why? What happened?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You know who would've been good in that part? Dastmalchian, our guy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ohhhh my god."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You familiar with the work of David Dastmalchian, Ed?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "No, I'm not."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He is in the Dune movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Prisoners."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's in the movie Prisoners. He's in the movie, he's in the Batman movie, in Dark Knight. He's just a very odd looking fellow, which is also in Blade Runner. I guess that's like would have been one of the problems, if you would have had him. Like if you're looking around the train -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Too weird. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, and being like one of these guys is a bomber. I was like, it's fucking that weird looking dude for sure. You're not gonna give me not gonna get me off the scent. [Jason & Haitch laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally. Frost gets away. He drives away but it doesn't matter because we're inside source code anyways, but the train still blows up which bums out Colter because he pulled the the phone And so he goes back to Beleaguered Castle and he says, I got your guy. Here's his name. Here's his license plate for the car, like boom."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he nailed it. He's like I got the license plate in like NATO phonetic alphabet. I got like everything about this fucking guy. Let me call my dad. I just want to call my dad. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And they're like, hold please."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Why was there a decoy phone on the bomb?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It was a backup. So they had to, a failsafe."
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "backup I think."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, just a backup."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, failsafe."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Okay. Okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Incase you know, line was busy or something. [Haitch & Ed laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "One phone fails the other."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, I was wondering about that. And I was also wondering, you know, his plan was to call the phone right? Call the last phone number that was in the phone. But why would, why would that person, you know, why would the suspect pick up? [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hello? Is this the bomb calling me? [Ed laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Is it in his phone as 'bomb'? [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ed, I have a transit question for you."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you think they keep guns in like a little like lock, like a high school locker on trains? Do you think that's a real thing?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's the smallest lock."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The smallest lock in the world."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, I'm not a transit ops person. So I don't know if there's like an Air Marshal situation going on commuter rail trains."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Secret train Marshals."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah. Yeah, I don't, I don't know."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't think they keep, I don't think there's like secret gun locker on the fucking train. I don't know about that. Maybe. That's fine."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Could be. Could be."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's not the biggest problem with the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So back in the quote unquote, \"real world\", they are able to capture Frost. They're popping bottles back at the source code HQ, you know Rutledge is parting his hair and getting very excited. You know, they're gonna try and bring eight more source codes online by the end of the end of the year, they're going for it. And Colter just asked to go back. He wants to go back in and try and save the people on the train. He's convinced that he can do that. As well as save Christina. And this is where we have the reveal. We've had these great shots through the movie. You see Goodwin, and then you just see the camera that she's looking at. Right? This is where we have the reveal that she just is interacting with him this whole time. She just sees him as text on her screen. That's all he is."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's just text. Yeah, he's basically like the, like Eliza program. That's like a, you know, just given them just what he's thinking. That's tough."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's a tough one."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Tough for him. Tough for him. Yeah. Tough for him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So she agrees to send him back in for the final pass. And I love this like the way he flawlessly nabs Frost and just utterly dominates him makes him cry and reports I'm an end and leaves him there. That was like, that was awesome."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that was pretty good. It's sad - now I'm like stuck on the fact that he's just like a text interface. He's just like, he's just Emacs basically, or something like, he doesn't, he's got nothing, it's a sad reveal."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Calling WQ bang or whatever. [Jason laughs] So I did have one note here about Frost as he's crying. So he's been like writing paranoid screens on his website about the government. And so you're like, oh, wow, this guy is like a he's a lunatic. He's like a paranoid lunatic. But he was also caught by a secret government military program that came through alternate dimensions to capture him. [Ed laughs] Without a warrant. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I don't know. I don't know how that's gonna stand up in court. He might walk. [Ed laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "He seems might walk."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Seems unlikely."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You know, fruit from the tainted tree. I guess he's like, you can't like just like, what like, so the Emacs prompt sent him? Because like that doesn't work. [Ed & Haitch laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We got him. So how about the phone call to his dad? Colter calls his dad. [clip of Source Code plays] COLTER'S DAD I loved him so much. Wish you could have told him that."
+        },
+        {
+            "name": "COLTER",
+            "timestamp": "",
+            "text": "He knows it. Take care, Mr. Stevens. [clip of Source Code ends]"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "love this."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it was good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And the conversation was great. Jason, you know, who was the voice of his dad obviously?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, whose voice was that? I don't know."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "looked this up. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Tell 'em, Ed."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Is it David Bowie?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It Scott Bakula."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Ohhhhh that's so good! It's so good. It's so good that it was Quantum Leap."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Totally."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "In love the loopy movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Woooww. Do you think Scott Bakula was like finally someone's doing another loopy movie. I couldn't get a job again. Been waiting 40 years. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he gets closure with Dad, he kisses Christina and Goodwin out in the quote real world where you know Rutledge is pounding on the doors and military guys are kicking in the door. She pushes the red, the big red button, and everything freezes. He goes flatline. So question. As they have the shot of pulling back to the train and everybody's frozen and they're all laughing and enjoying the comedian."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That was a cool shot. I like that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is this what started all of those shots when that happened?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The harlem shake? [clip of Harlem Shake plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That meme? Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The Harlem Shake meme? [Ed & Jason laugh]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "No the, the mannequin challenge."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Sorry. Wrong meme. I think that was several years later. Yes. This started the mannequin challenge. [Jason & Ed laugh]"
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It previsions the mannequin challenge. Maybe the Harlem Shake too. Who can say?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So that was a great shot, and then boom, time unfreezes and it continues for him and Christina, and they are still alive. The train doesn't explode the guy's captured. Which brings us to the single most unrealistic element of this entire movie. Christina says come here, I want to show you something. And she takes him a fellow Chicago native to the Bean."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Have you heard of this place? [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh yeah."
+        },
+        {
+            "name": "HAITCH A",
+            "timestamp": "",
+            "text": "place where no native would ever go unless they were taking -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love the Bean though."
+        },
+        {
+            "name": "ED A",
+            "timestamp": "",
+            "text": "hidden gem that only locals know about in Chicago. [Haitch & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Off the beaten path. That was wild."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, and like it seemed like I thought maybe the point of the bean was that like the reflections he was seeing in his like restart were like, they were -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They were. They were bean."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Bean vision. He was having bean vision. Okay. He was anticipating the bean."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Correct. But it's, that's also weird."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's returning home. His soul is returning home. That's when, look, when you die, that's what you do. Is you look into the bean. Like the Tibetan Book of the Dead."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But he basically, so he's manifested, you know this by going back in by preventing the death. I guess he's, he's breaking the source code for that instance of it, right? Like the Shawn doesn't die. He no longer dies. So he is able to continue basically, right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Metaphysically it's a little confusing what's going on at this point. Like, because he's dead. Maybe he's living in the simulation. Maybe it's his consciousness is living in the simulation without his body?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, no, no, no, no. Now there's a new Colter. So there's the Colter that was in the reality, the real reality that we've been following this whole time, right. But as soon as we as soon as time unfreezes we're following the original Colter in Shawn's body permanently. But there's another Coulter in that reality because he, Shawn, Coulter as Sean texts Goodwin and tells her that source code works, that it's multiversal. And to help Captain Stevens. So basically in this reality, and they have the whole thing, it doesn't happen, because the bomb doesn't go off. Source code doesn't get active voted for this instance of Colter."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright. I don't really know how that works, to be honest. Like, I don't know how you've leapt into the multiverse."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It still seems like he's in two places in the reality."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He is. He is. The original from the other universe. And this one."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think they could have ended the movie where the time froze, let me just say that, like, I feel like I narratively gotten everything I needed from the movie, has like that cool shot where the Harlem Shake moment, where everything, they should have ended on the shake. [clip Harlem Shake plays] Is my verdict on the movie. And I didn't need like, everything else felt like one of the extra endings in like AI or something like that. Like it was just like one of these like, you know, it's like, alright, I guess there's more. Alright, cool. Like, it didn't offend me as much as some of those other movies. But like, I just didn't feel it was necessary."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, I tend to agree. Yeah, I think it would have been better to just end on the on the shake."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Mmm!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "End on the shake. [clip of Harlem Shake plays] If you can end on the shake, end on the shake. That's just one of the rules of filmmaking."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's interesting. I think it's important to show that he prevented it from happening. And it caused that universe's instance of source code not to go off at this point. And that that will happen at some later point. And this is multiversal. Right? This has many worlds?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, I think that's what we're meant to believe."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They're tunneling through, each time they sent him back there tunneling him into a different universe."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hmm, I guess that all makes sense. I had just interpreted that it was a simulation. And then this was everything that happens after it unfreezes is in simulation world and it's just like, you know, yeah, like the bomb doesn't go off or whatever, because he stops it, but that's just in the simulation and like, maybe that's trying, the movie's trying to like, make a winking, everything's a simulation. You know, who's to say what the reality is, like we're it's all just a simulation and blah, blah, blah. But like I didn't really, I didn't really, I didn't feel the multiverse thing of it, but I'm fine with it."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Jason, I agree with you. I had thought it was all a simulation. And when he was saying, can I just have eight minutes and she, you know, Goodwin allows him this last run. I thought it was just kind of a pity extra run."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, well, you know, I owe his consciousness."
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "pity, pity run,"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "This satisfaction."
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "breakup run."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, we've been torturing this guy's consciousness for a while, and he just saved the day, etc, etc. So let's give him a pity run. But then it turns out that created another reality. [Ed & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "If we believe him, he says, he says it's multiversal."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't think he said it's multiversal. But."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, hold on. Let's just hit this for a second. Ready? Listen for just one second here."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, wow. Matt's going to the source code. [clip of Source Code plays]"
+        },
+        {
+            "name": "CAPTAIN COLTER",
+            "timestamp": "",
+            "text": "If you're reading this email, then source code works even better than you and Dr. Rutledge imagined. He thought you were creating eight minutes of a past event. But you're not. You've created a whole new world. [clip of Source Code ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The end."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "My interpretation of that was, it's still what I said, I think that he's now living in the simulation somehow, even though his body got disconnected. It's like his consciousness got uploaded into the computer. And so in this new reality, where he's in a simulation, he's saying to the person running the simulation, in the simulation, hey, like, it works. I'm gonna go and chill and live my life in here now, and good work. But I don't, I didn't really interpret it as like an actual separate, like, bubble universe was created. I mean, unless that's what a simulation is. I don't know, man."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "So I have a question."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Go ahead, Ed."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Go for it."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Also in this new world, multiverse, universe, whatever timeline, this Shawn guy. He's just done? He's, he's out of there?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, he's gone. [Haitch laughs] Peace out, bro!"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "This universe, if you're in the wrong place at the wrong time..."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You could just get got!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "You're screwed."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Jake Gyllenhaal gets thrown into your body. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's the real, that's the real lesson of the movie is that the vagaries of fate are such that at any moment, Jake Gyllenhaal might take over your whole life. [Jason & Ed laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, but he also has to live the rest of his life, the rest of your life looking like you."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean, it's a better deal for him to be perfectly honest. Like he still exists. Like my ship just got taken over. I guess he's bald now. But like he still is doing something."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right. That's right. Alright. Well, we'll leave it there unresolved.[Jason laughs] Don't know exactly what the answers were, but I will say this film had a budget of $32 million. And it did that 147 million worldwide."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not bad. Great. What's David Bowie's son working on now?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ehhh... I don't know. So Source Code 2 was greenlit in 2014. And then kind of stalled out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that didn't happen. No one really wanted that."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "can't say that the door was left open to a Source Code 2."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No. We don't need Source Code 2."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What do you mean? What do you mean? He's right there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We just didn't need it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, we don't need it. Yeah, sure. I mean, did Mute which I didn't watch."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He directed the Warcraft movie?!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wooowww. That's what killed his whole career. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Did you watch that movie?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I like it, but I like the Warcraft mythos. It's not a good movie. Like it's bad."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really? Like bad bad?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, yeah. It's quite bad. Okay, well, sad for him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "How about Mute?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Mute's apparently terrible."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, yeah. Paul Rudd, oh, Justin Theroux. I love Justin Theroux."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Justin Theroux. And Alexander Skarsg\u00e5rd. I heard it was terrible."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hold on, look at this picture. I'm just gonna put this in the chat. Look at this picture from the Mute homepage of Alexander Skarsg\u00e5rd. I assume this is his main, his main cast photo or whatever, but it's pretty awesome. But he says that he's not wearing pants. [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He doesn't believe in pants. He's Swedish."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What a boss. God."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Do you know about this photo? Hold on second. Alexander Skarsg\u00e5rd."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ohhhh. Here we go. Here we go."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "What's this?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Finally!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Click this, click this link. This photo of Alexander Skarsg\u00e5rd exploring the South Pole."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Wow. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Goly! Look at that guy."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "know the guy who took that photo. [Haitch flex alert plays] I know the guy who took the the photo. I know the guys who took the photo of Alexander Skarsg\u00e5rd sitting on a toilet on the South Pole. Flex alert for me."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "You know somebody who went to the South Pole?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Anna, Nick and I and Crystal went on an Arctic expedition with this guy, Inga and Inga is a polar explorer who also accompanied and Alexander Skarsg\u00e5rd to the South Pole and took a photo of him naked on the crapper."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, I mean, there are only so many people in Scandinavia. They presumably all know each other."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, they definitely do. They definitely do."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. Alright. Well, I'm gonna say, Jason, I think -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We killed it. I think we've crushed it."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think we can use the Matt flex alert as a Jason flex alert as well. Right? Can it be a general purpose?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It can be, I don't think any of the audio I gave you for that particular story is compelling or useful, but you can make a production decision on your own."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Sure. I just think in general, like I do flexes, you know, I do flexes, you do flexes, it's basically, it's basically the same. So that's, that's good to know. Alright, my final thought on watching this film was I frickin love Jake Gyllenhaal. And he really inspires me as an actor. And we're going to be doing more Jake and I'm going to go ahead and announce right now because I reached out, we had Daisy last week, and I reached out to Daisy's husband, Rob, who's been on the show a couple of times. And I want to announce it here first. He's coming back this fall. We are doing a doubleheader."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Jesus."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Of Jake Gyllenhaal, Roger Deakins, and Sam Mendes. For their 2005 Desert Storm movie Jarhead."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then we're gonna keep the train rolling and do Deakins and Sam Mendes in 1917. So we're gonna do a two parter back to back and cannot wait to do that. It's going to be amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Awesome. Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed, who would Tilda Swinton play if you had to cast one role in this film with Tilda Swinton, who would it be?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, I enjoy Jeffrey Wright but I feel like she would be, she would be great in that role. Rutledge."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. That was my choice too. Especially because like Jeffrey Wright kind of phones it in on this one. I think Tilda could have done a great job in that role. That was my, also my pick."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "agree. Jeffrey, we love you. We love you."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We just want to see you with better material to work with."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Final thought, I'm like at a three banger for this film, three out of five. I think it's like, I think it's okay. It's not, it's definitely I understand why this was not the huge hype movie that everybody was like, oh my god, after Moon, this is gonna be incredible. And it was like, it's okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's right. I'm in the same place. Exactly the same place. It's okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed, same?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Roughly the same place. I mean, I did think that the movie started off with pretty good potential."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Because it had trains? [Haitch & Jason & Ed laugh]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Trains and Jake Gyllenhaal."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You have my attention sir! [Jason & Ed laugh]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It's true! Trains and Jake Gyllenhaal is hard for me to pass up. But yeah, I would agree. It didn't quite deliver on it on the on the promise of the trains and the Jake Gyllenhaal. Although he was very good. And the trains were."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he is very good."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "And the train was also good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Great performance by trains. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Jake Gyllenhaal is a great actor. He makes very strange movie choices. He does a lot of weird stuff that guy."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah, he definitely does."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But you know, whatever."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Go Jake."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Shout out to you. [interim sound bite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, here we go. Let's do some letters. What do you say?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's do it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, first one is from Cameron. Subject line: Loved the IMAX preview episode. \"Hey Duners, longtime listener. First time emailer. Just wanted to say that I love the IMAX preview reaction episode, being able to hear the joy and excitement from you too, after finally seeing some of the film after so long made my day and made me even more hyped for the movie based on your reactions. I have no doubt now that Denis will elevate the source material and couldn't be more excited. You guys have got to go to the movie premiere. Keep up the great work. All the best, Cameron.\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a great, that's a great letter. We were definitely hype to have seen the movie. I've been thinking about it a lot. It was exciting. I'm glad people could hear our joy on the episode. I also want to thank Danny from 70mm joining us to share in it. It was a lot of fun."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The greatest film that will ever be made Danny said. That was strong, strong praise for for Dune. [Jason laughs] Second email is from our good buddy Daniel McGibben. Who says \"Hey Dune Pod, shocker to no one, the 10 minute preview did not make it to Winnipeg, Canada.\" Sorry!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Sad for you. Sad for you Winnipeg."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "\"I retained a small hope that an entrepreneurial viewer would somehow get a hand cam but it sounds like security was tight.\" It was. They had like the laser rangefinders and stuff in the dark."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We were all just naked in the IMAX theater. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They gave us like a sack cloth to wear."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, it was like the it was like the New Jack City scene."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed, we were there, like they took our phones. So we had to sit for an hour and a half right? It was 90 minutes. And Jason and I had a lovely conversation."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, we talked about our families. Matt and I don't really know each other very well. So it was a good opportunity for bonding, for host bonding. [Ed laughs]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It was good host bonding. Where was it?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Metreon."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "IMAX. Metreon."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, Metreon. Okay."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, it was good. \"I can't believe we still have to wait three more months. But in the meantime, you guys managed to raise the hype level to 9000 with your pre showing hot take. At least they gave the rest of us plebes, a taste of the Hans Zimmer soundtrack. PS. sounds like you converted Danny. Possible third host incoming? Daniel McGibbon.\" Daniel, like Danny is from 70mm. He's doing artwork. He's got an Apex streaming with slim every single night."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're lucky to have him for the hour that we had. It was great. We're not asking anymore."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Here is our solo voicemail for tonight. And it's only, it's less than a minute and a half. Here we go. [voicemail plays]"
+        },
+        {
+            "name": "VOICEMAIL",
+            "timestamp": "",
+            "text": "Dune Pod, hey it's Cory, just calling in for the Source Code episode. I've never seen Source Code, but I did look it up and see that it was the starring Jake Gyllenhaal, Dune Pod favorite. And it was directed by a guy who did Moon, which I really like. And really did some of the Species movies, so that's kind of cool. But I have doing a little bit of time traveling myself, via podcasts and movies. Back to the 90s, I've been listening to a great 60 Songs That Explain the 90s that's really great. And then I watched Woodstock 99: Peace, Love and Rage. Not sure if you guys have hears about this, documentary about Woodstock 99, which I remember vividly being glued to MTV, like watching the horror unfolding. Shitty ass music festival filled with shitty ass people and shitty ass bands. Highly recommend it if you guys haven't checked it out yet. I'm looking forward to hearing about Source Code. Thanks, guys. Have a great episode. Bye! [voicemail ends]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Thanks, Cory. We love you."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Cory!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great. I do remember that. I do remember that music festival and it being a shit show."
+        },
+        {
+            "name": "ED I",
+            "timestamp": "",
+            "text": "think I watched it in the Oaks Lounge, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, really? Glorious. Oh man. Shout out to the Oaks Lounge. We miss you."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Shout out to the Oaks Lounge. Shout out to the goose. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Shout out to the goose. This was our clubhouse in college."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. Well, so that brings us to our announcement for next week. So we have been talking for a while about wanting to get our next guest onto the show. And we're really really excited to have - is this our first CEO on the show?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't know. I haven't been checking resumes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We have a real tough screening process here. So we have Anil Dash."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's an incredible CEO of Glitch, this amazing online coding community. And he is a noted Prince historian. And we really wanted to get him. He's also a hip hop head, just like a real expert. I got to know him through Run the Jewels."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "When you guys were both in Run The Jewels?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The first time I ever interacted him was when I was at Mezzanine seeing Run The Jewels, there were about 200 people. [Haitch flex alert plays] This was on the first tour, and I saw them and I was like basically in the second row, second in the in the mosh area. And there was a moment where I thought I was having a heart attack. But I didn't want to leave so I didn't and I just sort of stayed and I tweeted about it as I was on the dance floor. And so that was, that was my first connection with Anil. But so he is coming on to talk about the Purple One. And we're not doing Purple Rain. We are doing due to the Dune connection, the strong Dune connection, Bob Ringwood costume designer of the still suits for David Lynch's Dune, we are doing Batman 1989."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Mhmm! Get hyped."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Ed. What's your take on Batman? Hot take?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Well, you know, actually, my main memory of Batman is the first time I saw it was we, so I grew up in Trinidad in the Caribbean. And we had a coup attempt, which was actually - [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just a fun coup story."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It's a fun coup story! Well, I was nine years old and you know, everything ended okay. So whatever. But basically we have one TV station, and they had taken over the TV station, the perpetrators of the coup attempt to take over the lone TV station. And they just I guess they had a bunch of movies in the station. And so they just started showing like The Little Mermaid was one and Batman was one of those. That's when I saw Batman was like - [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's amazing. Wait. Wait So the coup perpetrators were like to keep people chill, we'll show Batman. Is that the, is that what was going on?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Yeah. Well, you know, they couldn't be on all the time."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Right. They couldn't be on all the time. [Jason laughs] That's amazing."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "They'd like cut in with updates. And then, you know, now back to Batman. [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's sort of like, that's amazing. That's pretty amazing. It's sort of like, but not quite the same thing. Like after 9/11 when PBS was just like, we don't know what the fuck to do. We're running Ken Burns baseball for 24 hours a day for a week. [Haitch laughs] Hope you guys can watch that, because that's all we're doing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my god. [Ed laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's awesome. That's great. That's a weird time, man. That's a weird time."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "It was, it was a weird time. I mean, you know, I was, I was nine. So when they first did it, it was a Friday night, which was MacGyver night. And I was very upset because MacGyver got preempted. [Haitch & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We interrupt this episode of MacGyver for our live coup attempt. Wow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "See, this sucks. We had a coup and we didn't even get Batman shown on cable. That's bullshit. We didn't get free Batman. God damn it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The synergy. Just a wasted opportunity. Well, Ed, I hope you'll revisit Batman 1989 and see how it how it lands. [Jason laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "See what memories it sparks. [Ed laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "I'm trying. Warner Brothers marketing. I'm always trying. [Jason laughs] It is streaming on HBO Max. So check it out. I think it's on in 4k."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Get ready for that. It's gonna be, it's gonna be intense. Ed, what do you have to plug?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, what do I have to plug?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What are you excited about? Like what's going on?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Oh, boy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Any causes you want a shout out or anything?"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Um, well, I'll shout out the Immigration Justice Project."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Hmm, do it."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "So it's a project of the American Bar Association. It's actually run by a good friend and fellow debate team alum Lauren Cusick or Lauren Cusitello."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Shout out Lauren."
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "She works for it. And they are doing a lot of stuff around making sure that there is good due process and general immigration defense at you know, down at the border. They are on the American Bar Association website. You can donate to a IJP. And, you know, and just making sure that people's rights are respected in immigration court because they don't have a lot of advocates a lot of the time."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Awesome."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "like it. I like it. Very good. Yeah. I would love the opportunity to contribute for that and help out. Amazing. We did it you guys. We did it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Source Code. What a journey."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. Well, thanks, everybody. We really appreciate folks tuning in. And we'll be back next week with Batman. Hopefully still coup free and running strong."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Stay coup free at least for another week. [Jason & Ed laugh]"
+        },
+        {
+            "name": "ED",
+            "timestamp": "",
+            "text": "Thank you for having me."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Seven months, seven months no coup! [Dune Pod theme plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And that's it for this episode of Dune Pod. I want to thank Jason and Ed for an awesome conversation. Next week, Anil Dash joins us for the first truly postmodern superhero movie, Batman 1989. Anil's insights into Prince's contribution to this film are not to be missed. If you're enjoying this podcast, join our Discord server where you can hang out with us whenever you want. A link is in the show notes. You can find our full movie setlist on Letterboxd and if you want to support them by upgrading to Pro or Patron status, use promo code DunePod at checkout to save 20%. Dune Pod is a TAPEDECK Podcast jawn, a production of Haitch Industries. Our artwork is by ctcher and our theme music was composed by Toby Foresman of Whipsong Music. The episode was produced and edited by me, Haitch. Thanks for listening. See everybody next week. [Dune Pod theme song ramps up, plays alone, ends]"
+        }
+    ]
+}

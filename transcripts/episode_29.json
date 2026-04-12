@@ -1,0 +1,1631 @@
+{
+    "episode_number": 29,
+    "episode_name": "Polytechnique",
+    "dialogues": [
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:08",
+            "text": "Hey everybody, it's H and welcome to the latest installment of Dune pod your one stop shop to get ready for the new dune movie. This week I'm joined as always by my co host Jason"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:19",
+            "text": "our wives don't even listen to this show you don't have to you don't have to worry about was it everyone and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:24",
+            "text": "by the host of the hit new podcast sit nots catcher I love Canada. On this episode we discussed Denny Villeneuve his first feature film Polytechnique, this powerful drama about a 1989 school shooting led us to have a very real conversation about the dangers of isolation and delusion, the barriers to economic and gender equality, but hopefully to still have a few laughs along the way. If you're enjoying the show, we need your help. Be like listener country music heart and soul. And leave us a five star rating and a review wherever you listen to your podcasts as it really helps new listeners find the show. And now without further ado, Jun Polytechnique. What's happening? Are you like? Are you day trading game stock stock?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:15",
+            "text": "Are you talking to me?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16",
+            "text": "Yeah. Is that what's happening? Are you mining? What's going on cash? Actually,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:20",
+            "text": "everything is going crazy right now. No, no, I have a friend who was like, was super like riding the train even to today. I'm like, dude, have you seen prices right now? He's like, holding on baby. We're holding on. I'm just like, Hodel This is too much for me. It's too stressful. I can't do that. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:38",
+            "text": "I can't either. I only like gambling for low stakes."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:42",
+            "text": "Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43",
+            "text": "Can I get your your take on this, Jason just because we've had this huge battle raging in our Discord. And I'm like the only one who is worried about people like individual investors just getting crushed in all of this excitement about sticking it to the man. Oh, yeah. Don't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:57",
+            "text": "do that. No, the house always wins. That's a thing for a reason."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "2:02",
+            "text": "Yeah. Yeah. Yeah, I think. But you can't like stop people. You have to just let people screw up. You know, yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:09",
+            "text": "people are just gonna get hosed. Yeah, that's the free market, baby. The free market is solved. The small man is going to get hosed. Yeah, for sure. Don't Don't Don't day trade, you're not going to beat the street. It's not it's not possible."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:23",
+            "text": "But do you think it's good that Wall Street at some portion of Wall Street ticket into shorts this week?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:28",
+            "text": "I mean, I don't really think I think I think this is a story with no heroes is like the is an important way to view it. Like this is this was a bunch of people who essentially I mean, we're running a pump scam. And like, it's acted on a bunch of people who were left holding the bag. And like some of the other people who were harmed in that were hedge funds, who like we obviously have no sympathy for and fuck them. But I mean, like, you know, I mean, like, in that we have no sympathy for him sort of I mean, they're, they're, they are constituent parts of retirement funds and other things that we don't want to see, like, you know, completely swamped. Right. So anyway, the point is, there's no, there's no heroes, this is all just like financialized capitalism being the ruin of everything."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:12",
+            "text": "Right, right there, you know. And tonight, we're talking about, you know, injustice and perceived injustice and how that drives people. So this is maybe maybe relevant. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:21",
+            "text": "although I think in that story, there's definitely there. I don't know if there's heroes, but there's definitely a clear villain in the movie that we're talking about. Yeah. As ambiguous. No,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:29",
+            "text": "that's definitely for sure. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:31",
+            "text": "is that is for sure. Well, I just want to start by just welcoming back catcher. We are thrilled to have you for your season three debut super"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "3:38",
+            "text": "hyped. Honestly, I've been very excited to come back and see you guys after so long. So yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:45",
+            "text": "yeah. It has been months, literally. And so you had told us a story last year about how you saw the film Polytechnique, I guess in 2009 when it came out, and just made a mental note to yourself that Denis Villeneuve was going to be somebody really special. And so we have invited you on to talk about that film. I believe it was Denis first feature film. And it's the black and white. Beautiful and intense film Polytechnique."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "4:15",
+            "text": "Hmm, yeah. I was trying to figure out why. I had seen it. So I was like, trudging through memories today. And then I and then I realized I had maybe you had time all messed up, so I'm not sure but the best thing I can come up with was, I'd seen this movie called Elephant by Gus Van Zandt. And maybe I was sort of in a kick for that but like that came out in 2003 this didn't come out till 2009 So I'm not sure how but love that it was like a Canadian director. Yeah, and then just remembered his name. I'm a little I grew up my dad was super into Formula One. So Villaneuve is like a famous Jacques Villeneuve's like a famous Canadian racecar driver. So the name always stuck. And then I sort of just forgot about it for a while and then he His name popped up attached to a movie was probably like enemy I think because like enemy came out at the same time double came out which I saw not enemy. He was all a mistake. But I just remember seeing this guy, and I was like, Oh, I know that name is that that guy but no one ever mentioned Polytechnique. They always mentioned other movies. So I was like the maybe it's not him. And then eventually I pieced it together that it was him and loved him ever since. So we're we're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:26",
+            "text": "very excited to have your catcher and we're really excited to talk about Polytechnique tonight. Oh, by the way, I will say I believe with this appearance catcher you are taking first place for dune pod guests of all time. Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:40",
+            "text": "From from whom? Who is approached"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "5:42",
+            "text": "for Proto is that possible? How he's been on for a bunch of episodes for the books right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:48",
+            "text": "Yeah, get in the books have been to first Yes."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:51",
+            "text": "Yeah, he's been on. Oh, that's a good point. That's a good point. So anyways, Proto's back next week, battling you for control of most favored guest status. That's fine. So proto is returning to talk about God Emperor of Dune,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:06",
+            "text": "the benighted God Emperor of Dune"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:09",
+            "text": "This is the fourth book in this series, our takes on this book may shock you, it is generally considered either the worst piece of trash in the entire Dune saga or I have discovered on the dune discord that there is a huge segment for whom God Emperor of Dune is the absolute number one favorite book out there. Yes, yes. That's just that's No, no, I'm telling you. This is real deal. So I'm trying to get letters I'm trying to get people to come on and like send us some voicemails Explain"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "6:42",
+            "text": "yourself and this thing clean"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:44",
+            "text": "yourselves. Exactly. justify yourself. Alright,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:48",
+            "text": "so that's next week. We're very excited. If you've been listening or reading along God Emperor of Dune. Read it at your peril. Shall we get into some dune news? Would you"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "6:59",
+            "text": "like to know more? News? I can't imagine there's anything in this segment. Prove me wrong. There's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:05",
+            "text": "only there's only a handful of things here. The dune homepage was updated with an HBO Max patch, "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:13",
+            "text": "peace and peace and love has broken out across the known universe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:18",
+            "text": "So this is per dune info as usual. And they found basically potential evidence because originally, I had read that dune had not been cleared to be promoted for streaming only for theatrical. So there's rampant speculation that this means we're close to agreement. So we'll see. What's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:36",
+            "text": "great news. It seems optimistic. I'm even willing to be optimistic, which is unusual in this segment."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "7:41",
+            "text": "I love this. I love this version of Jason's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:44",
+            "text": "just love and peace. Yeah, I feel I feel the same way towards Matt as legendary and Warner Brothers feel towards each other"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:56",
+            "text": "kind of working together. Alright, so the other piece of breaking do news last night called bare hands and day on for a great interview, ostensibly to talk about Malcolm and Marie, the new film, where we have boom from catchers podcast Xenonauts coming on, in just a few weeks to talk about Malcolm and Marie and Zendaya's film. Amazing. Yeah, Sam Levinson, the director, writer showrunner of euphoria. But Colbert has got a cool bear. Like he immediately out of the gate straight to dune and spent like four minutes talk out of the 12 talking about dune. And Zendaya was talking about how they threw dance parties on the set. Yeah. What was your take Jason on that?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:42",
+            "text": "I think I mean, I thought Colbert was got pretty excited to ask her who was like the best answer and that he wanted to opine that it was Javier Bardem. But I liked I mean, I've thought I've liked that. She said that. You know, people came in dance get down there. It was a good time. She seemed really do have a great deal of fondness for Timothee Chalamet. She's ended up with great fondness for working on the movie. Yeah, I thought it sounded optimistic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:05",
+            "text": "I think it's all good. It was good to see her and I'm very excited to watch the film, Malcolm and Marie I think it's gonna be super intense. But also very good. Catcher you saw John David Washington also in Malcolm and Marie is just he ends the day after this film it all it's like a two person play. You saw him in Tenet. Do you have a take on that?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "9:27",
+            "text": "Do I know okay, I haven't seen it twice. So I've only seen it the one time in theaters. And I came out of it positive and I like him. I've liked him since ballers I've really enjoyed him in ballers and then I really enjoyed him in blackkklansman. So I'm always down for to see him do whatever he's gonna do. So I'm excited to see that movie. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:54",
+            "text": "I was like, wait a minute, Chris Nolan did ballers?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "9:58",
+            "text": "No, he did not do ballers I think Peter Berg is like the biggest name probably attach to that other than obviously like the rock. So yeah, yeah, but that shows excellent if you've not seen"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:08",
+            "text": "it is good. It is good. I'm not current. I watched the first couple seasons crystal really love that show."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "10:12",
+            "text": "Yeah, I sort of like I think it was it played after something or before something and I accidentally watched it during season one and then fell like madly in love with it was really impressed."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:23",
+            "text": "Wow, cool. Yeah, have to check that out. All right. Well, shall we get into Polytechnique?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "10:35",
+            "text": "Let's do it. I can't wait to hear this introduction."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:39",
+            "text": "I want to start by giving a literal trigger warning. This is an intense film. For folks who have not watched it. You know, we're going to try and be careful as we talk to the subject matter. But I think this is an important important film and important story. And so I'm happy for us to be able to talk about a Denny took it extremely seriously. So let's let's get into it Polytechnique is the struggle to face monstrous evil without succumbing to hopelessness. Based on the real life tragic events from 1989. Thao and Jeff are engineering students at Polytechnique Montreal, who are working to complete their studies and carve out opportunities to pursue their dreams. Their lives are turned into a nightmare when one of their fellow students feeling pushed to take extreme actions, enters the school campus and begins shooting students in his sick quest to fight against perceived injustice. Faced with this crisis, the students will be forever changed, some destroyed by it, while others will emerge more defiant and alive than ever before. Polytechnique"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "12:06",
+            "text": "I will just interject that he came in to shoot women. Because that's Yeah, yeah, it is like the vital thing. Yeah, and not just that, but it's like, specially when it first happened. There was a lot of like, what's what's going on? What's the purpose? Why did he do it? Was he just a crazy guy? Was he just like they were trying to basically create other reasons, touch on anything except say that this was specifically about killing women. And it's the thing that sort of like hung you mean, at the time when it actually happened? Yeah. And it's sort of like hung over the event, in terms of like, public discourse for a long time. And it wasn't till like much, much later that it was recognized widely as specifically an attack on women. So just that's to me like the I think, the most important thing that you should capture. Hmm,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:01",
+            "text": "catch her as a Canadian. Were you alive when this happened?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:05",
+            "text": "What What was"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:07",
+            "text": "89?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:07",
+            "text": "Yeah, I was two."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:09",
+            "text": "I was too you were not aware of it happening. No, no grow up with any awareness of this event? "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:15",
+            "text": "no, not particularly like little bit here or there. But definitely, not until I had seen the movie that I really know more about it. And then yeah, it just had I guess its 20th anniversary, I think. Yeah, just a few years ago. And so I sort of dive back into it."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:35",
+            "text": "When the film was shot. It was a 20 year anniversary. It was 2000. All right, so that 30th"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:39",
+            "text": "anniversary."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "13:40",
+            "text": "Yeah. And so there was some stuff on TV and little things like that. And I just really, like, dive deeper into it, just just to know more about it. It's like really, in it really informed like changes in gun laws in Canada, and continues to this day, like there's a few survivors that really push are constantly pushing for more stronger gun laws in Canada, and it's it's weaved its way into the fabric."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:09",
+            "text": "So you actually did something about it. You reacted to add? Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "14:12",
+            "text": "yeah, exactly."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:15",
+            "text": "I wasn't aware of this event. Matt, were you aware of this event at all? No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:18",
+            "text": "no, I had no, I had no context for this. And so denis said I went back and listened today to denis on Team deakins. Pod and he talked about Polytechnique, and the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:29",
+            "text": "Bible team deakins bought. "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:31",
+            "text": "Exactly "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "14:32",
+            "text": "I love that podcast for real, it's so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:34",
+            "text": "great. But so he was talking about how this was the first real school shooting inside a school there had been the sort of Texas Clocktower shooter in Austin, but this was like the first mainstream on campus. So it's just it's, it's tragic to think about how this has has built out and even the fact that in 2020 it was the best You're in terms of school shootings in the United States, because there was no school happening. That's what it took for"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "15:08",
+            "text": "us to go. Yeah, right. Everyone just stay home with COVID. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:11",
+            "text": "So this is obviously a young Denny, you know, he had done a number of short films and some documentary series work. And he so he did this film, I do not know, because I'm not up on the Canadian independent film scene, the cinematographer and some of the other folks, although he referenced that it was the cinematographer he had worked with. It was a friend of his from film school. But that just that the cast was great. So we have Korean Vanessa as Valerie. We have Martin yta as genre Francoise and Maxime Godot as the killer. And he is also apparently and in incendies."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:51",
+            "text": "Yeah, the I think the other important thing about the woman who plays Valerie Korean Vanoss she was also a producer on the film, and like, this was like her she wanted to make she wanted to make this. Like I was looking for the answer to like, why did this? Why why this movie like why this subject matter is your first as your first movie. And I think she was like the creative."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "16:16",
+            "text": "the inciting incident of that. Yeah, well, that's cool."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:20",
+            "text": "And she wanted she wanted to explore it for like, all the same reasons that catcher was touching on which was like, specifically to like, talk about how this was like, you know, an act against women and how they killers motivations were about that, to make a movie about those themes. Cool. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:36",
+            "text": "the film opens just an incredible element at this copier. And you have you have students they're copying, it's black and white. So you're immediately struck by a tone. And it's just very pedestrian kind of sitting there. And then all of a sudden, you have gunshots ringing out and people being shot and falling down. And my notes just said, Holy shit. I was my first was literally my first note. But it was just striking."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "17:05",
+            "text": "Yeah, it's a good shock, because it just sort of sets up. What's going to happen, obviously, in terms of the gun violence, but it's also like, here's the mundaneness of what's happened. And this shocking event sort of like rips through the mundaneness of what's going on. And it just, yeah, it's perfect opening shot in that regard, I think."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:24",
+            "text": "Yeah. And I think I like also, in addition to kind of setting the tone, this is gonna be a movie with violence. And you also, just stylistically it's a gorgeous movie. I mean, like, it's really a beautiful movie, like, and it's kind of amazing. And we can talk about specific shots or things that we like, but like, it's kind of amazing how good this movie looks given. This is his first feature film, it's like very masterfully made, like, it's very, like, you know, a lot of the lot of the there's a lot written about Villeneuve's work in general being very Kubrick in and like, I think this this movie, there's like shades of the shining in this like, like just, you know, very strongly. And it's, it's pretty, it's pretty amazing what he's able to do in a debut film."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:07",
+            "text": "Totally. Yeah, I definitely want to hit there were a number of striking images that I want to talk about as we get in there. One thing that I thought was really cool, apparently, for that opening shot, they just had that it was taking time for them to reset squibs or something. And so Denis was like, and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:23",
+            "text": "I remember the amount of what was happening the tension that was rising in that show that I was not it was a plan it was like a pre roll of so I started in that movie to let the camera roll before they actually a long time after some time living just because there was something there shoot the shot sometimes started to mean something different. And so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:46",
+            "text": "that was just a happy accident. So we cut from there to to the killer and he's never he's not named in the film, which I think is great. Yeah. And he's just very quickly and effectively established as a suicidal creepy sitting there with a gun pointed to his head."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:01",
+            "text": "I love that scene though. I mean like I love the way it looks like I think the way his room looks is amazing. Like the shadows off the the monitor like immediately to me I was like I like the way this movie looks like it looks just great. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "19:13",
+            "text": "you get already instantly like what's his headspace? Like who this guy is? He's very lonely like he's very isolated, just sitting"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "19:22",
+            "text": "there like having a cereal but not eating it just dumping it from the spoon back into the bowl. And yeah, and then quickly, kind of creeping out on on his neighbor. Just he's just gross and and then we quickly go to him doing his suicide note, which include it sort of intercut as he's as we're getting him reading a suicide note. You have him burning his stuff, returning stuff to his roommates, but then also like he looks at the dishes, and like the dishes have to be done so you get a sense that he is not in control of his own On actions, he just kind of has this. He's operating based on what he feels he has to do. I think"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "20:05",
+            "text": "that's also more about like, he knows what he's about to do. And he's like trying not to leave anything on done. Like, it's just He's okay, the job the dishes are done. There's like, I'm doing this, and I'm leaving this earth, having left nothing to do. Yeah, totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "20:24",
+            "text": "And he basically he has a diatribe against feminists who quote have ruined his life. He talks about having tried to get into the military to get access to weapons, but he was rejected for antisocial."
+        },
+        {
+            "name": "Polytechnique sample",
+            "timestamp": "20:38",
+            "text": "And then he says, even though the media will label me a mad killer, I consider myself a rational individual who has been pushed to take extreme measures, only by the arrival of the Grim Reaper. For why persevere to exist just to police, the government. Being a backwards looking Tinker by nature, except for when it comes to science. I have always been enraged by feminists. They claim to women's benefits, like cheap insurance, maternity leave, preventative leave, while seizing for themselves, those of men, and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:18",
+            "text": "then he proceeds to go on and talk about how women, you know, they can't compete fairly in the Olympics. And like it's made out that there were ever soldier women who have been soldiers are put in harm's way. Like, how do you how did you process that? Jason?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:34",
+            "text": "I was"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "21:39",
+            "text": "not a particularly well written manifesto. No, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:42",
+            "text": "mean, I did think I was like, oh, there's movies like, oddly prescient for being a 2009 movie about a 1989 event to like, anticipate the incel culture stuff. You know, that guy? Because those are the same. Yeah, those are the same arguments that you'd hear him in from men's rights activists or whatever, you know, bullshit corners of the internet, you won't end up frequent, you know, it sort of also establishes like just kind of like from the beginning like this is a this is someone who's going to commit harm because of his his bad politics."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:14",
+            "text": "What's the deal with Canada? Catcher? I mean, you guys you have you have now Jordan Peterson. Oh, yeah. Oh, yeah. But being a bozo. Like what? It's all your"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:22",
+            "text": "ISIS. That's right. And Canada's why is this a threat? We've been"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "22:25",
+            "text": "secretly harboring? Anger in this under this apologizing exterior, this snowy?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "22:32",
+            "text": "The Snowy coat, it has to go somewhere. The anger has?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "22:36",
+            "text": "No, I mean, like, what it's, it's every, it's everywhere. It's everywhere. You know, it's, and people like that will find any excuse to explain away, why they don't have what they want. Or life isn't exactly how they think it should be. And they will blame every other person except themselves when the time comes. Because it would require them to actually have to, like self examine what's brought them to where they are. And who wants to do that when you could just so much easier than other people, you know, and it's not just women, it's Well, whoever, right it's, it's any anyone who's not them. In this case, it's a woman. But I mean, history has taught us it's everybody, you know,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:19",
+            "text": "so well, so we we cut from there to Val, and it's this great shot of her with her hand out smoking a cigarette, right and, and her getting ready for school and an interview. And I just noticed there was a lot of really tight shots of her kind of getting ready close very close up on her through that process"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "23:37",
+            "text": "that is the best that scene because it's like, he's going on and on and on and on about how unfair everything is and how great everything is for women and how they get everything. And the next scene is like her having to overthink her outfit on, so that she can go and try and apply for this job. It's like it's instantly proving everything this guy just said is total bullshit. And you just get more of that heard that next scene is just more and more about how bullshit and wrong he actually he actually is. And I just love that so much."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:14",
+            "text": "One theme from this film is that Canada looks cold cold"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:18",
+            "text": "in Canada is cold. The only time I've been to Montreal is in 1998."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "24:31",
+            "text": "What month? Do you"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:33",
+            "text": "January"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "24:35",
+            "text": "sorry about that. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:36",
+            "text": "And it was wild. Like it was it was I mean it was winter obviously but it was also like during a incredibly black bad ice storm in the Northeast. And so we drove we're going as a college debate trip. So we drove from New Jersey. We spent the night outside of Albany then we And then we drove to Canada. And it was like so it was one of those ice storms where like the trees get split down the middle because the weight of the ice like splits them in half so it looked like a bomb had gone off. Yeah. And then you get to Montreal, and you get a feel for this. This ties back to the movie, where like this movie wasn't shot at the university where the shooting happened although the university did offer that it was shot somewhere else because he Villeneuve wanted to be respectful of the place where the shooting happened. And also he found this other great location that has you know, very brutal aesthetic brutalist art architecture like all this like really heavy concrete looks like a bunker. And like all current a lot of a lot of Montreal Montreal is cool city, but a lot of Montreal is like kind of built that way has that style of architecture. And like and I saw some description of Montreal's architecture thesis, it was like it's kind of like meant to be post-human in which like, you know, like humans have survived a dystopia and they can like live in this fight and bomb went off ice ice fortress. Yeah. wasteland. Yeah, it's a wonderful city. I really want to go back I haven't been there in a long time. But no,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "26:07",
+            "text": "it's extremely cold. They're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:08",
+            "text": "like in the real fucking cold. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "26:10",
+            "text": "yeah. They're it's they're always the first one to like, get the military called into, like, come and help deal with winter. It's always them. Yeah, it's so it's rough."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:19",
+            "text": "Amazing what we have. What stuck out to me is one of the first shots that I was like, holy shit. And that was the sideways tracking shot in the library where it's kind of like sideways and then flips over on the side. And this is the introduction to JF who spills coffee out his notes or whatever. So first of all, I just want to say I didn't realize that Jean Francois. J. F. Jeff. And I didn't realize that that's where that was the Entomology of Jeff. I thought that was kind of cool. Yes, I learned something, learn something new. But we cut from there to Val having her interview for a mechanical engineering internship. And the interviewer says,"
+        },
+        {
+            "name": "Polytechnique sample",
+            "timestamp": "26:58",
+            "text": "So you're here for the mechanical engineering internship. Yes. That's unusual. What do you mean? Women usually go for civil engineering. It's easier. But it's always been my dream to work in aeronautics. I meant easier for raising a family."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:24",
+            "text": "Yeah, it's fucked up. That guy's fucked up. But his fucked up face."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "27:28",
+            "text": "Yeah, yeah. Yeah, that guy was an asshole. Sect. Yeah, asshole. But also like, of the time period. Totally reasonable. Not reason. Yeah, but yeah, exactly. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:39",
+            "text": "Typical bullshit. Yeah, typical. It's the kind of it's the kind of standard sexism that that women face every day. So Val, we find out later Val does get the internship, but only by lying and saying that she doesn't want to have kids. And there's a scene after the interview where she is in the bathroom. And I was just so on edge because you don't know when the bottom is going to drop out. Right? Like this guy. They show up, you know, they show the killer come into school and he walks around and then he goes back to his car. But it's just I don't know, it was very intense. Yeah, yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "28:16",
+            "text": "it'd be that opening sequence that opening sequences like just puts you on edge from B like you said, like you just don't know when that's gonna go down. And so you're just constantly worrying Okay, when is he going to show up when is he going to show up"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:33",
+            "text": "the score is really good. And there's some great there's some Middle Eastern flair during some of the portions I thought was really cool. And then there's a mix between sort of keyboard and and classical guitar and some electronics but I thought the score throughout was very good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:51",
+            "text": "I had it on very low because I was holding a sleeping baby. So I might have I might have missed some of the score"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "28:57",
+            "text": "notes. I was trying to figure out how the situation with which you would be watching this shooting a movie. Yeah, I was like, Oh God, how is he going to do this in"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:07",
+            "text": "a nice movie to watch with my daughter? Yeah, exactly. My daughter"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:13",
+            "text": "can can you just can just declare it up for us. Was this in Dolby Vision on your platform? Or "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:18",
+            "text": "it was on a TV for sure."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:21",
+            "text": "Two iPhones strapped to each one of these? "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:23",
+            "text": "Exactly. Yeah. I had like yeah, like a parallax like the air pods spatial audio. Yeah, I created my own my own IMAX. My"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:33",
+            "text": "goodness. Perfect."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:34",
+            "text": "Very good. I will note just speaking of score and soundtrack, there was a lot of so there was Tainted Love. It was a remix of Tainted Love and safety dance. So this is 1989 Is this like Canada years? Like you're still rockin that like early 80s. "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "29:52",
+            "text": "Obviously I was barely alive at that time. So I couldn't tell you exactly but I once heard something. Maybe it was like on How I Met Your Mother. something but it was like, Canada gets the America what America has, like 10 years later. So when you guys were done with the 80s, we took the 80s into the 90s. And that's sort of the whole thing. So, which I think"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:13",
+            "text": "checks out, right? Yeah, exactly. Okay, that makes sense. Another interesting detail about this movie that I read later, was that like, they did it in both French and English and yes, like, yeah, did"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "30:24",
+            "text": "you watch the English? I assume? I watched"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:26",
+            "text": "the English with English subtitles."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "30:29",
+            "text": "Same thing. Yeah. Yeah, it was funny because I thought I remember it being French. I remember it being in French. And then when they started talking, I was like, Wait a second. It's just a dub. And I was like, No, it's not a dup. They're just speaking with x. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:41",
+            "text": "did they shoot it twice? Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "30:43",
+            "text": "I believe that's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:45",
+            "text": "why Oh, yeah. They're legally required by law."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:48",
+            "text": "They don't have to, like,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "30:50",
+            "text": "shoot it. Just start advertising and center signage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:53",
+            "text": "Okay. Okay. Yeah. And the news, right? No, no, just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:57",
+            "text": "the thoughts, the thoughts in your head, right. You have to have or you get arrested. They know."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:02",
+            "text": "So JF borrows vows notes. They're friendly, you know, that's established, and he goes to the copier. And so you have this moment of him at the copier. He lets another girl go in front of him who is not the girl from the beginning. I had to like rewind and check that like six times to be 100%. Sure. But then he also has this moment where he's staring at a painting off to the side."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:25",
+            "text": "Guernica. "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "31:25",
+            "text": "It's not just a painting. It's like one of the greatest paintings in the history of alltime"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:30",
+            "text": "and like relevant thematically for"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:32",
+            "text": "alright, so So Please enlighten me, but I'll tell you I spent about 15 minutes searching for Polytechnique painting, which is"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "31:41",
+            "text": "Pablo Picasso's Guernica."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:45",
+            "text": "It's like one of the three most paint famous paintings. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "31:49",
+            "text": "It hangs in the UN. Like not that one. There's like a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:52",
+            "text": "cat. Yeah, though. It has a special though. The real one has a special museum in Spain. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "31:58",
+            "text": "Yeah. Yeah. It's incredible. First off, and incredible painting. Yeah, on its own. And then I was kind of struck that at. So it's about the Spanish Civil War, right. And sort of the brutality of war is really at the heart of like, what this is about. And I just found it so fascinating that that was sort of the paint and it's also sort of monochromatic as well, like the film and I just kind of found that sort of interesting like this is in a weird way. The film is sort of like the motion picture equivalent of Guernica, which I thought was kind of an interesting thing. That's not really I don't believe exactly how he perceived it. But I from my own. I thought that was interesting. I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:39",
+            "text": "think there's a couple I think there's a couple of interesting things going on in the scene with this with Jeff. First of all, I like Jeff's face, I think his face he's got like a real muddy Look,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "32:48",
+            "text": "he is he is very French Canadian looking."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:50",
+            "text": "Very, I was gonna I was gonna say that, but I don't want to sound No, no, yeah, he's"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "32:54",
+            "text": "very, that is like how all French Canadian people look, pretty much"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:59",
+            "text": "is he the French Canadian, John Krasinski. Like, that's what I was getting. Yeah. Name"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "33:04",
+            "text": "a white,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:05",
+            "text": "he's a dime a dozen. You can't throw yet throw a rock"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "33:10",
+            "text": "without hitting that do a French Canadian guy who looks like that. In fact, I thought for a second that he was another actor, another French Canadian actor from a movie that was much hit up much later. It's like, they can't be the same guy because that movie is much older now."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:26",
+            "text": "Yeah. But like very wide smile very affable. Like, yeah, he's he's, he's great beer to great. Yeah, great beard, really good beard. And like there's a there's a kind of a point here, which I didn't really pick up on watching the movie, but I gotten reading about the movie, which is just like, one of the themes. But besides the fact that like, you know, the killer is against women, like one of the and there's the scene in which she gets the sexist questioning when she's going for the internship. Like, the more broadly the movie establishes, like the, you know, women and men just don't have equal experiences. Like she's just trying very hard to like, get whatever he can fight against sexism system, and he's just kind of coasting through like borrowing notes and like, you know, whatever, because it's like, it's just like he's he can he can afford he can you know, he has a social capital to be able to afford to I can take it easier because the system is built for him."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:13",
+            "text": "goofy smile? Yeah, he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "34:14",
+            "text": "got the goofy smile. Yeah, he's, he's this winnable guy. Yeah. And then Guernica is you know about the is you know about the horrors of war, like the horrors that man can inflict upon themselves, man. Yeah, exactly. So it kind of just tells you what you're in for here. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:32",
+            "text": "So we cut from that to the killer preparing in his car. And I just kept sort of thinking like, couldn't he just decide to leave? Couldn't this just not happen? You know, what is it that a lot that prevents someone from having a moment of clarity and backing down? Well,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "34:49",
+            "text": "I thought what I found interesting in that scene actually is so he goes into the car and he's trying to write and then the pen doesn't work and it's cold, and it's like, idiot, you can turn the car on, and it would be warm inside. Yeah. But it's like he goes out of his way to make pain for himself. Like, to me, that's what that scenes told me was just like, Oh no, he is he is self inflicting this pain. And he's, again, blaming it on other people. It's like, you're having your pen doesn't work. It's too cold. You can't write your suicide note, you dick. Turn the car on, you have warm, like it'd be warm. And he doesn't do that. He chooses to, like stay isolated in the cold. making life difficult for himself. Yeah. And it's like, yeah, of course, this is the guy who would do something short like this."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:37",
+            "text": "You do have and then when he goes back inside, you have this beautiful handheld close up shot of him walking down the hall. So tracking, you know, in front of him as he's as he is walking, which I thought was amazing. And then flipping around and seeing the reactions of of some of the students is before he has drawn the gun, but he does walk into that brutalist bunker and he sees Val across the way and definitely makes makes note of her. So we cut from that to the entropy lecture."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "36:02",
+            "text": "Love that."
+        },
+        {
+            "name": "Polytechnique sample",
+            "timestamp": "36:03",
+            "text": "We could define entropy as the measurement of the disorder in a system. Any system that is subject to pressure from its external environment, will undergo a sorry, will undergo a conversion that results in imbalance and a transfer of energy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:21",
+            "text": "So this I thought was, I thought was, I thought was really cool. It didn't feel very subtle to me like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:27",
+            "text": "Villeneuve loves an exposition of thematic exposition told via lecture. That's a definite move. You know, what, we need some guy in front of a classroom to explain the theme of the movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:43",
+            "text": "Yeah, it just felt like young Denis, right? Like, he's still kind of figuring it out. It's, you could say it's effective. But in some respects, I think you just don't need it. Right? If we"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:50",
+            "text": "If we get Thufir Hawat, like having a lecture hall class, and things have gone horribly wrong, "
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:57",
+            "text": "slightly"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:57",
+            "text": "sideways yah. So we do have the killer walks in, he fires the gun, and then he starts screaming for to split the girls and the guys. And then he orders the guys out of the room. And so you have immediately the teacher and the TA are kind of moving the guys out. And you do have JF as the last guy to come out of the room. And you have that moment where you look at him. And he's kind of thinking about it. And I I sort of had that thought of like, couldn't they just rush the sky like couldn't in this in this moment? Can't? Can't he thought"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "37:33",
+            "text": "exactly the same thing. And then part of me was like this, this is the definitely a post 911 point of view. You know, it's like, you know, and this is like the first school shooting like, you don't really think this guy is going to like, what do you think this guy is going to do? I mean, it's pretty straightforward. You're looking at a guy, he's separating all the girls, and he's kicking you out? Like, he's obviously got a plan. Yeah. But I think it's like, in hindsight, you don't I mean, at least that's how I felt like, you don't no one now in the right mind would have walked out of that situation without trying to rush that guy. But I think that's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:06",
+            "text": "that it was so unexpected. It was something that like no one had ever seen before. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:10",
+            "text": "that's an amazing context. To put it in the context of 911. And particular that is very, that's very powerful. And I will say rewatching it today, you could look at it, it would have been certain death. Like there's no question about it. He could not have gotten to him, at least in the way that Danny has set this up."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "38:29",
+            "text": "Yeah. But there was throughout the movie, multiples opportunities for people to step in specifically men to do something about this, that absolutely nobody knows anything about apart in some cases, because they're afraid and they take off. But there are some scenes where he's just walking through with a gun that like, what he just walks by people, and they look at him, and they do nothing."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:51",
+            "text": "And part of it is like they're just confused. They see it and they're like, I don't understand what I'm seeing this, this does not compute. Yeah. And in that respect. So Denis said in an interview, I wanted to absolve the men, society condemned them. People were really tough on them, but they were 20 years old. It was if an alien had landed. Let's get"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "39:13",
+            "text": "it. It's weird. I don't I understand that point of view. And I think they do a good job with Jean Francois, dealing with Yeah, that was excellent. But part of me it was just like, I don't care. Like I just don't like and I understand why you want to absolve so especially like his specific character. But there are so many people that not that I watched just do nothing that it's just like, I don't know, it's hard for me. I don't judge them if I was in the same situation. I'm sure I would be terrified. I'm sure I may not make the heroic decision but just part of me is just like, maybe feel a little bad about that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:58",
+            "text": "I also the part that I was surprised as well, it was less that like they left the classroom. And more that, like they left the classroom and like sort of just seemed to mill about in the hallways like, wow, this is pretty fucked up. Yeah, like, as opposed to like doing anything, you know, but I don't know. Yeah. Who knows how you react in that situation? Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "40:16",
+            "text": "exactly. But yeah, I don't know. It's, I found that also quite interesting, too, that they spent so much time with him. Like there's a there's not a long movie and then a big chunk of time, considering, like, it's about women that they decided to like, make this guy, sort of the hero. Yeah, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "40:33",
+            "text": "think that's what they wanted to explore. Right? They wanted to explore the impact on women who were hit by this as well as the men and their role in it and how they dealt with it. Right? Well, let me just say this to tie it back to Dune, right, like the concept of Herbert is crisis and observation. What happens? How do you deal with crisis and there are a decent number of moments in this film both JF in that moment. But as well as the killer is just walking through shooting people walking into classrooms walking into larger areas, and you see people trying to figure out, can I get out through this door? There is one piece where somebody breaks a window, and somebody's helping people to get out the window. Yeah. Or I was like, that's cool. That is a hero who has risen up. But I love the fact that after watching, whether it's the matrix, or whatever million movies we've seen with heroes fighting bad guys in gun scenes, that's just not what it's about. It wasn't about trying to make anybody a quote unquote, real hero. But it was the smaller the smaller moments that"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "41:32",
+            "text": "matter. Yeah. No, that's fair. I think. I don't know. I just that it was just rubbed me weird. It just seemed weird. Not that I didn't appreciate the performances, and I appreciated what he was saying. And like, it was quite strong. And like, it all really works. But it was just something on this view. And that sort of just rubbed me. Oddly, yeah. But yeah, like you said, No,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:54",
+            "text": "I mean, it's it should yeah, I think it's I think it is supposed to be very painful. So JF tries to help he goes to security, he goes back to the classroom on his way he notices, there's a blood trail in the hallway, and he goes into the classroom, and he sees everyone is dead, runs out of there. And he goes back and he sees the woman by the copier who's been shot and tries to help save her life. And then she dies. On the run, he sees the killer and the killer shooting at him. And he manages to bust into a room and closes the door and the killers like, he's not even aware. He doesn't care that he just saw this guy. There's no connection or recognition or anything. And also, he's a man so who cares. But this this moment of all the men inside that room with the punk music blaring drinking beer and the lights down, and nobody knows anything that's going on like that, that to me felt like a message that something terrible is happening to women in this world in general, and men just don't seem to give a shit. Yeah. Was that it? Did I get the movie?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "42:55",
+            "text": "Yeah, I mean, yeah. Nailed it on the head there."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:58",
+            "text": "So then it's a smash cut to JF days later. And you know, his his his interest in dishes and cooking and stuff has all kind of gone away. Yeah."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "43:10",
+            "text": "Struggling. Yeah. I was trying to figure out at what point this was taking place. Like was this how far or after I died. I wasn't clear. At first and then"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:21",
+            "text": "I just knew it was after because Eli had lost the spark. That's like, seriously after no Smiles is like Muppet energy had been zapped. Like, again, not to bring this up again, two weeks in a row, but as though the Dark Crystal had sucked it from him."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "43:39",
+            "text": "That was an excellent impression, by the way."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:41",
+            "text": "Thank you. Even my wife was impressed."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "43:44",
+            "text": "I didn't know that you had that any Jason? I didn't either. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:48",
+            "text": "was great. It was great. So he goes out Jeff goes out to see his his mother, you had this incredible inverted aerial shot. Going over the ice and the water like that was beautiful. Kind of reminded me of there's a midsummer shot, with like the road, upside down, kind of driving when they're on their way out to the country. But I thought that was really beautiful. And the music was incredible. Through all of this. So he's chopping wood then with his mom, and you know, they're sitting around the kitchen table. To me, this scene felt really flat. I don't know what was going on. But something between JF and the mom first of all, I was like, I would be a puddle. I would be a complete disaster. And he's kind of holding it in. But I don't know the energy and that seed did that. Did that work for you guys? Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "44:36",
+            "text": "I mean, for me, it did like, in hindsight, like, again, I'm at that point. I'm really just trying to piece is he going is he on his way to school? Is this after I don't know why it didn't click into me right away that it was after? And so I was like, why is it being so short with her? I was trying to understand that and then obviously, well, then you get to the next scene and the context means everything but I loved her performance. Like she is just clearly a mom who knows that something's wrong. And she's just trying to. She's trying to get her way in. Like, my mom's tried this a million times where I'm just like, not in the mood to connect with her for whatever reason. And she's doing a great job of like not overbearingly trying to crack that surface and just not successful. Yeah. And it's just got rich, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:23",
+            "text": "kind of wish he pushed harder, right? Like, that was my thing. Like, I wish he would, especially in the context. So in the next scene after me feeling like why is Jeff, why isn't he falling apart, you know, the next scene, he has to pull the car over to throw up and then he takes the car pulls over by the side, you know, by the lake and asphyxiate himself with a carbon from the from the car and commit suicide, which is very, very powerfully done. And it's amazing because the music is so gorgeous, and so tranquil and beautiful out there. And it's one of the only times you have a fade to black in that in the entire film. But it's sort of like it goes peaceful and it fades to black. And then you have the gunshot. And you are back in the classroom with a tight handheld shot on van. It's funny,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:09",
+            "text": "I thought that I felt like he was gonna get interrupted or stopped from killing himself. Like I was like, oh, like he'll like he'll survive this. Right? But yeah, I loved I loved how it looked again, like, like this movie is like, you know, it's a tough watch, because it's, it's deals with such difficult subject matter. But it really is a beautifully shot movie."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "46:33",
+            "text": "Yeah, and I think to like, what I was the most impressed with was, it's like restraint, almost the gunshot sounds specifically, is quite some quite intense. And I've seen this movie got a lot to get a lot of slack for it's like glorification of violence. And I just found that to be not the case. There was such a restraint in regards to showing the violence, like you've never lose sight of the intensity of what's happening. But it never feels glorifying and never feels like it's being indulgent. It's always it rides such a beautiful line."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:13",
+            "text": "It's just part it's grounded, which I think is the hallmark of DNA, right? And you're totally right is not gratuitous in any way. It is it is conveying that message. And to me the most powerful part like the I just wrote, the tension is horrible. Being back in the classroom as the women are separated, you see JF from the other side, instead of his perspective, seeing the door closed. From vows perspective, you see the door close. And instinctively, the women all hold hands. And then in seconds, it's over. He engages them in just a second. And I just my notes say God dammit, because I was so pissed that he did that. But it's revealed that Val is still alive. And she goes to try and get help. It's her blood in the hallway. But when she sees the killer, she has to retreat and come back and play dead. So when JF comes in, you know, she's still she's still playing dead, which is interesting. You have that kind of that moment of him feeling really badly. But then immediately after she's on the gurney, and she's like, it's not your fault. And he definitely is saying it is my fault. And I'm sorry, I should have stayed. Which isn't super"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "48:18",
+            "text": "intense. Agreed. Yeah. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "48:22",
+            "text": "I mean, like, you can, it kind of puts into context, like, why he couldn't go on like after that,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "48:25",
+            "text": "of course, the guilt like, and, like, that's the thing that sort of, I feel like rides him the entire time that he's running around is just like, he instantly recognizes the mistake he's made, like the face she makes when the door closes from his perspective. It's just like, he sealed their fate, you know, and he's just used that guilt is the thing that constantly is pushing him and pushing him and pushing him and you know, God, like, well, how I yeah, I would feel horrendous. Yeah, a question question, though. Actually, it I can't remember exactly how it cuts, but she's on the gurney. And he's like, you know, I'm sorry. I'm sorry. And she's like, it's not your fault. It's not your fault. Yep. And then she continues to say that and then she wakes up. And it's you know, and we've now like forwarded through time. Yes. And yep. Yeah, I was thinking I found that kind of the just the way that it shot it feels a little bit different than the rest of the movie. And I was thinking like, is this is is the gurney scene, specifically, a dream that she's having. And the idea that like, she She not only carries the weight of like her experience, but also sort of carries the weight of his experience and the fact that he would go on to kill himself that she also carries that with her"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:45",
+            "text": "that's a whole nother level catcher of intensity in this movie. I know"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "49:49",
+            "text": "that's why that's how that's how it that's how it felt to me when I saw it. So I was wondering if anyone else felt that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:55",
+            "text": "I think that is an amazing insight. That is definitely right on Yeah, yeah, cuz she she wakes up From the from the gurney, right, she wakes up it's it's the middle of the night some number of you know years have passed. Her hair is cut. It's blonde instead of black. She has nightmares. She throws up I was instantly like, Whoa, she pregnant. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:14",
+            "text": "that's always it's anytime anytime there's vomiting. Gotta be frank,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "50:18",
+            "text": "classic movie cliche. Yeah, actually, I did like that, though, that she gets up and pushes the door closed, like this idea that she's still dealing with not feeling safe ever."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:27",
+            "text": "Yeah. And she also smoking as well. "
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "50:31",
+            "text": "Everybody smokes. This is Montreal."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:34",
+            "text": "You so we cut from there to her working at the aeronautics job. And this is beautiful, like her working on airplanes and stuff. from a design perspective, and the shots are absolutely gorgeous. All the sound is dropped out. And it's just the score. And it's her doing her work. And then going back to her office. And you see, as she sits down the weight and the pain like she cannot escape and she definitely cannot get away from it. And then it immediately cuts to her taking the pregnancy test and confirming that she's pregnant. But then we have her she calls her dad Whoa,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "51:07",
+            "text": "whoa, whoa, this is like what your whatever year this is 1980 Something probably at night. She's like having this really private conversation on like a, like a payphone in the middle of an open room. It's like, yeah, it's like this is a cell phone situation. This is a private matter, but it's like, you know, that's not that. That just like that was like a time travel thing. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:30",
+            "text": "Operator give me a hallmark. All right. Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "51:33",
+            "text": "exactly. Five. Connect me with fun back seven to one. Yeah, so I just thought that was interesting. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:40",
+            "text": "yes, people did have to use public payphones like savages,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "51:45",
+            "text": "not just drug dealers,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:46",
+            "text": "you had to carry coins. So you could use the phone, right? I called home I when I was in college, same time as this debate term and the icestorm. Just keep going back to my only references for Montreal. I would have to call home from a payphone you call collect you call the operator, you tell them the number you want to dial and then you reverse the charges. I remember you guys have a dorm or where we standing? Yeah, we had to hit dorms. Sure. Yeah. We had dorms. Yeah, we slept on the floor debate tournaments, we'd sleep on the floor of someone else's dorm. I don't remember where we stayed in Canada. We might have actually for that one. We might have had a hotel because that was a fancy that was a fan that was like North American championships. So that was Oh, yeah. Yep. You"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "52:25",
+            "text": "guys weren't playing d&d or stuff late at night?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:28",
+            "text": "No. So we didn't have a bottle. I mean, like, you know, it was it was pretty chill, like, we just go get drunk and smoke weed. Ah, I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "52:34",
+            "text": "don't appreciate you bashing on Jason's school act extracurriculars."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "52:40",
+            "text": "I remember my my debate partner went into a head shop in Montreal and just like straight up asked, like, we like he spoke French. He was He spoke French. And he was like, We need a pipe. And they're like, Okay, we got those. He's like, and I need the stuff that goes in the pipe. And they're like, no, no, we don't do that here. And he's like, don't you though? guy was like, Alright, fine. Wow, I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "53:05",
+            "text": "love Canada. Yeah, Canada is very much in Quebec, especially"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:09",
+            "text": "back is like, Yeah, I mean, it's like, there's no law, no rules,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "53:13",
+            "text": "no rules."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:15",
+            "text": "Let it fly. Alright, so after calling home and talking to her folks, publicly talking to her dad publicly, we end the film with her writing a letter to the shooters mom. I love this. The music throughout this entire segment is incredible. And she just says everyone tells me I'm strong. But I'm sick of being strong. And she wants to shout from the rooftops. And then she says love"
+        },
+        {
+            "name": "Polytechnique sample",
+            "timestamp": "53:45",
+            "text": "is brought me a gift. A child grows inside me. I want all my heart for this child to be happy. But I am afraid. And I'm tired of being afraid. I have to learn to have faith again. So I can stand on my own. And I will stand on my own if I have a boy. I'll teach him how to love if I have a girl. I'll tell her the world is hers."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:29",
+            "text": "It's great. It's beautiful. Awesome."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "54:31",
+            "text": "I just got chills, man. I was like it's great. Yeah, that whole sequence like I just after the movie ended I just walked around my apartment like not crying. Like, I'm not gonna cry. I'm not gonna cry. I just walked around. It's just like, that was like the I have a lot"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:46",
+            "text": "of give me a few minutes. Give me a few minutes catch up."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "54:51",
+            "text": "It's touching man like I mean I both of you obviously have a lot of like strong women in your lives. I imagine I grew up with a lot of stress. young women like in my family and a lot of my friends are incredibly strong women. And it's just like, knowing it's just sucks when you know, what they go through on a day to day basis and like the ramifications of what this event meant and what it says about what they have to deal with. And it just frustrates you when you know, how much how regularly they feel some version of what happened like this all the time. It sucks. In the end, you don't want them to feel that way. So well, I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:34",
+            "text": "interested catcher mentioned at the beginning that he had seen this movie after seeing elephant Gus Van sands like Columbine inspired school shooting movie. And I wrote an interesting review that was like, sort of comparing contrasting the two like stylistically, they're very different movies in the sense that like, like, elephant is a much more ambiguous movie. Like this movie has a very clear point of view of like, you know, the Polytechnic has a very clear point of view about the killer. And like the victims, elephant is more ambiguous about everything, the relationship between the shooters or shooters and the victims. Even the relationship of the viewer to the shooting, like the movie is much more impressionistic. And like, attention attached. Yeah, intentionally. So. And I was reading I think it was a different article, but it was like a critique about Polytechnique, which is that like, by making the movie so concrete, and visceral, as opposed to like, more impressionistic, like, the audience doesn't have to do as much work like to, like, kind of imagine the violence, like the violence is just part of the movie. And so the movie itself becomes violent to the viewer, as opposed to like, as opposed to taking the approach of like, okay, you are as the audience are being asked to kind of magical in the act of the violence. And so you become like a complicit part of, you know, like, something that explores more than nature of violent doing. I thought that was an interesting critique. I don't really I don't necessarily think that ruins the movie or saves, or, you know, elevates elephant anyway. But I was interested catch her in sort of your, in your take on the those two movies in particular, given that it was your way, elephant was your way into this one? Yeah,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "57:17",
+            "text": "I actually have it here. And I had meant to watch it in advance, because I was like, I'm gonna bring it up. I should watch it so that I have contacts that I didn't. So that Yeah, I haven't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:26",
+            "text": "seen it. I haven't seen it since it came out either. But I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "57:29",
+            "text": "find that interesting, though, because I do find, like you obviously, you know, you don't get a manifesto, right, that their intentions are sort of a little bit more vague. And then obviously, you're sort of jumping around. And so you're seeing it from a bunch of different perspectives, which was the sort of the idea of the movie. But I found the violence. And that is quite intense, too. Like, there's a scene where a woman walks into the Live Library, and he shoots like the librarian and then puts it, and that to me, it was just like, equally just as powerful from my perspective, but it would be interesting to see like, I think, yeah, I mean, I guess you don't have to work as much in terms of trying to understand the point of view of the movie or what it's trying to tell you. So that's interesting. I just feel like in a situation, like Polytechnique, there isn't room. I don't find that there's much room for understanding like, I don't think it's he's not that deep. The issues there are not that deep. Yeah, given. He just lays it out. Like I'm here to kill women, because they treated me like poop. I don't know enough about the Columbine shooting. And they're sort of positioned, but maybe it works that you have to sort of like really think about what put them there? And maybe your role in it, or I don't know, I don't know, I have no strong opinion."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:48",
+            "text": "I don't know, this is I mean, this whole thing is just extremely troubling, like in the context of January 6, then, you know, kind of all of the chaos that is unfolding in the United States, where we have people who are completely deranged and unchecked from reality, and buying into conspiracy theories, and significantly aggrieved with the assault weapons, this is just all extremely troubling. And, you know, we, we have to figure out how we are going to, how are we going to get people down from the ledge, and how we're going to try and rebuild what we have here and in sort of agreeing to disagree on stuff and I don't know how we move forward."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:34",
+            "text": "I don't know either, man."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "59:37",
+            "text": "There's I imagine there's a lot of really smart people in a lot of rooms, trying to figure that out. And it's like, it's weird, because every time I think about that, like not just that specific problem, but any problem that we're that we're faced with, where there's sort of injustices and all that stuff. It's just like, where, how do you fix it? And the only answer I ever have is like, I can't fix Has anybody over the age of 20, it's a write off, they're done. There's nothing you could really do to change those people. And all I ever think of is like, education, education, and making sure that we can just like, make sure we can give as much money and as much attention to young people as possible, because they're the only way you can save anything. I think that's right. But I'm worried, but it's unfair, because there's a lot of people who aren't kids who are still around with a lot of power. And then a lot of you know, and that's scary. I just don't know how to fix people. I'm not a psychologist,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:30",
+            "text": "we're trained to think that people who are younger, are naturally more progressive, and so like, it's gonna be fine. I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:00:37",
+            "text": "don't mean that I don't mean that they're naturally more progressive. I mean, that they are at a point where they are learning and they can't be No, it's learning. It's not about being progressive or not. It's about trying to instill a certain amount of like, even just with regards to like, all of this online bullshit, it's like, the reason a lot of that is the case is because there's so many young people are so not media literate, they have not been taught to understand the difference between what's real and what's not. And how to, how to find that, like I grew up when I grew up, we had house hippos. Okay, how Sipos was this commercial in the in Canada, where it was like a documentary about this hippo?"
+        },
+        {
+            "name": "Polytechnique sample",
+            "timestamp": "1:01:17",
+            "text": "The North American house hippo is found throughout Canada and the eastern United States. House, hippos are very timid creatures, and they're rarely seen. But they will defend their territory of provoked."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:01:30",
+            "text": "And then at the end, they explained like, that's not a real thing, how simple they're not real, it's imaginary. But you need to second guess, what you're seeing and what your, what your experience interesting. And that was something that I always like really resonated with me when I was young. It's like, you really, really do need to teach media literacy to kids. And the broader context of that, especially now, with the internet and Reddit and deep fakes and all this shit, like the world is only going to get more and more complicated. And if we're not going to sit down and start teaching kids how to address with what you're seeing and learning about it and want to understand what you're seeing is real or not real or the context or looking for context. That we're all fucked. It's all fucked. Alright, so"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:20",
+            "text": "it sounds like house hippos needs a gritty reboot house hippos is awesome. For 20 for 21."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:02:25",
+            "text": "It's amazing. It's great. So it looks great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:27",
+            "text": "Bring it home for us, Jason wrap, wrap it up for us. Give us some words of inspiration to lift us up here a little bit,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:35",
+            "text": "though, like us when we win, like we use is just a matter of political will and we need to fight harder than the other side."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:42",
+            "text": "I like that. I like that. I'm into like, like, Take no prisoners. Like it's time for us to step up and be as aggressive as the other side is being this is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:50",
+            "text": "not like, we'll we'll find a happy middle. Go like it's when we win."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:56",
+            "text": "Yeah, exactly. On that note, yes. Who would Tilda Swinton play?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:02",
+            "text": "Yeah, who would tell this one play? Movie? Yeah. Tough one tough question. I know the answer. No. Go ahead. Catcher. You go first."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:03:13",
+            "text": "I mean, my answer, my answer was the mother. That was gonna be my answer to that was the last time I saw it. I was like, I just need her to sue this man. And"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:21",
+            "text": "that and that casting could be slightly better. So yeah, that'd be that'd be a great choice."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:26",
+            "text": "I agree with it. Nice. I would put her as the interviewer the sexist Interviewer Yeah, and it would be really intense because having her having her as a woman doing it would be another layer of intensity so weird. Sure. Nobody looking dude. Yeah, he"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:03:43",
+            "text": "really does."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:51",
+            "text": "Shed All right, we made it was a fun romp."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:03:55",
+            "text": "That was great. Such light hearted."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:58",
+            "text": "Yeah, that's right. Okay, now can we please let's get into some letters and some voicemails let's do it. Here we go. The first one is from dandruff. Daniel dref listener questions for Episode Hey dude, pod hope you're doing well some thoughts and questions. What color is spice"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:04:20",
+            "text": "isn't red? Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:21",
+            "text": "it's blue. Explicitly it is explicitly blue. And I think that's not I think that's not revealed canonically until God Emperor"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:29",
+            "text": "it looks oxidized. Like when it's in the sand it looks kind of like a like an orangish color Yeah, but but the spice essence is clearly established as blue as well as the eyes of ibad where your eyes turn blue it's because the spice is there's a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:45",
+            "text": "whole there's a whole thing in Emperor about the color of spice and like not just the essence but like the actual spice and like yeah, it's it's there's a whole thing and it's definitely blue."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:04:54",
+            "text": "I hope you guys get into that. So learn about it. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:56",
+            "text": "this is the quote. Does the balrog have wings debate of the dune fanbase."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:01",
+            "text": "It's interesting does the balrog Wait, is that controversial? Is there take? I don't know it does right?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:05:07",
+            "text": "I don't know that the Lord of the Rings is that the Lord of the Rings would take a sidebar real quick on Lord of"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:12",
+            "text": "the Rings. There was going back to the first episode of dune pod where Jason trash Lord of the Rings, did"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:16",
+            "text": "I? Yeah, he did. Do I not I don't like Lord of the Rings. I don't even remember. I had"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:21",
+            "text": "I had multiple samples in it on that. That's canonical."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:05:23",
+            "text": "Now, Jason, you have to throw all your books away. "
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:27",
+            "text": "Adam Serwer who's a journalist writes for The Atlantic and other places, share this thing on Twitter today went somewhat viral about how in 60 Something Tolkien gave an interview to the BBC, in which he was asked about the dwarves Oh, God. And he said, he's like, Well, the dwarves you know, and the quotes like are I'm just gonna pull it up. Please do yes. Why?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:49",
+            "text": "Why do we have to do this? Like, wait, do we have to go here right now?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:54",
+            "text": "Let's do it. He said, Fuck."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:05:56",
+            "text": "I'm with Jason on this. The"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:59",
+            "text": "dwarves are based on our JRR Tolkien's creations with Tolkien admitted word Mater were modeled after Jewish people in 1964 BBC interview quote, The Dwarves of course are quite obviously. Well, you wouldn't say that in many ways. They remind you of the Jews. Their words are Semitic, obviously constructed to be Semitic. Tolkien's door that's a direct quote, the rest of the paragraph reads tolkiens drawers are stout work with jewels and are relegated to a secondary status as he wrote in The Hobbit. Dwarves are not heroes, but calculating folk with a great idea of the value of money. Some are tricky and treacherous, and pretty bad lots, some are not, but are decent enough people if you don't expect too much. The dwarves also had a space laser."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:06:44",
+            "text": "Thank God, I knew I didn't like Lord of the Rings for a reason. This is all making versus"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:48",
+            "text": "I don't it doesn't really bother me. As as as the chief Jewish correspondent of Dune pod. I'm not particularly flummoxed by this. I mean, it's not great, but"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:06:59",
+            "text": "it's not an ideal."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:01",
+            "text": "Got a great quote. Yeah, it doesn't really diminish. It doesn't really affect my appreciation of Lord of the Rings or fantasy in any way. Because I'm just like our Well, I don't care. That's not how I choose to read it."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:07:12",
+            "text": "Yeah, that's fair."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:13",
+            "text": "But yeah, not great. Not great. Yeah. Excellent. Definitely. Wings. Wings. Yeah. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:22",
+            "text": "yes. The answer is yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:23",
+            "text": "The Balrog also a Jew,"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:07:25",
+            "text": "does it? Does it? Does it need wings? Is it underground? I've not read the books."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:32",
+            "text": "Don't worry. Don't worry about it. Yeah. Well, we'll watch the extended edition and talk about it. What is evolution anyways? So the second question from Daniel is do you think Ghanima was underserved through the series, child of Paul overshadowed by Leto the second and then does nothing but have kids to pass on the Atreides gene? The series as a whole has a very odd view on the roles of women in power and responsibility. Not a fun topic. So I can't imagine it'd be brought up on the podcast. It's always bugged me while it's on the podcast now, hey, this"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:08:05",
+            "text": "was an episode for difficult topics. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:08:07",
+            "text": "that's especially about the treatment of women. We talked to him. We've talked about this before, with both Jessica and Chani and like how Jessica is a strong character chani as a really not well developed character at all. Yeah, and I think Ghani is somewhere in between, like, you know, she's she's not as strong as Jessica, she's not like she clearly she says explicitly and have Children of Dune, that Leto was the strong one, and he's the one that shows the golden path. So she like her her like, final word on herself is that she's there it is a support role. And then I think one of the problems that we'll get into next week and God Emperor is that God Emperor jumps for 3500 years. And so you don't get to see any of that sort of what was the early formation of the empire, like once Paul, or once leader had become the God Emperor had taken the sandtrout skin, right. And so you don't get the sense that you don't get any accounting of her role or whatever, she just becomes this kind of like, historical figure. So I don't think she's particularly well served."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:02",
+            "text": "And I think increasingly there are challenges like Frank had problems with how he dealt with women and how he dealt with homosexuality and some of the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:11",
+            "text": "homosexuality stuff in God Emperor, get ready."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:15",
+            "text": "No, no, we're gonna process it. We're gonna process like forgiveness between artists and art. So like history history, there's got it. There's going to be discussions on this, but I will say yes, I in general Daniel. I agree. I think Ghani certainly was underserved. There are many powerful women in in the series. And so I think that's kind of a mixed bag there. Last question from Daniel, do you look forward to seeing Jason Momoa playing different aged versions of himself if it ever gets that far? I know people think he is a bad Dunkin choice because of future Duncan's stories, but I love it."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:09:50",
+            "text": "Boy, it was so what do you answer first?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:09:53",
+            "text": "So just Jason Momoa as Duncan in general? Yeah, I was very taken aback when he was cast. Yeah, I would have thought 100% It would have been Jake Gyllenhaal that would have made all the sense in the world to me. But having just rewatched the Colbert interview of the dune cast from September 9 When the trailer launched, he is just like a wonderful human being in general. Like I just love that guy. He loved Mamoa he just has an infectious positive good energy. And we'll just see what happens. Like I think he'll be there and it'll probably be great. Catcher."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:10:31",
+            "text": "No, I'm the last the last person who should be talking about this,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:36",
+            "text": "I think I think like Momoa, is it like yeah, I definitely don't want imagine like sort of like the helms worthy in types as Duncan Idaho, but like, I do think what Momoa has is like, again, this gets into reading doing God Emperor next week is like Duncan is supposed to be like, gifted in the sexy times is like kind of like, you know, like a key part of his character. And I think I think Momoa sells that pretty well. Yeah, and once again, for like the 17th time on this podcast, I will continue to hype the apple plus show. See, in which Jason Momoa plays a blind dystopian warrior. Listen,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:12",
+            "text": "we have we have an opening window in July. Like let's just put it on the books. Oh, great."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:16",
+            "text": "It's such a great show."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:17",
+            "text": "I have never watched it. So I would like to see it and we have not covered Momoa on this podcast. Oh, interesting."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:11:22",
+            "text": "You should then also watch frontier. I don't know, even though it is what is that? Which is an excellent show. It's set like in frontier times. Yeah. Yeah, that's yeah, that's for sure. Cuz he's part of like a ragtag group of people. And they're trying to like, take out the British. It's cool the first season. But the second season sort of like opens up and it's a little bit more interesting. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:42",
+            "text": "boy. Yeah, the third trade paperback is the best. All right, well, we'll take that under advisement."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:11:48",
+            "text": "He is never gonna watch anything I ever suggest to him after sens8 It's over."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:52",
+            "text": "Now now, since a while since they've had problems, but it was some good stuff. All right, Daniel. draf. Thank you so much. We really enjoyed it. Yeah. Awesome questions. Keep them coming. We have one more email very quickly. This is from Sofia Jones. And she says, Hey, guys, I've been a dedicated dune pod listener for about a month now and just finished your second episode on Children of Dune. I'm a little behind but catching up steadily. We love it. Just keep listening. Keep going or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:21",
+            "text": "just we just will listen to the ones you find your you're interested in. You don't have to be a completest our wives don't even listen to this show. You don't have to you don't have to worry about Jason."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:12:33",
+            "text": "Jason. Everything you just said is breaking Haith's heart right now I just need you."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:38",
+            "text": "We did 100% completion by every listener. Your pod always keeps me laughing and I especially enjoyed whenever it was someone whenever it was that someone referred to Leto the second as the spiciest of the Atreides. I can't think of any other way now. I thought you might be happy to know that I actually just got into Dune this year after seeing the movie trailer and thinking, huh, that looks cool. I am now about halfway through reading God Emperor of Dune. You have one week to finish the book. You're welcome, skip,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:08",
+            "text": "skip, just skip chapters like this."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:13",
+            "text": "It'll be fine. Hopefully more people will come to the series in the same way because to quote the Goonies down here. It's our time. It's our time down here."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:23",
+            "text": "That's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:24",
+            "text": "We deserve a new film adaptation after the 1980s version. No disrespect to David Lynch, which I watched after listening to your episode on it. I don't regret watching it. But I don't think I'll watch it again. Keep making the pods so I can keep listening. Sofia PS there was a little too much hate in the Little Women episode. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:13:46",
+            "text": "I obviously got that. I obviously got that one wrong because everyone brings that up continuously like last week like slim. Slim. Slim brought that up last week to you did"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:57",
+            "text": "yeah. He brought it up last time he was on the pod as well. Yeah, that's consistent. I"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:14:01",
+            "text": "can't he he knows what to do, though. He knows how to troll. Sophia"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:04",
+            "text": "says it was definitely funny to hear Jason's thoughts on Friedrich. Okay, good."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:09",
+            "text": "I'm glad there was something redeeming in there. I should rewatch it. I think about the movie a lot. I'll say that. Okay. That's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:15",
+            "text": "good. Yeah. Well, so Sophia, thank you for writing. Thank you for listening. We love hearing from people. So please send us your letters at dune pod.com We'd love to hear it. And of course, we couldn't finish up here without a voicemail from our favorite friend of the show."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:14:33",
+            "text": "Not since Jason took a hot dump on excalibur. Has he been more wrong, is when he said Al Pacino, or any question has Al Pacino ever been in a good mood have been good in the movie I think is going on. I am not going to read you his entire filmography. I'm really tempted to but I will not. And the mid period Pacino, which you might even get In a late period Pacino has some of the most amazing work he's ever done. I mean, if we're talking about, like, even past Scarface, let's talk about Glengarry Glen Ross. Send him a woman. Carlitos way he, like when he really starts to crank it up. It's some of the best, most magnetic awesomeness on the screen. Comment, Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:24",
+            "text": "I love Glen Glengarry Glen Ross is a particular favorite of mine. I think that Pacino is the worst part of that film version. I mean, his performance is ridiculous. And in fact, I saw it on stage. I saw it on stage in which Pacino played the, the, the, the, the older role not out Alex not ours. Alec"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:49",
+            "text": "Baldwin, wrote that lemon Yeah, the"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:53",
+            "text": "Don Lemon Rome. Don Lemon. CNN anchor Jack Lemmon Yeah, Pacino plays the Jack Lemmon role and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:03",
+            "text": "I got a Can I get a Pacino Jack Lemmon line read, please."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:07",
+            "text": "chino. Yeah, he was like, it was like it was actually pretty good. It was actually, it wasn't great. It wasn't great. But so I saw Pacino on stage and Glengarry Glen Ross. And Bobby Cannavale played the Ricky Roma part. And was such a better Ricky. I mean, it was such I mean, it was so much better. So yeah, I don't think that's a great argument. I did also in the in the DM thread with slim, I did also this was unremarked upon, but I did also make the argument that the Dark Crystal is a better movie than the Irishman. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:46",
+            "text": "I think that's easy. It's slim, as slim as not a fan of the great, so I think you're fine. Okay. It's all good. All right, continuing, Cory?"
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:16:53",
+            "text": "I mean, you have to admit devil's advocate is fun. Right? You enjoying it? Now? He liked to watch it? No, maybe not. But is that what you know, like, fascinating to observe in that 100%. But anyway, that's just my opinion. And then the My opinion is Jason is wrong again. But that's cool, because he's right a lot of times, and I still love him. So all right, I might call back. But that episode, oh, the king because of the king, which was great. I loved it. And I'm totally with slim. Our pass was fantastic in it, but you probably knew I was gonna say that just because of what I said about patina. Alright. Love, love it. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:36",
+            "text": "was really torn. I was really torn looking back on R Pat's performance in this film this week, because I was listening to the pod today. He was doing what he was told to do, right? Like, it's not his fault. Me he was making himself available. Did you watch it catch her?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:17:50",
+            "text": "I haven't. And I had sort of avoided watching it. I'm not sure why. But then after hearing the sound clip that you cut in of his performance, it immediately shot to the top of my list. I was like, I don't know what that is. But I'm here to hear more of that for a bit. So and it sounded like everyone enjoyed it. So I it's now on my watch list."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:11",
+            "text": "So it's a four banger. It's a good it's a good film. Also is"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:18:15",
+            "text": "Cory like the Agent Coulson of all of our pods like he's just like, oh, what shows up keeping us together and I appreciate that. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:23",
+            "text": "though, he started out on banz. I used to hear him on banz and then he ended up on a baton spider and then came over on to dune pod and then I got him over to 70 millimeter and so he's just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:33",
+            "text": "been caught and Cory zine is on dune is coming out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:39",
+            "text": "Very high just in a couple of weeks. Yeah, we saw the he had some proofs. Yeah, it's all it's all coming together. You"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:18:45",
+            "text": "did a skit. I did a little comic in it. So I'm excited. You did it. Yeah. Oh, wow. That's why Oh, shit, I guess. Yeah. Yeah. It's cool. It's not very big. It's not it's not like that. But it's but it's cool. It was fun. That's awesome. Oh, my God. I think mostly silent."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:01",
+            "text": "Fantastic. catcher, what do you have to plug give us something, something you're excited about?"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:19:06",
+            "text": "Yeah, what am I the most exciting thing in my life has happened in between. The last time I was here, which is I started a podcast, something I've been wanting to do for like, seriously, like at least 10 years. So it's really fun. It's called Cinenauts. I'm doing it with my friend Ian. And boom, my friend boom, fellow Canadian. And we are covering the Criterion Collection and some stuff that's on the channel. And then also some stuff that's on neither of those. But it's just a chance for us to talk movies. And finally like watch all these sort of fun classics that unless push we'd never watch so it's really been a blast. So it's called Cinenauts. Again, you can check it out wherever you can download podcasts. Please check it out."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:19:59",
+            "text": "We will definitely have links to send it out. It is a fantastic podcast produced by ian de borja. Ha, who has been on this pod and is an incredible producer and host and catcher and boom are just really, really terrific. The energy there is great. It was funny because when Jason went on hiatus to go on baby duty, I pinged catcher and I'm like, Dude, come on, for season two and a half. Like, we'll just keep going, it'd be great. And he's like, I busy Dude, I got this thing. And a week, like three days later, Cinenauts launched."
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:20:33",
+            "text": "Yeah, it was funny because like, we recorded that week that it came out. And I was like, You were on our"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:40",
+            "text": "side. And you didn't announce it. And"
+        },
+        {
+            "name": "ctcher",
+            "timestamp": "1:20:42",
+            "text": "it was funny because you would have come out the following Monday. So it would have been fine. But I was like, we I was adamant about shock Surprising everybody I didn't want anybody to know. So it was like, he was like, well, we could I was like, no, no, no, no one can know. So I was like, I held my tongue. I felt that but that's that's life. The surprise work? Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:58",
+            "text": "It is great. I hope everyone will check that out. Jason, anything you want to plug?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:05",
+            "text": "I shout out to -- We were taking a family walk this week in our neighborhood and coal Valley. And our son was having a good time. Looking at the lights on the various street corners. Our daughter was asleep being carried by my wife. And I had like a backpack on that. Griffin would go in when he got tired of walking, but he was enjoying walking. And then he he knows he has to hold hands well across the street. And then like when he was doing fine doing that. And then because He's two years old, he just decided he wanted to run across the street. And so as you do, it didn't get very far. Like, you know, we stopped him like no, we can't do that. You have to hold hands and he just completely lost his mind like a total meltdown. Yeah, just like absolute total complete meltdown. I'll send you guys a video in our DM thread of like, my wife took it because it was like I then I had no choice. We had to go home. It was getting dark, right like six o'clock, sunset and I was carrying him like up hill up back to our house and he is writhing in my arms just screaming his head off like the loudest thing in like a five block area. And like some guy passed on the other side of the street was like, I assure you, it gets better. So shout out to that guy. Amazing. I plug him. Thanks guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:37",
+            "text": "And that's it for this episode of Dune pod. I want to thank Jason and catcher for such a hard but real conversation. Next week, proto returns for the fourth book in the hexology God Emperor of Dune wishes luck. If you're enjoying this podcast, follow us at dune pod on Instagram and Twitter and share our social media posts as it really helps new listeners find the show. Dune pod is a production of H industries. artwork is by catcher and our theme music was composed by Toby Foresman of whip song music. The episode was produced and edited by me. Ah, thanks for listening. We'll see everybody next week."
+        }
+    ]
+}

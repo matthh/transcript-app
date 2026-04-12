@@ -1,0 +1,846 @@
+{
+    "episode_number": 91,
+    "episode_name": "Dune Scholar Interview",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody. It's Haitch and welcome to the latest instalment of Dune Pod. Your one-stop shop to enjoy the new Dune movies. This week, I'm joined as always by my cohost, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Someone's got sleeves, a lot of description of sleeves. Someone's definitely going to get killed by the sleeves, there's for sure going to be a problem."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by Dune Scholar herself, Kara Kennedy."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "And it turns out to be a lot of work to write a book. So..."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "we cover her recent book women's agency in the dune universe, tracing women's liberation through science fiction. If you're enjoying the show, we need your help. Leave us a five star rating review wherever you listen to your podcasts and be sure to hit that subscribe button so you never miss an episode. We also have a discord server where you can hang out with us whenever you want. Even when we're on spring break, a link is assurance and now without further ado, our interview with Dune Scholar. [Dune Pod theme fades out]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, Kara Kennedy. Thank you for joining us here on dune pod. Thanks for having me now. You're in the Southern hemisphere somewhere, right? But you are American. Where, where are you currently located? Currently in New Zealand. Oh, awesome. Got it. And what, what brought you to New Zealand? I"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "came here to do a PhD and study dune, which is what the book came out of. That's awesome. And I just ended up staying in New Zealand. I'm in the biggest city, Oakland. Oh"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah, that's great. You've been there, right? You're and Auckland. Yeah, but it's uh, it's I love New Zealand. I've been to New Zealand twice. It's great. Everyone loves New Zealand. Now. I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "would think people would move to New Zealand to do a PhD on Lord of the rings. So I'm confused right off the bat. Like I would think you would go to like Jordan, uh, to study, to study dune."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Let's just say graduate school process is complex. And, um, it worked out that I wanted to take a break from the U S for a while and try something. Amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Awesome. Yeah. I have always wanted to go to New Zealand. So, so looking forward to that, well, we are really excited. So this is a very special vacation episode. This is a bonus episode, Jason and I are going to be out and about, uh, for one week. But last month, as people are listening to this, we took one week off and I got COVID and Jason got poison Oak on his face. So we're never"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "taking a break again."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "You learned your lesson. That's."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So we're really thrilled to, to have you here on this special episode tonight, and we are going to be discussing your book women's agency in the dune universe, tracing women's liberation through science fiction, and we'll be getting to that in just a minute."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "want to call out quickly before we get started next week on dune pod. We're back. The camera is rolling. The mics are rolling and we are stoked because we have Ryan. Condal the show runner of HBO game of Thrones, house of the dragon who was on our aliens episode last year, coming back. Um, Jason, I know you're a big Western guy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. I like, I mean, I like some westerns. I like some horses, some horsey movies. That's a Western. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "that's right. Well, this is Kurt Russell, bill Paxton, Sam Elliott, Michael Bean, and Val Kilmer in tombstone. Yep. I'll be your huckleberry. You've seen this one, Cara."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No, no, this is old. This is an old 92, right?"
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "mean now, like, you know, it's a talkie, it's in color. It's older."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Yeah. I love westerns Cowboys and aliens. Westworld. Yeah. Something about the wild west. Still attractive, even though"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "American exceptionalism, et cetera."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "But I, you know, I'm part of me"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "great stories."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, we're really excited. I love tombstone. It is such a classic movie. And so we're really thrilled, uh, to, to do that. So that will be next week. Very quickly. Do news, would you like to know more?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. No. Okay. Not, no dude. It is this week, we're in a quiet period or a reflecting period on, on do news. And so there's some casting news. We're just going to be in a contemplative"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "meditative state. Oh, I think the casting news just dropped like last week and we probably lost our shit on it. So"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "it's all there."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "do want to call out if I've done our math correctly next week in the chuckle hut, we will be screening. The classic from 1982 that gave Jason all of his nightmares Poltergeist had to be"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "taken from the theater screaming as a six year old child, not a movie to bring a six-year-old"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to that turns out. How about you, Cara? When did you see Poltergeist first? Oh, I"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "saw it long after it aired. I saw it on a tiny little screen in the kitchen on one of the replays. So it wasn't that scary when I watched"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "it. Yeah. That's better smart, smart. Well, we're really excited for that. Uh, that is going to be a really fun one. And we have our dear, dear friend Meredith borders calling in from Germany and, uh, so really stoked for that. That is going to be in the chuckle hot. We'll be streaming that in discord next week. And then on the pod the week after that. All right, well, Kara, let's get into it. My first question is what is your history with dune? Where did it start and kind of, how did you discover what was your first exposure to."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "My first exposure to dune was way back in my teenage years. Like many of us is when I found science fiction and it was on a shelf in my family house. It was my dad's copy. And I saw it on that shelf. Every time I walked into the room to use the computer and it was the, the version that's brown and orange, and really hopefully, and I thought, what is this book like, who would make a book with this kind of cover? And so I just thought I needed to see what this book is about and I read it and I absolutely loved it. And then I just devoured the rest of the books in the series and nineties. Okay, great. Yeah. And that was kind of it, you know, I got into science fiction and then when I was doing my final year of undergraduate. Studies, um, I did honors project and you can pick anything you wanted. And I'd had a very traditional literary degree in terms of the classics. And I thought, why don't I do it on my favorite book? And that really got me started. And so I focused on Jessica because I discovered the women hadn't really been studied that much so that I did that as my honors project, and I really enjoyed it. And so I went on and did a longer version for my master's degree. And I always wanted to look at all six books because there's just not enough space to just to look at all of them. Some of my PhD, I got to look at all six books and, and instead of just looking at Jessica expanded out to look at the whole Benny gesture of sisterhood."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love, I love the way you, I love the way you, uh, you broadened the book is structured to kind of broaden into like, you know, the additional parts of the sisterhood, but then also like the presentation of the honor mantra is later in the, in, uh, in, in the hex allergy, it kind of, you, you kind of keep expanding the conception of, of, of what Herbert's doing with his female characters. Um, as the books go"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "on. Yeah. And hardly anyone has looked at the honored monitors, so that really needs a lot more. Attention"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "unpacking. Yeah. There's it's, it's, it's fraught. There's a lot of"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "some things going on from the earth, the first student book to the last tune book, like what, what was what's going on with her right there? What was happening in the eighties? Yeah, it's"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "an interesting question. It's an interesting question. It's like, what did you go to the, like a weird party at like, did you like, did you like on Maui? Yeah. Where did you, what did you bump into at like the Tiki bar on the north shore that like made you sort of reconsider this whole approach? Yeah, that's"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "great. And like the descriptions of them are very, very unique in terms of."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you go from, you go from an, in the first book of June, you go from like fade, Ratha wearing this very kind of Mick jaggery kind of outfit where it's like, you know, bell, bottom pants. And like, you know, this like very kind of glam appearance. And then, and then leotards, really, we didn't know we were going to get leotards in the future, but they made it there. Um, by the time you get to books, five and six. So the"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "very like animalistic, like the way he describes the honor, others, like their eyes change color when they get angry and kind of they're described as like insect bites."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. So, I mean, I really like the kind of recursive nature of the way you started and expanded from your initial to your master's to your PhD. And, and I'd like to kind of follow that a little bit, um, that structure, uh, and from a perspective of kind of thinking about, you know, the central thesis, if we kind of start with dune itself, uh, and kind of get into, get into it with Jessica and then move out into the sequels. And I'd like to talk about the movies and that stuff as well. But when we discussed dune, uh, 65 in our first two episodes of the podcast, I mean, we definitely felt like we have this character, Jessica, who we really, really loved, but certainly we're conflicted about how. Much agency she had and what her options were versus what, some of the things she was, she was doing in reaction to other actions. So can you just start by giving us, let's start with Jessica, you know, what is your, what's your take on her? What, what did you discover in your research and, and kind of, how would you frame her as a character, uh, in the context of the book? Yeah,"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "so that's kind of the, the main obstacle I came up against almost immediately when I started researching Jessica is there's only been a few scholars that had even really talked about the Benny desert, which I still find really weird. And they were really dismissive and they kept throwing around the word traditional. And so"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Jessica, the original trad, why is that? Was that like the level of like the discourse in, like, it"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "was like, Jessica is a concubine and a mother, therefore. She's very traditional and has very little, you know, agency essentially. And I strongly disagreed with that interpretation. I think it's very surface level and not really supportable by the text, but what I had to come up with was, well, how do we talk about Jessica? Because yeah, she, she is a concubine. She is a mother figure. She doesn't hold traditional power roles. Right? It's a, it's a feudal medieval type society. Like men, men hold the positions of power, like at least in the official capacity. So I had to think about, well, how do I talk about all of the awesome stuff that she does while also acknowledging that she does have limitations? And she is working within a structure that doesn't recognize women necessarily in those official. And so that's where I've really leaned into the agency approach because rather than using the word power or control to me, agency allows you to unpack better the kinds of the ways that she operates in the universe without having to have those official kind of power positions, like say the emperor or duke Leto or the Baron. And so what I really wanted to look at and I thought was a really productive way is looking at well, what is she doing with their body? Because women have been fighting for a long time, still fighting to have control over their bodies and over their lives. Um, in terms of say reproduction or sexuality and those kinds of things. And I said, well, when we look at what she's doing with her body or with the Bennie desert do with their body is they train their body to be this amazing tool to. Pretty much do whatever they want. Now. They don't use that power all the time. And I think that's where people get hung up because they choose not to, they're not seen as powerful, but actually that's, that's a different way of looking at power as the ability to choose to do something differently. So they like to use persuasion. They like to use talking things out. They like to avoid conflict if, if at all possible. And that's a, that's a different strategy for getting what you want. And so looking at how does she use her body things like the voice, um, and her fighting skills, which she doesn't use very much. How does she use those to get what she wants? And yes, she does have a son and she is trying to do the best for her child. And I think that's understandable. And he, he does happen to be male and Herbert was interested in looking at kind of the male hero figure. But if we look at Jessica, she is almost always in control. And I think for, for a woman in science fiction, Let alone the world, that is something that is rare and should be critically unpacked and recognize. And so that's what I've tried to do in my research is not say she's the most powerful character in the whole book, even though you could maybe argue that. Um, but so look at all the ways that she's doing things and how she moves through that world, she's so confident. And that's because she's had all this years of training. And so it's like, who gave her that training? Well, it's this all female sisterhood. And so another way I think is really helpful is looking at it, seeing the many desert as a female version of the Catholic church. No one would say the Catholic church doesn't have any power just because they are Kings themselves. The Pope still has thousands of years later, a lot of power. So that's the kind of analogy. I think that, um, it is useful to look at the Beni desert. I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "love this, uh, this, a gentle frame that you have, like, like for it, because the, you just said like, even if you could make the argument or not, that she's the most powerful character in all of the books, but it's certainly an arguable from a narrative standpoint that her choice, it puts into motion, all the events of the book, her choice to have a son and her choice to train Paul the way that she trains him, like those choices against both her sisterhood and against like, you know, like balancing these conflicting demands by these folks who have, uh, who putatively have control over her. It's her choice in her own, uh, her own desires, that guide and set into motion, this story that was a launching point for this story. So I think it's. Well chosen, starting"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "point. I think she's also in my reading. I read it first when I was like 12 years old or something. And I was always in awe of Jessica. Like I felt like she, she was constantly influencing things and moving people in directions that she wanted them to be moved. And you kind of said this a minute ago, but that is like a central precept of the better Jesuit. They're not the ones that are going to be on the throne, but they are going to be established at every house and in the courts, they are going to be the ones that are going to be moving things in the directions that they want from the sidelines. Um, and, and kind of weaving that, that influence, which is, which is very powerful. It is interesting. I, I guess we can, since we're talking dune and we're talking Jessica, I'm kind of curious your take on the difference between the book, Jessica versus let's just look at Denny's film, Jessica let's let's look at Denny. Cause I think, you know, for me, I struggled with Lynch's dune. Basically. I love Francesca. Her hair is amazing, but she spends the entire movie kind of crying and falling down a lot and not being given the opportunity to really direct things, the way that we would expect. And I really appreciated that Jessica was much more in the forefront in Denise version. And he actually, you know, in interviews has said, the first word that he aligned with for dune was women. And he wanted women to be the center of what he was trying to convey here. But I found Jessica to be shown both this vulnerability of the weight of the choices that she had set into motion. And as things were rang against her and against Paul and all the consequences, but still conveyed the strength, the will, the focus and the presence to face those challenges. Yeah."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "The movie Jessica is certainly a hard to compare with the books because there's just so much less time and also adapting to. For the screen. Um, we don't get the internal dialogues happening, where the characters, we get to see them thinking in the book and processing everything, both Paul and Jessica do a lot of that in the book. And that's really hard to translate to film. So I think in terms of how, how has she operates as a mother to Paul aligned really well with the book? Um, she's constantly making things into teachable moments and chastising him. And every time he looks to her to kind of get a thumbs up, she's always just given him a Nope. You gotta keep trying. I think he's very relatable, um, to children everywhere. Um, one thing that I think didn't come through, unless you've read the book is the range of her abilities. So thinking back to the body, if you've never read the book and you watched the movie besides the. Do you really have a sense that she could control pregnancy that she could, um, kind of do all these other things that she's able to do?"
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "didn't really, I didn't see that coming through in the movie. And then, and then this is, this is always kind of something that's hard is thinking about strength and how Hollywood often perceives women's strength is fighting and violence. So we've seen that a lot. Say the Marvel movies, it's like black widow. We show the idea of a strong female as someone who's fighting who's violent. So they added, they added in, in the ornithopter seen her doing more overt killing and violence, which is supposed to, I think, tell the audience, Hey, she's really cool. And she can kick butt. But then to me that goes against the whole kind of subtlety of how the Beni desert operate like. That would be a last resort, because what happens in the book is she uses her, you know, the, like her persuasive abilities to kind of maneuver people into the situation."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And even, and even when she does use her physical, but as you note this, I made a note as on page 52, you include one of our favorite, uh, sections from the book, which is the slumping shoulders. Yeah. Well, we, we, uh, anytime we can talk about the slumping shoulder, uh, we're excited too, because, and I really liked the perspective you brought to that because it is this she's using what she knows to be her perception by the freshman as just this weak woman that's lost in the desert with her son. And she's going to use that as well as her unbelievable physical prowess to. You know, conquer one of the greatest fighters in the dune universe and still Gar. Um, and, and so it is this it's, I think this leads into one of the things I was hoping to talk about as well, which is the Benny Jesuit as, um, having this ability to bridge the mind, body duality and being, and having this holistic mastery of both, um, and bringing that sort of, that sort of holistic competence to, you know, everything they do as well as their persuasive skills, but also when necessary they're their physical combat skills."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Yeah. And what I find funny is it's literally like two lines in the book. So I'm trying to analyze the scene and it's like, Herbert really gives us so little interested in the fight. What he's interested in is the conversation that she has. Well, pretty much she's holding him hostage. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Herbert, Herbert doesn't do action. Like all like, like you, you, you get like, uh, you get like a, you know, a predicate of a sentence or something like that. Like once every 700 pages was like, oh, someone got kicked in the head. Um, but otherwise it's very, so we, when we get this, when we get to talk about the S the slumping shoulder, it's a big, it's a big moment. The other, the only other time I'll give you a lot of violence is when someone's got sinister sleeves, someone's got sleeves. There's a lot of description of sleeves. Someone's definitely going to get killed by the sleeves. There's, there's there's for sure. Going to be a problem with sleeves"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "later on. Another thing about Jessica in the movie is, yeah, I think they, they turned up the vulnerability and the kind of like, teary-eyed. And that to me, I don't know if that's just to, so we know that she's a woman, but I didn't, that's not in the book. I didn't feel that was necessary."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We had a similar reaction from a couple of folks that were with us on the night. We saw the premiere on opening night. But going back to what you said before of trying to figure out how to show the emotional processing that happens without having the dialogue, the internal monologue that happens. And to me, that idea of like Jessica walking down the hallway and she shaking and she's like completely freaking out. And almost on the verge of tears. And then the next second she's opening the door to Leidos chamber and she's completely together. She's completely composed. And to me, that was an example of showing like she is under this incredible pressure and literally she just has created the and now the entire galaxy is going to shutter from the contractions of delivering this, this being into existence and all of that, that it implies. And yet she is still able to pull herself together and have that composure. So I took that as a core of strength, even though there was a, a weighty fulcrum on"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "her. And then part of it, we talked about as well as just the challenge of like, how do you show what in the book is done through those conflicts are done through internal dialogue and like, unless you're going to do something really funky and artificial onscreen where people are talking like with the linchpin tried to do is like, you know, people are doing voiceover or doing auditory versions of the internal dialogue. It's hard to show that"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "conflict, but when we show male character. Constantly kind of tearing up though. It's like the gender angle is definitely there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I, 100%, I think that's fair. I think that's totally fair. Like, you know, um, although duke Lido does cry, he does cry. He does cry in the movie, one tier,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "um, and Paul too, he cries, but I take your point. That's his is"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "more of like a sweaty snot cry, uh, spice allergy cry."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Like when she's, when she's outside, when Paul's undergoing his test and she's outside the door. Um, I mean, some of that kind of anguish I got, but I felt like it went, it went on a bit too long and also. Doesn't she have confidence in her son that she's raised for, you know, for all these years. Like it felt like maybe she wasn't quite as confident in her training that she was worried that he wasn't going to pass the test. So,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "and then my wife got really annoyed about in that. And she was someone who thought that Jessica in the bone of dune did too much emoting. Uh, the thing that she got annoyed about in the, in the GOM Jabbar test was that, uh, was that she's having this big freak out, outside the door in view of the other sisters of the Benny gesture. And she's like, come on. Like she would keep it together in front of them because like, they, she knows like she's going to be, so she's going to be observed as part of this test too. Uh, and so she wouldn't like have this like big kind of, you know, Benny desert meltdown outside the door. Um, which I think, I think, I think to your point, just. Uh, feel emotional."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "don't know. I just think I'm a hundred percent innocent or no, no, it's just many times it's revealed through the series, whether it's going out later with a drain and others, like it, isn't the fact that these Bennett Jesuits aren't, they are not Vulcans. Like they don't have complete control and they do have emotional outbursts and, and, uh, and break down under moments of extreme stress. Second time through watching the film, I appreciated that Jessica was under more pressure than, than the first time, but, um, But I think that's fair. I am curious, just to shift gears a tiny bit, what do you, what do you take on like this wasn't emphasized quite as much in the film, but in the book, you know, Paul gets around to, you know, my mother is my enemy, um, and you know, understanding that he is separate from the Um, and so I'm just kind of curious what you make of that. And as the series begins to unfold through the second and third books where Jessica does become kind of more complicated and more of a threat, kind of, how do you view that lens through Messiah and children? Yeah, I"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "think I thought it was interesting in the film. They had him use the voice on her. Like I I've recoiled when that happened, because it was like such a shock. And also like how could Paul use that on her? Part of the issue is. Right. So she makes this choice to have, have the potential for the , but the whole point of having the quiz, I caught our aquas. So this male would be under the control of the Benny desert. Right. Um, and so when they escape into the desert, that's really the kind of breaking away from their being under their influence and their control and their supervision. And yeah, I think there's some of Paul, that's your regular kind of rebellious teenager wanting to do things on his own, but there's also that sense that he, he feels really betrayed that without his knowledge, he was trained as a men tat without his knowledge, he was kind of being geared into this, this way that he didn't."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "mean, he knew he was being trained in the way, but he didn't really know that it was part of this larger breeding program. And he, he has those visions. And so he feels like in the very first scene with Moham, he feels this wrong. To they're trying to control everything. But the mistake he makes is thinking that he can do it better than he can't that then they can that he can somehow do it on his own, um, without, without their guidance. And it takes until the, the second and third book for Herbert to really unfold that problem, where he's going at it alone. He's got all these powerful visions. He thinks he's kind of on top of everything, but actually he had no control over the jihad. He had no control over what the Freeman would do as soon as he kind of like unlocked that door. Um, everything got out of his control and we see him really come full circle. I mean, he doesn't, he never goes back into the fold of the Benny like Jessica does, but I think he comes to a greater understanding of the mistakes he made alone along the way. And he tries to prevent his son from making the same way. I"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "wonder, I wanted to ask more, a little bit more about this. I think you have this really interesting breakdown of like the. Again, in this mind body section, uh, of like the difference between the Benny desert and comparing and contrasting it to the men tats, uh, and sort of, and with that also the, the kind of the typical notion that, uh, you know, mental, uh, ability or mental, uh, you know, uh, gymnastics are sort of, uh, are often portrayed as being more intrinsically, um, uh, reserved for men, uh, or more intrinsically masculine powers. Whereas like, you know, the more earthy, spiritual side is more reserved for, you know, uh, for, for female characters, for women or for our, our, our, for our female characters and how this and Herbert sort of breaks that duality or that doesn't break it, but like he, he plays with, he plays with those archetypes."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "wonder if you could kind of walk us through, um, that part of the book, because I think it's, I think it's really interesting."
+        },
+        {
+            "name": "KARA I",
+            "timestamp": "",
+            "text": "really like it analyzing the bandages are by themselves, but when you bring them up against and contrast them with other characters or other groups, it really highlights things that maybe you don't see when you're just looking at them by themselves. And I thought the men tats were an interesting one part of, part of what makes it difficult for us to read the men tats today in the same way that readers would have several decades ago is, um, the idea of computers has changed so much. So when I read the word computer or kind of, oh, it's acting like a human computer because they don't have computers, you know, computing was really in its infancy back then are you believe in pre infancy? And so the idea that these characters could stand there and kind of logically process for you, um, this is familiar to us because we're used to computers doing that all the time for us. It's not as if the men tats can do that. And then the Benny Joe's, or it can only do body things, or it can only do certain things. And, um, even at one point when, when Paul and Jessica are escaping in the desert and they encounter Lee at kines and, um, they're all talking. And then we had kind of asked Jessica a question about something to do with kind of calculating or analysis. And she kind of like, well, I'm, I'm not, uh, I'm not a mentor or, you know, that's not really my thing. And he's like, but you are a Benny Deseret. And then she goes like, looks, you know, it was taken aback. And like, and over the, over the course of this series, Herbert gives us more. Info about that. Like in children of dune, when she's training for a Dean, um, she kind of goes through, we, we see her go through kind of like, like clicks things over in her mind. And so it seems like Herbert doesn't Dow the Benny desert with some of that analytical capability, but how I see it as the men tats can only do that. They're really good. At one thing they're really good at calculating analysis. The bandages are good, a whole bunch of things, and they can put them together. And I think that the biggest indicator that Herbert wanted us to be careful about trusting in the logic and the men tats is through for how watt being so wrong. The whole book about Jessica, even up until the very end when he finally realizes he's been wrong and the Harkin and know that they can feel. That essentially bad data, what we would see now, if you feed a machine bad data, you can get bad out. And the men tats kind of, if they don't keep that in mind, they can really be susceptible to thinking that logic and reasoning will solve"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "everything. Fairly wild inconsistencies in how Frank sort of like unfolds things, right? Like, um, you have a sense of what the bit the Ben and Jesuit are capable of. And then we get to children of dune and we have the moment of the assassination attempt on Jessica, and she's able to go into the, whatever the DOB, um, and essentially freeze time and analyze all the different possible scenarios for how to get out and choose the path that's going to allow her to survive, which is far beyond anything that's been kind of laid out as a, as an ability that, that they might have. And then we see, you know, more changes, uh, further whether it's like crazy sex, sexy Nancy or other stuff that's happening. Um, as we get further in the books, I wonder, I wonder though, too,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "like before you go later in the books, like I wonder what the, the, the Butler in jihad sort of tells us about this, this mind, this mind, body duality as well, because like, it was the first kind of rejection of. You know, that is the basis of why there are men tats is because they, you know, they, they somehow, they, they found that they couldn't have this type of computing power, which again, like, you know, you're right. That computers were really just things that counted when Herbert wrote this book, but yet he somehow intuited the idea of the runaway AI as a threat that he can incorporate into his narrative, which is one of the more kind of remarkable throwaway pieces of presidency he had in this book. But, you know, I wonder, I don't know if you, I don't know if you address that part of it as well, in terms of what, like the, what that origin story for the mentor tells us in terms of, of how, of what Herbert's conception of the mind is. And, and, and man, you know, a man's relationship to the mind."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Well, one thing that he, one kind of relationship there with the men tats and then Benny Joe's, or it is, um, part of why the Benny Deseret are. Testing for humans, which we see in the gum Jabbar tests with Paul, is there, they're trying to avoid having people who don't think before they do or don't think before taking action, because I mean, it's kept very vague, but when, when Moham and Paul are talking, she talks about how men we used to have machines, but then men would use machines to enslave other men, people, people gave over their thinking capacity. And that's a theme that Herbert's really interested in is don't follow a Messiah figure, don't follow a leader just because they're making grand promises and they sound like they're going to be good for you because he really wanted people to think for themselves and reason for themselves. And so the Benny Jesuit are trying, um, to. Not have people living by instinct and not have people just going with the flow. And yeah, as you say, I think as we move further toward the kind of AI dominating so many things in the smart technology, and however you want to code it or call it, we are giving up thinking capacity or make decision-making capacity to machines or to computers. And it's arguable how helpful that. Um, or at what point it's no longer helpful, but I think social media has given us a range of complexities in terms of how helpful is it to have a computer suggest things for you or make decisions for you, or make orders for you based on your past history. And you end up kind of locking yourself into a certain way where you're not thinking anymore. And Herbert was really against that concept. Yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "for me, one of the kind of low points of, um, uh, Frank relative to gender equity is Lido the second and get EMA, um, where you have these twin characters who theoretically should be on similar footing. Uh, but you have, you know, one becomes the most powerful figure in history and the other's kind of relegated to breeding stock and, um, you know, being married to the guy, who's going to write the story, uh, That is just a piece that, that to me, just, unfortunately it did not, did not work and didn't carry, I love, I do love that book."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "think it has some as a kid at went and places I was not expecting, uh, with leader the second, but, uh, but that was a tough one, uh, in terms of I would have loved to see her do more. Yeah."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "The, I think Herbert was really fixated on the hero, the hero concept, um, like you can see a lot of threads of Lawrence, of Arabia in the first book and, and he really wanted to warn against that. And I mean, are you believing still today? Like we still don't have a lot of women in leadership roles. We don't have those kinds of archetypes. So while he, he could have, he certainly could have given Ganni much more, more to do or. Not explicitly said, like he was always the stronger one. That's a hard line to kind of reconcile with, but I think Herbert's focus was on that male hero and doing new and different things with the male hero in Lido than he did with Paul. So he wasn't, he just doesn't seem as interested in Ghonim I guess."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, and then, and then I think that like Lido kind of ends up just sort of being a Lido to ends up sort of just being a problem spot because the other point where I ended up feeling disappointed is the whole relationship with Wienery. Like, Wienery like in, in God, emperor doesn't seem, I don't know, does it doesn't seem to, she just seems to be like a train that was put on some tracks, um, to, to run into, you know, the giant worm cart, uh, and it, and like, it's, I don't really find any part of their relationship believable, but like her part in it doesn't seem like particularly informed, but I don't know if I, maybe I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "missed it or Sienna either. Right. Like"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "feel, yeah. I see, I don't know, soon has got more developed, so there's like, there's, there's more, she's got more stuff. She's got more point"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "of view. Yeah. He is kind of like a serious, like kind of an angelic figure. She's like kind of coming in to like save Lido from having to keep living like this and show some love and things, but it veers more into the stereotype story. Um, then the Beni desert"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "got emperor fall for you across the series in terms of your preference."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Uh, I feel like it's a love it or hate it book and I'm, I, I feel like it's just a lot of philosophizing and it doesn't doesn't carry forward the way that the other books do. I know some people really like it and that's cool for them, but, um, to me, it's kind of a drag before you get to let's have female characters be the dominant ones and like let's put two, two groups of them up against each other. And I find that for us. More engaging than kind of like talking about philosophy and theory. I think Frank, Frank, let himself go a little bit traditional scifi and kind of having a spokesperson character. That's kind of just, it's like a bit too"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "much. A lot of Minio being really confused about what was going on and not, not keeping up Lord."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. The, uh, there's we described it, we described it when we reviewed God emperor of dune as Plato's Republic meets Twilight. Like it's this, like, you know, this very, like very kind of ponderous notions on like, you know, what it is to lead and how government should work and people should be organized. And just like this kind of Socratic dialogue about all that stuff, that's sort of just wherever. And then like, you know, this very confusing love triangle. Uh, the reincarnated Dunkin, Idaho, Wienery who not super, not super compelling and a giant worm. So it's a, it's a tough one. It's a tough one for everyone. Um,"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "it does have the museum from it. I think that's a really interesting part of that book."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is an interesting idea. And pressing like that, that was so hard for me, this concept of seeing these incredible, you know, fierce, proud people to be low, to be laid so low. Well, I don't"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "think it's meant to be. I don't think it's meant to be fun, but yeah, it's, it's, it's an interesting future casting by Herbert to like, kind of imagine what happens to that culture in this universe."
+        },
+        {
+            "name": "KARA I",
+            "timestamp": "",
+            "text": "mean, if we look around us today, like aren't there parts of that, that that's pretty much where some cultures have gone to be memorialized because they've been pretty much stumbling."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Herbert's you talk a little bit of Herbert's like the, the amount, the stuff that informed Herbert based on his experience with indigenous cultures and native cultures is like a kind of veers from there's interesting ideas that there's interesting commentary there. And then there's some of it, which is just like, kind of, uh, you know, exoticism and, uh, him and just like, sort of ripping things out from there kind of proper place in time. Uh, But you get, you get both, you don't, you don't, you get both of them."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, it definitely is a hard reset coming out of God, emperor and moving into chapter house and, and heretics. And I, I definitely saw those as a kind of like as, as a rebound. And I love the idea. I mean, I still was kind of rooting for the bene desert, even as they are sidelined in God emperor when they move back into the foreground again, um, you know, I was immediately really thrilled, uh, to have them there. Um, it is interesting. Do you find that, that they are making a change from this idea of being in the shadows? Like it seems like in heretics and chapter house, they're moving firmly out of the shadows and directly kind of challenging power and, and flexing on a, on a kind of galactic scale. Yeah."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "It's Herbert really shifts the focus. Uh, way from the tradies dynasty and even say the feudal medieval order. Um, it's a lot, it's, there's a lot fewer kind of indicators of that. And in those later books, he's really interested in, uh, bureaucracy and how, how different groups organize themselves and how they make decisions. And we it's, I think it's really the first time we get an inside look at how the Benny desert operate. Now, of course, he's had many years to, to change his mind about maybe what he originally thought back in the sixties. They should be like, but he tries to show them having internal struggles, you know, having some people disagree with the direction that the organization is going, which is very relatable to anyone who's been in any organization. Right. You've got certainly different factions start forming and they, they try to give people a say, like, they've got a mother superior and she's got counselors and those. But they come up against this threat from the outside, that's kind of using the, the Mo honored monitors are really taken some of their techniques and like twisted them. And so they really have to kind of look at themselves and say like, who are we as an organization? And how are we going to combat this threat? And so, I mean, even the title heretics, you've got people that don't think that we should be making Golas and we should be training in this way. And then there's other people that, that do. And so they're, they're divided amongst themselves. So to me, that gives us a better sense that they're not a monolithic organization. They're not like a hive mind, or every woman has to do this and thinks the same. And I think that that gives them that complexity where you can't just put a, put a label on them and say, oh, they're really traditional because they're always just following what everyone else does. Certainly not like they're not like that in the later books."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What, what do you, what do you make of the particularly in book six? Like the importance that's put on. Sort of how much like, oh, drain enjoys, like the central pleasures of life. Like, there's lots of like food descriptions and like, you know, there's lots of soup. The oyster soup thing goes on for like a thousand years. It's like, she's got to do her whole little bit with the chef and she likes to tease him. He doesn't know how to make it, but of course he does, but she's got to, you got to do the oysters just right. And don't forget the milk and you know, I like my jives and like, and there's like a lot in miles"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "to right. Her father. Right. Eating, all of a"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "sudden people are eating a ton in book six. So there's, there seems to be this like, kind of, you know, um, but like, and yeah, exactly. There's like he started watching some food programs. No, but like what, but in general, like it's an explicit line of like sort of theory too, which is like, oh, is, is she to like, do her sisters thinks she's too centrally obsessed or too much of the world. And like, you know, and you know, and you know, she to, um, happier, joyful or whatever, uh, in some of these simple pleasures. What did you, what, what did you make of the, of the significance of him sort of drawing attention to that line of inquiry in the, in the latter books for the, for the Benny desert,"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "where he's headed to in the sixth book, and we don't get to see what he had imagined for the seventh book, but he's, he's opening up the idea that there, there restriction on love and kind of caring, um, kind of being more cold and how they interact with the world. And others hasn't actually served them that the way that they thought it was serving them, and that love is not an evil that has to be stomped out so that you can kind of refill ruthlessly, pursue your goals. And, and that's a big, that's a big shift in mindset for people that have been trained to think that, you know, emotions the enemy and, and to think of reproduction. As a task that you do so that you can produce children with these kinds of genetics. And I think odor does really that, that shift. And so, and because she's in charge, she's able to put the sisterhood down a certain path and not everyone agrees with, but I think he's, he's trying to show them loosening up and having to change and having to adapt, um, certainly with using the X bottle tanks, that's a huge shift in terms of reproduction. They've never been on board with artificial reproduction and suddenly in the sex book, they're just out of necessity having to"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "change. So I want to, I want to ask you about this. I want to get into this, so, okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Get ready to everyone."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So, so this frustrated me to no end in, you have in all the negotiations between a drain and the tele Oxy, like she is running circles around them. And like you were left with them feeling like complete buffoons as a reader, you're reading what they're thinking, and they're like, ha ha, I'm going to get her. And he doesn't realize that he's being completely outplayed a hundred to one. And yet at the last second, she capitulates and like basically puts herself out to them and accepts them, uh, the axolotl tanks and shares all the birth records and everything. Like, I didn't understand that. I didn't understand why they had to subjugate themselves to the BT. Um, when I felt like they were dominating them"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "because I mean, how I understand it is they, they needed to be able to make genetic modifications and get people produced faster than the regular way."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Could. I guess,"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "and they, they didn't want to be beholden to them cause they'd been getting their supply, the Duncans and know the miles and they wanted to be in control of that. And that's definitely a hard one to swallow in terms of, um, how can you say that they have reproductive agency? So I definitely had to address that, but there's a line where she says we got volunteers and I think that's, that's still significant. And that unlike the tool, Aksu they still ask people to volunteer, to sacrifice themselves for the larger cause. And they got volunteers because that's the type of organization that they have. But the, and"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "so that's volunteers, um, basically to do an artificial insemination, uh, style based on the Venetoclax. So use, uh, technology"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "or, well, mine, there's not very many descriptions of the tanks, but in my understanding, the tanks are just kind of a fleshy mass and they don't have any. There's no, you're not a human anymore. You just become a literal wound. And so to me, the Benny desert, volunteering to become a tank means you're going into a vegetative state and you're giving up pretty much your life. That"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "seems bad."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "No more oyster stew. That's a tough one. That's a, that's a tough one. Yeah."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "You are loyal to a cause. Right? Like people sacrifice themselves all the time for a greater good for a larger cause. You know, that's the power that they have in terms of how they've trained and up, you know, brought people up to. To want to do that. I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "just felt like it was a little bit inconsistent in, you don't really know what the power dynamics are. You have this idea that the honored monitors are so dangerous, but then in head-to-head showdowns, you have bene Gesserit taking them down. So it's unclear that they couldn't have stood their own way. I mean, there were certainly lots of defeats that they, that they had taken. But, um, I don't know. I just it's something about the balance there didn't, didn't quite work for me."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Well, there's a lot about the later books that is kind of radically divergent from there. Again, it was the eighties, like it was a troubled."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. I mean, well, I struggled with the final books of, uh, just the, the crazy sex duels and the 237 techniques. I would never"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "write sex scenes like that I think is I, he should never, she just not right sex. Like, that's just a pass it's anytime it just goes immediately into, he doesn't even choose the right nouns. Like w like let alone a VOCA mood or a vibe or anything like that. It's just a tough one for everyone, but sausages"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "all the way"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "down that, I mean, it's, we can't even get into it because it's, it's a, it's a dark, it's the darkness you can't look at, but yeah. Well, there's"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "also the child aspect where like the goal of hectic"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "not great. Not great. No, it's"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "not great for us. Oh my God. Yeah. Well, so let me just ask, as you look across the whole series, like, how do you kind of, what's your final judgment, um, for. Yeah. Like, how is he elevating? Uh, and you know, what, what is that women's agency, uh, you know, how does, how does it land"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "in the end or what is it, I guess like another way, which is what my following question is going to be as like, what are the, what are the works of science fiction or speculative fiction now that, you know, you think were informed by where Herbert took things, uh, and that, uh, you know, you view as like a positive direction for, um, or you know, an interesting direction. Um, yeah,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "generally."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Yeah. That's a big question. Um, again, like by looking at not just specific what specific characters are doing, but looking at what are women doing with their bodies, right? How much control do they have over their bodies? I think you can say they have almost complete control of their bodies throughout most, most, or all of the series. And, and sometimes it's fighting sometimes it's reproductive choices. Sometimes it's using the voice. Um, sometimes it's how you're mothering. So even miles' tag, like his mother also breaks the rules like Jessica, and she teaches them some kind of like secret, secret, bandages or tricks that she's not supposed to. But in contrast to Paul, he ends up becoming, you know, helpful for the budding desert and, and loyal to them. Um, and in terms of sexuality, even with all the weird stuff in the later books, in terms of our women, making choices about, you know, what they're doing with their bodies in terms of sexuality, yes, they are. Um, they're the ones pursuing the men, which kind of flips things on, on, on its head in terms of usually, usually it's the men who are the aggressors and men who are the ones that are pressuring women, and it's completely flipped in there. But interestingly, he's still showing the honored maters and. A really twisted form of sexuality in terms of they use sex to enslave men and the Benny desert, even though they do something similar, they don't actually go to that extreme in terms of the enslavement. Like they stop at the kind of influencing stage. And so they're, they're still critical of that. So I think on the whole, when you look at it from that lens, yes. Women, women definitely have agency in terms of their bodies throughout the series. Um, it's not always a hundred percent maybe the way that we would like to see it, but they're, they're always resisting attacks. Yeah. They're all, they're always the ones really making the choices or putting themselves in situations. Um, it's very rare. Um, I think the, in the first book, when Jessica wakes up and she's gagged, you know, and she's helpless in front of the Baron, you know, that's one of the very, very few times we ever see her like that. And it's. And so stark because we're used to seeing her in control and here she is gagged and bound and she's, she's helpless. And, and yet we still see her with Paul's help, you know, maneuver out of that situation. So, um, when you look at what are the places in the books where women are helpless or weak or any kind of those stereotypes and in terms of bending deserts, they're just very, very"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "few. Yeah. What do"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you, what do you look at? Are there other, is there a, is there a fiction that you enjoyed recently or, uh, you know, has come out post dune, uh, that you think also tackles questions of women's agency in the science fiction realm in an interesting way."
+        },
+        {
+            "name": "KARA I",
+            "timestamp": "",
+            "text": "mean, I did a lot of reading around other books and stories around the time period when I was writing the book. And there was a big flourishing of feminist science fiction in the seventies, which has been overlooked by a lot of people. Those were a lot more obvious, I think, in terms of what they were looking at in terms of gender. And I think that's part of the reason that. Gotten the credit or gotten the kind of attention is because they were, I mean, most of them were female writers and they were more explicit about here's the patriarchy and here's women dismantling it, or here's what a future society would look like, where women didn't give birth. You know, those kinds of things. It's like Margaret Atwood. Yeah. Margaret Atwood, um, and, uh, Marge PRC. And so I think that's another reason why Herbert's been overlooked is because he's not obvious. Right. There's only really like a couple of lines where you see that Jessica had a choice to Barris on and most critics haven't even picked up on that. Right. So when you throw around the word traditional. Um, I'd like to see, you know, which other science fiction writers have given women full reproductive reproductive control with no technology needed. Right. That that's still pretty unique in science fiction and why?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. That's a really good point. Yeah. That's a great point. I was, I"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "was thinking about the , right. Like, um, for, for me, it's like a question of that, the impact and the control, um, and to be able to set your own course, and to me, there was something really unique about what the Murkowski's did in the matrix. And then also we just did bound, um, a couple of weeks ago on the pots science fiction, not science fiction, but the idea of two lesbian women who are able to set their own course, make their own decisions about what they're doing and, uh, take the consequences that go along with that. But, um, definitely w women in, in their own control, which I like. Yeah."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Trinity has got some issues in terms of, I think she's, she's positioned much more as a romantic figure alongside Neo. Which is"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "yeah. A quite you see the latest one? Yeah, I did. Yeah. I thought that I there's definitely a reorienting there. Yeah. Oh definitely."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Very, very post-modern um, mad. I would say mad max fury road, really? I mean, I really liked that one, but the, the same ones they're kind of, they go pretty far out into the desert and they encounter the women biker gang. And it's like, first of all, how many times do you see like a group of older women, um, anywhere doing anything. And they were just so cool, but just again, really like understated, like it's not a big deal is not made out of it. It's just like, oh yeah, women are in a group, they're doing something cool. They have kind of control or power. I still think it's pretty. I still think it's pretty rare. One thing that I think Herbert should be given credit for is you can point to science fiction and fantasy that have like a lone female figure. Who's really strong. But having a group of them is still not really that common, like, and that's probably due to, you know, Western society. We still really hold up the individual, but having the Bennie desert as a, you know, a collective sitting behind individual women is something that. It's still not really that common. Um, and I think it's hard for people to get, grasp their head around that you could have, have loyalty to something other than yourself. It's not just about Jessica. It's not just about, oh, Dre. They, they have connections to something else going"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "on. I did just think of one more, um, which is station 11 and the idea of them saying with Kiersten, they very specifically, even though she has a hangup with knives, they didn't want her to be this kind of like macho, you know, male, like female character, that's doing violence. It's about her ability to connect with people and to be able to create with people, um, and to be within a community. Um, and to be a leader in that, um, I thought it was a really good role model. Well, let me ask you one last question. So we do a segment every week, who would Tilda Swinton play, uh, where we cast one role in whatever film or book where we're talking about. So if you could see Tilda, Swinton taking any role in the dune, Sr dissertation,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "any anyone you had to who, which, which member of your defense committee to do, would you cast all this way?"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Oh, what about, what about the, um, inherit techs? The, the one who betrayed, Terraza the one who betrays them."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Uh, oh, Alonda no, not blond,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "no"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "Theresa. She's the one that's the crafty. And she kinda like, um, tries to sabotage the Duncan's. I could see I'm thinking, I'm thinking of,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "he was in showing, using the earlier one swung"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "using heretics. Yeah. She writes she's in her checks. Yeah, that's right. But she tries to sabotage and take out Dunkin. Yeah. Oh yeah. Damn you swung. You damn. Nashwan"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "you as his little dog. Shuang you work out in team?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my God."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Good. God, that's a good one. Nice. Would love to see a heretics movie. That'd be great. Geez."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean maybe tricky. Maybe we'll get it as a, some kind of series or something, uh, on. It"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "could happen because how would you, how would you portray the honored maters in a way that would be,"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "yeah, I can't do the weird sex stuff. It has to be like, you have to have it. You gotta have some, you gotta have like some gesturing. Yeah. Some, some, you gotta have a. It's gotta be off screens."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Otherwise kicking does a lot of kicking. Yeah. Focus on the kicking. It can kick really fast."
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "That's what you hear. So you could have some kind of mind can, they could turn it into a mind. They mind control men instead. Yeah. You"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "gotta have it. You gotta have a, B, you gotta have the sex part in there, but you can't like, have it be so weird, like, it's just, you just have to, like, you have to have it, not just be the focus of the whole, like dueling and whatnot. So"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "how are they"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "going to handle the food jars? Will the food jars will hit big for a certain demographic though, for sure. Like there's, there's a, there's a built in audience for the food stars a hundred percent. So that hits some quadrant on a movie matrix."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my God. all right. We'll call it on that. Uh, we are going to read one letter. One letter, one letter that has come in. And so let me call this out. This is subject line, chapter house dune, so appropriate. This is from our dear friend and listener Sophia Jones. And she says, guys, I did it. I am officially caught up on dune. Whoa, this"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "is why long journey Jones has been with us for a while now"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "over a year, year and a half, I think coincidentally, I also finished chapter house, so I was able to finally listen to that episode. And boy, do I have thoughts? Firstly, I've got lots of issues with this book. I really despise the food tars super strange aspect of the story and probably did not need to be there. Fortunately, food jars are the only unnecessary and weird aspect of this entire plot. I don't think the sarcasm there was lost on anyone, but truly chapter house did pleasantly surprised me at first. Lots of cool details, even though I definitely needed your explanation of the spaceship combat to grasp any of it. I'm glad I read the final book in the series. I also appreciate you address the weird line during the spice agony about the sausage, because it bothered me then, and it bothers me now, but now my final dune book ranking, let's go Jones. Here we go. 1, 2, 3, 4, 6, 5."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wow. Surprisingly high for."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, and surprisingly low for five, although honestly, the first and second one are almost tied. Good to know. The first book is still enjoyable after reading the last few Sunday, I look forward to going back and reading it again, really enjoy this journey. Can't wait to keep listening. PS, as ridiculous as the idea of all the characters coming back later for a reprise is I wouldn't put it past Herbert and I would love some lyrics to one dune, more"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "one dune Mo yeah."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "mean, that's essentially what the that's essentially what the Brian Herbert books become is just like the grand re everybody's bad. Bring them all back. Everyone's back. You get a Paul and you get a Paul. Uh, I'm really glad Sophia Jones went on that journey with us. That's awesome. Uh, I love all of our do dunemas Messiah is not my favorite book, but everyone who loves dune Messiah the like as much as the first book, uh, is, uh, just a top-notch person in, in my view, those are some of my favorite people includes prodo and my wife. Uh, so I'm glad they're are."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. I cannot remember my final ranking, but Sophia, thank you so much. I'm pretty sure Jason's going to send you something."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "feel Jones. We're going to send you a poster as a, as a reward for making it to the end of the heck's allergy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hell yeah. Amazing. Kara, what else do you have to plug? What's your next book?"
+        },
+        {
+            "name": "KARA I",
+            "timestamp": "",
+            "text": "just submitted my manuscript this week, which is really"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "wow. Can you"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "give us a sneak peek for this book? For what? For what? For this, for this book or book? The next book. Okay. What's the next, next"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "book. More of a, an overview to dune. So it's not specifically focused on any one thing. So it's five, five of the, what I thought were the key critical approaches. And then the introduction chapter is. A background to Herbert as an author and the historical context and comparison with his other works. So it's designed to be like a whole package, introduce you to do, and. What I think are the most important things, um, like such, you know, looking at the environments and, and some, some of the things that I've already covered, but, um, it's a lot shorter. So it's designed to be more accessible, um, and a little more and more, um, I've tried to design it. So even if you haven't read it, because I know a lot of people haven't read dune or want to it's, I give examples and I try to explain things in a way that you can get whether or not you've read it. So you'll get more out of it if you've read it. But otherwise it's still introduces you to Herbert. And I learned a ton of stuff when I was reading it, especially about like what was going on at the time and how it's really still relevant today. So."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Um,"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "it turns out to be a lot of work to write a book. So"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "couldn't, I don't do longer than a tweet. That's like my that's my character limit for writing these days. So,"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "uh, I got like 75 minutes and that's it. I'm I'm about, I'm about done. Um, Jason, what do you have to"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "plug? Uh, what do I have to plug? Well, I'm plugging for April, uh, for the, for the month of April, uh, spring. I'm just in spring. That's what I'm plugging is that it was rainy and cold here in San Francisco today. And I'm hoping that by the time this podcast comes out, it will be lovely. Um, and that everything will somehow miraculously be fine. That's that's what"
+        },
+        {
+            "name": "KARA",
+            "timestamp": "",
+            "text": "I'm."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Exactly. I've given up on the gods of control."
+        },
+        {
+            "name": "I",
+            "timestamp": "",
+            "text": "have a one-year-old three-year-old I'm just coasting"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "and that's it for this episode. I want to thank Jason and Cara for an amazing conversation. Next week, spring break is over and we're thrilled to welcome back the star of our aliens episode. And showrunner of HBO's house of the dragon, Brian condo to talk the 1992 classic Western tombstone. If you're enjoying the show, leave us a five star rating and review where every equals into your podcasts and be sure to hit that subscribe button. So you never miss an episode. We also have a discord server where you can hang out with us, literally, when ever you want a link is in the show. Dune pod is a take deck podcast. John, a production of H industries. Our artwork is by catcher and our theme music was composed by Toby Forsman of whips on these transcripts provided by Sophie shin. The episode was edited by Megan Hayward of edit audio and produced by me. H thanks for listening. We miss you and we'll see everybody next week."
+        }
+    ]
+}

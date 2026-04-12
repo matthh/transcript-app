@@ -1,0 +1,3001 @@
+{
+    "episode_number": 179,
+    "episode_name": "Jurassic Park",
+    "dialogues": [
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "0:02",
+            "text": "This is the tape deaf podcast"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:18",
+            "text": "everybody it's H and welcome to the latest installment of escape hatch your portal in a cinematic pocket universes. This week I'm joined as always by my co host Jason."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "0:28",
+            "text": "I'm in the guy standing in the back, Greenlight. loadout. Team get out guy about to get eaten. You're in"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:35",
+            "text": "and we start 2024 off with a bang as we welcome podcasting legend Veronica Belmont."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "0:44",
+            "text": "Sir, this is a Wendy's."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "0:47",
+            "text": "We tackle her all time favorite movie, Michael Creighton and Steven Spielberg's classic Jurassic Park. For joining the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help new listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And at Patreon, where you can support us and unlock exclusive perks. Links are in the show notes. And now without further ado, you are in Jurassic Park. I can't believe it. I can't believe it. You're back. Good. Hi, you're back."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:27",
+            "text": "I'm so stoked."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28",
+            "text": "How long have you been recording so far today?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:30",
+            "text": "What do you want? What do you want?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32",
+            "text": "Oh, I thought you said you had another episode. You're another show you're recording?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:36",
+            "text": "No, I was just playing city skylines. No, no,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:40",
+            "text": "I was. I tried to play I tried. That's a complicated game. I need to read some wikis."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:47",
+            "text": "I'm mad at it right now. I hit a bug that is preventing me from doing something. And I'm so far into the game now. And I've done something and I can't go back. And I'm just like, oh, so I started a new city. And trying to learn from my better now but like the city's better. It's not better yet. It's still it's still tiny. The new one. The old one was doing great until I decided like a crazy person to build an elevated highway. And apparently that trigger is some bug sequence that can't be undone. So yeah. Don't love that. Now. Can"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "2:24",
+            "text": "you take what you've learned playing the game and help us fix San Francisco? Are you just gonna recreate San Francisco up in Canada? Is that happening? Or that's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "2:36",
+            "text": "that's exactly what's happening. Yeah, I'm just I'm terraforming out here. I'm just like, it's it's incredible. Dig a lot of space and you build"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "2:44",
+            "text": "a park for dinosaurs. And in city skylines."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "2:49",
+            "text": "You know, there is a there are a number of of simulations that you can actually not through city skylines but have a dinosaur park of some sort, right? Yes, I could. There are games like that. Yep. There's like a, like all the different tycoons. I think there's a few Right, right. Yeah, yeah. From the tycoon series."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:09",
+            "text": "I am ready to admit that I have a problem for the first time in many years. Like I am now spending many hours playing Baldurs Gate three. Oh,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "3:19",
+            "text": "I've really wanted to play. Where are you in?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:24",
+            "text": "No spoilers. No. underdark right now, no spoilers, but I'm in the Underdark and I'm making my way. I've had some romances"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:33",
+            "text": "with NPCs. Some gloves gained some loves last."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:36",
+            "text": "I just like it's all very chaste. At this point, like the dark. It's all it's all"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "3:42",
+            "text": "nice. Okay. Congratulations. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "3:45",
+            "text": "thank you. I'm can't wait to see what's going to happen. I think I'm like 20 hours into this game. And I haven't been 20 hours into any game and over a decade at least. That's great."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "3:54",
+            "text": "I played I played I think maybe 120 plus hours of Witcher three was the last big game. Wow, that time in. Wow. Yeah. That was a big Jason. Where"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "4:06",
+            "text": "are you on? Baldurs Gate right now. I'm"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:08",
+            "text": "on a ball. There's break right now. I play I completed the I played it through one time. Yep, I started another playthrough ended up about somewhere in the middle of act two. And then I played a little bit of cyberpunk because I wanted to check out the 2.0 patch and now I've played that for a good long while and I'm ridiculously overpowered. I'm kind of done with that. So just as of today, I fired up Eldon ring. Whoa, highly, highly questionable. You"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "4:39",
+            "text": "hate yourself. Yeah, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "4:40",
+            "text": "mean, I've played it three completely. I don't think I have it in me to do and complete fresh playthrough but I just wanted to like I just wanted to feel alive. I had been seeing a lot of I've been seeing a lot of elevated ring tic TOCs there's all these great tic TOCs where a bunch of modders will do like All of the bosses are like a you know, a boss like Melania versus like 10 goats or whatever. 50 goats and like see how like 50 Yes, yeah, so yeah like 50 Goats does versus like, you know there's impossible boss and the 50 goats do very well really like turns out it turns out the 50 Goats are much better at the game than one player so there was"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "5:19",
+            "text": "a I've seen that seat that that meme that trend of videos before never never about Yeah, about that in particular, but I did see one with John Wick versus Chuck Norris recently. Yes, yes. Like I forget how many of each but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "5:34",
+            "text": "usually it only takes one Chuck Norris because he's pretty indestructible. So yeah, yeah, we"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "5:41",
+            "text": "were just my my brother Rennie got Sam for Christmas got him a Bruce Lee book. And I was trying to explain. It's like one of those little little people, really awesome kids books. And I was trying to explain Bruce Lee to Sam and I'm like, let's just let's just pull it up. And so I pulled up like a 10 minute Bruce Lee compilation, which was amazing. And then all of a sudden there's Chuck Norris. quite a quite a great visor. Yeah."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "6:08",
+            "text": "So while Chuck Norris appears very hairy back"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:11",
+            "text": "on Chuck Norris, yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:14",
+            "text": "Listen, that's where the strength comes from."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:19",
+            "text": "Oh, my goodness. Well, we are beyond thrilled Veronica to have you back here. This is your fourth appearance on the pod. Its fourth. I thought it was my third. Nope, you did. What did you do? You started with a rival. Oh my god. And then time bandits. And then. And then Princess Bride and now Jurassic Park. You have some bangers? Some"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "6:42",
+            "text": "really good titles."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "6:44",
+            "text": "I feel like I feel like I will Jurassic Park into existence definitely did for this episode."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "6:49",
+            "text": "Oh, yeah. It was sort of like vaguely on the horizon for me. I knew we would get to it at some point. But but your last appearance you you called it? So I was only too happy to be able to tell. Thank you. Yeah. So well. Welcome back. And we're gonna get into Jurassic Park in just a few minutes before we do, Jason. Next week. Very excited about our next guest. He'll be making his first appearance. I don't know if you've seen this, Veronica. There's a book that came out last year called a masterpiece in disarray, David Lynch's do Oh, wow. That's a 570 Something page, oral history of David Lynch's dune and he interviewed everybody. So except David, who doesn't like to talk about it doesn't talk about it. Yeah. David denied to be interviewed with him this week when he found doing to script that David wrote, but so yeah, Max every joins us can't wait. Amazing,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:46",
+            "text": "right?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "7:48",
+            "text": "That's incredible. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "7:49",
+            "text": "it's great. huge for us. Huge for us. Huge for What movie are we covering with is"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "7:54",
+            "text": "amazing. Well, obviously we'll be talking about doing a bunch because I rewatched it today and it still slaps but we're covering Eraserhead oh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:05",
+            "text": "oh be a first watch for me"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:09",
+            "text": "whoa seriously?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:10",
+            "text": "Yeah, I've never seen I've never seen anything like I've never seen I've barely I've seen like offering of it I really I don't even know what it's about frankly. I've"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "8:18",
+            "text": "seen it and I also don't know what it's about it's it is a wild ass movie. Can't wait can't wait to watch it again for a second time and hopefully get get some amount of vision there but so super excited for that we'll have Max every with us next week great"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "8:38",
+            "text": "y'all are just like straight up doing influencers at this point aren't you do influencers"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "8:43",
+            "text": "there's actually there's a robust there there is a category of influencers above us that like that is like like like get scoops and like have like onset spies seemingly Oh wow. So we're like you know, we're working our way up the food chain of do influencer"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:04",
+            "text": "where the i mean i We're not hardcore enough. Is the end of the story. Not hardcore? Yeah, yeah. But but we're connected with those that were in some discourse with the hardcore sir fringe"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:12",
+            "text": "type. He has he has tried for literally five years to make friends with like the dune Reddit subreddit. It's like, God marginal. Tired."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:25",
+            "text": "Even I finally gave. I had to stop posting. Yes, I stopped posting"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:30",
+            "text": "Oh, okay. Good. All right, everybody. So we're in like, we're in like a detente with them. Yes. That's fine."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "9:38",
+            "text": "I don't know that. We're gonna get to interview Denise again, like we did last time. Like he happened to come to the Mill Valley Film Festival. And so we were able to make our way into that. That was not that tough."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "9:47",
+            "text": "I see. I say, Blessed."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "9:49",
+            "text": "We're we live a blessed life. And we get to talk to amazing people about movies that we love, like Veronica Belmont and Jurassic Park. It's a it's a it's a great it's a rate. It's a great exists."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:01",
+            "text": "It's happening. It's all happening. Well, Jason, just really quick. Can we do some due news? Would you like to know more?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:06",
+            "text": "We could do some hatch news from me."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "10:10",
+            "text": "Thank you. Thank you. Very exciting this week, Denise was interviewed or they were playing an interview that he did in South Korea. A couple of weeks ago, he said he's currently working on for Scripps, and that dune Messiah is almost done. There's"
+        },
+        {
+            "name": "denis villeneuve sample",
+            "timestamp": "10:30",
+            "text": "the dream of making the addition of goodness during the movie that will be the end. The journey of polarities, it will make absolute sense for me to do to do this movie, the movies being written. Right now, the screenplay is almost finished, but it's not finished. It will take a little time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "10:50",
+            "text": "Focus, focus, Danny, you gotta you gotta pick this is. Let's get started. You gotta like you know. Yeah, make something you got to pick something to work on. You can't we're going for scripts. I don't know how that works, but I'm sure it's fine. I'm sure you can do it."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "11:05",
+            "text": "Is it at once or is it just"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:07",
+            "text": "types one letter in each window, just like it did is perfectly, perfectly parallel. Well, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:14",
+            "text": "think he has, like, for instance, so Eli Roth's said that he was doing a gigantic space movie with Dennett for Disney and that it was like beyond anything that had that he'd done. So Veronica, you being the laser in the Sword and Laser podcast? No, I'm"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "11:31",
+            "text": "the sword I serve. I am the sword. Sorry. I don't know anything about science fiction night that I do. I should"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:36",
+            "text": "I forgot. Yeah, of course."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "11:38",
+            "text": "I am the sword though. I am."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:39",
+            "text": "Okay. All right. You"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:40",
+            "text": "ask a sword questions? Okay. Well, I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:43",
+            "text": "started listening. I started listening to The Silmarillion today. Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "11:46",
+            "text": "okay. Is that is that narrated by Andy Serkis? He"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "11:51",
+            "text": "is so unbelievable on this audio book. It's incredible. It's so"
+        },
+        {
+            "name": "Silmarillion sample",
+            "timestamp": "11:57",
+            "text": "good. Now ASA followed after the host of all way. And when they were come to the Bay of El de Mar, which is elven home. He called to them and they knew his voice and begged Olmo to stay there voyage."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:12",
+            "text": "It's incredible."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "12:14",
+            "text": "Honestly, I kind of think he would be the only way I could do get through. Yeah. Oh, I don't want to be that guy. But it's it's a slog."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:22",
+            "text": "It's a slog. It's like reading a Wikipedia."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:24",
+            "text": "I am not slogging I am. I'm like fist pumping as I'm as I'm running around the lake. Listen to it. It's been it's been incredible. It's great. All right. Well, so you're not the laser that well then you you may not be a fan of Rendezvous with Rama, which has been Danny's been associated with so that may be that that next Yes."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "12:41",
+            "text": "I'm familiar. Very familiar with it, though."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "12:44",
+            "text": "should be should be good. So we'll see. Denise said he had wanted to take six months off, but he was given six days off. What?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "12:52",
+            "text": "I'm sorry, I had Andy Serkis. Silmarillion going in my head at the same because I was like looking at what he recorded it and then I clicked like, and then he started speaking. And I was like immediately like put into a trance. Like you're"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "13:05",
+            "text": "just like listening to audiobooks while you're watching the podcast. That's amazing."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:10",
+            "text": "Yeah, I look listen, I'm like, Danny, I'm multitasking. I do. I'm doing I'm actually recording another podcast got another I've got a whole there's a"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:18",
+            "text": "some people listen to listen to audiobooks at like 1.7 You just like listen to them while recording. Yeah, that's smart. Yeah. What I what I'm saying is that he wanted six months off and he was given six days off by the studio. So that's like Jason like he's working with me. Yeah, exactly as Master Mode."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:36",
+            "text": "That's a self imposed. That's a self imposed situation. He like he's, he's now I can't he's calling his own moves enough. I think that he's like, Alright, fine. I just want to get to this thing and let's go. It needs to get this he needs it's just"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "13:48",
+            "text": "like inertia. You know, like, yes, you're when you're rolling so hard with it. And you just gotta keep going."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "13:53",
+            "text": "He's so he's so good at this part. The Press part. He is just phenomenal. He is"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "13:58",
+            "text": "very good. He looks he's he's one of the best media train directors you're gonna find. He is incredibly on message 100% of the time. He"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:07",
+            "text": "did say that he would like to do one other movie before quote, returning to our rocket."
+        },
+        {
+            "name": "denis villeneuve sample",
+            "timestamp": "14:12",
+            "text": "And while also I don't know exactly when I will go back to Iraqis. I might make a detour before just to go away from the sand because to just do for my mental sanity, I might do something in between, but my dream would be to go last time on this planet that I love."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:35",
+            "text": "So I guess we'll it'll be a little bit before we get to doing Messiah. Okay. Next point here, Jason, our IMAX premiere pre party. We hit our capacity."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "14:48",
+            "text": "Yes, the pre party is now sold out but tickets are still available for the screening or sponsor still available for the screening. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "14:56",
+            "text": "guest posts guest hosts are always invited. So Veronica if you happen to be Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "15:00",
+            "text": "I I know I was very very thrilled to to get the invite and I'm very sorry that I won't be won't be in town for it. It sounds like an amazing time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "15:09",
+            "text": "Yeah, it should be it should be good. So folks who are hearing these words, there's still time to sign up for spots for the screening on February 29 at the Metreon in San Francisco, you will go to our Discord and you will find information there in the meetup channel."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "15:27",
+            "text": "Free screen IQ free screening at the third largest IMAX screen in the country. Is that I didn't know that. Yeah, it's Wow, it's gonna be awesome. So it's a big Yeah, and a huge party afterwards. So that's gonna be really really killer. Alright, let's quickly just welcome a new patron joining us this week we have tentec tentec Thank you for joining us Yes, fantastic. They'll have access to uncut episodes like this episode we just recorded with Dale underscore a from our Trading Places episode. And the episodes is available tonight as soon as we finished recording so like those are cool perks that you can get if you want to join our Discord and our Patreon new discord members I lewd most things I touch Koren slash Jake set for 10 You could talk at cheese ball, Longhorn lax, we almost made it but we lost in the last one second. Hangover double O six Strix of the East Strack attack flim Adam Stein hos Jr. Goes Pablo 22 And then giveaway bot JSON that look like spam maybe I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:34",
+            "text": "think giveaway bot needs to be banned."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "16:39",
+            "text": "If that is their real name,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:41",
+            "text": "I mean you gotta use if you're gonna come be a spam bot in our Discord. You got to use at least a more clever name right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:47",
+            "text": "Right should at least be escape or hatch related giveaway"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "16:50",
+            "text": "by the giveaway by Come on now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "16:57",
+            "text": "All right. Are you all ready to get into this movie? Yes,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "17:00",
+            "text": "let's do it. All right,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "17:02",
+            "text": "here we go. Jurassic Park is the battle between humankind's capacity and responsibility in the act of creation. John Hammond, former showman and now CEO of engine and advanced genetics company, has long dreamed of entertaining people with the thrill of a lifetime. But when lawyers throw a wrench on his latest venture, he brings chaos scientists Rock Star II and Malcolm dinosaur hunters of the fossil variety, Alan Grant and Ellie Sadler, and even his own grandkids to prove that it is indeed safe. They embark on a ride across an incredible Island carefully populated by some of the most dangerous dinosaurs ever to roam the Earth, resurrected by the latest DNA technology. Things quickly go off the rails because of the oldest foes of humanity, greed and hubris. Finding themselves not nine, the food chain, can this team of experts find their way to freedom, or are they doomed to be reduced to just another set of fossilized remains on Jurassic Park?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:22",
+            "text": "I still get chills. I still get chills. I'm just assuming that's what's my God. Yes,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:28",
+            "text": "but not the flute version. Not the flute version. Okay, so Veronica, what's your history with dress Park?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "18:36",
+            "text": "Jurassic Park is I call Jurassic Park. My favorite movie?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "18:40",
+            "text": "Wow."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "18:41",
+            "text": "Yeah. Jurassic Park is my favorite movie."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "18:43",
+            "text": "Where were you in? 93? It"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "18:44",
+            "text": "is. I was in middle school. Perfect. I was I went to go see it. On a first date with Dan Bouchard. Wow, we're in seventh grade shadow. sixth or seventh grade? Yep. A hell of a peck. He He is married now, I believe to another one of our classmates really still. Wow. Yeah. So he I wasn't picked. But you know,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "19:11",
+            "text": "that's a real sliding door situation."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "19:13",
+            "text": "Maybe Maybe it was Jurassic Park that did me. Yeah. No. But it was we saw it at the film theater in West Hartford, Connecticut. And it was also one of the first scary movies I ever saw. If you if you would call it that. I mean, it's an action movie. But I think there's there's definitely tense moments for someone of that a lot. Yeah, a lot of tense moments, and so makes it a good first date movie though. And I just remember just being totally blown away. And I've rewatched it so many times throughout the years. And I think honestly, in terms of the My favorite part about the film is the sound is Yeah, I think they just did such an incredibly phenomenal job with it. Every bit of the sound design in that film and the effects I think still hold up really well. Yeah. And for me, I think that's just it's one of those you can keep going back to I've I've enjoyed the the rest of the films in the series I've seen I believe I've seen all of them since the original, and I read the books as well. And yeah, for something about it, just always, I think it's that being a young kid loving dinosaurs now having a three year old who just wants to read dinosaur books. That excitement like, oh my god, like these things existed it on the same planet that I'm on now. And I you can't help but feel like I get why they did this. I get why they did this in the film in some respects. You know, even though it was such a colossally bad idea, as you know, as Ian Malcolm repeatedly says over and over throughout the series, what a terrible idea to too much being ignored. Unfortunately, for everyone, it is i get i because who wouldn't want to see a dinosaur in the real world just to have that that that awe of seeing such a such a creature? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:11",
+            "text": "I just thought of it also Creighton did Westworld, which also is like, let's have a really cool park that goes horribly wrong."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "21:18",
+            "text": "Yeah. Yeah. You know, I never actually made that connection."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:23",
+            "text": "I didn't think she never thought about"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "21:25",
+            "text": "that. It was pretty"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "21:26",
+            "text": "cool. And I mean, just crazy. I mean, Creighton, this whole thing is like, a bit of a technology is awesome. And the doom of us, like, you know, like we did Andromeda Strain not too long ago on the pod and like, you know, the, the virus from the Andromeda Strain is like, because scientists wanted to create, you know, chemical weapons, and they were under to explore space and all this stuff. So he's got, he's got some sauce, some sauce, opinions about technological progress, as I imagined, it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "21:57",
+            "text": "makes sense. Yeah, for sure. Well, so Jason, how about you? Where were you in 93?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "22:00",
+            "text": "I was 16. It was the summer before my sophomore year of, or, yeah, my sophomore junior year of college, or junior year of high school. And I saw this movie, probably five times that summer. Wow. I loved it. It was a phenomenon. Like I had a lot of friends who were in the high school orchestra. And they all learned how to play the theme. We played, they put like, the high school orchestra concert was like Jurassic Park that year. And it was it was just a total sensation. Like it was absolute. Like nothing. You've never seen anything like this before. Your mind is completely blown. Dinosaurs are real. It was a it was a real situation. It was a real special film. That came out at a good time for me to totally love it, which I did."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "23:04",
+            "text": "Wow. Wow. So I was 23 had just gotten married, lived in Marin County as I have lo these many years and saw it and larkspur and I just remember walking out just stunned at what I had seen. And the combination of like the practical effects like the Triceratops with the digital and the way that stuff was so seamlessly and smartly blended how they how they put it all together. And it's just so much fun. I it's funny, it's really fun is really fun, really funny. So So I always I love this movie. I think I liked the second one and then I didn't see any of the other ones and have like have never seen any of the new ones the new trilogy or whatever. I love the idea of dinosaurs trashing the world like and you know fighting them in Italy and shit like that sounds great. It just didn't look like they hit the reviews were not good. So that was tough. I"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "24:05",
+            "text": "liked I actually liked the first one of the new trilogy. I didn't see that one. Yeah, I thought that was like a good thing. Yeah, with the blue. Yeah. That was before we were all kind of like iffy over it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:21",
+            "text": "on on here. Yeah, yeah. It was starting today before he got overexposed Yeah, yeah, totally. It"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "24:31",
+            "text": "was a good spiritual successor a literal and spiritual success. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "24:34",
+            "text": "It felt in the right lane. And"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:37",
+            "text": "then in the last one they got everybody together right like they got they got they got the whole band together."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "24:42",
+            "text": "Oh, this is the one I haven't seen. I haven't seen the very newest one."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "24:46",
+            "text": "Yeah, the last one has Malcolm and ally and Alan and the whole the whole gang but Alright, well let's let's do some quick behind the scenes. So this was Michael Creighton's best selling novel. So this is wild. He He started his. He was like a chemical engineering student at Harvard, and ended up switching to become a doctor. And within his first semester, realize he did not actually want to become a doctor. But he went ahead and completed his medical doctorate from Harvard. Why not? Yeah, yeah. And he's writing the whole time. He's writing novels under various pen names, and getting some success. And then he writes the Andromeda Strain, which was a huge hit. As a novel, he was paid a quarter of a million dollars for the rights for the movie, which was the movie was a big hit as well. So originally, Jurassic Park, he wrote it as a screenplay. And then he turned it into a novel, and Spielberg was talking to Creighton about a script that would eventually go on to become er, which remember Creighton, another little show, you may have another multi"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "25:57",
+            "text": "facility and Michael Creighton"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "25:58",
+            "text": "guy. Yeah, it's crazy. So he talked about it before even before the book was published. But Creighton asked for 1.5 million plus points. And this is before Joe Astor house, right. Did, you know showgirls? But basically the studio's tried to get it for Tim Burton for Richard Donner. But universal ultimately got it for Spielberg. Good for them."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:21",
+            "text": "Good pickup."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "26:22",
+            "text": "Can you imagine? Jurassic Park and Burton burger? What would that have been like? Maybe"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:29",
+            "text": "like Planet of the talk"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "26:30",
+            "text": "about a sliding door moment a very different experience."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "26:35",
+            "text": "The one I liked as James Cameron apparently tried to get the rights for hours after Spielberg had secured them."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "26:42",
+            "text": "I can see that one Cameron"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "26:44",
+            "text": "Cameron would have been good like Cameron would have killed this movie. No problem. It's argue I'm controversial take starting now, arguably could have been better with James Cameron's writing. Like I feel I love the I love the Spielberg Enos of this particularly the camera movement in this movie is amazing. Yeah, we'll get into it. But I think I think something I think something was a little more edge. Could have been really interesting."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "27:10",
+            "text": "I Okay, I'm gonna I'm gonna push back on that a little bit. And say that I think the Spielbergian kind of like the the humor and the warmth and the kids, the the kids. That's exactly what I was gonna say. Like that. He has a way of directing children that I think is unique to him. And I don't know if Cameron could have done that. And that's such an important part of the film."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "27:34",
+            "text": "There was a kid an alien nude is very different, right? Like they think the dinosaurs come out at night."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "27:44",
+            "text": "I actually think there are a lot of things about this that would work very strongly to Cameron's strengths for sure. I think it would be a super compelling flag the all the effects. Yes. Either way, either way. Definitely would have been a great would have been a great fit, but it's awesome. Spielberg got it. He had just finished hook and he wanted to do Schindler's List. So Jason, he called his dear friend and our hero from the Brazil episode, Sid Sheinberg. Of the Cheyenne Heartway. gumbo, who actually plays into dune as well. We'll talk about it next week with Max I just got to that part of his book but yeah, so said greenlit the movie on the condition he greenlit Schindler's List on the condition that he do Jurassic Park first,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:27",
+            "text": "a literal literal one for you one for me."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "28:31",
+            "text": "Yeah, good call said I'm kind of my mind is kind of blown. That hook was pre Jurassic. Yeah, it is. Give me that. Actually, I agree. Timeline doesn't match up in my head for some right hooks"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:41",
+            "text": "like 91 or something? Like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "28:43",
+            "text": "I guess. Yeah. Like you want to do you want to do your Holocaust movie? Fine. But I need my dinosaurs."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "28:55",
+            "text": "Go said he wasn't wrong. wasn't wrong was a rock was a good deal. man knew what man maybe he literally he was the guy who discovered Spielberg. So yeah, he gets he gets quite a bit of credit. Yeah, Spielberg grew up on Godzilla. And the idea was that this film was essentially draws on land. So it just felt like it would be something that would be right up his alley. Right. So casting near misses, William Hurt. Kurt Russell, Richard Dreyfus, Tim Robbins, and Harrison Ford. Were all considered for Alan Grant."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "29:25",
+            "text": "Okay. Yeah. Harrison would have been awesome. Yeah. Could have done it for sure."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "29:28",
+            "text": "They're like if we give him the hat. Well, he will people think he's Harris."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "29:32",
+            "text": "Well, will they think he's in? Yeah, like India? Dinosaurus. Yeah, exactly. It could have been could have basically been another Indiana Jones film just with other people. Ellen grant"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "29:42",
+            "text": "is kind of a is kind of a blank slate. Like you could date you could do a lot like he has a few key characteristics. He knows a lot about dinosaurs. He doesn't like technology, and he's iffy on kids. And like within that envelope, I feel you could do well. Like the William Hurt version would be very different and more like kind of grumpy or whatever, but it would still, it would still work. The Kurt Russell version would be more swashbuckling or fine, but"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:09",
+            "text": "it would still work. Yeah. Richard Dreyfus. No, absolutely not."
+        },
+        {
+            "name": "Dreyfus impersonation",
+            "timestamp": "30:14",
+            "text": "Look, I don't need Yes, I wasn't jaws. Okay. Okay."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:18",
+            "text": "That's a tough one. The Richard drivers one is a tough one."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "30:21",
+            "text": "That's hard to get about Sam Neill. He's just he's so dry. Like I love I love that about this character and about him and the but there's still that warmth and funniness to totally Yeah, I don't know. I thought it was I'm glad I'm glad they got him. His comedic timing"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "30:36",
+            "text": "in this is really good. Like that's the scene where he's getting out of the truck out of the car and like putting the kid in the other car. It's just really funny. Yeah, I love him and that's also a"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "30:46",
+            "text": "flawless American accent. I didn't know he was not Yeah, I didn't know is not American for like 40 years. like wait a minute what? I still"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "30:56",
+            "text": "feel like I'm constantly surprised by how many like aliens are going around and with American accents."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:02",
+            "text": "Yeah, and and like I don't know, I it feels like it's like it feels like it's just not that hard for them to do. I feel like we're I'm sorry time"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "31:14",
+            "text": "I have I have to make culpa. He's from New Zealand."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:17",
+            "text": "Okay,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "31:18",
+            "text": "I don't I don't need that kind of Oh, no, no, no. Depth record."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "31:22",
+            "text": "The good thing is the Kiwis are pretty chill. They're not gonna I was but I am. I"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "31:26",
+            "text": "was also saying there's so many actors who are also Australian that I'm always surprised that aren't Yes, yes. But he's from New Zealand. Yes. Don't come at me. He just does. He does"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "31:36",
+            "text": "a really, really phenomenal job in this. I love that. And then obviously, Ian Malcolm such a huge part of this movie. And so Jim Carrey auditioned for that role. Obviously much better with the choice that they went. So Laura Dern was Spielberg's first choice, right. But he also considered Robin Wright, Juliet panache, Gwyneth Paltrow and Helen Hunt. Well, Robin knows Oh, yeah. Child, who Helen Hunt, obviously would do. She did Twister right, which was basically"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:08",
+            "text": "Helen Hunt would have been totally fine. Yeah, Helen Hunt would have been good. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:12",
+            "text": "you have it. Laura Dern is She's a visual learners like she's amazing. Very special. Yet Wow. Yeah. Last piece, Christina Ricci auditioned for Lex. Oh,"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "32:22",
+            "text": "that would have been good. Sweet."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "32:24",
+            "text": "You know, honestly, I think she's she's too. I think she was too famous. Too"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:29",
+            "text": "much of a star. Yeah, too."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "32:30",
+            "text": "And too recognizable? Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:32",
+            "text": "I think it was she was Wednesday or Wednesday on the house. Right?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "32:35",
+            "text": "Wednesday. Yeah. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "32:37",
+            "text": "All right. So production. They had 25 months of pre production, which is pretty wild. Yeah, they filmed it in kawaii uh Oahu. Maui and the Forbidden Island of me how do you know about this island?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "32:51",
+            "text": "Oh, yeah, of course then yeah. How is it's where you have to go you can you can get the you like one family essentially owns it still and like,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "33:01",
+            "text": "is that off of Hawaii?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:02",
+            "text": "They bought it they bought it in 1864 from the kingdom of Hawaii for $10,000 It's owned by the Robinsons the Robinson"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:09",
+            "text": "family as west of kawaii"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "33:11",
+            "text": "Yeah, I've seen I've seen it from a distance to the shells"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:16",
+            "text": "haha I've been yeah you can Yeah, you can go to the you can go to a lot of the other sites that aren't on the Forbidden Island you can go to a whole bunch"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:23",
+            "text": "of well they go to war like with Alison at some point like well, the islands begin battling or"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:28",
+            "text": "Yeah, yeah, that's right. It's gonna be like Waterworld. They"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:32",
+            "text": "also shot at Universal and Warner Brothers in LA. Check this out. filming wrapped 12 days early. Amazing. That's impressive. Well, days early and the editor Michael Kohn had a rough cut ready within days, allowing Spielberg to immediately start work on Schindler's List."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "33:51",
+            "text": "See that never would have happened with Cameron. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:53",
+            "text": "that's true. That's true. Good point."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "33:55",
+            "text": "Never would have happened over budget Oh,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "33:58",
+            "text": "what a what a what a what a change of scenery for Spielberg. Just be like all right. See you later, Hawaii."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "34:06",
+            "text": "Golan. Oh, my God."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:08",
+            "text": "Wow. That's brutal. Yeah. So intense. My God, that movie? Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "34:13",
+            "text": "context shift."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "34:14",
+            "text": "So we might as well just cover it quickly. The CGI, this completely groundbreaking CGI, and it happened by accident. So Phil Tippett, and Stan Winston, who are two gods of small miniatures, and then full scale creatures. Were working on the film, and tippet was using basically stop motion stuff and he worked up a scene in the kitchen scene. And Spielberg was like, I don't know, man. I don't think we got it. And Dennis Mirren legend from ILM said that he could do it with CGI, which had never been done, and Spielberg asked him to prove it. So they went to animators mark to pay and Steve Williams, and they generated a walk sign I called for the T Rex. And when Spielberg saw it, he was like, that's it. So Spielberg said, you're out of a job to which tippet replied, Don't you mean extinct? Which, obviously Spielberg put in bumbum"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "35:13",
+            "text": "Yeah. That's pretty good. Yeah. Wild. It's kind of a it's kind of crazy. Because like, I mean, I was watching this movie, like, you know, two days ago or whatever. And the dinosaurs look good, like that dinosaurs. Really, really, really good. It's a little strange. Well, how did they do that? Like, what were they using? What was the computing power that they were using and 19 they"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "35:39",
+            "text": "were using STIs. And, and I think they were using MAC's as well, but definitely SGI was was in the house. It was a Unix system."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "35:49",
+            "text": "There's only one dinosaur that I always thought looked a little fishy. Which one and it's the spitting dinosaur that takes out that one that one always looked a little like"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:00",
+            "text": "puppet or that's a puppet part of that is definitely a puppet because it's in the car and stuff at the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "36:05",
+            "text": "front. Yeah, it just it looks great. Most of it they do at night and in the dark and and rain and stuff. And I think that that was very smart, smart choices. That helps. Yes, the power is out. So I do want to shout out So Phil Tippett still they used all of his storyboards. animatics and he supervised the computer model like as they were figuring out how to sculpt bone and muscle and skin none of which had ever really been done before so this you know shout out the Light and Magic documentary on Disney plus is incredible and has a whole section on the guys doing this and figuring it out with Dennis Mira and it's just amazing. Cool budget $63 million dollars. Huge Jason lot of money worldwide. $1.1 billion. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "36:53",
+            "text": "Was it good? It was a good return on this. Said it was a good return. Now that said it was stone"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:02",
+            "text": "box office competition in 1993. June, cliffhanger. Last Action Hero Sleepless in Seattle. Dave. Indecent Proposal. sliver JSON written by my cable guys. Guy Yeah. Much Ado About Nothing. unforgiven? A Few Good Men. Scent of a Woman"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:29",
+            "text": "All right. Listen, they just gotta get up. They just got to get the fuck out of the way because the dinosaurs game for everyone that year. There was nothing else that was it was the year of the dinosaur. Last"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:41",
+            "text": "one Orlando tilde. Oh, okay. Breakthrough."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "37:46",
+            "text": "That's good. Until the didn't make till then. Make a billion dollars now."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "37:52",
+            "text": "But she's incredible. Alright, let's get into this movie. So forest at night. How do you like this? What a great fakeout to open this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "38:00",
+            "text": "Yeah, it's great. It's I was when I started. When I fired it up. I was like, I don't remember how this movie began. Like, I totally had no memory of how, like the movie started and like it's such a Spielberg opening. Because there's like all these scenes like, when the crate comes out of the forest. There's this crazy camera move where he like pulls back from the crate, like pulls around then it's like it's like there's so much movement of the camera that you just don't see like like it's just not done by and it just feels like a Spielberg movie. It's great. I was stoked when I when I because it was like like I know I know like all the major plot points of this movie but that opening I totally forgotten so it was a lovely surprise."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "38:47",
+            "text": "It's scary to like for me really scary. 11 year old Yeah, for 11 year old Veronica it was quite quite thrilling yes"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "38:55",
+            "text": "watching it I was like this is so cool. They have you know like your the hunters kind of running things he's like okay, that team has done now this guy come in and do that. I was like, Oh, they have a good process. They've really worked it out Jason which guy are you like which which role are you in?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:11",
+            "text": "I'm in the guy standing in the bag greener like loadout team get out. Guy about to get eaten. Get"
+        },
+        {
+            "name": "Speaker 2",
+            "timestamp": "39:21",
+            "text": "shoot her shoot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "39:28",
+            "text": "Great. Great. And then the crossover from that to the lawyer Gennaro in the Dr. You know the word the land of my my people. So Jason, this is Martin Ferreira, who was the counter clerk in heat. Oh, selling Christian hairless? So is $20 million a sufficient lawsuit sighs for like their guy being ripped apart by a dinosaur?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:53",
+            "text": "I don't know. I don't know. It's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "39:56",
+            "text": "for inflation. Yeah, it may be"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "39:59",
+            "text": "as what law Like, you know, spurred like the lawyers kind of want to have a Siva, look at this place before it open. I do have like a general question about this premise where it's like, okay, we've built this whole park, we've made dinosaurs for God's like, we have the whole thing. It's supposed to open in like, a couple of weeks, seemingly like, it's all sad. They've got the cafe and the signs, the whole thing. And now these investors have this billionaire are like, We need someone to take a look at those plays before before like what because like, the AIG insurance policy is gonna last like their sign off, like, how does that how does that whole thing work? And also like, like this guy, like, like Hammond is gonna be made? Yeah, he's gonna be beholden to like, what some, you know, some pencil pushers think like, it seems like he's kind of calling his own shots on this one. So I don't know is the premise of the whole situation is I didn't quite I didn't quite buy it. This was around, like, why this was even the legality of"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "41:01",
+            "text": "the dinosaur theme park."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:02",
+            "text": "He was just opening it. And if people get eaten, he's paying out whatever is necessary to keep it moving. Well, that's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "41:08",
+            "text": "that's the thing. The thing that's crazy about Jurassic World is that they get to do it again, right? Like, nobody's still at the insurance company who remembers how poorly this went? The last"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "41:20",
+            "text": "time they probably had non disclosure agreements as part of the settlements."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:23",
+            "text": "Can I say something about this? No lawyer. This is my next controversial take. I feel like we could build a park where the dinosaurs were kept, like securely like, I feel like I feel like this is a solvable problem. This isn't like content moderation and social media where it's like inherently unsolvable. Like the kid"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "41:42",
+            "text": "doesn't keep the tigers in the zoo at SF Zoo. Keep"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:45",
+            "text": "them in there mostly. They're mostly kept it"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "41:51",
+            "text": "was leaving Sue's there's all sorts of things leaving to lose it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "41:55",
+            "text": "but there's Safari parks there are Safari parks like with the you know, man eating creatures in there?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "42:02",
+            "text": "I don't think so. What do you mean I don't think the safari parks that you drive through have lions in them. What"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "42:10",
+            "text": "do they have a safari West? Do they have they have lions?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:12",
+            "text": "Oh no, no. Look, I've been to India like where I've been to the tiger park and I think the bucket tigers don't know that the Tigers don't know what country they're in. They eat people they and like and like the guys there. They just have a stick. I was like God you guys carry Why was like you know, we're not allowed to carry weapons we carry this stick has like two points at the end. And the two points confuse the tiger. I was like, does that work is like unless you surprise the tiger. If you surprise the tiger, it doesn't work. He's like what happened? Like, well, that tiger definitely eats you like and that's what that's what that's what happens. Like people definitely get eaten and the Tigers also escape and like go out to the village and eat eat things. But I'm just saying you're not It's not maybe"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "42:53",
+            "text": "solvable. But it's I don't feel like you're proving your point. Very, I"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "42:57",
+            "text": "would say it's manageable. It's like, okay, here's here's my other point. Here's my other point on the same topic."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:04",
+            "text": "We're not making the first point just just for the record. Okay, we have we haven't conceded that first point, but continued"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "43:10",
+            "text": "acceptable risk. It's an acceptable risk is what you're saying? Yeah. Okay. If"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:16",
+            "text": "we had the ability to bring back dinosaurs, we would fucking bring back dinosaurs like we would there would be a park where you could go so you could go see your diners."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "43:25",
+            "text": "Do you think someone has already brought back a dinosaur?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:29",
+            "text": "I think we know. I think if someone had a dinosaur like do you think someone would flick it up for the gram one time just to see if you'd like to put the dinosaur like you? I think we would know. I think we will know someone had a brontosaurus out there. That's like a small one."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "43:42",
+            "text": "What about just like a small"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:43",
+            "text": "pet Coronavirus? Yeah, Brachiosaurus?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "43:46",
+            "text": "The I think we would know, I think we would have that happen. I do think it will happen. And I do think that I will go like, I'm not like the first year. I'm gonna see I'm not I don't need to be there. Oh, yeah. Wait, rope drop."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "43:58",
+            "text": "Yeah, you didn't even go to the starship cruiser?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:01",
+            "text": "Exactly. I like I need not real enough that it didn't work out. It didn't work. I"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:05",
+            "text": "want real Jedi"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:07",
+            "text": "event a dinosaur. I'm just saying if they had real dinosaurs, people would go and we would figure out a way to make it mostly safe."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:16",
+            "text": "Okay. All right. Well, that's we'll continue to evaluate that as we as we make our way through the film. This"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "44:21",
+            "text": "is okay. I'll wait. Okay,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "44:25",
+            "text": "you're welcome to come in. Come on."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "44:26",
+            "text": "i It's the the thing that I agree with you like I feel like I was just the the way I got to where I am right now, in my mind is I was like, alright, alright, well, okay. So we get there with the safety stuff. So we've got they're secure. They're in their pens. Like that's the setup of the beginning of the movie. They're like we've got this under control, right? Where does everything fall apart? It falls apart by them having apparently one dude in charge of security technology for the entire"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "44:55",
+            "text": "falls apart. It falls apart at the coating layer, obviously yeah."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "44:59",
+            "text": "Oh my goodness, so crazy to me. I was like an adult who works in technology. I was thinking about this recently, like, you know, today Yeah. And I was like, wait a second"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "45:11",
+            "text": "it's the ultimate example of point of failure ultimate example of fail fast. All right, you know, we had a small team iterative iterative releases P zero, we thought was God"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "45:26",
+            "text": "moving into theory has of like, the movie, like, wants you to believe that one of the problems with the park was that it was too automated. Like they say that explicitly. It was like, you know, the systems are too automated. You can't trust these systems. And that's like, kind of like there is this like, rejection of technology as like, part of like, the ethos of the movie as like, we shouldn't know we rely too much on the technology I'm like, Well, you just didn't do a very good job. Like you relied on Nedry to like do this whole thing. And like you put like the breakers at the other end of the dinosaurs idea of how this"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "46:02",
+            "text": "systems yes like yeah, the generator situation I just don't understand"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:08",
+            "text": "I as much as many times as he said, We spared no expense, like some expenses respecting"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:13",
+            "text": "spirits, spirits, and they got they got Nedry off of like, you know, Fiverr a Craigslist ad. Yeah. Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:21",
+            "text": "not good. Not good. All right, let's, let's get to Alan and Ellie, and this introduction of them digging skeletons in the Badlands. This"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "46:29",
+            "text": "is wildly fun. So first of all, this whole thing a whole lot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "46:32",
+            "text": "So first of all, the Thumper that they use is very cool. They do have a Thumper it's just sound that it makes the shell popping like that was that was very cool. But quickly we have we established that Alan is bad with electronics but then then that's almost like a magical realism thing they're just like magically stuff breaks when he's around but his description to this little shit kid about how a T Rex and Velociraptor how they behave"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "47:05",
+            "text": "alas thereafter Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:06",
+            "text": "this is on hand it is"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "47:10",
+            "text": "a audio podcast and you can't see what I'm doing yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:13",
+            "text": "see your velocity your velocity"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "47:17",
+            "text": "well, he says"
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "47:19",
+            "text": "he slashes to hear maybe across the belly spilling your intestines"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "47:29",
+            "text": "foreshadowing also"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "47:32",
+            "text": "this the second here the second here that he says is essentially he's like gonna cut your generals off right? Like it's unlike he's like He like he's like It's like below the frame like where he's like pointing where he's gonna slice him with his water I mean, this is like a wild scene of like the ostensible year of this movie threatening dab of dinosaur cut this progressive kids dick off like I mean like it's a real wild situation that's going on in the desert of wherever they are the parents of that kid the Badlands yeah yeah where that also related point why are the kid like Why Why wouldn't why is this what is this like? It's the Badlands is is like family adventure park. We have like all these people show up. There's kids. There's all these people like why why why is there anything a kid there at this place? Well, you can go to Badlands, right? Yeah, but like can you just go onto a dinosaur? Like yeah, probably"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "48:30",
+            "text": "not. Yeah, seems weird."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "48:33",
+            "text": "So the broader point about this I agree with you is completely unhinged, but the broader point is, it is God level exposition delivery. Yeah, you have the whole setup of how TX T Rex works, how velociraptors work the fact that they hunt in packs. And so like they're giving you all of this information that is going to be critical later and they're doing it in a super creepy and funny and fun way. So So I did that. Yeah, Hammond shows up in his helicopter, like busts up the scene. But I love Attenborough here he's like, immediately the charisma you buy in it."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "49:07",
+            "text": "Oh, yeah, for sure."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:09",
+            "text": "Oh, yeah. I'm buying them. Yeah, for sure. That's all I'm saying. He can open this park. If this one didn't work. The second one's gonna work."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "49:17",
+            "text": "The trustworthy grandpa type you know who's actually not a very good grandpa. But yeah, you want to believe him?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:23",
+            "text": "I know my way around the kitchen. I thought that was that was a weird line. I was like, Do you really"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:28",
+            "text": "but especially since he's just pouring drinks? Yeah, but 50,000"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:31",
+            "text": "a year that's it. That's all it cost to run a dig site? That"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "49:35",
+            "text": "can't be right."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "49:36",
+            "text": "I mean, what do they need? What do they need? If they didn't have that computer? All they need is like some brushes. They got this kid working for free? Probably. Yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "49:48",
+            "text": "Alright, so now we're gonna go to one of my major points on this film as we go to Costa Rica and we have Wayne Knight Hello naman. Yeah, so he is amazing and when his contact shows up And you know, he says we Dodgson over here don't use my name."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "50:03",
+            "text": "godson Dotson. We've got Dodson here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:07",
+            "text": "Nobody cares. This movie. Is it the most memes movie in history. It's like more than Star Wars like it. I could not believe the number of memes in this film. You think so?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:20",
+            "text": "There's a lot of a lot of memorable moments. There"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "50:23",
+            "text": "are Yeah, but I have that's interesting theory"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "50:28",
+            "text": "our friends use. Nobody cares. Like all the time. I see that. I see that in discord constantly. But like his reactions, when they're showing the barber saw can like just the way he's laughing and Oh, that's great. You guys are great. It's just really, really funny. And White Knight is amazing in this movie."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "50:44",
+            "text": "He's very good. He was apparently I heard I saw something recently where he said he got cast in this movie without having met Steven Spielberg. Like he didn't like audition. They were just like, we want that guy off of Basic Instinct apparent. Yeah, he's like, and so he showed up on set. And like Betsy would zuvor I'd say it was like, I hope I'm the one you wanted. He was like, You're the guy."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:08",
+            "text": "He's given a lot of room to cook. And he does."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "51:10",
+            "text": "It's good. He brings a lot of personality to it, for sure. I mean, he's, he's, you love to hate him. Hmm,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "51:17",
+            "text": "totally. Totally. So now we get to Isla Nublar. And we have the helicopter and the introduction of Ian Malcolm. So Goldbloom is just on another level here. And this like, Yeah, from the very beginning this laugh"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "51:39",
+            "text": "Yeah, it's crazy. It's a it's an interesting, it's, it's very interesting. And it's kind of hard, because I don't know if at the time and I was like, 16. And so I don't know if I was like, aware of this discourse if it existed, but like, I feel like the sexy Jeff Goldblum conversation is like, you know, like a dominant one in the last like, 10 years or whatever. I don't know if at the time like, it was like Jeff Goldblum as like this like kind of strange sex. You know, symbol was a thing that people were reading or if it was just like, oh, this is like a goofy. This is like a weird character. You know, because like, I feel like I was imposing a lot of my go like, it's Jeff golden like the Zadie from, you know, Thor love and thunder or whatever, like, you know, and into this movie, but I don't really know if I don't really know if that's what people I don't know if that's what an audience at the time read."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "52:39",
+            "text": "Yeah, it didn't I can't really say for sure how I felt about it. Because I was 11 We were on a day. And I was Yeah, wasn't you know, Goldbloom wasn't really my type at the time. Sure. But it is funny like going back and seeing like especially like the the shirtless kind of like, yeah, Clint seen the picture. We're all you know, very familiar with at this point. And being like no, I think he was being set up as a heartthrob as like a as the sexy bad boy. And it's it just doesn't really it doesn't quite compute in the same way now because I see him definitely in the Zadie category but like the I don't really want to see him with his shirt off. Right if that makes sense. This is I mean, we've covered different time different time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "53:28",
+            "text": "Yeah, a few times and he this is the like all time Hall of Fame number one of mathematicians who fuck like which also includes like, you know, Skarsgard character from Goodwill Hunting. But like this is this this is the this is the god tear standard like of, of sexy mathematician. Yeah. And he's really he really goes for it. What about route?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "53:58",
+            "text": "What about Ruth in Andromeda Strain?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:03",
+            "text": "Not not not quite on this level. Not quite on this level. A good answer steaks. appellee. Gary,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:09",
+            "text": "thanks. It stinks. It he is I think he is amazing in this film. I really love his performance. And now we have the score. just kicking in. That first time on the helicopter. It's so so good. But in terms of the development of Alan, he's defeated by a seatbelt."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "54:46",
+            "text": "I just had a thought another thought wasn't he also kind of sexy eccentric scientist and"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:50",
+            "text": "the fly? Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "54:51",
+            "text": "Yeah, absolutely. typecast he has he doesn't have his pants on some of that too. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "54:57",
+            "text": "we should do the fly. I would like I would like to do that"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:02",
+            "text": "the seatbelt thing annoys me because it's like it's a way of like it's like this. Fuck technology. I'm like the seatbelt like you're against the seatbelt like the seatbelt is both one simple and too good. Like I think you should stretch a little my guy like you're supposed to be a scientist like they are now a couple of new things. Yeah, it's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "55:23",
+            "text": "like I have been on airplanes before where I've somehow ended up with two you know, buttons of the of the seat belt apparatus. And this this scene has come flashing back to me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "55:36",
+            "text": "Would you tired around your waist?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "55:37",
+            "text": "I have done that to be funny before. Yeah, absolutely. Daikon"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "55:41",
+            "text": "Jurassic Park, you get it? Yeah."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "55:43",
+            "text": "It's kind of like have you heard the theory that this is this is going off off kilter a little bit? Have you heard the theory that the reason why boomers people, even the older generation are resistant to learning new technology is because they have lead poisoning. Hmm,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:01",
+            "text": "where did they get the lead from the paint? The paint"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "56:04",
+            "text": "Yes. Yeah. And that that one of the side effects of lead poisoning is a like a deflect kind of like defiant, like, disbelief and new concepts. And I heard it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:15",
+            "text": "relative to crime. But I have not heard it relative to technology. It's an interesting take."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:22",
+            "text": "I like that. I like that theory. It makes me it gives me hope."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "56:25",
+            "text": "Yeah, it does. It did make me feel better. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:29",
+            "text": "exactly. I'm like alright, I'm going to be okay. I'm going to be able to keep using computers although I'm against I'm against all these voices system technologies. I don't I don't use any I don't use these voice memos or I don't talk to I don't talk to the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:41",
+            "text": "kids. You click on that rabbit thing. Did you watch that today? The pin?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:45",
+            "text": "I watched it I don't know maybe we'll see. Could be true."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "56:50",
+            "text": "Did you order that? Did you order that the vision pro"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "56:53",
+            "text": "No. Is that is that open for ordering now? It's open Yeah. i The one thing I don't know is I if if the if it's open for ordering with the version where you can get the prescription Yes. Because I need the prescription like"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "57:05",
+            "text": "I get really sick and that's that's a problem in my line of work. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "57:09",
+            "text": "Okay. You can order it by the time we get done to the end of this episode. So probably so when they land the helicopter again the scores incredible here, they they get onto the jeeps and the sound of the gates and all the foreshadowing that's happening in the development here is just fantastic."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:28",
+            "text": "It's great. It's really great. We should mention on the score thing, what is it is Nick Mohammed who is on eight out of 10 cats who played Nate on TED lasso you know Ted last"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "57:45",
+            "text": "is really going around."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "57:49",
+            "text": "Muhammad on TED from Ted Lhasa was on a British talk show and he does a song version of the Jurassic Park theme song"
+        },
+        {
+            "name": "Jurassic Park song",
+            "timestamp": "57:56",
+            "text": "shades oh my god, they shared their DNA a frog die did well what could Paul it's great"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:13",
+            "text": "lyrics with lyrics it's amazing. Oh good. Yeah, so now now that like that is my primary memory of the Jurassic Park things I every time I every time it would come up with a movie I just be like, it's a massive bar gets dark and it's great."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:36",
+            "text": "Good work, Nate. Good work."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "58:39",
+            "text": "Good work."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "58:40",
+            "text": "So them in the jeep you have a meme of Alan taking off his glasses. And then Welcome"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "58:50",
+            "text": "to Jurassic Park."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "58:54",
+            "text": "I just I still get chills like when it's a good score still, like the nether world just even saying Welcome to Jurassic Park. I think it's so iconic. really"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:02",
+            "text": "iconic. Absolutely. I think the dinosaurs look great. This is to me one of the weaker portions because it's daytime in the bracket sources are really big or whatever. But it works and immediately the score transitions to like this kind of like marching music as they make their way over to the lodge. Which is basically like Fort wilderness at Disney World. That's what it reminded me to. But now Jason, we get into the video which again, this explanation here of DNA This is God level exposition down number two, it's so well done."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:39",
+            "text": "Can I just say one more thing about the score before we talking about the dyno DNA we're gonna talk about the score for a long time but keep keep going. Not only did it not win, but it was not nominated for Best Score right? And 99 for Oscars, hanger cliffhanger,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "59:54",
+            "text": "get nominated."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "59:55",
+            "text": "No, Schindler's List one be Got Schindler's List came out in the in the, in the winter of, of 93, which is just the fucking craziest year that anyone's ever had. Yeah, yeah. Yeah. God bless. Like said"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:14",
+            "text": "I was walking around I'm doing this. I'm doing"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:00:18",
+            "text": "Yeah, yeah, pretty craziness. Yeah. Wow, Callie,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:23",
+            "text": "that is wild that is wild. Yeah. So my first question Veronica, when you know, this, this, this script starts playing with the DNA stuff. Yeah. And it's like talking to John. Like, what's the concept here? So you're gonna be here every time is there going to be an actor who's going to play John, how does that work? If he's got lines of dialogue?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:00:42",
+            "text": "I've literally never thought about that before."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:00:49",
+            "text": "I just I didn't until this time, I was like, that's kind of weird."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:00:52",
+            "text": "I'm going to assume that it was a special version of the tour of the video for for for John's special guests for like VIP."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:01:03",
+            "text": "All right. Platinum platinum level. Yeah. Ouch. John, that hurt. I love it. And getting into the details about how they get the mosquitos and all that kind of stuff."
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:01:14",
+            "text": "Thinking Machines, supercomputers and gene sequences, break down the strand in minutes. And Virtual Reality displays show our geneticists the gaps in the DNA sequence."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:01:27",
+            "text": "You know what? It feels real. It feels like, this is science."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:34",
+            "text": "Yeah, no, definitely. No, like,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:01:36",
+            "text": "as a young person. I was like, okay, legit, like, Yeah, show me the dinosaurs. Like all of this is sounding very likely. Like this is possible. You know, so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:01:48",
+            "text": "thick their frog plan was that's another place where they screwed up and then design wasn't a good idea. Like why use frogs? Like why not use like, you know, no, I don't use like another lizard or something like that. Use something a little closer."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:02:02",
+            "text": "Like one that doesn't isn't able to change Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:07",
+            "text": "That's a good that's definitely a minor when the My question is, so they get a mosquito, they drill they do the injection they pull out the blood and then they sequence it like how do you know what you had you might have had a lemur you might have had you know like some other some other layer features or how do they figure out which one it was and what they needed to fill in the DNA with this this was not addressed Watson"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:28",
+            "text": "you just like you just run one see what comes out. See what kind of parts it has. Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:02:33",
+            "text": "how do you know that it's not multiple animals, right? Well, dinosaurs is a good question is, you know, that's almost more interesting. Like what animal would you get if you just Highbridge? Yeah, built in"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:02:45",
+            "text": "cameras."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:02:46",
+            "text": "I do love we have them getting off the ride immediately establishes security problems from the beginning, but we have now the dyno hatchlings I love BD Wong"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:02:57",
+            "text": "BD Wong. Yes. Yes. He's great robot."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:01",
+            "text": "I love the freshmen. Yeah, we haven't Brando. I love Mulan, Captain li Xiang. Incredible. That incredible movie, Mr. Robot, Mr. Robot and oz. And also a dressing room. So he says that they're female and they can't reproduce. And this is where Malcolm says, Listen,"
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:03:22",
+            "text": "if there's one thing that history of evolution has taught us, it's that life will not be contained life breaks free expands to new territories and crashes through barriers painfully. Maybe even dangerously, but oh, there it is."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:03:36",
+            "text": "There it is."
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:03:39",
+            "text": "You're implying that a group composed entirely of female animals will breed? No, I'm simply saying that life finds a way."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:03:50",
+            "text": "classic, classic. That is one of the most definitely an oft quoted. Yeah. Bit of movie"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:03:57",
+            "text": "for an incredible man. He is on fire. In this I love it. One question I had. John says that he the the dinosaurs imprint and then he's been there for every birth. This does not pay off at all right? No."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:15",
+            "text": "None of the dinosaurs know him. None of the dinosaurs give a shit about him."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:04:19",
+            "text": "It doesn't get eaten. Do you think this"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:22",
+            "text": "was a mess? Or they forgot or something got caught? Or like how did that happen?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:04:25",
+            "text": "I'm glad it wasn't in there. Because it was very like sort of like Jacob and resume and Twilight. Yeah. And like I just don't need like, you know, the dinosaurs like looking up to him like lovingly or whatever. It's very strange. It's a very strange thing."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:04:42",
+            "text": "But I guess that that theory kind of comes back later doesn't it with with the with blue and what's his name? That is Yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:04:51",
+            "text": "yeah. Okay. So they pay it off. They pay it off later she was"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:04:55",
+            "text": "it maybe I can't remember now but that's what that's what they use. all"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:00",
+            "text": "your questions about in printing are answered in slash fix. And get the answers that you seek. Okay. Archive of Our Own Fair,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:10",
+            "text": "fair enough. We I mean, I guess we will have to do Twilight eventually, right?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:14",
+            "text": "I can't wait. I'm basically only I'm only hanging around, though hope that we eventually well, once we do I could quit. Well,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:22",
+            "text": "we do all for like, do we start with? Do we start with one and make our way? Do we like we're"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:27",
+            "text": "working our way through it. We'll work our way through."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:05:29",
+            "text": "Both seen"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:31",
+            "text": "them all. Many times."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:32",
+            "text": "I saw the reels on the first seen them all, I think,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:05:35",
+            "text": "read the books. I'm deep, and I'm very knowledgeable about"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:05:42",
+            "text": "why I wouldn't have thought that that's fascinating."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:05:45",
+            "text": "I have layers. I don't know if I told the story on the pod before, but my daughter was a huge Harry Potter fan. And then she got into when she was 12, or 13 came and got into reading Twilight. And she's reading Breaking Dawn. She's all the way through the series. And she's reading them over and over again. And at one point, I was picking up the book from the floor of her room, and there were two bookmarks in it. And I was like, What, oh, no. Why do you have two bookmarks? And she's like, well, I'm reading it two different times right now. Like, right. She's like, well on this bookmark. I'm like, going through the series this way. And then I have another one. I'm kind of still going through the other way. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:19",
+            "text": "that's some good phrase."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:21",
+            "text": "Gen Z shit."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:06:22",
+            "text": "Tell her to read. manacled,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:25",
+            "text": "manacled"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:06:26",
+            "text": "Have you heard Have you heard manacled is the new hot shit fanfic for Harry Potter. Oh, wow. And it is it is very much in the romantic SCI realm nice. Pretty spicy. pretty spicy from what I hear. But yeah, if you're a Harry Potter fan or Greta manacled is the is the is the big book to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:06:46",
+            "text": "read. What's the fairy porn action one that people are into court of roses."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:06:51",
+            "text": "They're a court of thorns, Thorns and Roses, which follows up which the one I just finished, which is a quart of Mist and Fury. It takes"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:06:59",
+            "text": "a while for it takes a while for the fairy porn to kick in. And that series is my understanding."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:07:05",
+            "text": "Yeah, it's I would say first, but like 75% of the way in is when you really get into into the fairy porn. Yeah, gotcha. Yeah. Yeah, I've gone on a big romantic kick this year. I am deep in Fairy porn. Wow."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:17",
+            "text": "Okay, Crystal crystal is reading"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:20",
+            "text": "that right now. I think Oh, really? The first one? Yeah. Whichever that that one. Crystal. Crystal was like a 52 book. Read 52 books a year challenge. Holy shit always. She's always cranking on sounds."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:07:35",
+            "text": "I would love to hear her recommendations because I've been Yeah, it's been it's been a good year for for fiction. For sure. Yeah. That's awesome. Anyway, I went way off track but that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:07:47",
+            "text": "was well I'll pull this back. So feeding the cow IV. I love the cow. I love that. You know, the inherent violence of the velociraptors and the establishment. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:07:55",
+            "text": "there's a little there's a little detail there where they lift the cow harness, Mike harness Yeah, out of the pit trashed and and like sort of falls apart? Yeah, like just as that lifted out. And I just love that like I just love thinking about like, how they like sort of rigged that so that right is it clear like the level so that was in the shot, it would fall apart? And it's just like, it really sells it's fucking creatures beat the shit out of it. It's so good. It's so good. Because like the whole like, you get a shot of the dinosaurs you get a shot I like the you know Brontosaurus is or whatever like at the beginning of the you know, the beat when they show up on the island. Brachiosaurus rocky sores is sorry, but like when you but when you. But when you get when you get like the really dangerous ones they like hide them from you for a long time. You don't? That's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:08:44",
+            "text": "cool, right? Yes. It's like when you get that reveal of seeing the T Rex for the first time. Yeah, it's like, we'll get there. Very, very cool."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:08:52",
+            "text": "Yeah, I love that. And you know, like some special effects guy was responsible for hitting a button or pushing a thing that caused that to fall apart at exactly there. So we have now the other most iconic speech by Malcolm which I just I started grabbing the clip and it just it keeps going. And I'm not even grabbing all that. Like there's so much more before this. But he says,"
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:09:12",
+            "text": "you know, you read what others had done, and you and you took the next step. You didn't earn the knowledge for yourselves, so you don't take any responsibility. for it. You stood on the shoulders of geniuses to accomplish something as fast as you could. And before you even knew what you had. You you patented it and packaged it and slapped it on a plastic lunchbox and now you're selling it you want to sell it well. I don't think you're giving us our to credit. Our scientists have done things which nobody's ever done before. Yeah, yeah, but your scientists were so preoccupied with whether or not they could they didn't stop to think they should think"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:09:47",
+            "text": "you should. It's so it's like it's like it's so prescient for like so much technology like I just I fucking love right like it's so it and I'm a I'm a technology fan. And yet it's still like it's so true like,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:03",
+            "text": "it is. It is true. I think it does speak to some applicable themes. I do think he has a point. Hammond as a point, when he says, I think you're selling a short, I'm like, You are kind of selling I'm sure. I mean, they did clone dinosaurs like no one else. They also"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:10:18",
+            "text": "killed everybody and fucking the whole thing blew up in their face. So"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:26",
+            "text": "we will say we won't get our haremos."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:32",
+            "text": "Mistakes were made."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:10:34",
+            "text": "Mistakes were made."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:36",
+            "text": "Well, yeah. And he actually says, How can you stand at the brink of discovery and not act? Oh, what's so great about discovery? It's a vile, penetrative act, you call discovery I call the rape of the natural world."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:51",
+            "text": "Excuse, sir, this is what is going to their children here."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:10:56",
+            "text": "That's aggressive."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:10:58",
+            "text": "It's very aggressive. He's a little high on his own supply with this whole thing. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:01",
+            "text": "how does that apply to where we're at with Sam Altman and open AI? And you know,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:11:08",
+            "text": "it applies?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:09",
+            "text": "Maybe nothing"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:11:12",
+            "text": "you can do without that weakened. It's funny because I'm like, overall, I would say I'm extremely bullish on on AI and like, I think like, a lot of the concerns are pretty overblown in many ways. In my professional opinion, but I still see there's still reason to be you know, to be thinking about these things and to be considerate of it and to to have that in the back of your mind. And you know, Jurassic Park is a cautionary tale. Yeah, cautionary tale for our time."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:45",
+            "text": "I like it as a cautionary tale."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:11:47",
+            "text": "I like it. So the tour begins we had the grandkids show up I was like when the kids tackled him on the step I'm like, You're gonna break your hip Come on be careful guys."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:11:54",
+            "text": "Oh, can I can we talk about this is a good place to talk about the one of my one of my critiques of the movie is like, I think the fashion is super weird. Like the costumes are a little weird. Like the kids the boys wearing like some kind of crevasse. Like I don't know what that I don't know what the Boy Scout it. Yeah, some kind of boy scout curva, but he's not in a Boy Scout uniform. But like also just generally, there's like a lot of color blocking and like just a lot of like, it looks like they're wearing generic clothes. It looks like they're wearing like clothes like out of Stardew Valley or something like that. Like they're all just wearing like these very hokey like single color shorts, single color shorts and like gender appropriate colors. And like, you know, like it's just like, there's no no one wears a pattern in this movie. Except for the Nedry the villain everyone else is just wearing like solid J says"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:12:51",
+            "text": "like JC is like, let me tell you about how Jurassic Park is not realistic. clothing choices are absurd. It"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:12:59",
+            "text": "took me out of it a little bit like I was like, Why does it look like why do they look like RPG characters? Like it's just very strange."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:06",
+            "text": "I love Alan and Ali's luck. I think it looks great. Really? Because they're"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:13:10",
+            "text": "like, you know paleontologists they kind of have that vibe field they"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:15",
+            "text": "went to Banana Republic on the way out as fine they assured that was the old banana republic of the early 90s That's that's what it was like Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:13:22",
+            "text": "yeah all so far so we have autonomous"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:13:25",
+            "text": "SUVs apparently the poor drivers were in the back trunk Yeah, they were driving those things. But we have God as they're sort of making their way another en banger line creates"
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:13:40",
+            "text": "dinosaurs. God destroys dinosaurs. Oh God creates man destroys god man creates dies. Dinosaurs eat Man."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:13:55",
+            "text": "Woman inherits their women inherits there. I have quoted that off in my Yes."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:03",
+            "text": "This is like one of two like sort of like feminists like like lines from from Laura Dern and maybe like the other one where like, she like we're like, we're he's Hammonds. Like I should be the one going out there instead of you. And she's like, come on. She's like disgusted with like, come on. Oh, man. Yes. Really?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:14:22",
+            "text": "You with your cane? In your hip? Yeah, it's gonna be"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:26",
+            "text": "a break. So let's see this whole scene with em flirting with Ellie I guess is fine. I was struck for the first time watching I was like this could probably just all"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:36",
+            "text": "be removed though with the with a drop on the hand and stuff like that. That"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:14:40",
+            "text": "drop on the hand like it felt like maybe maybe they were just excited like the dailies were coming in and Jeff was on fire and they're like, Okay, let's do more. Let's do more of that. But I"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:14:49",
+            "text": "did. I always thought it was just to annoy Alan. Yeah, yeah, it was just like he was just like, wanted to to ruffle his feathers a little bit. She's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:14:57",
+            "text": "clueless a little too credulous. She's A little too credulous appellant like a little look at this. Look at what he's showing you this drop of water on my hand. It's amazing. Check it out. It's like"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:15:09",
+            "text": "you're a scientist."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:10",
+            "text": "A drop of water on it. She"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:12",
+            "text": "does get pissed when he says and for imperfections in the skin."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:16",
+            "text": "Like that is a tiny, tiny imperfection. So"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:19",
+            "text": "the Tropical Storm is now coming. I love the line. IID Why didn't I build in Orlando? That's a good one. But this is our first like, there aren't hurricanes there I mean, but this is our first real introduction to Samuel L Jackson as Arnold Yeah, hold on the A but hold on the A but"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:39",
+            "text": "I love that. I didn't realize until this viewing he says hold on to your butts twice. Yeah, it's very strange. It's a cute"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:15:47",
+            "text": "thing. It's a thing. It's this thing you know, doesn't"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:15:49",
+            "text": "work out for him. We didn't even have on screen death in this movie. It's fucked up."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:15:53",
+            "text": "That's they were going to shoot his onscreen death and the hurricane the real hurricane that came through Hawaii while they were shooting destroyed the sets that they were going to use that's why he was reduced to an off screen desk freely."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:16:08",
+            "text": "How did you find that? How did you find that?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:12",
+            "text": "Wow. Out there"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:16:14",
+            "text": "fascinating."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:16:15",
+            "text": "We have you know what's gonna happen to the goat? And then them just getting out of the cars and the Triceratops which looks so good again Stan Winston just a god the best I like the"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:16:29",
+            "text": "pussy tongue"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:16:30",
+            "text": "the tongue the pinching the tongue always grossed me out."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:16:33",
+            "text": "Oh is gross pay outs Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:16:35",
+            "text": "I just had another connection like just with autonomous cars like thinking about like the the difference between the autonomous cars and Jurassic Park and then the autonomous cars and Westworld the show and just like how far how far we've come and those actually being like autonomous vehicles are driven remotely it's that's so interesting. It's a real change when you said that they were in the back of the truck I was like yeah, of course they were because we didn't have that technology at the same at that scale at that. Exactly."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:04",
+            "text": "Exactly. Now we know now we do the storm arrives we have Nedry is very good at getting the embryos I did like he had the picture of RP on his monetary so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:17",
+            "text": "I'm there Yeah, and I put a hammer up there will tie in that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:21",
+            "text": "was cool. Sam is always at the end of a cigarette every time Yes, it's disgusting. I wonder"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:17:27",
+            "text": "if you could figure out like the continuity of like how you shot it based on the stuff Yeah, good"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:33",
+            "text": "question. But now we have finally arrived at the moment here is the T Rex attack"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:17:40",
+            "text": "which is like perfectly halfway through the movie. Yeah, it's like exactly the halfway point of the movie. You get the T Rex"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:17:45",
+            "text": "Yeah, and it's from here on out it's just gonna be you know balls to the wall until until you get to the end but the water droplets which were instantly completely iconic those those iconic for sure. This is inspired by Spielberg listening to Earth Wind and Fire in his car. And he the guys had to like hook up a guitar of some kind that they would hit a string and then that would cause it to make the move that they wanted it to do. Very great. Like very like the tension of that scene is incredible."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:18:18",
+            "text": "Mm. Like it's coming like this is it's going down and then we have the roar"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:18:27",
+            "text": "had been right all the time"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:18:35",
+            "text": "the roar Yeah, what's in the roar? What's the Roar"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:18:39",
+            "text": "is so there's a number there's at least five animals if I remember correctly. Well, I looked it up before the show also to make sure but the the the high pitch sound comes from a baby elephant."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:18:53",
+            "text": "there and I think you said last time it never made that sound again. It just did it like one time and then"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:19:00",
+            "text": "they could never replicate it. So that's like that's the the baby elephant sound. It's like that real high pitched and then there's a tiger. There isn't there is a an alligator like the low rumble like the the sound that alligators make when they're mating and they shiver the water on top and it goes wow. Yeah, like that sounds in there. And there is there's something else into a koala. So there's a grunt sound that a koala makes Oh yeah, that's in there also. Yeah, yeah. And I'm missing others. Oh, nice. And a tiger. Yeah. Did I say Tiger? Yeah, so Tiger alligator baby elephant and then the the koala. And I feel like there's one more that I'm missing. But yeah, it's just so interesting. Like I've seen the video of the of that sound design, like being put together and if you've never seen that video, but For like the kind of like documentary on it, it's unreal. It's so cool."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:20:04",
+            "text": "Derek was asking in the chat if it's Ben Burtt. It wasn't Ben Burtt, but it was absolute legend Gary rides drum. Yeah, who is an incredible Skywalker Sound Production or SAT center,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:20:16",
+            "text": "I actually so I went to school for a sound production, I don't think I've ever told you guys that and probably have four times previously. And that was one of the things I wanted to do was to go into, like, fully into sound design. And so this was one of those moments in my life that I was like, just completely blown away. And I was like, I want to I want to do that I want to be able to make those kinds of moments, those kinds of experiences. And it's like it's art, you know, it's so creative to be able to think about the ways that not only do we perceive sounds, but how we can kind of engineered them to become something completely different. And like using visuals to trick your brain into into making it something that it's not"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:03",
+            "text": "and I think in this moment, like they dropped the score right and it's just the the rain and then the sound of the T Rex that is so frickin intense and then when they dropped the score back in it's like it takes it to an up another level again. Yeah. Oh, and then"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:21:16",
+            "text": "they eat the eat the guy the hygienic Boyer"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:22",
+            "text": "he's not gonna sign off on that. I always forget"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:21:23",
+            "text": "his name. But he runs he's such a coward and he just leaves"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:28",
+            "text": "the kids. I actually love that scene that the fact that Ian says like kids are scared. That was I was cool. But so Jason What is Lexus friggin problem with the flashlight?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:42",
+            "text": "You might find the switch she got stuck on."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:21:45",
+            "text": "She's scared. Panicking"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:21:48",
+            "text": "there's a T Rex. We'll see how you do with a flashlight when we're at the TRX park together okay, that's good because I'm going I'm definitely"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:21:55",
+            "text": "it's a good point. Alan and Ian are instantly selfless. It was gold blooms suggestion for Ian to be heroic originally he was just going to run away into the into the forest or whatever and get injured. Yeah, but I was just stunned the T Rex like nudging the SUV kind of batting it around and like Alan and Tim having to like hide and you know not get smashed it"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:22:17",
+            "text": "looks really good. It looks really good. It's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:20",
+            "text": "unreal. Just the holy shit it's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:22:24",
+            "text": "so tense I think I had that car"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:27",
+            "text": "really nice like a toy was like a Ford is no or something or"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:22:31",
+            "text": "oh it's an explorer it was a Ford I thought it was like a Jeep Cherokee or something yeah"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:22:36",
+            "text": "we also have here the the exit of Dennis. I love Dennis you know kind of talking to the to the guy that really take their time here but I noticed when he slips and he falls Did you guys hear it there's like a silly sound effect of him slipping like what what does it do? What does there's like a silly like believe it I was like what I had to read it like three times. I don't know you can judge for yourself when you when you hear it here that I thought was really funny and scary right with the frickin thing coming up and killing him."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:23:10",
+            "text": "That is one of the scariest scenes to me. I think that in the in the kitchen scene are two of my biggest biggest freaky scenes. Hmm,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:20",
+            "text": "did they pay off the barber saw can getting stuff getting dumped on covered and yeah, like, that felt like a setup to me."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:23:27",
+            "text": "I think it's just meant like so you're like to know for sure that like no one's gonna find these embryos aren't gonna get off the island. I was thinking about the guy who was like off camera making sure that the mud dumps correctly over the mud. The mud dumper is like"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:23:45",
+            "text": "I'm showing I'm pushing mud down the hill."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:23:47",
+            "text": "Yeah. Nice. This whole scene of rescuing Timmy is really fantastic. It's really starting from the tender moment of Timmy saying that he threw up. Yeah, I I've been there with both of my kids. You know, that kind of moment where they're kind of like ashamed and sad."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:04",
+            "text": "They threw up out of out of fear of being eaten by a tee right?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:08",
+            "text": "No, no, you know what I mean? Like when they're like I threw up and you're like, it's okay. Yeah. Okay. I love that moment. And it's like a breakthrough moment for him. But it's so thrilling them getting chased by the car down the tree and having to make us like it's scary. Intense. Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:24:25",
+            "text": "It's very intense. It's the I this was like, you know, one of the sequences that I remembered, but I wasn't thinking of as like one of like, I was thinking about the kitchen thing and like the T Rex thing and like, yeah, I was thinking about like the big moments. And this wasn't one of them. But it's such a brilliantly designed sequence of like, the idea of like a car slowly falling down a tree and people having to be chased like it's a car chase down a tree. Like it's such a cool idea. I really, I really love watching it this time"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:24:59",
+            "text": "when they Get down. It falls on them again. We're back."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:25:04",
+            "text": "It's very funny. Yeah. Love it."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:25:06",
+            "text": "I'm just thinking like, I feel like there's been a lot of action movies where that kind of sequence has happened again, usually the trains, I feel like there's a lot of trains that are falling off the edge of a bridge you're"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:17",
+            "text": "holding on and trying to make it up or whatever. Yeah."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:25:22",
+            "text": "I can't remember which movie I saw very recently that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:25:24",
+            "text": "Mission Impossible. Dead Reckoning had a WISE mission. It was Mission Impossible. It was great. It was it was it was really good Haley at well, my god, she was amazing in it. So then we have you know, this unrelenting intensity. And then we finally have kind of this moment of silence. We had the Brachiosaurus, and we have this really tender moment with the kids. And the lullaby theme that's playing here. The lullaby version of the Jurassic Park theme is so beautiful. I just the score. I cannot say enough. What an impact it has on this phone."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:25:58",
+            "text": "Yeah, it's really good. And then they get sneezed on."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:01",
+            "text": "Let's get sneezed on. Yeah. And declare she's a hacker."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:26:10",
+            "text": "Good getting sneezed"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:11",
+            "text": "on in a post COVID world sort of like it's different. It's different because you're like, ah, we've seen this one."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:26:21",
+            "text": "With Dinosaurs. That's where it started like,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:22",
+            "text": "original birds something."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:26:24",
+            "text": "Listen, I tell you what, if you genetically engineer does dinosaur makes with frog DNA, and then it gets a cold and it sneezes. Whatever you have is, it's not good. It's not good for you. It's not good for the rest of the world that should have been drowsy. Part two, is like the pandemic that breaks out because she likes gets back, incubating from Monster plagues and dyno play. 28"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:26:47",
+            "text": "days later, basically, yeah, I love Jon's fleece circus story. And like how kind of like sweet it is in that moment, but his complete inability to understand his failure, but she just calls him out. And you know, John says creation is an act of sheer will next time, it'll be flawless. Still the fleece"
+        },
+        {
+            "name": "Jurassic Park sample",
+            "timestamp": "1:27:05",
+            "text": "circus. It's all an illusion, when we have controlling never have control. That's the illusion that I was overwhelmed by the power of this place. But I made a mistake, too. I didn't have enough respect for that power, and it's out now. The only thing that matters now are the people we love."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:27",
+            "text": "But then she eats the ice cream and she's like, Oh, it's good. Spared no expense. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:32",
+            "text": "it's very nice. Ice cream does look good. They had a lot ice cream."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:27:35",
+            "text": "It's a sweet moment where she doesn't just like she does kind of have an empathy almost in the midst of holding him accountable. I like that."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:43",
+            "text": "Yeah. It reminded me of the scene and westwing when Bartlett and Arne Vinick enjoy some ice cream in the basement of the White House, the giant tubs was like"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:27:55",
+            "text": "a uniter of people. That's the ice"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:27:58",
+            "text": "cream brings us together even in difficult times. Whether being chased by Republicans or dinosaurs. Totally."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:03",
+            "text": "Shutting down the system. We have Ian's bare chest which Veronica obviously the other major you know meme of this film. How did this hit you at 11 Like was it a you know, a big moment?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:17",
+            "text": "No. Didn't Read. Yeah, I don't think it did. I don't think I don't think it was a big moment at the time generally. I think I think it became a thing like Yes. slow"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:28:29",
+            "text": "zoom. Yeah, him right. And I think that's that's what stuck with me now as an adult is like yeah, iconic that shot Yes. And pose and the lighting and the whole thing. And no at the time I don't remember that being a pivotal like moment for me anything that I wrote"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:28:46",
+            "text": "her she she says that she gave him morphine, but my question is, why did they do this? Why did they take E and who is like the beating heart of the first part of the movie? Why sideline him in this way?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:28:57",
+            "text": "It's a good question. There's no answers."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:00",
+            "text": "Is it just to give Alan just to give Alan"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:29:02",
+            "text": "more room? More things to do? Yeah, I don't know. That's a good point."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:06",
+            "text": "It is weird. He basically has almost no dialogue. He has like a couple of more lines. But he's he's basically very pushed to the side for this film."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:29:14",
+            "text": "I think in the book he dies, I mean, the book Malcolm dot, like both Malcolm and Hammond die, I think in the budget, to be fact checked on that. But like, I think I think fewer people survived the island than in the movie. And so it's possible they just ran out of ideas. Okay,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:29:32",
+            "text": "so he he was attacked, and then he right Apparently, he's said to have died from his injuries as as like at the end of the movie, but then he comes back in the lost world. So he is yeah, it's the news of his death was premature. Interesting."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:29:51",
+            "text": "I say interesting. So they have to reboot the system. They do that. They shut it down. I love this whole thing of climate. In the electric fence and again the tension that they convey here, in the midst of doing that, Alan tricking them I thought was particularly cruel. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:30:08",
+            "text": "a while so it's fun to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:11",
+            "text": "me zapped apparently, you know?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:30:13",
+            "text": "Oh that was awful that was awful I hated that scene even as a kid I just like not great. Yeah, not good"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:30:21",
+            "text": "not great. Timmy has been through a lot But Ellie is able to get the power back on we have the hunter another classic meme girl and then Ali makes it back to the lodge we have Lexus quivering jello another classic get jello is great. She's amazing like her performance here is who's good and then the kids in the kitchen. It just looks so good. The reflection"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:30:50",
+            "text": "I have literally reenacted that scene as a child like as basically like as a young industrial kitchen. You know, like just like played that. Yeah, it's it's so freaky and the way that they just like the you have this feeling of impending doom like they are not only more deadly than us, but they are okay they they're smart they're thinking they know what's up like they're they're like working together against us. And that's so fucked up. That's just it's the stuff of nightmares the"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:31:25",
+            "text": "sound of the Velociraptor outside outside the window and then like breathing on it and then yes, that scream is incredible. They they sell"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:31:36",
+            "text": "really well that the velociraptors are smart without like having to like kind of with I mean without the velociraptors being able to speak and they also do like the interesting thing which is like they make the velociraptors the ultimate villain in the movie and such that the T Rex can like kind of come in and save the day or whatever at the end Yeah, she"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:31:58",
+            "text": "has the redemption arc Yeah, T Rex redemption arc"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:01",
+            "text": "it's really it's kind of wild that they're like like actually the real villain are these little bastards who are like more nefarious who"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:32:08",
+            "text": "then get to be the heroes of the lead yeah"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:11",
+            "text": "yeah,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:13",
+            "text": "who's the bigger bad at that point"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:32:14",
+            "text": "and the T Rex and the T Rex gets to be the T Rex and the Raptors like be engineer s against the win I guess stupid dinosaur they made Yeah."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:26",
+            "text": "The nightmare oh sorry. Let's call it something like that. We"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:31",
+            "text": "before we get to the T Rex finale we can't hit the Lexus say"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:32:41",
+            "text": "yeah, do you is it a Unix system?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:44",
+            "text": "What is yeah that's a wild move. Like"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:32:47",
+            "text": "I don't want to argue against other women in STEM yeah my dad I mean I guess it's good if"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:32:56",
+            "text": "you know girls to be into computers that's a good thing but that was a wild flex this is a Mac system I know this and she's using edge GUI to find files so"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:33:04",
+            "text": "right yeah not sure which not sure which UI that she's what shell that she's running on this on this gear whatever she figures it out. She figures it out she saves the day all the complexity"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:16",
+            "text": "of them on the skeletons that velociraptors jumping on there then breaking and falling down the T Rex smashing in that was in addition to ban originally the T Rex was not going to be there and Grant was going to trick one of the velociraptors into getting killed by the T Rex skeletons Jaws which I thought was a cool idea. But I love the T Rex and the scream when dinosaurs ruled the earth like all of that is phenomenal. Thank you Well yeah"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:33:44",
+            "text": "it's it's the icing on top it's just it's looks great. One of the perfect endings for for an action movie"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:33:51",
+            "text": "so good. And then the music kicks on as they get on the helicopter and they take off and the butterfly and the other birds just before you had the birds though, like the look in Ellie's eye as she's looking at Allen and the kids like she is pregnant on that helicopter immediately like oh my god it was wow she was in love"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:34:15",
+            "text": "Yeah, well they've been through they've been through a lot now. She knows she really is like trying a lot like through the whole thing man like he says he hates kids and he did try to murder that kid but I know he's got it in him to be a good dad and all it takes is for them end up in a crazy here and here. Slice you hear credits so crazy credits. It's a great one a picture"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:44",
+            "text": "to the bird. The birds are amazing."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:34:47",
+            "text": "seen with the with the pelicans. And you're just like, they're dinosaurs. And it"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:34:54",
+            "text": "was it was so controversial. Like it hadn't been fully established yet."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:35:00",
+            "text": "Is it oh yeah if we're if birds were dinosaurs"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:35:03",
+            "text": "like he says it Alan says it in a way that everyone's questioning it and like it's like it's a big thing and now it's well established"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:09",
+            "text": "Yeah, that's Indominus Rex was the name of the one that's so terrible there's here's the thing about dinosaurs and I for some reason have two kids neither of whom are into dinosaurs very much. I haven't like refreshed my dyno knowledge based on having kids, which happens a lot of parents. I feel like they just are changing their story all the time about what dinosaurs were where I like, I like for this for this movie for this podcast. I already screwed it up. But like, I looked up like the thing because there's the whole thing was like, Oh, it's a Brontosaurus. No, it's a Brachiosaurus is like, what the hell is that? Why did that happen? There was a period."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:35:48",
+            "text": "And like, why didn't they just say like, oh, we were wrong about what Brontosaurus is, right? What the Brontosaurus look like, we're gonna call it Brontosaurus. Well, there"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:35:56",
+            "text": "was a period of time I think when this movie came out, where they thought the Brontosaurus was not actually a distinct species that like the Brontosaurus was actually just the datasource like and they found different books or something. Yeah, exactly. Yeah. But now they're back to thinking that the Brontosaurus is actually a distinct according to the internet, I mean, hoon. I don't know. I haven't called the paleontologist. still mad about Pluto. Exactly. It's some of that. They fuck with science. Brontosaurus"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:28",
+            "text": "is back. All right, Veronica, who would Tilda Swinton play in Jurassic Park Brontosaurus."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:36:37",
+            "text": "Dr. Ian Malcolm lovin love it. It's really good. No question."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:36:43",
+            "text": "It's really good."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:44",
+            "text": "Very strong. I want to see her with the with the cane and the whole the whole deal. Okay,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:36:48",
+            "text": "that'd be fun. Really? Oh, yeah. Okay, awesome. Jason. No. Are you thinking Hammond because I said Mel. Oh,"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:36:54",
+            "text": "yeah. Oh, I obviously you haven't. Sorry. Malcolm is even better. Yeah."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:36:58",
+            "text": "Malcolm. Yeah, goes Oh, but I liked the idea that she was like a Willy Wonka. Like John Hammond. Somehow, like I can just that that picture is also really good in my"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:11",
+            "text": "mind. Yeah. Okay. Very good. Very good. Malcolm. I dig it. Like those monologues she would tear the hell out of that'd be Jason, what about you?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:19",
+            "text": "I mean, she could play the hell out of a velociraptor to be clear, like she would be completely convincing as a velociraptor and it would be incredibly sexy. But if she asked to play a human in the movie I would I would go with Muldoon like the hunt"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:37:34",
+            "text": "Yes, that's what I was gonna say."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:37:36",
+            "text": "That's a good one. Oh, good"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:37",
+            "text": "one just to hear her say clever girls."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:39",
+            "text": "Oh my god incredible incredible"
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:37:44",
+            "text": "yeah"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:48",
+            "text": "we did it you guys. Can we do some quick voicemails?"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:37:51",
+            "text": "Let's go Okay, here"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:37:52",
+            "text": "we go. We said couple voicemails here. Here is the first one."
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:38:03",
+            "text": "Bear you're here to talk about Jurassic Park. You know there's product placement in movies. And then there's what Jurassic Park did for Barbasol shaving cream the platonic ideal for old guy shaving green but it made a huge comeback as a brand after this film was released. Three stories here about barber saw two of these are false. One is truths truth saying time number one. Before barber saw everybody used shaving brushes, often made with badger hair to mix up their shaving cream. But when barber saw was first released in 1990, and the original shaving brushless formula was so popular that US badger populations made a huge comeback. Number two big time celebrities became spokesman for Barbra saw in the 20s including Babe Ruth, Newt Rockne and florid Ziegfeld but Charles Lindbergh refused to sign on unless he got paid more than Babe Ruth company refused. Or is it number three Louis rice Weasley worked at an ad agency that made Barbie doll a global sensation he made enough money to buy North cat K Island in the Bahamas in 1931. For $400,000 Hemingway used to hang out there. Alright, which one of those three stories about Barbie doll is true?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:10",
+            "text": "I'll go with number one."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:12",
+            "text": "I'm going with I'm going with the Lindbergh one. Like he wanted to get paid better. Because he was a son of a bitch. I'm gonna say he did some total practice loss, Veronica. Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:39:22",
+            "text": "I have no idea. I guess I'll go with"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:28",
+            "text": "good at least cover our bases. Yes. All right, here we go."
+        },
+        {
+            "name": "birria",
+            "timestamp": "1:39:31",
+            "text": "Okay, which one of those stories about Barbasol shaving cream is true? It was number three the ad fortune from Barbara saw this guy to buy an island in the Bahamas. Here is the truth. Oh, good. Nice. That's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:39:47",
+            "text": "crazy. Nice"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:48",
+            "text": "job area. You gotta Veronica Good call."
+        },
+        {
+            "name": "Speaker 7",
+            "timestamp": "1:39:52",
+            "text": "Yes. Good call. Knew it. Alright, here's"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:39:56",
+            "text": "our next voicemail with"
+        },
+        {
+            "name": "kev voicemail",
+            "timestamp": "1:39:57",
+            "text": "the past because here are rockin an old school again. Poori style for Jurassic Park with Veronica Belmont. What a great way to kick off what's going to be a really huge year for you guys. We're weeks away from the meet up. I'm starting to get nervous. But my flight is booked. I will be there. Get excited. Yes, question. Jurassic Park is one of those movies that made it drop everything the second you saw it special effects mind blowing for the time and pushed us really like 20 years ahead. In one fell swoop. Guess question, what could you see that would make you think that we're moving ahead? What is the next big spectacle for you? What is the next big thing? For a lot of people, it's clearly not avatar. So I don't know, I would say, use of virtual stages and volume in a way that we can't even perceive. Right now. I think the avatar theme is very close to cracking this. I don't know if anyone else will ever do it. But I think virtual stages slash the volume is going to create stuff that is really incredible. And we will not even be able to perceive it as my prediction. So Kevin's question, what is the next thing that is going to make you amazed in film? Not to steal answers or anything actually come to think of it. Mr. Goldman referred to part one crowds as like Cecil B. DeMille. So maybe you've already answered this question. I don't know. Anyway, peace and love to everyone and I will talk to you from my home studio. Hopefully, next week very soon. Love you guys."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:41:33",
+            "text": "Yay. Once again, it's Cavs questions. Wow."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:41:41",
+            "text": "I do think I do think one of these avatar movies is gonna is gonna break the bank. I think like, I don't know if it's avatar to Avatar 3d or whatever. But like, I think like one of these movies he's gonna figure something out with with the technology and it's gonna be it's gonna be a whole new change because I for me, I think the the movie since jurassic park that was like, that similar kind of I didn't know they could do this matrix one. No, I have a terminal on for me. I think like, it was like, it was like, Oh, this is unreal. We've talked before about how I had my issues with the matrix on release, but like, I think, I think avatar really does some amazing stuff from a visual effects standpoint that folks have never seen so I can imagine avatar three or four or whatever"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:42:26",
+            "text": "or five he's got he's got a lot of shots on goal. So he's"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:42:29",
+            "text": "got a lot. Yeah, exactly. He's gonna have he's gonna have his chances. But do you think Veronica I"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:42:34",
+            "text": "feel like I should have a really strong opinion of this considering where I work but it's it's I don't know I haven't even seen the most recent avatar. I have a problem with 3d. So I want to visually like I can't watch 3d Without getting really sick. Whether it's on a headset or with glasses or what have you, I so I need something I need the next stage of whatever that is to feel like the true kind of immersion factor. It looks"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:09",
+            "text": "great in 2d You can definitely you can do it as long as it's not high frame rate like the high frame rate looks bad. Yeah, looks like a video game but the just the standard for K you know, regular 2022 frames a second looks great. Yeah,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:43:21",
+            "text": "so I might have to get on that. Check it out. At some point I do want to see it I just haven't had a chance to I'm we don't have a movie theater in my town. To drive all the way to like Vancouver to drive like an hour to Vancouver to see it the hell."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:33",
+            "text": "So yeah, that's a tough one."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:43:36",
+            "text": "Did you guys know that? There's a have you do like weirdo? Yeah, sure. Did you know Do you remember the Jurassic Park Song?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:45",
+            "text": "No, no, no. What was it?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:43:47",
+            "text": "I haven't memorized"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:43:49",
+            "text": "please. Please give it give us just give us a flavor."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:43:57",
+            "text": "I recall the time they found those fossilized mosquitoes. They were cloning DNA I'm being chased by some irate velociraptors will believe me me. This has been one lousy day. Rasik Park is frightening in the dark. All the dinosaurs are running while someone shut the fence off in the rain. I hadn't met it's kind of earring but this proves my chaos theory. And I don't think I'll be coming back again."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:44:51",
+            "text": "Oh no. And it goes on Wow. So good. I Is it like it feels like almost sort of like a Leonard Cohen? You're famous famous blue raincoat. It's"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:45:05",
+            "text": "a MacArthur Park. It's okay make of the of the song MacArthur Park. I bought a dress from the album Jurassic Park. Yeah. Amazing. Yeah. A lot of bangers a lot of bangers on that album for sure. Easy work."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:19",
+            "text": "Wow. Wow. Let's see. I'm gonna say for for me, I actually I'm not generally a believer in the vision, like the notion of saying I'm gonna strap something to my face that closes me off from my family and have that as we're going back"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:45:34",
+            "text": "to this question and so awkward that I just saying no, no, no, I'm in a totally different direction."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:45:39",
+            "text": "Oh, blimey, we had the music playing under you and synchronized and like, oh, yeah, we've fabulous that is that is getting its full do. But I do think that the the idea of they have the spatial computing for movies. And then also your camera with a 16 I guess or a 15 or 16 will be able to do spatial video so like shooting video of your kids that has a 3d element of it, I think is potentially interesting."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:46:08",
+            "text": "There's I mean, we the the interesting thing is like Will the web catch up to be able to like social content platforms and stuff don't really have a good way of showing 3d very well at this stage. So like, is that going to be the the technology that is required to make this kind of go into the mainstream and replace traditional traditional web video content?"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:46:30",
+            "text": "We'll see. Time will tell. Time. What's our final voicemail? Here we go. I just have to say, watch the scene today in dune where Paul does the checks and blows it up. And all I could think of was that Corey voicemail said it's, it's forever owned by him. Alright, here we go."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:46:56",
+            "text": "Hey, Pat. Hey, Cory, calling from Austin, Texas about Jurassic Park. When the fuck did just come out like 9393 I think 92 or 93? I don't remember exactly, but I did see it in theater. And it was super fucking cool. Like, even as an older teen young 20 holders. It doesn't matter anyway. I'm not doing the math of dental hygiene. Anyway. Yeah, I was not too cool. For school for Jurassic Park. It was Spielberg like firing on all fucking cylinders. Dinosaurs. We had Michael Crighton telling us like dinosaurs are fucking birds and lizards and our minds are just getting blown. And Lord turn is gorgeous. And again, Sam Neill is awesome. And Samuel Jackson is in there smoking cigarettes and telling us to hold on our butts. And there's lots of rappers and like annoying kids. kind of cute kids, but still kind of annoying kids. That first looking kid at the dig was terrible. Who the fuck is that poll? I hate that kids. I love this movie. I revisited it just the other day. And I hadn't seen it in at least a decade. And it fucking holds up rights scored beautiful. The direction is just, you know, fucking Spielberg plays with like, settles and I'm along for that ride. I found myself like, laughing out loud about myself laughing out loud hooting and cheering like all the things he just pulled it right the fuck out of you. He's awesome. Yeah, man. Nuts. Um, um, so for doing this movie? I don't think any other podcast has ever talked about Jurassic Park. Wild. I can't believe you guys have taken this on. Good for y'all. Who would kill the Fenton play? She could play? Um, I think a lot of us want her to play the Attenborough guy. Right. But I think, Okay, what's his character's name? I just watched it. I'm just totally blanking on his name. But she should fucking play. I'm blanking on everybody's name. Newman, but it was like, Oh, my God. All right. Sorry, a little rambley on this one. That's so funny. Right picture. I can't wait for next week. Is it? Eraserhead? Tell me tell me we're doing like one of the best movies ever made on"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:49:28",
+            "text": "Wow. Corys."
+        },
+        {
+            "name": "Corey",
+            "timestamp": "1:49:32",
+            "text": "All right. Thank you. I'll talk to you next week."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:34",
+            "text": "Wow, amazing. Nedry is a good call. Actually."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:49:39",
+            "text": "That's a good call. Yeah, okay."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:43",
+            "text": "Yeah, like events."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:49:44",
+            "text": "I'm I'm I'm I'm I'm noodling on it. I'm gonna give it a new"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:49:48",
+            "text": "day. We'll run it through the filters and see what we come back with. Veronica, what do you have to plug?"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:49:55",
+            "text": "As always, my podcast of 15 Now yours, believe it. We haven't even yet come up on our 500th episode though. But yeah, Sword and Laser at certain laser.com We are a book club podcast community. We've been doing this thing for a long time we switch off reading books, science fiction, fantasy every month. Right now we are reading shining girls by Lauren mucus."
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:23",
+            "text": "Great. Awesome, right. Sordin"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:50:26",
+            "text": "laser.com. And then I'm on the socials Veronica, but I don't I don't get around to posting quite as often as I used to that that"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:50:33",
+            "text": "that that kid really takes a hit in the turns of free time. In the free time. Amazing. Jason, what do you have to plug my friend? What"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:50:44",
+            "text": "do I have to plug? I am going to I'm going to plug the Palm Springs aerial tramway. We went to Vacation in Palm Springs for the holidays. And one of the longest trams in the world takes you from the valley floor of Palm Springs, which is obviously like a desert to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:08",
+            "text": "up to the top of the mountain up to the top of the mountain. Yeah,"
+        },
+        {
+            "name": "Jason Goldman",
+            "timestamp": "1:51:11",
+            "text": "it's very cool. And I was somewhat terrified. But the kids loved it. And it had rained the day before. So there's snow at the top and they can like make snowballs and shit. Wow, they were just like losing their mind. So yeah, it was that was pretty cool. I'm plugged that if you're in the Palm Springs area."
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:51:28",
+            "text": "I have a great tram system. I have a great tram system and city skylines to"
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:34",
+            "text": "have you probably also have movie theaters in your city, in city skylines in your city skylines Skylines,"
+        },
+        {
+            "name": "Veronica Belmont",
+            "timestamp": "1:51:39",
+            "text": "I really do. Yeah, yeah."
+        },
+        {
+            "name": "Matt Haitch",
+            "timestamp": "1:51:45",
+            "text": "And that's it for this episode of escape hatch. I really like Jason and Veronica for an amazing conversation. Next week, we welcome the author of a masterpiece in disarray David Lynch's Dune, Max every we finally go back to where it all began Lynch's first film, Eraserhead. If you're enjoying the show, we need your help. Take a minute to leave us a five star rating and a review wherever you listen to your podcasts or just tell your friends about us because it really does help the listeners find the show. We also have a Discord server where you can hang out with us online whenever you want. And a Patreon where you can support us and unlock exclusive perks. Links are in the show notes. escape hatch is a tape deck podcast John our production of age industries or artwork is by catcher and our theme music was composed by Scott Fritz and who's the boss music. The episode was edited and produced by me Ah thanks for listening. see everybody next week"
+        },
+        {
+            "name": "Jurassic Park song",
+            "timestamp": "1:52:48",
+            "text": "oh my god. They share their DNA. A frog died it was bad I get what could possibly go wrong. Electric fancies gone wrong something just goes and breaks his walk and Blake gets killed except the great Sam Neill who's have satchels upstairs tools upstairs who is obsessed who's obsessed."
+        },
+        {
+            "name": "Unknown Speaker",
+            "timestamp": "1:53:57",
+            "text": "Emotional"
+        }
+    ]
+}

@@ -1,0 +1,2756 @@
+{
+    "episode_number": "49b1",
+    "episode_name": "WarGames",
+    "dialogues": [
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Hey everybody, it's Haitch, and welcome to the latest installment of Dune Pod, your one stop shop to get ready for the new Dune movie. Or just talk about great movies if you don't care about Dune. This week, I'm joined as always by my co-host, Jason."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Why is everyone in the Air Force super high all the time?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And by three times superstar return guest and Managing Editor of Fangoria Magazine, Meredith Borders."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "have a motorbike. I jog. I let dogs lick my face."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "On this episode we discuss Matthew Broderick's star making performance in the hacker Cold War thriller WarGames. We cover the secret hacker history of the making of WarGames, the relevance of game theory and how much we still love Ally Sheedy. If you're enjoying the show, check out our Discord server where you can hang out with us whenever you want and join our live recordings. A link is in the show notes. And now without further a-Dune, WarGames. [Dune Pod theme fades out]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What's the coolest thing you've seen come across your desk over a Fangoria recently and can you sense things kind of changing and unlocking with the easing of the pandemic?"
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "there's definitely I mean, there's a lot of action like my bosses are producers and you know, for the first like, you know, year or so they just weren't doing anything, and now all of a sudden, I can't get ahold of them, which I feel like is a good sign. They're like, making things. The best thing I've seen lately is David Bruckner's, The Night House, and it's I mean, it's incredible. And if you've seen his he did a couple of any horror movies that were really well received, like The Battery and The Signal. But this is his biggest kind of budget film."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is The Signal the cell phone one?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Mmm, no, that's called The Cell. That movie's terrible. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay. Wait, wait. Is that The Cell -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Not the one with JLo."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh that movie's good! [Meredith laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That movie's good."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh, actually, The Cell. You're right. That's JLo and Vincent D'Onofrio. That movie's good. This one's called Cell. But neither of those is David Bruckner. His is The Signal which is, it's not about telecommunications at all. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, cool. Apologies to David Bruckner for that one. But, yeah."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Definitely watch The Night House if you guys get a chance. It's riveting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Awesome. Well, Meredith Borders. Welcome back to Dune Pod."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yay! Thank you! I'm very excited to be here talking about my third 80's movie with a really, really great soundtrack, which is I feel like has become my my beat for Dune Pod."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes. Yeah. You've got a beat for sure. I'm excited."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Me too!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, and this came up, I think, because we were doing Ladyhawke, which obviously had Matthew Broderick. And you had of course, that press kit, that famous press kit that was all about Matthew Broderick. So this was a time before press kits, you know, had had much awareness of him. So this is this is quite an early in the in the catalog. WarGames 1983 is our our movie for tonight. So really excited to get to that."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, as tiny as he is in Ladyhawke. He's just so much tinier here. He's very, very tiny. [Haitch laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He is an actual child."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Well, so we'll get to that in the bottom of the hour. So this is by the way, this is Episode 49A. We're actually on vacation."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "For those of you counting at home. You're like, wait a minute. 49A?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, hold on. Carry the 2. So, so we are currently on break in between season three and season four. We just had ctcher last week with the unbelievable journey of Incendies, Denis's film, and now we're on a well earned vacation. And so we have these two episodes this week. It's WarGames. And next week, we have Mikey P, comic artists and writer joining us for Good Will Hunting."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yay!"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "haven't seen that movie in a long time, actually."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So that's, uh, that is what is going on in terms of these two bonus episodes. And then when we come back for season four, kicking off with Episode 50, Jason!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Woah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Episode 50."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Or L as the Romans called it. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We have Veronica, rejoining us, Veronica Belmont."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Solid choice. Solid choice."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a great choice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright, so coming soon, Episode 50. We're very excited. Alright, so, Dune News. [sound bite plays] Would you like to know more?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "thought we weren't doing Dune News because it's like a bonus episode."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Just give me a projection. Give me a projection."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Of like what's gonna be happening?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What's happening right now on the first week of July?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Okay, so here's what's really going to happen. I'm gonna tell you I've looked into the I've had a pressure and vision of what's going to happen. Right now what's happening in the current timeline mid-May, is the Discovery, at&t, Time Warner spin off situation just got announced. Right. So discovery is going to take all the Warner Brothers assets. And there's news announced today that like Dune, first was announced that Dune was not going to be put on HBO Max at the same time as it was in theaters and then the head of Warner media clarified that no, in the US, it will still stream the same day. And I predict that by July, all those people are going to be fired. And there's gonna be a whole new bunch of people and a whole other story, because no one knows what the fuck is going on. Like this is like $150 billion of media bullshit right now. Like they're not, they don't even know what to call the thing like it's gonna be, it's gonna be a wild time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Live. Die. Repeat. Dune. One."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. Yeah. I'm excited."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's great. Well, if you're Warner Brothers media, who I've been talking to via email about having Dune guests on the show, I hope you still have a job and -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Those people are all fired. [Meredith laughs] Your year long influence campaign is for not because those people got burned."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "You hitched your starter the wrong wagons, and I'm sorry."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We got to find some people at Discovery."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Let's get over there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, like HGTV or whatever the fuck they own."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's the way to get in. I was just gonna say like, I think it will be discovered that that Timoth\u00e9e and Zendaya are dating. That, that was like my speed of projection."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "see. I see."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's about as far as I got."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I'm very about that. [interim sound bite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. You guys ready to get into this?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "God, I'm ready. I'm so excited."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "So ready!"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "have a lot of links."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh! [music from WarGames soundtrack fades in]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. Here we go. WarGames is a dangerous contest at the height of the Cold War paranoia, with the fate of humanity hanging in the balance. David Lightman is a brilliant teenaged hacker and gamer who accidentally infiltrates NORAD's war operation plan response, or Whopper computer system and mistakenly initiates a game of global thermonuclear war. Little does David realize that the Air Force has just placed Whopper in command of its nuclear launch capability, and the system will launch an all out first strike nuclear attack against the Soviet Union in just a few days time. David, teaming up with his beautiful schoolmate, Jennifer, will be pursued by government forces as he navigates the maze of intrigue laid down by Whoppers creator, the enigmatic Dr. Falken, will David prove to be a worthy opponent find the solution to his battle? Or will the world be lost to WarGames?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "To WarGames."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "To the games of war. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What a great movie. This one holds up. Like now, I think Ladyhawke for me completely holds up. I think we talked about like some some parts of it that feels slow in the third act. There's one scene there's like only one scene of this movie, I think that's slow. There's only one part of this movie, I think feel so we'll get to when we get to it. Otherwise, this is a fucking masterpiece that speaks to timeless themes and nothing needs to be changed ever."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "completely agree. I mean, it's first of all, as you say, like just compelling start to finish, very little fat on it. But also, man, I mean, it started it started a sub genre, but it also started like a culture. I mean, it's like, very, very important. You know, and retrospectively, no one knew that this was going to come out of this and now it's just such a touchstone for all these different kind of cultures that we see both cinematically and like you know, elsewhere."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally. Totally. Well, so directed by John Badham who directed Saturday Night Fever."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wild shit."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Short Circuit. Hellooo?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That checks out."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Blue Thunder. Yeah. And then written by Lawrence Lasker and Walter Parkes, who went on to also write Sneakers."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, which makes a lot of sense. Yes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Which we should do on the show. That's a good movie."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's movie's so good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Sneakers, the greatest startup movie ever made."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, shall we get into it? Dig in?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Please, please, Lord."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "How about this cold open? This scene, right, so it opens up with two Air Force officers played by the West Wing's Leo McGarry and Vic Vega."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, John Spencer and Michael Madsen."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Michael Madsen, who has never been so small."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Very thin. [Meredith laughs]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Very, very little, but also just like small in the face like he's intense as usual."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He hadn't discovered the carbs that would later define his later career. [Haitch & Meredith laugh] But yeah, they look great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The environments great."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The environments great. Shout out to my, my pseudo niece, Haley, who is stationed at she's in the Air Force at Minot Air Force Base, which is where they keep the nukes. And this sort of had that vibe like it's like in North Dakota. It's like minus a billion in the winter. There's nothing, there's nothing there like it's you know, a town of 2000 people and the next town is eight hours away or something like that, and it's in Canada. And so I felt like this is what Haley's life is. Like she's just like you know waiting for some guy to badge in or something like that. So shout out to you Haley, hope it's all going well in Minot. Thank you for your service."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thank you for your service. They really they take their time and so to me, I love it they get a report that that there's you know, they there's nuclear weapons on the way and they're going to have to do a responsive strike. So I love the codebooks and like when they crack the seals like so the sound that it makes, like the writing with the grease pencils."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Let's slow down, I'm getting too excited. There's so many details we got to call out in here. Don't let me miss any important ones but I love the Om mani padme hum where he's talking about how his girlfriend is chanting over weed. Wild for an Air Force officer to be talking about on the way into work. [clip of WarGames plays]"
+        },
+        {
+            "name": "OFFICER",
+            "timestamp": "",
+            "text": "1 What was that you were saying now?"
+        },
+        {
+            "name": "OFFICER",
+            "timestamp": "",
+            "text": "2 So you used to hear her chant, all night long. Om mani padme hum. Om mani padme hum"
+        },
+        {
+            "name": "OFFICER",
+            "timestamp": "",
+            "text": "1 Over the plants?"
+        },
+        {
+            "name": "OFFICER",
+            "timestamp": "",
+            "text": "2 Yeah, she cupped her hands over those seeds and she'd chant by the hour. [clip of WarGames plays]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So okay, maybe, maybe they're implying that's why he couldn't turn his keys, because he's stoned. The way he draws the L. He draws a crazy L when he gets the code. He does like a crazy loop L, l never seen an L like that before since. I like their little air force ascots that they're wearing."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, yeah. Strong ascot work in this film."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's all, that's all I got so far. What did I miss Meredith?"
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "would like to add that I think that the the weed element is, is showing that he's a pacifist at heart."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "agree. I agree. I think it's a key detail. And that's how good this movie is."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Exactly! Yeah, no shit is an accident here."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Obviously, I didn't understand Om mani padme hum when I was a child either. Like that's like one of those things that like, comes to light. You know, new shit comes to light."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah. And it doesn't spell it out either. It rolls right past it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Strong font. Also, in this movie."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh! Very good typeface here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Very good typeface. Ctcher, what's that font?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's like a true classic 70s science fiction font that, that they all use. So So when the moment comes, you know, to turn the key. That is where that is where Leo is, like, you know, can we just call somebody and let's make sure that we can do it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's not procedure sir!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So that whole thing of like, \"turn your key!\" it just immediately took me to George Costanza. [Meredith laughs] [clip of Seinfeld plays]"
+        },
+        {
+            "name": "MAURA I",
+            "timestamp": "",
+            "text": "refuse to give up on this relationship. It's like launching missiles from a submarine. Both of us have to turn our keys."
+        },
+        {
+            "name": "GEORGE",
+            "timestamp": "",
+            "text": "Well, then I am gonna have to ask you to turn your key."
+        },
+        {
+            "name": "MAURA",
+            "timestamp": "",
+            "text": "I'm sorry, George, I can't do that."
+        },
+        {
+            "name": "GEORGE",
+            "timestamp": "",
+            "text": "Turn your key Maura! Turn your key! [clip of Seinfeld plays]"
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "will say that this whole scene sort of reminds me of the Kobayashi Maru situation. Like it opens the film with these really, really high stakes, and you're so into it. And you're like, immediately, like just really, really compelled. And then you discover that the entire thing was a test. But already you're sold, like it doesn't matter. Like it doesn't matter that it wasn't actually real. You feel like you understand the stakes, you understand the characters, you understand the world, and you're just in it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. When those, when those doors open, and Kirk is standing there, and you're like, holy shit, this was just a simulation."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Ohh! So good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, my God."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think this is something to that, like the Youngs don't quite get, like our generation is the last one to get, which is that like, if you're a kid during the 80s, there was just sort of an assumption that there was going to be a nuclear war at some point. It was just like, it was like, yeah, this is gonna happen. like everyone's been talking about for so long. Since before we were born. There was like threat of nuclear war. And it's like, in now, it seems like we really don't like these guys at all. And they don't like us, and everyone has nukes, and how can they're just like, there's just no way out of this. And there was so much media about nuclear war, there's so many movies where like nuclear war was a foregone conclusion that it really just felt like, yeah, this is how the world's gonna end for sure."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So we had people over from our church, which was a moderate Presbyterian Church to watch The Day After, right? The movie that convinced Reagan that he needed to be more aggressive. But there was also I don't remember what it was. But again, my fundamentalist days around this time, there was like, like an Armageddon movie produced by Christians that was in theaters, I have to figure out what the hell it was. But it was like within the next 20 years, it's the turn of the millennia, and literally, the apocalypse is coming nuclear wars coming. So this shit was very real to me."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Well, and Jason, I think that you're right, that our generation sort of being the last of it, and being kids at that time, I think that entertainment was really trying to speak to that because we were so anxious. And so then of course, like Red Dawn coming out the year after this, it's like trying to give our generation the sense of control in this completely uncontrollable scenario where it's like could actually make a difference. And of course we couldn't. But it's nice that that was the you know, the narrative of these films."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, totally."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And Frankie Says Relax just a couple of - or When Two Tribes Go to War just a couple of years later. Okay, so it goes from there to NORAD."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "To the titles. Yeah. And can we talk about we talked about a little bit already that the music in this movie is phenomenal."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "So good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The score, the score hit, like when it comes in after like, you know, when it goes to the titles is just, it's just amazing. From the first note, like the score is just so good from the first note and like, so Arthur Rubenstein is the composer. He also did, I don't know, Stake Out, the Scarecrow and Mrs. Kane."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, it's really crazy, because I think he did such a like very, very good job with this. And I mean, not to, in any way diminish TV movies, but almost everything he did was for a TV movie, which doesn't have much of a budget for score. This is one of the only feature films he did, and certainly the only one that still matters to this day, you know, and it's so good! I just, I really wish he'd done like, a lot more."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The military. So it's got this like military march element to it. And it really reminded me of like Stripes, the Bill Murray, like sex comedy stripes, which was fairly influential to me as a small child. [Meredith laughs] [clip of Stripes plays] Because it's just got this like, kind of like, it's military, but like, something's, like, exciting about it. Like, it's like zingy, military, like movie."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And there's a little like harmonica to it. Like it's playful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, the harmonica. Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We'll talk a lot about the harmonica. [Haitch & Meredith laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "We'll get there. So now we have, you know, a critical set piece of the film, which is the sort of command center in NORAD, which my notes just say, unreal. The design of this facility is really, really beautiful. They did an incredible job of building that location."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, I read an oral history that Wired magazine put out years ago, and in there, they say that this was actually NORAD like wet dream of what it wishes it could look like in reality. [fact bell rings] [Meredith & Haitch laugh] It's like never that cool in reality, but it looks so good here."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "got a lot of technical facts about the displays at NORAD."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "want that. I want that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, do it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So like the, the screens at NORAD, there's no way that they could obviously, like have screens that big, that actually were real in the 80s. So they were projected onto those screens and the graphics that were projected on the screens were made by HP 9845 C system, [fact bell] that itself projected the graphics on a vector display monitor, which allowed for the graphics to scale up to large screen without like losing resolutions. Like, you know, vector monitors don't really exist anymore that I can think of, but were a thing for a minute. Notably, like there were big in arcade games. So like I had, I had a arcade cabinet of Tron for a long time as a kid, or sorry, of Tempest for a long time. Tron used it too. And so Tempest had like this, you know, vector display of, of graphics, where like, instead of being raster worts, does scans across, it's like lines shooting out to the screen, anyway. So they, they made these graphics on these HP computers. And they made something like 50,000 feet of film as they shot the screens so that they could then project it back onto the screens. So like the making of the graphics for the screens took 10 months, because they had to generate all the graphics with this old ass computer, and then film it, and then projected onto the screen using the filmed version of what was on the monitor."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh, that's so rad!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And was it being projected while those scenes were happening when we get to the end?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Because the lighting in there is incredible."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's being projected. And they also had, like that strobe at the end was like a new effect that had never been done before either. Like that was practical. That was practical too. There was a 24 frame a second strobe that goes off at the end, which like, you know, like, I guess no one was epileptic on this, on this movie. But yeah, they they had that whole thing going on as well. Yeah."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow. Wow, good facts."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, there's a hp9845.net website where you can read all about this computer and its history, and particularly its history in WarGames."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is amazing. Well, so we have our first introduction to the power struggle that is kind of one key element of this movie, which is between Barry Corbin General Beringer and McKittrick, you know, sort of power play have tried to have the computers take over things. So that's our, our sort of leading antagonists of the 80s, Dabney Coleman."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Dabney Coleman."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just a hero."
+        },
+        {
+            "name": "MEREDITH A",
+            "timestamp": "",
+            "text": "real piece of shit though im this."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, real piece of shit. The movie Cloak and Dagger is one that meant a lot to me."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's sort of the poor man's Gene Hackman, basically."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Mmm yeah I get that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like, it's like, you can't get Gene Hackman, you get Dabney. And he does, you know, 80% the job."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Also, it's interesting because Barry Corbin is typically sort of a bad guy, and you get that vibe from him at the beginning here because he's like, sort of a bully. And he's kind of like, you know, pushing everybody around. And then you quickly realize that he's actually like on the right side of history here, which is, I think, rare for a Barry Corbin performance. So and this oral history talks about how he's based on the commander in chief of NORAD, James Harbinger. And of course, the character's name is General Beringer. And he was just this like, cool, blowhard dude that when the writers were were visiting to do research, he was like, \"Let's go off campus. I can't drink here.\" So he took them off campus to a bar, so you could like drink a lot of whiskey and just sort of give them the scoop and I don't know, I just like really, extra love -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love it."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "know right? Isn't that cool?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah, he seems great. Barry Corbin's performance in this movie is just a phenomenal thing. Even in a supporting role, and you get it like, right in his introductory scene, like the the mustard, he puts on the hotdog when he says, silicone diode. [Meredith & Haitch laugh] Phenomenal. Like, yeah."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's so true."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You know you're in for a ride. It's just, it's just delightful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Well, well, so basically, McKittrick making the play of based on the opening scene that you can't trust humans in the chain of command because 22% of the time they're going to fail and that we need to turn it over to computers. And, you know, the whoever the guy talking to the President agrees and of course, McKittrick says \"you won't regret this\" and you're like, okay."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly. Well, spoiler. I was watching I was watching this with Crystal who had like, hadn't seen this movie in a very long time, I think and, and he says, \"You won't regret this\" so I'm like, spoiler, he will. She's like \"Don't ruin it!\" [Meredith & Jason laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice. Alright, you guys ready for David?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I'm ready. I'm so ready."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Again. Just off the jump. It starts with this song because he's in an arcade. And I thought for sure that this song was an actual song. Like was like a real song. A pop song."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It feels like a bop."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. And it is not, listener. It is Arthur Rubinstein doing some shit. It absolutely should be a bop. Someone should remix the song. It is fire."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's no You Got the Touch, but it's pretty good."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It is good!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's really good."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's perfect arcade tune. I mean, you're instantly just completely into that vibe. You're back in the 80s, you're playing your arcade game. You are feeling it. You're late for school."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Love it."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Meredith, what was your favorite arcade game?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I've never really been much of a gamer. I just enjoy the atmosphere. You know, I would I would go with my brother and watch him play and drink a soda. [Meredith laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's a delightful vibe."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's just a nice feeling."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Absolutely. Especially then in 1983, it was like this new frontier that had really exploded. It was a new kind of social setup. And the new games were coming out constantly. And so just going down for us it was going down to the boardwalk or it was going to the mall. And just playing in these these huge arcades and just seeing how far you could go."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, and you were getting a product that you couldn't get at home. I mean, that's like the brain. That's the big difference."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Although you had a, you said you had an arcade cabinet in your home."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "had this one, I did, I had a Tempest arcade at my grandparents -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What age?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "At a relatively young age. My grandparents won a Tempest arcade machine in a golf tournament or something."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's so cool!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And they did not want it. And so I wanted it. And so it was in my basement for the entire time I grew up and we played it a lot, obviously. And then in, I moved to San Francisco in 2000. And like 2002ish, a friend of mine from St. Louis, I grew up with who I met from my BBSing and doing other nerdy shit in St. Louis. We flew him to St. Louis from San Francisco. He lived out here too. And we rented U-haul and we loaded the tempest machine in the U-haul, and we drove it cross country back to San Francisco. Like stopping in Vegas on the way back and the Grand Canyon. We took the Tempest machine to the Grand Canyon. And he didn't have his driver's license, so I drove this U-haul the whole way. And I also had a terrible cold. This isn't strictly relevant. [Meredith laughs] But I brought the machine back and then after it stayed in my closet and my apartment and my bachelor pad in the mission for a number of, like, five, seven years. And then I moved it because it took up an entire closet in my one bedroom apartment, like this was the only thing in the closet."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "This was your Tempest closet."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, exactly. You'd open the door to a closet, what's in here? A Tempest machine. And I moved it to the Twitter offices when I was working at Twitter in like 2009. And it stayed there, as far as I know, it's still there. I don't know what happened to it. I donated it to Twitter basically."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "So the Tempest game has been to the Grand Canyon and works at Twitter now."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's right."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "You've hit like all of the items on its bucket list. [Haitch & Meredith laugh]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It was won in a golf tournament. It got to travel the country. It worked for a startup. It's really, it's lived a good life."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Good for Tempest."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't know, I don't know what it's up to now. But I hope it's doing well. Shout out to you, Tempest machine."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's amazing. Well, I will say David is playing Galaga which is one of my all time favorites. It's probably like the perfect video game in terms of that that generation. But it was amazing just to watch over time, like the evolution that was happening almost month by month you would see like new kinds of games, 3d getting introduced and you know, the laser discs and stuff."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Dragon Quest."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, like that stuff. Just amazing. Alright, so David, he's great at, he's great at Galaga. He, he goes to school, he's getting an F in his science class, as is Jennifer. They're both getting Fs, you got to work pretty hard to fail that class. And this is pretty efficient. So she picks him up. He's walking home, she picks him up on the scooter, they go back to the house and he shows her because he copied the password when he was in detention in the principal's office. So he goes in and changes his grade. So here we have the introduction of his setup."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "have to, I have to pause because I just want to say that when she picks him up on her like moped. Yeah. And takes him home. There's a scene in which she's like, \"Well, I guess we will be in summer school.\" So he was like, \"what do you mean?\" is like, you know, and he's like playing it coy and he puts his head on her shoulder on the bike, like as like sort of like a flirty coy thing. And I just think it's adorable."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's so sweet. I'm so glad that you bring that up, Jason, because just the fact that she's the one with the little moped."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly, exactly."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "She picks him up and she's like, hop on back and he like puts this little arms around her waist so he doesn't fly off. Oh, I love it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He puts his little gelfling arms around her! It's so cute!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's so good. I really love it. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh man. So how about that setup?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Back to the setup."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "was not a hacker, I had a Commodore 64. I did program routines where my computer would ask me questions, and I would give it responses and depending on the responses that would give me different questions and whatnot. But I did not, this was 1983. So I was not actually doing BBSing and that kind of stuff I missed, I missed that window unfortunately."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So, so cool, I guess. Well, this is a very complicated setup. He has a 1983 like this is this is a fairly exotic setup that he has in home computing. He's got all this inside computer shit. He's using, you know, an audio coupler for a modem. He's using eight inch floppies, which are very strange. Like you don't see that, you don't commonly use. Fun fact about eight inch floppies, up until 2019/17 the United States nuclear arsenal was controlled by a system that used eight inch floppies. [Fact bell rings] Like they ran the entire nuclear arsenal control system off of software that was from the 70s and still had to be loaded on with eight inch floppies until was modernized during the late part of the last decade."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That is a fun fact."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, sleepeezee. [Meredith & Haitch laugh] I know that the modem that he was using was like a 1200 baud. So that was like half as fast as the first modem I ever had, which was a US robotics 2400 baud modem. And yeah, I don't know what all the switches are, though. I looked up I've got an article we can include in shownotes, like all the stuff that's in there, he's got a lot of switches on the side like that are, I think what that is, is that it's a microcomputer that for which like he doesn't technically need the keyboard, like he can program it using all of his blue and red switches. So it's just a very exotic setup, this kid's got at this time."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And I did not have the time to do my like full due diligence and confirm this bit of trivia that I read, so you know, take it with a grain of salt. But I did read that there was a point where Matthew Broderick was, you know, reading the instructions that were given to him to like program something and then the instructions were misplaced by the set, you know, decorator and he figured it out on his own and everyone was very impressed. So."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wooow."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Who could say? I'm sure it was some very basic programming. But, you know, it's like when an actor does his own stunts, I appreciate it."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "know, I know one thing is that the keyboard was like macro so that like he was he would just like hit two keys and like it would type out the pre programmed thing, so that he didn't have to, like live type when he was doing, when he was doing that."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That makes sense."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, which makes sense."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But I will say so I saw this film in 1983. I was 13 years old. You know, I was a computer nerd and into comics. And in 1984, I went to gymnastics camp in Massachusetts because the Olympics were coming and it seemed like a really cool thing to do. And it turned out, I took my X-men comics with me up to there. And it turned out that I was like, the scrawny little nerd. And I like literally got beat up by like the big jocks that had been doing gymnastics for years and whatnot. So I decided the only time that I wasn't sort of picked on was when I took off my glasses, the night of the dance, and I could do breakdancing."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yes!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So when I came back, I got my braces off, and I got a retainer, I got hard contact lenses. And I just said, I'm not going to do any more computer stuff. I'm not going to do any nerdy stuff. I'm just going to be like cool and into music and whatnot. So I like was off computers for 10 years from that point, before I started getting back into nerdy shit again. So this, this was sort of like right in that zone for me."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "will say that and with you know, a lot of love and respect, but breakdancing is also in its own way pretty nerdy. You know, you have to be sort of like very specific subset of the population that devotes yourself to it like entirely they get good at it at all, you know?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, yeah. of the elements of hip hop. I feel that like breakdancing and beatboxing are like the nerdier."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "The nerdier ones. Yeah. Which I love."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, that makes sense. Alright. So he changes his grades, he hacks into the school, he changes his grade, she doesn't want him to change her grade. He ends up secretly doing for her anyways after she leaves. But I do want to call out the next scene, the Air Force. It's been like three days since this event happened. And the Air Force is already decommissioning the system and switching over to Whopper. So Jason on your long running theme of government efficiency -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "They're on it, there is no government contractors they had to go through, they just had like these little switches around the nuclear arsenal super casual. I was noticing that too. Not so much for the efficiency point, which is funny, but that there's just like some Sergeant like screwing in, like the new thing, and he's got like a Scylla scope and a screwdriver is like, right. I don't know, I guess. You know, it's great. Yeah, but yeah, and sad looking John Spencer, just like I don't know what he's got to go."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He was stoned though."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Eat shit. Yeah. Exactly. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I have two notes from the dinner. The first one is that his mom works for 21st Century Real Estate. And she's like, she's like convincing her client to go for an adjustable mortgage with a balloon payment. It's like a foreshadowing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's no problem. Is the Reagan era, baby, everything is possible."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, evil. Also -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The corn."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The corn was particularly horrific to Crystal. Crystal had a real problem with the corn."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I'm so glad that you guys brought up the corn, because before I remembered that the corn is raw which is truly, truly horrific. Crystal's you know, is correct as always, but I did find the way that the dad buttered the corn with the bread red clever. That's a way to butter your your corncob, you know?"
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "lot of butter though. He really -"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "So much butter. [Meredith laughs]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's really putting it on there."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "He's splitting the butter between the bread and the corn. So."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "remember I never would ever forget the fact that the corn was raw like that, for whatever reason had a visceral connection to me in my childhood. Yeah, I was always very, very focused on that. So now they're hacking around. You know, Jennifer comes over. And we get the pan-am reservations that he gets for her to go to Paris."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "want to add something here if you don't mind. So in the in the last scene, when Jennifer doesn't want him to change her grade, and she's sort of like, \"Oh, you're gonna get me in trouble. I you know, I didn't tell you to do that. Please don't do that. Change it back.\" So that was that scene was shot by Martin Brest, the original director who was only he only shot for like 12 days before he had sort of falling out with producers and then was replaced. And then Badham when he came back and was watching the footage that Brest had directed, he had a real problem with that scene cuz he was like, God these kids are such drags! Like, why would she not want him to change her grade and like they're so serious and these kids need to lighten up a little bit. So he actually was like, this is an important element for me to bring to the story. That Jennifer has to come back and be like, actually, no, I want you to change my grade. That was silly of me. I'm sorry. And and Matthew Broderick being like, don't worry, I already did. Don't worry about it."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "didn't know there was a director who got fired. That's really interesting too."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, Martin Brest who did Scent of a Woman I mean, he's you know, like a very like serious, Gigli, Meet Joe black. It's all these like really sort of serious emotional, emotional dramas and that's what he kind of tried to bring to this."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He seems like a drip. Fuck him."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "He's a little bit of a drip! You know, get outta here Martin! We don't need ya. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Did you guys go see Meet Joe Black in theaters to watch the Episode One trailer?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah! Absolutely!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I did. It's funny cuz I was like, I don't know why I saw that movie. Like, it makes no sense I would not have seen that."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "know, Matt, I'm so glad you reminded me of that cuz I'm like, yes, that is how I saw that movie. You are correct!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That makes sense."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "They played it again. They played the trailer again after the movie was over. Which was the only way to get people to stay. Alright, so he's now trying to figure it out. He's trying to connect into -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh he's using a war dialer. That's, this is like one of your first like, kind of actual hacker shit. Like, that's a real thing. Like, you know, he gets the exchanges for Sunnyvale. And he's just dialing and he's using a program to spam every number."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Good for him."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Good for him. A little phone freak."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he, he connects he he gets the prompt, but he can't log on. He gets a list of games. And then we have this great social media hacking montage. What about the nerds? Right? Is this where he goes -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "You're gonna skip over Melvin?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, no, no, definitely not. Definitely not."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Jesus Christ, Matt. You're not gonna skip over - not on my watch."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "No, no, definitely not. Yeah. Melvin and the other guy. The other guy was great too!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The other guy's fine. But if it's like he goes to talk to Jim and Melvin who are running computers at the computer place. And they're his hacker friends. And they teach him about backdoors. Jim has one of the iconic lines of the movie \"Mr. Potato Head?!\" which is phenomenal. The guy who plays Melvin, just a real champion of cinema, who I guess went on to do a lot of voice acting, odd looking gentlemen."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Were they playing him as being autistic? And even John -"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "think they were."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And John says \"you remember you told me when to let you know, when you're not making cues\" or something?"
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't, I don't know if they would have thought of it as being autistic at the time, right? Because it's 1983. But like, clearly, that's how we read it now."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Well, and this oral history from Wired, so they the character of David is loosely based on this hacker, whose name is David Scott Lewis. And they actually had a ton of hackers on set all the time to just weigh on stuff, which is very, very cool. Like Captain Crunch was there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh wow. Captain Crunch was on set?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "The entire time just weighing in on stuff being like, that's not how we would do this. That's why this movie holds really well. It's like, like, authenticity to David Scott Lewis. Even though David the character is like loosely modeled on him, Melvin's, it's actually Melvin, not Melvin, which is -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, sorry, sorry."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "His mannerisms are modeled after David Scott Lewis and David Scott Lewis. Like the whole backdoor thing was, it's the way that like David Scott Lewis went about everything. And that was his contribution. And he was like, this is how I would do it. And so they had Melvin, say that for him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wow, that's super interesting."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So then we have, you know, fresh off our montage from from the Edge of Tomorrow, we have our next montage here of getting all the social media data and get and getting that together. But in the end, it's Ally Sheedy, who is going to come through and deliver the kind of the key insights. So first of all her running up, you know, to the house and petting the dog. Like, I just can't convey how much I was in love with her. Like it was it was kind of amazing."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "She's like \"I have a motorbike. I jog. I let dogs lick my face!\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Dogs like me! [Jason & Meredith laugh] I'm like an aerobics instructor. So you forgot one thing. Sorry. Yeah. Which is that the, again, just to shout out our guy Arthur Rubenstein, the music during the Falken research scene is also an incredible piece of score. He's just got, my guy Arthur has just like a different vibe for every, he knows what he's doing. He's a real visionary this guy and like just basic during the, during, like he's getting the microfiche is out, and he's watching all these fucking weird movies and stuff, is really good."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "love that he also skips an entire week of class just to devote himself to this project. [Haitch laughs] That's like true genius. You know, it's like, No, I don't actually care about school at all. That does not interest me. I'm just not going to go, my parents won't notice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There's your F."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "There's your F. Exactly."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So I do want to call out, I'm just going to combine a bit of two scenes here. So when Jennifer goes upstairs, David's dad asked her what the word tremulous means. And she says, she says, I have no idea. And I was fine with that. But in the next scene, when she says, I don't know the word \"trajectory\" or something. I'm like, guys, you're laying it on a little thick here."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That she's just really dumb."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I don't like that."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "don't like it either. And like, it's fine. Actually, you're right with the first scene because the dad doesn't know either, you know? Sure. I didn't know I looked it up. It's like a burial mound? I'm not sure. But, but trajectory is a word that people know."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. High schoolers know. Yeah. Alright. Yeah. They talk about you know, he's explaining Professor Falken to her. And he's explaining that he's dead. And that he was 41."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's old."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And she says \"Oh, that's old!\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Tough one."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, that really made me just want to shuffle off this mortal coil."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, that's a tough one."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's brutal. It was truly brutal. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. But they do they do uncover his son who had died was named Joshua. And so that is where, you know, David tries Joshua, and they get in, and he sees a list of games and he decides the most fun looking one is global thermonuclear war. And so he fires that up."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Which he manages the type with no mistakes."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Thoughts on them drinking Tab, on the missile warnings at NORAD, all of it?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh, they are just swigging that Tab. I mean, they're throwing it back. It's like a very, I don't know, like energetic consumption of the beverage, you know?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. They can't even like pause to like, fully swallow the slurp of Tab that's in their mouth. Before they want to talk about launching more missiles."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, they are so into it. I mean, I get it because it's like playing Risk or whatever, but they definitely went to like the most, you know, alarming name on that list of games that they could be playing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. Well, so Meanwhile in NORAD, Beringer, I thought was pretty cool and collected as this is unfolding."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Beringer's great. Beringer's the true hero of this movie, he saves the world like, I mean, literally, he's the hero of the movie. But I mean, one of the great things, this is, this is good, when they go to DEFCON 3 or whatever in the scene. And when they go to the more alarmist DEFCON level, the klaxons go off. And it goes, AWOOOGA! [Meredith laughs] Like it's like an old timey, old timey car with like a honky horn. AWOOOGA! AWOOOGA!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Just you're saying DEFCON does remind me something from the the oral history, which is add that there is now I mean, DEFCON is obviously like a, you know, a term that the military uses, but this film popularized it. And there's a hacker convention that is now called DEFCON after WarGames, which I did not know."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Missiles are coming, you know, stuff is happening. And then David's dad yells at him for the trash, the raccoons getting into the trash. And so David cuts off the connection, all the missiles disappear, and NORAD is trying to figure out what the hell is going on."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "think that there is a nod to the scene in Galaxy Quest which I think is one of the greatest movies of all time. Where Justin Long is, you know, trying to help them through the you know, he's like, started doing the simulation that's helping them through the like, big action climax. And then he's interrupted by his parents be like, \"you have to come take out the trash right now!\" [fact bell rings]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Right, right, right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh my gosh!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's true! Woowww. Well spotted."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Thanks."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And what's his face runs in, right? Like guy who's like the like mustaches computer assistant?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "The Whopper guy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The Whopper guy, like, \"It's a simulation! It's a simulation!\" [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That guy is great."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love that. Love that guy. I don't know who he is. I don't even know that character's name. But I love him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, I know. He is terrific."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "\"Why'd you cut the line? I didn't tell you to cut the line! They cut the line!\" [Meredith & Haitch laugh] That whole thing? And then oh, I think there's also I think also in this scene, there is a sort of a nod to Dr. Strangelove. Yeah. \"You're not supposed to be running in here. Someone could get hurt.\""
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is the war room!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And this is a good time to say that they, the writers originally wanted us to be like it wasn't necessarily gonna be a hacker movie at all. And they wanted it to be that a sort of like ailing genius in a wheelchair that that they wanted to actually be can which is what why his name is Falken, Stephen Falken, is then trying to like pass on his knowledge to the sort of apprentice like young slacker genius kid. But the reason that that didn't happen is that other producers thought that sort of genius in a wheelchair in a war room was too close to Dr. Strangelove. So they kind of throughout the whole like baby with the bathwater and just started over."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This is great. This oral history seems really -"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, I'll send it to you guys. If you want to add it to the episode notes. It's really really interesting."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Absolutely."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So David is a bit freaked out especially when he sees the reports on the news that NORAD was, was breached. And then the phone starts ringing at his house as Joshua the Whopper system is calling him back. And pretty quickly he gets arrested and taken to NORAD."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Can we talk about in the arrest scene - this was a this is a good Crystal commentary line. The FBI shows up to arrest them. They throw him in a blue panel van. Crystal was like, \"Oh, he's in big trouble. They brought the panel van out\" Meredith & Jason laugh] Like the FBI is just got like, like an abduction van. They use for such cases."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "For this purpose!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Totally."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Can we also talk about the fact that he's arrested in Seattle, he lives in Seattle."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And taken to NORAD instantly?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's taken to NORAD instantly, which is in Colorado. He just shows up in Colorado. Yeah. Alright. And also, why take them to NORAD?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's like hey, hacker, here's where -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Why don't you come in this giant impenetrable fortress and see what high jinks you can get up to here?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "We're so excited to leave you unattended in with our computers very shortly."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes. Multiple times."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Multiple times. Just leave you completely unattended. See what happens. We need to talk about the guy who plays the sergeant who's guarding him in the infirmary. [Haith laughs] Who's, who's making the moves on the nurse who works at the infirmary. \"How did you ask the computer to teach me a good backhand?\" And, you know, it's like, \"Am I bothering you? Yes. Do you want me to stop? Yes. I don't know if you do.\" I mean, it's just like, he's a real -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yikes."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I'm excited for him to get fired for not guarding -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "For not guarding well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Reassigned Alaska, or whatever."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "also loved hearing this sequence of events. And just seeing the small ways that David's hacking kind of gets him out of jams. Like, you know, the way he kind of uses the recorder. Also, that's the director's voice on the recorder, by the way. You know, to get to use the keypad, and then he also kind of hacks into the telephone. I don't know much about computers. [Meredith laughs] I'm just kind of vaguely mentioning scenes and hoping you guys know what I'm talking about. But I really enjoyed seeing his prowess help him."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Absolutely."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "All sorts of all like daily ways, rather than just the sort of like bigger kind of nuclear war ways."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Well, and the like, on the dictaphone thing, like where I didn't know is the director's voice. That's a good fact. Like the recording is like, eyes are dilated consistent with marijuana use or maybe PCP. It was like what the fuck was going on at NORAD? Like, like, why is everyone in the Air Force super high all the time?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It might just be a continuation of that same characters arc. And it's just like, yeah, my friend from the beginning is still getting it!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Now he's doing angels dust. [Jason & Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's huffing amyl nitrate."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah. Good lord. Yeah, he uses he uses the recorder to bust out which is a real amazing move."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's cool. Very cool. And the scissors and all that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. He calls Joshua, he dials into Joshua from a terminal and he gets Falken's address, which is in Oregon. So he manages to -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "At no time, at no time does he try to like, you know, like, in process on Joshua, though, right. Like he never does, like, you know, a Ctrl Alt Delete end task on the WarGames."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's a good point. But he did, at home he did try to stop in various ways and sort of seem to get the sense that Joshua was done having that, so."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I think he went to like, just an emotional level where he's just like, come on, dude. Come on, Joshua. Could you just be cool? And Joshua's like, I will not be cool. Instead of being like, I am Professor Falken, and you will stop."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah that's fair, that's fair."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He didn't to actually pseudo stop the war."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's the parental method. That's the like yeah, invoking that the the nuclear option there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I'm gonna count. I'm gonna count to three."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. Um, yeah. So he takes off. He escapes NORAD, and he gets to Oregon."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "On a tourist bus. Can I ask a question? I don't know the answer to this. Maybe the answer is that it happens all the time. But tourists, tours of NORAD? Is that a thing? We allow people - I don't know if that's a thing?"
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "just googled it and you can schedule a tour of NORAD right now if you wanted to."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Really?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Why aren't we there right now?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What? Are you serious?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "There should have been a field trip, Dune Pod field trip. Disappointed you did not arrange for that, Matt."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Wait, are you serious? You're kidding?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "No, I just, I mean, I didn't like click on it, but it was like \"tours of NORAD\""
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Of course it doesn't look like that. It's like really lame, like conference room or whatever."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Right. What we really want is to tour the set of WarGames."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Exactly. So he gets out of there. He flies there's no no fly list in place at this point. So he makes it to Oregon and Jennifer's there!"
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "love that she does that. I think that's so cool!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Very sweet."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "I'd like to believe that she rode her scooter all three hours."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "She says \"do you think you're in trouble for changing my grades?\" [Meredith laughs]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Ah, so cute!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Again, I was like why you guys? It's too, it's too hard on her. So now we're introduced to Professor Falken, our Bishop from Ladyhawke."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, absolutely great. John Wood. Just a legend. He's just a great voice."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's amazing in this!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "He's amazing in it. I like at the very beginning too when Jennifer sees the footage of him, she's like, \"he's terrific looking!\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "\"He looks amazing!\""
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "agree. I agree. He does."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So he's a bit of a pill. [Jason laughs] He's watching you know, you know, home theater movies of dinosaurs dying, and he tells a little bedtime story. Yeah, he's pretty fatalistic. [clip of WarGames plays]"
+        },
+        {
+            "name": "JENNIFER",
+            "timestamp": "",
+            "text": "If the real Joshua was still alive, your Joshua, you'd do it, wouldn't you?"
+        },
+        {
+            "name": "FALKEN",
+            "timestamp": "",
+            "text": "Look, we might gain a few years, perhaps time enough for you to have a son and watch him die. But humanity, planning its own destruction. That a phone call won't stop."
+        },
+        {
+            "name": "DAVID",
+            "timestamp": "",
+            "text": "This is unreal! You don't care about death, because you're already dead! [clip of WarGames ends]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Before this podcast, I've never heard the phrase \"put the mustard on the hotdog\", Jason. I'm now gonna use it constantly. And I feel like that's what just happened there."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There's so much mustard dripping off that hot dog. And that's it. He really, I mean, die becomes like a five syllable word in the hands of John Wood. It's amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But I guess if her son died in a nuclear war, he at least would not grow up to become a wolf hunter."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's true. The worst thing you can be. [Haitch laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So they leave, you know, he has no help. They leave and they talk. And they basically Can't they can't get off this island that he lives on. And I really love this moment. She's like, Let's swim for it. It's three miles and he says that he can't swim. And realizing that nuclear war is going to destroy the world. He said, I really wanted to learn how to swim. And I just loved that moment."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's great too, because I mean, they're kids. And so obviously, mortality is not something they're spending a lot of time thinking about. And it's, you know, it's such good writing that they take a beat for that to land and he's like, I always thought I'd, there'd be time for me to learn to swim and there's just there's just not the time now. Oh, so good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And going back to the point where it's like when we were kids, like we thought that this was something that might happen like this, I this line always stuck with me, like I like, it did make me think about mortality and like well what if like I don't get to like grow up or whatever, because like the world ends that was like one was like you kind of have like a flash of you know, mortality as a 10 year old or whatever, because of, because of some random line in a movie. That's pretty, pretty wild."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "think so, I assumed it would be like on the beach or you know, I thought we'd be living in Megacity One or something you know, eventually in the ashes or something but it wasn't going to be good."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, well Falken would like to assure you that it's just gonna be like a brief flash for them, really close, not for those you know poor SOBs on the beach."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah, yeah not good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "What a lunatic. What a fucking Debbie Downer that guy is."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "He is a psycho. What a terrible thing to say to children. [Meredith & Jason laugh]"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's just out there with his like flying pterodactyl. That's a great, that's another line from the Crystal commentaries. Now the helicopter shows up and it's Falken and Crystal's like \"Oh, he should just released his pterodactyl.\" [Meredith laughs] Send the pterodactyl back out to pull them in. [Jason laughs]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It is also so dramatic that he was like you can sleep on the floor. And then it's like, there's no way off the island. And then he finds them in a helicopter. It's like, I mean, just like it's your island just like walk around and find them and be like, nevermind, you guys could ride with me."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean, I thought it was efficient filmmaking. You know, you basically you have him resist the call. And then off screen, you know, figure it out, pull together call NORAD and tell them to send the chopper and they're on the way, 'cause it is a NORAD chopper."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's a lot of business he gets done."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Was that your slow moment, by the way? Was this your slow moment?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Exactly. Exactly. I was just about to come back to that. Like the one, the one scene, it's not even like a whole act of the movie that for me kind of drags. And I do like the writing of the like, you know, I thought I'd have time to swim or whatever. But this whole sequence on tall cedar road or whatever the whole Falken on the island scene drags a little bit for me like it just because like the tone is like also kind of a bummer. Like intentionally but like it sort of takes away from some of the proposal. I think intentionally they meant for this to be like a like kind of oh, nothing, you know, it's like the act to break like they're not gonna make it out of this everything's you know, everything's awful, the world is gonna end but I sort of like, I think it went a little too far for me just in terms of losing momentum."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "get that and as you say the rest of the film is so propulsive and this is just like this pause. But, I love it just because I mean anytime it's quirky reclusive, you know, billionaire or scientist in there like layer I mean, that's that's just catnip for me. I'm very, very into that, like always, He's like showing them Harryhausen movies and - these kids are here for a purpose, sir. And you know, I really like what a dipshit he is. I sort of love Falken. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But you have to remember he lost his wife and son. So like -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But he's like a six year old boy, he like is just like, I just want to like, you know, study stegosaurs now. [Jason laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That part's a little uneven. That's fair."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And it's funny because there is so much like, Jurassic Park that, you know, is influenced by this, obviously. And I love that there's actually just a dinosaur element as well, because I hadn't remember that before because it had been so long since I've seen this. But the whole time I was like, Oh, this is very Jurassic Park, like the opening and so much event that it's like, oh, no, this is literally dressed bark. Except for you know, vice versa."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "love that. I love that it anticipates Jurassic Park by having dinosaurs. At the act two break, that's great. sold. Alright, I'm now for this whole sequence."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yay!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, good. Alright, so we have the helicopter to presumably to an airplane."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just all the way to NORAD. And then a Jeep."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And then a Jeep that crashes like you know, crashes into the fence."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That was a real crash!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, really?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That was a real unintentional crash that just looks so bitchin at the end. [Meredith & Jason laugh] Nobody was hurt. Nobody was hurt!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Cameras were running?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, the cameras were running. There isn't, you can tell actually, there's like, a couple of seconds where the footage isn't like all that pristine or intentional looking. You know what I mean? It's like from from far up and it looks a little bit messy."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Because someone's blood is on the negative."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And that's just them being like, oh, cool. We accidentally caught this like really great crash where no one was hurt. So we don't have to feel guilty using that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's amazing."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wild shit. And it's like, you've got the whole we're closing the mountain. No one only gets in or out. So at that point where there's that line that says \"no one gets in or out.\" Crystal said \"unless you have a dictaphone handy!\" [Jason & Meredith laugh] Doesn't seem that hard to get in or out!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So as they're sprinting to get in there, there's a bunch of soldiers that are helping them get in, but then they don't get in. So like, what's the message for those guys like good luck on the nuclear apocalypse, guys? We'll be on the other side of the door."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, should have had a better job."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "These teenagers who are also responsible are the only ones who deserve to survive this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's right. The ones who started all this."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That I thought about at the time I saw the movie and think about every time that there are people who are running around outside the giant door that do not make it in. Bitchin door though, by the way."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Good door. Oh, interlocking, so good."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "One of the great doors of all time. [Jason & Meredith laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So now we have Falken giving the speech to Beringer, telling him not to launch."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just fantastic. He's just fantastic."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Should have an Oscar."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So then Beringer decides not to launch. And he gets on the phone with the field commanders who were who are thought to be the first ones to be the targets of the nuclear attacks. This scene is amazing with him talking to the colonels into the assistant, whatever guy who happens to be at the desk."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, he's talking to the two commanders and he's talking to one enlisted guy who's just like, at the desk of like, fucking wherever he's at. And he's like, he speaks \"Oh, this is this is airman whatever I'm on. I don't know what's going on. What can I do for you?\" He's great. Love that guy. Whatever. Whatever that guy's up to I hope he's doing well."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It really, it really works. And the woman on the headset, given the countdown to impact."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Amazing!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "She's great."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "was looking great name in the credits. I couldn't find her. Her annunciation of impact is bone chilling."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, she's excellent. I have this weird thing with this movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And I actually had the same experience with the yellow man from Blue Velvet. Where I have seen these, I've seen this movie so many times. I think that all of these actors are like, huge actor, you know, in their bit parts that they have all been in a ton of movies. And some of them I know haven't but like, for whatever reason, she especially I thought she must have been in a bunch of other stuff."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "You're like, what do I know her from? And it's like, oh, this."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Just saying \"impact\" in one movie. [Meredith & Jason laugh] From 1983."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "So this is like a huge, you know, dramatic conclusion here. And everybody's high fiving and excited and we made it. And then you have this reveal that Whopper won't stand down and that it's continuing its countdown. [clip of WarGames plays]"
+        },
+        {
+            "name": "DAVID",
+            "timestamp": "",
+            "text": "What are those?"
+        },
+        {
+            "name": "FALKEN",
+            "timestamp": "",
+            "text": "Those are launch codes."
+        },
+        {
+            "name": "JENNIFER",
+            "timestamp": "",
+            "text": "What are they for?"
+        },
+        {
+            "name": "FALKEN",
+            "timestamp": "",
+            "text": "Joshua's trying to find the right code so he can launch the missiles himself. [clip of WarGames ends]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This technique of using the launch code decrypt on screen and when you get the 10 numbers, you're going to be able to launch, that's so effective."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "It's so good! I mean, it's like a countdown but you've seen a countdown a million times you haven't seen this before, but it's got that same level of tension."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "So good."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Who's the woman who is you know, \"He's got six! He's got six!\""
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The assistant."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Like she's chewing her nails. Like Dabney Coleman's assistant who eats his gum at one scene, at one point in the movie."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That was weird."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's too good of an assistant."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "What is her name?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There's only like three women in this movie."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Exactly. It's not Ally Sheedy."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, Pat. Is that right?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah. Pat Healy. Juanin Clay is the actresses name."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Juanin Clay. Okay. Alright and I don't know that I've ever seen her in anything else but I just, I loved her now. So now we have this sort of race to figure out, you know, what can they do and we do have the moment here where all of this is going down, where Admiral Beringer finally says - [clip of WarGames plays]"
+        },
+        {
+            "name": "BERINGER",
+            "timestamp": "",
+            "text": "Mr. McKittrick, after very careful consideration, sir, I've come conclusion that your new defense system sucks. [clip of WarGames ends]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "So good! God I love him so much."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean, that's the second best. That's his second best line in a movie."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Which is really saying something."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Go ahead, give us the best."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The best is \"I piss on a sparkplug if I thought it would do any good!\" That line, you could sell the movie with that line. If you told me that line, this is a movie about a computer gone rogue. And at some point a four star general is going to say \"piss on a sparkplug if I thought it would do any good\" cut the check, whatever they need to make that movie. [Meredith laughs]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. So David, you know, begins directing things. And he gets the game to play tic tac toe and to see that there's futility, you can't win that. And then he gets the game to play global thermonuclear war, which is a little confusing, because he's already playing that. So I'm not sure why that doesn't trigger the bad thing to happen. But that scene was fantastic with all the lights crashing and everything."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, I mean, this is definitely obviously a nod back to the sort of slower scene and Falken's layer earlier where he talks about how like the one thing that he could never teach Joshua is futility and Ally, she's like, well, why would you like that's a bummer lesson. [Meredith & Haith laugh] But I love that that sort of comes into play later where it's like, it is important for all of us to know that there are some things we can't win. And Joshua hasn't yet learned that. And basically, through the, you know, simplicity and just like perfect futility of tic tac toe. Joshua learns about mutually assured destruction."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "And I love, I love that when it switches from tic tac toe to him running the simulations of nuclear war, there's all these different scenarios listed of like what he's like, he's basically running all the scenarios of what happens and they all have amazing names like Greenland Heavy and like, you know, Lebanon Float, and like, you know -"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "There's like a far east one, and they actually show the nukes starting like around Australia stuff. That was so cool!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This was like the 50,000 like feet of film, they shot of this HP computer simulating this shit. And all these different scenarios that fly by so fast, you can't even see them. Love that. I also think like, we talked we talked about before about how Beringer is the hero of this film, both because he has the best dialogue, but also because in the climax of the movie, two things happen. First, he agrees with Falken not to launch the nukes, even though it looks like they're being attacked by Russia, thereby averting World War III, like that's a heroic choice. he advises the president to that it's his decision to accept that and he makes the right decision. Then after he's correct, and World War III doesn't start. And Joshua still tries to launch the missiles. He realizes that he's gonna have to call the president back and tell them like, we might still have to go through this thing after all. And he just takes it on the chin like fucking Dabney Coleman is like, what are you gonna tell him? He's like, yeah, fucking tell him the truth you son of a bitch. I'm gonna, like I'm running NORAD, I, this is my job. Like, I'm gonna tell him what's going on. I was like, yeah, this guy rules."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Totally, totally. And to your first point, it shows like utter consistency of character. Because at the beginning, he's like, no, we have to rely on like -"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "On the men in the silo."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And, you know, human intuition, ultimately, like, that's what it comes down to. And at the very end, what it's like, this is what the computer is telling us. He relies on his own human intuition and ends up saving the world."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But that was one of the, was it Brzezinski, was the National Security Adviser I think for Carter, maybe but he was at home in bed, and he got the call that there were nuclear missiles on the way coming over Alaska. And he was supposed to call the president and tell him."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "He's like, let's check this."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "He's like, let's sit on it for a few minutes. And he did not call the president and tell him there was a first strike nuclear attack happening. And it turned out it was birds."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Fucking birds."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Good job. So Joshua figures that out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "The only winning move, right?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And it just goes straight to credits at that point, you know, like, the harmonica comes in and boom, we're out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "But it's got like the more like jaunty version because then like the drums come in."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Beautiful, beautiful harmonica, beautiful jaunty harmonica. I also I don't think this is in the oral history, I read this elsewhere. And I can't remember where but audiences were just like, apparently spontaneously burst into applause at the line about like, you know, you know, what a strange game because of that tension that we spoke of, and everyone was just like, so tired of the just like, non stop pressure and stress of this like looming war, that apparently, you know, folks were very moved by that."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "That's beautiful. I didn't know that. I love that. That's great. So this is version mentioned, that harmonica song Edge of the World for again, the great Arthur Rubenstein's score, in the soundtrack, which we of course, will include in the show notes. There is a choral version of that song. Like he wrote a, he wrote a version that has a choral, that has a chorus singing words like you know, and it's a whole situation. I think it's better that they use the harmonica to be honest. But you can decide for yourself. [Meredith & Haith laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Oh, they will be deciding right now. Final thoughts on WarGames?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "This is the best movie ever made. They should have stopped making movies after this. [Haitch & Jason laugh]"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Honestly, it is so much better than I even remembered it being like, I loved it. I am so excited to do this podcast and the rewatching it I'm just like, nope, perfect. No notes. Just like, yeah, it's exactly what it needs to be at every moment."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It's great."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "This is a five banger for me. This is a five star movie."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah! That's right."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It really, it really is terrific. It's really funny and smart. And it really holds up. It's very, very well done with a lot of subtle work on it. So very impressed."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Alright, most important question."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Who would Tilda Swinton play?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Joshua. Right?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, that's good! That's strong. I didn't even think of that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Woah! Woah! Holy cow."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Wow."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "don't entirely know what that means. But I know she will figure it out for us."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yes, of course."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Golly!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "She'll sleep in a box in a museum for a few days first to figure out. I love that."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Whatever it takes."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "God, Meredith. You really, you've really perfected the segment."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Thank you."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It took it to a level I didn't even think was possible."
+        },
+        {
+            "name": "HAITCH I",
+            "timestamp": "",
+            "text": "mean, I almost think like that that could be for the for remake. Like you know, like you would have the full, the CG version of her, right."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "There apparently is a sequel, there is like a WarGames 2 that they made."
+        },
+        {
+            "name": "MEREDITH A",
+            "timestamp": "",
+            "text": "direct to video. Yeah. It's called Code - what's it called, Code something? WarGames The Dead Code. Not successful. I haven't seen it, but not successful."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Is it a movie or video game?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's a movie. There's also, there's been several video games of it. But that, the Dead Code is actually the sequel, the direct to video sequel."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Okay, that sounds bad."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Back to Tilda, I was gonna go with Beringer."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Professor Falken? Oh!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh, see this is why this category is the best thing we got going."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Dang! I mean, she'd be a great Beringer for sure."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "mean, it's hard to say that, you know, Corbin shouldn't be in it. But I'm kind of obsessed with this idea of Tilda Swinton in a military role. And I think it would be, she I mean, it'd be a totally different energy obviously. But I like the Falken choice too."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Falken I think would be perfect for her."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "All these are great choices."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, definitely."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Really terrific. [interim sound bite plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Alright. Well, that brings us to the end of WarGames, we did it you guys!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "We did it!"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Oh god, it was as emotional as I thought it was gonna be."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Oh, thrilling. My heart rate is a little bit increased."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "To tie back into Ladyhawke and what Meredith shared with us when we did that, which is that like that movie was sold on the strength of Matthew Broderick performance in this movie, like you can, you can get that. Like he's, he is movie magic that guy. Like he really did look like he was gonna be like a Tom Cruise or so. I mean, it's like a little more, he's not like an actual star, but he like is super charismatic and super good on film."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "He's a total star."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Total star. Absolutely. Related to that, in this role, in particular, you kind of get the Chalamet vibes, like you sort of get like sort of the thin, pale, white bro. You know, sort of looks younger than he actually is vibes, which makes me think like, you know, I'm excited. I'm just excited for Dune because I think that's a good, I think that's a good vibe to bring to Paul Muad'Dib."
+        },
+        {
+            "name": "MEREDITH I",
+            "timestamp": "",
+            "text": "think so too. And also, this is another thing that I didn't have time to do my due diligence on so grain of salt, but I read that Matthew Broderick turned down the Alex P. Keating, Michael J. Fox role in Family Ties to do this movie. Which is really interesting because I feel like either way he would've arrived, he would have arrived at stardom, because obviously Michael J Fox did, but they're very dissimilar roles, so."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "But that's actually, I mean to me, Alex Keaton, Alex P. Keaton is one of the all times of this era, right the concept of the child born to baby boomers who was a conservative as like a complete, just an amazing, that's a great show."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "It makes me think about what if Matthew Broderick had been Marty McFly in Back to the Future? I think that would have worked."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That would completely would have worked. I mean, honestly, I've never thought about it before, but you could sort of really swap either of them out in any of their roles to be honest."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Yeah. So 83 he does WarGames. 85 Ladyhawke. 86 Ferris Bueller's Day Off. 88 Torch Song Trilogy. 89 Glory."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Glory is amazing."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That is a hell of a six year run. And then the Lion King, as Simba."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "And so much Broadway the whole time. He was like really crushing it on the boards the whole time."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. Amazing. Meredith, what do you have to plug? What're you excited about? What's going on?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "You can follow @Fangoria too, we recently launched since the last time I did Dune Pod, our website, we're in 2021 now with a real website. [Haitch laugh] So please, I'm running that so please follow us there. You can follow me on twitter at @xymarla and if you live in Houston and want to check out my brewpub go to cityacrebrewing.com."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Amazing. We will have links to all of those things in the show notes. Jason, what are you doing on vacation right now?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "I'm actually, we just and we'll see if it comes together. But I'm think I'm going to be in Oregon when this is coming out maybe."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Nice!"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "That's perfect."
+        },
+        {
+            "name": "JASON I",
+            "timestamp": "",
+            "text": "don't know if that's true."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Are you going to be like visiting Professor Falken?"
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, I'm going to I'm going to Tall Cedar Island. [Haitch & Meredith laugh]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Just go slow. I'm going to be, I'm going to be piloting a 22 foot sea fox commander boat in in the Keys, so I can't see what can go wrong."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Is that a - like a - what is that?"
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Is it a metaphor?"
+        },
+        {
+            "name": "JASON A",
+            "timestamp": "",
+            "text": "motorboat?"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "It's a boat, it's like one of those center console boats that you get on a drive off at sunset you park your boat you sit on the water and drink a beer and hang out."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "We're not from Florida, Matt. We don't know like your you know, your boat world."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Get with it! Get with it, Missouri."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, we don't have boats in Missouri, we have paddle boats for going down the old muddy to gamble."
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "That's where, that's where the gambling came from. Got it. Alright, you guys. Thank you so much. We did it."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Yeah, this is great."
+        },
+        {
+            "name": "MEREDITH",
+            "timestamp": "",
+            "text": "Yeah, thanks for having me!"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "Of course."
+        },
+        {
+            "name": "JASON",
+            "timestamp": "",
+            "text": "Amazing times. [Dune Pod theme song plays]"
+        },
+        {
+            "name": "MATT HAITCH",
+            "timestamp": "",
+            "text": "And that's it for this special bonus episode of Dune Pod. I want to thank Jason and Meredith for an awesome conversation. Next week, Dune Pod's summer vacation rolls on as we welcome comic writer and artist Mikey P for an in depth discussion of the 1997 classic that launched the Baron Harkonnen, Stellan Skarsg\u00e5rd's career, Good Will Hunting. If you're enjoying this podcast, join our Discord server where you can hang out with us whenever you want. And join our live recordings. A link is in the show notes. You can find our full movie setlist on Letterboxd and if you want to support them by upgrading to Pro or Patron status, use promo code DunePod at checkout to save 20%. Dune Pod is a TAPEDECK podcast jawn, a production of Haitch industries. Our artwork is by ctcher and our theme music was composed by Toby Forsman of Whipsong music. The episode was edited by Maria Passingham of editaudio and produced by me, Haitch. Thanks for listening. We'll see everybody next week. [Dune Pod theme song ramps up, plays alone, ends]"
+        }
+    ]
+}
