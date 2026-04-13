@@ -14097,6 +14097,29 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "showLink": "https://www.patreon.com/posts/hard-boiled-1992-154681106",
     "artworkLink": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode400/5864738/5864738-1775220366732-727340fa2860c.jpg",
     "letterboxdLink": "https://letterboxd.com/film/hard-boiled/",
-    "imdbLink": "https://www.imdb.com/title/tt0104684/"
+    "imdbLink": "https://www.imdb.com/title/tt0104684/",
+    "tmdbId": 11782,
+    "tmdbPosterPath": "/oMqr4CGGqVlfI8DdrSelK1e9aFM.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "directors": [
+      "John Woo"
+    ],
+    "cinematographers": [
+      "Horace Wong Wing-Hang"
+    ],
+    "cast": [
+      "Chow Yun-Fat",
+      "Tony Leung Chiu-wai",
+      "Anthony Wong Chau-Sang",
+      "Teresa Mo Shun-Kwan",
+      "Philip Chan Yan-Kin",
+      "Stephen Tung Wai",
+      "Kwan Hoi-San",
+      "John Woo"
+    ]
   }
 ];
