@@ -1,4 +1,4 @@
-// Auto-generated - do not edit - 313 episodes - updated 2026-04-13
+// Auto-generated - do not edit - 313 episodes - updated 2026-04-14
 import { EpisodeMetadata } from '@/types/episode-metadata';
 export const episodeMetadata: EpisodeMetadata[] = [
   {
@@ -10459,7 +10459,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "releaseDate": "11/3/2024",
     "length": "2:29:30",
     "reviewer": "Jeth",
-    "guest": "Rosie Marx",
+    "guest": "Rosie Knight",
     "mmmCount": 66,
     "thatsGreatCount": 2,
     "notableMoments": "Rosie has interviewed Catherine Hardwicke. She's been to Forks WA and the Twilight museum etc.",
@@ -13991,7 +13991,7 @@ export const episodeMetadata: EpisodeMetadata[] = [
     "guest": "Ryan Condal / Dave Mandel",
     "mmmCount": 65,
     "thatsGreatCount": 20,
-    "notableMoments": "Episode 300! And it's a great one\n- Dune 3 Trailer dropped on the day of the recording - great discussion of the trailer\n- Talk about the Oscars - One Battle After Another beat out Sinners, Michael B Jordan beats out Timothee Chalomet\n- Somehow this became the Stephen Webber episode (Dave thought we were talking about the Shining miniseries)\n- Dave talks about how Alcoholism informs this whole movie. Kubrick plays that up, and that's probably why Stephen King dislikes the film\n- Ryan - this is a great example of Location As Character with the Overlook Hotel\n- It's a great discussion of the quality and importance of this film. Dave and Ryan are perfect guests for this classic. \n- Letters - Rosie Marx (Dune 3 trailer review), Lizzen, Silly Oswald, Animal Mother, Mr Java (Bowie All The Young Dudes parody), Bog Pod, Truthsayer, Kev, Corey\n- End of the episode features Lapis Lazuli Blues - the Noir Radio Play produced by Birria and featuring all of the voicemailers and hosts\n- PodFirst - Jason proposes a new segment where he draws a random Dune tarot card and explains what it means",
+    "notableMoments": "Episode 300! And it's a great one\n- Dune 3 Trailer dropped on the day of the recording - great discussion of the trailer\n- Talk about the Oscars - One Battle After Another beat out Sinners, Michael B Jordan beats out Timothee Chalomet\n- Somehow this became the Stephen Webber episode (Dave thought we were talking about the Shining miniseries)\n- Dave talks about how Alcoholism informs this whole movie. Kubrick plays that up, and that's probably why Stephen King dislikes the film\n- Ryan - this is a great example of Location As Character with the Overlook Hotel\n- It's a great discussion of the quality and importance of this film. Dave and Ryan are perfect guests for this classic. \n- Letters - Rosie Knight (Dune 3 trailer review), Lizzen, Silly Oswald, Animal Mother, Mr Java (Bowie All The Young Dudes parody), Bog Pod, Truthsayer, Kev, Corey\n- End of the episode features Lapis Lazuli Blues - the Noir Radio Play produced by Birria and featuring all of the voicemailers and hosts\n- PodFirst - Jason proposes a new segment where he draws a random Dune tarot card and explains what it means",
     "hFlex": "N/A",
     "jFlex": "N/A",
     "kevsQuestion": "What is your dream vacation, and why is it New York?",
