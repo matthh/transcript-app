@@ -43,6 +43,9 @@ export interface QueryLogEntry {
   // Use case classification
   useCase?: string;      // Deterministic tag, set at log time
   useCaseLLM?: string;   // LLM tag, set by batch classifier script
+  // External consumer attribution
+  source?: 'internal' | 'external';
+  externalKeyId?: string;
 }
 
 export function generateLogId(): string {
