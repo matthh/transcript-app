@@ -1,9 +1,10 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getAnthropic } from '@/lib/claude';
 import { loadEpisodeMetadata } from '@/lib/metadata-store';
 import { loadVectorStoreAsync, StoredChunk } from '@/lib/vectorstore';
 import { QUICK_SYNTHESIS } from '@/lib/routing-policy';
 import { EpisodeMetadata } from '@/types/episode-metadata';
+import { checkAuth } from '@/lib/podreview-auth';
 
 // ---------- Failure-mode-aware adversarial question types ----------
 // Derived from docs/query-failure-modes.md FM-01 through FM-13
@@ -177,7 +178,11 @@ function sampleHardNegativeChunks(
 
 type GenerationMode = 'metadata' | 'transcript' | 'hard-negative';
 
-export async function POST() {
+export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const chunks = await loadVectorStoreAsync();
     const episodes = loadEpisodeMetadata();

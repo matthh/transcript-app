@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { AssemblyAI } from 'assemblyai';
 import { saveTranscriptionJob } from '@/lib/blob-storage';
 import { getKeytermsPrompt } from '@/lib/lexicon';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY || '',
@@ -17,6 +18,10 @@ const client = new AssemblyAI({
  * - episodeName: string
  */
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     if (!process.env.ASSEMBLYAI_API_KEY) {
       return NextResponse.json(

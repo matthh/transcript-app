@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import type { DialogueEntry } from '@/types/transcript';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const BATCH_SIZE = 120;
 const CONTEXT_OVERLAP = 5;
@@ -37,6 +38,10 @@ JSON array:`;
 }
 
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const { dialogues, episodeName } = body as {

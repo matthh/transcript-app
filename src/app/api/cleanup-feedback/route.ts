@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { put, list } from '@vercel/blob';
 import type { CleanupChange } from '@/app/api/cleanup-transcript/route';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const FEEDBACK_PREFIX = 'cleanup-feedback/';
 
@@ -18,6 +19,10 @@ export interface CleanupFeedbackEntry {
  * POST — log cleanup accept/reject decisions
  */
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const { episodeNumber, episodeName, decisions } = body;

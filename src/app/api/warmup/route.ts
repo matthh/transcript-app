@@ -1,17 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { loadVectorStoreAsync } from '@/lib/vectorstore';
 import { loadBM25IndexAsync } from '@/lib/bm25-loader';
+import { safeEqual } from '@/lib/podreview-auth';
 
 export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   const token = process.env.WARMUP_TOKEN;
-  if (token) {
-    const provided = request.headers.get('x-warmup-token')
-      || request.nextUrl.searchParams.get('token');
-    if (provided !== token) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
+  if (!token) {
+    return NextResponse.json(
+      { error: 'WARMUP_TOKEN not configured' },
+      { status: 500 }
+    );
+  }
+  const provided = request.headers.get('x-warmup-token')
+    || request.nextUrl.searchParams.get('token')
+    || '';
+  if (!safeEqual(provided, token)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   const startedAt = Date.now();

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkAuth } from '@/lib/podreview-auth';
 
 const GITHUB_REPO = 'jbennygold/transcript-app';
 const WORKFLOW_FILE = 'ingest-episode.yml';
@@ -9,6 +10,10 @@ const WORKFLOW_FILE = 'ingest-episode.yml';
  * Body: { episode: number }
  */
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const githubToken = process.env.GITHUB_PAT;
 
   if (!githubToken) {

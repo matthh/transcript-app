@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import type { DialogueEntry } from '@/types/transcript';
+import { checkAuth } from '@/lib/podreview-auth';
 
 export interface CleanupChange {
   index: number;
@@ -81,6 +82,13 @@ JSON array:`;
 }
 
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return new Response(JSON.stringify({ error: 'Unauthorized' }), {
+      status: 401,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   const body = await request.json();
   const { dialogues, episodeName, guestName } = body as {
     dialogues: DialogueEntry[];

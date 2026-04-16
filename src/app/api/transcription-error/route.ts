@@ -1,6 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
+function escapeHtml(s: unknown): string {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 interface TranscriptionErrorReport {
   id: string;
   timestamp: string;
@@ -103,39 +112,39 @@ export async function POST(request: NextRequest) {
           <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600; width: 140px;">Episode:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${report.episodeTitle}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(report.episodeTitle)}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Timestamp:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${report.startTimestamp} - ${report.endTimestamp}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(report.startTimestamp)} - ${escapeHtml(report.endTimestamp)}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Speakers:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${report.speakers}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(report.speakers)}</td>
             </tr>
             ${report.reporterName ? `
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Reported by:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${report.reporterName}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(report.reporterName)}</td>
             </tr>
             ` : ''}
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Time:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${new Date(report.timestamp).toLocaleString()}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(new Date(report.timestamp).toLocaleString())}</td>
             </tr>
           </table>
 
           <div style="margin-top: 20px;">
             <h3 style="margin-bottom: 8px; color: #dc2626;">❌ Incorrect Text:</h3>
             <div style="background: #fef2f2; padding: 12px; border-radius: 8px; border: 1px solid #fecaca; font-size: 14px;">
-              ${report.selectedText}
+              ${escapeHtml(report.selectedText)}
             </div>
           </div>
 
           <div style="margin-top: 20px;">
             <h3 style="margin-bottom: 8px; color: #16a34a;">✓ Corrected Text:</h3>
             <div style="background: #f0fdf4; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0; font-size: 14px;">
-              ${report.correctedText}
+              ${escapeHtml(report.correctedText)}
             </div>
           </div>
 
@@ -143,7 +152,7 @@ export async function POST(request: NextRequest) {
           <div style="margin-top: 20px;">
             <h3 style="margin-bottom: 8px; color: #6b7280;">Full Context:</h3>
             <div style="background: #f9fafb; padding: 12px; border-radius: 8px; border: 1px solid #e5e7eb; font-size: 12px; max-height: 200px; overflow-y: auto; white-space: pre-wrap;">
-              ${report.originalText}
+              ${escapeHtml(report.originalText)}
             </div>
           </div>
           ` : ''}
@@ -151,15 +160,15 @@ export async function POST(request: NextRequest) {
           <div style="margin-top: 30px; padding: 16px; background: #eff6ff; border-radius: 8px; border: 1px solid #bfdbfe;">
             <h4 style="margin: 0 0 8px 0; color: #1e40af;">To Fix:</h4>
             <ol style="margin: 0; padding-left: 20px; color: #1e40af; font-size: 14px;">
-              <li>Open <code>transcripts/episode_${episodeNumber}.json</code></li>
-              <li>Search for: <code>${report.selectedText.slice(0, 50)}${report.selectedText.length > 50 ? '...' : ''}</code></li>
+              <li>Open <code>transcripts/episode_${escapeHtml(episodeNumber)}.json</code></li>
+              <li>Search for: <code>${escapeHtml(report.selectedText.slice(0, 50))}${report.selectedText.length > 50 ? '...' : ''}</code></li>
               <li>Replace with the corrected text</li>
               <li>Commit, push, and redeploy to rebuild search index</li>
             </ol>
           </div>
 
           <p style="color: #6b7280; font-size: 12px; margin-top: 30px;">
-            Report ID: ${report.id}
+            Report ID: ${escapeHtml(report.id)}
           </p>
         </div>
       `;

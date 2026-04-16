@@ -2,6 +2,16 @@ import { NextRequest, NextResponse } from 'next/server';
 import { put, list } from '@vercel/blob';
 import { Resend } from 'resend';
 import type { QueryLogEntry } from '@/lib/query-logger';
+import { safeEqual } from '@/lib/podreview-auth';
+
+function escapeHtml(s: unknown): string {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 
 interface FeedbackEntry {
   id: string;
@@ -142,26 +152,26 @@ export async function POST(request: NextRequest) {
           <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600; width: 120px;">From:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${entry.name}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(entry.name)}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Query:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${entry.query}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(entry.query)}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Query Type:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${entry.queryType || 'unknown'}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(entry.queryType || 'unknown')}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Time:</td>
-              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${new Date(entry.timestamp).toLocaleString()}</td>
+              <td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${escapeHtml(new Date(entry.timestamp).toLocaleString())}</td>
             </tr>
           </table>
 
           <div style="margin-top: 20px;">
               <h3 style="margin-bottom: 8px;">Answer Given:</h3>
               <div style="background: #f9fafb; padding: 12px; border-radius: 8px; border: 1px solid #e5e7eb; max-height: 400px; overflow-y: auto; white-space: pre-wrap; font-size: 14px;">
-                ${entry.answer}
+                ${escapeHtml(entry.answer)}
               </div>
             </div>
 
@@ -169,13 +179,13 @@ export async function POST(request: NextRequest) {
             <div style="margin-top: 20px;">
               <h3 style="margin-bottom: 8px;">User Comments:</h3>
               <p style="background: #fef3c7; padding: 12px; border-radius: 8px; margin: 0; border: 1px solid #fcd34d;">
-                ${entry.comment}
+                ${escapeHtml(entry.comment)}
               </p>
             </div>
           ` : ''}
 
           <p style="color: #6b7280; font-size: 12px; margin-top: 30px;">
-            Feedback ID: ${entry.id}
+            Feedback ID: ${escapeHtml(entry.id)}
           </p>
         </div>
       `;
@@ -208,11 +218,15 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   const token = process.env.FEEDBACK_API_TOKEN;
-  if (token) {
-    const auth = request.headers.get('authorization');
-    if (auth !== `Bearer ${token}`) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
+  if (!token) {
+    return NextResponse.json(
+      { error: 'FEEDBACK_API_TOKEN not configured' },
+      { status: 500 }
+    );
+  }
+  const auth = request.headers.get('authorization') || '';
+  if (!auth.startsWith('Bearer ') || !safeEqual(auth.slice(7), token)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   const { searchParams } = new URL(request.url);

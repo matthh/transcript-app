@@ -1,5 +1,6 @@
 import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
 import { NextRequest, NextResponse } from 'next/server';
+import { checkAuth } from '@/lib/podreview-auth';
 
 /**
  * POST /api/blob-upload
@@ -14,6 +15,11 @@ export async function POST(request: NextRequest) {
       body,
       request,
       onBeforeGenerateToken: async (pathname) => {
+        // Gate token generation on the original request's bearer credentials.
+        if (!checkAuth(request)) {
+          throw new Error('Unauthorized');
+        }
+
         // Validate the upload - only allow audio files in the audio/ path
         if (!pathname.startsWith('audio/')) {
           throw new Error('Invalid upload path');
@@ -32,9 +38,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(jsonResponse);
   } catch (error) {
     console.error('Upload error:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Upload failed' },
-      { status: 500 }
-    );
+    const message = error instanceof Error ? error.message : 'Upload failed';
+    const status = message === 'Unauthorized' ? 401 : 500;
+    return NextResponse.json({ error: message }, { status });
   }
 }

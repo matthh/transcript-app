@@ -8,6 +8,7 @@ import {
   deleteTranscript as deleteBlobTranscript,
   loadRawTranscript,
 } from '@/lib/blob-storage';
+import { checkAuth } from '@/lib/podreview-auth';
 
 function parseEpisodeNumber(episode: string): number {
   // Handle formats like "episode_123" or just "123"
@@ -44,6 +45,10 @@ export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ episode: string }> }
 ) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const { episode } = await params;
   const transcript: Transcript = await request.json();
 
@@ -81,6 +86,10 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ episode: string }> }
 ) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const { episode } = await params;
   const episodeNumber = parseEpisodeNumber(episode);
 

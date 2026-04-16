@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { put } from '@vercel/blob';
+import { checkAuth } from '@/lib/podreview-auth';
 
 interface EvalFeedbackEntry {
   id: string;
@@ -22,6 +23,10 @@ function generateEvalId(): string {
 }
 
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const {

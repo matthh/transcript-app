@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { renameTranscript } from '@/lib/blob-storage';
+import { checkAuth } from '@/lib/podreview-auth';
 
 /**
  * POST /api/transcript-rename
@@ -10,6 +11,10 @@ import { renameTranscript } from '@/lib/blob-storage';
  * - to: number - new episode number
  */
 export async function POST(request: NextRequest) {
+  if (!checkAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const { from, to } = body;

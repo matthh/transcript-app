@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { safeEqual } from '@/lib/podreview-auth';
 
 export async function POST(request: NextRequest) {
   try {
@@ -10,7 +11,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'PODREVIEW_PASSWORD not configured' }, { status: 500 });
     }
 
-    if (!password || password !== correct) {
+    if (typeof password !== 'string' || !safeEqual(password, correct)) {
       return NextResponse.json({ error: 'Invalid password' }, { status: 401 });
     }
 
