@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
 import type { DialogueEntry } from '@/types/transcript';
+import { getAnthropic } from '@/lib/claude';
 
 const BATCH_SIZE = 120;
 const CONTEXT_OVERLAP = 5;
-
-const anthropic = new Anthropic();
 
 function buildPrompt(
   episodeName: string,
@@ -73,7 +71,7 @@ export async function POST(request: NextRequest) {
 
       const prompt = buildPrompt(episodeName, knownSpeakers, batch);
 
-      const message = await anthropic.messages.create({
+      const message = await getAnthropic().messages.create({
         model: 'claude-haiku-4-5-20251001',
         max_tokens: 1024,
         messages: [{ role: 'user', content: prompt }],

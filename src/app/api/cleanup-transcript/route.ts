@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
 import type { DialogueEntry } from '@/types/transcript';
+import { getAnthropic } from '@/lib/claude';
 
 export interface CleanupChange {
   index: number;
@@ -13,8 +13,6 @@ export interface CleanupChange {
 
 const BATCH_SIZE = 100;
 const CONTEXT_OVERLAP = 5;
-
-const anthropic = new Anthropic();
 
 const KNOWN_VOICEMAILERS = [
   'Truthsayer', 'birria', 'Kev', 'kev voicemail', 'Corey',
@@ -130,7 +128,7 @@ export async function POST(request: NextRequest) {
 
           const prompt = buildPrompt(episodeName, knownSpeakers, guestName ?? null, batch);
 
-          const message = await anthropic.messages.create({
+          const message = await getAnthropic().messages.create({
             model: 'claude-haiku-4-5-20251001',
             max_tokens: 4096,
             messages: [{ role: 'user', content: prompt }],
