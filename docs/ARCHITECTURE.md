@@ -1,6 +1,6 @@
 # Architecture — transcript-app
 
-**Last reviewed: 2026-07-21**
+**Last reviewed: 2026-07-28**
 
 > **Fork notice:** This is a fork of `jbennygold/transcript-app` (the live
 > deployment at <https://transcript-app-blue.vercel.app>). Do **not** modify
@@ -420,3 +420,32 @@ caches (T-9).
 `src/lib/agent-search.ts` loads every transcript from Blob into memory on the
 first agent call (300+ files). This can cause cold-start latency spikes and
 high memory pressure in the Lambda if agent search is frequently triggered.
+
+**T-19 — `PUT` and `DELETE /api/transcripts/[episode]` are unauthenticated**
+`src/app/api/transcripts/[episode]/route.ts` accepts PUT (overwrite transcript)
+and DELETE (restore raw or fully delete transcript) with no auth check.
+Any internet caller can overwrite or wipe production transcripts from Vercel Blob.
+
+**T-20 — `POST /api/transcript-rename` is unauthenticated**
+`src/app/api/transcript-rename/route.ts` renames transcripts in Blob storage with
+no authentication. Any caller can move a transcript from one episode slot to
+another, corrupting the transcript index.
+
+**T-21 — HTML injection in `/api/feedback` email template**
+`src/app/api/feedback/route.ts` interpolates `entry.name`, `entry.query`,
+`entry.answer`, and `entry.comment` directly into HTML without escaping.
+Identical pattern to T-14 (`/api/transcription-error`). A user providing HTML
+in any of those fields will have it rendered in the notification email.
+
+**T-22 — `GET /api/transcripts` O(N) serial Blob-fetch waterfall**
+`src/app/api/transcripts/route.ts` (list endpoint) loads each transcript from
+Blob one at a time in a serial `for` loop to retrieve dialogue counts.
+Identical problem to T-15 (`/api/speakers`): no parallelisation, no cache.
+
+**T-23 — Deep-synthesis and agent-search model IDs may retire silently**
+`DEEP_SYNTHESIS_MODEL` and `AGENT_SEARCH_MODEL` are both set to
+`'claude-sonnet-4-20250514'` in `src/lib/routing-policy.ts`. Model IDs
+in the `claude-*-YYYYMMDD` naming scheme retire without prior warning;
+when they do the routes return 404 errors silently in production.
+Run `npm run check:models` (or equivalent) periodically to catch retirements.
+(`claude-3-haiku-20240307` in T-16 is a related instance of the same risk.)
