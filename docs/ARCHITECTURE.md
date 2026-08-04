@@ -1,6 +1,6 @@
 # Architecture — transcript-app
 
-**Last reviewed: 2026-07-28**
+**Last reviewed: 2026-08-04**
 
 > **Fork notice:** This is a fork of `jbennygold/transcript-app` (the live
 > deployment at <https://transcript-app-blue.vercel.app>). Do **not** modify
@@ -441,6 +441,26 @@ in any of those fields will have it rendered in the notification email.
 `src/app/api/transcripts/route.ts` (list endpoint) loads each transcript from
 Blob one at a time in a serial `for` loop to retrieve dialogue counts.
 Identical problem to T-15 (`/api/speakers`): no parallelisation, no cache.
+
+**T-24 — `POST /api/eval/generate` is unauthenticated**
+`src/app/api/eval/generate/route.ts` fires a Claude Haiku LLM call on every
+request with no auth guard, rate limit, or cost cap. Any internet caller can
+spam the endpoint, exhausting Anthropic API credits. Recommended fix: protect
+behind `CRON_SECRET` or the `PODREVIEW_PASSWORD` bearer pattern.
+
+**T-25 — `GET /api/analytics/use-cases` is unauthenticated**
+`src/app/api/analytics/use-cases/route.ts` returns full query-log data from
+Vercel Blob — including user query text, use-case tags, and per-UC ratings —
+with no authentication. Combined with the already-public query-log Blobs (T-10),
+this endpoint also fetches and re-exposes their content in a structured
+drill-down view. Recommended fix: add a bearer-token check using an env var
+before returning log data.
+
+**T-26 — `GET /api/eval/results` is unauthenticated**
+`src/app/api/eval/results/route.ts` lists and fetches all human eval feedback
+entries from Vercel Blob with no auth guard. Entries include question text,
+answers, ratings, and comments. Recommended fix: same bearer-token pattern as
+recommended for T-25.
 
 **T-23 — Deep-synthesis and agent-search model IDs may retire silently**
 `DEEP_SYNTHESIS_MODEL` and `AGENT_SEARCH_MODEL` are both set to
