@@ -25,7 +25,7 @@ application code here.
 ```bash
 git add docs/ CLAUDE.md
 git commit -m "docs: weekly audit YYYY-MM-DD"
-git push -u origin main
+git push -u origin master
 ```
 
-The branch on the upstream repo is `master`; this fork uses `main`.
+Both the upstream repo and this fork use `master`.
