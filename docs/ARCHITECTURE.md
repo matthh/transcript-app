@@ -1,6 +1,6 @@
 # Architecture — transcript-app
 
-**Last reviewed: 2026-09-01**
+**Last reviewed: 2026-09-08**
 
 > **Fork notice:** This is a fork of `jbennygold/transcript-app` (the live
 > deployment at <https://transcript-app-blue.vercel.app>). Do **not** modify
@@ -462,10 +462,16 @@ entries from Vercel Blob with no auth guard. Entries include question text,
 answers, ratings, and comments. Recommended fix: same bearer-token pattern as
 recommended for T-25.
 
+**T-27 — `npm run check:models` referenced in docs but missing from `package.json`**
+Multiple audit documents and the T-23 entry recommend running `npm run check:models`
+to verify that model IDs in `routing-policy.ts` are still live. This script does not
+exist in `package.json`; running it throws `missing script: check:models`. No automated
+model-retirement verification is actually in place.
+
 **T-23 — Deep-synthesis and agent-search model IDs may retire silently**
 `DEEP_SYNTHESIS_MODEL` and `AGENT_SEARCH_MODEL` are both set to
 `'claude-sonnet-4-20250514'` in `src/lib/routing-policy.ts`. Model IDs
 in the `claude-*-YYYYMMDD` naming scheme retire without prior warning;
 when they do the routes return 404 errors silently in production.
-Run `npm run check:models` (or equivalent) periodically to catch retirements.
+Run a model-ID verification step periodically to catch retirements. Note: `npm run check:models` is referenced in docs but does not exist as a script in `package.json` — see T-27.
 (`claude-3-haiku-20240307` in T-16 is a related instance of the same risk.)
