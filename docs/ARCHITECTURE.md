@@ -1,6 +1,6 @@
 # Architecture — transcript-app
 
-**Last reviewed: 2026-11-03**
+**Last reviewed: 2026-11-10**
 
 > **Fork notice:** This is a fork of `jbennygold/transcript-app` (the live
 > deployment at <https://transcript-app-blue.vercel.app>). Do **not** modify
